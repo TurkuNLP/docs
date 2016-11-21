@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-uk">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/uk/pos">uk/pos</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-uk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/uk/pos">uk/pos</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-pos/NOUN.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,13 +39,92 @@
 
           <h2><code>NOUN</code>: noun</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>NOUN</code>.</p>
+<h3 id="definition">Definition</h3>
+
+<p>The <code>NOUN</code> tag is intended for common nouns only. See <a href="">PROPN</a> for
+proper nouns and <a href="">PRON</a> for pronouns.</p>
+
+<p>Ukrainian nouns have the lexical feature <a href="">uk-feat/Gender</a>.
+Furthermore, the nouns inflect for <a href="">uk-feat/Number</a> and <a href="">uk-feat/Case</a>.</p>
+
+<p>A verbal noun can be derived productively from almost every verb
+(e.g. <em>читати</em> “to read” → <em>читання</em> “reading”).
+While in other languages a corresponding form may be called gerund and tagged <a href="">VERB</a>,
+in Ukrainian it is tagged <code>NOUN</code>. It has always the neuter gender and the full
+number-case inflectional paradigm.</p>
+
+<h3 id="examples">Examples</h3>
+
+<ul>
+  <li><em>дівчинка</em> “girl”</li>
+  <li><em>кіт</em> “cat”</li>
+  <li><em>дерево</em> “tree”</li>
+  <li><em>повітря</em> “air”</li>
+  <li><em>краса</em> “beauty”</li>
+  <li><em>плавання</em> “swimming”</li>
+</ul>
 
 
 <!-- "automatic stats" -->
 
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udukrainian">Treebank Statistics (UD_Ukrainian)</h2>
+
+<p>There are 189 <code>NOUN</code> lemmas (31%), 202 <code>NOUN</code> types (28%) and 258 <code>NOUN</code> tokens (15%).
+Out of 16 observed tags, the rank of <code>NOUN</code> is: 1 in number of lemmas, 1 in number of types and 3 in number of tokens.</p>
+
+<p>The 10 most frequent <code>NOUN</code> lemmas: <em>спокій, хлопець, діти, яблуко, бджола, долар, квіти, начальник, футболіст, водій</em></p>
+
+<p>The 10 most frequent <code>NOUN</code> types:  <em>спокій, хлопець, Начальник, доларів, квіти, математики, футболіст, груші, дітей, модель</em></p>
+
+<p>The 10 most frequent ambiguous lemmas: <em>мати</em> (<a href="">VERB</a> 6, <a href="">NOUN</a> 1), <em>мільйон</em> (<a href="">NUM</a> 4, <a href="">NOUN</a> 1)</p>
+
+<p>The 10 most frequent ambiguous types:</p>
+
+<h2 id="morphology">Morphology</h2>
+
+<p>The form / lemma ratio of <code>NOUN</code> is 1.068783 (the average of all parts of speech is 1.172859).</p>
+
+<p>The 1st highest number of forms (3) was observed with the lemma “діти”: <em>Діти, дітей, дітям</em>.</p>
+
+<p>The 2nd highest number of forms (2) was observed with the lemma “бджола”: <em>бджолами, бджоли</em>.</p>
+
+<p>The 3rd highest number of forms (2) was observed with the lemma “водій”: <em>водій, водієм</em>.</p>
+
+<p><code>NOUN</code> occurs with 5 features: <a href="">uk-feat/Animacy</a> (258; 100% instances), <a href="">uk-feat/Case</a> (256; 99% instances), <a href="">uk-feat/Gender</a> (243; 94% instances), <a href="">uk-feat/Number</a> (79; 31% instances), <a href="">uk-feat/Abbr</a> (2; 1% instances)</p>
+
+<p><code>NOUN</code> occurs with 14 feature-value pairs: <code>Abbr=Yes</code>, <code>Animacy=Anim</code>, <code>Animacy=Inan</code>, <code>Case=Acc</code>, <code>Case=Dat</code>, <code>Case=Gen</code>, <code>Case=Ins</code>, <code>Case=Loc</code>, <code>Case=Nom</code>, <code>Case=Voc</code>, <code>Gender=Fem</code>, <code>Gender=Masc</code>, <code>Gender=Neut</code>, <code>Number=Plur</code></p>
+
+<p><code>NOUN</code> occurs with 46 feature combinations.
+The most frequent feature combination is <code>Animacy=Inan|Case=Acc|Gender=Masc</code> (23 tokens).
+Examples: <em>спокій, відріз, душ, контроль, концерт, пластилін, прогрес, садочок, світ, сенс</em></p>
+
+<h2 id="relations">Relations</h2>
+
+<p><code>NOUN</code> nodes are attached to their parents using 18 different relations: <a href="">uk-dep/nmod</a> (68; 26% instances), <a href="">uk-dep/dobj</a> (56; 22% instances), <a href="">uk-dep/nsubj</a> (49; 19% instances), <a href="">uk-dep/root</a> (34; 13% instances), <a href="">uk-dep/appos</a> (14; 5% instances), <a href="">uk-dep/conj</a> (7; 3% instances), <a href="">uk-dep/iobj</a> (5; 2% instances), <a href="">uk-dep/mwe</a> (5; 2% instances), <a href="">uk-dep/nsubjpass</a> (4; 2% instances), <a href="">uk-dep/vocative</a> (4; 2% instances), <a href="">uk-dep/compound</a> (2; 1% instances), <a href="">uk-dep/dislocated</a> (2; 1% instances), <a href="">uk-dep/list</a> (2; 1% instances), <a href="">uk-dep/xcomp</a> (2; 1% instances), <a href="">uk-dep/acl</a> (1; 0% instances), <a href="">uk-dep/advcl</a> (1; 0% instances), <a href="">uk-dep/foreign</a> (1; 0% instances), <a href="">uk-dep/remnant</a> (1; 0% instances)</p>
+
+<p>Parents of <code>NOUN</code> nodes belong to 13 different parts of speech: <a href="">VERB</a> (139; 54% instances), <a href="">NOUN</a> (40; 16% instances), <a href="">ROOT</a> (34; 13% instances), <a href="">ADJ</a> (16; 6% instances), <a href="">PROPN</a> (7; 3% instances), <a href="">ADP</a> (5; 2% instances), <a href="">ADV</a> (4; 2% instances), <a href="">NUM</a> (4; 2% instances), <a href="">PRON</a> (4; 2% instances), <a href="">INTJ</a> (2; 1% instances), <a href="">CONJ</a> (1; 0% instances), <a href="">DET</a> (1; 0% instances), <a href="">PART</a> (1; 0% instances)</p>
+
+<p>89 (34%) <code>NOUN</code> nodes are leaves.</p>
+
+<p>96 (37%) <code>NOUN</code> nodes have one child.</p>
+
+<p>30 (12%) <code>NOUN</code> nodes have two children.</p>
+
+<p>43 (17%) <code>NOUN</code> nodes have three or more children.</p>
+
+<p>The highest child degree of a <code>NOUN</code> node is 6.</p>
+
+<p>Children of <code>NOUN</code> nodes are attached using 25 different relations: <a href="">uk-dep/punct</a> (81; 26% instances), <a href="">uk-dep/case</a> (54; 17% instances), <a href="">uk-dep/amod</a> (34; 11% instances), <a href="">uk-dep/nmod</a> (30; 10% instances), <a href="">uk-dep/det</a> (20; 6% instances), <a href="">uk-dep/appos</a> (17; 6% instances), <a href="">uk-dep/nummod:gov</a> (14; 5% instances), <a href="">uk-dep/nsubj</a> (9; 3% instances), <a href="">uk-dep/advmod</a> (8; 3% instances), <a href="">uk-dep/nummod</a> (7; 2% instances), <a href="">uk-dep/conj</a> (6; 2% instances), <a href="">uk-dep/acl</a> (5; 2% instances), <a href="">uk-dep/cc</a> (4; 1% instances), <a href="">uk-dep/cop</a> (4; 1% instances), <a href="">uk-dep/discourse</a> (3; 1% instances), <a href="">uk-dep/ccomp</a> (2; 1% instances), <a href="">uk-dep/dobj</a> (2; 1% instances), <a href="">uk-dep/vocative</a> (2; 1% instances), <a href="">uk-dep/det:numgov</a> (1; 0% instances), <a href="">uk-dep/foreign</a> (1; 0% instances), <a href="">uk-dep/mark</a> (1; 0% instances), <a href="">uk-dep/name</a> (1; 0% instances), <a href="">uk-dep/neg</a> (1; 0% instances), <a href="">uk-dep/nsubjpass</a> (1; 0% instances), <a href="">uk-dep/parataxis</a> (1; 0% instances)</p>
+
+<p>Children of <code>NOUN</code> nodes belong to 14 different parts of speech: <a href="">PUNCT</a> (81; 26% instances), <a href="">ADP</a> (54; 17% instances), <a href="">NOUN</a> (40; 13% instances), <a href="">ADJ</a> (35; 11% instances), <a href="">NUM</a> (22; 7% instances), <a href="">DET</a> (20; 6% instances), <a href="">PROPN</a> (16; 5% instances), <a href="">ADV</a> (13; 4% instances), <a href="">PRON</a> (10; 3% instances), <a href="">VERB</a> (8; 3% instances), <a href="">CONJ</a> (4; 1% instances), <a href="">SYM</a> (3; 1% instances), <a href="">PART</a> (2; 1% instances), <a href="">INTJ</a> (1; 0% instances)</p>
 
 
 
@@ -103,6 +183,7 @@ NOUN in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -134,11 +215,40 @@ NOUN in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -162,6 +272,7 @@ NOUN in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'uk-pos';
@@ -187,7 +298,7 @@ NOUN in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

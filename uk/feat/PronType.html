@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-uk">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/uk/feat">uk/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-uk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/uk/feat">uk/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-feat/PronType.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,12 +39,234 @@
 
           <h2><code>PronType</code>: pronominal type</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>PronType</code>.</p>
+<p>This feature typically applies to <a href="uk-pos/PRON">pronouns</a>, <a href="uk-pos/DET">determiners</a>, pronominal <a href="uk-pos/NUM">numerals</a> (quantifiers) and pronominal <a href="uk-pos/ADV">adverbs</a>.</p>
+
+<h3 id="prs-personal-or-possessive-personal-pronoun-or-determiner"><code>Prs</code>: personal or possessive personal pronoun or determiner</h3>
+
+<p>See also the <a href="">Poss</a> feature that distinguishes normal personal pronouns from possessives. Note that <code>Prs</code> also includes reflexive
+personal/possessive pronouns (e.g. <em>себе / свій;</em> see the <a href="">Reflex</a> feature).</p>
+
+<h4 id="examples">Examples</h4>
+
+<ul>
+  <li><em>я, ти, він, вона, воно, ми, ви, вони </em> “I, you, he, she, it, we, you, they, they, they, oneself”</li>
+  <li><em>мій, твій, його, її, наш, ваш, їх, свій </em> “my, your, his/its, her, our, your, their, one’s own”</li>
+</ul>
+
+<h3 id="int-interrogative-pronoun-determiner-numeral-or-adverb"><code>Int</code>: interrogative pronoun, determiner, numeral or adverb</h3>
+
+<p>Note that possessive interrogative determiners (<em>whose</em>) can be distinguished by the <a href="">Poss</a> feature.</p>
+
+<h4 id="examples-1">Examples:</h4>
+
+<ul>
+  <li><em>хто </em> “who”</li>
+  <li><em>що </em> “what”</li>
+  <li><em>який </em> “what kind of”</li>
+  <li><em>котрий </em> “which”</li>
+  <li><em>чий </em> “whose”</li>
+  <li><em>скільки </em> “how many”</li>
+  <li><em>де </em> “where”</li>
+  <li><em>куди </em> “where to”</li>
+  <li><em>коли </em> “when”</li>
+  <li><em>як </em> “how”</li>
+  <li><em>чому </em> “why”</li>
+</ul>
+
+<h3 id="rel-relative-pronoun-determiner-numeral-or-adverb"><code>Rel</code>: relative pronoun, determiner, numeral or adverb</h3>
+
+<p>Note that this class heavily overlaps with interrogatives.</p>
+
+<h4 id="examples-2">Examples:</h4>
+
+<ul>
+  <li><em>котрий, що </em> “which, that” (relative but not interrogative pronouns)</li>
+  <li><em>чий </em> “whose” (possessive relative pronoun)</li>
+</ul>
+
+<h3 id="dem-demonstrative-pronoun-determiner-numeral-or-adverb"><code>Dem</code>: demonstrative pronoun, determiner, numeral or adverb</h3>
+
+<p>These are to some extent parallel to interrogatives.</p>
+
+<h4 id="examples-3">Examples</h4>
+
+<ul>
+  <li><em>той </em> “this”</li>
+  <li><em>тамтой </em> “that”</li>
+  <li><em>такий </em> “such”</li>
+  <li><em>стільки </em> “so many”</li>
+  <li><em>тут </em> “here”</li>
+  <li><em>там </em> “there”</li>
+  <li><em>тепер </em> “now”</li>
+  <li><em>тоді </em> “then”</li>
+  <li><em>так </em> “so”</li>
+</ul>
+
+<h3 id="tot-total-collective-pronoun-determiner-or-adverb"><code>Tot</code>: total (collective) pronoun, determiner or adverb</h3>
+
+<h4 id="examples-4">Examples</h4>
+
+<ul>
+  <li><em>кожен </em> “every, everybody, everyone, each”</li>
+  <li><em>все </em> “everything, all”</li>
+  <li><em>всюди </em> “everywhere”</li>
+  <li><em>завжди </em> “always”</li>
+</ul>
+
+<h3 id="neg-negative-pronoun-determiner-or-adverb"><code>Neg</code>: negative pronoun, determiner or adverb</h3>
+
+<h4 id="examples-5">Examples</h4>
+
+<ul>
+  <li><em>ніхто </em> “nobody”</li>
+  <li><em>ніщо </em> “nothing”</li>
+  <li><em>ніякий </em> “no (kind)”</li>
+  <li><em>нічий </em> “no one’s”</li>
+  <li><em>жоден </em> “no, none”</li>
+  <li><em>ніде </em> “nowhere”</li>
+  <li><em>нікуди </em> “(to) nowhere”</li>
+  <li><em>ніколи </em> “never”</li>
+  <li><em>ніяк </em> “no way” (lit. “no-how”)</li>
+</ul>
+
+<h3 id="ind-indefinite-pronoun-determiner-numeral-or-adverb"><code>Ind</code>: indefinite pronoun, determiner, numeral or adverb</h3>
+
+<h4 id="examples-6">Examples</h4>
+
+<ul>
+  <li><em>дехто </em> “somebody”; <em>будь-хто </em> “anybody”; <em>хтось </em> “somebody”</li>
+  <li><em>дещо </em> “something”; <em>будь-що </em> “anything”; <em>щось </em> “something”</li>
+  <li><em>деякий </em> “some kind of”; <em>будь-який </em> “any kind of”; <em>якийсь </em> “some, certain”</li>
+  <li><em>декотрий </em> “some”; <em>будь-котрий </em> “any”; <em>котрийсь </em> “some”</li>
+  <li><em>дечий </em> “someone’s”; <em>будь-чий </em> “anyone’s”; <em>чийсь </em> “someone’s”</li>
+  <li><em>декілька </em> “several”; <em>скільки-небудь </em> “any number of”; <em>багато </em> “many”</li>
+  <li><em>подекуди </em> “somewhere”; <em>будь-де </em> “anywhere”; <em>десь </em> “somewhere”</li>
+  <li><em>кудись </em> “(to) somewhere”; <em>будь-куди </em> “(to) anywhere”</li>
+  <li><em>інколи </em> “sometimes”; <em>будь-коли </em> “anytime”; <em>колись </em> “once (long ago)”</li>
+  <li><em>якось </em> “somehow”; <em>будь-як </em> “anyhow”</li>
+</ul>
+
 
 
 <!-- "automatic stats" -->
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udukrainian">Treebank Statistics (UD_Ukrainian)</h2>
+
+<p>This feature is universal.
+It occurs with 7 different values: <code>Dem</code>, <code>Ind</code>, <code>Int</code>, <code>Neg</code>, <code>Prs</code>, <code>Rel</code>, <code>Tot</code>.</p>
+
+<p>212 tokens (13%) have a non-empty value of <code>PronType</code>.
+97 types (14%) occur at least once with a non-empty value of <code>PronType</code>.
+47 lemmas (8%) occur at least once with a non-empty value of <code>PronType</code>.
+The feature is used with 5 part-of-speech tags: <a href="">uk-pos/PRON</a> (153; 9% instances), <a href="">uk-pos/DET</a> (34; 2% instances), <a href="">uk-pos/ADV</a> (21; 1% instances), <a href="">uk-pos/NUM</a> (3; 0% instances), <a href="">uk-pos/VERB</a> (1; 0% instances).</p>
+
+<h3 id="pron"><code>PRON</code></h3>
+
+<p>153 <a href="">uk-pos/PRON</a> tokens (100% of all <code>PRON</code> tokens) have a non-empty value of <code>PronType</code>.</p>
+
+<p>The most frequent other feature values with which <code>PRON</code> and <code>PronType</code> co-occurred: <tt><a href="Number.html">Number</a>=EMPTY</tt> (104; 68%), <tt><a href="Case.html">Case</a>=Nom</tt> (89; 58%).</p>
+
+<p><code>PRON</code> tokens may have the following values of <code>PronType</code>:</p>
+
+<ul>
+  <li><code>Dem</code> (21; 14% of non-empty <code>PronType</code>): <em>це, те, Той, то, тому, цього</em></li>
+  <li><code>Ind</code> (8; 5% of non-empty <code>PronType</code>): <em>дехто, дещо, чогось</em></li>
+  <li><code>Int</code> (4; 3% of non-empty <code>PronType</code>): <em>що, Ким</em></li>
+  <li><code>Neg</code> (5; 3% of non-empty <code>PronType</code>): <em>ніхто, нічого</em></li>
+  <li><code>Prs</code> (104; 68% of non-empty <code>PronType</code>): <em>він, його, ти, я, вона, її, вони, мені, мене, ми</em></li>
+  <li><code>Rel</code> (6; 4% of non-empty <code>PronType</code>): <em>що, хто, чого</em></li>
+  <li><code>Tot</code> (5; 3% of non-empty <code>PronType</code>): <em>все, всім</em></li>
+</ul>
+
+<table>
+  <tr><th>Paradigm <i>що</i></th><th><tt>Int</tt></th><th><tt>Rel</tt></th></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Acc</tt></td><td></td><td><em>що</em></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Gen</tt></td><td></td><td><em>чого</em></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Nom</tt></td><td><em>що</em></td><td><em>що</em></td></tr>
+</table>
+
+<h3 id="det"><code>DET</code></h3>
+
+<p>34 <a href="">uk-pos/DET</a> tokens (100% of all <code>DET</code> tokens) have a non-empty value of <code>PronType</code>.</p>
+
+<p>The most frequent other feature values with which <code>DET</code> and <code>PronType</code> co-occurred: <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (28; 82%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (28; 82%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (23; 68%), <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (22; 65%).</p>
+
+<p><code>DET</code> tokens may have the following values of <code>PronType</code>:</p>
+
+<ul>
+  <li><code>Dem</code> (14; 41% of non-empty <code>PronType</code>): <em>Ті, той, цей, Та, Ця, такий, такими, цих, цієї</em></li>
+  <li><code>Ind</code> (2; 6% of non-empty <code>PronType</code>): <em>якусь, іншими</em></li>
+  <li><code>Int</code> (2; 6% of non-empty <code>PronType</code>): <em>Котра, Котру</em></li>
+  <li><code>Prs</code> (12; 35% of non-empty <code>PronType</code>): <em>свою, його, Ваші, моя, мій, свого, своїми, своїх, її</em></li>
+  <li><code>Rel</code> (2; 6% of non-empty <code>PronType</code>): <em>котрого, який</em></li>
+  <li><code>Tot</code> (2; 6% of non-empty <code>PronType</code>): <em>кожному, усіх</em></li>
+</ul>
+
+<table>
+  <tr><th>Paradigm <i>котрий</i></th><th><tt>Int</tt></th><th><tt>Rel</tt></th></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Masc</tt></td><td></td><td><em>котрого</em></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Fem</tt></td><td><em>Котру</em></td><td></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Fem</tt></td><td><em>Котра</em></td><td></td></tr>
+</table>
+
+<p><code>PronType</code> seems to be <strong>lexical feature</strong> of <code>DET</code>. 93% lemmas (13) occur only with one value of <code>PronType</code>.</p>
+
+<h3 id="adv"><code>ADV</code></h3>
+
+<p>21 <a href="">uk-pos/ADV</a> tokens (20% of all <code>ADV</code> tokens) have a non-empty value of <code>PronType</code>.</p>
+
+<p>The most frequent other feature values with which <code>ADV</code> and <code>PronType</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (21; 100%).</p>
+
+<p><code>ADV</code> tokens may have the following values of <code>PronType</code>:</p>
+
+<ul>
+  <li><code>Dem</code> (6; 29% of non-empty <code>PronType</code>): <em>тоді, зараз, тому, стільки</em></li>
+  <li><code>Ind</code> (2; 10% of non-empty <code>PronType</code>): <em>інакше, багато</em></li>
+  <li><code>Int</code> (7; 33% of non-empty <code>PronType</code>): <em>як, Куди, скільки, чому</em></li>
+  <li><code>Rel</code> (5; 24% of non-empty <code>PronType</code>): <em>коли, де</em></li>
+  <li><code>Tot</code> (1; 5% of non-empty <code>PronType</code>): <em>завжди</em></li>
+  <li><code>EMPTY</code> (84): <em>непогано, важливо, вже, раніше, завтра, так, треба, ще, Важко, Надворі</em></li>
+</ul>
+
+<p><code>PronType</code> seems to be <strong>lexical feature</strong> of <code>ADV</code>. 100% lemmas (13) occur only with one value of <code>PronType</code>.</p>
+
+<h3 id="num"><code>NUM</code></h3>
+
+<p>3 <a href="">uk-pos/NUM</a> tokens (8% of all <code>NUM</code> tokens) have a non-empty value of <code>PronType</code>.</p>
+
+<p>The most frequent other feature values with which <code>NUM</code> and <code>PronType</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (3; 100%), <tt><a href="NumType.html">NumType</a>=Card</tt> (3; 100%), <tt><a href="Number.html">Number</a>=Plur</tt> (3; 100%), <tt><a href="Case.html">Case</a>=Ins</tt> (2; 67%).</p>
+
+<p><code>NUM</code> tokens may have the following values of <code>PronType</code>:</p>
+
+<ul>
+  <li><code>Ind</code> (3; 100% of non-empty <code>PronType</code>): <em>багатьма, багатьох</em></li>
+  <li><code>EMPTY</code> (34): <em>50, мільйонів, 5, 200, 3, 8, П’ять, дві, 1, 14</em></li>
+</ul>
+
+<h3 id="verb"><code>VERB</code></h3>
+
+<p>1 <a href="">uk-pos/VERB</a> tokens (0% of all <code>VERB</code> tokens) have a non-empty value of <code>PronType</code>.</p>
+
+<p>The most frequent other feature values with which <code>VERB</code> and <code>PronType</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (1; 100%), <tt><a href="Person.html">Person</a>=3</tt> (1; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (1; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (1; 100%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (1; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (1; 100%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (1; 100%).</p>
+
+<p><code>VERB</code> tokens may have the following values of <code>PronType</code>:</p>
+
+<ul>
+  <li><code>Neg</code> (1; 100% of non-empty <code>PronType</code>): <em>Немає</em></li>
+  <li><code>EMPTY</code> (318): <em>є, був, каже, пішов, сказав, плаває, було, зберігати, навчають, Кажуть</em></li>
+</ul>
+
+<h2 id="relations-with-agreement-in-prontype">Relations with Agreement in <code>PronType</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code>PronType</code>:
+<tt>ADV –[<a href="../dep/discourse.html">discourse</a>]–&gt; PRON</tt> (1; 100%).</p>
 
 
 
@@ -102,6 +325,7 @@ PronType in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -133,11 +357,40 @@ PronType in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -161,6 +414,7 @@ PronType in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'uk-feat';
@@ -186,7 +440,7 @@ PronType in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

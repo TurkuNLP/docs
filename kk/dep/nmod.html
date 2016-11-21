@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-kk">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/kk/dep">kk/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-kk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/kk/dep">kk/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/nmod.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -69,6 +70,70 @@ obj(тастады-7, экономикасын-5)
 <!-- "automatic stats" -->
 
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udkazakh">Treebank Statistics (UD_Kazakh)</h2>
+
+<p>This relation is universal.
+There are 2 language-specific subtypes of <code>nmod</code>: <a href="">nmod:own</a>, <a href="">nmod:poss</a>.</p>
+
+<p>598 nodes (10%) are attached to their parents as <code>nmod</code>.</p>
+
+<p>592 instances of <code>nmod</code> (99%) are right-to-left (child precedes parent).
+Average distance between parent and child is 3.26421404682274.</p>
+
+<p>The following 24 pairs of parts of speech are connected with <code>nmod</code>: <a href="">kk-pos/VERB</a>-<a href="">kk-pos/NOUN</a> (419; 70% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/NOUN</a> (54; 9% instances), <a href="">kk-pos/VERB</a>-<a href="">kk-pos/PRON</a> (34; 6% instances), <a href="">kk-pos/VERB</a>-<a href="">kk-pos/PROPN</a> (29; 5% instances), <a href="">kk-pos/ADJ</a>-<a href="">kk-pos/NOUN</a> (17; 3% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/PROPN</a> (10; 2% instances), <a href="">kk-pos/ADJ</a>-<a href="">kk-pos/PRON</a> (9; 2% instances), <a href="">kk-pos/VERB</a>-<a href="">kk-pos/ADJ</a> (6; 1% instances), <a href="">kk-pos/ADV</a>-<a href="">kk-pos/NOUN</a> (2; 0% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/PRON</a> (2; 0% instances), <a href="">kk-pos/NUM</a>-<a href="">kk-pos/NUM</a> (2; 0% instances), <a href="">kk-pos/VERB</a>-<a href="">kk-pos/NUM</a> (2; 0% instances), <a href="">kk-pos/ADJ</a>-<a href="">kk-pos/NUM</a> (1; 0% instances), <a href="">kk-pos/ADJ</a>-<a href="">kk-pos/PROPN</a> (1; 0% instances), <a href="">kk-pos/ADV</a>-<a href="">kk-pos/PRON</a> (1; 0% instances), <a href="">kk-pos/AUX</a>-<a href="">kk-pos/NOUN</a> (1; 0% instances), <a href="">kk-pos/AUX</a>-<a href="">kk-pos/PRON</a> (1; 0% instances), <a href="">kk-pos/DET</a>-<a href="">kk-pos/NOUN</a> (1; 0% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/ADJ</a> (1; 0% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/VERB</a> (1; 0% instances), <a href="">kk-pos/NUM</a>-<a href="">kk-pos/NOUN</a> (1; 0% instances), <a href="">kk-pos/PRON</a>-<a href="">kk-pos/NOUN</a> (1; 0% instances), <a href="">kk-pos/PROPN</a>-<a href="">kk-pos/NOUN</a> (1; 0% instances), <a href="">kk-pos/VERB</a>-<a href="">kk-pos/VERB</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 6 1 nmod	color:blue
+1	Ауылда	ауыл	NOUN	n	_	6	nmod	_	loc
+2	клуб	клуб	NOUN	n	_	3	nmod:poss	_	nom
+3	директоры	директор	NOUN	n	_	6	advcl	_	px3sp|nom
+4	болып	бол	VERB	v	_	3	cop	_	iv|gna_perf
+5	қызмет	қызмет	NOUN	n	_	6	dobj	_	nom
+6	атқарды	атқар	VERB	v	_	0	root	_	tv|ifi|p3|sg
+7	.	.	PUNCT	sent	_	6	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 2 nmod	color:blue
+1	Теке	теке	NOUN	n	_	2	compound	_	nom
+2	көз	көз	NOUN	n	_	5	nmod	_	attr
+3	қазақша	қазақша	ADV	adv	_	4	advmod	_	_
+4	білетін	біл	VERB	v	_	5	acl:relcl	_	tv|gpr_impf
+5	тілмәш	тілмәш	NOUN	n	_	0	root	_	nom
+6	екен	е	AUX	cop	_	5	cop	_	aor|evid|p3|sg
+7	.	.	PUNCT	sent	_	5	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 7 1 nmod	color:blue
+1	Одан	ол	PRON	prn	_	7	nmod	_	dem|abl
+2	кейін	кейін	ADP	post	_	1	case	_	_
+3	оған	ол	PRON	prn	_	7	nmod	_	dem|dat
+4	кішкентай	кішкентай	ADJ	adj	_	6	amod	_	_
+5	бір	бір	DET	det	_	6	det	_	ind
+6	қол	қол	NOUN	n	_	7	nsubj	_	nom
+7	көрінеді	көрін	VERB	v	_	0	root	_	iv|aor|p3|sg
+8	.	.	PUNCT	sent	_	7	punct	_	_
+
+</code></pre>
 
 
 
@@ -127,6 +192,7 @@ nmod in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -158,11 +224,40 @@ nmod in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -186,6 +281,7 @@ nmod in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'kk-dep';
@@ -211,7 +307,7 @@ nmod in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

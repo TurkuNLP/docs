@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-ta">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/ta/feat">ta/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ta">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ta/feat">ta/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ta-feat/Person.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -93,7 +94,7 @@ The feature is used with 7 part-of-speech tags: <a href="">ta-pos/NOUN</a> (2753
 
 <p>476 <a href="">ta-pos/AUX</a> tokens (76% of all <code>AUX</code> tokens) have a non-empty value of <code>Person</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Person</code> co-occurred: <tt><a href="Negative.html">Negative</a>=Pos</tt> (465; 98%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (418; 88%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (418; 88%), <tt><a href="Voice.html">Voice</a>=Act</tt> (400; 84%), <tt><a href="Polite.html">Polite</a>=EMPTY</tt> (391; 82%), <tt><a href="Number.html">Number</a>=Sing</tt> (355; 75%), <tt><a href="Gender.html">Gender</a>=Neut</tt> (350; 74%).</p>
+<p>The most frequent other feature values with which <code>AUX</code> and <code>Person</code> co-occurred: <tt><a href="Negative.html">Negative</a>=Pos</tt> (465; 98%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (418; 88%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (418; 88%), <tt><a href="Voice.html">Voice</a>=Act</tt> (400; 84%), <tt><a href="Polite.html">Polite</a>=EMPTY</tt> (391; 82%), <tt><a href="Number.html">Number</a>=Sing</tt> (355; 75%), <tt><a href="Gender.html">Gender</a>=Neut</tt> (350; 74%).</p>
 
 <p><code>AUX</code> tokens may have the following values of <code>Person</code>:</p>
 
@@ -149,7 +150,7 @@ The feature is used with 7 part-of-speech tags: <a href="">ta-pos/NOUN</a> (2753
 
 <h3 id="pron"><code>PRON</code></h3>
 
-<p>236 <a href="">ta-pos/PRON</a> tokens (100% of all <code>PRON</code> tokens) have a non-empty value of <code>Person</code>.</p>
+<p>236 <a href="">ta-pos/PRON</a> tokens (95% of all <code>PRON</code> tokens) have a non-empty value of <code>Person</code>.</p>
 
 <p>The most frequent other feature values with which <code>PRON</code> and <code>Person</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (222; 94%), <tt><a href="Number.html">Number</a>=Sing</tt> (175; 74%), <tt><a href="Gender.html">Gender</a>=Com</tt> (171; 72%), <tt><a href="Polite.html">Polite</a>=EMPTY</tt> (166; 70%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (135; 57%), <tt><a href="Case.html">Case</a>=Nom</tt> (134; 57%).</p>
 
@@ -159,6 +160,7 @@ The feature is used with 7 part-of-speech tags: <a href="">ta-pos/NOUN</a> (2753
   <li><code>1</code> (34; 14% of non-empty <code>Person</code>): நான், எனது, நாம், தனக்கு, நாங்கள், எனக்கு, எங்களால், எனக்க், என், என்னுடைய</li>
   <li><code>2</code> (6; 3% of non-empty <code>Person</code>): நீங்கள், உங்களுக்கு, உங்களைச், உங்கள்</li>
   <li><code>3</code> (196; 83% of non-empty <code>Person</code>): அவர், இது, அனைவரும், அவர்கள், தனது, அது, அதை, அவரது, அவர்களை, இதை</li>
+  <li><code>EMPTY</code> (12): அதிகம், இந்த, மிகவும், முழுவதும், அந்தத், குறைவாகவே, கொஞ்சம், முழுக்</li>
 </ul>
 
 <table>
@@ -168,7 +170,7 @@ The feature is used with 7 part-of-speech tags: <a href="">ta-pos/NOUN</a> (2753
   <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Number.html">Number</a>=Sing</tt></td><td>தன்னுடைய</td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Number.html">Number</a>=Sing|<a href="Reflex.html">Reflex</a>=Yes</tt></td><td></td><td>தனது</td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Number.html">Number</a>=Plur</tt></td><td></td><td>தங்கள்</td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Number.html">Number</a>=Plur|<a href="Reflex.html">Reflex</a>=Yes</tt></td><td></td><td>தங்களது, தங்களின்</td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Number.html">Number</a>=Plur|<a href="Reflex.html">Reflex</a>=Yes</tt></td><td></td><td>தங்களின், தங்களது</td></tr>
 </table>
 
 <p><code>Person</code> seems to be <strong>lexical feature</strong> of <code>PRON</code>. 96% lemmas (24) occur only with one value of <code>Person</code>.</p>
@@ -177,7 +179,7 @@ The feature is used with 7 part-of-speech tags: <a href="">ta-pos/NOUN</a> (2753
 
 <p>16 <a href="">ta-pos/NUM</a> tokens (6% of all <code>NUM</code> tokens) have a non-empty value of <code>Person</code>.</p>
 
-<p>The most frequent other feature values with which <code>NUM</code> and <code>Person</code> co-occurred: <tt><a href="NumForm.html">NumForm</a>=Digit</tt> (9; 56%), <tt><a href="NumType.html">NumType</a>=EMPTY</tt> (9; 56%).</p>
+<p>The most frequent other feature values with which <code>NUM</code> and <code>Person</code> co-occurred: <tt><a href="NumType.html">NumType</a>=EMPTY</tt> (9; 56%), <tt><a href="NumForm.html">NumForm</a>=Digit</tt> (9; 56%).</p>
 
 <p><code>NUM</code> tokens may have the following values of <code>Person</code>:</p>
 
@@ -204,15 +206,15 @@ The feature is used with 7 part-of-speech tags: <a href="">ta-pos/NOUN</a> (2753
 <h2 id="relations-with-agreement-in-person">Relations with Agreement in <code>Person</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>Person</code>:
-<tt>NOUN –[<a href="../dep/nmod.html">nmod</a>]–&gt; NOUN</tt> (724; 100%),
+<tt>NOUN –[<a href="../dep/nmod.html">nmod</a>]–&gt; NOUN</tt> (720; 100%),
 <tt>NOUN –[<a href="../dep/nmod.html">nmod</a>]–&gt; PROPN</tt> (690; 100%),
 <tt>PROPN –[<a href="../dep/nmod.html">nmod</a>]–&gt; PROPN</tt> (180; 100%),
 <tt>PROPN –[<a href="../dep/nmod.html">nmod</a>]–&gt; NOUN</tt> (146; 100%),
 <tt>NOUN –[<a href="../dep/conj.html">conj</a>]–&gt; NOUN</tt> (94; 100%),
-<tt>VERB –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; PROPN</tt> (85; 54%),
-<tt>PROPN –[<a href="../dep/conj.html">conj</a>]–&gt; PROPN</tt> (79; 100%),
+<tt>VERB –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; PROPN</tt> (84; 54%),
+<tt>PROPN –[<a href="../dep/conj.html">conj</a>]–&gt; PROPN</tt> (82; 100%),
 <tt>NOUN –[<a href="../dep/nmod.html">nmod</a>]–&gt; PRON</tt> (41; 82%),
-<tt>NOUN –[<a href="../dep/dobj.html">dobj</a>]–&gt; NOUN</tt> (31; 100%),
+<tt>NOUN –[<a href="../dep/dobj.html">dobj</a>]–&gt; NOUN</tt> (33; 100%),
 <tt>NOUN –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; NOUN</tt> (27; 100%).</p>
 
 
@@ -272,6 +274,7 @@ Person in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -303,11 +306,40 @@ Person in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -331,6 +363,7 @@ Person in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'ta-feat';
@@ -356,7 +389,7 @@ Person in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

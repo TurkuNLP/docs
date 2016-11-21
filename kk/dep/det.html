@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-kk">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/kk/dep">kk/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-kk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/kk/dep">kk/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/det.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -63,6 +64,86 @@ det(шығыстарды-2, Барлық-1)
 <!-- "automatic stats" -->
 
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udkazakh">Treebank Statistics (UD_Kazakh)</h2>
+
+<p>This relation is universal.</p>
+
+<p>119 nodes (2%) are attached to their parents as <code>det</code>.</p>
+
+<p>119 instances of <code>det</code> (100%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.16806722689076.</p>
+
+<p>The following 4 pairs of parts of speech are connected with <code>det</code>: <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/DET</a> (114; 96% instances), <a href="">kk-pos/ADJ</a>-<a href="">kk-pos/DET</a> (2; 2% instances), <a href="">kk-pos/PROPN</a>-<a href="">kk-pos/DET</a> (2; 2% instances), <a href="">kk-pos/VERB</a>-<a href="">kk-pos/DET</a> (1; 1% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 6 5 det	color:blue
+1	Одан	ол	PRON	prn	_	7	nmod	_	dem|abl
+2	кейін	кейін	ADP	post	_	1	case	_	_
+3	оған	ол	PRON	prn	_	7	nmod	_	dem|dat
+4	кішкентай	кішкентай	ADJ	adj	_	6	amod	_	_
+5	бір	бір	DET	det	_	6	det	_	ind
+6	қол	қол	NOUN	n	_	7	nsubj	_	nom
+7	көрінеді	көрін	VERB	v	_	0	root	_	iv|aor|p3|sg
+8	.	.	PUNCT	sent	_	7	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 9	bgColor:blue
+# visual-style 9	fgColor:white
+# visual-style 9 8 det	color:blue
+1	Көп__ұзамай	көп__ұзамай	ADV	adv	_	17	advmod	_	_
+2	олар	олар	PRON	prn	_	6	nsubj	_	pers|p3|pl|nom
+3	Ғазнауи	Ғазнауи	PROPN	np	_	4	nmod:poss	_	al|nom
+4	әулеті	әулет	NOUN	n	_	5	nmod	_	px3sp|nom
+5	әскерін	әскер	NOUN	n	_	6	dobj	_	px3sp|acc
+6	талқандап	талқанда	VERB	v	_	17	advcl	_	tv|gna_perf
+7	,	,	PUNCT	cm	_	6	punct	_	_
+8	бүкіл	бүкіл	DET	det	_	9	det	_	qnt
+9	Иранды	Иран	PROPN	np	_	12	conj	_	top|acc
+10	және	және	CONJ	cnjcoo	_	12	cc	_	_
+11	көрші	көрші	NOUN	n	_	12	compound	_	attr
+12	елдерді	ел	NOUN	n	_	13	dobj	_	pl|acc
+13	басып	бас	VERB	v	_	17	advcl	_	tv|prc_perf
+14	алып	ал	AUX	vaux	_	13	aux	_	gna_perf
+15	салжұқтар	салжұқ	PROPN	np	_	16	nmod:poss	_	al|pl|nom
+16	мемлекетін	мемлекет	NOUN	n	_	17	dobj	_	px3sp|acc
+17	құрды	құр	VERB	v	_	0	root	_	tv|ifi|p3|sg
+18	.	.	PUNCT	sent	_	17	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 6 5 det	color:blue
+1	Бұрын	бұрын	ADV	adv	_	3	advmod	_	_
+2	бір	бір	DET	det	_	3	det	_	ind
+3	байдың	бай	NOUN	n	_	9	conj	_	gen
+4	,	,	PUNCT	cm	_	9	punct	_	_
+5	осы	осы	DET	det	_	6	det	_	dem
+6	күнгі	күнгі	ADJ	adj	_	9	amod	_	_
+7	орта	орта	ADJ	adj	_	8	amod	_	_
+8	шарқы	шарқы	NOUN	n	_	9	compound	_	attr
+9	үйдің	үй	NOUN	n	_	11	nmod:poss	_	gen
+10	ортаншы	ортаншы	ADJ	adj	_	11	amod	_	_
+11	_	бала	NOUN	n	_	0	root	_	px3sp|nom
+12	_	е	AUX	cop	_	11	cop	_	aor|p1|sg
+13	.	.	PUNCT	sent	_	11	punct	_	_
+
+</code></pre>
 
 
 
@@ -121,6 +202,7 @@ det in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -152,11 +234,40 @@ det in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -180,6 +291,7 @@ det in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'kk-dep';
@@ -205,7 +317,7 @@ det in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

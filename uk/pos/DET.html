@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-uk">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/uk/pos">uk/pos</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-uk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/uk/pos">uk/pos</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-pos/DET.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,13 +39,117 @@
 
           <h2><code>DET</code>: determiner</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>DET</code>.</p>
+<h3 id="definition">Definition</h3>
+
+<p>Determiners are words that modify <a href="NOUN">nouns</a> or noun phrases and express the reference of the noun phrase in context. That is, a
+determiner may indicate whether the noun is referring to a definite or indefinite element of a class, to a closer or more distant element, to an element belonging to a specified person or thing, to a particular number or quantity, etc.</p>
+
+<p>An important point to note is that the traditional grammar of Ukrainian does not define determiners as a separate word class. Ukrainian does not have articles. Most determiners are traditionally called pronouns; that is, an UD-conformant annotation of Ukrainian must distinguish between substantive pronouns (UD tag <a href="">PRON</a>) and attributive pronouns (UD tag <code>DET</code>).</p>
+
+<!--Also note that the `DET` tag includes (pronominal) _quantifiers_ (words like _багато, мало&nbsp;_ “many, few”), which the traditional grammar classifies as a special subclass of numerals. However, _cardinal numerals_ in the narrow sense _(один, сім, сто)_ are not-->
+<!--tagged `DET` even though some authors would include them in quantifiers. Cardinal numbers have their own tag [NUM]().-->
+
+<!--For instance, _це&nbsp;_ “this” is either pronoun-->
+<!--_(<b>Це</b> я бачила вчора.&nbsp;_ “I saw <b>this</b> yesterday.”)-->
+<!--or determiner-->
+<!--_(<b>Це</b> дерево я бачила вчора.&nbsp;_ “I saw <b>this</b> tree yesterday.”)-->
+
+<h3 id="examples">Examples</h3>
+
+<ul>
+  <li>possessive determiners: <em>мій, твій, його, її, наш, ваш, їх </em> “my, your, his, her, our, your, their”</li>
+  <li>reflexive possessive determiner: <em>свій </em> “one’s own”</li>
+  <li>demonstrative determiners: <em>той, цей </em> as in <em><b>Цю</b> машину я бачила вчора. </em> “I saw <b>this</b> car yesterday.”</li>
+  <li>interrogative determiners: <em>котрий </em> as in <em><b>Котра</b> машина тобі подобається? </em> “<b>Which</b> car do you like?”</li>
+  <li>relative determiners: <em>котрий </em> as in <em>Мені цікаво, <b>котра</b> машина тобі подобається. </em> “I wonder <b>which</b> car you like.”</li>
+  <li>relative possessive determiner: <em>чий </em> “whose”</li>
+  <li>indefinite determiners: <em>деякий, якийсь</em></li>
+  <li>total determiners: <em>кожен, всякий</em></li>
+  <li>negative determiners: <em>жоден, ніякий </em> as in <em>Ми не маємо <b>жодної</b> машини. </em> “We have <b>no</b> cars available.”</li>
+</ul>
+
+<h3 id="references">References</h3>
+
+<ul>
+  <li><a href="http://www-01.sil.org/linguistics/GlossaryOfLinguisticTerms/WhatIsADeterminer.htm">Loos, Eugene E., et al. 2003. Glossary of linguistic terms: What is a determiner?</a></li>
+  <li><a href="http://en.wikipedia.org/wiki/Determiner">Wikipedia</a></li>
+</ul>
+
 
 
 <!-- "automatic stats" -->
 
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udukrainian">Treebank Statistics (UD_Ukrainian)</h2>
+
+<p>There are 14 <code>DET</code> lemmas (2%), 26 <code>DET</code> types (4%) and 34 <code>DET</code> tokens (2%).
+Out of 16 observed tags, the rank of <code>DET</code> is: 11 in number of lemmas, 7 in number of types and 12 in number of tokens.</p>
+
+<p>The 10 most frequent <code>DET</code> lemmas: <em>той, свій, цей, котрий, його, мій, такий, ваш, кожний, увесь</em></p>
+
+<p>The 10 most frequent <code>DET</code> types:  <em>Ті, свою, той, його, цей, Ваші, Котра, Котру, Та, Ця</em></p>
+
+<p>The 10 most frequent ambiguous lemmas: <em>той</em> (<a href="">DET</a> 7, <a href="">PRON</a> 1)</p>
+
+<p>The 10 most frequent ambiguous types:  <em>його</em> (<a href="">PRON</a> 6, <a href="">DET</a> 1), <em>її</em> (<a href="">PRON</a> 5, <a href="">DET</a> 1)</p>
+
+<ul>
+  <li><em>його</em>
+    <ul>
+      <li><a href="">PRON</a> 6: <em>Він зустрів її на вокзалі і вона <b>його</b> поцілувала .</em></li>
+      <li><a href="">DET</a> 1: <em>За старим стояла Христина , <b>його</b> гарна онука .</em></li>
+    </ul>
+  </li>
+  <li><em>її</em>
+    <ul>
+      <li><a href="">PRON</a> 5: <em>Він зустрів <b>її</b> на вокзалі і поцілував .</em></li>
+      <li><a href="">DET</a> 1: <em>На підставі <b>її</b> свідчень його відпустили .</em></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="morphology">Morphology</h2>
+
+<p>The form / lemma ratio of <code>DET</code> is 1.857143 (the average of all parts of speech is 1.172859).</p>
+
+<p>The 1st highest number of forms (4) was observed with the lemma “свій”: <em>свого, свою, своїми, своїх</em>.</p>
+
+<p>The 2nd highest number of forms (4) was observed with the lemma “цей”: <em>Ця, цей, цих, цієї</em>.</p>
+
+<p>The 3rd highest number of forms (3) was observed with the lemma “котрий”: <em>Котра, Котру, котрого</em>.</p>
+
+<p><code>DET</code> occurs with 7 features: <a href="">uk-feat/Case</a> (34; 100% instances), <a href="">uk-feat/PronType</a> (34; 100% instances), <a href="">uk-feat/Gender</a> (23; 68% instances), <a href="">uk-feat/Poss</a> (12; 35% instances), <a href="">uk-feat/Number</a> (11; 32% instances), <a href="">uk-feat/Person</a> (6; 18% instances), <a href="">uk-feat/Reflex</a> (6; 18% instances)</p>
+
+<p><code>DET</code> occurs with 20 feature-value pairs: <code>Case=Acc</code>, <code>Case=Dat</code>, <code>Case=Gen</code>, <code>Case=Ins</code>, <code>Case=Nom</code>, <code>Case=Voc</code>, <code>Gender=Fem</code>, <code>Gender=Masc</code>, <code>Number=Plur</code>, <code>Person=1</code>, <code>Person=2</code>, <code>Person=3</code>, <code>Poss=Yes</code>, <code>PronType=Dem</code>, <code>PronType=Ind</code>, <code>PronType=Int</code>, <code>PronType=Prs</code>, <code>PronType=Rel</code>, <code>PronType=Tot</code>, <code>Reflex=Yes</code></p>
+
+<p><code>DET</code> occurs with 24 feature combinations.
+The most frequent feature combination is <code>Case=Nom|Gender=Masc|PronType=Dem</code> (5 tokens).
+Examples: <em>той, такий, цей</em></p>
+
+<h2 id="relations">Relations</h2>
+
+<p><code>DET</code> nodes are attached to their parents using 6 different relations: <a href="">uk-dep/det</a> (24; 71% instances), <a href="">uk-dep/nsubj</a> (5; 15% instances), <a href="">uk-dep/nmod</a> (2; 6% instances), <a href="">uk-dep/dobj</a> (1; 3% instances), <a href="">uk-dep/mark</a> (1; 3% instances), <a href="">uk-dep/root</a> (1; 3% instances)</p>
+
+<p>Parents of <code>DET</code> nodes belong to 5 different parts of speech: <a href="">NOUN</a> (20; 59% instances), <a href="">VERB</a> (7; 21% instances), <a href="">ADJ</a> (4; 12% instances), <a href="">PROPN</a> (2; 6% instances), <a href="">ROOT</a> (1; 3% instances)</p>
+
+<p>24 (71%) <code>DET</code> nodes are leaves.</p>
+
+<p>8 (24%) <code>DET</code> nodes have one child.</p>
+
+<p>2 (6%) <code>DET</code> nodes have two children.</p>
+
+<p>The highest child degree of a <code>DET</code> node is 2.</p>
+
+<p>Children of <code>DET</code> nodes are attached using 9 different relations: <a href="">uk-dep/acl</a> (3; 25% instances), <a href="">uk-dep/case</a> (2; 17% instances), <a href="">uk-dep/amod</a> (1; 8% instances), <a href="">uk-dep/appos</a> (1; 8% instances), <a href="">uk-dep/dobj</a> (1; 8% instances), <a href="">uk-dep/mark</a> (1; 8% instances), <a href="">uk-dep/neg</a> (1; 8% instances), <a href="">uk-dep/nummod</a> (1; 8% instances), <a href="">uk-dep/punct</a> (1; 8% instances)</p>
+
+<p>Children of <code>DET</code> nodes belong to 8 different parts of speech: <a href="">VERB</a> (3; 25% instances), <a href="">ADP</a> (2; 17% instances), <a href="">PART</a> (2; 17% instances), <a href="">ADJ</a> (1; 8% instances), <a href="">NOUN</a> (1; 8% instances), <a href="">NUM</a> (1; 8% instances), <a href="">PRON</a> (1; 8% instances), <a href="">PUNCT</a> (1; 8% instances)</p>
 
 
 
@@ -103,6 +208,7 @@ DET in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -134,11 +240,40 @@ DET in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -162,6 +297,7 @@ DET in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'uk-pos';
@@ -187,7 +323,7 @@ DET in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

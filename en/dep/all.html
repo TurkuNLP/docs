@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-en">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-en">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -151,9 +152,11 @@ in two places.</p>
 	</tr>	
 	<tr>
 	  <td><a>appos</a></td>
+	  <td>&nbsp;</td>
 	  <td><a>det</a></td>
 	</tr>
 	<tr>
+	  <td>&nbsp;</td>
 	  <td>&nbsp;</td>
 	  <td>↳<a>det:predet</a></td>
 	</tr>	
@@ -342,8 +345,9 @@ advmod(often, less)
 <p><a id="al-en-dep/amod" class="al-dest"></a></p>
 <h2><code>amod</code>: adjectival modifier</h2>
 
-<p>An adjectival modifier of an NP is any adjectival phrase that serves
-to modify the meaning of the NP.</p>
+<p>An adjectival modifier of a nominal is any adjective or adjectival phrase that serves
+to modify the meaning of the nominal. This includes always or sometimes postposed 
+modifiers, such as <em>else</em> and <em>nice</em> in the examples below.</p>
 
 <pre><code class="language-sdparse">Sam eats red meat
 amod(meat, red)
@@ -355,6 +359,14 @@ amod(loan, dollar)
 
 <pre><code class="language-sdparse">Sam took out  a $ 3 million loan
 amod(loan, $)
+</code></pre>
+
+<pre><code class="language-sdparse">Anything else for me ?
+amod(Anything, else)
+</code></pre>
+
+<pre><code class="language-sdparse">We can go somewhere nice .
+amod(somewhere, nice)
 </code></pre>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_en-dep/amod.md" target="#">edit amod</a></p>
@@ -459,6 +471,8 @@ nmod(speech, head)
 cc(left, And)
 </code></pre>
 
+<p>See also: <a href="conj.html"><code>conj</code></a></p>
+
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_en-dep/cc.md" target="#">edit cc</a></p>
 
 <p><a id="al-en-dep/cc:preconj" class="al-dest"></a></p>
@@ -481,6 +495,11 @@ cc:preconj(boys, Both)
 
 <pre><code class="language-sdparse">He says that you like to swim
 ccomp(says, like)
+mark(like, that)
+</code></pre>
+
+<pre><code class="language-sdparse">He says you like to swim
+ccomp(says, like)
 </code></pre>
 
 <pre><code class="language-sdparse">I am certain that he did it 
@@ -488,15 +507,22 @@ ccomp(certain, did)
 mark(did, that) 
 </code></pre>
 
+<pre><code class="language-sdparse">The boss said to start digging
+ccomp(said, start)
+mark(start, to)
+</code></pre>
+
+<p>See <a href="http://universaldependencies.org/u/dep/ccomp.html">this page</a> for additional explanation and examples.</p>
+
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_en-dep/ccomp.md" target="#">edit ccomp</a></p>
 
 <p><a id="al-en-dep/compound" class="al-dest"></a></p>
 <h2><code>compound</code>: compound</h2>
 
-<p><em>compound</em> is used for</p>
+<p><em>compound</em> is used for:</p>
 
 <ul>
-  <li>noun compounds (Note that in the current system for dependency extraction, all nouns modify the rightmost noun of the noun phrase – there is no intelligent noun compound analysis.  This is likely to be fixed once the Penn Treebank represents the branching structure of noun phrases.)</li>
+  <li>noun compounds. (These should show the correct modification structure of noun compounds, and do - or should - in the English UD treebank. Note, however, that the current automatic Stanford UD converter still makes all nouns modify the rightmost noun of the noun phrase when run on corpora like the 1999 Penn Treebank 3 which do not show noun compound structure - there is no intelligent noun compound analysis.  The correct results are achieved when run on corpora like OntoNotes which do represent the branching structure of noun phrases.)</li>
 </ul>
 
 <pre><code class="language-sdparse">phone book
@@ -504,7 +530,20 @@ compound(book, phone)
 </code></pre>
 
 <pre><code class="language-sdparse">oil price futures
-nn(futures, oil)
+compound(price, oil)
+compound(futures, price)
+</code></pre>
+
+<p>This includes proper names that use regular syntactic relations—contrast with <a href="">name</a>:</p>
+
+<pre><code class="language-sdparse">Wall Street
+compound(Street, Wall)
+</code></pre>
+
+<pre><code class="language-sdparse">Natural Resources Conservation Service
+amod(Resources-2, Natural-1)
+compound(Conservation-3, Resources-2)
+compound(Service-4, Conservation-3)
 </code></pre>
 
 <ul>
@@ -519,13 +558,46 @@ compound(thousand, four)
 compound(billion, 3.2)
 </code></pre>
 
+<ul>
+  <li>adjectival compounds</li>
+</ul>
+
+<pre><code class="language-sdparse">a medium - large company
+amod (company, large)
+compound(large, medium)
+punct(large, -)
+</code></pre>
+
+<pre><code class="language-sdparse">a self - driven research strategy
+compound(strategy, research)
+amod(strategy, driven)
+compound(driven, self)
+punct(driven, -)
+</code></pre>
+
+<ul>
+  <li>imitative reduplication</li>
+</ul>
+
+<pre><code class="language-sdparse">Does he go oink oink ?
+compound(oink-5, oink-4)
+</code></pre>
+
+<ul>
+  <li>idiomatic phrasal verbs are analyzed as a language-specific subrelation of <em>compound</em></li>
+</ul>
+
+<pre><code class="language-sdparse">She just made up the answer .
+compound:prt(made, up)
+</code></pre>
+
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_en-dep/compound.md" target="#">edit compound</a></p>
 
 <p><a id="al-en-dep/compound:prt" class="al-dest"></a></p>
 <h2><code>compound:prt</code>: phrasal verb particle</h2>
 
-<p>The phrasal verb particle relation identifies a phrasal verb, and
-holds between the verb and its particle. It is a subtype of the
+<p>The phrasal verb particle relation identifies an idiomatic phrasal verb, and
+holds between the verb and its particle (tagged as <a href="">ADP</a>). It is a subtype of the
 <a href="">compound</a> relation.</p>
 
 <pre><code class="language-sdparse">They shut down the station
@@ -534,6 +606,17 @@ compound:prt(shut, down)
 
 <pre><code class="language-sdparse">They shut the station down
 compound:prt(shut, down)
+</code></pre>
+
+<p>This relation excludes literal/directional uses of prepositions/particles, such as <em>up</em>, <em>down</em>, <em>in</em>, <em>out</em>, etc.
+These would typically become an ADV with the relation <a href="">advmod</a>:</p>
+
+<pre><code class="language-sdparse">The dentist pulled out the tooth
+advmod(pulled, out)
+</code></pre>
+
+<pre><code class="language-sdparse">The dentist pulled the tooth out
+advmod(pulled, out)
 </code></pre>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_en-dep/compound-prt.md" target="#">edit compound:prt</a></p>
@@ -549,6 +632,8 @@ conjunct and other conjunctions depend on it via the <code>conj</code> relation.
 <pre><code class="language-sdparse">Bill is big and honest
 conj(big, honest)
 </code></pre>
+
+<p>See also: <a href="cc.html"><code>cc</code></a></p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_en-dep/conj.md" target="#">edit conj</a></p>
 
@@ -713,6 +798,12 @@ det(man, The)
 det(book, Which)
 </code></pre>
 
+<pre><code class="language-sdparse">You 've all won !
+nsubj(won, You)
+det(You, all)
+aux(won, 've)
+</code></pre>
+
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_en-dep/det.md" target="#">edit det</a></p>
 
 <p><a id="al-en-dep/det:predet" class="al-dest"></a></p>
@@ -819,12 +910,17 @@ goeswith(out-5, with-4)
 <p><a id="al-en-dep/iobj" class="al-dest"></a></p>
 <h2><code>iobj</code>: indirect object</h2>
 
-<p>The indirect object of a VP is the noun phrase which is the (dative)
-object of the verb.</p>
+<p>The indirect object of a (verbal) predicate is the nominal which is the dative
+object of the verb. The relation <code>iobj</code> is used for objects that are not direct
+objects. It occurs only when there is a <code>dobj</code> or <code>ccomp</code> in the clause.</p>
 
 <pre><code class="language-sdparse">She gave me a raise
 iobj(gave, me)
 </code></pre>
+
+<p>Note that prepositional phrases are not considered core arguments in English,
+hence in <em>she gave it to me</em>, the <em>to me</em> part is attached as <a href="">nmod</a> although
+semantically it corresponds to the dative.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_en-dep/iobj.md" target="#">edit iobj</a></p>
 
@@ -1258,22 +1354,8 @@ compound(Service-4, Conservation-3)
 </code></pre>
 
 <p>In addition, regular syntactic relations are used:
-(i) for a modifying determiner or
-(ii) to connect together the words of a description or name which involve embedded prepositional phrases, sentences, etc.</p>
-
-<pre><code class="language-sdparse">Le Japon
-det(Japon-2, Le-1)
-</code></pre>
-
-<pre><code class="language-sdparse">Ludwig van Beethoven
-case(Beethoven, van)
-</code></pre>
-
-<pre><code class="language-sdparse">Miguel de Cervantes y Saavedra
-conj(Cervantes, Saavedra)
-cc(Cervantes, y)
-case(Cervantes, de)
-</code></pre>
+(i) for a modifying English determiner or
+(ii) to connect together the words of a description or name which involve English embedded prepositional phrases, sentences, etc.</p>
 
 <pre><code class="language-sdparse">The king of Sweden
 det(king-2, The-1)
@@ -1281,10 +1363,29 @@ nmod(king-2, Sweden-4)
 case(Sweden-4, of-3)
 </code></pre>
 
+<p>If a name contains a function word in another language than English, we also use the <code>name</code> relation.</p>
+
 <pre><code class="language-sdparse">Río de la Plata
-case(Plata-4, de-2)
-det(Plata-4, la-3)
-nmod(Río-1, Plata-4)
+name(Río-1, de-2)
+name(Río-1, la-3)
+name(Río-1, Plata-4)
+</code></pre>
+
+<pre><code class="language-sdparse">Ludwig van Beethoven
+name(Ludwig, van)
+name(Ludwig, Beethoven)
+
+</code></pre>
+
+<pre><code class="language-sdparse">Miguel de Cervantes y Saavedra
+name(Miguel, de)
+name(Miguel, Cervantes)
+name(Miguel, y)
+name(Miguel, Saavedra)
+</code></pre>
+
+<pre><code class="language-sdparse">San Francisco
+name(San, Francisco)
 </code></pre>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_en-dep/name.md" target="#">edit name</a></p>
@@ -1317,7 +1418,7 @@ predicates. <code>nmod</code> is a noun functioning as a non-core (oblique)
 argument or adjunct. In English, <code>nmod</code> is used</p>
 
 <ul>
-  <li>for prepositional complements:</li>
+  <li>for prepositional complements (including datives and partitives):</li>
 </ul>
 
 <pre><code class="language-sdparse">the office of the Chair
@@ -1333,6 +1434,12 @@ nmod(give, children)
 case(children, to)
 </code></pre>
 
+<pre><code class="language-sdparse">some of the toys
+nmod(some, toys)
+case(toys, of)
+det(toys, the)
+</code></pre>
+
 <p>The <code>nmod</code> relation holds between the noun/predicate modified by the
 prepositional complement and the noun introduced by the preposition.</p>
 
@@ -1346,7 +1453,7 @@ nmod(office-4, Chair-2)
 case(Chair-2, 's-3)
 </code></pre>
 
-<p>Nominal modifiers not introduced by a preposition or not ‘s genitives
+<p>Nominal modifiers not marked by a preposition or ‘s genitive
 are tagged <a href="">nmod:npmod</a>, a subtype of <code>nmod</code>. Temporal nominal
 modifiers are also marked with a separate relation <a href="">nmod:tmod</a>. See
 the definitions of these relations.</p>
@@ -1425,10 +1532,58 @@ nmod:tmod(turn, week)
 <p><a id="al-en-dep/nsubj" class="al-dest"></a></p>
 <h2><code>nsubj</code>: nominal subject</h2>
 
-<p>A nominal subject is a noun phrase which is the syntactic subject of a clause. The governor of this relation might not always be a verb: when the verb is a copular verb, the root of the clause is the complement of the copular verb, which can be an adjective or noun.</p>
+<p>A nominal subject (<code>nsubj</code>) is a nominal which is the syntactic subject and the proto-agent of a clause.
+That is, it is in the position that passes typical grammatical test for subjecthood, and this argument is the more agentive,
+the do-er, or the proto-agent of the clause. 
+(See <a href="">csubj</a> for when the subject is clausal. See <a href="">nsubjpass</a> and <a href="">csubjpass</a> for when the subject is not 
+the proto-agent argument due to valence changing operations.) This nominal may be headed by a noun, 
+or it may be a pronoun or relative pronoun, or in ellipsis contexts, other things such as an adjective.</p>
+
+<p>The <code>nsubj</code> role is only applied to semantic arguments of a predicate.
+When there is an empty argument in a grammatical subject position (sometimes called a pleonastic or expletive),
+it is labeled as <a href="">expl</a>. If there is then a displaced subject
+in the clause, as in the English existential <em>there</em> construction, it will be labeled as <code>nsubj</code>.
+The governor of the <code>nsubj</code> relation might not always be a verb: when
+the verb is a copular verb, the root of the clause is the complement
+of the copular verb, which can be an adjective or noun, including a noun marked by a preposition,
+as in the examples below.</p>
+
+<p>In English, the <code>nsubj</code> normally precedes the predicate that it depends on, but this need not be the case, 
+both for the displaced subjects of expletive constructions and in other cases of stylistic inversion, such
+as the example headed by the predicate <em>come</em> below.</p>
 
 <pre><code class="language-sdparse">Clinton defeated Dole
 nsubj(defeated, Clinton)
+</code></pre>
+
+<pre><code class="language-sdparse">The car is red .
+nsubj(red, car)
+</code></pre>
+
+<pre><code class="language-sdparse">Sue is a true patriot .
+nsubj(patriot, Sue)
+</code></pre>
+
+<pre><code class="language-sdparse">We are in the barn .
+nsubj(barn, We)
+</code></pre>
+
+<pre><code class="language-sdparse">Agatha is in trouble .
+nsubj(trouble, Agatha)
+</code></pre>
+
+<pre><code class="language-sdparse">There is a ghost in the room .
+expl(is, There)
+nsubj(is, ghost)
+</code></pre>
+
+<pre><code class="language-sdparse">These links present the many viewpoints that existed .
+acl:relcl(viewpoints, existed)
+nsubj(existed, that)
+</code></pre>
+
+<pre><code class="language-sdparse">From China comes news of a new super-small mobile phone .
+nsubj(comes, news)
 </code></pre>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_en-dep/nsubj.md" target="#">edit nsubj</a></p>
@@ -1487,6 +1642,8 @@ parataxis(walk, kidding)
 <pre><code class="language-sdparse">The guy , John said , left early in the morning
 parataxis(left, said)
 </code></pre>
+
+<p>See also: <a href="/u/dep/parataxis.html">language-general documentation of <code>parataxis</code></a></p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_en-dep/parataxis.md" target="#">edit parataxis</a></p>
 
@@ -1701,6 +1858,7 @@ xcomp(looks, beautiful)
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -1732,11 +1890,40 @@ xcomp(looks, beautiful)
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -1760,6 +1947,7 @@ xcomp(looks, beautiful)
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'en-overview';
@@ -1785,7 +1973,7 @@ xcomp(looks, beautiful)
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-uk">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/uk/feat">uk/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-uk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/uk/feat">uk/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-feat/Voice.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,12 +39,69 @@
 
           <h2><code>Voice</code>: voice</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>Voice</code>.</p>
+<p>Voice is a feature of verbs that helps map the traditional syntactic functions, such as subject and object, to semantic roles, such as agent and pacient.</p>
+
+<h3 id="act-active-voice"><code>Act</code>: active voice</h3>
+
+<p>The subject of the verb is the doer of the action (agent), the object is affected by the action (pacient).</p>
+
+<p>All finite verb forms and the adverbial participle are tagged <code>Voice=Act</code>.</p>
+
+<h4 id="examples">Examples</h4>
+
+<ul>
+  <li><em>Ми <b>читали</b> цю книгу. </em> “We <b>read</b> this book<code>Acc</code>.” (the active past tense form <em>читали </em> can be also used to form conditional mood; here it is used in its original past meaning.)</li>
+</ul>
+
+<h3 id="pass-passive-voice"><code>Pass</code>: passive voice</h3>
+
+<p>The subject of the verb is affected by the action (patient). The doer (agent) is either unexpressed or it appears as an object of the verb.</p>
+
+<p>Passive voice is formed periphrastically in Ukrainian. The most typical passive construction consists of the finite verb forms of the auxiliary verbs <em>бути</em>  “to be” (optional for the present forms) and the present or past passive adjectival participle. The grammatical subject in such constructions, being the semantic object, or patient, is in the nominative case. The semantic subject in such constructions is optional, it is expressed by the instrumental case. Note that the adjectival participles, sharing most morphological features with adjectives (with the exception of aspect and voice which are inherited from verbs), are treated as a special type of adjectives in Ukrainian. An alternative passive construction, also periphrastic, is more specific and both of its parts belong to the verb. The semantic object is expressed by the accusative case, similarly to the prototypical active construction. The semantic subject is also optional and expressed by the instrumental case. It also uses finite verb forms of the auxiliary verbs <em>бути</em>  “to be” (optional for the present forms). The lexical meaning is presented by the Impersonal verb form, which also receives the tag <code>Voice=Pass</code>.</p>
+
+<h4 id="examples-1">Examples</h4>
+
+<ul>
+  <li><em>Ця книга <b>прочитана</b> нами. </em> “This book<code>Nom</code> <b>was read</b> by us.” (The adjectival passive participle <em>прочитана</em> conveys the passive meaning.)</li>
+  <li><em>Цю книгу <b>прочитано</b> нами. </em> “This book<code>Acc</code> <b>was read</b> by us.” (The impersonal verb form <em>прочитано</em> conveys the passive meaning.)</li>
+</ul>
+
 
 
 <!-- "automatic stats" -->
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udukrainian">Treebank Statistics (UD_Ukrainian)</h2>
+
+<p>This feature is universal.
+It occurs with 2 different values: <code>Act</code>, <code>Pass</code>.</p>
+
+<p>22 tokens (1%) have a non-empty value of <code>Voice</code>.
+20 types (3%) occur at least once with a non-empty value of <code>Voice</code>.
+18 lemmas (3%) occur at least once with a non-empty value of <code>Voice</code>.
+The feature is used with 1 part-of-speech tags: <a href="">uk-pos/ADJ</a> (22; 1% instances).</p>
+
+<h3 id="adj"><code>ADJ</code></h3>
+
+<p>22 <a href="">uk-pos/ADJ</a> tokens (24% of all <code>ADJ</code> tokens) have a non-empty value of <code>Voice</code>.</p>
+
+<p>The most frequent other feature values with which <code>ADJ</code> and <code>Voice</code> co-occurred: <tt><a href="NumType.html">NumType</a>=EMPTY</tt> (22; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (22; 100%), <tt><a href="Aspect.html">Aspect</a>=Perf</tt> (21; 95%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (21; 95%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (19; 86%), <tt><a href="Case.html">Case</a>=Nom</tt> (13; 59%).</p>
+
+<p><code>ADJ</code> tokens may have the following values of <code>Voice</code>:</p>
+
+<ul>
+  <li><code>Act</code> (5; 23% of non-empty <code>Voice</code>): <em>минулому, Минулої, минулим, пожовтілим</em></li>
+  <li><code>Pass</code> (17; 77% of non-empty <code>Voice</code>): <em>розташоване, Об’єднаних, Оскарженого, висланий, втомлена, даними, зауважене, збережений, звільнена, зловлені</em></li>
+  <li><code>EMPTY</code> (70): <em>Важливим, перший, швидший, далекому, мила, першим, повинен, чесний, Бородаті, Зелена</em></li>
+</ul>
+
+<p><code>Voice</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (18) occur only with one value of <code>Voice</code>.</p>
 
 
 
@@ -102,6 +160,7 @@ Voice in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -133,11 +192,40 @@ Voice in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -161,6 +249,7 @@ Voice in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'uk-feat';
@@ -186,7 +275,7 @@ Voice in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

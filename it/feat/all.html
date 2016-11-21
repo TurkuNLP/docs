@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-it">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-it">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -370,11 +371,16 @@ otherwise uncertain.</p>
 
 <h3 id="range-range-of-values"><code>Range</code>: range of values</h3>
 
-<p>Not used.</p>
+<p>Used for expressions such as:
+* 2/3 Sett.
+* 3/4 volte</p>
 
 <h3 id="gen-generic-numeral-ie-a-numeral-that-is-neither-of-the-above"><code>Gen</code>: generic numeral, i.e. a numeral that is neither of the above</h3>
 
-<p>Not used.</p>
+<p>Used for time expressions such as:
+* 23’
+* 1’13’’
+* 1.00’16’’</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_it-feat/NumType.md" target="#">edit NumType</a></p>
 
@@ -578,6 +584,51 @@ distinguish a separate feature of distance (<em>here / there</em>; [es] <em>aqu�
   <li>indefinite determiners: <em>tutti</em> “all”, <em>qualche</em> “some”, <em>ogni</em> “each”, <em>alcuni</em> “some”, <em>diversi</em> “several”</li>
 </ul>
 
+<h3 id="exc-exclamative-determiners-this-value-is-language-specific"><code>Exc</code>: exclamative determiners. This value is language specific.</h3>
+
+<h4 id="examples-7">Examples</h4>
+
+<ul>
+  <li><em>che</em> disastro “what a disaster”, <em>che</em> catastrofe “what a catastrophe”</li>
+</ul>
+
+<h3 id="clit-clitic-pronouns-this-value-is-language-specific"><code>Clit</code>: clitic pronouns. This value is language specific.</h3>
+
+<p>Used for clitic pronouns, part of speech PRON/PC.</p>
+
+<h4 id="examples-8">Examples</h4>
+
+<ul>
+  <li><em>mi</em> viene in mente “it comes to my mind”</li>
+  <li>capace di farl <em>lo</em> “capable to do it”</li>
+  <li><em>si</em> convincono “they convince themselves”</li>
+  <li><em>ci</em> sono troppi ostacoli “there are too many obstacles”</li>
+</ul>
+
+<h3 id="predet-predeterminer-this-value-is-language-specific"><code>Predet</code>: predeterminer. This value is language specific.</h3>
+
+<p>It is always used along with <em>det:predet</em> dependency relations.</p>
+
+<h4 id="examples-9">Examples</h4>
+
+<ul>
+  <li><em>tutta</em> la giornata “all day”</li>
+  <li><em>tutti</em> gli esseri umani “all human beings”</li>
+  <li><em>entrambi</em> i prigionieri “both prisoners”</li>
+</ul>
+
+<h3 id="ord-ordinal-pronouns-this-value-is-language-specific"><code>Ord</code>: ordinal pronouns. This value is language specific.</h3>
+
+<p>It is used to mark ordinal pronouns. Part of speech is PRON/NO. When ordinals are used as noun modifiers they are marked as [ADJ].</p>
+
+<h4 id="examples-10">Examples</h4>
+
+<ul>
+  <li>Il <em>primo</em> sostiene che …  “the first asserts that …</li>
+  <li>Un quarto d’ora “a quarter of an hour”</li>
+  <li>Valentina è <em>quinta</em> “Valentina is fifth”</li>
+</ul>
+
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_it-feat/PronType.md" target="#">edit PronType</a></p>
 
 <p><a id="al-it-feat/Reflex" class="al-dest"></a></p>
@@ -714,6 +765,7 @@ usually happen.</p>
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -745,11 +797,40 @@ usually happen.</p>
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -773,6 +854,7 @@ usually happen.</p>
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'it-overview';
@@ -798,7 +880,7 @@ usually happen.</p>
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

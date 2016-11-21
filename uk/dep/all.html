@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-uk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-uk">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -250,8 +251,41 @@ for <code>advmod</code>.</p>
 <p><a id="al-uk-dep/amod" class="al-dest"></a></p>
 <h2><code>amod</code>: adjectival modifier</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>amod</code>.</p>
+<p>An adjectival modifier of a noun is any adjectival phrase that serves to modify the meaning of the noun.</p>
+
+<p>Exception: if the modifying adjectival word is pronominal (i.e. tagged <a href="">uk-pos/DET</a>), the relation is <a href="">det</a> instead of <code>amod</code>.</p>
+
+<!--~~~ sdparse-->
+<!--Ніна їсть зелене яблуко . \n Nina is eating a green apple .-->
+<!--amod(яблуко, зелене)-->
+<!--amod(apple, green)-->
+<!--~~~-->
+
+<pre><code class="language-conllu">1	Ніна	Ніна	NPROP	NSN	_	2	nsubj	_	_
+2	їсть	їсти	VERB	VPR3s	_	0	root	_	_
+3	зелене	зелений	ADJ	ASA	_	4	amod	_	_
+4	яблуко	яблуко	NOUN	NSA	_	2	dobj	_	_
+
+</code></pre>
+
+<pre><code class="language-sdparse">Ігор взяв десятитисячну позику . \n Igor has taken a ten-thousand loan .
+amod(позику, десятитисячну)
+amod(loan, ten-thousand)
+</code></pre>
+
+<pre><code class="language-sdparse">Перший бігун був швидкий . \n First racer was fast .
+amod(бігун, Перший)
+amod(racer, First)
+nsubj(швидкий, бігун)
+nsubj(fast, racer)
+</code></pre>
+
+<pre><code class="language-sdparse">Швидкий бігун був перший . \n Fast racer was first .
+amod(бігун, Швидкий)
+amod(racer, Fast)
+nsubj(перший, бігун)
+nsubj(first, racer)
+</code></pre>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-dep/amod.md" target="#">edit amod</a></p>
 
@@ -466,8 +500,17 @@ for <code>nmod</code>.</p>
 <p><a id="al-uk-dep/nsubj" class="al-dest"></a></p>
 <h2><code>nsubj</code>: nominal subject</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>nsubj</code>.</p>
+<p>A nominal subject is a nominal phrase which is the syntactic subject of a clause; in Ukrainian, the phrase is in the nominative <a href="">uk-feat/Case</a>. (See <a href="">csubj</a> for when the subject is clausal. See <a href="">nsubjpass</a> and <a href="">csubjpass</a> for when the subject is not the proto-agent argument due to valence changing operations.) The governor of the <code>nsubj</code> relation might not always be a verb: when the verb is a copular verb, the root of the clause is the complement of the copular verb, which can be an adjective or noun. Copular verbs in the present tense are in most cases omitted in Ukrainian.</p>
+
+<pre><code class="language-sdparse">Заповіт написав Тарас Шевченко . \n The Will was written by Taras Shevchenko .
+nsubj(написав, Шевченко-4)
+nsubj(wrote, Shevchenko-13)
+</code></pre>
+
+<pre><code class="language-sdparse">Машина -- червона . \n Car is red .
+nsubj(червона, Машина)
+nsubj(red, Car)
+</code></pre>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-dep/nsubj.md" target="#">edit nsubj</a></p>
 
@@ -522,16 +565,55 @@ for <code>reparandum</code>.</p>
 <p><a id="al-uk-dep/root" class="al-dest"></a></p>
 <h2><code>root</code>: root</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>root</code>.</p>
+<p>The <code>root</code> grammatical relation points to the root of the sentence. A
+fake node <code>ROOT</code> is used as the governor. The <code>ROOT</code> node is indexed
+with 0, since the indexing of real words in the sentence starts at 1.</p>
+
+<pre><code class="language-sdparse">ROOT Макаревич любить макарони . \n ROOT Makarevych loves pasta .
+root(ROOT-1, любить)
+root(ROOT-7, loves)
+</code></pre>
+
+<p>There is just one node with the <code>root</code> dependency relation in every
+tree. If the main predicate is not present (due to
+<a href="http://universaldependencies.org/uk/overview/specific-syntax.html#ellipsis">ellipsis</a>)
+and there are
+multiple orphaned dependents, the leftmost dependent is promoted to
+the head (root) position and the other orphans are attached to it.</p>
+
+<p>An example sentence-like segment that lacks the main verb:
+_А вони що [роблять]? _
+“And what [do] they [do]?”</p>
+
+<pre><code class="language-sdparse">ROOT А вони що ? \n ROOT And they what ?
+root(ROOT-1, А)
+root(ROOT-6, And)
+nsubj(А, вони)
+nsubj(And, they)
+dobj(А, що)
+dobj(And, what)
+punct(А, ?-4)
+punct(And, ?-10)
+</code></pre>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-dep/root.md" target="#">edit root</a></p>
 
 <p><a id="al-uk-dep/vocative" class="al-dest"></a></p>
 <h2><code>vocative</code>: vocative</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>vocative</code>.</p>
+<p>The <code>vocative</code> relation is used to mark dialogue participant addressed in text.
+The relation links the addressee’s name to its host sentence.
+In Ukrainian, the addressee’s name must also appear in the vocative <a href="">uk-feat/Case</a> form.</p>
+
+<pre><code class="language-sdparse">Пане Президенте , скільки можна ? \n Mister President , you-should-stop-it !
+vocative(можна, Президенте)
+vocative(you-should-stop-it, President)
+</code></pre>
+
+<pre><code class="language-sdparse">Громадяни , ану в чергу ! \n Citizens , go to the-queue !
+vocative(ану, Громадяни)
+vocative(go, Citizens)
+</code></pre>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-dep/vocative.md" target="#">edit vocative</a></p>
 
@@ -555,6 +637,7 @@ for <code>xcomp</code>.</p>
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -586,11 +669,40 @@ for <code>xcomp</code>.</p>
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -614,6 +726,7 @@ for <code>xcomp</code>.</p>
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'uk-overview';
@@ -639,7 +752,7 @@ for <code>xcomp</code>.</p>
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

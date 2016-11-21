@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-da">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/da/pos">da/pos</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-da">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/da/pos">da/pos</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_da-pos/AUX_.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -86,7 +87,7 @@ Out of 17 observed tags, the rank of <code>AUX</code> is: 14 in number of lemmas
 
 <p>The 10 most frequent <code>AUX</code> types:  <em>er, har, kan, var, skal, vil, blev, være, kunne, havde</em></p>
 
-<p>The 10 most frequent ambiguous lemmas: <em>være</em> (<a href="">AUX</a> 2044, <a href="">VERB</a> 589), <em>have</em> (<a href="">AUX</a> 868, <a href="">VERB</a> 393, <a href="">NOUN</a> 5, <a href="">X</a> 1), <em>kunne</em> (<a href="">AUX</a> 646, <a href="">VERB</a> 22), <em>blive</em> (<a href="">AUX</a> 450, <a href="">VERB</a> 56), <em>skulle</em> (<a href="">AUX</a> 388, <a href="">VERB</a> 30), <em>ville</em> (<a href="">AUX</a> 340, <a href="">VERB</a> 22), <em>måtte</em> (<a href="">AUX</a> 143, <a href="">VERB</a> 9, <a href="">NOUN</a> 1, <a href="">X</a> 1), <em>turde</em> (<a href="">AUX</a> 12, <a href="">VERB</a> 3)</p>
+<p>The 10 most frequent ambiguous lemmas: <em>være</em> (<a href="">AUX</a> 2044, <a href="">VERB</a> 589), <em>have</em> (<a href="">AUX</a> 868, <a href="">VERB</a> 393, <a href="">NOUN</a> 5, <a href="">X</a> 1), <em>kunne</em> (<a href="">AUX</a> 646, <a href="">VERB</a> 22), <em>blive</em> (<a href="">AUX</a> 450, <a href="">VERB</a> 56), <em>skulle</em> (<a href="">AUX</a> 388, <a href="">VERB</a> 30), <em>ville</em> (<a href="">AUX</a> 340, <a href="">VERB</a> 22), <em>måtte</em> (<a href="">AUX</a> 143, <a href="">VERB</a> 9, <a href="">X</a> 1, <a href="">NOUN</a> 1), <em>turde</em> (<a href="">AUX</a> 12, <a href="">VERB</a> 3)</p>
 
 <p>The 10 most frequent ambiguous types:  <em>er</em> (<a href="">AUX</a> 1354, <a href="">VERB</a> 360), <em>har</em> (<a href="">AUX</a> 677, <a href="">VERB</a> 230, <a href="">X</a> 1), <em>kan</em> (<a href="">AUX</a> 459, <a href="">VERB</a> 12), <em>var</em> (<a href="">AUX</a> 399, <a href="">VERB</a> 129), <em>skal</em> (<a href="">AUX</a> 294, <a href="">VERB</a> 20), <em>vil</em> (<a href="">AUX</a> 254, <a href="">VERB</a> 18), <em>blev</em> (<a href="">AUX</a> 197, <a href="">VERB</a> 17), <em>være</em> (<a href="">AUX</a> 178, <a href="">VERB</a> 53), <em>kunne</em> (<a href="">AUX</a> 159, <a href="">VERB</a> 9), <em>havde</em> (<a href="">AUX</a> 133, <a href="">VERB</a> 62)</p>
 
@@ -249,6 +250,7 @@ AUX in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -280,11 +282,40 @@ AUX in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -308,6 +339,7 @@ AUX in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'da-pos';
@@ -333,7 +365,7 @@ AUX in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

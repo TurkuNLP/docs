@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-uk">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/uk/dep">uk/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-uk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/uk/dep">uk/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-dep/acl.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -45,6 +46,70 @@ for <code>acl</code>.</p>
 <!-- "automatic stats" -->
 
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udukrainian">Treebank Statistics (UD_Ukrainian)</h2>
+
+<p>This relation is universal.</p>
+
+<p>12 nodes (1%) are attached to their parents as <code>acl</code>.</p>
+
+<p>12 instances of <code>acl</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 4.75.</p>
+
+<p>The following 6 pairs of parts of speech are connected with <code>acl</code>: <a href="">uk-pos/PRON</a>-<a href="">uk-pos/VERB</a> (4; 33% instances), <a href="">uk-pos/DET</a>-<a href="">uk-pos/VERB</a> (3; 25% instances), <a href="">uk-pos/NOUN</a>-<a href="">uk-pos/ADV</a> (2; 17% instances), <a href="">uk-pos/NOUN</a>-<a href="">uk-pos/ADJ</a> (1; 8% instances), <a href="">uk-pos/NOUN</a>-<a href="">uk-pos/NOUN</a> (1; 8% instances), <a href="">uk-pos/NOUN</a>-<a href="">uk-pos/VERB</a> (1; 8% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 1 5 acl	color:blue
+1	Те	те	PRON	noun:inanim:n:v_naz:&amp;pron:dem	Animacy=Inan|Case=Nom|Gender=Neut|PronType=Dem	7	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	punct	_	1	punct	_	_
+3	про	про	ADP	prep:rv_zna	Case=Acc	4	case	_	_
+4	що	що	PRON	noun:inanim:n:v_zna:&amp;pron:rel	Animacy=Inan|Case=Acc|Gender=Neut|PronType=Rel	5	nmod	_	_
+5	розповідалося	розповідатися	VERB	verb:rev:imperf:past:n	Aspect=Imp|Gender=Neut|Mood=Ind|Tense=Past|VerbForm=Fin	1	acl	_	SpaceAfter=No
+6	,	,	PUNCT	punct	_	1	punct	_	_
+7	має	мати	VERB	verb:imperf:pres:s:3	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	сенс	сенс	NOUN	noun:inanim:m:v_zna	Animacy=Inan|Case=Acc|Gender=Masc	7	dobj	_	SpaceAfter=No
+9	.	.	PUNCT	punct	_	7	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 1 4 acl	color:blue
+1	Ті	той	DET	adj:p:v_naz:&amp;pron:dem	Case=Nom|Number=Plur|PronType=Dem	6	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	punct	_	4	punct	_	_
+3	хто	хто	PRON	noun:anim:m:v_naz:&amp;pron:rel	Animacy=Anim|Case=Nom|Gender=Masc|PronType=Rel	4	nsubj	_	_
+4	запізнився	запізнитися	VERB	verb:rev:perf:past:m	Aspect=Perf|Gender=Masc|Mood=Ind|Tense=Past|VerbForm=Fin	1	acl	_	SpaceAfter=No
+5	,	,	PUNCT	punct	_	4	punct	_	_
+6	мусять	мусити	VERB	verb:imperf:pres:p:3	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	чекати	чекати	VERB	verb:imperf:inf	Aspect=Imp|VerbForm=Inf	6	xcomp	_	SpaceAfter=No
+8	.	.	PUNCT	punct	_	6	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 1 4 acl	color:blue
+1	Випадок	випадок	NOUN	noun:inanim:m:v_naz	Animacy=Inan|Case=Nom|Gender=Masc	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	punct	_	1	punct	_	_
+3	який	який	DET	adj:m:v_naz:&amp;pron:rel	Case=Nom|Gender=Masc|PronType=Rel	5	mark	_	_
+4	треба	треба	ADV	adv	_	1	acl	_	_
+5	дослідити	дослідити	VERB	verb:perf:inf	Aspect=Perf|VerbForm=Inf	4	xcomp	_	SpaceAfter=No
+6	.	.	PUNCT	punct	_	1	punct	_	_
+
+</code></pre>
 
 
 
@@ -103,6 +168,7 @@ acl in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -134,11 +200,40 @@ acl in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -162,6 +257,7 @@ acl in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'uk-dep';
@@ -187,7 +283,7 @@ acl in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

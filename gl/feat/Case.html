@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-gl">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/gl/feat">gl/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-gl">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/gl/feat">gl/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_gl-feat/Case.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -44,6 +45,43 @@ for <code>Case</code>.</p>
 
 <!-- "automatic stats" -->
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udgalician-treegal">Treebank Statistics (UD_Galician-TreeGal)</h2>
+
+<p>This feature is universal.
+It occurs with 3 different values: <code>Acc</code>, <code>Dat</code>, <code>Nom</code>.</p>
+
+<p>254 tokens (1%) have a non-empty value of <code>Case</code>.
+21 types (0%) occur at least once with a non-empty value of <code>Case</code>.
+11 lemmas (0%) occur at least once with a non-empty value of <code>Case</code>.
+The feature is used with 1 part-of-speech tags: <a href="">gl-pos/PRON</a> (254; 1% instances).</p>
+
+<h3 id="pron"><code>PRON</code></h3>
+
+<p>254 <a href="">gl-pos/PRON</a> tokens (20% of all <code>PRON</code> tokens) have a non-empty value of <code>Case</code>.</p>
+
+<p>The most frequent other feature values with which <code>PRON</code> and <code>Case</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Clit</tt> (227; 89%), <tt><a href="Person.html">Person</a>=3</tt> (170; 67%), <tt><a href="Number.html">Number</a>=Sing</tt> (168; 66%).</p>
+
+<p><code>PRON</code> tokens may have the following values of <code>Case</code>:</p>
+
+<ul>
+  <li><code>Acc</code> (107; 42% of non-empty <code>Case</code>): <em>o, nos, lo, a, as, os, me, no, los, na</em></li>
+  <li><code>Dat</code> (120; 47% of non-empty <code>Case</code>): <em>lle, nos, lles, me, che</em></li>
+  <li><code>Nom</code> (27; 11% of non-empty <code>Case</code>): <em>eu, el, vostede, nós, ti, eles</em></li>
+  <li><code>EMPTY</code> (1037): <em>que, se, iso, quen, o, algo, todo, un, algúns, isto</em></li>
+</ul>
+
+<table>
+  <tr><th>Paradigm <i>nos</i></th><th><tt>Acc</tt></th><th><tt>Dat</tt></th></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc</tt></td><td><em>nos</em></td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Com</tt></td><td><em>nos</em></td><td><em>nos</em></td></tr>
+</table>
 
 
 
@@ -102,6 +140,7 @@ Case in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -133,11 +172,40 @@ Case in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -161,6 +229,7 @@ Case in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'gl-feat';
@@ -186,7 +255,7 @@ Case in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

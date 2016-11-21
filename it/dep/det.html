@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-it">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/it/dep">it/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-it">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/it/dep">it/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_it-dep/det.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -57,19 +58,19 @@ for <code>det</code>.</p>
 <p>This relation is universal.
 There are 2 language-specific subtypes of <code>det</code>: <a href="">det:poss</a>, <a href="">det:predet</a>.</p>
 
-<p>41578 nodes (15%) are attached to their parents as <code>det</code>.</p>
+<p>45276 nodes (15%) are attached to their parents as <code>det</code>.</p>
 
-<p>41564 instances of <code>det</code> (100%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.14868440040406.</p>
+<p>45262 instances of <code>det</code> (100%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.14433695556145.</p>
 
-<p>The following 11 pairs of parts of speech are connected with <code>det</code>: <a href="">it-pos/NOUN</a>-<a href="">it-pos/DET</a> (36540; 88% instances), <a href="">it-pos/PROPN</a>-<a href="">it-pos/DET</a> (3009; 7% instances), <a href="">it-pos/NUM</a>-<a href="">it-pos/DET</a> (838; 2% instances), <a href="">it-pos/PRON</a>-<a href="">it-pos/DET</a> (623; 1% instances), <a href="">it-pos/ADJ</a>-<a href="">it-pos/DET</a> (229; 1% instances), <a href="">it-pos/VERB</a>-<a href="">it-pos/DET</a> (153; 0% instances), <a href="">it-pos/SYM</a>-<a href="">it-pos/DET</a> (82; 0% instances), <a href="">it-pos/ADV</a>-<a href="">it-pos/DET</a> (58; 0% instances), <a href="">it-pos/ADP</a>-<a href="">it-pos/DET</a> (29; 0% instances), <a href="">it-pos/X</a>-<a href="">it-pos/DET</a> (11; 0% instances), <a href="">it-pos/PUNCT</a>-<a href="">it-pos/DET</a> (6; 0% instances).</p>
+<p>The following 11 pairs of parts of speech are connected with <code>det</code>: <a href="">it-pos/NOUN</a>-<a href="">it-pos/DET</a> (39792; 88% instances), <a href="">it-pos/PROPN</a>-<a href="">it-pos/DET</a> (3196; 7% instances), <a href="">it-pos/NUM</a>-<a href="">it-pos/DET</a> (1060; 2% instances), <a href="">it-pos/PRON</a>-<a href="">it-pos/DET</a> (679; 1% instances), <a href="">it-pos/ADJ</a>-<a href="">it-pos/DET</a> (189; 0% instances), <a href="">it-pos/VERB</a>-<a href="">it-pos/DET</a> (157; 0% instances), <a href="">it-pos/SYM</a>-<a href="">it-pos/DET</a> (83; 0% instances), <a href="">it-pos/ADV</a>-<a href="">it-pos/DET</a> (72; 0% instances), <a href="">it-pos/ADP</a>-<a href="">it-pos/DET</a> (29; 0% instances), <a href="">it-pos/X</a>-<a href="">it-pos/DET</a> (13; 0% instances), <a href="">it-pos/PUNCT</a>-<a href="">it-pos/DET</a> (6; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 2	bgColor:blue
 # visual-style 2	fgColor:white
 # visual-style 3	bgColor:blue
 # visual-style 3	fgColor:white
 # visual-style 3 2 det	color:blue
-1	Tutti	tutto	DET	T	Gender=Masc|Number=Plur	3	det:predet	_	_
+1	Tutti	tutto	DET	T	Gender=Masc|Number=Plur|PronType=Predet	3	det:predet	_	_
 2	gli	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 3	esseri	essere	NOUN	S	Gender=Masc|Number=Plur	5	nsubj	_	_
 4	umani	umano	ADJ	A	Gender=Masc|Number=Plur	3	amod	_	_
@@ -81,7 +82,7 @@ Average distance between parent and child is 1.14868440040406.</p>
 10	di	di	ADP	E	_	11	case	_	_
 11	ciò	ciò	PRON	PD	Gender=Masc|Number=Sing|PronType=Dem	9	nmod	_	_
 12	che	che	PRON	PR	PronType=Rel	13	nsubj	_	_
-13	sono	essere	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	_	_
+13	sono	essere	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	_	SpaceAfter=No
 14	.	.	PUNCT	FS	_	5	punct	_	_
 
 </code></pre>
@@ -96,7 +97,7 @@ Average distance between parent and child is 1.14868440040406.</p>
 3	partirono	partire	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 4	da	da	ADP	E	_	6	case	_	_
 5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	Quirinale	Quirinale	PROPN	SP	_	3	nmod	_	_
+6	Quirinale	Quirinale	PROPN	SP	_	3	nmod	_	SpaceAfter=No
 7	.	.	PUNCT	FS	_	3	punct	_	_
 
 </code></pre>
@@ -108,12 +109,12 @@ Average distance between parent and child is 1.14868440040406.</p>
 # visual-style 3 2 det	color:blue
 1	Da	da	ADP	E	_	3	case	_	_
 2	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-3	'93	'93	NUM	N	NumType=Card	4	nummod	_	_
+3	'93	'93	NUM	N	NumType=Card	4	nmod	_	_
 4	dirige	dirigere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	Festival	Festival	PROPN	SP	_	4	dobj	_	_
 7	di	di	ADP	E	_	8	case	_	_
-8	Taormina	Taormina	PROPN	SP	_	6	nmod	_	_
+8	Taormina	Taormina	PROPN	SP	_	6	nmod	_	SpaceAfter=No
 9	.	.	PUNCT	FS	_	4	punct	_	_
 
 </code></pre>
@@ -175,6 +176,7 @@ det in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -206,11 +208,40 @@ det in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -234,6 +265,7 @@ det in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'it-dep';
@@ -259,7 +291,7 @@ det in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

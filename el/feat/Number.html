@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-el">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/el/feat">el/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-el">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/el/feat">el/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-feat/Number.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -63,7 +64,7 @@ The feature is used with 7 part-of-speech tags: <a href="">el-pos/NOUN</a> (1400
 
 <h3 id="noun"><code>NOUN</code></h3>
 
-<p>14005 <a href="">el-pos/NOUN</a> tokens (92% of all <code>NOUN</code> tokens) have a non-empty value of <code>Number</code>.</p>
+<p>14005 <a href="">el-pos/NOUN</a> tokens (90% of all <code>NOUN</code> tokens) have a non-empty value of <code>Number</code>.</p>
 
 <p>The most frequent other feature values with which <code>NOUN</code> and <code>Number</code> co-occurred: <tt><a href="Gender.html">Gender</a>=Fem</tt> (7597; 54%).</p>
 
@@ -72,7 +73,7 @@ The feature is used with 7 part-of-speech tags: <a href="">el-pos/NOUN</a> (1400
 <ul>
   <li><code>Plur</code> (4078; 29% of non-empty <code>Number</code>): <em>χώρες, μέλη, χρόνια, κράτη, αρχές, δυνάμεις, άτομα, ομάδες, πολιτών, Εξωτερικών</em></li>
   <li><code>Sing</code> (9927; 71% of non-empty <code>Number</code>): <em>επιτροπή, κοινοβούλιο, Συμβούλιο, ένωση, επιτροπής, έκθεση, κυβέρνηση, Ελλάδα, χώρα, ευρώ</em></li>
-  <li><code>EMPTY</code> (1252): <em>αλ, Κάστρο, σκορ, Αφγανιστάν, Ουάσιγκτον, Σαντόρουμ, Μιτ, Ομπάμα, Ρικ, Ρόμνεϊ</em></li>
+  <li><code>EMPTY</code> (1598): <em>ΗΠΑ, κ., ΕΕ, αλ, χλμ., Κάστρο, σκορ, Αφγανιστάν, Ουάσιγκτον, ΟΗΕ</em></li>
 </ul>
 
 <table>
@@ -86,7 +87,7 @@ The feature is used with 7 part-of-speech tags: <a href="">el-pos/NOUN</a> (1400
 
 <p>9465 <a href="">el-pos/DET</a> tokens (100% of all <code>DET</code> tokens) have a non-empty value of <code>Number</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>Number</code> co-occurred: <tt><a href="Definite.html">Definite</a>=Def</tt> (9017; 95%), <tt><a href="Gender.html">Gender</a>=Fem</tt> (5108; 54%).</p>
+<p>The most frequent other feature values with which <code>DET</code> and <code>Number</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Art</tt> (9465; 100%), <tt><a href="Definite.html">Definite</a>=Def</tt> (9017; 95%), <tt><a href="Gender.html">Gender</a>=Fem</tt> (5108; 54%).</p>
 
 <p><code>DET</code> tokens may have the following values of <code>Number</code>:</p>
 
@@ -208,7 +209,7 @@ The feature is used with 7 part-of-speech tags: <a href="">el-pos/NOUN</a> (1400
 
 <p>495 <a href="">el-pos/NUM</a> tokens (52% of all <code>NUM</code> tokens) have a non-empty value of <code>Number</code>.</p>
 
-<p>The most frequent other feature values with which <code>NUM</code> and <code>Number</code> co-occurred: <tt><a href="Case.html">Case</a>=Acc</tt> (262; 53%).</p>
+<p>The most frequent other feature values with which <code>NUM</code> and <code>Number</code> co-occurred: <tt><a href="NumType.html">NumType</a>=Card</tt> (297; 60%), <tt><a href="Case.html">Case</a>=Acc</tt> (262; 53%).</p>
 
 <p><code>NUM</code> tokens may have the following values of <code>Number</code>:</p>
 
@@ -235,15 +236,15 @@ The feature is used with 7 part-of-speech tags: <a href="">el-pos/NOUN</a> (1400
 <h2 id="relations-with-agreement-in-number">Relations with Agreement in <code>Number</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>Number</code>:
-<tt>NOUN –[<a href="../dep/det.html">det</a>]–&gt; DET</tt> (8027; 93%),
+<tt>NOUN –[<a href="../dep/det.html">det</a>]–&gt; DET</tt> (8027; 91%),
 <tt>NOUN –[<a href="../dep/amod.html">amod</a>]–&gt; ADJ</tt> (3789; 98%),
 <tt>NOUN –[<a href="../dep/nmod.html">nmod</a>]–&gt; NOUN</tt> (3036; 58%),
-<tt>VERB –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; NOUN</tt> (1821; 86%),
-<tt>NOUN –[<a href="../dep/conj.html">conj</a>]–&gt; NOUN</tt> (788; 78%),
+<tt>VERB –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; NOUN</tt> (1821; 84%),
+<tt>NOUN –[<a href="../dep/conj.html">conj</a>]–&gt; NOUN</tt> (788; 76%),
 <tt>VERB –[<a href="../dep/ccomp.html">ccomp</a>]–&gt; VERB</tt> (646; 73%),
 <tt>VERB –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; PRON</tt> (615; 91%),
 <tt>NOUN –[<a href="../dep/nmod.html">nmod</a>]–&gt; PRON</tt> (575; 67%),
-<tt>NOUN –[<a href="../dep/acl:relcl.html">acl:relcl</a>]–&gt; VERB</tt> (530; 76%),
+<tt>NOUN –[<a href="../dep/acl:relcl.html">acl:relcl</a>]–&gt; VERB</tt> (530; 75%),
 <tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (420; 75%).</p>
 
 
@@ -303,6 +304,7 @@ Number in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -334,11 +336,40 @@ Number in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -362,6 +393,7 @@ Number in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'el-feat';
@@ -387,7 +419,7 @@ Number in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

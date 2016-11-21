@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-pt">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/pt/dep">pt/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-pt">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/pt/dep">pt/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/conj.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,8 +39,129 @@
 
           <h2><code>conj</code>: conjunct</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>conj</code>.</p>
+<p>A conjunct is the relation between two elements connected by a
+coordinating conjunction, such as <em>e, ou, mas</em> etc.  We treat
+conjunctions asymmetrically: The head of the relation is the first
+conjunct and all the other conjuncts depend on it via the <code>conj</code> relation.</p>
+
+<pre><code class="language-sdparse">Palmeiras e Corinthians treinam hoje
+conj(Palmeiras, Corinthians)
+</code></pre>
+
+<pre><code class="language-sdparse">Aqui era o quarto pobre , simples , limpo e acolhedor.
+amod(quarto, pobre)
+conj(pobre, simples)
+conj(pobre, limpo)
+conj(pobre, acolhedor)
+cc(pobre, e)
+</code></pre>
+
+<p>Coordinate clauses are treated the same way as coordination of other constituent types:</p>
+
+<pre><code class="language-sdparse">Ronaldo tomou conhecimento da pesquisa e procurou Belluzzo.&gt;
+He came home , took a shower and immediately went to bed .
+conj(tomou, procurou)
+punct(tomou, .)
+cc(tomou, e)
+</code></pre>
+
+<p>Coordination may be <em>asyndetic,</em> which means that the coordinating conjunction is omitted.
+Commas or other punctuation symbols will delimit the conjuncts in the typical case.</p>
+
+<pre><code class="language-sdparse">O tom familiar , coloquial , benigno de suas crônicas foi pouco a pouco vencendo as resistências do público .
+conj(familiar, coloquial)
+conj(familiar, benigno)
+punct(familiar, ,-4)
+punct(familiar, ,-6)
+</code></pre>
+<!--
+### Shared Dependents and Effective Parents in Coordination
+
+Note that the current basic annotation scheme cannot distinguish between a dependent of the first conjunct
+and a shared dependent of the whole coordination:
+
+~~~ sdparse
+He met her at the station and kissed her .
+conj(met, kissed)
+nsubj(met, He)
+~~~
+
+vs.
+
+~~~ sdparse
+He met her at the station and she kissed him .
+conj(met, kissed)
+nsubj(met, He)
+nsubj(kissed, she)
+~~~
+
+In contrast, the additional dependencies in the enhanced representation
+can be used to encode the fact that in the first case, _he_ is also subject of _kissed:_
+
+~~~ sdparse
+He met her at the station and kissed her .
+conj(met, kissed)
+nsubj(met, He)
+nsubj(kissed, He)
+~~~
+
+Furthermore, the enhanced representation can also capture the relation of each conjunct
+to the parent of the coordination. Nevertheless, the effective parents can be found
+algorithmically and showing them explicitly is for convenience only, while
+the information about shared dependents is otherwise not available.
+
+~~~ sdparse
+I saw that he met her at the station and kissed her .
+conj(met, kissed)
+nsubj(met, he)
+nsubj(kissed, he)
+ccomp(saw, met)
+ccomp(saw, kissed)
+~~~
+
+If a dependent is shared among conjuncts, the basic representation always links it to the
+first conjunct (coordination head).
+Relations to the other conjuncts are in the enhanced representation.
+In the following example, enhanced dependencies are shown in red:
+
+~~~ conllu
+# visual-style 6 1 amod color:red
+# visual-style 4 3 amod color:red
+# visual-style 6 3 amod color:red
+1 American   _ _ _ _ 4 amod 6:amod        _
+2 and        _ _ _ _ 1 cc   _             _
+3 British    _ _ _ _ 1 conj 4:amod|6:amod _
+4 professors _ _ _ _ 0 root _             _
+5 and        _ _ _ _ 4 cc   _             _
+6 students   _ _ _ _ 4 conj 0:root        _
+~~~
+
+### Nested Coordination
+
+Note further that the current annotation scheme has only a limited capability to capture nested coordination
+such as _apples and pears or oranges and lemons._
+Consider coordinations
+
+* A, B, C
+* (A, B), C
+* A, (B, C)
+
+The first two cases, i.e. (A, B, C) and ((A, B), C), lead to the same tree:
+
+~~~ sdparse
+A B C
+conj(A, B)
+conj(A, C)
+~~~
+
+Only the right-nesting case (A, (B, C)) can be distinguished because its tree is different:
+
+~~~ sdparse
+A B C
+conj(B, C)
+conj(A, B)
+~~~
+-->
 
 
 <!-- "automatic stats" -->
@@ -52,16 +174,16 @@ for <code>conj</code>.</p>
 
 <hr />
 
-<h2 id="treebank-statistics">Treebank Statistics</h2>
+<h2 id="treebank-statistics-udportuguese">Treebank Statistics (UD_Portuguese)</h2>
 
 <p>This relation is universal.</p>
 
-<p>6575 nodes (3%) are attached to their parents as <code>conj</code>.</p>
+<p>6650 nodes (3%) are attached to their parents as <code>conj</code>.</p>
 
-<p>6575 instances of <code>conj</code> (100%) are left-to-right (parent precedes child).
-Average distance between parent and child is 7.29444866920152.</p>
+<p>6649 instances of <code>conj</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 7.82842105263158.</p>
 
-<p>The following 63 pairs of parts of speech are connected with <code>conj</code>: <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/NOUN</a> (2228; 34% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/VERB</a> (1481; 23% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/PROPN</a> (1135; 17% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/ADJ</a> (379; 6% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/VERB</a> (139; 2% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/VERB</a> (132; 2% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/NOUN</a> (113; 2% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/NUM</a> (106; 2% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/PROPN</a> (100; 2% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NOUN</a> (84; 1% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/NOUN</a> (76; 1% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADJ</a> (75; 1% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/ADJ</a> (69; 1% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/ADV</a> (46; 1% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/ADV</a> (39; 1% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/PRON</a> (38; 1% instances), <a href="">pt-pos/AUX</a>-<a href="">pt-pos/AUX</a> (32; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADV</a> (30; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/NOUN</a> (29; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PRON</a> (20; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/NUM</a> (18; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/PRON</a> (18; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/NOUN</a> (15; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PROPN</a> (14; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/VERB</a> (13; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/ADV</a> (12; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/ADV</a> (11; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/PRON</a> (9; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/PRON</a> (9; 0% instances), <a href="">pt-pos/SYM</a>-<a href="">pt-pos/SYM</a> (9; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/PRON</a> (8; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/VERB</a> (7; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/PROPN</a> (7; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/VERB</a> (6; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/PROPN</a> (5; 0% instances), <a href="">pt-pos/ADP</a>-<a href="">pt-pos/ADP</a> (5; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/PROPN</a> (5; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/NOUN</a> (5; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/PRON</a> (4; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/VERB</a> (4; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NUM</a> (4; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/ADJ</a> (3; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/NOUN</a> (3; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/PROPN</a> (3; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/PRON</a> (3; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/ADJ</a> (2; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/NUM</a> (2; 0% instances), <a href="">pt-pos/INTJ</a>-<a href="">pt-pos/INTJ</a> (2; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/ADJ</a> (2; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/ADV</a> (2; 0% instances), <a href="">pt-pos/SCONJ</a>-<a href="">pt-pos/VERB</a> (2; 0% instances), <a href="">pt-pos/ADP</a>-<a href="">pt-pos/ADV</a> (1; 0% instances), <a href="">pt-pos/ADP</a>-<a href="">pt-pos/AUX</a> (1; 0% instances), <a href="">pt-pos/ADP</a>-<a href="">pt-pos/NOUN</a> (1; 0% instances), <a href="">pt-pos/ADP</a>-<a href="">pt-pos/VERB</a> (1; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/ADP</a> (1; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/SYM</a> (1; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/ADJ</a> (1; 0% instances), <a href="">pt-pos/PART</a>-<a href="">pt-pos/NOUN</a> (1; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/ADJ</a> (1; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/NUM</a> (1; 0% instances), <a href="">pt-pos/SYM</a>-<a href="">pt-pos/NOUN</a> (1; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/X</a> (1; 0% instances).</p>
+<p>The following 75 pairs of parts of speech are connected with <code>conj</code>: <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/NOUN</a> (2195; 33% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/VERB</a> (1509; 23% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/PROPN</a> (1235; 19% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/ADJ</a> (379; 6% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/VERB</a> (140; 2% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/VERB</a> (134; 2% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/NOUN</a> (114; 2% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/NUM</a> (102; 2% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/PROPN</a> (98; 1% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NOUN</a> (88; 1% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/NOUN</a> (77; 1% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADJ</a> (76; 1% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/ADJ</a> (68; 1% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/PRON</a> (37; 1% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/ADV</a> (30; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/ADV</a> (29; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/NOUN</a> (22; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADV</a> (22; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PRON</a> (20; 0% instances), <a href="">pt-pos/SYM</a>-<a href="">pt-pos/SYM</a> (19; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/NOUN</a> (18; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/NUM</a> (17; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/PRON</a> (17; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/VERB</a> (13; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PROPN</a> (13; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/ADV</a> (12; 0% instances), <a href="">pt-pos/ADP</a>-<a href="">pt-pos/NOUN</a> (11; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/PRON</a> (9; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/ADV</a> (9; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/PROPN</a> (8; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/PROPN</a> (8; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/PRON</a> (7; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/PRON</a> (7; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/PROPN</a> (7; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/NUM</a> (7; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/VERB</a> (6; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/SYM</a> (5; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/PROPN</a> (4; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/VERB</a> (4; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/DET</a> (4; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/NOUN</a> (4; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/VERB</a> (4; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NUM</a> (4; 0% instances), <a href="">pt-pos/ADP</a>-<a href="">pt-pos/VERB</a> (3; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/PRON</a> (3; 0% instances), <a href="">pt-pos/AUX</a>-<a href="">pt-pos/VERB</a> (3; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/ADJ</a> (3; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/ADV</a> (3; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/ADP</a> (3; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/NOUN</a> (3; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/ADJ</a> (3; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADP</a> (3; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/ADJ</a> (2; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/PROPN</a> (2; 0% instances), <a href="">pt-pos/INTJ</a>-<a href="">pt-pos/INTJ</a> (2; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/ADJ</a> (2; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/DET</a> (2; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/PRON</a> (2; 0% instances), <a href="">pt-pos/SCONJ</a>-<a href="">pt-pos/VERB</a> (2; 0% instances), <a href="">pt-pos/SYM</a>-<a href="">pt-pos/NOUN</a> (2; 0% instances), <a href="">pt-pos/ADP</a>-<a href="">pt-pos/ADV</a> (1; 0% instances), <a href="">pt-pos/ADP</a>-<a href="">pt-pos/PRON</a> (1; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/ADP</a> (1; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/DET</a> (1; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/NUM</a> (1; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/NUM</a> (1; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/DET</a> (1; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/ADJ</a> (1; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/DET</a> (1; 0% instances), <a href="">pt-pos/PART</a>-<a href="">pt-pos/NOUN</a> (1; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/ADV</a> (1; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/X</a> (1; 0% instances), <a href="">pt-pos/SYM</a>-<a href="">pt-pos/ADV</a> (1; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/CONJ</a> (1; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/X</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 5	bgColor:blue
 # visual-style 5	fgColor:white
@@ -108,8 +230,149 @@ Average distance between parent and child is 7.29444866920152.</p>
 5	Curica	Curica	PROPN	prop|M|S	Gender=Masc|Number=Sing	3	nmod	_	_
 6	e	e	CONJ	conj-c|&lt;co-postnom&gt;	_	5	cc	_	_
 7	de	de	ADP	prp	AdpType=Prep	8	case	_	_
-8	Floriano_Graça	Floriano_Graça	PROPN	prop|M|S	Gender=Masc|Number=Sing	5	conj	_	_
-9	.	.	PUNCT	punc	_	3	punct	_	_
+8	Floriano	Floriano	PROPN	prop|M|S	_	5	conj	_	MWE=Floriano_Graça|MWEPOS=PROPN
+9	Graça	Graça	PROPN	PROPN	_	8	name	_	_
+10	.	.	PUNCT	punc	_	3	punct	_	_
+
+</code></pre>
+
+<hr />
+
+<h2 id="treebank-statistics-udportuguese-bosque">Treebank Statistics (UD_Portuguese-Bosque)</h2>
+
+<p>This relation is universal.</p>
+
+<p>5348 nodes (2%) are attached to their parents as <code>conj</code>.</p>
+
+<p>5342 instances of <code>conj</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 8.27916978309648.</p>
+
+<p>The following 66 pairs of parts of speech are connected with <code>conj</code>: <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/NOUN</a> (2001; 37% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/VERB</a> (1356; 25% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/PROPN</a> (521; 10% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/ADJ</a> (351; 7% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/VERB</a> (140; 3% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/VERB</a> (128; 2% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/NOUN</a> (105; 2% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/NUM</a> (104; 2% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/PROPN</a> (86; 2% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/NOUN</a> (75; 1% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NOUN</a> (65; 1% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/ADJ</a> (56; 1% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADJ</a> (46; 1% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/PRON</a> (31; 1% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/ADV</a> (20; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/NUM</a> (17; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/VERB</a> (16; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PRON</a> (16; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/NOUN</a> (15; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/PRON</a> (13; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/NOUN</a> (12; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/VERB</a> (12; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/VERB</a> (10; 0% instances), <a href="">pt-pos/SCONJ</a>-<a href="">pt-pos/NOUN</a> (10; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/ADV</a> (8; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/PRON</a> (8; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/DET</a> (7; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/ADV</a> (7; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/NOUN</a> (7; 0% instances), <a href="">pt-pos/SYM</a>-<a href="">pt-pos/SYM</a> (7; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADP</a> (7; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/DET</a> (6; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/VERB</a> (6; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PROPN</a> (6; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/DET</a> (5; 0% instances), <a href="">pt-pos/SCONJ</a>-<a href="">pt-pos/VERB</a> (5; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADV</a> (5; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/NOUN</a> (4; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/DET</a> (4; 0% instances), <a href="">pt-pos/SCONJ</a>-<a href="">pt-pos/ADV</a> (4; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/ADJ</a> (3; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/PROPN</a> (3; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/ADP</a> (3; 0% instances), <a href="">pt-pos/SYM</a>-<a href="">pt-pos/NOUN</a> (3; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NUM</a> (3; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/PROPN</a> (2; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/PRON</a> (2; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/ADJ</a> (2; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/ADV</a> (2; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/ADJ</a> (2; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/PRON</a> (2; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/PROPN</a> (2; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/PROPN</a> (2; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/DET</a> (2; 0% instances), <a href="">pt-pos/SCONJ</a>-<a href="">pt-pos/ADJ</a> (2; 0% instances), <a href="">pt-pos/ADP</a>-<a href="">pt-pos/VERB</a> (1; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/CONJ</a> (1; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/NUM</a> (1; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/SYM</a> (1; 0% instances), <a href="">pt-pos/PART</a>-<a href="">pt-pos/NOUN</a> (1; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/ADJ</a> (1; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/ADP</a> (1; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/ADV</a> (1; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/PRON</a> (1; 0% instances), <a href="">pt-pos/SYM</a>-<a href="">pt-pos/PROPN</a> (1; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/AUX</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 7 conj	color:blue
+1	É	ser	VERB	&lt;mv&gt;|&lt;first-cjt&gt;|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
+2	um	um	DET	&lt;arti&gt;|ART|M|S|@&gt;N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	continente	continente	NOUN	&lt;np-idf&gt;|N|M|S|@&lt;SC	Gender=Masc|Number=Sing	0	root	_	_
+4	e	e	CONJ	&lt;co-fcl&gt;|&lt;co-fmc&gt;|&lt;co-vfin&gt;|KC|@CO	_	3	cc	_	_
+5	é	ser	VERB	&lt;mv&gt;|&lt;cjt&gt;|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
+6	um	um	DET	&lt;arti&gt;|ART|M|S|@&gt;N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	país	país	NOUN	&lt;np-idf&gt;|N|M|S|@&lt;SC	Gender=Masc|Number=Sing	3	conj	_	_
+8	de	de	ADP	PRP|@N&lt;	_	9	case	_	_
+9	Terceiro	Terceiro	PROPN	PROP|M|S|@P&lt;	Gender=Masc|Number=Sing	7	nmod	_	MWE:Terceiro=Mundo
+10	Mundo	Mundo	PROPN	PROP|@N&lt;	Number=Sing	9	name	_	_
+11	.	.	PUNCT	PU|@PU	_	3	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 7 conj	color:blue
+1	Depois	depois	ADV	ADV|@ADVL&gt;	_	2	advmod	_	_
+2	rasgou-	rasgar	VERB	&lt;mv&gt;|&lt;first-cjt&gt;|&lt;hyphen&gt;|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+3	lhe	ela	PRON	PERS|F|3S|DAT|@&lt;DAT	Case=Dat|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	iobj	_	_
+4	a	o	DET	&lt;artd&gt;|ART|F|S|@&gt;N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	roupa	roupa	NOUN	&lt;np-def&gt;|N|F|S|@&lt;ACC	Gender=Fem|Number=Sing	2	dobj	_	_
+6	e	e	CONJ	&lt;co-fcl&gt;|&lt;co-fmc&gt;|&lt;co-vfin&gt;|KC|@CO	_	2	cc	_	_
+7	tentou	tentar	VERB	&lt;mv&gt;|&lt;cjt&gt;|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
+8	consumar	consumar	VERB	&lt;mv&gt;|V|INF|@ICL-&lt;ACC	VerbForm=Inf	7	xcomp	_	_
+9	a	o	DET	&lt;artd&gt;|ART|F|S|@&gt;N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	violação	violação	NOUN	&lt;np-def&gt;|N|F|S|@&lt;ACC	Gender=Fem|Number=Sing	8	dobj	_	_
+11	.	.	PUNCT	PU|@PU	_	2	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 5 conj	color:blue
+1	A	o	DET	&lt;artd&gt;|ART|F|S|@&gt;N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	Otker	Otker	PROPN	&lt;first-cjt&gt;|PROP|F|S|@SUBJ&gt;	Gender=Fem|Number=Sing	7	nsubj	_	_
+3	e	e	CONJ	&lt;co-subj&gt;|KC|@CO	_	2	cc	_	_
+4	a	o	DET	&lt;artd&gt;|ART|F|S|@&gt;N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	Somel	Somel	PROPN	&lt;cjt&gt;|PROP|F|S|@SUBJ&gt;	Gender=Fem|Number=Sing	2	conj	_	_
+6	vão	ir	AUX	&lt;aux&gt;|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
+7	pedir	pedir	VERB	&lt;mv&gt;|V|INF|@ICL-AUX&lt;	VerbForm=Inf	0	root	_	_
+8	contraprova	contraprova	NOUN	&lt;np-idf&gt;|N|F|S|@&lt;ACC	Gender=Fem|Number=Sing	7	dobj	_	_
+9	.	.	PUNCT	PU|@PU	_	7	punct	_	_
+
+</code></pre>
+
+<hr />
+
+<h2 id="treebank-statistics-udportuguese-br">Treebank Statistics (UD_Portuguese-BR)</h2>
+
+<p>This relation is universal.</p>
+
+<p>10288 nodes (3%) are attached to their parents as <code>conj</code>.</p>
+
+<p>10288 instances of <code>conj</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 7.50651244167963.</p>
+
+<p>The following 77 pairs of parts of speech are connected with <code>conj</code>: <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/NOUN</a> (3363; 33% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/VERB</a> (2888; 28% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/PROPN</a> (2156; 21% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/ADJ</a> (400; 4% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/NUM</a> (254; 2% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/NOUN</a> (202; 2% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/VERB</a> (178; 2% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NOUN</a> (150; 1% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/PROPN</a> (143; 1% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/NOUN</a> (70; 1% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PROPN</a> (28; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/PRON</a> (27; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/ADV</a> (26; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PRON</a> (26; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/ADJ</a> (25; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/PROPN</a> (25; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/PART</a> (21; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/PRON</a> (21; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/VERB</a> (21; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/VERB</a> (17; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/NUM</a> (16; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/NOUN</a> (16; 0% instances), <a href="">pt-pos/PART</a>-<a href="">pt-pos/NOUN</a> (15; 0% instances), <a href="">pt-pos/PART</a>-<a href="">pt-pos/PART</a> (15; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADV</a> (14; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/X</a> (12; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/NOUN</a> (11; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NUM</a> (11; 0% instances), <a href="">pt-pos/X</a>-<a href="">pt-pos/X</a> (10; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/VERB</a> (9; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/PART</a> (8; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/ADV</a> (7; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/PRON</a> (6; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/X</a> (6; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADJ</a> (6; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/ADV</a> (5; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/NOUN</a> (5; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/DET</a> (4; 0% instances), <a href="">pt-pos/ADP</a>-<a href="">pt-pos/NOUN</a> (3; 0% instances), <a href="">pt-pos/ADP</a>-<a href="">pt-pos/PROPN</a> (3; 0% instances), <a href="">pt-pos/CONJ</a>-<a href="">pt-pos/CONJ</a> (3; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/CONJ</a> (3; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/VERB</a> (3; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/ADV</a> (3; 0% instances), <a href="">pt-pos/X</a>-<a href="">pt-pos/NOUN</a> (3; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/PART</a> (2; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/PROPN</a> (2; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/X</a> (2; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/PROPN</a> (2; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/VERB</a> (2; 0% instances), <a href="">pt-pos/AUX</a>-<a href="">pt-pos/AUX</a> (2; 0% instances), <a href="">pt-pos/CONJ</a>-<a href="">pt-pos/PROPN</a> (2; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/NOUN</a> (2; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/ADV</a> (2; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/CONJ</a> (2; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/PRON</a> (2; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/PROPN</a> (2; 0% instances), <a href="">pt-pos/PART</a>-<a href="">pt-pos/ADJ</a> (2; 0% instances), <a href="">pt-pos/PART</a>-<a href="">pt-pos/PROPN</a> (2; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/CONJ</a> (2; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/NUM</a> (2; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/CONJ</a> (2; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/X</a> (2; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/NUM</a> (1; 0% instances), <a href="">pt-pos/ADP</a>-<a href="">pt-pos/VERB</a> (1; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/NUM</a> (1; 0% instances), <a href="">pt-pos/AUX</a>-<a href="">pt-pos/ADV</a> (1; 0% instances), <a href="">pt-pos/AUX</a>-<a href="">pt-pos/NUM</a> (1; 0% instances), <a href="">pt-pos/AUX</a>-<a href="">pt-pos/VERB</a> (1; 0% instances), <a href="">pt-pos/CONJ</a>-<a href="">pt-pos/NOUN</a> (1; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/ADJ</a> (1; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/DET</a> (1; 0% instances), <a href="">pt-pos/PART</a>-<a href="">pt-pos/VERB</a> (1; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/ADJ</a> (1; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/AUX</a> (1; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PART</a> (1; 0% instances), <a href="">pt-pos/X</a>-<a href="">pt-pos/PROPN</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 6 conj	color:blue
+1	O	_	DET	DET	_	2	det	_	_
+2	colo	_	NOUN	NOUN	_	3	nsubj	_	_
+3	traz	_	VERB	VERB	_	0	root	_	_
+4	aproximação	_	NOUN	NOUN	_	3	dobj	_	_
+5	,	_	PUNCT	.	_	4	punct	_	_
+6	afeto	_	NOUN	NOUN	_	4	conj	_	_
+7	,	_	PUNCT	.	_	4	punct	_	_
+8	amparo	_	NOUN	NOUN	_	4	conj	_	_
+9	.	_	PUNCT	.	_	3	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 13	bgColor:blue
+# visual-style 13	fgColor:white
+# visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 7 13 conj	color:blue
+1	Dois	_	NUM	NUM	NumType=Card	2	nummod	_	_
+2	anos	_	NOUN	NOUN	_	3	nmod	_	_
+3	depois	_	ADV	ADV	_	7	advmod	_	_
+4	,	_	PUNCT	.	_	3	punct	_	_
+5	ele	_	PRON	PRON	_	7	nsubjpass	_	_
+6	foi	_	AUX	AUX	_	7	auxpass	_	_
+7	preso	_	VERB	VERB	_	0	root	_	_
+8	--	_	PUNCT	.	_	7	punct	_	_
+9	e	_	CONJ	CONJ	_	7	cc	_	_
+10	eu	_	PRON	PRON	_	13	nsubj	_	_
+11	nunca	_	ADV	ADV	_	13	advmod	_	_
+12	o	_	PRON	PRON	_	13	dobj	_	_
+13	vi	_	VERB	VERB	_	7	conj	_	_
+14	novamente	_	ADV	ADV	_	13	advmod	_	_
+15	.	_	PUNCT	.	_	7	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 7 conj	color:blue
+1	Com	_	ADP	ADP	_	3	case	_	_
+2	menor	_	ADJ	ADJ	_	3	amod	_	_
+3	índice	_	NOUN	NOUN	_	5	nmod	_	_
+4	,	_	PUNCT	.	_	3	punct	_	_
+5	Piauí	_	PROPN	PNOUN	_	0	root	_	_
+6	,	_	PUNCT	.	_	5	punct	_	_
+7	Santa	_	PROPN	PNOUN	_	5	conj	_	_
+8	Catarina	_	PROPN	PNOUN	_	7	name	_	_
+9	e	_	CONJ	CONJ	_	5	cc	_	_
+10	Alagoas	_	PROPN	PNOUN	_	5	conj	_	_
+11	.	_	PUNCT	.	_	5	punct	_	_
 
 </code></pre>
 
@@ -170,6 +433,7 @@ conj in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -201,11 +465,40 @@ conj in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -229,6 +522,7 @@ conj in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'pt-dep';
@@ -254,7 +548,7 @@ conj in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

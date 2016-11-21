@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-fa">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-fa">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -251,6 +252,7 @@ in two places.</p>
 
 <ul>
   <li><a href="">acl</a>: clausal modifier of noun</li>
+  <li><a href="">acl:relcl</a>: acl:relcl</li>
   <li><a href="">advcl</a>: adverbial clause modifier</li>
   <li><a href="">advmod</a>: adverbial modifier</li>
   <li><a href="">amod</a>: adjectival modifier</li>
@@ -259,14 +261,18 @@ in two places.</p>
   <li><a href="">auxpass</a>: passive auxiliary</li>
   <li><a href="">case</a>: case marking</li>
   <li><a href="">cc</a>: coordinating conjunction</li>
+  <li><a href="">cc:preconj</a>: cc:preconj</li>
   <li><a href="">ccomp</a>: clausal complement</li>
   <li><a href="">compound</a>: compound</li>
+  <li><a href="">compound:lvc</a>: compound:lvc</li>
+  <li><a href="">compound:prt</a>: compound:prt</li>
   <li><a href="">conj</a>: conjunct</li>
   <li><a href="">cop</a>: copula</li>
   <li><a href="">csubj</a>: clausal subject</li>
   <li><a href="">csubjpass</a>: clausal passive subject</li>
   <li><a href="">dep</a>: unspecified dependency</li>
   <li><a href="">det</a>: determiner</li>
+  <li><a href="">det:predet</a>: det:predet</li>
   <li><a href="">discourse</a>: discourse element</li>
   <li><a href="">dislocated</a>: dislocated elements</li>
   <li><a href="">dobj</a>: direct object</li>
@@ -280,7 +286,9 @@ in two places.</p>
   <li><a href="">name</a>: name</li>
   <li><a href="">neg</a>: negation modifier</li>
   <li><a href="">nmod</a>: nominal modifier</li>
+  <li><a href="">nmod:poss</a>: nmod:poss</li>
   <li><a href="">nsubj</a>: nominal subject</li>
+  <li><a href="">nsubj:nc</a>: nsubj:nc</li>
   <li><a href="">nsubjpass</a>: passive nominal subject</li>
   <li><a href="">nummod</a>: numeric modifier</li>
   <li><a href="">parataxis</a>: parataxis</li>
@@ -303,6 +311,7 @@ in two places.</p>
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -334,11 +343,40 @@ in two places.</p>
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -362,6 +400,7 @@ in two places.</p>
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'fa-overview';
@@ -387,7 +426,7 @@ in two places.</p>
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-fr">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/fr/dep">fr/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-fr">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/fr/dep">fr/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fr-dep/dislocated.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -45,7 +46,7 @@ sentence. Dislocated elements are attached to the same governor as the dependent
 <p>This construction is quite frequent is spoken French. It has not been yet annotated in the French treebank.</p>
 
 <pre><code class="language-sdparse">Pierre je ne l' aime pas beaucoup  \n Peter I don't like him much
-dislocated(l', Pierre)
+dislocated(aime, Pierre)
 dobj(aime, l')
 </code></pre>
 
@@ -53,6 +54,44 @@ dobj(aime, l')
 <!-- "automatic stats" -->
 
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udfrench">Treebank Statistics (UD_French)</h2>
+
+<p>This relation is universal.</p>
+
+<p>2 nodes (0%) are attached to their parents as <code>dislocated</code>.</p>
+
+<p>2 instances of <code>dislocated</code> (100%) are right-to-left (child precedes parent).
+Average distance between parent and child is 3.</p>
+
+<p>The following 1 pairs of parts of speech are connected with <code>dislocated</code>: <a href="">fr-pos/VERB</a>-<a href="">fr-pos/PRON</a> (2; 100% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 6 3 dislocated	color:blue
+1	Salut	salut	INTJ	_	_	6	discourse	_	_
+2	,	,	PUNCT	_	_	6	punct	_	_
+3	moi	soi	PRON	_	Number=Sing|Person=1	6	dislocated	_	_
+4	j'	je	PRON	_	Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_
+5	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	aux	_	_
+6	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+7	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	intervention	intervention	NOUN	_	Gender=Fem|Number=Sing	6	dobj	_	_
+9	de	de	ADP	_	_	10	case	_	_
+10	plomberie	plomberie	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_
+11	top	top	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	_
+12	et	et	CONJ	_	_	11	cc	_	_
+13	rapide	rapide	ADJ	_	Gender=Fem|Number=Sing	11	conj	_	_
+
+</code></pre>
 
 
 
@@ -111,6 +150,7 @@ dislocated in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -142,11 +182,40 @@ dislocated in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -170,6 +239,7 @@ dislocated in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'fr-dep';
@@ -195,7 +265,7 @@ dislocated in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

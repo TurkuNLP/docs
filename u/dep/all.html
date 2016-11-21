@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-u">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-u">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -375,6 +376,19 @@ appos(Sam-1, brother-4)
 appos(Sam-1, cousin-8)
 </code></pre>
 
+<p>Note however that nested apposition cannot be completely excluded. It may occur in combination with coordination:</p>
+
+<pre><code class="language-sdparse">You can choose between four subjects : language ( German or French ) , economy , technology and art .
+appos(subjects, language)
+conj(language, economy)
+conj(language, technology)
+conj(language, art)
+cc(language, and)
+appos(language, German)
+conj(German, French)
+cc(German, or)
+</code></pre>
+
 <p><em>appos</em> is also used to link key-value pairs in addresses, signatures, etc. (see also the <a href="">list</a> label):</p>
 
 <pre><code class="language-sdparse">Steve Jones Phone: 555-9814 Email: jones@abc.edf
@@ -642,6 +656,11 @@ adjective.</p>
 
 <pre><code class="language-sdparse">He says that you like to swim
 ccomp(says, like)
+mark(like, that)
+</code></pre>
+
+<pre><code class="language-sdparse">He says you like to swim
+ccomp(says, like)
 </code></pre>
 
 <p>Such clausal complements may be finite or nonfinite. However, if the
@@ -651,6 +670,7 @@ the appropriate relation is <a href="">xcomp</a>.</p>
 
 <pre><code class="language-sdparse">The boss said to start digging
 ccomp(said, start)
+mark(start, to)
 </code></pre>
 
 <pre><code class="language-sdparse">We started digging
@@ -1068,7 +1088,8 @@ dislocated(kserume, jani)
 <p><a id="al-u-dep/dobj" class="al-dest"></a></p>
 <h2><code>dobj</code>: direct object</h2>
 
-<p>The direct object of a verb is the noun phrase that denotes the entity acted upon.</p>
+<p>The direct object of a verb is the second most core argument of a verb after the subject. 
+Typically, it is the noun phrase that denotes the entity acted upon or which undergoes a change of state or motion (the proto-patient).</p>
 
 <pre><code class="language-sdparse">She gave me a raise
 dobj(gave, raise)
@@ -1087,7 +1108,9 @@ dobj(begegnen, jemandem)
 regardless of the morphological case or semantic role that it bears. If there are two or more
 objects, one of them should be <code>dobj</code> and the others should be
 <a href="">iobj</a>. In such cases it is necessary to decide what is the most
-directly affected object <em>(patient).</em> The one exception is when there is a clausal complement. Then the clausal complement is regarded as a “clausal direct object” and an object nominal will be an iobj. There is more discussion of constructions with multiple objects
+directly affected object <em>(patient).</em> The one exception is when there is a clausal complement. 
+Then the clausal complement is regarded as a “clausal direct object” and an object nominal will be an iobj. 
+There is more discussion of constructions with multiple objects
 on the page for <a href="">iobj</a>. If possible, language-specific
 documentation should be available to help identify direct objects.</p>
 
@@ -1106,7 +1129,7 @@ expl(is, There)
 expl(clear, It)
 </code></pre>
 
-<p>Some languages do not have expletives of the English sort, including most languages with free pro-drop (the ability to use zero anaphora rather than over pronouns). In languages with expletives of this sort, they can be positioned where normally a core argument appears: the subject and direct object (and even indirect object) slots, as in the examples below. Note that in the analysis of these examples, we treat the postposed subject or clausal argument as a regular core argument, and mark the expletive with <code>expl</code>.</p>
+<p>Some languages do not have expletives of the English sort, including most languages with free pro-drop (the ability to use zero anaphora rather than overt pronouns). In languages with expletives of this sort, they can be positioned where normally a core argument appears: the subject and direct object (and even indirect object) slots, as in the examples below. Note that in the analysis of these examples, we treat the postposed subject or clausal argument as a regular core argument, and mark the expletive with <code>expl</code>.</p>
 
 <pre><code class="language-sdparse">There is a ghost in the room
 expl(is, There)
@@ -1138,7 +1161,7 @@ nmod(mentioned, Mary)
 ccomp(mentioned, leaving)
 </code></pre>
 
-<p>A second, related, use of the <code>expl</code> relation is for cases of true clitic doubling.  For languages in which clitics and lexical nominals are ususally in complementary distribution – languages, such as French, which obey “Kayne’s generalization” – then whichever of a clitic or a lexical nominal occurs will get the appropriate role, such as <code>dobj</code> or <code>iobj</code>. In such languages, when doubling does occur, such as in spoken French, the right analysis is to regard the lexical nominal as <a href="">dislocated</a> (see the examples there). However, other languages, such as Greek and Bulgarian, standardly allow doubling of a lexical nominal and a pronominal clitic, with the former still appearing in its regular role as an argument of the predicate. In these cases, if only one of the lexical nominal and the clitic appear in a clause, then whichever appears will be given the grammatical role of <code>dobj</code>, <code>iobj</code>, etc. – parallel to the treatment of lexical nominals and pronouns in other languages, modulo the clitic pronoun having a different position in the sentence.  However, if both occur, the lexical nominal will be given the grammatical role of <code>dobj</code>, <code>iobj</code>, etc., and the clitic will be treated as a pronominal copy, which does not receive its own semantic role, and hence will get the role <code>expl</code>. Modulo the different word order, this is fairly parallel to the treatment of <em>it</em> and <em>there</em> in English mentioned above, where another phrase satisfies the semantic role of the predicate. Examples from Greek and Bulgarian follow:</p>
+<p>A second, related, use of the <code>expl</code> relation is for cases of true clitic doubling.  For languages in which clitics and lexical nominals are ususally in complementary distribution – languages, such as French, which obey “Kayne’s generalization” – then whichever of a clitic or a lexical nominal occurs will get the appropriate role, such as <code>dobj</code> or <code>iobj</code>. In such languages, when doubling does occur, such as in spoken French, the right analysis is to regard the lexical nominal as <a href="">dislocated</a> (see the examples there). As such, the analysis will be the same as when a noun phrase doubles another noun phrase or a regular pronoun that fills a nominal argument position. However, other languages, such as Greek and Bulgarian, standardly allow doubling of a lexical nominal and a pronominal clitic, with the former still appearing in its regular role as an argument of the predicate. In these cases, if only one of the lexical nominal and the clitic appear in a clause, then whichever appears will be given the grammatical role of <code>dobj</code>, <code>iobj</code>, etc. – parallel to the treatment of lexical nominals and pronouns in other languages, modulo the clitic pronoun having a different position in the sentence.  However, if both occur, the lexical nominal will be given the grammatical role of <code>dobj</code>, <code>iobj</code>, etc., and the clitic will be treated as a pronominal copy, which does not receive its own semantic role, and hence will get the role <code>expl</code>. Modulo the different word order, this is fairly parallel to the treatment of <em>it</em> and <em>there</em> in English mentioned above, where another phrase satisfies the semantic role of the predicate. Examples from Greek and Bulgarian follow:</p>
 
 <pre><code class="language-sdparse">Της τον έδωσε της Καίτης τον αναπτήρα \n PRON.Fem.Gen PRON.Masc.Acc gave ART.Fem.Gen Keti.Gen ART.Masc.Acc lighter.Acc
 expl(έδωσε, Της-1)
@@ -1542,12 +1565,21 @@ nmod(swam, night)
 <p><a id="al-u-dep/nsubj" class="al-dest"></a></p>
 <h2><code>nsubj</code>: nominal subject</h2>
 
-<p>A nominal subject is a nominal phrase which is the syntactic subject of a
-clause.
-(See <a href="">csubj</a> for when the subject is clausal. See <a href="">nsubjpass</a> and <a href="">csubjpass</a> for when the subject is not the proto-agent argument due to valence changing operations.)
+<p>A nominal subject (<code>nsubj</code>) is a nominal which is the syntactic subject and the proto-agent of a clause.
+That is, it is in the position that passes typical grammatical test for subjecthood, and this argument is the more agentive,
+the do-er, or the proto-agent of the clause. 
+(See <a href="">csubj</a> for when the subject is clausal. See <a href="">nsubjpass</a> and <a href="">csubjpass</a> for when the subject is not 
+the proto-agent argument due to valence changing operations.) This nominal may be headed by a noun, 
+or it may be a pronoun or relative pronoun, or in ellipsis contexts, other things such as an adjective.</p>
+
+<p>The <code>nsubj</code> role is only applied to semantic arguments of a predicate.
+When there is an empty argument in a grammatical subject position (sometimes called a pleonastic or expletive),
+it is labeled as <a href="">expl</a>. If there is then a displaced subject
+in the clause, as in the English existential <em>there</em> construction, it will be labeled as <code>nsubj</code>.)
 The governor of the <code>nsubj</code> relation might not always be a verb: when
 the verb is a copular verb, the root of the clause is the complement
-of the copular verb, which can be an adjective or noun.</p>
+of the copular verb, which can be an adjective or noun, including a noun marked by a preposition,
+as in the examples below.</p>
 
 <pre><code class="language-sdparse">Clinton defeated Dole
 nsubj(defeated, Clinton)
@@ -1555,6 +1587,28 @@ nsubj(defeated, Clinton)
 
 <pre><code class="language-sdparse">The car is red .
 nsubj(red, car)
+</code></pre>
+
+<pre><code class="language-sdparse">Sue is a true patriot .
+nsubj(patriot, Sue)
+</code></pre>
+
+<pre><code class="language-sdparse">We are in the barn .
+nsubj(barn, We)
+</code></pre>
+
+<pre><code class="language-sdparse">Agatha is in trouble .
+nsubj(trouble, Agatha)
+</code></pre>
+
+<pre><code class="language-sdparse">There is a ghost in the room .
+expl(is, There)
+nsubj(is, ghost)
+</code></pre>
+
+<pre><code class="language-sdparse">These links present the many viewpoints that existed .
+acl(viewpoints, existed)
+nsubj(existed, that)
 </code></pre>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/nsubj.md" target="#">edit nsubj</a></p>
@@ -1713,6 +1767,14 @@ parataxis(confirmed, let)
 
 <p>In the second example, we treat the second half as the head of the dependency
 because the first half feels like a whole clause interjection, not like the main clause of the utterance.</p>
+
+<h3 id="tag-questions">Tag questions</h3>
+
+<p>We also use the parataxis relation for tag questions such as <em>isn’t it?</em> or <em>haven’t you?</em>.</p>
+
+<pre><code class="language-sdparse">It 's not me , is it ?
+parataxis(me, is)
+</code></pre>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/parataxis.md" target="#">edit parataxis</a></p>
 
@@ -1930,7 +1992,7 @@ det(place, the)
 <p><a id="al-u-dep/vocative" class="al-dest"></a></p>
 <h2><code>vocative</code>: vocative</h2>
 
-<p>The <em>vocative</em> relation is used to mark dialogue participant addressed in text (common in conversations, emails and newsgroup postings). The relation links the addressee’s name to its host sentence.</p>
+<p>The <em>vocative</em> relation is used to mark a dialogue participant addressed in a text (common in conversations, dialogue, emails, newsgroup postings, etc.). The relation links the addressee’s name to its host sentence. A vocative commonly co-occurs with a null subject, as in the first example below. If the nominal is clearly vocative in intent, the preference is to use the vocative relation.</p>
 
 <pre><code class="language-sdparse">Guys , take it easy!
 vocative(take, Guys)
@@ -1951,9 +2013,8 @@ reference of the subject is necessarily determined by an argument
 external to the xcomp (normally by the object of the next higher
 clause, if there is one, or else by the subject of the next higher
 clause). This is often referred to as <em>obligatory control</em>. 
-These complements are always non-finite, and they are
-complements (arguments of the higher verb or adjective) rather than
-adjuncts/modifiers, such as a purpose clause. The name <code>xcomp</code> is
+These clauses tend to be non-finite in many languages, 
+but they can be finite as well. The name <code>xcomp</code> is
 borrowed from Lexical-Functional Grammar.</p>
 
 <pre><code class="language-sdparse">He says that you like to swim
@@ -2070,6 +2131,7 @@ and the relation will be <a href="">acl</a> instead of <code>xcomp</code>.</p>
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -2101,11 +2163,40 @@ and the relation will be <a href="">acl</a> instead of <code>xcomp</code>.</p>
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -2129,6 +2220,7 @@ and the relation will be <a href="">acl</a> instead of <code>xcomp</code>.</p>
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'u-overview';
@@ -2154,7 +2246,7 @@ and the relation will be <a href="">acl</a> instead of <code>xcomp</code>.</p>
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

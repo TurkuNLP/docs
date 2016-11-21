@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-kk">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/kk/dep">kk/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-kk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/kk/dep">kk/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/amod.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -75,6 +76,72 @@ subj(ойнайды-8, Олар-1)
 <!-- "automatic stats" -->
 
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udkazakh">Treebank Statistics (UD_Kazakh)</h2>
+
+<p>This relation is universal.</p>
+
+<p>351 nodes (6%) are attached to their parents as <code>amod</code>.</p>
+
+<p>347 instances of <code>amod</code> (99%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.25356125356125.</p>
+
+<p>The following 14 pairs of parts of speech are connected with <code>amod</code>: <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/ADJ</a> (216; 62% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/NUM</a> (86; 25% instances), <a href="">kk-pos/PROPN</a>-<a href="">kk-pos/ADJ</a> (14; 4% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/NOUN</a> (13; 4% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/ADV</a> (7; 2% instances), <a href="">kk-pos/ADJ</a>-<a href="">kk-pos/ADJ</a> (3; 1% instances), <a href="">kk-pos/ADJ</a>-<a href="">kk-pos/NUM</a> (3; 1% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/PRON</a> (2; 1% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/PROPN</a> (2; 1% instances), <a href="">kk-pos/PRON</a>-<a href="">kk-pos/ADJ</a> (1; 0% instances), <a href="">kk-pos/PROPN</a>-<a href="">kk-pos/ADV</a> (1; 0% instances), <a href="">kk-pos/PROPN</a>-<a href="">kk-pos/NOUN</a> (1; 0% instances), <a href="">kk-pos/PROPN</a>-<a href="">kk-pos/PROPN</a> (1; 0% instances), <a href="">kk-pos/VERB</a>-<a href="">kk-pos/ADJ</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 3 amod	color:blue
+1	Иран	Иран	PROPN	np	_	4	nsubj	_	top|nom
+2	—	—	PUNCT	guio	_	1	punct	_	_
+3	діни	діни	ADJ	adj	_	4	amod	_	_
+4	_	мемлекет	NOUN	n	_	0	root	_	nom
+5	_	е	AUX	cop	_	4	cop	_	aor|p3|sg
+6	.	.	PUNCT	sent	_	4	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 1 amod	color:blue
+1	1968	1968	NUM	num	_	2	amod	_	_
+2	жылдан	жыл	NOUN	n	_	3	nmod	_	abl
+3	бастап	баста	VERB	v	_	7	advcl	_	tv|gna_perf
+4	Ширазда	Шираз	PROPN	np	_	7	nmod	_	top|loc
+5	театр	театр	NOUN	n	_	6	nmod:poss	_	nom
+6	фестивалы	фестиваль	NOUN	n	_	7	nsubj	_	px3sp|nom
+7	өткізіліп	өткіз	VERB	v	_	0	root	_	tv|pass|prc_perf
+8	тұрды	тұр	AUX	vaux	_	7	aux	_	ifi|p3|sg
+9	.	.	PUNCT	sent	_	7	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 7 6 amod	color:blue
+1	Б.з.б.	б.з.б.	NOUN	abbr	_	3	compound	_	_
+2	550	550	NUM	num	_	3	amod	_	_
+3	ж.	ж.	NOUN	abbr	_	9	nmod	_	_
+4	өкімет	өкімет	NOUN	n	_	5	nmod:poss	_	nom
+5	билігі	билік	NOUN	n	_	9	nsubj	_	px3sp|nom
+6	парсылық	парсылық	ADJ	adj	_	7	amod	_	_
+7	Ахемен	Ахемен	PROPN	np	_	8	nmod:poss	_	al|nom
+8	әулетіне	әулет	NOUN	n	_	9	nmod	_	px3sp|dat
+9	көшті	көш	VERB	v	_	0	root	_	iv|ifi|p3|sg
+10	.	.	PUNCT	sent	_	9	punct	_	_
+
+</code></pre>
 
 
 
@@ -133,6 +200,7 @@ amod in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -164,11 +232,40 @@ amod in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -192,6 +289,7 @@ amod in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'kk-dep';
@@ -217,7 +315,7 @@ amod in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

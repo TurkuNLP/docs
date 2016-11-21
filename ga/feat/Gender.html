@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-ga">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/ga/feat">ga/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ga">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ga/feat">ga/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ga-feat/Gender.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -116,7 +117,7 @@ The feature is used with 8 part-of-speech tags: <a href="">ga-pos/NOUN</a> (5399
 
 <p>477 <a href="">ga-pos/PRON</a> tokens (51% of all <code>PRON</code> tokens) have a non-empty value of <code>Gender</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>Gender</code> co-occurred: <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (477; 100%), <tt><a href="Person.html">Person</a>=3</tt> (477; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (472; 99%).</p>
+<p>The most frequent other feature values with which <code>PRON</code> and <code>Gender</code> co-occurred: <tt><a href="Person.html">Person</a>=3</tt> (477; 100%), <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (477; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (472; 99%).</p>
 
 <p><code>PRON</code> tokens may have the following values of <code>Gender</code>:</p>
 
@@ -150,7 +151,7 @@ The feature is used with 8 part-of-speech tags: <a href="">ga-pos/NOUN</a> (5399
 
 <p>369 <a href="">ga-pos/DET</a> tokens (17% of all <code>DET</code> tokens) have a non-empty value of <code>Gender</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>Gender</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (369; 100%), <tt><a href="Definite.html">Definite</a>=Def</tt> (235; 64%), <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (235; 64%), <tt><a href="PronType.html">PronType</a>=Art</tt> (235; 64%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (235; 64%), <tt><a href="Case.html">Case</a>=Gen</tt> (234; 63%).</p>
+<p>The most frequent other feature values with which <code>DET</code> and <code>Gender</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (369; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (235; 64%), <tt><a href="Definite.html">Definite</a>=Def</tt> (235; 64%), <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (235; 64%), <tt><a href="PronType.html">PronType</a>=Art</tt> (235; 64%), <tt><a href="Case.html">Case</a>=Gen</tt> (234; 63%).</p>
 
 <p><code>DET</code> tokens may have the following values of <code>Gender</code>:</p>
 
@@ -203,7 +204,7 @@ The feature is used with 8 part-of-speech tags: <a href="">ga-pos/NOUN</a> (5399
 
 <p>3 <a href="">ga-pos/VERB</a> tokens (0% of all <code>VERB</code> tokens) have a non-empty value of <code>Gender</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Gender</code> co-occurred: <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (3; 100%), <tt><a href="Form.html">Form</a>=EMPTY</tt> (3; 100%), <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (2; 67%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (2; 67%), <tt><a href="VerbForm.html">VerbForm</a>=Cop</tt> (2; 67%).</p>
+<p>The most frequent other feature values with which <code>VERB</code> and <code>Gender</code> co-occurred: <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (3; 100%), <tt><a href="Form.html">Form</a>=EMPTY</tt> (3; 100%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (2; 67%), <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (2; 67%), <tt><a href="VerbForm.html">VerbForm</a>=Cop</tt> (2; 67%).</p>
 
 <p><code>VERB</code> tokens may have the following values of <code>Gender</code>:</p>
 
@@ -281,6 +282,7 @@ Gender in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -312,11 +314,40 @@ Gender in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -340,6 +371,7 @@ Gender in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'ga-feat';
@@ -365,7 +397,7 @@ Gender in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

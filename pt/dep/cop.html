@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-pt">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/pt/dep">pt/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-pt">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/pt/dep">pt/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/cop.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,8 +39,97 @@
 
           <h2><code>cop</code>: copula</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>cop</code>.</p>
+<p>A copula is the relation between the complement of a copular verb and
+the copular verb <em>to be</em> (only). In Portuguese, <code>cop</code> covers verb ‘ser’ and ‘estar’. We normally take a copula as a dependent of its
+complement (<em>predicativo do sujeito</em>) .</p>
+
+<pre><code class="language-sdparse">Nigéria é campeã
+nsubj(campeã, Nigéria)
+cop(campeã, é)
+</code></pre>
+
+<pre><code class="language-sdparse">As 15 pessoas são membros da Peta 
+nsubj(membros, pessoas)
+cop(membros, são)
+</code></pre>
+
+<p>The copula <em>ser/estar</em> is not treated as the head of a clause, but rather the dependent of a lexical predicate, as exemplified above.</p>
+
+<p>Such an analysis is motivated by the fact that many languages
+often or always lack an overt copula in such constructions, as in Russian and Greek.</p>
+
+<p>In informal Portuguese or specific textual genres (as news headlines and conversation), this may also arise.</p>
+
+<pre><code class="language-sdparse">E-mail grátis se você tem wifi
+nsubj(grátis, E-mail)
+</code></pre>
+
+<p>This analysis is adopted also when the predicate is a prepositional phrase, in which case the nominal part of the prepositional phrase is the head of the clause.</p>
+
+<pre><code class="language-sdparse">Susan está em forma
+nsubj(forma, Susan)
+cop(forma, é)
+case(forma, em)
+</code></pre>
+
+<!--
+A parallel can also be drawn to so-called raising-to-object or small clause constructions in English.
+Under the basic analysis proposed for SD, the predicate complement is not linked to its subject argument, but in the enhanced representation (see below), 
+the linkage is then parallel to the treatment in a zero
+copula language:
+
+~~~ sdparse
+I judge Ivan the best dancer
+nsubj(judge-2, I-1)
+dobj(judge-2, Ivan-3)
+xcomp(judge-2, dancer-6)
+det(dancer-6, the-4)
+amod(dancer-6, best-5)
+nsubj(dancer-6, Ivan-3)
+~~~
+-->
+
+<p>If the copula is accompanied by other verbal auxiliaries for tense, aspect, etc., then they are also given a flat structure, and taken as dependents of the lexical predicate:</p>
+
+<pre><code class="language-sdparse">a nossa opção estratégica tem sido a mais correcta
+nsubj(correta, opção)
+cop(correta, sido)
+aux(correta, tem)
+</code></pre>
+
+<p>The motivation for this choice is that this structure is parallel to the flat structure which we give to auxiliary verbs accompanying verbs. 
+In particular, in languages such as English and Portuguese, it is often very difficult to decide whether to regard a participle as a verb or an adjective.<br />
+Perhaps the following sentence is such a case:</p>
+
+<pre><code class="language-sdparse">os aparelhos estão a ser equipados com um sistema de iluminação
+nsubj(equipados, aparelhos)
+cop(equipados, estão)
+aux(equipados, ser)
+</code></pre>
+
+<p>While a part of speech has to be decided in such cases, it would be unfortunate if the choice of part of speech also changed the dependency structure.</p>
+
+<p>Finally, <code>ccomp</code> is used with copulas. Only in this case, the structure is different, and we take the form of <em>be</em> as a head:</p>
+
+<pre><code class="language-sdparse">O importante é manter a calma.
+ccomp(é, manter)
+nsubj(é, importante)
+</code></pre>
+
+<pre><code class="language-sdparse">O problema é que ele nunca tentou.
+ccomp(é, tentou)
+nsubj(é, problema)
+</code></pre>
+
+<p>If we took the main verb as the head, it would have two subjects, which would be unworkable. Examples like the above <em>could</em> be analyzed reversed with the initial noun phrase as the predicate, but in addition to this seeming undesirable, it would fail to be a solution if there were a clause on both sides of <em>be</em>, such as in: <em>Não tentar resolver um problema é reconhecer a derrota</em>.</p>
+
+<p>Note that it is possible to have <code>cop</code> constructions without subject.</p>
+
+<pre><code class="language-sdparse">É muito engraçado .
+cop(engraçado, é)
+advmod(engraçado, muito)
+punct(engraçado, .)
+</code></pre>
 
 
 <!-- "automatic stats" -->
@@ -52,16 +142,16 @@ for <code>cop</code>.</p>
 
 <hr />
 
-<h2 id="treebank-statistics">Treebank Statistics</h2>
+<h2 id="treebank-statistics-udportuguese">Treebank Statistics (UD_Portuguese)</h2>
 
 <p>This relation is universal.</p>
 
-<p>3283 nodes (2%) are attached to their parents as <code>cop</code>.</p>
+<p>3089 nodes (1%) are attached to their parents as <code>cop</code>.</p>
 
-<p>3177 instances of <code>cop</code> (97%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.95431008224185.</p>
+<p>2991 instances of <code>cop</code> (97%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.9226286824215.</p>
 
-<p>The following 47 pairs of parts of speech are connected with <code>cop</code>: <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/VERB</a> (1154; 35% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/VERB</a> (941; 29% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/VERB</a> (512; 16% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/VERB</a> (183; 6% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/ADV</a> (149; 5% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/VERB</a> (81; 2% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/VERB</a> (55; 2% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/VERB</a> (32; 1% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/ADV</a> (26; 1% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/SCONJ</a> (15; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/VERB</a> (14; 0% instances), <a href="">pt-pos/SYM</a>-<a href="">pt-pos/VERB</a> (13; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/ADV</a> (11; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/SCONJ</a> (9; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADV</a> (9; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/NOUN</a> (8; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/SCONJ</a> (7; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/NOUN</a> (6; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/ADV</a> (6; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/ADV</a> (5; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/SCONJ</a> (5; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/SCONJ</a> (4; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/DET</a> (3; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/ADV</a> (3; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/PRON</a> (2; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/SCONJ</a> (2; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/ADJ</a> (2; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/DET</a> (2; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/NUM</a> (2; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/PRON</a> (2; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/NOUN</a> (2; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/NOUN</a> (2; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NOUN</a> (2; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/CONJ</a> (1; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/NUM</a> (1; 0% instances), <a href="">pt-pos/ADP</a>-<a href="">pt-pos/VERB</a> (1; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/PRON</a> (1; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/PROPN</a> (1; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/NOUN</a> (1; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/CONJ</a> (1; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/PRON</a> (1; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/PROPN</a> (1; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/PROPN</a> (1; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/SCONJ</a> (1; 0% instances), <a href="">pt-pos/SCONJ</a>-<a href="">pt-pos/VERB</a> (1; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NUM</a> (1; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PRON</a> (1; 0% instances).</p>
+<p>The following 46 pairs of parts of speech are connected with <code>cop</code>: <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/VERB</a> (1133; 37% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/VERB</a> (938; 30% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/VERB</a> (354; 11% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/VERB</a> (170; 6% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/ADV</a> (149; 5% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/VERB</a> (81; 3% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/VERB</a> (55; 2% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/VERB</a> (27; 1% instances), <a href="">pt-pos/SYM</a>-<a href="">pt-pos/VERB</a> (27; 1% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/ADV</a> (25; 1% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/VERB</a> (24; 1% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/ADV</a> (11; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/NOUN</a> (10; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/ADV</a> (9; 0% instances), <a href="">pt-pos/ADP</a>-<a href="">pt-pos/VERB</a> (8; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/SCONJ</a> (8; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/SCONJ</a> (6; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/NOUN</a> (5; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/ADV</a> (5; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADV</a> (4; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/DET</a> (3; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/SCONJ</a> (3; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/NOUN</a> (3; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/PRON</a> (2; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/ADJ</a> (2; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/DET</a> (2; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/NUM</a> (2; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/PRON</a> (2; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/NOUN</a> (2; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NOUN</a> (2; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/SCONJ</a> (2; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/ADP</a> (1; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/CONJ</a> (1; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/NUM</a> (1; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/PRON</a> (1; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/SCONJ</a> (1; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/PROPN</a> (1; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/NOUN</a> (1; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/CONJ</a> (1; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/SCONJ</a> (1; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/PROPN</a> (1; 0% instances), <a href="">pt-pos/SCONJ</a>-<a href="">pt-pos/VERB</a> (1; 0% instances), <a href="">pt-pos/SYM</a>-<a href="">pt-pos/NOUN</a> (1; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/DET</a> (1; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NUM</a> (1; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PRON</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 4	bgColor:blue
 # visual-style 4	fgColor:white
@@ -75,8 +165,9 @@ Average distance between parent and child is 1.95431008224185.</p>
 5	seu	seu	DET	pron-det|&lt;poss|3S&gt;|M|S	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	6	det	_	_
 6	filho	filho	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
 7	,	,	PUNCT	punc	_	6	punct	_	_
-8	Sérgio_Fioravanti	Sérgio_Fioravanti	PROPN	prop|M|S	Gender=Masc|Number=Sing	6	appos	_	_
-9	.	.	PUNCT	punc	_	6	punct	_	_
+8	Sérgio	Sérgio	PROPN	prop|M|S	_	6	appos	_	MWE=Sérgio_Fioravanti|MWEPOS=PROPN
+9	Fioravanti	Fioravanti	PROPN	PROPN	_	8	name	_	_
+10	.	.	PUNCT	punc	_	6	punct	_	_
 
 </code></pre>
 
@@ -107,6 +198,139 @@ Average distance between parent and child is 1.95431008224185.</p>
 8	a	o	DET	art|&lt;-sam&gt;|&lt;artd&gt;|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	PF	PF	PROPN	prop|F|S	Gender=Fem|Number=Sing	6	nmod	_	_
 10	.	.	PUNCT	punc	_	3	punct	_	_
+
+</code></pre>
+
+<hr />
+
+<h2 id="treebank-statistics-udportuguese-bosque">Treebank Statistics (UD_Portuguese-Bosque)</h2>
+
+<p>This relation is universal.</p>
+
+<p>2761 nodes (1%) are attached to their parents as <code>cop</code>.</p>
+
+<p>2658 instances of <code>cop</code> (96%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.90148496921405.</p>
+
+<p>The following 15 pairs of parts of speech are connected with <code>cop</code>: <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/VERB</a> (1151; 42% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/VERB</a> (851; 31% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/VERB</a> (353; 13% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/VERB</a> (177; 6% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/VERB</a> (88; 3% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/VERB</a> (58; 2% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/VERB</a> (57; 2% instances), <a href="">pt-pos/SYM</a>-<a href="">pt-pos/VERB</a> (14; 1% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/NOUN</a> (4; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/VERB</a> (2; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/PRON</a> (2; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/ADJ</a> (1; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/NOUN</a> (1; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/NOUN</a> (1; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/NOUN</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 2 cop	color:blue
+1	«	«	PUNCT	PU|@PU	_	4	punct	_	_
+2	Será	ser	VERB	&lt;mv&gt;|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	cop	_	_
+3	um	um	DET	&lt;arti&gt;|ART|M|S|@&gt;N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	movimento	movimento	NOUN	&lt;np-idf&gt;|N|M|S|@&lt;SC	Gender=Masc|Number=Sing	0	root	_	_
+5	nacionalista	nacionalista	ADJ	ADJ|M|S|@N&lt;	Gender=Masc|Number=Sing	4	amod	_	_
+6	independente	independente	ADJ	ADJ|M|S|@N&lt;	Gender=Masc|Number=Sing	4	amod	_	_
+7	.	.	PUNCT	PU|@PU	_	4	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 4 cop	color:blue
+1	A	o	DET	&lt;artd&gt;|ART|F|S|@&gt;N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	suspensão	suspensão	NOUN	&lt;np-def&gt;|N|F|S|@SUBJ&gt;	Gender=Fem|Number=Sing	5	nsubj	_	_
+3	traseira	traseiro	ADJ	ADJ|F|S|@N&lt;	Gender=Fem|Number=Sing	2	amod	_	_
+4	é	ser	VERB	&lt;mv&gt;|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+5	progressiva	progressivo	ADJ	&lt;n&gt;|ADJ|F|S|@&lt;SC	Gender=Fem|Number=Sing	0	root	_	_
+6	com	com	ADP	PRP|@N&lt;	_	9	case	_	_
+7	um	um	DET	&lt;arti&gt;|ART|M|S|@&gt;N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+8	só	só	ADJ	ADJ|M|S|@&gt;N	Gender=Masc|Number=Sing	9	amod	_	_
+9	amortecedor	amortecedor	NOUN	&lt;np-idf&gt;|N|M|S|@P&lt;	Gender=Masc|Number=Sing	5	nmod	_	_
+10	Boge	Boge	PROPN	PROP|M|S|@N&lt;	Gender=Masc|Number=Sing	9	appos	_	_
+11	.	.	PUNCT	PU|@PU	_	5	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 6 5 cop	color:blue
+1	Maioria	maioria	NOUN	&lt;np-idf&gt;|N|F|S|@SUBJ&gt;	Gender=Fem|Number=Sing	6	nsubj	_	_
+2	De	de	ADP	&lt;sam-&gt;|PRP|@N&lt;	_	4	case	_	_
+3	OS	o	DET	&lt;-sam&gt;|&lt;artd&gt;|DET|M|P|@&gt;N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
+4	Programas	programa	NOUN	&lt;prop&gt;|&lt;np-def&gt;|N|M|P|@P&lt;	Gender=Masc|Number=Plur	1	nmod	_	_
+5	Está	estar	VERB	&lt;mv&gt;|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_
+6	Ligada	ligar	VERB	&lt;mv&gt;|&lt;prop&gt;|V|PCP|F|S|@ICL-&lt;SC	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	_
+7	A	a	ADP	&lt;sam-&gt;|PRP|@&lt;PIV	_	9	case	_	_
+8	a	o	DET	&lt;-sam&gt;|&lt;artd&gt;|ART|F|S|@&gt;N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	Rede	rede	NOUN	&lt;prop&gt;|&lt;np-def&gt;|N|F|S|@P&lt;	Gender=Fem|Number=Sing	6	nmod	_	_
+10	De	de	ADP	PRP|@N&lt;	_	11	case	_	_
+11	Esgotos	esgoto	NOUN	&lt;np-idf&gt;|N|M|P|@P&lt;	Gender=Masc|Number=Plur	9	nmod	_	_
+12	*	*	PUNCT	PU|@PU	_	6	punct	_	_
+13	.	.	PUNCT	PU|@PU	_	6	punct	_	_
+
+</code></pre>
+
+<hr />
+
+<h2 id="treebank-statistics-udportuguese-br">Treebank Statistics (UD_Portuguese-BR)</h2>
+
+<p>This relation is universal.</p>
+
+<p>2172 nodes (1%) are attached to their parents as <code>cop</code>.</p>
+
+<p>1881 instances of <code>cop</code> (87%) are right-to-left (child precedes parent).
+Average distance between parent and child is 2.04235727440147.</p>
+
+<p>The following 15 pairs of parts of speech are connected with <code>cop</code>: <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/VERB</a> (1733; 80% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/VERB</a> (258; 12% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/VERB</a> (124; 6% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/PROPN</a> (15; 1% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/VERB</a> (13; 1% instances), <a href="">pt-pos/PART</a>-<a href="">pt-pos/VERB</a> (11; 1% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/VERB</a> (7; 0% instances), <a href="">pt-pos/X</a>-<a href="">pt-pos/VERB</a> (4; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/NOUN</a> (1; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/ADV</a> (1; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/PART</a> (1; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/PROPN</a> (1; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/PUNCT</a> (1; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/NOUN</a> (1; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NOUN</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 3 cop	color:blue
+1	A	_	DET	DET	_	2	det	_	_
+2	Nina	_	PROPN	PNOUN	_	5	nsubj	_	_
+3	é	_	VERB	VERB	_	5	cop	_	_
+4	a	_	DET	DET	_	5	det	_	_
+5	chance	_	NOUN	NOUN	_	0	root	_	_
+6	de	_	ADP	ADP	_	8	mark	_	_
+7	ele	_	PRON	PRON	_	8	nsubj	_	_
+8	ser	_	VERB	VERB	_	5	nmod	_	_
+9	feliz	_	ADJ	ADJ	_	8	xcomp:adj	_	_
+10	.	_	PUNCT	.	_	5	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 1 cop	color:blue
+1	É	_	VERB	VERB	_	2	cop	_	_
+2	um	_	PRON	PRON	_	0	root	_	_
+3	dos	_	ADP	ADP	_	5	case	_	_
+4	três	_	NUM	NUM	NumType=Card	5	nummod	_	_
+5	ácidos	_	NOUN	NOUN	_	2	nmod	_	_
+6	ftálicos	_	ADJ	ADJ	_	5	amod	_	_
+7	isoméricos	_	ADJ	ADJ	_	5	amod	_	_
+8	.	_	PUNCT	.	_	2	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 1 cop	color:blue
+1	Foi	_	VERB	VERB	_	4	cop	_	_
+2	o	_	DET	DET	_	4	det	_	_
+3	primeiro	_	ADJ	ADJ	_	4	amod	_	_
+4	RPG	_	PROPN	PNOUN	_	0	root	_	_
+5	baseado	_	VERB	VERB	_	4	acl:part	_	_
+6	em	_	ADP	ADP	_	7	case	_	_
+7	sistema	_	NOUN	NOUN	_	5	nmod	_	_
+8	de	_	ADP	ADP	_	9	case	_	_
+9	perícias	_	NOUN	NOUN	_	7	nmod	_	_
+10	.	_	PUNCT	.	_	4	punct	_	_
 
 </code></pre>
 
@@ -167,6 +391,7 @@ cop in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -198,11 +423,40 @@ cop in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -226,6 +480,7 @@ cop in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'pt-dep';
@@ -251,7 +506,7 @@ cop in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

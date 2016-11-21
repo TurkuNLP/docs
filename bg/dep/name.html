@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-bg">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/bg/dep">bg/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-bg">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/bg/dep">bg/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-dep/name.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -56,12 +57,12 @@ for <code>name</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>1267 nodes (1%) are attached to their parents as <code>name</code>.</p>
+<p>1290 nodes (1%) are attached to their parents as <code>name</code>.</p>
 
-<p>1267 instances of <code>name</code> (100%) are left-to-right (parent precedes child).
-Average distance between parent and child is 1.06866614048934.</p>
+<p>1290 instances of <code>name</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 1.06899224806202.</p>
 
-<p>The following 1 pairs of parts of speech are connected with <code>name</code>: <a href="">bg-pos/PROPN</a>-<a href="">bg-pos/PROPN</a> (1267; 100% instances).</p>
+<p>The following 2 pairs of parts of speech are connected with <code>name</code>: <a href="">bg-pos/PROPN</a>-<a href="">bg-pos/PROPN</a> (1288; 100% instances), <a href="">bg-pos/PROPN</a>-<a href="">bg-pos/CONJ</a> (2; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 2	bgColor:blue
 # visual-style 2	fgColor:white
@@ -79,6 +80,34 @@ Average distance between parent and child is 1.06866614048934.</p>
 9	,	,	PUNCT	punct	_	10	punct	_	_
 10	София	софия	PROPN	Npfsi	Definite=Ind|Gender=Fem|Number=Sing	1	nmod	_	_
 11	:	:	PUNCT	punct	_	1	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 4 name	color:blue
+1	Прогресът	прогрес	NOUN	Ncmsf	Definite=Def|Gender=Masc|Number=Sing	7	nsubj	_	_
+2	в	в	ADP	R	_	3	case	_	_
+3	Босна	босна	PROPN	Npfsi	Definite=Ind|Gender=Fem|Number=Sing	1	nmod	_	_
+4	и	и	CONJ	Cp	_	3	name	_	_
+5	Херцеговина	херцеговина	PROPN	Npfsi	Definite=Ind|Gender=Fem|Number=Sing	3	name	_	_
+6	е	съм	VERB	Vxitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+7	свидетелство	свидетелство	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	0	root	_	_
+8	за	за	ADP	R	_	9	case	_	_
+9	потенциала	потенциал	NOUN	Ncmsh	Definite=Def|Gender=Masc|Number=Sing	7	nmod	_	_
+10	на	на	ADP	R	_	12	case	_	_
+11	международните	международен	ADJ	A-pd	Definite=Def|Degree=Pos|Number=Plur	12	amod	_	_
+12	усилия	усилие	NOUN	Ncnpi	Definite=Ind|Gender=Neut|Number=Plur	9	nmod	_	_
+13	да	да	PART	Tx	_	15	aux	_	_
+14	се	се	PRON	Ppxta	Case=Acc|PronType=Prs|Reflex=Yes	15	expl	_	_
+15	помогне	помогна	VERB	Vppif-r3s	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	acl	_	_
+16	за	за	ADP	R	_	17	case	_	_
+17	възстановяването	възстановяване	NOUN	Ncnsd	Definite=Def|Gender=Neut|Number=Sing	15	iobj	_	_
+18	на	на	ADP	R	_	19	case	_	_
+19	Косово	косово	PROPN	Npnsi	Definite=Ind|Gender=Neut|Number=Sing	17	nmod	_	_
+20	.	.	PUNCT	punct	_	7	punct	_	_
 
 </code></pre>
 
@@ -139,6 +168,7 @@ name in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -170,11 +200,40 @@ name in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -198,6 +257,7 @@ name in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'bg-dep';
@@ -223,7 +283,7 @@ name in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

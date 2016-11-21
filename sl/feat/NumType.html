@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-sl">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/sl/feat">sl/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sl">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/sl/feat">sl/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/NumType.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -124,7 +125,7 @@ The feature is used with 2 part-of-speech tags: <a href="">sl-pos/NUM</a> (1927;
 
 <p>314 <a href="">sl-pos/ADJ</a> tokens (2% of all <code>ADJ</code> tokens) have a non-empty value of <code>NumType</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>NumType</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (314; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (314; 100%), <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (314; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (251; 80%).</p>
+<p>The most frequent other feature values with which <code>ADJ</code> and <code>NumType</code> co-occurred: <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (314; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (314; 100%), <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (314; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (251; 80%).</p>
 
 <p><code>ADJ</code> tokens may have the following values of <code>NumType</code>:</p>
 
@@ -141,6 +142,61 @@ The feature is used with 2 part-of-speech tags: <a href="">sl-pos/NUM</a> (1927;
 <p>The 10 most frequent relations where parent and child node agree in <code>NumType</code>:
 <tt>NUM –[<a href="../dep/conj.html">conj</a>]–&gt; NUM</tt> (94; 100%),
 <tt>NUM –[<a href="../dep/compound.html">compound</a>]–&gt; NUM</tt> (31; 91%).</p>
+
+<hr />
+
+<h2 id="treebank-statistics-udslovenian-sst">Treebank Statistics (UD_Slovenian-SST)</h2>
+
+<p>This feature is universal.
+It occurs with 4 different values: <code>Card</code>, <code>Gen</code>, <code>Ord</code>, <code>Sets</code>.</p>
+
+<p>586 tokens (2%) have a non-empty value of <code>NumType</code>.
+121 types (2%) occur at least once with a non-empty value of <code>NumType</code>.
+76 lemmas (2%) occur at least once with a non-empty value of <code>NumType</code>.
+The feature is used with 2 part-of-speech tags: <a href="">sl-pos/NUM</a> (499; 2% instances), <a href="">sl-pos/ADJ</a> (87; 0% instances).</p>
+
+<h3 id="num-1"><code>NUM</code></h3>
+
+<p>499 <a href="">sl-pos/NUM</a> tokens (100% of all <code>NUM</code> tokens) have a non-empty value of <code>NumType</code>.</p>
+
+<p>The most frequent other feature values with which <code>NUM</code> and <code>NumType</code> co-occurred: <tt><a href="NumForm.html">NumForm</a>=Word</tt> (499; 100%), <tt><a href="Number.html">Number</a>=Plur</tt> (287; 58%).</p>
+
+<p><code>NUM</code> tokens may have the following values of <code>NumType</code>:</p>
+
+<ul>
+  <li><code>Card</code> (498; 100% of non-empty <code>NumType</code>): <em>eno, dva, en, ena, tri, tisoč, dvajset, dve, pet, enega</em></li>
+  <li><code>Sets</code> (1; 0% of non-empty <code>NumType</code>): <em>dvoje</em></li>
+</ul>
+
+<p><code>NumType</code> seems to be <strong>lexical feature</strong> of <code>NUM</code>. 100% lemmas (53) occur only with one value of <code>NumType</code>.</p>
+
+<h3 id="adj-1"><code>ADJ</code></h3>
+
+<p>87 <a href="">sl-pos/ADJ</a> tokens (5% of all <code>ADJ</code> tokens) have a non-empty value of <code>NumType</code>.</p>
+
+<p>The most frequent other feature values with which <code>ADJ</code> and <code>NumType</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (87; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (87; 100%), <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (85; 98%), <tt><a href="Number.html">Number</a>=Sing</tt> (82; 94%).</p>
+
+<p><code>ADJ</code> tokens may have the following values of <code>NumType</code>:</p>
+
+<ul>
+  <li><code>Gen</code> (3; 3% of non-empty <code>NumType</code>): <em>dvojni, dvojno, trojni</em></li>
+  <li><code>Ord</code> (84; 97% of non-empty <code>NumType</code>): <em>prvi, prvo, prva, tretjo, prvega, devetindvajseti, peta, tretja, tretji, trideseti</em></li>
+  <li><code>EMPTY</code> (1578): <em>dobro, drugo, drugi, dober, zanimivo, druga, drugega, glavnem, lep, lepa</em></li>
+</ul>
+
+<p><code>NumType</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (23) occur only with one value of <code>NumType</code>.</p>
+
+<h2 id="relations-with-agreement-in-numtype-1">Relations with Agreement in <code>NumType</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code>NumType</code>:
+<tt>NUM –[<a href="../dep/compound.html">compound</a>]–&gt; NUM</tt> (48; 100%),
+<tt>NUM –[<a href="../dep/conj.html">conj</a>]–&gt; NUM</tt> (29; 100%),
+<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (5; 56%),
+<tt>NUM –[<a href="../dep/reparandum.html">reparandum</a>]–&gt; NUM</tt> (4; 100%),
+<tt>NUM –[<a href="../dep/mwe.html">mwe</a>]–&gt; NUM</tt> (4; 100%),
+<tt>ADJ –[<a href="../dep/reparandum.html">reparandum</a>]–&gt; ADJ</tt> (2; 100%),
+<tt>NUM –[<a href="../dep/nummod.html">nummod</a>]–&gt; NUM</tt> (1; 100%),
+<tt>NUM –[<a href="../dep/advmod.html">advmod</a>]–&gt; NUM</tt> (1; 100%).</p>
 
 
 
@@ -199,6 +255,7 @@ NumType in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -230,11 +287,40 @@ NumType in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -258,6 +344,7 @@ NumType in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'sl-feat';
@@ -283,7 +370,7 @@ NumType in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

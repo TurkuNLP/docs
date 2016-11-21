@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-grc">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/grc/pos">grc/pos</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-grc">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/grc/pos">grc/pos</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_grc-pos/CONJ.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -149,11 +150,11 @@ Out of 13 observed tags, the rank of <code>CONJ</code> is: 7 in number of lemmas
 
 <p>The form / lemma ratio of <code>CONJ</code> is 1.630769 (the average of all parts of speech is 3.041201).</p>
 
-<p>The 1st highest number of forms (7) was observed with the lemma “ἤ”: <em>ἠέ, ἠὲ, ἢ, ἤ, ἦ, ἦέ, ἦε</em></p>
+<p>The 1st highest number of forms (7) was observed with the lemma “ἤ”: <em>ἠέ, ἠὲ, ἢ, ἤ, ἦ, ἦέ, ἦε</em>.</p>
 
-<p>The 2nd highest number of forms (6) was observed with the lemma “καί”: <em>[καὶ, [καὶ], κ-, καί, καὶ, καὶ]</em></p>
+<p>The 2nd highest number of forms (6) was observed with the lemma “καί”: <em>[καὶ, [καὶ], κ-, καί, καὶ, καὶ]</em>.</p>
 
-<p>The 3rd highest number of forms (6) was observed with the lemma “τε”: <em>δ̓, θ̓, τ-, τ̓, τέ, τε</em></p>
+<p>The 3rd highest number of forms (6) was observed with the lemma “τε”: <em>δ̓, θ̓, τ-, τ̓, τέ, τε</em>.</p>
 
 <p><code>CONJ</code> occurs with 7 features: <a href="">grc-feat/Mood</a> (2; 0% instances), <a href="">grc-feat/Number</a> (2; 0% instances), <a href="">grc-feat/Person</a> (2; 0% instances), <a href="">grc-feat/Tense</a> (2; 0% instances), <a href="">grc-feat/VerbForm</a> (2; 0% instances), <a href="">grc-feat/Voice</a> (2; 0% instances), <a href="">grc-feat/Aspect</a> (1; 0% instances)</p>
 
@@ -266,11 +267,11 @@ Out of 13 observed tags, the rank of <code>CONJ</code> is: 12 in number of lemma
 
 <p>The form / lemma ratio of <code>CONJ</code> is 2.300000 (the average of all parts of speech is 3.412038).</p>
 
-<p>The 1st highest number of forms (4) was observed with the lemma “ἀλλά”: <em>ἀλλά, ἀλλὰ, ἀλλ’, ἄλλα</em></p>
+<p>The 1st highest number of forms (4) was observed with the lemma “ἀλλά”: <em>ἀλλά, ἀλλὰ, ἀλλ’, ἄλλα</em>.</p>
 
-<p>The 2nd highest number of forms (3) was observed with the lemma “μηδέ”: <em>μηδέ, μηδὲ, μηδ’</em></p>
+<p>The 2nd highest number of forms (3) was observed with the lemma “μηδέ”: <em>μηδέ, μηδὲ, μηδ’</em>.</p>
 
-<p>The 3rd highest number of forms (3) was observed with the lemma “οὐδέ”: <em>οὐδέ, οὐδὲ, οὐδ’</em></p>
+<p>The 3rd highest number of forms (3) was observed with the lemma “οὐδέ”: <em>οὐδέ, οὐδὲ, οὐδ’</em>.</p>
 
 <p><code>CONJ</code> does not occur with any features.</p>
 
@@ -351,6 +352,7 @@ CONJ in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -382,11 +384,40 @@ CONJ in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -410,6 +441,7 @@ CONJ in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'grc-pos';
@@ -435,7 +467,7 @@ CONJ in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

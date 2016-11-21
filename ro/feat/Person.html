@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-ro">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/ro/feat">ro/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ro">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ro/feat">ro/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ro-feat/Person.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -56,108 +57,118 @@ for <code>Person</code>.</p>
 <p>This feature is universal.
 It occurs with 3 different values: <code>1</code>, <code>2</code>, <code>3</code>.</p>
 
-<p>2048 tokens (17%) have a non-empty value of <code>Person</code>.
-728 types (16%) occur at least once with a non-empty value of <code>Person</code>.
-479 lemmas (13%) occur at least once with a non-empty value of <code>Person</code>.
-The feature is used with 4 part-of-speech tags: <a href="">ro-pos/VERB</a> (826; 7% instances), <a href="">ro-pos/PRON</a> (682; 6% instances), <a href="">ro-pos/AUX</a> (369; 3% instances), <a href="">ro-pos/DET</a> (171; 1% instances).</p>
+<p>35236 tokens (16%) have a non-empty value of <code>Person</code>.
+4420 types (14%) occur at least once with a non-empty value of <code>Person</code>.
+1486 lemmas (9%) occur at least once with a non-empty value of <code>Person</code>.
+The feature is used with 4 part-of-speech tags: <a href="">ro-pos/VERB</a> (13981; 6% instances), <a href="">ro-pos/PRON</a> (11888; 5% instances), <a href="">ro-pos/AUX</a> (5534; 3% instances), <a href="">ro-pos/DET</a> (3833; 2% instances).</p>
 
 <h3 id="verb"><code>VERB</code></h3>
 
-<p>826 <a href="">ro-pos/VERB</a> tokens (56% of all <code>VERB</code> tokens) have a non-empty value of <code>Person</code>.</p>
+<p>13981 <a href="">ro-pos/VERB</a> tokens (56% of all <code>VERB</code> tokens) have a non-empty value of <code>Person</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Person</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (826; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (826; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (687; 83%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (545; 66%), <tt><a href="Number.html">Number</a>=Sing</tt> (451; 55%).</p>
+<p>The most frequent other feature values with which <code>VERB</code> and <code>Person</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (13981; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (13981; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (12072; 86%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (9136; 65%), <tt><a href="Number.html">Number</a>=Sing</tt> (7480; 54%).</p>
 
 <p><code>VERB</code> tokens may have the following values of <code>Person</code>:</p>
 
 <ul>
-  <li><code>1</code> (62; 8% of non-empty <code>Person</code>): <em>am, duc, rog, rugăm, știu, Aflai, Păstrăm, aflu, arborăm, asist</em></li>
-  <li><code>2</code> (73; 9% of non-empty <code>Person</code>): <em>poți, spuneți, puteai, alăptați, aveți, credeți, intenționați, luați, puteți, știți</em></li>
-  <li><code>3</code> (691; 84% of non-empty <code>Person</code>): <em>poate, este, putea, pot, sunt, trebuie, are, era, erau, face</em></li>
-  <li><code>EMPTY</code> (645): <em>fost, putea, aflat, fi, fiind, putut, făcut, privind, început, devenit</em></li>
+  <li><code>1</code> (650; 5% of non-empty <code>Person</code>): <em>știu, putem, eram, avem, cred, rog, așteptam, rugăm, spun, sunt</em></li>
+  <li><code>2</code> (866; 6% of non-empty <code>Person</code>): <em>luați, vezi, aveți, poți, utilizați, puteai, spuneți, puteți, sunteți, știți</em></li>
+  <li><code>3</code> (12465; 89% of non-empty <code>Person</code>): <em>este, poate, era, trebuie, sunt, pot, are, e, avea, fie</em></li>
+  <li><code>EMPTY</code> (11187): <em>fost, privind, fi, avut, putea, prevăzute, fiind, făcut, trebui, având</em></li>
 </ul>
 
 <table>
-  <tr><th>Paradigm <i>putea</i></th><th><tt>1</tt></th><th><tt>2</tt></th><th><tt>3</tt></th></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Imp|<a href="Number.html">Number</a>=Plur</tt></td><td></td><td><em>Puteți</em></td><td></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Sing|<a href="Tense.html">Tense</a>=Imp</tt></td><td></td><td><em>puteai</em></td><td><em>putea</em></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Sing|<a href="Tense.html">Tense</a>=Past</tt></td><td></td><td></td><td><em>putu</em></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Sing|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td><em>poți</em></td><td><em>poate</em></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Tense.html">Tense</a>=Imp</tt></td><td><em>puteam</em></td><td></td><td><em>puteau</em></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Tense.html">Tense</a>=Past</tt></td><td><em>puturăm</em></td><td></td><td><em>putură</em></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td><em>puteți</em></td><td><em>pot</em></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Sub|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td></td><td><em>poată</em></td></tr>
+  <tr><th>Paradigm <i>fi</i></th><th><tt>1</tt></th><th><tt>2</tt></th><th><tt>3</tt></th></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Imp|<a href="Number.html">Number</a>=Sing</tt></td><td></td><td><em>fi, fii</em></td><td></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Sing|<a href="Tense.html">Tense</a>=Imp</tt></td><td></td><td><em>erai</em></td><td><em>era</em></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Sing|<a href="Tense.html">Tense</a>=Past</tt></td><td></td><td></td><td><em>fu</em></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Sing|<a href="Tense.html">Tense</a>=Pqp</tt></td><td></td><td></td><td><em>fusese</em></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Sing|<a href="Tense.html">Tense</a>=Pres|<a href="Variant.html">Variant</a>=Short</tt></td><td></td><td></td><td><em>-i, e-</em></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Sing|<a href="Tense.html">Tense</a>=Pres</tt></td><td><em>sunt</em></td><td><em>ești</em></td><td><em>este, e, îi</em></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Tense.html">Tense</a>=Imp</tt></td><td></td><td></td><td><em>erau</em></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Tense.html">Tense</a>=Pqp</tt></td><td></td><td></td><td><em>fuseseră</em></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Tense.html">Tense</a>=Pres</tt></td><td><em>suntem</em></td><td><em>sunteți</em></td><td><em>sunt</em></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Tense.html">Tense</a>=Imp</tt></td><td><em>eram</em></td><td></td><td></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Sub|<a href="Number.html">Number</a>=Sing|<a href="Tense.html">Tense</a>=Pres</tt></td><td><em>fiu</em></td><td><em>fii</em></td><td></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Sub|<a href="Number.html">Number</a>=Plur|<a href="Tense.html">Tense</a>=Pres</tt></td><td><em>fim</em></td><td></td><td></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Sub|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td></td><td><em>fie</em></td></tr>
 </table>
 
 <h3 id="pron"><code>PRON</code></h3>
 
-<p>682 <a href="">ro-pos/PRON</a> tokens (100% of all <code>PRON</code> tokens) have a non-empty value of <code>Person</code>.</p>
+<p>11888 <a href="">ro-pos/PRON</a> tokens (100% of all <code>PRON</code> tokens) have a non-empty value of <code>Person</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>Person</code> co-occurred: <tt><a href="Variant.html">Variant</a>=EMPTY</tt> (593; 87%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (496; 73%), <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (481; 71%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (442; 65%), <tt><a href="Strength.html">Strength</a>=Weak</tt> (379; 56%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (342; 50%).</p>
+<p>The most frequent other feature values with which <code>PRON</code> and <code>Person</code> co-occurred: <tt><a href="Variant.html">Variant</a>=EMPTY</tt> (9823; 83%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (8714; 73%), <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (7957; 67%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (7250; 61%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (6838; 58%), <tt><a href="Strength.html">Strength</a>=Weak</tt> (6199; 52%).</p>
 
 <p><code>PRON</code> tokens may have the following values of <code>Person</code>:</p>
 
 <ul>
-  <li><code>1</code> (58; 9% of non-empty <code>Person</code>): <em>mă, ne, -mi, eu, m-, mi, noi, mine, m, mi-</em></li>
-  <li><code>2</code> (50; 7% of non-empty <code>Person</code>): <em>vă, te, dumneavoastră, tu, îți, ți, ți-, -ți, -V, Dumneata</em></li>
-  <li><code>3</code> (574; 84% of non-empty <code>Person</code>): <em>se, care, ce, s-, își, îl, -l, el, -i, -și</em></li>
+  <li><code>1</code> (647; 5% of non-empty <code>Person</code>): <em>ne, mă, eu, noi, m-, -mi, mi-, mine, ne-, îmi</em></li>
+  <li><code>2</code> (527; 4% of non-empty <code>Person</code>): <em>dumneavoastră, vă, te, -ți, v-, tu, ți-, -vă, îți, te-</em></li>
+  <li><code>3</code> (10714; 90% of non-empty <code>Person</code>): <em>se, care, ce, s-, el, le, o, își, -și, -l</em></li>
+  <li><code>EMPTY</code> (9): <em>ș.a., dvs., Î.P.S.</em></li>
 </ul>
 
-<p><code>Person</code> seems to be <strong>lexical feature</strong> of <code>PRON</code>. 100% lemmas (65) occur only with one value of <code>Person</code>.</p>
+<p><code>Person</code> seems to be <strong>lexical feature</strong> of <code>PRON</code>. 100% lemmas (46) occur only with one value of <code>Person</code>.</p>
 
 <h3 id="aux"><code>AUX</code></h3>
 
-<p>369 <a href="">ro-pos/AUX</a> tokens (83% of all <code>AUX</code> tokens) have a non-empty value of <code>Person</code>.</p>
+<p>5534 <a href="">ro-pos/AUX</a> tokens (84% of all <code>AUX</code> tokens) have a non-empty value of <code>Person</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Person</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (251; 68%), <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (251; 68%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (251; 68%), <tt><a href="Number.html">Number</a>=Sing</tt> (230; 62%).</p>
+<p>The most frequent other feature values with which <code>AUX</code> and <code>Person</code> co-occurred: <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (4400; 80%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (4399; 79%), <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (4399; 79%), <tt><a href="Number.html">Number</a>=Sing</tt> (3316; 60%).</p>
 
 <p><code>AUX</code> tokens may have the following values of <code>Person</code>:</p>
 
 <ul>
-  <li><code>1</code> (31; 8% of non-empty <code>Person</code>): <em>am, -am, -aș, voi, aș, vom</em></li>
-  <li><code>2</code> (14; 4% of non-empty <code>Person</code>): <em>ai, -ai, ați, -i, -veți, vei</em></li>
-  <li><code>3</code> (324; 88% of non-empty <code>Person</code>): <em>a, au, ar, este, sunt, va, -a, era, fie, vor</em></li>
-  <li><code>EMPTY</code> (76): <em>fost, fi, fiind</em></li>
+  <li><code>1</code> (355; 6% of non-empty <code>Person</code>): <em>am, aș, vom, voi, sunt, -aș, suntem, eram, fiu, -am</em></li>
+  <li><code>2</code> (140; 3% of non-empty <code>Person</code>): <em>ai, ați, veți, vei, -ai, fii, sunteți, erai, ești, oi</em></li>
+  <li><code>3</code> (5039; 91% of non-empty <code>Person</code>): <em>a, au, ar, este, sunt, va, vor, fie, era, e</em></li>
+  <li><code>EMPTY</code> (1073): <em>fi, fost, fiind, nefiind</em></li>
 </ul>
 
 <table>
   <tr><th>Paradigm <i>avea</i></th><th><tt>1</tt></th><th><tt>2</tt></th><th><tt>3</tt></th></tr>
   <tr><td><tt>_</tt></td><td><em>am</em></td><td></td><td><em>ar</em></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Sing|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td><em>-aș, aș</em></td><td><em>ai, -ai</em></td><td><em>a, -a</em></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td><em>am, -am</em></td><td></td><td><em>ar, au, -ar</em></td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Sing</tt></td><td></td><td><em>ai</em></td><td><em>a</em></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Sing|<a href="Tense.html">Tense</a>=Imp|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td></td><td></td><td><em>avea</em></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Sing|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td></td><td></td><td><em>are</em></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Tense.html">Tense</a>=Imp|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td></td><td></td><td><em>aveau</em></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing</tt></td><td><em>aș</em></td><td><em>ai</em></td><td><em>a, a-</em></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Variant.html">Variant</a>=Short</tt></td><td><em>-aș</em></td><td><em>-ai</em></td><td><em>-a</em></td></tr>
   <tr><td><tt><a href="Number.html">Number</a>=Plur</tt></td><td></td><td><em>ați</em></td><td><em>au</em></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Variant.html">Variant</a>=Short</tt></td><td></td><td><em>-ați</em></td><td><em>-au</em></td></tr>
+  <tr><td><tt><a href="Variant.html">Variant</a>=Short</tt></td><td><em>-am</em></td><td></td><td><em>-ar</em></td></tr>
 </table>
 
 <h3 id="det"><code>DET</code></h3>
 
-<p>171 <a href="">ro-pos/DET</a> tokens (28% of all <code>DET</code> tokens) have a non-empty value of <code>Person</code>.</p>
+<p>3833 <a href="">ro-pos/DET</a> tokens (32% of all <code>DET</code> tokens) have a non-empty value of <code>Person</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>Person</code> co-occurred: <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (130; 76%), <tt><a href="Case.html">Case</a>=Nom</tt> (114; 67%), <tt><a href="Gender.html">Gender</a>=Fem</tt> (99; 58%), <tt><a href="Position.html">Position</a>=EMPTY</tt> (95; 56%).</p>
+<p>The most frequent other feature values with which <code>DET</code> and <code>Person</code> co-occurred: <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (2829; 74%), <tt><a href="Case.html">Case</a>=Acc,Nom</tt> (2220; 58%).</p>
 
 <p><code>DET</code> tokens may have the following values of <code>Person</code>:</p>
 
 <ul>
-  <li><code>1</code> (11; 6% of non-empty <code>Person</code>): <em>mele, mea, noastră, mei, meu, noastre</em></li>
-  <li><code>2</code> (1; 1% of non-empty <code>Person</code>): <em>voastră</em></li>
-  <li><code>3</code> (159; 93% of non-empty <code>Person</code>): <em>toate, acest, alte, multe, această, aceste, sale, său, ei, toată</em></li>
-  <li><code>EMPTY</code> (437): <em>o, un, a, al, ale, lui, cele, unui, -lea, cel</em></li>
+  <li><code>1</code> (177; 5% of non-empty <code>Person</code>): <em>mea, meu, noastre, nostru, noastră, mele, mei, noștri, însumi, -mea</em></li>
+  <li><code>2</code> (44; 1% of non-empty <code>Person</code>): <em>ta, tău, tale, dumitale, voastră, vostru, voștri, tăi, voastre</em></li>
+  <li><code>3</code> (3612; 94% of non-empty <code>Person</code>): <em>lui, acest, lor, orice, toate, această, aceste, alte, fiecare, ei</em></li>
+  <li><code>EMPTY</code> (8190): <em>o, un, a, al, ale, lui, unei, unui, cel, unor</em></li>
 </ul>
 
-<p><code>Person</code> seems to be <strong>lexical feature</strong> of <code>DET</code>. 100% lemmas (49) occur only with one value of <code>Person</code>.</p>
+<p><code>Person</code> seems to be <strong>lexical feature</strong> of <code>DET</code>. 100% lemmas (34) occur only with one value of <code>Person</code>.</p>
 
 <h2 id="relations-with-agreement-in-person">Relations with Agreement in <code>Person</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>Person</code>:
-<tt>VERB –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; PRON</tt> (84; 69%),
-<tt>VERB –[<a href="../dep/expl:pv.html">expl:pv</a>]–&gt; PRON</tt> (77; 69%),
-<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (43; 64%),
-<tt>VERB –[<a href="../dep/expl:pass.html">expl:pass</a>]–&gt; PRON</tt> (34; 62%),
-<tt>VERB –[<a href="../dep/expl:poss.html">expl:poss</a>]–&gt; PRON</tt> (22; 63%),
-<tt>VERB –[<a href="../dep/csubj.html">csubj</a>]–&gt; VERB</tt> (15; 52%),
-<tt>PRON –[<a href="../dep/acl.html">acl</a>]–&gt; VERB</tt> (5; 56%),
-<tt>PRON –[<a href="../dep/cop.html">cop</a>]–&gt; VERB</tt> (5; 83%),
-<tt>VERB –[<a href="../dep/remnant.html">remnant</a>]–&gt; VERB</tt> (3; 100%),
-<tt>PRON –[<a href="../dep/remnant.html">remnant</a>]–&gt; PRON</tt> (3; 100%).</p>
+<tt>VERB –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; PRON</tt> (1581; 73%),
+<tt>VERB –[<a href="../dep/expl:pv.html">expl:pv</a>]–&gt; PRON</tt> (1529; 68%),
+<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (1263; 75%),
+<tt>VERB –[<a href="../dep/expl:pass.html">expl:pass</a>]–&gt; PRON</tt> (870; 79%),
+<tt>VERB –[<a href="../dep/nmod.html">nmod</a>]–&gt; PRON</tt> (461; 55%),
+<tt>VERB –[<a href="../dep/expl.html">expl</a>]–&gt; PRON</tt> (284; 59%),
+<tt>VERB –[<a href="../dep/expl:impers.html">expl:impers</a>]–&gt; PRON</tt> (104; 87%),
+<tt>PRON –[<a href="../dep/acl.html">acl</a>]–&gt; VERB</tt> (94; 54%),
+<tt>PRON –[<a href="../dep/cop.html">cop</a>]–&gt; VERB</tt> (59; 71%),
+<tt>PRON –[<a href="../dep/mwe.html">mwe</a>]–&gt; PRON</tt> (56; 100%).</p>
 
 
 
@@ -216,6 +227,7 @@ Person in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -247,11 +259,40 @@ Person in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -275,6 +316,7 @@ Person in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'ro-feat';
@@ -300,7 +342,7 @@ Person in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

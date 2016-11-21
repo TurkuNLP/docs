@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-uk">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/uk/dep">uk/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-uk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/uk/dep">uk/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-dep/list.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -45,6 +46,43 @@ for <code>list</code>.</p>
 <!-- "automatic stats" -->
 
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udukrainian">Treebank Statistics (UD_Ukrainian)</h2>
+
+<p>This relation is universal.</p>
+
+<p>2 nodes (0%) are attached to their parents as <code>list</code>.</p>
+
+<p>2 instances of <code>list</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 5.</p>
+
+<p>The following 1 pairs of parts of speech are connected with <code>list</code>: <a href="">uk-pos/PROPN</a>-<a href="">uk-pos/NOUN</a> (2; 100% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 9	bgColor:blue
+# visual-style 9	fgColor:white
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 1 9 list	color:blue
+1	Ярослав	Ярослав	PROPN	noun:inanim:m:v_naz:prop:xp2	Animacy=Inan|Case=Nom|Gender=Masc	0	root	_	_
+2	Шевченко	Шевченко	PROPN	noun:anim:f:v_naz:nv:np:prop:lname	Animacy=Anim|Case=Nom|Gender=Fem	1	name	_	_
+3	телефон	телефон	NOUN	noun:inanim:m:v_naz:xp1	Animacy=Inan|Case=Nom|Gender=Masc	1	list	_	SpaceAfter=No
+4	:	:	PUNCT	punct	_	3	punct	_	_
+5	890-365-345	890-365-345	SYM	sym	_	3	appos	_	SpaceAfter=No
+6	,	,	PUNCT	punct	_	3	punct	_	_
+7	ел	ел.	ADJ	adj:f:v_naz:nv:abbr	Abbr=Yes|Case=Nom|Gender=Fem	9	amod	_	SpaceAfter=No
+8	.	.	PUNCT	punct	_	7	punct	_	_
+9	пошта	пошта	NOUN	noun:inanim:f:v_naz	Animacy=Inan|Case=Nom|Gender=Fem	1	list	_	SpaceAfter=No
+10	:	:	PUNCT	punct	_	9	punct	_	_
+11	jarko@gmail.com	jarko@gmail.com	SYM	sym	_	9	appos	_	SpaceAfter=No
+12	.	.	PUNCT	punct	_	1	punct	_	_
+
+</code></pre>
 
 
 
@@ -103,6 +141,7 @@ list in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -134,11 +173,40 @@ list in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -162,6 +230,7 @@ list in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'uk-dep';
@@ -187,7 +256,7 @@ list in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

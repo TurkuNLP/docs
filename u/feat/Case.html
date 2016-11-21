@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-u">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/u/feat">u/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-u">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/u/feat">u/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-feat/Case.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -361,9 +362,9 @@ could-become.</em> “Oroszlány could become a dead city.”</li>
 <h4 id="examples-14">Examples</h4>
 
 <ul>
-  <li>[hu]<em>ház</em> “house”; <em><b>házb</b><b>a</b></em> “into the house”</li>
-  <li>[fi] <em>talo</em> “house”; <em><b>talo</b><b>on</b></em> “into the house”</li>
-  <li>[et] <em>maja</em> “house”; <em><b>majas</b><b>se / majja</b></em> “into the house”</li>
+  <li>[hu] <em>ház</em> “house”; <em><b>házba</b></em> “into the house”</li>
+  <li>[fi] <em>talo</em> “house”; <em><b>taloon</b></em> “into the house”</li>
+  <li>[et] <em>maja</em> “house”; <em><b>majasse</b></em> “into the house”</li>
 </ul>
 
 <h3 id="ela-elative"><code>Ela</code>: elative</h3>
@@ -373,7 +374,7 @@ could-become.</em> “Oroszlány could become a dead city.”</li>
 <h4 id="examples-15">Examples</h4>
 
 <ul>
-  <li>[hu]<em>ház</em> “house”; <em><b>házból</b></em> “from the house”</li>
+  <li>[hu] <em>ház</em> “house”; <em><b>házból</b></em> “from the house”</li>
   <li>[fi] <em>talo</em> “house”; <em><b>talos</b><b>t</b><b>a</b></em> “from the house”</li>
   <li>[et] <em>maja</em> “house”; <em><b>majas</b><b>t</b></em> “from the house”</li>
 </ul>
@@ -382,9 +383,16 @@ could-become.</em> “Oroszlány could become a dead city.”</li>
 
 <p>Distinguished by some scholars in Estonian, not recognized by
 traditional grammar, exists in the Multext-East Estonian tagset and in
-the Eesti keele puudepank.  Reportedly same or similar meaning as
-illative. Forms of this case exist only in singular and not for all
-nouns.</p>
+the Eesti keele puudepank. It has the meaning of illative, and
+some grammars will thus consider the additive just an alternative
+form of illative.
+Forms of this case exist only in singular and not for all nouns.</p>
+
+<h4 id="examples-16">Examples</h4>
+
+<ul>
+  <li>[et] <em>riik</em> “government”; <em>riigisse</em> “to the government” (singular illative); <em><b>riiki</b></em> “to the government” (singular additive)</li>
+</ul>
 
 <h3 id="ade-adessive"><code>Ade</code>: adessive</h3>
 
@@ -392,12 +400,12 @@ nouns.</p>
 corresponding directional cases are allative (towards something) and
 ablative (from something).</p>
 
-<h4 id="examples-16">Examples</h4>
+<h4 id="examples-17">Examples</h4>
 
 <ul>
   <li>[hu] <em>pénztár</em> “cash desk”; <em><b>pénztárnál</b></em> “at the cash desk”</li>
   <li>[fi] <em>pöytä</em> “table”; <em><b>pöydällä</b></em> “on the table”</li>
-  <li>[et] <em>laud</em> “table”;<em><b>laual</b></em> “on the table”</li>
+  <li>[et] <em>laud</em> “table”; <em><b>laual</b></em> “on the table”</li>
 </ul>
 
 <p>Note that adessive is used to express location on the surface of
@@ -409,7 +417,7 @@ Hungarian.</p>
 <p>The allative case expresses direction to something (destination is
 adessive, i.e. at or on that something).</p>
 
-<h4 id="examples-17">Examples</h4>
+<h4 id="examples-18">Examples</h4>
 
 <ul>
   <li>[hu] <em>pénztár</em> “cash desk”; <em><b>pénztár</b><b>hoz</b></em> “to the cash desk”</li>
@@ -420,12 +428,12 @@ adessive, i.e. at or on that something).</p>
 
 <p>Prototypical meaning: direction from some point.</p>
 
-<h4 id="examples-18">Examples</h4>
+<h4 id="examples-19">Examples</h4>
 
 <ul>
   <li>[hu] <em>a <b>barátomtól</b> jövök</em> “I’m coming <b>from my friend</b>”</li>
-  <li>[fi] <em>pöydältä</em> “from the table”; <em>katolta</em> “from the roof”;
-<em>rannalta</em> “from the beach”</li>
+  <li>[fi] <em><b>pöydältä</b></em> “from the table”; <em><b>katolta</b></em> “from the roof”;
+<em><b>rannalta</b></em> “from the beach”</li>
 </ul>
 
 <h3 id="sup-superessive"><code>Sup</code>: superessive</h3>
@@ -435,7 +443,7 @@ Hungarian</a>,
 to indicate location on top of something or on the surface of
 something.</p>
 
-<h4 id="examples-19">Examples</h4>
+<h4 id="examples-20">Examples</h4>
 
 <ul>
   <li>[hu] <em>asztal</em> “table”; <em><b>asztalon</b></em> “on the table”</li>
@@ -449,7 +457,7 @@ destination of movement, originally to the surface of something
 (e.g. “to climb a tree”), and, by extension, in other figurative
 meanings as well (e.g. “to university”).</p>
 
-<h4 id="examples-20">Examples</h4>
+<h4 id="examples-21">Examples</h4>
 
 <ul>
   <li>[hu] <em>Belgrádtól 150 <b>kilométerre délnyugatra</b></em> lit.
@@ -467,7 +475,7 @@ to express the movement from the surface of something (like “moved off
 the table”). Other meanings are possible as well, e.g. “about
 something”.</p>
 
-<h4 id="examples-21">Examples</h4>
+<h4 id="examples-22">Examples</h4>
 
 <ul>
   <li>[hu] <em>asztal</em> “table”; <em>az <b>asztal</b><b>ról</b></em> “off the table”</li>
@@ -482,7 +490,7 @@ something. Similar case in Basque is called directional allative
 thought of as a union of allative, illative and sublative, while in
 Basque it is derived from allative, which also exists independently.</p>
 
-<h4 id="examples-22">Examples</h4>
+<h4 id="examples-23">Examples</h4>
 
 <ul>
   <li>[eu] <em>behe</em> “low”; <em><b>beherantz</b></em> “down”</li>
@@ -492,7 +500,7 @@ Basque it is derived from allative, which also exists independently.</p>
 
 <p>The temporal case is used to indicate time.</p>
 
-<h4 id="examples-23">Examples</h4>
+<h4 id="examples-24">Examples</h4>
 
 <ul>
   <li>[hu] <em><b>hétkor</b></em> “at seven (o’clock)”; <em><b>éjfélkor</b></em> “at midnight”;
@@ -505,7 +513,7 @@ Basque it is derived from allative, which also exists independently.</p>
 time. Similar case in Basque is called terminal allative (Spanish
 <em>adlativo terminal</em>).</p>
 
-<h4 id="examples-24">Examples</h4>
+<h4 id="examples-25">Examples</h4>
 
 <ul>
   <li>[et] <em><b>jõeni</b></em> “down to the river”; <em>kella <b>kuueni</b></em>
@@ -515,13 +523,13 @@ six o’clock”</li>
   <li>[eu] <em>erdi</em> “half”; <em><b>erdiraino</b></em> “up to the half”</li>
 </ul>
 
-<h3 id="cau-causative--motivative"><code>Cau</code>: causative / motivative</h3>
+<h3 id="cau-causative--motivative--purposive"><code>Cau</code>: causative / motivative / purposive</h3>
 
 <p>Noun in this case is the cause of something. In Hungarian it also
 seems to be used frequently with currency (“to buy something <em>for</em> the
 money”) and it also can mean the goal of something.</p>
 
-<h4 id="examples-25">Examples</h4>
+<h4 id="examples-26">Examples</h4>
 
 <ul>
   <li>[hu] <em>Egy világcég benzinkútjánál 7183 <b>forintért</b> tankoltam.</em>
@@ -538,7 +546,7 @@ behavior”</li>
 
 <p>The benefactive case corresponds to the English preposition <em>for</em>.</p>
 
-<h4 id="examples-26">Examples</h4>
+<h4 id="examples-27">Examples</h4>
 
 <ul>
   <li>[eu] <em>mutil</em> “boy”; <em><b>mutilarentzat</b></em> “for boys”</li>
@@ -605,6 +613,7 @@ Case in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -636,11 +645,40 @@ Case in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -664,6 +702,7 @@ Case in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'u-feat';
@@ -689,7 +728,7 @@ Case in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

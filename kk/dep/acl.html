@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-kk">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/kk/dep">kk/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-kk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/kk/dep">kk/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/acl.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -48,11 +49,11 @@ modifies the noun.</p>
 
 <p>Verbal adjectives that modify nouns:</p>
 
-<pre><code class="language-sdparse">Тез   жүгіретін   спортшылар   көрдін . \n Fast running athletes saw-I .
+<pre><code class="language-sdparse">Тез   жүгіретін   спортшылар   көрдім . \n Fast running athletes saw-I .
 acl(спортшылар-3, жүгіретін-2)
 advmod(жүгіретін-2, Тез-1)
-obj(көрдін-4, спортшылар-3)
-punct(көрдін-4, .-5)
+obj(көрдім-4, спортшылар-3)
+punct(көрдім-4, .-5)
 </code></pre>
 
 <p>This relation may be tagged with <code>acl:relcl</code> in the future, as it is the way
@@ -74,6 +75,8 @@ subj(ұзын-2, Шашы-1)
 punct(көрдім-4, .-5)
 </code></pre>
 
+<!-- TODO: Do we put a copula here between ұзын and қызды -->
+
 <p>Conditional phrases with ‘болса’:</p>
 
 <pre><code class="language-sdparse">Құлдық пен құл саудасына , қандай түрде болса да , тыйым салынады . \n Slavery and slave trade , whichever form-in may-be also , prohibition is-placed-on .
@@ -89,6 +92,81 @@ advmod(болса-8, да-9)
 <!-- "automatic stats" -->
 
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udkazakh">Treebank Statistics (UD_Kazakh)</h2>
+
+<p>This relation is universal.
+There are 1 language-specific subtypes of <code>acl</code>: <a href="">acl:relcl</a>.</p>
+
+<p>23 nodes (0%) are attached to their parents as <code>acl</code>.</p>
+
+<p>22 instances of <code>acl</code> (96%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.39130434782609.</p>
+
+<p>The following 4 pairs of parts of speech are connected with <code>acl</code>: <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/VERB</a> (18; 78% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/ADJ</a> (3; 13% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/NOUN</a> (1; 4% instances), <a href="">kk-pos/PROPN</a>-<a href="">kk-pos/ADJ</a> (1; 4% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 9	bgColor:blue
+# visual-style 9	fgColor:white
+# visual-style 10	bgColor:blue
+# visual-style 10	fgColor:white
+# visual-style 10 9 acl	color:blue
+1	Ел	ел	NOUN	n	_	2	nmod:poss	_	nom
+2	экономикасының	экономика	NOUN	n	_	3	nmod:poss	_	px3sp|gen
+3	негізі	негіз	NOUN	n	_	10	nsubj	_	px3sp|nom
+4	мұнай	мұнай	NOUN	n	_	9	conj	_	nom
+5	және	және	CONJ	cnjcoo	_	9	cc	_	_
+6	мұнай	мұнай	NOUN	n	_	8	conj	_	nom
+7	мен	мен	CONJ	cnjcoo	_	8	cc	_	_
+8	газ	газ	NOUN	n	_	9	dobj	_	nom
+9	өңдеу	өңде	VERB	v	_	10	acl	_	tv|ger|nom
+10	_	өнеркәсіп	NOUN	n	_	0	root	_	pl|px3sp|nom
+11	_	е	AUX	cop	_	10	cop	_	aor|p3|sg
+12	.	.	PUNCT	sent	_	10	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 3 acl	color:blue
+1	Мұның	бұл	PRON	prn	Case=Gen|PronType=Dem	5	nmod:poss	_	бұл|prn|dem|gen
+2	арты	арт	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	nsubj	_	арт|n|px3sp|nom
+3	үлкен	үлкен	ADJ	adj	_	4	acl	_	үлкен|adj
+4	дүрбелеңге	дүрбелең	NOUN	n	Case=Dat	5	nmod	_	дүрбелең|n|dat
+5	шаппасын	шаппа	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	7	dobj	_	шаппа|n|px3sp|acc
+6	кім	кім	PRON	prn	Case=Nom|PronType=Itg	7	nsubj	_	кім|prn|itg|nom
+7	біледі	біл	VERB	v	Number=Sing|Person=3|Tense=Aor	0	root	_	біл|v|tv|aor|p3|sg
+8	?	?	PUNCT	sent	_	7	punct	_	?|sent
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 7 acl	color:blue
+1	Құлдық	құлдық	NOUN	n	_	4	conj	_	nom
+2	пен	мен	CONJ	cnjcoo	_	4	cc	_	_
+3	құл	құл	NOUN	n	_	4	nmod:poss	_	nom
+4	саудасына	сауда	NOUN	n	_	12	nmod	_	px3sp|dat
+5	,	,	PUNCT	cm	_	4	punct	_	_
+6	қандай	қандай	DET	det	_	7	det	_	itg
+7	түрде	түр	NOUN	n	_	4	acl	_	loc
+8	_	бол	VERB	v	_	7	cop	_	iv|gna_cond|p3|sg
+9	_	да	PART	postadv	_	8	advmod	_	_
+10	,	,	PUNCT	cm	_	8	punct	_	_
+11	тыйым	тыйым	NOUN	n	_	12	dobj	_	nom
+12	салынады	сал	VERB	v	_	0	root	_	tv|pass|aor|p3|sg
+13	.	.	PUNCT	sent	_	12	punct	_	_
+
+</code></pre>
 
 
 
@@ -147,6 +225,7 @@ acl in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -178,11 +257,40 @@ acl in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -206,6 +314,7 @@ acl in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'kk-dep';
@@ -231,7 +340,7 @@ acl in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

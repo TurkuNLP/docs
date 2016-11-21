@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-no">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/no/dep">no/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-no">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/no/dep">no/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_no-dep/expl.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -123,7 +124,7 @@ Average distance between parent and child is 1.96542142636616.</p>
 4	rovdyr	rovdyr	NOUN	_	Definite=Ind|Gender=Neut|Number=Plur	1	nsubj	_	_
 5	i	i	ADP	_	_	7	case	_	_
 6	denne	denne	DET	_	Gender=Fem|Number=Sing|PronType=Dem	7	det	_	_
-7	sak	sak	NOUN	_	Definite=Ind|Gender=Fem|Number=Sing	1	nmod	_	_
+7	sak	sak	NOUN	_	Definite=Ind|Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
 8	?	$?	PUNCT	_	_	1	punct	_	_
 
 </code></pre>
@@ -136,7 +137,7 @@ Average distance between parent and child is 1.96542142636616.</p>
 1	Risikofritt	risikofri	ADJ	_	Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	0	root	_	_
 2	er	være	VERB	_	Mood=Ind|Tense=Pres|VerbForm=Fin	1	cop	_	_
 3	det	det	PRON	_	Gender=Neut|Number=Sing|Person=3|PronType=Prs	1	expl	_	_
-4	ikke	ikke	ADV	_	_	1	neg	_	_
+4	ikke	ikke	ADV	_	_	1	neg	_	SpaceAfter=No
 5	.	$.	PUNCT	_	_	1	punct	_	_
 
 </code></pre>
@@ -151,12 +152,12 @@ Average distance between parent and child is 1.96542142636616.</p>
 3	nok	nok	ADV	_	_	8	advmod	_	_
 4	heller	heller	ADV	_	_	8	advmod	_	_
 5	Frps	Frp	PROPN	_	Case=Gen	8	det	_	_
-6	økte	øke	ADJ	_	Definite=Def|Number=Sing	8	amod	_	_
+6	økte	øke	ADJ	_	Definite=Def|Number=Sing|VerbForm=Part	8	amod	_	_
 7	politiske	politisk	ADJ	_	Definite=Def|Degree=Pos|Number=Sing	8	amod	_	_
 8	kjøttvekt	kjøttvekt	NOUN	_	Definite=Ind|Gender=Fem|Number=Sing	0	root	_	_
-9	som	som	PRON	_	_	10	nsubj	_	_
+9	som	som	PRON	_	PronType=Rel	10	nsubj	_	_
 10	slår	slå	VERB	_	Mood=Ind|Tense=Pres|VerbForm=Fin	8	acl:relcl	_	_
-11	ut	ut	ADP	_	_	10	compound:prt	_	_
+11	ut	ut	ADP	_	_	10	compound:prt	_	SpaceAfter=No
 12	.	$.	PUNCT	_	_	8	punct	_	_
 
 </code></pre>
@@ -218,6 +219,7 @@ expl in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -249,11 +251,40 @@ expl in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -277,6 +308,7 @@ expl in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'no-dep';
@@ -302,7 +334,7 @@ expl in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

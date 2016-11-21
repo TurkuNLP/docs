@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-uk">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/uk/feat">uk/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-uk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/uk/feat">uk/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-feat/Tense.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,12 +39,114 @@
 
           <h2><code>Tense</code>: tense</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>Tense</code>.</p>
+<p>Tense is a feature that specifies the time when the action took / takes / will take place, in relation to the current moment or to another action in the utterance.</p>
+
+<h3 id="past-past-tense"><code>Past</code>: past tense</h3>
+
+<p>The past tense denotes actions that happened before the current moment. Past tense in Ukrainian is expressed by a special past form, historically derived from the past participle (also called active participle or l-participle – which is why past is the only tense that also varies in gender). In the pre-past version of the past tense the same form is accompanied by a past auxiliary verb. The past tense form can also be used to form present (or past, depending on the tense of the auxiliary verb) conditional. Since both pre-past and conditionals are formed analytically, they do not receive any morphological tags.</p>
+
+<h4 id="examples">Examples</h4>
+
+<ul>
+  <li><em>Я <b>пішов</b> додому. </em> “I<code>Masc</code> have <b>gone</b> home.”</li>
+  <li><em>Я <b>пішла</b> додому. </em> “I<code>Fem</code> have <b>gone</b> home.”</li>
+  <li><em>Я <b>пішло</b> додому. </em> “I<code>Neut</code> have <b>gone</b> home.”</li>
+  <li><em>Ти <b>пішов</b> додому. </em> “You<code>Masc</code> have <b>gone</b> home.”</li>
+  <li><em>Ти <b>пішла</b> додому. </em> “You<code>Fem</code> have <b>gone</b> home.”</li>
+  <li><em>Ти <b>пішло</b> додому. </em> “You<code>Neut</code> have <b>gone</b> home.”</li>
+  <li><em>Він <b>пішов</b> додому. </em> “He has <b>gone</b> home.”</li>
+  <li><em>Вона <b>пішла</b> додому. </em> “She has <b>gone</b> home.”</li>
+  <li><em>Воно <b>пішло</b> додому. </em> “It has <b>gone</b> home.”</li>
+</ul>
+
+<h3 id="pres-present-tense"><code>Pres</code>: present tense</h3>
+
+<p>The present tense denotes actions that are happening right now or that usually happen. Only imperfective verbs can have present forms in Ukrainian. Morphologically present forms of perfective verbs have actually a future meaning and are marked <code>Tense=Fut</code>, see the last example below.</p>
+
+<h4 id="examples-1">Examples</h4>
+
+<ul>
+  <li><em><b>Ходжу</b> додому. </em> “I <b>come</b> home.” (<em>Ходити </em> is an imperfective verb.)</li>
+  <li><em><b>Приходжу</b> додому. </em> “I <b>keep/am coming</b> home.” (<em>Приходити </em> is an imperfective verb.)</li>
+  <li><em><b>Йду</b> додому. </em> “I <b>go / am going</b> home.” (<em>Йти </em> is an imperfective verb.)</li>
+  <li><em><b>Прийду</b> додому. </em> “I <b>will come</b> home.” (<em>Прийти </em> is a perfective verb and it has a future meaning on the contrary to the imperfective forms above.)</li>
+</ul>
+
+<h3 id="fut-future-tense"><code>Fut</code>: future tense</h3>
+
+<p>The future tense denotes actions that will happen after the current moment. It is formed in Ukrainian in one of three ways, partly depending on the aspect of the verb:</p>
+
+<ul>
+  <li>Perfective verbs use present declension patterns to form future tense.</li>
+  <li>The verb <em>бути </em> “to be” has a set of distinct future forms. They combine a future stem <em>буд- </em> with present endings.
+Although these forms are morphologically very close to the present forms, they are tagged <code>Tense=Fut</code> because the same lemma has also present forms and the feature must distinguish the two.</li>
+  <li>Synthetic future forms are one of distinctive features of Ukrainian among other Slavic languages. They use the infinitive stem and endings being historically shortened future forms of the auxiliary verb <em>мати </em>“to have”. The future synthetic forms of <em>мати </em>“to have”: <em>матиму,  матимеш,  матиме, </em> <em>матимемо, </em> <em>матимете, </em> <em>матимуть. </em> The future synthetic forms of <em>робити </em> “to do”: <em>робитиму, </em> <em>робитимеш, </em> <em>робитиме, </em> <em>робитимемо, </em> <em>робитимете, </em> <em>робитимуть.</em></li>
+  <li>Note that all the imperfective Ukrainian verbs, with the exception of <em>бути</em>  “to be” itself, can also form a periphrastic future, consisting of the future form of the auxiliary бути, _ and the infinitive of the content verb. Only the auxiliary will have <code>Tense=Fut</code>, while there will be no tense information at the infinitive.</li>
+</ul>
+
+<h4 id="examples-2">Examples</h4>
+
+<ul>
+  <li><em><b>Прийду</b> додому. </em> “I <b>will come</b> home.” (<em>Прийти </em> is a perfective verb.)</li>
+  <li><em><b>Йтиму</b> додому. </em> “I <b>will</b> be coming home.” (<em>Йти </em> is an imperfective verb, here the syntheic future form is used.)</li>
+  <li><em><b>Буду</b> йти додому. </em> “I <b>will</b> be coming home.” (<em>Йти </em> is an imperfective verb, the future tense is formed periphrastically here.)</li>
+</ul>
+
 
 
 <!-- "automatic stats" -->
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udukrainian">Treebank Statistics (UD_Ukrainian)</h2>
+
+<p>This feature is universal.
+It occurs with 3 different values: <code>Fut</code>, <code>Past</code>, <code>Pres</code>.</p>
+
+<p>243 tokens (14%) have a non-empty value of <code>Tense</code>.
+141 types (20%) occur at least once with a non-empty value of <code>Tense</code>.
+109 lemmas (18%) occur at least once with a non-empty value of <code>Tense</code>.
+The feature is used with 1 part-of-speech tags: <a href="">uk-pos/VERB</a> (243; 14% instances).</p>
+
+<h3 id="verb"><code>VERB</code></h3>
+
+<p>243 <a href="">uk-pos/VERB</a> tokens (76% of all <code>VERB</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+
+<p>The most frequent other feature values with which <code>VERB</code> and <code>Tense</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (242; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (242; 100%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (168; 69%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (131; 54%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (126; 52%).</p>
+
+<p><code>VERB</code> tokens may have the following values of <code>Tense</code>:</p>
+
+<ul>
+  <li><code>Fut</code> (13; 5% of non-empty <code>Tense</code>): <em>буде, Запитаю, змінять, Зустріну, Піду, наїмся, прийдете, урятує</em></li>
+  <li><code>Past</code> (125; 51% of non-empty <code>Tense</code>): <em>був, пішов, сказав, було, була, виграв, запізнилися, зберігався, зустрів, мила</em></li>
+  <li><code>Pres</code> (105; 43% of non-empty <code>Tense</code>): <em>є, каже, плаває, навчають, Кажуть, мусять, любиш, сплю, Вважаю, Сподіваємося</em></li>
+  <li><code>EMPTY</code> (76): <em>зберігати, зароблено, копати, Почекайте, плавати, розмовляти, чекати, Іди, бути, думай</em></li>
+</ul>
+
+<table>
+  <tr><th>Paradigm <i>бути</i></th><th><tt>Pres</tt></th><th><tt>Fut</tt></th><th><tt>Past</tt></th></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc</tt></td><td></td><td></td><td><em>був</em></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Fem</tt></td><td></td><td></td><td><em>була</em></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Neut</tt></td><td></td><td></td><td><em>було</em></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3</tt></td><td><em>є</em></td><td><em>буде</em></td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Plur</tt></td><td></td><td></td><td><em>були</em></td></tr>
+</table>
+
+<p><code>Tense</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 92% lemmas (100) occur only with one value of <code>Tense</code>.</p>
+
+<h2 id="relations-with-agreement-in-tense">Relations with Agreement in <code>Tense</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code>Tense</code>:
+<tt>VERB –[<a href="../dep/ccomp.html">ccomp</a>]–&gt; VERB</tt> (18; 69%),
+<tt>VERB –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; VERB</tt> (10; 91%),
+<tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (5; 71%),
+<tt>VERB –[<a href="../dep/aux.html">aux</a>]–&gt; VERB</tt> (5; 56%),
+<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (5; 100%).</p>
 
 
 
@@ -102,6 +205,7 @@ Tense in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -133,11 +237,40 @@ Tense in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -161,6 +294,7 @@ Tense in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'uk-feat';
@@ -186,7 +320,7 @@ Tense in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-uk">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/uk/dep">uk/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-uk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/uk/dep">uk/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-dep/advcl.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -45,6 +46,83 @@ for <code>advcl</code>.</p>
 <!-- "automatic stats" -->
 
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udukrainian">Treebank Statistics (UD_Ukrainian)</h2>
+
+<p>This relation is universal.</p>
+
+<p>10 nodes (1%) are attached to their parents as <code>advcl</code>.</p>
+
+<p>6 instances of <code>advcl</code> (60%) are left-to-right (parent precedes child).
+Average distance between parent and child is 5.4.</p>
+
+<p>The following 4 pairs of parts of speech are connected with <code>advcl</code>: <a href="">uk-pos/VERB</a>-<a href="">uk-pos/VERB</a> (7; 70% instances), <a href="">uk-pos/ADJ</a>-<a href="">uk-pos/VERB</a> (1; 10% instances), <a href="">uk-pos/ADV</a>-<a href="">uk-pos/NOUN</a> (1; 10% instances), <a href="">uk-pos/ADV</a>-<a href="">uk-pos/VERB</a> (1; 10% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 3 advcl	color:blue
+1	Як	як	SCONJ	conj:subord	_	3	mark	_	_
+2	тільки	тільки	PART	part	_	3	discourse	_	_
+3	прокидається	прокидатися	VERB	verb:rev:imperf:pres:s:3	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	advcl	_	SpaceAfter=No
+4	,	,	PUNCT	punct	_	3	punct	_	_
+5	біжить	бігти	VERB	verb:imperf:pres:s:3	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	до	до	ADP	prep:rv_rod	Case=Gen	7	case	_	_
+7	вікна	вікно	NOUN	noun:inanim:n:v_rod	Animacy=Inan|Case=Gen|Gender=Neut	5	nmod	_	SpaceAfter=No
+8	.	.	PUNCT	punct	_	5	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 8 advcl	color:blue
+1	Податники	податник	NOUN	noun:anim:p:m:v_naz	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	2	nsubj	_	_
+2	мусять	мусити	VERB	verb:imperf:pres:p:3	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	платити	платити	VERB	verb:imperf:inf	Aspect=Imp|VerbForm=Inf	2	xcomp	_	_
+4	стільки	стільки	ADV	adv:&amp;pron:dem	Case=Acc|Number=Plur|NumType=Card|PronType=Dem	3	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	punct	_	2	punct	_	_
+6	скільки	скільки	ADV	adv:&amp;pron:rel	Case=Acc|Number=Plur|NumType=Card|PronType=Int	8	nsubjpass	_	_
+7	буде	бути	VERB	verb:imperf:futr:s:3	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	8	aux	_	_
+8	визначено	визначити	VERB	verb:perf:impers	Aspect=Perf|VerbForm=Imps	4	advcl	_	SpaceAfter=No
+9	.	.	PUNCT	punct	_	2	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 15	bgColor:blue
+# visual-style 15	fgColor:white
+# visual-style 11	bgColor:blue
+# visual-style 11	fgColor:white
+# visual-style 11 15 advcl	color:blue
+1	У	у	ADP	prep:rv_mis:v-u	Case=Loc	2	case	_	_
+2	квартирі	квартира	NOUN	noun:inanim:f:v_mis	Animacy=Inan|Case=Loc|Gender=Fem	6	nmod	_	_
+3	у	у	ADP	prep:rv_rod:v-u	Case=Gen	4	case	_	_
+4	вас	ви	PRON	noun:anim:p:v_rod:&amp;pron:pers:2	Animacy=Anim|Case=Gen|Number=Plur|Person=2|PronType=Prs	7	nmod	_	_
+5	приємні	приємний	ADJ	adj:p:v_naz:compb	Case=Nom|Degree=Pos|Number=Plur	6	amod	_	_
+6	24	24	NUM	numr	NumType=Card	7	nummod	_	_
+7	градуси	градус	NOUN	noun:inanim:p:m:v_naz	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
+8	,	,	PUNCT	punct	_	7	punct	_	_
+9	і	і	CONJ	conj:coord	_	11	discourse	_	_
+10	це	це	PRON	noun:inanim:n:v_naz:&amp;pron:dem	Animacy=Inan|Case=Nom|Gender=Neut|PronType=Dem	11	discourse	_	_
+11	тоді	тоді	ADV	adv:&amp;pron:dem	PronType=Dem	7	advmod	_	SpaceAfter=No
+12	,	,	PUNCT	punct	_	11	punct	_	_
+13	коли	коли	ADV	adv:&amp;pron:rel	PronType=Rel	15	mark	_	_
+14	назовні	назовні	ADV	adv	_	15	advmod	_	_
+15	мороз	мороз	NOUN	noun:inanim:m:v_naz	Animacy=Inan|Case=Nom|Gender=Masc	11	advcl	_	SpaceAfter=No
+16	,	,	PUNCT	punct	_	15	punct	_	_
+17	аж	аж	PART	part	_	18	discourse	_	_
+18	тріщить	тріщати	VERB	verb:imperf:pres:s:3	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	parataxis	_	SpaceAfter=No
+19	.	.	PUNCT	punct	_	7	punct	_	_
+
+</code></pre>
 
 
 
@@ -103,6 +181,7 @@ advcl in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -134,11 +213,40 @@ advcl in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -162,6 +270,7 @@ advcl in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'uk-dep';
@@ -187,7 +296,7 @@ advcl in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

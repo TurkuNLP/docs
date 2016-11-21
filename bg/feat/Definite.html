@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-bg">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/bg/feat">bg/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-bg">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/bg/feat">bg/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-feat/Definite.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -45,7 +46,7 @@ be marked on definite and indefinite <a href="u-pos/DET">articles</a>, or
 directly on <a href="u-pos/NOUN">nouns</a>, <a href="u-pos/ADJ">adjectives</a> etc.</p>
 
 <p>In Bulgarian there are definite and indefinite articles. The definite article is part of the word,
-in postposition (жена<b>та</b> / <em>zhena&lt;/b&gt;ta&lt;/b&gt;</em> ‘woman-the’ (the woman))). The indefinite articles can be: the form един / <em>edin</em> (one) or the zero marker.</p>
+in postposition (жена<b>та</b> / <em>zhena<b>ta</b></em> ‘woman-the’ (the woman))). The indefinite articles can be: the form един / <em>edin</em> (one) or the zero marker.</p>
 
 <p>However, when added to a nominal phrase, the articles become phrasal affixes, i.e. Bulgarian does not have agreement is definiteness. For example, хубава<b>та</b> висока руса жена / <em>hubavata visoka rusa zhena</em> ‘pretty-the tall blond woman’ (the pretty tall blond woman).</p>
 
@@ -111,7 +112,7 @@ The feature is used with 9 part-of-speech tags: <a href="">bg-pos/NOUN</a> (3271
 
 <p>13292 <a href="">bg-pos/ADJ</a> tokens (98% of all <code>ADJ</code> tokens) have a non-empty value of <code>Definite</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Definite</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (11820; 89%), <tt><a href="Aspect.html">Aspect</a>=EMPTY</tt> (11820; 89%), <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (11820; 89%), <tt><a href="Degree.html">Degree</a>=Pos</tt> (11052; 83%), <tt><a href="Number.html">Number</a>=Sing</tt> (9390; 71%).</p>
+<p>The most frequent other feature values with which <code>ADJ</code> and <code>Definite</code> co-occurred: <tt><a href="Aspect.html">Aspect</a>=EMPTY</tt> (11820; 89%), <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (11820; 89%), <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (11820; 89%), <tt><a href="Degree.html">Degree</a>=Pos</tt> (11052; 83%), <tt><a href="Number.html">Number</a>=Sing</tt> (9390; 71%).</p>
 
 <p><code>ADJ</code> tokens may have the following values of <code>Definite</code>:</p>
 
@@ -158,7 +159,7 @@ The feature is used with 9 part-of-speech tags: <a href="">bg-pos/NOUN</a> (3271
 
 <p>2765 <a href="">bg-pos/VERB</a> tokens (14% of all <code>VERB</code> tokens) have a non-empty value of <code>Definite</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Definite</code> co-occurred: <tt><a href="Person.html">Person</a>=EMPTY</tt> (2765; 100%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (2638; 95%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (2637; 95%), <tt><a href="Aspect.html">Aspect</a>=Perf</tt> (2017; 73%), <tt><a href="Number.html">Number</a>=Sing</tt> (1909; 69%), <tt><a href="Voice.html">Voice</a>=Act</tt> (1694; 61%).</p>
+<p>The most frequent other feature values with which <code>VERB</code> and <code>Definite</code> co-occurred: <tt><a href="Person.html">Person</a>=EMPTY</tt> (2765; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (2765; 100%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (2638; 95%), <tt><a href="Aspect.html">Aspect</a>=Perf</tt> (2017; 73%), <tt><a href="Number.html">Number</a>=Sing</tt> (1909; 69%), <tt><a href="Voice.html">Voice</a>=Act</tt> (1694; 61%).</p>
 
 <p><code>VERB</code> tokens may have the following values of <code>Definite</code>:</p>
 
@@ -170,10 +171,10 @@ The feature is used with 9 part-of-speech tags: <a href="">bg-pos/NOUN</a> (3271
 
 <table>
   <tr><th>Paradigm <i>остана</i></th><th><tt>Ind</tt></th><th><tt>Def</tt></th></tr>
-  <tr><td><tt><a href="Degree.html">Degree</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="VerbForm.html">VerbForm</a>=Part</tt></td><td></td><td><em>останалите</em></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td><em>останал</em></td><td></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td><em>останала</em></td><td></td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td><em>останали</em></td><td></td></tr>
+  <tr><td><tt><a href="Degree.html">Degree</a>=Pos|<a href="Number.html">Number</a>=Plur</tt></td><td></td><td><em>останалите</em></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td><em>останал</em></td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td><em>останала</em></td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Plur</tt></td><td><em>останали</em></td><td></td></tr>
 </table>
 
 <p><code>Definite</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 100% lemmas (996) occur only with one value of <code>Definite</code>.</p>
@@ -206,7 +207,7 @@ The feature is used with 9 part-of-speech tags: <a href="">bg-pos/NOUN</a> (3271
 
 <p>778 <a href="">bg-pos/DET</a> tokens (32% of all <code>DET</code> tokens) have a non-empty value of <code>Definite</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>Definite</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (587; 75%), <tt><a href="Poss.html">Poss</a>=Yes</tt> (500; 64%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (500; 64%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (400; 51%).</p>
+<p>The most frequent other feature values with which <code>DET</code> and <code>Definite</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (587; 75%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (500; 64%), <tt><a href="Poss.html">Poss</a>=Yes</tt> (500; 64%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (400; 51%).</p>
 
 <p><code>DET</code> tokens may have the following values of <code>Definite</code>:</p>
 
@@ -250,7 +251,7 @@ The feature is used with 9 part-of-speech tags: <a href="">bg-pos/NOUN</a> (3271
 
 <p>119 <a href="">bg-pos/AUX</a> tokens (6% of all <code>AUX</code> tokens) have a non-empty value of <code>Definite</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Definite</code> co-occurred: <tt><a href="Tense.html">Tense</a>=Past</tt> (119; 100%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (119; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (119; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (119; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (119; 100%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (119; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (78; 66%).</p>
+<p>The most frequent other feature values with which <code>AUX</code> and <code>Definite</code> co-occurred: <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (119; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (119; 100%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (119; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (119; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (119; 100%), <tt><a href="Tense.html">Tense</a>=Past</tt> (119; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (78; 66%).</p>
 
 <p><code>AUX</code> tokens may have the following values of <code>Definite</code>:</p>
 
@@ -263,7 +264,7 @@ The feature is used with 9 part-of-speech tags: <a href="">bg-pos/NOUN</a> (3271
 
 <p>115 <a href="">bg-pos/PRON</a> tokens (1% of all <code>PRON</code> tokens) have a non-empty value of <code>Definite</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>Definite</code> co-occurred: <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (115; 100%), <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (115; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (115; 100%), <tt><a href="Case.html">Case</a>=Nom</tt> (106; 92%), <tt><a href="Number.html">Number</a>=Sing</tt> (87; 76%), <tt><a href="Gender.html">Gender</a>=Neut</tt> (83; 72%), <tt><a href="PronType.html">PronType</a>=Ind</tt> (71; 62%).</p>
+<p>The most frequent other feature values with which <code>PRON</code> and <code>Definite</code> co-occurred: <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (115; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (115; 100%), <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (115; 100%), <tt><a href="Case.html">Case</a>=Nom</tt> (106; 92%), <tt><a href="Number.html">Number</a>=Sing</tt> (87; 76%), <tt><a href="Gender.html">Gender</a>=Neut</tt> (83; 72%), <tt><a href="PronType.html">PronType</a>=Ind</tt> (71; 62%).</p>
 
 <p><code>PRON</code> tokens may have the following values of <code>Definite</code>:</p>
 
@@ -281,16 +282,16 @@ The feature is used with 9 part-of-speech tags: <a href="">bg-pos/NOUN</a> (3271
 <h2 id="relations-with-agreement-in-definite">Relations with Agreement in <code>Definite</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>Definite</code>:
-<tt>NOUN –[<a href="../dep/amod.html">amod</a>]–&gt; ADJ</tt> (5747; 51%),
-<tt>NOUN –[<a href="../dep/nmod.html">nmod</a>]–&gt; NOUN</tt> (4790; 51%),
-<tt>NOUN –[<a href="../dep/conj.html">conj</a>]–&gt; NOUN</tt> (1772; 83%),
-<tt>NOUN –[<a href="../dep/nmod.html">nmod</a>]–&gt; PROPN</tt> (1725; 54%),
-<tt>PROPN –[<a href="../dep/name.html">name</a>]–&gt; PROPN</tt> (1168; 93%),
-<tt>PROPN –[<a href="../dep/nmod.html">nmod</a>]–&gt; PROPN</tt> (610; 98%),
-<tt>PROPN –[<a href="../dep/conj.html">conj</a>]–&gt; PROPN</tt> (559; 99%),
-<tt>ADJ –[<a href="../dep/nmod.html">nmod</a>]–&gt; NOUN</tt> (333; 57%),
-<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (320; 91%),
-<tt>PROPN –[<a href="../dep/nmod.html">nmod</a>]–&gt; NOUN</tt> (300; 89%).</p>
+<tt>NOUN –[<a href="../dep/amod.html">amod</a>]–&gt; ADJ</tt> (5746; 51%),
+<tt>NOUN –[<a href="../dep/nmod.html">nmod</a>]–&gt; NOUN</tt> (4862; 51%),
+<tt>NOUN –[<a href="../dep/conj.html">conj</a>]–&gt; NOUN</tt> (1794; 83%),
+<tt>NOUN –[<a href="../dep/nmod.html">nmod</a>]–&gt; PROPN</tt> (1733; 54%),
+<tt>PROPN –[<a href="../dep/name.html">name</a>]–&gt; PROPN</tt> (1189; 93%),
+<tt>PROPN –[<a href="../dep/nmod.html">nmod</a>]–&gt; PROPN</tt> (599; 98%),
+<tt>PROPN –[<a href="../dep/conj.html">conj</a>]–&gt; PROPN</tt> (557; 99%),
+<tt>ADJ –[<a href="../dep/nmod.html">nmod</a>]–&gt; NOUN</tt> (366; 55%),
+<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (326; 91%),
+<tt>PROPN –[<a href="../dep/nmod.html">nmod</a>]–&gt; NOUN</tt> (303; 89%).</p>
 
 
 
@@ -347,6 +348,7 @@ Definite in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -378,11 +380,40 @@ Definite in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -406,6 +437,7 @@ Definite in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'bg-feat';
@@ -431,7 +463,7 @@ Definite in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

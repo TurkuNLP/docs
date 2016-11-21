@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-hi">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-hi">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -99,6 +100,22 @@
 
 <hr />
 
+<p><a id="al-hi-feat/AdpType" class="al-dest"></a></p>
+<h2><code>AdpType</code>: AdpType</h2>
+
+<p>This document is a placeholder for the language-specific documentation
+for <code>AdpType</code>.</p>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hi-feat/AdpType.md" target="#">edit AdpType</a></p>
+
+<p><a id="al-hi-feat/AdvType" class="al-dest"></a></p>
+<h2><code>AdvType</code>: AdvType</h2>
+
+<p>This document is a placeholder for the language-specific documentation
+for <code>AdvType</code>.</p>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hi-feat/AdvType.md" target="#">edit AdvType</a></p>
+
 <p><a id="al-hi-feat/Animacy" class="al-dest"></a></p>
 <h2><code>Animacy</code>: animacy</h2>
 
@@ -138,6 +155,22 @@ for <code>Definite</code>.</p>
 for <code>Degree</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hi-feat/Degree.md" target="#">edit Degree</a></p>
+
+<p><a id="al-hi-feat/Echo" class="al-dest"></a></p>
+<h2><code>Echo</code>: Echo</h2>
+
+<p>This document is a placeholder for the language-specific documentation
+for <code>Echo</code>.</p>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hi-feat/Echo.md" target="#">edit Echo</a></p>
+
+<p><a id="al-hi-feat/Foreign" class="al-dest"></a></p>
+<h2><code>Foreign</code>: Foreign</h2>
+
+<p>This document is a placeholder for the language-specific documentation
+for <code>Foreign</code>.</p>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hi-feat/Foreign.md" target="#">edit Foreign</a></p>
 
 <p><a id="al-hi-feat/Gender" class="al-dest"></a></p>
 <h2><code>Gender</code>: gender</h2>
@@ -186,6 +219,14 @@ for <code>Number</code>.</p>
 for <code>Person</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hi-feat/Person.md" target="#">edit Person</a></p>
+
+<p><a id="al-hi-feat/Polite" class="al-dest"></a></p>
+<h2><code>Polite</code>: Polite</h2>
+
+<p>This document is a placeholder for the language-specific documentation
+for <code>Polite</code>.</p>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hi-feat/Polite.md" target="#">edit Polite</a></p>
 
 <p><a id="al-hi-feat/Poss" class="al-dest"></a></p>
 <h2><code>Poss</code>: possessive</h2>
@@ -247,6 +288,7 @@ for <code>Voice</code>.</p>
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -278,11 +320,40 @@ for <code>Voice</code>.</p>
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -306,6 +377,7 @@ for <code>Voice</code>.</p>
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'hi-overview';
@@ -331,7 +403,7 @@ for <code>Voice</code>.</p>
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-pt">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/pt/dep">pt/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-pt">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/pt/dep">pt/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/reparandum.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,13 +39,81 @@
 
           <h2><code>reparandum</code>: overridden disfluency</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>reparandum</code>.</p>
+<p>We use <code>reparandum</code> to indicate disfluencies overridden in a speech
+repair. The disfluency is the dependent of the repair.</p>
+
+<pre><code class="language-sdparse">Vá para a direi- para a esquerda .
+nmod(Vá, esquerda)
+reparandum(esquerda, direi-)
+case(direi-, para-2)
+det(direi-, a-3)
+case(esquerda, para-5)
+det(esquerda, a-6)
+</code></pre>
+
 
 
 <!-- "automatic stats" -->
 
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udportuguese-bosque">Treebank Statistics (UD_Portuguese-Bosque)</h2>
+
+<p>This relation is universal.</p>
+
+<p>1 nodes (0%) are attached to their parents as <code>reparandum</code>.</p>
+
+<p>1 instances of <code>reparandum</code> (100%) are right-to-left (child precedes parent).
+Average distance between parent and child is 3.</p>
+
+<p>The following 1 pairs of parts of speech are connected with <code>reparandum</code>: <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/X</a> (1; 100% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 22	bgColor:blue
+# visual-style 22	fgColor:white
+# visual-style 25	bgColor:blue
+# visual-style 25	fgColor:white
+# visual-style 25 22 reparandum	color:blue
+1	Escavou	escavar	VERB	&lt;mv&gt;|V|PS|3S|IND|@FS-ACC&gt;	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	ccomp	_	_
+2	quanto	quanto	PRON	&lt;rel&gt;|DET|M|S|@ACC&gt;	Gender=Masc|Number=Sing|PronType=Rel	3	dobj	_	_
+3	quis	querer	VERB	&lt;mv&gt;|V|PS|3S|IND|@FS-&lt;ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	advcl	_	_
+4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+5	imediatamente	imediatamente	ADV	ADV|@&gt;A	_	9	advmod	_	_
+6	atrás	atrás	ADV	ADV|@&lt;ADVL	_	3	advmod	_	MWE:atrás=de
+7	de	de	ADP	PRP|@A&lt;	_	9	case	_	_
+8	o	o	DET	&lt;artd&gt;|&lt;-sam&gt;|ART|M|S|@&gt;N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	muro	muro	NOUN	&lt;np-def&gt;|N|M|S|@P&lt;	Gender=Masc|Number=Sing	6	nmod	_	_
+10	que	que	PRON	&lt;rel&gt;|INDP|M|S|@ACC&gt;	Gender=Masc|Number=Sing|PronType=Rel	11	dobj	_	_
+11	deitou	deitar	VERB	&lt;mv&gt;|V|PS|3S|IND|@FS-N&lt;	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	acl:relcl	_	_
+12	abaixo	abaixo	ADV	ADV|@&lt;ADVL	_	11	advmod	_	_
+13	para	para	ADP	PRP|@&lt;ADVL	_	17	mark	_	_
+14	as	o	DET	&lt;artd&gt;|ART|F|P|@&gt;N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_
+15	máquinas	máquina	NOUN	&lt;np-def&gt;|N|F|P|@SUBJ&gt;	Gender=Fem|Number=Plur	17	nsubj	_	_
+16	poderem	poder	AUX	&lt;aux&gt;|V|INF|3P|@ICL-P&lt;	Number=Plur|Person=3|VerbForm=Inf	17	aux	_	_
+17	passar	passar	VERB	&lt;mv&gt;|V|INF|@ICL-AUX&lt;	VerbForm=Inf	11	advcl	_	_
+18	--	--	PUNCT	PU|@PU	_	17	punct	_	_
+19	diz	dizer	VERB	&lt;mv&gt;|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+20	o	o	DET	&lt;artd&gt;|ART|M|S|@&gt;N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
+21	autarca	autarca	NOUN	&lt;np-def&gt;|N|M|S|@&lt;SUBJ	Gender=Masc|Number=Sing	19	nsubj	_	_
+22	que	que	X	&lt;nil&gt;|X|@X	_	25	reparandum	_	_
+23	com	com	ADP	PRP|@&lt;ADVL	_	25	case	_	_
+24	a	o	DET	&lt;artd&gt;|ART|F|S|@&gt;N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
+25	promessa	promessa	NOUN	&lt;np-def&gt;|N|F|S|@P&lt;	Gender=Fem|Number=Sing	19	nmod	_	_
+26	de	de	ADP	PRP|@N&lt;ARG	_	30	mark	_	_
+27	,	,	PUNCT	PU|@PU	_	28	punct	_	_
+28	depois	depois	ADV	ADV|@ADVL&gt;	_	30	advmod	_	_
+29	,	,	PUNCT	PU|@PU	_	28	punct	_	_
+30	reconstruir	reconstruir	VERB	&lt;mv&gt;|V|FUT|3S|SUBJ|@FS-P&lt;	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	25	acl	_	_
+31	o	o	DET	&lt;artd&gt;|ART|M|S|@&gt;N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
+32	muro	muro	NOUN	&lt;np-def&gt;|N|M|S|@&lt;ACC	Gender=Masc|Number=Sing	30	dobj	_	_
+33	.	.	PUNCT	PU|@PU	_	19	punct	_	_
+
+</code></pre>
 
 
 
@@ -103,6 +172,7 @@ reparandum in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -134,11 +204,40 @@ reparandum in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -162,6 +261,7 @@ reparandum in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'pt-dep';
@@ -187,7 +287,7 @@ reparandum in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

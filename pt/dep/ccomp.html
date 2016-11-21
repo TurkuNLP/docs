@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-pt">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/pt/dep">pt/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-pt">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/pt/dep">pt/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/ccomp.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,8 +39,57 @@
 
           <h2><code>ccomp</code>: clausal complement</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>ccomp</code>.</p>
+<p>A clausal complement of a verb or adjective is a dependent clause
+which is a core argument. That is, it functions like an object of the
+verb, or adjective.</p>
+
+<pre><code class="language-sdparse">o PMDB vai procurar os presidentes
+ccomp(vai, procurar)
+</code></pre>
+
+<pre><code class="language-sdparse">Agora imagina que é chegado o momento.
+ccomp(imagina, chegado)
+</code></pre>
+
+<p>Such clausal complements may be finite or nonfinite. However, if the
+subject of the clausal complement is controlled (that is, must be the
+same as the higher subject or object, with no other possible
+interpretation) the appropriate relation is <a href="">xcomp</a>.</p>
+
+<pre><code class="language-sdparse">The boss said to start digging
+ccomp(said, start)
+mark(start, to)
+</code></pre>
+
+<pre><code class="language-sdparse">We started digging
+xcomp(started, digging)
+</code></pre>
+
+<p>The key difference here is that, while it is possible to interpret the first
+sentence to mean that the boss will not be doing any digging, in the second
+sentence it is clear that the subject of <strong>digging</strong> can only be <strong>we</strong>. This is
+what distinguishes <code>ccomp</code> and <code>xcomp</code>.</p>
+
+<p>Additionally, <code>ccomp</code> is used with copulas.</p>
+
+<pre><code class="language-sdparse">The important thing is to keep calm.
+ccomp(is, keep)
+</code></pre>
+
+<pre><code class="language-sdparse">The problem is that this has never been tried .
+ccomp(is, tried)
+</code></pre>
+
+<p>(In these cases, the copula is treated as a head. This is a somewhat
+inconsistent and ugly feature of the current UD. An alternative
+solution was adopted for this case in the Turku TDT. It may be worth
+considering adopting it in a revision of UD.)</p>
+
+<p><em>Note:</em> In earlier versions of SD/USD, complement clauses with nouns
+like <em>fact</em> or <em>report</em> were also analyzed as <code>ccomp</code>.  However, we
+now analyze them as <a href="">acl</a>. Hence, <code>ccomp</code> does not appear in
+nominals.  This makes sense, since nominals normally do not take core
+arguments.</p>
 
 
 <!-- "automatic stats" -->
@@ -52,52 +102,50 @@ for <code>ccomp</code>.</p>
 
 <hr />
 
-<h2 id="treebank-statistics">Treebank Statistics</h2>
+<h2 id="treebank-statistics-udportuguese">Treebank Statistics (UD_Portuguese)</h2>
 
 <p>This relation is universal.</p>
 
-<p>3357 nodes (2%) are attached to their parents as <code>ccomp</code>.</p>
+<p>1977 nodes (1%) are attached to their parents as <code>ccomp</code>.</p>
 
-<p>2987 instances of <code>ccomp</code> (89%) are left-to-right (parent precedes child).
-Average distance between parent and child is 4.57134346142389.</p>
+<p>1611 instances of <code>ccomp</code> (81%) are left-to-right (parent precedes child).
+Average distance between parent and child is 7.3697521497218.</p>
 
-<p>The following 20 pairs of parts of speech are connected with <code>ccomp</code>: <a href="">pt-pos/VERB</a>-<a href="">pt-pos/VERB</a> (2647; 79% instances), <a href="">pt-pos/AUX</a>-<a href="">pt-pos/VERB</a> (317; 9% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADJ</a> (169; 5% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NOUN</a> (166; 5% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PRON</a> (18; 1% instances), <a href="">pt-pos/AUX</a>-<a href="">pt-pos/NOUN</a> (10; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NUM</a> (6; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/VERB</a> (4; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADV</a> (4; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/VERB</a> (3; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/SYM</a> (3; 0% instances), <a href="">pt-pos/CONJ</a>-<a href="">pt-pos/VERB</a> (2; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/VERB</a> (1; 0% instances), <a href="">pt-pos/AUX</a>-<a href="">pt-pos/ADJ</a> (1; 0% instances), <a href="">pt-pos/AUX</a>-<a href="">pt-pos/NUM</a> (1; 0% instances), <a href="">pt-pos/AUX</a>-<a href="">pt-pos/PRON</a> (1; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/VERB</a> (1; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/NOUN</a> (1; 0% instances), <a href="">pt-pos/SCONJ</a>-<a href="">pt-pos/VERB</a> (1; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PROPN</a> (1; 0% instances).</p>
+<p>The following 19 pairs of parts of speech are connected with <code>ccomp</code>: <a href="">pt-pos/VERB</a>-<a href="">pt-pos/VERB</a> (1570; 79% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NOUN</a> (179; 9% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADJ</a> (173; 9% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PRON</a> (18; 1% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NUM</a> (7; 0% instances), <a href="">pt-pos/SCONJ</a>-<a href="">pt-pos/VERB</a> (4; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/VERB</a> (3; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/VERB</a> (3; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADV</a> (3; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/SYM</a> (3; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/VERB</a> (2; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/VERB</a> (2; 0% instances), <a href="">pt-pos/CONJ</a>-<a href="">pt-pos/VERB</a> (2; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/VERB</a> (2; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/DET</a> (2; 0% instances), <a href="">pt-pos/ADP</a>-<a href="">pt-pos/VERB</a> (1; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/DET</a> (1; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADP</a> (1; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PROPN</a> (1; 0% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
 # visual-style 3	bgColor:blue
 # visual-style 3	fgColor:white
-# visual-style 3 7 ccomp	color:blue
-1	O	o	DET	art|&lt;artd&gt;|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	bombeiro	bombeiro	NOUN	n|M|S	Gender=Masc|Number=Sing	3	nsubj	_	_
-3	suspeita	suspeitar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	que	que	SCONJ	conj-s	_	7	mark	_	_
-5	o	o	DET	art|&lt;artd&gt;|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	golfinho	golfinho	NOUN	n|M|S	Gender=Masc|Number=Sing	7	nsubj	_	_
-7	tenha	ter	VERB	v-fin|PR|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	_	_
-8	morrido	morrer	VERB	v-pcp	VerbForm=Part	7	ccomp	_	_
-9	afogado	afogar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	8	advcl	_	_
-10	.	.	PUNCT	punc	_	3	punct	_	_
+# visual-style 3 4 ccomp	color:blue
+1	A	o	DET	art|&lt;artd&gt;|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	solução	solução	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nsubj	_	_
+3	foi	ser	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	negociar	negociar	VERB	v-inf	VerbForm=Inf	3	ccomp	_	_
+5	diretamente	diretamente	ADV	adv	_	4	advmod	_	_
+6	com	com	ADP	prp	AdpType=Prep	8	case	_	_
+7	os	o	DET	art|&lt;artd&gt;|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_
+8	jogadores	jogador	NOUN	n|M|P	Gender=Masc|Number=Plur	4	dobj	_	_
+9	.	.	PUNCT	punc	_	3	punct	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 11	bgColor:blue
-# visual-style 11	fgColor:white
-# visual-style 10	bgColor:blue
-# visual-style 10	fgColor:white
-# visual-style 10 11 ccomp	color:blue
-1	Em	em	ADP	prp|&lt;sam-&gt;	AdpType=Prep	3	case	_	_
-2	o	o	DET	art|&lt;-sam&gt;|&lt;artd&gt;|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-3	projeto	projeto	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nmod	_	_
-4	não	não	ADV	adv	_	5	neg	_	_
-5	há	haver	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-6	definição	definição	NOUN	n|F|S	Gender=Fem|Number=Sing	5	dobj	_	_
-7	de	de	ADP	prp	AdpType=Prep	9	mark	_	_
-8	quantos	quanto	PRON	pron-det|&lt;interr&gt;|M|S	Gender=Masc|Number=Sing|PronType=Int	9	nsubj	_	_
-9	podem	poder	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	acl	_	_
-10	ser	ser	AUX	v-inf	VerbForm=Inf	9	aux	_	_
-11	construídos	construir	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	10	ccomp	_	_
-12	.	.	PUNCT	punc	_	5	punct	_	_
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 7 3 ccomp	color:blue
+1	É	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
+2	uma	um	DET	art|&lt;arti&gt;|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	situação	situação	NOUN	n|F|S	Gender=Fem|Number=Sing	7	ccomp	_	_
+4	absurda	absurdo	ADJ	adj|F|S	Gender=Fem|Number=Sing	3	amod	_	_
+5	»	»	PUNCT	punc	_	7	punct	_	_
+6	,	,	PUNCT	punc	_	7	punct	_	_
+7	disse	dizer	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+8	Taylor	Taylor	PROPN	prop|M|S	Gender=Masc|Number=Sing	7	nsubj	_	_
+9	,	,	PUNCT	punc	_	8	punct	_	_
+10	49	49	NUM	num|&lt;card&gt;|M|P	Gender=Masc|Number=Plur|NumType=Card	8	nummod	_	_
+11	.	.	PUNCT	punc	_	7	punct	_	_
 
 </code></pre>
 
@@ -106,8 +154,8 @@ Average distance between parent and child is 4.57134346142389.</p>
 # visual-style 13	bgColor:blue
 # visual-style 13	fgColor:white
 # visual-style 13 8 ccomp	color:blue
-1	Enganei-	enganar	VERB	v-fin|PS|1S|IND	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
-2	me	eu	PRON	pron-pers|&lt;refl&gt;|M/F|1S|ACC	Case=Acc|Number=Sing|Person=1|PronType=Prs|Reflex=Yes	1	dobj	_	_
+1	Enganei	enganar	VERB	v-fin|PS|1S|IND	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
+2	-me	eu	PRON	pron-pers|&lt;refl&gt;|M/F|1S|ACC	Case=Acc|Number=Sing|Person=1|PronType=Prs|Reflex=Yes	1	dobj	_	_
 3	:	:	PUNCT	punc	_	1	punct	_	_
 4	não	não	ADV	adv	_	8	neg	_	_
 5	serie	seriar	VERB	v-fin|COND|3S	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	8	cop	_	_
@@ -120,6 +168,149 @@ Average distance between parent and child is 4.57134346142389.</p>
 12	,	,	PUNCT	punc	_	13	punct	_	_
 13	espero	esperar	VERB	v-fin|PR|1S|IND	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
 14	..	..	PUNCT	punc	_	1	punct	_	_
+
+</code></pre>
+
+<hr />
+
+<h2 id="treebank-statistics-udportuguese-bosque">Treebank Statistics (UD_Portuguese-Bosque)</h2>
+
+<p>This relation is universal.</p>
+
+<p>1569 nodes (1%) are attached to their parents as <code>ccomp</code>.</p>
+
+<p>1220 instances of <code>ccomp</code> (78%) are left-to-right (parent precedes child).
+Average distance between parent and child is 8.77310388782664.</p>
+
+<p>The following 16 pairs of parts of speech are connected with <code>ccomp</code>: <a href="">pt-pos/VERB</a>-<a href="">pt-pos/VERB</a> (1209; 77% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NOUN</a> (142; 9% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADJ</a> (137; 9% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/VERB</a> (21; 1% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PRON</a> (15; 1% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/VERB</a> (12; 1% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/VERB</a> (12; 1% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/VERB</a> (5; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/VERB</a> (3; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADV</a> (3; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/SYM</a> (3; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/VERB</a> (2; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NUM</a> (2; 0% instances), <a href="">pt-pos/CONJ</a>-<a href="">pt-pos/VERB</a> (1; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/VERB</a> (1; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PROPN</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 7 ccomp	color:blue
+1	Reis	Reis	PROPN	PROP|M|S|@SUBJ&gt;	Gender=Masc|Number=Sing	3	nsubj	_	_
+2	não	não	ADV	ADV|@ADVL&gt;	_	3	neg	_	_
+3	quis	querer	VERB	&lt;mv&gt;|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	dizer	dizer	VERB	&lt;mv&gt;|V|INF|@ICL-&lt;ACC	VerbForm=Inf	3	xcomp	_	_
+5	se	se	SCONJ	KS|@SUB	_	7	mark	_	_
+6	também	também	ADV	ADV|@ADVL&gt;	_	7	advmod	_	_
+7	abandonará	abandonar	VERB	&lt;mv&gt;|V|FUT|3S|IND|@FS-&lt;ACC	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	ccomp	_	_
+8	Esperidião	Esperidião	PROPN	PROP|M|S|@&lt;ACC	Gender=Masc|Number=Sing	7	dobj	_	MWE:Esperidião=Amin
+9	Amin	Amin	PROPN	PROP|@N&lt;	Number=Sing	8	name	_	_
+10	.	.	PUNCT	PU|@PU	_	3	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 14	bgColor:blue
+# visual-style 14	fgColor:white
+# visual-style 14 4 ccomp	color:blue
+1	«	«	PUNCT	PU|@PU	_	4	punct	_	_
+2	É	ser	VERB	&lt;mv&gt;|V|PR|3S|IND|@FS-ACC&gt;	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
+3	um	um	DET	&lt;arti&gt;|ART|M|S|@&gt;N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	barco	barco	NOUN	&lt;np-idf&gt;|N|M|S|@&lt;SC	Gender=Masc|Number=Sing	14	ccomp	_	_
+5	que	que	PRON	&lt;rel&gt;|INDP|M|S|@SUBJ&gt;	Gender=Masc|Number=Sing|PronType=Rel	8	nsubj	_	_
+6	vai	ir	AUX	&lt;aux&gt;|V|PR|3S|IND|@FS-N&lt;	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	_	_
+7	a	a	ADP	PRP|@PRT-AUX&lt;	_	8	nmod	_	_
+8	passar	passar	VERB	&lt;mv&gt;|V|INF|@ICL-AUX&lt;	VerbForm=Inf	4	acl:relcl	_	_
+9	em	em	ADP	&lt;sam-&gt;|PRP|@&lt;SA	_	11	case	_	_
+10	o	o	DET	&lt;-sam&gt;|&lt;artd&gt;|ART|M|S|@&gt;N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	mar	mar	NOUN	&lt;np-def&gt;|N|M|S|@P&lt;	Gender=Masc|Number=Sing	8	nmod	_	_
+12	»	»	PUNCT	PU|@PU	_	4	punct	_	_
+13	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+14	murmura	murmurar	VERB	&lt;mv&gt;|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+15	um	um	DET	&lt;arti&gt;|ART|M|S|@&gt;N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+16	assistente	assistente	NOUN	&lt;np-idf&gt;|N|M|S|@&lt;SUBJ	Gender=Masc|Number=Sing	14	nsubj	_	_
+17	.	.	PUNCT	PU|@PU	_	14	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 8 6 ccomp	color:blue
+1	Metade	metade	NOUN	&lt;np-idf&gt;|N|F|S|@SUBJ&gt;	Gender=Fem|Number=Sing	6	nsubj	_	_
+2	de	de	ADP	PRP|@N&lt;ARG	_	4	case	_	_
+3	os	o	DET	&lt;-sam&gt;|&lt;artd&gt;|ART|M|P|@&gt;N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
+4	Estados	estado	NOUN	&lt;prop&gt;|&lt;np-def&gt;|N|M|P|@P&lt;	Gender=Masc|Number=Plur	1	nmod	_	_
+5	é	ser	VERB	&lt;mv&gt;|V|PR|3S|IND|@FS-ACC&gt;	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_
+6	inviável	inviável	ADJ	ADJ|F|S|@&lt;SC	Gender=Fem|Number=Sing	8	ccomp	_	_
+7	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+8	diz	dizer	VERB	&lt;mv&gt;|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+9	socióloga	socióloga	NOUN	&lt;np-idf&gt;|N|F|S|@&lt;SUBJ	Gender=Fem|Number=Sing	8	nsubj	_	_
+
+</code></pre>
+
+<hr />
+
+<h2 id="treebank-statistics-udportuguese-br">Treebank Statistics (UD_Portuguese-BR)</h2>
+
+<p>This relation is universal.</p>
+
+<p>2360 nodes (1%) are attached to their parents as <code>ccomp</code>.</p>
+
+<p>1634 instances of <code>ccomp</code> (69%) are left-to-right (parent precedes child).
+Average distance between parent and child is 9.49661016949153.</p>
+
+<p>The following 18 pairs of parts of speech are connected with <code>ccomp</code>: <a href="">pt-pos/VERB</a>-<a href="">pt-pos/VERB</a> (2043; 87% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NOUN</a> (234; 10% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PRON</a> (45; 2% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PROPN</a> (9; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/VERB</a> (8; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/VERB</a> (4; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/AUX</a> (3; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/CONJ</a> (3; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADP</a> (2; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/VERB</a> (1; 0% instances), <a href="">pt-pos/ADP</a>-<a href="">pt-pos/VERB</a> (1; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/CONJ</a> (1; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/NOUN</a> (1; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/PRON</a> (1; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/CONJ</a> (1; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/PROPN</a> (1; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NUM</a> (1; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/X</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 9	bgColor:blue
+# visual-style 9	fgColor:white
+# visual-style 9 6 ccomp	color:blue
+1	O	_	DET	DET	_	2	det	_	_
+2	couro	_	NOUN	NOUN	_	6	nsubj	_	_
+3	do	_	ADP	ADP	_	4	case	_	_
+4	peixe	_	NOUN	NOUN	_	2	nmod	_	_
+5	sempre	_	ADV	ADV	_	6	advmod	_	_
+6	rende	_	VERB	VERB	_	9	ccomp	_	_
+7	"	_	PUNCT	.	_	6	punct	_	_
+8	,	_	PUNCT	.	_	9	punct	_	_
+9	conta	_	VERB	VERB	_	0	root	_	_
+10	.	_	PUNCT	.	_	9	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 10	bgColor:blue
+# visual-style 10	fgColor:white
+# visual-style 10 7 ccomp	color:blue
+1	"	_	PUNCT	.	_	7	punct	_	_
+2	Eles	_	PRON	PRON	_	7	nsubjpass	_	_
+3	não	_	ADV	ADV	_	7	neg	_	_
+4	podem	_	AUX	AUX	_	7	aux	_	_
+5	ser	_	AUX	AUX	_	7	auxpass	_	_
+6	considerados	_	VERB	VERB	_	7	cop	_	_
+7	marginais	_	NOUN	NOUN	_	10	ccomp	_	_
+8	"	_	PUNCT	.	_	7	punct	_	_
+9	,	_	PUNCT	.	_	10	punct	_	_
+10	disse	_	VERB	VERB	_	0	root	_	_
+11	ele	_	PRON	PRON	_	10	nsubj	_	_
+12	.	_	PUNCT	.	_	10	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 10	bgColor:blue
+# visual-style 10	fgColor:white
+# visual-style 10 4 ccomp	color:blue
+1	O	_	DET	DET	_	2	det	_	_
+2	grupo	_	NOUN	NOUN	_	4	nsubj	_	_
+3	é	_	VERB	VERB	_	4	cop	_	_
+4	esse	_	PRON	PRON	_	10	ccomp	_	_
+5	que	_	PRON	PRON	_	6	nsubj	_	_
+6	está	_	VERB	VERB	_	4	acl:relcl	_	_
+7	aqui	_	ADV	ADV	_	6	advmod	_	_
+8	"	_	PUNCT	.	_	4	punct	_	_
+9	,	_	PUNCT	.	_	10	punct	_	_
+10	declarou	_	VERB	VERB	_	0	root	_	_
+11	.	_	PUNCT	.	_	10	punct	_	_
 
 </code></pre>
 
@@ -180,6 +371,7 @@ ccomp in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -211,11 +403,40 @@ ccomp in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -239,6 +460,7 @@ ccomp in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'pt-dep';
@@ -264,7 +486,7 @@ ccomp in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

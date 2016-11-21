@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-da">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/da/pos">da/pos</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-da">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/da/pos">da/pos</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_da-pos/INTJ.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -68,9 +69,9 @@ Out of 17 observed tags, the rank of <code>INTJ</code> is: 11 in number of lemma
 
 <p>The 10 most frequent <code>INTJ</code> types:  <em>ja, nej, jo, åh, hej, ih, javel, la, Øv, Bom</em></p>
 
-<p>The 10 most frequent ambiguous lemmas: <em>ja</em> (<a href="">INTJ</a> 35, <a href="">NOUN</a> 8), <em>nej</em> (<a href="">INTJ</a> 16, <a href="">NOUN</a> 11), <em>jo</em> (<a href="">ADV</a> 78, <a href="">INTJ</a> 7, <a href="">SCONJ</a> 2), <em>la</em> (<a href="">INTJ</a> 2, <a href="">X</a> 2), <em>bom</em> (<a href="">NOUN</a> 1, <a href="">INTJ</a> 1), <em>farvel</em> (<a href="">NOUN</a> 3, <a href="">INTJ</a> 1), <em>nå</em> (<a href="">VERB</a> 31, <a href="">INTJ</a> 1)</p>
+<p>The 10 most frequent ambiguous lemmas: <em>ja</em> (<a href="">INTJ</a> 35, <a href="">NOUN</a> 8), <em>nej</em> (<a href="">INTJ</a> 16, <a href="">NOUN</a> 11), <em>jo</em> (<a href="">ADV</a> 78, <a href="">INTJ</a> 7, <a href="">SCONJ</a> 2), <em>la</em> (<a href="">X</a> 2, <a href="">INTJ</a> 2), <em>bom</em> (<a href="">NOUN</a> 1, <a href="">INTJ</a> 1), <em>farvel</em> (<a href="">NOUN</a> 3, <a href="">INTJ</a> 1), <em>nå</em> (<a href="">VERB</a> 31, <a href="">INTJ</a> 1)</p>
 
-<p>The 10 most frequent ambiguous types:  <em>ja</em> (<a href="">INTJ</a> 13, <a href="">NOUN</a> 8), <em>nej</em> (<a href="">NOUN</a> 9, <a href="">INTJ</a> 2), <em>jo</em> (<a href="">ADV</a> 77, <a href="">SCONJ</a> 2, <a href="">INTJ</a> 1), <em>la</em> (<a href="">INTJ</a> 2, <a href="">X</a> 2), <em>farvel</em> (<a href="">NOUN</a> 3, <a href="">INTJ</a> 1)</p>
+<p>The 10 most frequent ambiguous types:  <em>ja</em> (<a href="">INTJ</a> 13, <a href="">NOUN</a> 8), <em>nej</em> (<a href="">NOUN</a> 9, <a href="">INTJ</a> 2), <em>jo</em> (<a href="">ADV</a> 77, <a href="">SCONJ</a> 2, <a href="">INTJ</a> 1), <em>la</em> (<a href="">X</a> 2, <a href="">INTJ</a> 2), <em>farvel</em> (<a href="">NOUN</a> 3, <a href="">INTJ</a> 1)</p>
 
 <ul>
   <li><em>ja</em>
@@ -94,8 +95,8 @@ Out of 17 observed tags, the rank of <code>INTJ</code> is: 11 in number of lemma
   </li>
   <li><em>la</em>
     <ul>
-      <li><a href="">INTJ</a> 2: <em>Men Anne Linnet - oh <b>la</b> <b>la</b> . “</em></li>
       <li><a href="">X</a> 2: <em>DE FIRE ÅRS . : ( <b>la</b> primavera ) forår skrevet i E-dur * 3all ( L’estate ) sommer g-mol ( l’autunno ) efterår F-dur ( L’inverno ) vinter f-mol * 12all Allegro = Hurtigt livligt .</em></li>
+      <li><a href="">INTJ</a> 2: <em>Men Anne Linnet - oh <b>la</b> <b>la</b> . “</em></li>
     </ul>
   </li>
   <li><em>farvel</em>
@@ -195,6 +196,7 @@ INTJ in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -226,11 +228,40 @@ INTJ in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -254,6 +285,7 @@ INTJ in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'da-pos';
@@ -279,7 +311,7 @@ INTJ in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

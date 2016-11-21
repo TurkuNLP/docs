@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-pt">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/pt/dep">pt/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-pt">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/pt/dep">pt/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/advcl.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,8 +39,30 @@
 
           <h2><code>advcl</code>: adverbial clause modifier</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>advcl</code>.</p>
+<p>An adverbial clause modifier is a clause which modifies a verb or
+other predicate (adjective, etc.), as a modifier not as a core
+complement. This includes things such as a temporal clause,
+consequence, conditional clause, purpose clause, etc. The dependent
+must be clausal (or else it is an <a href="">advmod</a>) and the dependent is the
+main predicate of the clause.</p>
+
+<pre><code class="language-sdparse">Na Vila, quando recebo a bola, tenho que ficar olhando sua trajetória, para não ser surpreendido.
+
+advcl(recebo, olhando)  (temporal clause)
+advcl(surpreendido, olhando)  (purpose clause)
+</code></pre>
+
+<pre><code class="language-sdparse">Eles tiveram que fazer isso se os escravos fossem superiores em qualidades que os próprios brancos valorizavam, onde estaria a justificativa moral para mantê-los escravizados?
+
+advcl(superiores, tiveram) (conditional clause)
+</code></pre>
+
+<p>Note in the example above, that the <code>advcl</code> relation holds between an
+<code>ADJ</code> and a <code>VERB</code>, since the head of the adverbial clause (“se os
+escravos fossem superiores em qualidades que os próprios brancos
+valoriavam”) is “superiores”, as the verb to be (“fossem”) holds a
+<code>cop</code> relation and therefore it is not the head (the main predicate)
+of the clause.</p>
 
 
 <!-- "automatic stats" -->
@@ -52,16 +75,16 @@ for <code>advcl</code>.</p>
 
 <hr />
 
-<h2 id="treebank-statistics">Treebank Statistics</h2>
+<h2 id="treebank-statistics-udportuguese">Treebank Statistics (UD_Portuguese)</h2>
 
 <p>This relation is universal.</p>
 
-<p>2949 nodes (1%) are attached to their parents as <code>advcl</code>.</p>
+<p>2956 nodes (1%) are attached to their parents as <code>advcl</code>.</p>
 
-<p>2221 instances of <code>advcl</code> (75%) are left-to-right (parent precedes child).
-Average distance between parent and child is 8.75720583248559.</p>
+<p>2226 instances of <code>advcl</code> (75%) are left-to-right (parent precedes child).
+Average distance between parent and child is 9.39817320703654.</p>
 
-<p>The following 30 pairs of parts of speech are connected with <code>advcl</code>: <a href="">pt-pos/VERB</a>-<a href="">pt-pos/VERB</a> (2232; 76% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/VERB</a> (230; 8% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/VERB</a> (127; 4% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/VERB</a> (116; 4% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NOUN</a> (54; 2% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADJ</a> (51; 2% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/VERB</a> (24; 1% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/VERB</a> (22; 1% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/ADJ</a> (11; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/VERB</a> (11; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/NOUN</a> (9; 0% instances), <a href="">pt-pos/SCONJ</a>-<a href="">pt-pos/VERB</a> (8; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PRON</a> (8; 0% instances), <a href="">pt-pos/AUX</a>-<a href="">pt-pos/VERB</a> (6; 0% instances), <a href="">pt-pos/CONJ</a>-<a href="">pt-pos/VERB</a> (6; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/NOUN</a> (6; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PROPN</a> (6; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/VERB</a> (4; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/ADJ</a> (3; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/PRON</a> (2; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/NOUN</a> (2; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/ADJ</a> (2; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADV</a> (2; 0% instances), <a href="">pt-pos/ADP</a>-<a href="">pt-pos/VERB</a> (1; 0% instances), <a href="">pt-pos/AUX</a>-<a href="">pt-pos/NOUN</a> (1; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/NUM</a> (1; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/ADJ</a> (1; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/NOUN</a> (1; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/ADJ</a> (1; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NUM</a> (1; 0% instances).</p>
+<p>The following 30 pairs of parts of speech are connected with <code>advcl</code>: <a href="">pt-pos/VERB</a>-<a href="">pt-pos/VERB</a> (2240; 76% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/VERB</a> (230; 8% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/VERB</a> (124; 4% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/VERB</a> (117; 4% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NOUN</a> (54; 2% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADJ</a> (51; 2% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/VERB</a> (22; 1% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/VERB</a> (22; 1% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/ADJ</a> (11; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/VERB</a> (11; 0% instances), <a href="">pt-pos/SCONJ</a>-<a href="">pt-pos/VERB</a> (11; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/NOUN</a> (9; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PRON</a> (8; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/VERB</a> (7; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/NOUN</a> (7; 0% instances), <a href="">pt-pos/CONJ</a>-<a href="">pt-pos/VERB</a> (6; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PROPN</a> (6; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/ADJ</a> (3; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/PRON</a> (2; 0% instances), <a href="">pt-pos/ADP</a>-<a href="">pt-pos/VERB</a> (2; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/NOUN</a> (2; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/ADJ</a> (2; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADV</a> (2; 0% instances), <a href="">pt-pos/AUX</a>-<a href="">pt-pos/VERB</a> (1; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/NUM</a> (1; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/ADJ</a> (1; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/NOUN</a> (1; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/ADJ</a> (1; 0% instances), <a href="">pt-pos/SYM</a>-<a href="">pt-pos/VERB</a> (1; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NUM</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 5	bgColor:blue
 # visual-style 5	fgColor:white
@@ -98,16 +121,165 @@ Average distance between parent and child is 8.75720583248559.</p>
 # visual-style 6	fgColor:white
 # visual-style 6 8 advcl	color:blue
 1	A	o	DET	art|&lt;artd&gt;|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	energia	energia	NOUN	n|F|S	Gender=Fem|Number=Sing	4	nsubj	_	_
+2	energia	energia	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nsubjpass	_	_
 3	nuclear	nuclear	ADJ	adj|F|S	Gender=Fem|Number=Sing	2	amod	_	_
-4	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	usada	usar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	4	ccomp	_	_
+4	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	auxpass	_	_
+5	usada	usar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	_
 6	só	só	ADV	adv	_	5	advmod	_	_
 7	para	para	ADP	prp	AdpType=Prep	6	case	_	_
 8	movimentar	movimentar	VERB	v-inf	VerbForm=Inf	6	advcl	_	_
 9	a	o	DET	art|&lt;artd&gt;|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	embarcação	embarcação	NOUN	n|F|S	Gender=Fem|Number=Sing	8	dobj	_	_
-11	.	.	PUNCT	punc	_	4	punct	_	_
+11	.	.	PUNCT	punc	_	5	punct	_	_
+
+</code></pre>
+
+<hr />
+
+<h2 id="treebank-statistics-udportuguese-bosque">Treebank Statistics (UD_Portuguese-Bosque)</h2>
+
+<p>This relation is universal.</p>
+
+<p>2445 nodes (1%) are attached to their parents as <code>advcl</code>.</p>
+
+<p>1919 instances of <code>advcl</code> (78%) are left-to-right (parent precedes child).
+Average distance between parent and child is 8.83640081799591.</p>
+
+<p>The following 23 pairs of parts of speech are connected with <code>advcl</code>: <a href="">pt-pos/VERB</a>-<a href="">pt-pos/VERB</a> (1849; 76% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/VERB</a> (202; 8% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/VERB</a> (143; 6% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/VERB</a> (103; 4% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NOUN</a> (37; 2% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADJ</a> (33; 1% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/VERB</a> (22; 1% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/VERB</a> (12; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/VERB</a> (8; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/NOUN</a> (6; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/ADJ</a> (5; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PRON</a> (5; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PROPN</a> (5; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/ADJ</a> (2; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/NOUN</a> (2; 0% instances), <a href="">pt-pos/SYM</a>-<a href="">pt-pos/VERB</a> (2; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADV</a> (2; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NUM</a> (2; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/ADJ</a> (1; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/VERB</a> (1; 0% instances), <a href="">pt-pos/INTJ</a>-<a href="">pt-pos/VERB</a> (1; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/ADJ</a> (1; 0% instances), <a href="">pt-pos/SCONJ</a>-<a href="">pt-pos/VERB</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 10	bgColor:blue
+# visual-style 10	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 10 advcl	color:blue
+1	Já	Já	ADP	PRP|@ADVL&gt;	_	2	case	_	MWE:Já=não
+2	não	não	NOUN	N|M|S|@P&lt;	Gender=Masc|Number=Sing	3	nmod	_	_
+3	há	haver	VERB	&lt;mv&gt;|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	o	o	DET	&lt;artd&gt;|ART|M|S|@&gt;N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	império	império	NOUN	&lt;np-def&gt;|N|M|S|@&lt;ACC	Gender=Masc|Number=Sing	3	dobj	_	_
+6	de	de	ADP	&lt;sam-&gt;|PRP|@N&lt;	_	8	case	_	_
+7	o	o	DET	&lt;-sam&gt;|&lt;artd&gt;|ART|M|S|@&gt;N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	mal	mal	NOUN	&lt;np-def&gt;|N|M|S|@P&lt;	Gender=Masc|Number=Sing	5	nmod	_	_
+9	para	para	ADP	PRP|@&lt;ADVL	_	10	mark	_	_
+10	combater	combater	VERB	&lt;mv&gt;|V|INF|@ICL-P&lt;	VerbForm=Inf	3	advcl	_	_
+11	.	.	PUNCT	PU|@PU	_	3	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 10	bgColor:blue
+# visual-style 10	fgColor:white
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 10 advcl	color:blue
+1	«	«	PUNCT	PU|@PU	_	5	punct	_	_
+2	A	o	DET	&lt;artd&gt;|ART|F|S|@&gt;N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	aula	aula	NOUN	&lt;np-def&gt;|N|F|S|@SUBJ&gt;	Gender=Fem|Number=Sing	5	nsubj	_	_
+4	é	ser	VERB	&lt;mv&gt;|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+5	boa	bom	ADJ	ADJ|F|S|@&lt;SC	Gender=Fem|Number=Sing	0	root	_	_
+6	porque	porque	SCONJ	KS|@SUB	_	10	mark	_	_
+7	o	o	DET	&lt;artd&gt;|ART|M|S|@&gt;N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	professor	professor	NOUN	&lt;np-def&gt;|N|M|S|@SUBJ&gt;	Gender=Masc|Number=Sing	10	nsubj	_	_
+9	jamais	jamais	ADV	ADV|@ADVL&gt;	_	10	advmod	_	_
+10	impõe	impor	VERB	&lt;mv&gt;|V|PR|3S|IND|@FS-&lt;ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	advcl	_	_
+11	a	o	DET	&lt;artd&gt;|ART|F|S|@&gt;N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	opinião	opinião	NOUN	&lt;np-def&gt;|N|F|S|@&lt;ACC	Gender=Fem|Number=Sing	10	dobj	_	_
+13	de	de	ADP	&lt;sam-&gt;|PRP|@N&lt;	_	14	case	_	_
+14	ele	ele	PRON	&lt;-sam&gt;|PERS|M|3S|NOM/PIV|@P&lt;	Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	nmod	_	_
+15	.	.	PUNCT	PU|@PU	_	5	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 11	bgColor:blue
+# visual-style 11	fgColor:white
+# visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 7 11 advcl	color:blue
+1	«	«	PUNCT	PU|@PU	_	3	punct	_	_
+2	Nunca	nunca	ADV	ADV|@ADVL&gt;	_	3	advmod	_	_
+3	tive	ter	VERB	&lt;mv&gt;|V|PS|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
+4	muito	muito	DET	&lt;quant&gt;|DET|M|S|@&gt;N	Gender=Masc|Number=Sing	5	det	_	_
+5	interesse	interesse	NOUN	&lt;np-idf&gt;|N|M|S|@&lt;ACC	Gender=Masc|Number=Sing	3	dobj	_	_
+6	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+7	apesar	apesar	ADV	ADV|@&lt;ADVL	_	3	advmod	_	MWE:apesar=de
+8	de	de	ADP	PRP|@A&lt;	_	11	mark	_	_
+9	já	já	ADV	ADV|@ADVL&gt;	_	11	advmod	_	_
+10	ter	ter	AUX	&lt;aux&gt;|V|INF|@ICL-P&lt;	VerbForm=Inf	11	aux	_	_
+11	experimentado	experimentar	VERB	&lt;mv&gt;|V|PCP|@ICL-AUX&lt;	VerbForm=Part	7	advcl	_	_
+12	.	.	PUNCT	PU|@PU	_	3	punct	_	_
+
+</code></pre>
+
+<hr />
+
+<h2 id="treebank-statistics-udportuguese-br">Treebank Statistics (UD_Portuguese-BR)</h2>
+
+<p>This relation is universal.</p>
+
+<p>2488 nodes (1%) are attached to their parents as <code>advcl</code>.</p>
+
+<p>1788 instances of <code>advcl</code> (72%) are left-to-right (parent precedes child).
+Average distance between parent and child is 8.78456591639871.</p>
+
+<p>The following 22 pairs of parts of speech are connected with <code>advcl</code>: <a href="">pt-pos/VERB</a>-<a href="">pt-pos/VERB</a> (2243; 90% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/VERB</a> (110; 4% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NOUN</a> (52; 2% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/VERB</a> (25; 1% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PRON</a> (11; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/NOUN</a> (10; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/VERB</a> (9; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/VERB</a> (7; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PROPN</a> (4; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/VERB</a> (2; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/VERB</a> (2; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/PROPN</a> (2; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADP</a> (2; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/ADV</a> (1; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/PROPN</a> (1; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/PROPN</a> (1; 0% instances), <a href="">pt-pos/PART</a>-<a href="">pt-pos/VERB</a> (1; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/NOUN</a> (1; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/PRON</a> (1; 0% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/NOUN</a> (1; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/ADV</a> (1; 0% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PART</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 8 advcl	color:blue
+1	"	_	PUNCT	.	_	4	punct	_	_
+2	Não	_	ADV	ADV	_	4	neg	_	_
+3	podemos	_	AUX	AUX	_	4	aux	_	_
+4	fazer	_	VERB	VERB	_	0	root	_	_
+5	outra	_	DET	DET	_	6	det	_	_
+6	coisa	_	NOUN	NOUN	_	4	dobj	_	_
+7	que	_	CONJ	CONJ	_	8	mark	_	_
+8	sair	_	VERB	VERB	_	4	advcl	_	_
+9	às	_	ADP	ADP	_	10	case	_	_
+10	ruas	_	NOUN	NOUN	_	8	nmod	_	_
+11	.	_	PUNCT	.	_	4	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 8 advcl	color:blue
+1	Eu	_	PRON	PRON	_	2	nsubj	_	_
+2	brinco	_	NOUN	NOUN	_	0	root	_	_
+3	que	_	CONJ	CONJ	_	4	mark	_	_
+4	sou	_	VERB	VERB	_	2	ccomp	_	_
+5	amador	_	ADJ	ADJ	_	4	xcomp:adj	_	_
+6	,	_	PUNCT	.	_	8	punct	_	_
+7	porque	_	CONJ	CONJ	_	8	mark	_	_
+8	amo	_	VERB	VERB	_	2	advcl	_	_
+9	o	_	PRON	PRON	_	8	dobj	_	_
+10	que	_	PRON	PRON	_	12	dobj	_	_
+11	eu	_	PRON	PRON	_	12	nsubj	_	_
+12	faço	_	VERB	VERB	_	9	acl:relcl	_	_
+13	.	_	PUNCT	.	_	2	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 6 4 advcl	color:blue
+1	Quando	_	CONJ	CONJ	_	4	mark	_	_
+2	eu	_	PRON	PRON	_	4	nsubj	_	_
+3	for	_	VERB	VERB	_	4	cop	_	_
+4	mãe	_	NOUN	NOUN	_	6	advcl	_	_
+5	,	_	PUNCT	.	_	4	punct	_	_
+6	quero	_	VERB	VERB	_	0	root	_	_
+7	ser	_	VERB	VERB	_	6	xcomp	_	_
+8	presente	_	ADJ	ADJ	_	7	xcomp:adj	_	_
+9	,	_	PUNCT	.	_	7	punct	_	_
+10	acompanhar	_	VERB	VERB	_	7	conj	_	_
+11	,	_	PUNCT	.	_	7	punct	_	_
+12	participar	_	VERB	VERB	_	7	conj	_	_
+13	.	_	PUNCT	.	_	6	punct	_	_
 
 </code></pre>
 
@@ -168,6 +340,7 @@ advcl in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -199,11 +372,40 @@ advcl in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -227,6 +429,7 @@ advcl in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'pt-dep';
@@ -252,7 +455,7 @@ advcl in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

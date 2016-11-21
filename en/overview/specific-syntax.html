@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-en">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-en">home</a></span>
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_en-overview/specific-syntax.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -695,7 +696,7 @@ nsubj(did-7, John)
 
 <pre><code class="language-sdparse">So please update whatever you need to
 dobj(update, whatever)
-rcmod(whatever, need)
+acl:relcl(whatever, need)
 xcomp(need, to)
 </code></pre>
 
@@ -1070,17 +1071,17 @@ advmod(leave, When)
 advcl(sure, leave)
 </code></pre>
 
-<p>In free relative constructions, the <em>wh</em>-clause functions as an argument in the lower clause. In these cases, the <em>wh</em>-phrase is deemed the head of the construction, thereby receiving a dependency relation reflective of its function in the higher clause, and the rest of the <em>wh</em>-clause is an <code>rcmod</code> dependent on it.</p>
+<p>In free relative constructions, the <em>wh</em>-clause functions as an argument in the higher clause. In these cases, the <em>wh</em>-phrase is deemed the head of the construction, thereby receiving a dependency relation reflective of its function in the higher clause, and the rest of the <em>wh</em>-clause is an <code>acl:relcl</code> dependent on it.</p>
 
 <pre><code class="language-sdparse">I 'll have whatever she 's having .
 dobj(have, whatever)
-rcmod(whatever, having)
+acl:relcl(whatever, having)
 </code></pre>
 
 <pre><code class="language-sdparse">I love how well everyone behaved .
 dobj(love, well)
 advmod(well, how)
-rcmod(well, behaved)
+acl:relcl(well, behaved)
 </code></pre>
 
 <p>This analysis is also extended to cleft constructions.</p>
@@ -1088,7 +1089,7 @@ rcmod(well, behaved)
 <pre><code class="language-sdparse">-ROOT- John is who we want to help .
 root(-ROOT-, who)
 nsubj(who, John)
-rcmod(who, want)
+acl:relcl(who, want)
 cop(who, is)
 </code></pre>
 
@@ -1096,15 +1097,15 @@ cop(who, is)
 expl(who, It)
 root(-ROOT-, who)
 nsubj(who, John)
-rcmod(who, want)
+acl:relcl(who, want)
 cop(who, 's)
 </code></pre>
 
 <pre><code class="language-sdparse">-ROOT- What the committee hopes to learn is why all these events transpired .
 nsubj(why, What)
-rcmod(What, hopes)
+acl:relcl(What, hopes)
 cop(why, is)
-rcmod(why, transpired)
+acl:relcl(why, transpired)
 nsubj(transpired, events)
 root(-ROOT-, why)
 </code></pre>
@@ -1116,15 +1117,15 @@ neg(matter, No)
 npmod(achieve, matter)
 dobj(matter, progress)
 det(progress, what)
-rcmod(make, progress)
+acl:relcl(make, progress)
 </code></pre>
 
 <h4 id="cyclic-cases">Cyclic cases</h4>
-<p>In some cases, the <em>wh</em>-phrase would be analyzed as the head of the <em>wh</em>-clause. For example, in the sentence <em>I love how appreciative everyone was</em>, the word <em>appreciative</em> would normally be a predicative head (since the verb <em>was</em> is a copula and would receive the <code>cop</code> relation). Since <em>appreciative</em> cannot be an <code>rcmod</code> dependent on itself, the auxiliary is promoted to the head of the relative clause and assigned the <code>rcmod</code> relation.</p>
+<p>In some cases, the <em>wh</em>-phrase would be analyzed as the head of the <em>wh</em>-clause. For example, in the sentence <em>I love how appreciative everyone was</em>, the word <em>appreciative</em> would normally be a predicative head (since the verb <em>was</em> is a copula and would receive the <code>cop</code> relation). Since <em>appreciative</em> cannot be an <code>acl:relcl</code> dependent on itself, the auxiliary is promoted to the head of the relative clause and assigned the <code>acl:relcl</code> relation.</p>
 
 <pre><code class="language-sdparse">I love how appreciative everyone was .
 dobj(love, appreciative)
-rcmod(appreciative, was)
+acl:relcl(appreciative, was)
 advmod(how, appreciative)
 </code></pre>
 
@@ -1132,7 +1133,7 @@ advmod(how, appreciative)
 nmod(key, worthy)
 case(worthy, to)
 advmod(worthy, how)
-rcmod(worthy, be)
+acl:relcl(worthy, be)
 </code></pre>
 
 
@@ -1146,6 +1147,7 @@ rcmod(worthy, be)
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -1177,11 +1179,40 @@ rcmod(worthy, be)
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -1205,6 +1236,7 @@ rcmod(worthy, be)
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'en-overview';
@@ -1230,7 +1262,7 @@ rcmod(worthy, be)
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

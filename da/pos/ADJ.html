@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-da">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/da/pos">da/pos</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-da">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/da/pos">da/pos</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_da-pos/ADJ.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -74,7 +75,7 @@ Out of 17 observed tags, the rank of <code>ADJ</code> is: 3 in number of lemmas,
 
 <p>The 10 most frequent ambiguous lemmas: <em>stor</em> (<a href="">ADJ</a> 239, <a href="">ADV</a> 5), <em>al</em> (<a href="">ADJ</a> 233, <a href="">PROPN</a> 1), <em>ny</em> (<a href="">ADJ</a> 172, <a href="">NOUN</a> 1, <a href="">X</a> 1), <em>dansk</em> (<a href="">ADJ</a> 170, <a href="">NOUN</a> 6), <em>meget</em> (<a href="">ADV</a> 120, <a href="">ADJ</a> 114), <em>hel</em> (<a href="">ADJ</a> 98, <a href="">X</a> 3), <em>politisk</em> (<a href="">ADJ</a> 33, <a href="">ADV</a> 5), <em>få</em> (<a href="">VERB</a> 386, <a href="">ADJ</a> 32), <em>tidlig</em> (<a href="">ADJ</a> 32, <a href="">ADV</a> 1), <em>almindelig</em> (<a href="">ADJ</a> 30, <a href="">ADV</a> 1)</p>
 
-<p>The 10 most frequent ambiguous types:  <em>hele</em> (<a href="">ADJ</a> 77, <a href="">NOUN</a> 4), <em>ny</em> (<a href="">ADJ</a> 55, <a href="">NOUN</a> 1, <a href="">X</a> 1), <em>alt</em> (<a href="">ADJ</a> 54, <a href="">ADV</a> 18, <a href="">NOUN</a> 14), <em>mere</em> (<a href="">ADV</a> 81, <a href="">ADJ</a> 54), <em>dansk</em> (<a href="">ADJ</a> 37, <a href="">NOUN</a> 6), <em>meget</em> (<a href="">ADV</a> 119, <a href="">ADJ</a> 42), <em>bedre</em> (<a href="">ADJ</a> 30, <a href="">ADV</a> 5), <em>stort</em> (<a href="">ADJ</a> 30, <a href="">ADV</a> 7), <em>gode</em> (<a href="">ADJ</a> 29, <a href="">NOUN</a> 5), <em>tidligere</em> (<a href="">ADJ</a> 28, <a href="">ADV</a> 16)</p>
+<p>The 10 most frequent ambiguous types:  <em>hele</em> (<a href="">ADJ</a> 77, <a href="">NOUN</a> 4), <em>ny</em> (<a href="">ADJ</a> 55, <a href="">X</a> 1, <a href="">NOUN</a> 1), <em>alt</em> (<a href="">ADJ</a> 54, <a href="">ADV</a> 18, <a href="">NOUN</a> 14), <em>mere</em> (<a href="">ADV</a> 81, <a href="">ADJ</a> 54), <em>dansk</em> (<a href="">ADJ</a> 37, <a href="">NOUN</a> 6), <em>meget</em> (<a href="">ADV</a> 119, <a href="">ADJ</a> 42), <em>bedre</em> (<a href="">ADJ</a> 30, <a href="">ADV</a> 5), <em>stort</em> (<a href="">ADJ</a> 30, <a href="">ADV</a> 7), <em>gode</em> (<a href="">ADJ</a> 29, <a href="">NOUN</a> 5), <em>tidligere</em> (<a href="">ADJ</a> 28, <a href="">ADV</a> 16)</p>
 
 <ul>
   <li><em>hele</em>
@@ -86,8 +87,8 @@ Out of 17 observed tags, the rank of <code>ADJ</code> is: 3 in number of lemmas,
   <li><em>ny</em>
     <ul>
       <li><a href="">ADJ</a> 55: <em>Det ligger ikke klart , hvornår han skal tiltræde den <b>ny</b> stilling .</em></li>
-      <li><a href="">NOUN</a> 1: <em>En sølvske , kniv eller gaffel i <b>ny</b> og næ - måske et askebæger med byvåben på midten - var spillernes belønning for at underholde .</em></li>
       <li><a href="">X</a> 1: <em>” Vi troede ledelsen ville lægge op til nye forhandlinger og <b>ny</b> en konstruktiv dialog .</em></li>
+      <li><a href="">NOUN</a> 1: <em>En sølvske , kniv eller gaffel i <b>ny</b> og næ - måske et askebæger med byvåben på midten - var spillernes belønning for at underholde .</em></li>
     </ul>
   </li>
   <li><em>alt</em>
@@ -236,6 +237,7 @@ ADJ in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -267,11 +269,40 @@ ADJ in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -295,6 +326,7 @@ ADJ in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'da-pos';
@@ -320,7 +352,7 @@ ADJ in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

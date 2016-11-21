@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-eu">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/eu/dep">eu/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-eu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/eu/dep">eu/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_eu-dep/nmod.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,8 +39,55 @@
 
           <h2><code>nmod</code>: nominal modifier</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>nmod</code>.</p>
+<p>The nmod relation (<code>nmod</code>) is used for nominal modifiers. They depend either on another noun (group “noun dependents”) or on a predicate (group “non-core dependents of clausal predicates”).
+nmod is a noun (or noun phrase) functioning as a non-core (oblique) argument or adjunct. This means that it functionally corresponds to an adverbial when it attaches to a verb, adjective or other adverb. But when attaching to a noun, it corresponds to an attribute, or genitive complement.</p>
+
+<p><em>Hegazkin <strong>txiki</strong> bat zain zegoen <strong>Findeleko</strong> <strong>aireportuan</strong> .</em></p>
+
+<p><em>A <strong>small</strong> plane was waiting <strong>in the airport</strong> <strong>of Findel</strong> .</em></p>
+
+<pre><code class="language-sdparse">Hegazkin txiki bat zain zegoen Findeleko aireportuan . \n Plane small_a waiting was Findel_of airport_the_in .
+
+nmod(Hegazkin-1, txiki-2)
+nummod(Hegazkin-1, bat-3)
+advmod(zegoen-5, zain-4)
+nsubj(zegoen-5, Hegazkin-1)
+nmod(aireportuan-7, Findeleko-6)
+nmod(zegoen-5, aireportuan-7)
+punct(zegoen-5, .-8)
+</code></pre>
+
+<p><em>Partidutxoa egin zuten <strong>hamarreko</strong> bi <strong>taldetan</strong> .</em></p>
+
+<p><em>They played a match in two <strong>groups</strong> <strong>of ten</strong> .</em></p>
+
+<pre><code class="language-sdparse">Partidutxoa egin zuten hamarreko bi taldetan . \n Match_a played ten_of two match_in  .
+
+dobj(egin-2, Partidutxoa)
+aux(egin-2, zuten-3)
+nmod(taldetan-6, hamarreko-4)
+nummod(taldetan-6, bi-5)
+nmod(egin-2, taldetan-6)
+punct(egin-2, .-7)
+</code></pre>
+
+<ul>
+  <li>Possessive determiners, are not tagged with det but with nmod.</li>
+</ul>
+
+<p><em>Hori izango da <strong>gure</strong> zigorra .</em></p>
+
+<p><em>That will be our punishment .</em></p>
+
+<pre><code class="language-sdparse">Hori izango da gure zigorra . \n That will be our punishment . 
+
+nsubj(zigorra-5, Hori-1)
+cop(zigorra-5, izango-2)
+aux(izango-2, da-3)
+nmod(zigorra-5, gure-4)
+punct(zigorra-5, .-6)
+</code></pre>
+
 
 
 <!-- "automatic stats" -->
@@ -173,6 +221,7 @@ nmod in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -204,11 +253,40 @@ nmod in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -232,6 +310,7 @@ nmod in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'eu-dep';
@@ -257,7 +336,7 @@ nmod in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

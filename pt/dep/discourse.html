@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-pt">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/pt/dep">pt/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-pt">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/pt/dep">pt/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/discourse.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,13 +39,100 @@
 
           <h2><code>discourse</code>: discourse element</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>discourse</code>.</p>
+<p>This is used for <a href="u-pos/INTJ">interjections</a> and other discourse <a href="u-pos/PART">particles</a> and
+elements (which are not clearly linked to the structure of the
+sentence, except in an expressive way). We generally follow the
+guidelines of what the Penn Treebanks count as an INTJ.  They define
+this to include: interjections (<em>claro</em>, <em>não</em>, <em>pronto</em>), fillers
+(<em>hum</em>, <em>hahaha</em>), and discourse markers (<em>bem</em>, <em>na verdade</em>, but
+not <em>você sabe</em>).</p>
+
+<pre><code class="language-sdparse">ROOT Não , não e não
+root(ROOT, Não-2)
+discourse(Não-2, não-4)
+discourse(Não-2, não-6)
+cc(Não-2, e)
+</code></pre>
 
 
 <!-- "automatic stats" -->
 
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udportuguese-bosque">Treebank Statistics (UD_Portuguese-Bosque)</h2>
+
+<p>This relation is universal.</p>
+
+<p>15 nodes (0%) are attached to their parents as <code>discourse</code>.</p>
+
+<p>8 instances of <code>discourse</code> (53%) are right-to-left (child precedes parent).
+Average distance between parent and child is 3.8.</p>
+
+<p>The following 4 pairs of parts of speech are connected with <code>discourse</code>: <a href="">pt-pos/VERB</a>-<a href="">pt-pos/INTJ</a> (11; 73% instances), <a href="">pt-pos/INTJ</a>-<a href="">pt-pos/INTJ</a> (2; 13% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/INTJ</a> (1; 7% instances), <a href="">pt-pos/SCONJ</a>-<a href="">pt-pos/INTJ</a> (1; 7% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 8 discourse	color:blue
+1	«	«	PUNCT	PU|@PU	_	3	punct	_	_
+2	Eu	eu	PRON	PERS|M|1S|NOM|@SUBJ&gt;	Case=Nom|Gender=Masc|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	torci	torcer	VERB	&lt;mv&gt;|V|PS|1S|IND|@FS-ACC&gt;	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	12	ccomp	_	_
+4	muito	muito	ADV	&lt;quant&gt;|ADV|@&lt;ADVL	_	3	advmod	_	_
+5	por	por	ADP	PRP|@&lt;PIV	_	6	case	_	_
+6	você	você	PRON	PERS|F|3S|NOM/PIV|@P&lt;	Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nmod	_	_
+7	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+8	viu	ver	INTJ	IN|PS|3S|IND|@FS-&lt;ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	discourse	_	_
+9	?	?	PUNCT	PU|@PU	_	3	punct	_	_
+10	»	»	PUNCT	PU|@PU	_	3	punct	_	_
+11	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+12	disse	dizer	VERB	&lt;mv&gt;|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+13	Itamar	Itamar	PROPN	PROP|M|S|@&lt;SUBJ	Gender=Masc|Number=Sing	12	nsubj	_	_
+14	a	a	ADP	PRP|@&lt;PIV	_	15	case	_	_
+15	Fu	Fu	PROPN	PROP|F|S|@P&lt;	Gender=Fem|Number=Sing	12	nmod	_	_
+16	.	.	PUNCT	PU|@PU	_	12	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 1 3 discourse	color:blue
+1	Não	não	INTJ	&lt;first-cjt&gt;|IN|@UTT	_	0	root	_	_
+2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+3	não	não	INTJ	IN|@UTT	_	1	discourse	_	_
+4	e	e	CONJ	KC|@CO	_	1	cc	_	_
+5	não	não	INTJ	IN|@UTT	_	1	discourse	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 8 discourse	color:blue
+1	Já	já	ADV	ADV|@&gt;A	_	2	advmod	_	_
+2	nem	nem	ADV	ADV|@ADVL&gt;	_	3	advmod	_	_
+3	ouvem	ouvir	VERB	&lt;mv&gt;|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	a	o	DET	&lt;artd&gt;|ART|F|S|@&gt;N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	voz	voz	NOUN	&lt;np-def&gt;|N|F|S|@&lt;ACC	Gender=Fem|Number=Sing	3	dobj	_	_
+6	de	de	ADP	PRP|@N&lt;	_	8	case	_	_
+7	«	«	PUNCT	PU|@PU	_	8	punct	_	_
+8	já	já	INTJ	IN|@P&lt;	_	5	discourse	_	_
+9	»	»	PUNCT	PU|@PU	_	8	punct	_	_
+10	de	de	ADP	&lt;sam-&gt;|PRP|@N&lt;	_	12	case	_	_
+11	o	o	DET	&lt;-sam&gt;|&lt;artd&gt;|ART|M|S|@&gt;N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	instrutor-largador	instrutor-largador	NOUN	&lt;np-def&gt;|N|M|S|@P&lt;	Gender=Masc|Number=Sing	5	nmod	_	_
+13	.	.	PUNCT	PU|@PU	_	3	punct	_	_
+
+</code></pre>
 
 
 
@@ -103,6 +191,7 @@ discourse in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -134,11 +223,40 @@ discourse in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -162,6 +280,7 @@ discourse in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'pt-dep';
@@ -187,7 +306,7 @@ discourse in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

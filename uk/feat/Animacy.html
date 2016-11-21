@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-uk">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/uk/feat">uk/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-uk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/uk/feat">uk/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-feat/Animacy.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,12 +39,126 @@
 
           <h2><code>Animacy</code>: animacy</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>Animacy</code>.</p>
+<!--It is also valency feature of prepositions (saying that the preposition requires its argument to be in that case).-->
+
+<p>Similarly to <a href="">Gender</a>, animacy is a lexical feature of <a href="uk-pos/NOUN">nouns</a> and inflectional feature of other parts of speech that mark agreement with nouns. It is independent of gender, therefore it is encoded separately in most tagsets (e.g. all the Multext-East tagsets).</p>
+
+<h3 id="anim-animate"><code>Anim</code>: animate</h3>
+
+<p>Human beings, animals, fictional characters, names of professions etc. are all animate. Even nouns that are normally inanimate can be
+inflected as animate if they are personified. For instance, consider a children’s story about cars where cars live and talk as people; then the cars may become and be inflected as animates.</p>
+
+<p>Examples of animate nouns:</p>
+
+<ul>
+  <li><em>чоловік </em> “man”, <em>кіт </em> “cat”, <em>дитина </em> “child”, <em>комаха </em> “insect”</li>
+</ul>
+
+<h3 id="inan-inanimate"><code>Inan</code>: inanimate</h3>
+
+<p>Nouns that are not animate are inanimate.</p>
+
+<p>Examples of inanimate nouns:</p>
+
+<ul>
+  <li><em>рік </em> “year”, <em>закон </em> “law”, <em>хустка </em> “kerchief”, <em>озеро </em> “lake”, <em>мільйон </em> “million”</li>
+</ul>
+
+<p>Adjectives and determiners in the accusative case have different fors depending on animacy of the nouns they modify.</p>
+
+<p>For certain Ukrainian word groups it is also possible to use alternative animate flections for inanimate nouns and inanimate flections for animate nouns. This phenomenon is only possible for the accusative case. Sometimes, although not in all situations, this switch (inanimisation or animisation) has a colloquial stylistic effect. Adjectives and determiners agree with such forms. A special layered feature Animacy[gram] is used to record such uses. See ref. for examples.</p>
 
 
 <!-- "automatic stats" -->
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udukrainian">Treebank Statistics (UD_Ukrainian)</h2>
+
+<p>This feature is universal.
+It occurs with 2 different values: <code>Anim</code>, <code>Inan</code>.</p>
+
+<p>397 tokens (24%) have a non-empty value of <code>Animacy</code>.
+291 types (41%) occur at least once with a non-empty value of <code>Animacy</code>.
+243 lemmas (40%) occur at least once with a non-empty value of <code>Animacy</code>.
+The feature is used with 3 part-of-speech tags: <a href="">uk-pos/NOUN</a> (258; 15% instances), <a href="">uk-pos/PRON</a> (88; 5% instances), <a href="">uk-pos/PROPN</a> (51; 3% instances).</p>
+
+<h3 id="noun"><code>NOUN</code></h3>
+
+<p>258 <a href="">uk-pos/NOUN</a> tokens (100% of all <code>NOUN</code> tokens) have a non-empty value of <code>Animacy</code>.</p>
+
+<p>The most frequent other feature values with which <code>NOUN</code> and <code>Animacy</code> co-occurred: <tt><a href="Number.html">Number</a>=EMPTY</tt> (179; 69%).</p>
+
+<p><code>NOUN</code> tokens may have the following values of <code>Animacy</code>:</p>
+
+<ul>
+  <li><code>Anim</code> (72; 28% of non-empty <code>Animacy</code>): <em>хлопець, Начальник, футболіст, дітей, бджолами, бджоли, брат, водій, математики, модель</em></li>
+  <li><code>Inan</code> (186; 72% of non-empty <code>Animacy</code>): <em>спокій, доларів, квіти, груші, яблуку, ЕНТЕР, Село, вокзалі, гривень, думку</em></li>
+</ul>
+
+<table>
+  <tr><th>Paradigm <i>модель</i></th><th><tt>Anim</tt></th><th><tt>Inan</tt></th></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Acc</tt></td><td><em>модель</em></td><td></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Nom</tt></td><td></td><td><em>Модель</em></td></tr>
+</table>
+
+<p><code>Animacy</code> seems to be <strong>lexical feature</strong> of <code>NOUN</code>. 99% lemmas (188) occur only with one value of <code>Animacy</code>.</p>
+
+<h3 id="pron"><code>PRON</code></h3>
+
+<p>88 <a href="">uk-pos/PRON</a> tokens (58% of all <code>PRON</code> tokens) have a non-empty value of <code>Animacy</code>.</p>
+
+<p>The most frequent other feature values with which <code>PRON</code> and <code>Animacy</code> co-occurred: <tt><a href="Case.html">Case</a>=Nom</tt> (51; 58%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (51; 58%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (49; 56%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (49; 56%).</p>
+
+<p><code>PRON</code> tokens may have the following values of <code>Animacy</code>:</p>
+
+<ul>
+  <li><code>Anim</code> (50; 57% of non-empty <code>Animacy</code>): <em>ти, я, дехто, мені, мене, ми, нас, ніхто, тебе, ви</em></li>
+  <li><code>Inan</code> (38; 43% of non-empty <code>Animacy</code>): <em>це, що, те, все, всім, дещо, нічого, Той, то, тому</em></li>
+  <li><code>EMPTY</code> (65): <em>він, його, вона, її, вони, них, собі, Їх, ним, йому</em></li>
+</ul>
+
+<p><code>Animacy</code> seems to be <strong>lexical feature</strong> of <code>PRON</code>. 100% lemmas (16) occur only with one value of <code>Animacy</code>.</p>
+
+<h3 id="propn"><code>PROPN</code></h3>
+
+<p>51 <a href="">uk-pos/PROPN</a> tokens (100% of all <code>PROPN</code> tokens) have a non-empty value of <code>Animacy</code>.</p>
+
+<p>The most frequent other feature values with which <code>PROPN</code> and <code>Animacy</code> co-occurred: <tt><a href="Gender.html">Gender</a>=Masc</tt> (37; 73%), <tt><a href="Case.html">Case</a>=Nom</tt> (33; 65%).</p>
+
+<p><code>PROPN</code> tokens may have the following values of <code>Animacy</code>:</p>
+
+<ul>
+  <li><code>Anim</code> (41; 80% of non-empty <code>Animacy</code>): <em>Микола, Павло, Богдан, Кеннеді, Петро, С’юзі, Іван, Ігоря, Валентина, Василю</em></li>
+  <li><code>Inan</code> (10; 20% of non-empty <code>Animacy</code>): <em>Крушельниця, Самсунг, Стрий, Богдана, Карпатах, Києві, Полтави, Ярослав</em></li>
+</ul>
+
+<table>
+  <tr><th>Paradigm <i>Богдан</i></th><th><tt>Anim</tt></th><th><tt>Inan</tt></th></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Gen</tt></td><td></td><td><em>Богдана</em></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Nom</tt></td><td><em>Богдан</em></td><td></td></tr>
+</table>
+
+<p><code>Animacy</code> seems to be <strong>lexical feature</strong> of <code>PROPN</code>. 97% lemmas (37) occur only with one value of <code>Animacy</code>.</p>
+
+<h2 id="relations-with-agreement-in-animacy">Relations with Agreement in <code>Animacy</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code>Animacy</code>:
+<tt>NOUN –[<a href="../dep/nmod.html">nmod</a>]–&gt; NOUN</tt> (15; 68%),
+<tt>NOUN –[<a href="../dep/appos.html">appos</a>]–&gt; PROPN</tt> (6; 75%),
+<tt>NOUN –[<a href="../dep/conj.html">conj</a>]–&gt; NOUN</tt> (6; 100%),
+<tt>NOUN –[<a href="../dep/appos.html">appos</a>]–&gt; NOUN</tt> (5; 71%),
+<tt>PROPN –[<a href="../dep/remnant.html">remnant</a>]–&gt; PROPN</tt> (3; 100%),
+<tt>PROPN –[<a href="../dep/name.html">name</a>]–&gt; PROPN</tt> (3; 75%),
+<tt>PROPN –[<a href="../dep/appos.html">appos</a>]–&gt; NOUN</tt> (3; 75%),
+<tt>PROPN –[<a href="../dep/list.html">list</a>]–&gt; NOUN</tt> (2; 100%),
+<tt>PRON –[<a href="../dep/vocative.html">vocative</a>]–&gt; PROPN</tt> (1; 100%),
+<tt>NOUN –[<a href="../dep/dobj.html">dobj</a>]–&gt; NOUN</tt> (1; 100%).</p>
 
 
 
@@ -100,6 +215,7 @@ Animacy in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -131,11 +247,40 @@ Animacy in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -159,6 +304,7 @@ Animacy in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'uk-feat';
@@ -184,7 +330,7 @@ Animacy in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

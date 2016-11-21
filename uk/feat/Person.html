@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-uk">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/uk/feat">uk/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-uk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/uk/feat">uk/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-feat/Person.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,12 +39,120 @@
 
           <h2><code>Person</code>: person</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>Person</code>.</p>
+<p>Person is a feature of personal <a href="uk-pos/PRON">pronouns</a> and of <a href="uk-pos/VERB">verbs</a>. On verbs it is in fact an agreement feature that marks the person of the verb’s subject. Person marked on verbs makes it unnecessary to always add a personal pronoun as subject and thus subjects are sometimes dropped (Ukrainian is a pro-drop language).</p>
+
+<h3 id="first-person"><code>1</code>: first person</h3>
+
+<p>In singular, the first person refers just to the speaker / author. In plural, it must include the speaker and one or more additional persons.</p>
+
+<h4 id="examples">Examples</h4>
+
+<ul>
+  <li><em><b>роблю</b> </em> “<b>I</b> do”</li>
+  <li><em><b>робимо</b> </em> “<b>we</b> do”</li>
+</ul>
+
+<h3 id="second-person"><code>2</code>: second person</h3>
+
+<p>In singular, the second person refers to the addressee of the utterance / text. In plural, it may mean several addressees and optionally some third persons too.</p>
+
+<h4 id="examples-1">Examples</h4>
+
+<ul>
+  <li><em><b>робиш</b> </em> “<b>you</b><code>Sing</code> do”</li>
+  <li><em><b>робите</b> </em> “<b>you</b><code>Plur</code> do”</li>
+</ul>
+
+<h3 id="third-person"><code>3</code>: third person</h3>
+
+<p>The third person refers to one or more persons that are neither speakers nor addressees.</p>
+
+<h4 id="examples-2">Examples</h4>
+
+<ul>
+  <li><em><b>робить</b> </em> “<b>he/she/it</b> does”</li>
+  <li><em><b>роблять</b> </em> “<b>they</b> do”</li>
+</ul>
+
 
 
 <!-- "automatic stats" -->
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udukrainian">Treebank Statistics (UD_Ukrainian)</h2>
+
+<p>This feature is universal.
+It occurs with 3 different values: <code>1</code>, <code>2</code>, <code>3</code>.</p>
+
+<p>236 tokens (14%) have a non-empty value of <code>Person</code>.
+104 types (15%) occur at least once with a non-empty value of <code>Person</code>.
+66 lemmas (11%) occur at least once with a non-empty value of <code>Person</code>.
+The feature is used with 3 part-of-speech tags: <a href="">uk-pos/VERB</a> (130; 8% instances), <a href="">uk-pos/PRON</a> (100; 6% instances), <a href="">uk-pos/DET</a> (6; 0% instances).</p>
+
+<h3 id="verb"><code>VERB</code></h3>
+
+<p>130 <a href="">uk-pos/VERB</a> tokens (41% of all <code>VERB</code> tokens) have a non-empty value of <code>Person</code>.</p>
+
+<p>The most frequent other feature values with which <code>VERB</code> and <code>Person</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (130; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (130; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (117; 90%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (116; 89%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (104; 80%), <tt><a href="Number.html">Number</a>=Sing</tt> (96; 74%).</p>
+
+<p><code>VERB</code> tokens may have the following values of <code>Person</code>:</p>
+
+<ul>
+  <li><code>1</code> (23; 18% of non-empty <code>Person</code>): <em>сплю, Вважаю, Запитаю, Сподіваємося, Зустріну, Маємо, Пишу, Піду, Сиджу, дрімаю</em></li>
+  <li><code>2</code> (19; 15% of non-empty <code>Person</code>): <em>Почекайте, любиш, Іди, думай, Вчи, Знайди, Сиди, втікай, забудь, знаєш</em></li>
+  <li><code>3</code> (88; 68% of non-empty <code>Person</code>): <em>є, каже, плаває, навчають, Кажуть, буде, мусять, запилюють, запилюються, змінять</em></li>
+  <li><code>EMPTY</code> (189): <em>був, пішов, сказав, було, зберігати, зароблено, копати, плавати, розмовляти, чекати</em></li>
+</ul>
+
+<table>
+  <tr><th>Paradigm <i>мати</i></th><th><tt>1</tt></th><th><tt>3</tt></th></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="PronType.html">PronType</a>=Neg</tt></td><td></td><td><em>Немає</em></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing</tt></td><td></td><td><em>має</em></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Plur</tt></td><td><em>Маємо</em></td><td><em>мають</em></td></tr>
+</table>
+
+<h3 id="pron"><code>PRON</code></h3>
+
+<p>100 <a href="">uk-pos/PRON</a> tokens (65% of all <code>PRON</code> tokens) have a non-empty value of <code>Person</code>.</p>
+
+<p>The most frequent other feature values with which <code>PRON</code> and <code>Person</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (100; 100%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (61; 61%), <tt><a href="Case.html">Case</a>=Nom</tt> (57; 57%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (51; 51%).</p>
+
+<p><code>PRON</code> tokens may have the following values of <code>Person</code>:</p>
+
+<ul>
+  <li><code>1</code> (23; 23% of non-empty <code>Person</code>): <em>я, мені, мене, ми, нас, нами</em></li>
+  <li><code>2</code> (16; 16% of non-empty <code>Person</code>): <em>ти, тебе, ви, тобі, вас</em></li>
+  <li><code>3</code> (61; 61% of non-empty <code>Person</code>): <em>він, його, вона, її, вони, них, Їх, ним, йому, їй</em></li>
+  <li><code>EMPTY</code> (53): <em>це, що, дехто, те, все, ніхто, собі, всім, дещо, нічого</em></li>
+</ul>
+
+<h3 id="det"><code>DET</code></h3>
+
+<p>6 <a href="">uk-pos/DET</a> tokens (18% of all <code>DET</code> tokens) have a non-empty value of <code>Person</code>.</p>
+
+<p>The most frequent other feature values with which <code>DET</code> and <code>Person</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (6; 100%), <tt><a href="Poss.html">Poss</a>=Yes</tt> (6; 100%), <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (6; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (4; 67%), <tt><a href="Case.html">Case</a>=Nom</tt> (4; 67%).</p>
+
+<p><code>DET</code> tokens may have the following values of <code>Person</code>:</p>
+
+<ul>
+  <li><code>1</code> (2; 33% of non-empty <code>Person</code>): <em>моя, мій</em></li>
+  <li><code>2</code> (1; 17% of non-empty <code>Person</code>): <em>Ваші</em></li>
+  <li><code>3</code> (3; 50% of non-empty <code>Person</code>): <em>його, її</em></li>
+  <li><code>EMPTY</code> (28): <em>Ті, свою, той, цей, Котра, Котру, Та, Ця, кожному, котрого</em></li>
+</ul>
+
+<h2 id="relations-with-agreement-in-person">Relations with Agreement in <code>Person</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code>Person</code>:
+<tt>VERB –[<a href="../dep/ccomp.html">ccomp</a>]–&gt; VERB</tt> (11; 58%),
+<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (2; 100%),
+<tt>VERB –[<a href="../dep/vocative.html">vocative</a>]–&gt; PRON</tt> (1; 100%).</p>
 
 
 
@@ -102,6 +211,7 @@ Person in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -133,11 +243,40 @@ Person in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -161,6 +300,7 @@ Person in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'uk-feat';
@@ -186,7 +326,7 @@ Person in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

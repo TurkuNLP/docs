@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-de">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/de/dep">de/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-de">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/de/dep">de/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_de-dep/compound-prt.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -59,6 +60,78 @@ compound:prt(schlägt, auf)
 
 
 
+
+<hr />
+
+<h2 id="treebank-statistics-udgerman">Treebank Statistics (UD_German)</h2>
+
+<p>This relation is a language-specific subtype of <a href="">compound</a>.</p>
+
+<p>1543 nodes (1%) are attached to their parents as <code>compound:prt</code>.</p>
+
+<p>1512 instances of <code>compound:prt</code> (98%) are left-to-right (parent precedes child).
+Average distance between parent and child is 7.79650032404407.</p>
+
+<p>The following 12 pairs of parts of speech are connected with <code>compound:prt</code>: <a href="">de-pos/VERB</a>-<a href="">de-pos/ADP</a> (942; 61% instances), <a href="">de-pos/VERB</a>-<a href="">de-pos/ADV</a> (578; 37% instances), <a href="">de-pos/NOUN</a>-<a href="">de-pos/ADV</a> (6; 0% instances), <a href="">de-pos/NOUN</a>-<a href="">de-pos/ADP</a> (5; 0% instances), <a href="">de-pos/VERB</a>-<a href="">de-pos/PART</a> (3; 0% instances), <a href="">de-pos/ADJ</a>-<a href="">de-pos/ADP</a> (2; 0% instances), <a href="">de-pos/PROPN</a>-<a href="">de-pos/ADP</a> (2; 0% instances), <a href="">de-pos/ADJ</a>-<a href="">de-pos/ADV</a> (1; 0% instances), <a href="">de-pos/NUM</a>-<a href="">de-pos/ADP</a> (1; 0% instances), <a href="">de-pos/PROPN</a>-<a href="">de-pos/ADV</a> (1; 0% instances), <a href="">de-pos/VERB</a>-<a href="">de-pos/SCONJ</a> (1; 0% instances), <a href="">de-pos/X</a>-<a href="">de-pos/ADV</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 10	bgColor:blue
+# visual-style 10	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 10 compound:prt	color:blue
+1	Dieses	dies	PRON	PDAT	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	2	det	_	_
+2	Mittel	Mittel	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	3	nsubj	_	_
+3	sah	sehen	VERB	VVFIN	Number=Sing|Person=3|VerbForm=Fin	0	root	_	_
+4	ein	ein	DET	ART	Definite=Ind|PronType=Art	5	det	_	_
+5	Tag	Tag	NOUN	NN	_	6	nmod	_	_
+6	später	spät	ADV	ADJD	_	3	advmod	_	_
+7	jedoch	jedoch	ADV	ADV	_	3	advmod	_	_
+8	ganz	ganz	ADV	ADV	_	9	advmod	_	_
+9	komisch	komisch	ADJ	ADJD	Degree=Pos	3	xcomp	_	_
+10	aus	aus	ADP	PTKVZ	_	3	compound:prt	_	_
+11	.	.	PUNCT	$.	_	3	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 10	bgColor:blue
+# visual-style 10	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 10 compound:prt	color:blue
+1	Bei	bei	ADP	APPR	_	3	case	_	_
+2	dem	der	DET	ART	Case=Dat|Definite=Def|Gender=Masc,Neut|Number=Sing|PronType=Art	3	det	_	_
+3	Besuch	Besuch	NOUN	NN	Case=Dat|Gender=Masc,Neut|Number=Sing	4	nmod	_	_
+4	war	sein	VERB	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	dann	dann	ADV	ADV	_	6	advmod	_	_
+6	schließlich	schließlich	ADV	ADV	_	4	advmod	_	_
+7	keine	kein	PRON	PIAT	PronType=Neg	8	neg	_	_
+8	Vespa	Vespa	PROPN	NN	Case=Nom|Number=Sing	4	nsubj	_	_
+9	mehr	mehr	ADV	ADV	_	4	advmod	_	_
+10	da	da	ADV	PTKVZ	_	4	compound:prt	_	_
+11	.	.	PUNCT	$.	_	4	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 7 8 compound:prt	color:blue
+1	Judah	Judah	PROPN	NE	Case=Nom|Number=Sing	7	nsubj	_	_
+2	geht	gehen	VERB	VVFIN	Number=Sing|Person=3|VerbForm=Fin	7	cop	_	_
+3	aus	aus	ADP	APPR	_	5	case	_	_
+4	dem	der	DET	ART	Case=Dat|Definite=Def|Gender=Masc,Neut|Number=Sing|PronType=Art	5	det	_	_
+5	Rennen	Rennen	NOUN	NN	Case=Dat|Gender=Masc,Neut|Number=Sing	7	nmod	_	_
+6	als	als	ADP	KOKOM	_	7	case	_	_
+7	Sieger	Sieger	NOUN	NN	_	0	root	_	_
+8	hervor	hervor	ADV	PTKVZ	_	7	compound:prt	_	_
+9	;	;	PUNCT	$.	_	7	punct	_	_
+
+</code></pre>
+
+
+
+
 <!-- "in other languages" links -->
 <hr/>
 
@@ -74,6 +147,7 @@ compound:prt(schlägt, auf)
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -105,11 +179,40 @@ compound:prt(schlägt, auf)
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -133,6 +236,7 @@ compound:prt(schlägt, auf)
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'de-dep';
@@ -158,7 +262,7 @@ compound:prt(schlägt, auf)
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

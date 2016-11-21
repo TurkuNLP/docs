@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-kk">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/kk/dep">kk/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-kk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/kk/dep">kk/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/aux_.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -88,6 +89,74 @@ ccomp(қарап-7, ойнағанына-6)
 
 
 
+
+<hr />
+
+<h2 id="treebank-statistics-udkazakh">Treebank Statistics (UD_Kazakh)</h2>
+
+<p>This relation is universal.</p>
+
+<p>153 nodes (2%) are attached to their parents as <code>aux</code>.</p>
+
+<p>153 instances of <code>aux</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 1.07843137254902.</p>
+
+<p>The following 4 pairs of parts of speech are connected with <code>aux</code>: <a href="">kk-pos/VERB</a>-<a href="">kk-pos/AUX</a> (142; 93% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/AUX</a> (5; 3% instances), <a href="">kk-pos/VERB</a>-<a href="">kk-pos/VERB</a> (4; 3% instances), <a href="">kk-pos/ADJ</a>-<a href="">kk-pos/AUX</a> (2; 1% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 3 aux	color:blue
+1	Мен	мен	PRON	prn	_	2	nsubj	_	pers|p1|sg|nom
+2	адасып	адас	VERB	v	_	0	root	_	iv|prc_perf
+3	кеттім	кет	AUX	vaux	_	2	aux	_	ifi|p1|sg
+4	.	.	PUNCT	sent	_	2	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 6 aux	color:blue
+1	Малына	мал	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	3	conj	_	мал|n|px3sp|dat
+2	,	,	PUNCT	cm	_	3	punct	_	,|cm
+3	жанына	жан	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	4	nmod	_	жан|n|px3sp|dat
+4	ие	ие	NOUN	n	Case=Nom	8	acl:relcl	_	ие|n|nom
+5	болып	бол	VERB	v	Aspect=Perf|VerbForm=Coverb	4	cop	_	бол|v|iv|prcperf
+6	отырған	отыр	AUX	vaux	Tense=Past|VerbForm=Part	4	aux	_	отыр|vaux|gprpast
+7	қай	қай	DET	det	PronType=Itg	8	det	_	қай|det|itg
+8	қазақ	қазақ	NOUN	n	Case=Nom	9	nsubj	_	қазақ|n|nom
+9	_	бар	ADJ	adj	_	0	root	_	бар|adj
+10	_	е	AUX	cop	Number=Sing|Person=3|Tense=Aor	9	cop	_	е|cop|aor|p3|sg
+11	?	?	PUNCT	sent	_	9	punct	_	?|sent
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 6 aux	color:blue
+1	Шайларын	шай	NOUN	n	Case=Acc|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	2	dobj	_	шай|n|pl|px3sp|acc
+2	ішіп	іш	VERB	v	Aspect=Perf|VerbForm=Trans	5	conj	_	іш|v|tv|gnaperf
+3	,	,	PUNCT	cm	_	5	punct	_	,|cm
+4	шылымдарын	шылым	NOUN	n	Case=Acc|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	5	dobj	_	шылым|n|pl|px3sp|acc
+5	тартысып	тарт	VERB	v	Aspect=Perf|VerbForm=Trans|Voice=Coop	11	advcl	_	тарт|v|tv|coop|gnaperf
+6	болған	бол	VERB	v	Case=Nom|Tense=Past|VerbForm=Ger	5	aux	_	бол|v|iv|gerpast|nom
+7	соң	соң	ADP	post	_	5	case	_	соң|post
+8	,	,	PUNCT	cm	_	11	punct	_	,|cm
+9	өзгелері	өзге	ADJ	adj	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	11	nsubj	_	өзге|adj|subst|pl|px3sp|nom
+10	тысқа	тыс	NOUN	n	Case=Dat	11	nmod	_	тыс|n|dat
+11	шықты	шық	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	шық|v|tv|ifi|p3|sg
+12	.	.	PUNCT	sent	_	11	punct	_	.|sent
+
+</code></pre>
+
+
+
+
 <!-- "in other languages" links -->
 <hr/>
 
@@ -142,6 +211,7 @@ aux in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -173,11 +243,40 @@ aux in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -201,6 +300,7 @@ aux in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'kk-dep';
@@ -226,7 +326,7 @@ aux in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

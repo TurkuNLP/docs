@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-uk">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/uk/feat">uk/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-uk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/uk/feat">uk/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-feat/Mood.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,12 +39,85 @@
 
           <h2><code>Mood</code>: mood</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>Mood</code>.</p>
+<p>Mood is a feature that expresses modality and subclassifies finite verb forms.</p>
+
+<h3 id="ind-indicative"><code>Ind</code>: indicative</h3>
+
+<p>The indicative can be considered the default mood. A verb in indicative merely states that something happens, has happened or will
+happen, without adding any attitude of the speaker.</p>
+
+<h4 id="examples">Examples</h4>
+
+<ul>
+  <li><em>Ти <b>навчаєшся</b> в університеті. </em> “<b>You study</b> at the university.”</li>
+</ul>
+
+<h3 id="imp-imperative"><code>Imp</code>: imperative</h3>
+
+<p>The speaker uses imperative to order or ask the addressee to do the action of the verb.</p>
+
+<p>Ukrainian verbs (except for modal verbs) have imperative forms of the second person singular, first person plural and second person plural.</p>
+
+<h4 id="examples-1">Examples</h4>
+
+<ul>
+  <li><em><b>Навчайся</b> в університеті! </em> “<b>Study</b><code>Sing</code> at the university!”</li>
+  <li><em><b>Навчайтеся</b> в університеті! </em> “<b>Study</b><code>Plur</code> at the university!”</li>
+  <li><em><b>Навчаймося</b> в університеті! </em> “Let us <b>study</b> at the university!”</li>
+</ul>
 
 
 <!-- "automatic stats" -->
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udukrainian">Treebank Statistics (UD_Ukrainian)</h2>
+
+<p>This feature is universal.
+It occurs with 2 different values: <code>Imp</code>, <code>Ind</code>.</p>
+
+<p>255 tokens (15%) have a non-empty value of <code>Mood</code>.
+149 types (21%) occur at least once with a non-empty value of <code>Mood</code>.
+114 lemmas (19%) occur at least once with a non-empty value of <code>Mood</code>.
+The feature is used with 1 part-of-speech tags: <a href="">uk-pos/VERB</a> (255; 15% instances).</p>
+
+<h3 id="verb"><code>VERB</code></h3>
+
+<p>255 <a href="">uk-pos/VERB</a> tokens (80% of all <code>VERB</code> tokens) have a non-empty value of <code>Mood</code>.</p>
+
+<p>The most frequent other feature values with which <code>VERB</code> and <code>Mood</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (255; 100%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (175; 69%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (143; 56%).</p>
+
+<p><code>VERB</code> tokens may have the following values of <code>Mood</code>:</p>
+
+<ul>
+  <li><code>Imp</code> (13; 5% of non-empty <code>Mood</code>): <em>Почекайте, Іди, думай, Вчи, Знайди, Сиди, втікай, забуваймо, забудь</em></li>
+  <li><code>Ind</code> (242; 95% of non-empty <code>Mood</code>): <em>є, був, каже, пішов, сказав, плаває, було, навчають, Кажуть, буде</em></li>
+  <li><code>EMPTY</code> (64): <em>зберігати, зароблено, копати, плавати, розмовляти, чекати, бути, зізнатися, почати, працювати</em></li>
+</ul>
+
+<table>
+  <tr><th>Paradigm <i>думати</i></th><th><tt>Ind</tt></th><th><tt>Imp</tt></th></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Tense.html">Tense</a>=Past</tt></td><td><em>думала</em></td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Pres</tt></td><td><em>думаю</em></td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=2</tt></td><td></td><td><em>думай</em></td></tr>
+</table>
+
+<p><code>Mood</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 97% lemmas (111) occur only with one value of <code>Mood</code>.</p>
+
+<h2 id="relations-with-agreement-in-mood">Relations with Agreement in <code>Mood</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code>Mood</code>:
+<tt>VERB –[<a href="../dep/ccomp.html">ccomp</a>]–&gt; VERB</tt> (22; 85%),
+<tt>VERB –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; VERB</tt> (11; 100%),
+<tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (6; 86%),
+<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (5; 100%),
+<tt>VERB –[<a href="../dep/aux.html">aux</a>]–&gt; VERB</tt> (5; 56%),
+<tt>VERB –[<a href="../dep/csubj.html">csubj</a>]–&gt; VERB</tt> (1; 100%).</p>
 
 
 
@@ -102,6 +176,7 @@ Mood in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -133,11 +208,40 @@ Mood in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -161,6 +265,7 @@ Mood in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'uk-feat';
@@ -186,7 +291,7 @@ Mood in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="css/hint.css"/>
     <script type="text/javascript" src="lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-">home</a></span>
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/language_metadata.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -46,6 +47,7 @@ Data available since: UD v1.0
 License: CC BY-SA 4.0
 Genre: blog wiki legal news fiction
 Contributors: Ginter, Filip; Kanerva, Jenna; Laippala, Veronika; Missilä, Anna; Pyysalo, Sampo
+Contact: email1@example.com, email2@example.com
 </code></pre>
 
 <p>This block can be anywhere in the readme file. The properties are as follows:</p>
@@ -57,6 +59,7 @@ Contributors: Ginter, Filip; Kanerva, Jenna; Laippala, Veronika; Missilä, Anna;
   <li><code>License</code>: anything containing the string <code>BY-NC-SA</code> will be given the CC non-commercial logo, <code>BY-SA</code> or <code>BY</code> the CC logo, and <code>GNU</code> the GNU logo. To add any other license, please provide a suitable icon to ginter@cs.utu.fi and sampo.pyysalo@gmail.com.</li>
   <li><code>Genre</code>: this is simply a space-separated list of genres which gets mapped into symbols in the table. The possible genres are listed in <a href="https://github.com/UniversalDependencies/docs/blob/pages-source/gen_index/genre_symbols.json">this file</a> in the repository. If you don’t see yours, just edit the file on GitHub and add your genre, choosing one of the symbols from <a href="https://fortawesome.github.io/Font-Awesome/icons/">the <em>FontAwesome</em> list</a>. Please make sure you get the syntax right, since this is a machine-readable JSON file. It is also possible to not add the genre to the <code>genre_symbols.json</code> file, in which case the default symbol will be used automatically. The genre name will still remain visible in the mouse-over tooltip.</li>
   <li><code>Contributors</code>: the list of contributors to be included with the data release and in the LINDAT download page. This is a semi-colon separated list where every name is in the <code>Last, First</code> form and the readme file should be utf-8 encoded to make sure special characters are preserved correctly.</li>
+  <li><code>Contact</code>: e-mail address(es) of contact person(s) for the treebank (typically a subset of the contributors). The address may be used for inquiries about the treebank, such as questions that are not answered in documentation and/or issue trackers. More importantly, it may be used by people who want to contribute to the treebank and need to coordinate with the maintainers, and by the UD release task force to discuss issues that need to be fixed before the release. Warning: the addresses listed here may be exposed to spamming robots.</li>
 </ul>
 
 <h1 id="adding-a-new-language-into-the-documentation">Adding a new language into the documentation</h1>
@@ -75,6 +78,7 @@ Contributors: Ginter, Filip; Kanerva, Jenna; Laippala, Veronika; Missilä, Anna;
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -106,11 +110,40 @@ Contributors: Ginter, Filip; Kanerva, Jenna; Laippala, Veronika; Missilä, Anna;
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -134,6 +167,7 @@ Contributors: Ginter, Filip; Kanerva, Jenna; Laippala, Veronika; Missilä, Anna;
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = '';
@@ -159,7 +193,7 @@ Contributors: Ginter, Filip; Kanerva, Jenna; Laippala, Veronika; Missilä, Anna;
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

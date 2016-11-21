@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-ja">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/ja/pos">ja/pos</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ja">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ja/pos">ja/pos</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ja-pos/ADP.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -65,6 +66,45 @@ in UniDic definition.</p>
 
 <hr />
 
+<h2 id="treebank-statistics-udjapanese">Treebank Statistics (UD_Japanese)</h2>
+
+<p>There are 1 <code>ADP</code> lemmas (8%), 2 <code>ADP</code> types (0%) and 2 <code>ADP</code> tokens (0%).
+Out of 12 observed tags, the rank of <code>ADP</code> is: 2 in number of lemmas, 12 in number of types and 12 in number of tokens.</p>
+
+<p>The 10 most frequent <code>ADP</code> lemmas: _</p>
+
+<p>The 10 most frequent <code>ADP</code> types:  …というふうに, 軍事費の</p>
+
+<p>The 10 most frequent ambiguous lemmas: _ (<a href="">NOUN</a> 50340, <a href="">VERB</a> 18567, <a href="">PUNCT</a> 10247, <a href="">NUM</a> 4184, <a href="">ADJ</a> 3393, <a href="">ADV</a> 3061, <a href="">PRON</a> 1113, <a href="">DET</a> 925, <a href="">CONJ</a> 180, <a href="">X</a> 18, <a href="">PART</a> 3, <a href="">ADP</a> 2)</p>
+
+<p>The 10 most frequent ambiguous types:</p>
+
+<h2 id="morphology">Morphology</h2>
+
+<p>The form / lemma ratio of <code>ADP</code> is 2.000000 (the average of all parts of speech is 4757.166667).</p>
+
+<p>The 1st highest number of forms (2) was observed with the lemma “_”: …というふうに, 軍事費の.</p>
+
+<p><code>ADP</code> does not occur with any features.</p>
+
+<h2 id="relations">Relations</h2>
+
+<p><code>ADP</code> nodes are attached to their parents using 1 different relations: <a href="">ja-dep/nmod</a> (2; 100% instances)</p>
+
+<p>Parents of <code>ADP</code> nodes belong to 2 different parts of speech: <a href="">NOUN</a> (1; 50% instances), <a href="">VERB</a> (1; 50% instances)</p>
+
+<p>0 (0%) <code>ADP</code> nodes are leaves.</p>
+
+<p>2 (100%) <code>ADP</code> nodes have one child.</p>
+
+<p>The highest child degree of a <code>ADP</code> node is 1.</p>
+
+<p>Children of <code>ADP</code> nodes are attached using 2 different relations: <a href="">ja-dep/advmod</a> (1; 50% instances), <a href="">ja-dep/nmod</a> (1; 50% instances)</p>
+
+<p>Children of <code>ADP</code> nodes belong to 2 different parts of speech: <a href="">ADV</a> (1; 50% instances), <a href="">NOUN</a> (1; 50% instances)</p>
+
+<hr />
+
 <h2 id="treebank-statistics-udjapanese-ktc">Treebank Statistics (UD_Japanese-KTC)</h2>
 
 <p>There are 2 <code>ADP</code> lemmas (0%), 1 <code>ADP</code> types (6%) and 56602 <code>ADP</code> tokens (21%).
@@ -101,7 +141,7 @@ Out of 16 observed tags, the rank of <code>ADP</code> is: 14 in number of lemmas
   </li>
 </ul>
 
-<h2 id="morphology">Morphology</h2>
+<h2 id="morphology-1">Morphology</h2>
 
 <p>The form / lemma ratio of <code>ADP</code> is 0.500000 (the average of all parts of speech is 0.002927).</p>
 
@@ -111,7 +151,7 @@ Out of 16 observed tags, the rank of <code>ADP</code> is: 14 in number of lemmas
 
 <p><code>ADP</code> does not occur with any features.</p>
 
-<h2 id="relations">Relations</h2>
+<h2 id="relations-1">Relations</h2>
 
 <p><code>ADP</code> nodes are attached to their parents using 4 different relations: <a href="">ja-dep/case</a> (53784; 95% instances), <a href="">ja-dep/dep</a> (2568; 5% instances), <a href="">ja-dep/mark</a> (243; 0% instances), <a href="">ja-dep/nmod</a> (7; 0% instances)</p>
 
@@ -188,6 +228,7 @@ ADP in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -219,11 +260,40 @@ ADP in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -247,6 +317,7 @@ ADP in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'ja-pos';
@@ -272,7 +343,7 @@ ADP in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>
