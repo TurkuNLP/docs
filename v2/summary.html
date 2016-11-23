@@ -126,13 +126,29 @@ Complete documentation of the new guidelines will follow as quickly as possible.
 
 <h2 id="syntactic-relations">Syntactic relations</h2>
 
-<p>The set of universal relations is modified from v1 to v2 in the following respects:</p>
+<p>For many syntactic relations, the guidelines in v2 have been improved by providing more explicit criteria and guiding examples from multiple languages. In the following subsections, we list only the cases where relations have been 
+removed, added or renamed, or where the use of an existing relation has changed significantly.</p>
+
+<h3 id="clauses-and-dependents-of-predicates">Clauses and dependents of predicates</h3>
 
 <ol>
-  <li>The <code>dobj</code> relation is renamed <code>obj</code> because this seems to be more easily reconcilable with the intended interpretation or “second core argument” or “P/A argument” without connection to a specific case or semantic role.</li>
-  <li>The <code>nsubjpass</code>, <code>csubjpass</code> and <code>auxpass</code> relations are removed. The use of subtypes nsubj:pass, csubj:pass and aux:pass is strongly encouraged for languages where these distinctions are relevant.</li>
-  <li>The <code>nmod</code> relation, which in v1 was used for nominals (including prepositional phrases) modifying either predicates or other nominals, is in v2 restricted to modifying nominals. A new relation <code>obl</code> (oblique) is introduced for oblique dependents of predicates. (More discussion of 1-3 can be found <a href="core-dependents.html">here</a>.)</li>
+  <li>The <code>dobj</code> relation is renamed <code>obj</code> because this seems to be more easily reconcilable with the intended interpretation of “second core argument” or “P/A argument” (without connection to specific cases or semantic roles). <a href="core-dependents.html">1</a></li>
+  <li>The <code>nsubjpass</code>, <code>csubjpass</code> and <code>auxpass</code> relations are removed. The use of subtypes nsubj:pass, csubj:pass and aux:pass is strongly encouraged for languages where these distinctions are relevant. <a href="core-dependents.html">1</a></li>
+  <li>The <code>nmod</code> relation, which in v1 was used for nominals modifying either predicates or other nominals, is in v2 restricted to modifying nominals. A new relation <code>obl</code> (oblique) is introduced for oblique dependents of predicates. <a href="core-dependents.html">1</a></li>
+  <li>ADD NONVERBAL PREDICATION HERE</li>
 </ol>
+
+<p>More discussion about 1-3 and 4 can be found in the sections on <a href="core-dependents.html">core-dependents</a> and <a href="copula.html">copula and nonverbal predicates</a>, respectively.</p>
+
+<h3 id="coordination-and-ellipsis">Coordination and ellipsis</h3>
+
+<ol>
+  <li>The <code>remnant</code> relation used to analyze ellipsis in v1 is removed. A new relation <code>orphan</code> is introduced in order to analyze ellipsis in a way that preserves the integrity of clauses and minimizes the use of special relations. <a href="ellipsis">2</a></li>
+</ol>
+
+<h3 id="functional-relations">Functional relations</h3>
+
+<h3 id="multiword-expressions">Multiword expressions</h3>
 
 <h2 id="the-conll-u-format">The CoNLL-U format</h2>
 
