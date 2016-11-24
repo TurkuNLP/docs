@@ -173,6 +173,26 @@ removed, added or renamed, or where the use of an existing relation has changed 
 
 <h2 id="the-conll-u-format">The CoNLL-U format</h2>
 
+<p>The following changes in the CoNLL-U format are adopted for v2:</p>
+
+<ol>
+  <li>Spaces are allowed in the FORM and LEMMA fields (see above).</li>
+  <li>Rows corresponding to empty nodes, with an indexing scheme distinct from both tokens and words, are allowed for the representation of ellipsis in the enhanced dependencies.</li>
+  <li>Sentence-level metadata are standardized using the comment prefixes <code>sent_id</code> and <code>text</code>, of which the former is now obligatory in all treebanks.</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>The use of the MISC field is restricted for ease of processing by requiring that it can be split on the</td>
+          <td>(bar) character without any complex processing of escaping.</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ol>
+
+<p>More discussion can be found in the section on the <a href="conll-u.html">CoNLL-U format</a></p>
+
 
       </div>
 
