@@ -163,6 +163,14 @@ removed, added or renamed, or where the use of an existing relation has changed 
 
 <h3 id="multiword-expressions">Multiword expressions</h3>
 
+<ol>
+  <li>The <code>mwe</code> relation is renamed <code>fixed</code> to make clear that it is only to be used for fixed grammaticized expressions that behave like function words or short adverbials.</li>
+  <li>The <code>name</code> relation is removed because it has been misinterpreted as applying to all names. A new relation <code>flat</code> is added for semi-fixed multiword expressions for which there is no clear evidence that one of the components is the linguistic head. This covers the originally intended use of the <code>name</code> relation but also other cases like title-name combinations and some numerical expressions.</li>
+  <li>The <code>compound</code> relation is extended to cover all types of complex predicates including not only particle verbs (<code>compound:prt</code>) but also serial verbs (<code>compound:svc</code>).</li>
+</ol>
+
+<p>More discussion can be found in the sections on <a href="mwe.html">multiword expressions</a> and <a href="semantic-categories.html">semantic categories</a>.</p>
+
 <h2 id="the-conll-u-format">The CoNLL-U format</h2>
 
 
