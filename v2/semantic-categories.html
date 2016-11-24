@@ -30,8 +30,8 @@
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -45,7 +45,7 @@
 
           <h1 id="semantic-categories-in-ud-v2">Semantic Categories in UD v2</h1>
 
-<p>Some of our current relations (i.e., <a href="">u-dep/name</a> and <a href="">u-dep/neg</a>) seem to primarily encode semantic distinctions (rather than syntactic). We propose the following changes for v2:</p>
+<p>Some of the relations in v1, in partiular <a href="">u-dep/name</a> and <a href="">u-dep/neg</a>), primarily encoded semantic distinctions (rather than syntactic). We therefore make the following changes for v2:</p>
 
 <ul>
   <li>Remove <a href="">u-dep/neg</a> and instead encode negation as a feature</li>
@@ -54,35 +54,35 @@
 
 <h2 id="remove-neg">Remove neg</h2>
 
-<p>We suggest getting rid of the <a href="">u-dep/neg</a> relation which is not syntactic. Instead we will use</p>
+<p>We have decided to get rid of the <a href="">u-dep/neg</a> relation which is not syntactic. Instead we will use</p>
 
 <ul>
   <li>ordinary syntactic relations like <a href="">u-dep/advmod</a>, <a href="">u-dep/aux</a>, etc.</li>
-  <li>a feature Negative=Neg on the negative word to preserve the information about negation</li>
+  <li>a feature Polarity=Neg on the negative word to preserve the information about negation</li>
 </ul>
 
 <h2 id="rename-name-and-modify-its-use">Rename name and modify its use</h2>
 
-<p>The <code>name</code> label is another one that has led to confusion. It was not intended to be used for all <strong>named entities</strong>, but only for names consisting of multiple nominal elements. We suggest keeping the relation but renaming it to <code>flat</code> to (a) avoid the impression that it should capture named entities in general, and (b) indicate that the relation is only appropriate when there is no clear syntactic head. After we have dropped the direct association with names, we can also extend the use of this relation to titles (“Mrs.”, “President”, etc.) in languages where they do not show clear head or dependent properties. Finally, consistent with the proposed changes for other headless constructions, we propose that arrows should be drawn from righ to left (see <a href="mwe.html">multiword expressions</a>).</p>
+<p>The <code>name</code> label is another one that has led to confusion. It was not intended to be used for all <strong>named entities</strong>, but only for names consisting of multiple nominal elements. We suggest keeping the relation but renaming it to <code>flat</code> to (a) avoid the impression that it should capture named entities in general, and (b) indicate that the relation is only appropriate when there is no clear syntactic head. After we have dropped the direct association with names, we can also extend the use of this relation to titles (“Mrs.”, “President”, etc.) in languages where they do not show clear head or dependent properties. <!-- Finally, consistent with the proposed changes for other headless constructions, we propose that arrows should be drawn from righ to left (see [multiword expressions](mwe.html)).--></p>
 
 <pre><code class="language-sdparse">Hillary Rodham Clinton
-flat(Clinton, Hillary)
-flat(Clinton, Rodham)
+flat(Hillary, Rodham)
+flat(Hillary, Clinton)
 </code></pre>
 
 <pre><code class="language-sdparse">Monsieur Louis Pignon
-flat(Pignon, Monsieur)
-flat(Pignon, Louis)
+flat(Monsieur, Louis)
+flat(Monsieur, Pignon)
 </code></pre>
 
 <p>In case of foreign phrases that are phrasal or clausal names and where we do not (or cannot) give a compositional analysis, we use <a href="">u-dep/foreign</a> instead of <code>flat</code>, because the latter is restricted to sequences of nominal elements that do not have a (clear) phrasal structure.</p>
 
 <pre><code class="language-sdparse">The French title of the book is " Harry à l' école des sorciers ".
-foreign(sorciers, Harry)
-foreign(sorciers, à)
-foreign(sorciers, l')
-foreign(sorciers, école)
-foreign(sorciers, des)
+foreign(Harry, à)
+foreign(Harry, l')
+foreign(Harry, école)
+foreign(Harry, des)
+foreign(Harry, sorciers)
 </code></pre>
 
 
