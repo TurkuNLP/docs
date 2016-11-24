@@ -30,8 +30,8 @@
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -45,7 +45,7 @@
 
           <h1 id="conll-u-format-in-ud-v2">CoNLL-U Format in UD v2</h1>
 
-<p>Some of the proposed changes will require modifications to the CoNLL-U format. Whenever possible, we want to do this in the least disruptive fashion possible, keeping backward compatibility as far as we can. In particular, we strongly recommend not changing the number of fields and/or their meaning for fear of breaking people’s tools. We recommend the following changes for v2:</p>
+<p>Some of the changes adopted in v2 require modifications to the CoNLL-U format. Whenever possible, we have tried to do this in the least disruptive fashion possible, keeping backward compatibility as far as we can. In particular, we have decided against changing the number of fields and/or their meaning for fear of breaking people’s tools. We make the following changes for v2:</p>
 
 <ul>
   <li>Allow spaces in the <code>FORM</code> and <code>LEMMA</code> fields (see <a href="segmentation.html">word segmentation</a>)</li>
@@ -64,8 +64,8 @@
 <p>A mechanism is needed for empty nodes in the enhanced representation (the base representation will always be empty-node-free). These will be on their separate lines indexed as <code>E2.1</code> which means “the first empty node after the syntactic word indexed 2”. This line would be placed right after the word 2. Naturally, these empty nodes can be
 referred to only from the <code>DEPS</code> field.</p>
 
-<p>There doesn’t seem to be a clear idea of whether the empty nodes should receive any values in the <code>FORM, LEMMA, UPOS, FEAT</code>
-fields. Probably <code>UPOS</code> could be somehow realistically filled.</p>
+<!--There doesn't seem to be a clear idea of whether the empty nodes should receive any values in the `FORM, LEMMA, UPOS, FEAT`
+fields. Probably `UPOS` could be somehow realistically filled.-->
 
 <p>Grepping out all lines which start with E is now sufficient to obtain a CoNLL-U file without empty nodes whose <code>HEAD</code> and <code>DEPREL</code> fields behave as usual.</p>
 
