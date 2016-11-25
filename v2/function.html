@@ -49,7 +49,7 @@
 
 <ul>
   <li>Add a new relation <code>clf</code> for classifiers (see below)</li>
-  <li>Allow <a href="">u-dep/aux</a> with nonverbal TAMVE particles (see below)</li>
+  <li>Allow <a href="">u-dep/aux</a> with nonverbal TAME particles (see below)</li>
   <li>Remove <a href="">u-dep/auxpass</a> from the universal relations (see <a href="core-dependents.html">core dependents</a> for discussion)</li>
   <li>Limit <a href="">u-dep/cop</a> to pure linking words (whether verbal or nonverbal) (see <a href="copula.html">copula</a> for discussion)
 <!--* Allow [u-dep/case]() with subordinate clauses when it has a clear case-marking function (see below)--></li>
@@ -80,7 +80,7 @@ clf(sān, gè)
 
 <!-- Joakim: In line with loosening the constraints between part-of-speech tags and syntactic relations, I don’t see a problem with allowing other things than verbs to have the aux relation. Maybe we should should define aux as a grammaticalized expression of TMA categories? -->
 
-<p>The v1 guidelines said that the <a href="">u-dep/aux</a> relation is reserved for auxiliary <em>verbs</em>. However, some languages (for example Bulgarian, see example) use particles to construct periphrastic verb forms, hence we should also allow nonverbal particles. More generally, we should define <a href="">u-dep/aux</a> as a grammaticalized expression of TAMVE categories. (We propose a parallel extension of the part-of-speech tag <a href="">u-pos/AUX</a>; 
+<p>The v1 guidelines said that the <a href="">u-dep/aux</a> relation is reserved for auxiliary <em>verbs</em>. However, some languages (for example Bulgarian, see example) use particles to construct periphrastic verb forms, hence we should also allow nonverbal particles. More generally, we should define <a href="">u-dep/aux</a> as a grammaticalized expression of TAME categories. (We propose a parallel extension of the part-of-speech tag <a href="">u-pos/AUX</a>; 
 see <a href="postags.html">part-of-speech tags</a>.)</p>
 
 <pre><code class="language-sdparse">Като се прибереш, ще съм почистил къщата. \n When you return , will I.have cleaned the.house
@@ -88,7 +88,7 @@ aux(почистил, ще)
 aux(почистил, съм)
 </code></pre>
 
-<p>Note that this does not necessarily mean that all non-verb aux dependents in the current data are correct. See <a href="http://bionlp-www.utu.fi/dep_search/query?search=%21%28AUX%7CVERB%29+%28%3Caux%7C%3Cauxpass%29+_&amp;db=UD_English-dev">this query</a> for an instance. They should be revised and each language-specific documentation should clearly state which lemmas may occur as auxiliaries and what TAMVE categories they are used in. That also applies to verbs —- in some UD treebanks, the list of verbs that are attached as auxiliaries is very long and some of the verbs probably should not be <code>aux</code>.</p>
+<p>Note that this does not necessarily mean that all non-verb aux dependents in the current data are correct. See <a href="http://bionlp-www.utu.fi/dep_search/query?search=%21%28AUX%7CVERB%29+%28%3Caux%7C%3Cauxpass%29+_&amp;db=UD_English-dev">this query</a> for an instance. They should be revised and each language-specific documentation should clearly state which lemmas may occur as auxiliaries and what TAME categories they are used in. That also applies to verbs —- in some UD treebanks, the list of verbs that are attached as auxiliaries is very long and some of the verbs probably should not be <code>aux</code>.</p>
 
 <!-- ## The use of case and mark with subordinate clauses
 
