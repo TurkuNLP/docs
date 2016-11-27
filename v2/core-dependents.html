@@ -72,9 +72,9 @@
 <div id="s1" class="sd-parse">
 this morning I called on her
 nsubj(called, I)
-nmod(called, her)
+obl(called, her)
 case(her, on)
-nmod(called, morning)
+obl(called, morning)
 det(morning, this)
 </div>
 
@@ -82,12 +82,12 @@ det(morning, this)
 
 <div id="s2" class="sd-parse">
 buscan una secretaria \n they seek a secretary
-dobj(buscan, secretaria)
+obj(buscan, secretaria)
 det(secretaria, una)
 </div>
 <div id="s3" class="sd-parse">
 buscan a una de las secretarias \n they seek one of the secretaries
-dobj(buscan, una)
+obj(buscan, una)
 case(una, a)
 nmod(una, secretarias)
 det(secretarias, las)
@@ -115,7 +115,7 @@ case(secretarias, de)
 <div id="s4" class="sd-parse">
 Mary gave John a book
 nsubj(gave, Mary)
-dobj(gave, book)
+obj(gave, book)
 det(book, a)
 iobj(gave, John)
 </div>
@@ -126,9 +126,9 @@ iobj(gave, John)
 Marie a donné un livre à Jean
 nsubj(donné, Marie)
 aux(donné, a)
-dobj(donné, livre)
+obj(donné, livre)
 det(livre, un)
-nmod(donné, Jean)
+obl(donné, Jean)
 case(Jean, à)
 </div>
 
@@ -137,9 +137,9 @@ case(Jean, à)
 <div id="s6" class="sd-parse">
 Mary gave a book to John
 nsubj(gave, Mary)
-dobj(gave, book)
+obj(gave, book)
 det(book, a)
-nmod(gave, John)
+obl(gave, John)
 case(John, to)
 </div>
 
@@ -156,7 +156,7 @@ propose to preserve the information encoded in the <a href="">u-dep/auxpass</a> 
 she was invited to the party
 nsubj:pass(invited, she)
 aux:pass(invited, was)
-nmod(invited, party)
+obl(invited, party)
 det(party, the)
 case(party, to)
 </div>
