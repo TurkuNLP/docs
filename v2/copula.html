@@ -268,53 +268,59 @@ cop(mother, is-15)
 
 <p>(2)</p>
 
-<pre><code class="language-sdparse">она милая \n she nice
-nsubj(милая, она)
+<pre><code class="language-sdparse">(ona) je milá \n she is nice
+nsubj(milá, (ona))
 nsubj(nice, she)
+cop(milá, je)
+cop(nice, is)
 </code></pre>
 
 <p>(3)</p>
 
-<pre><code class="language-sdparse">она на кухне \n she in kitchen
-nsubj(кухне, она)
+<pre><code class="language-sdparse">(ona) je v kuchyni \n she is in kitchen
+nsubj(kuchyni, (ona))
 nsubj(kitchen, she)
-case(кухне, на)
+cop(kuchyni, je)
+cop(kitchen, is)
+case(kuchyni, v)
 case(kitchen, in)
 </code></pre>
 
 <p>(4)</p>
 
-<pre><code class="language-sdparse">это ее \n it hers
-nsubj(ее, это)
+<pre><code class="language-sdparse">to je její \n it is hers
+nsubj(její, to)
 nsubj(hers, it)
+cop(její, je)
+cop(hers, is)
 </code></pre>
 
 <p>(5)</p>
 
-<pre><code class="language-sdparse">это для нее \n it for her
-nsubj(нее, это)
+<pre><code class="language-sdparse">to je pro ni \n it is for her
+nsubj(ni, to)
 nsubj(her, it)
-case(нее, для)
+cop(ni, je)
+cop(her, is)
+case(ni, pro)
 case(her, for)
 </code></pre>
 
 <p>(6a)</p>
 
-<p>The form <em>есть</em> is originally the 3rd person singular present indicative of the verb <em>быть</em> (which also functions as copula). However, in Modern Russian this form is used only in existential statements, in both numbers and all persons. Past and future existential statements still use normal forms of <em>быть.</em></p>
-
-<pre><code class="language-sdparse">есть еда \n is food
-nsubj(есть, еда)
+<pre><code class="language-sdparse">jídlo je \n food is
+nsubj(je, jídlo)
 nsubj(is, food)
 </code></pre>
 
 <p>(6b)</p>
 
-<pre><code class="language-sdparse">есть еда на кухне \n is food in kitchen
-nsubj(есть, еда)
-nsubj(is, food)
-obl(есть, кухне)
-obl(is, kitchen)
-case(кухне, на)
+<pre><code class="language-sdparse">v kuchyni je jídlo \n in kitchen is food
+nsubj(kuchyni, jídlo)
+nsubj(kitchen, food)
+cop(kuchyni, je)
+cop(kitchen, is)
+case(kuchyni, v)
 case(kitchen, in)
 </code></pre>
 
