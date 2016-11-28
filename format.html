@@ -3,7 +3,7 @@
 <html lang="en-GB" xml:lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <title>CoNLL-U format</title>
+    <title>CoNLL-U Format</title>
     <link rel="root" href=""/> <!-- for JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/jquery-ui-redmond.css"/>
@@ -43,7 +43,7 @@
 	  </div>
 	</noscript>
 
-          <h1 id="conll-u-format">CoNLL-U format</h1>
+          <h1 id="conll-u-format">CoNLL-U Format</h1>
 
 <p>We use a revised version of <a href="http://ilk.uvt.nl/conll/#dataformat">the CoNLL-X format</a> called CoNLL-U. 
 Annotations are encoded in plain text files (UTF-8, using only the LF character as line break) with three types of lines:</p>
@@ -80,7 +80,7 @@ In addition, we have modified the usage of the ID, FORM, LEMMA, XPOSTAG, FEATS a
   <li>Underscore (_) is used to denote unspecified values in all fields except ID. Note that no format-level distinction is made for the rare cases where the FORM or LEMMA is the literal underscore – processing in such cases is application-dependent. Further, in UD treebanks the UPOSTAG, HEAD, and DEPREL columns are not allowed to be left unspecified.</li>
 </ul>
 
-<h1 id="words-tokens-and-empty-nodes">Words, tokens and empty nodes</h1>
+<h1 id="words-tokens-and-empty-nodes">Words, Tokens and Empty Nodes</h1>
 
 <p>To accommodate the representation of both words and (multiword) tokens (see <a href="u/overview/tokenization.html">Tokenization and word segmentation</a>), 
 we adopt an extension of the original CoNLL-X token indexing scheme, where words are indexed with integers 1, 2, 3, …, 
@@ -220,7 +220,7 @@ the CoNLL-X format). The exact format used in this field should be specified in 
 treebank-specific documentation, but it has to be formatted as a list that can be split on the bar character (|)
 without special escaping. If the MISC field is not used, it should contain an underscore.</p>
 
-<h2 id="untokenized-text">Untokenized text</h2>
+<h2 id="untokenized-text">Untokenized Text</h2>
 
 <p>To facilitate reconstruction of original (pre-tokenization) text, the information on original word segmentation should be kept if available. Every token after which there was no space in the original text should contain <code>SpaceAfter=No</code> in its MISC field. Note that this feature applies to the token level, not to the word level. Syntactic words that are just part of surface tokens will be ignored during detokenization and thus do not need the feature. In the example below, the line indexed 1 does not contain the <code>SpaceAfter</code> feature even though there was no space between <em>He</em> and <em>‘s</em> in the underlying sentence. However, if there was no space between <em>He’s</em> and the third token, the 1-2 line would have <code>SpaceAfter=No</code>.</p>
 
