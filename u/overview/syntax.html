@@ -204,9 +204,9 @@ nummod(books, three)
 versions of dependency grammar, which prefer the opposite relation for many syntactic constructions. 
 We prefer to view the relations between content words and function words, not as dependency relations in the narrow 
 sense, but as operations that modify the grammatical category of the content word so that it can participate in 
-different dependency relations with other content words. This view makes function words functionally (but not 
-structurally) similar to morphological operations and is compatible with Tesnière’s notion of the nucleus as the 
-locus of syntactic dependencies.</p>
+different dependency relations with other content words. We refer to these relations as <em>functional relations</em> or 
+<em>function word relations</em> when we want to emphasize that they are different from dependency relations between content words. 
+This view makes function words functionally (but not structurally) similar to morphological operations and is compatible with Tesnière’s notion of the nucleus as the locus of syntactic dependencies.</p>
 
 <p>Nevertheless, there are four important exceptions to the rule that function words do not take dependents:</p>
 
@@ -220,7 +220,7 @@ locus of syntactic dependencies.</p>
 <h3 id="multiword-function-words">Multiword Function Words</h3>
 
 <p>The word forms that make up a fixed multiword expression are connected into a head-initial structure
-using the special dependency relation <a href="">u-dep/fix</a> (see below). When the multiword expression is a functional element,
+using the special dependency relation <a href="">u-dep/fixed</a> (see below). When the multiword expression is a functional element,
 the initial word form will then superficially look like a function word with dependents.</p>
 
 <div id="s6" class="sd-parse">
@@ -344,18 +344,22 @@ nsubj(know, I)
 ccomp(know, how)
 </div>
 
-<h2 id="key-ideas-of-the-relation-taxonomy">Key ideas of the relation taxonomy</h2>
+<h2 id="the-taxonomy-of-typed-dependencies">The Taxonomy of Typed Dependencies</h2>
 
-<h3 id="core-arguments-vs-oblique-modifiers">Core arguments vs. oblique modifiers</h3>
+<p>We now review some of the key ideas underlying our taxonomy of typed dependency relations, focusing first on the central
+dependency relations between content words.</p>
+
+<h3 id="core-arguments-vs-oblique-modifiers">Core Arguments vs. Oblique Modifiers</h3>
 
 <p>The UD taxonomy is centered around the fairly clear distinction between core arguments (subjects, objects, clausal complements) versus other dependents.
 It does not make a distinction between adjuncts and oblique arguments.
 This latter distinction is taken to be sufficiently subtle, unclear, and argued over
 that it is eliminated (echoing the viewpoint of the original Penn Treebank annotators).</p>
 
-<h3 id="a-mixed-functional-structural-system">A mixed functional-structural system</h3>
+<h3 id="a-mixed-functional-structural-system">A Mixed Functional-Structural System</h3>
 
-<p>One major role of dependencies is to represent function, but the Universal Dependencies also encode structural notions. On the structural side, languages are taken to principally involve three things:</p>
+<p>One major role of dependencies is to represent function, but the Universal Dependencies also encode structural notions. 
+On the structural side, languages are taken to principally involve three things:</p>
 
 <ul>
   <li>Nominal phrases (which are the usual means of entity expression, but may also be used for other things)</li>
@@ -363,14 +367,14 @@ that it is eliminated (echoing the viewpoint of the original Penn Treebank annot
   <li>Miscellaneous other kinds of modifier words, which may themselves allow some modification, but do not expand into the same rich structures as nominal phrases and predicates.</li>
 </ul>
 
-<p>This three way distinction is generally encoded in dependency names.  For example, if a verb is taking an adverbial modifier, it may bear one of three relations <a href="">u-dep/nmod</a>, <a href="">u-dep/advcl</a>, or <a href="">u-dep/advmod</a> depending on which of these three sorts it is:</p>
+<p>This three-way distinction is generally encoded in dependency names. For example, if a verb is taking an adverbial modifier, it may bear one of three relations <a href="">u-dep/obl</a>, <a href="">u-dep/advcl</a>, or <a href="">u-dep/advmod</a> depending on which of these three sorts it is:</p>
 
 <div id="fss1" class="sd-parse">
 John talked in the movie theatre
 case(theatre, in)
 det(theatre, the)
 compound(theatre, movie)
-nmod(talked, theatre)
+obl(talked, theatre)
 </div>
 
 <div id="fss2" class="sd-parse">
@@ -380,7 +384,7 @@ nsubj(watching, we)
 aux(watching, were)
 advcl(talked, watching)
 det(movie, the)
-dobj(watching, movie)
+obj(watching, movie)
 </div>
 
 <div id="fss3" class="sd-parse">
@@ -389,28 +393,29 @@ advmod(quickly, very)
 advmod(talked, quickly)
 </div>
 
-<p>Similarly, the core grammatical relations differentiate core arguments that are clauses (e.g., <a href="">u-dep/csubj</a>, <a href="">u-dep/ccomp</a>) from those that are nominal phrases (e.g., <a href="">u-dep/nsubj</a>, <a href="">u-dep/dobj</a>).</p>
+<p>Similarly, the core grammatical relations differentiate core arguments that are clauses (e.g., <a href="">u-dep/csubj</a>, <a href="">u-dep/ccomp</a>) from those that are nominal phrases (e.g., <a href="">u-dep/nsubj</a>, <a href="">u-dep/obj</a>).</p>
 
-<h3 id="voice">Voice</h3>
+<!-- ### Voice
 
-<p>Relation names attempt to differentiate canonical voice (where the proto-agent argument is the subject) from non-canonical voice constructions (where another argument is the subject). This is marked as appropriate on both the subject argument (e.g., nsubjpass) and auxiliaries indicating this (auxpass). Marking both is helpful, as either may be missing.</p>
+Relation names attempt to differentiate canonical voice (where the proto-agent argument is the subject) from non-canonical voice constructions (where another argument is the subject). This is marked as appropriate on both the subject argument (e.g., nsubjpass) and auxiliaries indicating this (auxpass). Marking both is helpful, as either may be missing.
+-->
+<p>### Clausal Dependents</p>
 
-<h3 id="clausal-dependents">Clausal dependents</h3>
-
-<p>To classify clausal dependents, the UD taxonomy obeys the following principles:</p>
+<p>To classify dependents of the main predicate in a clause, the UD taxonomy obeys the following principles:</p>
 
 <ul>
   <li>differentiate core arguments from noncore arguments and adjuncts (see “Core arguments vs. oblique modifiers” above)</li>
   <li>differentiate subjects from complements</li>
-  <li>differentiate subjects of passives from other subjects (see “Voice” above)</li>
   <li>differentiate clauses with obligatory control from clauses with other types of subject licensing</li>
-  <li>differentiate attachment to predicates from attachment to entities</li>
-  <li>be able to capture clausal modifiers of nouns that do not take the form of a relative clause</li>
+  <li>differentiate attachment to predicates from attachment to nominal phrases</li>
+  <li>capture clausal modifiers of nouns that do not take the form of a relative clause</li>
 </ul>
 
-<p>Note that the UD taxonomy does not attempt to differentiate finite from nonfinite clauses.</p>
+<p>Additional distinctions (for example, with respect to voice) can be captured via language-specific subtypes
+(such as <code>nsubj:pass</code> for the subject of a passivized verb). 
+Note that the UD taxonomy does not attempt to differentiate finite from nonfinite clauses.</p>
 
-<h2 id="coordination">Coordination</h2>
+<h3 id="coordination">Coordination</h3>
 
 <p>We treat coordinate structures asymmetrically:
 The head of the relation is the first conjunct and all the other conjuncts depend on it via the <a href="">u-dep/conj</a> relation.
@@ -419,30 +424,70 @@ Coordinating conjunctions and punctuation delimiting the conjuncts are attached 
 <pre><code class="language-sdparse">He came home , took a shower and immediately went to bed .
 conj(came, took)
 conj(came, went)
-punct(came, ,-4)
-cc(came, and)
+punct(went, ,-4)
+cc(went, and)
 </code></pre>
 
-<p>See <a href="">u-dep/conj</a> for more discussion of related issues (shared dependents, nested coordination).</p>
+<h3 id="multiword-expressions">Multiword Expressions</h3>
 
-<h2 id="special-relations">Special Relations</h2>
+<p>Multiword expressions (MWEs) are combinations of words that (in some respect and to different degrees) behave
+as lexical units rather than compositional syntactic phrases. The UD taxonomy contains three special relations 
+for analyzing MWEs:</p>
 
-<p>Some of the universal relations do not really encode syntactic dependency relations but are used to represent 
+<ul>
+  <li><a href="">u-dep/fixed</a> are used to analyze fixed grammaticized MWEs like <em>in spite of</em> (see above)</li>
+  <li><a href="">u-dep/flat</a> are used to analyze exocentric semi-fixed MWEs like <em>Barack Obama</em></li>
+  <li><a href="">u-dep/compound</a> are used to analyze (endocentric) compounds like <em>noun phrase</em></li>
+</ul>
+
+<p>Structures analyzed with <a href="">u-dep/fixed</a> and <a href="">u-dep/flat</a> are headless by definition and are consistently
+annotated by attaching all non-first elements to the first and only allowing outgoing dependents from the first element.</p>
+
+<div id="s8a" class="sd-parse">
+We had a nice time in spite of the rain .
+case(rain,in)
+fixed(in,spite)
+fixed(in,of)
+obl(had,rain)
+</div>
+
+<div id="s8b" class="sd-parse">
+Martin Luther King had a dream .
+nsubj(had,Martin)
+flat(Martin,Luther)
+flat(Martin,King)
+</div>
+
+<p>By contrast, <a href="compound">compounds</a> are annotated to show their modification structure, including a regular concept of head:</p>
+
+<div id="s9" class="sd-parse">
+I bought a computer disk drive enclosure .
+nsubj(bought, I)
+det(enclosure, a)
+compound(drive, computer)
+compound(drive, disk)
+compound(enclosure, drive)
+obj(bought, enclosure)
+</div>
+
+<h3 id="special-relations">Special Relations</h3>
+
+<p>Besides core dependency relations, functional relations, and relations for analyzing coordination, MWEs and punctuation, 
+the UD taxonomy includes a number of special relations for handling things like orthographic errors in text, disfluencies in speech, and list structures without internal syntactic structure.</p>
+
+<!--Some of the universal relations do not really encode syntactic dependency relations but are used to represent 
 punctuation, various kinds of multiword units, or unanalyzable segments. The use of these relations is subject 
-to special restrictions explained below.</p>
+to special restrictions explained below.
 
-<h3 id="punctuation">Punctuation</h3>
+Tokens with the relation [u-dep/punct]() always attach to content words (except in cases of ellipsis) and can never have dependents.
 
-<p>Tokens with the relation <a href="">u-dep/punct</a> always attach to content words (except in cases of ellipsis) and can never have dependents.
-Since <code>punct</code> is not a normal dependency relation, the usual criteria for determining the head word do not apply. 
-Instead, we use the following principles:</p>
+Since `punct` is not a normal dependency relation, the usual criteria for determining the head word do not apply. 
+Instead, we use the following principles:
 
-<ol>
-  <li>A punctuation mark separating coordinated units is attached to the first conjunct.</li>
-  <li>A punctuation mark preceding or following a subordinated unit is attached to this unit.</li>
-  <li>Within the relevant unit, a punctuation mark is attached at the highest possible node that preserves projectivity.</li>
-  <li>Paired punctuation marks (quotes and brackets) should be attached to the same word unless that would create non-projectivity. This word is usually the head of the phrase enclosed in the paired punctuation.</li>
-</ol>
+1. A punctuation mark separating coordinated units is attached to the first conjunct.
+2. A punctuation mark preceding or following a subordinated unit is attached to this unit.
+3. Within the relevant unit, a punctuation mark is attached at the highest possible node that preserves projectivity.
+4. Paired punctuation marks (quotes and brackets) should be attached to the same word unless that would create non-projectivity. This word is usually the head of the phrase enclosed in the paired punctuation.
 
 <div id="punct1" class="sd-parse">
 We have apples , pears , oranges , and bananas .
@@ -479,51 +524,7 @@ punct(known-31, “-29)
 punct(known-31, ”-33)
 punct(Compare, .-34)
 </div>
-
-<h3 id="multiword-structures">Multiword Structures</h3>
-
-<p>The following types of expressions are annotated in a head-initial structure, where all non-first elements
-depend on the first, and where only the first element can have dependents:</p>
-
-<ol>
-  <li>Fixed multiword expressions (<a href="">u-dep/mwe</a>)</li>
-  <li>Multiword names (<a href="">u-dep/name</a>)</li>
-  <li>Foreign phrases (<a href="">u-dep/foreign</a>)</li>
-</ol>
-
-<div id="s8a" class="sd-parse">
-We had a nice time in spite of the rain .
-case(rain,in)
-mwe(in,spite)
-mwe(in,of)
-nmod(had,rain)
-</div>
-
-<div id="s8b" class="sd-parse">
-Martin Luther King had a dream .
-nsubj(had,Martin)
-name(Martin,Luther)
-name(Martin,King)
-</div>
-
-<div id="s8c" class="sd-parse">
-She said qwe rty yui .
-dobj(said,qwe)
-foreign(qwe,rty)
-foreign(qwe,yui)
-</div>
-
-<p>In contrast, <a href="compound">compounds</a> are annotated to show their modification structure, including a regular concept of head:</p>
-
-<div id="s9" class="sd-parse">
-I bought a computer disk drive enclosure .
-nsubj(bought, I)
-det(enclosure, a)
-compound(drive, computer)
-compound(drive, disk)
-compound(enclosure, drive)
-dobj(bought, enclosure)
-</div>
+-->
 
 
       </div>
