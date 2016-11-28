@@ -30,8 +30,8 @@
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -45,8 +45,42 @@
 
           <h1 id="syntax-general-principles">Syntax: General Principles</h1>
 
-<p>Syntactic annotation in the UD scheme consists of typed dependency relations between words. 
-Each word is either the dependent of one other word in the sentence or of a notional ROOT of the sentence. This means that the dependencies can be thought of as a directed acyclic graph which is a tree (i.e., which has a single root).
+<p>Syntactic annotation in the UD scheme consists of typed dependency relations between words. The <em>basic</em> dependency representation forms a tree, where exactly one word is dependent on a notional ROOT and all other words are dependent 
+on another word in the sentence, as exemplified below (where we explicitly represent the root dependency which will 
+otherwise be left implicit).</p>
+
+<pre><code class="language-sdparse">she wanted to buy and eat an apple
+nsubj(wanted, she)
+root(ROOT, wanted)
+mark(buy, to)
+xcomp(wanted, buy)
+cc(eat, and)
+conj(buy, eat)
+det(apple, det)
+obj(buy, apple)
+</code></pre>
+
+<p>In addition to the basic dependency representation, which is obligatory in all UD treebanks, it is possible to give an <em>enhanced</em> dependency representation, which adds (and in a few cases changes) relations in order to give a more complete
+basis for semantic interpretation. The enhanced representation is in general 
+not a tree but a general graph structure, as shown below.</p>
+
+<pre><code class="language-sdparse">she wanted to buy and eat an apple
+nsubj(wanted, she)
+nsubj(buy, she)
+nsubj(eat, she)
+root(ROOT, wanted)
+mark(buy, to)
+xcomp(wanted, buy)
+cc(eat, and)
+conj(buy, eat)
+det(apple, det)
+obj(eat, apple)
+obj(buy, apple)
+</code></pre>
+
+<p>In the rest of this document, we discuss the fundamental principles of our dependency annotation, focusing on aspects that are common to both the basic and the enhanced representation. More detailed annotation guidelines can be found separately for <a href="specific-syntax.html">basic dependencies</a> and <a href="enhanced.html">enhanced dependencies</a>.</p>
+
+<p>CONTINUE HERE
 The goal of the typed dependency relations is a set of broadly observed “universal dependencies” that work across languages. Such dependencies seek to maximize parallelism by allowing the same grammatical relation to be annotated the same way across languages, while making enough crucial distinctions such that different things can be differentiated.
 The goal of parallelism has limits: The standard does not postulate and annotate “empty” things that do not appear in various languages, and it allows the use of language-specific refinements of universal dependencies to represent particular relations of language-particular importance. We now try to lay down some general principles that should guide the use of universal 
 dependencies to achieve as much parallelism as possible (but not more) across languages. 
