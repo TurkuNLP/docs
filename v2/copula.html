@@ -240,6 +240,84 @@ cop(leabhar, is)
 nsubj(tá, bia)
 </code></pre>
 
+<h4 id="czech">Czech</h4>
+
+<p>The Czech verb <em>být</em> is used in all categories (1-6) and can be analyzed as copula everywhere except for pure existentials (without location) where no predicate other than the verb is available. Czech word order is free and it is not guaranteed that all constructions will come out as subject-copula-predicate. Reversed order (predicate-copula-subject) is less common but possible, even in the “equation” category (1). Czech is a pro-drop language which means that pronominal subjects are optional.</p>
+
+<p>(1a)</p>
+
+<pre><code class="language-sdparse">(ona) je moje matka \n she is my mother
+nsubj(matka, (ona))
+nsubj(mother, she)
+cop(matka, je)
+cop(mother, is)
+</code></pre>
+
+<p>(1b)</p>
+
+<p>When the second part is a clause, the demonstrative pronoun <em>то</em> must be inserted. As a result, we have a different syntactic structure with different analysis: the clause formally modifies a nominal represented by the demonstrative.</p>
+
+<pre><code class="language-sdparse">дело в том , что она моя мать \n fact in that , that she my mother
+nsubj(том, дело)
+nsubj(that-12, fact)
+acl(том, мать)
+acl(that-12, mother)
+nsubj(мать, она)
+nsubj(mother, she)
+</code></pre>
+
+<p>(2)</p>
+
+<pre><code class="language-sdparse">она милая \n she nice
+nsubj(милая, она)
+nsubj(nice, she)
+</code></pre>
+
+<p>(3)</p>
+
+<pre><code class="language-sdparse">она на кухне \n she in kitchen
+nsubj(кухне, она)
+nsubj(kitchen, she)
+case(кухне, на)
+case(kitchen, in)
+</code></pre>
+
+<p>(4)</p>
+
+<pre><code class="language-sdparse">это ее \n it hers
+nsubj(ее, это)
+nsubj(hers, it)
+</code></pre>
+
+<p>(5)</p>
+
+<pre><code class="language-sdparse">это для нее \n it for her
+nsubj(нее, это)
+nsubj(her, it)
+case(нее, для)
+case(her, for)
+</code></pre>
+
+<p>(6a)</p>
+
+<p>The form <em>есть</em> is originally the 3rd person singular present indicative of the verb <em>быть</em> (which also functions as copula). However, in Modern Russian this form is used only in existential statements, in both numbers and all persons. Past and future existential statements still use normal forms of <em>быть.</em></p>
+
+<pre><code class="language-sdparse">есть еда \n is food
+nsubj(есть, еда)
+nsubj(is, food)
+</code></pre>
+
+<p>(6b)</p>
+
+<pre><code class="language-sdparse">есть еда на кухне \n is food in kitchen
+nsubj(есть, еда)
+nsubj(is, food)
+obl(есть, кухне)
+obl(is, kitchen)
+case(кухне, на)
+case(kitchen, in)
+</code></pre>
+
 <h4 id="russian">Russian</h4>
 
 <p>In Russian, there is no copula verb in the present tense. In the future and past tenses, the verb <em>быть</em> “be” is used.
