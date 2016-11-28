@@ -84,8 +84,10 @@ obj(buy, apple)
 
 <ul>
   <li>The goal of parallelism has limits: The standard does not postulate and annotate “empty” things that do not appear in various languages, and it allows the use of language-specific refinements of universal dependencies to represent particular relations of language-particular importance.</li>
-  <li>The notion of dependency has limits: Not all grammatical relations can be reduced to binary asymmetric relations between a syntactic head and a subordinate element, and some of our typed “dependency” relations therefore must be understood as convenient encodings of other relations without implications about syntactic headedness. This holds in particular for relations used to analyze multiword expressions, coordination and function words.</li>
+  <li>The notion of dependency has limits: Not all grammatical relations can be reduced to binary asymmetric relations between a syntactic head and a subordinate element, and some of our typed “dependency” relations therefore must be understood as convenient encodings of other relations without implications about syntactic headedness.</li>
 </ul>
+
+<!-- This holds in particular for relations used to analyze multiword expressions, coordination and function words.-->
 
 <p>We now try to lay down some general principles that should guide the use of universal dependencies to achieve as much parallelism as possible (but not more) across languages.</p>
 
@@ -96,8 +98,8 @@ obj(buy, apple)
 <div id="s1a" class="sd-parse">
 The cat could have chased all the dogs down the street .
 nsubj(chased, cat)
-dobj(chased, dogs)
-nmod(chased, street)
+obj(chased, dogs)
+obl(chased, street)
 </div>
 
 <p>Function words attach as direct dependents of the most closely related content word.</p>
@@ -126,8 +128,8 @@ are content words and where function words and punctuation appear as leaves.</p>
 <div id="s1" class="sd-parse">
 The cat could have chased all the dogs down the street .
 nsubj(chased, cat)
-dobj(chased, dogs)
-nmod(chased, street)
+obj(chased, dogs)
+obl(chased, street)
 det(cat, The)
 aux(chased, could)
 aux(chased, have)
@@ -176,7 +178,7 @@ A typical case is that of auxiliary verbs, which never depend on each other.</p>
 She could have been injured .
 aux(injured, could)
 aux(injured, have)
-auxpass(injured, been)
+aux:pass(injured, been)
 </div>
 
 <p>Note that copula verbs are also counted as auxiliaries in this respect. In copula constructions, auxiliaries
@@ -195,11 +197,18 @@ cop(sick, been)
 All these three books .
 det(books, All)
 det(books, these)
-num(books, three)
+nummod(books, three)
 </div>
 
-<p>However, there are four important exceptions to the rule that function words do not 
-take dependents:</p>
+<p>We are aware that the choice to treat function words formally as dependents of content words is at odds with some
+versions of dependency grammar, which prefer the opposite relation for many syntactic constructions. 
+We prefer to view the relations between content words and function words, not as dependency relations in the narrow 
+sense, but as operations that modify the grammatical category of the content word so that it can participate in 
+different dependency relations with other content words. This view makes function words functionally (but not 
+structurally) similar to morphological operations and is compatible with Tesnière’s notion of the nucleus as the 
+locus of syntactic dependencies.</p>
+
+<p>Nevertheless, there are four important exceptions to the rule that function words do not take dependents:</p>
 
 <ol>
   <li>Multiword function words</li>
@@ -211,18 +220,18 @@ take dependents:</p>
 <h3 id="multiword-function-words">Multiword Function Words</h3>
 
 <p>The word forms that make up a fixed multiword expression are connected into a head-initial structure
-using the special dependency relation <a href="">u-dep/mwe</a> (see below). When the multiword expression is a functional element,
+using the special dependency relation <a href="">u-dep/fix</a> (see below). When the multiword expression is a functional element,
 the initial word form will then superficially look like a function word with dependents.</p>
 
 <div id="s6" class="sd-parse">
 We had a nice time in spite of the rain .
 case(rain,in)
-mwe(in,spite)
-mwe(in,of)
-nmod(had,rain)
+fixed(in,spite)
+fixed(in,of)
+obl(had,rain)
 </div>
 
-<p>Deciding whether an expression in a language should be treated as a <code>mwe</code> is something that has to be decided for each language, and in some cases this will require somewhat arbitrary conventions, because it involves choosing a cut point along a path of grammaticalization. Nevertheless, most languages have some very common multiword expressions that effectively behave like other function words as linkers, marks, or case particles, and it would be highly undesirable not to recognize them as a multi-word function word. Examples in English include <em>in spite of</em> (like <em>despite</em>), <em>as well as</em> (like <em>and</em>), and <em>prior to</em> (like <em>before</em>).</p>
+<p>Deciding whether an expression in a language should be treated as a fixed multiword expression is something that has to be decided for each language, and in some cases this will require somewhat arbitrary conventions, because it involves choosing a cut point along a path of grammaticalization. Nevertheless, most languages have some very common multiword expressions that effectively behave like other function words as linkers, marks, or case particles, and it would be highly undesirable not to recognize them as a multi-word function word. Examples in English include <em>in spite of</em> (like <em>despite</em>), <em>as well as</em> (like <em>and</em>), and <em>prior to</em> (like <em>before</em>).</p>
 
 <h3 id="coordinated-function-words">Coordinated Function Words</h3>
 
@@ -233,26 +242,26 @@ function words like conjunctions and prepositions.</p>
 She drove to and from work .
 case(work,to)
 conj(to, from)
-cc(to, and)
+cc(from, and)
 </div>
 
 <div id="s4b" class="sd-parse">
 I will do that if and when it happens .
 mark(happens,if)
 conj(if, when)
-cc(if, and)
+cc(when, and)
 </div>
 
 <h3 id="function-word-modifiers">Function Word Modifiers</h3>
 
-<p>Certain types of function words can take a restricted class of modifiers, mainly negation (<a href="">u-dep/neg</a>) and light adverbials
-(<a href="">u-dep/advmod</a> or <a href="">u-dep/nmod</a>). Typical cases are modified determiners like <em>not every (linguist)</em> and <em>exactly two (papers)</em>
+<p>Certain types of function words can take a restricted class of modifiers, mainly light adverbials (including negation).
+Typical cases are modified determiners like <em>not every (linguist)</em> and <em>exactly two (papers)</em>
 and modifiers of subordinating conjunctions.</p>
 
 <div id="s7a" class="sd-parse">
 not every linguist
 det(linguist, every)
-neg(every, not)
+advmod(every, not)
 </div>
 
 <div id="s7b" class="sd-parse">
@@ -271,7 +280,7 @@ advmod(when, just)
 properties of the head word often expressed morphologically in other languages. This class, which we refer to as
 <em>pure function words</em>, includes auxiliary verbs, case markers (adposition), and articles, but needs to be defined
 explicitly for each language. When pure function words appear with modifiers other than negation, we take the modifier
-to apply to the entire phrase and therefore attaches it to the head word of the function word, as illustrated in
+to apply to the entire phrase and therefore attach it to the head word of the function word, as illustrated in
 the following example.</p>
 
 <div id="s7d" class="sd-parse">
@@ -297,8 +306,8 @@ to the enhanced representation where this difference is neutralized.</p>
 <p>To sum up, our treatment of function word modifiers can be expressed in three principles:</p>
 
 <ol>
-  <li>Pure function words can only be modified by negation (<code>neg</code>).</li>
-  <li>Other function words can also take light adverbial modifiers (<code>advmod</code>, <code>nmod</code>)</li>
+  <li>Pure function words can only be modified by negation.</li>
+  <li>Other function words can also take (other) light adverbial modifiers.</li>
   <li>When in doubt, prefer a flat structure where function words attach to a content word.</li>
 </ol>
 
@@ -309,7 +318,7 @@ in that language.</p>
 
 <p>When the natural head of a function word is elided, the function word will be “promoted”
 to the function normally assumed by the content word head. This type of analysis should 
-in general be preferred over an analysis using the <a href="">u-dep/remnant</a> relation, because it disrupts
+in general be preferred over an analysis using the <a href="">u-dep/orphan</a> relation, because it disrupts
 the structure less. The remnant analysis should be used only when there is no function word 
 that can be promoted. The following examples illustrate promotion of auxiliaries, prepositions
 and subordinating conjunctions.</p>
@@ -326,7 +335,7 @@ nsubj(could-8, Ann)
 The address she wrote to .
 relcl(address, wrote)
 nsubj(wrote, she)
-nmod(wrote, to)
+obl(wrote, to)
 </div>
 
 <div id="s5c" class="sd-parse">
@@ -339,8 +348,7 @@ ccomp(know, how)
 
 <h3 id="core-arguments-vs-oblique-modifiers">Core arguments vs. oblique modifiers</h3>
 
-<p>The UD taxonomy is centered around the fairly clear distinction between core arguments
-(subjects, objects, clausal complements) versus other dependents.
+<p>The UD taxonomy is centered around the fairly clear distinction between core arguments (subjects, objects, clausal complements) versus other dependents.
 It does not make a distinction between adjuncts and oblique arguments.
 This latter distinction is taken to be sufficiently subtle, unclear, and argued over
 that it is eliminated (echoing the viewpoint of the original Penn Treebank annotators).</p>
