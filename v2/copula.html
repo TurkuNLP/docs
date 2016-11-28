@@ -245,6 +245,26 @@ nsubj(tá, bia)
 <p>In Russian, there is no copula verb in the present tense. In the future and past tenses, the verb <em>быть</em> “be” is used.
 The same analysis applies to categories (1-5).</p>
 
+<p>(1a)</p>
+
+<pre><code class="language-sdparse">она моя мать \n she my mother
+nsubj(мать, она)
+nsubj(mother, she)
+</code></pre>
+
+<p>(1b)</p>
+
+<p>When the second part is a clause, the demonstrative pronoun <em>то</em> must be inserted. As a result, we have a different syntactic structure with different analysis: the clause formally modifies a nominal represented by the demonstrative.</p>
+
+<pre><code class="language-sdparse">дело в том , что она моя мать \n fact in that , that she my mother
+nsubj(том, дело)
+nsubj(that-12, fact)
+acl(том, мать)
+acl(that-12, mother)
+nsubj(мать, она)
+nsubj(mother, she)
+</code></pre>
+
 <h4 id="finnish">Finnish</h4>
 
 <p>In Finnish the copula verb is <em>olla</em> “to be”.</p>
