@@ -30,8 +30,8 @@
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -45,12 +45,14 @@
 
           <h2><code>aux</code>: auxiliary</h2>
 
-<p>An auxiliary of a clause is a <a href="u-pos/AUX">non-main verb</a> of the
-clause, e.g., a modal auxiliary, or a form of <em>be, do</em> or <em>have</em> in a
-periphrastic tense.</p>
+<p>An <code>aux</code> (auxiliary) of a clause is a function word associated with a verbal predicate that
+expresses categories such as tense, mood, aspect, voice or evidentiality. It is often a verb 
+(which may have non-auxiliary uses as well) but many languages have nonverbal TAME markers and these
+are also treated as instances of <code>aux</code>.</p>
 
-<p>Exception: Auxiliary verb used to construct the passive
-<a href="u-feat/Voice">voice</a> is not labeled <code>aux</code> but <a href="">auxpass</a>.</p>
+<p><strong>New from v2:</strong> Auxiliares used to construct the passive voice <a href="u-feat/Voice">voice</a> are now also labeled <code>aux</code>,
+although we strongly encourage the use of the subtype <code>aux:pass</code> in language that have a grammaticalized (periphrastic)
+passive.</p>
 
 <pre><code class="language-sdparse">Reagan has died
 aux(died-3, has-2)
