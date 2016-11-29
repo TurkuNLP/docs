@@ -406,7 +406,7 @@ advcl(upset, talked)
 <h2><code>advmod</code>: adverbial modifier</h2>
 
 <p>An adverbial modifier of a word is a (non-clausal) <a href="u-pos/ADV">adverb</a>
-or adverbial phrase that serves to modify the meaning of the word.</p>
+or adverbial phrase that serves to modify a predicate or a modifier word.</p>
 
 <p>Note that in some grammatical traditions, the term <em>adverbial modifier</em> covers
 constituents that function like adverbs regardless whether they are realized
@@ -414,7 +414,10 @@ by adverbs, adpositional phrases, or nouns in particular morphological
 <a href="u-feat/Case">cases</a>.
 We differentiate adverbials realized as adverbs <em>(advmod)</em> and
 adverbials realized by noun phrases or adpositional phrases
-(<a href="">nmod</a>).</p>
+(<a href="">obl</a>). However, we do not differentiate between modifiers of predicates
+(adverbials in a narrow sense) and modifiers of other modifier words like
+adjectives or adverbs (sometime called qualifiers). These functions are all
+subsumed under <code>advmod</code>.</p>
 
 <pre><code class="language-sdparse">Genetically modified food
 advmod(modified, Genetically)
@@ -510,12 +513,14 @@ appos(Email:-5, jones@abc.edf-6)
 <p><a id="al-u-dep/aux" class="al-dest"></a></p>
 <h2><code>aux</code>: auxiliary</h2>
 
-<p>An auxiliary of a clause is a <a href="u-pos/AUX">non-main verb</a> of the
-clause, e.g., a modal auxiliary, or a form of <em>be, do</em> or <em>have</em> in a
-periphrastic tense.</p>
+<p>An <code>aux</code> (auxiliary) of a clause is a function word associated with a verbal predicate that
+expresses categories such as tense, mood, aspect, voice or evidentiality. It is often a verb 
+(which may have non-auxiliary uses as well) but many languages have nonverbal TAME markers and these
+are also treated as instances of <code>aux</code>.</p>
 
-<p>Exception: Auxiliary verb used to construct the passive
-<a href="u-feat/Voice">voice</a> is not labeled <code>aux</code> but <a href="">auxpass</a>.</p>
+<p><strong>New from v2:</strong> Auxiliares used to construct the passive voice <a href="u-feat/Voice">voice</a> are now also labeled <code>aux</code>,
+although we strongly encourage the use of the subtype <code>aux:pass</code> in language that have a grammaticalized (periphrastic)
+passive.</p>
 
 <pre><code class="language-sdparse">Reagan has died
 aux(died-3, has-2)
@@ -582,12 +587,12 @@ case(président, du)
 <p>Hebrew:</p>
 
 <pre><code class="language-sdparse">hwa/PRON rah/VERB at/PART[Case=Acc] h/DET klb/NOUN \n he saw ACC the dog  
-dobj(rah-2, klb-5)
+obj(rah-2, klb-5)
 case(klb-5, at-3)
 </code></pre>
 
 <p>When case markers are morphemes, they are not divided off the noun as a separate case dependent,
-but the noun as a whole is analyzed as a <a href="">nmod</a> of the verb.
+but the noun as a whole is analyzed as <a href="">obl</a> (if dependent on a predicate) or <a href="">nmod</a> (if dependent on noun).
 To overtly mark case,
 <a href="../pos/index.html">POS tags</a> and
 <a href="../feat/index.html">features</a>
@@ -597,8 +602,8 @@ are included in the representation as shown below on a Russian example
 <pre><code class="language-conllu"># I wrote the letter with a quill.
 1   Я         ja         PRON   _   Case=Nom|Number=Sing|Person=1|PronType=Prs        2   nsubj   _   I
 2   написал   napisat'   VERB   _   Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act   0   root    _   wrote
-3   письмо    pis'mo     NOUN   _   Case=Acc|Gender=Neut|Number=Sing                  2   dobj    _   the-letter
-4   пером     pero       NOUN   _   Case=Ins|Gender=Neut|Number=Sing                  2   nmod    _   with-a-quill
+3   письмо    pis'mo     NOUN   _   Case=Acc|Gender=Neut|Number=Sing                  2   obj    _   the-letter
+4   пером     pero       NOUN   _   Case=Ins|Gender=Neut|Number=Sing                  2   obl    _   with-a-quill
 </code></pre>
 
 <p>This treatment provides parallelism between different constructions
@@ -608,7 +613,7 @@ which are often introduced by a preposition in some languages:</p>
 
 <pre><code class="language-sdparse">Sue left after the rehearsal
 nsubj(left-2, Sue-1)
-nmod(left-2, rehearsal-5)
+obl(left-2, rehearsal-5)
 det(rehearsal-5, the-4)
 case(rehearsal-5, after-3)
 </code></pre>
@@ -645,17 +650,17 @@ postposition in Finnish</li>
 </ul>
 
 <pre><code class="language-sdparse">etsiä ilman johtolankaa \n to_search without clue.PARTITIVE
-nmod(etsiä, johtolankaa)
+obl(etsiä, johtolankaa)
 case(johtolankaa, ilman)
 </code></pre>
 
 <pre><code class="language-sdparse">etsiä taskulampun kanssa \n to_search torch.GENITIVE with
-nmod(etsiä, taskulampun)
+obl(etsiä, taskulampun)
 case(taskulampun, kanssa)
 </code></pre>
 
 <pre><code class="language-sdparse">etsiä johtolangatta \n to_search clue.ABESSIVE
-nmod(etsiä, johtolangatta)
+obl(etsiä, johtolangatta)
 </code></pre>
 
 <ul>
@@ -664,24 +669,24 @@ analysis to the double object construction</li>
 </ul>
 
 <pre><code class="language-sdparse">give the children the toys
-dobj(give, toys)
+obj(give, toys)
 iobj(give, children)
 </code></pre>
 
 <pre><code class="language-sdparse">give the toys to the children
-dobj(give, toys)
-nmod(give, children)
+obj(give, toys)
+obl(give, children)
 case(children, to)
 </code></pre>
 
 <pre><code class="language-conllu"># give the toys to the children
 1     donner    donner   VERB   _   VerbForm=Inf               0   root   _   give
 2     les       le       DET    _   Definite=Def|Number=Plur   3   det    _   the
-3     jouets    jouet    NOUN   _   Gender=Masc|Number=Plur    1   dobj   _   toys
+3     jouets    jouet    NOUN   _   Gender=Masc|Number=Plur    1   obj   _   toys
 4-5   aux       _        _      _   _                          _   _      _   _
 4     à         à        ADP    _   _                          6   case   _   to
 5     les       le       DET    _   Definite=Def|Number=Plur   6   det    _   the
-6     enfants   enfant   NOUN   _   Gender=Masc|Number=Plur    1   nmod   _   children
+6     enfants   enfant   NOUN   _   Gender=Masc|Number=Plur    1   obl   _   children
 </code></pre>
 
 <p>Another advantage of this new analysis is that it provides a treatment
@@ -694,13 +699,13 @@ cop(shape-4, is-2)
 case(shape-4, in-3)
 </code></pre>
 
-<p>When prepositions are stacked (that is, there is a sequence of prepositions), there are two possible analyses. If the sequence is a frozen combination with a specific meaning, then the best analysis is as an <code>mwe</code>. An English example of this is <em>out of</em>:</p>
+<p>When prepositions are stacked (that is, there is a sequence of prepositions), there are two possible analyses. If the sequence is a frozen combination with a specific meaning, then the best analysis is as <code>fixed</code>. An English example of this is <em>out of</em>:</p>
 
 <pre><code class="language-sdparse">Out of all this , something good will come .
 case(this-4, Out-1)
-mwe(Out-1, of-2)
+fixed(Out-1, of-2)
 det(this-4, all-3)
-nmod(come, this-4)
+obl(come, this-4)
 </code></pre>
 
 <p>However, if various combinations of prepositions can be used to express different meaning combinations or nuances, then  each preposition is independently analyzed as a case dependent. Examples of this in English include <em>up beside</em> (which can alternate with <em>down beside</em> or <em>up near</em>) or <em>except during</em> which can alternate with <em>as during</em> or <em>except after</em>:</p>
@@ -809,6 +814,30 @@ However, we now analyze them as <a href="">acl</a>. Hence, <code>ccomp</code> do
 This makes sense, since nominals normally do not take core arguments.</p>
 
 <p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/ccomp.md" target="#">edit ccomp</a></p>
+
+<p><a id="al-u-dep/clf" class="al-dest"></a></p>
+<h2><code>clf</code>: classifier</h2>
+
+<p>A <code>clf</code> (classifier) is a word which accompanies a noun in certain grammatical contexts, and generally reflects some kind of 
+conceptual classification of nouns, based principally on features of their referents. 
+Here are some examples from Mandarin Chinese:</p>
+
+<ul>
+  <li>三个学生 (三個學生) sān gè xuéshēng = “three students”, literally “three [human-classifier] student”</li>
+  <li>三棵树 (三棵樹) sān kē shù = “three trees”, literally “three [tree-classifier] tree”</li>
+  <li>三只鸟 (三隻鳥) sān zhī niǎo = “three birds”, literally “three [bird-classifier] bird”</li>
+  <li>三条河 (三條河) sān tiáo hé = “three rivers”, literally “three [long-wavy-classifier] river”</li>
+</ul>
+
+<p>Syntactically, the classifier groups with the numeral, rather than the noun, and we therefore treat
+classifiers as functional dependents of numerals (or possessives) using the new <code>clf</code> relation.</p>
+
+<pre><code class="language-sdparse">sān gè xuéshēng \n three clf student
+nummod(xuéshēng, sān)
+clf(sān, gè)
+</code></pre>
+
+<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/clf.md" target="#">edit clf</a></p>
 
 <p><a id="al-u-dep/compound" class="al-dest"></a></p>
 <h2><code>compound</code>: compound</h2>
@@ -987,9 +1016,11 @@ conj(A, B)
 <p><a id="al-u-dep/cop" class="al-dest"></a></p>
 <h2><code>cop</code>: copula</h2>
 
-<p>A copula is the relation between the complement of a copular verb and
-the copular verb <em>to be</em> (only).  (We normally take a copula as a dependent of its
-complement.)</p>
+<p>A <code>cop</code> (copula) is the relation of a function word used to link a subject to a nonverbal predicate.
+It is often a verb but nonverbal copulas are also frequent in the world’s languages. The <code>cop</code> relation
+should only be used for pure copulas that add at most TAME categories to the meaning of the predicate,
+which means that most languages have at most one copula, and only when the nonverbal predicate is treated
+as the head of the clause.</p>
 
 <pre><code class="language-sdparse">Bill is honest
 nsubj(honest, Bill)
@@ -1003,12 +1034,10 @@ det(dancer-5, the-3)
 amod(dancer-5, best-4)
 </code></pre>
 
-<p>The copula <em>be</em> is not treated as the
-head of a clause, but rather the dependent of a lexical predicate, as exemplified above.</p>
+<p>The copula <em>be</em> is not treated as the head of a clause, but rather the nonverbal predicate, as exemplified above.</p>
 
-<p>Such an analysis is motivated by the fact that many languages
-often or always lack an overt copula in such constructions, as in the
-the following Russian example:</p>
+<p>Such an analysis is motivated by the fact that many languages often or always lack an overt copula in such 
+constructions, as in the the following Russian example:</p>
 
 <pre><code class="language-sdparse">Ivan lučšij tancor \n Ivan best dancer
 nsubj(tancor, Ivan)
@@ -1021,7 +1050,8 @@ amod(tancor, lučšij)
 nsubj(free, Email)
 </code></pre>
 
-<p>This analysis is adopted also when the predicate is a prepositional phrase, in which case the nominal part of the 
+<p>This analysis is adopted also when the predicate is a prepositional phrase, provided that the same copula
+(or absence thereof) is used here, in which case the nominal part of the 
 prepositional phrase is the head of the clause.</p>
 
 <pre><code class="language-sdparse">Sue is in shape
@@ -1030,20 +1060,22 @@ cop(shape, is)
 case(shape, in)
 </code></pre>
 
-<p>A parallel can also be drawn to so-called raising-to-object or small clause constructions in English.
+<!--A parallel can also be drawn to so-called raising-to-object or small clause constructions in English.
 Under the basic analysis proposed for SD, the predicate complement is
 not linked to its subject argument, but in the enhanced representation
 (see below), the linkage is then parallel to the treatment in a zero
-copula language:</p>
+copula language:
 
-<pre><code class="language-sdparse">I judge Ivan the best dancer
+~~~ sdparse
+I judge Ivan the best dancer
 nsubj(judge-2, I-1)
 dobj(judge-2, Ivan-3)
 xcomp(judge-2, dancer-6)
 det(dancer-6, the-4)
 amod(dancer-6, best-5)
 nsubj(dancer-6, Ivan-3)
-</code></pre>
+~~~
+-->
 
 <p>If the copula is accompanied by other verbal auxiliaries for tense, aspect, etc., then they are also given a flat structure, and taken as dependents of the lexical predicate:</p>
 
@@ -1061,9 +1093,9 @@ cop(destabilizing, be)
 aux(destabilizing, will)
 </code></pre>
 
-<p>While a part of speech has to be decided in such cases, it would be unfortunate if the choice of part of speech also changed the dependency structure.</p>
+<p>While a part of speech has to be decided in such cases, it would be unfortunate if the choice of part of speech also changed the dependency structure. Note, however, that the exact distribution of the copula construction is subject to language-specific variation.</p>
 
-<p>Finally, <code>ccomp</code> is used with copulas. Only in this case, the structure is different, and we take the form of <em>be</em> as a head:</p>
+<p>Finally, the <code>cop</code> relation is not used when the nonverbal predicate has the form of a clause, which typically occur in equational constructions like the following:</p>
 
 <pre><code class="language-sdparse">The important thing is to keep calm .
 ccomp(is, keep)
@@ -1075,7 +1107,7 @@ ccomp(is, tried)
 nsubj(is, problem)
 </code></pre>
 
-<p>If we took the main verb as the head, it would have two subjects, which would be unworkable. Examples like the above <em>could</em> be analyzed reversed with the initial noun phrase as the predicate, but in addition to this seeming undesirable, it would fail to be a solution if there were a clause on both sides of <em>be</em>, such as in: <em>(For us) to not attempt to solve the problem is (for us) to acknowledge defeat</em>. (Note: This solution is awkward and refining it is a possible direction for the future; the original Finnish TDT was done differently and it may be worth considering their solution.)</p>
+<p>If we took the predicate of the clause as the head, instead of the copula verb, it would have two subjects, which would be unworkable. Examples like the above <em>could</em> be analyzed reversed with the initial noun phrase as the predicate, but in addition to this seeming undesirable, it would fail to be a solution if there were a clause on both sides of <em>be</em>, such as in: <em>(For us) to not attempt to solve the problem is (for us) to acknowledge defeat</em>. (Note: This solution is not perfect and refining it is a possible direction for the future.)</p>
 
 <p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/cop.md" target="#">edit cop</a></p>
 
@@ -1166,6 +1198,10 @@ this to include: interjections (<em>oh</em>, <em>uh-huh</em>, <em>Welcome</em>),
 (<em>um</em>, <em>ah</em>), and discourse markers (<em>well</em>, <em>like</em>, <em>actually</em>, but
 not <em>you know</em>).</p>
 
+<p>These discourse elements are attached to the head of the most relevant nearby clause, 
+which is why they are grouped with non-core clausal dependents even though they are normally
+not dependents of the predicates as such.</p>
+
 <pre><code class="language-sdparse">Iguazu is in Argentina :)
 discourse(is-2, :)-5)
 </code></pre>
@@ -1194,9 +1230,9 @@ dislocated(kserume, jani)
 <p>It is also used for postposed elements. The dislocated elements attach to the same governor as the dependent that they double for. Right dislocated elements are frequent in spoken languages. French and Greek examples follow.</p>
 
 <pre><code class="language-sdparse">Il faut pas la manger , la plasticine \n It must not it eat , the playdough
-dobj(manger, la-4)
+obj(manger, la-4)
 dislocated(manger, plasticine)
-dobj(eat, it-13)
+obj(eat, it-13)
 dislocated(eat, playdough)
 </code></pre>
 
@@ -1255,7 +1291,7 @@ expl(clear, It)
 <pre><code class="language-sdparse">There is a ghost in the room
 expl(is, There)
 nsubj(is, ghost)
-nmod(is, room)
+obl(is, room)
 </code></pre>
 
 <pre><code class="language-sdparse">I believe there to be a ghost in the room
@@ -1263,7 +1299,7 @@ nsubj(believe, I)
 expl(believe, there)
 xcomp(believe, be)
 nsubj(be, ghost)
-nmod(be, room)
+obl(be, room)
 </code></pre>
 
 <pre><code class="language-sdparse">It is clear that we should decline .
@@ -1278,7 +1314,7 @@ csubj(clear, decline)
 <pre><code class="language-sdparse">I mentioned it to Mary that Sue is leaving
 nsubj(mentioned, I)
 expl(mentioned, it)
-nmod(mentioned, Mary)
+obl(mentioned, Mary)
 ccomp(mentioned, leaving)
 </code></pre>
 
@@ -1289,13 +1325,13 @@ expl(έδωσε, Της-1)
 iobj(έδωσε, Καίτης)
 det(Καίτης, της-4)
 expl(έδωσε, τον-2)
-dobj(έδωσε, αναπτήρα)
+obj(έδωσε, αναπτήρα)
 det(αναπτήρα, τον-6)
 </code></pre>
 
 <pre><code class="language-sdparse">Marija mu izprati pismo na rabotnika \n Maria 3.S.M.IO sent letter to the.worker
 expl(izprati, mu)
-dobj(izprati, pismo)
+obj(izprati, pismo)
 iobj(izprati, rabotnika)
 case(rabotnika, na)
 </code></pre>
@@ -1755,7 +1791,7 @@ If possible, language-specific documentation should be available to help identif
 <p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/obj.md" target="#">edit obj</a></p>
 
 <p><a id="al-u-dep/obl" class="al-dest"></a></p>
-<h2><code>obl</code>: oblique dependent</h2>
+<h2><code>obl</code>: oblique nominal</h2>
 
 <p>The <code>obl</code> relation is used for a nominal (noun, pronoun, noun phrase) functioning as a non-core (oblique) argument or 
 adjunct. This means that it functionally corresponds to an adverbial attaching to a verb, adjective or other adverb.</p>
@@ -1815,10 +1851,10 @@ obl(swam, pool)
 
 <p>and for the agent of a passive verb (with the optional subtype obl:agent):</p>
 
-<p>~~~ sdparse
-the cat was chased by the dog
+<pre><code class="language-sdparse">the cat was chased by the dog
 nsubj:pass(chased, cat)
-obl:agent(chased, dog)</p>
+obl:agent(chased, dog)
+</code></pre>
 
 <p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/obl.md" target="#">edit obl</a></p>
 
