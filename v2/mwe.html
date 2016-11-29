@@ -51,6 +51,7 @@
   <li>Rename <a href="">u-dep/mwe</a> to <strong>fixed</strong> and make clear that this should only be used for completely fixed expressions
 <!--* Change the direction of arrows (right-to-left instead of left-to-right) for this relation as well as the other non-dependency relations [u-dep/name]() and [u-dep/foreign]() (see also [semantic categories](semantic-categories.html))--></li>
   <li>Rename <a href="">u-dep/name</a> to <strong>flat</strong> and extend its use to semi-fixed multiword expressions that do not have a clear syntactic head. (See <a href="semantic-categories.html">semantic categories</a>.)</li>
+  <li>Remove <a href="">u-dep/foreign</a> and subsume its use under the new relation <a href="">u-dep/flat</a>.</li>
   <li>Add a new subtype of <a href="">u-dep/compound</a> for handling serial verb constructions in analogy with particle verbs
 and grammticized light verb constructions.</li>
 </ul>
@@ -61,6 +62,10 @@ and grammticized light verb constructions.</li>
 <a href="http://lingo.stanford.edu/pubs/WP-2001-03.pdf">Sag et al.</a>, excluding any relations in scope of <a href="">u-dep/name</a> or <a href="">u-dep/compound</a>. The label <code>fixed</code> reflects this fact better.</p>
 
 <p>The proposed change is therefore to change the label <code>mwe</code> (multiword expression) to <code>fixed</code>, and making the guidelines more restrictive (namely, <a href="u-dep/mwe">fixed</a> is used <strong>only</strong> for completely fixed grammaticized expressions that behave like function words or short adverbials).</p>
+
+<h2 id="remove-foreign">Remove foreign</h2>
+
+<p>The <code>foreign</code> relation does not denote a proper dependency relation and it now seems appropriate to subsume it under the new generalized <code>flat</code> relation. Note that there was never a special part-of-speech tag for foreign words, which were tagged <code>X</code> in cases where they could not be given a proper tag. The use of <code>flat</code> in syntax can be seen as parallel to this. A subtype <code>flat:foreign</code> can be used to preserve information in existing treebanks.</p>
 
 <h2 id="serial-verb-constructions">Serial verb constructions</h2>
 
