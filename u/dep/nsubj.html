@@ -30,8 +30,8 @@
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -47,10 +47,13 @@
 
 <p>A nominal subject (<code>nsubj</code>) is a nominal which is the syntactic subject and the proto-agent of a clause.
 That is, it is in the position that passes typical grammatical test for subjecthood, and this argument is the more agentive,
-the do-er, or the proto-agent of the clause. 
-(See <a href="">csubj</a> for when the subject is clausal. See <a href="">nsubjpass</a> and <a href="">csubjpass</a> for when the subject is not 
-the proto-agent argument due to valence changing operations.) This nominal may be headed by a noun, 
-or it may be a pronoun or relative pronoun, or in ellipsis contexts, other things such as an adjective.</p>
+the do-er, or the proto-agent of the clause. This nominal may be headed by a noun, 
+or it may be a pronoun or relative pronoun or, in ellipsis contexts, other things such as an adjective.</p>
+
+<p>** New from v2:** The <code>nsubj</code> relation is also used for the nominal subject of a passive verb or verb group, even
+though the subject is then not typically the proto-agent argument due to valency changing operations. For languages
+that have a grammaticalized passive transformation, it is strongly recommended to use the subtype <code>nsubj:pass</code> in 
+such cases.</p>
 
 <p>The <code>nsubj</code> role is only applied to semantic arguments of a predicate.
 When there is an empty argument in a grammatical subject position (sometimes called a pleonastic or expletive),
