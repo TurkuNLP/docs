@@ -3,7 +3,7 @@
 <html lang="en-GB" xml:lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <title>Negative</title>
+    <title>Polarity</title>
     <link rel="root" href=""/> <!-- for JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../../css/jquery-ui-redmond.css"/>
@@ -43,23 +43,28 @@
 	  </div>
 	</noscript>
 
-          <h2><code>Negative</code>: whether the word can be or is negated</h2>
+          <h2><code>Polarity</code>: polarity</h2>
 
-<p>Negativeness is typically a feature of <a href="u-pos/VERB">verbs</a>,
+<p>Polarity is typically a feature of <a href="u-pos/VERB">verbs</a>,
 <a href="u-pos/ADJ">adjectives</a>, sometimes also <a href="u-pos/ADV">adverbs</a> and
 <a href="u-pos/NOUN">nouns</a> in languages that negate using bound
-morphemes. For instance, all Czech verbs and adjectives can be negated
+morphemes.
+In languages that negate using a function word, <code>Polarity</code> is used to mark
+that function word, unless it is a pro-form already marked with
+<code>PronType=Neg</code> (see below).</p>
+
+<p>For instance, all Czech verbs and adjectives can be negated
 using the prefix <em>ne-</em>.  In English, verbs are negated using the
 <a href="u-pos/PART">particle</a> <em>not</em> and adjectives are also negated using
 prefixes, although the process is less productive than in Czech <em>(wise
 – unwise, probable – improbable)</em>.</p>
 
-<p>Note that <code>Negative=Neg</code> is not the same thing as
+<p>Note that <code>Polarity=Neg</code> is not the same thing as
 <a href="">PronType</a><code>=Neg</code>. For pronouns and other pronominal parts of speech
 there is no such binary opposition as for verbs and adjectives. (There
 is no such thing as “affirmative pronoun”.)</p>
 
-<p>The negativeness feature could be also used to distinguish response
+<p>The <code>Polarity</code> feature can be also used to distinguish response
 <a href="u-pos/INTJ">interjections</a> <em>yes</em> and <em>no</em>.</p>
 
 <h3 id="pos-positive-affirmative"><code>Pos</code>: positive, affirmative</h3>
@@ -87,45 +92,6 @@ is no such thing as “affirmative pronoun”.)</p>
 
 <!-- "in other languages" links -->
 <hr/>
-
-Negative in other languages:
-
-[<a href="../../bg/feat/Negative.html">bg</a>]
-
-[<a href="../../cs/feat/Negative.html">cs</a>]
-
-[<a href="../../de/feat/Negative.html">de</a>]
-
-[<a href="../../el/feat/Negative.html">el</a>]
-
-[<a href="../../en/feat/Negative.html">en</a>]
-
-[<a href="../../es/feat/Negative.html">es</a>]
-
-[<a href="../../eu/feat/Negative.html">eu</a>]
-
-[<a href="../../fa/feat/Negative.html">fa</a>]
-
-[<a href="../../fi/feat/Negative.html">fi</a>]
-
-[<a href="../../fr/feat/Negative.html">fr</a>]
-
-[<a href="../../ga/feat/Negative.html">ga</a>]
-
-[<a href="../../he/feat/Negative.html">he</a>]
-
-[<a href="../../hu/feat/Negative.html">hu</a>]
-
-[<a href="../../it/feat/Negative.html">it</a>]
-
-[<a href="../../ja/feat/Negative.html">ja</a>]
-
-[<a href="../../ko/feat/Negative.html">ko</a>]
-
-[<a href="../../sv/feat/Negative.html">sv</a>]
-
-[<a href="../../u/feat/Negative.html">u</a>]
-
 
 
 
