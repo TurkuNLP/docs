@@ -115,9 +115,9 @@ not covered by the POS tags.</p>
 <p>Boolean feature. Is this an abbreviation? Note that the abbreviated
 word(s) typically belongs to a part of speech other than <a href="">u-pos/X</a>.</p>
 
-<h3 id="yes-it-is-abbreviation">Yes: it is abbreviation</h3>
+<h3 id="yes-it-is-abbreviation"><code>Yes</code>: it is abbreviation</h3>
 
-<p>Examples: etc., J., UK</p>
+<p>Examples: [en] <em><b>etc.</b>, <b>J.</b>, <b>UK</b></em></p>
 
 <p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-feat/Abbr.md" target="#">edit Abbr</a></p>
 
@@ -975,27 +975,81 @@ handsome</b>”</li>
 
 <p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-feat/Degree.md" target="#">edit Degree</a></p>
 
+<p><a id="al-u-feat/Evident" class="al-dest"></a></p>
+<h2><code>Evident</code>: evidentiality</h2>
+
+<p>Polarity is typically a feature of <a href="u-pos/VERB">verbs</a>,
+<a href="u-pos/ADJ">adjectives</a>, sometimes also <a href="u-pos/ADV">adverbs</a> and
+<a href="u-pos/NOUN">nouns</a> in languages that negate using bound
+morphemes.
+In languages that negate using a function word, <code>Polarity</code> is used to mark
+that function word, unless it is a pro-form already marked with
+<code>PronType=Neg</code> (see below).</p>
+
+<p>Positive polarity (affirmativeness) is rarely, if at all, encoded using overt
+morphology. The feature value <code>Polarity=Pos</code> is usually used to signal that a lemma
+has negative forms but this particular form is not negative. Using the feature
+in such cases is somewhat optional for words that can be negated but rarely are.</p>
+
+<p>For instance, all Czech verbs and adjectives can be negated using the prefix
+<em>ne-</em>. In theory, all nouns can be negated too, with the meaning “anything
+except the entities denotable by the original noun”. However, negated nouns
+are rare and it is not necessary to annotate every positive noun with
+<code>Polarity=Pos</code>. Language-specific documentation should define under which
+circumstances the positive polarity is annotated.</p>
+
+<p>In English, verbs are negated using the <a href="u-pos/PART">particle</a> <em>not</em> and
+adjectives are also negated using prefixes, although the process is less
+productive than in Czech <em>(wise – unwise, probable – improbable)</em>.</p>
+
+<p>Note that <code>Polarity=Neg</code> is not the same thing as
+<a href="">PronType</a><code>=Neg</code>. For pronouns and other pronominal parts of speech
+there is no such binary opposition as for verbs and adjectives. (There
+is no such thing as “affirmative pronoun”.)</p>
+
+<p>The <code>Polarity</code> feature can be also used to distinguish response
+<a href="u-pos/INTJ">interjections</a> <em>yes</em> and <em>no</em>.</p>
+
+<p>Note: <code>Polarity</code> was called <code>Negative</code> in the version 1 of UD guidelines and it is renamed in version 2.</p>
+
+<h3 id="pos-positive-affirmative"><code>Pos</code>: positive, affirmative</h3>
+
+<h4 id="examples">Examples</h4>
+
+<ul>
+  <li>[cs] <em><b>přišel</b></em> “he came”</li>
+  <li>[cs] <em><b>velký</b></em> “big”</li>
+  <li>[en] <em><b>yes</b></em></li>
+</ul>
+
+<h3 id="neg-negative"><code>Neg</code>: negative</h3>
+
+<h4 id="examples-1">Examples</h4>
+
+<ul>
+  <li>[cs] <em><b>nepřišel</b></em> “he did not come”</li>
+  <li>[cs] <em><b>nevelký</b></em> “not big”</li>
+  <li>[en] <em><b>not</b></em></li>
+  <li>[en] <em><b>no</b></em> as in <em>no, I don’t think so;</em> but not as in <em>we have no bananas</em></li>
+</ul>
+
+<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-feat/Evident.md" target="#">edit Evident</a></p>
+
 <p><a id="al-u-feat/Foreign" class="al-dest"></a></p>
 <h2><code>Foreign</code>: is this a foreign word?</h2>
 
 <p>Boolean feature. Is this a foreign word? Not a loan word and not a
 foreign name but a genuinely foreign word appearing inside native
 text, e.g. inside direct speech, titles of books etc. This feature
-would apply either to the “X” part of speech (unanalyzable token), or
+would apply either to the <a href="">u-pos/X</a> part of speech (unanalyzable token), or
 to other parts of speech if we know and are willing to annotate the
 class to which the word belongs in its original language.</p>
 
-<h3 id="foreign-it-is-foreign">Foreign: it is foreign</h3>
+<p>Note: This feature is new in UD version 2. It was used as a language-specific addition in several treebanks in version 1 but it was not considered boolean and three values were foreseen. Since the additional values were used extremely rarely, they are not part of the universal definition of this feature in UD v2.</p>
 
-<p>Example: <em>He said I could “<b>dra åt helvete!</b>“</em></p>
+<h3 id="yes-it-is-foreign"><code>Yes</code>: it is foreign</h3>
 
-<h3 id="fscript-it-is-foreign-and-written-in-a-foreign-script">Fscript: it is foreign and written in a foreign script</h3>
-
-<p>Example: <em>In Nepali, the mountain is called <b>सगरमाथा</b>.</em></p>
-
-<h3 id="tscript-it-is-foreign-and-transcribed-from-a-foreign-script">Tscript: it is foreign and transcribed from a foreign script</h3>
-
-<p>Example: <em>The above Nepali word can be transcribed <b>Sagaramāthā</b>.</em></p>
+<p>Example: [en] <em>He said I could “<b>dra åt helvete!</b>“</em></p>
 
 <p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-feat/Foreign.md" target="#">edit Foreign</a></p>
 
@@ -1490,11 +1544,21 @@ In languages that negate using a function word, <code>Polarity</code> is used to
 that function word, unless it is a pro-form already marked with
 <code>PronType=Neg</code> (see below).</p>
 
-<p>For instance, all Czech verbs and adjectives can be negated
-using the prefix <em>ne-</em>.  In English, verbs are negated using the
-<a href="u-pos/PART">particle</a> <em>not</em> and adjectives are also negated using
-prefixes, although the process is less productive than in Czech <em>(wise
-– unwise, probable – improbable)</em>.</p>
+<p>Positive polarity (affirmativeness) is rarely, if at all, encoded using overt
+morphology. The feature value <code>Polarity=Pos</code> is usually used to signal that a lemma
+has negative forms but this particular form is not negative. Using the feature
+in such cases is somewhat optional for words that can be negated but rarely are.</p>
+
+<p>For instance, all Czech verbs and adjectives can be negated using the prefix
+<em>ne-</em>. In theory, all nouns can be negated too, with the meaning “anything
+except the entities denotable by the original noun”. However, negated nouns
+are rare and it is not necessary to annotate every positive noun with
+<code>Polarity=Pos</code>. Language-specific documentation should define under which
+circumstances the positive polarity is annotated.</p>
+
+<p>In English, verbs are negated using the <a href="u-pos/PART">particle</a> <em>not</em> and
+adjectives are also negated using prefixes, although the process is less
+productive than in Czech <em>(wise – unwise, probable – improbable)</em>.</p>
 
 <p>Note that <code>Polarity=Neg</code> is not the same thing as
 <a href="">PronType</a><code>=Neg</code>. For pronouns and other pronominal parts of speech
@@ -1504,20 +1568,27 @@ is no such thing as “affirmative pronoun”.)</p>
 <p>The <code>Polarity</code> feature can be also used to distinguish response
 <a href="u-pos/INTJ">interjections</a> <em>yes</em> and <em>no</em>.</p>
 
+<p>Note: <code>Polarity</code> was called <code>Negative</code> in the version 1 of UD guidelines and it is renamed in version 2.</p>
+
 <h3 id="pos-positive-affirmative"><code>Pos</code>: positive, affirmative</h3>
 
 <h4 id="examples">Examples</h4>
 
 <ul>
   <li>[cs] <em><b>přišel</b></em> “he came”</li>
+  <li>[cs] <em><b>velký</b></em> “big”</li>
+  <li>[en] <em><b>yes</b></em></li>
 </ul>
 
-<h3 id="neg-negative">Neg: negative</h3>
+<h3 id="neg-negative"><code>Neg</code>: negative</h3>
 
 <h4 id="examples-1">Examples</h4>
 
 <ul>
   <li>[cs] <em><b>nepřišel</b></em> “he did not come”</li>
+  <li>[cs] <em><b>nevelký</b></em> “not big”</li>
+  <li>[en] <em><b>not</b></em></li>
+  <li>[en] <em><b>no</b></em> as in <em>no, I don’t think so;</em> but not as in <em>we have no bananas</em></li>
 </ul>
 
 <p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-feat/Polarity.md" target="#">edit Polarity</a></p>
