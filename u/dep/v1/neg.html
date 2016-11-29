@@ -3,15 +3,15 @@
 <html lang="en-GB" xml:lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <title>foreign</title>
+    <title>neg</title>
     <link rel="root" href=""/> <!-- for JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../../css/jquery-ui-redmond.css"/>
-    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
-    <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
-    <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../../css/jquery-ui-redmond.css"/>
+    <link rel="stylesheet" type="text/css" href="../../../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../../css/style-vis.css"/>
+    <link rel="stylesheet" type="text/css" href="../../../css/hint.css"/>
+    <script type="text/javascript" src="../../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -23,7 +23,7 @@
 	
           <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-u">home</a></span>
           <span class="header-text"><a href="http://turkunlp.github.io/docs/u/dep">u/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/foreign.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/v1/neg.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
 
@@ -43,23 +43,25 @@
 	  </div>
 	</noscript>
 
-          <h2><code>foreign</code>: foreign words</h2>
+          <h2><code>neg</code>: negation modifier</h2>
 
-<p>We use <code>foreign</code> to label sequences of foreign words. These are given
-a linear analysis: the head is the first token in the foreign phrase.</p>
+<p>The negation modifier is the relation between a negation word and the
+word it modifies.</p>
 
-<p><code>foreign</code> does not apply to loanwords or to foreign <a href="name">names</a>. 
-It applies to quoted foreign text incorporated in a sentence/discourse
-of the host language (unless we want to and know how to annotate the
-internal structure according to the syntax of the foreign language).</p>
+<p>Modifiers labeled <code>neg</code> depend either on a noun (group “noun
+dependents”) or on a predicate (group “non-core dependents of clausal
+predicates”).</p>
 
-<pre><code class="language-sdparse">I guess that c' est la vie
-nsubj(guess-2, I-1)
-ccomp(guess-2, c'-4)
-mark(c'-4, that-3)
-foreign(c'-4, est-5)
-foreign(c'-4, la-6)
-foreign(c'-4, vie-7)
+<pre><code class="language-sdparse">Bill is not a scientist
+neg(scientist, not)
+</code></pre>
+
+<pre><code class="language-sdparse">Bill is no scientist
+neg(scientist, no)
+</code></pre>
+
+<pre><code class="language-sdparse">Bill does n't drive
+neg(drive, n't)
 </code></pre>
 
 
@@ -73,43 +75,43 @@ foreign(c'-4, vie-7)
 <!-- "in other languages" links -->
 <hr/>
 
-foreign in other languages:
+neg in other languages:
 
-[<a href="../../bg/dep/foreign.html">bg</a>]
+[<a href="../../bg/dep/neg.html">bg</a>]
 
-[<a href="../../cs/dep/foreign.html">cs</a>]
+[<a href="../../cs/dep/neg.html">cs</a>]
 
-[<a href="../../de/dep/foreign.html">de</a>]
+[<a href="../../de/dep/neg.html">de</a>]
 
-[<a href="../../el/dep/foreign.html">el</a>]
+[<a href="../../el/dep/neg.html">el</a>]
 
-[<a href="../../en/dep/foreign.html">en</a>]
+[<a href="../../en/dep/neg.html">en</a>]
 
-[<a href="../../es/dep/foreign.html">es</a>]
+[<a href="../../es/dep/neg.html">es</a>]
 
-[<a href="../../eu/dep/foreign.html">eu</a>]
+[<a href="../../eu/dep/neg.html">eu</a>]
 
-[<a href="../../fa/dep/foreign.html">fa</a>]
+[<a href="../../fa/dep/neg.html">fa</a>]
 
-[<a href="../../fi/dep/foreign.html">fi</a>]
+[<a href="../../fi/dep/neg.html">fi</a>]
 
-[<a href="../../fr/dep/foreign.html">fr</a>]
+[<a href="../../fr/dep/neg.html">fr</a>]
 
-[<a href="../../ga/dep/foreign.html">ga</a>]
+[<a href="../../ga/dep/neg.html">ga</a>]
 
-[<a href="../../he/dep/foreign.html">he</a>]
+[<a href="../../he/dep/neg.html">he</a>]
 
-[<a href="../../hu/dep/foreign.html">hu</a>]
+[<a href="../../hu/dep/neg.html">hu</a>]
 
-[<a href="../../it/dep/foreign.html">it</a>]
+[<a href="../../it/dep/neg.html">it</a>]
 
-[<a href="../../ja/dep/foreign.html">ja</a>]
+[<a href="../../ja/dep/neg.html">ja</a>]
 
-[<a href="../../ko/dep/foreign.html">ko</a>]
+[<a href="../../ko/dep/neg.html">ko</a>]
 
-[<a href="../../sv/dep/foreign.html">sv</a>]
+[<a href="../../sv/dep/neg.html">sv</a>]
 
-[<a href="../../u/dep/foreign.html">u</a>]
+[<a href="../../u/dep/neg.html">u</a>]
 
 
 
@@ -118,7 +120,7 @@ foreign in other languages:
 
 <!-- support for embedded visualizations -->
 <script type="text/javascript">
-    var root = '../../'; // filled in by jekyll
+    var root = '../../../'; // filled in by jekyll
     head.js(
         // External libraries
         root + 'lib/ext/jquery.min.js',
