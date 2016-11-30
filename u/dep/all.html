@@ -703,25 +703,22 @@ nmod(cafe-2, lookout-6)
 <p><a id="al-u-dep/cc" class="al-dest"></a></p>
 <h2><code>cc</code>: coordinating conjunction</h2>
 
-<p>For more on coordination, see the <a href="">conj</a> relation.
-A <code>cc</code> is the relation between the first conjunct and
-the <a href="../pos/CONJ">coordinating conjunction</a> delimiting another conjunct.
-(Note: different dependency grammars have different treatments of coordination.
-We take the first conjunct as the head of the coordination.)</p>
+<!--For more on coordination, see the [conj]() relation.-->
+<p>A <code>cc</code> is the relation between a conjunct and
+a preceding <a href="../pos/CCONJ">coordinating conjunction</a>.
+<!--(Note: different dependency grammars have different treatments of coordination.
+We take the first conjunct as the head of the coordination.)--></p>
 
 <pre><code class="language-sdparse">Bill is big and honest
-cc(big, and)
+cc(honest, and)
 </code></pre>
 
 <p>A coordinating conjunction may also appear at the beginning of a
-sentence. This is also called a <code>cc</code>, and it depends on the root
-predicate of the sentence.
-(In fact there is a coordination that spans multiple sentences.
-We cannot attach a word to the first conjunct because it is in another sentence.
-Thus we attach it to the first conjunct available in the current sentence: its main predicate.)</p>
+sentence. This is also called a <code>cc</code>, even though there is no preceding conjunct
+(except implicitly or in a preceding sentence).</p>
 
 <pre><code class="language-sdparse">And then we left .
-cc(left, And)
+cc(left, left)
 </code></pre>
 
 <div id="punct1" class="sd-parse">
@@ -730,10 +727,10 @@ dobj(have, apples)
 conj(apples, pears)
 conj(apples, oranges)
 conj(apples, bananas)
-cc(apples, and)
-punct(apples, ,-4)
-punct(apples, ,-6)
-punct(apples, ,-8)
+cc(bananas, and)
+punct(pears, ,-4)
+punct(oranges, ,-6)
+punct(bananas, ,-8)
 </div>
 
 <p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/cc.md" target="#">edit cc</a></p>
@@ -889,13 +886,13 @@ punct(apples, ,-6)
 punct(apples, ,-8)
 </div>
 
-<p>Coordinate clauses are treated the same way as coordination of other constituent types:</p>
+<p>Coordinated clauses are treated the same way as coordination of other constituent types:</p>
 
 <pre><code class="language-sdparse">He came home , took a shower and immediately went to bed .
 conj(came, took)
 conj(came, went)
-punct(came, ,-4)
-cc(came, and)
+punct(took, ,-4)
+cc(went, and)
 </code></pre>
 
 <p>Coordination may be <em>asyndetic,</em> which means that the coordinating conjunction is omitted.
@@ -905,8 +902,8 @@ Asyndetic coordination may be more frequent in some languages, while in others, 
 <pre><code class="language-sdparse">Veni , vidi , vici .
 conj(Veni, vidi)
 conj(Veni, vici)
-punct(Veni, ,-2)
-punct(Veni, ,-4)
+punct(vidi, ,-2)
+punct(vici, ,-4)
 </code></pre>
 
 <h3 id="shared-dependents-and-effective-parents-in-coordination">Shared Dependents and Effective Parents in Coordination</h3>
@@ -950,24 +947,23 @@ ccomp(saw, kissed)
 </code></pre>
 
 <p>If a dependent is shared among conjuncts, the basic representation always links it to the
-first conjunct (coordination head).
-Relations to the other conjuncts are in the enhanced representation.
-In the following example, enhanced dependencies are shown in red:</p>
-
-<pre><code class="language-conllu"># visual-style 6 1 amod color:red
+first conjunct (coordination head), while the enhanced representation shows all dependencies.
+In the following example, relations that are only part of the enhanced representation are shown in red.
+~~~ conllu
+# visual-style 6 1 amod color:red
 # visual-style 4 3 amod color:red
 # visual-style 6 3 amod color:red
 1 American   _ _ _ _ 4 amod 6:amod        _
-2 and        _ _ _ _ 1 cc   _             _
+2 and        _ _ _ _ 3 cc   _             _
 3 British    _ _ _ _ 1 conj 4:amod|6:amod _
 4 professors _ _ _ _ 0 root _             _
-5 and        _ _ _ _ 4 cc   _             _
+5 and        _ _ _ _ 6 cc   _             _
 6 students   _ _ _ _ 4 conj 0:root        _
-</code></pre>
+~~~</p>
 
 <h3 id="nested-coordination">Nested Coordination</h3>
 
-<p>Note further that the current annotation scheme has only a limited capability to capture nested coordination
+<p>Note further that the basuc annotation scheme has only a limited capability to capture nested coordination
 such as <em>apples and pears or oranges and lemons.</em>
 Consider coordinations</p>
 
@@ -1280,6 +1276,42 @@ expl(fears, REFLEX)
 <p>Further general discussion of expletives can be found in Postal, P. M., and G. K. Pullum (1988) “Expletive Noun Phrases in Subcategorized Positions,” <em>Linguistic Inquiry</em> 19(4): 635–670. The status of clitic doubling, and arguments for the lexical nominal being an argument with the clitic a kind of pronominal copy, appear inter alia in Boris Harizanov (2014) <a href="http://stanford.edu/~bharizan/pdfs/Harizanov_2014_NLLT.pdf">Clitic doubling at the syntax-morphology interface: A-movement and morphological merger in Bulgarian</a>. <em>Natural Language and Linguistic Theory</em>.</p>
 
 <p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/expl.md" target="#">edit expl</a></p>
+
+<p><a id="al-u-dep/fixed" class="al-dest"></a></p>
+<h2><code>fixed</code>: fixed multiword expression</h2>
+
+<p>The <code>fixed</code> relation is one of the three relations for multiword expressions (MWEs)
+(the other two being <a href="">flat</a> and <a href="">compound</a>). 
+It is used for certain fixed grammaticized expressions that behave
+like function words or short adverbials.</p>
+
+<p><strong>New from v2:</strong> The <code>fixed</code> relation replaces the old <code>mwe</code> relation to prevent misunderstanding regarding its scope.</p>
+
+<p>The scope of <code>fixed</code> MWEs corresponds roughly to the <em>fixed
+expressions</em> category of
+<a href="http://lingo.stanford.edu/pubs/WP-2001-03.pdf">Sag et al.</a>
+and excludes any semi-fixed or flexible MWEs.</p>
+
+<p>Fixed MWEs are annotated in a flat structure, where all subsequent words in the expression 
+are attached to the first one using the <code>fixed</code> label. The assumption is that these expressions
+do not have any internal syntactic structure (except from a historical perspective) and that the
+structural annotation is in principle arbitrary. In practice, however, it is highly desirable to use
+a consistent annotation of all fixed MWEs in all languages.</p>
+
+<pre><code class="language-sdparse">I like dogs as well as cats
+fixed(as-4, well-5)
+fixed(as-4, as-6)
+</code></pre>
+
+<pre><code class="language-sdparse">He cried because of you
+fixed(because, of)
+</code></pre>
+
+<pre><code class="language-sdparse">Je préfère prendre un dessert plutôt qu' une entrée \n I prefer getting a dessert rather than an appetizer
+fixed(plutôt, qu')
+</code></pre>
+
+<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/fixed.md" target="#">edit fixed</a></p>
 
 <p><a id="al-u-dep/goeswith" class="al-dest"></a></p>
 <h2><code>goeswith</code>: goes with</h2>
