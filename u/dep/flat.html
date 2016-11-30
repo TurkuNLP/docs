@@ -54,7 +54,7 @@ endocentric (headed) MWEs (like <em>apple pie</em>).</p>
 <p>Flat MWEs are annotated in a flat structure, where all subsequent words in the expression are attached to the 
 first one using the fixed label. The assumption is that these expressions do not have any internal syntactic structure 
 and that the structural annotation is in principle arbitrary. In practice, however, it is highly desirable to use 
-a consistent annotation of all fixed MWEs in all languages.</p>
+a consistent annotation of all flat MWEs in all languages.</p>
 
 <p>Below we describe some of the most common uses of <a href="">flat</a> across languages. Note, however, that semantically
 equivalent expressions in other languages (or even in the same language) may require a different analysis if it
@@ -83,11 +83,11 @@ flat(New, York)
 <p>By contrast, names that have a regular syntactic structure, like <em>The Lord of the Rings</em> and <em>Captured By
 Aliens</em>, should be annotated with regular syntactic relations.</p>
 
-<pre><code class="language-sdparse">The Lord of the Ring
+<pre><code class="language-sdparse">The Lord of the Rings
 det(Lord, The)
-nmod(Lord, Ring)
-case(Ring, of)
-det(Ring, the)
+nmod(Lord, Rings)
+case(Rings, of)
+det(Rings, the)
 </code></pre>
 
 <p>For organization names with clear syntactic modification structure, the dependencies should 
@@ -138,7 +138,7 @@ flat(Stanford-2, Leland-1)
 flat(Jr.-3, Leland-1)
 </code></pre>
 
-<h2 id="dates-and-complex-numerlas">Dates and Complex Numerlas</h2>
+<h2 id="dates-and-complex-numerals">Dates and Complex Numerals</h2>
 
 <p>Date expressions come in many shapes and forms across languages. In some cases, they have a very clear syntactic
 structure, as in <em>the 4th of July</em>, and should be annotated with regular dependency relations. In other cases, they
