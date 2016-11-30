@@ -1155,15 +1155,9 @@ csubjpass(suspected, lied)
 <p><a id="al-u-dep/dep" class="al-dest"></a></p>
 <h2><code>dep</code>: unspecified dependency</h2>
 
-<p>A dependency is labeled as <code>dep</code> when a system is unable to
-determine a more precise dependency relation between two words.  This
-may be because of a weird grammatical construction, a limitation in
-software (e.g. the Stanford Dependency conversion), a parser error, or
-because of an unresolved long distance dependency.</p>
-
-<pre><code class="language-sdparse">Then , as if to show that he could , ...
-dep(show, if)
-</code></pre>
+<p>A dependency can be labeled as <code>dep</code> when it is impossible to determine a more precise relation.
+This may be because of a weird grammatical construction, or a limitation in conversion or parsing software.
+The use of <code>dep</code> should be avoided as much as possible.</p>
 
 <p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/dep.md" target="#">edit dep</a></p>
 
@@ -1858,6 +1852,30 @@ obl:agent(chased, dog)
 
 <p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/obl.md" target="#">edit obl</a></p>
 
+<p><a id="al-u-dep/orphan" class="al-dest"></a></p>
+<h2><code>orphan</code>: orphan</h2>
+
+<p>The ‘orphan’ relation is used in cases of head ellipisis where simple promotion would result in unnatural 
+and misleading dependency relation. The typical case is predicate ellipsis where one of the core arguments
+have to be promoted to clausal head.</p>
+
+<pre><code class="language-sdparse">Marie won gold and Peter bronze
+nsubj(won, Marie)
+obj(won, gold)
+conj(won, Peter)
+cc(Peter, and)
+orphan(Peter, bronze)
+</code></pre>
+
+<p>In this example, the subject <em>Peter</em> is promoted to the head position in the second conjunct. Attaching
+the object <em>bronze</em> to the subject is necessary to preserve the integrity of the clause, but using the
+standard relation <a href="">obj</a> would be misleading because <em>bronze</em> is not the object of <em>Peter</em>. Therefore,
+the <code>orphan</code> relation is used to indicate that this is a non-standard attachment. By contrast, the coordinating
+conjunction <em>and</em> performs essentially the same function as in the non-elliptical case and therefore retains
+its normal relation <code>cc</code>.</p>
+
+<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/orphan.md" target="#">edit orphan</a></p>
+
 <p><a id="al-u-dep/parataxis" class="al-dest"></a></p>
 <h2><code>parataxis</code>: parataxis</h2>
 
@@ -2009,10 +2027,10 @@ dobj(have, apples)
 conj(apples, pears)
 conj(apples, oranges)
 conj(apples, bananas)
-cc(apples, and)
-punct(apples, ,-4)
-punct(apples, ,-6)
-punct(apples, ,-8)
+cc(bananas, and)
+punct(pears, ,-4)
+punct(oranges, ,-6)
+punct(bananas, ,-8)
 </div>
 
 <div id="punct2" class="sd-parse">
@@ -2164,29 +2182,24 @@ det(left-7, the-6)
 <p><a id="al-u-dep/root" class="al-dest"></a></p>
 <h2><code>root</code>: root</h2>
 
-<p>The <code>root</code> grammatical relation points to the root of the sentence. A
-fake node <code>ROOT</code> is used as the governor. The <code>ROOT</code> node is indexed
-with 0, since the indexing of real words in the sentence starts at 1.</p>
+<p>The <code>root</code> grammatical relation points to the root of the sentence. A fake node <code>ROOT</code> is used as the governor. The <code>ROOT</code> node is indexed with 0, since the indexing of real words in the sentence starts at 1. (The <code>ROOT</code> node is not represented
+explicitly in CoNLL-U.)</p>
 
 <pre><code class="language-sdparse">ROOT I love French fries .
 root(ROOT, love)
 </code></pre>
 
-<p><strong>Note: The following rule is not part of the official UD guidelines
-version 1. But it has been agreed that it should become part of the future
-versions of the standard, and the treebanks since release 1.2 should follow
-it.</strong></p>
-
-<p>There should be just one node with the <code>root</code> dependency relation in every
-tree. If the main predicate is not present (due to ellipsis) and there are
-multiple orphaned dependents, the leftmost dependent should be promoted to
-the head (root) position and the other orphans should be attached to it.</p>
+<p><strong>New from v2:</strong> There should be just one node with the <code>root</code> dependency relation in every tree. 
+If the main predicate is not present (due to ellipsis) and there are multiple orphaned dependents, 
+one of these is promoted to the head (root) position and the other orphans are attached to it.
+(This rule has in practice been followed since release v1.2 but was not explicitly stated in the
+original v1 guidelines.)</p>
 
 <pre><code class="language-sdparse">ROOT And Robert the fourth place .
-root(ROOT, And)
-nsubj(And, Robert)
-dobj(And, place)
-punct(And, .)
+root(ROOT, Robert)
+cc(Robert, And)
+orphan(Robert, place)
+punct(Robert, .)
 amod(place, fourth)
 det(place, the)
 </code></pre>
