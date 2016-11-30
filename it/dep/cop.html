@@ -45,7 +45,7 @@
 
           <h2><code>cop</code>: copula</h2>
 
-<p>A copula is the relation between the complement of a copular verb and the copular verb essere (only). The copula be is not treated as the head of a clause, but rather as the dependent of a lexical predicate, as exemplified below.</p>
+<p>A copula is the relation between the complement of a copular verb and the copular verb <em>essere</em> (in Italian this is the only verb that can be a copula). The copula be is not treated as the head of a clause, but rather as the dependent of a lexical predicate, as exemplified below, which can be an adjective, a noun or a pronoun.</p>
 
 <pre><code class="language-sdparse">I cinque sarebbero tutti immigrati clandestini
 nsubj(immigrati, cinque)
@@ -55,23 +55,19 @@ cop(immigrati, sarebbero)
 cop(ambiziosi, sono)
 </code></pre>
 <pre><code class="language-sdparse">Secondo l' Onu sono 200 mila le persone
-nsubj(persone, mila)
+nsubj(mila, persone)
 compound(mila, 200)
 cop(mila, sono)
 </code></pre>
 
-<p>This analysis is generally not adopted when the predicate is a prepositional phrase, in which case the nominal part of the prepositional phrase is the head of the clause, with a few exception in case of idiomatic forms, such as <em>in forma</em> <em>in shape</em>, expressing a property.</p>
+<p>In predicative wh-constructions, the fronted wh-word is the head, and the copula is another <code>cop</code>.</p>
 
-<pre><code class="language-sdparse">La scultura è di il pachistano Hamad Butt
-nsubj(è, scultura)
-case(Hamad, di)
-det(Hamad, il)
-nmod(è, Hamad)
-amod(Hamad, pachistano)
-name(Hamad, Butt)
+<pre><code class="language-sdparse">Qual è la capitale della Nuova Zelanda ?
+nsubj(Qual, capitale)
+cop(Qual, è)
 </code></pre>
 
-<p>If the copula is accompanied by other verbal auxiliaries (e.g. for tense), they are taken as dependents of the lexical predicate:</p>
+<p>If the copula comes together another verbal auxiliaries (e.g. because of the tense), they are taken as dependents of the lexical predicate:</p>
 
 <pre><code class="language-sdparse">Non venne mai chiarito quale formazione era stata responsabile
 det(formazione, quale)
@@ -80,6 +76,65 @@ aux(responsabile, era)
 cop(responsabile, stata)
 </code></pre>
 
+<p>The verb <em>essere</em> is not always marked as copula, but can also be the main verb of the clause. This analysis is generally adopted when:</p>
+
+<ul>
+  <li>the verb <em>essere</em> is used in presentational or existential constructions where it has an existential or locative meaning;</li>
+</ul>
+
+<pre><code class="language-sdparse">ROOT Vi sono migliaia di casi di questo genere
+root(ROOT, sono)
+expl(sono, Vi)
+nsubj(sono, migliaia)
+</code></pre>
+<pre><code class="language-sdparse">ROOT In armeria ci sono 300 armature
+root(ROOT, sono)
+expl(sono, ci)
+nsubj(sono, armeria)
+</code></pre>
+<pre><code class="language-sdparse">ROOT Il Presidente è in il mirino dei suoi attacchi
+root(ROOT, è)
+nsubj(è, Presidente)
+nmod(è, mirino)
+</code></pre>
+
+<ul>
+  <li>the predicate is a prepositional phrase, in which case the nominal part of the prepositional phrase is the head of a <a href="">nmod</a> relation, with a few exception in case of idiomatic forms, such as <em>in forma</em> (in shape).</li>
+</ul>
+
+<pre><code class="language-sdparse">ROOT La scultura è di il pachistano Hamad Butt
+root(ROOT, è)
+nsubj(è, scultura)
+case(Hamad, di)
+det(Hamad, il)
+nmod(è, Hamad)
+amod(Hamad, pachistano)
+name(Hamad, Butt)
+</code></pre>
+<pre><code class="language-sdparse">ROOT Oggi è in grado di dir ci qualcosa
+root(ROOT, è)
+nmod(è, grado)
+case(grado, in)
+acl(grado, dir)
+mark(dir, di)
+iobj(dir, ci)
+</code></pre>
+<pre><code class="language-sdparse">Per essere in forma
+cop(forma, essere)
+case(forma, in)
+</code></pre>
+
+<ul>
+  <li>the complement of the verb <em>essere</em> is a subordinate clause</li>
+</ul>
+
+<pre><code class="language-sdparse">ROOT La verità è che la spesa sanitaria sta esplodendo
+root(ROOT, è)
+nsubj(è, verità)
+ccomp(è, esplodendo)
+nsubj(esplodendo, spesa)
+mark(esplodendo, che)
+</code></pre>
 
 
 <!-- "automatic stats" -->
