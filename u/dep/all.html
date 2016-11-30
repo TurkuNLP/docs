@@ -538,26 +538,6 @@ aux(left, have)
 
 <p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/aux_.md" target="#">edit aux</a></p>
 
-<p><a id="al-u-dep/auxpass" class="al-dest"></a></p>
-<h2><code>auxpass</code>: passive auxiliary</h2>
-
-<p>A passive auxiliary of a clause is a non-main verb of the clause which
-contains the passive information.</p>
-
-<pre><code class="language-sdparse">Kennedy has been killed
-auxpass(killed, been)
-</code></pre>
-
-<pre><code class="language-sdparse">Kennedy was killed
-auxpass(killed, was)
-</code></pre>
-
-<pre><code class="language-sdparse">Kennedy got killed
-auxpass(killed, got)
-</code></pre>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/v1/auxpass.md" target="#">edit auxpass</a></p>
-
 <p><a id="al-u-dep/case" class="al-dest"></a></p>
 <h2><code>case</code>: case marking</h2>
 
@@ -1139,19 +1119,6 @@ csubj:pass(received, said)
 
 <p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/csubj.md" target="#">edit csubj</a></p>
 
-<p><a id="al-u-dep/csubjpass" class="al-dest"></a></p>
-<h2><code>csubjpass</code>: clausal passive subject</h2>
-
-<p>A clausal passive subject is a clausal syntactic subject of a passive
-clause (or more generally, any voice where the proto-agent argument does not become the subject 
-of the clause). In the example below, <em>that she lied</em> is the subject.</p>
-
-<pre><code class="language-sdparse">That she lied was suspected by everyone
-csubjpass(suspected, lied)
-</code></pre>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/v1/csubjpass.md" target="#">edit csubjpass</a></p>
-
 <p><a id="al-u-dep/dep" class="al-dest"></a></p>
 <h2><code>dep</code>: unspecified dependency</h2>
 
@@ -1236,37 +1203,6 @@ dislocated(kserume, jani)
 
 <p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/dislocated.md" target="#">edit dislocated</a></p>
 
-<p><a id="al-u-dep/dobj" class="al-dest"></a></p>
-<h2><code>dobj</code>: direct object</h2>
-
-<p>The direct object of a verb is the second most core argument of a verb after the subject. 
-Typically, it is the noun phrase that denotes the entity acted upon or which undergoes a change of state or motion (the proto-patient).</p>
-
-<pre><code class="language-sdparse">She gave me a raise
-dobj(gave, raise)
-</code></pre>
-
-<p>In languages distinguishing morphological <a href="u-feat/Case">cases</a>, the
-direct object will often be marked by the accusative case. However,
-verb valency may occasionally dictate a different form, such as the
-dative case in the following German example:</p>
-
-<pre><code class="language-sdparse">jemandem begegnen \n someone.Dat to-meet
-dobj(begegnen, jemandem)
-</code></pre>
-
-<p>In general, if there is just one object, it should be labeled <code>dobj</code>,
-regardless of the morphological case or semantic role that it bears. If there are two or more
-objects, one of them should be <code>dobj</code> and the others should be
-<a href="">iobj</a>. In such cases it is necessary to decide what is the most
-directly affected object <em>(patient).</em> The one exception is when there is a clausal complement. 
-Then the clausal complement is regarded as a “clausal direct object” and an object nominal will be an iobj. 
-There is more discussion of constructions with multiple objects
-on the page for <a href="">iobj</a>. If possible, language-specific
-documentation should be available to help identify direct objects.</p>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/v1/dobj.md" target="#">edit dobj</a></p>
-
 <p><a id="al-u-dep/expl" class="al-dest"></a></p>
 <h2><code>expl</code>: expletive</h2>
 
@@ -1344,28 +1280,6 @@ expl(fears, REFLEX)
 <p>Further general discussion of expletives can be found in Postal, P. M., and G. K. Pullum (1988) “Expletive Noun Phrases in Subcategorized Positions,” <em>Linguistic Inquiry</em> 19(4): 635–670. The status of clitic doubling, and arguments for the lexical nominal being an argument with the clitic a kind of pronominal copy, appear inter alia in Boris Harizanov (2014) <a href="http://stanford.edu/~bharizan/pdfs/Harizanov_2014_NLLT.pdf">Clitic doubling at the syntax-morphology interface: A-movement and morphological merger in Bulgarian</a>. <em>Natural Language and Linguistic Theory</em>.</p>
 
 <p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/expl.md" target="#">edit expl</a></p>
-
-<p><a id="al-u-dep/foreign" class="al-dest"></a></p>
-<h2><code>foreign</code>: foreign words</h2>
-
-<p>We use <code>foreign</code> to label sequences of foreign words. These are given
-a linear analysis: the head is the first token in the foreign phrase.</p>
-
-<p><code>foreign</code> does not apply to loanwords or to foreign <a href="name">names</a>. 
-It applies to quoted foreign text incorporated in a sentence/discourse
-of the host language (unless we want to and know how to annotate the
-internal structure according to the syntax of the foreign language).</p>
-
-<pre><code class="language-sdparse">I guess that c' est la vie
-nsubj(guess-2, I-1)
-ccomp(guess-2, c'-4)
-mark(c'-4, that-3)
-foreign(c'-4, est-5)
-foreign(c'-4, la-6)
-foreign(c'-4, vie-7)
-</code></pre>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/v1/foreign.md" target="#">edit foreign</a></p>
 
 <p><a id="al-u-dep/goeswith" class="al-dest"></a></p>
 <h2><code>goeswith</code>: goes with</h2>
@@ -1497,138 +1411,6 @@ mark(bring, to-22)
 
 <p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/mark.md" target="#">edit mark</a></p>
 
-<p><a id="al-u-dep/mwe" class="al-dest"></a></p>
-<h2><code>mwe</code>: multi-word expression</h2>
-
-<p>The multi-word expression (modifier) relation is one of the three
-relations (<a href="">compound</a>, <code>mwe</code>, <a href="">name</a>) for compounding.
-It is used for certain fixed grammaticized expressions that behave
-like function words or short adverbials.</p>
-
-<p>The scope of <code>mwe</code> annotation corresponds roughly to the <em>fixed
-expressions</em> category of
-<a href="http://lingo.stanford.edu/pubs/WP-2001-03.pdf">Sag et al.</a>, but
-excludes any relations in scope of <a href="">name</a> or <a href="">compound</a>.
-Additionally, limited morphosyntactic variation may be allowed
-for MWEs in exceptional cases.</p>
-
-<pre><code class="language-sdparse">I like dogs as well as cats
-mwe(as-4, well-5)
-mwe(as-4, as-6)
-</code></pre>
-
-<pre><code class="language-sdparse">He cried because of you
-mwe(because, of)
-</code></pre>
-
-<pre><code class="language-sdparse">Je préfère prendre un dessert plutôt qu' une entrée \n I prefer getting a dessert rather than an appetizer
-mwe(plutôt, qu')
-</code></pre>
-
-<p>Multiword expressions are annotated in a flat, head-initial structure,
-in which all words in the expression modify the first one using the
-<code>mwe</code> label.</p>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/v1/mwe.md" target="#">edit mwe</a></p>
-
-<p><a id="al-u-dep/name" class="al-dest"></a></p>
-<h2><code>name</code>: name</h2>
-
-<p><code>name</code> is one of the three relations for compounding in UD (together
-with <a href="">compound</a> and <a href="">mwe</a>).
-It is used for proper nouns constituted of multiple nominal
-elements. For example, <code>name</code> would be used between the words of
-<em>Hillary Rodham Clinton, New York,</em> or <em>Carl XVI Gustaf</em> but not to
-replace the usual relations in a phrasal or clausal name like <em>The
-king of Sweden</em> or the novels <em>The Lord of the Rings</em> and <em>Captured By
-Aliens.</em>
-Words joined by <code>name</code> should all be part of a minimal noun phrase;
-otherwise regular syntactic relations should be used.  This is
-basically similar to the treatment of noun compounds with
-<a href="">compound</a>, except that in many cases parts of the name may be
-another nominal element such as an adjective <em>(United Airlines).</em></p>
-
-<p>In general, names are annotated in a flat, head-initial structure, in
-which all words in the name modify the first one using the <code>name</code>
-label.</p>
-
-<pre><code class="language-sdparse">Carl XVI Gustaf
-name(Carl-1, Gustaf-3)
-name(Carl-1, XVI-2)
-</code></pre>
-
-<p>For organization names with clear syntactic modification structure, the dependencies should reflect the syntactic modification structure using regular syntactic relation, as in:.</p>
-
-<pre><code class="language-sdparse">Natural Resources Conservation Service
-amod(Resources-2, Natural-1)
-compound(Conservation-3, Resources-2)
-compound(Service-4, Conservation-3)
-</code></pre>
-
-<p>In addition, regular syntactic relations are used:
-(i) for a modifying determiner or
-(ii) to connect together the words of a description or name which involve embedded prepositional phrases, sentences, etc.</p>
-
-<pre><code class="language-sdparse">Le Japon
-det(Japon-2, Le-1)
-</code></pre>
-
-<pre><code class="language-sdparse">Ludwig van Beethoven
-case(Beethoven, van)
-</code></pre>
-
-<pre><code class="language-sdparse">Miguel de Cervantes y Saavedra
-conj(Cervantes, Saavedra)
-cc(Cervantes, y)
-case(Cervantes, de)
-</code></pre>
-
-<pre><code class="language-sdparse">The king of Sweden
-det(king-2, The-1)
-nmod(king-2, Sweden-4)
-case(Sweden-4, of-3)
-</code></pre>
-
-<pre><code class="language-sdparse">Río de la Plata
-case(Plata-4, de-2)
-det(Plata-4, la-3)
-nmod(Río-1, Plata-4)
-</code></pre>
-
-<p>In the case of proper entities named after people, e.g. <em>Leland Stanford Jr. University</em>, the <code>name</code> relation should only be used inside the person name, with the rest of the construction analyzed compositionally using normal syntactic relations:</p>
-
-<pre><code class="language-sdparse">Leland Stanford Jr. University
-compound(University-4, Leland-1)
-name(Stanford-2, Leland-1)
-name(Jr.-3, Leland-1)
-</code></pre>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/v1/name.md" target="#">edit name</a></p>
-
-<p><a id="al-u-dep/neg" class="al-dest"></a></p>
-<h2><code>neg</code>: negation modifier</h2>
-
-<p>The negation modifier is the relation between a negation word and the
-word it modifies.</p>
-
-<p>Modifiers labeled <code>neg</code> depend either on a noun (group “noun
-dependents”) or on a predicate (group “non-core dependents of clausal
-predicates”).</p>
-
-<pre><code class="language-sdparse">Bill is not a scientist
-neg(scientist, not)
-</code></pre>
-
-<pre><code class="language-sdparse">Bill is no scientist
-neg(scientist, no)
-</code></pre>
-
-<pre><code class="language-sdparse">Bill does n't drive
-neg(drive, n't)
-</code></pre>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/v1/neg.md" target="#">edit neg</a></p>
-
 <p><a id="al-u-dep/nmod" class="al-dest"></a></p>
 <h2><code>nmod</code>: nominal modifier</h2>
 
@@ -1712,18 +1494,6 @@ nsubj(existed, that)
 </code></pre>
 
 <p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/nsubj.md" target="#">edit nsubj</a></p>
-
-<p><a id="al-u-dep/nsubjpass" class="al-dest"></a></p>
-<h2><code>nsubjpass</code>: passive nominal subject</h2>
-
-<p>A passive nominal subject is a noun phrase which is the syntactic
-subject of a passive clause (or more generally, any voice where the proto-agent argument does not become the subject of the clause).</p>
-
-<pre><code class="language-sdparse">Dole was defeated by Clinton
-nsubjpass(defeated, Dole)
-</code></pre>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/v1/nsubjpass.md" target="#">edit nsubjpass</a></p>
 
 <p><a id="al-u-dep/nummod" class="al-dest"></a></p>
 <h2><code>nummod</code>: numeric modifier</h2>
@@ -2058,109 +1828,6 @@ punct(Compare, .-34)
 </div>
 
 <p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/punct.md" target="#">edit punct</a></p>
-
-<p><a id="al-u-dep/remnant" class="al-dest"></a></p>
-<h2><code>remnant</code>: remnant in ellipsis</h2>
-
-<p>The <code>remnant</code> relation is used to provide a satisfactory treatment of ellipsis (in
-the case of gapping and stripping, where a predicational or verbal
-head gets elided). This is something that was lacking in earlier versions
-of SD and provides a basis for being able to reconstruct dependencies
-in the enhanced representation of UD. 
-In particular, the goal was to achieve this <em>without</em> having to postulate empty nodes in the basic representation.</p>
-
-<p>To develop motivation, consider first a sentence without ellipsis:</p>
-
-<pre><code class="language-sdparse">Marie went to Paris and Miriam went to Prague
-nsubj(went-2, Marie-1)
-root(root-0, went-2)
-nmod(went-2, Paris-4)
-case(Paris-4, to-3)
-cc(went-2, and-5)
-nsubj(went-7, Miriam-6)
-conj(went-2, went-7)
-case(Prague-9, to-8)
-nmod(went-7, Prague-9)
-</code></pre>
-
-<p>The question is then how to treat: <em>Marie went to Paris and Miriam to Prague</em></p>
-
-<pre><code class="language-sdparse">Marie went to Paris and Miriam to Prague
-nsubj(went-2, Marie-1)
-root(root-0, went-2)
-nmod(went-2, Paris-4)
-case(Paris-4, to-3)
-cc(went-2, and-5)
-case(Prague-8, to-7)
-</code></pre>
-
-<p>One option would be to pretend that there is an empty verb and to have the final elements be dependents of it: <em>Marie went to Paris and Miriam ∅ to Prague</em>. This analysis has some appeal but also has some problems and at any rate stops the basic dependency graph from being simply a tree of dependencies over the words of a sentence. A second option is to simply promote the final elements and to have them as dependents of the main verb of the sentence (<em>went-2</em>) or of <em>root-0</em>. But then (in general) one loses the ability to successfully reconstruct the correct predicate-argument structure of the sentence from the basic dependency representation.</p>
-
-<p>Therefore, UD adopts an analysis that notes that in ellipsis a <code>remnant</code> corresponds to a <em>correlate</em> in a preceding clause. The <code>remnant</code> relation connects each remnant to its correlate in the basic dependency representation. This is then a sufficient representation to reconstruct the predicate-argument structure in the enhanced representation. So, for this example, we have:</p>
-
-<pre><code class="language-sdparse">Marie went to Paris and Miriam to Prague
-nsubj(went-2, Marie-1)
-root(root-0, went-2)
-nmod(went-2, Paris-4)
-case(Paris-4, to-3)
-cc(went-2, and-5)
-remnant(Marie-1, Miriam-6)
-case(Prague-8, to-7)
-remnant(Paris-4, Prague-8)
-</code></pre>
-
-<p>Even in the more complex example below, the <code>remnant</code>
-relations enable us to correctly retrieve the subjects and objects in
-the clauses with an elided verb.</p>
-
-<pre><code class="language-sdparse">John won bronze , Mary silver , and Sandy gold
-nsubj(won-2, John-1)
-dobj(won-2, bronze-3)
-remnant(John-1, Mary-5)
-remnant(Mary-5, Sandy-9)
-remnant(bronze-3, silver-6)
-remnant(silver-6, gold-10)
-</code></pre>
-
-<p>Note in particular that (unlike for <a href="">conj</a>), <code>remnant</code> uses a chaining analysis where each subsequent remnant depends on the immediately preceding remnant/correlate. The reason for this is that otherwise in a sentence with 2 or more chained ellipses the dependency structure would no longer track which remnants go together. It would become impossible to determine whether Mary won silver and Sandy gold, or Mary won gold and Sandy silver.</p>
-
-<p>It is also possible that the incomplete part precedes the complete one in the sentence [de]:</p>
-
-<pre><code class="language-sdparse">während 78 Prozent sich für Bush und vier Prozent für Clinton aussprachen \n while 78 percent REFL for Bush and four percent for Clinton spoke-out
-nsubj(aussprachen, Prozent-9)
-nsubj(spoke-out, percent-22)
-nmod(aussprachen, Clinton-11)
-nmod(spoke-out, Clinton-24)
-remnant(Prozent-9, Prozent-3)
-remnant(percent-22, percent-16)
-remnant(Clinton-11, Bush-6)
-remnant(Clinton-24, Bush-19)
-</code></pre>
-
-<p>The <code>remnant</code> relation is used when no predicational material is present. In contrast, in right-node-raising (RNR) and VP-ellipsis constructions in which some kind of predicational or verbal material is still present, the <code>remnant</code> relation is not used. In RNR, the verbs
-are coordinated and the object is a <a href="">dobj</a> of the first verb:</p>
-
-<pre><code class="language-sdparse">John bought and ate an apple
-nsubj(bought-2, John-1)
-cc(bought-2, and-3)
-conj(bought-2, ate-4)
-det(apple-6, an-5)
-dobj(bought-2, apple-6)
-</code></pre>
-
-<p>In VP-ellipsis, we keep the auxiliary as the head, as shown below:</p>
-
-<pre><code class="language-sdparse">John will win gold and Mary will too
-nsubj(win-3, John-1)
-aux(win-3, will-2)
-dobj(win-3, gold-4)
-cc(win-3, and-5)
-conj(win-3, will-7)
-nsubj(will-7, Mary-6)
-advmod(will-7, too-8)
-</code></pre>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/v1/remnant.md" target="#">edit remnant</a></p>
 
 <p><a id="al-u-dep/reparandum" class="al-dest"></a></p>
 <h2><code>reparandum</code>: overridden disfluency</h2>
