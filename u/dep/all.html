@@ -710,6 +710,7 @@ a preceding <a href="../pos/CCONJ">coordinating conjunction</a>.
 We take the first conjunct as the head of the coordination.)--></p>
 
 <pre><code class="language-sdparse">Bill is big and honest
+conj(big, honest)
 cc(honest, and)
 </code></pre>
 
@@ -718,7 +719,7 @@ sentence. This is also called a <code>cc</code>, even though there is no precedi
 (except implicitly or in a preceding sentence).</p>
 
 <pre><code class="language-sdparse">And then we left .
-cc(left, left)
+cc(left, And)
 </code></pre>
 
 <div id="punct1" class="sd-parse">
