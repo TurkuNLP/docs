@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-cs">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/cs/feat">cs/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-feat/Hyph.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cs">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/cs/feat">cs/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-feat/Hyph.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -47,6 +64,13 @@
 
 <h2><code>Hyph</code>: hyphenated compound or part of it</h2>
 
+<table class="typeindex" border="1">
+<tr>
+  <td style="background-color:cornflowerblue;color:white"><strong>Values:</strong> </td>
+  <td><a href="#Yes">Yes</a></td>
+</tr>
+</table>
+
 <p>Boolean feature. Is this the first part of a hyphenated compound?</p>
 
 <p>Compound adjectives with hyphens, such as <em>česko-slovenský </em> “Czech-Slovak” get split during
@@ -54,7 +78,7 @@ tokenization. The last part, <em>slovenský, </em> is an independent adjective 
 paradigm. However, the first part, <em>česko, </em> is a form that does not occur elsewhere than in
 compounds (the independent form would be <em>český</em>).</p>
 
-<h3 id="yes-it-is-part-of-hyphenated-compound">Yes: it is part of hyphenated compound</h3>
+<h3 id="a-nameyesyesa-it-is-part-of-hyphenated-compound"><a name="Yes"><code>Yes</code></a>: it is part of hyphenated compound</h3>
 
 <h4 id="examples">Examples</h4>
 
@@ -77,24 +101,24 @@ compounds (the independent form would be <em>český</em>).</p>
 <p>This feature is language-specific.
 It occurs with 1 different values: <code>Yes</code>.</p>
 
-<p>398 tokens (0%) have a non-empty value of <code>Hyph</code>.
-146 types (0%) occur at least once with a non-empty value of <code>Hyph</code>.
-136 lemmas (0%) occur at least once with a non-empty value of <code>Hyph</code>.
-The feature is used with 1 part-of-speech tags: <a href="">cs-pos/ADJ</a> (398; 0% instances).</p>
+<p>348 tokens (0%) have a non-empty value of <code>Hyph</code>.
+130 types (0%) occur at least once with a non-empty value of <code>Hyph</code>.
+122 lemmas (0%) occur at least once with a non-empty value of <code>Hyph</code>.
+The feature is used with 1 part-of-speech tags: <a href="">cs-pos/ADJ</a> (348; 0% instances).</p>
 
 <h3 id="adj"><code>ADJ</code></h3>
 
-<p>398 <a href="">cs-pos/ADJ</a> tokens (0% of all <code>ADJ</code> tokens) have a non-empty value of <code>Hyph</code>.</p>
+<p>348 <a href="">cs-pos/ADJ</a> tokens (0% of all <code>ADJ</code> tokens) have a non-empty value of <code>Hyph</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Hyph</code> co-occurred: <tt><a href="Case.html">Case</a>=EMPTY</tt> (398; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (398; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (398; 100%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (398; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (398; 100%), <tt><a href="Negative.html">Negative</a>=Pos</tt> (397; 100%).</p>
+<p>The most frequent other feature values with which <code>ADJ</code> and <code>Hyph</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (348; 100%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (348; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (348; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (348; 100%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (348; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (347; 100%).</p>
 
 <p><code>ADJ</code> tokens may have the following values of <code>Hyph</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (398; 100% of non-empty <code>Hyph</code>): <em>česko, izraelsko, německo, rusko, srbsko, americko, matematicko, polsko, maďarsko, anglo</em></li>
+  <li><code>Yes</code> (348; 100% of non-empty <code>Hyph</code>): <em>česko, izraelsko, německo, rusko, srbsko, americko, matematicko, maďarsko, moravsko, polsko</em></li>
 </ul>
 
-<p><code>Hyph</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (136) occur only with one value of <code>Hyph</code>.</p>
+<p><code>Hyph</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (122) occur only with one value of <code>Hyph</code>.</p>
 
 <hr />
 
@@ -103,21 +127,21 @@ The feature is used with 1 part-of-speech tags: <a href="">cs-pos/ADJ</a> (398; 
 <p>This feature is language-specific.
 It occurs with 1 different values: <code>Yes</code>.</p>
 
-<p>132 tokens (0%) have a non-empty value of <code>Hyph</code>.
+<p>130 tokens (0%) have a non-empty value of <code>Hyph</code>.
 65 types (0%) occur at least once with a non-empty value of <code>Hyph</code>.
 60 lemmas (0%) occur at least once with a non-empty value of <code>Hyph</code>.
-The feature is used with 1 part-of-speech tags: <a href="">cs-pos/ADJ</a> (132; 0% instances).</p>
+The feature is used with 1 part-of-speech tags: <a href="">cs-pos/ADJ</a> (130; 0% instances).</p>
 
 <h3 id="adj-1"><code>ADJ</code></h3>
 
-<p>132 <a href="">cs-pos/ADJ</a> tokens (0% of all <code>ADJ</code> tokens) have a non-empty value of <code>Hyph</code>.</p>
+<p>130 <a href="">cs-pos/ADJ</a> tokens (0% of all <code>ADJ</code> tokens) have a non-empty value of <code>Hyph</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Hyph</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (132; 100%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (132; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (132; 100%), <tt><a href="Negative.html">Negative</a>=Pos</tt> (132; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (132; 100%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (132; 100%).</p>
+<p>The most frequent other feature values with which <code>ADJ</code> and <code>Hyph</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (130; 100%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (130; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (130; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (130; 100%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (130; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (130; 100%).</p>
 
 <p><code>ADJ</code> tokens may have the following values of <code>Hyph</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (132; 100% of non-empty <code>Hyph</code>): <em>elektro, marxisticko, Karpatsko, teoreticko, rakousko, československo, dodavatelsko, Koh, francouzsko, hospodářsko</em></li>
+  <li><code>Yes</code> (130; 100% of non-empty <code>Hyph</code>): <em>marxisticko, elektro, Karpatsko, rakousko, teoreticko, československo, dodavatelsko, Koh, francouzsko, hospodářsko</em></li>
 </ul>
 
 <p><code>Hyph</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (60) occur only with one value of <code>Hyph</code>.</p>
@@ -134,21 +158,21 @@ The feature is used with 1 part-of-speech tags: <a href="">cs-pos/ADJ</a> (132; 
 <p>This feature is language-specific.
 It occurs with 1 different values: <code>Yes</code>.</p>
 
-<p>11 tokens (0%) have a non-empty value of <code>Hyph</code>.
-3 types (0%) occur at least once with a non-empty value of <code>Hyph</code>.
-3 lemmas (0%) occur at least once with a non-empty value of <code>Hyph</code>.
-The feature is used with 1 part-of-speech tags: <a href="">cs-pos/ADJ</a> (11; 0% instances).</p>
+<p>10 tokens (0%) have a non-empty value of <code>Hyph</code>.
+2 types (0%) occur at least once with a non-empty value of <code>Hyph</code>.
+2 lemmas (0%) occur at least once with a non-empty value of <code>Hyph</code>.
+The feature is used with 1 part-of-speech tags: <a href="">cs-pos/ADJ</a> (10; 0% instances).</p>
 
 <h3 id="adj-2"><code>ADJ</code></h3>
 
-<p>11 <a href="">cs-pos/ADJ</a> tokens (0% of all <code>ADJ</code> tokens) have a non-empty value of <code>Hyph</code>.</p>
+<p>10 <a href="">cs-pos/ADJ</a> tokens (0% of all <code>ADJ</code> tokens) have a non-empty value of <code>Hyph</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Hyph</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (11; 100%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (11; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (11; 100%), <tt><a href="Negative.html">Negative</a>=Pos</tt> (11; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (11; 100%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (11; 100%).</p>
+<p>The most frequent other feature values with which <code>ADJ</code> and <code>Hyph</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (10; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (10; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (10; 100%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (10; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (10; 100%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (10; 100%).</p>
 
 <p><code>ADJ</code> tokens may have the following values of <code>Hyph</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (11; 100% of non-empty <code>Hyph</code>): <em>do, od, pod</em></li>
+  <li><code>Yes</code> (10; 100% of non-empty <code>Hyph</code>): <em>do, od</em></li>
 </ul>
 
 
@@ -156,6 +180,17 @@ The feature is used with 1 part-of-speech tags: <a href="">cs-pos/ADJ</a> (11; 0
 
 <!-- "in other languages" links -->
 <hr/>
+
+Hyph in other languages:
+
+[<a href="../../cs/feat/Hyph.html">cs</a>]
+
+[<a href="../../et/feat/Hyph.html">et</a>]
+
+[<a href="../../pl/feat/Hyph.html">pl</a>]
+
+[<a href="../../pt/feat/Hyph.html">pt</a>]
+
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ur">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ur/dep">ur/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ur-dep/iobj.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ur">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ur/dep">ur/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ur-dep/iobj.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -56,14 +73,108 @@ for <code>iobj</code>.</p>
 
 
 
+
+<hr />
+
+<h2 id="treebank-statistics-udurdu">Treebank Statistics (UD_Urdu)</h2>
+
+<p>This relation is universal.</p>
+
+<p>824 nodes (1%) are attached to their parents as <code>iobj</code>.</p>
+
+<p>816 instances of <code>iobj</code> (99%) are right-to-left (child precedes parent).
+Average distance between parent and child is 6.38228155339806.</p>
+
+<p>The following 21 pairs of parts of speech are connected with <code>iobj</code>: <a href="">ur-pos/VERB</a>-<a href="">ur-pos/NOUN</a> (439; 53% instances), <a href="">ur-pos/VERB</a>-<a href="">ur-pos/PROPN</a> (215; 26% instances), <a href="">ur-pos/VERB</a>-<a href="">ur-pos/PRON</a> (127; 15% instances), <a href="">ur-pos/NOUN</a>-<a href="">ur-pos/NOUN</a> (8; 1% instances), <a href="">ur-pos/VERB</a>-<a href="">ur-pos/VERB</a> (8; 1% instances), <a href="">ur-pos/NOUN</a>-<a href="">ur-pos/PROPN</a> (4; 0% instances), <a href="">ur-pos/ADJ</a>-<a href="">ur-pos/NOUN</a> (3; 0% instances), <a href="">ur-pos/ADJ</a>-<a href="">ur-pos/PRON</a> (3; 0% instances), <a href="">ur-pos/NOUN</a>-<a href="">ur-pos/PRON</a> (3; 0% instances), <a href="">ur-pos/NOUN</a>-<a href="">ur-pos/ADJ</a> (2; 0% instances), <a href="">ur-pos/VERB</a>-<a href="">ur-pos/ADJ</a> (2; 0% instances), <a href="">ur-pos/ADJ</a>-<a href="">ur-pos/PROPN</a> (1; 0% instances), <a href="">ur-pos/NOUN</a>-<a href="">ur-pos/ADP</a> (1; 0% instances), <a href="">ur-pos/NOUN</a>-<a href="">ur-pos/VERB</a> (1; 0% instances), <a href="">ur-pos/NUM</a>-<a href="">ur-pos/ADP</a> (1; 0% instances), <a href="">ur-pos/PRON</a>-<a href="">ur-pos/DET</a> (1; 0% instances), <a href="">ur-pos/PROPN</a>-<a href="">ur-pos/ADP</a> (1; 0% instances), <a href="">ur-pos/PROPN</a>-<a href="">ur-pos/PART</a> (1; 0% instances), <a href="">ur-pos/PROPN</a>-<a href="">ur-pos/PRON</a> (1; 0% instances), <a href="">ur-pos/PUNCT</a>-<a href="">ur-pos/NOUN</a> (1; 0% instances), <a href="">ur-pos/VERB</a>-<a href="">ur-pos/NUM</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 9	bgColor:blue
+# visual-style 9	fgColor:white
+# visual-style 9 5 iobj	color:blue
+1	اس	یہ	DET	DEM	Case=Nom|Number=Sing|Person=3|PronType=Dem	2	det	_	ChunkId=NP|ChunkType=child
+2	سلسلے	سلسلہ	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	9	advmod	_	Vib=0|Tam=0|ChunkId=NP|ChunkType=head
+3	مےں	مےں	ADP	PSP	AdpType=Post	2	case	_	ChunkId=NP|ChunkType=child
+4	دو	دو	NUM	QC	NumType=Card	5	nummod	_	ChunkId=NP2|ChunkType=child
+5	افراد	فرد	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	9	iobj	_	Vib=0|Tam=0|ChunkId=NP2|ChunkType=head
+6	کو	کو	ADP	PSP	AdpType=Post	5	case	_	ChunkId=NP2|ChunkType=child
+7	حراست	حراست	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	9	advmod	_	Vib=0|Tam=0|ChunkId=NP3|ChunkType=head
+8	مےں	مےں	ADP	PSP	AdpType=Post	7	case	_	ChunkId=NP3|ChunkType=child
+9	لیا	لے	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	Vib=یا|Tam=yA|ChunkId=VGF|ChunkType=head|Stype=declarative
+10	گیا	جا	AUX	VAUX	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part	9	aux	_	Vib=1یا|Tam=yA1|ChunkId=VGF|ChunkType=child
+11	ہے	ہے	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	SpaceAfter=No|Vib=ہے|Tam=hE|ChunkId=VGF|ChunkType=child
+12	۔	۔	PUNCT	SYM	_	9	punct	_	ChunkId=VGF|ChunkType=child
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 13	bgColor:blue
+# visual-style 13	fgColor:white
+# visual-style 13 7 iobj	color:blue
+1	انہوں	وہ	PRON	PRP	Case=Acc|Number=Sing|Person=3|Polite=Form|PronType=Prs	13	nsubj	_	Vib=0|Tam=0|ChunkId=NP|ChunkType=head
+2	نے	نے	ADP	PSP	AdpType=Post	1	case	_	ChunkId=NP|ChunkType=child
+3	پہلے	پہلے	ADV	NST	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing|Person=3	13	advmod	_	AltTag=ADV-NOUN|ChunkId=NP2|ChunkType=head
+4	ہی	ہی	PART	RP	_	3	dep	_	ChunkId=NP2|ChunkType=child
+5	ایس	ایس	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	7	compound	_	Vib=0|Tam=0|ChunkId=NP3|ChunkType=child
+6	آئی	آئی	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	7	compound	_	Vib=0|Tam=0|ChunkId=NP3|ChunkType=child
+7	ٹی	ٹی	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	13	iobj	_	Vib=0|Tam=0|ChunkId=NP3|ChunkType=head
+8	کو	کو	ADP	PSP	AdpType=Post	7	case	_	ChunkId=NP3|ChunkType=child
+9	تفصیلی	تفصیلی	ADJ	JJ	Case=Acc	10	amod	_	ChunkId=NP4|ChunkType=child
+10	حقائق	حقائق	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	13	obj	_	Vib=0|Tam=0|ChunkId=NP4|ChunkType=head
+11	سے	سے	ADP	PSP	AdpType=Post	10	case	_	ChunkId=NP4|ChunkType=child
+12	واقف	واقف	ADJ	JJ	_	13	compound	_	ChunkId=JJP|ChunkType=head
+13	کروا	کروا	VERB	VM	Voice=Act	0	root	_	Vib=0|Tam=0|ChunkId=VGF|ChunkType=head|Stype=declarative
+14	دیا	دے	AUX	VAUX	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part	13	aux	_	Vib=یا|Tam=yA|ChunkId=VGF|ChunkType=child
+15	تھا	تھا	AUX	VAUX	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	aux	_	SpaceAfter=No|Vib=تھا|Tam=WA|ChunkId=VGF|ChunkType=child
+16	۔	۔	PUNCT	SYM	_	13	punct	_	ChunkId=VGF|ChunkType=child
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 3 iobj	color:blue
+1	ڈاکٹروں	ڈاکٹر	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	8	nsubj	_	Vib=0|Tam=0|ChunkId=NP|ChunkType=head
+2	نے	نے	ADP	PSP	AdpType=Post	1	case	_	ChunkId=NP|ChunkType=child
+3	انہیں	وہ	PRON	PRP	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	5	iobj	_	Vib=0|Tam=0|ChunkId=NP2|ChunkType=head
+4	حیدرآباد	حیدرآباد	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	5	advmod	_	Vib=0|Tam=0|ChunkId=NP3|ChunkType=head
+5	جانے	جا	VERB	VM	Aspect=Perf|Case=Acc|VerbForm=Part	7	nmod	_	Vib=یا|Tam=yA|ChunkId=VGNN|ChunkType=head
+6	کا	کا	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	5	mark	_	ChunkId=VGNN|ChunkType=child
+7	مشورہ	مشورہ	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	8	compound	_	Vib=0|Tam=0|ChunkId=NP4|ChunkType=head
+8	دیا	دے	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No|Vib=یا|Tam=yA|ChunkId=VGF|ChunkType=head|Stype=declarative
+9	۔	۔	PUNCT	SYM	_	8	punct	_	ChunkId=VGF|ChunkType=child
+
+</code></pre>
+
+
+
+
 <!-- "in other languages" links -->
 <hr/>
 
 iobj in other languages:
 
+[<a href="../../am/dep/iobj.html">am</a>]
+
+[<a href="../../ar/dep/iobj.html">ar</a>]
+
 [<a href="../../bg/dep/iobj.html">bg</a>]
 
+[<a href="../../bxr/dep/iobj.html">bxr</a>]
+
+[<a href="../../ca/dep/iobj.html">ca</a>]
+
+[<a href="../../ckb/dep/iobj.html">ckb</a>]
+
+[<a href="../../cop/dep/iobj.html">cop</a>]
+
 [<a href="../../cs/dep/iobj.html">cs</a>]
+
+[<a href="../../cu/dep/iobj.html">cu</a>]
+
+[<a href="../../da/dep/iobj.html">da</a>]
 
 [<a href="../../de/dep/iobj.html">de</a>]
 
@@ -73,27 +184,95 @@ iobj in other languages:
 
 [<a href="../../es/dep/iobj.html">es</a>]
 
+[<a href="../../et/dep/iobj.html">et</a>]
+
 [<a href="../../eu/dep/iobj.html">eu</a>]
 
 [<a href="../../fa/dep/iobj.html">fa</a>]
 
+[<a href="../../fo/dep/iobj.html">fo</a>]
+
 [<a href="../../fr/dep/iobj.html">fr</a>]
 
-[<a href="../../ga/dep/iobj.html">ga</a>]
+[<a href="../../gl/dep/iobj.html">gl</a>]
+
+[<a href="../../got/dep/iobj.html">got</a>]
+
+[<a href="../../grc/dep/iobj.html">grc</a>]
 
 [<a href="../../he/dep/iobj.html">he</a>]
 
+[<a href="../../hi/dep/iobj.html">hi</a>]
+
+[<a href="../../hr/dep/iobj.html">hr</a>]
+
 [<a href="../../hu/dep/iobj.html">hu</a>]
+
+[<a href="../../id/dep/iobj.html">id</a>]
 
 [<a href="../../it/dep/iobj.html">it</a>]
 
 [<a href="../../ja/dep/iobj.html">ja</a>]
 
+[<a href="../../kk/dep/iobj.html">kk</a>]
+
+[<a href="../../kmr/dep/iobj.html">kmr</a>]
+
 [<a href="../../ko/dep/iobj.html">ko</a>]
+
+[<a href="../../la/dep/iobj.html">la</a>]
+
+[<a href="../../lv/dep/iobj.html">lv</a>]
+
+[<a href="../../mr/dep/iobj.html">mr</a>]
+
+[<a href="../../nl/dep/iobj.html">nl</a>]
+
+[<a href="../../no/dep/iobj.html">no</a>]
+
+[<a href="../../pl/dep/iobj.html">pl</a>]
+
+[<a href="../../pt/dep/iobj.html">pt</a>]
+
+[<a href="../../ro/dep/iobj.html">ro</a>]
+
+[<a href="../../ru/dep/iobj.html">ru</a>]
+
+[<a href="../../sa/dep/iobj.html">sa</a>]
+
+[<a href="../../sk/dep/iobj.html">sk</a>]
+
+[<a href="../../sla/dep/iobj.html">sla</a>]
+
+[<a href="../../sl/dep/iobj.html">sl</a>]
+
+[<a href="../../so/dep/iobj.html">so</a>]
+
+[<a href="../../sr/dep/iobj.html">sr</a>]
 
 [<a href="../../sv/dep/iobj.html">sv</a>]
 
+[<a href="../../swl/dep/iobj.html">swl</a>]
+
+[<a href="../../ta/dep/iobj.html">ta</a>]
+
+[<a href="../../tr/dep/iobj.html">tr</a>]
+
 [<a href="../../u/dep/iobj.html">u</a>]
+
+[<a href="../../ug/dep/iobj.html">ug</a>]
+
+[<a href="../../uk/dep/iobj.html">uk</a>]
+
+[<a href="../../ur/dep/iobj.html">ur</a>]
+
+[<a href="../../urj/dep/iobj.html">urj</a>]
+
+[<a href="../../vi/dep/iobj.html">vi</a>]
+
+[<a href="../../yue/dep/iobj.html">yue</a>]
+
+[<a href="../../zh/dep/iobj.html">zh</a>]
 
 
 

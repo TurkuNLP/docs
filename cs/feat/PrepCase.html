@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-cs">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/cs/feat">cs/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-feat/PrepCase.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cs">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/cs/feat">cs/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-feat/PrepCase.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -47,6 +64,14 @@
 
 <h2><code>PrepCase</code>: case form sensitive to prepositions</h2>
 
+<table class="typeindex" border="1">
+<tr>
+  <td style="background-color:cornflowerblue;color:white"><strong>Values:</strong> </td>
+  <td><a href="#Npr">Npr</a></td>
+  <td><a href="#Pre">Pre</a></td>
+</tr>
+</table>
+
 <p>Some personal pronouns
 have different forms depending on whether they are objects of
 prepositions or not.</p>
@@ -54,7 +79,7 @@ prepositions or not.</p>
 <p>Default empty value means that the word form is neutral w.r.t.
 prepositions.</p>
 
-<h3 id="npr-non-prepositional-case">Npr: non-prepositional case</h3>
+<h3 id="a-namenprnpra-non-prepositional-case"><a name="Npr"><code>Npr</code></a>: non-prepositional case</h3>
 
 <p>This word form must not be used after a preposition.</p>
 
@@ -64,7 +89,7 @@ prepositions.</p>
   <li><em><b>jeho</b>, <b>jemu</b>, <b>jím</b></em> “him” (<code>Gen,Acc</code>, <code>Dat</code>, <code>Ins</code>)</li>
 </ul>
 
-<h3 id="pre-prepositional-case">Pre: prepositional case</h3>
+<h3 id="a-namepreprea-prepositional-case"><a name="Pre"><code>Pre</code></a>: prepositional case</h3>
 
 <p>This word form must be used after a preposition.</p>
 
@@ -89,22 +114,22 @@ prepositions.</p>
 <p>This feature is language-specific.
 It occurs with 2 different values: <code>Npr</code>, <code>Pre</code>.</p>
 
-<p>4926 tokens (0%) have a non-empty value of <code>PrepCase</code>.
+<p>4367 tokens (0%) have a non-empty value of <code>PrepCase</code>.
 37 types (0%) occur at least once with a non-empty value of <code>PrepCase</code>.
 3 lemmas (0%) occur at least once with a non-empty value of <code>PrepCase</code>.
-The feature is used with 1 part-of-speech tags: <a href="">cs-pos/PRON</a> (4926; 0% instances).</p>
+The feature is used with 2 part-of-speech tags: <a href="">cs-pos/PRON</a> (4366; 0% instances), <a href="">cs-pos/DET</a> (1; 0% instances).</p>
 
 <h3 id="pron"><code>PRON</code></h3>
 
-<p>4926 <a href="">cs-pos/PRON</a> tokens (7% of all <code>PRON</code> tokens) have a non-empty value of <code>PrepCase</code>.</p>
+<p>4366 <a href="">cs-pos/PRON</a> tokens (11% of all <code>PRON</code> tokens) have a non-empty value of <code>PrepCase</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>PrepCase</code> co-occurred: <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (4926; 100%), <tt><a href="Variant.html">Variant</a>=EMPTY</tt> (4926; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (3023; 61%), <tt><a href="Person.html">Person</a>=3</tt> (2724; 55%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (2724; 55%).</p>
+<p>The most frequent other feature values with which <code>PRON</code> and <code>PrepCase</code> co-occurred: <tt><a href="Variant.html">Variant</a>=EMPTY</tt> (4366; 100%), <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (4366; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (2654; 61%), <tt><a href="Person.html">Person</a>=3</tt> (2431; 56%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (2431; 56%).</p>
 
 <p><code>PRON</code> tokens may have the following values of <code>PrepCase</code>:</p>
 
 <ul>
-  <li><code>Npr</code> (949; 19% of non-empty <code>PrepCase</code>): <em>jež, jehož, jenž, jemuž, jímž, jimž, jimiž, jichž, jíž, již</em></li>
-  <li><code>Pre</code> (3977; 81% of non-empty <code>PrepCase</code>): <em>nich, ní, něj, nichž, níž, něm, němž, ně, nimi, ním</em></li>
+  <li><code>Npr</code> (844; 19% of non-empty <code>PrepCase</code>): <em>jež, jehož, jenž, jemuž, jímž, jimiž, jimž, jichž, jíž, již</em></li>
+  <li><code>Pre</code> (3522; 81% of non-empty <code>PrepCase</code>): <em>nich, ní, něj, nichž, níž, němž, ně, něm, nimi, něho</em></li>
 </ul>
 
 <table>
@@ -135,6 +160,18 @@ The feature is used with 1 part-of-speech tags: <a href="">cs-pos/PRON</a> (4926
   <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Plur</tt></td><td><em>jež</em></td><td></td></tr>
 </table>
 
+<h3 id="det"><code>DET</code></h3>
+
+<p>1 <a href="">cs-pos/DET</a> tokens (0% of all <code>DET</code> tokens) have a non-empty value of <code>PrepCase</code>.</p>
+
+<p>The most frequent other feature values with which <code>DET</code> and <code>PrepCase</code> co-occurred: <tt><a href="Gender.html">Gender</a>=Fem</tt> (1; 100%), <tt><a href="Case.html">Case</a>=Nom</tt> (1; 100%), <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (1; 100%), <tt><a href="PronType.html">PronType</a>=Rel</tt> (1; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (1; 100%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (1; 100%), <tt><a href="Number[psor].html">Number[psor]</a>=EMPTY</tt> (1; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (1; 100%).</p>
+
+<p><code>DET</code> tokens may have the following values of <code>PrepCase</code>:</p>
+
+<ul>
+  <li><code>Npr</code> (1; 100% of non-empty <code>PrepCase</code>): <em>kterážto</em></li>
+</ul>
+
 <hr />
 
 <h2 id="treebank-statistics-udczech-cac">Treebank Statistics (UD_Czech-CAC)</h2>
@@ -142,22 +179,22 @@ The feature is used with 1 part-of-speech tags: <a href="">cs-pos/PRON</a> (4926
 <p>This feature is language-specific.
 It occurs with 2 different values: <code>Npr</code>, <code>Pre</code>.</p>
 
-<p>1809 tokens (0%) have a non-empty value of <code>PrepCase</code>.
-36 types (0%) occur at least once with a non-empty value of <code>PrepCase</code>.
-5 lemmas (0%) occur at least once with a non-empty value of <code>PrepCase</code>.
-The feature is used with 1 part-of-speech tags: <a href="">cs-pos/PRON</a> (1809; 0% instances).</p>
+<p>1779 tokens (0%) have a non-empty value of <code>PrepCase</code>.
+35 types (0%) occur at least once with a non-empty value of <code>PrepCase</code>.
+4 lemmas (0%) occur at least once with a non-empty value of <code>PrepCase</code>.
+The feature is used with 2 part-of-speech tags: <a href="">cs-pos/PRON</a> (1778; 0% instances), <a href="">cs-pos/DET</a> (1; 0% instances).</p>
 
 <h3 id="pron-1"><code>PRON</code></h3>
 
-<p>1809 <a href="">cs-pos/PRON</a> tokens (7% of all <code>PRON</code> tokens) have a non-empty value of <code>PrepCase</code>.</p>
+<p>1778 <a href="">cs-pos/PRON</a> tokens (11% of all <code>PRON</code> tokens) have a non-empty value of <code>PrepCase</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>PrepCase</code> co-occurred: <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (1809; 100%), <tt><a href="Variant.html">Variant</a>=EMPTY</tt> (1809; 100%), <tt><a href="PronType.html">PronType</a>=Rel</tt> (971; 54%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (971; 54%), <tt><a href="Number.html">Number</a>=Sing</tt> (935; 52%).</p>
+<p>The most frequent other feature values with which <code>PRON</code> and <code>PrepCase</code> co-occurred: <tt><a href="Variant.html">Variant</a>=EMPTY</tt> (1778; 100%), <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (1778; 100%), <tt><a href="PronType.html">PronType</a>=Rel</tt> (954; 54%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (954; 54%), <tt><a href="Number.html">Number</a>=Sing</tt> (923; 52%).</p>
 
 <p><code>PRON</code> tokens may have the following values of <code>PrepCase</code>:</p>
 
 <ul>
-  <li><code>Npr</code> (375; 21% of non-empty <code>PrepCase</code>): <em>jež, jimiž, jenž, jehož, jímž, jichž, jíž, jemuž, jimž, již</em></li>
-  <li><code>Pre</code> (1434; 79% of non-empty <code>PrepCase</code>): <em>nich, nichž, níž, němž, ní, ně, něm, nimi, něho, ním</em></li>
+  <li><code>Npr</code> (368; 21% of non-empty <code>PrepCase</code>): <em>jež, jimiž, jenž, jehož, jímž, jichž, jíž, jemuž, jimž, již</em></li>
+  <li><code>Pre</code> (1410; 79% of non-empty <code>PrepCase</code>): <em>nich, nichž, níž, němž, ní, ně, něm, nimi, něho, ním</em></li>
 </ul>
 
 <table>
@@ -185,6 +222,18 @@ The feature is used with 1 part-of-speech tags: <a href="">cs-pos/PRON</a> (1809
   <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Number.html">Number</a>=Plur</tt></td><td><em>jež</em></td><td></td></tr>
 </table>
 
+<h3 id="det-1"><code>DET</code></h3>
+
+<p>1 <a href="">cs-pos/DET</a> tokens (0% of all <code>DET</code> tokens) have a non-empty value of <code>PrepCase</code>.</p>
+
+<p>The most frequent other feature values with which <code>DET</code> and <code>PrepCase</code> co-occurred: <tt><a href="Person.html">Person</a>=EMPTY</tt> (1; 100%), <tt><a href="Number[psor].html">Number[psor]</a>=EMPTY</tt> (1; 100%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (1; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (1; 100%), <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (1; 100%), <tt><a href="Case.html">Case</a>=Nom</tt> (1; 100%), <tt><a href="Gender.html">Gender</a>=Fem</tt> (1; 100%), <tt><a href="PronType.html">PronType</a>=Rel</tt> (1; 100%).</p>
+
+<p><code>DET</code> tokens may have the following values of <code>PrepCase</code>:</p>
+
+<ul>
+  <li><code>Npr</code> (1; 100% of non-empty <code>PrepCase</code>): <em>kterážto</em></li>
+</ul>
+
 <hr />
 
 <h2 id="treebank-statistics-udczech-cltt">Treebank Statistics (UD_Czech-CLTT)</h2>
@@ -192,29 +241,28 @@ The feature is used with 1 part-of-speech tags: <a href="">cs-pos/PRON</a> (1809
 <p>This feature is language-specific.
 It occurs with 2 different values: <code>Npr</code>, <code>Pre</code>.</p>
 
-<p>93 tokens (0%) have a non-empty value of <code>PrepCase</code>.
-21 types (0%) occur at least once with a non-empty value of <code>PrepCase</code>.
+<p>67 tokens (0%) have a non-empty value of <code>PrepCase</code>.
+17 types (0%) occur at least once with a non-empty value of <code>PrepCase</code>.
 2 lemmas (0%) occur at least once with a non-empty value of <code>PrepCase</code>.
-The feature is used with 1 part-of-speech tags: <a href="">cs-pos/PRON</a> (93; 0% instances).</p>
+The feature is used with 1 part-of-speech tags: <a href="">cs-pos/PRON</a> (67; 0% instances).</p>
 
 <h3 id="pron-2"><code>PRON</code></h3>
 
-<p>93 <a href="">cs-pos/PRON</a> tokens (8% of all <code>PRON</code> tokens) have a non-empty value of <code>PrepCase</code>.</p>
+<p>67 <a href="">cs-pos/PRON</a> tokens (8% of all <code>PRON</code> tokens) have a non-empty value of <code>PrepCase</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>PrepCase</code> co-occurred: <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (93; 100%), <tt><a href="Variant.html">Variant</a>=EMPTY</tt> (93; 100%), <tt><a href="PronType.html">PronType</a>=Rel</tt> (73; 78%), <tt><a href="Number.html">Number</a>=Sing</tt> (54; 58%).</p>
+<p>The most frequent other feature values with which <code>PRON</code> and <code>PrepCase</code> co-occurred: <tt><a href="Variant.html">Variant</a>=EMPTY</tt> (67; 100%), <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (67; 100%), <tt><a href="PronType.html">PronType</a>=Rel</tt> (54; 81%), <tt><a href="Number.html">Number</a>=Sing</tt> (34; 51%).</p>
 
 <p><code>PRON</code> tokens may have the following values of <code>PrepCase</code>:</p>
 
 <ul>
-  <li><code>Npr</code> (17; 18% of non-empty <code>PrepCase</code>): <em>jimiž, jehož, jenž, jež, jímž</em></li>
-  <li><code>Pre</code> (76; 82% of non-empty <code>PrepCase</code>): <em>nichž, němž, němuž, nich, ní, níž, nějž, nimi, ně, něj</em></li>
+  <li><code>Npr</code> (10; 15% of non-empty <code>PrepCase</code>): <em>jimiž, jehož, jenž, jež, jímž</em></li>
+  <li><code>Pre</code> (57; 85% of non-empty <code>PrepCase</code>): <em>nichž, němž, němuž, nich, ní, níž, ně, nimi, nimž, niž</em></li>
 </ul>
 
 <table>
   <tr><th>Paradigm <i>jenž</i></th><th><tt>Npr</tt></th><th><tt>Pre</tt></th></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Masc,Neut|<a href="Number.html">Number</a>=Sing</tt></td><td></td><td><em>nějž</em></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td></td><td><em>niž</em></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Number.html">Number</a>=Plur</tt></td><td><em>jež</em></td><td><em>něž</em></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Gender.html">Gender</a>=Masc,Neut|<a href="Number.html">Number</a>=Sing</tt></td><td></td><td><em>němuž</em></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Number.html">Number</a>=Plur</tt></td><td></td><td><em>nimž</em></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Gender.html">Gender</a>=Masc,Neut|<a href="Number.html">Number</a>=Sing</tt></td><td><em>jehož</em></td><td></td></tr>
@@ -233,6 +281,19 @@ The feature is used with 1 part-of-speech tags: <a href="">cs-pos/PRON</a> (93; 
 
 <!-- "in other languages" links -->
 <hr/>
+
+PrepCase in other languages:
+
+[<a href="../../ca/feat/PrepCase.html">ca</a>]
+
+[<a href="../../cs/feat/PrepCase.html">cs</a>]
+
+[<a href="../../es/feat/PrepCase.html">es</a>]
+
+[<a href="../../pl/feat/PrepCase.html">pl</a>]
+
+[<a href="../../pt/feat/PrepCase.html">pt</a>]
+
 
 
 

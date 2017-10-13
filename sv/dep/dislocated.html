@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-sv">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/sv/dep">sv/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/dislocated.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sv">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/sv/dep">sv/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/dislocated.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -51,14 +68,7 @@ for.</p>
 
 <pre><code class="language-sdparse">Peter , honom gillar jag inte \n Peter, I don't like him
 dislocated(gillar, Peter)
-dobj(gillar, honom)
-</code></pre>
-
-<p>A frequent case in Swedish is that of an adverbial clause resumed by the pronominal adverb <em>så</em>:</p>
-
-<pre><code class="language-sdparse">Släpper vi in britterna , så drar de med sig danskar \n If we let the Brits in they'll bring the Danish with them
-dislocated(drar, Släpper)
-advcl(drar, så)
+obj(gillar, honom)
 </code></pre>
 
 <p>In addition, the <code>dislocated</code> relation is used for the focus element in a cleft sentence. This is a slight
@@ -67,10 +77,10 @@ rather of the predicate in the relative clause making up the second part of the 
 
 <pre><code class="language-sdparse">Det var Peter som gjorde det \n It was Peter who did it
 dislocated(var, Peter)
-expletive(var, Det)
+expl(var, Det)
 acl:relcl(Peter, gjorde)
 nsubj(gjorde, som)
-dobj(gjorde, det)
+obj(gjorde, det)
 </code></pre>
 
 
@@ -88,12 +98,12 @@ dobj(gjorde, det)
 
 <p>This relation is universal.</p>
 
-<p>218 nodes (0%) are attached to their parents as <code>dislocated</code>.</p>
+<p>186 nodes (0%) are attached to their parents as <code>dislocated</code>.</p>
 
-<p>116 instances of <code>dislocated</code> (53%) are right-to-left (child precedes parent).
-Average distance between parent and child is 5.43119266055046.</p>
+<p>97 instances of <code>dislocated</code> (52%) are right-to-left (child precedes parent).
+Average distance between parent and child is 5.10752688172043.</p>
 
-<p>The following 18 pairs of parts of speech are connected with <code>dislocated</code>: <a href="">sv-pos/VERB</a>-<a href="">sv-pos/NOUN</a> (100; 46% instances), <a href="">sv-pos/VERB</a>-<a href="">sv-pos/VERB</a> (36; 17% instances), <a href="">sv-pos/VERB</a>-<a href="">sv-pos/PRON</a> (32; 15% instances), <a href="">sv-pos/ADJ</a>-<a href="">sv-pos/PRON</a> (10; 5% instances), <a href="">sv-pos/VERB</a>-<a href="">sv-pos/ADJ</a> (7; 3% instances), <a href="">sv-pos/VERB</a>-<a href="">sv-pos/ADV</a> (7; 3% instances), <a href="">sv-pos/ADJ</a>-<a href="">sv-pos/VERB</a> (5; 2% instances), <a href="">sv-pos/NOUN</a>-<a href="">sv-pos/NOUN</a> (4; 2% instances), <a href="">sv-pos/NOUN</a>-<a href="">sv-pos/VERB</a> (4; 2% instances), <a href="">sv-pos/VERB</a>-<a href="">sv-pos/PROPN</a> (4; 2% instances), <a href="">sv-pos/PRON</a>-<a href="">sv-pos/NOUN</a> (2; 1% instances), <a href="">sv-pos/ADJ</a>-<a href="">sv-pos/ADV</a> (1; 0% instances), <a href="">sv-pos/NOUN</a>-<a href="">sv-pos/ADJ</a> (1; 0% instances), <a href="">sv-pos/NOUN</a>-<a href="">sv-pos/DET</a> (1; 0% instances), <a href="">sv-pos/NOUN</a>-<a href="">sv-pos/NUM</a> (1; 0% instances), <a href="">sv-pos/NOUN</a>-<a href="">sv-pos/PRON</a> (1; 0% instances), <a href="">sv-pos/PRON</a>-<a href="">sv-pos/ADJ</a> (1; 0% instances), <a href="">sv-pos/VERB</a>-<a href="">sv-pos/NUM</a> (1; 0% instances).</p>
+<p>The following 15 pairs of parts of speech are connected with <code>dislocated</code>: <a href="">sv-pos/VERB</a>-<a href="">sv-pos/NOUN</a> (90; 48% instances), <a href="">sv-pos/VERB</a>-<a href="">sv-pos/VERB</a> (31; 17% instances), <a href="">sv-pos/VERB</a>-<a href="">sv-pos/PRON</a> (26; 14% instances), <a href="">sv-pos/ADJ</a>-<a href="">sv-pos/PRON</a> (10; 5% instances), <a href="">sv-pos/VERB</a>-<a href="">sv-pos/ADV</a> (7; 4% instances), <a href="">sv-pos/VERB</a>-<a href="">sv-pos/ADJ</a> (5; 3% instances), <a href="">sv-pos/ADJ</a>-<a href="">sv-pos/VERB</a> (4; 2% instances), <a href="">sv-pos/NOUN</a>-<a href="">sv-pos/NOUN</a> (3; 2% instances), <a href="">sv-pos/VERB</a>-<a href="">sv-pos/PROPN</a> (3; 2% instances), <a href="">sv-pos/NOUN</a>-<a href="">sv-pos/VERB</a> (2; 1% instances), <a href="">sv-pos/ADJ</a>-<a href="">sv-pos/ADV</a> (1; 1% instances), <a href="">sv-pos/NOUN</a>-<a href="">sv-pos/ADJ</a> (1; 1% instances), <a href="">sv-pos/NOUN</a>-<a href="">sv-pos/DET</a> (1; 1% instances), <a href="">sv-pos/PRON</a>-<a href="">sv-pos/ADJ</a> (1; 1% instances), <a href="">sv-pos/VERB</a>-<a href="">sv-pos/NUM</a> (1; 1% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 1	bgColor:blue
 # visual-style 1	fgColor:white
@@ -103,11 +113,11 @@ Average distance between parent and child is 5.43119266055046.</p>
 1	Bördan	börda	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	7	dislocated	_	_
 2	att	att	PART	IE	_	3	mark	_	_
 3	fostra	fostra	VERB	VB|INF|AKT	VerbForm=Inf|Voice=Act	1	acl	_	_
-4	barn	barn	NOUN	NN|NEU|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	3	dobj	_	_
+4	barn	barn	NOUN	NN|NEU|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	3	obj	_	_
 5	-	-	PUNCT	MID	_	1	punct	_	_
 6	uttrycket	uttryck	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	7	nsubj	_	_
 7	låter	låta	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-8	negativt	negativ	ADJ	JJ|POS|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	7	xcomp	_	_
+8	negativt	negativ	ADJ	JJ|POS|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	7	xcomp	_	SpaceAfter=No
 9	.	.	PUNCT	MAD	_	7	punct	_	_
 
 </code></pre>
@@ -119,15 +129,15 @@ Average distance between parent and child is 5.43119266055046.</p>
 # visual-style 8 1 dislocated	color:blue
 1	Äger	äga	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	8	dislocated	_	_
 2	du	du	PRON	PN|UTR|SIN|DEF|SUB	Case=Nom|Definite=Def|Gender=Com|Number=Sing|PronType=Prs	1	nsubj	_	_
-3	några	någon	PRON	PN|UTR/NEU|PLU|IND|SUB/OBJ	Definite=Ind|Number=Plur|PronType=Ind	1	dobj	_	_
+3	några	någon	PRON	PN|UTR/NEU|PLU|IND|SUB/OBJ	Definite=Ind|Number=Plur|PronType=Ind	1	obj	_	_
 4	av	av	ADP	PP	_	6	case	_	_
-5	följande	följande	ADJ	PC|PRS|UTR/NEU|SIN/PLU|IND/DEF|NOM	Case=Nom|Tense=Pres|VerbForm=Part	6	det	_	_
+5	följande	följande	ADJ	PC|PRS|UTR/NEU|SIN/PLU|IND/DEF|NOM	Case=Nom|Tense=Pres|VerbForm=Part	6	amod	_	_
 6	saker	sak	NOUN	NN|UTR|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	3	nmod	_	_
 7	så	så	ADV	AB	_	8	advcl	_	_
 8	ta	ta	VERB	VB|INF|AKT	VerbForm=Inf|Voice=Act	0	root	_	_
 9	med	med	ADP	PL	_	8	compound:prt	_	_
 10	även	även	ADV	AB	_	11	advmod	_	_
-11	dem	de	PRON	PN|UTR/NEU|PLU|DEF|OBJ	Case=Acc|Definite=Def|Number=Plur|PronType=Prs	8	dobj	_	_
+11	dem	de	PRON	PN|UTR/NEU|PLU|DEF|OBJ	Case=Acc|Definite=Def|Number=Plur|PronType=Prs	8	obj	_	SpaceAfter=No
 12	:	:	PUNCT	MAD	_	8	punct	_	_
 
 </code></pre>
@@ -142,9 +152,9 @@ Average distance between parent and child is 5.43119266055046.</p>
 3	det	den	PRON	PN|NEU|SIN|DEF|SUB/OBJ	Definite=Def|Gender=Neut|Number=Sing|PronType=Prs	2	expl	_	_
 4	hon	hon	PRON	PN|UTR|SIN|DEF|SUB	Case=Nom|Definite=Def|Gender=Com|Number=Sing|PronType=Prs	2	dislocated	_	_
 5	som	som	PRON	HP|-|-|-	PronType=Rel	8	nsubj	_	_
-6	var	vara	VERB	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	8	cop	_	_
+6	var	vara	AUX	VB|PRT|AKT	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	8	cop	_	_
 7	mest	mycket	ADV	AB|SUV	Degree=Sup	8	advmod	_	_
-8	yrkesverksam	yrkesverksam	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	4	acl:relcl	_	_
+8	yrkesverksam	yrkesverksam	ADJ	JJ|POS|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Com|Number=Sing	4	acl:relcl	_	SpaceAfter=No
 9	.	.	PUNCT	MAD	_	2	punct	_	_
 
 </code></pre>
@@ -155,52 +165,29 @@ Average distance between parent and child is 5.43119266055046.</p>
 
 <p>This relation is universal.</p>
 
-<p>228 nodes (0%) are attached to their parents as <code>dislocated</code>.</p>
+<p>173 nodes (0%) are attached to their parents as <code>dislocated</code>.</p>
 
-<p>139 instances of <code>dislocated</code> (61%) are left-to-right (parent precedes child).
-Average distance between parent and child is 5.8640350877193.</p>
+<p>95 instances of <code>dislocated</code> (55%) are left-to-right (parent precedes child).
+Average distance between parent and child is 5.64161849710983.</p>
 
-<p>The following 25 pairs of parts of speech are connected with <code>dislocated</code>: <a href="">sv-pos/VERB</a>-<a href="">sv-pos/VERB</a> (55; 24% instances), <a href="">sv-pos/VERB</a>-<a href="">sv-pos/NOUN</a> (48; 21% instances), <a href="">sv-pos/VERB</a>-<a href="">sv-pos/PRON</a> (46; 20% instances), <a href="">sv-pos/PRON</a>-<a href="">sv-pos/VERB</a> (15; 7% instances), <a href="">sv-pos/VERB</a>-<a href="">sv-pos/ADJ</a> (12; 5% instances), <a href="">sv-pos/NOUN</a>-<a href="">sv-pos/VERB</a> (9; 4% instances), <a href="">sv-pos/VERB</a>-<a href="">sv-pos/PROPN</a> (7; 3% instances), <a href="">sv-pos/VERB</a>-<a href="">sv-pos/ADV</a> (5; 2% instances), <a href="">sv-pos/PROPN</a>-<a href="">sv-pos/VERB</a> (4; 2% instances), <a href="">sv-pos/ADJ</a>-<a href="">sv-pos/PRON</a> (3; 1% instances), <a href="">sv-pos/NOUN</a>-<a href="">sv-pos/NOUN</a> (3; 1% instances), <a href="">sv-pos/PRON</a>-<a href="">sv-pos/PRON</a> (3; 1% instances), <a href="">sv-pos/ADJ</a>-<a href="">sv-pos/NOUN</a> (2; 1% instances), <a href="">sv-pos/ADJ</a>-<a href="">sv-pos/VERB</a> (2; 1% instances), <a href="">sv-pos/AUX</a>-<a href="">sv-pos/PRON</a> (2; 1% instances), <a href="">sv-pos/NOUN</a>-<a href="">sv-pos/PRON</a> (2; 1% instances), <a href="">sv-pos/VERB</a>-<a href="">sv-pos/AUX</a> (2; 1% instances), <a href="">sv-pos/ADJ</a>-<a href="">sv-pos/PART</a> (1; 0% instances), <a href="">sv-pos/ADJ</a>-<a href="">sv-pos/PROPN</a> (1; 0% instances), <a href="">sv-pos/ADP</a>-<a href="">sv-pos/PRON</a> (1; 0% instances), <a href="">sv-pos/PRON</a>-<a href="">sv-pos/NOUN</a> (1; 0% instances), <a href="">sv-pos/PRON</a>-<a href="">sv-pos/NUM</a> (1; 0% instances), <a href="">sv-pos/PRON</a>-<a href="">sv-pos/PROPN</a> (1; 0% instances), <a href="">sv-pos/PUNCT</a>-<a href="">sv-pos/PROPN</a> (1; 0% instances), <a href="">sv-pos/VERB</a>-<a href="">sv-pos/ADP</a> (1; 0% instances).</p>
+<p>The following 26 pairs of parts of speech are connected with <code>dislocated</code>: <a href="">sv-pos/VERB</a>-<a href="">sv-pos/NOUN</a> (37; 21% instances), <a href="">sv-pos/VERB</a>-<a href="">sv-pos/PRON</a> (34; 20% instances), <a href="">sv-pos/VERB</a>-<a href="">sv-pos/VERB</a> (28; 16% instances), <a href="">sv-pos/PRON</a>-<a href="">sv-pos/VERB</a> (15; 9% instances), <a href="">sv-pos/NOUN</a>-<a href="">sv-pos/VERB</a> (12; 7% instances), <a href="">sv-pos/VERB</a>-<a href="">sv-pos/ADJ</a> (7; 4% instances), <a href="">sv-pos/VERB</a>-<a href="">sv-pos/ADV</a> (5; 3% instances), <a href="">sv-pos/AUX</a>-<a href="">sv-pos/NOUN</a> (4; 2% instances), <a href="">sv-pos/VERB</a>-<a href="">sv-pos/PROPN</a> (4; 2% instances), <a href="">sv-pos/PROPN</a>-<a href="">sv-pos/VERB</a> (3; 2% instances), <a href="">sv-pos/ADJ</a>-<a href="">sv-pos/NOUN</a> (2; 1% instances), <a href="">sv-pos/ADJ</a>-<a href="">sv-pos/PRON</a> (2; 1% instances), <a href="">sv-pos/ADJ</a>-<a href="">sv-pos/VERB</a> (2; 1% instances), <a href="">sv-pos/AUX</a>-<a href="">sv-pos/PRON</a> (2; 1% instances), <a href="">sv-pos/AUX</a>-<a href="">sv-pos/PROPN</a> (2; 1% instances), <a href="">sv-pos/NOUN</a>-<a href="">sv-pos/NOUN</a> (2; 1% instances), <a href="">sv-pos/NOUN</a>-<a href="">sv-pos/PRON</a> (2; 1% instances), <a href="">sv-pos/PRON</a>-<a href="">sv-pos/PRON</a> (2; 1% instances), <a href="">sv-pos/ADP</a>-<a href="">sv-pos/PRON</a> (1; 1% instances), <a href="">sv-pos/AUX</a>-<a href="">sv-pos/ADJ</a> (1; 1% instances), <a href="">sv-pos/AUX</a>-<a href="">sv-pos/VERB</a> (1; 1% instances), <a href="">sv-pos/PRON</a>-<a href="">sv-pos/NOUN</a> (1; 1% instances), <a href="">sv-pos/PRON</a>-<a href="">sv-pos/NUM</a> (1; 1% instances), <a href="">sv-pos/PRON</a>-<a href="">sv-pos/PROPN</a> (1; 1% instances), <a href="">sv-pos/PUNCT</a>-<a href="">sv-pos/PROPN</a> (1; 1% instances), <a href="">sv-pos/VERB</a>-<a href="">sv-pos/AUX</a> (1; 1% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 4	bgColor:blue
 # visual-style 4	fgColor:white
-# visual-style 10	bgColor:blue
-# visual-style 10	fgColor:white
-# visual-style 10 4 dislocated	color:blue
-1	Men	_	CONJ	_	_	4	cc	_	_
-2	om	_	SCONJ	_	_	4	mark	_	_
-3	jag	_	PRON	PERS-P1SG-NOM	_	4	nsubj	_	_
-4	är	_	VERB	PRES-ACT	_	10	dislocated	_	_
-5	på	_	ADP	_	_	6	case	_	_
-6	väg	_	NOUN	SG-IND-NOM	_	4	nmod	_	_
-7	ut	_	ADV	_	_	6	advmod	_	_
-8	--	_	PUNCT	Dash	_	4	punct	_	_
-9	vart	_	ADV	WH	_	10	advmod	_	_
-10	är	_	VERB	PRES-ACT	_	0	root	_	_
-11	jag	_	PRON	PERS-P1SG-NOM	_	10	nsubj	_	_
-12	då	_	ADV	_	_	10	advmod	_	_
-13	på	_	ADP	_	_	14	case	_	_
-14	väg	_	NOUN	SG-IND-NOM	_	10	nmod	_	_
-15	?	_	PUNCT	QuestionMark	_	10	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 8	bgColor:blue
-# visual-style 8	fgColor:white
-# visual-style 8 3 dislocated	color:blue
-1	Fem	_	NUM	CARD-PL	_	2	nummod	_	_
-2	års	_	NOUN	IND-GEN	_	3	nmod:poss	_	_
-3	praktik	_	NOUN	SG-IND-NOM	_	8	dislocated	_	_
-4	.	_	PUNCT	Period	_	8	punct	_	_
-5	Men	_	CONJ	_	_	8	cc	_	_
-6	kan	_	AUX	PRES-AUX	_	8	aux	_	_
-7	ni	_	PRON	PERS-P2PL-NOM	_	8	nsubj	_	_
-8	gissa	_	VERB	INF-ACT	_	0	root	_	_
-9	som	_	ADP	_	_	10	case	_	_
-10	vad	_	PRON	WH	_	8	dobj	_	_
-11	?	_	PUNCT	QuestionMark	_	6	punct	_	_
+# visual-style 4 1 dislocated	color:blue
+1	Författare	_	NOUN	IND-NOM	_	4	dislocated	_	SpaceAfter=No
+2	?	_	PUNCT	QuestionMark	_	4	punct	_	_
+3	Quinn	_	PROPN	SG-NOM	_	4	nsubj	_	_
+4	uttalade	_	VERB	PAST-ACT	_	0	root	_	_
+5	ordet	_	NOUN	SG-DEF-NOM	_	4	obj	_	_
+6	som	_	SCONJ	_	_	10	mark	_	_
+7	vore	_	AUX	CNJ	_	10	cop	_	_
+8	det	_	PRON	PERS-P3SG	_	10	nsubj	_	_
+9	en	_	DET	SG-IND	_	10	det	_	_
+10	veklagan	_	NOUN	SG-IND-NOM	_	4	obl	_	SpaceAfter=No
+11	.	_	PUNCT	Period	_	4	punct	_	_
 
 </code></pre>
 
@@ -210,10 +197,31 @@ Average distance between parent and child is 5.8640350877193.</p>
 # visual-style 2	fgColor:white
 # visual-style 2 1 dislocated	color:blue
 1	Vad	_	PRON	WH	_	2	dislocated	_	_
-2	sysslar	_	VERB	PRES-ACT	_	0	root	_	_
-3	ni	_	PRON	PERS-P2PL-NOM	_	2	nsubj	_	_
+2	har	_	VERB	PRES-ACT	_	0	root	_	_
+3	det	_	PRON	PERS-P3SG	_	2	nsubj	_	_
 4	med	_	ADP	_	_	1	case	_	_
-5	?	_	PUNCT	QuestionMark	_	2	punct	_	_
+5	att	_	PART	_	_	6	mark	_	_
+6	göra	_	VERB	INF-ACT	_	2	xcomp	_	_
+7	då	_	ADV	_	_	6	advmod	_	SpaceAfter=No
+8	?	_	PUNCT	QuestionMark	_	2	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 5 dislocated	color:blue
+1	Hur	_	ADV	WH	_	2	dislocated	_	_
+2	är	_	VERB	PRES-ACT	_	0	root	_	_
+3	det	_	PRON	EX-P3SG	_	2	expl	_	_
+4	ni	_	PRON	PERS-P2PL-NOM	_	5	nsubj	_	_
+5	säger	_	VERB	PRES-ACT	_	2	dislocated	_	_
+6	på	_	ADP	_	_	7	case	_	_
+7	engelska	_	NOUN	SG-IND-NOM	_	5	obl	_	_
+8	–	_	PUNCT	Dash	_	2	punct	_	_
+9	good-by	_	INTJ	FGN	_	5	appos	_	SpaceAfter=No
+10	?	_	PUNCT	QuestionMark	_	2	punct	_	_
 
 </code></pre>
 
@@ -225,9 +233,23 @@ Average distance between parent and child is 5.8640350877193.</p>
 
 dislocated in other languages:
 
+[<a href="../../am/dep/dislocated.html">am</a>]
+
+[<a href="../../ar/dep/dislocated.html">ar</a>]
+
 [<a href="../../bg/dep/dislocated.html">bg</a>]
 
-[<a href="../../cs/dep/dislocated.html">cs</a>]
+[<a href="../../bxr/dep/dislocated.html">bxr</a>]
+
+[<a href="../../ca/dep/dislocated.html">ca</a>]
+
+[<a href="../../ckb/dep/dislocated.html">ckb</a>]
+
+[<a href="../../cop/dep/dislocated.html">cop</a>]
+
+[<a href="../../cu/dep/dislocated.html">cu</a>]
+
+[<a href="../../da/dep/dislocated.html">da</a>]
 
 [<a href="../../de/dep/dislocated.html">de</a>]
 
@@ -237,29 +259,99 @@ dislocated in other languages:
 
 [<a href="../../es/dep/dislocated.html">es</a>]
 
+[<a href="../../et/dep/dislocated.html">et</a>]
+
 [<a href="../../eu/dep/dislocated.html">eu</a>]
 
 [<a href="../../fa/dep/dislocated.html">fa</a>]
 
 [<a href="../../fi/dep/dislocated.html">fi</a>]
 
+[<a href="../../fo/dep/dislocated.html">fo</a>]
+
 [<a href="../../fr/dep/dislocated.html">fr</a>]
 
 [<a href="../../ga/dep/dislocated.html">ga</a>]
 
+[<a href="../../gl/dep/dislocated.html">gl</a>]
+
+[<a href="../../got/dep/dislocated.html">got</a>]
+
+[<a href="../../grc/dep/dislocated.html">grc</a>]
+
 [<a href="../../he/dep/dislocated.html">he</a>]
 
+[<a href="../../hi/dep/dislocated.html">hi</a>]
+
+[<a href="../../hr/dep/dislocated.html">hr</a>]
+
 [<a href="../../hu/dep/dislocated.html">hu</a>]
+
+[<a href="../../id/dep/dislocated.html">id</a>]
 
 [<a href="../../it/dep/dislocated.html">it</a>]
 
 [<a href="../../ja/dep/dislocated.html">ja</a>]
 
+[<a href="../../kk/dep/dislocated.html">kk</a>]
+
+[<a href="../../kmr/dep/dislocated.html">kmr</a>]
+
 [<a href="../../ko/dep/dislocated.html">ko</a>]
+
+[<a href="../../la/dep/dislocated.html">la</a>]
+
+[<a href="../../lv/dep/dislocated.html">lv</a>]
+
+[<a href="../../mr/dep/dislocated.html">mr</a>]
+
+[<a href="../../nl/dep/dislocated.html">nl</a>]
+
+[<a href="../../no/dep/dislocated.html">no</a>]
+
+[<a href="../../pl/dep/dislocated.html">pl</a>]
+
+[<a href="../../pt/dep/dislocated.html">pt</a>]
+
+[<a href="../../ro/dep/dislocated.html">ro</a>]
+
+[<a href="../../ru/dep/dislocated.html">ru</a>]
+
+[<a href="../../sa/dep/dislocated.html">sa</a>]
+
+[<a href="../../sk/dep/dislocated.html">sk</a>]
+
+[<a href="../../sla/dep/dislocated.html">sla</a>]
+
+[<a href="../../sl/dep/dislocated.html">sl</a>]
+
+[<a href="../../so/dep/dislocated.html">so</a>]
+
+[<a href="../../sr/dep/dislocated.html">sr</a>]
 
 [<a href="../../sv/dep/dislocated.html">sv</a>]
 
+[<a href="../../swl/dep/dislocated.html">swl</a>]
+
+[<a href="../../ta/dep/dislocated.html">ta</a>]
+
+[<a href="../../tr/dep/dislocated.html">tr</a>]
+
 [<a href="../../u/dep/dislocated.html">u</a>]
+
+[<a href="../../ug/dep/dislocated.html">ug</a>]
+
+[<a href="../../uk/dep/dislocated.html">uk</a>]
+
+[<a href="../../ur/dep/dislocated.html">ur</a>]
+
+[<a href="../../urj/dep/dislocated.html">urj</a>]
+
+[<a href="../../vi/dep/dislocated.html">vi</a>]
+
+[<a href="../../yue/dep/dislocated.html">yue</a>]
+
+[<a href="../../zh/dep/dislocated.html">zh</a>]
 
 
 

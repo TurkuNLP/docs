@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-grc">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/grc/dep">grc/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_grc-dep/neg.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-grc">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/grc/dep">grc/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_grc-dep/neg.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -56,150 +73,30 @@ for <code>neg</code>.</p>
 
 
 
-
-<hr />
-
-<h2 id="treebank-statistics-udancientgreek">Treebank Statistics (UD_Ancient_Greek)</h2>
-
-<p>This relation is universal.</p>
-
-<p>2997 nodes (1%) are attached to their parents as <code>neg</code>.</p>
-
-<p>2860 instances of <code>neg</code> (95%) are right-to-left (child precedes parent).
-Average distance between parent and child is 2.51017684351018.</p>
-
-<p>The following 17 pairs of parts of speech are connected with <code>neg</code>: <a href="">grc-pos/VERB</a>-<a href="">grc-pos/ADV</a> (1978; 66% instances), <a href="">grc-pos/ADJ</a>-<a href="">grc-pos/ADV</a> (440; 15% instances), <a href="">grc-pos/VERB</a>-<a href="">grc-pos/CONJ</a> (174; 6% instances), <a href="">grc-pos/ADV</a>-<a href="">grc-pos/ADV</a> (149; 5% instances), <a href="">grc-pos/NOUN</a>-<a href="">grc-pos/ADV</a> (130; 4% instances), <a href="">grc-pos/PRON</a>-<a href="">grc-pos/ADV</a> (58; 2% instances), <a href="">grc-pos/PUNCT</a>-<a href="">grc-pos/ADV</a> (16; 1% instances), <a href="">grc-pos/ADJ</a>-<a href="">grc-pos/CONJ</a> (14; 0% instances), <a href="">grc-pos/SCONJ</a>-<a href="">grc-pos/ADV</a> (12; 0% instances), <a href="">grc-pos/SCONJ</a>-<a href="">grc-pos/CONJ</a> (6; 0% instances), <a href="">grc-pos/ADV</a>-<a href="">grc-pos/CONJ</a> (5; 0% instances), <a href="">grc-pos/ADP</a>-<a href="">grc-pos/ADV</a> (4; 0% instances), <a href="">grc-pos/PRON</a>-<a href="">grc-pos/CONJ</a> (4; 0% instances), <a href="">grc-pos/NOUN</a>-<a href="">grc-pos/CONJ</a> (3; 0% instances), <a href="">grc-pos/CONJ</a>-<a href="">grc-pos/ADV</a> (2; 0% instances), <a href="">grc-pos/DET</a>-<a href="">grc-pos/ADV</a> (1; 0% instances), <a href="">grc-pos/DET</a>-<a href="">grc-pos/CONJ</a> (1; 0% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 3 2 neg	color:blue
-1	τίς	τίς	PRON	p-s---mn-	Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	_
-2	οὐ	οὐ	ADV	d--------	_	3	neg	_	_
-3	ξυνασχαλᾷ	συνασχαλάω	VERB	v3spsa---	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-4	κακοῖς	κακός	ADJ	a-p---nd-	Case=Dat|Gender=Neut|Number=Plur	3	dobj	_	_
-5	τεοῖσι	τεός	ADJ	a-p---md-	Case=Dat|Gender=Masc|Number=Plur	4	amod	_	_
-6	,	,	PUNCT	u--------	_	3	punct	_	_
-7	δίχα	δίχα	ADV	d--------	_	6	case	_	_
-8	γε	γε	ADV	g--------	_	6	advmod	_	_
-9	Διός	Ζεύς	NOUN	n-s---mg-	Case=Gen|Gender=Masc|Number=Sing	6	nmod	_	_
-10	;	;	PUNCT	u--------	_	9	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 4 3 neg	color:blue
-1	σὺ	σύ	PRON	p-s---mn-	Case=Nom|Gender=Masc|Number=Sing	10	nsubj	_	Ellipsis=conj
-2	δ̓	δέ	ADV	g--------	_	10	advmod	_	_
-3	οὐκ	οὐ	ADV	d--------	_	4	neg	_	_
-4	ἄπειρος	ἄπειρος	ADJ	a-s---mn-	Case=Nom|Gender=Masc|Number=Sing	1	xcomp	_	_
-5	,	,	PUNCT	u--------	_	10	punct	_	_
-6	οὐ	οὐδέ	ADV	g--------	_	10	advmod	_	_
-7	δ̓	δέ	ADV	g--------	_	10	cc	_	_
-8	ἐμοῦ	ἐγώ	PRON	p-s---mg-	Case=Gen|Gender=Masc|Number=Sing	10	dobj	_	_
-9	διδασκάλου	διδάσκαλος	NOUN	n-s---mg-	Case=Gen|Gender=Masc|Number=Sing	8	advmod	_	_
-10	χρῄζεις	χρῄζω	VERB	v2spia---	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-11	·	·	PUNCT	u--------	_	10	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
-# visual-style 7 6 neg	color:blue
-1	δίδαξον	διδάσκω	VERB	v2sama---	Mood=Imp|Number=Sing|Person=2|Tense=Aor|VerbForm=Fin|Voice=Act	0	root	_	_
-2	ἡμᾶς	ἐγώ	PRON	p-p---ma-	Case=Acc|Gender=Masc|Number=Plur	1	dobj	_	_
-3	,	,	PUNCT	u--------	_	7	punct	_	_
-4	εἴ	εἰ	SCONJ	c--------	_	7	mark	_	_
-5	τι	τις	PRON	p-s---na-	Case=Acc|Gender=Neut|Number=Sing	7	nmod	_	_
-6	μὴ	μή	CONJ	c--------	_	7	neg	_	_
-7	βλάπτει	βλάπτω	VERB	v2spie---	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Mid,Pass	1	advcl	_	_
-8	λόγῳ	λόγος	NOUN	n-s---md-	Case=Dat|Gender=Masc|Number=Sing	7	dobj	_	_
-9	.	.	PUNCT	u--------	_	8	punct	_	_
-
-</code></pre>
-
-<hr />
-
-<h2 id="treebank-statistics-udancientgreek-proiel">Treebank Statistics (UD_Ancient_Greek-PROIEL)</h2>
-
-<p>This relation is universal.</p>
-
-<p>3445 nodes (2%) are attached to their parents as <code>neg</code>.</p>
-
-<p>3281 instances of <code>neg</code> (95%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.64789550072569.</p>
-
-<p>The following 12 pairs of parts of speech are connected with <code>neg</code>: <a href="">grc-pos/VERB</a>-<a href="">grc-pos/ADV</a> (2602; 76% instances), <a href="">grc-pos/ADJ</a>-<a href="">grc-pos/ADV</a> (274; 8% instances), <a href="">grc-pos/NOUN</a>-<a href="">grc-pos/ADV</a> (201; 6% instances), <a href="">grc-pos/ADV</a>-<a href="">grc-pos/ADV</a> (125; 4% instances), <a href="">grc-pos/ADP</a>-<a href="">grc-pos/ADV</a> (100; 3% instances), <a href="">grc-pos/PRON</a>-<a href="">grc-pos/ADV</a> (65; 2% instances), <a href="">grc-pos/SCONJ</a>-<a href="">grc-pos/ADV</a> (38; 1% instances), <a href="">grc-pos/PROPN</a>-<a href="">grc-pos/ADV</a> (24; 1% instances), <a href="">grc-pos/NUM</a>-<a href="">grc-pos/ADV</a> (10; 0% instances), <a href="">grc-pos/CONJ</a>-<a href="">grc-pos/ADV</a> (4; 0% instances), <a href="">grc-pos/DET</a>-<a href="">grc-pos/ADV</a> (1; 0% instances), <a href="">grc-pos/INTJ</a>-<a href="">grc-pos/ADV</a> (1; 0% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 3 1 neg	color:blue
-1	οὐκ	οὐ	ADV	Df	_	3	neg	_	_
-2	ἦλθον	ἔρχομαι	VERB	V-	Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
-3	καταλῦσαι	καταλύω	VERB	V-	Aspect=Perf|Tense=Past|VerbForm=Inf|Voice=Act	2	advcl	_	_
-4	ἀλλὰ	ἀλλά	CONJ	C-	_	3	cc	_	_
-5	πληρῶσαι	πληρόω	VERB	V-	Aspect=Perf|Tense=Past|VerbForm=Inf|Voice=Act	3	conj	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 4 2 neg	color:blue
-1	κύριε	κύριος	NOUN	Nb	Case=Voc|Gender=Masc|Number=Sing	4	vocative	_	_
-2	οὐκ	οὐ	ADV	Df	_	4	neg	_	_
-3	εἰμὶ	εἰμί#1	VERB	V-	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
-4	ἱκανὸς	ἱκανός	ADJ	A-	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	0	root	_	_
-5	ἵνα	ἵνα	SCONJ	G-	_	10	mark	_	_
-6	μου	ἐγώ	PRON	Pp	Case=Gen|Gender=Masc|Number=Sing|Person=1|PronType=Prs	9	nmod	_	_
-7	ὑπὸ	ὑπό	ADP	R-	_	9	case	_	_
-8	τὴν	ὁ	DET	S-	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Dem	9	det	_	_
-9	στέγην	στέγη	NOUN	Nb	Case=Acc|Gender=Fem|Number=Sing	10	iobj	_	_
-10	εἰσέλθῃς	εἰσέρχομαι	VERB	V-	Aspect=Perf|Mood=Sub|Number=Sing|Person=2|Tense=Past|VerbForm=Fin|Voice=Act	4	ccomp	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 9	bgColor:blue
-# visual-style 9	fgColor:white
-# visual-style 9 5 neg	color:blue
-1	σκάνδαλον	σκάνδαλον	NOUN	Nb	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
-2	εἶ	εἰμί#1	VERB	V-	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
-3	ἐμοῦ	ἐγώ	PRON	Pp	Case=Gen|Gender=Masc|Number=Sing|Person=1|PronType=Prs	1	nmod	_	_
-4	ὅτι	ὅτι	SCONJ	G-	_	6	mark	_	_
-5	οὐ	οὐ	ADV	Df	_	9	neg	_	_
-6	φρονεῖς	φρονέω	VERB	V-	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	1	advcl	_	_
-7	τὰ	ὁ	DET	S-	Case=Acc|Definite=Def|Gender=Neut|Number=Plur|PronType=Dem	9	det	_	_
-8	τοῦ	ὁ	DET	S-	Case=Gen|Definite=Def|Gender=Masc|Number=Sing|PronType=Dem	9	det	_	_
-9	θεοῦ	θεός	NOUN	Nb	Case=Gen|Gender=Masc|Number=Sing	6	dobj	_	_
-10	ἀλλὰ	ἀλλά	CONJ	C-	_	9	cc	_	_
-11	τὰ	ὁ	DET	S-	Case=Acc|Definite=Def|Gender=Neut|Number=Plur|PronType=Dem	13	det	_	_
-12	τῶν	ὁ	DET	S-	Case=Gen|Definite=Def|Gender=Masc|Number=Plur|PronType=Dem	13	det	_	_
-13	ἀνθρώπων	ἄνθρωπος	NOUN	Nb	Case=Gen|Gender=Masc|Number=Plur	9	conj	_	_
-
-</code></pre>
-
-
-
-
 <!-- "in other languages" links -->
 <hr/>
 
 neg in other languages:
 
+[<a href="../../am/dep/neg.html">am</a>]
+
+[<a href="../../ar/dep/neg.html">ar</a>]
+
 [<a href="../../bg/dep/neg.html">bg</a>]
 
+[<a href="../../bxr/dep/neg.html">bxr</a>]
+
+[<a href="../../ca/dep/neg.html">ca</a>]
+
+[<a href="../../ckb/dep/neg.html">ckb</a>]
+
+[<a href="../../cop/dep/neg.html">cop</a>]
+
 [<a href="../../cs/dep/neg.html">cs</a>]
+
+[<a href="../../cu/dep/neg.html">cu</a>]
+
+[<a href="../../da/dep/neg.html">da</a>]
 
 [<a href="../../de/dep/neg.html">de</a>]
 
@@ -209,29 +106,97 @@ neg in other languages:
 
 [<a href="../../es/dep/neg.html">es</a>]
 
+[<a href="../../et/dep/neg.html">et</a>]
+
 [<a href="../../eu/dep/neg.html">eu</a>]
 
 [<a href="../../fa/dep/neg.html">fa</a>]
 
 [<a href="../../fi/dep/neg.html">fi</a>]
 
+[<a href="../../fo/dep/neg.html">fo</a>]
+
 [<a href="../../fr/dep/neg.html">fr</a>]
 
 [<a href="../../ga/dep/neg.html">ga</a>]
 
+[<a href="../../gl/dep/neg.html">gl</a>]
+
+[<a href="../../got/dep/neg.html">got</a>]
+
+[<a href="../../grc/dep/neg.html">grc</a>]
+
 [<a href="../../he/dep/neg.html">he</a>]
 
+[<a href="../../hi/dep/neg.html">hi</a>]
+
+[<a href="../../hr/dep/neg.html">hr</a>]
+
 [<a href="../../hu/dep/neg.html">hu</a>]
+
+[<a href="../../id/dep/neg.html">id</a>]
 
 [<a href="../../it/dep/neg.html">it</a>]
 
 [<a href="../../ja/dep/neg.html">ja</a>]
 
+[<a href="../../kk/dep/neg.html">kk</a>]
+
+[<a href="../../kmr/dep/neg.html">kmr</a>]
+
 [<a href="../../ko/dep/neg.html">ko</a>]
+
+[<a href="../../la/dep/neg.html">la</a>]
+
+[<a href="../../lv/dep/neg.html">lv</a>]
+
+[<a href="../../mr/dep/neg.html">mr</a>]
+
+[<a href="../../nl/dep/neg.html">nl</a>]
+
+[<a href="../../no/dep/neg.html">no</a>]
+
+[<a href="../../pl/dep/neg.html">pl</a>]
+
+[<a href="../../pt/dep/neg.html">pt</a>]
+
+[<a href="../../ro/dep/neg.html">ro</a>]
+
+[<a href="../../ru/dep/neg.html">ru</a>]
+
+[<a href="../../sa/dep/neg.html">sa</a>]
+
+[<a href="../../sk/dep/neg.html">sk</a>]
+
+[<a href="../../sla/dep/neg.html">sla</a>]
+
+[<a href="../../sl/dep/neg.html">sl</a>]
+
+[<a href="../../so/dep/neg.html">so</a>]
+
+[<a href="../../sr/dep/neg.html">sr</a>]
 
 [<a href="../../sv/dep/neg.html">sv</a>]
 
-[<a href="../../u/dep/neg.html">u</a>]
+[<a href="../../swl/dep/neg.html">swl</a>]
+
+[<a href="../../ta/dep/neg.html">ta</a>]
+
+[<a href="../../tr/dep/neg.html">tr</a>]
+
+[<a href="../../ug/dep/neg.html">ug</a>]
+
+[<a href="../../uk/dep/neg.html">uk</a>]
+
+[<a href="../../ur/dep/neg.html">ur</a>]
+
+[<a href="../../urj/dep/neg.html">urj</a>]
+
+[<a href="../../vi/dep/neg.html">vi</a>]
+
+[<a href="../../yue/dep/neg.html">yue</a>]
+
+[<a href="../../zh/dep/neg.html">zh</a>]
 
 
 

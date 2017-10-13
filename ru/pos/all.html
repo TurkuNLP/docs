@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ru">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ru">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -66,7 +83,7 @@
     </tr>
     <tr>
       <td><a>INTJ</a></td>
-      <td><a>CONJ</a></td>
+      <td><a>CCONJ</a></td>
       <td><a>X</a></td>
     </tr>
     <tr>
@@ -167,7 +184,7 @@ And these adjectives are not derived from verbs. Example:</p>
 <p>Here both groups are <code>ADJ</code>. The nominal forms are used in predication,
 the standard forms both in predication and to modify nouns.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-pos/ADJ.md" target="#">edit ADJ</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-pos/ADJ.md" target="#">edit ADJ</a></p>
 
 <p><a id="al-ru-pos/ADP" class="al-dest"></a></p>
 <h2><code>ADP</code>: adposition</h2>
@@ -195,7 +212,7 @@ multiword expressions are accounted for in the syntactic annotation</p>
   <li><em>на</em> “on, at”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-pos/ADP.md" target="#">edit ADP</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-pos/ADP.md" target="#">edit ADP</a></p>
 
 <p><a id="al-ru-pos/ADV" class="al-dest"></a></p>
 <h2><code>ADV</code>: adverb</h2>
@@ -233,7 +250,7 @@ are tagged <a href="">VERB</a>, not <code>ADV</code>.</p>
   <li>negative adverbs: <em>нигде, никогда </em> “nowhere, never”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-pos/ADV.md" target="#">edit ADV</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-pos/ADV.md" target="#">edit ADV</a></p>
 
 <p><a id="al-ru-pos/AUX" class="al-dest"></a></p>
 <h2><code>AUX</code>: auxiliary verb</h2>
@@ -282,10 +299,10 @@ the participle expresses gender, number and voice:
 <p>Russian modal verbs are not considered auxiliary and they are tagged <code>VERB</code>.
 Their behavior is only slightly different from other content verbs.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-pos/AUX_.md" target="#">edit AUX</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-pos/AUX_.md" target="#">edit AUX</a></p>
 
-<p><a id="al-ru-pos/CONJ" class="al-dest"></a></p>
-<h2><code>CONJ</code>: coordinating conjunction</h2>
+<p><a id="al-ru-pos/CCONJ" class="al-dest"></a></p>
+<h2><code>CCONJ</code>: coordinating conjunction</h2>
 
 <h3 id="definition">Definition</h3>
 
@@ -303,7 +320,7 @@ expresses a semantic relationship between them.</p>
   <li><em>но </em> “but”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-pos/CONJ.md" target="#">edit CONJ</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-pos/CCONJ.md" target="#">edit CCONJ</a></p>
 
 <p><a id="al-ru-pos/DET" class="al-dest"></a></p>
 <h2><code>DET</code>: determiner</h2>
@@ -337,7 +354,7 @@ and attributive pronouns (UD tag <code>DET</code>).</p>
   <li>negative determiners: <em>никакой </em> as in <em>У нас не осталось <b>никаких</b> машин. </em> “We have <b>no</b> cars available.”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-pos/DET.md" target="#">edit DET</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-pos/DET.md" target="#">edit DET</a></p>
 
 <p><a id="al-ru-pos/INTJ" class="al-dest"></a></p>
 <h2><code>INTJ</code>: interjection</h2>
@@ -363,7 +380,7 @@ cannot serve to judge the part of speech from the English perspective.)</p>
   <li><em>ради бога </em> “for God’s sake”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-pos/INTJ.md" target="#">edit INTJ</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-pos/INTJ.md" target="#">edit INTJ</a></p>
 
 <p><a id="al-ru-pos/NOUN" class="al-dest"></a></p>
 <h2><code>NOUN</code>: noun</h2>
@@ -396,7 +413,7 @@ number-case inflectional paradigm.</p>
   <li><em>плавание</em>  “swimming”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-pos/NOUN.md" target="#">edit NOUN</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-pos/NOUN.md" target="#">edit NOUN</a></p>
 
 <p><a id="al-ru-pos/NUM" class="al-dest"></a></p>
 <h2><code>NUM</code>: numeral</h2>
@@ -455,7 +472,7 @@ In numeric expressions, e.g. <em>110 <b>тысяч</b> долларов </em> (
   <li><em>много, мало, немного, немало, несколько, достаточно </em> “many, few, not many, a lot, several, enough”: pronominal quantifiers are ambiguous between cardinal numerals (tagged <code>NUM</code> when they refer to imprecise quantities) and adverbs (tagged <a href="">ADV</a> when they refer to degree/intensity). As a rule, the latter have verbs, adjectives, and adverbs as their head (e.g. <em>я был несколько груб</em> “I was a bit rude”). Note that the words <em>более, больше, менее, меньше</em> “more than, less than” are considered comparative forms of the numerals <em>много</em> and <em>мало</em> when they are used in constructions with cardinal numerals, e.g. <em>более пяти студентов</em> “more than five students” (see <a href="http://universaldependencies.org/ru/overview/specific-syntax.html#more-than">specific-syntax</a>).</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-pos/NUM.md" target="#">edit NUM</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-pos/NUM.md" target="#">edit NUM</a></p>
 
 <p><a id="al-ru-pos/PART" class="al-dest"></a></p>
 <h2><code>PART</code>: particle</h2>
@@ -465,7 +482,7 @@ In numeric expressions, e.g. <em>110 <b>тысяч</b> долларов </em> (
 <p>Particles are function words that must be associated with another word
 or phrase to impart meaning and that do not satisfy definitions of
 other universal parts of speech (e.g. <a href="ADP">adpositions</a>,
-<a href="CONJ">coordinating conjunctions</a>, <a href="SCONJ">subordinating conjunctions</a>
+<a href="CCONJ">coordinating conjunctions</a>, <a href="SCONJ">subordinating conjunctions</a>
 or <a href="AUX">auxiliary verbs</a>).  Particles may encode grammatical
 categories such as negation, mood, tense etc. Russian particles are
 not inflected.</p>
@@ -483,7 +500,7 @@ as interjections under the UD standard.</p>
 Use case: <em>Мне сегодня аж пять писем пришло. </em> “Today I have recieved even five letters”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-pos/PART.md" target="#">edit PART</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-pos/PART.md" target="#">edit PART</a></p>
 
 <p><a id="al-ru-pos/PRON" class="al-dest"></a></p>
 <h2><code>PRON</code>: pronoun</h2>
@@ -519,7 +536,7 @@ languages, it should be now tagged <code>PRON</code> in <em>Я видел <b>э�
   <li>negative pronouns: <em>никто, ничто </em> “nobody, nothing”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-pos/PRON.md" target="#">edit PRON</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-pos/PRON.md" target="#">edit PRON</a></p>
 
 <p><a id="al-ru-pos/PROPN" class="al-dest"></a></p>
 <h2><code>PROPN</code>: proper noun</h2>
@@ -545,7 +562,7 @@ are written in lowercase and are not tagged <code>PROPN</code>.</p>
 
 <p>Personal names are typically treated as a sequence of proper nouns
 (one or more given names and one or more surnames).
-If the name contains prepositions, conjunctions or articles (foreign names), these are tagged as <code>ADP</code>, <code>CONJ</code> and <code>DET</code>,
+If the name contains prepositions, conjunctions or articles (foreign names), these are tagged as <code>ADP</code>, <code>CCONJ</code> and <code>DET</code>,
 respectively.</p>
 
 <p>Russian (and other Slavic) multi-word named entities have internal syntactic
@@ -570,7 +587,7 @@ consists of three words, none of which is proper noun. However, the acronym
 <em><b>ООН</b> </em> “UNO” is a single-token name and is tagged <code>PROPN</code>.</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-pos/PROPN.md" target="#">edit PROPN</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-pos/PROPN.md" target="#">edit PROPN</a></p>
 
 <p><a id="al-ru-pos/PUNCT" class="al-dest"></a></p>
 <h2><code>PUNCT</code>: punctuation</h2>
@@ -591,7 +608,7 @@ used to delimit linguistic units in printed text.</p>
   <li>Parentheses: <em><b>()</b></em></li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-pos/PUNCT.md" target="#">edit PUNCT</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-pos/PUNCT.md" target="#">edit PUNCT</a></p>
 
 <p><a id="al-ru-pos/SCONJ" class="al-dest"></a></p>
 <h2><code>SCONJ</code>: subordinating conjunction</h2>
@@ -603,7 +620,7 @@ by making one of them a constituent of the other. The subordinating
 conjunction typically marks the incorporated constituent which has the
 status of a (subordinate) clause.</p>
 
-<p>For <em>coordinating conjunctions,</em> see <a href="">CONJ</a>.</p>
+<p>For <em>coordinating conjunctions,</em> see <a href="">CCONJ</a>.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -614,7 +631,7 @@ status of a (subordinate) clause.</p>
   <li><em>чем </em> “than”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-pos/SCONJ.md" target="#">edit SCONJ</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-pos/SCONJ.md" target="#">edit SCONJ</a></p>
 
 <p><a id="al-ru-pos/SYM" class="al-dest"></a></p>
 <h2><code>SYM</code>: symbol</h2>
@@ -655,7 +672,7 @@ they are punctuation.</p>
   <li><em>john.doe@universal.org, http://universaldependencies.org/, 1-800-COMPANY</em></li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-pos/SYM.md" target="#">edit SYM</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-pos/SYM.md" target="#">edit SYM</a></p>
 
 <p><a id="al-ru-pos/VERB" class="al-dest"></a></p>
 <h2><code>VERB</code>: verb</h2>
@@ -732,7 +749,7 @@ And these adjectives are not derived from verbs. Example:</p>
 <p>Here both groups are <code>ADJ</code>. The nominal forms are used in predication,
 the standard forms both in predication and to modify nouns.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-pos/VERB.md" target="#">edit VERB</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-pos/VERB.md" target="#">edit VERB</a></p>
 
 <p><a id="al-ru-pos/X" class="al-dest"></a></p>
 <h2><code>X</code>: other</h2>
@@ -760,7 +777,7 @@ part-of-speech. For example, in <em>Он надел килт </em> “He put on
   <li><em>И потом он просто <b>xfgh pdl jklw</b> </em> “And then he just <b>xfgh pdl jklw</b>”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-pos/X.md" target="#">edit X</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-pos/X.md" target="#">edit X</a></p>
 
 
 

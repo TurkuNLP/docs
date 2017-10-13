@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-u">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-u">home</a></span>
 
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-overview/morphology.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-overview/morphology.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -78,12 +95,9 @@ and features. See also <a href="tokenization.html">Tokenization</a> and
 
 <h2 id="part-of-speech-tags">Part-of-Speech Tags</h2>
 
-<p>The list of <a href="../../u/pos/index.html">universal POS tags</a> is
-a fixed list containing 17 tags.<br />
-It is possible that some tags will not be used in some
-languages. However, the list cannot be extended to cover
-language-specific extensions. Instead, more fine-grained
-classification of words can be achieved via the use of 
+<p>The list of <a href="../../u/pos/index.html">universal POS tags</a> is a fixed list containing 17 tags.<br />
+It is possible that some tags will not be used in some languages. However, the list cannot be extended to cover
+language-specific extensions. Instead, more fine-grained classification of words can be achieved via the use of 
 <a href="../../u/feat/index.html">features</a> (see below).</p>
 
 <p>Also, note that the <a href="../../format.html">CoNLL-U format</a>
@@ -97,11 +111,8 @@ instead of underscore if no other tag is appropriate.)</p>
 
 <h3 id="using-a-word-vs-mentioning-it">Using a word vs. mentioning it</h3>
 
-<p>The universal POS tags focus more on <em>what the word is</em> than on <em>which construction it is used in</em>
-(the latter is specified by the
-<a href="../../u/dep/index.html">dependency relation labels</a>).
-In particular, the POS tags do not distinguish actual usage of a word from just mentioning it.
-Thus in both the following examples, <em>yes</em> will be tagged as interjection:</p>
+<p>The universal POS tags should capture regular, prevailing syntactic behavior, as well as morphological characteristics
+when available, and should not reflect sentence-specific exceptional behavior. In particular, the POS tags do not distinguish actual usage of a word from just mentioning it. Thus in both the following examples, <em>yes</em> will be tagged as interjection:</p>
 
 <ul>
   <li><em>Yes, I think so.</em></li>
@@ -115,9 +126,39 @@ Thus in both the following examples, <em>yes</em> will be tagged as interjection
   <li><em>He pronounced ‘precede’ in a funny way.</em></li>
 </ul>
 
+<h3 id="pronominal-words">Pronominal words</h3>
+
+<p>Pronominal words are <a href="/u/pos/PRON.html">pronouns</a>, <a href="/u/pos/DET.html">determiners</a> (articles and pronominal adjectives),
+pronominal <a href="/u/pos/ADV.html">adverbs</a> <em>(where, when, how)</em>, and in traditional grammars of some languages also pronominal <a href="/u/pos/NUM.html">numerals</a> <em>(how much)</em>.</p>
+
+<ul>
+  <li>In most cases it is straightforward to determine whether a word is pronominal (see also the <a href="/u/feat/PronType.html">PronType</a> feature)
+but the borderline between indefinite determiners and adjectives is slightly fuzzy. Related languages should synchronize the lists of words
+they treat as pronominal. The rest of these guidelines demarcate borders within the pronominal group.</li>
+  <li>Pronominal adverbs are tagged <code>ADV</code>. Their pronominality is encoded using the <code>PronType</code> feature. Their typical syntactic function is to modify verbs.</li>
+  <li>Articles <em>(the, a, an)</em> are always tagged <code>DET</code>; their <code>PronType</code> is <code>Art</code>.</li>
+  <li>Pronominal numerals (quantifiers) are tagged <code>DET</code>; besides <code>PronType</code>, they also use the <a href="/u/feat/NumType.html">NumType</a> feature.</li>
+  <li>Words that behave similar to adjectives are <code>DET</code>.
+(We understand the <code>DET</code> class as pro-adjectives, which is a slightly broader sense than what is usually regarded as determiners in English.
+In particular, it is possible that one nominal is modified by more than one determiner.) Similar behavior means:
+    <ul>
+      <li>They are more likely to be used attributively (modifying a noun phrase) than substantively (replacing a noun phrase). They may occur alone, though.
+If they do, it is either because of ellipsis, or because the hypothetical modified noun is something unspecified and general, as in <em>All [visitors] must pay.</em></li>
+      <li>Their inflection is similar to that of adjectives, and distinct from nouns. They agree with the nouns they modify.
+Especially the ability to inflect for gender is typical for adjectives and determiners.
+(Gender of nouns is determined lexically and determiners may be required by the grammar to agree with their nouns in gender; therefore they need to inflect for gender.)</li>
+    </ul>
+  </li>
+  <li>Non-possessive personal, reflexive or reciprocal pronouns are always tagged <code>PRON</code>.</li>
+  <li>Possessives vary across languages. In some languages the above tests put them in the <code>DET</code> category.
+In others, they are more like a normal personal pronoun in a specific case (often the genitive), or a personal pronoun with an adposition; they are tagged <code>PRON</code>.</li>
+  <li>When the above rules do not help, the category should be based on what the traditional grammar of the language says.</li>
+  <li>Ideally, language-specific documentation should list pronominal words and their category. These are all closed classes so it should not be difficult.</li>
+</ul>
+
 <h3 id="see-also">See also</h3>
 
-<p>The guidelines for the following cases are documented on the referenced pages
+<p>The guidelines for the following special cases are documented on the referenced pages
 for specific POS tags:</p>
 
 <ul>

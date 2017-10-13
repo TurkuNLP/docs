@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-sk">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/sk/dep">sk/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_sk-dep/parataxis.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/sk/dep">sk/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sk-dep/parataxis.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,12 +80,12 @@ for <code>parataxis</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>65 nodes (0%) are attached to their parents as <code>parataxis</code>.</p>
+<p>55 nodes (0%) are attached to their parents as <code>parataxis</code>.</p>
 
-<p>42 instances of <code>parataxis</code> (65%) are left-to-right (parent precedes child).
-Average distance between parent and child is 7.69230769230769.</p>
+<p>34 instances of <code>parataxis</code> (62%) are left-to-right (parent precedes child).
+Average distance between parent and child is 7.74545454545455.</p>
 
-<p>The following 8 pairs of parts of speech are connected with <code>parataxis</code>: <a href="">sk-pos/VERB</a>-<a href="">sk-pos/VERB</a> (47; 72% instances), <a href="">sk-pos/NOUN</a>-<a href="">sk-pos/VERB</a> (5; 8% instances), <a href="">sk-pos/VERB</a>-<a href="">sk-pos/NOUN</a> (5; 8% instances), <a href="">sk-pos/ADJ</a>-<a href="">sk-pos/VERB</a> (3; 5% instances), <a href="">sk-pos/VERB</a>-<a href="">sk-pos/PART</a> (2; 3% instances), <a href="">sk-pos/NOUN</a>-<a href="">sk-pos/NOUN</a> (1; 2% instances), <a href="">sk-pos/NUM</a>-<a href="">sk-pos/VERB</a> (1; 2% instances), <a href="">sk-pos/VERB</a>-<a href="">sk-pos/PRON</a> (1; 2% instances).</p>
+<p>The following 9 pairs of parts of speech are connected with <code>parataxis</code>: <a href="">sk-pos/VERB</a>-<a href="">sk-pos/VERB</a> (36; 65% instances), <a href="">sk-pos/VERB</a>-<a href="">sk-pos/NOUN</a> (5; 9% instances), <a href="">sk-pos/NOUN</a>-<a href="">sk-pos/VERB</a> (4; 7% instances), <a href="">sk-pos/ADJ</a>-<a href="">sk-pos/VERB</a> (3; 5% instances), <a href="">sk-pos/VERB</a>-<a href="">sk-pos/ADJ</a> (2; 4% instances), <a href="">sk-pos/VERB</a>-<a href="">sk-pos/PART</a> (2; 4% instances), <a href="">sk-pos/ADJ</a>-<a href="">sk-pos/ADJ</a> (1; 2% instances), <a href="">sk-pos/NOUN</a>-<a href="">sk-pos/NOUN</a> (1; 2% instances), <a href="">sk-pos/VERB</a>-<a href="">sk-pos/PRON</a> (1; 2% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 2	bgColor:blue
 # visual-style 2	fgColor:white
@@ -76,40 +93,15 @@ Average distance between parent and child is 7.69230769230769.</p>
 # visual-style 7	fgColor:white
 # visual-style 7 2 parataxis	color:blue
 1	“	“	PUNCT	Z	_	7	punct	_	_
-2	Vieš	vedieť	VERB	VKesb+	Aspect=Imp|Mood=Ind|Negative=Pos|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	7	parataxis	_	_
+2	Vieš	vedieť	VERB	VKesb+	Aspect=Imp|Mood=Ind|Number=Sing|Person=2|Polarity=Pos|Tense=Pres|VerbForm=Fin	7	parataxis	_	SpaceAfter=No
 3	,	,	PUNCT	Z	_	2	punct	_	_
 4	minulé	minulý	ADJ	AAns4x	Case=Acc|Degree=Pos|Gender=Neut|Number=Sing	5	amod	_	_
-5	leto	leto	NOUN	SSns4	Case=Acc|Gender=Neut|Number=Sing	7	nmod	_	_
-6	som	byť	AUX	VKesa+	Aspect=Imp|Mood=Ind|Negative=Pos|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	aux	_	_
-7	mal	mať	VERB	VLesam+	Animacy=Anim|Aspect=Imp|Gender=Masc|Negative=Pos|Number=Sing|Person=1|Tense=Past|VerbForm=Part	0	root	_	_
+5	leto	leto	NOUN	SSns4	Case=Acc|Gender=Neut|Number=Sing	7	obl	_	_
+6	som	byť	AUX	VKesa+	Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Pres|VerbForm=Fin	7	aux	_	_
+7	mal	mať	VERB	VLesam+	Animacy=Anim|Aspect=Imp|Gender=Masc|Number=Sing|Person=1|Polarity=Pos|Tense=Past|VerbForm=Part	0	root	_	_
 8	fantastický	fantastický	ADJ	AAis4x	Animacy=Inan|Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	9	amod	_	_
-9	džob	džob	NOUN	SSis4	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	7	dobj	_	_
+9	džob	džob	NOUN	SSis4	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No
 10	.	.	PUNCT	Z	_	7	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 11	bgColor:blue
-# visual-style 11	fgColor:white
-# visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 3 11 parataxis	color:blue
-1	Prvým	prvý	NUM	NAis7	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	3	nummod	_	_
-2	umelým	umelý	ADJ	AAis7x	Animacy=Inan|Case=Ins|Degree=Pos|Gender=Masc|Number=Sing	3	amod	_	_
-3	satelitom	satelit	NOUN	SSis7	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	0	root	_	_
-4	Mesiaca	mesiac	PROPN	SSis2:r	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	_
-5	bola	byť	VERB	VLescf+	Aspect=Imp|Gender=Fem|Negative=Pos|Number=Sing|Person=3|Tense=Past|VerbForm=Part	3	cop	_	_
-6	sovietska	sovietsky	ADJ	AAfs1x	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	7	amod	_	_
-7	sonda	sonda	NOUN	SSfs1	Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	_
-8	Luna	luna	PROPN	SSfs1:r	Case=Nom|Gender=Fem|Number=Sing	7	nmod	_	_
-9	10	10	NUM	0	NumForm=Digit	8	nummod	_	_
-10	(	(	PUNCT	Z	_	11	punct	_	_
-11	odštartovala	odštartovať	VERB	VLdscf+	Aspect=Perf|Gender=Fem|Negative=Pos|Number=Sing|Person=3|Tense=Past|VerbForm=Part	3	parataxis	_	_
-12	31	31	NUM	0	NumForm=Digit	14	nummod	_	_
-13	.	.	PUNCT	Z	_	12	punct	_	_
-14	marca	marec	NOUN	SSis2	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	11	nmod	_	_
-15	1966	1966	NUM	0	NumForm=Digit	14	nummod	_	_
-16	)	)	PUNCT	Z	_	11	punct	_	_
-17	.	.	PUNCT	Z	_	3	punct	_	_
 
 </code></pre>
 
@@ -118,22 +110,50 @@ Average distance between parent and child is 7.69230769230769.</p>
 # visual-style 1	bgColor:blue
 # visual-style 1	fgColor:white
 # visual-style 1 15 parataxis	color:blue
-1	Pokúšal	pokúšať	VERB	VLescm+	Animacy=Anim|Aspect=Imp|Gender=Masc|Negative=Pos|Number=Sing|Person=3|Tense=Past|VerbForm=Part	0	root	_	_
-2	sa	sa	PRON	R	PronType=Prs|Reflex=Yes	1	expl	_	_
+1	Pokúšal	pokúšať	VERB	VLescm+	Animacy=Anim|Aspect=Imp|Gender=Masc|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Part	0	root	_	_
+2	sa	sa	PRON	R	PronType=Prs|Reflex=Yes	1	expl:pv	_	_
 3	jej	ona	PRON	PFfs3	Case=Dat|Gender=Fem|Number=Sing|PronType=Prs	5	iobj	_	_
-4	to	to	PRON	PFns4	Case=Acc|Gender=Neut|Number=Sing|PronType=Prs	5	dobj	_	_
-5	vysvetliť	vysvetliť	VERB	VId+	Aspect=Perf|Negative=Pos|VerbForm=Inf	1	xcomp	_	_
-6	tak	tak	PRON	PD	PronType=Prs	5	nmod	_	_
+4	to	to	DET	PFns4	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	5	obj	_	_
+5	vysvetliť	vysvetliť	VERB	VId+	Aspect=Perf|Polarity=Pos|VerbForm=Inf	1	xcomp	_	_
+6	tak	tak	ADV	PD	PronType=Dem	5	advmod	_	SpaceAfter=No
 7	,	,	PUNCT	Z	_	9	punct	_	_
-8	aby	aby	CONJ	OY	Mood=Cnd	9	mark	_	_
-9	pochopila	pochopiť	VERB	VLdscf+	Aspect=Perf|Gender=Fem|Negative=Pos|Number=Sing|Person=3|Tense=Past|VerbForm=Part	5	advcl	_	_
+8	aby	aby	SCONJ	OY	Mood=Cnd	9	mark	_	_
+9	pochopila	pochopiť	VERB	VLdscf+	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Part	5	advcl	_	SpaceAfter=No
 10	.	.	PUNCT	Z	_	1	punct	_	_
-11	"	"	PUNCT	Z	_	15	punct	_	_
-12	Toto	toto	PRON	PFns1	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	15	nsubj	_	_
-13	bol	byť	VERB	VLesci+	Animacy=Inan|Aspect=Imp|Gender=Masc|Negative=Pos|Number=Sing|Person=3|Tense=Past|VerbForm=Part	15	cop	_	_
+11	"	"	PUNCT	Z	_	15	punct	_	SpaceAfter=No
+12	Toto	toto	DET	PFns1	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	15	nsubj	_	_
+13	bol	byť	AUX	VLesci+	Animacy=Inan|Aspect=Imp|Gender=Masc|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Part	15	cop	_	_
 14	výnimočný	výnimočný	ADJ	AAis1x	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	15	amod	_	_
-15	prípad	prípad	NOUN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	1	parataxis	_	_
+15	prípad	prípad	NOUN	SSis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	1	parataxis	_	SpaceAfter=No
 16	.	.	PUNCT	Z	_	1	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 7 parataxis	color:blue
+1	Jeho	jeho	DET	PUms7	Animacy=Anim|Case=Ins|Gender=Masc|Gender[psor]=Masc,Neut|Number=Sing|Number[psor]=Sing|Poss=Yes|PronType=Prs	2	det	_	_
+2	otcom	otec	NOUN	SSms7	Animacy=Anim|Case=Ins|Gender=Masc|Number=Sing	0	root	_	_
+3	bol	byť	AUX	VLescm+	Animacy=Anim|Aspect=Imp|Gender=Masc|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Part	2	cop	_	_
+4	cisár	cisár	NOUN	SSms1	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	_
+5	Arkadius	arkadius	PROPN	SSms1:r	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	_
+6	(	(	PUNCT	Z	_	7	punct	_	SpaceAfter=No
+7	vládol	vládnuť	VERB	VLescm+	Animacy=Anim|Aspect=Imp|Gender=Masc|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Part	2	parataxis	_	_
+8	395	395	NUM	0	NumForm=Digit	7	obl	_	_
+9	–	–	PUNCT	Z	_	10	punct	_	_
+10	408	408	NUM	0	NumForm=Digit	8	conj	_	SpaceAfter=No
+11	)	)	PUNCT	Z	_	7	punct	_	SpaceAfter=No
+12	,	,	PUNCT	Z	_	13	punct	_	_
+13	matkou	matka	NOUN	SSfs7	Case=Ins|Gender=Fem|Number=Sing	2	conj	_	_
+14	Eudoxia	eudoxia	PROPN	SSfs1:r	Case=Nom|Gender=Fem|Number=Sing	13	orphan	_	SpaceAfter=No
+15	,	,	PUNCT	Z	_	16	punct	_	_
+16	dcéra	dcéra	NOUN	SSfs1	Case=Nom|Gender=Fem|Number=Sing	14	appos	_	_
+17	magistra	magister	NOUN	SSms2	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	19	nmod	_	_
+18	militum	militum	X	%	Foreign=Yes	17	nmod	_	_
+19	Bautona	bauton	PROPN	SSms2:r	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	16	nmod	_	SpaceAfter=No
+20	.	.	PUNCT	Z	_	2	punct	_	_
 
 </code></pre>
 
@@ -145,9 +165,25 @@ Average distance between parent and child is 7.69230769230769.</p>
 
 parataxis in other languages:
 
+[<a href="../../am/dep/parataxis.html">am</a>]
+
+[<a href="../../ar/dep/parataxis.html">ar</a>]
+
 [<a href="../../bg/dep/parataxis.html">bg</a>]
 
+[<a href="../../bxr/dep/parataxis.html">bxr</a>]
+
+[<a href="../../ca/dep/parataxis.html">ca</a>]
+
+[<a href="../../ckb/dep/parataxis.html">ckb</a>]
+
+[<a href="../../cop/dep/parataxis.html">cop</a>]
+
 [<a href="../../cs/dep/parataxis.html">cs</a>]
+
+[<a href="../../cu/dep/parataxis.html">cu</a>]
+
+[<a href="../../da/dep/parataxis.html">da</a>]
 
 [<a href="../../de/dep/parataxis.html">de</a>]
 
@@ -157,29 +193,99 @@ parataxis in other languages:
 
 [<a href="../../es/dep/parataxis.html">es</a>]
 
+[<a href="../../et/dep/parataxis.html">et</a>]
+
 [<a href="../../eu/dep/parataxis.html">eu</a>]
 
 [<a href="../../fa/dep/parataxis.html">fa</a>]
 
 [<a href="../../fi/dep/parataxis.html">fi</a>]
 
+[<a href="../../fo/dep/parataxis.html">fo</a>]
+
 [<a href="../../fr/dep/parataxis.html">fr</a>]
 
 [<a href="../../ga/dep/parataxis.html">ga</a>]
 
+[<a href="../../gl/dep/parataxis.html">gl</a>]
+
+[<a href="../../got/dep/parataxis.html">got</a>]
+
+[<a href="../../grc/dep/parataxis.html">grc</a>]
+
 [<a href="../../he/dep/parataxis.html">he</a>]
 
+[<a href="../../hi/dep/parataxis.html">hi</a>]
+
+[<a href="../../hr/dep/parataxis.html">hr</a>]
+
 [<a href="../../hu/dep/parataxis.html">hu</a>]
+
+[<a href="../../id/dep/parataxis.html">id</a>]
 
 [<a href="../../it/dep/parataxis.html">it</a>]
 
 [<a href="../../ja/dep/parataxis.html">ja</a>]
 
+[<a href="../../kk/dep/parataxis.html">kk</a>]
+
+[<a href="../../kmr/dep/parataxis.html">kmr</a>]
+
 [<a href="../../ko/dep/parataxis.html">ko</a>]
+
+[<a href="../../la/dep/parataxis.html">la</a>]
+
+[<a href="../../lv/dep/parataxis.html">lv</a>]
+
+[<a href="../../mr/dep/parataxis.html">mr</a>]
+
+[<a href="../../nl/dep/parataxis.html">nl</a>]
+
+[<a href="../../no/dep/parataxis.html">no</a>]
+
+[<a href="../../pl/dep/parataxis.html">pl</a>]
+
+[<a href="../../pt/dep/parataxis.html">pt</a>]
+
+[<a href="../../ro/dep/parataxis.html">ro</a>]
+
+[<a href="../../ru/dep/parataxis.html">ru</a>]
+
+[<a href="../../sa/dep/parataxis.html">sa</a>]
+
+[<a href="../../sk/dep/parataxis.html">sk</a>]
+
+[<a href="../../sla/dep/parataxis.html">sla</a>]
+
+[<a href="../../sl/dep/parataxis.html">sl</a>]
+
+[<a href="../../so/dep/parataxis.html">so</a>]
+
+[<a href="../../sr/dep/parataxis.html">sr</a>]
 
 [<a href="../../sv/dep/parataxis.html">sv</a>]
 
+[<a href="../../swl/dep/parataxis.html">swl</a>]
+
+[<a href="../../ta/dep/parataxis.html">ta</a>]
+
+[<a href="../../tr/dep/parataxis.html">tr</a>]
+
 [<a href="../../u/dep/parataxis.html">u</a>]
+
+[<a href="../../ug/dep/parataxis.html">ug</a>]
+
+[<a href="../../uk/dep/parataxis.html">uk</a>]
+
+[<a href="../../ur/dep/parataxis.html">ur</a>]
+
+[<a href="../../urj/dep/parataxis.html">urj</a>]
+
+[<a href="../../vi/dep/parataxis.html">vi</a>]
+
+[<a href="../../yue/dep/parataxis.html">yue</a>]
+
+[<a href="../../zh/dep/parataxis.html">zh</a>]
 
 
 

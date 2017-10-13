@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-tr">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/tr/feat">tr/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_tr-feat/NumType.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-tr">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/tr/feat">tr/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-feat/NumType.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -106,23 +123,23 @@ A period following a numeral may also indicate ordinal use of the number.</p>
 <p>This feature is universal.
 It occurs with 3 different values: <code>Card</code>, <code>Dist</code>, <code>Ord</code>.</p>
 
-<p>2050 tokens (4%) have a non-empty value of <code>NumType</code>.
-278 types (2%) occur at least once with a non-empty value of <code>NumType</code>.
-195 lemmas (3%) occur at least once with a non-empty value of <code>NumType</code>.
-The feature is used with 1 part-of-speech tags: <a href="">tr-pos/NUM</a> (2050; 4% instances).</p>
+<p>1707 tokens (4%) have a non-empty value of <code>NumType</code>.
+235 types (2%) occur at least once with a non-empty value of <code>NumType</code>.
+163 lemmas (3%) occur at least once with a non-empty value of <code>NumType</code>.
+The feature is used with 1 part-of-speech tags: <a href="">tr-pos/NUM</a> (1707; 4% instances).</p>
 
 <h3 id="num"><code>NUM</code></h3>
 
-<p>2050 <a href="">tr-pos/NUM</a> tokens (100% of all <code>NUM</code> tokens) have a non-empty value of <code>NumType</code>.</p>
+<p>1707 <a href="">tr-pos/NUM</a> tokens (100% of all <code>NUM</code> tokens) have a non-empty value of <code>NumType</code>.</p>
 
-<p>The most frequent other feature values with which <code>NUM</code> and <code>NumType</code> co-occurred: <tt><a href="Case.html">Case</a>=EMPTY</tt> (1730; 84%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (1730; 84%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (1730; 84%).</p>
+<p>The most frequent other feature values with which <code>NUM</code> and <code>NumType</code> co-occurred: <tt><a href="Number.html">Number</a>=EMPTY</tt> (1439; 84%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (1439; 84%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (1439; 84%).</p>
 
 <p><code>NUM</code> tokens may have the following values of <code>NumType</code>:</p>
 
 <ul>
-  <li><code>Card</code> (2006; 98% of non-empty <code>NumType</code>): <em>bir, iki, bin, üç, on, dört, beş, yüzde, altı, milyon</em></li>
-  <li><code>Dist</code> (12; 1% of non-empty <code>NumType</code>): <em>birer, ikişer, otuzbeşer, yirmisekizer</em></li>
-  <li><code>Ord</code> (32; 2% of non-empty <code>NumType</code>): <em>birincisi, onyedi., ikincisi, İkincisi, birinci, doksandokuz., dokuz., oniki., onikinci., onsekiz.</em></li>
+  <li><code>Card</code> (1674; 98% of non-empty <code>NumType</code>): <em>bir, iki, bin, üç, on, beş, dört, yüzde, milyon, altı</em></li>
+  <li><code>Dist</code> (9; 1% of non-empty <code>NumType</code>): <em>birer, ikişer, otuzbeşer, yirmisekizer</em></li>
+  <li><code>Ord</code> (24; 1% of non-empty <code>NumType</code>): <em>birincisi, ikincisi, birinci, dokuz., oniki., onikinci., onsekiz., onyedi., yetmişaltı., yirmiüç’üncü</em></li>
 </ul>
 
 <table>
@@ -130,21 +147,25 @@ The feature is used with 1 part-of-speech tags: <a href="">tr-pos/NUM</a> (2050;
   <tr><td><tt>_</tt></td><td><em>bir, ,bir</em></td><td><em>birer</em></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Number.html">Number</a>=Sing|<a href="Number[psor].html">Number[psor]</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Person[psor].html">Person[psor]</a>=3</tt></td><td><em>birini</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3</tt></td><td><em>biri</em></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Number.html">Number</a>=Sing|<a href="Number[psor].html">Number[psor]</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Person[psor].html">Person[psor]</a>=2</tt></td><td><em>birine</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Number.html">Number</a>=Sing|<a href="Number[psor].html">Number[psor]</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Person[psor].html">Person[psor]</a>=3</tt></td><td><em>birine</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Loc|<a href="Number.html">Number</a>=Sing|<a href="Number[psor].html">Number[psor]</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Person[psor].html">Person[psor]</a>=3</tt></td><td><em>birinde</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Number.html">Number</a>=Sing|<a href="Number[psor].html">Number[psor]</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Person[psor].html">Person[psor]</a>=3</tt></td><td><em>biri</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3</tt></td><td><em>bir</em></td><td></td></tr>
 </table>
 
-<p><code>NumType</code> seems to be <strong>lexical feature</strong> of <code>NUM</code>. 95% lemmas (185) occur only with one value of <code>NumType</code>.</p>
+<p><code>NumType</code> seems to be <strong>lexical feature</strong> of <code>NUM</code>. 96% lemmas (156) occur only with one value of <code>NumType</code>.</p>
 
 <h2 id="relations-with-agreement-in-numtype">Relations with Agreement in <code>NumType</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>NumType</code>:
-<tt>NUM –[<a href="../dep/compound.html">compound</a>]–&gt; NUM</tt> (156; 99%),
-<tt>NUM –[<a href="../dep/conj.html">conj</a>]–&gt; NUM</tt> (22; 96%),
-<tt>NUM –[<a href="../dep/nummod.html">nummod</a>]–&gt; NUM</tt> (1; 100%).</p>
+<tt>NUM –[<a href="../dep/flat.html">flat</a>]–&gt; NUM</tt> (136; 99%),
+<tt>NUM –[<a href="../dep/conj.html">conj</a>]–&gt; NUM</tt> (11; 100%),
+<tt>NUM –[<a href="../dep/compound.html">compound</a>]–&gt; NUM</tt> (8; 100%),
+<tt>NUM –[<a href="../dep/nummod.html">nummod</a>]–&gt; NUM</tt> (3; 100%),
+<tt>NUM –[<a href="../dep/compound:redup.html">compound:redup</a>]–&gt; NUM</tt> (2; 100%),
+<tt>NUM –[<a href="../dep/case.html">case</a>]–&gt; NUM</tt> (2; 100%),
+<tt>NUM –[<a href="../dep/nmod:poss.html">nmod:poss</a>]–&gt; NUM</tt> (1; 100%),
+<tt>NUM –[<a href="../dep/appos.html">appos</a>]–&gt; NUM</tt> (1; 100%).</p>
 
 
 
@@ -154,9 +175,25 @@ The feature is used with 1 part-of-speech tags: <a href="">tr-pos/NUM</a> (2050;
 
 NumType in other languages:
 
+[<a href="../../am/feat/NumType.html">am</a>]
+
+[<a href="../../ar/feat/NumType.html">ar</a>]
+
 [<a href="../../bg/feat/NumType.html">bg</a>]
 
+[<a href="../../bxr/feat/NumType.html">bxr</a>]
+
+[<a href="../../ca/feat/NumType.html">ca</a>]
+
+[<a href="../../ckb/feat/NumType.html">ckb</a>]
+
+[<a href="../../cop/feat/NumType.html">cop</a>]
+
 [<a href="../../cs/feat/NumType.html">cs</a>]
+
+[<a href="../../cu/feat/NumType.html">cu</a>]
+
+[<a href="../../da/feat/NumType.html">da</a>]
 
 [<a href="../../de/feat/NumType.html">de</a>]
 
@@ -166,29 +203,99 @@ NumType in other languages:
 
 [<a href="../../es/feat/NumType.html">es</a>]
 
+[<a href="../../et/feat/NumType.html">et</a>]
+
 [<a href="../../eu/feat/NumType.html">eu</a>]
 
 [<a href="../../fa/feat/NumType.html">fa</a>]
 
 [<a href="../../fi/feat/NumType.html">fi</a>]
 
+[<a href="../../fo/feat/NumType.html">fo</a>]
+
 [<a href="../../fr/feat/NumType.html">fr</a>]
 
 [<a href="../../ga/feat/NumType.html">ga</a>]
 
+[<a href="../../gl/feat/NumType.html">gl</a>]
+
+[<a href="../../got/feat/NumType.html">got</a>]
+
+[<a href="../../grc/feat/NumType.html">grc</a>]
+
 [<a href="../../he/feat/NumType.html">he</a>]
 
+[<a href="../../hi/feat/NumType.html">hi</a>]
+
+[<a href="../../hr/feat/NumType.html">hr</a>]
+
 [<a href="../../hu/feat/NumType.html">hu</a>]
+
+[<a href="../../id/feat/NumType.html">id</a>]
 
 [<a href="../../it/feat/NumType.html">it</a>]
 
 [<a href="../../ja/feat/NumType.html">ja</a>]
 
+[<a href="../../kk/feat/NumType.html">kk</a>]
+
+[<a href="../../kmr/feat/NumType.html">kmr</a>]
+
 [<a href="../../ko/feat/NumType.html">ko</a>]
+
+[<a href="../../la/feat/NumType.html">la</a>]
+
+[<a href="../../lv/feat/NumType.html">lv</a>]
+
+[<a href="../../mr/feat/NumType.html">mr</a>]
+
+[<a href="../../nl/feat/NumType.html">nl</a>]
+
+[<a href="../../no/feat/NumType.html">no</a>]
+
+[<a href="../../pl/feat/NumType.html">pl</a>]
+
+[<a href="../../pt/feat/NumType.html">pt</a>]
+
+[<a href="../../ro/feat/NumType.html">ro</a>]
+
+[<a href="../../ru/feat/NumType.html">ru</a>]
+
+[<a href="../../sa/feat/NumType.html">sa</a>]
+
+[<a href="../../sk/feat/NumType.html">sk</a>]
+
+[<a href="../../sla/feat/NumType.html">sla</a>]
+
+[<a href="../../sl/feat/NumType.html">sl</a>]
+
+[<a href="../../so/feat/NumType.html">so</a>]
+
+[<a href="../../sr/feat/NumType.html">sr</a>]
 
 [<a href="../../sv/feat/NumType.html">sv</a>]
 
+[<a href="../../swl/feat/NumType.html">swl</a>]
+
+[<a href="../../ta/feat/NumType.html">ta</a>]
+
+[<a href="../../tr/feat/NumType.html">tr</a>]
+
 [<a href="../../u/feat/NumType.html">u</a>]
+
+[<a href="../../ug/feat/NumType.html">ug</a>]
+
+[<a href="../../uk/feat/NumType.html">uk</a>]
+
+[<a href="../../ur/feat/NumType.html">ur</a>]
+
+[<a href="../../urj/feat/NumType.html">urj</a>]
+
+[<a href="../../vi/feat/NumType.html">vi</a>]
+
+[<a href="../../yue/feat/NumType.html">yue</a>]
+
+[<a href="../../zh/feat/NumType.html">zh</a>]
 
 
 

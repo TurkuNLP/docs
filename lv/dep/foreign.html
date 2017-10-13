@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-lv">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/lv/dep">lv/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_lv-dep/foreign.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-lv">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/lv/dep">lv/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_lv-dep/foreign.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -56,63 +73,30 @@ for <code>foreign</code>.</p>
 
 
 
-
-<hr />
-
-<h2 id="treebank-statistics-udlatvian">Treebank Statistics (UD_Latvian)</h2>
-
-<p>This relation is universal.</p>
-
-<p>6 nodes (0%) are attached to their parents as <code>foreign</code>.</p>
-
-<p>6 instances of <code>foreign</code> (100%) are left-to-right (parent precedes child).
-Average distance between parent and child is 1.66666666666667.</p>
-
-<p>The following 1 pairs of parts of speech are connected with <code>foreign</code>: <a href="">lv-pos/X</a>-<a href="">lv-pos/X</a> (6; 100% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 15	bgColor:blue
-# visual-style 15	fgColor:white
-# visual-style 14	bgColor:blue
-# visual-style 14	fgColor:white
-# visual-style 14 15 foreign	color:blue
-1	Arī	arī	PART	qs	_	3	discourse	_	_
-2	"	"	PUNCT	zq	_	3	punct	_	SpaceAfter=No
-3	Lattelecom	Lattelecom	PROPN	np0sn0	Case=Nom|Number=Sing	5	nsubj	_	SpaceAfter=No
-4	"	"	PUNCT	zq	_	3	punct	_	_
-5	iet	iet	VERB	vmnipii30an	Mood=Ind|Negative=Neg|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-6	šajā	šī	DET	pd0fsln	Case=Loc|Gender=Fem|Number=Sing|PronType=Dem	7	det	_	_
-7	jomā	joma	NOUN	ncfsl4	Case=Loc|Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No
-8	,	,	PUNCT	zc	_	5	punct	_	_
-9	paši	pats	PRON	pg0mpnn	Case=Nom|Gender=Masc|Number=Plur|PronType=Tot	12	nsubj	_	_
-10	sev	sevis	PRON	px000dn	Case=Dat|PronType=Rcp|Reflex=Yes	12	iobj	_	_
-11	pērn	pērn	ADV	r0t	_	12	advmod	_	_
-12	ieviesām	ieviest	VERB	vmnist11pan	Mood=Ind|Negative=Neg|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	5	conj	_	_
-13	"	"	PUNCT	zq	_	14	punct	_	SpaceAfter=No
-14	business	business	X	xf	_	17	nmod	_	_
-15	intelligence	intelligence	X	xf	_	14	foreign	_	SpaceAfter=No
-16	"	"	PUNCT	zq	_	14	punct	_	_
-17	risinājumu	risinājums	NOUN	ncmsa1	Case=Acc|Gender=Masc|Number=Sing	12	dobj	_	_
-18	un	un	CONJ	ccs	_	12	cc	_	_
-19	datus	dati	NOUN	ncmda1	Case=Acc|Gender=Masc|Number=Ptan	21	dobj	_	_
-20	jau	jau	ADV	r0t	_	21	advmod	_	_
-21	redzam	redzēt	VERB	vmnipt31pan	Mood=Ind|Negative=Neg|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	12	conj	_	_
-22	no	no	ADP	spsgy	_	23	case	_	_
-23	rīta	rīts	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	21	nmod	_	SpaceAfter=No
-24	.	.	PUNCT	zs	_	5	punct	_	_
-
-</code></pre>
-
-
-
-
 <!-- "in other languages" links -->
 <hr/>
 
 foreign in other languages:
 
+[<a href="../../am/dep/foreign.html">am</a>]
+
+[<a href="../../ar/dep/foreign.html">ar</a>]
+
 [<a href="../../bg/dep/foreign.html">bg</a>]
 
+[<a href="../../bxr/dep/foreign.html">bxr</a>]
+
+[<a href="../../ca/dep/foreign.html">ca</a>]
+
+[<a href="../../ckb/dep/foreign.html">ckb</a>]
+
+[<a href="../../cop/dep/foreign.html">cop</a>]
+
 [<a href="../../cs/dep/foreign.html">cs</a>]
+
+[<a href="../../cu/dep/foreign.html">cu</a>]
+
+[<a href="../../da/dep/foreign.html">da</a>]
 
 [<a href="../../de/dep/foreign.html">de</a>]
 
@@ -122,29 +106,97 @@ foreign in other languages:
 
 [<a href="../../es/dep/foreign.html">es</a>]
 
+[<a href="../../et/dep/foreign.html">et</a>]
+
 [<a href="../../eu/dep/foreign.html">eu</a>]
 
 [<a href="../../fa/dep/foreign.html">fa</a>]
 
 [<a href="../../fi/dep/foreign.html">fi</a>]
 
+[<a href="../../fo/dep/foreign.html">fo</a>]
+
 [<a href="../../fr/dep/foreign.html">fr</a>]
 
 [<a href="../../ga/dep/foreign.html">ga</a>]
 
+[<a href="../../gl/dep/foreign.html">gl</a>]
+
+[<a href="../../got/dep/foreign.html">got</a>]
+
+[<a href="../../grc/dep/foreign.html">grc</a>]
+
 [<a href="../../he/dep/foreign.html">he</a>]
 
+[<a href="../../hi/dep/foreign.html">hi</a>]
+
+[<a href="../../hr/dep/foreign.html">hr</a>]
+
 [<a href="../../hu/dep/foreign.html">hu</a>]
+
+[<a href="../../id/dep/foreign.html">id</a>]
 
 [<a href="../../it/dep/foreign.html">it</a>]
 
 [<a href="../../ja/dep/foreign.html">ja</a>]
 
+[<a href="../../kk/dep/foreign.html">kk</a>]
+
+[<a href="../../kmr/dep/foreign.html">kmr</a>]
+
 [<a href="../../ko/dep/foreign.html">ko</a>]
+
+[<a href="../../la/dep/foreign.html">la</a>]
+
+[<a href="../../lv/dep/foreign.html">lv</a>]
+
+[<a href="../../mr/dep/foreign.html">mr</a>]
+
+[<a href="../../nl/dep/foreign.html">nl</a>]
+
+[<a href="../../no/dep/foreign.html">no</a>]
+
+[<a href="../../pl/dep/foreign.html">pl</a>]
+
+[<a href="../../pt/dep/foreign.html">pt</a>]
+
+[<a href="../../ro/dep/foreign.html">ro</a>]
+
+[<a href="../../ru/dep/foreign.html">ru</a>]
+
+[<a href="../../sa/dep/foreign.html">sa</a>]
+
+[<a href="../../sk/dep/foreign.html">sk</a>]
+
+[<a href="../../sla/dep/foreign.html">sla</a>]
+
+[<a href="../../sl/dep/foreign.html">sl</a>]
+
+[<a href="../../so/dep/foreign.html">so</a>]
+
+[<a href="../../sr/dep/foreign.html">sr</a>]
 
 [<a href="../../sv/dep/foreign.html">sv</a>]
 
-[<a href="../../u/dep/foreign.html">u</a>]
+[<a href="../../swl/dep/foreign.html">swl</a>]
+
+[<a href="../../ta/dep/foreign.html">ta</a>]
+
+[<a href="../../tr/dep/foreign.html">tr</a>]
+
+[<a href="../../ug/dep/foreign.html">ug</a>]
+
+[<a href="../../uk/dep/foreign.html">uk</a>]
+
+[<a href="../../ur/dep/foreign.html">ur</a>]
+
+[<a href="../../urj/dep/foreign.html">urj</a>]
+
+[<a href="../../vi/dep/foreign.html">vi</a>]
+
+[<a href="../../yue/dep/foreign.html">yue</a>]
+
+[<a href="../../zh/dep/foreign.html">zh</a>]
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-es">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/es/dep">es/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_es-dep/auxpass.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-es">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/es/dep">es/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_es-dep/auxpass.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -60,84 +77,30 @@ auxpass(asesinado, fue)
 
 
 
-
-<hr />
-
-<h2 id="treebank-statistics-udspanish">Treebank Statistics (UD_Spanish)</h2>
-
-<p>This relation is universal.</p>
-
-<p>1860 nodes (0%) are attached to their parents as <code>auxpass</code>.</p>
-
-<p>1856 instances of <code>auxpass</code> (100%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.13709677419355.</p>
-
-<p>The following 10 pairs of parts of speech are connected with <code>auxpass</code>: <a href="">es-pos/VERB</a>-<a href="">es-pos/AUX</a> (1739; 93% instances), <a href="">es-pos/NOUN</a>-<a href="">es-pos/AUX</a> (58; 3% instances), <a href="">es-pos/ADJ</a>-<a href="">es-pos/AUX</a> (23; 1% instances), <a href="">es-pos/PROPN</a>-<a href="">es-pos/AUX</a> (19; 1% instances), <a href="">es-pos/VERB</a>-<a href="">es-pos/VERB</a> (15; 1% instances), <a href="">es-pos/PRON</a>-<a href="">es-pos/AUX</a> (2; 0% instances), <a href="">es-pos/ADP</a>-<a href="">es-pos/AUX</a> (1; 0% instances), <a href="">es-pos/PROPN</a>-<a href="">es-pos/PROPN</a> (1; 0% instances), <a href="">es-pos/X</a>-<a href="">es-pos/AUX</a> (1; 0% instances), <a href="">es-pos/X</a>-<a href="">es-pos/X</a> (1; 0% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 2 1 auxpass	color:blue
-1	Fue	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	auxpass	_	_
-2	descubierto	descubierto	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
-3	en	en	ADP	_	_	4	case	_	_
-4	1952	1952	NUM	_	NumType=Card	2	nmod	_	_
-5	.	.	PUNCT	_	_	2	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 3 1 auxpass	color:blue
-1	Fue	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	auxpass	_	_
-2	ordenado	ordenado	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	3	cop	_	_
-3	sacerdote	sacerdote	NOUN	_	VerbForm=Inf	0	root	_	_
-4	el	el	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	1	1	NUM	_	NumType=Card	3	nmod	_	_
-6	de	de	ADP	_	_	7	case	_	_
-7	octubre	octubre	PROPN	_	_	5	nmod	_	_
-8	de	de	ADP	_	_	9	case	_	_
-9	1893	1893	NUM	_	NumType=Card	7	nmod	_	_
-10	.	.	PUNCT	_	_	3	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 11	bgColor:blue
-# visual-style 11	fgColor:white
-# visual-style 13	bgColor:blue
-# visual-style 13	fgColor:white
-# visual-style 13 11 auxpass	color:blue
-1	Es	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	auxpass	_	_
-2	considerado	considerado	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	3	cop	_	_
-3	nomen	nomen	PROPN	_	Gender=Masc|Number=Sing	0	root	_	_
-4	nudum	nudum	PROPN	_	Gender=Masc|Number=Sing	3	name	_	_
-5	,	,	PUNCT	_	_	6	punct	_	_
-6	debido	deber	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	3	acl	_	_
-7	a	a	ADP	_	_	13	case	_	_
-8	que	que	SCONJ	_	_	13	mark	_	_
-9	no	no	ADV	_	_	13	neg	_	_
-10	ha	haber	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux	_	_
-11	sido	ser	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	13	auxpass	_	_
-12	formalmente	formalmente	ADV	_	_	13	advmod	_	_
-13	descrito	descrito	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	6	amod	_	_
-14	.	.	PUNCT	_	_	3	punct	_	_
-
-</code></pre>
-
-
-
-
 <!-- "in other languages" links -->
 <hr/>
 
 auxpass in other languages:
 
+[<a href="../../am/dep/auxpass.html">am</a>]
+
+[<a href="../../ar/dep/auxpass.html">ar</a>]
+
 [<a href="../../bg/dep/auxpass.html">bg</a>]
 
+[<a href="../../bxr/dep/auxpass.html">bxr</a>]
+
+[<a href="../../ca/dep/auxpass.html">ca</a>]
+
+[<a href="../../ckb/dep/auxpass.html">ckb</a>]
+
+[<a href="../../cop/dep/auxpass.html">cop</a>]
+
 [<a href="../../cs/dep/auxpass.html">cs</a>]
+
+[<a href="../../cu/dep/auxpass.html">cu</a>]
+
+[<a href="../../da/dep/auxpass.html">da</a>]
 
 [<a href="../../de/dep/auxpass.html">de</a>]
 
@@ -147,29 +110,95 @@ auxpass in other languages:
 
 [<a href="../../es/dep/auxpass.html">es</a>]
 
+[<a href="../../et/dep/auxpass.html">et</a>]
+
 [<a href="../../eu/dep/auxpass.html">eu</a>]
 
 [<a href="../../fa/dep/auxpass.html">fa</a>]
 
 [<a href="../../fi/dep/auxpass.html">fi</a>]
 
+[<a href="../../fo/dep/auxpass.html">fo</a>]
+
 [<a href="../../fr/dep/auxpass.html">fr</a>]
 
-[<a href="../../ga/dep/auxpass.html">ga</a>]
+[<a href="../../gl/dep/auxpass.html">gl</a>]
+
+[<a href="../../got/dep/auxpass.html">got</a>]
+
+[<a href="../../grc/dep/auxpass.html">grc</a>]
 
 [<a href="../../he/dep/auxpass.html">he</a>]
 
+[<a href="../../hi/dep/auxpass.html">hi</a>]
+
+[<a href="../../hr/dep/auxpass.html">hr</a>]
+
 [<a href="../../hu/dep/auxpass.html">hu</a>]
+
+[<a href="../../id/dep/auxpass.html">id</a>]
 
 [<a href="../../it/dep/auxpass.html">it</a>]
 
 [<a href="../../ja/dep/auxpass.html">ja</a>]
 
+[<a href="../../kk/dep/auxpass.html">kk</a>]
+
+[<a href="../../kmr/dep/auxpass.html">kmr</a>]
+
 [<a href="../../ko/dep/auxpass.html">ko</a>]
+
+[<a href="../../la/dep/auxpass.html">la</a>]
+
+[<a href="../../lv/dep/auxpass.html">lv</a>]
+
+[<a href="../../mr/dep/auxpass.html">mr</a>]
+
+[<a href="../../nl/dep/auxpass.html">nl</a>]
+
+[<a href="../../no/dep/auxpass.html">no</a>]
+
+[<a href="../../pl/dep/auxpass.html">pl</a>]
+
+[<a href="../../pt/dep/auxpass.html">pt</a>]
+
+[<a href="../../ro/dep/auxpass.html">ro</a>]
+
+[<a href="../../ru/dep/auxpass.html">ru</a>]
+
+[<a href="../../sa/dep/auxpass.html">sa</a>]
+
+[<a href="../../sk/dep/auxpass.html">sk</a>]
+
+[<a href="../../sla/dep/auxpass.html">sla</a>]
+
+[<a href="../../sl/dep/auxpass.html">sl</a>]
+
+[<a href="../../so/dep/auxpass.html">so</a>]
+
+[<a href="../../sr/dep/auxpass.html">sr</a>]
 
 [<a href="../../sv/dep/auxpass.html">sv</a>]
 
-[<a href="../../u/dep/auxpass.html">u</a>]
+[<a href="../../swl/dep/auxpass.html">swl</a>]
+
+[<a href="../../ta/dep/auxpass.html">ta</a>]
+
+[<a href="../../tr/dep/auxpass.html">tr</a>]
+
+[<a href="../../ug/dep/auxpass.html">ug</a>]
+
+[<a href="../../uk/dep/auxpass.html">uk</a>]
+
+[<a href="../../ur/dep/auxpass.html">ur</a>]
+
+[<a href="../../urj/dep/auxpass.html">urj</a>]
+
+[<a href="../../vi/dep/auxpass.html">vi</a>]
+
+[<a href="../../yue/dep/auxpass.html">yue</a>]
+
+[<a href="../../zh/dep/auxpass.html">zh</a>]
 
 
 

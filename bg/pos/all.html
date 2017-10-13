@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-bg">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-bg">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -66,7 +83,7 @@
     </tr>
     <tr>
       <td><a>INTJ</a></td>
-      <td><a>CONJ</a></td>
+      <td><a>CCONJ</a></td>
       <td><a>X</a></td>
     </tr>
     <tr>
@@ -160,7 +177,7 @@ for determiners and <a href="">NUM</a> for numerals.</p>
 
 <p>Note that the symbol `#’, used in the Universal POS section indicates a holder for arbitrary number of features, suppressed in the respective tag as irrelevant in the BulTreeBank tagset, when mapped to the Universal one.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_bg-pos/ADJ.md" target="#">edit ADJ</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-pos/ADJ.md" target="#">edit ADJ</a></p>
 
 <p><a id="al-bg-pos/ADP" class="al-dest"></a></p>
 <h2><code>ADP</code>: adposition</h2>
@@ -200,7 +217,7 @@ are treated compositionally.</p>
   <li><em>на</em> / <em>na</em> “of”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_bg-pos/ADP.md" target="#">edit ADP</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-pos/ADP.md" target="#">edit ADP</a></p>
 
 <p><a id="al-bg-pos/ADV" class="al-dest"></a></p>
 <h2><code>ADV</code>: adverb</h2>
@@ -260,16 +277,29 @@ In this way there will be ambiguity with the class of [adjectives] (ADJ).</p>
 
 <p>Note that the symbol `#’, used in the Universal POS section indicates a holder for arbitrary number of features, suppressed in the respective tag as irrelevant in the BulTreeBank tagset, when mapped to the Universal one.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_bg-pos/ADV.md" target="#">edit ADV</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-pos/ADV.md" target="#">edit ADV</a></p>
 
 <p><a id="al-bg-pos/AUX" class="al-dest"></a></p>
 <h2><code>AUX</code>: auxiliary verb</h2>
 
 <h3 id="definition">Definition</h3>
 
-<p>An auxiliary verb is a verb that accompanies the lexical verb of a
+<p>An auxiliary is a function word that accompanies the lexical verb of a
 verb phrase and expresses grammatical distinctions not carried by the
-lexical verb, such as person, number, tense, mood, aspect, and voice.</p>
+lexical verb, such as person, number, tense, mood, aspect, voice or evidentiality.
+It is often a verb (which may have non-auxiliary uses as well) but many languages 
+have nonverbal TAME markers and these should also be tagged <code>AUX</code>. The class <code>AUX</code>
+also include copulas (in the narrow sense of pure linking words for nonverbal predication).</p>
+
+<p><em>Modal verbs</em> may count as auxiliaries in some languages (English). In
+other languages their behavior is not too different from the <a href="VERB">main
+verbs</a> and they are thus tagged <code>VERB</code>.</p>
+
+<p>Note that not all languages have grammaticalized auxiliaries, and
+even where they exist the dividing line between full verbs and
+auxiliaries can be expected to vary between languages. Exactly
+which words are counted as <code>AUX</code> should be part of the
+language-specific documentation.</p>
 
 <p>In Bulgarian the auxiliary verbs are varieties of the verb ‘to be’:</p>
 
@@ -281,6 +311,13 @@ lexical verb, such as person, number, tense, mood, aspect, and voice.</p>
 
 <p><em>Modal verbs</em> count as <a href="VERB">main verbs</a> in BulTreeBank tagset and they are thus tagged <code>VERB</code>.</p>
 
+<p>Also, the following verbal particles (Tx) are viewed as auxiliaries:</p>
+
+<ul>
+  <li><em>да</em> / <em>da</em> “to”</li>
+  <li><em>ще</em> / <em>shte</em> “will”</li>
+</ul>
+
 <h3 id="examples">Examples</h3>
 
 <ul>
@@ -289,10 +326,10 @@ lexical verb, such as person, number, tense, mood, aspect, and voice.</p>
 
 <p>Note that the symbol `#’, used in the Universal POS section indicates a holder for arbitrary number of features, suppressed in the respective tag as irrelevant in the BulTreeBank tagset, when mapped to the Universal one.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_bg-pos/AUX_.md" target="#">edit AUX</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-pos/AUX_.md" target="#">edit AUX</a></p>
 
-<p><a id="al-bg-pos/CONJ" class="al-dest"></a></p>
-<h2><code>CONJ</code>: coordinating conjunction</h2>
+<p><a id="al-bg-pos/CCONJ" class="al-dest"></a></p>
+<h2><code>CCONJ</code>: coordinating conjunction</h2>
 
 <h3 id="definition">Definition</h3>
 
@@ -327,7 +364,7 @@ in a repetitive chain.</b></p>
   <li><em>и</em> / <em>i</em> “and”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_bg-pos/CONJ.md" target="#">edit CONJ</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-pos/CCONJ.md" target="#">edit CCONJ</a></p>
 
 <p><a id="al-bg-pos/DET" class="al-dest"></a></p>
 <h2><code>DET</code>: determiner</h2>
@@ -376,7 +413,7 @@ The short forms are clitics and will be treated differently.</p>
 
 <p>The symbol `@’ marks the suppresion with one feature in the tag.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_bg-pos/DET.md" target="#">edit DET</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-pos/DET.md" target="#">edit DET</a></p>
 
 <p><a id="al-bg-pos/INTJ" class="al-dest"></a></p>
 <h2><code>INTJ</code>: interjection</h2>
@@ -406,7 +443,7 @@ Thus, only the Noun usage will be kept in the universal setting.</p>
   <li>Tn (negative) - <em>не</em> / <em>не</em> “no”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_bg-pos/INTJ.md" target="#">edit INTJ</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-pos/INTJ.md" target="#">edit INTJ</a></p>
 
 <p><a id="al-bg-pos/NOUN" class="al-dest"></a></p>
 <h2><code>NOUN</code>: noun</h2>
@@ -432,7 +469,7 @@ animal or idea.</p>
 
 <p>Note that the symbol `#’, used in the Universal POS section indicates a holder for arbitrary number of features, suppressed in the respective tag as irrelevant in the BulTreeBank tagset, when mapped to the Universal one.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_bg-pos/NOUN.md" target="#">edit NOUN</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-pos/NOUN.md" target="#">edit NOUN</a></p>
 
 <p><a id="al-bg-pos/NUM" class="al-dest"></a></p>
 <h2><code>NUM</code>: numeral</h2>
@@ -461,7 +498,7 @@ such as <em>many</em> and <em>few</em>) are tagged <a href="">DET</a>.</p>
 
 <p>Note that the symbol `#’, used in the Universal POS section indicates a holder for arbitrary number of features, suppressed in the respective tag as irrelevant in the BulTreeBank tagset, when mapped to the Universal one.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_bg-pos/NUM.md" target="#">edit NUM</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-pos/NUM.md" target="#">edit NUM</a></p>
 
 <p><a id="al-bg-pos/PART" class="al-dest"></a></p>
 <h2><code>PART</code>: particle</h2>
@@ -471,7 +508,7 @@ such as <em>many</em> and <em>few</em>) are tagged <a href="">DET</a>.</p>
 <p>Particles are function words that must be associated with another word
 or phrase to impart meaning and that do not satisfy definitions of
 other universal parts of speech (e.g. <a href="ADP">adpositions</a>,
-<a href="CONJ">coordinating conjunctions</a>, <a href="SCONJ">subordinating conjunctions</a>
+<a href="CCONJ">coordinating conjunctions</a>, <a href="SCONJ">subordinating conjunctions</a>
 or <a href="AUX">auxiliary verbs</a>).  Particles may encode grammatical
 categories such as negation, mood, tense etc.  Particles are normally
 not inflected, although exceptions may occur.</p>
@@ -491,7 +528,7 @@ not inflected, although exceptions may occur.</p>
   <li>gradable particles (Tg): <em>най</em> / <em>nay</em> “most”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_bg-pos/PART.md" target="#">edit PART</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-pos/PART.md" target="#">edit PART</a></p>
 
 <p><a id="al-bg-pos/PRON" class="al-dest"></a></p>
 <h2><code>PRON</code>: pronoun</h2>
@@ -526,7 +563,7 @@ several parts-of-speech: <a href="DET">determiners</a>, <a href="ADV">adverbs</a
 
 <p>Note that the symbol `#’, used in the Universal POS section indicates a holder for arbitrary number of features, suppressed in the respective tag as irrelevant in the BulTreeBank tagset, when mapped to the Universal one.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_bg-pos/PRON.md" target="#">edit PRON</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-pos/PRON.md" target="#">edit PRON</a></p>
 
 <p><a id="al-bg-pos/PROPN" class="al-dest"></a></p>
 <h2><code>PROPN</code>: proper noun</h2>
@@ -551,7 +588,7 @@ mapped here as <a href="PROPN">proper nouns</a>, and 2. name adjectives, which a
 
 <p>Note that the symbol `#’, used in the Universal POS section indicates a holder for arbitrary number of features, suppressed in the respective tag as irrelevant in the BulTreeBank tagset, when mapped to the Universal one.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_bg-pos/PROPN.md" target="#">edit PROPN</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-pos/PROPN.md" target="#">edit PROPN</a></p>
 
 <p><a id="al-bg-pos/PUNCT" class="al-dest"></a></p>
 <h2><code>PUNCT</code>: punctuation</h2>
@@ -575,7 +612,7 @@ Thus, it includes: period, comma, colon, etc.</p>
   <li><em>Скоби</em> / <em>Skobi</em> “Parentheses”: <em><b>()</b></em></li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_bg-pos/PUNCT.md" target="#">edit PUNCT</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-pos/PUNCT.md" target="#">edit PUNCT</a></p>
 
 <p><a id="al-bg-pos/SCONJ" class="al-dest"></a></p>
 <h2><code>SCONJ</code>: subordinating conjunction</h2>
@@ -587,7 +624,7 @@ by making one of them a constituent of the other. The subordinating
 conjunction typically marks the incorporated constituent which has the
 status of a (subordinate) clause.</p>
 
-<p>For <em>coordinating conjunctions,</em> see <a href="">CONJ</a>.</p>
+<p>For <em>coordinating conjunctions,</em> see <a href="">CCONJ</a>.</p>
 
 <p>In the BulTreeBank annotation scheme, our tag <code>Cs</code> is mapped to the universal one <a href="">SCONJ</a>.
 According to our scheme the multiword subordinate conjunctions are also labeled as <code>Cs</code>.
@@ -601,7 +638,7 @@ So, such cases are excluded here and analysed compositionally, as recommended in
   <li><em>докато</em> / <em>dokato</em> “while”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_bg-pos/SCONJ.md" target="#">edit SCONJ</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-pos/SCONJ.md" target="#">edit SCONJ</a></p>
 
 <p><a id="al-bg-pos/SYM" class="al-dest"></a></p>
 <h2><code>SYM</code>: symbol</h2>
@@ -609,7 +646,7 @@ So, such cases are excluded here and analysed compositionally, as recommended in
 <p>This document is a placeholder for the language-specific documentation
 for <code>SYM</code>.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_bg-pos/SYM.md" target="#">edit SYM</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-pos/SYM.md" target="#">edit SYM</a></p>
 
 <p><a id="al-bg-pos/VERB" class="al-dest"></a></p>
 <h2><code>VERB</code>: verb</h2>
@@ -645,7 +682,7 @@ Participles and gerund are considered also <code>VERB</code>. Below the specific
 
 <p>Note that the symbol `#’, used in the Universal POS section indicates a holder for arbitrary number of features, suppressed in the respective tag as irrelevant in the BulTreeBank tagset, when mapped to the Universal one.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_bg-pos/VERB.md" target="#">edit VERB</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-pos/VERB.md" target="#">edit VERB</a></p>
 
 <p><a id="al-bg-pos/X" class="al-dest"></a></p>
 <h2><code>X</code>: other</h2>
@@ -653,7 +690,7 @@ Participles and gerund are considered also <code>VERB</code>. Below the specific
 <p>This document is a placeholder for the language-specific documentation
 for <code>X</code>.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_bg-pos/X.md" target="#">edit X</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-pos/X.md" target="#">edit X</a></p>
 
 
 

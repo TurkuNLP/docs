@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ro">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ro/dep">ro/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ro-dep/nummod.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ro">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ro/dep">ro/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ro-dep/nummod.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -80,27 +97,50 @@ nmod(absolvit, 2000)
 
 <p>This relation is universal.</p>
 
-<p>2965 nodes (1%) are attached to their parents as <code>nummod</code>.</p>
+<p>3859 nodes (2%) are attached to their parents as <code>nummod</code>.</p>
 
-<p>1921 instances of <code>nummod</code> (65%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.39156829679595.</p>
+<p>2055 instances of <code>nummod</code> (53%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.66364343094066.</p>
 
-<p>The following 23 pairs of parts of speech are connected with <code>nummod</code>: <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/NUM</a> (2642; 89% instances), <a href="">ro-pos/NUM</a>-<a href="">ro-pos/NUM</a> (65; 2% instances), <a href="">ro-pos/PROPN</a>-<a href="">ro-pos/NUM</a> (61; 2% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/NUM</a> (48; 2% instances), <a href="">ro-pos/SYM</a>-<a href="">ro-pos/NUM</a> (39; 1% instances), <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/DET</a> (30; 1% instances), <a href="">ro-pos/ADV</a>-<a href="">ro-pos/NUM</a> (24; 1% instances), <a href="">ro-pos/ADJ</a>-<a href="">ro-pos/NUM</a> (11; 0% instances), <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/PROPN</a> (11; 0% instances), <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/NOUN</a> (7; 0% instances), <a href="">ro-pos/X</a>-<a href="">ro-pos/NUM</a> (6; 0% instances), <a href="">ro-pos/PRON</a>-<a href="">ro-pos/NUM</a> (5; 0% instances), <a href="">ro-pos/PROPN</a>-<a href="">ro-pos/PROPN</a> (3; 0% instances), <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/PRON</a> (2; 0% instances), <a href="">ro-pos/PUNCT</a>-<a href="">ro-pos/NUM</a> (2; 0% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/PRON</a> (2; 0% instances), <a href="">ro-pos/ADP</a>-<a href="">ro-pos/NUM</a> (1; 0% instances), <a href="">ro-pos/AUX</a>-<a href="">ro-pos/NUM</a> (1; 0% instances), <a href="">ro-pos/CONJ</a>-<a href="">ro-pos/NUM</a> (1; 0% instances), <a href="">ro-pos/DET</a>-<a href="">ro-pos/NUM</a> (1; 0% instances), <a href="">ro-pos/INTJ</a>-<a href="">ro-pos/DET</a> (1; 0% instances), <a href="">ro-pos/NUM</a>-<a href="">ro-pos/DET</a> (1; 0% instances), <a href="">ro-pos/PROPN</a>-<a href="">ro-pos/NOUN</a> (1; 0% instances).</p>
+<p>The following 19 pairs of parts of speech are connected with <code>nummod</code>: <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/NUM</a> (3308; 86% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/NUM</a> (308; 8% instances), <a href="">ro-pos/NUM</a>-<a href="">ro-pos/NUM</a> (83; 2% instances), <a href="">ro-pos/PROPN</a>-<a href="">ro-pos/NUM</a> (63; 2% instances), <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/DET</a> (28; 1% instances), <a href="">ro-pos/ADJ</a>-<a href="">ro-pos/NUM</a> (23; 1% instances), <a href="">ro-pos/ADV</a>-<a href="">ro-pos/NUM</a> (16; 0% instances), <a href="">ro-pos/PRON</a>-<a href="">ro-pos/NUM</a> (11; 0% instances), <a href="">ro-pos/X</a>-<a href="">ro-pos/NUM</a> (7; 0% instances), <a href="">ro-pos/CCONJ</a>-<a href="">ro-pos/NUM</a> (2; 0% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/PRON</a> (2; 0% instances), <a href="">ro-pos/ADP</a>-<a href="">ro-pos/NUM</a> (1; 0% instances), <a href="">ro-pos/AUX</a>-<a href="">ro-pos/NUM</a> (1; 0% instances), <a href="">ro-pos/DET</a>-<a href="">ro-pos/NUM</a> (1; 0% instances), <a href="">ro-pos/INTJ</a>-<a href="">ro-pos/DET</a> (1; 0% instances), <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/PRON</a> (1; 0% instances), <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/PROPN</a> (1; 0% instances), <a href="">ro-pos/NUM</a>-<a href="">ro-pos/DET</a> (1; 0% instances), <a href="">ro-pos/SYM</a>-<a href="">ro-pos/NUM</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 1 nummod	color:blue
+1	4	4	NUM	Mc-p-d	Number=Plur|NumForm=Digit|NumType=Card	2	nummod	_	_
+2	aprilie	aprilie	NOUN	Ncms-n	Definite=Ind|Gender=Masc|Number=Sing	0	root	_	_
+3	1984	1984	NUM	Mc-p-d	Number=Plur|NumForm=Digit|NumType=Card	2	nummod	_	SpaceAfter=No
+4	,	,	PUNCT	COMMA	_	5	punct	_	_
+5	Aseară	aseară	ADV	Rgp	Degree=Pos	2	advmod	_	_
+6	la	la	ADP	Spsa	AdpType=Prep|Case=Acc	7	case	_	_
+7	cinema	cinema	NOUN	Ncms-n	Definite=Ind|Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No
+8	,	,	PUNCT	COMMA	_	10	punct	_	_
+9	Numai	numai	ADV	Rgp	Degree=Pos	10	advmod	_	_
+10	filme	film	NOUN	Ncfp-n	Definite=Ind|Gender=Fem|Number=Plur	2	nmod	_	_
+11	de	de	ADP	Spsa	AdpType=Prep|Case=Acc	12	case	_	_
+12	război	război	NOUN	Ncms-n	Definite=Ind|Gender=Masc|Number=Sing	10	nmod	_	SpaceAfter=No
+13	.	.	PUNCT	PERIOD	_	2	punct	_	_
+
+</code></pre>
 
 <pre><code class="language-conllu"># visual-style 3	bgColor:blue
 # visual-style 3	fgColor:white
-# visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 4 3 nummod	color:blue
-1	Un	un	DET	Timsr	Case=Acc,Nom|Gender=Masc|Number=Sing|PronType=Ind	4	det	_	_
-2	al	al	DET	Tsms	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	3	det	_	_
-3	doilea	doi	NUM	Moms-l	Gender=Masc|Number=Sing|NumForm=Word|NumType=Ord	4	nummod	_	_
-4	Maiorescu	maiorescu	NOUN	Ncms-n	Definite=Ind|Gender=Masc|Number=Sing	8	nsubj	_	_
-5	e	fi	VERB	Vmip3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
-6	dureros	dureros	ADV	Rgp	Degree=Pos	8	advmod	_	_
-7	de	de	ADP	Spsa	AdpType=Prep|Case=Acc	6	case	_	_
-8	necesar	necesar	ADV	Rgp	Degree=Pos	0	root	_	_
-9	.	.	PUNCT	PERIOD	_	8	punct	_	_
+# visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 6 3 nummod	color:blue
+1	De	de	ADP	Spsa	AdpType=Prep|Case=Acc	3	case	_	_
+2	prin	prin	ADP	Spsa	AdpType=Prep|Case=Acc	3	case	_	_
+3	1878–1879	1878–1879	NUM	Mc-p-d	Number=Plur|NumForm=Digit|NumType=Card	6	nummod	_	SpaceAfter=No
+4	,	,	PUNCT	COMMA	_	3	punct	_	_
+5	se	sine	PRON	Px3--a--------w	Case=Acc|Person=3|PronType=Prs|Reflex=Yes|Strength=Weak	6	expl:pv	_	_
+6	petrece	petrece	VERB	Vmip3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	cu	cu	ADP	Spsa	AdpType=Prep|Case=Acc	8	case	_	_
+8	A.	A.	NOUN	Yn	Abbr=Yes	6	obl	_	_
+9	o	un	DET	Tifsr	Case=Acc,Nom|Gender=Fem|Number=Sing|PronType=Ind	10	det	_	_
+10	metamorfoză	metamorfoză	NOUN	Ncfsrn	Case=Acc,Nom|Definite=Ind|Gender=Fem|Number=Sing	6	nsubj	_	SpaceAfter=No
+11	.	.	PUNCT	PERIOD	_	6	punct	_	_
 
 </code></pre>
 
@@ -111,34 +151,10 @@ Average distance between parent and child is 1.39156829679595.</p>
 # visual-style 1 3 nummod	color:blue
 1	Treizeci	treizeci	NUM	Mc-p-l	Number=Plur|NumForm=Word|NumType=Card	0	root	_	_
 2	la	la	ADP	Spsa	AdpType=Prep|Case=Acc	3	case	_	_
-3	patruzeci	patruzeci	NUM	Mc-p-l	Number=Plur|NumForm=Word|NumType=Card	1	nummod	_	_
+3	patruzeci	patruzeci	NUM	Mc-p-l	Number=Plur|NumForm=Word|NumType=Card	1	nummod	_	SpaceAfter=No
 4	,	,	PUNCT	COMMA	_	1	punct	_	_
-5	alinierea	aliniere	NOUN	Ncfsry	Case=Acc,Nom|Definite=Def|Gender=Fem|Number=Sing	1	parataxis	_	_
+5	alinierea	aliniere	NOUN	Ncfsry	Case=Acc,Nom|Definite=Def|Gender=Fem|Number=Sing	1	parataxis	_	SpaceAfter=No
 6	!	!	PUNCT	EXCL	_	1	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 2 3 nummod	color:blue
-1	Cumpăr	cumpăra	VERB	Vmip1s	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	Dacia	Dacia	PROPN	Np	_	1	dobj	_	_
-3	1310	1310	NUM	Mc-p-d	Number=Plur|NumForm=Digit|NumType=Card	2	nummod	_	_
-4	,	,	PUNCT	COMMA	_	6	punct	_	_
-5	orice	orice	DET	Di3--r---e	Case=Acc,Nom|Person=3|Position=Prenom|PronType=Ind	6	amod	_	_
-6	stare	stare	NOUN	Ncfsrn	Case=Acc,Nom|Definite=Ind|Gender=Fem|Number=Sing	2	nmod	_	_
-7	,	,	PUNCT	COMMA	_	1	punct	_	_
-8	ofer	oferi	VERB	Vmm-2s----y	Mood=Imp|Number=Sing|Person=2|Variant=Short|VerbForm=Fin	1	conj	_	_
-9	pe	pe	ADP	Spsa	AdpType=Prep|Case=Acc	8	advmod	_	_
-10	loc	loc	NOUN	Ncms-n	Definite=Ind|Gender=Masc|Number=Sing	9	mwe	_	_
-11	12	12	NUM	Mc-p-d	Number=Plur|NumForm=Digit|NumType=Card	15	nummod	_	_
-12	000	000	NUM	Mc-p-d	Number=Plur|NumForm=Digit|NumType=Card	11	goeswith	_	_
-13	000	000	NUM	Mc-p-d	Number=Plur|NumForm=Digit|NumType=Card	12	goeswith	_	_
-14	de	de	ADP	Spsa	AdpType=Prep|Case=Acc	11	case	_	_
-15	lei	leu	NOUN	Ncmp-n	Definite=Ind|Gender=Masc|Number=Plur	8	dobj	_	_
-16	.	.	PUNCT	PERIOD	_	1	punct	_	_
 
 </code></pre>
 
@@ -150,9 +166,25 @@ Average distance between parent and child is 1.39156829679595.</p>
 
 nummod in other languages:
 
+[<a href="../../am/dep/nummod.html">am</a>]
+
+[<a href="../../ar/dep/nummod.html">ar</a>]
+
 [<a href="../../bg/dep/nummod.html">bg</a>]
 
+[<a href="../../bxr/dep/nummod.html">bxr</a>]
+
+[<a href="../../ca/dep/nummod.html">ca</a>]
+
+[<a href="../../ckb/dep/nummod.html">ckb</a>]
+
+[<a href="../../cop/dep/nummod.html">cop</a>]
+
 [<a href="../../cs/dep/nummod.html">cs</a>]
+
+[<a href="../../cu/dep/nummod.html">cu</a>]
+
+[<a href="../../da/dep/nummod.html">da</a>]
 
 [<a href="../../de/dep/nummod.html">de</a>]
 
@@ -162,29 +194,99 @@ nummod in other languages:
 
 [<a href="../../es/dep/nummod.html">es</a>]
 
+[<a href="../../et/dep/nummod.html">et</a>]
+
 [<a href="../../eu/dep/nummod.html">eu</a>]
 
 [<a href="../../fa/dep/nummod.html">fa</a>]
 
 [<a href="../../fi/dep/nummod.html">fi</a>]
 
+[<a href="../../fo/dep/nummod.html">fo</a>]
+
 [<a href="../../fr/dep/nummod.html">fr</a>]
 
 [<a href="../../ga/dep/nummod.html">ga</a>]
 
+[<a href="../../gl/dep/nummod.html">gl</a>]
+
+[<a href="../../got/dep/nummod.html">got</a>]
+
+[<a href="../../grc/dep/nummod.html">grc</a>]
+
 [<a href="../../he/dep/nummod.html">he</a>]
 
+[<a href="../../hi/dep/nummod.html">hi</a>]
+
+[<a href="../../hr/dep/nummod.html">hr</a>]
+
 [<a href="../../hu/dep/nummod.html">hu</a>]
+
+[<a href="../../id/dep/nummod.html">id</a>]
 
 [<a href="../../it/dep/nummod.html">it</a>]
 
 [<a href="../../ja/dep/nummod.html">ja</a>]
 
+[<a href="../../kk/dep/nummod.html">kk</a>]
+
+[<a href="../../kmr/dep/nummod.html">kmr</a>]
+
 [<a href="../../ko/dep/nummod.html">ko</a>]
+
+[<a href="../../la/dep/nummod.html">la</a>]
+
+[<a href="../../lv/dep/nummod.html">lv</a>]
+
+[<a href="../../mr/dep/nummod.html">mr</a>]
+
+[<a href="../../nl/dep/nummod.html">nl</a>]
+
+[<a href="../../no/dep/nummod.html">no</a>]
+
+[<a href="../../pl/dep/nummod.html">pl</a>]
+
+[<a href="../../pt/dep/nummod.html">pt</a>]
+
+[<a href="../../ro/dep/nummod.html">ro</a>]
+
+[<a href="../../ru/dep/nummod.html">ru</a>]
+
+[<a href="../../sa/dep/nummod.html">sa</a>]
+
+[<a href="../../sk/dep/nummod.html">sk</a>]
+
+[<a href="../../sla/dep/nummod.html">sla</a>]
+
+[<a href="../../sl/dep/nummod.html">sl</a>]
+
+[<a href="../../so/dep/nummod.html">so</a>]
+
+[<a href="../../sr/dep/nummod.html">sr</a>]
 
 [<a href="../../sv/dep/nummod.html">sv</a>]
 
+[<a href="../../swl/dep/nummod.html">swl</a>]
+
+[<a href="../../ta/dep/nummod.html">ta</a>]
+
+[<a href="../../tr/dep/nummod.html">tr</a>]
+
 [<a href="../../u/dep/nummod.html">u</a>]
+
+[<a href="../../ug/dep/nummod.html">ug</a>]
+
+[<a href="../../uk/dep/nummod.html">uk</a>]
+
+[<a href="../../ur/dep/nummod.html">ur</a>]
+
+[<a href="../../urj/dep/nummod.html">urj</a>]
+
+[<a href="../../vi/dep/nummod.html">vi</a>]
+
+[<a href="../../yue/dep/nummod.html">yue</a>]
+
+[<a href="../../zh/dep/nummod.html">zh</a>]
 
 
 

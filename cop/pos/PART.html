@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-cop">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/cop/pos">cop/pos</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_cop-pos/PART.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cop">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/cop/pos">cop/pos</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cop-pos/PART.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -61,53 +78,78 @@ for <code>PART</code>.</p>
 
 <h2 id="treebank-statistics-udcoptic">Treebank Statistics (UD_Coptic)</h2>
 
-<p>There are 12 <code>PART</code> lemmas (2%), 13 <code>PART</code> types (1%) and 110 <code>PART</code> tokens (2%).
-Out of 13 observed tags, the rank of <code>PART</code> is: 10 in number of lemmas, 10 in number of types and 11 in number of tokens.</p>
+<p>There are 15 <code>PART</code> lemmas (2%), 16 <code>PART</code> types (1%) and 208 <code>PART</code> tokens (2%).
+Out of 14 observed tags, the rank of <code>PART</code> is: 10 in number of lemmas, 10 in number of types and 11 in number of tokens.</p>
 
-<p>The 10 most frequent <code>PART</code> lemmas: ⲉⲣⲉ, ⲇⲉ, ⲛϭⲓ, ⲅⲁⲣ, ϭⲉ, ⲉⲧⲉⲣⲉ, ⲉⲓⲥ, ϩⲏⲏⲧⲉ, ⲉⲛⲉ, ⲙⲉⲛ</p>
+<p>The 10 most frequent <code>PART</code> lemmas: ⲇⲉ, ⲉⲣⲉ, ⲛϭⲓ, ⲅⲁⲣ, ϭⲉ, ⲉⲓⲥ, ⲉⲧⲉⲣⲉ, ϩⲁⲙⲏⲛ, ϩⲏⲏⲧⲉ, ϫⲛ</p>
 
-<p>The 10 most frequent <code>PART</code> types:  ⲇⲉ, ⲉ, ⲛϭⲓ, ⲅⲁⲣ, ⲛⲧ, ϭⲉ, ⲉⲣⲉ, ⲉⲓⲥ, ϩⲏⲏⲧⲉ, ⲉⲛⲉ</p>
+<p>The 10 most frequent <code>PART</code> types:  ⲇⲉ, ⲛϭⲓ, ⲉ, ⲅⲁⲣ, ϭⲉ, ⲛⲧ, ⲉⲓⲥ, ⲉⲣⲉ, ϩⲁⲙⲏⲛ, ϩⲏⲏⲧⲉ</p>
 
-<p>The 10 most frequent ambiguous lemmas: ⲉⲣⲉ (<a href="">SCONJ</a> 94, <a href="">PART</a> 32, <a href="">ADP</a> 2), ϭⲉ (<a href="">PART</a> 5, <a href="">DET</a> 1), ⲉⲧⲉⲣⲉ (<a href="">SCONJ</a> 127, <a href="">PART</a> 3), ⲉⲛⲉ (<a href="">CONJ</a> 3, <a href="">PART</a> 1)</p>
+<p>The 10 most frequent ambiguous lemmas: ⲉⲣⲉ (<a href="">SCONJ</a> 151, <a href="">PART</a> 44, <a href="">ADP</a> 2), ϭⲉ (<a href="">PART</a> 9, <a href="">DET</a> 1), ⲉⲧⲉⲣⲉ (<a href="">SCONJ</a> 197, <a href="">PART</a> 3), ϩⲏⲏⲧⲉ (<a href="">NOUN</a> 1, <a href="">PART</a> 1), ϫⲛ (<a href="">CCONJ</a> 1, <a href="">PART</a> 1), ⲉⲛⲉ (<a href="">CCONJ</a> 4, <a href="">PART</a> 1), ⲉⲧⲉ (<a href="">PART</a> 1, <a href="">SCONJ</a> 1), ⲙⲉⲛ (<a href="">CCONJ</a> 3, <a href="">PART</a> 1)</p>
 
-<p>The 10 most frequent ambiguous types:  ⲉ (<a href="">ADP</a> 111, <a href="">SCONJ</a> 95, <a href="">PART</a> 25), ⲛⲧ (<a href="">SCONJ</a> 12, <a href="">PART</a> 6, <a href="">VERB</a> 1), ϭⲉ (<a href="">PART</a> 5, <a href="">DET</a> 1), ⲉⲣⲉ (<a href="">SCONJ</a> 7, <a href="">PART</a> 4), ⲉⲛⲉ (<a href="">CONJ</a> 3, <a href="">PART</a> 1), ⲣⲱ (<a href="">NOUN</a> 1, <a href="">PART</a> 1)</p>
+<p>The 10 most frequent ambiguous types:  ⲉ (<a href="">ADP</a> 189, <a href="">SCONJ</a> 146, <a href="">PART</a> 35, <a href="">PRON</a> 1), ϭⲉ (<a href="">PART</a> 9, <a href="">DET</a> 1), ⲛⲧ (<a href="">SCONJ</a> 28, <a href="">PART</a> 8, <a href="">VERB</a> 1), ⲉⲣⲉ (<a href="">SCONJ</a> 16, <a href="">PART</a> 4), ϩⲏⲏⲧⲉ (<a href="">PART</a> 1, <a href="">NOUN</a> 1), ϫⲛ (<a href="">PART</a> 1, <a href="">CCONJ</a> 1), ⲉⲛⲉ (<a href="">CCONJ</a> 4, <a href="">PART</a> 1), ⲉⲧⲉ (<a href="">SCONJ</a> 20, <a href="">PART</a> 1), ⲙⲉⲛ (<a href="">CCONJ</a> 3, <a href="">PART</a> 1), ⲣⲱ (<a href="">NOUN</a> 3, <a href="">PART</a> 1)</p>
 
 <ul>
   <li>ⲉ
     <ul>
-      <li><a href="">ADP</a> 111: ⲛ ⲥⲉ ⲛⲁ ϭⲙϭⲟⲙ ⲅⲁⲣ ⲁⲛ <b>ⲉ</b> ⲣϩⲙϩⲁⲗ ⲛⲁ ⲕ , ⲛ ⲥⲉ ⲣϩⲙϩⲁⲗ ⲛ ⲛ ⲣⲉϥϫⲓⲛϭⲟⲛⲥ ,</li>
-      <li><a href="">SCONJ</a> 95: ⲛⲧⲱⲧⲛ ⲇⲉ ⲧⲉⲛⲟⲩ ⲧⲉⲧⲛ ⲫⲟⲣⲉⲓ ⲛ ϩⲉⲛ ϣⲧⲏⲛ <b>ⲉ</b> ⲩ ⲧⲁⲉⲓⲏⲩ .</li>
-      <li><a href="">PART</a> 25: ϯ ⲥⲟⲟⲩⲛ ϫⲉ <b>ⲉ</b> ⲕ ϯ ⲟⲩⲃⲏ ⲓ ⲁⲛ ,</li>
-    </ul>
-  </li>
-  <li>ⲛⲧ
-    <ul>
-      <li><a href="">SCONJ</a> 12: ⲛ ⲧ ϩⲉ ⲟⲛ <b>ⲛⲧ</b> ⲁ ⲕ ϫⲟⲟ ⲥ ϫⲉ ⲛ ⲣⲱⲙⲉ ⲁⲩⲱ ⲛⲁ ⲟⲓⲕⲟⲛⲟⲙⲟⲥ ϫⲓ ϩⲛⲁ ⲩ ⲛⲁ ϥ .</li>
-      <li><a href="">PART</a> 6: ⲡⲉϫⲁ ϥ ⲛⲁ ⲩ ϫⲉ ⲙⲡⲉ ⲧⲛ ⲟϣ ϥ ⲗⲁⲁⲩ ϫⲉ <b>ⲛⲧ</b> ⲁ ⲇⲁⲩⲉⲓⲇ ⲣ ⲟⲩ ⲛⲧⲉⲣⲉ ϥ ϩⲕⲟ ⲛⲧⲟϥ ⲙⲛ ⲛ ⲉⲧ ⲛⲙⲙⲁ ϥ</li>
-      <li><a href="">VERB</a> 1: ⲏ ⲉⲣϣⲁⲛ ϩⲟⲩⲟ ⲉ ⲛ ⲙⲏⲏϣⲉ ⲛⲧ ⲁ ⲕ ϫⲟⲟ ⲥ ϫⲉ ⲥⲉ ϫⲓ ϩⲛⲁ ⲩ ⲛⲁ ϥ . ⲉⲩϣⲁⲛ ⲡⲱⲛⲅ ⲛⲁ ⲓ ⲁϫⲛ ϯ ⲥⲟ ϫⲉ ϯ ⲟ ϩⲱⲱ ⲧ ⲛ ϩⲙϩⲁⲗ ⲛⲁ ⲩ ⲕⲁⲗⲱⲥ ϫⲉ ⲛⲁ ⲥⲛⲏⲩ ⲛⲉ ⲉ ⲓ ⲥⲱⲟⲩ ϩⲛⲁ ⲩ ⲉϩⲟⲩⲛ ⲉ ϩⲉⲛ ⲁϩⲟ ϩⲛ ⲧ ⲡⲉ ⲛ ⲛ ⲉⲧ ⲟⲩϯ ⲙⲙⲟ ⲟⲩ ⲛ ⲧⲁⲉⲓⲟ ⲙ ⲡ ⲛⲟⲩⲧⲉ . ⲙⲏ ⲛⲧ ⲁ ⲩ <b>ⲛⲧ</b> ⲟⲩ ⲉⲃⲟⲗ ϩⲙ ⲡⲉⲕ ⲏⲓ ⲙⲛ ⲡ ⲏⲓ ⲛ ⲛⲉⲕ ⲉⲓⲟⲧⲉ .</li>
+      <li><a href="">ADP</a> 189: ⲛ ⲥⲉ ⲛⲁ ϭⲙϭⲟⲙ ⲅⲁⲣ ⲁⲛ <b>ⲉ</b> ⲣϩⲙϩⲁⲗ ⲛⲁ ⲕ , ⲛ ⲥⲉ ⲣϩⲙϩⲁⲗ ⲛ ⲛ ⲣⲉϥϫⲓⲛϭⲟⲛⲥ ,</li>
+      <li><a href="">SCONJ</a> 146: ⲛⲧⲱⲧⲛ ⲇⲉ ⲧⲉⲛⲟⲩ ⲧⲉⲧⲛ ⲫⲟⲣⲉⲓ ⲛ ϩⲉⲛ ϣⲧⲏⲛ <b>ⲉ</b> ⲩ ⲧⲁⲉⲓⲏⲩ .</li>
+      <li><a href="">PART</a> 35: ⲛⲧⲟϥ ⲇⲉ <b>ⲉ</b> ϥ ⲛⲁ ⲃⲁⲡⲧⲓⲍⲉ ⲙⲙⲱ ⲧⲛ ϩⲛ ⲟⲩ ⲡⲛⲉⲩⲙⲁ ⲉ ϥ ⲟⲩⲁⲁⲃ .</li>
+      <li><a href="">PRON</a> 1: ⲁⲩⲱ ⲛⲧⲉⲣⲉ ϥ ⲁⲙⲁϩⲧⲉ ⲛ ⲧ ϭⲓϫ ⲛ ⲧ ϣⲉⲉⲣⲉ ϣⲏⲙ ⲡⲉϫⲁ ϥ ⲛⲁ ⲥ ϫⲉ ⲧⲁⲗⲉⲓⲑⲁ ⲕⲟⲩⲙ . ⲉⲧⲉ ⲡⲁⲓ ⲡⲉ ϣⲁ ⲩ ⲟⲩⲁϩⲙⲉ ϥ ϫⲉ ⲧ ϣⲉⲉⲣⲉ ϣⲏⲙ ⲉⲓ ϫⲉⲣⲟ ⲧⲱⲟⲩⲛ <b>ⲉ</b></li>
     </ul>
   </li>
   <li>ϭⲉ
     <ul>
-      <li><a href="">PART</a> 5: ϣⲛ ϩⲧⲏ ⲕ <b>ϭⲉ</b> ϩⲁ ⲡⲉⲕ ⲗⲁⲟⲥ ⲡ ϩⲁⲣϣϩⲏⲧ ⲉⲧⲉ ⲛⲁϣⲉ ⲡⲉϥ ⲛⲁ ·</li>
+      <li><a href="">PART</a> 9: ϣⲛ ϩⲧⲏ ⲕ <b>ϭⲉ</b> ϩⲁ ⲡⲉⲕ ⲗⲁⲟⲥ ⲡ ϩⲁⲣϣϩⲏⲧ ⲉⲧⲉ ⲛⲁϣⲉ ⲡⲉϥ ⲛⲁ ·</li>
       <li><a href="">DET</a> 1: ⲛ ⲧ ϩⲉ ⲙ ⲡⲉⲕ ⲗⲁⲟⲥ ⲡ ⲓⲥⲣⲁⲏⲗ ⲙ ⲡⲓ ⲟⲩⲟⲉⲓϣ , ⲧⲁⲣ ⲟⲩ ⲥⲣϥⲉ ⲉ ⲉⲓⲙⲉ ϫⲉ ⲙⲛ <b>ϭⲉ</b> ⲛⲟⲩⲧⲉ ⲛⲃⲗⲁ ⲕ ·</li>
+    </ul>
+  </li>
+  <li>ⲛⲧ
+    <ul>
+      <li><a href="">SCONJ</a> 28: ⲛ ⲧ ϩⲉ ⲟⲛ <b>ⲛⲧ</b> ⲁ ⲕ ϫⲟⲟ ⲥ ϫⲉ ⲛ ⲣⲱⲙⲉ ⲁⲩⲱ ⲛⲁ ⲟⲓⲕⲟⲛⲟⲙⲟⲥ ϫⲓ ϩⲛⲁ ⲩ ⲛⲁ ϥ .</li>
+      <li><a href="">PART</a> 8: ⲡⲉϫⲁ ϥ ⲛⲁ ⲩ ϫⲉ ⲙⲡⲉ ⲧⲛ ⲟϣ ϥ ⲗⲁⲁⲩ ϫⲉ <b>ⲛⲧ</b> ⲁ ⲇⲁⲩⲉⲓⲇ ⲣ ⲟⲩ ⲛⲧⲉⲣⲉ ϥ ϩⲕⲟ ⲛⲧⲟϥ ⲙⲛ ⲛ ⲉⲧ ⲛⲙⲙⲁ ϥ</li>
+      <li><a href="">VERB</a> 1: ⲏ ⲉⲣϣⲁⲛ ϩⲟⲩⲟ ⲉ ⲛ ⲙⲏⲏϣⲉ ⲛⲧ ⲁ ⲕ ϫⲟⲟ ⲥ ϫⲉ ⲥⲉ ϫⲓ ϩⲛⲁ ⲩ ⲛⲁ ϥ . ⲉⲩϣⲁⲛ ⲡⲱⲛⲅ ⲛⲁ ⲓ ⲁϫⲛ ϯ ⲥⲟ ϫⲉ ϯ ⲟ ϩⲱⲱ ⲧ ⲛ ϩⲙϩⲁⲗ ⲛⲁ ⲩ ⲕⲁⲗⲱⲥ ϫⲉ ⲛⲁ ⲥⲛⲏⲩ ⲛⲉ ⲉ ⲓ ⲥⲱⲟⲩ ϩⲛⲁ ⲩ ⲉϩⲟⲩⲛ ⲉ ϩⲉⲛ ⲁϩⲟ ϩⲛ ⲧ ⲡⲉ ⲛ ⲛ ⲉⲧ ⲟⲩϯ ⲙⲙⲟ ⲟⲩ ⲛ ⲧⲁⲉⲓⲟ ⲙ ⲡ ⲛⲟⲩⲧⲉ . ⲙⲏ ⲛⲧ ⲁ ⲩ <b>ⲛⲧ</b> ⲟⲩ ⲉⲃⲟⲗ ϩⲙ ⲡⲉⲕ ⲏⲓ ⲙⲛ ⲡ ⲏⲓ ⲛ ⲛⲉⲕ ⲉⲓⲟⲧⲉ .</li>
     </ul>
   </li>
   <li>ⲉⲣⲉ
     <ul>
-      <li><a href="">SCONJ</a> 7: ⲁ ⲩ ⲉⲓⲛⲉ ⲇⲉ ⲉⲣⲁⲧ ϥ ⲛ ⲟⲩ ⲣⲱⲙⲉ ⲉ ϥ ⲥⲏϭ <b>ⲉⲣⲉ</b> ϥⲧⲟⲟⲩ ⲛ ⲣⲱⲙⲉ ϥⲓ ϩⲁⲣⲟ ϥ</li>
+      <li><a href="">SCONJ</a> 16: ⲁ ⲩ ⲉⲓⲛⲉ ⲇⲉ ⲉⲣⲁⲧ ϥ ⲛ ⲟⲩ ⲣⲱⲙⲉ ⲉ ϥ ⲥⲏϭ <b>ⲉⲣⲉ</b> ϥⲧⲟⲟⲩ ⲛ ⲣⲱⲙⲉ ϥⲓ ϩⲁⲣⲟ ϥ</li>
       <li><a href="">PART</a> 4: <b>ⲉⲣⲉ</b> ⲛⲉⲩ ϩⲓⲟⲙⲉ ⲙⲛ ⲛⲉⲩ ϣⲏⲣⲉ ⲙⲛ ⲡ ⲥⲟⲃⲧⲉ ⲛ ⲧⲉⲩ ⲙⲛⲧϩⲏⲕⲉ ϩⲓϫⲛ ⲛⲉⲩ ⲧⲃⲛⲟⲟⲩⲉ .</li>
+    </ul>
+  </li>
+  <li>ϩⲏⲏⲧⲉ
+    <ul>
+      <li><a href="">PART</a> 1: ⲕⲁⲧⲁ ⲡ ⲉⲧ ⲥⲏϩ ϩⲛ ⲏⲥⲁⲓⲁⲥ ⲡⲉ ⲡⲣⲟⲫⲏⲧⲏⲥ ϫⲉ ⲉⲓⲥ <b>ϩⲏⲏⲧⲉ</b> ϯ ⲛⲁ ϫⲉⲩ ⲡⲁ ⲁⲅⲅⲉⲗⲟⲥ ϩⲓ ϩⲏ ⲙⲙⲟ ⲕ ⲛ ϥ ⲥⲃⲧⲉ ⲧⲉⲕ ϩⲓⲏ .</li>
+      <li><a href="">NOUN</a> 1: ϫⲉ ⲥⲱⲧⲙ ⲉⲓⲥ <b>ϩⲏⲏⲧⲉ</b> ⲁ ϥ ⲉⲓ ⲉⲃⲟⲗ ⲛϭⲓ ⲡ ⲉⲧ ϫⲟ ⲉ ⲧ ϫⲟ .</li>
+    </ul>
+  </li>
+  <li>ϫⲛ
+    <ul>
+      <li><a href="">PART</a> 1: ⲁⲩⲱ ⲡⲉϫⲁ ϥ ⲛⲁ ⲩ ϫⲉ ⲉⲝⲉⲥⲧⲓ ϩⲛ ⲛ ⲥⲁⲃⲃⲁⲧⲟⲛ ⲉ ⲣ ⲡ ⲉⲧ ⲛⲁⲛⲟⲩ ϥ <b>ϫⲛ</b> ⲣ ⲡ ⲉⲧ ϩⲟⲟⲩ ⲉ ⲧⲁⲛϩⲉ ⲟⲩ ⲯⲩⲭⲏ ϫⲛ ⲉ ⲙⲟⲟⲩⲧ ⲥ . ⲛⲧⲟⲟⲩ ⲇⲉ ⲁ ⲩ ⲕⲁⲣⲱ ⲟⲩ</li>
+      <li><a href="">CCONJ</a> 1: ⲁⲩⲱ ⲡⲉϫⲁ ϥ ⲛⲁ ⲩ ϫⲉ ⲉⲝⲉⲥⲧⲓ ϩⲛ ⲛ ⲥⲁⲃⲃⲁⲧⲟⲛ ⲉ ⲣ ⲡ ⲉⲧ ⲛⲁⲛⲟⲩ ϥ ϫⲛ ⲣ ⲡ ⲉⲧ ϩⲟⲟⲩ ⲉ ⲧⲁⲛϩⲉ ⲟⲩ ⲯⲩⲭⲏ <b>ϫⲛ</b> ⲉ ⲙⲟⲟⲩⲧ ⲥ . ⲛⲧⲟⲟⲩ ⲇⲉ ⲁ ⲩ ⲕⲁⲣⲱ ⲟⲩ</li>
     </ul>
   </li>
   <li>ⲉⲛⲉ
     <ul>
-      <li><a href="">CONJ</a> 3: <b>ⲉⲛⲉ</b> ⲛⲧⲕ ⲟⲩ ⲉⲛⲧⲏϭ ⲛ ⲧⲉⲓ ϩⲉ ⲉ ⲕ ⲣⲏⲧ ϩⲁⲣⲓϩⲁⲣⲟ ⲕ ⲛⲉ ⲡ ⲉⲧ ⲉϣϣⲉ ⲡⲉ ⲉ ⲁⲛⲉⲭⲉ ⲙⲙⲟ ⲕ ϣⲁ ⲡⲉ ⲟⲩⲟⲓⲉϣ ⲙ ⲡ ⲱϩⲥ ⲕⲁⲧⲁ ⲡ ϣⲁϫⲉ ⲙ ⲡ ϫⲟⲉⲓⲥ ⲉⲛⲧ ⲁ ⲕ ϫⲓⲟⲩⲁ ⲉⲣⲟ ϥ .</li>
+      <li><a href="">CCONJ</a> 4: ⲁⲩⲱ ⲛⲉ ⲩ ⲡⲁⲣⲁⲧⲏⲣⲉⲓ ⲉⲣⲟ ϥ ϫⲉ <b>ⲉⲛⲉ</b> ϥ ⲛⲁ ⲑⲉⲣⲁⲡⲟⲩ ⲙⲙⲟ ϥ ϩⲛ ⲛ ⲥⲁⲃⲃⲁⲧⲟⲛ ϫⲉ ⲉⲩⲉ ⲕⲁⲧⲏⲅⲟⲣⲉⲓ ⲙⲙⲟ ϥ</li>
       <li><a href="">PART</a> 1: <b>ⲉⲛⲉ</b> ⲙⲡ ⲕ ⲥⲱⲧⲉ ⲙ ⲡⲉⲕ ⲗⲁⲟⲥ ⲡ ⲓⲥⲣⲁⲏⲗ ⲙ ⲡⲓ ⲟⲩⲟⲉⲓϣ ⲉⲃⲟⲗ ϩⲛ ⲛ ϭⲓϫ ⲙ ⲡⲓ ⲁⲛⲟⲙⲟⲥ ⲛⲁⲃⲟⲩⲭⲟⲇⲟⲛⲟⲥⲟⲣ , ⲙⲛ ⲛⲓ ⲕⲟⲟⲩⲉ ⲧⲏⲣ ⲟⲩ ⲉⲧ ⲉⲓⲛⲉ ⲙⲙⲟ ϥ ⲛⲧ ⲁ ⲩ ⲑⲙⲕⲟ ⲟⲩ ϩⲙ ⲡ ⲧⲣⲉ ⲕ ⲧⲁⲁ ⲩ ⲉϩⲣⲁⲓ ⲉ ⲧⲟⲟⲧ ⲟⲩ ϫⲉ ⲁ ⲕ ⲛⲟⲩϭⲥ ⲉⲣⲟ ⲟⲩ ,</li>
+    </ul>
+  </li>
+  <li>ⲉⲧⲉ
+    <ul>
+      <li><a href="">SCONJ</a> 20: ϣⲛ ϩⲧⲏ ⲕ ϭⲉ ϩⲁ ⲡⲉⲕ ⲗⲁⲟⲥ ⲡ ϩⲁⲣϣϩⲏⲧ <b>ⲉⲧⲉ</b> ⲛⲁϣⲉ ⲡⲉϥ ⲛⲁ ·</li>
+      <li><a href="">PART</a> 1: ⲁⲩⲱ ϩⲉⲛ ⲕⲟⲟⲩⲉ ⲛⲉ ⲛⲧ ⲁ ⲩ ϫⲟⲟⲩ ⲉϩⲣⲁⲓ ⲉ ⲛ ϣⲟⲛⲧⲉ <b>ⲉⲧⲉ</b> ⲛⲁⲓ ⲛⲉ ⲛⲧ ⲁ ⲩ ⲥⲱⲧⲙ ⲉ ⲡ ϣⲁϫⲉ</li>
+    </ul>
+  </li>
+  <li>ⲙⲉⲛ
+    <ul>
+      <li><a href="">CCONJ</a> 3: ⲁⲩⲱ ⲛⲧⲉⲣⲉ ϥ ϫⲟ ⲟⲩⲁ <b>ⲙⲉⲛ</b> ⲁ ϥ ϩⲉ ϩⲁⲧⲉ ⲧⲉ ϩⲓⲏ ⲁⲩⲱ ⲁ ⲩ ⲉⲓ ⲛϭⲓ ⲛ ϩⲁⲗⲁⲧⲉ ⲁ ⲩ ⲟⲙ ⲟⲩ</li>
+      <li><a href="">PART</a> 1: ϩⲟⲓⲛⲉ <b>ⲙⲉⲛ</b> ⲉ ⲧⲣⲉ ⲩ ⲧⲁⲁ ⲩ ⲛⲏ ⲧⲛ ⲛ ⲧⲁⲉⲓⲟ ,</li>
     </ul>
   </li>
   <li>ⲣⲱ
     <ul>
-      <li><a href="">NOUN</a> 1: ⲁⲩⲱ ⲓⲏⲥⲟⲩⲥ ⲁ ϥ ⲉⲡⲓⲧⲓⲙⲁ ⲛⲁ ϥ ⲉ ϥ ϫⲱ ⲙⲙⲟ ⲥ ϫⲉ ⲧⲙ <b>ⲣⲱ</b> ⲕ ⲛ ⲅ ⲉⲓ ⲉⲃⲟⲗ ⲙⲙⲟ ϥ</li>
+      <li><a href="">NOUN</a> 3: ⲁⲩⲱ ⲓⲏⲥⲟⲩⲥ ⲁ ϥ ⲉⲡⲓⲧⲓⲙⲁ ⲛⲁ ϥ ⲉ ϥ ϫⲱ ⲙⲙⲟ ⲥ ϫⲉ ⲧⲙ <b>ⲣⲱ</b> ⲕ ⲛ ⲅ ⲉⲓ ⲉⲃⲟⲗ ⲙⲙⲟ ϥ</li>
       <li><a href="">PART</a> 1: ⲙⲏ ⲟⲩⲛⲧⲉ ⲡⲉⲕ ⲉⲓⲱⲧ ⲕⲣⲟⲛⲟⲥ ⲗⲁⲁⲩ <b>ⲣⲱ</b> ⲛⲧⲟϥ ⲛⲥⲁ ϩⲉⲛ ⲛⲟⲃⲉ ⲛⲁⲓ ⲉⲧ ⲕ ⲟ ⲛ ⲟⲩ ⲟⲉⲓⲉ ⲉⲣⲟ ⲟⲩ ⲛⲁ ϥ ⲛⲧⲟⲕ ⲙⲛ ⲛ ⲉⲧ ⲉⲓⲛⲉ ⲙⲙⲟ ⲕ . ⲉ ⲧⲉⲧⲛ ϫⲟ ⲁⲩⲱ ⲉ ⲧⲉⲧⲛ ⲱⲗ ⲛⲁ ϥ ⲉϩⲟⲩⲛ ⲛ ⲙ ⲙⲛⲧⲁⲡⲓⲥⲧⲟⲥ ⲙⲛ ⲛ ϭⲟⲗ , ⲙⲛ ⲛ ϫⲓ ⲛ ϭⲟⲛⲥ , ⲙⲛ ⲛ ⲟⲩⲁ ⲙⲛ ϩⲱⲃ ⲛⲓⲙ ⲙ ⲡⲟⲛⲏⲣⲟⲛ .</li>
     </ul>
   </li>
@@ -115,31 +157,33 @@ Out of 13 observed tags, the rank of <code>PART</code> is: 10 in number of lemma
 
 <h2 id="morphology">Morphology</h2>
 
-<p>The form / lemma ratio of <code>PART</code> is 1.083333 (the average of all parts of speech is 1.168996).</p>
+<p>The form / lemma ratio of <code>PART</code> is 1.066667 (the average of all parts of speech is 1.152000).</p>
 
 <p>The 1st highest number of forms (3) was observed with the lemma “ⲉⲣⲉ”: ⲉ, ⲉⲣⲉ, ⲛⲧ.</p>
 
-<p>The 2nd highest number of forms (1) was observed with the lemma “ϩⲏⲏⲧⲉ”: ϩⲏⲏⲧⲉ.</p>
+<p>The 2nd highest number of forms (1) was observed with the lemma “ϩⲁⲙⲏⲛ”: ϩⲁⲙⲏⲛ.</p>
 
-<p>The 3rd highest number of forms (1) was observed with the lemma “ϭⲉ”: ϭⲉ.</p>
+<p>The 3rd highest number of forms (1) was observed with the lemma “ϩⲏⲏⲧⲉ”: ϩⲏⲏⲧⲉ.</p>
 
 <p><code>PART</code> does not occur with any features.</p>
 
 <h2 id="relations">Relations</h2>
 
-<p><code>PART</code> nodes are attached to their parents using 6 different relations: <a href="">cop-dep/advmod</a> (51; 46% instances), <a href="">cop-dep/mark</a> (35; 32% instances), <a href="">cop-dep/case</a> (21; 19% instances), <a href="">cop-dep/advcl</a> (1; 1% instances), <a href="">cop-dep/discourse</a> (1; 1% instances), <a href="">cop-dep/mwe</a> (1; 1% instances)</p>
+<p><code>PART</code> nodes are attached to their parents using 8 different relations: <a href="">cop-dep/advmod</a> (110; 53% instances), <a href="">cop-dep/mark</a> (48; 23% instances), <a href="">cop-dep/case</a> (44; 21% instances), <a href="">cop-dep/advcl</a> (2; 1% instances), <a href="">cop-dep/cc</a> (1; 0% instances), <a href="">cop-dep/ccomp</a> (1; 0% instances), <a href="">cop-dep/discourse</a> (1; 0% instances), <a href="">cop-dep/fixed</a> (1; 0% instances)</p>
 
-<p>Parents of <code>PART</code> nodes belong to 7 different parts of speech: <a href="">VERB</a> (80; 73% instances), <a href="">NOUN</a> (19; 17% instances), <a href="">PROPN</a> (6; 5% instances), <a href="">DET</a> (2; 2% instances), <a href="">NUM</a> (1; 1% instances), <a href="">PART</a> (1; 1% instances), <a href="">PRON</a> (1; 1% instances)</p>
+<p>Parents of <code>PART</code> nodes belong to 7 different parts of speech: <a href="">VERB</a> (147; 71% instances), <a href="">NOUN</a> (41; 20% instances), <a href="">PROPN</a> (8; 4% instances), <a href="">DET</a> (7; 3% instances), <a href="">NUM</a> (3; 1% instances), <a href="">PART</a> (1; 0% instances), <a href="">PRON</a> (1; 0% instances)</p>
 
-<p>109 (99%) <code>PART</code> nodes are leaves.</p>
+<p>204 (98%) <code>PART</code> nodes are leaves.</p>
 
-<p>1 (1%) <code>PART</code> nodes have one child.</p>
+<p>3 (1%) <code>PART</code> nodes have one child.</p>
 
-<p>The highest child degree of a <code>PART</code> node is 1.</p>
+<p>1 (0%) <code>PART</code> nodes have two children.</p>
 
-<p>Children of <code>PART</code> nodes are attached using 1 different relations: <a href="">cop-dep/mwe</a> (1; 100% instances)</p>
+<p>The highest child degree of a <code>PART</code> node is 2.</p>
 
-<p>Children of <code>PART</code> nodes belong to 1 different parts of speech: <a href="">PART</a> (1; 100% instances)</p>
+<p>Children of <code>PART</code> nodes are attached using 3 different relations: <a href="">cop-dep/fixed</a> (2; 40% instances), <a href="">cop-dep/nsubj</a> (2; 40% instances), <a href="">cop-dep/mark</a> (1; 20% instances)</p>
+
+<p>Children of <code>PART</code> nodes belong to 4 different parts of speech: <a href="">NOUN</a> (2; 40% instances), <a href="">CCONJ</a> (1; 20% instances), <a href="">NUM</a> (1; 20% instances), <a href="">PART</a> (1; 20% instances)</p>
 
 
 
@@ -149,9 +193,25 @@ Out of 13 observed tags, the rank of <code>PART</code> is: 10 in number of lemma
 
 PART in other languages:
 
+[<a href="../../am/pos/PART.html">am</a>]
+
+[<a href="../../ar/pos/PART.html">ar</a>]
+
 [<a href="../../bg/pos/PART.html">bg</a>]
 
+[<a href="../../bxr/pos/PART.html">bxr</a>]
+
+[<a href="../../ca/pos/PART.html">ca</a>]
+
+[<a href="../../ckb/pos/PART.html">ckb</a>]
+
+[<a href="../../cop/pos/PART.html">cop</a>]
+
 [<a href="../../cs/pos/PART.html">cs</a>]
+
+[<a href="../../cu/pos/PART.html">cu</a>]
+
+[<a href="../../da/pos/PART.html">da</a>]
 
 [<a href="../../de/pos/PART.html">de</a>]
 
@@ -161,29 +221,99 @@ PART in other languages:
 
 [<a href="../../es/pos/PART.html">es</a>]
 
+[<a href="../../et/pos/PART.html">et</a>]
+
 [<a href="../../eu/pos/PART.html">eu</a>]
 
 [<a href="../../fa/pos/PART.html">fa</a>]
 
 [<a href="../../fi/pos/PART.html">fi</a>]
 
+[<a href="../../fo/pos/PART.html">fo</a>]
+
 [<a href="../../fr/pos/PART.html">fr</a>]
 
 [<a href="../../ga/pos/PART.html">ga</a>]
 
+[<a href="../../gl/pos/PART.html">gl</a>]
+
+[<a href="../../got/pos/PART.html">got</a>]
+
+[<a href="../../grc/pos/PART.html">grc</a>]
+
 [<a href="../../he/pos/PART.html">he</a>]
 
+[<a href="../../hi/pos/PART.html">hi</a>]
+
+[<a href="../../hr/pos/PART.html">hr</a>]
+
 [<a href="../../hu/pos/PART.html">hu</a>]
+
+[<a href="../../id/pos/PART.html">id</a>]
 
 [<a href="../../it/pos/PART.html">it</a>]
 
 [<a href="../../ja/pos/PART.html">ja</a>]
 
+[<a href="../../kk/pos/PART.html">kk</a>]
+
+[<a href="../../kmr/pos/PART.html">kmr</a>]
+
 [<a href="../../ko/pos/PART.html">ko</a>]
+
+[<a href="../../la/pos/PART.html">la</a>]
+
+[<a href="../../lv/pos/PART.html">lv</a>]
+
+[<a href="../../mr/pos/PART.html">mr</a>]
+
+[<a href="../../nl/pos/PART.html">nl</a>]
+
+[<a href="../../no/pos/PART.html">no</a>]
+
+[<a href="../../pl/pos/PART.html">pl</a>]
+
+[<a href="../../pt/pos/PART.html">pt</a>]
+
+[<a href="../../ro/pos/PART.html">ro</a>]
+
+[<a href="../../ru/pos/PART.html">ru</a>]
+
+[<a href="../../sa/pos/PART.html">sa</a>]
+
+[<a href="../../sk/pos/PART.html">sk</a>]
+
+[<a href="../../sla/pos/PART.html">sla</a>]
+
+[<a href="../../sl/pos/PART.html">sl</a>]
+
+[<a href="../../so/pos/PART.html">so</a>]
+
+[<a href="../../sr/pos/PART.html">sr</a>]
 
 [<a href="../../sv/pos/PART.html">sv</a>]
 
+[<a href="../../swl/pos/PART.html">swl</a>]
+
+[<a href="../../ta/pos/PART.html">ta</a>]
+
+[<a href="../../tr/pos/PART.html">tr</a>]
+
+[<a href="../../ug/pos/PART.html">ug</a>]
+
+[<a href="../../uk/pos/PART.html">uk</a>]
+
 [<a href="../../u/pos/PART.html">u</a>]
+
+[<a href="../../urj/pos/PART.html">urj</a>]
+
+[<a href="../../ur/pos/PART.html">ur</a>]
+
+[<a href="../../vi/pos/PART.html">vi</a>]
+
+[<a href="../../yue/pos/PART.html">yue</a>]
+
+[<a href="../../zh/pos/PART.html">zh</a>]
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-hr">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/hr/feat">hr/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_hr-feat/Poss.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-hr">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/hr/feat">hr/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hr-feat/Poss.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -65,45 +82,48 @@ for <code>Poss</code>.</p>
 <p>This feature is universal.
 It occurs with 1 different values: <code>Yes</code>.</p>
 
-<p>794 tokens (1%) have a non-empty value of <code>Poss</code>.
-291 types (1%) occur at least once with a non-empty value of <code>Poss</code>.
-148 lemmas (1%) occur at least once with a non-empty value of <code>Poss</code>.
-The feature is used with 2 part-of-speech tags: <a href="">hr-pos/PRON</a> (556; 0% instances), <a href="">hr-pos/ADJ</a> (238; 0% instances).</p>
+<p>1784 tokens (1%) have a non-empty value of <code>Poss</code>.
+412 types (1%) occur at least once with a non-empty value of <code>Poss</code>.
+208 lemmas (1%) occur at least once with a non-empty value of <code>Poss</code>.
+The feature is used with 2 part-of-speech tags: <a href="">hr-pos/DET</a> (1438; 1% instances), <a href="">hr-pos/ADJ</a> (346; 0% instances).</p>
 
-<h3 id="pron"><code>PRON</code></h3>
+<h3 id="det"><code>DET</code></h3>
 
-<p>556 <a href="">hr-pos/PRON</a> tokens (7% of all <code>PRON</code> tokens) have a non-empty value of <code>Poss</code>.</p>
+<p>1438 <a href="">hr-pos/DET</a> tokens (21% of all <code>DET</code> tokens) have a non-empty value of <code>Poss</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>Poss</code> co-occurred: <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (556; 100%), <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (556; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (428; 77%), <tt><a href="Person.html">Person</a>=3</tt> (365; 66%).</p>
+<p>The most frequent other feature values with which <code>DET</code> and <code>Poss</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (1367; 95%), <tt><a href="Number.html">Number</a>=Sing</tt> (1050; 73%).</p>
 
-<p><code>PRON</code> tokens may have the following values of <code>Poss</code>:</p>
+<p><code>DET</code> tokens may have the following values of <code>Poss</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (556; 100% of non-empty <code>Poss</code>): <em>njegova, njegov, naše, njihov, njegove, njihova, naš, naša, njegovu, njihovu</em></li>
-  <li><code>EMPTY</code> (7810): <em>se, koji, što, to, koje, koja, svoje, ove, toga, kojima</em></li>
+  <li><code>Yes</code> (1438; 100% of non-empty <code>Poss</code>): <em>svoje, svoj, svoju, svojim, njegova, njegov, svojih, naše, svojoj, njihov</em></li>
+  <li><code>EMPTY</code> (5317): <em>koji, to, koje, koja, nekoliko, sve, ove, toga, kojima, koju</em></li>
 </ul>
+
+<p><code>Poss</code> seems to be <strong>lexical feature</strong> of <code>DET</code>. 100% lemmas (10) occur only with one value of <code>Poss</code>.</p>
 
 <h3 id="adj"><code>ADJ</code></h3>
 
-<p>238 <a href="">hr-pos/ADJ</a> tokens (1% of all <code>ADJ</code> tokens) have a non-empty value of <code>Poss</code>.</p>
+<p>346 <a href="">hr-pos/ADJ</a> tokens (2% of all <code>ADJ</code> tokens) have a non-empty value of <code>Poss</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Poss</code> co-occurred: <tt><a href="Degree.html">Degree</a>=Pos</tt> (238; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (166; 70%), <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (144; 61%).</p>
+<p>The most frequent other feature values with which <code>ADJ</code> and <code>Poss</code> co-occurred: <tt><a href="Degree.html">Degree</a>=Pos</tt> (346; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (245; 71%).</p>
 
 <p><code>ADJ</code> tokens may have the following values of <code>Poss</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (238; 100% of non-empty <code>Poss</code>): <em>nevladinih, nevladine, UN-ova, vladinih, Ashdownov, Božju, vladini, nevladina, vladine, Đinđićeve</em></li>
-  <li><code>EMPTY</code> (15786): <em>sve, novi, vanjskih, svi, svih, glavni, novih, prošle, drugi, novog</em></li>
+  <li><code>Yes</code> (346; 100% of non-empty <code>Poss</code>): <em>nevladinih, nevladine, UN-ova, vladinih, Appleovih, Ashdownov, Božju, UN-ovog, vladini, Appleov</em></li>
+  <li><code>EMPTY</code> (21420): <em>novi, drugi, prvi, vanjskih, novih, prošle, glavni, nove, hrvatski, moguće</em></li>
 </ul>
 
-<p><code>Poss</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (141) occur only with one value of <code>Poss</code>.</p>
+<p><code>Poss</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (200) occur only with one value of <code>Poss</code>.</p>
 
 <h2 id="relations-with-agreement-in-poss">Relations with Agreement in <code>Poss</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>Poss</code>:
-<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (3; 100%),
-<tt>PRON –[<a href="../dep/name.html">name</a>]–&gt; PRON</tt> (1; 100%),
-<tt>ADJ –[<a href="../dep/name.html">name</a>]–&gt; ADJ</tt> (1; 100%).</p>
+<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (4; 100%),
+<tt>ADJ –[<a href="../dep/compound.html">compound</a>]–&gt; ADJ</tt> (1; 100%),
+<tt>DET –[<a href="../dep/flat.html">flat</a>]–&gt; DET</tt> (1; 100%),
+<tt>ADJ –[<a href="../dep/flat.html">flat</a>]–&gt; ADJ</tt> (1; 100%).</p>
 
 
 
@@ -113,9 +133,25 @@ The feature is used with 2 part-of-speech tags: <a href="">hr-pos/PRON</a> (556;
 
 Poss in other languages:
 
+[<a href="../../am/feat/Poss.html">am</a>]
+
+[<a href="../../ar/feat/Poss.html">ar</a>]
+
 [<a href="../../bg/feat/Poss.html">bg</a>]
 
+[<a href="../../bxr/feat/Poss.html">bxr</a>]
+
+[<a href="../../ca/feat/Poss.html">ca</a>]
+
+[<a href="../../ckb/feat/Poss.html">ckb</a>]
+
+[<a href="../../cop/feat/Poss.html">cop</a>]
+
 [<a href="../../cs/feat/Poss.html">cs</a>]
+
+[<a href="../../cu/feat/Poss.html">cu</a>]
+
+[<a href="../../da/feat/Poss.html">da</a>]
 
 [<a href="../../de/feat/Poss.html">de</a>]
 
@@ -125,29 +161,99 @@ Poss in other languages:
 
 [<a href="../../es/feat/Poss.html">es</a>]
 
+[<a href="../../et/feat/Poss.html">et</a>]
+
 [<a href="../../eu/feat/Poss.html">eu</a>]
 
 [<a href="../../fa/feat/Poss.html">fa</a>]
 
 [<a href="../../fi/feat/Poss.html">fi</a>]
 
+[<a href="../../fo/feat/Poss.html">fo</a>]
+
 [<a href="../../fr/feat/Poss.html">fr</a>]
 
 [<a href="../../ga/feat/Poss.html">ga</a>]
 
+[<a href="../../gl/feat/Poss.html">gl</a>]
+
+[<a href="../../got/feat/Poss.html">got</a>]
+
+[<a href="../../grc/feat/Poss.html">grc</a>]
+
 [<a href="../../he/feat/Poss.html">he</a>]
 
+[<a href="../../hi/feat/Poss.html">hi</a>]
+
+[<a href="../../hr/feat/Poss.html">hr</a>]
+
 [<a href="../../hu/feat/Poss.html">hu</a>]
+
+[<a href="../../id/feat/Poss.html">id</a>]
 
 [<a href="../../it/feat/Poss.html">it</a>]
 
 [<a href="../../ja/feat/Poss.html">ja</a>]
 
+[<a href="../../kk/feat/Poss.html">kk</a>]
+
+[<a href="../../kmr/feat/Poss.html">kmr</a>]
+
 [<a href="../../ko/feat/Poss.html">ko</a>]
+
+[<a href="../../la/feat/Poss.html">la</a>]
+
+[<a href="../../lv/feat/Poss.html">lv</a>]
+
+[<a href="../../mr/feat/Poss.html">mr</a>]
+
+[<a href="../../nl/feat/Poss.html">nl</a>]
+
+[<a href="../../no/feat/Poss.html">no</a>]
+
+[<a href="../../pl/feat/Poss.html">pl</a>]
+
+[<a href="../../pt/feat/Poss.html">pt</a>]
+
+[<a href="../../ro/feat/Poss.html">ro</a>]
+
+[<a href="../../ru/feat/Poss.html">ru</a>]
+
+[<a href="../../sa/feat/Poss.html">sa</a>]
+
+[<a href="../../sk/feat/Poss.html">sk</a>]
+
+[<a href="../../sla/feat/Poss.html">sla</a>]
+
+[<a href="../../sl/feat/Poss.html">sl</a>]
+
+[<a href="../../so/feat/Poss.html">so</a>]
+
+[<a href="../../sr/feat/Poss.html">sr</a>]
 
 [<a href="../../sv/feat/Poss.html">sv</a>]
 
+[<a href="../../swl/feat/Poss.html">swl</a>]
+
+[<a href="../../ta/feat/Poss.html">ta</a>]
+
+[<a href="../../tr/feat/Poss.html">tr</a>]
+
 [<a href="../../u/feat/Poss.html">u</a>]
+
+[<a href="../../ug/feat/Poss.html">ug</a>]
+
+[<a href="../../uk/feat/Poss.html">uk</a>]
+
+[<a href="../../ur/feat/Poss.html">ur</a>]
+
+[<a href="../../urj/feat/Poss.html">urj</a>]
+
+[<a href="../../vi/feat/Poss.html">vi</a>]
+
+[<a href="../../yue/feat/Poss.html">yue</a>]
+
+[<a href="../../zh/feat/Poss.html">zh</a>]
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ja">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ja/dep">ja/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ja-dep/mark.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ja">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ja/dep">ja/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ja-dep/mark.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -67,16 +84,101 @@ punct(言っ, 。)
 
 <hr />
 
+<h2 id="treebank-statistics-udjapanese">Treebank Statistics (UD_Japanese)</h2>
+
+<p>This relation is universal.</p>
+
+<p>10114 nodes (6%) are attached to their parents as <code>mark</code>.</p>
+
+<p>10114 instances of <code>mark</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 1.63852086217125.</p>
+
+<p>The following 16 pairs of parts of speech are connected with <code>mark</code>: <a href="">ja-pos/VERB</a>-<a href="">ja-pos/SCONJ</a> (5938; 59% instances), <a href="">ja-pos/NUM</a>-<a href="">ja-pos/NOUN</a> (2617; 26% instances), <a href="">ja-pos/VERB</a>-<a href="">ja-pos/PART</a> (571; 6% instances), <a href="">ja-pos/ADJ</a>-<a href="">ja-pos/SCONJ</a> (342; 3% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/SCONJ</a> (264; 3% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/PART</a> (146; 1% instances), <a href="">ja-pos/ADJ</a>-<a href="">ja-pos/PART</a> (137; 1% instances), <a href="">ja-pos/PRON</a>-<a href="">ja-pos/PART</a> (20; 0% instances), <a href="">ja-pos/PROPN</a>-<a href="">ja-pos/SCONJ</a> (16; 0% instances), <a href="">ja-pos/NUM</a>-<a href="">ja-pos/PART</a> (15; 0% instances), <a href="">ja-pos/PROPN</a>-<a href="">ja-pos/PART</a> (12; 0% instances), <a href="">ja-pos/ADV</a>-<a href="">ja-pos/PART</a> (11; 0% instances), <a href="">ja-pos/NUM</a>-<a href="">ja-pos/SCONJ</a> (11; 0% instances), <a href="">ja-pos/ADV</a>-<a href="">ja-pos/SCONJ</a> (10; 0% instances), <a href="">ja-pos/PRON</a>-<a href="">ja-pos/SCONJ</a> (3; 0% instances), <a href="">ja-pos/CCONJ</a>-<a href="">ja-pos/PART</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 10	bgColor:blue
+# visual-style 10	fgColor:white
+# visual-style 9	bgColor:blue
+# visual-style 9	fgColor:white
+# visual-style 9 10 mark	color:blue
+1	私	私	PRON	_	_	3	nsubj	_	SpaceAfter=No
+2	は	は	ADP	_	_	1	case	_	SpaceAfter=No
+3	初めて	初めて	ADV	_	_	17	acl	_	SpaceAfter=No
+4	だっ	だ	AUX	_	_	3	cop	_	SpaceAfter=No
+5	た	た	AUX	_	_	3	aux	_	SpaceAfter=No
+6	ん	ん	PART	_	_	3	mark	_	SpaceAfter=No
+7	だ	だ	AUX	_	_	3	cop	_	SpaceAfter=No
+8	けど	けど	SCONJ	_	_	3	mark	_	SpaceAfter=No
+9	思っ	思う	VERB	_	_	17	acl	_	SpaceAfter=No
+10	て	て	SCONJ	_	_	9	mark	_	SpaceAfter=No
+11	い	いる	AUX	_	_	9	aux	_	SpaceAfter=No
+12	た	た	AUX	_	_	9	aux	_	SpaceAfter=No
+13	より	より	ADP	_	_	9	case	_	SpaceAfter=No
+14	も	も	ADP	_	_	9	case	_	SpaceAfter=No
+15	魚	魚	NOUN	_	_	17	nsubj	_	SpaceAfter=No
+16	は	は	ADP	_	_	15	case	_	SpaceAfter=No
+17	新鮮	新鮮	ADJ	_	_	0	root	_	SpaceAfter=No
+18	でし	だ	AUX	_	_	17	aux	_	SpaceAfter=No
+19	た	た	AUX	_	_	17	aux	_	SpaceAfter=No
+20	。	。	PUNCT	_	_	17	punct	_	SpaceAfter=No
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 3 mark	color:blue
+1	平成	平成	PART	_	_	2	amod	_	SpaceAfter=No
+2	10	10	NUM	_	NumType=Card	8	nummod	_	SpaceAfter=No
+3	年度	年度	NOUN	_	_	2	mark	_	SpaceAfter=No
+4	NHK	NHK	PROPN	_	_	8	compound	_	SpaceAfter=No
+5	全国	全国	NOUN	_	_	8	compound	_	SpaceAfter=No
+6	学校	学校	NOUN	_	_	8	compound	_	SpaceAfter=No
+7	音楽コンクール	音楽コンクール	NOUN	_	_	8	compound	_	SpaceAfter=No
+8	中学校	中学校	NOUN	_	_	12	nmod	_	SpaceAfter=No
+9	の	の	ADP	_	_	8	case	_	SpaceAfter=No
+10	部	部	NOUN	_	_	12	amod	_	SpaceAfter=No
+11	課題	課題	NOUN	_	_	12	compound	_	SpaceAfter=No
+12	曲	曲	NOUN	_	_	0	root	_	SpaceAfter=No
+13	。	。	PUNCT	_	_	12	punct	_	SpaceAfter=No
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 10	bgColor:blue
+# visual-style 10	fgColor:white
+# visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 8 10 mark	color:blue
+1	聖書	聖書	NOUN	_	_	3	iobj	_	SpaceAfter=No
+2	に	に	ADP	_	_	1	case	_	SpaceAfter=No
+3	当てはめ	当てはめる	VERB	_	_	5	acl	_	SpaceAfter=No
+4	た	た	AUX	_	_	3	aux	_	SpaceAfter=No
+5	場合	場合	NOUN	_	_	8	obl	_	SpaceAfter=No
+6	、	、	PUNCT	_	_	5	punct	_	SpaceAfter=No
+7	最も	最も	ADV	_	_	8	advmod	_	SpaceAfter=No
+8	分かり	分かる	VERB	_	_	13	csubj	_	SpaceAfter=No
+9	やすい	やすい	AUX	_	_	8	aux	_	SpaceAfter=No
+10	の	の	PART	_	_	8	mark	_	SpaceAfter=No
+11	が	が	ADP	_	_	8	case	_	SpaceAfter=No
+12	ノアの方舟	ノアの方舟	NOUN	_	_	13	compound	_	SpaceAfter=No
+13	伝説	伝説	NOUN	_	_	0	root	_	SpaceAfter=No
+14	である	だ	AUX	_	_	13	cop	_	SpaceAfter=No
+15	。	。	PUNCT	_	_	13	punct	_	SpaceAfter=No
+
+</code></pre>
+
+<hr />
+
 <h2 id="treebank-statistics-udjapanese-ktc">Treebank Statistics (UD_Japanese-KTC)</h2>
 
 <p>This relation is universal.</p>
 
-<p>9551 nodes (4%) are attached to their parents as <code>mark</code>.</p>
+<p>6678 nodes (4%) are attached to their parents as <code>mark</code>.</p>
 
-<p>9542 instances of <code>mark</code> (100%) are left-to-right (parent precedes child).
-Average distance between parent and child is 1.89739294314731.</p>
+<p>6670 instances of <code>mark</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 1.88544474393531.</p>
 
-<p>The following 15 pairs of parts of speech are connected with <code>mark</code>: <a href="">ja-pos/VERB</a>-<a href="">ja-pos/SCONJ</a> (7726; 81% instances), <a href="">ja-pos/VERB</a>-<a href="">ja-pos/PART</a> (698; 7% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/SCONJ</a> (385; 4% instances), <a href="">ja-pos/ADJ</a>-<a href="">ja-pos/SCONJ</a> (283; 3% instances), <a href="">ja-pos/ADJ</a>-<a href="">ja-pos/ADP</a> (231; 2% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/PART</a> (74; 1% instances), <a href="">ja-pos/ADJ</a>-<a href="">ja-pos/PART</a> (73; 1% instances), <a href="">ja-pos/ADV</a>-<a href="">ja-pos/SCONJ</a> (25; 0% instances), <a href="">ja-pos/ADV</a>-<a href="">ja-pos/PART</a> (16; 0% instances), <a href="">ja-pos/PRON</a>-<a href="">ja-pos/SCONJ</a> (12; 0% instances), <a href="">ja-pos/VERB</a>-<a href="">ja-pos/ADP</a> (9; 0% instances), <a href="">ja-pos/PROPN</a>-<a href="">ja-pos/SCONJ</a> (8; 0% instances), <a href="">ja-pos/PRON</a>-<a href="">ja-pos/PART</a> (6; 0% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/ADP</a> (3; 0% instances), <a href="">ja-pos/NUM</a>-<a href="">ja-pos/SCONJ</a> (2; 0% instances).</p>
+<p>The following 15 pairs of parts of speech are connected with <code>mark</code>: <a href="">ja-pos/VERB</a>-<a href="">ja-pos/SCONJ</a> (5421; 81% instances), <a href="">ja-pos/VERB</a>-<a href="">ja-pos/PART</a> (479; 7% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/SCONJ</a> (254; 4% instances), <a href="">ja-pos/ADJ</a>-<a href="">ja-pos/SCONJ</a> (205; 3% instances), <a href="">ja-pos/ADJ</a>-<a href="">ja-pos/ADP</a> (156; 2% instances), <a href="">ja-pos/ADJ</a>-<a href="">ja-pos/PART</a> (54; 1% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/PART</a> (49; 1% instances), <a href="">ja-pos/ADV</a>-<a href="">ja-pos/SCONJ</a> (17; 0% instances), <a href="">ja-pos/ADV</a>-<a href="">ja-pos/PART</a> (11; 0% instances), <a href="">ja-pos/VERB</a>-<a href="">ja-pos/ADP</a> (8; 0% instances), <a href="">ja-pos/PRON</a>-<a href="">ja-pos/SCONJ</a> (7; 0% instances), <a href="">ja-pos/PROPN</a>-<a href="">ja-pos/SCONJ</a> (7; 0% instances), <a href="">ja-pos/PRON</a>-<a href="">ja-pos/PART</a> (6; 0% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/ADP</a> (2; 0% instances), <a href="">ja-pos/NUM</a>-<a href="">ja-pos/SCONJ</a> (2; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 20	bgColor:blue
 # visual-style 20	fgColor:white
@@ -194,9 +296,25 @@ Average distance between parent and child is 1.89739294314731.</p>
 
 mark in other languages:
 
+[<a href="../../am/dep/mark.html">am</a>]
+
+[<a href="../../ar/dep/mark.html">ar</a>]
+
 [<a href="../../bg/dep/mark.html">bg</a>]
 
+[<a href="../../bxr/dep/mark.html">bxr</a>]
+
+[<a href="../../ca/dep/mark.html">ca</a>]
+
+[<a href="../../ckb/dep/mark.html">ckb</a>]
+
+[<a href="../../cop/dep/mark.html">cop</a>]
+
 [<a href="../../cs/dep/mark.html">cs</a>]
+
+[<a href="../../cu/dep/mark.html">cu</a>]
+
+[<a href="../../da/dep/mark.html">da</a>]
 
 [<a href="../../de/dep/mark.html">de</a>]
 
@@ -206,29 +324,99 @@ mark in other languages:
 
 [<a href="../../es/dep/mark.html">es</a>]
 
+[<a href="../../et/dep/mark.html">et</a>]
+
 [<a href="../../eu/dep/mark.html">eu</a>]
 
 [<a href="../../fa/dep/mark.html">fa</a>]
 
 [<a href="../../fi/dep/mark.html">fi</a>]
 
+[<a href="../../fo/dep/mark.html">fo</a>]
+
 [<a href="../../fr/dep/mark.html">fr</a>]
 
 [<a href="../../ga/dep/mark.html">ga</a>]
 
+[<a href="../../gl/dep/mark.html">gl</a>]
+
+[<a href="../../got/dep/mark.html">got</a>]
+
+[<a href="../../grc/dep/mark.html">grc</a>]
+
 [<a href="../../he/dep/mark.html">he</a>]
 
+[<a href="../../hi/dep/mark.html">hi</a>]
+
+[<a href="../../hr/dep/mark.html">hr</a>]
+
 [<a href="../../hu/dep/mark.html">hu</a>]
+
+[<a href="../../id/dep/mark.html">id</a>]
 
 [<a href="../../it/dep/mark.html">it</a>]
 
 [<a href="../../ja/dep/mark.html">ja</a>]
 
+[<a href="../../kk/dep/mark.html">kk</a>]
+
+[<a href="../../kmr/dep/mark.html">kmr</a>]
+
 [<a href="../../ko/dep/mark.html">ko</a>]
+
+[<a href="../../la/dep/mark.html">la</a>]
+
+[<a href="../../lv/dep/mark.html">lv</a>]
+
+[<a href="../../mr/dep/mark.html">mr</a>]
+
+[<a href="../../nl/dep/mark.html">nl</a>]
+
+[<a href="../../no/dep/mark.html">no</a>]
+
+[<a href="../../pl/dep/mark.html">pl</a>]
+
+[<a href="../../pt/dep/mark.html">pt</a>]
+
+[<a href="../../ro/dep/mark.html">ro</a>]
+
+[<a href="../../ru/dep/mark.html">ru</a>]
+
+[<a href="../../sa/dep/mark.html">sa</a>]
+
+[<a href="../../sk/dep/mark.html">sk</a>]
+
+[<a href="../../sla/dep/mark.html">sla</a>]
+
+[<a href="../../sl/dep/mark.html">sl</a>]
+
+[<a href="../../so/dep/mark.html">so</a>]
+
+[<a href="../../sr/dep/mark.html">sr</a>]
 
 [<a href="../../sv/dep/mark.html">sv</a>]
 
+[<a href="../../swl/dep/mark.html">swl</a>]
+
+[<a href="../../ta/dep/mark.html">ta</a>]
+
+[<a href="../../tr/dep/mark.html">tr</a>]
+
 [<a href="../../u/dep/mark.html">u</a>]
+
+[<a href="../../ug/dep/mark.html">ug</a>]
+
+[<a href="../../uk/dep/mark.html">uk</a>]
+
+[<a href="../../ur/dep/mark.html">ur</a>]
+
+[<a href="../../urj/dep/mark.html">urj</a>]
+
+[<a href="../../vi/dep/mark.html">vi</a>]
+
+[<a href="../../yue/dep/mark.html">yue</a>]
+
+[<a href="../../zh/dep/mark.html">zh</a>]
 
 
 

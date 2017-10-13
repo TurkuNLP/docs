@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-fa">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/fa/dep">fa/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_fa-dep/vocative.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-fa">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/fa/dep">fa/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fa-dep/vocative.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,12 +80,12 @@ for <code>vocative</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>66 nodes (0%) are attached to their parents as <code>vocative</code>.</p>
+<p>58 nodes (0%) are attached to their parents as <code>vocative</code>.</p>
 
-<p>48 instances of <code>vocative</code> (73%) are right-to-left (child precedes parent).
-Average distance between parent and child is 5.90909090909091.</p>
+<p>42 instances of <code>vocative</code> (72%) are right-to-left (child precedes parent).
+Average distance between parent and child is 5.91379310344828.</p>
 
-<p>The following 6 pairs of parts of speech are connected with <code>vocative</code>: <a href="">fa-pos/VERB</a>-<a href="">fa-pos/NOUN</a> (37; 56% instances), <a href="">fa-pos/NOUN</a>-<a href="">fa-pos/NOUN</a> (17; 26% instances), <a href="">fa-pos/ADJ</a>-<a href="">fa-pos/NOUN</a> (7; 11% instances), <a href="">fa-pos/ADV</a>-<a href="">fa-pos/NOUN</a> (2; 3% instances), <a href="">fa-pos/VERB</a>-<a href="">fa-pos/X</a> (2; 3% instances), <a href="">fa-pos/PRON</a>-<a href="">fa-pos/NOUN</a> (1; 2% instances).</p>
+<p>The following 7 pairs of parts of speech are connected with <code>vocative</code>: <a href="">fa-pos/VERB</a>-<a href="">fa-pos/NOUN</a> (31; 53% instances), <a href="">fa-pos/NOUN</a>-<a href="">fa-pos/NOUN</a> (16; 28% instances), <a href="">fa-pos/ADJ</a>-<a href="">fa-pos/NOUN</a> (6; 10% instances), <a href="">fa-pos/ADV</a>-<a href="">fa-pos/NOUN</a> (2; 3% instances), <a href="">fa-pos/AUX</a>-<a href="">fa-pos/X</a> (1; 2% instances), <a href="">fa-pos/PRON</a>-<a href="">fa-pos/NOUN</a> (1; 2% instances), <a href="">fa-pos/VERB</a>-<a href="">fa-pos/X</a> (1; 2% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 5	bgColor:blue
 # visual-style 5	fgColor:white
@@ -76,10 +93,10 @@ Average distance between parent and child is 5.90909090909091.</p>
 # visual-style 2	fgColor:white
 # visual-style 2 5 vocative	color:blue
 1	معاویه	معاویه	NOUN	N_SING	Number=Sing	2	nsubj	_	_
-2	گفت	گفت#گو	VERB	V_PA	Number=Sing|Person=3|Tense=Past	0	root	_	_
+2	گفت	گفت#گو	VERB	V_PA	Number=Sing|Person=3|Tense=Past	0	root	_	SpaceAfter=No
 3	:	:	PUNCT	DELM	_	2	punct	_	_
 4	ای	ای	INTJ	INT	_	5	det	_	_
-5	اباظریف	اباظریف	NOUN	N_SING	Number=Sing	2	vocative	_	_
+5	اباظریف	اباظریف	NOUN	N_SING	Number=Sing	2	vocative	_	SpaceAfter=No
 6	!	!	PUNCT	DELM	_	2	punct	_	_
 
 </code></pre>
@@ -89,38 +106,32 @@ Average distance between parent and child is 5.90909090909091.</p>
 # visual-style 1	bgColor:blue
 # visual-style 1	fgColor:white
 # visual-style 1 3 vocative	color:blue
-1	مادر	مادر	NOUN	N_SING	Number=Sing	0	root	_	_
+1	مادر	مادر	NOUN	N_SING	Number=Sing	0	root	_	SpaceAfter=No
 2	:	:	PUNCT	DELM	_	1	punct	_	_
-3	احمد	احمد	NOUN	N_SING	Number=Sing	1	vocative	_	_
+3	احمد	احمد	NOUN	N_SING	Number=Sing	1	vocative	_	SpaceAfter=No
 4	!	!	PUNCT	DELM	_	1	punct	_	_
-5	احمد	احمد	NOUN	N_SING	Number=Sing	1	vocative	_	_
+5	احمد	احمد	NOUN	N_SING	Number=Sing	1	vocative	_	SpaceAfter=No
 6	!	!	PUNCT	DELM	_	1	punct	_	_
 7	دیر	دیر	ADV	ADV_TIME	Case=Tem	1	parataxis	_	_
 8	ت	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	7	nsubj:nc	_	_
-9	شد	کرد#کن	VERB	V_PA	Number=Sing|Person=3|Tense=Past	7	cop	_	_
+9	شد	کرد#کن	AUX	V_PA	Number=Sing|Person=3|Tense=Past	7	cop	_	SpaceAfter=No
 10	.	.	PUNCT	DELM	_	1	punct	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 12	bgColor:blue
-# visual-style 12	fgColor:white
-# visual-style 12 5 vocative	color:blue
-1	سپس	سپس	ADV	ADV	_	2	advmod	_	_
-2	گفت	گفت#گو	VERB	V_PA	Number=Sing|Person=3|Tense=Past	0	root	_	_
-3	:	:	PUNCT	DELM	_	2	punct	_	_
-4	ای	ای	INTJ	INT	_	5	det	_	_
-5	مردم	مردم	NOUN	N_SING	Number=Sing	12	vocative	_	_
-6	مدینه	مدینه	NOUN	N_SING	Number=Sing	5	nmod:poss	_	_
-7	،	،	PUNCT	DELM	_	12	punct	_	_
-8	بر	بر	ADP	P	_	9	case	_	_
-9	بیعت	بیعت	NOUN	N_SING	Number=Sing	12	nmod	_	_
-10	با	با	ADP	P	_	11	case	_	_
-11	یزید	یزید	NOUN	N_SING	Number=Sing	9	nmod	_	_
-12	مصمم	مصمم	ADJ	ADJ	Degree=Pos	2	ccomp	_	_
-13	هستم	هست	VERB	V_PRS	Number=Sing|Person=1|Tense=Pres	12	cop	_	_
-14	.	.	PUNCT	DELM	_	2	punct	_	_
+<pre><code class="language-conllu"># visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 6 2 vocative	color:blue
+1	ای	ای	INTJ	INT	_	2	det	_	_
+2	ایران	ایران	NOUN	N_SING	Number=Sing	6	vocative	_	SpaceAfter=No
+3	،	،	PUNCT	DELM	_	6	punct	_	_
+4	تو	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	6	nsubj	_	_
+5	بسیار	بسیار	ADV	ADV	_	6	advmod	_	_
+6	زیبای	زیبا	ADJ	ADJ	Degree=Pos	0	root	_	_
+7	ی	هست	AUX	V_PRS	_	6	cop	_	_
+8	!	!	PUNCT	DELM	_	6	punct	_	_
 
 </code></pre>
 
@@ -132,9 +143,25 @@ Average distance between parent and child is 5.90909090909091.</p>
 
 vocative in other languages:
 
+[<a href="../../am/dep/vocative.html">am</a>]
+
+[<a href="../../ar/dep/vocative.html">ar</a>]
+
 [<a href="../../bg/dep/vocative.html">bg</a>]
 
+[<a href="../../bxr/dep/vocative.html">bxr</a>]
+
+[<a href="../../ca/dep/vocative.html">ca</a>]
+
+[<a href="../../ckb/dep/vocative.html">ckb</a>]
+
+[<a href="../../cop/dep/vocative.html">cop</a>]
+
 [<a href="../../cs/dep/vocative.html">cs</a>]
+
+[<a href="../../cu/dep/vocative.html">cu</a>]
+
+[<a href="../../da/dep/vocative.html">da</a>]
 
 [<a href="../../de/dep/vocative.html">de</a>]
 
@@ -144,29 +171,99 @@ vocative in other languages:
 
 [<a href="../../es/dep/vocative.html">es</a>]
 
+[<a href="../../et/dep/vocative.html">et</a>]
+
 [<a href="../../eu/dep/vocative.html">eu</a>]
 
 [<a href="../../fa/dep/vocative.html">fa</a>]
 
 [<a href="../../fi/dep/vocative.html">fi</a>]
 
+[<a href="../../fo/dep/vocative.html">fo</a>]
+
 [<a href="../../fr/dep/vocative.html">fr</a>]
 
 [<a href="../../ga/dep/vocative.html">ga</a>]
 
+[<a href="../../gl/dep/vocative.html">gl</a>]
+
+[<a href="../../got/dep/vocative.html">got</a>]
+
+[<a href="../../grc/dep/vocative.html">grc</a>]
+
 [<a href="../../he/dep/vocative.html">he</a>]
 
+[<a href="../../hi/dep/vocative.html">hi</a>]
+
+[<a href="../../hr/dep/vocative.html">hr</a>]
+
 [<a href="../../hu/dep/vocative.html">hu</a>]
+
+[<a href="../../id/dep/vocative.html">id</a>]
 
 [<a href="../../it/dep/vocative.html">it</a>]
 
 [<a href="../../ja/dep/vocative.html">ja</a>]
 
+[<a href="../../kk/dep/vocative.html">kk</a>]
+
+[<a href="../../kmr/dep/vocative.html">kmr</a>]
+
 [<a href="../../ko/dep/vocative.html">ko</a>]
+
+[<a href="../../la/dep/vocative.html">la</a>]
+
+[<a href="../../lv/dep/vocative.html">lv</a>]
+
+[<a href="../../mr/dep/vocative.html">mr</a>]
+
+[<a href="../../nl/dep/vocative.html">nl</a>]
+
+[<a href="../../no/dep/vocative.html">no</a>]
+
+[<a href="../../pl/dep/vocative.html">pl</a>]
+
+[<a href="../../pt/dep/vocative.html">pt</a>]
+
+[<a href="../../ro/dep/vocative.html">ro</a>]
+
+[<a href="../../ru/dep/vocative.html">ru</a>]
+
+[<a href="../../sa/dep/vocative.html">sa</a>]
+
+[<a href="../../sk/dep/vocative.html">sk</a>]
+
+[<a href="../../sla/dep/vocative.html">sla</a>]
+
+[<a href="../../sl/dep/vocative.html">sl</a>]
+
+[<a href="../../so/dep/vocative.html">so</a>]
+
+[<a href="../../sr/dep/vocative.html">sr</a>]
 
 [<a href="../../sv/dep/vocative.html">sv</a>]
 
+[<a href="../../swl/dep/vocative.html">swl</a>]
+
+[<a href="../../ta/dep/vocative.html">ta</a>]
+
+[<a href="../../tr/dep/vocative.html">tr</a>]
+
 [<a href="../../u/dep/vocative.html">u</a>]
+
+[<a href="../../ug/dep/vocative.html">ug</a>]
+
+[<a href="../../uk/dep/vocative.html">uk</a>]
+
+[<a href="../../ur/dep/vocative.html">ur</a>]
+
+[<a href="../../urj/dep/vocative.html">urj</a>]
+
+[<a href="../../vi/dep/vocative.html">vi</a>]
+
+[<a href="../../yue/dep/vocative.html">yue</a>]
+
+[<a href="../../zh/dep/vocative.html">zh</a>]
 
 
 

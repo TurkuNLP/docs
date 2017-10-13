@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-kk">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/kk/dep">kk/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/aux_.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-kk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/kk/dep">kk/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/aux_.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -102,61 +119,41 @@ ccomp(қарап-7, ойнағанына-6)
 
 <p>This relation is universal.</p>
 
-<p>153 nodes (2%) are attached to their parents as <code>aux</code>.</p>
+<p>2 nodes (0%) are attached to their parents as <code>aux</code>.</p>
 
-<p>153 instances of <code>aux</code> (100%) are left-to-right (parent precedes child).
-Average distance between parent and child is 1.07843137254902.</p>
+<p>2 instances of <code>aux</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 1.</p>
 
-<p>The following 4 pairs of parts of speech are connected with <code>aux</code>: <a href="">kk-pos/VERB</a>-<a href="">kk-pos/AUX</a> (142; 93% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/AUX</a> (5; 3% instances), <a href="">kk-pos/VERB</a>-<a href="">kk-pos/VERB</a> (4; 3% instances), <a href="">kk-pos/ADJ</a>-<a href="">kk-pos/AUX</a> (2; 1% instances).</p>
+<p>The following 1 pairs of parts of speech are connected with <code>aux</code>: <a href="">kk-pos/VERB</a>-<a href="">kk-pos/AUX</a> (2; 100% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 2 3 aux	color:blue
-1	Мен	мен	PRON	prn	_	2	nsubj	_	pers|p1|sg|nom
-2	адасып	адас	VERB	v	_	0	root	_	iv|prc_perf
-3	кеттім	кет	AUX	vaux	_	2	aux	_	ifi|p1|sg
-4	.	.	PUNCT	sent	_	2	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 4 6 aux	color:blue
-1	Малына	мал	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	3	conj	_	мал|n|px3sp|dat
-2	,	,	PUNCT	cm	_	3	punct	_	,|cm
-3	жанына	жан	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	4	nmod	_	жан|n|px3sp|dat
-4	ие	ие	NOUN	n	Case=Nom	8	acl:relcl	_	ие|n|nom
-5	болып	бол	VERB	v	Aspect=Perf|VerbForm=Coverb	4	cop	_	бол|v|iv|prcperf
-6	отырған	отыр	AUX	vaux	Tense=Past|VerbForm=Part	4	aux	_	отыр|vaux|gprpast
-7	қай	қай	DET	det	PronType=Itg	8	det	_	қай|det|itg
-8	қазақ	қазақ	NOUN	n	Case=Nom	9	nsubj	_	қазақ|n|nom
-9	_	бар	ADJ	adj	_	0	root	_	бар|adj
-10	_	е	AUX	cop	Number=Sing|Person=3|Tense=Aor	9	cop	_	е|cop|aor|p3|sg
-11	?	?	PUNCT	sent	_	9	punct	_	?|sent
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 5 6 aux	color:blue
-1	Шайларын	шай	NOUN	n	Case=Acc|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	2	dobj	_	шай|n|pl|px3sp|acc
-2	ішіп	іш	VERB	v	Aspect=Perf|VerbForm=Trans	5	conj	_	іш|v|tv|gnaperf
-3	,	,	PUNCT	cm	_	5	punct	_	,|cm
-4	шылымдарын	шылым	NOUN	n	Case=Acc|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	5	dobj	_	шылым|n|pl|px3sp|acc
-5	тартысып	тарт	VERB	v	Aspect=Perf|VerbForm=Trans|Voice=Coop	11	advcl	_	тарт|v|tv|coop|gnaperf
-6	болған	бол	VERB	v	Case=Nom|Tense=Past|VerbForm=Ger	5	aux	_	бол|v|iv|gerpast|nom
-7	соң	соң	ADP	post	_	5	case	_	соң|post
-8	,	,	PUNCT	cm	_	11	punct	_	,|cm
-9	өзгелері	өзге	ADJ	adj	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	11	nsubj	_	өзге|adj|subst|pl|px3sp|nom
-10	тысқа	тыс	NOUN	n	Case=Dat	11	nmod	_	тыс|n|dat
-11	шықты	шық	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	шық|v|tv|ifi|p3|sg
-12	.	.	PUNCT	sent	_	11	punct	_	.|sent
+<pre><code class="language-conllu"># visual-style 18	bgColor:blue
+# visual-style 18	fgColor:white
+# visual-style 17	bgColor:blue
+# visual-style 17	fgColor:white
+# visual-style 17 18 aux	color:blue
+1	Пірәдар	пірәдар	NOUN	n	Case=Nom	0	root	_	_
+2	болды	бол	AUX	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	cop	_	SpaceAfter=No
+3	,	,	PUNCT	cm	_	1	punct	_	_
+4	әулиеге	әулие	NOUN	n	Case=Dat	6	obl	_	_
+5	ат	ат	NOUN	n	Case=Nom	6	obj	_	_
+6	айтты	айт	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	parataxis	_	SpaceAfter=No
+7	,	,	PUNCT	cm	_	6	punct	_	_
+8	қорасанға	қорасан	NOUN	n	Case=Dat	10	obl	_	_
+9	қой	қой	NOUN	n	Case=Nom	10	obj	_	_
+10	айтты	айт	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	parataxis	_	SpaceAfter=No
+11	:	:	PUNCT	sent	_	10	punct	_	_
+12	«	«	PUNCT	lquot	_	17	punct	_	SpaceAfter=No
+13	Жасаған	Жасаған	PROPN	np	Case=Nom	17	vocative	_	_
+14	ау	ау	PART	mod_emo	_	13	discourse	_	_
+15	,	,	PUNCT	cm	_	13	punct	_	_
+16	бала	бала	NOUN	n	Case=Nom	17	obj	_	_
+17	бере	бер	VERB	v	Aspect=Imp|VerbForm=Cov	22	ccomp	_	_
+18	гөр	гөр	AUX	vaux	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	17	aux	_	SpaceAfter=No
+19	!	!	PUNCT	sent	_	17	punct	_	SpaceAfter=No
+20	»	»	PUNCT	rquot	_	17	punct	_	_
+21	–	–	PUNCT	guio	_	17	punct	_	_
+22	деді	де	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	parataxis	_	SpaceAfter=No
+23	.	.	PUNCT	sent	_	22	punct	_	_
 
 </code></pre>
 
@@ -168,9 +165,25 @@ Average distance between parent and child is 1.07843137254902.</p>
 
 aux in other languages:
 
+[<a href="../../am/dep/aux.html">am</a>]
+
+[<a href="../../ar/dep/aux.html">ar</a>]
+
 [<a href="../../bg/dep/aux.html">bg</a>]
 
+[<a href="../../bxr/dep/aux.html">bxr</a>]
+
+[<a href="../../ca/dep/aux.html">ca</a>]
+
+[<a href="../../ckb/dep/aux.html">ckb</a>]
+
+[<a href="../../cop/dep/aux.html">cop</a>]
+
 [<a href="../../cs/dep/aux.html">cs</a>]
+
+[<a href="../../cu/dep/aux.html">cu</a>]
+
+[<a href="../../da/dep/aux.html">da</a>]
 
 [<a href="../../de/dep/aux.html">de</a>]
 
@@ -180,29 +193,97 @@ aux in other languages:
 
 [<a href="../../es/dep/aux.html">es</a>]
 
+[<a href="../../et/dep/aux.html">et</a>]
+
 [<a href="../../eu/dep/aux.html">eu</a>]
 
 [<a href="../../fa/dep/aux.html">fa</a>]
 
 [<a href="../../fi/dep/aux.html">fi</a>]
 
+[<a href="../../fo/dep/aux.html">fo</a>]
+
 [<a href="../../fr/dep/aux.html">fr</a>]
 
-[<a href="../../ga/dep/aux.html">ga</a>]
+[<a href="../../gl/dep/aux.html">gl</a>]
+
+[<a href="../../got/dep/aux.html">got</a>]
+
+[<a href="../../grc/dep/aux.html">grc</a>]
 
 [<a href="../../he/dep/aux.html">he</a>]
 
+[<a href="../../hi/dep/aux.html">hi</a>]
+
+[<a href="../../hr/dep/aux.html">hr</a>]
+
 [<a href="../../hu/dep/aux.html">hu</a>]
+
+[<a href="../../id/dep/aux.html">id</a>]
 
 [<a href="../../it/dep/aux.html">it</a>]
 
 [<a href="../../ja/dep/aux.html">ja</a>]
 
+[<a href="../../kk/dep/aux.html">kk</a>]
+
+[<a href="../../kmr/dep/aux.html">kmr</a>]
+
 [<a href="../../ko/dep/aux.html">ko</a>]
+
+[<a href="../../la/dep/aux.html">la</a>]
+
+[<a href="../../lv/dep/aux.html">lv</a>]
+
+[<a href="../../mr/dep/aux.html">mr</a>]
+
+[<a href="../../nl/dep/aux.html">nl</a>]
+
+[<a href="../../no/dep/aux.html">no</a>]
+
+[<a href="../../pl/dep/aux.html">pl</a>]
+
+[<a href="../../pt/dep/aux.html">pt</a>]
+
+[<a href="../../ro/dep/aux.html">ro</a>]
+
+[<a href="../../ru/dep/aux.html">ru</a>]
+
+[<a href="../../sa/dep/aux.html">sa</a>]
+
+[<a href="../../sk/dep/aux.html">sk</a>]
+
+[<a href="../../sla/dep/aux.html">sla</a>]
+
+[<a href="../../sl/dep/aux.html">sl</a>]
+
+[<a href="../../so/dep/aux.html">so</a>]
+
+[<a href="../../sr/dep/aux.html">sr</a>]
 
 [<a href="../../sv/dep/aux.html">sv</a>]
 
+[<a href="../../swl/dep/aux.html">swl</a>]
+
+[<a href="../../ta/dep/aux.html">ta</a>]
+
+[<a href="../../tr/dep/aux.html">tr</a>]
+
 [<a href="../../u/dep/aux.html">u</a>]
+
+[<a href="../../ug/dep/aux.html">ug</a>]
+
+[<a href="../../uk/dep/aux.html">uk</a>]
+
+[<a href="../../ur/dep/aux.html">ur</a>]
+
+[<a href="../../urj/dep/aux.html">urj</a>]
+
+[<a href="../../vi/dep/aux.html">vi</a>]
+
+[<a href="../../yue/dep/aux.html">yue</a>]
+
+[<a href="../../zh/dep/aux.html">zh</a>]
 
 
 

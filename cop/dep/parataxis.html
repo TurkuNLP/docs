@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-cop">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/cop/dep">cop/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_cop-dep/parataxis.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cop">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/cop/dep">cop/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cop-dep/parataxis.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -45,8 +62,29 @@
 
           <h2><code>parataxis</code>: parataxis</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>parataxis</code>.</p>
+<p>This label is used to link two main clauses that are listed together as one sentence (either by accident, or because they are not quite independent sentences). It is also used for parenthetical clauses in the middle of other clauses. The dependency goes from the root of the first clause, or in parenthetical cases, the non-parenthetical clause, to the other one:</p>
+
+<pre><code class="language-sdparse">ⲛ/ADP ⲧⲉ/DET ⲩⲛⲟⲩ/NOUN ⲇⲉ/PART ⲁ/AUX ⲩ/PRON ⲕⲁ/VERB ⲛⲉⲩ/DET ϣⲛⲏⲩ/NOUN ⲁ/AUX ⲩ/PRON ⲟⲩⲁϩ/VERB ⲟⲩ/PRON ⲛⲥⲱ/ADP ϥ/PRON \n Immediately they left their nets and followed him.
+
+mark(ⲩⲛⲟⲩ,  ⲛ)
+det(ⲩⲛⲟⲩ, ⲧⲉ)
+advmod(ⲕⲁ, ⲇⲉ) 
+aux(ⲕⲁ, ⲁ-5)
+nsubj(ⲕⲁ, ⲩ-6)
+dobj(ⲕⲁ, ϣⲛⲏⲩ)
+det(ϣⲛⲏⲩ, ⲛⲉⲩ)
+parataxis(ⲕⲁ, ⲟⲩⲁϩ)
+aux(ⲟⲩⲁϩ, ⲁ-10)
+nsubj(ⲟⲩⲁϩ, ⲩ-11)
+dobj(ⲟⲩⲁϩ, ⲟⲩ)
+nmod(ⲟⲩⲁϩ, ϥ)
+case(ⲛⲥⲱ, ϥ)
+nmod(ⲕⲁ, ⲩⲛⲟⲩ)
+
+</code></pre>
+
+<p>If both of these clauses are seen as one sentence, there is no other relation to call the connection between the first clause and the second one. Note that this is distinct from two coordinated clauses, e.g. with ⲁⲩⲱ ‘and’, for which <code>cc</code> and <code>conj</code> should be used.</p>
+
 
 
 <!-- "automatic stats" -->
@@ -63,32 +101,33 @@ for <code>parataxis</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>43 nodes (1%) are attached to their parents as <code>parataxis</code>.</p>
+<p>107 nodes (1%) are attached to their parents as <code>parataxis</code>.</p>
 
-<p>43 instances of <code>parataxis</code> (100%) are left-to-right (parent precedes child).
-Average distance between parent and child is 9.53488372093023.</p>
+<p>107 instances of <code>parataxis</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 10.0654205607477.</p>
 
-<p>The following 7 pairs of parts of speech are connected with <code>parataxis</code>: <a href="">cop-pos/VERB</a>-<a href="">cop-pos/VERB</a> (32; 74% instances), <a href="">cop-pos/NOUN</a>-<a href="">cop-pos/VERB</a> (4; 9% instances), <a href="">cop-pos/VERB</a>-<a href="">cop-pos/NOUN</a> (3; 7% instances), <a href="">cop-pos/PRON</a>-<a href="">cop-pos/NOUN</a> (1; 2% instances), <a href="">cop-pos/PRON</a>-<a href="">cop-pos/VERB</a> (1; 2% instances), <a href="">cop-pos/VERB</a>-<a href="">cop-pos/DET</a> (1; 2% instances), <a href="">cop-pos/VERB</a>-<a href="">cop-pos/PRON</a> (1; 2% instances).</p>
+<p>The following 9 pairs of parts of speech are connected with <code>parataxis</code>: <a href="">cop-pos/VERB</a>-<a href="">cop-pos/VERB</a> (90; 84% instances), <a href="">cop-pos/NOUN</a>-<a href="">cop-pos/VERB</a> (6; 6% instances), <a href="">cop-pos/VERB</a>-<a href="">cop-pos/NOUN</a> (4; 4% instances), <a href="">cop-pos/VERB</a>-<a href="">cop-pos/PRON</a> (2; 2% instances), <a href="">cop-pos/DET</a>-<a href="">cop-pos/VERB</a> (1; 1% instances), <a href="">cop-pos/PRON</a>-<a href="">cop-pos/NOUN</a> (1; 1% instances), <a href="">cop-pos/PRON</a>-<a href="">cop-pos/VERB</a> (1; 1% instances), <a href="">cop-pos/VERB</a>-<a href="">cop-pos/DET</a> (1; 1% instances), <a href="">cop-pos/VERB</a>-<a href="">cop-pos/NUM</a> (1; 1% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 13	bgColor:blue
-# visual-style 13	fgColor:white
-# visual-style 8	bgColor:blue
-# visual-style 8	fgColor:white
-# visual-style 8 13 parataxis	color:blue
-1	ⲁⲩⲱ	ⲁⲩⲱ	CONJ	CONJ	_	8	cc	_	_
-2	ⲛ	ⲛ	ADP	PREP	_	4	case	_	_
-3	ⲧⲉ	ⲡ	DET	ART	_	4	det	_	_
-4	ⲩⲛⲟⲩ	ⲩⲛⲟⲩ	NOUN	N	_	8	nmod	_	_
-5	ⲁ	ⲁ	AUX	APST	_	8	aux	_	_
-6	ⲡⲉϥ	ⲡⲉϥ	DET	PPOS	_	7	det	_	_
-7	ⲥⲱⲃⲁϩ	ⲥⲱⲃⲁϩ	NOUN	N	_	8	nsubj	_	_
-8	ⲗⲟ	ⲗⲟ	VERB	V	_	0	root	_	_
-9	ϩⲓⲱⲱ	ϩⲓ	ADP	PREP	_	10	case	_	_
-10	ϥ	ⲛⲧⲟϥ	PRON	PPERO	_	8	nmod	_	_
-11	ⲁ	ⲁ	AUX	APST	_	13	aux	_	_
-12	ϥ	ⲛⲧⲟϥ	PRON	PPERS	_	13	nsubj	_	_
-13	ⲧⲃⲃⲟ	ⲧⲃⲃⲟ	VERB	V	_	8	parataxis	_	_
-14	.	.	PUNCT	PUNCT	_	8	punct	_	_
+<pre><code class="language-conllu"># visual-style 12	bgColor:blue
+# visual-style 12	fgColor:white
+# visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 7 12 parataxis	color:blue
+1	ⲛ	ⲛ	ADP	PREP	_	3	case	_	_
+2	ⲧⲉ	ⲡ	DET	ART	_	3	det	_	_
+3	ⲩⲛⲟⲩ	ⲩⲛⲟⲩ	NOUN	N	_	7	obl	_	_
+4	ⲇⲉ	ⲇⲉ	PART	PTC	_	7	advmod	_	_
+5	ⲁ	ⲁ	AUX	APST	_	7	aux	_	_
+6	ⲩ	ⲛⲧⲟⲟⲩ	PRON	PPERS	_	7	nsubj	_	_
+7	ⲕⲁ	ⲕⲱ	VERB	V	_	0	root	_	_
+8	ⲛⲉⲩ	ⲡⲉⲩ	DET	PPOS	_	9	det	_	_
+9	ϣⲛⲏⲩ	ϣⲛⲉ	NOUN	N	_	7	obj	_	_
+10	ⲁ	ⲁ	AUX	APST	_	12	aux	_	_
+11	ⲩ	ⲛⲧⲟⲟⲩ	PRON	PPERS	_	12	nsubj	_	_
+12	ⲟⲩⲁϩ	ⲟⲩⲱϩ	VERB	V	_	7	parataxis	_	_
+13	ⲟⲩ	ⲛⲧⲟⲟⲩ	PRON	PPERO	_	12	obj	_	_
+14	ⲛⲥⲱ	ⲛⲥⲁ	ADP	PREP	_	15	case	_	_
+15	ϥ	ⲛⲧⲟϥ	PRON	PPERO	_	12	obl	_	_
 
 </code></pre>
 
@@ -100,20 +139,20 @@ Average distance between parent and child is 9.53488372093023.</p>
 1	ⲛⲧⲉⲣⲉ	ⲛⲧⲉⲣⲉ	SCONJ	APREC	_	3	aux	_	_
 2	ⲓ	ⲁⲛⲟⲕ	PRON	PPERS	_	3	nsubj	_	_
 3	ⲙⲟϣⲧ	ⲙⲟϣⲧ	VERB	V	_	0	root	_	_
-4	ϥ	ⲛⲧⲟϥ	PRON	PPERO	_	3	dobj	_	_
+4	ϥ	ⲛⲧⲟϥ	PRON	PPERO	_	3	obj	_	_
 5	ⲛ	ⲛ	ADP	PREP	_	7	case	_	_
 6	ⲕⲉ	ⲕⲉ	DET	ART	_	7	det	_	_
-7	ⲥⲟⲡ	ⲥⲟⲡ	NOUN	N	_	3	nmod	_	_
+7	ⲥⲟⲡ	ⲥⲟⲡ	NOUN	N	_	3	obl	_	_
 8	ⲡⲉⲕ	ⲡⲉⲕ	DET	PPOS	_	9	det	_	_
 9	ⲏⲓ	ⲏⲓ	NOUN	N	_	3	parataxis	_	_
 10	ⲙⲡ	ⲙⲡⲉ	AUX	ANEGPST	_	12	aux	_	_
 11	ⲓ	ⲁⲛⲟⲕ	PRON	PPERS	_	12	nsubj	_	_
 12	ϭⲛ	ϭⲓⲛⲉ	VERB	V	_	9	parataxis	_	_
-13	ⲗⲁⲁⲩ	ⲗⲁⲁⲩ	NOUN	N	_	12	dobj	_	_
+13	ⲗⲁⲁⲩ	ⲗⲁⲁⲩ	NOUN	N	_	12	obj	_	_
 14	ⲛ	ⲛ	ADP	PREP	_	15	case	_	_
 15	ⲉⲓⲇⲱⲗⲟⲛ	ⲉⲓⲇⲱⲗⲟⲛ	NOUN	N	_	13	nmod	_	_
 16	ⲛϩⲏⲧ	ϩⲛ	ADP	PREP	_	17	case	_	_
-17	ϥ	ⲛⲧⲟϥ	PRON	PPERO	_	12	nmod	_	_
+17	ϥ	ⲛⲧⲟϥ	PRON	PPERO	_	12	obl	_	_
 18	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 </code></pre>
@@ -126,20 +165,20 @@ Average distance between parent and child is 9.53488372093023.</p>
 1	ⲛⲧⲉⲣⲉ	ⲛⲧⲉⲣⲉ	SCONJ	APREC	_	3	aux	_	_
 2	ⲓ	ⲁⲛⲟⲕ	PRON	PPERS	_	3	nsubj	_	_
 3	ⲙⲟϣⲧ	ⲙⲟϣⲧ	VERB	V	_	0	root	_	_
-4	ϥ	ⲛⲧⲟϥ	PRON	PPERO	_	3	dobj	_	_
+4	ϥ	ⲛⲧⲟϥ	PRON	PPERO	_	3	obj	_	_
 5	ⲛ	ⲛ	ADP	PREP	_	7	case	_	_
 6	ⲕⲉ	ⲕⲉ	DET	ART	_	7	det	_	_
-7	ⲥⲟⲡ	ⲥⲟⲡ	NOUN	N	_	3	nmod	_	_
+7	ⲥⲟⲡ	ⲥⲟⲡ	NOUN	N	_	3	obl	_	_
 8	ⲡⲉⲕ	ⲡⲉⲕ	DET	PPOS	_	9	det	_	_
 9	ⲏⲓ	ⲏⲓ	NOUN	N	_	3	parataxis	_	_
 10	ⲙⲡ	ⲙⲡⲉ	AUX	ANEGPST	_	12	aux	_	_
 11	ⲓ	ⲁⲛⲟⲕ	PRON	PPERS	_	12	nsubj	_	_
 12	ϭⲛ	ϭⲓⲛⲉ	VERB	V	_	9	parataxis	_	_
-13	ⲗⲁⲁⲩ	ⲗⲁⲁⲩ	NOUN	N	_	12	dobj	_	_
+13	ⲗⲁⲁⲩ	ⲗⲁⲁⲩ	NOUN	N	_	12	obj	_	_
 14	ⲛ	ⲛ	ADP	PREP	_	15	case	_	_
 15	ⲉⲓⲇⲱⲗⲟⲛ	ⲉⲓⲇⲱⲗⲟⲛ	NOUN	N	_	13	nmod	_	_
 16	ⲛϩⲏⲧ	ϩⲛ	ADP	PREP	_	17	case	_	_
-17	ϥ	ⲛⲧⲟϥ	PRON	PPERO	_	12	nmod	_	_
+17	ϥ	ⲛⲧⲟϥ	PRON	PPERO	_	12	obl	_	_
 18	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 </code></pre>
@@ -152,9 +191,25 @@ Average distance between parent and child is 9.53488372093023.</p>
 
 parataxis in other languages:
 
+[<a href="../../am/dep/parataxis.html">am</a>]
+
+[<a href="../../ar/dep/parataxis.html">ar</a>]
+
 [<a href="../../bg/dep/parataxis.html">bg</a>]
 
+[<a href="../../bxr/dep/parataxis.html">bxr</a>]
+
+[<a href="../../ca/dep/parataxis.html">ca</a>]
+
+[<a href="../../ckb/dep/parataxis.html">ckb</a>]
+
+[<a href="../../cop/dep/parataxis.html">cop</a>]
+
 [<a href="../../cs/dep/parataxis.html">cs</a>]
+
+[<a href="../../cu/dep/parataxis.html">cu</a>]
+
+[<a href="../../da/dep/parataxis.html">da</a>]
 
 [<a href="../../de/dep/parataxis.html">de</a>]
 
@@ -164,29 +219,99 @@ parataxis in other languages:
 
 [<a href="../../es/dep/parataxis.html">es</a>]
 
+[<a href="../../et/dep/parataxis.html">et</a>]
+
 [<a href="../../eu/dep/parataxis.html">eu</a>]
 
 [<a href="../../fa/dep/parataxis.html">fa</a>]
 
 [<a href="../../fi/dep/parataxis.html">fi</a>]
 
+[<a href="../../fo/dep/parataxis.html">fo</a>]
+
 [<a href="../../fr/dep/parataxis.html">fr</a>]
 
 [<a href="../../ga/dep/parataxis.html">ga</a>]
 
+[<a href="../../gl/dep/parataxis.html">gl</a>]
+
+[<a href="../../got/dep/parataxis.html">got</a>]
+
+[<a href="../../grc/dep/parataxis.html">grc</a>]
+
 [<a href="../../he/dep/parataxis.html">he</a>]
 
+[<a href="../../hi/dep/parataxis.html">hi</a>]
+
+[<a href="../../hr/dep/parataxis.html">hr</a>]
+
 [<a href="../../hu/dep/parataxis.html">hu</a>]
+
+[<a href="../../id/dep/parataxis.html">id</a>]
 
 [<a href="../../it/dep/parataxis.html">it</a>]
 
 [<a href="../../ja/dep/parataxis.html">ja</a>]
 
+[<a href="../../kk/dep/parataxis.html">kk</a>]
+
+[<a href="../../kmr/dep/parataxis.html">kmr</a>]
+
 [<a href="../../ko/dep/parataxis.html">ko</a>]
+
+[<a href="../../la/dep/parataxis.html">la</a>]
+
+[<a href="../../lv/dep/parataxis.html">lv</a>]
+
+[<a href="../../mr/dep/parataxis.html">mr</a>]
+
+[<a href="../../nl/dep/parataxis.html">nl</a>]
+
+[<a href="../../no/dep/parataxis.html">no</a>]
+
+[<a href="../../pl/dep/parataxis.html">pl</a>]
+
+[<a href="../../pt/dep/parataxis.html">pt</a>]
+
+[<a href="../../ro/dep/parataxis.html">ro</a>]
+
+[<a href="../../ru/dep/parataxis.html">ru</a>]
+
+[<a href="../../sa/dep/parataxis.html">sa</a>]
+
+[<a href="../../sk/dep/parataxis.html">sk</a>]
+
+[<a href="../../sla/dep/parataxis.html">sla</a>]
+
+[<a href="../../sl/dep/parataxis.html">sl</a>]
+
+[<a href="../../so/dep/parataxis.html">so</a>]
+
+[<a href="../../sr/dep/parataxis.html">sr</a>]
 
 [<a href="../../sv/dep/parataxis.html">sv</a>]
 
+[<a href="../../swl/dep/parataxis.html">swl</a>]
+
+[<a href="../../ta/dep/parataxis.html">ta</a>]
+
+[<a href="../../tr/dep/parataxis.html">tr</a>]
+
 [<a href="../../u/dep/parataxis.html">u</a>]
+
+[<a href="../../ug/dep/parataxis.html">ug</a>]
+
+[<a href="../../uk/dep/parataxis.html">uk</a>]
+
+[<a href="../../ur/dep/parataxis.html">ur</a>]
+
+[<a href="../../urj/dep/parataxis.html">urj</a>]
+
+[<a href="../../vi/dep/parataxis.html">vi</a>]
+
+[<a href="../../yue/dep/parataxis.html">yue</a>]
+
+[<a href="../../zh/dep/parataxis.html">zh</a>]
 
 
 

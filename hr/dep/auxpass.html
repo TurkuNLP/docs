@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-hr">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/hr/dep">hr/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_hr-dep/auxpass.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-hr">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/hr/dep">hr/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hr-dep/auxpass.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -56,85 +73,30 @@ for <code>auxpass</code>.</p>
 
 
 
-
-<hr />
-
-<h2 id="treebank-statistics-udcroatian">Treebank Statistics (UD_Croatian)</h2>
-
-<p>This relation is universal.</p>
-
-<p>842 nodes (1%) are attached to their parents as <code>auxpass</code>.</p>
-
-<p>616 instances of <code>auxpass</code> (73%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.77672209026128.</p>
-
-<p>The following 10 pairs of parts of speech are connected with <code>auxpass</code>: <a href="">hr-pos/ADJ</a>-<a href="">hr-pos/AUX</a> (799; 95% instances), <a href="">hr-pos/VERB</a>-<a href="">hr-pos/AUX</a> (24; 3% instances), <a href="">hr-pos/VERB</a>-<a href="">hr-pos/PRON</a> (12; 1% instances), <a href="">hr-pos/ADJ</a>-<a href="">hr-pos/PRON</a> (1; 0% instances), <a href="">hr-pos/ADV</a>-<a href="">hr-pos/AUX</a> (1; 0% instances), <a href="">hr-pos/NOUN</a>-<a href="">hr-pos/AUX</a> (1; 0% instances), <a href="">hr-pos/PRON</a>-<a href="">hr-pos/ADP</a> (1; 0% instances), <a href="">hr-pos/PROPN</a>-<a href="">hr-pos/ADP</a> (1; 0% instances), <a href="">hr-pos/PROPN</a>-<a href="">hr-pos/AUX</a> (1; 0% instances), <a href="">hr-pos/VERB</a>-<a href="">hr-pos/ADJ</a> (1; 0% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 6 3 auxpass	color:blue
-1	Do	do	ADP	_	Case=Gen	2	case	_	_
-2	sada	sada	ADV	_	Degree=Pos	6	advmod	_	_
-3	je	biti	AUX	_	Number=Sing|Person=3|Tense=Pres	6	auxpass	_	_
-4	takav	takav	PRON	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	5	det	_	_
-5	tim	tim	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	6	nsubjpass	_	_
-6	ustrojen	ustrojiti	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
-7	u	u	ADP	_	Case=Loc	8	case	_	_
-8	Federaciji	federacija	NOUN	_	Case=Loc|Gender=Fem|Number=Sing	6	nmod	_	_
-9	BiH	BiH	PROPN	_	Case=Gen|Gender=Fem|Number=Sing	8	nmod	_	_
-10	.	.	PUNCT	_	_	6	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
-# visual-style 9	bgColor:blue
-# visual-style 9	fgColor:white
-# visual-style 9 7 auxpass	color:blue
-1	Crvenkovski	Crvenkovski	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	5	parataxis	_	_
-2	:	:	PUNCT	_	_	1	punct	_	_
-3	Sporazumi	sporazum	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	5	nsubjpass	_	_
-4	se	sebe	PRON	_	Case=Acc|Number=Sing|Reflex=Yes	5	compound	_	_
-5	zaključuju	zaključivati	VERB	_	Number=Plur|Person=3|Tense=Pres	0	root	_	_
-6	kako	kako	ADV	_	Degree=Pos	9	mark	_	_
-7	bi	biti	AUX	_	Number=Plur|Person=3|Tense=Past	9	auxpass	_	_
-8	se	sebe	PRON	_	Case=Acc|Number=Sing|Reflex=Yes	9	compound	_	_
-9	implementirali	implementirati	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	5	advcl	_	_
-10	.	.	PUNCT	_	_	5	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
-# visual-style 7 5 auxpass	color:blue
-1	"	"	PUNCT	_	_	2	punct	_	_
-2	Želite	željeti	VERB	_	Number=Plur|Person=2|Tense=Pres	0	root	_	_
-3	li	li	PART	_	_	7	mark	_	_
-4	da	da	SCONJ	_	_	3	mwe	_	_
-5	se	sebe	PRON	_	Case=Acc|Number=Sing|Reflex=Yes	7	auxpass	_	_
-6	zakon	zakon	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	7	nsubjpass	_	_
-7	poštuje	poštovati	VERB	_	Number=Sing|Person=3|Tense=Pres	2	ccomp	_	_
-8	ili	ili	CONJ	_	_	2	cc	_	_
-9	ne	ne	PART	_	Negative=Neg	2	remnant	_	_
-10	?	?	PUNCT	_	_	2	punct	_	_
-
-</code></pre>
-
-
-
-
 <!-- "in other languages" links -->
 <hr/>
 
 auxpass in other languages:
 
+[<a href="../../am/dep/auxpass.html">am</a>]
+
+[<a href="../../ar/dep/auxpass.html">ar</a>]
+
 [<a href="../../bg/dep/auxpass.html">bg</a>]
 
+[<a href="../../bxr/dep/auxpass.html">bxr</a>]
+
+[<a href="../../ca/dep/auxpass.html">ca</a>]
+
+[<a href="../../ckb/dep/auxpass.html">ckb</a>]
+
+[<a href="../../cop/dep/auxpass.html">cop</a>]
+
 [<a href="../../cs/dep/auxpass.html">cs</a>]
+
+[<a href="../../cu/dep/auxpass.html">cu</a>]
+
+[<a href="../../da/dep/auxpass.html">da</a>]
 
 [<a href="../../de/dep/auxpass.html">de</a>]
 
@@ -144,29 +106,95 @@ auxpass in other languages:
 
 [<a href="../../es/dep/auxpass.html">es</a>]
 
+[<a href="../../et/dep/auxpass.html">et</a>]
+
 [<a href="../../eu/dep/auxpass.html">eu</a>]
 
 [<a href="../../fa/dep/auxpass.html">fa</a>]
 
 [<a href="../../fi/dep/auxpass.html">fi</a>]
 
+[<a href="../../fo/dep/auxpass.html">fo</a>]
+
 [<a href="../../fr/dep/auxpass.html">fr</a>]
 
-[<a href="../../ga/dep/auxpass.html">ga</a>]
+[<a href="../../gl/dep/auxpass.html">gl</a>]
+
+[<a href="../../got/dep/auxpass.html">got</a>]
+
+[<a href="../../grc/dep/auxpass.html">grc</a>]
 
 [<a href="../../he/dep/auxpass.html">he</a>]
 
+[<a href="../../hi/dep/auxpass.html">hi</a>]
+
+[<a href="../../hr/dep/auxpass.html">hr</a>]
+
 [<a href="../../hu/dep/auxpass.html">hu</a>]
+
+[<a href="../../id/dep/auxpass.html">id</a>]
 
 [<a href="../../it/dep/auxpass.html">it</a>]
 
 [<a href="../../ja/dep/auxpass.html">ja</a>]
 
+[<a href="../../kk/dep/auxpass.html">kk</a>]
+
+[<a href="../../kmr/dep/auxpass.html">kmr</a>]
+
 [<a href="../../ko/dep/auxpass.html">ko</a>]
+
+[<a href="../../la/dep/auxpass.html">la</a>]
+
+[<a href="../../lv/dep/auxpass.html">lv</a>]
+
+[<a href="../../mr/dep/auxpass.html">mr</a>]
+
+[<a href="../../nl/dep/auxpass.html">nl</a>]
+
+[<a href="../../no/dep/auxpass.html">no</a>]
+
+[<a href="../../pl/dep/auxpass.html">pl</a>]
+
+[<a href="../../pt/dep/auxpass.html">pt</a>]
+
+[<a href="../../ro/dep/auxpass.html">ro</a>]
+
+[<a href="../../ru/dep/auxpass.html">ru</a>]
+
+[<a href="../../sa/dep/auxpass.html">sa</a>]
+
+[<a href="../../sk/dep/auxpass.html">sk</a>]
+
+[<a href="../../sla/dep/auxpass.html">sla</a>]
+
+[<a href="../../sl/dep/auxpass.html">sl</a>]
+
+[<a href="../../so/dep/auxpass.html">so</a>]
+
+[<a href="../../sr/dep/auxpass.html">sr</a>]
 
 [<a href="../../sv/dep/auxpass.html">sv</a>]
 
-[<a href="../../u/dep/auxpass.html">u</a>]
+[<a href="../../swl/dep/auxpass.html">swl</a>]
+
+[<a href="../../ta/dep/auxpass.html">ta</a>]
+
+[<a href="../../tr/dep/auxpass.html">tr</a>]
+
+[<a href="../../ug/dep/auxpass.html">ug</a>]
+
+[<a href="../../uk/dep/auxpass.html">uk</a>]
+
+[<a href="../../ur/dep/auxpass.html">ur</a>]
+
+[<a href="../../urj/dep/auxpass.html">urj</a>]
+
+[<a href="../../vi/dep/auxpass.html">vi</a>]
+
+[<a href="../../yue/dep/auxpass.html">yue</a>]
+
+[<a href="../../zh/dep/auxpass.html">zh</a>]
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-he">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/he/dep">he/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_he-dep/cc.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-he">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/he/dep">he/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_he-dep/cc.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,57 +80,57 @@ for <code>cc</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>4946 nodes (3%) are attached to their parents as <code>cc</code>.</p>
+<p>4545 nodes (3%) are attached to their parents as <code>cc</code>.</p>
 
-<p>4628 instances of <code>cc</code> (94%) are left-to-right (parent precedes child).
-Average distance between parent and child is 6.17711281843914.</p>
+<p>4524 instances of <code>cc</code> (100%) are right-to-left (child precedes parent).
+Average distance between parent and child is 2.6959295929593.</p>
 
-<p>The following 21 pairs of parts of speech are connected with <code>cc</code>: <a href="">he-pos/VERB</a>-<a href="">he-pos/CONJ</a> (1933; 39% instances), <a href="">he-pos/NOUN</a>-<a href="">he-pos/CONJ</a> (1833; 37% instances), <a href="">he-pos/ADJ</a>-<a href="">he-pos/CONJ</a> (418; 8% instances), <a href="">he-pos/PROPN</a>-<a href="">he-pos/CONJ</a> (305; 6% instances), <a href="">he-pos/AUX</a>-<a href="">he-pos/CONJ</a> (104; 2% instances), <a href="">he-pos/VERB</a>-<a href="">he-pos/PUNCT</a> (79; 2% instances), <a href="">he-pos/ADV</a>-<a href="">he-pos/CONJ</a> (66; 1% instances), <a href="">he-pos/NOUN</a>-<a href="">he-pos/PUNCT</a> (50; 1% instances), <a href="">he-pos/PROPN</a>-<a href="">he-pos/PUNCT</a> (37; 1% instances), <a href="">he-pos/NUM</a>-<a href="">he-pos/CONJ</a> (34; 1% instances), <a href="">he-pos/PRON</a>-<a href="">he-pos/CONJ</a> (32; 1% instances), <a href="">he-pos/CONJ</a>-<a href="">he-pos/CONJ</a> (24; 0% instances), <a href="">he-pos/AUX</a>-<a href="">he-pos/PUNCT</a> (9; 0% instances), <a href="">he-pos/ADJ</a>-<a href="">he-pos/PUNCT</a> (8; 0% instances), <a href="">he-pos/X</a>-<a href="">he-pos/CONJ</a> (5; 0% instances), <a href="">he-pos/ADP</a>-<a href="">he-pos/CONJ</a> (4; 0% instances), <a href="">he-pos/ADV</a>-<a href="">he-pos/PUNCT</a> (1; 0% instances), <a href="">he-pos/DET</a>-<a href="">he-pos/CONJ</a> (1; 0% instances), <a href="">he-pos/PRON</a>-<a href="">he-pos/PUNCT</a> (1; 0% instances), <a href="">he-pos/PUNCT</a>-<a href="">he-pos/CONJ</a> (1; 0% instances), <a href="">he-pos/VERB</a>-<a href="">he-pos/X</a> (1; 0% instances).</p>
+<p>The following 21 pairs of parts of speech are connected with <code>cc</code>: <a href="">he-pos/VERB</a>-<a href="">he-pos/CCONJ</a> (1738; 38% instances), <a href="">he-pos/NOUN</a>-<a href="">he-pos/CCONJ</a> (1697; 37% instances), <a href="">he-pos/ADJ</a>-<a href="">he-pos/CCONJ</a> (350; 8% instances), <a href="">he-pos/PROPN</a>-<a href="">he-pos/CCONJ</a> (216; 5% instances), <a href="">he-pos/AUX</a>-<a href="">he-pos/CCONJ</a> (118; 3% instances), <a href="">he-pos/CCONJ</a>-<a href="">he-pos/CCONJ</a> (82; 2% instances), <a href="">he-pos/ADV</a>-<a href="">he-pos/CCONJ</a> (77; 2% instances), <a href="">he-pos/VERB</a>-<a href="">he-pos/PUNCT</a> (73; 2% instances), <a href="">he-pos/PROPN</a>-<a href="">he-pos/PUNCT</a> (43; 1% instances), <a href="">he-pos/PRON</a>-<a href="">he-pos/CCONJ</a> (40; 1% instances), <a href="">he-pos/NOUN</a>-<a href="">he-pos/PUNCT</a> (34; 1% instances), <a href="">he-pos/NUM</a>-<a href="">he-pos/CCONJ</a> (28; 1% instances), <a href="">he-pos/CCONJ</a>-<a href="">he-pos/PUNCT</a> (16; 0% instances), <a href="">he-pos/AUX</a>-<a href="">he-pos/PUNCT</a> (11; 0% instances), <a href="">he-pos/ADP</a>-<a href="">he-pos/CCONJ</a> (7; 0% instances), <a href="">he-pos/PUNCT</a>-<a href="">he-pos/CCONJ</a> (5; 0% instances), <a href="">he-pos/ADJ</a>-<a href="">he-pos/PUNCT</a> (4; 0% instances), <a href="">he-pos/DET</a>-<a href="">he-pos/CCONJ</a> (2; 0% instances), <a href="">he-pos/NUM</a>-<a href="">he-pos/PUNCT</a> (2; 0% instances), <a href="">he-pos/PRON</a>-<a href="">he-pos/PUNCT</a> (1; 0% instances), <a href="">he-pos/VERB</a>-<a href="">he-pos/X</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 1	bgColor:blue
 # visual-style 1	fgColor:white
 # visual-style 5	bgColor:blue
 # visual-style 5	fgColor:white
 # visual-style 5 1 cc	color:blue
-1	ו	_	CONJ	CONJ	_	5	cc	_	_
-2	אכן	_	ADV	ADV	_	5	advmod	_	_
+1	ו	ו	CCONJ	CCONJ	_	5	cc	_	_
+2	אכן	אכן	ADV	ADV	_	5	advmod	_	_
 3	,	_	PUNCT	PUNCT	_	5	punct	_	_
-4	כך	_	ADV	ADV	_	5	advmod	_	_
-5	קרה	_	VERB	VERB	Gender=Masc|Number=Sing|Person=3|Tense=Past	0	root	_	_
-6	ב	_	ADP	ADP	_	8	case	_	_
-7	ה_	_	DET	DET	PronType=Art	8	det:def	_	_
-8	פריצה	_	NOUN	NOUN	Gender=Fem|Number=Sing	5	nmod	_	_
-9	ל	_	ADP	ADP	_	11	case	_	_
-10	ה_	_	DET	DET	PronType=Art	11	det:def	_	_
-11	מנזר	_	NOUN	NOUN	Gender=Masc|Number=Sing	8	nmod	_	_
-12	ה	_	DET	DET	PronType=Art	13	det:def	_	_
-13	חשוך	_	ADJ	ADJ	Gender=Masc|Number=Sing	11	amod	_	_
-14	לחלוטין	_	ADV	ADV	_	13	advmod	_	_
+4	כך	כך	ADV	ADV	_	5	advmod	_	_
+5	קרה	קרה	VERB	VERB	Gender=Masc|Number=Sing|Person=3|Tense=Past	0	root	_	_
+6	ב	ב	ADP	ADP	_	8	case	_	_
+7	ה_	ה	DET	DET	PronType=Art	8	det:def	_	_
+8	פריצה	פריצה	NOUN	NOUN	Gender=Fem|Number=Sing	5	obl	_	_
+9	ל	ל	ADP	ADP	_	11	case	_	_
+10	ה_	ה	DET	DET	PronType=Art	11	det:def	_	_
+11	מנזר	מנזר	NOUN	NOUN	Gender=Masc|Number=Sing	8	nmod	_	_
+12	ה	ה	DET	DET	PronType=Art	13	det:def	_	_
+13	חשוך	חשוך	ADJ	ADJ	Gender=Masc|Number=Sing	11	amod	_	_
+14	לחלוטין	לחלוטין	ADV	ADV	_	13	advmod	_	_
 15	.	_	PUNCT	PUNCT	_	5	punct	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu"># visual-style 11	bgColor:blue
 # visual-style 11	fgColor:white
-# visual-style 8	bgColor:blue
-# visual-style 8	fgColor:white
-# visual-style 8 11 cc	color:blue
-1	ה	_	DET	DET	PronType=Art	2	det:def	_	_
-2	מוח	_	NOUN	NOUN	Gender=Masc|Number=Sing	3	nsubj	_	_
-3	מתפלץ	_	VERB	VERB	Gender=Masc|HebBinyan=HITPAEL|Number=Sing|Person=1,2,3|VerbForm=Part	0	root	_	_
-4	לא	_	ADV	ADV	Negative=Neg	5	neg	_	_
-5	רק	_	ADV	ADV	_	6	advmod	_	_
-6	מ	_	ADP	ADP	_	8	case	_	_
-7	ה	_	DET	DET	PronType=Art	8	det:def	_	_
-8	תופעה	_	NOUN	NOUN	Gender=Fem|Number=Sing	3	nmod	_	_
-9	ה	_	DET	DET	PronType=Art	10	det:def	_	_
-10	מבישה	_	ADJ	ADJ	Gender=Fem|Number=Sing	8	amod	_	_
-11	אלא	_	CONJ	CONJ	_	8	cc	_	_
-12	גם	_	ADV	ADV	_	13	advmod	_	_
-13	מ	_	ADP	ADP	_	14	case	_	_
-14	דרכי	_	NOUN	NOUN	Definite=Red|Gender=Fem|Number=Plur	8	conj	_	_
-15	ה	_	DET	DET	PronType=Art	16	det:def	_	_
-16	הערמה	_	NOUN	NOUN	Gender=Fem|Number=Sing	14	nmod:smixut	_	_
+# visual-style 14	bgColor:blue
+# visual-style 14	fgColor:white
+# visual-style 14 11 cc	color:blue
+1	ה	ה	DET	DET	PronType=Art	2	det:def	_	_
+2	מוח	מוח	NOUN	NOUN	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	מתפלץ	התפלץ	VERB	VERB	Gender=Masc|HebBinyan=HITPAEL|Number=Sing|Person=1,2,3|VerbForm=Part	0	root	_	_
+4	לא	לא	ADV	ADV	Polarity=Neg	5	advmod	_	_
+5	רק	רק	ADV	ADV	_	6	advmod	_	_
+6	מ	מ	ADP	ADP	_	8	case	_	_
+7	ה	ה	DET	DET	PronType=Art	8	det:def	_	_
+8	תופעה	תופעה	NOUN	NOUN	Gender=Fem|Number=Sing	3	obl	_	_
+9	ה	ה	DET	DET	PronType=Art	10	det:def	_	_
+10	מבישה	מביש	ADJ	ADJ	Gender=Fem|Number=Sing	8	amod	_	_
+11	אלא	אלא	CCONJ	CCONJ	_	14	cc	_	_
+12	גם	גם	ADV	ADV	_	13	advmod	_	_
+13	מ	מ	ADP	ADP	_	14	case	_	_
+14	דרכי	דרך	NOUN	NOUN	Definite=Cons|Gender=Fem|Number=Plur	8	conj	_	_
+15	ה	ה	DET	DET	PronType=Art	16	det:def	_	_
+16	הערמה	הערמה	NOUN	NOUN	Gender=Fem|Number=Sing	14	compound:smixut	_	_
 17	.	_	PUNCT	PUNCT	_	3	punct	_	_
 
 </code></pre>
@@ -123,15 +140,15 @@ Average distance between parent and child is 6.17711281843914.</p>
 # visual-style 6	bgColor:blue
 # visual-style 6	fgColor:white
 # visual-style 6 1 cc	color:blue
-1	אך	_	CONJ	CONJ	_	6	cc	_	_
-2	זה	_	PRON	PRON	Gender=Masc|Number=Sing|Person=3	6	nsubj	_	_
-3	לא	_	ADV	ADV	Negative=Neg	6	neg	_	_
-4	היה	_	VERB	VERB	Gender=Masc|Negative=Pos|Number=Sing|Person=3|Tense=Past|VerbType=Cop	6	aux	_	_
-5	מספיק	_	ADV	ADV	_	6	advmod	_	_
-6	טוב	_	ADJ	ADJ	Gender=Masc|Number=Sing	0	root	_	_
-7	ל	_	ADP	ADP	_	9	case	_	_
-8	ה_	_	DET	DET	PronType=Art	9	det:def	_	_
-9	קרן	_	NOUN	NOUN	Gender=Fem|Number=Sing	6	advmod	_	_
+1	אך	אך	CCONJ	CCONJ	_	6	cc	_	_
+2	זה	זה	PRON	PRON	Gender=Masc|Number=Sing|Person=3	6	nsubj	_	_
+3	לא	לא	ADV	ADV	Polarity=Neg	6	advmod	_	_
+4	היה	היה	VERB	VERB	Gender=Masc|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbType=Cop	6	aux	_	_
+5	מספיק	מספיק	ADV	ADV	_	6	advmod	_	_
+6	טוב	טוב	ADJ	ADJ	Gender=Masc|Number=Sing	0	root	_	_
+7	ל	ל	ADP	ADP	_	9	case	_	_
+8	ה_	ה	DET	DET	PronType=Art	9	det:def	_	_
+9	קרן	קרן	NOUN	NOUN	Gender=Fem|Number=Sing	6	advmod	_	_
 10	.	_	PUNCT	PUNCT	_	6	punct	_	_
 
 </code></pre>
@@ -144,9 +161,25 @@ Average distance between parent and child is 6.17711281843914.</p>
 
 cc in other languages:
 
+[<a href="../../am/dep/cc.html">am</a>]
+
+[<a href="../../ar/dep/cc.html">ar</a>]
+
 [<a href="../../bg/dep/cc.html">bg</a>]
 
+[<a href="../../bxr/dep/cc.html">bxr</a>]
+
+[<a href="../../ca/dep/cc.html">ca</a>]
+
+[<a href="../../ckb/dep/cc.html">ckb</a>]
+
+[<a href="../../cop/dep/cc.html">cop</a>]
+
 [<a href="../../cs/dep/cc.html">cs</a>]
+
+[<a href="../../cu/dep/cc.html">cu</a>]
+
+[<a href="../../da/dep/cc.html">da</a>]
 
 [<a href="../../de/dep/cc.html">de</a>]
 
@@ -156,29 +189,99 @@ cc in other languages:
 
 [<a href="../../es/dep/cc.html">es</a>]
 
+[<a href="../../et/dep/cc.html">et</a>]
+
 [<a href="../../eu/dep/cc.html">eu</a>]
 
 [<a href="../../fa/dep/cc.html">fa</a>]
 
 [<a href="../../fi/dep/cc.html">fi</a>]
 
+[<a href="../../fo/dep/cc.html">fo</a>]
+
 [<a href="../../fr/dep/cc.html">fr</a>]
 
 [<a href="../../ga/dep/cc.html">ga</a>]
 
+[<a href="../../gl/dep/cc.html">gl</a>]
+
+[<a href="../../got/dep/cc.html">got</a>]
+
+[<a href="../../grc/dep/cc.html">grc</a>]
+
 [<a href="../../he/dep/cc.html">he</a>]
 
+[<a href="../../hi/dep/cc.html">hi</a>]
+
+[<a href="../../hr/dep/cc.html">hr</a>]
+
 [<a href="../../hu/dep/cc.html">hu</a>]
+
+[<a href="../../id/dep/cc.html">id</a>]
 
 [<a href="../../it/dep/cc.html">it</a>]
 
 [<a href="../../ja/dep/cc.html">ja</a>]
 
+[<a href="../../kk/dep/cc.html">kk</a>]
+
+[<a href="../../kmr/dep/cc.html">kmr</a>]
+
 [<a href="../../ko/dep/cc.html">ko</a>]
+
+[<a href="../../la/dep/cc.html">la</a>]
+
+[<a href="../../lv/dep/cc.html">lv</a>]
+
+[<a href="../../mr/dep/cc.html">mr</a>]
+
+[<a href="../../nl/dep/cc.html">nl</a>]
+
+[<a href="../../no/dep/cc.html">no</a>]
+
+[<a href="../../pl/dep/cc.html">pl</a>]
+
+[<a href="../../pt/dep/cc.html">pt</a>]
+
+[<a href="../../ro/dep/cc.html">ro</a>]
+
+[<a href="../../ru/dep/cc.html">ru</a>]
+
+[<a href="../../sa/dep/cc.html">sa</a>]
+
+[<a href="../../sk/dep/cc.html">sk</a>]
+
+[<a href="../../sla/dep/cc.html">sla</a>]
+
+[<a href="../../sl/dep/cc.html">sl</a>]
+
+[<a href="../../so/dep/cc.html">so</a>]
+
+[<a href="../../sr/dep/cc.html">sr</a>]
 
 [<a href="../../sv/dep/cc.html">sv</a>]
 
+[<a href="../../swl/dep/cc.html">swl</a>]
+
+[<a href="../../ta/dep/cc.html">ta</a>]
+
+[<a href="../../tr/dep/cc.html">tr</a>]
+
 [<a href="../../u/dep/cc.html">u</a>]
+
+[<a href="../../ug/dep/cc.html">ug</a>]
+
+[<a href="../../uk/dep/cc.html">uk</a>]
+
+[<a href="../../ur/dep/cc.html">ur</a>]
+
+[<a href="../../urj/dep/cc.html">urj</a>]
+
+[<a href="../../vi/dep/cc.html">vi</a>]
+
+[<a href="../../yue/dep/cc.html">yue</a>]
+
+[<a href="../../zh/dep/cc.html">zh</a>]
 
 
 

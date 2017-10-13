@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-cs">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/cs/feat">cs/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-feat/PronType.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cs">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/cs/feat">cs/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-feat/PronType.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -47,11 +64,25 @@
 
 <h2><code>PronType</code>: pronominal type</h2>
 
+<table class="typeindex" border="1">
+<tr>
+  <td style="background-color:cornflowerblue;color:white"><strong>Values:</strong> </td>
+  <td><a href="#Dem">Dem</a></td>
+  <td><a href="#Emp">Emp</a></td>
+  <td><a href="#Ind">Ind</a></td>
+  <td><a href="#Int">Int</a></td>
+  <td><a href="#Neg">Neg</a></td>
+  <td><a href="#Prs">Prs</a></td>
+  <td><a href="#Rel">Rel</a></td>
+  <td><a href="#Tot">Tot</a></td>
+</tr>
+</table>
+
 <p>This feature typically applies to <a href="cs-pos/PRON">pronouns</a>,
 <a href="cs-pos/DET">determiners</a>, pronominal <a href="cs-pos/NUM">numerals</a>
 (quantifiers) and pronominal <a href="cs-pos/ADV">adverbs</a>.</p>
 
-<h3 id="prs-personal-or-possessive-personal-pronoun-or-determiner"><code>Prs</code>: personal or possessive personal pronoun or determiner</h3>
+<h3 id="a-nameprsprsa-personal-or-possessive-personal-pronoun-or-determiner"><a name="Prs"><code>Prs</code></a>: personal or possessive personal pronoun or determiner</h3>
 
 <p>See also the <a href="">Poss</a> feature that distinguishes normal personal
 pronouns from possessives. Note that <code>Prs</code> also includes reflexive
@@ -65,7 +96,7 @@ personal/possessive pronouns (e.g. <em>se / svůj;</em> see the
   <li><em>můj, tvůj, jeho, její, náš, váš, jejich, svůj </em> “my, your, his/its, her, our, your, their, one’s own”</li>
 </ul>
 
-<h3 id="int-interrogative-pronoun-determiner-numeral-or-adverb"><code>Int</code>: interrogative pronoun, determiner, numeral or adverb</h3>
+<h3 id="a-nameintinta-interrogative-pronoun-determiner-numeral-or-adverb"><a name="Int"><code>Int</code></a>: interrogative pronoun, determiner, numeral or adverb</h3>
 
 <p>Note that possessive interrogative determiners (<em>whose</em>) can be
 distinguished by the <a href="">Poss</a> feature.</p>
@@ -88,7 +119,7 @@ distinguished by the <a href="">Poss</a> feature.</p>
   <li><em>proč </em> “why”</li>
 </ul>
 
-<h3 id="rel-relative-pronoun-determiner-numeral-or-adverb"><code>Rel</code>: relative pronoun, determiner, numeral or adverb</h3>
+<h3 id="a-namerelrela-relative-pronoun-determiner-numeral-or-adverb"><a name="Rel"><code>Rel</code></a>: relative pronoun, determiner, numeral or adverb</h3>
 
 <p>Note that this class heavily overlaps with
 interrogatives, yet there are pronouns that are only relative.</p>
@@ -100,7 +131,7 @@ interrogatives, yet there are pronouns that are only relative.</p>
   <li><em>jehož </em> “whose” (possessive relative pronoun)</li>
 </ul>
 
-<h3 id="dem-demonstrative-pronoun-determiner-numeral-or-adverb"><code>Dem</code>: demonstrative pronoun, determiner, numeral or adverb</h3>
+<h3 id="a-namedemdema-demonstrative-pronoun-determiner-numeral-or-adverb"><a name="Dem"><code>Dem</code></a>: demonstrative pronoun, determiner, numeral or adverb</h3>
 
 <p>These are to some extent parallel to interrogatives.</p>
 
@@ -121,9 +152,20 @@ interrogatives, yet there are pronouns that are only relative.</p>
   <li><em>tak </em> “so”</li>
 </ul>
 
-<h3 id="tot-total-collective-pronoun-determiner-or-adverb"><code>Tot</code>: total (collective) pronoun, determiner or adverb</h3>
+<h3 id="a-nameempempa-emphatic-determiner"><a name="Emp"><code>Emp</code></a>: emphatic determiner</h3>
+
+<p>Emphatic pro-adjectives (determiners) emphasize the nominal they depend on.
+There are similarities with reflexive and demonstrative pronouns / determiners.</p>
 
 <h4 id="examples-4">Examples</h4>
+
+<ul>
+  <li><em>sám</em> as in <em><b>Sám</b> prezident se přišel podívat.</em> “President <b>himself</b> came to see it.”</li>
+</ul>
+
+<h3 id="a-nametottota-total-collective-pronoun-determiner-or-adverb"><a name="Tot"><code>Tot</code></a>: total (collective) pronoun, determiner or adverb</h3>
+
+<h4 id="examples-5">Examples</h4>
 
 <ul>
   <li><em>každý </em> “every, everybody, everyone, each”</li>
@@ -132,9 +174,9 @@ interrogatives, yet there are pronouns that are only relative.</p>
   <li><em>vždy </em> “always”</li>
 </ul>
 
-<h3 id="neg-negative-pronoun-determiner-or-adverb"><code>Neg</code>: negative pronoun, determiner or adverb</h3>
+<h3 id="a-namenegnega-negative-pronoun-determiner-or-adverb"><a name="Neg"><code>Neg</code></a>: negative pronoun, determiner or adverb</h3>
 
-<h4 id="examples-5">Examples</h4>
+<h4 id="examples-6">Examples</h4>
 
 <ul>
   <li><em>nikdo </em> “nobody”</li>
@@ -148,9 +190,9 @@ interrogatives, yet there are pronouns that are only relative.</p>
   <li><em>nijak </em> “no way” (lit. “no-how”)</li>
 </ul>
 
-<h3 id="ind-indefinite-pronoun-determiner-numeral-or-adverb"><code>Ind</code>: indefinite pronoun, determiner, numeral or adverb</h3>
+<h3 id="a-nameindinda-indefinite-pronoun-determiner-numeral-or-adverb"><a name="Ind"><code>Ind</code></a>: indefinite pronoun, determiner, numeral or adverb</h3>
 
-<h4 id="examples-6">Examples</h4>
+<h4 id="examples-7">Examples</h4>
 
 <ul>
   <li><em>někdo </em> “somebody”; <em>kdokoli </em> “anybody”; <em>málokdo </em> “few people”; <em>leckdo </em> “quite a few people”; <em>kdosi </em> “somebody”</li>
@@ -179,168 +221,172 @@ interrogatives, yet there are pronouns that are only relative.</p>
 
 <h2 id="treebank-statistics-udczech">Treebank Statistics (UD_Czech)</h2>
 
-<p>This feature is universal.
-It occurs with 7 different values: <code>Dem</code>, <code>Ind</code>, <code>Int</code>, <code>Neg</code>, <code>Prs</code>, <code>Rel</code>, <code>Tot</code>.
-Some words have combined values of the feature; 2 combinations have been observed: <code>Dem|Ind</code>, <code>Int|Rel</code>.</p>
+<p>This feature is universal but the values <code>Emp</code> are language-specific.
+It occurs with 8 different values: <code>Dem</code>, <code>Emp</code>, <code>Ind</code>, <code>Int</code>, <code>Neg</code>, <code>Prs</code>, <code>Rel</code>, <code>Tot</code>.
+Some words have combined values of the feature; 1 combinations have been observed: <code>Int|Rel</code>.</p>
 
-<p>100361 tokens (7%) have a non-empty value of <code>PronType</code>.
-842 types (1%) occur at least once with a non-empty value of <code>PronType</code>.
-136 lemmas (0%) occur at least once with a non-empty value of <code>PronType</code>.
-The feature is used with 3 part-of-speech tags: <a href="">cs-pos/PRON</a> (72419; 5% instances), <a href="">cs-pos/DET</a> (27819; 2% instances), <a href="">cs-pos/ADV</a> (123; 0% instances).</p>
-
-<h3 id="pron"><code>PRON</code></h3>
-
-<p>72419 <a href="">cs-pos/PRON</a> tokens (100% of all <code>PRON</code> tokens) have a non-empty value of <code>PronType</code>.</p>
-
-<p>The most frequent other feature values with which <code>PRON</code> and <code>PronType</code> co-occurred: <tt><a href="Person.html">Person</a>=EMPTY</tt> (61150; 84%), <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (46518; 64%), <tt><a href="Variant.html">Variant</a>=EMPTY</tt> (45238; 62%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (38811; 54%).</p>
-
-<p><code>PRON</code> tokens may have the following values of <code>PronType</code>:</p>
-
-<ul>
-  <li><code>Dem</code> (12410; 17% of non-empty <code>PronType</code>): <em>to, tím, tom, tomu, toho, ten, ty, ti, ta, těch</em></li>
-  <li><code>Dem,Ind</code> (197; 0% of non-empty <code>PronType</code>): <em>mnoho, tolik, málo, moc, několik, několika, mnoha, nemálo, mn, míň</em></li>
-  <li><code>Ind</code> (1398; 2% of non-empty <code>PronType</code>): <em>něco, někdo, některé, někteří, někoho, cosi, něčeho, cokoli, něčím, někomu</em></li>
-  <li><code>Int,Rel</code> (13689; 19% of non-empty <code>PronType</code>): <em>které, který, která, co, kteří, kdo, kterou, kterým, čím, kterých</em></li>
-  <li><code>Neg</code> (1101; 2% of non-empty <code>PronType</code>): <em>nic, nikdo, nikoho, nikomu, ničím, žádný, žádná, ničem, ničemu, žádné</em></li>
-  <li><code>Prs</code> (37160; 51% of non-empty <code>PronType</code>): <em>se, si, nás, je, nám, nich, mu, ji, ho, jim</em></li>
-  <li><code>Rel</code> (2960; 4% of non-empty <code>PronType</code>): <em>což, nichž, jež, níž, němž, jehož, jenž, něhož, něž, jemuž</em></li>
-  <li><code>Tot</code> (3504; 5% of non-empty <code>PronType</code>): <em>všechny, všech, vše, sám, všichni, všechno, sama, sami, všem, veškeré</em></li>
-</ul>
-
-<p><code>PronType</code> seems to be <strong>lexical feature</strong> of <code>PRON</code>. 100% lemmas (112) occur only with one value of <code>PronType</code>.</p>
+<p>99331 tokens (7%) have a non-empty value of <code>PronType</code>.
+922 types (1%) occur at least once with a non-empty value of <code>PronType</code>.
+182 lemmas (0%) occur at least once with a non-empty value of <code>PronType</code>.
+The feature is used with 3 part-of-speech tags: <a href="">cs-pos/DET</a> (48770; 4% instances), <a href="">cs-pos/PRON</a> (39664; 3% instances), <a href="">cs-pos/ADV</a> (10897; 1% instances).</p>
 
 <h3 id="det"><code>DET</code></h3>
 
-<p>27819 <a href="">cs-pos/DET</a> tokens (100% of all <code>DET</code> tokens) have a non-empty value of <code>PronType</code>.</p>
+<p>48770 <a href="">cs-pos/DET</a> tokens (100% of all <code>DET</code> tokens) have a non-empty value of <code>PronType</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>PronType</code> co-occurred: <tt><a href="Gender[psor].html">Gender[psor]</a>=EMPTY</tt> (23487; 84%), <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (23051; 83%), <tt><a href="Number[psor].html">Number[psor]</a>=EMPTY</tt> (18541; 67%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (18541; 67%), <tt><a href="Number.html">Number</a>=Sing</tt> (14995; 54%), <tt><a href="Poss.html">Poss</a>=Yes</tt> (14046; 50%).</p>
+<p>The most frequent other feature values with which <code>DET</code> and <code>PronType</code> co-occurred: <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (43246; 89%), <tt><a href="Number[psor].html">Number[psor]</a>=EMPTY</tt> (40447; 83%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (40445; 83%), <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (36114; 74%), <tt><a href="Number.html">Number</a>=Sing</tt> (30781; 63%).</p>
 
 <p><code>DET</code> tokens may have the following values of <code>PronType</code>:</p>
 
 <ul>
-  <li><code>Dem</code> (8864; 32% of non-empty <code>PronType</code>): <em>této, tento, tohoto, tato, těchto, tyto, tomto, tuto, toto, té</em></li>
-  <li><code>Dem,Ind</code> (1455; 5% of non-empty <code>PronType</code>): <em>několik, několika, mnoho, mnoha, málo, tolik, mála, moc, tolika, nemálo</em></li>
-  <li><code>Ind</code> (2075; 7% of non-empty <code>PronType</code>): <em>některých, některé, někteří, nějaké, nějaký, nějakou, některá, jakékoli, nějaká, některým</em></li>
-  <li><code>Int,Rel</code> (634; 2% of non-empty <code>PronType</code>): <em>jaké, kolik, jaký, jakou, které, jakým, který, jaká, jakých, jakém</em></li>
-  <li><code>Neg</code> (745; 3% of non-empty <code>PronType</code>): <em>žádné, žádný, žádná, žádnou, žádném, žádným, žádného, žádnému, žádných, žádnými</em></li>
-  <li><code>Prs</code> (13398; 48% of non-empty <code>PronType</code>): <em>jeho, jejich, své, její, svou, svého, svých, svůj, naše, svým</em></li>
-  <li><code>Rel</code> (648; 2% of non-empty <code>PronType</code>): <em>jejichž, jehož, jejíž, jejímž, jejíchž, jejíhož, jejímiž, jejímuž</em></li>
+  <li><code>Dem</code> (18777; 39% of non-empty <code>PronType</code>): <em>to, tím, tom, této, tomu, tento, toho, tohoto, tato, těchto</em></li>
+  <li><code>Emp</code> (624; 1% of non-empty <code>PronType</code>): <em>sám, sami, sama, samy, samo, samu, samého</em></li>
+  <li><code>Ind</code> (3430; 7% of non-empty <code>PronType</code>): <em>několik, některé, některých, několika, mnoho, někteří, mnoha, nějaké, nějaký, málo</em></li>
+  <li><code>Int,Rel</code> (10320; 21% of non-empty <code>PronType</code>): <em>které, který, která, kteří, kterou, jaké, kterým, kterých, kolik, kterého</em></li>
+  <li><code>Neg</code> (736; 2% of non-empty <code>PronType</code>): <em>žádné, žádný, žádná, žádnou, žádném, žádným, žádného, žádnému, žádných, žádnými</em></li>
+  <li><code>Prs</code> (12058; 25% of non-empty <code>PronType</code>): <em>jeho, jejich, své, její, svou, svého, svých, svůj, naše, svým</em></li>
+  <li><code>Rel</code> (582; 1% of non-empty <code>PronType</code>): <em>jejichž, jehož, jejíž, jejímž, jejíchž, jejíhož, jejímiž, kterážto</em></li>
+  <li><code>Tot</code> (2243; 5% of non-empty <code>PronType</code>): <em>všechny, všech, vše, všichni, všechno, všem, všemi, všeho, všechna, vším</em></li>
 </ul>
 
-<p><code>PronType</code> seems to be <strong>lexical feature</strong> of <code>DET</code>. 100% lemmas (55) occur only with one value of <code>PronType</code>.</p>
+<p><code>PronType</code> seems to be <strong>lexical feature</strong> of <code>DET</code>. 100% lemmas (69) occur only with one value of <code>PronType</code>.</p>
+
+<h3 id="pron"><code>PRON</code></h3>
+
+<p>39664 <a href="">cs-pos/PRON</a> tokens (100% of all <code>PRON</code> tokens) have a non-empty value of <code>PronType</code>.</p>
+
+<p>The most frequent other feature values with which <code>PRON</code> and <code>PronType</code> co-occurred: <tt><a href="PrepCase.html">PrepCase</a>=EMPTY</tt> (35298; 89%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (32660; 82%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (29878; 75%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (27696; 70%), <tt><a href="Case.html">Case</a>=Acc</tt> (24225; 61%), <tt><a href="Variant.html">Variant</a>=Short</tt> (24036; 61%), <tt><a href="Reflex.html">Reflex</a>=Yes</tt> (22793; 57%).</p>
+
+<p><code>PRON</code> tokens may have the following values of <code>PronType</code>:</p>
+
+<ul>
+  <li><code>Ind</code> (974; 2% of non-empty <code>PronType</code>): <em>něco, někdo, někoho, cosi, cokoli, něčeho, něčím, málokdo, někomu, něčem</em></li>
+  <li><code>Int,Rel</code> (2360; 6% of non-empty <code>PronType</code>): <em>co, kdo, čím, čem, koho, čeho, komu, čemu, kým, kdož</em></li>
+  <li><code>Neg</code> (902; 2% of non-empty <code>PronType</code>): <em>nic, nikdo, nikoho, ničím, nikomu, ničem, ničemu, nikým, ničeho, pranic</em></li>
+  <li><code>Prs</code> (32579; 82% of non-empty <code>PronType</code>): <em>se, si, nás, je, nám, nich, mu, ho, ji, jim</em></li>
+  <li><code>Rel</code> (2596; 7% of non-empty <code>PronType</code>): <em>což, jež, nichž, níž, němž, jehož, jenž, něhož, něž, jemuž</em></li>
+  <li><code>Tot</code> (253; 1% of non-empty <code>PronType</code>): <em>veškeré, samého, veškerou, samé, samém, veškerý, veškerého, veškerá, veškerých, All</em></li>
+</ul>
+
+<p><code>PronType</code> seems to be <strong>lexical feature</strong> of <code>PRON</code>. 100% lemmas (57) occur only with one value of <code>PronType</code>.</p>
 
 <h3 id="adv"><code>ADV</code></h3>
 
-<p>123 <a href="">cs-pos/ADV</a> tokens (0% of all <code>ADV</code> tokens) have a non-empty value of <code>PronType</code>.</p>
+<p>10897 <a href="">cs-pos/ADV</a> tokens (15% of all <code>ADV</code> tokens) have a non-empty value of <code>PronType</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADV</code> and <code>PronType</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (123; 100%), <tt><a href="Negative.html">Negative</a>=EMPTY</tt> (123; 100%).</p>
+<p>The most frequent other feature values with which <code>ADV</code> and <code>PronType</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (10897; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (10897; 100%).</p>
 
 <p><code>ADV</code> tokens may have the following values of <code>PronType</code>:</p>
 
 <ul>
-  <li><code>Dem,Ind</code> (120; 98% of non-empty <code>PronType</code>): <em>několikrát, mnohokrát, vícekrát, tolikrát, kolikrát, mnohokráte, bezpočtukrát, nesčíslněkrát, několikráte</em></li>
-  <li><code>Int,Rel</code> (3; 2% of non-empty <code>PronType</code>): <em>kolikrát</em></li>
-  <li><code>EMPTY</code> (79874): <em>tak, už, také, jak, včera, ještě, již, tedy, dnes, pak</em></li>
+  <li><code>Dem</code> (5416; 50% of non-empty <code>PronType</code>): <em>tak, nyní, dosud, zde, tam, tu, tehdy, teď, proto, tady</em></li>
+  <li><code>Ind</code> (668; 6% of non-empty <code>PronType</code>): <em>někdy, kdysi, někde, nějak, několikrát, jaksi, jakkoli, kdykoli, kdykoliv, někam</em></li>
+  <li><code>Int,Rel</code> (3984; 37% of non-empty <code>PronType</code>): <em>jak, kdy, kde, proč, kam, odkud, kudy, kolikrát, Odkdy</em></li>
+  <li><code>Neg</code> (378; 3% of non-empty <code>PronType</code>): <em>nikdy, nijak, nikde, nikam, odnikud</em></li>
+  <li><code>Tot</code> (451; 4% of non-empty <code>PronType</code>): <em>vždy, všude, navždy, odjakživa, všudy, odevšad</em></li>
+  <li><code>EMPTY</code> (59605): <em>už, také, včera, ještě, již, dnes, více, tedy, pouze, pak</em></li>
 </ul>
 
-<table>
-  <tr><th>Paradigm <i>kolikrát</i></th><th><tt>Dem,Ind</tt></th><th><tt>Int,Rel</tt></th></tr>
-  <tr><td><tt></tt></td><td><em>kolikrát</em></td><td><em>kolikrát</em></td></tr>
-</table>
+<p><code>PronType</code> seems to be <strong>lexical feature</strong> of <code>ADV</code>. 100% lemmas (57) occur only with one value of <code>PronType</code>.</p>
 
 <h2 id="relations-with-agreement-in-prontype">Relations with Agreement in <code>PronType</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>PronType</code>:
-<tt>PRON –[<a href="../dep/conj.html">conj</a>]–&gt; PRON</tt> (104; 79%),
-<tt>DET –[<a href="../dep/conj.html">conj</a>]–&gt; PRON</tt> (53; 100%),
-<tt>PRON –[<a href="../dep/cc.html">cc</a>]–&gt; PRON</tt> (10; 91%),
-<tt>PRON –[<a href="../dep/appos.html">appos</a>]–&gt; PRON</tt> (9; 69%),
-<tt>PRON –[<a href="../dep/foreign.html">foreign</a>]–&gt; PRON</tt> (4; 80%),
-<tt>DET –[<a href="../dep/det:nummod.html">det:nummod</a>]–&gt; DET</tt> (2; 100%).</p>
+<tt>DET –[<a href="../dep/conj.html">conj</a>]–&gt; DET</tt> (98; 97%),
+<tt>ADV –[<a href="../dep/conj.html">conj</a>]–&gt; ADV</tt> (41; 51%),
+<tt>PRON –[<a href="../dep/conj.html">conj</a>]–&gt; PRON</tt> (34; 83%),
+<tt>PRON –[<a href="../dep/conj.html">conj</a>]–&gt; ADV</tt> (17; 59%),
+<tt>DET –[<a href="../dep/cc.html">cc</a>]–&gt; DET</tt> (9; 90%),
+<tt>PRON –[<a href="../dep/orphan.html">orphan</a>]–&gt; PRON</tt> (9; 64%),
+<tt>DET –[<a href="../dep/orphan.html">orphan</a>]–&gt; DET</tt> (4; 100%),
+<tt>DET –[<a href="../dep/appos.html">appos</a>]–&gt; DET</tt> (3; 75%),
+<tt>PRON –[<a href="../dep/dep.html">dep</a>]–&gt; PRON</tt> (3; 75%),
+<tt>PRON –[<a href="../dep/appos.html">appos</a>]–&gt; PRON</tt> (3; 100%).</p>
 
 <hr />
 
 <h2 id="treebank-statistics-udczech-cac">Treebank Statistics (UD_Czech-CAC)</h2>
 
-<p>This feature is universal.
-It occurs with 7 different values: <code>Dem</code>, <code>Ind</code>, <code>Int</code>, <code>Neg</code>, <code>Prs</code>, <code>Rel</code>, <code>Tot</code>.
-Some words have combined values of the feature; 2 combinations have been observed: <code>Dem|Ind</code>, <code>Int|Rel</code>.</p>
+<p>This feature is universal but the values <code>Emp</code> are language-specific.
+It occurs with 8 different values: <code>Dem</code>, <code>Emp</code>, <code>Ind</code>, <code>Int</code>, <code>Neg</code>, <code>Prs</code>, <code>Rel</code>, <code>Tot</code>.
+Some words have combined values of the feature; 1 combinations have been observed: <code>Int|Rel</code>.</p>
 
-<p>35523 tokens (7%) have a non-empty value of <code>PronType</code>.
-621 types (1%) occur at least once with a non-empty value of <code>PronType</code>.
-90 lemmas (0%) occur at least once with a non-empty value of <code>PronType</code>.
-The feature is used with 3 part-of-speech tags: <a href="">cs-pos/PRON</a> (24389; 5% instances), <a href="">cs-pos/DET</a> (11088; 2% instances), <a href="">cs-pos/ADV</a> (46; 0% instances).</p>
-
-<h3 id="pron-1"><code>PRON</code></h3>
-
-<p>24389 <a href="">cs-pos/PRON</a> tokens (100% of all <code>PRON</code> tokens) have a non-empty value of <code>PronType</code>.</p>
-
-<p>The most frequent other feature values with which <code>PRON</code> and <code>PronType</code> co-occurred: <tt><a href="Person.html">Person</a>=EMPTY</tt> (20889; 86%), <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (15323; 63%), <tt><a href="Variant.html">Variant</a>=EMPTY</tt> (15194; 62%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (13520; 55%).</p>
-
-<p><code>PRON</code> tokens may have the following values of <code>PronType</code>:</p>
-
-<ul>
-  <li><code>Dem</code> (4022; 16% of non-empty <code>PronType</code>): <em>to, tím, tomu, tom, toho, ten, ty, ti, těch, ta</em></li>
-  <li><code>Dem,Ind</code> (59; 0% of non-empty <code>PronType</code>): <em>mnoho, tolik, několik, mnoha, málo, mála, několika</em></li>
-  <li><code>Ind</code> (351; 1% of non-empty <code>PronType</code>): <em>něco, někdo, některé, někteří, někomu, něčím, některých, některá, některý, něčeho</em></li>
-  <li><code>Int,Rel</code> (4343; 18% of non-empty <code>PronType</code>): <em>které, který, která, co, kteří, kterou, kdo, kterých, kterým, čím</em></li>
-  <li><code>Neg</code> (184; 1% of non-empty <code>PronType</code>): <em>nic, nikdo, nikoho, ničím, nikomu, žádná, ničeho, ničemu, žádné, žádný</em></li>
-  <li><code>Prs</code> (12556; 51% of non-empty <code>PronType</code>): <em>se, si, je, nás, nám, nich, ji, jim, mu, sebe</em></li>
-  <li><code>Rel</code> (1180; 5% of non-empty <code>PronType</code>): <em>jež, nichž, což, níž, němž, jimiž, něhož, čímž, jenž, nimiž</em></li>
-  <li><code>Tot</code> (1694; 7% of non-empty <code>PronType</code>): <em>všech, všechny, všechno, sám, všichni, všem, sama, sami, vše, veškeré</em></li>
-</ul>
-
-<p><code>PronType</code> seems to be <strong>lexical feature</strong> of <code>PRON</code>. 100% lemmas (74) occur only with one value of <code>PronType</code>.</p>
+<p>38991 tokens (8%) have a non-empty value of <code>PronType</code>.
+692 types (1%) occur at least once with a non-empty value of <code>PronType</code>.
+130 lemmas (0%) occur at least once with a non-empty value of <code>PronType</code>.
+The feature is used with 3 part-of-speech tags: <a href="">cs-pos/DET</a> (19041; 4% instances), <a href="">cs-pos/PRON</a> (15680; 3% instances), <a href="">cs-pos/ADV</a> (4270; 1% instances).</p>
 
 <h3 id="det-1"><code>DET</code></h3>
 
-<p>11088 <a href="">cs-pos/DET</a> tokens (100% of all <code>DET</code> tokens) have a non-empty value of <code>PronType</code>.</p>
+<p>19041 <a href="">cs-pos/DET</a> tokens (100% of all <code>DET</code> tokens) have a non-empty value of <code>PronType</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>PronType</code> co-occurred: <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (9695; 87%), <tt><a href="Gender[psor].html">Gender[psor]</a>=EMPTY</tt> (9529; 86%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (7202; 65%), <tt><a href="Number[psor].html">Number[psor]</a>=EMPTY</tt> (7202; 65%), <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (5809; 52%), <tt><a href="Number.html">Number</a>=Sing</tt> (5772; 52%).</p>
+<p>The most frequent other feature values with which <code>DET</code> and <code>PronType</code> co-occurred: <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (17026; 89%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (15176; 80%), <tt><a href="Number[psor].html">Number[psor]</a>=EMPTY</tt> (15176; 80%), <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (13768; 72%), <tt><a href="Number.html">Number</a>=Sing</tt> (11627; 61%).</p>
 
 <p><code>DET</code> tokens may have the following values of <code>PronType</code>:</p>
 
 <ul>
-  <li><code>Dem</code> (4116; 37% of non-empty <code>PronType</code>): <em>této, těchto, tyto, tento, tohoto, tato, tomto, tuto, takové, toto</em></li>
-  <li><code>Dem,Ind</code> (521; 5% of non-empty <code>PronType</code>): <em>několik, mnoho, několika, mnoha, málo, tolik, mála, tolika, Nemálo, kdovíkolik</em></li>
-  <li><code>Ind</code> (800; 7% of non-empty <code>PronType</code>): <em>některých, některé, nějaké, někteří, nějakou, některá, některým, jakékoli, jakékoliv, jakési</em></li>
-  <li><code>Int,Rel</code> (251; 2% of non-empty <code>PronType</code>): <em>jaké, kolik, které, jakým, jaký, jakou, jakých, jakém, jaká, kterou</em></li>
-  <li><code>Neg</code> (121; 1% of non-empty <code>PronType</code>): <em>žádné, žádný, žádná, žádnou, žádném, žádných, žádným, žádného, žádnému, ničím</em></li>
-  <li><code>Prs</code> (4940; 45% of non-empty <code>PronType</code>): <em>jejich, jeho, své, její, naší, svou, naše, našeho, svých, našich</em></li>
-  <li><code>Rel</code> (339; 3% of non-empty <code>PronType</code>): <em>jehož, jejichž, jejíž, jejímž, jejímuž, jejíchž</em></li>
+  <li><code>Dem</code> (7986; 42% of non-empty <code>PronType</code>): <em>to, tím, této, těchto, tyto, tom, toho, tohoto, tomu, tento</em></li>
+  <li><code>Emp</code> (278; 1% of non-empty <code>PronType</code>): <em>sám, sama, sami, samo, samy, samu</em></li>
+  <li><code>Ind</code> (1444; 8% of non-empty <code>PronType</code>): <em>některé, některých, několik, mnoho, několika, mnoha, někteří, nějaké, některá, nějakou</em></li>
+  <li><code>Int,Rel</code> (3864; 20% of non-empty <code>PronType</code>): <em>které, který, která, kteří, kterou, jaké, kterých, kterým, kolik, kterém</em></li>
+  <li><code>Neg</code> (127; 1% of non-empty <code>PronType</code>): <em>žádné, žádný, žádná, žádnou, žádném, žádných, žádným, žádného, žádnému, pražádnou</em></li>
+  <li><code>Prs</code> (4912; 26% of non-empty <code>PronType</code>): <em>jejich, jeho, své, její, naší, svou, naše, našeho, svých, našich</em></li>
+  <li><code>Rel</code> (343; 2% of non-empty <code>PronType</code>): <em>jejichž, jehož, jejíž, jejímž, jejímuž, jejíchž, kterážto</em></li>
+  <li><code>Tot</code> (87; 0% of non-empty <code>PronType</code>): <em>všechny, všechno, všichni, vše, všech, všeho, všem, vší</em></li>
 </ul>
 
-<p><code>PronType</code> seems to be <strong>lexical feature</strong> of <code>DET</code>. 100% lemmas (44) occur only with one value of <code>PronType</code>.</p>
+<p><code>PronType</code> seems to be <strong>lexical feature</strong> of <code>DET</code>. 100% lemmas (48) occur only with one value of <code>PronType</code>.</p>
+
+<h3 id="pron-1"><code>PRON</code></h3>
+
+<p>15680 <a href="">cs-pos/PRON</a> tokens (100% of all <code>PRON</code> tokens) have a non-empty value of <code>PronType</code>.</p>
+
+<p>The most frequent other feature values with which <code>PRON</code> and <code>PronType</code> co-occurred: <tt><a href="PrepCase.html">PrepCase</a>=EMPTY</tt> (13902; 89%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (12887; 82%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (12314; 79%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (10064; 64%), <tt><a href="Case.html">Case</a>=Acc</tt> (9569; 61%), <tt><a href="Variant.html">Variant</a>=Short</tt> (9000; 57%), <tt><a href="Reflex.html">Reflex</a>=Yes</tt> (8851; 56%).</p>
+
+<p><code>PRON</code> tokens may have the following values of <code>PronType</code>:</p>
+
+<ul>
+  <li><code>Ind</code> (233; 1% of non-empty <code>PronType</code>): <em>něco, někdo, někomu, něčeho, něčemu, kdekdo, cosi, ledacos, málokdo, někoho</em></li>
+  <li><code>Int,Rel</code> (624; 4% of non-empty <code>PronType</code>): <em>co, kdo, čím, čem, čeho, copak, kdož, koho, čemu, komu</em></li>
+  <li><code>Neg</code> (169; 1% of non-empty <code>PronType</code>): <em>nic, nikdo, nikoho, ničím, nikomu, ničeho, ničemu, nikým, ničem</em></li>
+  <li><code>Prs</code> (12216; 78% of non-empty <code>PronType</code>): <em>se, si, je, nás, nám, nich, ji, jim, mu, sebe</em></li>
+  <li><code>Rel</code> (1150; 7% of non-empty <code>PronType</code>): <em>jež, nichž, což, níž, němž, jimiž, něhož, jenž, čímž, nimiž</em></li>
+  <li><code>Tot</code> (1288; 8% of non-empty <code>PronType</code>): <em>všech, všechny, všechno, všichni, všem, vše, veškeré, všechna, všeho, všemi</em></li>
+</ul>
+
+<p><code>PronType</code> seems to be <strong>lexical feature</strong> of <code>PRON</code>. 100% lemmas (35) occur only with one value of <code>PronType</code>.</p>
 
 <h3 id="adv-1"><code>ADV</code></h3>
 
-<p>46 <a href="">cs-pos/ADV</a> tokens (0% of all <code>ADV</code> tokens) have a non-empty value of <code>PronType</code>.</p>
+<p>4270 <a href="">cs-pos/ADV</a> tokens (16% of all <code>ADV</code> tokens) have a non-empty value of <code>PronType</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADV</code> and <code>PronType</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (46; 100%), <tt><a href="Negative.html">Negative</a>=EMPTY</tt> (46; 100%).</p>
+<p>The most frequent other feature values with which <code>ADV</code> and <code>PronType</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (4270; 100%), <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (4270; 100%).</p>
 
 <p><code>ADV</code> tokens may have the following values of <code>PronType</code>:</p>
 
 <ul>
-  <li><code>Dem,Ind</code> (44; 96% of non-empty <code>PronType</code>): <em>několikrát, mnohokrát, kolikrát, tolikrát, nesčíslněkrát, několikráte, vícekrát</em></li>
-  <li><code>Int,Rel</code> (2; 4% of non-empty <code>PronType</code>): <em>kolikrát</em></li>
-  <li><code>EMPTY</code> (27444): <em>tak, také, jak, již, už, ještě, pak, kde, tedy, velmi</em></li>
+  <li><code>Dem</code> (2008; 47% of non-empty <code>PronType</code>): <em>tak, zde, tam, dosud, tu, nyní, tehdy, teď, tady, odtud</em></li>
+  <li><code>Ind</code> (291; 7% of non-empty <code>PronType</code>): <em>někdy, někde, kdysi, nějak, někam, několikrát, jaksi, jakkoli, jakkoliv, kdykoliv</em></li>
+  <li><code>Int,Rel</code> (1608; 38% of non-empty <code>PronType</code>): <em>jak, kde, kdy, proč, kam, odkud, kolikrát, kudy, dokdy, kdes</em></li>
+  <li><code>Neg</code> (105; 2% of non-empty <code>PronType</code>): <em>nikdy, nijak, nikde, nikam</em></li>
+  <li><code>Tot</code> (258; 6% of non-empty <code>PronType</code>): <em>vždy, všude, odjakživa, navždy, odevždy</em></li>
+  <li><code>EMPTY</code> (22683): <em>také, již, už, ještě, tedy, pak, velmi, třeba, především, zejména</em></li>
 </ul>
 
-<table>
-  <tr><th>Paradigm <i>kolikrát</i></th><th><tt>Dem,Ind</tt></th><th><tt>Int,Rel</tt></th></tr>
-  <tr><td><tt></tt></td><td><em>kolikrát</em></td><td><em>kolikrát</em></td></tr>
-</table>
+<p><code>PronType</code> seems to be <strong>lexical feature</strong> of <code>ADV</code>. 100% lemmas (48) occur only with one value of <code>PronType</code>.</p>
 
 <h2 id="relations-with-agreement-in-prontype-1">Relations with Agreement in <code>PronType</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>PronType</code>:
-<tt>PRON –[<a href="../dep/conj.html">conj</a>]–&gt; PRON</tt> (38; 78%),
-<tt>DET –[<a href="../dep/conj.html">conj</a>]–&gt; PRON</tt> (28; 93%),
-<tt>PRON –[<a href="../dep/cc.html">cc</a>]–&gt; PRON</tt> (5; 71%),
-<tt>PRON –[<a href="../dep/appos.html">appos</a>]–&gt; PRON</tt> (3; 100%),
-<tt>DET –[<a href="../dep/cc.html">cc</a>]–&gt; PRON</tt> (2; 100%),
-<tt>DET –[<a href="../dep/nmod.html">nmod</a>]–&gt; PRON</tt> (1; 100%),
-<tt>PRON –[<a href="../dep/advcl.html">advcl</a>]–&gt; PRON</tt> (1; 100%).</p>
+<tt>DET –[<a href="../dep/conj.html">conj</a>]–&gt; DET</tt> (51; 96%),
+<tt>PRON –[<a href="../dep/conj.html">conj</a>]–&gt; PRON</tt> (9; 100%),
+<tt>DET –[<a href="../dep/cc.html">cc</a>]–&gt; DET</tt> (7; 88%),
+<tt>DET –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; DET</tt> (6; 100%),
+<tt>PRON –[<a href="../dep/conj.html">conj</a>]–&gt; ADV</tt> (5; 71%),
+<tt>ADV –[<a href="../dep/conj.html">conj</a>]–&gt; PRON</tt> (3; 60%),
+<tt>ADV –[<a href="../dep/dep.html">dep</a>]–&gt; DET</tt> (2; 67%),
+<tt>DET –[<a href="../dep/appos.html">appos</a>]–&gt; DET</tt> (2; 100%),
+<tt>PRON –[<a href="../dep/appos.html">appos</a>]–&gt; PRON</tt> (1; 100%).</p>
 
 <hr />
 
@@ -350,56 +396,55 @@ The feature is used with 3 part-of-speech tags: <a href="">cs-pos/PRON</a> (2438
 It occurs with 7 different values: <code>Dem</code>, <code>Ind</code>, <code>Int</code>, <code>Neg</code>, <code>Prs</code>, <code>Rel</code>, <code>Tot</code>.
 Some words have combined values of the feature; 2 combinations have been observed: <code>Dem|Ind</code>, <code>Int|Rel</code>.</p>
 
-<p>1807 tokens (5%) have a non-empty value of <code>PronType</code>.
-128 types (3%) occur at least once with a non-empty value of <code>PronType</code>.
-20 lemmas (1%) occur at least once with a non-empty value of <code>PronType</code>.
-The feature is used with 2 part-of-speech tags: <a href="">cs-pos/PRON</a> (1212; 3% instances), <a href="">cs-pos/DET</a> (595; 2% instances).</p>
+<p>1217 tokens (5%) have a non-empty value of <code>PronType</code>.
+106 types (3%) occur at least once with a non-empty value of <code>PronType</code>.
+19 lemmas (1%) occur at least once with a non-empty value of <code>PronType</code>.
+The feature is used with 2 part-of-speech tags: <a href="">cs-pos/PRON</a> (812; 3% instances), <a href="">cs-pos/DET</a> (405; 2% instances).</p>
 
 <h3 id="pron-2"><code>PRON</code></h3>
 
-<p>1212 <a href="">cs-pos/PRON</a> tokens (100% of all <code>PRON</code> tokens) have a non-empty value of <code>PronType</code>.</p>
+<p>812 <a href="">cs-pos/PRON</a> tokens (100% of all <code>PRON</code> tokens) have a non-empty value of <code>PronType</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>PronType</code> co-occurred: <tt><a href="Variant.html">Variant</a>=EMPTY</tt> (743; 61%), <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (737; 61%), <tt><a href="Case.html">Case</a>=Acc</tt> (607; 50%).</p>
+<p>The most frequent other feature values with which <code>PRON</code> and <code>PronType</code> co-occurred: <tt><a href="Variant.html">Variant</a>=EMPTY</tt> (503; 62%), <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (498; 61%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (411; 51%).</p>
 
 <p><code>PRON</code> tokens may have the following values of <code>PronType</code>:</p>
 
 <ul>
-  <li><code>Dem</code> (85; 7% of non-empty <code>PronType</code>): <em>to, tím, toho, tomu, tom, ty, tímto, t, takové, tato</em></li>
+  <li><code>Dem</code> (51; 6% of non-empty <code>PronType</code>): <em>to, toho, tomu, tom, ty, tím, t, tímto</em></li>
   <li><code>Dem,Ind</code> (1; 0% of non-empty <code>PronType</code>): <em>několika</em></li>
-  <li><code>Ind</code> (2; 0% of non-empty <code>PronType</code>): <em>kterýkoli, některý</em></li>
-  <li><code>Int,Rel</code> (452; 37% of non-empty <code>PronType</code>): <em>které, která, který, kterých, kterým, kterém, kterému, kterou, kterého, jakém</em></li>
-  <li><code>Neg</code> (4; 0% of non-empty <code>PronType</code>): <em>žádném, žádnou, žádná</em></li>
-  <li><code>Prs</code> (546; 45% of non-empty <code>PronType</code>): <em>se, jej, je, jim, jí, ji, nich, ní, sobě, jimi</em></li>
-  <li><code>Rel</code> (73; 6% of non-empty <code>PronType</code>): <em>nichž, němž, němuž, jimiž, jehož, níž, nějž, jenž, jež, jímž</em></li>
-  <li><code>Tot</code> (49; 4% of non-empty <code>PronType</code>): <em>všech, všechny, veškeré, všechna, sama, veškerého, veškerých, veškerými, samo, samy</em></li>
+  <li><code>Ind</code> (1; 0% of non-empty <code>PronType</code>): <em>některý</em></li>
+  <li><code>Int,Rel</code> (321; 40% of non-empty <code>PronType</code>): <em>které, která, který, kterých, kterým, kterém, kterému, kterou, kterého, kterými</em></li>
+  <li><code>Neg</code> (2; 0% of non-empty <code>PronType</code>): <em>žádném</em></li>
+  <li><code>Prs</code> (353; 43% of non-empty <code>PronType</code>): <em>se, je, jim, ji, nich, ní, jí, ně, sobě, jej</em></li>
+  <li><code>Rel</code> (54; 7% of non-empty <code>PronType</code>): <em>nichž, němž, němuž, jimiž, níž, jehož, jenž, jež, jímž, nimž</em></li>
+  <li><code>Tot</code> (29; 4% of non-empty <code>PronType</code>): <em>všech, veškeré, všechny, veškerých, veškerými, sama, samy, všechna, všemi</em></li>
 </ul>
 
-<p><code>PronType</code> seems to be <strong>lexical feature</strong> of <code>PRON</code>. 100% lemmas (15) occur only with one value of <code>PronType</code>.</p>
+<p><code>PronType</code> seems to be <strong>lexical feature</strong> of <code>PRON</code>. 100% lemmas (12) occur only with one value of <code>PronType</code>.</p>
 
 <h3 id="det-2"><code>DET</code></h3>
 
-<p>595 <a href="">cs-pos/DET</a> tokens (100% of all <code>DET</code> tokens) have a non-empty value of <code>PronType</code>.</p>
+<p>405 <a href="">cs-pos/DET</a> tokens (100% of all <code>DET</code> tokens) have a non-empty value of <code>PronType</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>PronType</code> co-occurred: <tt><a href="Gender[psor].html">Gender[psor]</a>=EMPTY</tt> (484; 81%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (379; 64%), <tt><a href="Number[psor].html">Number[psor]</a>=EMPTY</tt> (379; 64%), <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (355; 60%), <tt><a href="Number.html">Number</a>=Sing</tt> (306; 51%).</p>
+<p>The most frequent other feature values with which <code>DET</code> and <code>PronType</code> co-occurred: <tt><a href="Gender[psor].html">Gender[psor]</a>=EMPTY</tt> (337; 83%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (261; 64%), <tt><a href="Number[psor].html">Number[psor]</a>=EMPTY</tt> (261; 64%), <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (243; 60%).</p>
 
 <p><code>DET</code> tokens may have the following values of <code>PronType</code>:</p>
 
 <ul>
-  <li><code>Dem</code> (341; 57% of non-empty <code>PronType</code>): <em>této, tohoto, těchto, tyto, tato, tento, tomto, tuto, toto, tímto</em></li>
-  <li><code>Dem,Ind</code> (1; 0% of non-empty <code>PronType</code>): <em>několika</em></li>
-  <li><code>Ind</code> (8; 1% of non-empty <code>PronType</code>): <em>NĚKTERÝCH, některá, některé, jakékoli, jakýchkoliv</em></li>
-  <li><code>Int,Rel</code> (3; 1% of non-empty <code>PronType</code>): <em>jakou, jaké, kterým</em></li>
+  <li><code>Dem</code> (233; 58% of non-empty <code>PronType</code>): <em>této, těchto, tyto, tohoto, tento, tato, tomto, tuto, toto, takové</em></li>
+  <li><code>Ind</code> (6; 1% of non-empty <code>PronType</code>): <em>NĚKTERÝCH, některá, jakékoli, jakýchkoliv</em></li>
+  <li><code>Int,Rel</code> (2; 0% of non-empty <code>PronType</code>): <em>jaké, kterým</em></li>
   <li><code>Neg</code> (2; 0% of non-empty <code>PronType</code>): <em>žádná, žádný</em></li>
-  <li><code>Prs</code> (219; 37% of non-empty <code>PronType</code>): <em>jejich, jeho, její, své, jejího, jejím, svého, svých, svůj, svoji</em></li>
-  <li><code>Rel</code> (21; 4% of non-empty <code>PronType</code>): <em>jejichž, jehož, jejímž, jejíž</em></li>
+  <li><code>Prs</code> (147; 36% of non-empty <code>PronType</code>): <em>jejich, jeho, její, své, jejího, svého, jejím, svých, svůj, jejích</em></li>
+  <li><code>Rel</code> (15; 4% of non-empty <code>PronType</code>): <em>jejichž, jehož, jejímž, jejíž</em></li>
 </ul>
 
-<p><code>PronType</code> seems to be <strong>lexical feature</strong> of <code>DET</code>. 100% lemmas (13) occur only with one value of <code>PronType</code>.</p>
+<p><code>PronType</code> seems to be <strong>lexical feature</strong> of <code>DET</code>. 100% lemmas (12) occur only with one value of <code>PronType</code>.</p>
 
 <h2 id="relations-with-agreement-in-prontype-2">Relations with Agreement in <code>PronType</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>PronType</code>:
-<tt>PRON –[<a href="../dep/conj.html">conj</a>]–&gt; PRON</tt> (4; 100%),
+<tt>PRON –[<a href="../dep/conj.html">conj</a>]–&gt; PRON</tt> (1; 100%),
 <tt>PRON –[<a href="../dep/cc.html">cc</a>]–&gt; PRON</tt> (1; 100%).</p>
 
 
@@ -410,9 +455,25 @@ The feature is used with 2 part-of-speech tags: <a href="">cs-pos/PRON</a> (1212
 
 PronType in other languages:
 
+[<a href="../../am/feat/PronType.html">am</a>]
+
+[<a href="../../ar/feat/PronType.html">ar</a>]
+
 [<a href="../../bg/feat/PronType.html">bg</a>]
 
+[<a href="../../bxr/feat/PronType.html">bxr</a>]
+
+[<a href="../../ca/feat/PronType.html">ca</a>]
+
+[<a href="../../ckb/feat/PronType.html">ckb</a>]
+
+[<a href="../../cop/feat/PronType.html">cop</a>]
+
 [<a href="../../cs/feat/PronType.html">cs</a>]
+
+[<a href="../../cu/feat/PronType.html">cu</a>]
+
+[<a href="../../da/feat/PronType.html">da</a>]
 
 [<a href="../../de/feat/PronType.html">de</a>]
 
@@ -422,29 +483,99 @@ PronType in other languages:
 
 [<a href="../../es/feat/PronType.html">es</a>]
 
+[<a href="../../et/feat/PronType.html">et</a>]
+
 [<a href="../../eu/feat/PronType.html">eu</a>]
 
 [<a href="../../fa/feat/PronType.html">fa</a>]
 
 [<a href="../../fi/feat/PronType.html">fi</a>]
 
+[<a href="../../fo/feat/PronType.html">fo</a>]
+
 [<a href="../../fr/feat/PronType.html">fr</a>]
 
 [<a href="../../ga/feat/PronType.html">ga</a>]
 
+[<a href="../../gl/feat/PronType.html">gl</a>]
+
+[<a href="../../got/feat/PronType.html">got</a>]
+
+[<a href="../../grc/feat/PronType.html">grc</a>]
+
 [<a href="../../he/feat/PronType.html">he</a>]
 
+[<a href="../../hi/feat/PronType.html">hi</a>]
+
+[<a href="../../hr/feat/PronType.html">hr</a>]
+
 [<a href="../../hu/feat/PronType.html">hu</a>]
+
+[<a href="../../id/feat/PronType.html">id</a>]
 
 [<a href="../../it/feat/PronType.html">it</a>]
 
 [<a href="../../ja/feat/PronType.html">ja</a>]
 
+[<a href="../../kk/feat/PronType.html">kk</a>]
+
+[<a href="../../kmr/feat/PronType.html">kmr</a>]
+
 [<a href="../../ko/feat/PronType.html">ko</a>]
+
+[<a href="../../la/feat/PronType.html">la</a>]
+
+[<a href="../../lv/feat/PronType.html">lv</a>]
+
+[<a href="../../mr/feat/PronType.html">mr</a>]
+
+[<a href="../../nl/feat/PronType.html">nl</a>]
+
+[<a href="../../no/feat/PronType.html">no</a>]
+
+[<a href="../../pl/feat/PronType.html">pl</a>]
+
+[<a href="../../pt/feat/PronType.html">pt</a>]
+
+[<a href="../../ro/feat/PronType.html">ro</a>]
+
+[<a href="../../ru/feat/PronType.html">ru</a>]
+
+[<a href="../../sa/feat/PronType.html">sa</a>]
+
+[<a href="../../sk/feat/PronType.html">sk</a>]
+
+[<a href="../../sla/feat/PronType.html">sla</a>]
+
+[<a href="../../sl/feat/PronType.html">sl</a>]
+
+[<a href="../../so/feat/PronType.html">so</a>]
+
+[<a href="../../sr/feat/PronType.html">sr</a>]
 
 [<a href="../../sv/feat/PronType.html">sv</a>]
 
+[<a href="../../swl/feat/PronType.html">swl</a>]
+
+[<a href="../../ta/feat/PronType.html">ta</a>]
+
+[<a href="../../tr/feat/PronType.html">tr</a>]
+
 [<a href="../../u/feat/PronType.html">u</a>]
+
+[<a href="../../ug/feat/PronType.html">ug</a>]
+
+[<a href="../../uk/feat/PronType.html">uk</a>]
+
+[<a href="../../ur/feat/PronType.html">ur</a>]
+
+[<a href="../../urj/feat/PronType.html">urj</a>]
+
+[<a href="../../vi/feat/PronType.html">vi</a>]
+
+[<a href="../../yue/feat/PronType.html">yue</a>]
+
+[<a href="../../zh/feat/PronType.html">zh</a>]
 
 
 

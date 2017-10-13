@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-hu">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/hu/dep">hu/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_hu-dep/iobj.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-hu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/hu/dep">hu/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hu-dep/iobj.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,12 +80,12 @@ for <code>iobj</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>109 nodes (0%) are attached to their parents as <code>iobj</code>.</p>
+<p>94 nodes (0%) are attached to their parents as <code>iobj</code>.</p>
 
-<p>60 instances of <code>iobj</code> (55%) are left-to-right (parent precedes child).
-Average distance between parent and child is 2.63302752293578.</p>
+<p>54 instances of <code>iobj</code> (57%) are left-to-right (parent precedes child).
+Average distance between parent and child is 2.57446808510638.</p>
 
-<p>The following 9 pairs of parts of speech are connected with <code>iobj</code>: <a href="">hu-pos/VERB</a>-<a href="">hu-pos/NOUN</a> (59; 54% instances), <a href="">hu-pos/VERB</a>-<a href="">hu-pos/PRON</a> (17; 16% instances), <a href="">hu-pos/VERB</a>-<a href="">hu-pos/PROPN</a> (16; 15% instances), <a href="">hu-pos/ADJ</a>-<a href="">hu-pos/NOUN</a> (10; 9% instances), <a href="">hu-pos/ADV</a>-<a href="">hu-pos/NOUN</a> (2; 2% instances), <a href="">hu-pos/VERB</a>-<a href="">hu-pos/ADJ</a> (2; 2% instances), <a href="">hu-pos/ADJ</a>-<a href="">hu-pos/PRON</a> (1; 1% instances), <a href="">hu-pos/ADJ</a>-<a href="">hu-pos/PROPN</a> (1; 1% instances), <a href="">hu-pos/NOUN</a>-<a href="">hu-pos/NOUN</a> (1; 1% instances).</p>
+<p>The following 8 pairs of parts of speech are connected with <code>iobj</code>: <a href="">hu-pos/VERB</a>-<a href="">hu-pos/NOUN</a> (50; 53% instances), <a href="">hu-pos/VERB</a>-<a href="">hu-pos/PROPN</a> (15; 16% instances), <a href="">hu-pos/VERB</a>-<a href="">hu-pos/PRON</a> (14; 15% instances), <a href="">hu-pos/ADJ</a>-<a href="">hu-pos/NOUN</a> (9; 10% instances), <a href="">hu-pos/ADV</a>-<a href="">hu-pos/NOUN</a> (2; 2% instances), <a href="">hu-pos/VERB</a>-<a href="">hu-pos/ADJ</a> (2; 2% instances), <a href="">hu-pos/ADJ</a>-<a href="">hu-pos/PRON</a> (1; 1% instances), <a href="">hu-pos/ADJ</a>-<a href="">hu-pos/PROPN</a> (1; 1% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 6	bgColor:blue
 # visual-style 6	fgColor:white
@@ -81,28 +98,11 @@ Average distance between parent and child is 2.63302752293578.</p>
 4	tabunak	tabu	NOUN	_	Case=Dat|Number=Sing	5	nmod:obl	_	_
 5	számító	számító	ADJ	_	Case=Nom|Degree=Pos|Number=Sing|VerbForm=PartPres	6	amod:att	_	_
 6	hadseregnek	hadsereg	NOUN	_	Case=Dat|Number=Sing	8	iobj	_	_
-7	is	is	CONJ	_	_	8	cc	_	_
+7	is	is	CCONJ	_	_	8	cc	_	_
 8	kijutott	kijut	VERB	_	Definite=Ind|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
 9	a	a	DET	_	Definite=Def|PronType=Art	10	det	_	_
-10	bírálatból	bírálat	NOUN	_	Case=Ela|Number=Sing	8	nmod:obl	_	_
+10	bírálatból	bírálat	NOUN	_	Case=Ela|Number=Sing	8	nmod:obl	_	SpaceAfter=No
 11	.	.	PUNCT	_	_	8	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 3 5 iobj	color:blue
-1	—	—	PUNCT	_	_	3	punct	_	_
-2	Mit	mi	PRON	_	Case=Acc|Number=Sing|Number[psed]=None|Number[psor]=None|Person=3|Person[psor]=None|PronType=Int	3	dobj	_	_
-3	kíván	kíván	VERB	_	Definite=Ind|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-4	ilyenkor	ilyenkor	ADV	_	PronType=Dem	3	advmod:tlocy	_	_
-5	magának	maga	PRON	_	Case=Dat|Number=Sing|Number[psed]=None|Number[psor]=None|Person=3|Person[psor]=None|Reflex=Yes	3	iobj	_	_
-6	még	még	ADV	_	_	3	advmod:tlocy	_	_
-7	az	az	DET	_	Definite=Def|PronType=Art	8	det	_	_
-8	ember	ember	NOUN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	3	nsubj	_	_
-9	?	?	PUNCT	_	_	3	punct	_	_
 
 </code></pre>
 
@@ -112,21 +112,38 @@ Average distance between parent and child is 2.63302752293578.</p>
 # visual-style 13	fgColor:white
 # visual-style 13 15 iobj	color:blue
 1	A	a	DET	_	Definite=Def|PronType=Art	2	det	_	_
-2	norvégot	norvég	NOUN	_	Case=Acc|Number=Sing	7	dobj	_	_
+2	norvégot	norvég	NOUN	_	Case=Acc|Number=Sing	7	obj	_	_
 3	a	a	DET	_	Definite=Def|PronType=Art	5	det	_	_
 4	macedón	macedón	ADJ	_	Case=Nom|Degree=Pos|Number=Sing	5	amod:att	_	_
 5	hatóságok	hatóság	NOUN	_	Case=Nom|Number=Plur	7	nsubj	_	_
 6	őrizetbe	őrizet	NOUN	_	Case=Ill|Number=Sing	7	nmod:obl	_	_
-7	vették	vesz	VERB	_	Definite=Def|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
-8	,	,	PUNCT	_	_	7	punct	_	_
-9	s	s	CONJ	_	_	7	cc	_	_
-10	közölték	közöl	VERB	_	Definite=Def|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	conj	_	_
+7	vették	vesz	VERB	_	Definite=Def|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+8	,	,	PUNCT	_	_	10	punct	_	_
+9	s	s	CCONJ	_	_	10	cc	_	_
+10	közölték	közöl	VERB	_	Definite=Def|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	conj	_	SpaceAfter=No
 11	:	:	PUNCT	_	_	10	punct	_	_
-12	nem	nem	ADV	_	PronType=Neg	13	neg	_	_
+12	nem	nem	ADV	_	PronType=Neg	13	advmod	_	_
 13	adják	ad	VERB	_	Definite=Def|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	ccomp	_	_
 14	ki	ki	ADV	_	Degree=Pos	13	compound:preverb	_	_
-15	Norvégiának	Norvégia	PROPN	_	Case=Dat|Number=Sing	13	iobj	_	_
+15	Norvégiának	Norvégia	PROPN	_	Case=Dat|Number=Sing	13	iobj	_	SpaceAfter=No
 16	.	.	PUNCT	_	_	7	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 5 iobj	color:blue
+1	—	—	PUNCT	_	_	3	punct	_	_
+2	Mit	mi	PRON	_	Case=Acc|Number=Sing|Number[psed]=None|Number[psor]=None|Person=3|Person[psor]=None|PronType=Int	3	obj	_	_
+3	kíván	kíván	VERB	_	Definite=Ind|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	ilyenkor	ilyenkor	ADV	_	PronType=Dem	3	advmod:tlocy	_	_
+5	magának	maga	PRON	_	Case=Dat|Number=Sing|Number[psed]=None|Number[psor]=None|Person=3|Person[psor]=None|Reflex=Yes	3	iobj	_	_
+6	még	még	ADV	_	_	3	advmod:tlocy	_	_
+7	az	az	DET	_	Definite=Def|PronType=Art	8	det	_	_
+8	ember	ember	NOUN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	3	nsubj	_	SpaceAfter=No
+9	?	?	PUNCT	_	_	3	punct	_	_
 
 </code></pre>
 
@@ -138,9 +155,25 @@ Average distance between parent and child is 2.63302752293578.</p>
 
 iobj in other languages:
 
+[<a href="../../am/dep/iobj.html">am</a>]
+
+[<a href="../../ar/dep/iobj.html">ar</a>]
+
 [<a href="../../bg/dep/iobj.html">bg</a>]
 
+[<a href="../../bxr/dep/iobj.html">bxr</a>]
+
+[<a href="../../ca/dep/iobj.html">ca</a>]
+
+[<a href="../../ckb/dep/iobj.html">ckb</a>]
+
+[<a href="../../cop/dep/iobj.html">cop</a>]
+
 [<a href="../../cs/dep/iobj.html">cs</a>]
+
+[<a href="../../cu/dep/iobj.html">cu</a>]
+
+[<a href="../../da/dep/iobj.html">da</a>]
 
 [<a href="../../de/dep/iobj.html">de</a>]
 
@@ -150,27 +183,95 @@ iobj in other languages:
 
 [<a href="../../es/dep/iobj.html">es</a>]
 
+[<a href="../../et/dep/iobj.html">et</a>]
+
 [<a href="../../eu/dep/iobj.html">eu</a>]
 
 [<a href="../../fa/dep/iobj.html">fa</a>]
 
+[<a href="../../fo/dep/iobj.html">fo</a>]
+
 [<a href="../../fr/dep/iobj.html">fr</a>]
 
-[<a href="../../ga/dep/iobj.html">ga</a>]
+[<a href="../../gl/dep/iobj.html">gl</a>]
+
+[<a href="../../got/dep/iobj.html">got</a>]
+
+[<a href="../../grc/dep/iobj.html">grc</a>]
 
 [<a href="../../he/dep/iobj.html">he</a>]
 
+[<a href="../../hi/dep/iobj.html">hi</a>]
+
+[<a href="../../hr/dep/iobj.html">hr</a>]
+
 [<a href="../../hu/dep/iobj.html">hu</a>]
+
+[<a href="../../id/dep/iobj.html">id</a>]
 
 [<a href="../../it/dep/iobj.html">it</a>]
 
 [<a href="../../ja/dep/iobj.html">ja</a>]
 
+[<a href="../../kk/dep/iobj.html">kk</a>]
+
+[<a href="../../kmr/dep/iobj.html">kmr</a>]
+
 [<a href="../../ko/dep/iobj.html">ko</a>]
+
+[<a href="../../la/dep/iobj.html">la</a>]
+
+[<a href="../../lv/dep/iobj.html">lv</a>]
+
+[<a href="../../mr/dep/iobj.html">mr</a>]
+
+[<a href="../../nl/dep/iobj.html">nl</a>]
+
+[<a href="../../no/dep/iobj.html">no</a>]
+
+[<a href="../../pl/dep/iobj.html">pl</a>]
+
+[<a href="../../pt/dep/iobj.html">pt</a>]
+
+[<a href="../../ro/dep/iobj.html">ro</a>]
+
+[<a href="../../ru/dep/iobj.html">ru</a>]
+
+[<a href="../../sa/dep/iobj.html">sa</a>]
+
+[<a href="../../sk/dep/iobj.html">sk</a>]
+
+[<a href="../../sla/dep/iobj.html">sla</a>]
+
+[<a href="../../sl/dep/iobj.html">sl</a>]
+
+[<a href="../../so/dep/iobj.html">so</a>]
+
+[<a href="../../sr/dep/iobj.html">sr</a>]
 
 [<a href="../../sv/dep/iobj.html">sv</a>]
 
+[<a href="../../swl/dep/iobj.html">swl</a>]
+
+[<a href="../../ta/dep/iobj.html">ta</a>]
+
+[<a href="../../tr/dep/iobj.html">tr</a>]
+
 [<a href="../../u/dep/iobj.html">u</a>]
+
+[<a href="../../ug/dep/iobj.html">ug</a>]
+
+[<a href="../../uk/dep/iobj.html">uk</a>]
+
+[<a href="../../ur/dep/iobj.html">ur</a>]
+
+[<a href="../../urj/dep/iobj.html">urj</a>]
+
+[<a href="../../vi/dep/iobj.html">vi</a>]
+
+[<a href="../../yue/dep/iobj.html">yue</a>]
+
+[<a href="../../zh/dep/iobj.html">zh</a>]
 
 
 

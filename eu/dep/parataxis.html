@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-eu">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/eu/dep">eu/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_eu-dep/parataxis.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-eu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/eu/dep">eu/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_eu-dep/parataxis.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,28 +80,28 @@ for <code>parataxis</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>49 nodes (0%) are attached to their parents as <code>parataxis</code>.</p>
+<p>41 nodes (0%) are attached to their parents as <code>parataxis</code>.</p>
 
-<p>47 instances of <code>parataxis</code> (96%) are left-to-right (parent precedes child).
-Average distance between parent and child is 5.28571428571429.</p>
+<p>40 instances of <code>parataxis</code> (98%) are left-to-right (parent precedes child).
+Average distance between parent and child is 5.19512195121951.</p>
 
-<p>The following 6 pairs of parts of speech are connected with <code>parataxis</code>: <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NUM</a> (23; 47% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/VERB</a> (13; 27% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NOUN</a> (7; 14% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PROPN</a> (3; 6% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/SYM</a> (2; 4% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/AUX</a> (1; 2% instances).</p>
+<p>The following 6 pairs of parts of speech are connected with <code>parataxis</code>: <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NUM</a> (19; 46% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/VERB</a> (12; 29% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NOUN</a> (5; 12% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PROPN</a> (2; 5% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/SYM</a> (2; 5% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/AUX</a> (1; 2% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 9	bgColor:blue
 # visual-style 9	fgColor:white
 # visual-style 6	bgColor:blue
 # visual-style 6	fgColor:white
 # visual-style 6 9 parataxis	color:blue
-1	Baigorri	Baigorri	PROPN	_	Case=Abs|Definite=Def|Number=Sing	6	nsubj	_	_
+1	Baigorri	Baigorri	PROPN	_	Case=Abs|Definite=Def|Number=Sing	6	nsubj	_	SpaceAfter=No
 2	,	,	PUNCT	_	_	6	punct	_	_
-3	berriz	berriz	CONJ	_	_	6	advmod	_	_
+3	berriz	berriz	CCONJ	_	_	6	advmod	_	SpaceAfter=No
 4	,	,	PUNCT	_	_	6	punct	_	_
-5	Orthezen	Orthez	PROPN	_	Case=Ine|Definite=Def|Number=Sing	6	nmod	_	_
+5	Orthezen	Orthez	PROPN	_	Case=Ine|Definite=Def|Number=Sing	6	obl	_	_
 6	ariko	ari_izan	VERB	_	_	0	root	_	_
 7	da	izan	AUX	_	Mood=Ind|Number[abs]=Sing|Person[abs]=3	6	aux	_	_
-8	(	(	PUNCT	_	_	6	punct	_	_
-9	17:30	17:30	NUM	_	NumType=Card	6	parataxis	_	_
-10	)	)	PUNCT	_	_	6	punct	_	_
+8	(	(	PUNCT	_	_	6	punct	_	SpaceAfter=No
+9	17:30	17:30	NUM	_	NumType=Card	6	parataxis	_	SpaceAfter=No
+10	)	)	PUNCT	_	_	6	punct	_	SpaceAfter=No
 11	.	.	PUNCT	_	_	6	punct	_	_
 
 </code></pre>
@@ -94,14 +111,14 @@ Average distance between parent and child is 5.28571428571429.</p>
 # visual-style 4	bgColor:blue
 # visual-style 4	fgColor:white
 # visual-style 4 6 parataxis	color:blue
-1	Baina	baina	CONJ	_	_	4	cc	_	_
+1	Baina	baina	CCONJ	_	_	4	cc	_	SpaceAfter=No
 2	...	...	PUNCT	_	_	4	punct	_	_
-3	ura	ur	NOUN	_	Animacy=Inan|Case=Abs|Definite=Def|Number=Sing	4	dobj	_	_
+3	ura	ur	NOUN	_	Animacy=Inan|Case=Abs|Definite=Def|Number=Sing	4	obj	_	_
 4	hastiatzen	hastiatu	VERB	_	Aspect=Imp|VerbForm=Inf	0	root	_	_
-5	(	(	PUNCT	_	_	4	punct	_	_
-6	gorrotatzen	gorrotatu	VERB	_	Aspect=Imp|VerbForm=Inf	4	parataxis	_	_
+5	(	(	PUNCT	_	_	4	punct	_	SpaceAfter=No
+6	gorrotatzen	gorrotatu	VERB	_	Aspect=Imp|VerbForm=Inf	4	parataxis	_	SpaceAfter=No
 7	)	)	PUNCT	_	_	4	punct	_	_
-8	dut	*edun	AUX	_	Mood=Ind|Number[abs]=Sing|Number[erg]=Sing|Person[abs]=3|Person[erg]=1	4	aux	_	_
+8	dut	*edun	AUX	_	Mood=Ind|Number[abs]=Sing|Number[erg]=Sing|Person[abs]=3|Person[erg]=1	4	aux	_	SpaceAfter=No
 9	!	!	PUNCT	_	_	4	punct	_	_
 
 </code></pre>
@@ -112,14 +129,14 @@ Average distance between parent and child is 5.28571428571429.</p>
 # visual-style 4	fgColor:white
 # visual-style 4 8 parataxis	color:blue
 1	Iaz	iaz	ADV	_	_	4	advmod	_	_
-2	8.950	8.950	NUM	_	_	3	det	_	_
-3	kilo	kilo	NOUN	_	Animacy=Inan|Case=Abs|Definite=Ind	4	dobj	_	_
+2	8.950	8.950	NUM	_	NumType=Card	3	det	_	_
+3	kilo	kilo	NOUN	_	Animacy=Inan|Case=Abs|Definite=Ind	4	obj	_	_
 4	leporatu	leporatu	VERB	_	Aspect=Perf|VerbForm=Part	0	root	_	_
 5	zituen	*edun	AUX	_	Mood=Ind|Number[abs]=Plur|Number[erg]=Sing|Person[abs]=3|Person[erg]=3	4	aux	_	_
-6	(	(	PUNCT	_	_	4	punct	_	_
-7	57	57	NUM	_	_	8	nummod	_	_
-8	jasoaldi	jasoaldi	NOUN	_	Animacy=Inan|Case=Abs|Definite=Ind	4	parataxis	_	_
-9	)	)	PUNCT	_	_	4	punct	_	_
+6	(	(	PUNCT	_	_	4	punct	_	SpaceAfter=No
+7	57	57	NUM	_	NumType=Card	8	nummod	_	_
+8	jasoaldi	jasoaldi	NOUN	_	Animacy=Inan|Case=Abs|Definite=Ind	4	parataxis	_	SpaceAfter=No
+9	)	)	PUNCT	_	_	4	punct	_	SpaceAfter=No
 10	.	.	PUNCT	_	_	4	punct	_	_
 
 </code></pre>
@@ -132,9 +149,25 @@ Average distance between parent and child is 5.28571428571429.</p>
 
 parataxis in other languages:
 
+[<a href="../../am/dep/parataxis.html">am</a>]
+
+[<a href="../../ar/dep/parataxis.html">ar</a>]
+
 [<a href="../../bg/dep/parataxis.html">bg</a>]
 
+[<a href="../../bxr/dep/parataxis.html">bxr</a>]
+
+[<a href="../../ca/dep/parataxis.html">ca</a>]
+
+[<a href="../../ckb/dep/parataxis.html">ckb</a>]
+
+[<a href="../../cop/dep/parataxis.html">cop</a>]
+
 [<a href="../../cs/dep/parataxis.html">cs</a>]
+
+[<a href="../../cu/dep/parataxis.html">cu</a>]
+
+[<a href="../../da/dep/parataxis.html">da</a>]
 
 [<a href="../../de/dep/parataxis.html">de</a>]
 
@@ -144,29 +177,99 @@ parataxis in other languages:
 
 [<a href="../../es/dep/parataxis.html">es</a>]
 
+[<a href="../../et/dep/parataxis.html">et</a>]
+
 [<a href="../../eu/dep/parataxis.html">eu</a>]
 
 [<a href="../../fa/dep/parataxis.html">fa</a>]
 
 [<a href="../../fi/dep/parataxis.html">fi</a>]
 
+[<a href="../../fo/dep/parataxis.html">fo</a>]
+
 [<a href="../../fr/dep/parataxis.html">fr</a>]
 
 [<a href="../../ga/dep/parataxis.html">ga</a>]
 
+[<a href="../../gl/dep/parataxis.html">gl</a>]
+
+[<a href="../../got/dep/parataxis.html">got</a>]
+
+[<a href="../../grc/dep/parataxis.html">grc</a>]
+
 [<a href="../../he/dep/parataxis.html">he</a>]
 
+[<a href="../../hi/dep/parataxis.html">hi</a>]
+
+[<a href="../../hr/dep/parataxis.html">hr</a>]
+
 [<a href="../../hu/dep/parataxis.html">hu</a>]
+
+[<a href="../../id/dep/parataxis.html">id</a>]
 
 [<a href="../../it/dep/parataxis.html">it</a>]
 
 [<a href="../../ja/dep/parataxis.html">ja</a>]
 
+[<a href="../../kk/dep/parataxis.html">kk</a>]
+
+[<a href="../../kmr/dep/parataxis.html">kmr</a>]
+
 [<a href="../../ko/dep/parataxis.html">ko</a>]
+
+[<a href="../../la/dep/parataxis.html">la</a>]
+
+[<a href="../../lv/dep/parataxis.html">lv</a>]
+
+[<a href="../../mr/dep/parataxis.html">mr</a>]
+
+[<a href="../../nl/dep/parataxis.html">nl</a>]
+
+[<a href="../../no/dep/parataxis.html">no</a>]
+
+[<a href="../../pl/dep/parataxis.html">pl</a>]
+
+[<a href="../../pt/dep/parataxis.html">pt</a>]
+
+[<a href="../../ro/dep/parataxis.html">ro</a>]
+
+[<a href="../../ru/dep/parataxis.html">ru</a>]
+
+[<a href="../../sa/dep/parataxis.html">sa</a>]
+
+[<a href="../../sk/dep/parataxis.html">sk</a>]
+
+[<a href="../../sla/dep/parataxis.html">sla</a>]
+
+[<a href="../../sl/dep/parataxis.html">sl</a>]
+
+[<a href="../../so/dep/parataxis.html">so</a>]
+
+[<a href="../../sr/dep/parataxis.html">sr</a>]
 
 [<a href="../../sv/dep/parataxis.html">sv</a>]
 
+[<a href="../../swl/dep/parataxis.html">swl</a>]
+
+[<a href="../../ta/dep/parataxis.html">ta</a>]
+
+[<a href="../../tr/dep/parataxis.html">tr</a>]
+
 [<a href="../../u/dep/parataxis.html">u</a>]
+
+[<a href="../../ug/dep/parataxis.html">ug</a>]
+
+[<a href="../../uk/dep/parataxis.html">uk</a>]
+
+[<a href="../../ur/dep/parataxis.html">ur</a>]
+
+[<a href="../../urj/dep/parataxis.html">urj</a>]
+
+[<a href="../../vi/dep/parataxis.html">vi</a>]
+
+[<a href="../../yue/dep/parataxis.html">yue</a>]
+
+[<a href="../../zh/dep/parataxis.html">zh</a>]
 
 
 

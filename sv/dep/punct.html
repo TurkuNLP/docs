@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-sv">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/sv/dep">sv/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/punct.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sv">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/sv/dep">sv/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/punct.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -71,25 +88,25 @@ punct(blir, .)
 
 <p>This relation is universal.</p>
 
-<p>10368 nodes (11%) are attached to their parents as <code>punct</code>.</p>
+<p>8264 nodes (11%) are attached to their parents as <code>punct</code>.</p>
 
-<p>9486 instances of <code>punct</code> (91%) are left-to-right (parent precedes child).
-Average distance between parent and child is 8.66068672839506.</p>
+<p>6610 instances of <code>punct</code> (80%) are left-to-right (parent precedes child).
+Average distance between parent and child is 8.29682962245886.</p>
 
-<p>The following 11 pairs of parts of speech are connected with <code>punct</code>: <a href="">sv-pos/VERB</a>-<a href="">sv-pos/PUNCT</a> (6051; 58% instances), <a href="">sv-pos/NOUN</a>-<a href="">sv-pos/PUNCT</a> (2876; 28% instances), <a href="">sv-pos/ADJ</a>-<a href="">sv-pos/PUNCT</a> (919; 9% instances), <a href="">sv-pos/PROPN</a>-<a href="">sv-pos/PUNCT</a> (256; 2% instances), <a href="">sv-pos/PRON</a>-<a href="">sv-pos/PUNCT</a> (94; 1% instances), <a href="">sv-pos/NUM</a>-<a href="">sv-pos/PUNCT</a> (82; 1% instances), <a href="">sv-pos/ADV</a>-<a href="">sv-pos/PUNCT</a> (54; 1% instances), <a href="">sv-pos/ADP</a>-<a href="">sv-pos/PUNCT</a> (14; 0% instances), <a href="">sv-pos/INTJ</a>-<a href="">sv-pos/PUNCT</a> (11; 0% instances), <a href="">sv-pos/DET</a>-<a href="">sv-pos/PUNCT</a> (9; 0% instances), <a href="">sv-pos/PUNCT</a>-<a href="">sv-pos/PUNCT</a> (2; 0% instances).</p>
+<p>The following 11 pairs of parts of speech are connected with <code>punct</code>: <a href="">sv-pos/VERB</a>-<a href="">sv-pos/PUNCT</a> (4762; 58% instances), <a href="">sv-pos/NOUN</a>-<a href="">sv-pos/PUNCT</a> (2325; 28% instances), <a href="">sv-pos/ADJ</a>-<a href="">sv-pos/PUNCT</a> (718; 9% instances), <a href="">sv-pos/PROPN</a>-<a href="">sv-pos/PUNCT</a> (234; 3% instances), <a href="">sv-pos/PRON</a>-<a href="">sv-pos/PUNCT</a> (73; 1% instances), <a href="">sv-pos/NUM</a>-<a href="">sv-pos/PUNCT</a> (68; 1% instances), <a href="">sv-pos/ADV</a>-<a href="">sv-pos/PUNCT</a> (50; 1% instances), <a href="">sv-pos/ADP</a>-<a href="">sv-pos/PUNCT</a> (15; 0% instances), <a href="">sv-pos/INTJ</a>-<a href="">sv-pos/PUNCT</a> (10; 0% instances), <a href="">sv-pos/DET</a>-<a href="">sv-pos/PUNCT</a> (7; 0% instances), <a href="">sv-pos/PUNCT</a>-<a href="">sv-pos/PUNCT</a> (2; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 1	bgColor:blue
 # visual-style 1	fgColor:white
 # visual-style 4	bgColor:blue
 # visual-style 4	fgColor:white
 # visual-style 4 1 punct	color:blue
-1	'	'	PUNCT	PAD	_	4	punct	_	_
+1	'	'	PUNCT	PAD	_	4	punct	_	SpaceAfter=No
 2	Du	du	PRON	PN|UTR|SIN|DEF|SUB	Case=Nom|Definite=Def|Gender=Com|Number=Sing|PronType=Prs	4	nsubj	_	_
 3	skall	skola	AUX	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
 4	lyda	lyda	VERB	VB|INF|AKT	VerbForm=Inf|Voice=Act	0	root	_	_
 5	din	du	DET	PS|UTR|SIN|DEF	Definite=Def|Gender=Com|Number=Sing|Poss=Yes|PronType=Prs	6	nmod:poss	_	_
-6	fader	far	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	4	dobj	_	_
-7	.	.	PUNCT	MAD	_	4	punct	_	_
+6	fader	far	NOUN	NN|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	MAD	_	4	punct	_	SpaceAfter=No
 8	'	'	PUNCT	PAD	_	4	punct	_	_
 
 </code></pre>
@@ -102,11 +119,11 @@ Average distance between parent and child is 8.66068672839506.</p>
 1	Bördan	börda	NOUN	NN|UTR|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Com|Number=Sing	7	dislocated	_	_
 2	att	att	PART	IE	_	3	mark	_	_
 3	fostra	fostra	VERB	VB|INF|AKT	VerbForm=Inf|Voice=Act	1	acl	_	_
-4	barn	barn	NOUN	NN|NEU|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	3	dobj	_	_
+4	barn	barn	NOUN	NN|NEU|PLU|IND|NOM	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	3	obj	_	_
 5	-	-	PUNCT	MID	_	1	punct	_	_
 6	uttrycket	uttryck	NOUN	NN|NEU|SIN|DEF|NOM	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	7	nsubj	_	_
 7	låter	låta	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-8	negativt	negativ	ADJ	JJ|POS|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	7	xcomp	_	_
+8	negativt	negativ	ADJ	JJ|POS|NEU|SIN|IND|NOM	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	7	xcomp	_	SpaceAfter=No
 9	.	.	PUNCT	MAD	_	7	punct	_	_
 
 </code></pre>
@@ -118,11 +135,11 @@ Average distance between parent and child is 8.66068672839506.</p>
 # visual-style 1 10 punct	color:blue
 1	Publicerad	publicera	ADJ	PC|PRF|UTR|SIN|IND|NOM	Case=Nom|Definite=Ind|Gender=Com|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
 2	i	i	ADP	PP	_	3	case	_	_
-3	Children	Children	PROPN	PM|NOM	Case=Nom	1	nmod	_	_
-4	1958	1958	NUM	RG|NOM	Case=Nom|NumType=Card	3	nmod	_	_
+3	Children	Children	PROPN	PM|NOM	Case=Nom	1	obl	_	_
+4	1958	1958	NUM	RG|NOM	Case=Nom|NumType=Card	3	nmod	_	SpaceAfter=No
 5	,	,	PUNCT	MID	_	4	punct	_	_
-6	Vol.	Vol.	NOUN	NN|AN	_	7	nmod	_	_
-7	5	5	NUM	RG|NOM	Case=Nom|NumType=Card	4	nmod	_	_
+6	Vol.	Vol.	NOUN	NN|AN	Abbr=Yes	7	nmod	_	_
+7	5	5	NUM	RG|NOM	Case=Nom|NumType=Card	4	obl	_	SpaceAfter=No
 8	,	,	PUNCT	MID	_	7	punct	_	_
 9	179-184	179-184	NUM	RG|NOM	Case=Nom|NumType=Card	7	nummod	_	_
 10	.	.	PUNCT	MAD	_	1	punct	_	_
@@ -135,58 +152,56 @@ Average distance between parent and child is 8.66068672839506.</p>
 
 <p>This relation is universal.</p>
 
-<p>8656 nodes (11%) are attached to their parents as <code>punct</code>.</p>
+<p>6980 nodes (11%) are attached to their parents as <code>punct</code>.</p>
 
-<p>7693 instances of <code>punct</code> (89%) are left-to-right (parent precedes child).
-Average distance between parent and child is 9.20679297597042.</p>
+<p>6171 instances of <code>punct</code> (88%) are left-to-right (parent precedes child).
+Average distance between parent and child is 9.35343839541547.</p>
 
-<p>The following 17 pairs of parts of speech are connected with <code>punct</code>: <a href="">sv-pos/VERB</a>-<a href="">sv-pos/PUNCT</a> (5817; 67% instances), <a href="">sv-pos/NOUN</a>-<a href="">sv-pos/PUNCT</a> (1245; 14% instances), <a href="">sv-pos/ADJ</a>-<a href="">sv-pos/PUNCT</a> (613; 7% instances), <a href="">sv-pos/PROPN</a>-<a href="">sv-pos/PUNCT</a> (182; 2% instances), <a href="">sv-pos/ADV</a>-<a href="">sv-pos/PUNCT</a> (165; 2% instances), <a href="">sv-pos/PRON</a>-<a href="">sv-pos/PUNCT</a> (151; 2% instances), <a href="">sv-pos/AUX</a>-<a href="">sv-pos/PUNCT</a> (127; 1% instances), <a href="">sv-pos/INTJ</a>-<a href="">sv-pos/PUNCT</a> (125; 1% instances), <a href="">sv-pos/ADP</a>-<a href="">sv-pos/PUNCT</a> (67; 1% instances), <a href="">sv-pos/PUNCT</a>-<a href="">sv-pos/PUNCT</a> (54; 1% instances), <a href="">sv-pos/NUM</a>-<a href="">sv-pos/PUNCT</a> (46; 1% instances), <a href="">sv-pos/X</a>-<a href="">sv-pos/PUNCT</a> (27; 0% instances), <a href="">sv-pos/CONJ</a>-<a href="">sv-pos/PUNCT</a> (20; 0% instances), <a href="">sv-pos/DET</a>-<a href="">sv-pos/PUNCT</a> (7; 0% instances), <a href="">sv-pos/PART</a>-<a href="">sv-pos/PUNCT</a> (7; 0% instances), <a href="">sv-pos/SYM</a>-<a href="">sv-pos/PUNCT</a> (2; 0% instances), <a href="">sv-pos/SCONJ</a>-<a href="">sv-pos/PUNCT</a> (1; 0% instances).</p>
+<p>The following 17 pairs of parts of speech are connected with <code>punct</code>: <a href="">sv-pos/VERB</a>-<a href="">sv-pos/PUNCT</a> (4508; 65% instances), <a href="">sv-pos/NOUN</a>-<a href="">sv-pos/PUNCT</a> (1076; 15% instances), <a href="">sv-pos/ADJ</a>-<a href="">sv-pos/PUNCT</a> (530; 8% instances), <a href="">sv-pos/AUX</a>-<a href="">sv-pos/PUNCT</a> (186; 3% instances), <a href="">sv-pos/PROPN</a>-<a href="">sv-pos/PUNCT</a> (152; 2% instances), <a href="">sv-pos/ADV</a>-<a href="">sv-pos/PUNCT</a> (143; 2% instances), <a href="">sv-pos/PRON</a>-<a href="">sv-pos/PUNCT</a> (129; 2% instances), <a href="">sv-pos/INTJ</a>-<a href="">sv-pos/PUNCT</a> (115; 2% instances), <a href="">sv-pos/ADP</a>-<a href="">sv-pos/PUNCT</a> (46; 1% instances), <a href="">sv-pos/NUM</a>-<a href="">sv-pos/PUNCT</a> (35; 1% instances), <a href="">sv-pos/X</a>-<a href="">sv-pos/PUNCT</a> (25; 0% instances), <a href="">sv-pos/PUNCT</a>-<a href="">sv-pos/PUNCT</a> (20; 0% instances), <a href="">sv-pos/PART</a>-<a href="">sv-pos/PUNCT</a> (6; 0% instances), <a href="">sv-pos/DET</a>-<a href="">sv-pos/PUNCT</a> (3; 0% instances), <a href="">sv-pos/CCONJ</a>-<a href="">sv-pos/PUNCT</a> (2; 0% instances), <a href="">sv-pos/SCONJ</a>-<a href="">sv-pos/PUNCT</a> (2; 0% instances), <a href="">sv-pos/SYM</a>-<a href="">sv-pos/PUNCT</a> (2; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 8	bgColor:blue
 # visual-style 8	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 8 punct	color:blue
+1	SQL	_	PROPN	SG-NOM	_	2	nmod	_	_
+2	Server-databasen	_	NOUN	SG-DEF-NOM	_	4	nsubj:pass	_	_
+3	måste	_	AUX	AUX	_	4	aux	_	_
+4	köras	_	VERB	INF-PASS	_	0	root	_	_
+5	på	_	ADP	_	_	6	case	_	_
+6	Windows	_	PROPN	SG-NOM	_	4	obl	_	_
+7	NT	_	PROPN	SG-NOM	_	6	flat	_	SpaceAfter=No
+8	.	_	PUNCT	Period	_	4	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
 # visual-style 1	bgColor:blue
 # visual-style 1	fgColor:white
-# visual-style 1 8 punct	color:blue
-1	Öppna	_	VERB	IMP-ACT	_	0	root	_	_
-2	sidan	_	NOUN	SG-DEF-NOM	_	1	dobj	_	_
-3	i	_	ADP	_	_	4	case	_	_
-4	designläget	_	NOUN	SG-DEF-NOM	_	1	nmod	_	_
-5	i	_	ADP	_	_	6	case	_	_
-6	Access	_	PROPN	SG-NOM	_	4	nmod	_	_
-7	2002	_	NUM	ID	_	6	nummod	_	_
-8	.	_	PUNCT	Period	_	1	punct	_	_
+# visual-style 1 2 punct	color:blue
+1	Storlek	_	NOUN	SG-IND-NOM	_	0	root	_	SpaceAfter=No
+2	.	_	PUNCT	Period	_	1	punct	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
-# visual-style 6	bgColor:blue
+<pre><code class="language-conllu"># visual-style 6	bgColor:blue
 # visual-style 6	fgColor:white
-# visual-style 6 7 punct	color:blue
-1	De	_	DET	PL-DEF	_	3	det	_	_
-2	övriga	_	ADJ	POS-PL-IND	_	3	amod	_	_
-3	fälten	_	NOUN	PL-DEF-NOM	_	6	nsubj	_	_
-4	är	_	VERB	PRES-ACT	_	6	cop	_	_
-5	yttre	_	ADJ	CMP	_	6	amod	_	_
-6	fält	_	NOUN	IND-NOM	_	0	root	_	_
-7	.	_	PUNCT	Period	_	6	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 9	bgColor:blue
-# visual-style 9	fgColor:white
-# visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 6 9 punct	color:blue
-1	Sådana	_	ADJ	POS-PL-IND	_	2	det	_	_
-2	kontroller	_	NOUN	PL-IND-NOM	_	6	nsubj	_	_
-3	kommer	_	AUX	PRES-AUX	_	6	aux	_	_
-4	att	_	PART	_	_	6	mark	_	_
-5	vara	_	VERB	INF-ACT	_	6	cop	_	_
-6	obundna	_	ADJ	POS-PL-IND	_	0	root	_	_
-7	på	_	ADP	_	_	8	case	_	_
-8	sidan	_	NOUN	SG-DEF-NOM	_	6	nmod	_	_
-9	.	_	PUNCT	Period	_	6	punct	_	_
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 6 punct	color:blue
+1	Jadå	_	INTJ	_	_	5	discourse	_	SpaceAfter=No
+2	,	_	PUNCT	Comma	_	1	punct	_	_
+3	han	_	PRON	PERS-P3SG-NOM	_	5	nsubj	_	_
+4	är	_	AUX	PRES-ACT	_	5	cop	_	_
+5	smart	_	ADJ	POS-SG-IND	_	0	root	_	SpaceAfter=No
+6	.	_	PUNCT	Period	_	5	punct	_	_
+7	Men	_	CCONJ	_	_	9	cc	_	_
+8	han	_	PRON	PERS-P3SG-NOM	_	9	nsubj	_	_
+9	pratar	_	VERB	PRES-ACT	_	5	conj	_	_
+10	för	_	ADV	_	_	11	advmod	_	_
+11	mycket	_	ADV	_	_	9	advmod	_	SpaceAfter=No
+12	.	_	PUNCT	Period	_	9	punct	_	_
 
 </code></pre>
 
@@ -198,9 +213,25 @@ Average distance between parent and child is 9.20679297597042.</p>
 
 punct in other languages:
 
+[<a href="../../am/dep/punct.html">am</a>]
+
+[<a href="../../ar/dep/punct.html">ar</a>]
+
 [<a href="../../bg/dep/punct.html">bg</a>]
 
+[<a href="../../bxr/dep/punct.html">bxr</a>]
+
+[<a href="../../ca/dep/punct.html">ca</a>]
+
+[<a href="../../ckb/dep/punct.html">ckb</a>]
+
+[<a href="../../cop/dep/punct.html">cop</a>]
+
 [<a href="../../cs/dep/punct.html">cs</a>]
+
+[<a href="../../cu/dep/punct.html">cu</a>]
+
+[<a href="../../da/dep/punct.html">da</a>]
 
 [<a href="../../de/dep/punct.html">de</a>]
 
@@ -210,29 +241,99 @@ punct in other languages:
 
 [<a href="../../es/dep/punct.html">es</a>]
 
+[<a href="../../et/dep/punct.html">et</a>]
+
 [<a href="../../eu/dep/punct.html">eu</a>]
 
 [<a href="../../fa/dep/punct.html">fa</a>]
 
 [<a href="../../fi/dep/punct.html">fi</a>]
 
+[<a href="../../fo/dep/punct.html">fo</a>]
+
 [<a href="../../fr/dep/punct.html">fr</a>]
 
 [<a href="../../ga/dep/punct.html">ga</a>]
 
+[<a href="../../gl/dep/punct.html">gl</a>]
+
+[<a href="../../got/dep/punct.html">got</a>]
+
+[<a href="../../grc/dep/punct.html">grc</a>]
+
 [<a href="../../he/dep/punct.html">he</a>]
 
+[<a href="../../hi/dep/punct.html">hi</a>]
+
+[<a href="../../hr/dep/punct.html">hr</a>]
+
 [<a href="../../hu/dep/punct.html">hu</a>]
+
+[<a href="../../id/dep/punct.html">id</a>]
 
 [<a href="../../it/dep/punct.html">it</a>]
 
 [<a href="../../ja/dep/punct.html">ja</a>]
 
+[<a href="../../kk/dep/punct.html">kk</a>]
+
+[<a href="../../kmr/dep/punct.html">kmr</a>]
+
 [<a href="../../ko/dep/punct.html">ko</a>]
+
+[<a href="../../la/dep/punct.html">la</a>]
+
+[<a href="../../lv/dep/punct.html">lv</a>]
+
+[<a href="../../mr/dep/punct.html">mr</a>]
+
+[<a href="../../nl/dep/punct.html">nl</a>]
+
+[<a href="../../no/dep/punct.html">no</a>]
+
+[<a href="../../pl/dep/punct.html">pl</a>]
+
+[<a href="../../pt/dep/punct.html">pt</a>]
+
+[<a href="../../ro/dep/punct.html">ro</a>]
+
+[<a href="../../ru/dep/punct.html">ru</a>]
+
+[<a href="../../sa/dep/punct.html">sa</a>]
+
+[<a href="../../sk/dep/punct.html">sk</a>]
+
+[<a href="../../sla/dep/punct.html">sla</a>]
+
+[<a href="../../sl/dep/punct.html">sl</a>]
+
+[<a href="../../so/dep/punct.html">so</a>]
+
+[<a href="../../sr/dep/punct.html">sr</a>]
 
 [<a href="../../sv/dep/punct.html">sv</a>]
 
+[<a href="../../swl/dep/punct.html">swl</a>]
+
+[<a href="../../ta/dep/punct.html">ta</a>]
+
+[<a href="../../tr/dep/punct.html">tr</a>]
+
 [<a href="../../u/dep/punct.html">u</a>]
+
+[<a href="../../ug/dep/punct.html">ug</a>]
+
+[<a href="../../uk/dep/punct.html">uk</a>]
+
+[<a href="../../ur/dep/punct.html">ur</a>]
+
+[<a href="../../urj/dep/punct.html">urj</a>]
+
+[<a href="../../vi/dep/punct.html">vi</a>]
+
+[<a href="../../yue/dep/punct.html">yue</a>]
+
+[<a href="../../zh/dep/punct.html">zh</a>]
 
 
 

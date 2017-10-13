@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-hi">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/hi/dep">hi/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_hi-dep/xcomp.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-hi">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/hi/dep">hi/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hi-dep/xcomp.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,12 +80,12 @@ for <code>xcomp</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>729 nodes (0%) are attached to their parents as <code>xcomp</code>.</p>
+<p>686 nodes (0%) are attached to their parents as <code>xcomp</code>.</p>
 
-<p>721 instances of <code>xcomp</code> (99%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.55006858710562.</p>
+<p>679 instances of <code>xcomp</code> (99%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.53790087463557.</p>
 
-<p>The following 8 pairs of parts of speech are connected with <code>xcomp</code>: <a href="">hi-pos/VERB</a>-<a href="">hi-pos/ADJ</a> (320; 44% instances), <a href="">hi-pos/VERB</a>-<a href="">hi-pos/NOUN</a> (268; 37% instances), <a href="">hi-pos/VERB</a>-<a href="">hi-pos/DET</a> (38; 5% instances), <a href="">hi-pos/VERB</a>-<a href="">hi-pos/PRON</a> (31; 4% instances), <a href="">hi-pos/VERB</a>-<a href="">hi-pos/NUM</a> (27; 4% instances), <a href="">hi-pos/VERB</a>-<a href="">hi-pos/PROPN</a> (26; 4% instances), <a href="">hi-pos/VERB</a>-<a href="">hi-pos/VERB</a> (11; 2% instances), <a href="">hi-pos/VERB</a>-<a href="">hi-pos/ADV</a> (8; 1% instances).</p>
+<p>The following 8 pairs of parts of speech are connected with <code>xcomp</code>: <a href="">hi-pos/VERB</a>-<a href="">hi-pos/ADJ</a> (307; 45% instances), <a href="">hi-pos/VERB</a>-<a href="">hi-pos/NOUN</a> (251; 37% instances), <a href="">hi-pos/VERB</a>-<a href="">hi-pos/DET</a> (33; 5% instances), <a href="">hi-pos/VERB</a>-<a href="">hi-pos/PRON</a> (28; 4% instances), <a href="">hi-pos/VERB</a>-<a href="">hi-pos/NUM</a> (25; 4% instances), <a href="">hi-pos/VERB</a>-<a href="">hi-pos/PROPN</a> (25; 4% instances), <a href="">hi-pos/VERB</a>-<a href="">hi-pos/VERB</a> (9; 1% instances), <a href="">hi-pos/VERB</a>-<a href="">hi-pos/ADV</a> (8; 1% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 9	bgColor:blue
 # visual-style 9	fgColor:white
@@ -82,7 +99,7 @@ Average distance between parent and child is 1.55006858710562.</p>
 5	करीब	करीब	PART	RP	_	7	dep	_	ChunkId=NP2|ChunkType=child|Translit=karība
 6	पाँच	पाँच	NUM	QCC	NumType=Card	7	dep	_	ChunkId=NP2|ChunkType=child|Translit=pām̃ca
 7	सौ	सौ	NUM	QC	NumType=Card	8	nummod	_	ChunkId=NP2|ChunkType=child|Translit=sau
-8	वर्ष	वर्ष	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	10	nmod	_	Vib=0|Tam=0|ChunkId=NP2|ChunkType=head|Translit=varṣa
+8	वर्ष	वर्ष	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	10	obl	_	Vib=0|Tam=0|ChunkId=NP2|ChunkType=head|Translit=varṣa
 9	पुराना	पुराना	ADJ	JJ	Gender=Masc|Number=Sing	10	xcomp	_	ChunkId=JJP|ChunkType=head|Translit=purānā
 10	होने	हो	VERB	VM	Case=Acc|Number=Sing|VerbForm=Inf	12	nmod	_	Vib=ना_का|Tam=nA|ChunkId=VGNN|ChunkType=head|Translit=hone
 11	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	10	mark	_	ChunkId=VGNN|ChunkType=child|Translit=kā
@@ -110,23 +127,26 @@ Average distance between parent and child is 1.55006858710562.</p>
 10	केंद्र	केंद्र	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	11	xcomp	_	Vib=0|Tam=0|ChunkId=NP5|ChunkType=head|Translit=keṁdra
 11	बन	बन	VERB	VM	Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	Vib=0_जा+ता_है|Tam=0|ChunkId=VGF|ChunkType=head|Stype=declarative|Translit=bana
 12	जाता	जा	AUX	VAUX	Aspect=Imp|Gender=Masc|Number=Sing|VerbForm=Part	11	aux	_	Vib=ता|Tam=wA|ChunkId=VGF|ChunkType=child|Translit=jātā
-13	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	auxpass	_	Vib=है|Tam=hE|ChunkId=VGF|ChunkType=child|Translit=hai
+13	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:pass	_	Vib=है|Tam=hE|ChunkId=VGF|ChunkType=child|Translit=hai
 14	।	।	PUNCT	SYM	_	11	punct	_	ChunkId=BLK|ChunkType=head|Translit=.
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 5 4 xcomp	color:blue
-1	पिछले	पिछला	ADJ	JJ	Case=Acc|Gender=Masc|Number=Sing	2	amod	_	ChunkId=NP|ChunkType=child|Translit=pichale
-2	साल	साल	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	4	advmod	_	Vib=0_से|Tam=0|ChunkId=NP|ChunkType=head|Translit=sāla
-3	से	से	ADP	PSP	AdpType=Post	2	case	_	ChunkId=NP|ChunkType=child|Translit=se
-4	कम	कम	DET	QF	PronType=Ind	5	xcomp	_	AltTag=ADJ-DET|ChunkId=JJP|ChunkType=head|Translit=kama
-5	पहुंचे	पहुंच	VERB	VM	Aspect=Perf|Gender=Masc|Number=Plur|VerbForm=Part|Voice=Act	0	root	_	Vib=या|Tam=yA|ChunkId=VGF|ChunkType=head|Stype=declarative|Translit=pahuṁce
-6	भक्त	भक्त	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	5	nsubj	_	Vib=0|Tam=0|ChunkId=NP2|ChunkType=head|Translit=bhakta
-7	।	।	PUNCT	SYM	_	5	punct	_	ChunkId=BLK|ChunkType=head|Translit=.
+<pre><code class="language-conllu"># visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 8 7 xcomp	color:blue
+1	यह	यह	DET	DEM	Case=Nom|Number=Sing|Person=3|PronType=Dem	2	det	_	ChunkId=NP|ChunkType=child|Translit=yaha
+2	संख्या	संख्या	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	8	nsubj	_	Vib=0|Tam=0|ChunkId=NP|ChunkType=head|Translit=saṁkhyā
+3	राजग	राजग	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	5	nmod	_	Vib=0_का|Tam=0|ChunkId=NP2|ChunkType=head|Translit=rājaga
+4	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	3	case	_	ChunkId=NP2|ChunkType=child|Translit=ke
+5	९२	९२	NUM	QC	Case=Acc|NumType=Card	7	advmod	_	Vib=0_से|ChunkId=NP3|ChunkType=head|Translit=92
+6	से	से	ADP	PSP	AdpType=Post	5	case	_	ChunkId=NP3|ChunkType=child|Translit=se
+7	ज्यादा	ज्यादा	DET	QF	PronType=Ind	8	xcomp	_	AltTag=ADJ-DET|ChunkId=JJP|ChunkType=head|Translit=jyādā
+8	बैठती	बैठ	VERB	VM	Aspect=Imp|Gender=Fem|Number=Sing|Person=3|VerbForm=Part|Voice=Act	0	root	_	Vib=ता_है|Tam=wA|ChunkId=VGF|ChunkType=head|Stype=declarative|Translit=baiṭhatī
+9	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	_	Vib=है|Tam=hE|ChunkId=VGF|ChunkType=child|Translit=hai
+10	।	।	PUNCT	SYM	_	8	punct	_	ChunkId=BLK|ChunkType=head|Translit=.
 
 </code></pre>
 
@@ -138,9 +158,25 @@ Average distance between parent and child is 1.55006858710562.</p>
 
 xcomp in other languages:
 
+[<a href="../../am/dep/xcomp.html">am</a>]
+
+[<a href="../../ar/dep/xcomp.html">ar</a>]
+
 [<a href="../../bg/dep/xcomp.html">bg</a>]
 
+[<a href="../../bxr/dep/xcomp.html">bxr</a>]
+
+[<a href="../../ca/dep/xcomp.html">ca</a>]
+
+[<a href="../../ckb/dep/xcomp.html">ckb</a>]
+
+[<a href="../../cop/dep/xcomp.html">cop</a>]
+
 [<a href="../../cs/dep/xcomp.html">cs</a>]
+
+[<a href="../../cu/dep/xcomp.html">cu</a>]
+
+[<a href="../../da/dep/xcomp.html">da</a>]
 
 [<a href="../../de/dep/xcomp.html">de</a>]
 
@@ -150,29 +186,99 @@ xcomp in other languages:
 
 [<a href="../../es/dep/xcomp.html">es</a>]
 
+[<a href="../../et/dep/xcomp.html">et</a>]
+
 [<a href="../../eu/dep/xcomp.html">eu</a>]
 
 [<a href="../../fa/dep/xcomp.html">fa</a>]
 
 [<a href="../../fi/dep/xcomp.html">fi</a>]
 
+[<a href="../../fo/dep/xcomp.html">fo</a>]
+
 [<a href="../../fr/dep/xcomp.html">fr</a>]
 
 [<a href="../../ga/dep/xcomp.html">ga</a>]
 
+[<a href="../../gl/dep/xcomp.html">gl</a>]
+
+[<a href="../../got/dep/xcomp.html">got</a>]
+
+[<a href="../../grc/dep/xcomp.html">grc</a>]
+
 [<a href="../../he/dep/xcomp.html">he</a>]
 
+[<a href="../../hi/dep/xcomp.html">hi</a>]
+
+[<a href="../../hr/dep/xcomp.html">hr</a>]
+
 [<a href="../../hu/dep/xcomp.html">hu</a>]
+
+[<a href="../../id/dep/xcomp.html">id</a>]
 
 [<a href="../../it/dep/xcomp.html">it</a>]
 
 [<a href="../../ja/dep/xcomp.html">ja</a>]
 
+[<a href="../../kk/dep/xcomp.html">kk</a>]
+
+[<a href="../../kmr/dep/xcomp.html">kmr</a>]
+
 [<a href="../../ko/dep/xcomp.html">ko</a>]
+
+[<a href="../../la/dep/xcomp.html">la</a>]
+
+[<a href="../../lv/dep/xcomp.html">lv</a>]
+
+[<a href="../../mr/dep/xcomp.html">mr</a>]
+
+[<a href="../../nl/dep/xcomp.html">nl</a>]
+
+[<a href="../../no/dep/xcomp.html">no</a>]
+
+[<a href="../../pl/dep/xcomp.html">pl</a>]
+
+[<a href="../../pt/dep/xcomp.html">pt</a>]
+
+[<a href="../../ro/dep/xcomp.html">ro</a>]
+
+[<a href="../../ru/dep/xcomp.html">ru</a>]
+
+[<a href="../../sa/dep/xcomp.html">sa</a>]
+
+[<a href="../../sk/dep/xcomp.html">sk</a>]
+
+[<a href="../../sla/dep/xcomp.html">sla</a>]
+
+[<a href="../../sl/dep/xcomp.html">sl</a>]
+
+[<a href="../../so/dep/xcomp.html">so</a>]
+
+[<a href="../../sr/dep/xcomp.html">sr</a>]
 
 [<a href="../../sv/dep/xcomp.html">sv</a>]
 
+[<a href="../../swl/dep/xcomp.html">swl</a>]
+
+[<a href="../../ta/dep/xcomp.html">ta</a>]
+
+[<a href="../../tr/dep/xcomp.html">tr</a>]
+
 [<a href="../../u/dep/xcomp.html">u</a>]
+
+[<a href="../../ug/dep/xcomp.html">ug</a>]
+
+[<a href="../../uk/dep/xcomp.html">uk</a>]
+
+[<a href="../../ur/dep/xcomp.html">ur</a>]
+
+[<a href="../../urj/dep/xcomp.html">urj</a>]
+
+[<a href="../../vi/dep/xcomp.html">vi</a>]
+
+[<a href="../../yue/dep/xcomp.html">yue</a>]
+
+[<a href="../../zh/dep/xcomp.html">zh</a>]
 
 
 

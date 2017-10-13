@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ta">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ta/feat">ta/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ta-feat/Mood.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ta">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ta/feat">ta/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ta-feat/Mood.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -68,57 +85,57 @@ It occurs with 3 different values: <code>Cnd</code>, <code>Imp</code>, <code>Ind
 <p>747 tokens (8%) have a non-empty value of <code>Mood</code>.
 241 types (7%) occur at least once with a non-empty value of <code>Mood</code>.
 127 lemmas (6%) occur at least once with a non-empty value of <code>Mood</code>.
-The feature is used with 3 part-of-speech tags: <a href="">ta-pos/AUX</a> (430; 4% instances), <a href="">ta-pos/VERB</a> (316; 3% instances), <a href="">ta-pos/PART</a> (1; 0% instances).</p>
+The feature is used with 3 part-of-speech tags: <a href="">ta-pos/AUX</a> (431; 4% instances), <a href="">ta-pos/VERB</a> (315; 3% instances), <a href="">ta-pos/PART</a> (1; 0% instances).</p>
 
 <h3 id="aux"><code>AUX</code></h3>
 
-<p>430 <a href="">ta-pos/AUX</a> tokens (69% of all <code>AUX</code> tokens) have a non-empty value of <code>Mood</code>.</p>
+<p>431 <a href="">ta-pos/AUX</a> tokens (69% of all <code>AUX</code> tokens) have a non-empty value of <code>Mood</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Mood</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (430; 100%), <tt><a href="Negative.html">Negative</a>=Pos</tt> (419; 97%), <tt><a href="Person.html">Person</a>=3</tt> (401; 93%), <tt><a href="Voice.html">Voice</a>=Act</tt> (361; 84%), <tt><a href="Polite.html">Polite</a>=EMPTY</tt> (345; 80%), <tt><a href="Number.html">Number</a>=Sing</tt> (297; 69%), <tt><a href="Gender.html">Gender</a>=Neut</tt> (292; 68%).</p>
+<p>The most frequent other feature values with which <code>AUX</code> and <code>Mood</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (431; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (420; 97%), <tt><a href="Person.html">Person</a>=3</tt> (402; 93%), <tt><a href="Voice.html">Voice</a>=Act</tt> (362; 84%), <tt><a href="Polite.html">Polite</a>=EMPTY</tt> (346; 80%), <tt><a href="Number.html">Number</a>=Sing</tt> (297; 69%), <tt><a href="Gender.html">Gender</a>=Neut</tt> (293; 68%).</p>
 
 <p><code>AUX</code> tokens may have the following values of <code>Mood</code>:</p>
 
 <ul>
   <li><code>Cnd</code> (12; 3% of non-empty <code>Mood</code>): விட்டால், இருந்தால், பட்டால், வந்தால், இருப்பின், விடில், வைத்தால்</li>
-  <li><code>Ind</code> (418; 97% of non-empty <code>Mood</code>): உள்ளது, வேண்டும், உள்ளார், இல்லை, உள்ளனர், பட்டது, உள்ளன, வருகின்றனர், இருந்தது, ப்படும்</li>
+  <li><code>Ind</code> (419; 97% of non-empty <code>Mood</code>): உள்ளது, வேண்டும், உள்ளார், இல்லை, உள்ளனர், பட்டது, உள்ளன, வருகின்றனர், இருந்தது, ப்படும்</li>
   <li><code>EMPTY</code> (197): பட்ட், பட்டு, கொண்டு, உள்ளத், ப்பட, இருப்பத், செய்து, விட்டத், கொண்ட், செய்த்</li>
 </ul>
 
 <table>
   <tr><th>Paradigm <i>படு</i></th><th><tt>Ind</tt></th><th><tt>Cnd</tt></th></tr>
-  <tr><td><tt><a href="Animacy.html">Animacy</a>=Anim|<a href="Gender.html">Gender</a>=Com|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres|<a href="Voice.html">Voice</a>=Pass</tt></td><td>படுகின்றனர்</td><td></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Com|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Polite.html">Polite</a>=Pol|<a href="Tense.html">Tense</a>=Past|<a href="Voice.html">Voice</a>=Pass</tt></td><td>பட்டார்</td><td></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Com|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Polite.html">Polite</a>=Pol|<a href="Tense.html">Tense</a>=Fut|<a href="Voice.html">Voice</a>=Pass</tt></td><td>படுவார்கள்</td><td></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Com|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Polite.html">Polite</a>=Pol|<a href="Tense.html">Tense</a>=Past|<a href="Voice.html">Voice</a>=Pass</tt></td><td>பட்டனர்</td><td></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Com|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Polite.html">Polite</a>=Pol|<a href="Tense.html">Tense</a>=Pres|<a href="Voice.html">Voice</a>=Pass</tt></td><td>படுகின்றனர்</td><td></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Neut|<a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3</tt></td><td>படாது</td><td></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Neut|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Fut|<a href="Voice.html">Voice</a>=Pass</tt></td><td>ப்படும், படும்</td><td></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Neut|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Past|<a href="Voice.html">Voice</a>=Pass</tt></td><td>பட்டது</td><td></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Neut|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres|<a href="Voice.html">Voice</a>=Pass</tt></td><td>படுகிறது</td><td></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Neut|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Past|<a href="Voice.html">Voice</a>=Pass</tt></td><td>பட்டன</td><td></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Neut|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres|<a href="Voice.html">Voice</a>=Pass</tt></td><td>படுகின்றன</td><td></td></tr>
-  <tr><td><tt><a href="Negative.html">Negative</a>=Pos|<a href="Voice.html">Voice</a>=Pass</tt></td><td></td><td>பட்டால்</td></tr>
+  <tr><td><tt><a href="Animacy.html">Animacy</a>=Anim|<a href="Gender.html">Gender</a>=Com|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Polarity.html">Polarity</a>=Pos|<a href="Tense.html">Tense</a>=Pres|<a href="Voice.html">Voice</a>=Pass</tt></td><td>படுகின்றனர்</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Com|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Polarity.html">Polarity</a>=Pos|<a href="Polite.html">Polite</a>=Form|<a href="Tense.html">Tense</a>=Past|<a href="Voice.html">Voice</a>=Pass</tt></td><td>பட்டார்</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Com|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Polarity.html">Polarity</a>=Pos|<a href="Polite.html">Polite</a>=Form|<a href="Tense.html">Tense</a>=Fut|<a href="Voice.html">Voice</a>=Pass</tt></td><td>படுவார்கள்</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Com|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Polarity.html">Polarity</a>=Pos|<a href="Polite.html">Polite</a>=Form|<a href="Tense.html">Tense</a>=Past|<a href="Voice.html">Voice</a>=Pass</tt></td><td>பட்டனர்</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Com|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Polarity.html">Polarity</a>=Pos|<a href="Polite.html">Polite</a>=Form|<a href="Tense.html">Tense</a>=Pres|<a href="Voice.html">Voice</a>=Pass</tt></td><td>படுகின்றனர்</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Polarity.html">Polarity</a>=Neg</tt></td><td>படாது</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Polarity.html">Polarity</a>=Pos|<a href="Tense.html">Tense</a>=Fut|<a href="Voice.html">Voice</a>=Pass</tt></td><td>ப்படும், படும்</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Polarity.html">Polarity</a>=Pos|<a href="Tense.html">Tense</a>=Past|<a href="Voice.html">Voice</a>=Pass</tt></td><td>பட்டது</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Polarity.html">Polarity</a>=Pos|<a href="Tense.html">Tense</a>=Pres|<a href="Voice.html">Voice</a>=Pass</tt></td><td>படுகிறது</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Polarity.html">Polarity</a>=Pos|<a href="Tense.html">Tense</a>=Past|<a href="Voice.html">Voice</a>=Pass</tt></td><td>பட்டன</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Polarity.html">Polarity</a>=Pos|<a href="Tense.html">Tense</a>=Pres|<a href="Voice.html">Voice</a>=Pass</tt></td><td>படுகின்றன</td><td></td></tr>
+  <tr><td><tt><a href="Polarity.html">Polarity</a>=Pos|<a href="Voice.html">Voice</a>=Pass</tt></td><td></td><td>பட்டால்</td></tr>
 </table>
 
 <h3 id="verb"><code>VERB</code></h3>
 
-<p>316 <a href="">ta-pos/VERB</a> tokens (27% of all <code>VERB</code> tokens) have a non-empty value of <code>Mood</code>.</p>
+<p>315 <a href="">ta-pos/VERB</a> tokens (27% of all <code>VERB</code> tokens) have a non-empty value of <code>Mood</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Mood</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (316; 100%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (316; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (315; 100%), <tt><a href="Negative.html">Negative</a>=Pos</tt> (315; 100%), <tt><a href="Person.html">Person</a>=3</tt> (278; 88%), <tt><a href="Number.html">Number</a>=Sing</tt> (215; 68%), <tt><a href="Tense.html">Tense</a>=Past</tt> (182; 58%), <tt><a href="Polite.html">Polite</a>=EMPTY</tt> (173; 55%).</p>
+<p>The most frequent other feature values with which <code>VERB</code> and <code>Mood</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (315; 100%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (315; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (314; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (314; 100%), <tt><a href="Person.html">Person</a>=3</tt> (277; 88%), <tt><a href="Number.html">Number</a>=Sing</tt> (215; 68%), <tt><a href="Tense.html">Tense</a>=Past</tt> (182; 58%), <tt><a href="Polite.html">Polite</a>=EMPTY</tt> (172; 55%).</p>
 
 <p><code>VERB</code> tokens may have the following values of <code>Mood</code>:</p>
 
 <ul>
   <li><code>Cnd</code> (15; 5% of non-empty <code>Mood</code>): ஆனால், உடைத்தால், ஏற்பட்டால், கட்டினால், பெற்றால், இருந்தால், கலந்தால், காட்டினால், நிறைவேற்றினால், விதித்தால்</li>
   <li><code>Imp</code> (1; 0% of non-empty <code>Mood</code>): இருங்கள்</li>
-  <li><code>Ind</code> (300; 95% of non-empty <code>Mood</code>): தெரிவித்தார், என்றார், உள்ளது, கூறினார், தெரிகிறது, தெரிவித்தன, நடைபெறும், உயிரிழந்தனர், இருக்கும், இருந்தார்</li>
+  <li><code>Ind</code> (299; 95% of non-empty <code>Mood</code>): தெரிவித்தார், என்றார், உள்ளது, கூறினார், தெரிகிறது, தெரிவித்தன, நடைபெறும், உயிரிழந்தனர், இருக்கும், இருந்தார்</li>
   <li><code>EMPTY</code> (855): தெரிவித்த், செய்து, தெரிவிக்கப், செய்யப், கொண்டு, கலந்து, கூறிய், வெளியிட்ட், வழங்கப், நியமிக்கப்</li>
 </ul>
 
 <table>
   <tr><th>Paradigm <i>இரு</i></th><th><tt>Ind</tt></th><th><tt>Imp</tt></th><th><tt>Cnd</tt></th></tr>
   <tr><td><tt><a href="Animacy.html">Animacy</a>=Anim|<a href="Gender.html">Gender</a>=Com|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=2</tt></td><td></td><td>இருங்கள்</td><td></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Com|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Polite.html">Polite</a>=Pol|<a href="Tense.html">Tense</a>=Past</tt></td><td>இருந்தார்</td><td></td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Com|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Polite.html">Polite</a>=Form|<a href="Tense.html">Tense</a>=Past</tt></td><td>இருந்தார்</td><td></td><td></td></tr>
   <tr><td><tt><a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Fut</tt></td><td>இருக்கும்</td><td></td><td></td></tr>
   <tr><td><tt><a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Past</tt></td><td>இருந்தது</td><td></td><td></td></tr>
   <tr><td><tt><a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres</tt></td><td>இருக்கிறது</td><td></td><td></td></tr>
@@ -132,7 +149,7 @@ The feature is used with 3 part-of-speech tags: <a href="">ta-pos/AUX</a> (430; 
 
 <p>1 <a href="">ta-pos/PART</a> tokens (0% of all <code>PART</code> tokens) have a non-empty value of <code>Mood</code>.</p>
 
-<p>The most frequent other feature values with which <code>PART</code> and <code>Mood</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (1; 100%), <tt><a href="Negative.html">Negative</a>=Pos</tt> (1; 100%).</p>
+<p>The most frequent other feature values with which <code>PART</code> and <code>Mood</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (1; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (1; 100%).</p>
 
 <p><code>PART</code> tokens may have the following values of <code>Mood</code>:</p>
 
@@ -149,9 +166,25 @@ The feature is used with 3 part-of-speech tags: <a href="">ta-pos/AUX</a> (430; 
 
 Mood in other languages:
 
+[<a href="../../am/feat/Mood.html">am</a>]
+
+[<a href="../../ar/feat/Mood.html">ar</a>]
+
 [<a href="../../bg/feat/Mood.html">bg</a>]
 
+[<a href="../../bxr/feat/Mood.html">bxr</a>]
+
+[<a href="../../ca/feat/Mood.html">ca</a>]
+
+[<a href="../../ckb/feat/Mood.html">ckb</a>]
+
+[<a href="../../cop/feat/Mood.html">cop</a>]
+
 [<a href="../../cs/feat/Mood.html">cs</a>]
+
+[<a href="../../cu/feat/Mood.html">cu</a>]
+
+[<a href="../../da/feat/Mood.html">da</a>]
 
 [<a href="../../de/feat/Mood.html">de</a>]
 
@@ -161,29 +194,99 @@ Mood in other languages:
 
 [<a href="../../es/feat/Mood.html">es</a>]
 
+[<a href="../../et/feat/Mood.html">et</a>]
+
 [<a href="../../eu/feat/Mood.html">eu</a>]
 
 [<a href="../../fa/feat/Mood.html">fa</a>]
 
 [<a href="../../fi/feat/Mood.html">fi</a>]
 
+[<a href="../../fo/feat/Mood.html">fo</a>]
+
 [<a href="../../fr/feat/Mood.html">fr</a>]
 
 [<a href="../../ga/feat/Mood.html">ga</a>]
 
+[<a href="../../gl/feat/Mood.html">gl</a>]
+
+[<a href="../../got/feat/Mood.html">got</a>]
+
+[<a href="../../grc/feat/Mood.html">grc</a>]
+
 [<a href="../../he/feat/Mood.html">he</a>]
 
+[<a href="../../hi/feat/Mood.html">hi</a>]
+
+[<a href="../../hr/feat/Mood.html">hr</a>]
+
 [<a href="../../hu/feat/Mood.html">hu</a>]
+
+[<a href="../../id/feat/Mood.html">id</a>]
 
 [<a href="../../it/feat/Mood.html">it</a>]
 
 [<a href="../../ja/feat/Mood.html">ja</a>]
 
+[<a href="../../kk/feat/Mood.html">kk</a>]
+
+[<a href="../../kmr/feat/Mood.html">kmr</a>]
+
 [<a href="../../ko/feat/Mood.html">ko</a>]
+
+[<a href="../../la/feat/Mood.html">la</a>]
+
+[<a href="../../lv/feat/Mood.html">lv</a>]
+
+[<a href="../../mr/feat/Mood.html">mr</a>]
+
+[<a href="../../nl/feat/Mood.html">nl</a>]
+
+[<a href="../../no/feat/Mood.html">no</a>]
+
+[<a href="../../pl/feat/Mood.html">pl</a>]
+
+[<a href="../../pt/feat/Mood.html">pt</a>]
+
+[<a href="../../ro/feat/Mood.html">ro</a>]
+
+[<a href="../../ru/feat/Mood.html">ru</a>]
+
+[<a href="../../sa/feat/Mood.html">sa</a>]
+
+[<a href="../../sk/feat/Mood.html">sk</a>]
+
+[<a href="../../sla/feat/Mood.html">sla</a>]
+
+[<a href="../../sl/feat/Mood.html">sl</a>]
+
+[<a href="../../so/feat/Mood.html">so</a>]
+
+[<a href="../../sr/feat/Mood.html">sr</a>]
 
 [<a href="../../sv/feat/Mood.html">sv</a>]
 
+[<a href="../../swl/feat/Mood.html">swl</a>]
+
+[<a href="../../ta/feat/Mood.html">ta</a>]
+
+[<a href="../../tr/feat/Mood.html">tr</a>]
+
 [<a href="../../u/feat/Mood.html">u</a>]
+
+[<a href="../../ug/feat/Mood.html">ug</a>]
+
+[<a href="../../uk/feat/Mood.html">uk</a>]
+
+[<a href="../../ur/feat/Mood.html">ur</a>]
+
+[<a href="../../urj/feat/Mood.html">urj</a>]
+
+[<a href="../../vi/feat/Mood.html">vi</a>]
+
+[<a href="../../yue/feat/Mood.html">yue</a>]
+
+[<a href="../../zh/feat/Mood.html">zh</a>]
 
 
 

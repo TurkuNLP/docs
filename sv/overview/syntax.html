@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-sv">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sv">home</a></span>
 
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-overview/syntax.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-overview/syntax.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -45,21 +62,28 @@
 
           <h1 id="syntax">Syntax</h1>
 
-<p>The syntactic annotation in the Swedish UD treebank follows the general guidelines but adds four language-specific relations:</p>
+<p>The syntactic annotation in the Swedish UD treebanks follows the general guidelines but adds eight language-specific relations:</p>
 
 <ul>
   <li><em>acl:relcl</em> for relative clauses</li>
+  <li><em>aux:pass</em> for passive auxiliaries</li>
   <li><em>compound:prt</em> for verb particles</li>
-  <li><em>nmod:agent</em> for agents of passive verbs</li>
+  <li><em>csubj:pass</em> for clausal subjects of passive verbs</li>
+  <li><em>flat:name</em> for exocentric complex names</li>
   <li><em>nmod:poss</em> for possessive/genitive modifiers</li>
+  <li><em>nsubj:pass</em> for nominal subjects of passive verbs</li>
+  <li><em>obl:agent</em> for agents of passive verbs</li>
 </ul>
 
-<p>The syntactic annotation has been automatically converted from the original MAMBA annotation scheme in Talbanken. The following phenomena are known to deviate from the general guidelines and will be fixed in future versions:</p>
+<p>The syntactic annotation has been automatically converted from the original annotation schemes (the MAMBA annotation scheme in Talbanken for UD Swedish, and the LinES annotation scheme for UD Swedish-LinES). The conversions have been checked manually and corrected on a systematic basis, but a few minor deviations from the guidelines are known to remain.</p>
 
 <ul>
-  <li>The <em>remnant</em> analysis of ellipsis has not been fully implemented.</li>
-  <li>Complex names with compositional internal structure are annotated in the same way as non-compositional cases.</li>
-  <li>Comparative modifiers are sometimes not attached to the comparative element itself but to its head.</li>
+  <li>For UD Swedish:
+    <ul>
+      <li>Comparative modifiers are sometimes not attached to the comparative element itself but to its head.</li>
+      <li>Absolute constructions are not annotated as clauses but as prepositional phrases with modifiers.</li>
+    </ul>
+  </li>
 </ul>
 
 

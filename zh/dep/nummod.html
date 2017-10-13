@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-zh">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/zh/dep">zh/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_zh-dep/nummod.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-zh">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/zh/dep">zh/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_zh-dep/nummod.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -45,8 +62,38 @@
 
           <h2><code>nummod</code>: numeric modifier</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>nummod</code>.</p>
+<p>A numeric modifier is a modifier that is a numeral word or phrase preceding the noun or noun phrase it modifies. Ordinal numbers such as 第一 / <em>dìyī</em> “first” and 第二 / <em>dìèr</em> “second”, however, should be treated with <code>amod</code> (and tagged <code>ADJ</code>) to conform to UD guidelines.</p>
+
+<p>Numeric modifiers are always attached to the head of the noun phrase.</p>
+
+<pre><code class="language-conllu"># visual-style 4 1 nummod	color:blue
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+1	三	_	NUM	_	_	4	nummod	_	three
+2	個	_	NOUN	_	_	1	clf	_	CL:generic
+3	好	_	ADJ	_	_	4	amod	_	good
+4	警察	_	NOUN	_	_	0	root	_	police
+
+1	"three	_	_	_	_	0	_	_	_
+2	good	_	_	_	_	0	_	_	_
+3	cops"	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 2 1 nummod	color:blue
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+1	五	_	NUM	_	_	2	nummod	_	five
+2	天	_	NOUN	_	_	0	root	_	CL:days
+
+1	"five	_	_	_	_	0	_	_	_
+2	days"	_	_	_	_	0	_	_	_
+
+</code></pre>
 
 
 <!-- "automatic stats" -->
@@ -63,40 +110,40 @@ for <code>nummod</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>6221 nodes (5%) are attached to their parents as <code>nummod</code>.</p>
+<p>5600 nodes (5%) are attached to their parents as <code>nummod</code>.</p>
 
-<p>6185 instances of <code>nummod</code> (99%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.09998392541392.</p>
+<p>5568 instances of <code>nummod</code> (99%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.10464285714286.</p>
 
-<p>The following 16 pairs of parts of speech are connected with <code>nummod</code>: <a href="">zh-pos/NOUN</a>-<a href="">zh-pos/NUM</a> (6083; 98% instances), <a href="">zh-pos/PART</a>-<a href="">zh-pos/NUM</a> (67; 1% instances), <a href="">zh-pos/X</a>-<a href="">zh-pos/NUM</a> (14; 0% instances), <a href="">zh-pos/PROPN</a>-<a href="">zh-pos/NUM</a> (13; 0% instances), <a href="">zh-pos/NUM</a>-<a href="">zh-pos/NUM</a> (11; 0% instances), <a href="">zh-pos/NOUN</a>-<a href="">zh-pos/NOUN</a> (6; 0% instances), <a href="">zh-pos/NOUN</a>-<a href="">zh-pos/ADJ</a> (5; 0% instances), <a href="">zh-pos/VERB</a>-<a href="">zh-pos/NUM</a> (5; 0% instances), <a href="">zh-pos/ADJ</a>-<a href="">zh-pos/NUM</a> (4; 0% instances), <a href="">zh-pos/NOUN</a>-<a href="">zh-pos/X</a> (4; 0% instances), <a href="">zh-pos/NOUN</a>-<a href="">zh-pos/PROPN</a> (2; 0% instances), <a href="">zh-pos/PART</a>-<a href="">zh-pos/PROPN</a> (2; 0% instances), <a href="">zh-pos/PROPN</a>-<a href="">zh-pos/PROPN</a> (2; 0% instances), <a href="">zh-pos/PART</a>-<a href="">zh-pos/NOUN</a> (1; 0% instances), <a href="">zh-pos/SYM</a>-<a href="">zh-pos/NUM</a> (1; 0% instances), <a href="">zh-pos/VERB</a>-<a href="">zh-pos/X</a> (1; 0% instances).</p>
+<p>The following 16 pairs of parts of speech are connected with <code>nummod</code>: <a href="">zh-pos/NOUN</a>-<a href="">zh-pos/NUM</a> (5475; 98% instances), <a href="">zh-pos/PART</a>-<a href="">zh-pos/NUM</a> (61; 1% instances), <a href="">zh-pos/PROPN</a>-<a href="">zh-pos/NUM</a> (12; 0% instances), <a href="">zh-pos/X</a>-<a href="">zh-pos/NUM</a> (12; 0% instances), <a href="">zh-pos/NUM</a>-<a href="">zh-pos/NUM</a> (8; 0% instances), <a href="">zh-pos/NOUN</a>-<a href="">zh-pos/NOUN</a> (6; 0% instances), <a href="">zh-pos/VERB</a>-<a href="">zh-pos/NUM</a> (5; 0% instances), <a href="">zh-pos/ADJ</a>-<a href="">zh-pos/NUM</a> (4; 0% instances), <a href="">zh-pos/NOUN</a>-<a href="">zh-pos/ADJ</a> (4; 0% instances), <a href="">zh-pos/NOUN</a>-<a href="">zh-pos/X</a> (4; 0% instances), <a href="">zh-pos/NOUN</a>-<a href="">zh-pos/PROPN</a> (2; 0% instances), <a href="">zh-pos/PART</a>-<a href="">zh-pos/PROPN</a> (2; 0% instances), <a href="">zh-pos/PROPN</a>-<a href="">zh-pos/PROPN</a> (2; 0% instances), <a href="">zh-pos/PART</a>-<a href="">zh-pos/NOUN</a> (1; 0% instances), <a href="">zh-pos/SYM</a>-<a href="">zh-pos/NUM</a> (1; 0% instances), <a href="">zh-pos/VERB</a>-<a href="">zh-pos/X</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 19	bgColor:blue
 # visual-style 19	fgColor:white
 # visual-style 21	bgColor:blue
 # visual-style 21	fgColor:white
 # visual-style 21 19 nummod	color:blue
-1	數百萬	_	NUM	CD	_	4	det	_	_
-2	的	_	PART	DEC	Case=Gen	1	case:dec	_	_
-3	巧克力	_	NOUN	NN	_	4	case:suff	_	_
-4	棒	_	PART	SFN	_	6	nsubjpass	_	_
-5	被	_	VERB	BB	Voice=Pass	6	auxpass	_	_
-6	撤下	_	VERB	VV	_	18	dep	_	_
-7	櫃檯	_	NOUN	NN	_	6	dobj	_	_
-8	,	_	PUNCT	,	_	18	punct	_	_
-9	而	_	ADV	RB	_	12	mark	_	_
-10	瑪氏	_	PROPN	NNP	_	12	nsubj	_	_
-11	則	_	ADV	RB	_	12	mark	_	_
-12	中斷	_	VERB	VV	_	18	dep	_	_
-13	了	_	PART	AS	Aspect=Perf	12	case:aspect	_	_
-14	生產	_	NOUN	NN	_	12	dobj	_	_
-15	,	_	PUNCT	,	_	18	punct	_	_
-16	公司	_	NOUN	NN	_	17	nmod	_	_
-17	損失	_	NOUN	NN	_	18	nsubj	_	_
-18	達	_	VERB	VV	_	0	root	_	_
-19	四百五十萬	_	NUM	CD	_	21	nummod	_	_
-20	美	_	PROPN	NNP	_	21	nmod	_	_
-21	元	_	NOUN	NNB	_	18	dobj	_	_
-22	.	_	PUNCT	.	_	18	punct	_	_
+1	數百萬	數百萬	NUM	CD	NumType=Card	4	det	_	SpaceAfter=No
+2	的	的	PART	DEC	Case=Gen	1	case:dec	_	SpaceAfter=No
+3	巧克力	巧克力	NOUN	NN	_	4	case:suff	_	SpaceAfter=No
+4	棒	棒	PART	SFN	_	6	nsubj:pass	_	SpaceAfter=No
+5	被	被	VERB	BB	Voice=Pass	6	aux:pass	_	SpaceAfter=No
+6	撤下	撤下	VERB	VV	_	18	dep	_	SpaceAfter=No
+7	櫃檯	櫃檯	NOUN	NN	_	6	obj	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	18	punct	_	SpaceAfter=No
+9	而	而	ADV	RB	_	12	mark	_	SpaceAfter=No
+10	瑪氏	瑪氏	PROPN	NNP	_	12	nsubj	_	SpaceAfter=No
+11	則	則	ADV	RB	_	12	mark	_	SpaceAfter=No
+12	中斷	中斷	VERB	VV	_	18	dep	_	SpaceAfter=No
+13	了	了	PART	AS	Aspect=Perf	12	case:aspect	_	SpaceAfter=No
+14	生產	生產	NOUN	NN	_	12	obj	_	SpaceAfter=No
+15	,	,	PUNCT	,	_	18	punct	_	SpaceAfter=No
+16	公司	公司	NOUN	NN	_	17	nmod	_	SpaceAfter=No
+17	損失	損失	NOUN	NN	_	18	nsubj	_	SpaceAfter=No
+18	達	達	VERB	VV	_	0	root	_	SpaceAfter=No
+19	四百五十萬	四百五十萬	NUM	CD	NumType=Card	21	nummod	_	SpaceAfter=No
+20	美	美	PROPN	NNP	_	21	nmod	_	SpaceAfter=No
+21	元	元	NOUN	NNB	_	18	obj	_	SpaceAfter=No
+22	.	.	PUNCT	.	_	18	punct	_	SpaceAfter=No
 
 </code></pre>
 
@@ -105,59 +152,55 @@ Average distance between parent and child is 1.09998392541392.</p>
 # visual-style 19	bgColor:blue
 # visual-style 19	fgColor:white
 # visual-style 19 17 nummod	color:blue
-1	當	_	ADP	IN	_	6	case	_	_
-2	《	_	PUNCT	(	_	3	punct	_	_
-3	Game	_	X	FW	_	6	nsubj	_	_
-4	Informer	_	X	FW	_	3	foreign	_	_
-5	》	_	PUNCT	)	_	3	punct	_	_
-6	提到	_	VERB	VV	_	15	ccomp	_	_
-7	遊戲	_	NOUN	NN	_	8	nsubj	_	_
-8	在	_	VERB	VV	_	12	acl:relcl	_	_
-9	日本	_	PROPN	NNP	_	8	dobj	_	_
-10	的	_	PART	DEC	Case=Rel	8	acl:relcl	_	_
-11	知名	_	ADJ	JJ	_	12	case:suff	_	_
-12	度	_	PART	SFN	_	6	dobj	_	_
-13	時	_	ADP	IN	_	6	mark	_	_
-14	甚至	_	ADV	RB	_	15	mark	_	_
-15	說	_	VERB	VV	_	0	root	_	_
-16	「	_	PUNCT	``	_	19	punct	_	_
-17	四百萬	_	NUM	CD	_	19	nummod	_	_
-18	日本	_	PROPN	NNP	_	19	case:suff	_	_
-19	人	_	PART	SFN	_	21	nsubj	_	_
-20	可能	_	AUX	MD	_	21	aux	_	_
-21	錯	_	ADJ	JJ	_	15	ccomp	_	_
-22	了	_	X	UH	_	21	discourse	_	_
-23	」	_	PUNCT	''	_	21	punct	_	_
-24	.	_	PUNCT	.	_	15	punct	_	_
+1	當	當	ADP	IN	_	6	case	_	SpaceAfter=No
+2	《	《	PUNCT	(	_	3	punct	_	SpaceAfter=No
+3	Game	Game	X	FW	_	6	nsubj	_	_
+4	Informer	Informer	X	FW	_	3	flat:foreign	_	SpaceAfter=No
+5	》	》	PUNCT	)	_	3	punct	_	SpaceAfter=No
+6	提到	提到	VERB	VV	_	15	ccomp	_	SpaceAfter=No
+7	遊戲	遊戲	NOUN	NN	_	8	nsubj	_	SpaceAfter=No
+8	在	在	VERB	VV	_	12	acl:relcl	_	SpaceAfter=No
+9	日本	日本	PROPN	NNP	_	8	obj	_	SpaceAfter=No
+10	的	的	PART	DEC	_	8	mark:relcl	_	SpaceAfter=No
+11	知名	知名	ADJ	JJ	_	12	case:suff	_	SpaceAfter=No
+12	度	度	PART	SFN	_	6	obj	_	SpaceAfter=No
+13	時	時	ADP	IN	_	6	mark	_	SpaceAfter=No
+14	甚至	甚至	ADV	RB	_	15	mark	_	SpaceAfter=No
+15	說	說	VERB	VV	_	0	root	_	SpaceAfter=No
+16	「	「	PUNCT	``	_	19	punct	_	SpaceAfter=No
+17	四百萬	四百萬	NUM	CD	NumType=Card	19	nummod	_	SpaceAfter=No
+18	日本	日本	PROPN	NNP	_	19	case:suff	_	SpaceAfter=No
+19	人	人	PART	SFN	_	21	nsubj	_	SpaceAfter=No
+20	可能	可能	AUX	MD	_	21	aux	_	SpaceAfter=No
+21	錯	錯	ADJ	JJ	_	15	ccomp	_	SpaceAfter=No
+22	了	了	X	UH	_	21	discourse	_	SpaceAfter=No
+23	」	」	PUNCT	''	_	21	punct	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	15	punct	_	SpaceAfter=No
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 9	bgColor:blue
-# visual-style 9	fgColor:white
-# visual-style 10	bgColor:blue
-# visual-style 10	fgColor:white
-# visual-style 10 9 nummod	color:blue
-1	在	_	ADP	IN	_	2	case	_	_
-2	測試	_	NOUN	NN	_	13	nmod	_	_
-3	中	_	ADP	IN	_	2	acl	_	_
-4	,	_	PUNCT	,	_	13	punct	_	_
-5	最初	_	NOUN	NN	_	6	nmod:tmod	_	_
-6	行駛	_	VERB	VV	_	10	csubj	_	_
-7	時	_	ADP	IN	_	6	mark	_	_
-8	為	_	VERB	VC	_	10	cop	_	_
-9	95	_	NUM	CD	_	10	nummod	_	_
-10	km/h	_	X	FW	_	13	dep	_	_
-11	,	_	PUNCT	,	_	13	punct	_	_
-12	然後	_	ADV	RB	_	13	advmod	_	_
-13	開始	_	VERB	VV	_	0	root	_	_
-14	以	_	ADP	IN	_	18	case	_	_
-15	5	_	NUM	CD	_	16	nummod	_	_
-16	km/h	_	X	FW	_	18	det	_	_
-17	的	_	PART	DEC	Case=Gen	16	case:dec	_	_
-18	速度	_	NOUN	NN	_	20	nmod	_	_
-19	逐漸	_	ADV	RB	_	20	advmod	_	_
-20	提高	_	VERB	VV	_	13	xcomp	_	_
-21	.	_	PUNCT	.	_	13	punct	_	_
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 1 nummod	color:blue
+1	兩	兩	NUM	CD	NumType=Card	2	nummod	_	SpaceAfter=No
+2	鐵	鐵	PROPN	NNP	_	3	nsubj	_	SpaceAfter=No
+3	合併	合併	VERB	VV	_	13	acl	_	SpaceAfter=No
+4	後	後	ADP	IN	_	3	mark	_	SpaceAfter=No
+5	,	,	PUNCT	,	_	13	punct	_	SpaceAfter=No
+6	九鐵	九鐵	PROPN	NNP	_	7	nmod	_	SpaceAfter=No
+7	公司	公司	NOUN	NN	_	13	nsubj	_	SpaceAfter=No
+8	將	將	VERB	BB	Voice=Cau	13	aux:caus	_	SpaceAfter=No
+9	其	其	PRON	PRP	Person=3	12	nmod	_	SpaceAfter=No
+10	物業	物業	NOUN	NN	_	12	nmod	_	SpaceAfter=No
+11	發展	發展	VERB	VV	_	12	case:suff	_	SpaceAfter=No
+12	權	權	PART	SFN	_	13	obj	_	SpaceAfter=No
+13	轉讓	轉讓	VERB	VV	_	0	root	_	SpaceAfter=No
+14	至	至	VERB	VV	_	13	mark	_	SpaceAfter=No
+15	港鐵	港鐵	PROPN	NNP	_	16	nmod	_	SpaceAfter=No
+16	公司	公司	NOUN	NN	_	14	obj	_	SpaceAfter=No
+17	.	.	PUNCT	.	_	13	punct	_	SpaceAfter=No
 
 </code></pre>
 
@@ -169,9 +212,25 @@ Average distance between parent and child is 1.09998392541392.</p>
 
 nummod in other languages:
 
+[<a href="../../am/dep/nummod.html">am</a>]
+
+[<a href="../../ar/dep/nummod.html">ar</a>]
+
 [<a href="../../bg/dep/nummod.html">bg</a>]
 
+[<a href="../../bxr/dep/nummod.html">bxr</a>]
+
+[<a href="../../ca/dep/nummod.html">ca</a>]
+
+[<a href="../../ckb/dep/nummod.html">ckb</a>]
+
+[<a href="../../cop/dep/nummod.html">cop</a>]
+
 [<a href="../../cs/dep/nummod.html">cs</a>]
+
+[<a href="../../cu/dep/nummod.html">cu</a>]
+
+[<a href="../../da/dep/nummod.html">da</a>]
 
 [<a href="../../de/dep/nummod.html">de</a>]
 
@@ -181,29 +240,99 @@ nummod in other languages:
 
 [<a href="../../es/dep/nummod.html">es</a>]
 
+[<a href="../../et/dep/nummod.html">et</a>]
+
 [<a href="../../eu/dep/nummod.html">eu</a>]
 
 [<a href="../../fa/dep/nummod.html">fa</a>]
 
 [<a href="../../fi/dep/nummod.html">fi</a>]
 
+[<a href="../../fo/dep/nummod.html">fo</a>]
+
 [<a href="../../fr/dep/nummod.html">fr</a>]
 
 [<a href="../../ga/dep/nummod.html">ga</a>]
 
+[<a href="../../gl/dep/nummod.html">gl</a>]
+
+[<a href="../../got/dep/nummod.html">got</a>]
+
+[<a href="../../grc/dep/nummod.html">grc</a>]
+
 [<a href="../../he/dep/nummod.html">he</a>]
 
+[<a href="../../hi/dep/nummod.html">hi</a>]
+
+[<a href="../../hr/dep/nummod.html">hr</a>]
+
 [<a href="../../hu/dep/nummod.html">hu</a>]
+
+[<a href="../../id/dep/nummod.html">id</a>]
 
 [<a href="../../it/dep/nummod.html">it</a>]
 
 [<a href="../../ja/dep/nummod.html">ja</a>]
 
+[<a href="../../kk/dep/nummod.html">kk</a>]
+
+[<a href="../../kmr/dep/nummod.html">kmr</a>]
+
 [<a href="../../ko/dep/nummod.html">ko</a>]
+
+[<a href="../../la/dep/nummod.html">la</a>]
+
+[<a href="../../lv/dep/nummod.html">lv</a>]
+
+[<a href="../../mr/dep/nummod.html">mr</a>]
+
+[<a href="../../nl/dep/nummod.html">nl</a>]
+
+[<a href="../../no/dep/nummod.html">no</a>]
+
+[<a href="../../pl/dep/nummod.html">pl</a>]
+
+[<a href="../../pt/dep/nummod.html">pt</a>]
+
+[<a href="../../ro/dep/nummod.html">ro</a>]
+
+[<a href="../../ru/dep/nummod.html">ru</a>]
+
+[<a href="../../sa/dep/nummod.html">sa</a>]
+
+[<a href="../../sk/dep/nummod.html">sk</a>]
+
+[<a href="../../sla/dep/nummod.html">sla</a>]
+
+[<a href="../../sl/dep/nummod.html">sl</a>]
+
+[<a href="../../so/dep/nummod.html">so</a>]
+
+[<a href="../../sr/dep/nummod.html">sr</a>]
 
 [<a href="../../sv/dep/nummod.html">sv</a>]
 
+[<a href="../../swl/dep/nummod.html">swl</a>]
+
+[<a href="../../ta/dep/nummod.html">ta</a>]
+
+[<a href="../../tr/dep/nummod.html">tr</a>]
+
 [<a href="../../u/dep/nummod.html">u</a>]
+
+[<a href="../../ug/dep/nummod.html">ug</a>]
+
+[<a href="../../uk/dep/nummod.html">uk</a>]
+
+[<a href="../../ur/dep/nummod.html">ur</a>]
+
+[<a href="../../urj/dep/nummod.html">urj</a>]
+
+[<a href="../../vi/dep/nummod.html">vi</a>]
+
+[<a href="../../yue/dep/nummod.html">yue</a>]
+
+[<a href="../../zh/dep/nummod.html">zh</a>]
 
 
 

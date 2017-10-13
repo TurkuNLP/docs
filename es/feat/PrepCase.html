@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-es">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/es/feat">es/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_es-feat/PrepCase.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-es">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/es/feat">es/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_es-feat/PrepCase.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -65,22 +82,22 @@ for <code>PrepCase</code>.</p>
 <p>This feature is language-specific.
 It occurs with 2 different values: <code>Npr</code>, <code>Pre</code>.</p>
 
-<p>8289 tokens (2%) have a non-empty value of <code>PrepCase</code>.
-25 types (0%) occur at least once with a non-empty value of <code>PrepCase</code>.
-4 lemmas (0%) occur at least once with a non-empty value of <code>PrepCase</code>.
-The feature is used with 2 part-of-speech tags: <a href="">es-pos/PRON</a> (8287; 2% instances), <a href="">es-pos/DET</a> (2; 0% instances).</p>
+<p>8009 tokens (2%) have a non-empty value of <code>PrepCase</code>.
+24 types (0%) occur at least once with a non-empty value of <code>PrepCase</code>.
+3 lemmas (0%) occur at least once with a non-empty value of <code>PrepCase</code>.
+The feature is used with 2 part-of-speech tags: <a href="">es-pos/PRON</a> (8007; 2% instances), <a href="">es-pos/DET</a> (2; 0% instances).</p>
 
 <h3 id="pron"><code>PRON</code></h3>
 
-<p>8287 <a href="">es-pos/PRON</a> tokens (59% of all <code>PRON</code> tokens) have a non-empty value of <code>PrepCase</code>.</p>
+<p>8007 <a href="">es-pos/PRON</a> tokens (59% of all <code>PRON</code> tokens) have a non-empty value of <code>PrepCase</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>PrepCase</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (8257; 100%), <tt><a href="Person.html">Person</a>=3</tt> (7456; 90%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (6107; 74%), <tt><a href="Case.html">Case</a>=Acc,Dat</tt> (6068; 73%), <tt><a href="Reflex.html">Reflex</a>=Yes</tt> (5390; 65%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (5291; 64%).</p>
+<p>The most frequent other feature values with which <code>PRON</code> and <code>PrepCase</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (7978; 100%), <tt><a href="Person.html">Person</a>=3</tt> (7216; 90%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (5927; 74%), <tt><a href="Case.html">Case</a>=Acc,Dat</tt> (5887; 74%), <tt><a href="Reflex.html">Reflex</a>=Yes</tt> (5243; 65%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (5149; 64%).</p>
 
 <p><code>PRON</code> tokens may have the following values of <code>PrepCase</code>:</p>
 
 <ul>
-  <li><code>Npr</code> (8233; 99% of non-empty <code>PrepCase</code>): <em>se, lo, la, me, los, nos, te, las, os</em></li>
-  <li><code>Pre</code> (54; 1% of non-empty <code>PrepCase</code>): <em>sí, mí, ti</em></li>
+  <li><code>Npr</code> (7954; 99% of non-empty <code>PrepCase</code>): <em>se, lo, la, me, los, nos, te, las, os</em></li>
+  <li><code>Pre</code> (53; 1% of non-empty <code>PrepCase</code>): <em>sí, mí, ti</em></li>
 </ul>
 
 <table>
@@ -108,7 +125,7 @@ The feature is used with 2 part-of-speech tags: <a href="">es-pos/PRON</a> (8287
 <h2 id="relations-with-agreement-in-prepcase">Relations with Agreement in <code>PrepCase</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>PrepCase</code>:
-<tt>PRON –[<a href="../dep/conj.html">conj</a>]–&gt; PRON</tt> (8; 67%),
+<tt>PRON –[<a href="../dep/conj.html">conj</a>]–&gt; PRON</tt> (7; 64%),
 <tt>PRON –[<a href="../dep/dep.html">dep</a>]–&gt; PRON</tt> (1; 100%).</p>
 
 <hr />
@@ -118,21 +135,21 @@ The feature is used with 2 part-of-speech tags: <a href="">es-pos/PRON</a> (8287
 <p>This feature is language-specific.
 It occurs with 1 different values: <code>Pre</code>.</p>
 
-<p>129 tokens (0%) have a non-empty value of <code>PrepCase</code>.
+<p>115 tokens (0%) have a non-empty value of <code>PrepCase</code>.
 7 types (0%) occur at least once with a non-empty value of <code>PrepCase</code>.
 5 lemmas (0%) occur at least once with a non-empty value of <code>PrepCase</code>.
-The feature is used with 1 part-of-speech tags: <a href="">es-pos/PRON</a> (129; 0% instances).</p>
+The feature is used with 1 part-of-speech tags: <a href="">es-pos/PRON</a> (115; 0% instances).</p>
 
 <h3 id="pron-1"><code>PRON</code></h3>
 
-<p>129 <a href="">es-pos/PRON</a> tokens (1% of all <code>PRON</code> tokens) have a non-empty value of <code>PrepCase</code>.</p>
+<p>115 <a href="">es-pos/PRON</a> tokens (1% of all <code>PRON</code> tokens) have a non-empty value of <code>PrepCase</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>PrepCase</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (129; 100%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (129; 100%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (129; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (74; 57%).</p>
+<p>The most frequent other feature values with which <code>PRON</code> and <code>PrepCase</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (115; 100%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (115; 100%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (115; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (66; 57%).</p>
 
 <p><code>PRON</code> tokens may have the following values of <code>PrepCase</code>:</p>
 
 <ul>
-  <li><code>Pre</code> (129; 100% of non-empty <code>PrepCase</code>): <em>mí, sí, ti, conmigo, consigo, contigo, mi</em></li>
+  <li><code>Pre</code> (115; 100% of non-empty <code>PrepCase</code>): <em>mí, sí, ti, conmigo, consigo, contigo, mi</em></li>
 </ul>
 
 
@@ -140,6 +157,19 @@ The feature is used with 1 part-of-speech tags: <a href="">es-pos/PRON</a> (129;
 
 <!-- "in other languages" links -->
 <hr/>
+
+PrepCase in other languages:
+
+[<a href="../../ca/feat/PrepCase.html">ca</a>]
+
+[<a href="../../cs/feat/PrepCase.html">cs</a>]
+
+[<a href="../../es/feat/PrepCase.html">es</a>]
+
+[<a href="../../pl/feat/PrepCase.html">pl</a>]
+
+[<a href="../../pt/feat/PrepCase.html">pt</a>]
+
 
 
 

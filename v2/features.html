@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../css/hint.css"/>
     <script type="text/javascript" src="../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-v2">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/v2/v2">v2/v2</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_v2/features.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-v2">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/v2/v2">v2/v2</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_v2/features.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -48,7 +65,7 @@
 <p>We propose for v2:</p>
 
 <ul>
-  <li>Rename <a href="">u-feat/Negative</a> to <code>Polarity</code> and rename individual values of <code>Aspect</code>, <code>VerbForm</code> and <code>Definite</code>.</li>
+  <li>Rename <code>Negative</code> to <a href="">u-feat/Polarity</a> and rename individual values of <code>Aspect</code>, <code>VerbForm</code> and <code>Definite</code>.</li>
   <li>Remove <code>Tense=Nar</code> (but keep the other values of <a href="">u-feat/Tense</a>).</li>
   <li>For a number of existing features, add new values that may be or have already been needed in some languages.</li>
   <li>Add four new features to the universal set of features: evidentiality, politeness, abbreviation and foreign.</li>
@@ -72,7 +89,7 @@
 <ul>
   <li><a href="">u-feat/Aspect</a>: values <code>Pro</code> (prospective, used in Basque) and <code>Prog</code> (progressive, used in Basque, Turkish and Chinese) are highly confusing.
 I propose to change the prospective value to <code>Aspect=Prosp</code>, following the label used in UniMorph.</li>
-  <li><a href="">u-feat/Negative</a>: current proposal – rename the feature to <code>Polarity</code> (and keep values <code>Pos</code> and <code>Neg</code>).
+  <li><code>Negative</code>: current proposal – rename the feature to <a href="">u-feat/Polarity</a> (and keep values <code>Pos</code> and <code>Neg</code>).
 Another option would be to keep the name but use only one value <code>Yes</code> because positive polarity is rarely marked morphologically.
 <code>Negative=Pos</code> looks weird and it probably just marks words that can take the negative morpheme but do not have it in the given form.
 Nevertheless, <code>Negative=Pos</code> is currently used in 13 treebanks so we probably want to keep it but rename the feature to <code>Polarity</code>.</li>
@@ -86,7 +103,6 @@ from each other, but at least Spanish has the term <em>gerundio</em> as its own,
 More neutral terms are adverbial participle or <em>converb</em> (Haspelmath, 1995), so I propose to relabel these forms <code>VerbForm=Conv</code>.</li>
   <li><a href="">u-feat/Definite</a>: rename <code>Red</code> (reduced) to <code>Cons</code> (construct state); see the
 <a href="http://github.com/UniversalDependencies/docs/issues/135">issue 135</a> for related discussion.</li>
-  <li><a href="">u-feat/NumType</a>: Remove <code>NumType=Gen</code>, replace it by a narrower (and positively-defined) <code>NumType=Fold</code> for adjectival numerals like [cs] <em>dvojí, trojí</em> “twofold, threefold”.</li>
   <li>TO DISCUSS: What is <code>NumType=Pers</code> in Irish? (Defined but not used.)</li>
 </ul>
 
@@ -177,7 +193,7 @@ Verb stems also occur regularly in Hindi but they have the function of adverbial
   </li>
   <li><a href="">u-feat/Mood</a>
     <ul>
-      <li>Add <code>Mood=Purp</code> (purposive, means “in order to”). Occurs in Amazonian languages; proposed in UniMorph.</li>
+      <li>Add <code>Mood=Prp</code> (purposive, means “in order to”). Occurs in Amazonian languages; proposed in UniMorph.</li>
       <li>TO DISCUSS: Add <code>Mood=Int</code> (intentive, indicates that the speaker strongly intents for the action of the verb to be realized). Occurs in Tonkawa; proposed in UniMorph.</li>
       <li>TO DISCUSS: <code>Mood=Int</code> in Irish (what does it mean? Interrogative?)</li>
       <li>TO DISCUSS: <code>Mood=Inter</code> in Chinese (what does it mean?)</li>
@@ -249,6 +265,11 @@ determiners are recruited from the set of interrogative determiners. Therefore, 
       <li>NOTE: The Italian data in UD v1 contain three additional values of <a href="it-feat/PronType">Italian</a>: <code>Clit</code>, <code>Predet</code> and <code>Ord</code>.
 We do not propose to adopt these values as universal in UD v2. We propose to change the Italian guidelines so that these values
 are no longer needed. See <a href="http://github.com/UniversalDependencies/docs/issues/353">Issue 353</a> for details.</li>
+    </ul>
+  </li>
+  <li><a href="">u-feat/NumType</a>
+    <ul>
+      <li>Remove <code>NumType=Gen</code>, it is poorely defined as a garbage can, some of the words should actually be cardinals, some are better classified as <code>NumType=Mult</code>.</li>
     </ul>
   </li>
   <li><a href="">u-feat/Person</a>

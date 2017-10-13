@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-hr">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/hr/dep">hr/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_hr-dep/foreign.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-hr">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/hr/dep">hr/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hr-dep/foreign.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -56,90 +73,30 @@ for <code>foreign</code>.</p>
 
 
 
-
-<hr />
-
-<h2 id="treebank-statistics-udcroatian">Treebank Statistics (UD_Croatian)</h2>
-
-<p>This relation is universal.</p>
-
-<p>54 nodes (0%) are attached to their parents as <code>foreign</code>.</p>
-
-<p>28 instances of <code>foreign</code> (52%) are left-to-right (parent precedes child).
-Average distance between parent and child is 1.85185185185185.</p>
-
-<p>The following 8 pairs of parts of speech are connected with <code>foreign</code>: <a href="">hr-pos/ADP</a>-<a href="">hr-pos/ADP</a> (35; 65% instances), <a href="">hr-pos/PROPN</a>-<a href="">hr-pos/PROPN</a> (6; 11% instances), <a href="">hr-pos/NOUN</a>-<a href="">hr-pos/ADP</a> (5; 9% instances), <a href="">hr-pos/X</a>-<a href="">hr-pos/X</a> (4; 7% instances), <a href="">hr-pos/ADP</a>-<a href="">hr-pos/PROPN</a> (1; 2% instances), <a href="">hr-pos/NOUN</a>-<a href="">hr-pos/X</a> (1; 2% instances), <a href="">hr-pos/PROPN</a>-<a href="">hr-pos/ADP</a> (1; 2% instances), <a href="">hr-pos/VERB</a>-<a href="">hr-pos/X</a> (1; 2% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 5 4 foreign	color:blue
-1	Klape	Klape	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	_
-2	pjevaju	pjevati	VERB	_	Number=Plur|Person=3|Tense=Pres	0	root	_	_
-3	u	u	ADP	_	Case=Loc	6	case	_	_
-4	a	a	ADP	_	_	5	foreign	_	_
-5	capella	capella	ADP	_	_	6	foreign	_	_
-6	formi	forma	NOUN	_	Case=Loc|Gender=Fem|Number=Sing	2	nmod	_	_
-7	bez	bez	ADP	_	Case=Gen	9	case	_	_
-8	instrumentalne	instrumentalan	ADJ	_	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	9	amod	_	_
-9	pratnje	pratnja	NOUN	_	Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	_
-10	.	.	PUNCT	_	_	2	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 8	bgColor:blue
-# visual-style 8	fgColor:white
-# visual-style 9	bgColor:blue
-# visual-style 9	fgColor:white
-# visual-style 9 8 foreign	color:blue
-1	SZO	SZO	PROPN	_	Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	_
-2	je	biti	AUX	_	Number=Sing|Person=3|Tense=Pres	3	cop	_	_
-3	nasljednica	nasljednica	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
-4	Zdravstvene	zdravstven	ADJ	_	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	5	compound	_	_
-5	organizacije	organizacija	NOUN	_	Case=Gen|Gender=Fem|Number=Sing	3	nmod	_	_
-6	(	(	PUNCT	_	_	9	punct	_	_
-7	engleski	engleski	ADV	_	Degree=Pos	9	advmod	_	_
-8	Health	health	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	9	foreign	_	_
-9	Organisation	Organisation	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	5	appos	_	_
-10	)	)	PUNCT	_	_	9	punct	_	_
-11	,	,	PUNCT	_	_	12	punct	_	_
-12	agencije	agencija	NOUN	_	Case=Gen|Gender=Fem|Number=Sing	5	appos	_	_
-13	Lige	liga	NOUN	_	Case=Gen|Gender=Fem|Number=Sing	12	nmod	_	_
-14	naroda	narod	NOUN	_	Case=Gen|Gender=Masc|Number=Plur	13	compound	_	_
-15	.	.	PUNCT	_	_	3	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 6 5 foreign	color:blue
-1	Klape	Klape	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	_
-2	pjevaju	pjevati	VERB	_	Number=Plur|Person=3|Tense=Pres	0	root	_	_
-3	u	u	ADP	_	Case=Loc	6	case	_	_
-4	a	a	ADP	_	_	5	foreign	_	_
-5	capella	capella	ADP	_	_	6	foreign	_	_
-6	formi	forma	NOUN	_	Case=Loc|Gender=Fem|Number=Sing	2	nmod	_	_
-7	bez	bez	ADP	_	Case=Gen	9	case	_	_
-8	instrumentalne	instrumentalan	ADJ	_	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	9	amod	_	_
-9	pratnje	pratnja	NOUN	_	Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	_
-10	.	.	PUNCT	_	_	2	punct	_	_
-
-</code></pre>
-
-
-
-
 <!-- "in other languages" links -->
 <hr/>
 
 foreign in other languages:
 
+[<a href="../../am/dep/foreign.html">am</a>]
+
+[<a href="../../ar/dep/foreign.html">ar</a>]
+
 [<a href="../../bg/dep/foreign.html">bg</a>]
 
+[<a href="../../bxr/dep/foreign.html">bxr</a>]
+
+[<a href="../../ca/dep/foreign.html">ca</a>]
+
+[<a href="../../ckb/dep/foreign.html">ckb</a>]
+
+[<a href="../../cop/dep/foreign.html">cop</a>]
+
 [<a href="../../cs/dep/foreign.html">cs</a>]
+
+[<a href="../../cu/dep/foreign.html">cu</a>]
+
+[<a href="../../da/dep/foreign.html">da</a>]
 
 [<a href="../../de/dep/foreign.html">de</a>]
 
@@ -149,29 +106,97 @@ foreign in other languages:
 
 [<a href="../../es/dep/foreign.html">es</a>]
 
+[<a href="../../et/dep/foreign.html">et</a>]
+
 [<a href="../../eu/dep/foreign.html">eu</a>]
 
 [<a href="../../fa/dep/foreign.html">fa</a>]
 
 [<a href="../../fi/dep/foreign.html">fi</a>]
 
+[<a href="../../fo/dep/foreign.html">fo</a>]
+
 [<a href="../../fr/dep/foreign.html">fr</a>]
 
 [<a href="../../ga/dep/foreign.html">ga</a>]
 
+[<a href="../../gl/dep/foreign.html">gl</a>]
+
+[<a href="../../got/dep/foreign.html">got</a>]
+
+[<a href="../../grc/dep/foreign.html">grc</a>]
+
 [<a href="../../he/dep/foreign.html">he</a>]
 
+[<a href="../../hi/dep/foreign.html">hi</a>]
+
+[<a href="../../hr/dep/foreign.html">hr</a>]
+
 [<a href="../../hu/dep/foreign.html">hu</a>]
+
+[<a href="../../id/dep/foreign.html">id</a>]
 
 [<a href="../../it/dep/foreign.html">it</a>]
 
 [<a href="../../ja/dep/foreign.html">ja</a>]
 
+[<a href="../../kk/dep/foreign.html">kk</a>]
+
+[<a href="../../kmr/dep/foreign.html">kmr</a>]
+
 [<a href="../../ko/dep/foreign.html">ko</a>]
+
+[<a href="../../la/dep/foreign.html">la</a>]
+
+[<a href="../../lv/dep/foreign.html">lv</a>]
+
+[<a href="../../mr/dep/foreign.html">mr</a>]
+
+[<a href="../../nl/dep/foreign.html">nl</a>]
+
+[<a href="../../no/dep/foreign.html">no</a>]
+
+[<a href="../../pl/dep/foreign.html">pl</a>]
+
+[<a href="../../pt/dep/foreign.html">pt</a>]
+
+[<a href="../../ro/dep/foreign.html">ro</a>]
+
+[<a href="../../ru/dep/foreign.html">ru</a>]
+
+[<a href="../../sa/dep/foreign.html">sa</a>]
+
+[<a href="../../sk/dep/foreign.html">sk</a>]
+
+[<a href="../../sla/dep/foreign.html">sla</a>]
+
+[<a href="../../sl/dep/foreign.html">sl</a>]
+
+[<a href="../../so/dep/foreign.html">so</a>]
+
+[<a href="../../sr/dep/foreign.html">sr</a>]
 
 [<a href="../../sv/dep/foreign.html">sv</a>]
 
-[<a href="../../u/dep/foreign.html">u</a>]
+[<a href="../../swl/dep/foreign.html">swl</a>]
+
+[<a href="../../ta/dep/foreign.html">ta</a>]
+
+[<a href="../../tr/dep/foreign.html">tr</a>]
+
+[<a href="../../ug/dep/foreign.html">ug</a>]
+
+[<a href="../../uk/dep/foreign.html">uk</a>]
+
+[<a href="../../ur/dep/foreign.html">ur</a>]
+
+[<a href="../../urj/dep/foreign.html">urj</a>]
+
+[<a href="../../vi/dep/foreign.html">vi</a>]
+
+[<a href="../../yue/dep/foreign.html">yue</a>]
+
+[<a href="../../zh/dep/foreign.html">zh</a>]
 
 
 

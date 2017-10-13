@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-it">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/it/pos">it/pos</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_it-pos/PART.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-it">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/it/pos">it/pos</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_it-pos/PART.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -77,7 +94,7 @@ adverb. See <a href="">ADV</a>.</p>
 
 <h2 id="treebank-statistics-uditalian">Treebank Statistics (UD_Italian)</h2>
 
-<p>There are 1 <code>PART</code> lemmas (0%), 1 <code>PART</code> types (0%) and 4 <code>PART</code> tokens (0%).
+<p>There are 1 <code>PART</code> lemmas (0%), 1 <code>PART</code> types (0%) and 26 <code>PART</code> tokens (0%).
 Out of 17 observed tags, the rank of <code>PART</code> is: 17 in number of lemmas, 17 in number of types and 17 in number of tokens.</p>
 
 <p>The 10 most frequent <code>PART</code> lemmas: <em>’s</em></p>
@@ -90,7 +107,7 @@ Out of 17 observed tags, the rank of <code>PART</code> is: 17 in number of lemma
 
 <h2 id="morphology">Morphology</h2>
 
-<p>The form / lemma ratio of <code>PART</code> is 1.000000 (the average of all parts of speech is 1.488836).</p>
+<p>The form / lemma ratio of <code>PART</code> is 1.000000 (the average of all parts of speech is 1.485733).</p>
 
 <p>The 1st highest number of forms (1) was observed with the lemma “’s”: <em>’s</em>.</p>
 
@@ -98,11 +115,11 @@ Out of 17 observed tags, the rank of <code>PART</code> is: 17 in number of lemma
 
 <h2 id="relations">Relations</h2>
 
-<p><code>PART</code> nodes are attached to their parents using 1 different relations: <a href="">it-dep/name</a> (4; 100% instances)</p>
+<p><code>PART</code> nodes are attached to their parents using 1 different relations: <a href="">it-dep/case</a> (26; 100% instances)</p>
 
-<p>Parents of <code>PART</code> nodes belong to 1 different parts of speech: <a href="">PROPN</a> (4; 100% instances)</p>
+<p>Parents of <code>PART</code> nodes belong to 2 different parts of speech: <a href="">PROPN</a> (24; 92% instances), <a href="">NOUN</a> (2; 8% instances)</p>
 
-<p>4 (100%) <code>PART</code> nodes are leaves.</p>
+<p>26 (100%) <code>PART</code> nodes are leaves.</p>
 
 <p>The highest child degree of a <code>PART</code> node is 0.</p>
 
@@ -114,9 +131,25 @@ Out of 17 observed tags, the rank of <code>PART</code> is: 17 in number of lemma
 
 PART in other languages:
 
+[<a href="../../am/pos/PART.html">am</a>]
+
+[<a href="../../ar/pos/PART.html">ar</a>]
+
 [<a href="../../bg/pos/PART.html">bg</a>]
 
+[<a href="../../bxr/pos/PART.html">bxr</a>]
+
+[<a href="../../ca/pos/PART.html">ca</a>]
+
+[<a href="../../ckb/pos/PART.html">ckb</a>]
+
+[<a href="../../cop/pos/PART.html">cop</a>]
+
 [<a href="../../cs/pos/PART.html">cs</a>]
+
+[<a href="../../cu/pos/PART.html">cu</a>]
+
+[<a href="../../da/pos/PART.html">da</a>]
 
 [<a href="../../de/pos/PART.html">de</a>]
 
@@ -126,29 +159,99 @@ PART in other languages:
 
 [<a href="../../es/pos/PART.html">es</a>]
 
+[<a href="../../et/pos/PART.html">et</a>]
+
 [<a href="../../eu/pos/PART.html">eu</a>]
 
 [<a href="../../fa/pos/PART.html">fa</a>]
 
 [<a href="../../fi/pos/PART.html">fi</a>]
 
+[<a href="../../fo/pos/PART.html">fo</a>]
+
 [<a href="../../fr/pos/PART.html">fr</a>]
 
 [<a href="../../ga/pos/PART.html">ga</a>]
 
+[<a href="../../gl/pos/PART.html">gl</a>]
+
+[<a href="../../got/pos/PART.html">got</a>]
+
+[<a href="../../grc/pos/PART.html">grc</a>]
+
 [<a href="../../he/pos/PART.html">he</a>]
 
+[<a href="../../hi/pos/PART.html">hi</a>]
+
+[<a href="../../hr/pos/PART.html">hr</a>]
+
 [<a href="../../hu/pos/PART.html">hu</a>]
+
+[<a href="../../id/pos/PART.html">id</a>]
 
 [<a href="../../it/pos/PART.html">it</a>]
 
 [<a href="../../ja/pos/PART.html">ja</a>]
 
+[<a href="../../kk/pos/PART.html">kk</a>]
+
+[<a href="../../kmr/pos/PART.html">kmr</a>]
+
 [<a href="../../ko/pos/PART.html">ko</a>]
+
+[<a href="../../la/pos/PART.html">la</a>]
+
+[<a href="../../lv/pos/PART.html">lv</a>]
+
+[<a href="../../mr/pos/PART.html">mr</a>]
+
+[<a href="../../nl/pos/PART.html">nl</a>]
+
+[<a href="../../no/pos/PART.html">no</a>]
+
+[<a href="../../pl/pos/PART.html">pl</a>]
+
+[<a href="../../pt/pos/PART.html">pt</a>]
+
+[<a href="../../ro/pos/PART.html">ro</a>]
+
+[<a href="../../ru/pos/PART.html">ru</a>]
+
+[<a href="../../sa/pos/PART.html">sa</a>]
+
+[<a href="../../sk/pos/PART.html">sk</a>]
+
+[<a href="../../sla/pos/PART.html">sla</a>]
+
+[<a href="../../sl/pos/PART.html">sl</a>]
+
+[<a href="../../so/pos/PART.html">so</a>]
+
+[<a href="../../sr/pos/PART.html">sr</a>]
 
 [<a href="../../sv/pos/PART.html">sv</a>]
 
+[<a href="../../swl/pos/PART.html">swl</a>]
+
+[<a href="../../ta/pos/PART.html">ta</a>]
+
+[<a href="../../tr/pos/PART.html">tr</a>]
+
+[<a href="../../ug/pos/PART.html">ug</a>]
+
+[<a href="../../uk/pos/PART.html">uk</a>]
+
 [<a href="../../u/pos/PART.html">u</a>]
+
+[<a href="../../urj/pos/PART.html">urj</a>]
+
+[<a href="../../ur/pos/PART.html">ur</a>]
+
+[<a href="../../vi/pos/PART.html">vi</a>]
+
+[<a href="../../yue/pos/PART.html">yue</a>]
+
+[<a href="../../zh/pos/PART.html">zh</a>]
 
 
 

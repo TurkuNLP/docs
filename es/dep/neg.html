@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-es">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/es/dep">es/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_es-dep/neg.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-es">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/es/dep">es/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_es-dep/neg.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -64,146 +81,30 @@ neg(llueve, Nunca)
 
 
 
-
-<hr />
-
-<h2 id="treebank-statistics-udspanish">Treebank Statistics (UD_Spanish)</h2>
-
-<p>This relation is universal.</p>
-
-<p>1765 nodes (0%) are attached to their parents as <code>neg</code>.</p>
-
-<p>1760 instances of <code>neg</code> (100%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.51614730878187.</p>
-
-<p>The following 19 pairs of parts of speech are connected with <code>neg</code>: <a href="">es-pos/VERB</a>-<a href="">es-pos/ADV</a> (1596; 90% instances), <a href="">es-pos/NOUN</a>-<a href="">es-pos/ADV</a> (38; 2% instances), <a href="">es-pos/ADV</a>-<a href="">es-pos/ADV</a> (36; 2% instances), <a href="">es-pos/ADJ</a>-<a href="">es-pos/ADV</a> (31; 2% instances), <a href="">es-pos/VERB</a>-<a href="">es-pos/CONJ</a> (14; 1% instances), <a href="">es-pos/NOUN</a>-<a href="">es-pos/CONJ</a> (13; 1% instances), <a href="">es-pos/AUX</a>-<a href="">es-pos/ADV</a> (8; 0% instances), <a href="">es-pos/PRON</a>-<a href="">es-pos/ADV</a> (7; 0% instances), <a href="">es-pos/PROPN</a>-<a href="">es-pos/PROPN</a> (6; 0% instances), <a href="">es-pos/PROPN</a>-<a href="">es-pos/ADV</a> (5; 0% instances), <a href="">es-pos/VERB</a>-<a href="">es-pos/PROPN</a> (2; 0% instances), <a href="">es-pos/X</a>-<a href="">es-pos/X</a> (2; 0% instances), <a href="">es-pos/ADV</a>-<a href="">es-pos/CONJ</a> (1; 0% instances), <a href="">es-pos/CONJ</a>-<a href="">es-pos/ADV</a> (1; 0% instances), <a href="">es-pos/DET</a>-<a href="">es-pos/ADV</a> (1; 0% instances), <a href="">es-pos/NOUN</a>-<a href="">es-pos/ADJ</a> (1; 0% instances), <a href="">es-pos/SCONJ</a>-<a href="">es-pos/ADP</a> (1; 0% instances), <a href="">es-pos/VERB</a>-<a href="">es-pos/PRON</a> (1; 0% instances), <a href="">es-pos/VERB</a>-<a href="">es-pos/X</a> (1; 0% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 2 1 neg	color:blue
-1	No	no	ADV	_	_	2	neg	_	_
-2	tiene	tener	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	cura	cura	NOUN	_	Gender=Fem|Number=Sing	2	dobj	_	_
-4	conocida	conocido	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	3	amod	_	_
-5	,	,	PUNCT	_	_	2	punct	_	_
-6	y	y	CONJ	_	_	2	cc	_	_
-7	frecuentemente	frecuentemente	ADV	_	_	8	advmod	_	_
-8	desemboca	desembocar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
-9	en	en	ADP	_	_	11	case	_	_
-10	la	el	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-11	muerte	muerte	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_
-12	.	.	PUNCT	_	_	2	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 4 2 neg	color:blue
-1	Los	el	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
-2	no	no	ADV	_	_	4	neg	_	_
-3	-	-	PUNCT	_	_	4	punct	_	_
-4	lugares	lugar	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	_	_
-5	están	estar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
-6	muy	mucho	ADV	_	_	7	advmod	_	_
-7	presentes	presente	ADJ	_	Number=Plur	0	root	_	_
-8	en	en	ADP	_	_	10	case	_	_
-9	la	el	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-10	obra	obra	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_
-11	de	de	ADP	_	_	14	case	_	_
-12	J.	j.	X	_	_	14	compound	_	_
-13	G.	g.	X	_	Gender=Masc|Number=Sing	14	compound	_	_
-14	Ballard	ballard	PROPN	_	_	10	nmod	_	_
-15	.	.	PUNCT	_	_	7	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 6 5 neg	color:blue
-1	No	no	ADV	_	_	4	neg	_	_
-2	vuelvo	volver	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	aux	_	_
-3	a	a	ADP	_	_	2	mwe	_	_
-4	ir	ir	VERB	_	VerbForm=Inf	0	root	_	_
-5	ni	ni	ADV	_	_	6	neg	_	_
-6	gratis	gratis	ADV	_	_	4	advmod	_	_
-7	.	.	PUNCT	_	_	4	punct	_	_
-
-</code></pre>
-
-<hr />
-
-<h2 id="treebank-statistics-udspanish-ancora">Treebank Statistics (UD_Spanish-AnCora)</h2>
-
-<p>This relation is universal.</p>
-
-<p>3521 nodes (1%) are attached to their parents as <code>neg</code>.</p>
-
-<p>3465 instances of <code>neg</code> (98%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.87049133768816.</p>
-
-<p>The following 14 pairs of parts of speech are connected with <code>neg</code>: <a href="">es-pos/VERB</a>-<a href="">es-pos/ADV</a> (2623; 74% instances), <a href="">es-pos/ADJ</a>-<a href="">es-pos/ADV</a> (358; 10% instances), <a href="">es-pos/NOUN</a>-<a href="">es-pos/ADV</a> (247; 7% instances), <a href="">es-pos/AUX</a>-<a href="">es-pos/ADV</a> (154; 4% instances), <a href="">es-pos/PRON</a>-<a href="">es-pos/ADV</a> (58; 2% instances), <a href="">es-pos/ADV</a>-<a href="">es-pos/ADV</a> (34; 1% instances), <a href="">es-pos/ADP</a>-<a href="">es-pos/ADV</a> (14; 0% instances), <a href="">es-pos/PROPN</a>-<a href="">es-pos/ADV</a> (12; 0% instances), <a href="">es-pos/PROPN</a>-<a href="">es-pos/PART</a> (8; 0% instances), <a href="">es-pos/DET</a>-<a href="">es-pos/ADV</a> (7; 0% instances), <a href="">es-pos/NOUN</a>-<a href="">es-pos/PART</a> (3; 0% instances), <a href="">es-pos/CONJ</a>-<a href="">es-pos/ADV</a> (1; 0% instances), <a href="">es-pos/NUM</a>-<a href="">es-pos/ADV</a> (1; 0% instances), <a href="">es-pos/SYM</a>-<a href="">es-pos/ADV</a> (1; 0% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 2 1 neg	color:blue
-1	No	no	ADV	ADV	Negative=Neg	2	neg	_	_
-2	pudiste	poder	VERB	VERB	Mood=Ind|Number=Sing|Person=2|Tense=Past|VerbForm=Fin	0	root	_	_
-3	,	,	PUNCT	PUNCT	PunctType=Comm	2	punct	_	_
-4	pero	pero	CONJ	CONJ	_	2	cc	_	_
-5	nos	yo	PRON	PRON	Number=Plur|Person=1|PronType=Prs	6	dobj	_	_
-6	dio	dar	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
-7	igual	igual	ADV	ADV	_	6	advmod	_	_
-8	.	.	PUNCT	PUNCT	PunctType=Peri	2	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 4 2 neg	color:blue
-1	Y	y	CONJ	CONJ	_	4	advmod	_	_
-2	no	no	ADV	ADV	Negative=Neg	4	neg	_	_
-3	es	ser	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
-4	raro	raro	ADJ	ADJ	Gender=Masc|Number=Sing	0	root	_	_
-5	.	.	PUNCT	PUNCT	PunctType=Peri	4	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 4 2 neg	color:blue
-1	-	-	PUNCT	PUNCT	PunctType=Dash	4	punct	_	_
-2	No	no	ADV	ADV	Negative=Neg	4	neg	_	_
-3	,	,	PUNCT	PUNCT	PunctType=Comm	4	punct	_	_
-4	hombre	hombre	NOUN	NOUN	Gender=Masc|Number=Sing	0	root	_	_
-5	,	,	PUNCT	PUNCT	PunctType=Comm	4	punct	_	_
-6	no	no	ADV	ADV	Negative=Neg	4	neg	_	_
-7	.	.	PUNCT	PUNCT	PunctType=Peri	4	punct	_	_
-
-</code></pre>
-
-
-
-
 <!-- "in other languages" links -->
 <hr/>
 
 neg in other languages:
 
+[<a href="../../am/dep/neg.html">am</a>]
+
+[<a href="../../ar/dep/neg.html">ar</a>]
+
 [<a href="../../bg/dep/neg.html">bg</a>]
 
+[<a href="../../bxr/dep/neg.html">bxr</a>]
+
+[<a href="../../ca/dep/neg.html">ca</a>]
+
+[<a href="../../ckb/dep/neg.html">ckb</a>]
+
+[<a href="../../cop/dep/neg.html">cop</a>]
+
 [<a href="../../cs/dep/neg.html">cs</a>]
+
+[<a href="../../cu/dep/neg.html">cu</a>]
+
+[<a href="../../da/dep/neg.html">da</a>]
 
 [<a href="../../de/dep/neg.html">de</a>]
 
@@ -213,29 +114,97 @@ neg in other languages:
 
 [<a href="../../es/dep/neg.html">es</a>]
 
+[<a href="../../et/dep/neg.html">et</a>]
+
 [<a href="../../eu/dep/neg.html">eu</a>]
 
 [<a href="../../fa/dep/neg.html">fa</a>]
 
 [<a href="../../fi/dep/neg.html">fi</a>]
 
+[<a href="../../fo/dep/neg.html">fo</a>]
+
 [<a href="../../fr/dep/neg.html">fr</a>]
 
 [<a href="../../ga/dep/neg.html">ga</a>]
 
+[<a href="../../gl/dep/neg.html">gl</a>]
+
+[<a href="../../got/dep/neg.html">got</a>]
+
+[<a href="../../grc/dep/neg.html">grc</a>]
+
 [<a href="../../he/dep/neg.html">he</a>]
 
+[<a href="../../hi/dep/neg.html">hi</a>]
+
+[<a href="../../hr/dep/neg.html">hr</a>]
+
 [<a href="../../hu/dep/neg.html">hu</a>]
+
+[<a href="../../id/dep/neg.html">id</a>]
 
 [<a href="../../it/dep/neg.html">it</a>]
 
 [<a href="../../ja/dep/neg.html">ja</a>]
 
+[<a href="../../kk/dep/neg.html">kk</a>]
+
+[<a href="../../kmr/dep/neg.html">kmr</a>]
+
 [<a href="../../ko/dep/neg.html">ko</a>]
+
+[<a href="../../la/dep/neg.html">la</a>]
+
+[<a href="../../lv/dep/neg.html">lv</a>]
+
+[<a href="../../mr/dep/neg.html">mr</a>]
+
+[<a href="../../nl/dep/neg.html">nl</a>]
+
+[<a href="../../no/dep/neg.html">no</a>]
+
+[<a href="../../pl/dep/neg.html">pl</a>]
+
+[<a href="../../pt/dep/neg.html">pt</a>]
+
+[<a href="../../ro/dep/neg.html">ro</a>]
+
+[<a href="../../ru/dep/neg.html">ru</a>]
+
+[<a href="../../sa/dep/neg.html">sa</a>]
+
+[<a href="../../sk/dep/neg.html">sk</a>]
+
+[<a href="../../sla/dep/neg.html">sla</a>]
+
+[<a href="../../sl/dep/neg.html">sl</a>]
+
+[<a href="../../so/dep/neg.html">so</a>]
+
+[<a href="../../sr/dep/neg.html">sr</a>]
 
 [<a href="../../sv/dep/neg.html">sv</a>]
 
-[<a href="../../u/dep/neg.html">u</a>]
+[<a href="../../swl/dep/neg.html">swl</a>]
+
+[<a href="../../ta/dep/neg.html">ta</a>]
+
+[<a href="../../tr/dep/neg.html">tr</a>]
+
+[<a href="../../ug/dep/neg.html">ug</a>]
+
+[<a href="../../uk/dep/neg.html">uk</a>]
+
+[<a href="../../ur/dep/neg.html">ur</a>]
+
+[<a href="../../urj/dep/neg.html">urj</a>]
+
+[<a href="../../vi/dep/neg.html">vi</a>]
+
+[<a href="../../yue/dep/neg.html">yue</a>]
+
+[<a href="../../zh/dep/neg.html">zh</a>]
 
 
 

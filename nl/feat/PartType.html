@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-nl">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/nl/feat">nl/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_nl-feat/PartType.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-nl">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/nl/feat">nl/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_nl-feat/PartType.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -65,33 +82,33 @@ for <code>PartType</code>.</p>
 <p>This feature is language-specific.
 It occurs with 2 different values: <code>Inf</code>, <code>Vbp</code>.</p>
 
-<p>3283 tokens (2%) have a non-empty value of <code>PartType</code>.
+<p>3134 tokens (2%) have a non-empty value of <code>PartType</code>.
 45 types (0%) occur at least once with a non-empty value of <code>PartType</code>.
 45 lemmas (0%) occur at least once with a non-empty value of <code>PartType</code>.
-The feature is used with 2 part-of-speech tags: <a href="">nl-pos/ADP</a> (1779; 1% instances), <a href="">nl-pos/ADV</a> (1504; 1% instances).</p>
+The feature is used with 2 part-of-speech tags: <a href="">nl-pos/ADP</a> (1699; 1% instances), <a href="">nl-pos/ADV</a> (1435; 1% instances).</p>
 
 <h3 id="adp"><code>ADP</code></h3>
 
-<p>1779 <a href="">nl-pos/ADP</a> tokens (8% of all <code>ADP</code> tokens) have a non-empty value of <code>PartType</code>.</p>
+<p>1699 <a href="">nl-pos/ADP</a> tokens (8% of all <code>ADP</code> tokens) have a non-empty value of <code>PartType</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADP</code> and <code>PartType</code> co-occurred: <tt><a href="AdpType.html">AdpType</a>=Prep</tt> (1779; 100%).</p>
+<p>The most frequent other feature values with which <code>ADP</code> and <code>PartType</code> co-occurred: <tt><a href="AdpType.html">AdpType</a>=Prep</tt> (1699; 100%).</p>
 
 <p><code>ADP</code> tokens may have the following values of <code>PartType</code>:</p>
 
 <ul>
-  <li><code>Inf</code> (1779; 100% of non-empty <code>PartType</code>): <em>te</em></li>
+  <li><code>Inf</code> (1699; 100% of non-empty <code>PartType</code>): <em>te</em></li>
 </ul>
 
 <h3 id="adv"><code>ADV</code></h3>
 
-<p>1504 <a href="">nl-pos/ADV</a> tokens (11% of all <code>ADV</code> tokens) have a non-empty value of <code>PartType</code>.</p>
+<p>1435 <a href="">nl-pos/ADV</a> tokens (11% of all <code>ADV</code> tokens) have a non-empty value of <code>PartType</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADV</code> and <code>PartType</code> co-occurred: <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (1504; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (1504; 100%).</p>
+<p>The most frequent other feature values with which <code>ADV</code> and <code>PartType</code> co-occurred: <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (1435; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (1435; 100%).</p>
 
 <p><code>ADV</code> tokens may have the following values of <code>PartType</code>:</p>
 
 <ul>
-  <li><code>Vbp</code> (1504; 100% of non-empty <code>PartType</code>): <em>op, uit, aan, voor, af, mee, in, van, over, toe</em></li>
+  <li><code>Vbp</code> (1435; 100% of non-empty <code>PartType</code>): <em>op, uit, aan, voor, af, mee, in, van, over, toe</em></li>
 </ul>
 
 <p><code>PartType</code> seems to be <strong>lexical feature</strong> of <code>ADV</code>. 100% lemmas (44) occur only with one value of <code>PartType</code>.</p>
@@ -106,6 +123,17 @@ The feature is used with 2 part-of-speech tags: <a href="">nl-pos/ADP</a> (1779;
 
 <!-- "in other languages" links -->
 <hr/>
+
+PartType in other languages:
+
+[<a href="../../da/feat/PartType.html">da</a>]
+
+[<a href="../../ga/feat/PartType.html">ga</a>]
+
+[<a href="../../nl/feat/PartType.html">nl</a>]
+
+[<a href="../../ro/feat/PartType.html">ro</a>]
+
 
 
 

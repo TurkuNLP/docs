@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-fi">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/fi/dep">fi/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_fi-dep/foreign.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-fi">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/fi/dep">fi/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-dep/foreign.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -51,7 +68,7 @@ to internal structure, marking all words in the sequence direct
 dependents of the head. The head is the first word of the foreign phrase.</p>
 
 <p>Note that <code>foreign</code> does not apply to foreign <em>names</em>, which
-are annotated using <a href="">name</a>, or to sequences of <em>analyzed</em> words
+are annotated using <a href="">flat</a>, or to sequences of <em>analyzed</em> words
 of foreign origin (such as established loanwords), which are
 annotated with their full syntactic structure.</p>
 
@@ -75,86 +92,30 @@ punct(Opimme-1, .-9)
 
 
 
-
-<hr />
-
-<h2 id="treebank-statistics-udfinnish">Treebank Statistics (UD_Finnish)</h2>
-
-<p>This relation is universal.</p>
-
-<p>93 nodes (0%) are attached to their parents as <code>foreign</code>.</p>
-
-<p>93 instances of <code>foreign</code> (100%) are left-to-right (parent precedes child).
-Average distance between parent and child is 1.58064516129032.</p>
-
-<p>The following 1 pairs of parts of speech are connected with <code>foreign</code>: <a href="">fi-pos/X</a>-<a href="">fi-pos/X</a> (93; 100% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 1 2 foreign	color:blue
-1	DIY	DIY	X	Foreign	Foreign=Foreign	4	compound:nn	_	_
-2	time-lapse	time-lapse	X	Foreign	Foreign=Foreign	1	foreign	_	_
-3	dolly	dolly	X	Foreign	Foreign=Foreign	1	foreign	_	_
-4	suunnitelmia	suunnitelma	NOUN	N	Case=Par|Number=Plur	0	root	_	_
-5	(	(	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
-6	Arduino	Arduino	PROPN	N	Case=Nom|Number=Sing	4	nmod	_	SpaceAfter=No
-7	)	)	PUNCT	Punct	_	6	punct	_	_
-
-</code></pre>
-
-<hr />
-
-<h2 id="treebank-statistics-udfinnish-ftb">Treebank Statistics (UD_Finnish-FTB)</h2>
-
-<p>This relation is universal.</p>
-
-<p>7 nodes (0%) are attached to their parents as <code>foreign</code>.</p>
-
-<p>7 instances of <code>foreign</code> (100%) are left-to-right (parent precedes child).
-Average distance between parent and child is 1.</p>
-
-<p>The following 2 pairs of parts of speech are connected with <code>foreign</code>: <a href="">fi-pos/X</a>-<a href="">fi-pos/X</a> (6; 86% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/PROPN</a> (1; 14% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 1 2 foreign	color:blue
-1	Bien	bien	X	Unknown,Foreign	_	0	root	_	Alt=0_root|Missed-Rel=attr|Missed-SUBCAT=FOREIGN
-2	sûr	sûr	X	Unknown,Foreign	_	1	foreign	_	Alt=1_foreign|Missed-SUBCAT=FOREIGN
-3	.	.	PUNCT	Pun	_	2	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
-# visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 6 7 foreign	color:blue
-1	Teen	tehdä	VERB	V,Act,Ind,Pres,Sg1	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-2	myös	myös	PART	Pcle	_	3	advmod	_	_
-3	parodioita	parodia	NOUN	N,Pl,Par	Case=Par|Number=Plur	1	dobj	_	_
-4	,	,	PUNCT	Pun	_	3	punct	_	_
-5	kuten	kuten	ADV	Adv	_	6	mark	_	Alt=6_mark
-6	Dementia	dementia	PROPN	N,Prop,Sg,Nom	Case=Nom|Number=Sing	3	nmod	_	Alt=3_nmod
-7	Senilis	senilis	PROPN	N,Prop,Sg,Nom	Case=Nom|Number=Sing	6	foreign	_	Alt=6_foreign
-8	.	.	PUNCT	Pun	_	7	punct	_	_
-
-</code></pre>
-
-
-
-
 <!-- "in other languages" links -->
 <hr/>
 
 foreign in other languages:
 
+[<a href="../../am/dep/foreign.html">am</a>]
+
+[<a href="../../ar/dep/foreign.html">ar</a>]
+
 [<a href="../../bg/dep/foreign.html">bg</a>]
 
+[<a href="../../bxr/dep/foreign.html">bxr</a>]
+
+[<a href="../../ca/dep/foreign.html">ca</a>]
+
+[<a href="../../ckb/dep/foreign.html">ckb</a>]
+
+[<a href="../../cop/dep/foreign.html">cop</a>]
+
 [<a href="../../cs/dep/foreign.html">cs</a>]
+
+[<a href="../../cu/dep/foreign.html">cu</a>]
+
+[<a href="../../da/dep/foreign.html">da</a>]
 
 [<a href="../../de/dep/foreign.html">de</a>]
 
@@ -164,29 +125,97 @@ foreign in other languages:
 
 [<a href="../../es/dep/foreign.html">es</a>]
 
+[<a href="../../et/dep/foreign.html">et</a>]
+
 [<a href="../../eu/dep/foreign.html">eu</a>]
 
 [<a href="../../fa/dep/foreign.html">fa</a>]
 
 [<a href="../../fi/dep/foreign.html">fi</a>]
 
+[<a href="../../fo/dep/foreign.html">fo</a>]
+
 [<a href="../../fr/dep/foreign.html">fr</a>]
 
 [<a href="../../ga/dep/foreign.html">ga</a>]
 
+[<a href="../../gl/dep/foreign.html">gl</a>]
+
+[<a href="../../got/dep/foreign.html">got</a>]
+
+[<a href="../../grc/dep/foreign.html">grc</a>]
+
 [<a href="../../he/dep/foreign.html">he</a>]
 
+[<a href="../../hi/dep/foreign.html">hi</a>]
+
+[<a href="../../hr/dep/foreign.html">hr</a>]
+
 [<a href="../../hu/dep/foreign.html">hu</a>]
+
+[<a href="../../id/dep/foreign.html">id</a>]
 
 [<a href="../../it/dep/foreign.html">it</a>]
 
 [<a href="../../ja/dep/foreign.html">ja</a>]
 
+[<a href="../../kk/dep/foreign.html">kk</a>]
+
+[<a href="../../kmr/dep/foreign.html">kmr</a>]
+
 [<a href="../../ko/dep/foreign.html">ko</a>]
+
+[<a href="../../la/dep/foreign.html">la</a>]
+
+[<a href="../../lv/dep/foreign.html">lv</a>]
+
+[<a href="../../mr/dep/foreign.html">mr</a>]
+
+[<a href="../../nl/dep/foreign.html">nl</a>]
+
+[<a href="../../no/dep/foreign.html">no</a>]
+
+[<a href="../../pl/dep/foreign.html">pl</a>]
+
+[<a href="../../pt/dep/foreign.html">pt</a>]
+
+[<a href="../../ro/dep/foreign.html">ro</a>]
+
+[<a href="../../ru/dep/foreign.html">ru</a>]
+
+[<a href="../../sa/dep/foreign.html">sa</a>]
+
+[<a href="../../sk/dep/foreign.html">sk</a>]
+
+[<a href="../../sla/dep/foreign.html">sla</a>]
+
+[<a href="../../sl/dep/foreign.html">sl</a>]
+
+[<a href="../../so/dep/foreign.html">so</a>]
+
+[<a href="../../sr/dep/foreign.html">sr</a>]
 
 [<a href="../../sv/dep/foreign.html">sv</a>]
 
-[<a href="../../u/dep/foreign.html">u</a>]
+[<a href="../../swl/dep/foreign.html">swl</a>]
+
+[<a href="../../ta/dep/foreign.html">ta</a>]
+
+[<a href="../../tr/dep/foreign.html">tr</a>]
+
+[<a href="../../ug/dep/foreign.html">ug</a>]
+
+[<a href="../../uk/dep/foreign.html">uk</a>]
+
+[<a href="../../ur/dep/foreign.html">ur</a>]
+
+[<a href="../../urj/dep/foreign.html">urj</a>]
+
+[<a href="../../vi/dep/foreign.html">vi</a>]
+
+[<a href="../../yue/dep/foreign.html">yue</a>]
+
+[<a href="../../zh/dep/foreign.html">zh</a>]
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ko">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ko/dep">ko/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ko-dep/iobj.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ko">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ko/dep">ko/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ko-dep/iobj.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -56,14 +73,103 @@ for <code>iobj</code>.</p>
 
 
 
+
+<hr />
+
+<h2 id="treebank-statistics-udkorean">Treebank Statistics (UD_Korean)</h2>
+
+<p>This relation is universal.</p>
+
+<p>93 nodes (0%) are attached to their parents as <code>iobj</code>.</p>
+
+<p>93 instances of <code>iobj</code> (100%) are right-to-left (child precedes parent).
+Average distance between parent and child is 4.01075268817204.</p>
+
+<p>The following 4 pairs of parts of speech are connected with <code>iobj</code>: <a href="">ko-pos/VERB</a>-<a href="">ko-pos/NOUN</a> (83; 89% instances), <a href="">ko-pos/NOUN</a>-<a href="">ko-pos/NOUN</a> (6; 6% instances), <a href="">ko-pos/VERB</a>-<a href="">ko-pos/PRON</a> (3; 3% instances), <a href="">ko-pos/ADJ</a>-<a href="">ko-pos/NOUN</a> (1; 1% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 6 1 iobj	color:blue
+1	주인	_	NOUN	NOUN	_	6	iobj	_	_
+2	아주머니에게	_	NOUN	NOUN	_	1	flat	_	_
+3	맛이	_	NOUN	NOUN	_	5	nsubj	_	_
+4	생각만	_	ADV	ADV	_	5	advmod	_	_
+5	못하다고	_	VERB	PREDCOMP	_	6	ccomp	_	_
+6	하니까	_	VERB	PREDCONJ	_	14	advcl	_	_
+7	미안하다는	_	VERB	PREDCOMP	_	8	ccomp	_	_
+8	말	_	NOUN	NOUN	_	9	nsubj	_	_
+9	없이	_	VERB	PREDCONJ	_	14	advcl	_	_
+10	냉동이라서	_	VERB	PREDCONJ	_	11	advcl	_	_
+11	그레요	_	VERB	PREDCOMP	_	12	ccomp	_	_
+12	하면서	_	VERB	PREDCONJ	_	14	advcl	_	_
+13	카운터로	_	ADV	ADV	_	14	advmod	_	_
+14	가더군요	_	VERB	VERB	_	0	root	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 3 iobj	color:blue
+1	예비	_	NOUN	NOUN	_	9	nsubj	_	_
+2	부부님들은	_	NOUN	NOUN	_	1	flat	_	_
+3	웨딩	_	NOUN	NOUN	_	5	iobj	_	_
+4	플래너한테	_	NOUN	NOUN	_	3	flat	_	_
+5	얘기하지	_	NOUN	NOUN	_	6	obj	_	_
+6	마시고	_	VERB	PREDCONJ	_	0	root	_	_
+7	직접	_	ADV	ADV	_	8	advmod	_	_
+8	가서	_	VERB	PREDCONJ	_	9	advcl	_	_
+9	상담해보세요	_	VERB	VERB	_	6	conj	_	SpaceAfter=No
+10	..	..	PUNCT	..	_	9	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 7 1 iobj	color:blue
+1	그에게	_	PRON	PRON	_	7	iobj	_	_
+2	'김현식이	_	NOUN	PNOUN	_	5	nsubj	_	_
+3	왜	_	ADV	ADV	_	5	advmod	_	_
+4	위대한	_	ADJ	ADJ	_	5	amod	_	_
+5	가수인지	_	VERB	PREDCOMP	_	7	ccomp	_	SpaceAfter=No
+6	'	'	PUNCT	'	_	5	punct	_	SpaceAfter=No
+7	물었다	_	VERB	VERB	_	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	7	punct	_	_
+
+</code></pre>
+
+
+
+
 <!-- "in other languages" links -->
 <hr/>
 
 iobj in other languages:
 
+[<a href="../../am/dep/iobj.html">am</a>]
+
+[<a href="../../ar/dep/iobj.html">ar</a>]
+
 [<a href="../../bg/dep/iobj.html">bg</a>]
 
+[<a href="../../bxr/dep/iobj.html">bxr</a>]
+
+[<a href="../../ca/dep/iobj.html">ca</a>]
+
+[<a href="../../ckb/dep/iobj.html">ckb</a>]
+
+[<a href="../../cop/dep/iobj.html">cop</a>]
+
 [<a href="../../cs/dep/iobj.html">cs</a>]
+
+[<a href="../../cu/dep/iobj.html">cu</a>]
+
+[<a href="../../da/dep/iobj.html">da</a>]
 
 [<a href="../../de/dep/iobj.html">de</a>]
 
@@ -73,27 +179,95 @@ iobj in other languages:
 
 [<a href="../../es/dep/iobj.html">es</a>]
 
+[<a href="../../et/dep/iobj.html">et</a>]
+
 [<a href="../../eu/dep/iobj.html">eu</a>]
 
 [<a href="../../fa/dep/iobj.html">fa</a>]
 
+[<a href="../../fo/dep/iobj.html">fo</a>]
+
 [<a href="../../fr/dep/iobj.html">fr</a>]
 
-[<a href="../../ga/dep/iobj.html">ga</a>]
+[<a href="../../gl/dep/iobj.html">gl</a>]
+
+[<a href="../../got/dep/iobj.html">got</a>]
+
+[<a href="../../grc/dep/iobj.html">grc</a>]
 
 [<a href="../../he/dep/iobj.html">he</a>]
 
+[<a href="../../hi/dep/iobj.html">hi</a>]
+
+[<a href="../../hr/dep/iobj.html">hr</a>]
+
 [<a href="../../hu/dep/iobj.html">hu</a>]
+
+[<a href="../../id/dep/iobj.html">id</a>]
 
 [<a href="../../it/dep/iobj.html">it</a>]
 
 [<a href="../../ja/dep/iobj.html">ja</a>]
 
+[<a href="../../kk/dep/iobj.html">kk</a>]
+
+[<a href="../../kmr/dep/iobj.html">kmr</a>]
+
 [<a href="../../ko/dep/iobj.html">ko</a>]
+
+[<a href="../../la/dep/iobj.html">la</a>]
+
+[<a href="../../lv/dep/iobj.html">lv</a>]
+
+[<a href="../../mr/dep/iobj.html">mr</a>]
+
+[<a href="../../nl/dep/iobj.html">nl</a>]
+
+[<a href="../../no/dep/iobj.html">no</a>]
+
+[<a href="../../pl/dep/iobj.html">pl</a>]
+
+[<a href="../../pt/dep/iobj.html">pt</a>]
+
+[<a href="../../ro/dep/iobj.html">ro</a>]
+
+[<a href="../../ru/dep/iobj.html">ru</a>]
+
+[<a href="../../sa/dep/iobj.html">sa</a>]
+
+[<a href="../../sk/dep/iobj.html">sk</a>]
+
+[<a href="../../sla/dep/iobj.html">sla</a>]
+
+[<a href="../../sl/dep/iobj.html">sl</a>]
+
+[<a href="../../so/dep/iobj.html">so</a>]
+
+[<a href="../../sr/dep/iobj.html">sr</a>]
 
 [<a href="../../sv/dep/iobj.html">sv</a>]
 
+[<a href="../../swl/dep/iobj.html">swl</a>]
+
+[<a href="../../ta/dep/iobj.html">ta</a>]
+
+[<a href="../../tr/dep/iobj.html">tr</a>]
+
 [<a href="../../u/dep/iobj.html">u</a>]
+
+[<a href="../../ug/dep/iobj.html">ug</a>]
+
+[<a href="../../uk/dep/iobj.html">uk</a>]
+
+[<a href="../../ur/dep/iobj.html">ur</a>]
+
+[<a href="../../urj/dep/iobj.html">urj</a>]
+
+[<a href="../../vi/dep/iobj.html">vi</a>]
+
+[<a href="../../yue/dep/iobj.html">yue</a>]
+
+[<a href="../../zh/dep/iobj.html">zh</a>]
 
 
 

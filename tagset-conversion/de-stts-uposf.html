@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../css/hint.css"/>
     <script type="text/javascript" src="../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-tagset">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/tagset/conversion">tagset/conversion</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_tagset-conversion/de-stts-uposf.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-tagset">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/tagset/conversion">tagset/conversion</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tagset-conversion/de-stts-uposf.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -68,10 +85,10 @@ The table requires manual postprocessing in order to provide accurate and comple
   <tr><td>APZR</td><td>=&gt;</td><td>ADP</td><td>AdpType=Circ</td><td><em>an, hinaus, aus, her, heraus</em></td></tr>
   <tr style="background:lightgray"><td>ART</td><td>=&gt;</td><td>DET</td><td>PronType=Art</td><td><em>der, die, den, des, das</em></td></tr>
   <tr><td>CARD</td><td>=&gt;</td><td>NUM</td><td>NumType=Card</td><td><em>000, zwei, drei, vier, fünf</em></td></tr>
-  <tr style="background:lightgray"><td>FM</td><td>=&gt;</td><td>X</td><td>Foreign=Foreign</td><td><em>New, of, de, Times, the</em></td></tr>
+  <tr style="background:lightgray"><td>FM</td><td>=&gt;</td><td>X</td><td>Foreign=Yes</td><td><em>New, of, de, Times, the</em></td></tr>
   <tr><td>ITJ</td><td>=&gt;</td><td>INTJ</td><td>_</td><td><em>naja, Ach, äh, Na, piep</em></td></tr>
-  <tr style="background:lightgray"><td>KOKOM</td><td>=&gt;</td><td>CONJ</td><td>ConjType=Comp</td><td><em>als, wie, denn, wir</em></td></tr>
-  <tr><td>KON</td><td>=&gt;</td><td>CONJ</td><td>_</td><td><em>und, oder, sondern, sowie, aber</em></td></tr>
+  <tr style="background:lightgray"><td>KOKOM</td><td>=&gt;</td><td>CCONJ</td><td>ConjType=Comp</td><td><em>als, wie, denn, wir</em></td></tr>
+  <tr><td>KON</td><td>=&gt;</td><td>CCONJ</td><td>_</td><td><em>und, oder, sondern, sowie, aber</em></td></tr>
   <tr style="background:lightgray"><td>KOUI</td><td>=&gt;</td><td>SCONJ</td><td>_</td><td><em>um, ohne, statt, anstatt, Ums</em></td></tr>
   <tr><td>KOUS</td><td>=&gt;</td><td>SCONJ</td><td>_</td><td><em>daß, wenn, weil, ob, als</em></td></tr>
   <tr style="background:lightgray"><td>NE</td><td>=&gt;</td><td>PROPN</td><td>_</td><td><em>SPD, Deutschland, USA, dpa, Bonn</em></td></tr>
@@ -90,7 +107,7 @@ The table requires manual postprocessing in order to provide accurate and comple
   <tr><td>PRF</td><td>=&gt;</td><td>PRON</td><td>PronType=Prs|Reflex=Yes</td><td><em>sich, uns, mich, mir, dich</em></td></tr>
   <tr style="background:lightgray"><td>PTKA</td><td>=&gt;</td><td>PART</td><td>_</td><td><em>zu, am, allzu, Um</em></td></tr>
   <tr><td>PTKANT</td><td>=&gt;</td><td>PART</td><td>PartType=Res</td><td><em>nein, ja, bitte, Gewiß, Also</em></td></tr>
-  <tr style="background:lightgray"><td>PTKNEG</td><td>=&gt;</td><td>PART</td><td>Negative=Neg</td><td><em>nicht</em></td></tr>
+  <tr style="background:lightgray"><td>PTKNEG</td><td>=&gt;</td><td>PART</td><td>Polarity=Neg</td><td><em>nicht</em></td></tr>
   <tr><td>PTKVZ</td><td>=&gt;</td><td>PART</td><td>PartType=Vbp</td><td><em>an, aus, ab, vor, auf</em></td></tr>
   <tr style="background:lightgray"><td>PTKZU</td><td>=&gt;</td><td>PART</td><td>PartType=Inf</td><td><em>zu, zur, zum</em></td></tr>
   <tr><td>PWAT</td><td>=&gt;</td><td>DET</td><td>PronType=Int</td><td><em>welche, welchen, welcher, wie, welchem</em></td></tr>

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-bg">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/bg/feat">bg/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_bg-feat/Degree.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-bg">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/bg/feat">bg/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-feat/Degree.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -107,29 +124,29 @@ objects within a set.</p>
 <p>This feature is universal.
 It occurs with 3 different values: <code>Cmp</code>, <code>Pos</code>, <code>Sup</code>.</p>
 
-<p>13866 tokens (9%) have a non-empty value of <code>Degree</code>.
-6406 types (24%) occur at least once with a non-empty value of <code>Degree</code>.
-3115 lemmas (21%) occur at least once with a non-empty value of <code>Degree</code>.
-The feature is used with 4 part-of-speech tags: <a href="">bg-pos/ADJ</a> (11557; 7% instances), <a href="">bg-pos/ADV</a> (2304; 1% instances), <a href="">bg-pos/VERB</a> (3; 0% instances), <a href="">bg-pos/PROPN</a> (2; 0% instances).</p>
+<p>16526 tokens (12%) have a non-empty value of <code>Degree</code>.
+6833 types (28%) occur at least once with a non-empty value of <code>Degree</code>.
+3479 lemmas (25%) occur at least once with a non-empty value of <code>Degree</code>.
+The feature is used with 4 part-of-speech tags: <a href="">bg-pos/ADJ</a> (11927; 8% instances), <a href="">bg-pos/ADV</a> (4577; 3% instances), <a href="">bg-pos/PROPN</a> (17; 0% instances), <a href="">bg-pos/VERB</a> (5; 0% instances).</p>
 
 <h3 id="adj"><code>ADJ</code></h3>
 
-<p>11557 <a href="">bg-pos/ADJ</a> tokens (85% of all <code>ADJ</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>11927 <a href="">bg-pos/ADJ</a> tokens (98% of all <code>ADJ</code> tokens) have a non-empty value of <code>Degree</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Degree</code> co-occurred: <tt><a href="Aspect.html">Aspect</a>=EMPTY</tt> (11198; 97%), <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (11198; 97%), <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (11198; 97%), <tt><a href="Number.html">Number</a>=Sing</tt> (8156; 71%), <tt><a href="Definite.html">Definite</a>=Ind</tt> (6221; 54%).</p>
+<p>The most frequent other feature values with which <code>ADJ</code> and <code>Degree</code> co-occurred: <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (10827; 91%), <tt><a href="Aspect.html">Aspect</a>=EMPTY</tt> (10827; 91%), <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (10827; 91%), <tt><a href="Number.html">Number</a>=Sing</tt> (8357; 70%), <tt><a href="Definite.html">Definite</a>=Ind</tt> (6465; 54%).</p>
 
 <p><code>ADJ</code> tokens may have the following values of <code>Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (207; 2% of non-empty <code>Degree</code>): <em>по-голяма, по-голямата, по-голямо, по-големи, по-голям, по-висок, по-големите, по-нататъшно, по-широка, по-бедни</em></li>
-  <li><code>Pos</code> (11110; 96% of non-empty <code>Degree</code>): <em>народното, други, българската, нова, другите, нови, друг, последните, цялата, европейската</em></li>
-  <li><code>Sup</code> (240; 2% of non-empty <code>Degree</code>): <em>най-добрият, най-големите, най-добрите, най-голям, най-големи, най-важното, най-важната, най-голяма, най-доброто, най-добър</em></li>
-  <li><code>EMPTY</code> (2032): <em>2000, 2001, миналата, първата, първите, 1, следващата, втори, въоръжените, първи</em></li>
+  <li><code>Cmp</code> (191; 2% of non-empty <code>Degree</code>): <em>по-голяма, по-голямата, по-голямо, по-големи, по-голям, по-висок, по-бедни, по-важни, по-високи, по-високите</em></li>
+  <li><code>Pos</code> (11524; 97% of non-empty <code>Degree</code>): <em>народното, други, българската, другите, нова, нови, последните, 2001, друг, европейската</em></li>
+  <li><code>Sup</code> (212; 2% of non-empty <code>Degree</code>): <em>най-добрият, най-големите, най-голям, най-добрите, най-големи, най-важното, най-важната, най-добър, Най-важният, най-високо</em></li>
+  <li><code>EMPTY</code> (287): <em>пострадали, цитиран, определен, държавен, народна, уморен, фокусирано, извършено, казано, квалифицирано</em></li>
 </ul>
 
 <table>
   <tr><th>Paradigm <i>голям</i></th><th><tt>Pos</tt></th><th><tt>Cmp</tt></th><th><tt>Sup</tt></th></tr>
-  <tr><td><tt><a href="Definite.html">Definite</a>=Def|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td><em>големият, големия</em></td><td><em>по-големия</em></td><td><em>най-големия, най-големият</em></td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Def|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td><em>големият, големия</em></td><td></td><td><em>най-големия, най-големият</em></td></tr>
   <tr><td><tt><a href="Definite.html">Definite</a>=Def|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td><em>голямата</em></td><td><em>по-голямата</em></td><td><em>най-голямата</em></td></tr>
   <tr><td><tt><a href="Definite.html">Definite</a>=Def|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing</tt></td><td></td><td><em>по-голямото</em></td><td><em>най-голямото</em></td></tr>
   <tr><td><tt><a href="Definite.html">Definite</a>=Def|<a href="Number.html">Number</a>=Plur</tt></td><td><em>големите</em></td><td><em>по-големите</em></td><td><em>най-големите</em></td></tr>
@@ -139,71 +156,72 @@ The feature is used with 4 part-of-speech tags: <a href="">bg-pos/ADJ</a> (11557
   <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Number.html">Number</a>=Plur</tt></td><td><em>големи</em></td><td><em>по-големи</em></td><td><em>най-големи</em></td></tr>
 </table>
 
-<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 95% lemmas (2447) occur only with one value of <code>Degree</code>.</p>
+<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 96% lemmas (2764) occur only with one value of <code>Degree</code>.</p>
 
 <h3 id="adv"><code>ADV</code></h3>
 
-<p>2304 <a href="">bg-pos/ADV</a> tokens (35% of all <code>ADV</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>4577 <a href="">bg-pos/ADV</a> tokens (78% of all <code>ADV</code> tokens) have a non-empty value of <code>Degree</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADV</code> and <code>Degree</code> co-occurred: <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (2303; 100%).</p>
+<p>The most frequent other feature values with which <code>ADV</code> and <code>Degree</code> co-occurred: <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (4576; 100%).</p>
 
 <p><code>ADV</code> tokens may have the following values of <code>Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (134; 6% of non-empty <code>Degree</code>): <em>по-късно, по-добре, по-малко, по-рано, по-скоро, по-бързо, по-лесно, по-силно, по-трудно, по-често</em></li>
-  <li><code>Pos</code> (2070; 90% of non-empty <code>Degree</code>): <em>също, още, добре, вече, ясно, вчера, само, наистина, все, често</em></li>
-  <li><code>Sup</code> (100; 4% of non-empty <code>Degree</code>): <em>най-вече, най-сетне, най-често, най-добре, най-много, най-после, най-вероятно, най-малко, най-късно, най-напред</em></li>
-  <li><code>EMPTY</code> (4254): <em>много, когато, още, вчера, само, защото, обаче, вече, как, така</em></li>
+  <li><code>Cmp</code> (117; 3% of non-empty <code>Degree</code>): <em>по-късно, по-добре, по-малко, по-рано, по-бързо, по-лесно, по-скоро, по-трудно, по-силно, по-често</em></li>
+  <li><code>Pos</code> (4366; 95% of non-empty <code>Degree</code>): <em>още, вчера, само, вече, обаче, сега, много, все, днес, също</em></li>
+  <li><code>Sup</code> (94; 2% of non-empty <code>Degree</code>): <em>най-вече, най-сетне, най-често, най-добре, най-много, най-после, най-малко, най-вероятно, най-късно, най-напред</em></li>
+  <li><code>EMPTY</code> (1310): <em>когато, защото, как, така, както, затова, тук, тъй, където, там</em></li>
 </ul>
 
 <table>
   <tr><th>Paradigm <i>много</i></th><th><tt>Pos</tt></th><th><tt>Cmp</tt></th><th><tt>Sup</tt></th></tr>
-  <tr><td><tt>_</tt></td><td><em>много</em></td><td><em>по-много</em></td><td><em>най-много</em></td></tr>
-  <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="NumType.html">NumType</a>=Card</tt></td><td><em>много</em></td><td></td><td><em>най-много</em></td></tr>
+  <tr><td><tt>_</tt></td><td></td><td><em>по-много</em></td><td><em>най-много</em></td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Def|<a href="Number.html">Number</a>=Plur|<a href="NumType.html">NumType</a>=Card</tt></td><td><em>многото</em></td><td></td><td></td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="NumType.html">NumType</a>=Card</tt></td><td><em>много, Многая</em></td><td></td><td><em>най-много</em></td></tr>
 </table>
 
-<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>ADV</code>. 93% lemmas (516) occur only with one value of <code>Degree</code>.</p>
-
-<h3 id="verb"><code>VERB</code></h3>
-
-<p>3 <a href="">bg-pos/VERB</a> tokens (0% of all <code>VERB</code> tokens) have a non-empty value of <code>Degree</code>.</p>
-
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Degree</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (3; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (3; 100%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (3; 100%), <tt><a href="Number.html">Number</a>=Plur</tt> (2; 67%), <tt><a href="Aspect.html">Aspect</a>=Perf</tt> (2; 67%), <tt><a href="Tense.html">Tense</a>=Past</tt> (2; 67%), <tt><a href="Definite.html">Definite</a>=Ind</tt> (2; 67%), <tt><a href="Voice.html">Voice</a>=Act</tt> (2; 67%).</p>
-
-<p><code>VERB</code> tokens may have the following values of <code>Degree</code>:</p>
-
-<ul>
-  <li><code>Cmp</code> (2; 67% of non-empty <code>Degree</code>): <em>по-напреднали, по-проточен</em></li>
-  <li><code>Pos</code> (1; 33% of non-empty <code>Degree</code>): <em>останалите</em></li>
-  <li><code>EMPTY</code> (19549): <em>е, са, има, няма, може, трябва, беше, каза, могат, съобщи</em></li>
-</ul>
+<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>ADV</code>. 94% lemmas (566) occur only with one value of <code>Degree</code>.</p>
 
 <h3 id="propn"><code>PROPN</code></h3>
 
-<p>2 <a href="">bg-pos/PROPN</a> tokens (0% of all <code>PROPN</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>17 <a href="">bg-pos/PROPN</a> tokens (0% of all <code>PROPN</code> tokens) have a non-empty value of <code>Degree</code>.</p>
 
-<p>The most frequent other feature values with which <code>PROPN</code> and <code>Degree</code> co-occurred: <tt><a href="Definite.html">Definite</a>=Ind</tt> (2; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (2; 100%).</p>
+<p>The most frequent other feature values with which <code>PROPN</code> and <code>Degree</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (17; 100%), <tt><a href="Definite.html">Definite</a>=Ind</tt> (15; 88%).</p>
 
 <p><code>PROPN</code> tokens may have the following values of <code>Degree</code>:</p>
 
 <ul>
-  <li><code>Pos</code> (2; 100% of non-empty <code>Degree</code>): <em>Велико, Голяма</em></li>
-  <li><code>EMPTY</code> (8426): <em>България, София, Иван, ЕС, Европа, СДС, Петър, Стоянов, Костов, Георги</em></li>
+  <li><code>Pos</code> (17; 100% of non-empty <code>Degree</code>): <em>Велико, Стара, Косовска, Нови, Голяма, Камен, Малко, Нова, Южен, Южна</em></li>
+  <li><code>EMPTY</code> (7613): <em>България, София, Иван, ЕС, Европа, СДС, Петър, Стоянов, Костов, Георги</em></li>
+</ul>
+
+<h3 id="verb"><code>VERB</code></h3>
+
+<p>5 <a href="">bg-pos/VERB</a> tokens (0% of all <code>VERB</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+
+<p>The most frequent other feature values with which <code>VERB</code> and <code>Degree</code> co-occurred: <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (5; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (5; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (5; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (4; 80%), <tt><a href="Aspect.html">Aspect</a>=Perf</tt> (4; 80%), <tt><a href="Number.html">Number</a>=Plur</tt> (4; 80%), <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (3; 60%), <tt><a href="Voice.html">Voice</a>=Pass</tt> (3; 60%), <tt><a href="Definite.html">Definite</a>=Def</tt> (3; 60%).</p>
+
+<p><code>VERB</code> tokens may have the following values of <code>Degree</code>:</p>
+
+<ul>
+  <li><code>Cmp</code> (2; 40% of non-empty <code>Degree</code>): <em>по-напреднали, по-проточен</em></li>
+  <li><code>Pos</code> (3; 60% of non-empty <code>Degree</code>): <em>Уволнените, останалите, отличените</em></li>
+  <li><code>EMPTY</code> (15487): <em>има, може, няма, трябва, е, каза, могат, съобщи, заяви, стана</em></li>
 </ul>
 
 <h2 id="relations-with-agreement-in-degree">Relations with Agreement in <code>Degree</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>Degree</code>:
-<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (283; 85%),
-<tt>ADV –[<a href="../dep/conj.html">conj</a>]–&gt; ADV</tt> (30; 79%),
-<tt>ADV –[<a href="../dep/nmod.html">nmod</a>]–&gt; ADJ</tt> (3; 75%),
-<tt>ADV –[<a href="../dep/mwe.html">mwe</a>]–&gt; ADV</tt> (2; 100%),
-<tt>ADJ –[<a href="../dep/nmod.html">nmod</a>]–&gt; ADJ</tt> (2; 67%),
-<tt>ADJ –[<a href="../dep/csubj.html">csubj</a>]–&gt; ADJ</tt> (2; 67%),
-<tt>ADJ –[<a href="../dep/amod.html">amod</a>]–&gt; ADJ</tt> (1; 100%),
-<tt>ADJ –[<a href="../dep/advcl.html">advcl</a>]–&gt; ADJ</tt> (1; 100%),
-<tt>ADV –[<a href="../dep/advcl.html">advcl</a>]–&gt; ADJ</tt> (1; 100%),
-<tt>ADJ –[<a href="../dep/remnant.html">remnant</a>]–&gt; ADJ</tt> (1; 100%).</p>
+<tt>ADJ –[<a href="../dep/advmod.html">advmod</a>]–&gt; ADV</tt> (370; 71%),
+<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (295; 92%),
+<tt>ADV –[<a href="../dep/advmod.html">advmod</a>]–&gt; ADV</tt> (203; 64%),
+<tt>ADV –[<a href="../dep/conj.html">conj</a>]–&gt; ADV</tt> (43; 90%),
+<tt>ADV –[<a href="../dep/fixed.html">fixed</a>]–&gt; ADV</tt> (23; 100%),
+<tt>ADJ –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; ADJ</tt> (4; 67%),
+<tt>ADJ –[<a href="../dep/advcl.html">advcl</a>]–&gt; ADJ</tt> (2; 100%),
+<tt>ADJ –[<a href="../dep/obl.html">obl</a>]–&gt; ADJ</tt> (2; 67%),
+<tt>ADV –[<a href="../dep/csubj.html">csubj</a>]–&gt; ADJ</tt> (2; 67%),
+<tt>ADV –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; ADV</tt> (1; 100%).</p>
 
 
 
@@ -213,9 +231,25 @@ The feature is used with 4 part-of-speech tags: <a href="">bg-pos/ADJ</a> (11557
 
 Degree in other languages:
 
+[<a href="../../am/feat/Degree.html">am</a>]
+
+[<a href="../../ar/feat/Degree.html">ar</a>]
+
 [<a href="../../bg/feat/Degree.html">bg</a>]
 
+[<a href="../../bxr/feat/Degree.html">bxr</a>]
+
+[<a href="../../ca/feat/Degree.html">ca</a>]
+
+[<a href="../../ckb/feat/Degree.html">ckb</a>]
+
+[<a href="../../cop/feat/Degree.html">cop</a>]
+
 [<a href="../../cs/feat/Degree.html">cs</a>]
+
+[<a href="../../cu/feat/Degree.html">cu</a>]
+
+[<a href="../../da/feat/Degree.html">da</a>]
 
 [<a href="../../de/feat/Degree.html">de</a>]
 
@@ -225,29 +259,99 @@ Degree in other languages:
 
 [<a href="../../es/feat/Degree.html">es</a>]
 
+[<a href="../../et/feat/Degree.html">et</a>]
+
 [<a href="../../eu/feat/Degree.html">eu</a>]
 
 [<a href="../../fa/feat/Degree.html">fa</a>]
 
 [<a href="../../fi/feat/Degree.html">fi</a>]
 
+[<a href="../../fo/feat/Degree.html">fo</a>]
+
 [<a href="../../fr/feat/Degree.html">fr</a>]
 
 [<a href="../../ga/feat/Degree.html">ga</a>]
 
+[<a href="../../gl/feat/Degree.html">gl</a>]
+
+[<a href="../../got/feat/Degree.html">got</a>]
+
+[<a href="../../grc/feat/Degree.html">grc</a>]
+
 [<a href="../../he/feat/Degree.html">he</a>]
 
+[<a href="../../hi/feat/Degree.html">hi</a>]
+
+[<a href="../../hr/feat/Degree.html">hr</a>]
+
 [<a href="../../hu/feat/Degree.html">hu</a>]
+
+[<a href="../../id/feat/Degree.html">id</a>]
 
 [<a href="../../it/feat/Degree.html">it</a>]
 
 [<a href="../../ja/feat/Degree.html">ja</a>]
 
+[<a href="../../kk/feat/Degree.html">kk</a>]
+
+[<a href="../../kmr/feat/Degree.html">kmr</a>]
+
 [<a href="../../ko/feat/Degree.html">ko</a>]
+
+[<a href="../../la/feat/Degree.html">la</a>]
+
+[<a href="../../lv/feat/Degree.html">lv</a>]
+
+[<a href="../../mr/feat/Degree.html">mr</a>]
+
+[<a href="../../nl/feat/Degree.html">nl</a>]
+
+[<a href="../../no/feat/Degree.html">no</a>]
+
+[<a href="../../pl/feat/Degree.html">pl</a>]
+
+[<a href="../../pt/feat/Degree.html">pt</a>]
+
+[<a href="../../ro/feat/Degree.html">ro</a>]
+
+[<a href="../../ru/feat/Degree.html">ru</a>]
+
+[<a href="../../sa/feat/Degree.html">sa</a>]
+
+[<a href="../../sk/feat/Degree.html">sk</a>]
+
+[<a href="../../sla/feat/Degree.html">sla</a>]
+
+[<a href="../../sl/feat/Degree.html">sl</a>]
+
+[<a href="../../so/feat/Degree.html">so</a>]
+
+[<a href="../../sr/feat/Degree.html">sr</a>]
 
 [<a href="../../sv/feat/Degree.html">sv</a>]
 
+[<a href="../../swl/feat/Degree.html">swl</a>]
+
+[<a href="../../ta/feat/Degree.html">ta</a>]
+
+[<a href="../../tr/feat/Degree.html">tr</a>]
+
 [<a href="../../u/feat/Degree.html">u</a>]
+
+[<a href="../../ug/feat/Degree.html">ug</a>]
+
+[<a href="../../uk/feat/Degree.html">uk</a>]
+
+[<a href="../../ur/feat/Degree.html">ur</a>]
+
+[<a href="../../urj/feat/Degree.html">urj</a>]
+
+[<a href="../../vi/feat/Degree.html">vi</a>]
+
+[<a href="../../yue/feat/Degree.html">yue</a>]
+
+[<a href="../../zh/feat/Degree.html">zh</a>]
 
 
 

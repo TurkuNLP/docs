@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-fi">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/fi/dep">fi/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_fi-dep/cc-preconj.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-fi">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/fi/dep">fi/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-dep/cc-preconj.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -49,7 +66,7 @@
 first part of those two-part coordinating conjunctions where the
 two parts are separated by coordinated elements.</p>
 
-<p>See also <a href="">CONJ</a>.</p>
+<p>See also <a href="">CCONJ</a>.</p>
 
 <!-- fname:preconj.pdf -->
 <pre><code class="language-sdparse">sekä talo että piha \n both house and yard
@@ -96,7 +113,7 @@ conj(talo-2, piha-4)
 <p>138 instances of <code>cc:preconj</code> (96%) are right-to-left (child precedes parent).
 Average distance between parent and child is 1.58333333333333.</p>
 
-<p>The following 14 pairs of parts of speech are connected with <code>cc:preconj</code>: <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/CONJ</a> (74; 51% instances), <a href="">fi-pos/ADJ</a>-<a href="">fi-pos/CONJ</a> (16; 11% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/CONJ</a> (15; 10% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/CONJ</a> (15; 10% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/ADV</a> (9; 6% instances), <a href="">fi-pos/ADV</a>-<a href="">fi-pos/CONJ</a> (5; 3% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/ADV</a> (3; 2% instances), <a href="">fi-pos/ADJ</a>-<a href="">fi-pos/ADV</a> (1; 1% instances), <a href="">fi-pos/ADP</a>-<a href="">fi-pos/CONJ</a> (1; 1% instances), <a href="">fi-pos/ADV</a>-<a href="">fi-pos/ADV</a> (1; 1% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/NOUN</a> (1; 1% instances), <a href="">fi-pos/PRON</a>-<a href="">fi-pos/CONJ</a> (1; 1% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/ADV</a> (1; 1% instances), <a href="">fi-pos/X</a>-<a href="">fi-pos/CONJ</a> (1; 1% instances).</p>
+<p>The following 15 pairs of parts of speech are connected with <code>cc:preconj</code>: <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/CCONJ</a> (73; 51% instances), <a href="">fi-pos/ADJ</a>-<a href="">fi-pos/CCONJ</a> (16; 11% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/CCONJ</a> (15; 10% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/CCONJ</a> (14; 10% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/ADV</a> (9; 6% instances), <a href="">fi-pos/ADV</a>-<a href="">fi-pos/CCONJ</a> (5; 3% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/ADV</a> (3; 2% instances), <a href="">fi-pos/PRON</a>-<a href="">fi-pos/CCONJ</a> (2; 1% instances), <a href="">fi-pos/ADJ</a>-<a href="">fi-pos/ADV</a> (1; 1% instances), <a href="">fi-pos/ADP</a>-<a href="">fi-pos/CCONJ</a> (1; 1% instances), <a href="">fi-pos/ADV</a>-<a href="">fi-pos/ADV</a> (1; 1% instances), <a href="">fi-pos/CCONJ</a>-<a href="">fi-pos/CCONJ</a> (1; 1% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/NOUN</a> (1; 1% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/ADV</a> (1; 1% instances), <a href="">fi-pos/X</a>-<a href="">fi-pos/CCONJ</a> (1; 1% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 2	bgColor:blue
 # visual-style 2	fgColor:white
@@ -104,11 +121,11 @@ Average distance between parent and child is 1.58333333333333.</p>
 # visual-style 3	fgColor:white
 # visual-style 3 2 cc:preconj	color:blue
 1	Olet	olla	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-2	joko	joko	CONJ	C	_	3	cc:preconj	_	_
-3	euron	euro	NOUN	N	Case=Gen|Number=Sing	1	nmod	_	_
+2	joko	joko	CCONJ	C	_	3	cc:preconj	_	_
+3	euron	euro	NOUN	N	Case=Gen|Number=Sing	1	obl	_	_
 4	puolesta	puolesta	ADP	Adp	AdpType=Post	3	case	_	_
-5	tai	tai	CONJ	C	_	3	cc	_	_
-6	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	3	conj	1:nmod	_
+5	tai	tai	CCONJ	C	_	6	cc	_	_
+6	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	3	conj	1:obl	_
 7	vastaan	vastaan	ADP	Adp	AdpType=Post	6	case	_	SpaceAfter=No
 8	.	.	PUNCT	Punct	_	1	punct	_	_
 
@@ -119,10 +136,10 @@ Average distance between parent and child is 1.58333333333333.</p>
 # visual-style 3	bgColor:blue
 # visual-style 3	fgColor:white
 # visual-style 3 2 cc:preconj	color:blue
-1	Olet	olla	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	5:cop	_
-2	joko	joko	CONJ	C	_	3	cc:preconj	_	_
+1	Olet	olla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	5:cop	_
+2	joko	joko	CCONJ	C	_	3	cc:preconj	_	_
 3	hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
-4	tai	tai	CONJ	C	_	3	cc	_	_
+4	tai	tai	CCONJ	C	_	5	cc	_	_
 5	huono	huono	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	conj	_	SpaceAfter=No
 6	.	.	PUNCT	Punct	_	3	punct	_	_
 
@@ -134,14 +151,14 @@ Average distance between parent and child is 1.58333333333333.</p>
 # visual-style 6	fgColor:white
 # visual-style 6 5 cc:preconj	color:blue
 1	Me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	2	nsubj	_	_
-2	olemme	olla	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-3	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	2	dobj	_	_
-4	velkaa	velka	NOUN	N	Case=Par|Number=Sing	2	nmod	_	_
-5	sekä	sekä	CONJ	C	_	6	cc:preconj	_	_
-6	Turkille	Turkki	PROPN	N	Case=All|Number=Sing	2	nmod	_	_
-7	että	että	CONJ	C	_	6	cc	_	_
+2	olemme	olla	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	2	obj	_	_
+4	velkaa	velka	NOUN	N	Case=Par|Number=Sing	2	obl	_	_
+5	sekä	sekä	CCONJ	C	_	6	cc:preconj	_	_
+6	Turkille	Turkki	PROPN	N	Case=All|Number=Sing	2	obl	_	_
+7	että	että	CCONJ	C	_	9	cc	_	_
 8	omille	oma	ADJ	A	Case=All|Degree=Pos|Number=Plur	9	amod	_	_
-9	kansalaisillemme	kansa#lainen	NOUN	N	Case=All|Number=Plur|Number[psor]=Plur|Person[psor]=1	6	conj	2:nmod	SpaceAfter=No
+9	kansalaisillemme	kansa#lainen	NOUN	N	Case=All|Number=Plur|Number[psor]=Plur|Person[psor]=1	6	conj	2:obl	SpaceAfter=No
 10	.	.	PUNCT	Punct	_	2	punct	_	_
 
 </code></pre>

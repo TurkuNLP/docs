@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-cs">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/cs/feat">cs/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-feat/Reflex.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cs">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/cs/feat">cs/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-feat/Reflex.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -46,6 +63,13 @@
           <style>h3 {display:block;background-color:#dfeffc}</style>
 
 <h2><code>Reflex</code>: reflexive</h2>
+
+<table class="typeindex" border="1">
+<tr>
+  <td style="background-color:cornflowerblue;color:white"><strong>Values:</strong> </td>
+  <td><a href="#Yes">Yes</a></td>
+</tr>
+</table>
 
 <p>Boolean feature of <a href="cs-pos/PRON">pronouns</a> or
 <a href="cs-pos/DET">determiners</a>. It tells whether the word is reflexive,
@@ -77,7 +101,7 @@ The pronoun does not alter the meaning in any way, but without it the sentence w
   <li><em>Jan prodal jeho auto. </em> “Jan sold his [someone else’s] car.”</li>
 </ul>
 
-<h3 id="yes-it-is-reflexive"><code>Yes</code>: it is reflexive</h3>
+<h3 id="a-nameyesyesa-it-is-possessive"><a name="Yes"><code>Yes</code></a>: it is possessive</h3>
 
 <p>Note that there is no <code>No</code> value. If the word is not reflexive, the
 <code>Reflex</code> feature will just not be mentioned in the <code>FEAT</code>
@@ -87,7 +111,7 @@ column. (Which means that empty value has the <code>No</code> meaning.)</p>
 
 <ul>
   <li>reflexive personal pronouns: <em>se, si, sebe, sobě, sebou</em> (occurs in various cases but not in nominative and vocative; does not distinguish <a href="">Number</a>)</li>
-  <li>reflexive possessive pronoun: <em>svůj</em></li>
+  <li>reflexive possessive determiner: <em>svůj</em></li>
 </ul>
 
 
@@ -105,42 +129,42 @@ column. (Which means that empty value has the <code>No</code> meaning.)</p>
 <p>This feature is universal.
 It occurs with 1 different values: <code>Yes</code>.</p>
 
-<p>30669 tokens (2%) have a non-empty value of <code>Reflex</code>.
+<p>27107 tokens (2%) have a non-empty value of <code>Reflex</code>.
 42 types (0%) occur at least once with a non-empty value of <code>Reflex</code>.
-6 lemmas (0%) occur at least once with a non-empty value of <code>Reflex</code>.
-The feature is used with 2 part-of-speech tags: <a href="">cs-pos/PRON</a> (25901; 2% instances), <a href="">cs-pos/DET</a> (4768; 0% instances).</p>
+4 lemmas (0%) occur at least once with a non-empty value of <code>Reflex</code>.
+The feature is used with 2 part-of-speech tags: <a href="">cs-pos/PRON</a> (22793; 2% instances), <a href="">cs-pos/DET</a> (4314; 0% instances).</p>
 
 <h3 id="pron"><code>PRON</code></h3>
 
-<p>25901 <a href="">cs-pos/PRON</a> tokens (36% of all <code>PRON</code> tokens) have a non-empty value of <code>Reflex</code>.</p>
+<p>22793 <a href="">cs-pos/PRON</a> tokens (57% of all <code>PRON</code> tokens) have a non-empty value of <code>Reflex</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>Reflex</code> co-occurred: <tt><a href="Person.html">Person</a>=EMPTY</tt> (25901; 100%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (25901; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (25810; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (25786; 100%), <tt><a href="Variant.html">Variant</a>=Short</tt> (25163; 97%), <tt><a href="Case.html">Case</a>=Acc</tt> (21635; 84%).</p>
+<p>The most frequent other feature values with which <code>PRON</code> and <code>Reflex</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (22793; 100%), <tt><a href="PrepCase.html">PrepCase</a>=EMPTY</tt> (22793; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (22793; 100%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (22793; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (22793; 100%), <tt><a href="Variant.html">Variant</a>=Short</tt> (22237; 98%), <tt><a href="Case.html">Case</a>=Acc</tt> (19079; 84%).</p>
 
 <p><code>PRON</code> tokens may have the following values of <code>Reflex</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (25901; 100% of non-empty <code>Reflex</code>): <em>se, si, sebe, sobě, sebou, své, svých, svého, svém, svůj</em></li>
-  <li><code>EMPTY</code> (46518): <em>to, které, který, která, co, tím, kteří, tom, nás, tomu</em></li>
+  <li><code>Yes</code> (22793; 100% of non-empty <code>Reflex</code>): <em>se, si, sebe, sobě, sebou, sa</em></li>
+  <li><code>EMPTY</code> (16871): <em>co, nás, je, nám, nich, kdo, což, mu, ho, ji</em></li>
 </ul>
 
 <h3 id="det"><code>DET</code></h3>
 
-<p>4768 <a href="">cs-pos/DET</a> tokens (17% of all <code>DET</code> tokens) have a non-empty value of <code>Reflex</code>.</p>
+<p>4314 <a href="">cs-pos/DET</a> tokens (9% of all <code>DET</code> tokens) have a non-empty value of <code>Reflex</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>Reflex</code> co-occurred: <tt><a href="Gender[psor].html">Gender[psor]</a>=EMPTY</tt> (4768; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (4768; 100%), <tt><a href="Number[psor].html">Number[psor]</a>=EMPTY</tt> (4768; 100%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (4768; 100%), <tt><a href="Poss.html">Poss</a>=Yes</tt> (4768; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (3341; 70%).</p>
+<p>The most frequent other feature values with which <code>DET</code> and <code>Reflex</code> co-occurred: <tt><a href="Poss.html">Poss</a>=Yes</tt> (4314; 100%), <tt><a href="Number[psor].html">Number[psor]</a>=EMPTY</tt> (4314; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (4314; 100%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (4314; 100%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (3799; 88%), <tt><a href="Number.html">Number</a>=Sing</tt> (3012; 70%).</p>
 
 <p><code>DET</code> tokens may have the following values of <code>Reflex</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (4768; 100% of non-empty <code>Reflex</code>): <em>své, svou, svého, svých, svůj, svým, svém, svými, svoji, svému</em></li>
-  <li><code>EMPTY</code> (23051): <em>jeho, jejich, této, její, tento, tohoto, tato, těchto, tyto, několik</em></li>
+  <li><code>Yes</code> (4314; 100% of non-empty <code>Reflex</code>): <em>své, svou, svého, svých, svůj, svým, svém, svými, svoji, svému</em></li>
+  <li><code>EMPTY</code> (44456): <em>to, které, který, jeho, která, jejich, tím, kteří, tom, této</em></li>
 </ul>
 
 <h2 id="relations-with-agreement-in-reflex">Relations with Agreement in <code>Reflex</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>Reflex</code>:
-<tt>PRON –[<a href="../dep/conj.html">conj</a>]–&gt; PRON</tt> (5; 63%),
-<tt>DET –[<a href="../dep/conj.html">conj</a>]–&gt; PRON</tt> (1; 100%).</p>
+<tt>PRON –[<a href="../dep/conj.html">conj</a>]–&gt; PRON</tt> (3; 60%),
+<tt>DET –[<a href="../dep/conj.html">conj</a>]–&gt; DET</tt> (2; 67%).</p>
 
 <hr />
 
@@ -149,35 +173,35 @@ The feature is used with 2 part-of-speech tags: <a href="">cs-pos/PRON</a> (2590
 <p>This feature is universal.
 It occurs with 1 different values: <code>Yes</code>.</p>
 
-<p>10459 tokens (2%) have a non-empty value of <code>Reflex</code>.
+<p>10240 tokens (2%) have a non-empty value of <code>Reflex</code>.
 28 types (0%) occur at least once with a non-empty value of <code>Reflex</code>.
 3 lemmas (0%) occur at least once with a non-empty value of <code>Reflex</code>.
-The feature is used with 2 part-of-speech tags: <a href="">cs-pos/PRON</a> (9066; 2% instances), <a href="">cs-pos/DET</a> (1393; 0% instances).</p>
+The feature is used with 2 part-of-speech tags: <a href="">cs-pos/PRON</a> (8851; 2% instances), <a href="">cs-pos/DET</a> (1389; 0% instances).</p>
 
 <h3 id="pron-1"><code>PRON</code></h3>
 
-<p>9066 <a href="">cs-pos/PRON</a> tokens (37% of all <code>PRON</code> tokens) have a non-empty value of <code>Reflex</code>.</p>
+<p>8851 <a href="">cs-pos/PRON</a> tokens (56% of all <code>PRON</code> tokens) have a non-empty value of <code>Reflex</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>Reflex</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (9066; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (9065; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (9043; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (9038; 100%), <tt><a href="Variant.html">Variant</a>=Short</tt> (8706; 96%), <tt><a href="Case.html">Case</a>=Acc</tt> (7811; 86%).</p>
+<p>The most frequent other feature values with which <code>PRON</code> and <code>Reflex</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (8851; 100%), <tt><a href="PrepCase.html">PrepCase</a>=EMPTY</tt> (8851; 100%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (8851; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (8850; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (8850; 100%), <tt><a href="Variant.html">Variant</a>=Short</tt> (8525; 96%), <tt><a href="Case.html">Case</a>=Acc</tt> (7639; 86%).</p>
 
 <p><code>PRON</code> tokens may have the following values of <code>Reflex</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (9066; 100% of non-empty <code>Reflex</code>): <em>se, si, sebe, sobě, sebou, své, sui, svého, svém, svých</em></li>
-  <li><code>EMPTY</code> (15323): <em>to, které, který, která, tím, co, všech, všechny, je, kteří</em></li>
+  <li><code>Yes</code> (8851; 100% of non-empty <code>Reflex</code>): <em>se, si, sebe, sobě, sebou, sis</em></li>
+  <li><code>EMPTY</code> (6829): <em>co, všech, je, nás, všechny, nám, jež, nich, nichž, ji</em></li>
 </ul>
 
 <h3 id="det-1"><code>DET</code></h3>
 
-<p>1393 <a href="">cs-pos/DET</a> tokens (13% of all <code>DET</code> tokens) have a non-empty value of <code>Reflex</code>.</p>
+<p>1389 <a href="">cs-pos/DET</a> tokens (7% of all <code>DET</code> tokens) have a non-empty value of <code>Reflex</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>Reflex</code> co-occurred: <tt><a href="Poss.html">Poss</a>=Yes</tt> (1393; 100%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (1393; 100%), <tt><a href="Number[psor].html">Number[psor]</a>=EMPTY</tt> (1393; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (1393; 100%), <tt><a href="Gender[psor].html">Gender[psor]</a>=EMPTY</tt> (1393; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (985; 71%).</p>
+<p>The most frequent other feature values with which <code>DET</code> and <code>Reflex</code> co-occurred: <tt><a href="Poss.html">Poss</a>=Yes</tt> (1389; 100%), <tt><a href="Number[psor].html">Number[psor]</a>=EMPTY</tt> (1389; 100%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (1389; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (1389; 100%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (1265; 91%), <tt><a href="Number.html">Number</a>=Sing</tt> (981; 71%).</p>
 
 <p><code>DET</code> tokens may have the following values of <code>Reflex</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (1393; 100% of non-empty <code>Reflex</code>): <em>své, svou, svých, svého, svým, svůj, svém, svými, svému, svoje</em></li>
-  <li><code>EMPTY</code> (9695): <em>jejich, jeho, této, těchto, tyto, tento, tohoto, její, tato, naší</em></li>
+  <li><code>Yes</code> (1389; 100% of non-empty <code>Reflex</code>): <em>své, svou, svých, svého, svým, svůj, svém, svými, svému, svoje</em></li>
+  <li><code>EMPTY</code> (17652): <em>to, které, jejich, jeho, který, která, tím, této, těchto, tyto</em></li>
 </ul>
 
 <hr />
@@ -187,35 +211,35 @@ The feature is used with 2 part-of-speech tags: <a href="">cs-pos/PRON</a> (9066
 <p>This feature is universal.
 It occurs with 1 different values: <code>Yes</code>.</p>
 
-<p>499 tokens (1%) have a non-empty value of <code>Reflex</code>.
-11 types (0%) occur at least once with a non-empty value of <code>Reflex</code>.
+<p>332 tokens (1%) have a non-empty value of <code>Reflex</code>.
+8 types (0%) occur at least once with a non-empty value of <code>Reflex</code>.
 2 lemmas (0%) occur at least once with a non-empty value of <code>Reflex</code>.
-The feature is used with 2 part-of-speech tags: <a href="">cs-pos/PRON</a> (475; 1% instances), <a href="">cs-pos/DET</a> (24; 0% instances).</p>
+The feature is used with 2 part-of-speech tags: <a href="">cs-pos/PRON</a> (314; 1% instances), <a href="">cs-pos/DET</a> (18; 0% instances).</p>
 
 <h3 id="pron-2"><code>PRON</code></h3>
 
-<p>475 <a href="">cs-pos/PRON</a> tokens (39% of all <code>PRON</code> tokens) have a non-empty value of <code>Reflex</code>.</p>
+<p>314 <a href="">cs-pos/PRON</a> tokens (39% of all <code>PRON</code> tokens) have a non-empty value of <code>Reflex</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>Reflex</code> co-occurred: <tt><a href="Number.html">Number</a>=EMPTY</tt> (475; 100%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (475; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (475; 100%), <tt><a href="Variant.html">Variant</a>=Short</tt> (468; 99%), <tt><a href="Case.html">Case</a>=Acc</tt> (467; 98%).</p>
+<p>The most frequent other feature values with which <code>PRON</code> and <code>Reflex</code> co-occurred: <tt><a href="Number.html">Number</a>=EMPTY</tt> (314; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (314; 100%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (314; 100%), <tt><a href="Case.html">Case</a>=Acc</tt> (309; 98%), <tt><a href="Variant.html">Variant</a>=Short</tt> (309; 98%).</p>
 
 <p><code>PRON</code> tokens may have the following values of <code>Reflex</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (475; 100% of non-empty <code>Reflex</code>): <em>se, sobě, sebou, si</em></li>
-  <li><code>EMPTY</code> (737): <em>které, která, který, to, kterých, kterým, kterém, kterému, nichž, všech</em></li>
+  <li><code>Yes</code> (314; 100% of non-empty <code>Reflex</code>): <em>se, sobě, sebou</em></li>
+  <li><code>EMPTY</code> (498): <em>které, která, který, to, kterých, kterým, kterém, nichž, všech, němž</em></li>
 </ul>
 
 <h3 id="det-2"><code>DET</code></h3>
 
-<p>24 <a href="">cs-pos/DET</a> tokens (4% of all <code>DET</code> tokens) have a non-empty value of <code>Reflex</code>.</p>
+<p>18 <a href="">cs-pos/DET</a> tokens (4% of all <code>DET</code> tokens) have a non-empty value of <code>Reflex</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>Reflex</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (24; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (24; 100%), <tt><a href="Gender[psor].html">Gender[psor]</a>=EMPTY</tt> (24; 100%), <tt><a href="Number[psor].html">Number[psor]</a>=EMPTY</tt> (24; 100%), <tt><a href="Poss.html">Poss</a>=Yes</tt> (24; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (20; 83%).</p>
+<p>The most frequent other feature values with which <code>DET</code> and <code>Reflex</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (18; 100%), <tt><a href="Gender[psor].html">Gender[psor]</a>=EMPTY</tt> (18; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (18; 100%), <tt><a href="Number[psor].html">Number[psor]</a>=EMPTY</tt> (18; 100%), <tt><a href="Poss.html">Poss</a>=Yes</tt> (18; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (15; 83%), <tt><a href="Case.html">Case</a>=Gen</tt> (11; 61%).</p>
 
 <p><code>DET</code> tokens may have the following values of <code>Reflex</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (24; 100% of non-empty <code>Reflex</code>): <em>své, svého, svých, svůj, svoji, svým, svou</em></li>
-  <li><code>EMPTY</code> (571): <em>jejich, jeho, této, tohoto, těchto, tyto, tato, tento, její, tomto</em></li>
+  <li><code>Yes</code> (18; 100% of non-empty <code>Reflex</code>): <em>své, svého, svých, svůj, svou</em></li>
+  <li><code>EMPTY</code> (387): <em>jejich, této, jeho, těchto, tyto, tohoto, tento, tato, její, tomto</em></li>
 </ul>
 
 
@@ -226,9 +250,25 @@ The feature is used with 2 part-of-speech tags: <a href="">cs-pos/PRON</a> (475;
 
 Reflex in other languages:
 
+[<a href="../../am/feat/Reflex.html">am</a>]
+
+[<a href="../../ar/feat/Reflex.html">ar</a>]
+
 [<a href="../../bg/feat/Reflex.html">bg</a>]
 
+[<a href="../../bxr/feat/Reflex.html">bxr</a>]
+
+[<a href="../../ca/feat/Reflex.html">ca</a>]
+
+[<a href="../../ckb/feat/Reflex.html">ckb</a>]
+
+[<a href="../../cop/feat/Reflex.html">cop</a>]
+
 [<a href="../../cs/feat/Reflex.html">cs</a>]
+
+[<a href="../../cu/feat/Reflex.html">cu</a>]
+
+[<a href="../../da/feat/Reflex.html">da</a>]
 
 [<a href="../../de/feat/Reflex.html">de</a>]
 
@@ -238,29 +278,97 @@ Reflex in other languages:
 
 [<a href="../../es/feat/Reflex.html">es</a>]
 
+[<a href="../../et/feat/Reflex.html">et</a>]
+
 [<a href="../../eu/feat/Reflex.html">eu</a>]
 
 [<a href="../../fa/feat/Reflex.html">fa</a>]
 
 [<a href="../../fi/feat/Reflex.html">fi</a>]
 
+[<a href="../../fo/feat/Reflex.html">fo</a>]
+
 [<a href="../../fr/feat/Reflex.html">fr</a>]
 
 [<a href="../../ga/feat/Reflex.html">ga</a>]
 
+[<a href="../../gl/feat/Reflex.html">gl</a>]
+
+[<a href="../../got/feat/Reflex.html">got</a>]
+
+[<a href="../../grc/feat/Reflex.html">grc</a>]
+
 [<a href="../../he/feat/Reflex.html">he</a>]
 
+[<a href="../../hi/feat/Reflex.html">hi</a>]
+
+[<a href="../../hr/feat/Reflex.html">hr</a>]
+
 [<a href="../../hu/feat/Reflex.html">hu</a>]
+
+[<a href="../../id/feat/Reflex.html">id</a>]
 
 [<a href="../../it/feat/Reflex.html">it</a>]
 
 [<a href="../../ja/feat/Reflex.html">ja</a>]
 
+[<a href="../../kk/feat/Reflex.html">kk</a>]
+
+[<a href="../../kmr/feat/Reflex.html">kmr</a>]
+
 [<a href="../../ko/feat/Reflex.html">ko</a>]
 
-[<a href="../../sv/feat/Reflex.html">sv</a>]
+[<a href="../../la/feat/Reflex.html">la</a>]
+
+[<a href="../../lv/feat/Reflex.html">lv</a>]
+
+[<a href="../../mr/feat/Reflex.html">mr</a>]
+
+[<a href="../../nl/feat/Reflex.html">nl</a>]
+
+[<a href="../../no/feat/Reflex.html">no</a>]
+
+[<a href="../../pl/feat/Reflex.html">pl</a>]
+
+[<a href="../../pt/feat/Reflex.html">pt</a>]
+
+[<a href="../../ro/feat/Reflex.html">ro</a>]
+
+[<a href="../../ru/feat/Reflex.html">ru</a>]
+
+[<a href="../../sa/feat/Reflex.html">sa</a>]
+
+[<a href="../../sk/feat/Reflex.html">sk</a>]
+
+[<a href="../../sla/feat/Reflex.html">sla</a>]
+
+[<a href="../../sl/feat/Reflex.html">sl</a>]
+
+[<a href="../../so/feat/Reflex.html">so</a>]
+
+[<a href="../../sr/feat/Reflex.html">sr</a>]
+
+[<a href="../../swl/feat/Reflex.html">swl</a>]
+
+[<a href="../../ta/feat/Reflex.html">ta</a>]
+
+[<a href="../../tr/feat/Reflex.html">tr</a>]
 
 [<a href="../../u/feat/Reflex.html">u</a>]
+
+[<a href="../../ug/feat/Reflex.html">ug</a>]
+
+[<a href="../../uk/feat/Reflex.html">uk</a>]
+
+[<a href="../../ur/feat/Reflex.html">ur</a>]
+
+[<a href="../../urj/feat/Reflex.html">urj</a>]
+
+[<a href="../../vi/feat/Reflex.html">vi</a>]
+
+[<a href="../../yue/feat/Reflex.html">yue</a>]
+
+[<a href="../../zh/feat/Reflex.html">zh</a>]
 
 
 

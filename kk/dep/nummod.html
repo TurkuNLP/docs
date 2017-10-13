@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-kk">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/kk/dep">kk/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/nummod.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-kk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/kk/dep">kk/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/nummod.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -78,66 +95,32 @@ nummod(күн-4, үш-3)
 
 <p>This relation is universal.</p>
 
-<p>57 nodes (1%) are attached to their parents as <code>nummod</code>.</p>
+<p>4 nodes (1%) are attached to their parents as <code>nummod</code>.</p>
 
-<p>57 instances of <code>nummod</code> (100%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.07017543859649.</p>
+<p>4 instances of <code>nummod</code> (100%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.</p>
 
-<p>The following 5 pairs of parts of speech are connected with <code>nummod</code>: <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/NUM</a> (45; 79% instances), <a href="">kk-pos/NUM</a>-<a href="">kk-pos/NUM</a> (5; 9% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/NOUN</a> (4; 7% instances), <a href="">kk-pos/PROPN</a>-<a href="">kk-pos/NOUN</a> (2; 4% instances), <a href="">kk-pos/ADJ</a>-<a href="">kk-pos/NUM</a> (1; 2% instances).</p>
+<p>The following 1 pairs of parts of speech are connected with <code>nummod</code>: <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/NUM</a> (4; 100% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 4 3 nummod	color:blue
-1	Ұлттық	ұлттық	ADJ	adj	_	2	amod	_	_
-2	мейрамы	мейрам	NOUN	n	_	4	nsubj	_	px3sp|nom
-3	11	11	NUM	num	_	4	nummod	_	_
-4	_	ақпан	NOUN	n	_	0	root	_	nom
-5	_	е	AUX	cop	_	4	cop	_	aor|p3|sg
-6	—	—	PUNCT	guio	_	4	punct	_	_
-7	Революция	революция	NOUN	n	_	8	nmod:poss	_	nom
-8	күні	күн	NOUN	n	_	4	appos	_	px3sp|nom
-9	(	(	PUNCT	lpar	_	10	punct	_	_
-10	1979	1979	NUM	num	_	4	appos	_	_
-11	)	)	PUNCT	rpar	_	10	punct	_	_
-12	.	.	PUNCT	sent	_	4	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 9	bgColor:blue
-# visual-style 9	fgColor:white
-# visual-style 10	bgColor:blue
-# visual-style 10	fgColor:white
-# visual-style 10 9 nummod	color:blue
-1	Астанасы	астана	NOUN	n	_	4	nsubj	_	px3sp|nom
-2	—	—	PUNCT	guio	_	1	punct	_	_
-3	Тегеран	Тегеран	PROPN	np	_	4	nmod:poss	_	top|nom
-4	_	қала	NOUN	n	_	0	root	_	px3sp|nom
-5	_	е	AUX	cop	_	4	cop	_	aor|p3|sg
-6	(	(	PUNCT	lpar	_	10	punct	_	_
-7	айналасын	айнала	NOUN	n	_	8	dobj	_	px3sp|acc
-8	қосқанда	қос	VERB	v	_	10	advcl	_	tv|ger_past|loc
-9	12	12	NUM	num	_	10	nummod	_	_
-10	миллионнан	миллион	NUM	num	_	4	appos	_	subst|abl
-11	астам	астам	ADP	post	_	10	case	_	_
-12	)	)	PUNCT	rpar	_	10	punct	_	_
-13	.	.	PUNCT	sent	_	4	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 5 4 nummod	color:blue
-1	Жер	жер	NOUN	n	_	2	nmod:poss	_	nom
-2	көлемі	көлем	NOUN	n	_	5	nsubj	_	px3sp|nom
-3	1,648	1,648	NUM	num	_	4	nummod	_	_
-4	млн.	млн.	NOUN	abbr	_	5	nummod	_	_
-5	_	км²	NOUN	abbr	_	0	root	_	_
-6	_	е	AUX	cop	_	5	cop	_	aor|p3|sg
-7	.	.	PUNCT	sent	_	5	punct	_	_
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 1 nummod	color:blue
+1	Бес	бес	NUM	num	NumType=Card	2	nummod	_	_
+2	жылдың	жыл	NOUN	n	Case=Gen	3	nmod:poss	_	_
+3	ішінде	іш	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	6	obl	_	_
+4	үш	үш	NUM	num	NumType=Card	5	nummod	_	_
+5	баласы	бала	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nsubj	_	_
+6	бар	бар	ADJ	adj	_	0	root	_	_
+7	еді	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	cop	_	SpaceAfter=No
+8	:	:	PUNCT	sent	_	6	punct	_	_
+9	екеуі	екеу	NUM	num	Case=Nom|Number[psor]=Plur,Sing|NumType=Coll|Person[psor]=3	10	nsubj	_	_
+10	ұл	ұл	NOUN	n	Case=Nom	6	parataxis	_	SpaceAfter=No
+11	,	,	PUNCT	cm	_	10	punct	_	_
+12	біреуі	біреу	NUM	num	Case=Nom|Number[psor]=Plur,Sing|NumType=Coll|Person[psor]=3	13	nsubj	_	_
+13	қыз	қыз	NOUN	n	Case=Nom	6	parataxis	_	SpaceAfter=No
+14	.	.	PUNCT	sent	_	13	punct	_	_
 
 </code></pre>
 
@@ -149,9 +132,25 @@ Average distance between parent and child is 1.07017543859649.</p>
 
 nummod in other languages:
 
+[<a href="../../am/dep/nummod.html">am</a>]
+
+[<a href="../../ar/dep/nummod.html">ar</a>]
+
 [<a href="../../bg/dep/nummod.html">bg</a>]
 
+[<a href="../../bxr/dep/nummod.html">bxr</a>]
+
+[<a href="../../ca/dep/nummod.html">ca</a>]
+
+[<a href="../../ckb/dep/nummod.html">ckb</a>]
+
+[<a href="../../cop/dep/nummod.html">cop</a>]
+
 [<a href="../../cs/dep/nummod.html">cs</a>]
+
+[<a href="../../cu/dep/nummod.html">cu</a>]
+
+[<a href="../../da/dep/nummod.html">da</a>]
 
 [<a href="../../de/dep/nummod.html">de</a>]
 
@@ -161,29 +160,99 @@ nummod in other languages:
 
 [<a href="../../es/dep/nummod.html">es</a>]
 
+[<a href="../../et/dep/nummod.html">et</a>]
+
 [<a href="../../eu/dep/nummod.html">eu</a>]
 
 [<a href="../../fa/dep/nummod.html">fa</a>]
 
 [<a href="../../fi/dep/nummod.html">fi</a>]
 
+[<a href="../../fo/dep/nummod.html">fo</a>]
+
 [<a href="../../fr/dep/nummod.html">fr</a>]
 
 [<a href="../../ga/dep/nummod.html">ga</a>]
 
+[<a href="../../gl/dep/nummod.html">gl</a>]
+
+[<a href="../../got/dep/nummod.html">got</a>]
+
+[<a href="../../grc/dep/nummod.html">grc</a>]
+
 [<a href="../../he/dep/nummod.html">he</a>]
 
+[<a href="../../hi/dep/nummod.html">hi</a>]
+
+[<a href="../../hr/dep/nummod.html">hr</a>]
+
 [<a href="../../hu/dep/nummod.html">hu</a>]
+
+[<a href="../../id/dep/nummod.html">id</a>]
 
 [<a href="../../it/dep/nummod.html">it</a>]
 
 [<a href="../../ja/dep/nummod.html">ja</a>]
 
+[<a href="../../kk/dep/nummod.html">kk</a>]
+
+[<a href="../../kmr/dep/nummod.html">kmr</a>]
+
 [<a href="../../ko/dep/nummod.html">ko</a>]
+
+[<a href="../../la/dep/nummod.html">la</a>]
+
+[<a href="../../lv/dep/nummod.html">lv</a>]
+
+[<a href="../../mr/dep/nummod.html">mr</a>]
+
+[<a href="../../nl/dep/nummod.html">nl</a>]
+
+[<a href="../../no/dep/nummod.html">no</a>]
+
+[<a href="../../pl/dep/nummod.html">pl</a>]
+
+[<a href="../../pt/dep/nummod.html">pt</a>]
+
+[<a href="../../ro/dep/nummod.html">ro</a>]
+
+[<a href="../../ru/dep/nummod.html">ru</a>]
+
+[<a href="../../sa/dep/nummod.html">sa</a>]
+
+[<a href="../../sk/dep/nummod.html">sk</a>]
+
+[<a href="../../sla/dep/nummod.html">sla</a>]
+
+[<a href="../../sl/dep/nummod.html">sl</a>]
+
+[<a href="../../so/dep/nummod.html">so</a>]
+
+[<a href="../../sr/dep/nummod.html">sr</a>]
 
 [<a href="../../sv/dep/nummod.html">sv</a>]
 
+[<a href="../../swl/dep/nummod.html">swl</a>]
+
+[<a href="../../ta/dep/nummod.html">ta</a>]
+
+[<a href="../../tr/dep/nummod.html">tr</a>]
+
 [<a href="../../u/dep/nummod.html">u</a>]
+
+[<a href="../../ug/dep/nummod.html">ug</a>]
+
+[<a href="../../uk/dep/nummod.html">uk</a>]
+
+[<a href="../../ur/dep/nummod.html">ur</a>]
+
+[<a href="../../urj/dep/nummod.html">urj</a>]
+
+[<a href="../../vi/dep/nummod.html">vi</a>]
+
+[<a href="../../yue/dep/nummod.html">yue</a>]
+
+[<a href="../../zh/dep/nummod.html">zh</a>]
 
 
 

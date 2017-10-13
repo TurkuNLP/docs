@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../css/hint.css"/>
     <script type="text/javascript" src="../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-v2">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/v2/v2">v2/v2</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_v2/mwe.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-v2">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/v2/v2">v2/v2</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_v2/mwe.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -48,10 +65,10 @@
 <p>Since UD does not allow “words with spaces” (but see a partly new proposal under <a href="word-segmentation.html">word segmentation</a>), even completely fixed multiword expressions must be annotated with (dummy) dependency relations. To improve annotation consistency, we propose the following change for v2:</p>
 
 <ul>
-  <li>Rename <a href="">u-dep/mwe</a> to <strong>fixed</strong> and make clear that this should only be used for completely fixed expressions
+  <li>Rename <code>mwe</code> to <a href="">u-dep/fixed</a> and make clear that this should only be used for completely fixed expressions
 <!--* Change the direction of arrows (right-to-left instead of left-to-right) for this relation as well as the other non-dependency relations [u-dep/name]() and [u-dep/foreign]() (see also [semantic categories](semantic-categories.html))--></li>
-  <li>Rename <a href="">u-dep/name</a> to <strong>flat</strong> and extend its use to semi-fixed multiword expressions that do not have a clear syntactic head. (See <a href="semantic-categories.html">semantic categories</a>.)</li>
-  <li>Remove <a href="">u-dep/foreign</a> and subsume its use under the new relation <a href="">u-dep/flat</a>.</li>
+  <li>Rename <code>name</code> to <a href="">u-dep/flat</a> and extend its use to semi-fixed multiword expressions that do not have a clear syntactic head. (See <a href="semantic-categories.html">semantic categories</a>.)</li>
+  <li>Remove <code>foreign</code> and subsume its use under the new relation <a href="">u-dep/flat</a>.</li>
   <li>Add a new subtype of <a href="">u-dep/compound</a> for handling serial verb constructions in analogy with particle verbs
 and grammticized light verb constructions.</li>
 </ul>
@@ -59,9 +76,9 @@ and grammticized light verb constructions.</li>
 <h2 id="rename-mwe-to-fixed">Rename mwe to fixed</h2>
 
 <p>It seems that the label <code>mwe</code> (multiword expression) has led to a lot of confusion. It was never intended for multiword expressions like “kick the bucket”, or Fr. “pomme de terre” (potato). It has always been restricted to the <em>fixed expressions</em> category of
-<a href="http://lingo.stanford.edu/pubs/WP-2001-03.pdf">Sag et al.</a>, excluding any relations in scope of <a href="">u-dep/name</a> or <a href="">u-dep/compound</a>. The label <code>fixed</code> reflects this fact better.</p>
+<a href="http://lingo.stanford.edu/pubs/WP-2001-03.pdf">Sag et al.</a>, excluding any relations in scope of <code>name</code> or <a href="">u-dep/compound</a>. The label <a href="">u-dep/fixed</a> reflects this fact better.</p>
 
-<p>The proposed change is therefore to change the label <code>mwe</code> (multiword expression) to <code>fixed</code>, and making the guidelines more restrictive (namely, <a href="u-dep/mwe">fixed</a> is used <strong>only</strong> for completely fixed grammaticized expressions that behave like function words or short adverbials).</p>
+<p>The proposed change is therefore to change the label <code>mwe</code> (multiword expression) to <a href="">u-dep/fixed</a>, and making the guidelines more restrictive (namely, <code>fixed</code> is used <strong>only</strong> for completely fixed grammaticized expressions that behave like function words or short adverbials).</p>
 
 <h2 id="remove-foreign">Remove foreign</h2>
 

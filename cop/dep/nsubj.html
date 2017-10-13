@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-cop">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/cop/dep">cop/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_cop-dep/nsubj.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cop">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/cop/dep">cop/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cop-dep/nsubj.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -45,8 +62,64 @@
 
           <h2><code>nsubj</code>: nominal subject</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>nsubj</code>.</p>
+<p>Designates the subject of a verb. The relation is from the lexical verb to the subject pronoun or noun, not from the auxiliary, as shown below. The annotation guidelines do not distinguish passive subjects, since the two forms of passive-like expressions in Coptic may be seen as syntactically indistinct from active:</p>
+
+<p><strong>Actional passive:</strong> formed by a third person plural with non-plural reference, but if there is no singular ‘by’ phrase, it is formally indistinguishable from the active equivalent:</p>
+
+<pre><code class="language-sdparse">Ⲁ/AUX ⲩ/PRON ⲥⲟⲧⲡ/VERB ⲥ/PRON  \n she was chosen (or: they chose her)
+
+aux(ⲥⲟⲧⲡ, ⲁ)
+nsubj(ⲥⲟⲧⲡ, ⲩ)
+obj(ⲥⲟⲧⲡ, ⲥ)
+</code></pre>
+
+<p><strong>Stative passive:</strong> formed by the morphological stative form (pos=VSTAT) with a transitive verb, however syntactically same as statal reading with intransitive verb:</p>
+
+<pre><code class="language-sdparse">ϥ/PRON ⲕⲏⲧ/VERB \n it is built (transitive ⲕⲱⲧ “build”)
+
+nsubj(ⲕⲏⲧ, ϥ)
+</code></pre>
+
+<pre><code class="language-sdparse">ϥ/PRON ϩⲟⲗϭ/VERB \n it is sweet (intransitive ϩⲗⲟϭ)
+
+nsubj(ϩⲟⲗϭ, ϥ)
+</code></pre>
+
+<p>Note also that the existential predicates (Scriptorium pos=EXIST) take <code>nsubj</code> for the existing entity, even when they are used in the possessive construction:</p>
+
+<pre><code class="language-sdparse">ⲙⲛ/VERB ⲙⲛⲧⲗⲏⲥⲧⲏⲥ/NOUN ϣⲟⲟⲡ/VERB \n there is no robbery
+
+aux(ϣⲟⲟⲡ, ⲙⲛ)
+nsubj(ϣⲟⲟⲡ, ⲙⲛⲧⲗⲏⲥⲧⲏⲥ)
+</code></pre>
+
+<p>If the possessor is indicated in the EXIST construction, the possessed is still annotated as <code>nsubj</code>, and the possessor is annotated as the indirect object, see <code>iobj</code> (i.e. the construction is interpreted as ‘there exists X to Y’).</p>
+
+<pre><code class="language-sdparse">ⲟⲩⲛⲧⲁ/VERB ⲩ/PRON ⲓⲏⲥⲟⲩⲥ/PROPN \n they have Jesus (literally: “exists to them Jesus”)
+
+iobj(ⲟⲩⲛⲧⲁ, ⲩ)
+nsubj(ⲟⲩⲛⲧⲁ, ⲓⲏⲥⲟⲩⲥ)
+</code></pre>
+
+<p>In pure existence predication, the existing entity is the subject, and the EXIST predicate is the local root:</p>
+
+<pre><code class="language-sdparse">ⲙⲛ/VERB ϭⲉ/PART ⲛⲟⲩⲧⲉ/NOUN ⲛⲃⲗⲁ/ADP ⲕ/PRON \n There is no God but you (“not existing” is the main predicate, “God” is the subject)
+
+nsubj(ⲙⲛ, ⲛⲟⲩⲧⲉ) 
+det(ⲛⲟⲩⲧⲉ, ϭⲉ)
+obl(ⲙⲛ, ⲕ)
+case(ⲕ, ⲛⲃⲗⲁ)
+</code></pre>
+
+<p>The same analysis applies to the presentative particle ⲉⲓⲥ (‘behold’, ‘voila’):</p>
+
+<pre><code class="language-sdparse">ⲉⲓⲥ/PART ⲟⲩ/DET ⲥⲃⲱ/N ⲛ/ADP ⲃⲣⲣⲉ/N \n Behold, a new teaching
+
+nsubj(ⲉⲓⲥ, ⲥⲃⲱ)
+det(ⲥⲃⲱ, ⲟⲩ)
+nmod(ⲃⲣⲣⲉ, ⲥⲃⲱ)
+case(ⲃⲣⲣⲉ, ⲛ)
+</code></pre>
 
 
 <!-- "automatic stats" -->
@@ -63,12 +136,12 @@ for <code>nsubj</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>530 nodes (10%) are attached to their parents as <code>nsubj</code>.</p>
+<p>932 nodes (11%) are attached to their parents as <code>nsubj</code>.</p>
 
-<p>480 instances of <code>nsubj</code> (91%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.3377358490566.</p>
+<p>835 instances of <code>nsubj</code> (90%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.29613733905579.</p>
 
-<p>The following 17 pairs of parts of speech are connected with <code>nsubj</code>: <a href="">cop-pos/VERB</a>-<a href="">cop-pos/PRON</a> (424; 80% instances), <a href="">cop-pos/VERB</a>-<a href="">cop-pos/NOUN</a> (57; 11% instances), <a href="">cop-pos/NOUN</a>-<a href="">cop-pos/PRON</a> (10; 2% instances), <a href="">cop-pos/PRON</a>-<a href="">cop-pos/DET</a> (8; 2% instances), <a href="">cop-pos/VERB</a>-<a href="">cop-pos/PROPN</a> (8; 2% instances), <a href="">cop-pos/DET</a>-<a href="">cop-pos/NOUN</a> (4; 1% instances), <a href="">cop-pos/PRON</a>-<a href="">cop-pos/NOUN</a> (4; 1% instances), <a href="">cop-pos/DET</a>-<a href="">cop-pos/DET</a> (2; 0% instances), <a href="">cop-pos/NOUN</a>-<a href="">cop-pos/NOUN</a> (2; 0% instances), <a href="">cop-pos/PRON</a>-<a href="">cop-pos/PRON</a> (2; 0% instances), <a href="">cop-pos/VERB</a>-<a href="">cop-pos/DET</a> (2; 0% instances), <a href="">cop-pos/VERB</a>-<a href="">cop-pos/NUM</a> (2; 0% instances), <a href="">cop-pos/ADV</a>-<a href="">cop-pos/PRON</a> (1; 0% instances), <a href="">cop-pos/DET</a>-<a href="">cop-pos/PRON</a> (1; 0% instances), <a href="">cop-pos/NOUN</a>-<a href="">cop-pos/ADP</a> (1; 0% instances), <a href="">cop-pos/NOUN</a>-<a href="">cop-pos/DET</a> (1; 0% instances), <a href="">cop-pos/PROPN</a>-<a href="">cop-pos/ADP</a> (1; 0% instances).</p>
+<p>The following 22 pairs of parts of speech are connected with <code>nsubj</code>: <a href="">cop-pos/VERB</a>-<a href="">cop-pos/PRON</a> (756; 81% instances), <a href="">cop-pos/VERB</a>-<a href="">cop-pos/NOUN</a> (96; 10% instances), <a href="">cop-pos/NOUN</a>-<a href="">cop-pos/PRON</a> (15; 2% instances), <a href="">cop-pos/PRON</a>-<a href="">cop-pos/DET</a> (11; 1% instances), <a href="">cop-pos/VERB</a>-<a href="">cop-pos/PROPN</a> (11; 1% instances), <a href="">cop-pos/PRON</a>-<a href="">cop-pos/NOUN</a> (10; 1% instances), <a href="">cop-pos/DET</a>-<a href="">cop-pos/NOUN</a> (7; 1% instances), <a href="">cop-pos/VERB</a>-<a href="">cop-pos/DET</a> (5; 1% instances), <a href="">cop-pos/NOUN</a>-<a href="">cop-pos/NOUN</a> (4; 0% instances), <a href="">cop-pos/PRON</a>-<a href="">cop-pos/PRON</a> (3; 0% instances), <a href="">cop-pos/DET</a>-<a href="">cop-pos/DET</a> (2; 0% instances), <a href="">cop-pos/VERB</a>-<a href="">cop-pos/NUM</a> (2; 0% instances), <a href="">cop-pos/ADV</a>-<a href="">cop-pos/PRON</a> (1; 0% instances), <a href="">cop-pos/DET</a>-<a href="">cop-pos/PRON</a> (1; 0% instances), <a href="">cop-pos/NOUN</a>-<a href="">cop-pos/ADP</a> (1; 0% instances), <a href="">cop-pos/NOUN</a>-<a href="">cop-pos/DET</a> (1; 0% instances), <a href="">cop-pos/NUM</a>-<a href="">cop-pos/PRON</a> (1; 0% instances), <a href="">cop-pos/PART</a>-<a href="">cop-pos/NOUN</a> (1; 0% instances), <a href="">cop-pos/PART</a>-<a href="">cop-pos/NUM</a> (1; 0% instances), <a href="">cop-pos/PROPN</a>-<a href="">cop-pos/ADP</a> (1; 0% instances), <a href="">cop-pos/PROPN</a>-<a href="">cop-pos/DET</a> (1; 0% instances), <a href="">cop-pos/PROPN</a>-<a href="">cop-pos/NOUN</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 2	bgColor:blue
 # visual-style 2	fgColor:white
@@ -78,17 +151,17 @@ Average distance between parent and child is 1.3377358490566.</p>
 1	ⲛ	ⲛⲧⲉ	AUX	ACONJ	_	3	aux	_	_
 2	ⲅ	ⲛⲧⲟⲕ	PRON	PPERS	_	3	nsubj	_	_
 3	ⲥⲟⲧ	ⲥⲱⲧ	VERB	V	_	0	root	_	_
-4	ⲟⲩ	ⲛⲧⲟⲟⲩ	PRON	PPERO	_	3	dobj	_	_
+4	ⲟⲩ	ⲛⲧⲟⲟⲩ	PRON	PPERO	_	3	obj	_	_
 5	ⲉⲃⲟⲗ	ⲉⲃⲟⲗ	ADV	ADV	_	8	case	_	_
-6	ϩⲛ	ϩⲛ	ADP	PREP	_	5	mwe	_	_
+6	ϩⲛ	ϩⲛ	ADP	PREP	_	5	fixed	_	_
 7	ⲧ	ⲡ	DET	ART	_	8	det	_	_
-8	ϭⲓϫ	ϭⲓϫ	NOUN	N	_	3	nmod	_	_
+8	ϭⲓϫ	ϭⲓϫ	NOUN	N	_	3	obl	_	_
 9	ⲛ	ⲛ	ADP	PREP	_	10	case	_	_
 10	ⲛ	ⲡ	DET	ART	_	8	nmod	_	_
 11	ⲉⲧ	ⲉⲧⲉⲣⲉ	SCONJ	CREL	_	12	mark	_	_
 12	ⲑⲗⲓⲃⲉ	ⲑⲗⲓⲃⲉ	VERB	V	_	10	acl	_	_
 13	ⲙⲙⲟ	ⲛ	ADP	PREP	_	14	case	_	_
-14	ⲟⲩ	ⲛⲧⲟⲟⲩ	PRON	PPERO	_	12	dobj	_	_
+14	ⲟⲩ	ⲛⲧⲟⲟⲩ	PRON	PPERO	_	12	obj	_	_
 15	·	·	PUNCT	PUNCT	_	3	punct	_	_
 
 </code></pre>
@@ -99,12 +172,12 @@ Average distance between parent and child is 1.3377358490566.</p>
 # visual-style 11	fgColor:white
 # visual-style 11 13 nsubj	color:blue
 1	ϣⲛ	ϣⲛ	VERB	V	_	0	root	_	_
-2	ϩⲧⲏ	ϩⲏⲧ	NOUN	N	_	1	dobj	_	_
+2	ϩⲧⲏ	ϩⲏⲧ	NOUN	N	_	1	obj	_	_
 3	ⲕ	ⲛⲧⲟⲕ	PRON	PPERO	_	2	det	_	_
 4	ϭⲉ	ϭⲉ	PART	PTC	_	1	advmod	_	_
 5	ϩⲁ	ϩⲁ	ADP	PREP	_	7	case	_	_
 6	ⲡⲉⲕ	ⲡⲉⲕ	DET	PPOS	_	7	det	_	_
-7	ⲗⲁⲟⲥ	ⲗⲁⲟⲥ	NOUN	N	_	1	nmod	_	_
+7	ⲗⲁⲟⲥ	ⲗⲁⲟⲥ	NOUN	N	_	1	obl	_	_
 8	ⲡ	ⲡ	DET	ART	_	9	det	_	_
 9	ϩⲁⲣϣϩⲏⲧ	ϩⲁⲣϣϩⲏⲧ	NOUN	N	_	1	vocative	_	_
 10	ⲉⲧⲉ	ⲉⲧⲉⲣⲉ	SCONJ	CREL	_	11	mark	_	_
@@ -115,18 +188,36 @@ Average distance between parent and child is 1.3377358490566.</p>
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
-# visual-style 7 4 nsubj	color:blue
-1	ⲁ	ⲁ	AUX	APST	_	3	aux	_	_
-2	ϥ	ⲛⲧⲟϥ	PRON	PPERS	_	3	nsubj	_	_
-3	ⲁϩⲉⲣⲁⲧ	ⲱϩⲉ	VERB	V	_	0	root	_	_
-4	ϥ	ⲛⲧⲟϥ	PRON	PPERS	_	7	nsubj	_	_
-5	ⲉ	ⲉ	ADP	PREP	_	7	case	_	_
-6	ⲡⲉ	ⲡ	DET	ART	_	7	det	_	_
-7	ϣⲗⲏⲗ	ϣⲗⲏⲗ	NOUN	N	_	3	nmod	_	_
+<pre><code class="language-conllu"># visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 2 nsubj	color:blue
+1	ⲛⲉ	ⲛⲉⲣⲉ	AUX	CPRET	_	5	mark	_	_
+2	ⲥ	ⲛⲧⲟⲥ	PRON	PPERS	_	5	nsubj	_	_
+3	ⲙ	ⲛ	ADP	PREP	_	5	case	_	_
+4	ⲡ	ⲡ	DET	ART	_	5	det	_	_
+5	ⲙⲁ	ⲙⲁ	NOUN	N	_	0	root	_	_
+6	ⲇⲉ	ⲇⲉ	PART	PTC	_	5	advmod	_	_
+7	ⲉⲧ	ⲉⲧⲉⲣⲉ	SCONJ	CREL	_	8	mark	_	_
+8	ⲙⲙⲁⲩ	ⲙⲙⲁⲩ	ADV	ADV	_	5	acl	_	_
+9	ϩⲁⲣⲁⲧ	ϩⲁⲣⲁⲧ	ADP	PREP	_	10	case	_	_
+10	ϥ	ⲛⲧⲟϥ	PRON	PPERO	_	5	nmod	_	_
+11	ⲙ	ⲛ	ADP	PREP	_	13	case	_	_
+12	ⲡ	ⲡ	DET	ART	_	13	det	_	_
+13	ⲧⲟⲟⲩ	ⲧⲟⲟⲩ	NOUN	N	_	5	nmod	_	_
+14	ⲛϭⲓ	ⲛϭⲓ	PART	PTC	_	16	case	_	_
+15	ⲟⲩ	ⲟⲩ	DET	ART	_	16	det	_	_
+16	ⲛⲟϭ	ⲛⲟϭ	NOUN	N	_	5	dislocated	_	_
+17	ⲛ	ⲛ	ADP	PREP	_	18	case	_	_
+18	ⲁⲅⲉⲗⲏ	ⲁⲅⲉⲗⲏ	NOUN	N	_	16	nmod	_	_
+19	ⲛ	ⲛ	ADP	PREP	_	20	case	_	_
+20	ⲣⲓⲣ	ⲣⲓⲣ	NOUN	N	_	18	nmod	_	_
+21	ⲉ	ⲉⲧⲉⲣⲉ	SCONJ	CREL	_	23	mark	_	_
+22	ⲩ	ⲛⲧⲟⲟⲩ	PRON	PPERS	_	23	nsubj	_	_
+23	ⲙⲟⲟⲛⲉ	ⲙⲟⲟⲛⲉ	VERB	V	_	20	acl	_	_
+24	ⲙⲙⲟ	ⲛ	ADP	PREP	_	25	case	_	_
+25	ⲥ	ⲛⲧⲟⲥ	PRON	PPERO	_	23	obj	_	_
 
 </code></pre>
 
@@ -138,9 +229,25 @@ Average distance between parent and child is 1.3377358490566.</p>
 
 nsubj in other languages:
 
+[<a href="../../am/dep/nsubj.html">am</a>]
+
+[<a href="../../ar/dep/nsubj.html">ar</a>]
+
 [<a href="../../bg/dep/nsubj.html">bg</a>]
 
+[<a href="../../bxr/dep/nsubj.html">bxr</a>]
+
+[<a href="../../ca/dep/nsubj.html">ca</a>]
+
+[<a href="../../ckb/dep/nsubj.html">ckb</a>]
+
+[<a href="../../cop/dep/nsubj.html">cop</a>]
+
 [<a href="../../cs/dep/nsubj.html">cs</a>]
+
+[<a href="../../cu/dep/nsubj.html">cu</a>]
+
+[<a href="../../da/dep/nsubj.html">da</a>]
 
 [<a href="../../de/dep/nsubj.html">de</a>]
 
@@ -150,29 +257,99 @@ nsubj in other languages:
 
 [<a href="../../es/dep/nsubj.html">es</a>]
 
+[<a href="../../et/dep/nsubj.html">et</a>]
+
 [<a href="../../eu/dep/nsubj.html">eu</a>]
 
 [<a href="../../fa/dep/nsubj.html">fa</a>]
 
 [<a href="../../fi/dep/nsubj.html">fi</a>]
 
+[<a href="../../fo/dep/nsubj.html">fo</a>]
+
 [<a href="../../fr/dep/nsubj.html">fr</a>]
 
 [<a href="../../ga/dep/nsubj.html">ga</a>]
 
+[<a href="../../gl/dep/nsubj.html">gl</a>]
+
+[<a href="../../got/dep/nsubj.html">got</a>]
+
+[<a href="../../grc/dep/nsubj.html">grc</a>]
+
 [<a href="../../he/dep/nsubj.html">he</a>]
 
+[<a href="../../hi/dep/nsubj.html">hi</a>]
+
+[<a href="../../hr/dep/nsubj.html">hr</a>]
+
 [<a href="../../hu/dep/nsubj.html">hu</a>]
+
+[<a href="../../id/dep/nsubj.html">id</a>]
 
 [<a href="../../it/dep/nsubj.html">it</a>]
 
 [<a href="../../ja/dep/nsubj.html">ja</a>]
 
+[<a href="../../kk/dep/nsubj.html">kk</a>]
+
+[<a href="../../kmr/dep/nsubj.html">kmr</a>]
+
 [<a href="../../ko/dep/nsubj.html">ko</a>]
+
+[<a href="../../la/dep/nsubj.html">la</a>]
+
+[<a href="../../lv/dep/nsubj.html">lv</a>]
+
+[<a href="../../mr/dep/nsubj.html">mr</a>]
+
+[<a href="../../nl/dep/nsubj.html">nl</a>]
+
+[<a href="../../no/dep/nsubj.html">no</a>]
+
+[<a href="../../pl/dep/nsubj.html">pl</a>]
+
+[<a href="../../pt/dep/nsubj.html">pt</a>]
+
+[<a href="../../ro/dep/nsubj.html">ro</a>]
+
+[<a href="../../ru/dep/nsubj.html">ru</a>]
+
+[<a href="../../sa/dep/nsubj.html">sa</a>]
+
+[<a href="../../sk/dep/nsubj.html">sk</a>]
+
+[<a href="../../sla/dep/nsubj.html">sla</a>]
+
+[<a href="../../sl/dep/nsubj.html">sl</a>]
+
+[<a href="../../so/dep/nsubj.html">so</a>]
+
+[<a href="../../sr/dep/nsubj.html">sr</a>]
 
 [<a href="../../sv/dep/nsubj.html">sv</a>]
 
+[<a href="../../swl/dep/nsubj.html">swl</a>]
+
+[<a href="../../ta/dep/nsubj.html">ta</a>]
+
+[<a href="../../tr/dep/nsubj.html">tr</a>]
+
 [<a href="../../u/dep/nsubj.html">u</a>]
+
+[<a href="../../ug/dep/nsubj.html">ug</a>]
+
+[<a href="../../uk/dep/nsubj.html">uk</a>]
+
+[<a href="../../ur/dep/nsubj.html">ur</a>]
+
+[<a href="../../urj/dep/nsubj.html">urj</a>]
+
+[<a href="../../vi/dep/nsubj.html">vi</a>]
+
+[<a href="../../yue/dep/nsubj.html">yue</a>]
+
+[<a href="../../zh/dep/nsubj.html">zh</a>]
 
 
 

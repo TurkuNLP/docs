@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="css/hint.css"/>
     <script type="text/javascript" src="lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-">home</a></span>
 
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/issues.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/issues.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -66,9 +83,9 @@
     <p>Ellipsis.
   See the
   <a href="http://universaldependencies.org/cs/overview/specific-syntax.html#ellipsis">Czech documentation</a>
-  for an overview of possibilities. 
+  for an overview of possibilities.
   A related issue is <a href="https://github.com/UniversalDependencies/docs/issues/164">#164</a> (multiple root trees).
-  Questions: 
+  Questions:
   Are we satisfied with the <a href="">u-dep/remnant</a> analysis in cases where function word promotion by head elision is not   applicable?
   Even if we are, what do we do in cases where it cannot be applied (such as two orphaned verb arguments, no coordination)?
   Do we still believe that <code>NULL</code> nodes are evil?
@@ -113,7 +130,7 @@ well as chosen solutions for different languages.</p>
     <p>Adpositions (<a href="https://github.com/UniversalDependencies/docs/issues/203">#203</a>). They are sometimes attached as <code>case</code>, sometimes as <code>mark</code> or <code>aux</code>, and the rules are not consistent across languages. More details are in <a href="http://github.com/UniversalDependencies/docs/files/1437/Adpositions.in.Universal.Dependencies.pdf">this document</a>. (Note that there is a slight overlap with the issue 10 above – Particles.)</p>
   </li>
   <li>
-    <p>Reflexive pronouns (<a href="https://github.com/UniversalDependencies/docs/issues/204">#204</a>). They are sometimes attached as <code>dobj</code>, sometimes as <code>compound:reflex</code> or <code>expl</code>, and the rules are not consistent across languages. More details are in <a href="http://github.com/UniversalDependencies/docs/files/1438/Inherently.reflexive.verbs.in.Universal.Dependencies.pdf">this document</a>.</p>
+    <p>Reflexive pronouns (<a href="https://github.com/UniversalDependencies/docs/issues/204">#204</a>). They are sometimes attached as <code>obj</code>, sometimes as <code>compound:reflex</code> or <code>expl</code>, and the rules are not consistent across languages. More details are in <a href="http://github.com/UniversalDependencies/docs/files/1438/Inherently.reflexive.verbs.in.Universal.Dependencies.pdf">this document</a>.</p>
   </li>
 </ol>
 

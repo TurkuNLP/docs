@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../css/hint.css"/>
     <script type="text/javascript" src="../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-v2">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/v2/v2">v2/v2</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_v2/function.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-v2">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/v2/v2">v2/v2</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_v2/function.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -48,9 +65,9 @@
 <p>One of the central design decisions of UD is to put priority on syntactic relations between content words and to treat function words essentially as “features” that attach to the content word they modify with special relations like <a href="">u-dep/aux</a>, <a href="">u-dep/cop</a>, <a href="">u-dep/mark</a> and <a href="">u-dep/case</a>. We propose the following changes to the treatment of function words in v2:</p>
 
 <ul>
-  <li>Add a new relation <code>clf</code> for classifiers (see below)</li>
+  <li>Add a new relation <a href="">u-dep/clf</a> for classifiers (see below)</li>
   <li>Allow <a href="">u-dep/aux</a> with nonverbal TAME particles (see below)</li>
-  <li>Remove <a href="">u-dep/auxpass</a> from the universal relations (see <a href="core-dependents.html">core dependents</a> for discussion)</li>
+  <li>Remove <code>auxpass</code> from the universal relations (see <a href="core-dependents.html">core dependents</a> for discussion)</li>
   <li>Limit <a href="">u-dep/cop</a> to pure linking words (whether verbal or nonverbal) (see <a href="copula.html">copula</a> for discussion)
 <!--* Allow [u-dep/case]() with subordinate clauses when it has a clear case-marking function (see below)--></li>
 </ul>
@@ -67,7 +84,7 @@
 </ul>
 
 <p>Syntactically, the classifier groups with the numeral, rather than the noun, and the proposal for v2 is to treat classifiers
-as functional dependents of numerals (or possessives) using the new relation <code>clf</code>:</p>
+as functional dependents of numerals (or possessives) using the new relation <a href="">u-dep/clf</a>:</p>
 
 <pre><code class="language-sdparse">sān gè xuéshēng \n three clf student
 nummod(xuéshēng, sān)

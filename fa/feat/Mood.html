@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-fa">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/fa/feat">fa/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_fa-feat/Mood.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-fa">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/fa/feat">fa/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fa-feat/Mood.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -65,59 +82,74 @@ for <code>Mood</code>.</p>
 <p>This feature is universal.
 It occurs with 2 different values: <code>Imp</code>, <code>Sub</code>.</p>
 
-<p>2571 tokens (2%) have a non-empty value of <code>Mood</code>.
-465 types (3%) occur at least once with a non-empty value of <code>Mood</code>.
-92 lemmas (1%) occur at least once with a non-empty value of <code>Mood</code>.
-The feature is used with 2 part-of-speech tags: <a href="">fa-pos/VERB</a> (2567; 2% instances), <a href="">fa-pos/AUX</a> (4; 0% instances).</p>
+<p>2365 tokens (2%) have a non-empty value of <code>Mood</code>.
+436 types (3%) occur at least once with a non-empty value of <code>Mood</code>.
+79 lemmas (1%) occur at least once with a non-empty value of <code>Mood</code>.
+The feature is used with 2 part-of-speech tags: <a href="">fa-pos/VERB</a> (1921; 1% instances), <a href="">fa-pos/AUX</a> (444; 0% instances).</p>
 
 <h3 id="verb"><code>VERB</code></h3>
 
-<p>2567 <a href="">fa-pos/VERB</a> tokens (15% of all <code>VERB</code> tokens) have a non-empty value of <code>Mood</code>.</p>
+<p>1921 <a href="">fa-pos/VERB</a> tokens (17% of all <code>VERB</code> tokens) have a non-empty value of <code>Mood</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Mood</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (2537; 99%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (2381; 93%), <tt><a href="Person.html">Person</a>=3</tt> (1810; 71%), <tt><a href="Number.html">Number</a>=Sing</tt> (1508; 59%).</p>
+<p>The most frequent other feature values with which <code>VERB</code> and <code>Mood</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (1893; 99%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (1753; 91%), <tt><a href="Person.html">Person</a>=3</tt> (1260; 66%), <tt><a href="Number.html">Number</a>=Sing</tt> (1058; 55%).</p>
 
 <p><code>VERB</code> tokens may have the following values of <code>Mood</code>:</p>
 
 <ul>
-  <li><code>Imp</code> (163; 6% of non-empty <code>Mood</code>): کن، گو، بگو، بگیر، باش، بده، ببین، برو، بیا، بدانید</li>
-  <li><code>Sub</code> (2404; 94% of non-empty <code>Mood</code>): کنند، باشد، کند، شود، باشند، کنیم، کنم، بشود، دهد، کنید</li>
-  <li><code>EMPTY</code> (14371): است، بود، کرد، شد، گفت، شده، می‌شود، دارد، می‌کند، کرده</li>
+  <li><code>Imp</code> (149; 8% of non-empty <code>Mood</code>): کن، گو، بگو، بگیر، ببین، بده، برو، بیا، بدانید، بفرمایید</li>
+  <li><code>Sub</code> (1772; 92% of non-empty <code>Mood</code>): کنند، کند، باشد، کنیم، کنم، دهد، باشند، کنید، دهند، بگیرد</li>
+  <li><code>EMPTY</code> (9179): است، کرد، گفت، دارد، می‌کند، بود، کرده، می‌کنند، کردند، داشت</li>
 </ul>
 
 <table>
   <tr><th>Paradigm <i>کرد#کن</i></th><th><tt>Imp</tt></th><th><tt>Sub</tt></th></tr>
   <tr><td><tt>_</tt></td><td></td><td>نکن</td></tr>
-  <tr><td><tt><a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=2</tt></td><td>مکن, نکن</td><td></td></tr>
-  <tr><td><tt><a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td>نشود</td></tr>
-  <tr><td><tt><a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td>نکنیم</td></tr>
-  <tr><td><tt><a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=2|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td>نکنید, نشوید</td></tr>
-  <tr><td><tt><a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td>نکنند</td></tr>
   <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td>کنم</td></tr>
   <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=2</tt></td><td>کن</td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=2|<a href="Polarity.html">Polarity</a>=Neg</tt></td><td>نکن, مکن</td><td></td></tr>
   <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=2|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td>کنی, کنید</td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Polarity.html">Polarity</a>=Neg|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td>نشود</td></tr>
   <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td>کند, شود, بشود</td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1|<a href="Polarity.html">Polarity</a>=Neg|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td>نکنیم</td></tr>
   <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td>کنیم, بکنیم, شویم</td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=2|<a href="Polarity.html">Polarity</a>=Neg|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td>نکنید</td></tr>
   <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=2|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td>کنید, بکنید</td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td>کنند, شوند, بکنند</td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Polarity.html">Polarity</a>=Neg|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td>نکنند</td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td>کنند, بکنند, شوند</td></tr>
 </table>
 
 <h3 id="aux"><code>AUX</code></h3>
 
-<p>4 <a href="">fa-pos/AUX</a> tokens (1% of all <code>AUX</code> tokens) have a non-empty value of <code>Mood</code>.</p>
+<p>444 <a href="">fa-pos/AUX</a> tokens (9% of all <code>AUX</code> tokens) have a non-empty value of <code>Mood</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Mood</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (4; 100%), <tt><a href="Person.html">Person</a>=3</tt> (4; 100%), <tt><a href="Number.html">Number</a>=Plur</tt> (4; 100%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (4; 100%).</p>
+<p>The most frequent other feature values with which <code>AUX</code> and <code>Mood</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (440; 99%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (437; 98%), <tt><a href="Person.html">Person</a>=3</tt> (406; 91%), <tt><a href="Number.html">Number</a>=Sing</tt> (326; 73%).</p>
 
 <p><code>AUX</code> tokens may have the following values of <code>Mood</code>:</p>
 
 <ul>
-  <li><code>Sub</code> (4; 100% of non-empty <code>Mood</code>): نتوانند</li>
-  <li><code>EMPTY</code> (738): باید، خواهد، می‌توان، خواهند، نباید، نخواهد، نمی‌توان، بایستی، دارد، داریم</li>
+  <li><code>Imp</code> (3; 1% of non-empty <code>Mood</code>): باش</li>
+  <li><code>Sub</code> (441; 99% of non-empty <code>Mood</code>): شود، باشد، باشند، بشود، شوند، نباشد، گردد، نشود، بشوند، باشه</li>
+  <li><code>EMPTY</code> (4449): است، بود، شد، می‌شود، شده، باید، خواهد، نیست، هستند، ست</li>
 </ul>
+
+<table>
+  <tr><th>Paradigm <i>بود#باش</i></th><th><tt>Imp</tt></th><th><tt>Sub</tt></th></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1|<a href="Polarity.html">Polarity</a>=Neg|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td>نباشم</td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td>باشم</td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=2</tt></td><td>باش</td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=2|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td>باشی</td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Polarity.html">Polarity</a>=Neg|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td>نباشد</td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td>باشد</td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td>باشیم</td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=2|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td>باشید</td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td>باشند</td></tr>
+</table>
 
 <h2 id="relations-with-agreement-in-mood">Relations with Agreement in <code>Mood</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>Mood</code>:
-<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (266; 59%).</p>
+<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (245; 59%),
+<tt>AUX –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (1; 100%).</p>
 
 
 
@@ -127,9 +159,25 @@ The feature is used with 2 part-of-speech tags: <a href="">fa-pos/VERB</a> (2567
 
 Mood in other languages:
 
+[<a href="../../am/feat/Mood.html">am</a>]
+
+[<a href="../../ar/feat/Mood.html">ar</a>]
+
 [<a href="../../bg/feat/Mood.html">bg</a>]
 
+[<a href="../../bxr/feat/Mood.html">bxr</a>]
+
+[<a href="../../ca/feat/Mood.html">ca</a>]
+
+[<a href="../../ckb/feat/Mood.html">ckb</a>]
+
+[<a href="../../cop/feat/Mood.html">cop</a>]
+
 [<a href="../../cs/feat/Mood.html">cs</a>]
+
+[<a href="../../cu/feat/Mood.html">cu</a>]
+
+[<a href="../../da/feat/Mood.html">da</a>]
 
 [<a href="../../de/feat/Mood.html">de</a>]
 
@@ -139,29 +187,99 @@ Mood in other languages:
 
 [<a href="../../es/feat/Mood.html">es</a>]
 
+[<a href="../../et/feat/Mood.html">et</a>]
+
 [<a href="../../eu/feat/Mood.html">eu</a>]
 
 [<a href="../../fa/feat/Mood.html">fa</a>]
 
 [<a href="../../fi/feat/Mood.html">fi</a>]
 
+[<a href="../../fo/feat/Mood.html">fo</a>]
+
 [<a href="../../fr/feat/Mood.html">fr</a>]
 
 [<a href="../../ga/feat/Mood.html">ga</a>]
 
+[<a href="../../gl/feat/Mood.html">gl</a>]
+
+[<a href="../../got/feat/Mood.html">got</a>]
+
+[<a href="../../grc/feat/Mood.html">grc</a>]
+
 [<a href="../../he/feat/Mood.html">he</a>]
 
+[<a href="../../hi/feat/Mood.html">hi</a>]
+
+[<a href="../../hr/feat/Mood.html">hr</a>]
+
 [<a href="../../hu/feat/Mood.html">hu</a>]
+
+[<a href="../../id/feat/Mood.html">id</a>]
 
 [<a href="../../it/feat/Mood.html">it</a>]
 
 [<a href="../../ja/feat/Mood.html">ja</a>]
 
+[<a href="../../kk/feat/Mood.html">kk</a>]
+
+[<a href="../../kmr/feat/Mood.html">kmr</a>]
+
 [<a href="../../ko/feat/Mood.html">ko</a>]
+
+[<a href="../../la/feat/Mood.html">la</a>]
+
+[<a href="../../lv/feat/Mood.html">lv</a>]
+
+[<a href="../../mr/feat/Mood.html">mr</a>]
+
+[<a href="../../nl/feat/Mood.html">nl</a>]
+
+[<a href="../../no/feat/Mood.html">no</a>]
+
+[<a href="../../pl/feat/Mood.html">pl</a>]
+
+[<a href="../../pt/feat/Mood.html">pt</a>]
+
+[<a href="../../ro/feat/Mood.html">ro</a>]
+
+[<a href="../../ru/feat/Mood.html">ru</a>]
+
+[<a href="../../sa/feat/Mood.html">sa</a>]
+
+[<a href="../../sk/feat/Mood.html">sk</a>]
+
+[<a href="../../sla/feat/Mood.html">sla</a>]
+
+[<a href="../../sl/feat/Mood.html">sl</a>]
+
+[<a href="../../so/feat/Mood.html">so</a>]
+
+[<a href="../../sr/feat/Mood.html">sr</a>]
 
 [<a href="../../sv/feat/Mood.html">sv</a>]
 
+[<a href="../../swl/feat/Mood.html">swl</a>]
+
+[<a href="../../ta/feat/Mood.html">ta</a>]
+
+[<a href="../../tr/feat/Mood.html">tr</a>]
+
 [<a href="../../u/feat/Mood.html">u</a>]
+
+[<a href="../../ug/feat/Mood.html">ug</a>]
+
+[<a href="../../uk/feat/Mood.html">uk</a>]
+
+[<a href="../../ur/feat/Mood.html">ur</a>]
+
+[<a href="../../urj/feat/Mood.html">urj</a>]
+
+[<a href="../../vi/feat/Mood.html">vi</a>]
+
+[<a href="../../yue/feat/Mood.html">yue</a>]
+
+[<a href="../../zh/feat/Mood.html">zh</a>]
 
 
 

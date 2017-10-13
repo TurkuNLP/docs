@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-tr">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/tr/dep">tr/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_tr-dep/advmod.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-tr">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/tr/dep">tr/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-dep/advmod.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -76,41 +93,27 @@ advmod(konuşuyorlar, Sürekli)
 <p>This relation is universal.
 There are 1 language-specific subtypes of <code>advmod</code>: <a href="">advmod:emph</a>.</p>
 
-<p>1889 nodes (3%) are attached to their parents as <code>advmod</code>.</p>
+<p>1571 nodes (3%) are attached to their parents as <code>advmod</code>.</p>
 
-<p>1766 instances of <code>advmod</code> (93%) are right-to-left (child precedes parent).
-Average distance between parent and child is 2.61037586024351.</p>
+<p>1400 instances of <code>advmod</code> (89%) are right-to-left (child precedes parent).
+Average distance between parent and child is 2.49522597071929.</p>
 
-<p>The following 11 pairs of parts of speech are connected with <code>advmod</code>: <a href="">tr-pos/VERB</a>-<a href="">tr-pos/ADV</a> (1175; 62% instances), <a href="">tr-pos/ADJ</a>-<a href="">tr-pos/ADV</a> (325; 17% instances), <a href="">tr-pos/NOUN</a>-<a href="">tr-pos/ADV</a> (212; 11% instances), <a href="">tr-pos/ADV</a>-<a href="">tr-pos/ADV</a> (106; 6% instances), <a href="">tr-pos/CONJ</a>-<a href="">tr-pos/ADV</a> (19; 1% instances), <a href="">tr-pos/PRON</a>-<a href="">tr-pos/ADV</a> (18; 1% instances), <a href="">tr-pos/NUM</a>-<a href="">tr-pos/ADV</a> (11; 1% instances), <a href="">tr-pos/PROPN</a>-<a href="">tr-pos/ADV</a> (8; 0% instances), <a href="">tr-pos/PUNCT</a>-<a href="">tr-pos/ADV</a> (7; 0% instances), <a href="">tr-pos/DET</a>-<a href="">tr-pos/ADV</a> (5; 0% instances), <a href="">tr-pos/ADP</a>-<a href="">tr-pos/ADV</a> (3; 0% instances).</p>
+<p>The following 12 pairs of parts of speech are connected with <code>advmod</code>: <a href="">tr-pos/VERB</a>-<a href="">tr-pos/ADV</a> (847; 54% instances), <a href="">tr-pos/ADJ</a>-<a href="">tr-pos/ADV</a> (283; 18% instances), <a href="">tr-pos/NOUN</a>-<a href="">tr-pos/ADV</a> (265; 17% instances), <a href="">tr-pos/ADV</a>-<a href="">tr-pos/ADV</a> (103; 7% instances), <a href="">tr-pos/NUM</a>-<a href="">tr-pos/ADV</a> (25; 2% instances), <a href="">tr-pos/PRON</a>-<a href="">tr-pos/ADV</a> (17; 1% instances), <a href="">tr-pos/CCONJ</a>-<a href="">tr-pos/ADV</a> (7; 0% instances), <a href="">tr-pos/PROPN</a>-<a href="">tr-pos/ADV</a> (7; 0% instances), <a href="">tr-pos/PUNCT</a>-<a href="">tr-pos/ADV</a> (6; 0% instances), <a href="">tr-pos/DET</a>-<a href="">tr-pos/ADV</a> (5; 0% instances), <a href="">tr-pos/ADP</a>-<a href="">tr-pos/ADV</a> (4; 0% instances), <a href="">tr-pos/INTJ</a>-<a href="">tr-pos/ADV</a> (2; 0% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 3 2 advmod	color:blue
-1	Mebrure	Mebrure	PROPN	Prop	Case=Nom|Number=Sing|Person=3	3	nsubj	_	_
-2	birden	birden	ADV	Adverb	_	3	advmod	_	_
-3	heyecanlanmıştı	heyecanlan	VERB	Verb	Aspect=Perf|Mood=Ind|Negative=Pos|Number=Sing|Person=3|Tense=Pqp	0	root	_	_
-4	.	.	PUNCT	Punc	_	3	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 6 5 advmod	color:blue
-1	Yürüdüğümüz	yürü	VERB	Verb	Aspect=Perf|Mood=Ind|Negative=Pos|Number[psor]=Plur|Person[psor]=1|Tense=Past|VerbForm=Part	2	acl	_	_
-2	yol	yol	NOUN	Noun	Case=Nom|Number=Sing|Person=3	3	nsubj	_	_
-3	bitmiş	bit	VERB	Verb	Aspect=Perf|Evidentiality=Nfh|Mood=Ind|Negative=Pos|Number=Sing|Person=3|Tense=Past	9	conj	_	_
-4	,	,	PUNCT	Punc	_	3	punct	_	_
-5	daha	daha	ADV	Adverb	_	6	advmod	_	_
-6	dar	dar	ADJ	Adj	_	8	amod	_	_
-7	bir	bir	NUM	ANum	NumType=Card	8	det	_	_
-8	sokak	sokak	NOUN	Noun	Case=Nom|Number=Sing|Person=3	9	nsubj	_	_
-9	açılmıştı	aç	VERB	Verb	Aspect=Perf|Mood=Ind|Negative=Pos|Number=Sing|Person=3|Tense=Pqp|Voice=Pass	0	root	_	_
-10	önümüzde	ön	ADJ	NAdj	Case=Loc|Number=Sing|Number[psor]=Plur|Person=3|Person[psor]=1	9	amod	_	_
-11	.	.	PUNCT	Punc	_	9	punct	_	_
+<pre><code class="language-conllu"># visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 8 7 advmod	color:blue
+1	Kerem	Kerem	PROPN	Prop	Case=Nom|Number=Sing|Person=3	8	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	Punc	_	8	punct	_	_
+3	özgürlüğünü	özgürlük	NOUN	Noun	Case=Acc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	4	obj	_	_
+4	teslim	teslim	NOUN	Noun	Case=Nom|Number=Sing|Person=3	8	obl	_	_
+5	ettiği	et	VERB	Verb	Aspect=Perf|Case=Nom|Mood=Ind|Number[psor]=Sing|Person[psor]=3|Polarity=Pos|Tense=Past|VerbForm=Part	4	compound:lvc	_	_
+6	için	için	ADP	PCNom	_	4	case	_	_
+7	sanki	sanki	ADV	Adverb	_	8	advmod	_	_
+8	rahatlamıştı	rahatla	VERB	Verb	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pqp	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	Punc	_	8	punct	_	_
 
 </code></pre>
 
@@ -119,13 +122,31 @@ Average distance between parent and child is 2.61037586024351.</p>
 # visual-style 5	bgColor:blue
 # visual-style 5	fgColor:white
 # visual-style 5 4 advmod	color:blue
-1	Buz	buz	NOUN	Noun	Case=Nom|Number=Sing|Person=3	5	conj	_	_
-2	lu	li	ADP	With	_	1	case	_	_
-3	ve	ve	CONJ	Conj	_	5	cc	_	_
-4	çok	çok	ADV	Adverb	_	5	advmod	_	_
-5	soda	soda	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	_
-6	lı	li	ADP	With	_	5	case	_	_
-7	.	.	PUNCT	Punc	_	5	punct	_	_
+1	Orada	ora	NOUN	Noun	Case=Loc|Number=Sing|Person=3	3	obl	_	_
+2	ki	ki	ADP	Rel	_	1	case	_	_
+3	tartışma	tartış	VERB	Verb	Aspect=Perf|Case=Nom|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Vnoun	5	nsubj	_	_
+4	hayli	hayli	ADV	Adverb	_	5	advmod	_	_
+5	zengin	zengin	ADJ	Adj	_	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punc	_	5	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 1 advmod	color:blue
+1	Ne	ne	ADV	Adverb	_	3	advmod	_	_
+2	güzel	güzel	ADJ	Adj	_	3	amod	_	_
+3	günler	gün	NOUN	Noun	Case=Nom|Number=Plur|Person=3	0	root	_	_
+4	di	i	AUX	Zero	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past	3	cop	_	_
+5	değil	değil	VERB	Neg	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres	3	conj	_	_
+6	mi	mi	AUX	Ques	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Pres	5	aux:q	_	SpaceAfter=No
+7	?	?	PUNCT	Punc	_	8	punct	_	_
+8	Ah	ah	INTJ	Interj	_	3	discourse	_	SpaceAfter=No
+9	,	,	PUNCT	Punc	_	10	punct	_	_
+10	ah	ah	INTJ	Interj	_	3	discourse	_	SpaceAfter=No
+11	...	...	PUNCT	Punc	_	10	punct	_	_
 
 </code></pre>
 
@@ -137,9 +158,25 @@ Average distance between parent and child is 2.61037586024351.</p>
 
 advmod in other languages:
 
+[<a href="../../am/dep/advmod.html">am</a>]
+
+[<a href="../../ar/dep/advmod.html">ar</a>]
+
 [<a href="../../bg/dep/advmod.html">bg</a>]
 
+[<a href="../../bxr/dep/advmod.html">bxr</a>]
+
+[<a href="../../ca/dep/advmod.html">ca</a>]
+
+[<a href="../../ckb/dep/advmod.html">ckb</a>]
+
+[<a href="../../cop/dep/advmod.html">cop</a>]
+
 [<a href="../../cs/dep/advmod.html">cs</a>]
+
+[<a href="../../cu/dep/advmod.html">cu</a>]
+
+[<a href="../../da/dep/advmod.html">da</a>]
 
 [<a href="../../de/dep/advmod.html">de</a>]
 
@@ -149,29 +186,99 @@ advmod in other languages:
 
 [<a href="../../es/dep/advmod.html">es</a>]
 
+[<a href="../../et/dep/advmod.html">et</a>]
+
 [<a href="../../eu/dep/advmod.html">eu</a>]
 
 [<a href="../../fa/dep/advmod.html">fa</a>]
 
 [<a href="../../fi/dep/advmod.html">fi</a>]
 
+[<a href="../../fo/dep/advmod.html">fo</a>]
+
 [<a href="../../fr/dep/advmod.html">fr</a>]
 
 [<a href="../../ga/dep/advmod.html">ga</a>]
 
+[<a href="../../gl/dep/advmod.html">gl</a>]
+
+[<a href="../../got/dep/advmod.html">got</a>]
+
+[<a href="../../grc/dep/advmod.html">grc</a>]
+
 [<a href="../../he/dep/advmod.html">he</a>]
 
+[<a href="../../hi/dep/advmod.html">hi</a>]
+
+[<a href="../../hr/dep/advmod.html">hr</a>]
+
 [<a href="../../hu/dep/advmod.html">hu</a>]
+
+[<a href="../../id/dep/advmod.html">id</a>]
 
 [<a href="../../it/dep/advmod.html">it</a>]
 
 [<a href="../../ja/dep/advmod.html">ja</a>]
 
+[<a href="../../kk/dep/advmod.html">kk</a>]
+
+[<a href="../../kmr/dep/advmod.html">kmr</a>]
+
 [<a href="../../ko/dep/advmod.html">ko</a>]
+
+[<a href="../../la/dep/advmod.html">la</a>]
+
+[<a href="../../lv/dep/advmod.html">lv</a>]
+
+[<a href="../../mr/dep/advmod.html">mr</a>]
+
+[<a href="../../nl/dep/advmod.html">nl</a>]
+
+[<a href="../../no/dep/advmod.html">no</a>]
+
+[<a href="../../pl/dep/advmod.html">pl</a>]
+
+[<a href="../../pt/dep/advmod.html">pt</a>]
+
+[<a href="../../ro/dep/advmod.html">ro</a>]
+
+[<a href="../../ru/dep/advmod.html">ru</a>]
+
+[<a href="../../sa/dep/advmod.html">sa</a>]
+
+[<a href="../../sk/dep/advmod.html">sk</a>]
+
+[<a href="../../sla/dep/advmod.html">sla</a>]
+
+[<a href="../../sl/dep/advmod.html">sl</a>]
+
+[<a href="../../so/dep/advmod.html">so</a>]
+
+[<a href="../../sr/dep/advmod.html">sr</a>]
 
 [<a href="../../sv/dep/advmod.html">sv</a>]
 
+[<a href="../../swl/dep/advmod.html">swl</a>]
+
+[<a href="../../ta/dep/advmod.html">ta</a>]
+
+[<a href="../../tr/dep/advmod.html">tr</a>]
+
 [<a href="../../u/dep/advmod.html">u</a>]
+
+[<a href="../../ug/dep/advmod.html">ug</a>]
+
+[<a href="../../uk/dep/advmod.html">uk</a>]
+
+[<a href="../../ur/dep/advmod.html">ur</a>]
+
+[<a href="../../urj/dep/advmod.html">urj</a>]
+
+[<a href="../../vi/dep/advmod.html">vi</a>]
+
+[<a href="../../yue/dep/advmod.html">yue</a>]
+
+[<a href="../../zh/dep/advmod.html">zh</a>]
 
 
 

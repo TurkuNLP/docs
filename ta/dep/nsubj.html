@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ta">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ta/dep">ta/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ta-dep/nsubj.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ta">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ta/dep">ta/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ta-dep/nsubj.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -61,7 +78,8 @@ for <code>nsubj</code>.</p>
 
 <h2 id="treebank-statistics-udtamil">Treebank Statistics (UD_Tamil)</h2>
 
-<p>This relation is universal.</p>
+<p>This relation is universal.
+There are 1 language-specific subtypes of <code>nsubj</code>: <a href="">nsubj:pass</a>.</p>
 
 <p>665 nodes (7%) are attached to their parents as <code>nsubj</code>.</p>
 
@@ -76,8 +94,8 @@ Average distance between parent and child is 2.96240601503759.</p>
 # visual-style 2	fgColor:white
 # visual-style 2 1 nsubj	color:blue
 1	தொழிலாளர்கள்	தொழிலாளர்	NOUN	NNN-3PA--	Animacy=Anim|Case=Nom|Gender=Com|Number=Plur|Person=3	2	nsubj	_	Translit=tolilāḷarkaḷ|LTranslit=tolilāḷar
-2	பழிவாங்கப்	பழிவாங்கு	VERB	Vu-T---AA	Negative=Pos|VerbForm=Inf|Voice=Act	0	root	_	Translit=palivāṅkap|LTranslit=palivāṅku
-3	படுகின்றனர்	படு	AUX	VR-P3PAPA	Animacy=Anim|Gender=Com|Mood=Ind|Negative=Pos|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	2	aux	_	SpaceAfter=No|Translit=paṭukinranar|LTranslit=paṭu
+2	பழிவாங்கப்	பழிவாங்கு	VERB	Vu-T---AA	Polarity=Pos|VerbForm=Inf|Voice=Act	0	root	_	Translit=palivāṅkap|LTranslit=palivāṅku
+3	படுகின்றனர்	படு	AUX	VR-P3PAPA	Animacy=Anim|Gender=Com|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Pass	2	aux	_	SpaceAfter=No|Translit=paṭukinranar|LTranslit=paṭu
 4	.	.	PUNCT	Z#-------	PunctType=Peri	2	punct	_	Translit=.|LTranslit=.
 
 </code></pre>
@@ -89,11 +107,11 @@ Average distance between parent and child is 2.96240601503759.</p>
 # visual-style 6 5 nsubj	color:blue
 1	இது	இது	PRON	RpN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	nmod	_	Translit=itu|LTranslit=itu
 2	தொடர்பான	தொடர்பு	ADJ	JJ-------	_	3	amod	_	Translit=toṭarpāna|LTranslit=toṭarpu
-3	ஆலோசனைகளைய்	ஆலோசனை	NOUN	NNA-3PN--	Case=Acc|Gender=Neut|Number=Plur|Person=3	6	dobj	_	Translit=ālōcanaikaḷaiy|LTranslit=ālōcanai
+3	ஆலோசனைகளைய்	ஆலோசனை	NOUN	NNA-3PN--	Case=Acc|Gender=Neut|Number=Plur|Person=3	6	obj	_	Translit=ālōcanaikaḷaiy|LTranslit=ālōcanai
 4	உம்	உம்	PART	Tv-------	_	3	advmod:emph	_	Translit=um|LTranslit=um
 5	இந்தியா	இந்தியா	PROPN	NEN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	6	nsubj	_	Translit=intiyā|LTranslit=intiyā
-6	வழங்கி	வழங்கு	VERB	Vt-T---AA	Negative=Pos|VerbForm=Part|Voice=Act	0	root	_	Translit=valaṅki|LTranslit=valaṅku
-7	வருகிறது	வரு	AUX	VR-P3SNAA	Gender=Neut|Mood=Ind|Negative=Pos|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	SpaceAfter=No|Translit=varukiratu|LTranslit=varu
+6	வழங்கி	வழங்கு	VERB	Vt-T---AA	Polarity=Pos|VerbForm=Part|Voice=Act	0	root	_	Translit=valaṅki|LTranslit=valaṅku
+7	வருகிறது	வரு	AUX	VR-P3SNAA	Gender=Neut|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	SpaceAfter=No|Translit=varukiratu|LTranslit=varu
 8	.	.	PUNCT	Z#-------	PunctType=Peri	6	punct	_	Translit=.|LTranslit=.
 
 </code></pre>
@@ -103,8 +121,8 @@ Average distance between parent and child is 2.96240601503759.</p>
 # visual-style 2	bgColor:blue
 # visual-style 2	fgColor:white
 # visual-style 2 1 nsubj	color:blue
-1	அவர்	அவர்	PRON	RpN-3SH--	Case=Nom|Gender=Com|Number=Sing|Person=3|Polite=Pol|PronType=Prs	2	nsubj	_	Translit=avar|LTranslit=avar
-2	பேசியத்	பேசு	VERB	VzND3SNAA	Case=Nom|Gender=Neut|Negative=Pos|Number=Sing|Person=3|Tense=Past|VerbForm=Ger|Voice=Act	0	root	_	Translit=pēciyat|LTranslit=pēcu
+1	அவர்	அவர்	PRON	RpN-3SH--	Case=Nom|Gender=Com|Number=Sing|Person=3|Polite=Form|PronType=Prs	2	nsubj	_	Translit=avar|LTranslit=avar
+2	பேசியத்	பேசு	VERB	VzND3SNAA	Case=Nom|Gender=Neut|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Ger|Voice=Act	0	root	_	Translit=pēciyat|LTranslit=pēcu
 3	ஆவது	ஆவது	PART	Tl-------	_	2	advmod:emph	_	Translit=āvatu|LTranslit=āvatu
 4	:	:	PUNCT	Z:-------	PunctType=Comm	2	punct	_	SpaceAfter=No|Translit=:|LTranslit=:
 5	.	.	PUNCT	Z#-------	PunctType=Peri	2	punct	_	Translit=.|LTranslit=.
@@ -119,9 +137,25 @@ Average distance between parent and child is 2.96240601503759.</p>
 
 nsubj in other languages:
 
+[<a href="../../am/dep/nsubj.html">am</a>]
+
+[<a href="../../ar/dep/nsubj.html">ar</a>]
+
 [<a href="../../bg/dep/nsubj.html">bg</a>]
 
+[<a href="../../bxr/dep/nsubj.html">bxr</a>]
+
+[<a href="../../ca/dep/nsubj.html">ca</a>]
+
+[<a href="../../ckb/dep/nsubj.html">ckb</a>]
+
+[<a href="../../cop/dep/nsubj.html">cop</a>]
+
 [<a href="../../cs/dep/nsubj.html">cs</a>]
+
+[<a href="../../cu/dep/nsubj.html">cu</a>]
+
+[<a href="../../da/dep/nsubj.html">da</a>]
 
 [<a href="../../de/dep/nsubj.html">de</a>]
 
@@ -131,29 +165,99 @@ nsubj in other languages:
 
 [<a href="../../es/dep/nsubj.html">es</a>]
 
+[<a href="../../et/dep/nsubj.html">et</a>]
+
 [<a href="../../eu/dep/nsubj.html">eu</a>]
 
 [<a href="../../fa/dep/nsubj.html">fa</a>]
 
 [<a href="../../fi/dep/nsubj.html">fi</a>]
 
+[<a href="../../fo/dep/nsubj.html">fo</a>]
+
 [<a href="../../fr/dep/nsubj.html">fr</a>]
 
 [<a href="../../ga/dep/nsubj.html">ga</a>]
 
+[<a href="../../gl/dep/nsubj.html">gl</a>]
+
+[<a href="../../got/dep/nsubj.html">got</a>]
+
+[<a href="../../grc/dep/nsubj.html">grc</a>]
+
 [<a href="../../he/dep/nsubj.html">he</a>]
 
+[<a href="../../hi/dep/nsubj.html">hi</a>]
+
+[<a href="../../hr/dep/nsubj.html">hr</a>]
+
 [<a href="../../hu/dep/nsubj.html">hu</a>]
+
+[<a href="../../id/dep/nsubj.html">id</a>]
 
 [<a href="../../it/dep/nsubj.html">it</a>]
 
 [<a href="../../ja/dep/nsubj.html">ja</a>]
 
+[<a href="../../kk/dep/nsubj.html">kk</a>]
+
+[<a href="../../kmr/dep/nsubj.html">kmr</a>]
+
 [<a href="../../ko/dep/nsubj.html">ko</a>]
+
+[<a href="../../la/dep/nsubj.html">la</a>]
+
+[<a href="../../lv/dep/nsubj.html">lv</a>]
+
+[<a href="../../mr/dep/nsubj.html">mr</a>]
+
+[<a href="../../nl/dep/nsubj.html">nl</a>]
+
+[<a href="../../no/dep/nsubj.html">no</a>]
+
+[<a href="../../pl/dep/nsubj.html">pl</a>]
+
+[<a href="../../pt/dep/nsubj.html">pt</a>]
+
+[<a href="../../ro/dep/nsubj.html">ro</a>]
+
+[<a href="../../ru/dep/nsubj.html">ru</a>]
+
+[<a href="../../sa/dep/nsubj.html">sa</a>]
+
+[<a href="../../sk/dep/nsubj.html">sk</a>]
+
+[<a href="../../sla/dep/nsubj.html">sla</a>]
+
+[<a href="../../sl/dep/nsubj.html">sl</a>]
+
+[<a href="../../so/dep/nsubj.html">so</a>]
+
+[<a href="../../sr/dep/nsubj.html">sr</a>]
 
 [<a href="../../sv/dep/nsubj.html">sv</a>]
 
+[<a href="../../swl/dep/nsubj.html">swl</a>]
+
+[<a href="../../ta/dep/nsubj.html">ta</a>]
+
+[<a href="../../tr/dep/nsubj.html">tr</a>]
+
 [<a href="../../u/dep/nsubj.html">u</a>]
+
+[<a href="../../ug/dep/nsubj.html">ug</a>]
+
+[<a href="../../uk/dep/nsubj.html">uk</a>]
+
+[<a href="../../ur/dep/nsubj.html">ur</a>]
+
+[<a href="../../urj/dep/nsubj.html">urj</a>]
+
+[<a href="../../vi/dep/nsubj.html">vi</a>]
+
+[<a href="../../yue/dep/nsubj.html">yue</a>]
+
+[<a href="../../zh/dep/nsubj.html">zh</a>]
 
 
 

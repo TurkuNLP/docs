@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-gl">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/gl/feat">gl/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_gl-feat/Definite.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-gl">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/gl/feat">gl/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_gl-feat/Definite.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -65,36 +82,23 @@ for <code>Definite</code>.</p>
 <p>This feature is universal.
 It occurs with 2 different values: <code>Def</code>, <code>Ind</code>.</p>
 
-<p>3371 tokens (14%) have a non-empty value of <code>Definite</code>.
-12 types (0%) occur at least once with a non-empty value of <code>Definite</code>.
+<p>2109 tokens (14%) have a non-empty value of <code>Definite</code>.
+18 types (0%) occur at least once with a non-empty value of <code>Definite</code>.
 2 lemmas (0%) occur at least once with a non-empty value of <code>Definite</code>.
-The feature is used with 2 part-of-speech tags: <a href="">gl-pos/DET</a> (3337; 14% instances), <a href="">gl-pos/PRON</a> (34; 0% instances).</p>
+The feature is used with 1 part-of-speech tags: <a href="">gl-pos/DET</a> (2109; 14% instances).</p>
 
 <h3 id="det"><code>DET</code></h3>
 
-<p>3337 <a href="">gl-pos/DET</a> tokens (84% of all <code>DET</code> tokens) have a non-empty value of <code>Definite</code>.</p>
+<p>2109 <a href="">gl-pos/DET</a> tokens (83% of all <code>DET</code> tokens) have a non-empty value of <code>Definite</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>Definite</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Art</tt> (3337; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (2637; 79%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (1802; 54%).</p>
+<p>The most frequent other feature values with which <code>DET</code> and <code>Definite</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Art</tt> (2109; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (1658; 79%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (1100; 52%).</p>
 
 <p><code>DET</code> tokens may have the following values of <code>Definite</code>:</p>
 
 <ul>
-  <li><code>Def</code> (2885; 86% of non-empty <code>Definite</code>): <em>o, a, os, as, lo, la, los, las</em></li>
-  <li><code>Ind</code> (452; 14% of non-empty <code>Definite</code>): <em>un, unha, uns, unhas</em></li>
-  <li><code>EMPTY</code> (641): <em>súa, seu, esta, este, seus, súas, todos, ese, todo, esa</em></li>
-</ul>
-
-<h3 id="pron"><code>PRON</code></h3>
-
-<p>34 <a href="">gl-pos/PRON</a> tokens (3% of all <code>PRON</code> tokens) have a non-empty value of <code>Definite</code>.</p>
-
-<p>The most frequent other feature values with which <code>PRON</code> and <code>Definite</code> co-occurred: <tt><a href="Case.html">Case</a>=EMPTY</tt> (34; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (34; 100%), <tt><a href="PronType.html">PronType</a>=Art</tt> (34; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (27; 79%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (22; 65%).</p>
-
-<p><code>PRON</code> tokens may have the following values of <code>Definite</code>:</p>
-
-<ul>
-  <li><code>Def</code> (34; 100% of non-empty <code>Definite</code>): <em>o, a, os, as</em></li>
-  <li><code>EMPTY</code> (1257): <em>que, se, lle, nos, o, me, iso, lo, quen, algo</em></li>
+  <li><code>Def</code> (1844; 87% of non-empty <code>Definite</code>): <em>o, a, os, as, la, lo, los, las</em></li>
+  <li><code>Ind</code> (265; 13% of non-empty <code>Definite</code>): <em>un, unha, unhas, uns</em></li>
+  <li><code>EMPTY</code> (417): <em>súa, seu, esta, este, seus, súas, todo, nosa, todos, ese</em></li>
 </ul>
 
 
@@ -105,9 +109,23 @@ The feature is used with 2 part-of-speech tags: <a href="">gl-pos/DET</a> (3337;
 
 Definite in other languages:
 
+[<a href="../../am/feat/Definite.html">am</a>]
+
+[<a href="../../ar/feat/Definite.html">ar</a>]
+
 [<a href="../../bg/feat/Definite.html">bg</a>]
 
-[<a href="../../cs/feat/Definite.html">cs</a>]
+[<a href="../../bxr/feat/Definite.html">bxr</a>]
+
+[<a href="../../ca/feat/Definite.html">ca</a>]
+
+[<a href="../../ckb/feat/Definite.html">ckb</a>]
+
+[<a href="../../cop/feat/Definite.html">cop</a>]
+
+[<a href="../../cu/feat/Definite.html">cu</a>]
+
+[<a href="../../da/feat/Definite.html">da</a>]
 
 [<a href="../../de/feat/Definite.html">de</a>]
 
@@ -117,27 +135,95 @@ Definite in other languages:
 
 [<a href="../../es/feat/Definite.html">es</a>]
 
+[<a href="../../et/feat/Definite.html">et</a>]
+
 [<a href="../../eu/feat/Definite.html">eu</a>]
 
 [<a href="../../fa/feat/Definite.html">fa</a>]
+
+[<a href="../../fo/feat/Definite.html">fo</a>]
 
 [<a href="../../fr/feat/Definite.html">fr</a>]
 
 [<a href="../../ga/feat/Definite.html">ga</a>]
 
+[<a href="../../gl/feat/Definite.html">gl</a>]
+
+[<a href="../../got/feat/Definite.html">got</a>]
+
+[<a href="../../grc/feat/Definite.html">grc</a>]
+
 [<a href="../../he/feat/Definite.html">he</a>]
 
+[<a href="../../hi/feat/Definite.html">hi</a>]
+
+[<a href="../../hr/feat/Definite.html">hr</a>]
+
 [<a href="../../hu/feat/Definite.html">hu</a>]
+
+[<a href="../../id/feat/Definite.html">id</a>]
 
 [<a href="../../it/feat/Definite.html">it</a>]
 
 [<a href="../../ja/feat/Definite.html">ja</a>]
 
+[<a href="../../kk/feat/Definite.html">kk</a>]
+
+[<a href="../../kmr/feat/Definite.html">kmr</a>]
+
 [<a href="../../ko/feat/Definite.html">ko</a>]
+
+[<a href="../../la/feat/Definite.html">la</a>]
+
+[<a href="../../lv/feat/Definite.html">lv</a>]
+
+[<a href="../../mr/feat/Definite.html">mr</a>]
+
+[<a href="../../nl/feat/Definite.html">nl</a>]
+
+[<a href="../../no/feat/Definite.html">no</a>]
+
+[<a href="../../pl/feat/Definite.html">pl</a>]
+
+[<a href="../../pt/feat/Definite.html">pt</a>]
+
+[<a href="../../ro/feat/Definite.html">ro</a>]
+
+[<a href="../../sa/feat/Definite.html">sa</a>]
+
+[<a href="../../sk/feat/Definite.html">sk</a>]
+
+[<a href="../../sla/feat/Definite.html">sla</a>]
+
+[<a href="../../sl/feat/Definite.html">sl</a>]
+
+[<a href="../../so/feat/Definite.html">so</a>]
+
+[<a href="../../sr/feat/Definite.html">sr</a>]
 
 [<a href="../../sv/feat/Definite.html">sv</a>]
 
+[<a href="../../swl/feat/Definite.html">swl</a>]
+
+[<a href="../../ta/feat/Definite.html">ta</a>]
+
+[<a href="../../tr/feat/Definite.html">tr</a>]
+
 [<a href="../../u/feat/Definite.html">u</a>]
+
+[<a href="../../ug/feat/Definite.html">ug</a>]
+
+[<a href="../../uk/feat/Definite.html">uk</a>]
+
+[<a href="../../ur/feat/Definite.html">ur</a>]
+
+[<a href="../../urj/feat/Definite.html">urj</a>]
+
+[<a href="../../vi/feat/Definite.html">vi</a>]
+
+[<a href="../../yue/feat/Definite.html">yue</a>]
+
+[<a href="../../zh/feat/Definite.html">zh</a>]
 
 
 

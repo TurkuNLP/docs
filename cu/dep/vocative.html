@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-cu">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/cu/dep">cu/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_cu-dep/vocative.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/cu/dep">cu/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cu-dep/vocative.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,56 +80,55 @@ for <code>vocative</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>604 nodes (1%) are attached to their parents as <code>vocative</code>.</p>
+<p>453 nodes (1%) are attached to their parents as <code>vocative</code>.</p>
 
-<p>481 instances of <code>vocative</code> (80%) are right-to-left (child precedes parent).
-Average distance between parent and child is 2.8841059602649.</p>
+<p>368 instances of <code>vocative</code> (81%) are right-to-left (child precedes parent).
+Average distance between parent and child is 2.88300220750552.</p>
 
-<p>The following 23 pairs of parts of speech are connected with <code>vocative</code>: <a href="">cu-pos/VERB</a>-<a href="">cu-pos/INTJ</a> (251; 42% instances), <a href="">cu-pos/VERB</a>-<a href="">cu-pos/NOUN</a> (245; 41% instances), <a href="">cu-pos/VERB</a>-<a href="">cu-pos/PROPN</a> (33; 5% instances), <a href="">cu-pos/NOUN</a>-<a href="">cu-pos/INTJ</a> (17; 3% instances), <a href="">cu-pos/VERB</a>-<a href="">cu-pos/ADJ</a> (10; 2% instances), <a href="">cu-pos/INTJ</a>-<a href="">cu-pos/NOUN</a> (9; 1% instances), <a href="">cu-pos/ADJ</a>-<a href="">cu-pos/INTJ</a> (6; 1% instances), <a href="">cu-pos/X</a>-<a href="">cu-pos/X</a> (6; 1% instances), <a href="">cu-pos/INTJ</a>-<a href="">cu-pos/PROPN</a> (4; 1% instances), <a href="">cu-pos/NOUN</a>-<a href="">cu-pos/NOUN</a> (4; 1% instances), <a href="">cu-pos/VERB</a>-<a href="">cu-pos/VERB</a> (4; 1% instances), <a href="">cu-pos/CONJ</a>-<a href="">cu-pos/INTJ</a> (2; 0% instances), <a href="">cu-pos/INTJ</a>-<a href="">cu-pos/INTJ</a> (2; 0% instances), <a href="">cu-pos/INTJ</a>-<a href="">cu-pos/VERB</a> (2; 0% instances), <a href="">cu-pos/ADJ</a>-<a href="">cu-pos/NOUN</a> (1; 0% instances), <a href="">cu-pos/ADV</a>-<a href="">cu-pos/INTJ</a> (1; 0% instances), <a href="">cu-pos/ADV</a>-<a href="">cu-pos/NOUN</a> (1; 0% instances), <a href="">cu-pos/INTJ</a>-<a href="">cu-pos/ADJ</a> (1; 0% instances), <a href="">cu-pos/PRON</a>-<a href="">cu-pos/ADJ</a> (1; 0% instances), <a href="">cu-pos/PRON</a>-<a href="">cu-pos/NOUN</a> (1; 0% instances), <a href="">cu-pos/PRON</a>-<a href="">cu-pos/PROPN</a> (1; 0% instances), <a href="">cu-pos/VERB</a>-<a href="">cu-pos/ADV</a> (1; 0% instances), <a href="">cu-pos/VERB</a>-<a href="">cu-pos/PRON</a> (1; 0% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 5 4 vocative	color:blue
-1	тѣма	тъ	ADJ	Pd	Case=Dat|Gender=Masc|Number=Dual	3	nsubj	_	_
-2	же	же	ADV	Df	_	5	discourse	_	_
-3	исходѧштема	исходити	VERB	V-	Case=Dat|Gender=Masc|Number=Dual|Strength=Strong|Tense=Pres|VerbForm=Part|Voice=Act	5	advcl	_	_
-4	се	се	INTJ	I-	_	5	vocative	_	_
-5	привѣсѧ	привести	VERB	V-	Aspect=Perf|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
-6	ч҃лвкъ	чловѣкъ	NOUN	Nb	Case=Acc|Gender=Masc|Number=Sing	5	dobj	_	_
-7	нѣмъ	нѣмъ	ADJ	A-	Case=Acc|Degree=Pos|Gender=Masc|Number=Sing|Strength=Strong	6	amod	_	_
-8	бѣсенъ	бѣсьнъ	ADJ	A-	Case=Acc|Degree=Pos|Gender=Masc|Number=Sing|Strength=Strong	6	amod	_	_
-
-</code></pre>
+<p>The following 21 pairs of parts of speech are connected with <code>vocative</code>: <a href="">cu-pos/VERB</a>-<a href="">cu-pos/INTJ</a> (204; 45% instances), <a href="">cu-pos/VERB</a>-<a href="">cu-pos/NOUN</a> (175; 39% instances), <a href="">cu-pos/VERB</a>-<a href="">cu-pos/PROPN</a> (25; 6% instances), <a href="">cu-pos/NOUN</a>-<a href="">cu-pos/INTJ</a> (16; 4% instances), <a href="">cu-pos/VERB</a>-<a href="">cu-pos/ADJ</a> (6; 1% instances), <a href="">cu-pos/ADJ</a>-<a href="">cu-pos/INTJ</a> (5; 1% instances), <a href="">cu-pos/X</a>-<a href="">cu-pos/X</a> (3; 1% instances), <a href="">cu-pos/ADJ</a>-<a href="">cu-pos/NOUN</a> (2; 0% instances), <a href="">cu-pos/ADV</a>-<a href="">cu-pos/INTJ</a> (2; 0% instances), <a href="">cu-pos/INTJ</a>-<a href="">cu-pos/PROPN</a> (2; 0% instances), <a href="">cu-pos/INTJ</a>-<a href="">cu-pos/VERB</a> (2; 0% instances), <a href="">cu-pos/NOUN</a>-<a href="">cu-pos/NOUN</a> (2; 0% instances), <a href="">cu-pos/ADV</a>-<a href="">cu-pos/NOUN</a> (1; 0% instances), <a href="">cu-pos/CCONJ</a>-<a href="">cu-pos/INTJ</a> (1; 0% instances), <a href="">cu-pos/INTJ</a>-<a href="">cu-pos/ADJ</a> (1; 0% instances), <a href="">cu-pos/INTJ</a>-<a href="">cu-pos/INTJ</a> (1; 0% instances), <a href="">cu-pos/INTJ</a>-<a href="">cu-pos/NOUN</a> (1; 0% instances), <a href="">cu-pos/PRON</a>-<a href="">cu-pos/ADJ</a> (1; 0% instances), <a href="">cu-pos/PRON</a>-<a href="">cu-pos/PROPN</a> (1; 0% instances), <a href="">cu-pos/VERB</a>-<a href="">cu-pos/ADV</a> (1; 0% instances), <a href="">cu-pos/VERB</a>-<a href="">cu-pos/VERB</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 1	bgColor:blue
 # visual-style 1	fgColor:white
 # visual-style 2	bgColor:blue
 # visual-style 2	fgColor:white
 # visual-style 2 1 vocative	color:blue
-1	г҃и	господь	NOUN	Nb	Case=Voc|Gender=Masc|Number=Sing	2	vocative	_	_
-2	повели	повелѣти	VERB	V-	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-3	ми	азъ	PRON	Pp	Case=Dat|Number=Sing|Person=1|PronType=Prs	2	iobj	_	_
-4	прѣжде	прѣжде	ADV	Df	_	2	advmod	_	_
-5	ити	ити	VERB	V-	Tense=Pres|VerbForm=Inf|Voice=Act	2	xcomp	_	_
-6	ꙇ҅	и	CONJ	C-	_	5	cc	_	_
-7	погрети	погрети	VERB	V-	Tense=Pres|VerbForm=Inf|Voice=Act	5	conj	_	_
-8	о҃тца	отьць	NOUN	Nb	Case=Gen|Gender=Masc|Number=Sing	7	dobj	_	_
-9	моего	мои	PRON	Ps	Case=Gen|Gender=Masc,Neut|Number=Sing|Person=1|Poss=Yes|PronType=Prs	8	nmod	_	_
+1	аминь	аминъ	INTJ	I-	_	2	vocative	_	ref=MATT_5.26
+2	г҃лѭ	глаголати	VERB	V-	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	ref=MATT_5.26
+3	тебѣ	тꙑ	PRON	Pp	Case=Dat|Number=Sing|Person=2|PronType=Prs	2	iobj	_	ref=MATT_5.26
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 4 5 vocative	color:blue
-1	что	чьто	PRON	Pi	Case=Nom|Gender=Neut|Number=Sing|PronType=Int	4	nsubj	_	_
-2	ти	тꙑ	PRON	Pp	Case=Dat|Gender=Masc|Number=Sing|Person=2|PronType=Prs	4	iobj	_	_
-3	сѧ	себе	PRON	Pk	Case=Acc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	4	mark	_	_
-4	мьнитъ	мьнѣти	VERB	V-	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-5	симоне	симонъ	PROPN	Ne	Case=Voc|Gender=Masc|Number=Sing	4	vocative	_	_
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 8 1 vocative	color:blue
+1	Ѡ҅тьче	отьць	NOUN	Nb	Case=Voc|Gender=Masc|Number=Sing	8	vocative	_	ref=MATT_6.9
+2	нашъ	нашь	ADJ	Ps	Case=Voc|Gender=Masc|Number=Sing|Person=1|Poss=Yes	1	nmod	_	ref=MATT_6.9
+3	иже	иже	PRON	Pr	Case=Nom|Gender=Masc|Number=Sing|PronType=Rel	4	nsubj	_	ref=MATT_6.9
+4	си	бꙑти	VERB	V-	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	1	acl	_	ref=MATT_6.9
+5	на	на	ADP	R-	_	6	case	_	ref=MATT_6.9
+6	н҃бсхъ	небо	NOUN	Nb	Case=Loc|Gender=Neut|Number=Plur	4	xcomp	_	ref=MATT_6.9
+7	да	да	ADV	Df	_	8	advmod	_	ref=MATT_6.9
+8	с҃вт	свѧтити	VERB	V-	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	ref=MATT_6.9
+9	сѧ	себе	AUX	Pk	Case=Acc|Number=Sing|Person=3	8	aux	_	ref=MATT_6.9
+10	имѧ	имѧ	NOUN	Nb	Case=Nom|Gender=Neut|Number=Sing	8	nsubj	_	ref=MATT_6.9
+11	твое	твои	ADJ	Ps	Case=Nom|Gender=Neut|Number=Sing|Person=2|Poss=Yes	10	nmod	_	ref=MATT_6.9
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 6 vocative	color:blue
+1	чьто	чьто	ADJ	Px	Case=Nom|Gender=Neut|Number=Sing	2	nsubj	_	ref=LUKE_4.34
+2	естъ	бꙑти	VERB	V-	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	ref=LUKE_4.34
+3	намь	мꙑ	PRON	Pp	Case=Dat|Number=Plur|Person=1|PronType=Prs	2	iobj	_	ref=LUKE_4.34
+4	и	и	CCONJ	C-	_	3	cc	_	ref=LUKE_4.34
+5	тебѣ	тꙑ	PRON	Pp	Case=Dat|Number=Sing|Person=2|PronType=Prs	3	conj	_	ref=LUKE_4.34
+6	и҃се	исоусъ	PROPN	Ne	Case=Voc|Gender=Masc|Number=Sing	2	vocative	_	ref=LUKE_4.34
+7	назарѣнине	назарѣнинъ	NOUN	Nb	Case=Voc|Gender=Masc|Number=Sing	6	appos	_	ref=LUKE_4.34
 
 </code></pre>
 
@@ -124,9 +140,25 @@ Average distance between parent and child is 2.8841059602649.</p>
 
 vocative in other languages:
 
+[<a href="../../am/dep/vocative.html">am</a>]
+
+[<a href="../../ar/dep/vocative.html">ar</a>]
+
 [<a href="../../bg/dep/vocative.html">bg</a>]
 
+[<a href="../../bxr/dep/vocative.html">bxr</a>]
+
+[<a href="../../ca/dep/vocative.html">ca</a>]
+
+[<a href="../../ckb/dep/vocative.html">ckb</a>]
+
+[<a href="../../cop/dep/vocative.html">cop</a>]
+
 [<a href="../../cs/dep/vocative.html">cs</a>]
+
+[<a href="../../cu/dep/vocative.html">cu</a>]
+
+[<a href="../../da/dep/vocative.html">da</a>]
 
 [<a href="../../de/dep/vocative.html">de</a>]
 
@@ -136,29 +168,99 @@ vocative in other languages:
 
 [<a href="../../es/dep/vocative.html">es</a>]
 
+[<a href="../../et/dep/vocative.html">et</a>]
+
 [<a href="../../eu/dep/vocative.html">eu</a>]
 
 [<a href="../../fa/dep/vocative.html">fa</a>]
 
 [<a href="../../fi/dep/vocative.html">fi</a>]
 
+[<a href="../../fo/dep/vocative.html">fo</a>]
+
 [<a href="../../fr/dep/vocative.html">fr</a>]
 
 [<a href="../../ga/dep/vocative.html">ga</a>]
 
+[<a href="../../gl/dep/vocative.html">gl</a>]
+
+[<a href="../../got/dep/vocative.html">got</a>]
+
+[<a href="../../grc/dep/vocative.html">grc</a>]
+
 [<a href="../../he/dep/vocative.html">he</a>]
 
+[<a href="../../hi/dep/vocative.html">hi</a>]
+
+[<a href="../../hr/dep/vocative.html">hr</a>]
+
 [<a href="../../hu/dep/vocative.html">hu</a>]
+
+[<a href="../../id/dep/vocative.html">id</a>]
 
 [<a href="../../it/dep/vocative.html">it</a>]
 
 [<a href="../../ja/dep/vocative.html">ja</a>]
 
+[<a href="../../kk/dep/vocative.html">kk</a>]
+
+[<a href="../../kmr/dep/vocative.html">kmr</a>]
+
 [<a href="../../ko/dep/vocative.html">ko</a>]
+
+[<a href="../../la/dep/vocative.html">la</a>]
+
+[<a href="../../lv/dep/vocative.html">lv</a>]
+
+[<a href="../../mr/dep/vocative.html">mr</a>]
+
+[<a href="../../nl/dep/vocative.html">nl</a>]
+
+[<a href="../../no/dep/vocative.html">no</a>]
+
+[<a href="../../pl/dep/vocative.html">pl</a>]
+
+[<a href="../../pt/dep/vocative.html">pt</a>]
+
+[<a href="../../ro/dep/vocative.html">ro</a>]
+
+[<a href="../../ru/dep/vocative.html">ru</a>]
+
+[<a href="../../sa/dep/vocative.html">sa</a>]
+
+[<a href="../../sk/dep/vocative.html">sk</a>]
+
+[<a href="../../sla/dep/vocative.html">sla</a>]
+
+[<a href="../../sl/dep/vocative.html">sl</a>]
+
+[<a href="../../so/dep/vocative.html">so</a>]
+
+[<a href="../../sr/dep/vocative.html">sr</a>]
 
 [<a href="../../sv/dep/vocative.html">sv</a>]
 
+[<a href="../../swl/dep/vocative.html">swl</a>]
+
+[<a href="../../ta/dep/vocative.html">ta</a>]
+
+[<a href="../../tr/dep/vocative.html">tr</a>]
+
 [<a href="../../u/dep/vocative.html">u</a>]
+
+[<a href="../../ug/dep/vocative.html">ug</a>]
+
+[<a href="../../uk/dep/vocative.html">uk</a>]
+
+[<a href="../../ur/dep/vocative.html">ur</a>]
+
+[<a href="../../urj/dep/vocative.html">urj</a>]
+
+[<a href="../../vi/dep/vocative.html">vi</a>]
+
+[<a href="../../yue/dep/vocative.html">yue</a>]
+
+[<a href="../../zh/dep/vocative.html">zh</a>]
 
 
 

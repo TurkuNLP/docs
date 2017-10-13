@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-cop">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/cop/dep">cop/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_cop-dep/root.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cop">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/cop/dep">cop/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cop-dep/root.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -45,8 +62,8 @@
 
           <h2><code>root</code>: root</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>root</code>.</p>
+<p>The root of the utterance, that word, which depends on no other word. Usually this is the predicate, a verb if available, otherwise the nominal predicate of a nominal sentence. In fragments, such as a plain nominal phrase or a single interjection, the local root (i.e. the noun head, or the interjection) is the root.</p>
+
 
 
 <!-- "automatic stats" -->
@@ -63,12 +80,12 @@ for <code>root</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>202 nodes (4%) are attached to their parents as <code>root</code>.</p>
+<p>320 nodes (4%) are attached to their parents as <code>root</code>.</p>
 
-<p>202 instances of <code>root</code> (100%) are left-to-right (parent precedes child).
-Average distance between parent and child is 5.94059405940594.</p>
+<p>320 instances of <code>root</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 6.015625.</p>
 
-<p>The following 4 pairs of parts of speech are connected with <code>root</code>: <a href="">cop-pos/ROOT</a>-<a href="">cop-pos/VERB</a> (159; 79% instances), <a href="">cop-pos/ROOT</a>-<a href="">cop-pos/NOUN</a> (27; 13% instances), <a href="">cop-pos/ROOT</a>-<a href="">cop-pos/PRON</a> (9; 4% instances), <a href="">cop-pos/ROOT</a>-<a href="">cop-pos/DET</a> (7; 3% instances).</p>
+<p>The following 5 pairs of parts of speech are connected with <code>root</code>: <a href="">cop-pos/ROOT</a>-<a href="">cop-pos/VERB</a> (266; 83% instances), <a href="">cop-pos/ROOT</a>-<a href="">cop-pos/NOUN</a> (32; 10% instances), <a href="">cop-pos/ROOT</a>-<a href="">cop-pos/DET</a> (11; 3% instances), <a href="">cop-pos/ROOT</a>-<a href="">cop-pos/PRON</a> (9; 3% instances), <a href="">cop-pos/ROOT</a>-<a href="">cop-pos/PROPN</a> (2; 1% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 1	bgColor:blue
 # visual-style 1	fgColor:white
@@ -76,12 +93,12 @@ Average distance between parent and child is 5.94059405940594.</p>
 # visual-style 0	fgColor:white
 # visual-style 0 1 root	color:blue
 1	ϣⲛ	ϣⲛ	VERB	V	_	0	root	_	_
-2	ϩⲧⲏ	ϩⲏⲧ	NOUN	N	_	1	dobj	_	_
+2	ϩⲧⲏ	ϩⲏⲧ	NOUN	N	_	1	obj	_	_
 3	ⲕ	ⲛⲧⲟⲕ	PRON	PPERO	_	2	det	_	_
 4	ϭⲉ	ϭⲉ	PART	PTC	_	1	advmod	_	_
 5	ϩⲁ	ϩⲁ	ADP	PREP	_	7	case	_	_
 6	ⲡⲉⲕ	ⲡⲉⲕ	DET	PPOS	_	7	det	_	_
-7	ⲗⲁⲟⲥ	ⲗⲁⲟⲥ	NOUN	N	_	1	nmod	_	_
+7	ⲗⲁⲟⲥ	ⲗⲁⲟⲥ	NOUN	N	_	1	obl	_	_
 8	ⲡ	ⲡ	DET	ART	_	9	det	_	_
 9	ϩⲁⲣϣϩⲏⲧ	ϩⲁⲣϣϩⲏⲧ	NOUN	N	_	1	vocative	_	_
 10	ⲉⲧⲉ	ⲉⲧⲉⲣⲉ	SCONJ	CREL	_	11	mark	_	_
@@ -111,26 +128,19 @@ Average distance between parent and child is 5.94059405940594.</p>
 # visual-style 0	bgColor:blue
 # visual-style 0	fgColor:white
 # visual-style 0 1 root	color:blue
-1	ⲛⲧⲟⲟⲩ	ⲛⲧⲟⲟⲩ	PRON	PPERI	_	0	root	_	_
-2	ϩⲱ	ϩⲱⲱ	ADV	IMOD	_	1	advmod	_	_
-3	ⲟⲩ	ⲛⲧⲟⲟⲩ	PRON	PPERO	_	2	det	_	_
-4	ⲙⲛ	ⲙⲛ	ADP	PREP	_	6	case	_	_
-5	ⲡⲉⲩ	ⲡⲉⲩ	DET	PPOS	_	6	det	_	_
-6	ⲉⲓⲱⲧ	ⲉⲓⲱⲧ	NOUN	N	_	1	nmod	_	_
-7	ⲉⲧ	ⲉⲧⲉⲣⲉ	SCONJ	CREL	_	8	mark	_	_
-8	ⲟⲩⲏϩ	ⲟⲩⲱϩ	VERB	VSTAT	_	6	acl	_	_
-9	ⲛϩⲏⲧ	ϩⲛ	ADP	PREP	_	10	case	_	_
-10	ⲟⲩ	ⲛⲧⲟⲟⲩ	PRON	PPERO	_	8	nmod	_	_
-11	ⲓⲏⲥⲟⲩⲥ	ⲓⲏⲥⲟⲩⲥ	NOUN	N	_	6	appos	_	_
-12	ⲉⲧ	ⲉⲧⲉⲣⲉ	SCONJ	CREL	_	14	mark	_	_
-13	ⲟⲩ	ⲛⲧⲟⲟⲩ	PRON	PPERS	_	14	nsubj	_	_
-14	ⲕⲱ	ⲕⲱ	VERB	V	_	11	acl	_	_
-15	ⲛ	ⲛ	ADP	PREP	_	16	case	_	_
-16	ϩⲧⲏ	ϩⲏⲧ	NOUN	N	_	14	nmod	_	_
-17	ⲩ	ⲛⲧⲟⲟⲩ	PRON	PPERO	_	16	det	_	_
-18	ⲉⲣⲟ	ⲉ	ADP	PREP	_	19	case	_	_
-19	ϥ	ⲛⲧⲟϥ	PRON	PPERO	_	14	nmod	_	_
-20	·	·	PUNCT	PUNCT	_	1	punct	_	_
+1	ⲛ	ⲡ	DET	ART	_	0	root	_	_
+2	ⲉⲧⲉ	ⲉⲧⲉⲣⲉ	SCONJ	CREL	_	3	mark	_	_
+3	ⲟⲩⲛⲧⲁ	ⲟⲩⲛⲧⲁ	VERB	EXIST	_	1	acl	_	_
+4	ⲩ	ⲛⲧⲟⲟⲩ	PRON	PPERS	_	3	iobj	_	_
+5	ⲡ	ⲡ	DET	ART	_	6	det	_	_
+6	ⲉⲟⲟⲩ	ⲉⲟⲟⲩ	NOUN	N	_	3	nsubj	_	_
+7	ⲙⲛ	ⲙⲛ	ADP	PREP	_	9	cc	_	_
+8	ⲡ	ⲡ	DET	ART	_	9	det	_	_
+9	ⲧⲁⲉⲓⲟ	ⲧⲁⲉⲓⲟ	NOUN	N	_	6	conj	_	_
+10	ⲉⲃⲟⲗ	ⲉⲃⲟⲗ	ADV	ADV	_	11	advmod	_	_
+11	ϩⲓⲧⲛ	ϩⲓⲧⲛ	ADP	PREP	_	12	case	_	_
+12	ⲓⲏⲥⲟⲩⲥ	ⲓⲏⲥⲟⲩⲥ	PROPN	NPROP	_	6	nmod	_	_
+13	.	.	PUNCT	PUNCT	_	1	punct	_	_
 
 </code></pre>
 
@@ -142,9 +152,25 @@ Average distance between parent and child is 5.94059405940594.</p>
 
 root in other languages:
 
+[<a href="../../am/dep/root.html">am</a>]
+
+[<a href="../../ar/dep/root.html">ar</a>]
+
 [<a href="../../bg/dep/root.html">bg</a>]
 
+[<a href="../../bxr/dep/root.html">bxr</a>]
+
+[<a href="../../ca/dep/root.html">ca</a>]
+
+[<a href="../../ckb/dep/root.html">ckb</a>]
+
+[<a href="../../cop/dep/root.html">cop</a>]
+
 [<a href="../../cs/dep/root.html">cs</a>]
+
+[<a href="../../cu/dep/root.html">cu</a>]
+
+[<a href="../../da/dep/root.html">da</a>]
 
 [<a href="../../de/dep/root.html">de</a>]
 
@@ -154,29 +180,99 @@ root in other languages:
 
 [<a href="../../es/dep/root.html">es</a>]
 
+[<a href="../../et/dep/root.html">et</a>]
+
 [<a href="../../eu/dep/root.html">eu</a>]
 
 [<a href="../../fa/dep/root.html">fa</a>]
 
 [<a href="../../fi/dep/root.html">fi</a>]
 
+[<a href="../../fo/dep/root.html">fo</a>]
+
 [<a href="../../fr/dep/root.html">fr</a>]
 
 [<a href="../../ga/dep/root.html">ga</a>]
 
+[<a href="../../gl/dep/root.html">gl</a>]
+
+[<a href="../../got/dep/root.html">got</a>]
+
+[<a href="../../grc/dep/root.html">grc</a>]
+
 [<a href="../../he/dep/root.html">he</a>]
 
+[<a href="../../hi/dep/root.html">hi</a>]
+
+[<a href="../../hr/dep/root.html">hr</a>]
+
 [<a href="../../hu/dep/root.html">hu</a>]
+
+[<a href="../../id/dep/root.html">id</a>]
 
 [<a href="../../it/dep/root.html">it</a>]
 
 [<a href="../../ja/dep/root.html">ja</a>]
 
+[<a href="../../kk/dep/root.html">kk</a>]
+
+[<a href="../../kmr/dep/root.html">kmr</a>]
+
 [<a href="../../ko/dep/root.html">ko</a>]
+
+[<a href="../../la/dep/root.html">la</a>]
+
+[<a href="../../lv/dep/root.html">lv</a>]
+
+[<a href="../../mr/dep/root.html">mr</a>]
+
+[<a href="../../nl/dep/root.html">nl</a>]
+
+[<a href="../../no/dep/root.html">no</a>]
+
+[<a href="../../pl/dep/root.html">pl</a>]
+
+[<a href="../../pt/dep/root.html">pt</a>]
+
+[<a href="../../ro/dep/root.html">ro</a>]
+
+[<a href="../../ru/dep/root.html">ru</a>]
+
+[<a href="../../sa/dep/root.html">sa</a>]
+
+[<a href="../../sk/dep/root.html">sk</a>]
+
+[<a href="../../sla/dep/root.html">sla</a>]
+
+[<a href="../../sl/dep/root.html">sl</a>]
+
+[<a href="../../so/dep/root.html">so</a>]
+
+[<a href="../../sr/dep/root.html">sr</a>]
 
 [<a href="../../sv/dep/root.html">sv</a>]
 
+[<a href="../../swl/dep/root.html">swl</a>]
+
+[<a href="../../ta/dep/root.html">ta</a>]
+
+[<a href="../../tr/dep/root.html">tr</a>]
+
 [<a href="../../u/dep/root.html">u</a>]
+
+[<a href="../../ug/dep/root.html">ug</a>]
+
+[<a href="../../uk/dep/root.html">uk</a>]
+
+[<a href="../../ur/dep/root.html">ur</a>]
+
+[<a href="../../urj/dep/root.html">urj</a>]
+
+[<a href="../../vi/dep/root.html">vi</a>]
+
+[<a href="../../yue/dep/root.html">yue</a>]
+
+[<a href="../../zh/dep/root.html">zh</a>]
 
 
 

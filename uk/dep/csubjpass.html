@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-uk">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/uk/dep">uk/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_uk-dep/csubjpass.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-uk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/uk/dep">uk/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-dep/csubjpass.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -56,64 +73,30 @@ for <code>csubjpass</code>.</p>
 
 
 
-
-<hr />
-
-<h2 id="treebank-statistics-udukrainian">Treebank Statistics (UD_Ukrainian)</h2>
-
-<p>This relation is universal.</p>
-
-<p>3 nodes (0%) are attached to their parents as <code>csubjpass</code>.</p>
-
-<p>3 instances of <code>csubjpass</code> (100%) are left-to-right (parent precedes child).
-Average distance between parent and child is 4.33333333333333.</p>
-
-<p>The following 2 pairs of parts of speech are connected with <code>csubjpass</code>: <a href="">uk-pos/VERB</a>-<a href="">uk-pos/VERB</a> (2; 67% instances), <a href="">uk-pos/ADJ</a>-<a href="">uk-pos/VERB</a> (1; 33% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 1 6 csubjpass	color:blue
-1	Сказано	сказати	VERB	verb:perf:impers	Aspect=Perf|VerbForm=Imps	0	root	_	SpaceAfter=No
-2	,	,	PUNCT	punct	_	1	punct	_	_
-3	що	що	SCONJ	conj:subord	_	6	mark	_	_
-4	віра	віра	NOUN	noun:inanim:f:v_naz	Animacy=Inan|Case=Nom|Gender=Fem	6	nsubj	_	_
-5	нас	ми	PRON	noun:anim:p:v_zna:&amp;pron:pers:1	Animacy=Anim|Case=Acc|Number=Plur|Person=1|PronType=Prs	6	dobj	_	_
-6	урятує	урятувати	VERB	verb:perf:futr:s:3:v-u	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	1	csubjpass	_	SpaceAfter=No
-7	.	.	PUNCT	punct	_	1	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
-# visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 3 7 csubjpass	color:blue
-1	Не	не	PART	part	_	3	neg	_	_
-2	є	бути	VERB	verb:imperf:pres:s:3	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
-3	передбачене	передбачений	ADJ	adj:n:v_naz:&amp;adjp:perf:pasv	Aspect=Perf|Case=Nom|Gender=Neut|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No
-4	,	,	PUNCT	punct	_	3	punct	_	_
-5	що	що	SCONJ	conj:subord	_	7	mark	_	_
-6	ви	ви	PRON	noun:anim:p:v_naz:&amp;pron:pers:2	Animacy=Anim|Case=Nom|Number=Plur|Person=2|PronType=Prs	7	nsubj	_	_
-7	прийдете	прийти	VERB	verb:perf:futr:p:2	Aspect=Perf|Mood=Ind|Number=Plur|Person=2|Tense=Fut|VerbForm=Fin	3	csubjpass	_	_
-8	перед	перед	ADP	prep:rv_oru	Case=Ins	9	case	_	_
-9	дев’ятою	дев’ятий	ADJ	adj:f:v_oru:&amp;numr	Case=Ins|Gender=Fem|NumType=Ord	7	nmod	_	SpaceAfter=No
-10	.	.	PUNCT	punct	_	3	punct	_	_
-
-</code></pre>
-
-
-
-
 <!-- "in other languages" links -->
 <hr/>
 
 csubjpass in other languages:
 
+[<a href="../../am/dep/csubjpass.html">am</a>]
+
+[<a href="../../ar/dep/csubjpass.html">ar</a>]
+
 [<a href="../../bg/dep/csubjpass.html">bg</a>]
 
+[<a href="../../bxr/dep/csubjpass.html">bxr</a>]
+
+[<a href="../../ca/dep/csubjpass.html">ca</a>]
+
+[<a href="../../ckb/dep/csubjpass.html">ckb</a>]
+
+[<a href="../../cop/dep/csubjpass.html">cop</a>]
+
 [<a href="../../cs/dep/csubjpass.html">cs</a>]
+
+[<a href="../../cu/dep/csubjpass.html">cu</a>]
+
+[<a href="../../da/dep/csubjpass.html">da</a>]
 
 [<a href="../../de/dep/csubjpass.html">de</a>]
 
@@ -123,27 +106,89 @@ csubjpass in other languages:
 
 [<a href="../../es/dep/csubjpass.html">es</a>]
 
+[<a href="../../et/dep/csubjpass.html">et</a>]
+
 [<a href="../../eu/dep/csubjpass.html">eu</a>]
 
 [<a href="../../fa/dep/csubjpass.html">fa</a>]
 
 [<a href="../../fr/dep/csubjpass.html">fr</a>]
 
-[<a href="../../ga/dep/csubjpass.html">ga</a>]
+[<a href="../../gl/dep/csubjpass.html">gl</a>]
+
+[<a href="../../got/dep/csubjpass.html">got</a>]
+
+[<a href="../../grc/dep/csubjpass.html">grc</a>]
 
 [<a href="../../he/dep/csubjpass.html">he</a>]
 
+[<a href="../../hi/dep/csubjpass.html">hi</a>]
+
+[<a href="../../hr/dep/csubjpass.html">hr</a>]
+
 [<a href="../../hu/dep/csubjpass.html">hu</a>]
+
+[<a href="../../id/dep/csubjpass.html">id</a>]
 
 [<a href="../../it/dep/csubjpass.html">it</a>]
 
 [<a href="../../ja/dep/csubjpass.html">ja</a>]
 
+[<a href="../../kmr/dep/csubjpass.html">kmr</a>]
+
 [<a href="../../ko/dep/csubjpass.html">ko</a>]
+
+[<a href="../../la/dep/csubjpass.html">la</a>]
+
+[<a href="../../lv/dep/csubjpass.html">lv</a>]
+
+[<a href="../../mr/dep/csubjpass.html">mr</a>]
+
+[<a href="../../nl/dep/csubjpass.html">nl</a>]
+
+[<a href="../../no/dep/csubjpass.html">no</a>]
+
+[<a href="../../pl/dep/csubjpass.html">pl</a>]
+
+[<a href="../../pt/dep/csubjpass.html">pt</a>]
+
+[<a href="../../ro/dep/csubjpass.html">ro</a>]
+
+[<a href="../../ru/dep/csubjpass.html">ru</a>]
+
+[<a href="../../sa/dep/csubjpass.html">sa</a>]
+
+[<a href="../../sk/dep/csubjpass.html">sk</a>]
+
+[<a href="../../sla/dep/csubjpass.html">sla</a>]
+
+[<a href="../../sl/dep/csubjpass.html">sl</a>]
+
+[<a href="../../so/dep/csubjpass.html">so</a>]
+
+[<a href="../../sr/dep/csubjpass.html">sr</a>]
 
 [<a href="../../sv/dep/csubjpass.html">sv</a>]
 
-[<a href="../../u/dep/csubjpass.html">u</a>]
+[<a href="../../swl/dep/csubjpass.html">swl</a>]
+
+[<a href="../../ta/dep/csubjpass.html">ta</a>]
+
+[<a href="../../tr/dep/csubjpass.html">tr</a>]
+
+[<a href="../../ug/dep/csubjpass.html">ug</a>]
+
+[<a href="../../uk/dep/csubjpass.html">uk</a>]
+
+[<a href="../../ur/dep/csubjpass.html">ur</a>]
+
+[<a href="../../urj/dep/csubjpass.html">urj</a>]
+
+[<a href="../../vi/dep/csubjpass.html">vi</a>]
+
+[<a href="../../yue/dep/csubjpass.html">yue</a>]
+
+[<a href="../../zh/dep/csubjpass.html">zh</a>]
 
 
 

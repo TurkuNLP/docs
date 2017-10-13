@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-et">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/et/dep">et/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_et-dep/vocative.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-et">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/et/dep">et/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_et-dep/vocative.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,71 +80,58 @@ for <code>vocative</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>91 nodes (0%) are attached to their parents as <code>vocative</code>.</p>
+<p>61 nodes (0%) are attached to their parents as <code>vocative</code>.</p>
 
-<p>47 instances of <code>vocative</code> (52%) are left-to-right (parent precedes child).
-Average distance between parent and child is 3.34065934065934.</p>
+<p>35 instances of <code>vocative</code> (57%) are left-to-right (parent precedes child).
+Average distance between parent and child is 3.0327868852459.</p>
 
-<p>The following 10 pairs of parts of speech are connected with <code>vocative</code>: <a href="">et-pos/VERB</a>-<a href="">et-pos/NOUN</a> (47; 52% instances), <a href="">et-pos/VERB</a>-<a href="">et-pos/PROPN</a> (22; 24% instances), <a href="">et-pos/PRON</a>-<a href="">et-pos/NOUN</a> (6; 7% instances), <a href="">et-pos/ADJ</a>-<a href="">et-pos/NOUN</a> (5; 5% instances), <a href="">et-pos/NOUN</a>-<a href="">et-pos/NOUN</a> (4; 4% instances), <a href="">et-pos/NOUN</a>-<a href="">et-pos/PROPN</a> (3; 3% instances), <a href="">et-pos/ADJ</a>-<a href="">et-pos/PROPN</a> (1; 1% instances), <a href="">et-pos/PRON</a>-<a href="">et-pos/PROPN</a> (1; 1% instances), <a href="">et-pos/PROPN</a>-<a href="">et-pos/PROPN</a> (1; 1% instances), <a href="">et-pos/VERB</a>-<a href="">et-pos/PRON</a> (1; 1% instances).</p>
+<p>The following 8 pairs of parts of speech are connected with <code>vocative</code>: <a href="">et-pos/VERB</a>-<a href="">et-pos/NOUN</a> (31; 51% instances), <a href="">et-pos/VERB</a>-<a href="">et-pos/PROPN</a> (13; 21% instances), <a href="">et-pos/NOUN</a>-<a href="">et-pos/NOUN</a> (6; 10% instances), <a href="">et-pos/PRON</a>-<a href="">et-pos/NOUN</a> (5; 8% instances), <a href="">et-pos/ADJ</a>-<a href="">et-pos/NOUN</a> (2; 3% instances), <a href="">et-pos/NOUN</a>-<a href="">et-pos/PROPN</a> (2; 3% instances), <a href="">et-pos/ADJ</a>-<a href="">et-pos/PROPN</a> (1; 2% instances), <a href="">et-pos/PRON</a>-<a href="">et-pos/PROPN</a> (1; 2% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 5	bgColor:blue
 # visual-style 5	fgColor:white
 # visual-style 3	bgColor:blue
 # visual-style 3	fgColor:white
 # visual-style 3 5 vocative	color:blue
-1	(	(	PUNCT	Z	_	3	punct	_	_
-2	"	"	PUNCT	Z	_	3	punct	_	_
-3	Palun	paluma	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+1	(	(	PUNCT	Z	_	3	punct	_	SpaceAfter=No
+2	"	"	PUNCT	Z	_	3	punct	_	SpaceAfter=No
+3	Palun	paluma	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
 4	,	,	PUNCT	Z	_	5	punct	_	_
-5	maestro	maestro	NOUN	S	Case=Nom|Number=Sing	3	vocative	_	_
-6	,	,	PUNCT	Z	_	3	punct	_	_
+5	maestro	maestro	NOUN	S	Case=Nom|Number=Sing	3	vocative	_	SpaceAfter=No
+6	,	,	PUNCT	Z	_	8	punct	_	_
 7	ma	mina	PRON	P	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_
 8	jätsin	jätma	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
-9	maiuse	maius	NOUN	S	Case=Gen|Number=Sing	8	dobj	_	_
-10	teile	sina	PRON	P	Case=All|Number=Plur|Person=2|PronType=Prs	8	nmod	_	_
+9	maiuse	maius	NOUN	S	Case=Gen|Number=Sing	8	obj	_	_
+10	teile	sina	PRON	P	Case=All|Number=Plur|Person=2|PronType=Prs	8	obl	_	SpaceAfter=No
 11	!	!	PUNCT	Z	_	3	punct	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
+<pre><code class="language-conllu"># visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
 # visual-style 5	bgColor:blue
 # visual-style 5	fgColor:white
-# visual-style 5 1 vocative	color:blue
-1	Ram	Ram	PROPN	S	Case=Nom|Number=Sing	5	vocative	_	_
-2	,	,	PUNCT	Z	_	5	punct	_	_
-3	kas	kas	ADV	D	_	5	advmod	_	_
-4	sa	sina	PRON	P	Case=Nom|Number=Sing|Person=2|PronType=Prs	5	nsubj	_	_
-5	näed	nägema	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-6	,	,	PUNCT	Z	_	5	punct	_	_
-7	Leemet	Leemet	PROPN	S	Case=Nom|Number=Sing	8	nsubj	_	_
-8	on	olema	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	conj	_	_
-9	tagasi	tagasi	ADV	D	_	8	advmod	_	_
-10	!	!	PUNCT	Z	_	5	punct	_	_
+# visual-style 5 2 vocative	color:blue
+1	"	"	PUNCT	Z	_	2	punct	_	SpaceAfter=No
+2	Juudas	Juudas	PROPN	S	Case=Nom|Number=Sing	5	vocative	_	_
+3	...	...	PUNCT	Z	_	2	punct	_	SpaceAfter=No
+4	"	"	PUNCT	Z	_	2	punct	_	_
+5	sosistas	sosistama	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	ta	tema	PRON	P	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	SpaceAfter=No
+7	.	.	PUNCT	Z	_	5	punct	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 8	bgColor:blue
-# visual-style 8	fgColor:white
-# visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 6 8 vocative	color:blue
-1	"	"	PUNCT	Z	_	2	punct	_	_
-2	Saa	saama	VERB	V	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-3	ometi	ometi	ADV	D	_	2	advmod	_	_
-4	aru	aru	NOUN	S	Case=Par|Number=Sing	2	dobj	_	_
-5	,	,	PUNCT	Z	_	6	punct	_	_
-6	sa	sina	PRON	P	Case=Nom|Number=Sing|Person=2|PronType=Prs	2	nsubj	_	_
-7	igavene	igavene	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	8	amod	_	_
-8	oinas	oinas	NOUN	S	Case=Nom|Number=Sing	6	vocative	_	_
-9	,	,	PUNCT	Z	_	2	punct	_	_
-10	"	"	PUNCT	Z	_	2	punct	_	_
-11	seletasid	seletama	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
-12	talle	tema	PRON	P	Case=All|Number=Sing|Person=3|PronType=Prs	11	nmod	_	_
-13	peatoimetaja	pea_toimetaja	NOUN	S	Case=Nom|Number=Sing	11	advcl	_	_
-14	ja	ja	CONJ	J	_	13	cc	_	_
-15	majandusdirektor	majandus_direktor	NOUN	S	Case=Nom|Number=Sing	13	conj	_	_
-16	.	.	PUNCT	Z	_	2	punct	_	_
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 4 vocative	color:blue
+1	"	"	PUNCT	Z	_	2	punct	_	SpaceAfter=No
+2	Tibu	tibu	NOUN	S	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Z	_	2	punct	_	_
+4	tibu	tibu	NOUN	S	Case=Nom|Number=Sing	2	vocative	_	SpaceAfter=No
+5	!	!	PUNCT	Z	_	2	punct	_	SpaceAfter=No
+6	"	"	PUNCT	Z	_	2	punct	_	_
 
 </code></pre>
 
@@ -139,9 +143,25 @@ Average distance between parent and child is 3.34065934065934.</p>
 
 vocative in other languages:
 
+[<a href="../../am/dep/vocative.html">am</a>]
+
+[<a href="../../ar/dep/vocative.html">ar</a>]
+
 [<a href="../../bg/dep/vocative.html">bg</a>]
 
+[<a href="../../bxr/dep/vocative.html">bxr</a>]
+
+[<a href="../../ca/dep/vocative.html">ca</a>]
+
+[<a href="../../ckb/dep/vocative.html">ckb</a>]
+
+[<a href="../../cop/dep/vocative.html">cop</a>]
+
 [<a href="../../cs/dep/vocative.html">cs</a>]
+
+[<a href="../../cu/dep/vocative.html">cu</a>]
+
+[<a href="../../da/dep/vocative.html">da</a>]
 
 [<a href="../../de/dep/vocative.html">de</a>]
 
@@ -151,29 +171,99 @@ vocative in other languages:
 
 [<a href="../../es/dep/vocative.html">es</a>]
 
+[<a href="../../et/dep/vocative.html">et</a>]
+
 [<a href="../../eu/dep/vocative.html">eu</a>]
 
 [<a href="../../fa/dep/vocative.html">fa</a>]
 
 [<a href="../../fi/dep/vocative.html">fi</a>]
 
+[<a href="../../fo/dep/vocative.html">fo</a>]
+
 [<a href="../../fr/dep/vocative.html">fr</a>]
 
 [<a href="../../ga/dep/vocative.html">ga</a>]
 
+[<a href="../../gl/dep/vocative.html">gl</a>]
+
+[<a href="../../got/dep/vocative.html">got</a>]
+
+[<a href="../../grc/dep/vocative.html">grc</a>]
+
 [<a href="../../he/dep/vocative.html">he</a>]
 
+[<a href="../../hi/dep/vocative.html">hi</a>]
+
+[<a href="../../hr/dep/vocative.html">hr</a>]
+
 [<a href="../../hu/dep/vocative.html">hu</a>]
+
+[<a href="../../id/dep/vocative.html">id</a>]
 
 [<a href="../../it/dep/vocative.html">it</a>]
 
 [<a href="../../ja/dep/vocative.html">ja</a>]
 
+[<a href="../../kk/dep/vocative.html">kk</a>]
+
+[<a href="../../kmr/dep/vocative.html">kmr</a>]
+
 [<a href="../../ko/dep/vocative.html">ko</a>]
+
+[<a href="../../la/dep/vocative.html">la</a>]
+
+[<a href="../../lv/dep/vocative.html">lv</a>]
+
+[<a href="../../mr/dep/vocative.html">mr</a>]
+
+[<a href="../../nl/dep/vocative.html">nl</a>]
+
+[<a href="../../no/dep/vocative.html">no</a>]
+
+[<a href="../../pl/dep/vocative.html">pl</a>]
+
+[<a href="../../pt/dep/vocative.html">pt</a>]
+
+[<a href="../../ro/dep/vocative.html">ro</a>]
+
+[<a href="../../ru/dep/vocative.html">ru</a>]
+
+[<a href="../../sa/dep/vocative.html">sa</a>]
+
+[<a href="../../sk/dep/vocative.html">sk</a>]
+
+[<a href="../../sla/dep/vocative.html">sla</a>]
+
+[<a href="../../sl/dep/vocative.html">sl</a>]
+
+[<a href="../../so/dep/vocative.html">so</a>]
+
+[<a href="../../sr/dep/vocative.html">sr</a>]
 
 [<a href="../../sv/dep/vocative.html">sv</a>]
 
+[<a href="../../swl/dep/vocative.html">swl</a>]
+
+[<a href="../../ta/dep/vocative.html">ta</a>]
+
+[<a href="../../tr/dep/vocative.html">tr</a>]
+
 [<a href="../../u/dep/vocative.html">u</a>]
+
+[<a href="../../ug/dep/vocative.html">ug</a>]
+
+[<a href="../../uk/dep/vocative.html">uk</a>]
+
+[<a href="../../ur/dep/vocative.html">ur</a>]
+
+[<a href="../../urj/dep/vocative.html">urj</a>]
+
+[<a href="../../vi/dep/vocative.html">vi</a>]
+
+[<a href="../../yue/dep/vocative.html">yue</a>]
+
+[<a href="../../zh/dep/vocative.html">zh</a>]
 
 
 

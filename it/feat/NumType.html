@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-it">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/it/feat">it/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_it-feat/NumType.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-it">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/it/feat">it/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_it-feat/NumType.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -117,41 +134,41 @@
 <h2 id="treebank-statistics-uditalian">Treebank Statistics (UD_Italian)</h2>
 
 <p>This feature is universal.
-It occurs with 4 different values: <code>Card</code>, <code>Gen</code>, <code>Ord</code>, <code>Range</code>.</p>
+It occurs with 3 different values: <code>Card</code>, <code>Ord</code>, <code>Range</code>.</p>
 
-<p>5924 tokens (2%) have a non-empty value of <code>NumType</code>.
-1241 types (5%) occur at least once with a non-empty value of <code>NumType</code>.
-1194 lemmas (6%) occur at least once with a non-empty value of <code>NumType</code>.
-The feature is used with 4 part-of-speech tags: <a href="">it-pos/NUM</a> (5041; 2% instances), <a href="">it-pos/ADJ</a> (880; 0% instances), <a href="">it-pos/PROPN</a> (2; 0% instances), <a href="">it-pos/PRON</a> (1; 0% instances).</p>
+<p>5872 tokens (2%) have a non-empty value of <code>NumType</code>.
+1221 types (5%) occur at least once with a non-empty value of <code>NumType</code>.
+1177 lemmas (6%) occur at least once with a non-empty value of <code>NumType</code>.
+The feature is used with 3 part-of-speech tags: <a href="">it-pos/NUM</a> (4892; 2% instances), <a href="">it-pos/ADJ</a> (978; 0% instances), <a href="">it-pos/PROPN</a> (2; 0% instances).</p>
 
 <h3 id="num"><code>NUM</code></h3>
 
-<p>5041 <a href="">it-pos/NUM</a> tokens (100% of all <code>NUM</code> tokens) have a non-empty value of <code>NumType</code>.</p>
+<p>4892 <a href="">it-pos/NUM</a> tokens (100% of all <code>NUM</code> tokens) have a non-empty value of <code>NumType</code>.</p>
 
 <p><code>NUM</code> tokens may have the following values of <code>NumType</code>:</p>
 
 <ul>
-  <li><code>Card</code> (5016; 100% of non-empty <code>NumType</code>): <em>due, 1, 2, tre, 3, cinque, 4, mila, quattro, 5</em></li>
-  <li><code>Gen</code> (21; 0% of non-empty <code>NumType</code>): <em>6’, 1’13’’, 1.00’16’’, 1.19’59’’, 10’’, 11’06’’, 13’, 19’43’’, 2’42’’, 20’01’’</em></li>
+  <li><code>Card</code> (4888; 100% of non-empty <code>NumType</code>): <em>due, 1, 2, tre, 3, cinque, 4, mila, quattro, 5</em></li>
   <li><code>Range</code> (4; 0% of non-empty <code>NumType</code>): <em>3/4, 150/300, 2/3</em></li>
+  <li><code>EMPTY</code> (7): <em>dieci, zero, mille, trentacinque, una</em></li>
 </ul>
 
-<p><code>NumType</code> seems to be <strong>lexical feature</strong> of <code>NUM</code>. 100% lemmas (1121) occur only with one value of <code>NumType</code>.</p>
+<p><code>NumType</code> seems to be <strong>lexical feature</strong> of <code>NUM</code>. 100% lemmas (1105) occur only with one value of <code>NumType</code>.</p>
 
 <h3 id="adj"><code>ADJ</code></h3>
 
-<p>880 <a href="">it-pos/ADJ</a> tokens (5% of all <code>ADJ</code> tokens) have a non-empty value of <code>NumType</code>.</p>
+<p>978 <a href="">it-pos/ADJ</a> tokens (5% of all <code>ADJ</code> tokens) have a non-empty value of <code>NumType</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>NumType</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (748; 85%).</p>
+<p>The most frequent other feature values with which <code>ADJ</code> and <code>NumType</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (825; 84%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (531; 54%).</p>
 
 <p><code>ADJ</code> tokens may have the following values of <code>NumType</code>:</p>
 
 <ul>
-  <li><code>Ord</code> (880; 100% of non-empty <code>NumType</code>): <em>primo, prima, secondo, seconda, primi, ultimi, prime, terzo, ii, i</em></li>
-  <li><code>EMPTY</code> (17799): <em>nuovo, grande, altri, presente, altro, stesso, comune, italiana, altra, stessa</em></li>
+  <li><code>Ord</code> (978; 100% of non-empty <code>NumType</code>): <em>primo, prima, secondo, terzo, seconda, primi, ultimi, prime, ultimo, ii</em></li>
+  <li><code>EMPTY</code> (17279): <em>grande, nuovo, presente, altri, altro, stesso, comune, italiana, altra, stessa</em></li>
 </ul>
 
-<p><code>NumType</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (72) occur only with one value of <code>NumType</code>.</p>
+<p><code>NumType</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (71) occur only with one value of <code>NumType</code>.</p>
 
 <h3 id="propn"><code>PROPN</code></h3>
 
@@ -161,31 +178,82 @@ The feature is used with 4 part-of-speech tags: <a href="">it-pos/NUM</a> (5041;
 
 <ul>
   <li><code>Card</code> (2; 100% of non-empty <code>NumType</code>): <em>9/11</em></li>
-  <li><code>EMPTY</code> (14758): <em>Italia, Shakespeare, Balzac, Europa, Roma, Stati, Uniti, San, Albania, Marco</em></li>
-</ul>
-
-<h3 id="pron"><code>PRON</code></h3>
-
-<p>1 <a href="">it-pos/PRON</a> tokens (0% of all <code>PRON</code> tokens) have a non-empty value of <code>NumType</code>.</p>
-
-<p>The most frequent other feature values with which <code>PRON</code> and <code>NumType</code> co-occurred: <tt><a href="Gender.html">Gender</a>=Fem</tt> (1; 100%), <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (1; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (1; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (1; 100%).</p>
-
-<p><code>PRON</code> tokens may have the following values of <code>NumType</code>:</p>
-
-<ul>
-  <li><code>Ord</code> (1; 100% of non-empty <code>NumType</code>): <em>prima</em></li>
-  <li><code>EMPTY</code> (11256): <em>si, che, chi, cui, ci, lo, ne, qual, quanto, mi</em></li>
+  <li><code>EMPTY</code> (13890): <em>Italia, Shakespeare, Balzac, Europa, San, Roma, Stati, Uniti, Albania, Marco</em></li>
 </ul>
 
 <h2 id="relations-with-agreement-in-numtype">Relations with Agreement in <code>NumType</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>NumType</code>:
-<tt>NUM –[<a href="../dep/conj.html">conj</a>]–&gt; NUM</tt> (157; 100%),
-<tt>NUM –[<a href="../dep/compound.html">compound</a>]–&gt; NUM</tt> (153; 100%),
-<tt>NUM –[<a href="../dep/nummod.html">nummod</a>]–&gt; NUM</tt> (35; 100%),
-<tt>NUM –[<a href="../dep/mwe.html">mwe</a>]–&gt; NUM</tt> (17; 100%),
-<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (6; 86%),
-<tt>NUM –[<a href="../dep/nmod.html">nmod</a>]–&gt; NUM</tt> (2; 100%).</p>
+<tt>NUM –[<a href="../dep/flat.html">flat</a>]–&gt; NUM</tt> (211; 100%),
+<tt>NUM –[<a href="../dep/conj.html">conj</a>]–&gt; NUM</tt> (144; 100%),
+<tt>NUM –[<a href="../dep/compound.html">compound</a>]–&gt; NUM</tt> (77; 100%),
+<tt>NUM –[<a href="../dep/nummod.html">nummod</a>]–&gt; NUM</tt> (31; 97%),
+<tt>NUM –[<a href="../dep/fixed.html">fixed</a>]–&gt; NUM</tt> (17; 100%),
+<tt>NUM –[<a href="../dep/nmod.html">nmod</a>]–&gt; NUM</tt> (13; 100%),
+<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (4; 67%).</p>
+
+<hr />
+
+<h2 id="treebank-statistics-uditalian-partut">Treebank Statistics (UD_Italian-ParTUT)</h2>
+
+<p>This feature is universal.
+It occurs with 2 different values: <code>Card</code>, <code>Ord</code>.</p>
+
+<p>778 tokens (2%) have a non-empty value of <code>NumType</code>.
+263 types (4%) occur at least once with a non-empty value of <code>NumType</code>.
+240 lemmas (5%) occur at least once with a non-empty value of <code>NumType</code>.
+The feature is used with 3 part-of-speech tags: <a href="">it-pos/NUM</a> (605; 1% instances), <a href="">it-pos/ADJ</a> (157; 0% instances), <a href="">it-pos/PRON</a> (16; 0% instances).</p>
+
+<h3 id="num-1"><code>NUM</code></h3>
+
+<p>605 <a href="">it-pos/NUM</a> tokens (100% of all <code>NUM</code> tokens) have a non-empty value of <code>NumType</code>.</p>
+
+<p><code>NUM</code> tokens may have the following values of <code>NumType</code>:</p>
+
+<ul>
+  <li><code>Card</code> (605; 100% of non-empty <code>NumType</code>): <em>due, 1, tre, quattro, 3, 6, 18, 2000, 2002, 2014</em></li>
+</ul>
+
+<p><code>NumType</code> seems to be <strong>lexical feature</strong> of <code>NUM</code>. 100% lemmas (221) occur only with one value of <code>NumType</code>.</p>
+
+<h3 id="adj-1"><code>ADJ</code></h3>
+
+<p>157 <a href="">it-pos/ADJ</a> tokens (5% of all <code>ADJ</code> tokens) have a non-empty value of <code>NumType</code>.</p>
+
+<p>The most frequent other feature values with which <code>ADJ</code> and <code>NumType</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (118; 75%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (80; 51%).</p>
+
+<p><code>ADJ</code> tokens may have the following values of <code>NumType</code>:</p>
+
+<ul>
+  <li><code>Ord</code> (157; 100% of non-empty <code>NumType</code>): <em>primo, prima, ultimi, seconda, prime, primi, secondo, terzo, ultime, ultimo</em></li>
+  <li><code>EMPTY</code> (3103): <em>presente, altri, europeo, sociale, economica, nuovo, stesso, finanziario, altre, grande</em></li>
+</ul>
+
+<p><code>NumType</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (20) occur only with one value of <code>NumType</code>.</p>
+
+<h3 id="pron"><code>PRON</code></h3>
+
+<p>16 <a href="">it-pos/PRON</a> tokens (1% of all <code>PRON</code> tokens) have a non-empty value of <code>NumType</code>.</p>
+
+<p>The most frequent other feature values with which <code>PRON</code> and <code>NumType</code> co-occurred: <tt><a href="Clitic.html">Clitic</a>=EMPTY</tt> (16; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (16; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (16; 100%), <tt><a href="PronType.html">PronType</a>=Ind</tt> (16; 100%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (12; 75%).</p>
+
+<p><code>PRON</code> tokens may have the following values of <code>NumType</code>:</p>
+
+<ul>
+  <li><code>Ord</code> (16; 100% of non-empty <code>NumType</code>): <em>quarto, ultima, ultimo, primo, terzo, prima, secondo</em></li>
+  <li><code>EMPTY</code> (1352): <em>che, si, cui, lo, ci, ciò, quanto, ne, quello, questo</em></li>
+</ul>
+
+<h2 id="relations-with-agreement-in-numtype-1">Relations with Agreement in <code>NumType</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code>NumType</code>:
+<tt>NUM –[<a href="../dep/flat.html">flat</a>]–&gt; NUM</tt> (31; 100%),
+<tt>NUM –[<a href="../dep/conj.html">conj</a>]–&gt; NUM</tt> (26; 100%),
+<tt>NUM –[<a href="../dep/nummod.html">nummod</a>]–&gt; NUM</tt> (26; 100%),
+<tt>NUM –[<a href="../dep/nmod.html">nmod</a>]–&gt; NUM</tt> (3; 100%),
+<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (2; 100%),
+<tt>NUM –[<a href="../dep/compound.html">compound</a>]–&gt; NUM</tt> (1; 100%),
+<tt>ADJ –[<a href="../dep/goeswith.html">goeswith</a>]–&gt; ADJ</tt> (1; 100%).</p>
 
 
 
@@ -195,9 +263,25 @@ The feature is used with 4 part-of-speech tags: <a href="">it-pos/NUM</a> (5041;
 
 NumType in other languages:
 
+[<a href="../../am/feat/NumType.html">am</a>]
+
+[<a href="../../ar/feat/NumType.html">ar</a>]
+
 [<a href="../../bg/feat/NumType.html">bg</a>]
 
+[<a href="../../bxr/feat/NumType.html">bxr</a>]
+
+[<a href="../../ca/feat/NumType.html">ca</a>]
+
+[<a href="../../ckb/feat/NumType.html">ckb</a>]
+
+[<a href="../../cop/feat/NumType.html">cop</a>]
+
 [<a href="../../cs/feat/NumType.html">cs</a>]
+
+[<a href="../../cu/feat/NumType.html">cu</a>]
+
+[<a href="../../da/feat/NumType.html">da</a>]
 
 [<a href="../../de/feat/NumType.html">de</a>]
 
@@ -207,29 +291,99 @@ NumType in other languages:
 
 [<a href="../../es/feat/NumType.html">es</a>]
 
+[<a href="../../et/feat/NumType.html">et</a>]
+
 [<a href="../../eu/feat/NumType.html">eu</a>]
 
 [<a href="../../fa/feat/NumType.html">fa</a>]
 
 [<a href="../../fi/feat/NumType.html">fi</a>]
 
+[<a href="../../fo/feat/NumType.html">fo</a>]
+
 [<a href="../../fr/feat/NumType.html">fr</a>]
 
 [<a href="../../ga/feat/NumType.html">ga</a>]
 
+[<a href="../../gl/feat/NumType.html">gl</a>]
+
+[<a href="../../got/feat/NumType.html">got</a>]
+
+[<a href="../../grc/feat/NumType.html">grc</a>]
+
 [<a href="../../he/feat/NumType.html">he</a>]
 
+[<a href="../../hi/feat/NumType.html">hi</a>]
+
+[<a href="../../hr/feat/NumType.html">hr</a>]
+
 [<a href="../../hu/feat/NumType.html">hu</a>]
+
+[<a href="../../id/feat/NumType.html">id</a>]
 
 [<a href="../../it/feat/NumType.html">it</a>]
 
 [<a href="../../ja/feat/NumType.html">ja</a>]
 
+[<a href="../../kk/feat/NumType.html">kk</a>]
+
+[<a href="../../kmr/feat/NumType.html">kmr</a>]
+
 [<a href="../../ko/feat/NumType.html">ko</a>]
+
+[<a href="../../la/feat/NumType.html">la</a>]
+
+[<a href="../../lv/feat/NumType.html">lv</a>]
+
+[<a href="../../mr/feat/NumType.html">mr</a>]
+
+[<a href="../../nl/feat/NumType.html">nl</a>]
+
+[<a href="../../no/feat/NumType.html">no</a>]
+
+[<a href="../../pl/feat/NumType.html">pl</a>]
+
+[<a href="../../pt/feat/NumType.html">pt</a>]
+
+[<a href="../../ro/feat/NumType.html">ro</a>]
+
+[<a href="../../ru/feat/NumType.html">ru</a>]
+
+[<a href="../../sa/feat/NumType.html">sa</a>]
+
+[<a href="../../sk/feat/NumType.html">sk</a>]
+
+[<a href="../../sla/feat/NumType.html">sla</a>]
+
+[<a href="../../sl/feat/NumType.html">sl</a>]
+
+[<a href="../../so/feat/NumType.html">so</a>]
+
+[<a href="../../sr/feat/NumType.html">sr</a>]
 
 [<a href="../../sv/feat/NumType.html">sv</a>]
 
+[<a href="../../swl/feat/NumType.html">swl</a>]
+
+[<a href="../../ta/feat/NumType.html">ta</a>]
+
+[<a href="../../tr/feat/NumType.html">tr</a>]
+
 [<a href="../../u/feat/NumType.html">u</a>]
+
+[<a href="../../ug/feat/NumType.html">ug</a>]
+
+[<a href="../../uk/feat/NumType.html">uk</a>]
+
+[<a href="../../ur/feat/NumType.html">ur</a>]
+
+[<a href="../../urj/feat/NumType.html">urj</a>]
+
+[<a href="../../vi/feat/NumType.html">vi</a>]
+
+[<a href="../../yue/feat/NumType.html">yue</a>]
+
+[<a href="../../zh/feat/NumType.html">zh</a>]
 
 
 

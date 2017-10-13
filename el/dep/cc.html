@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-el">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/el/dep">el/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/cc.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-el">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/el/dep">el/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/cc.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -49,7 +66,7 @@
 A <code>cc</code> is the relation between the first conjunct and
 <!--
 TODO 
-a [coordinating conjunction](../pos/CONJ) 
+a [coordinating conjunction](../pos/CCONJ) 
 -->
 a coordinating conjunction like <em>και</em> or <em>αλλά</em> delimiting another conjunct.</p>
 
@@ -87,61 +104,69 @@ TODO
 
 <p>This relation is universal.</p>
 
-<p>2074 nodes (4%) are attached to their parents as <code>cc</code>.</p>
+<p>1771 nodes (3%) are attached to their parents as <code>cc</code>.</p>
 
-<p>1712 instances of <code>cc</code> (83%) are left-to-right (parent precedes child).
-Average distance between parent and child is 4.8847637415622.</p>
+<p>1713 instances of <code>cc</code> (97%) are right-to-left (child precedes parent).
+Average distance between parent and child is 2.58046301524562.</p>
 
-<p>The following 14 pairs of parts of speech are connected with <code>cc</code>: <a href="">el-pos/NOUN</a>-<a href="">el-pos/CONJ</a> (892; 43% instances), <a href="">el-pos/VERB</a>-<a href="">el-pos/CONJ</a> (776; 37% instances), <a href="">el-pos/ADJ</a>-<a href="">el-pos/CONJ</a> (148; 7% instances), <a href="">el-pos/ADV</a>-<a href="">el-pos/CONJ</a> (67; 3% instances), <a href="">el-pos/CONJ</a>-<a href="">el-pos/CONJ</a> (57; 3% instances), <a href="">el-pos/ADP</a>-<a href="">el-pos/CONJ</a> (42; 2% instances), <a href="">el-pos/NOUN</a>-<a href="">el-pos/ADV</a> (27; 1% instances), <a href="">el-pos/NUM</a>-<a href="">el-pos/CONJ</a> (22; 1% instances), <a href="">el-pos/PRON</a>-<a href="">el-pos/CONJ</a> (18; 1% instances), <a href="">el-pos/VERB</a>-<a href="">el-pos/ADV</a> (17; 1% instances), <a href="">el-pos/ADJ</a>-<a href="">el-pos/ADV</a> (3; 0% instances), <a href="">el-pos/PRON</a>-<a href="">el-pos/ADV</a> (3; 0% instances), <a href="">el-pos/DET</a>-<a href="">el-pos/ADV</a> (1; 0% instances), <a href="">el-pos/DET</a>-<a href="">el-pos/CONJ</a> (1; 0% instances).</p>
+<p>The following 19 pairs of parts of speech are connected with <code>cc</code>: <a href="">el-pos/NOUN</a>-<a href="">el-pos/CCONJ</a> (711; 40% instances), <a href="">el-pos/VERB</a>-<a href="">el-pos/CCONJ</a> (622; 35% instances), <a href="">el-pos/ADJ</a>-<a href="">el-pos/CCONJ</a> (152; 9% instances), <a href="">el-pos/PROPN</a>-<a href="">el-pos/CCONJ</a> (102; 6% instances), <a href="">el-pos/ADV</a>-<a href="">el-pos/CCONJ</a> (45; 3% instances), <a href="">el-pos/PRON</a>-<a href="">el-pos/CCONJ</a> (29; 2% instances), <a href="">el-pos/CCONJ</a>-<a href="">el-pos/CCONJ</a> (22; 1% instances), <a href="">el-pos/NUM</a>-<a href="">el-pos/CCONJ</a> (22; 1% instances), <a href="">el-pos/X</a>-<a href="">el-pos/CCONJ</a> (21; 1% instances), <a href="">el-pos/NOUN</a>-<a href="">el-pos/ADV</a> (18; 1% instances), <a href="">el-pos/VERB</a>-<a href="">el-pos/ADV</a> (11; 1% instances), <a href="">el-pos/PART</a>-<a href="">el-pos/CCONJ</a> (4; 0% instances), <a href="">el-pos/PRON</a>-<a href="">el-pos/ADV</a> (4; 0% instances), <a href="">el-pos/ADJ</a>-<a href="">el-pos/ADV</a> (2; 0% instances), <a href="">el-pos/X</a>-<a href="">el-pos/ADV</a> (2; 0% instances), <a href="">el-pos/ADP</a>-<a href="">el-pos/CCONJ</a> (1; 0% instances), <a href="">el-pos/DET</a>-<a href="">el-pos/ADV</a> (1; 0% instances), <a href="">el-pos/PROPN</a>-<a href="">el-pos/ADV</a> (1; 0% instances), <a href="">el-pos/VERB</a>-<a href="">el-pos/SCONJ</a> (1; 0% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 8	bgColor:blue
-# visual-style 8	fgColor:white
-# visual-style 9	bgColor:blue
-# visual-style 9	fgColor:white
-# visual-style 9 8 cc	color:blue
-1	Αυτό	αυτός	PRON	PRON	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Dem	2	nsubj	_	_
-2	σημαίνει	σημαίνω	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Act	0	root	_	_
-3	ότι	ότι	CONJ	CONJ	_	4	mark	_	_
-4	υπάρχει	υπάρχω	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Act	2	ccomp	_	_
-5	κίνδυνος	κίνδυνος	NOUN	NOUN	Case=Nom|Gender=Masc|Number=Sing	4	nsubj	_	_
-6	μόλυνσης	μόλυνση	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	5	nmod	_	_
-7	ακόμα	ακόμα	ADV	ADV	_	9	advmod	_	_
-8	και	και	CONJ	CONJ	_	9	cc	_	_
-9	ανθρώπων	άνθρωπος	NOUN	NOUN	Case=Gen|Gender=Masc|Number=Plur	6	nmod	_	_
-10	·	·	PUNCT	PUNCT	_	2	punct	_	_
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 7 4 cc	color:blue
+1	Ελπίζω	ελπίζω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	μάλιστα	μάλιστα	ADV	ADV	_	1	advmod	_	_
+3	ότι	ότι	SCONJ	SCONJ	_	10	mark	_	_
+4	και	και	CCONJ	CCONJ	_	7	cc	_	_
+5	οι	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_
+6	λοιπές	λοιπός	ADJ	ADJ	Case=Nom|Gender=Fem|Number=Plur	7	amod	_	_
+7	ομάδες	ομάδα	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Plur	10	nsubj	_	_
+8	θα	θα	PART	PART	_	10	aux	_	_
+9	την	εγώ	PRON	PRON	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	10	obj	_	_
+10	εγκρίνουν	εγκρίνω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	ccomp	_	SpaceAfter=No
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 2	bgColor:blue
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 2	bgColor:blue
 # visual-style 2	fgColor:white
-# visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 1 2 cc	color:blue
-1	Συντάσσει	συντάσσω	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Act	0	root	_	_
-2	και	και	CONJ	CONJ	_	1	cc	_	_
-3	υποβάλλει	υποβάλλω	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Act	1	conj	_	_
-4	προσφορές	προσφορά	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Plur	1	dobj	_	_
-5	για	για	ADP	ADP	_	6	case	_	_
-6	αυτούς	αυτός	PRON	PRON	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Dem	2	nmod	_	_
-7	κάθε	κάθε	PRON	PRON	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Ind	8	nmod	_	_
-8	εβδομάδα	εβδομάδα	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	1	nmod	_	_
-9	.	.	PUNCT	PUNCT	_	1	punct	_	_
+# visual-style 2 4 cc	color:blue
+1	Θα	θα	PART	PART	_	2	aux	_	_
+2	συνεχίσει	συνεχίζω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	όμως	όμως	CCONJ	CCONJ	_	2	cc	_	SpaceAfter=No
+5	,	,	PUNCT	PUNCT	_	4	punct	_	_
+6	τη	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	διανομή	διανομή	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	2	obj	_	_
+8	δεμάτων	δέμα	NOUN	NOUN	Case=Gen|Gender=Neut|Number=Plur	7	nmod	_	_
+9	6	6	NUM	NUM	NumType=Card	10	nummod	_	_
+10	μέρες	μέρα	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Plur	8	nmod	_	_
+11	την	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	εβδομάδα	εβδομάδα	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	10	nmod	_	SpaceAfter=No
+13	"	"	PUNCT	PUNCT	_	10	punct	_	SpaceAfter=No
+14	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 5 6 cc	color:blue
-1	Χρειαζόμαστε	χρειάζομαι	VERB	VERB	Mood=Ind|Number=Plur|Person=1|Tense=Pres|Voice=Pass	0	root	_	_
-2	έναν	ένας	DET	DET	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-3	τρόπο	τρόπος	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Sing	1	dobj	_	_
-4	εργασίας	εργασία	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	3	nmod	_	_
-5	διαφανή	διαφανής	ADJ	ADJ	Case=Acc|Gender=Neut|Number=Plur	3	amod	_	_
-6	και	και	CONJ	CONJ	_	5	cc	_	_
-7	ανοιχτό	ανοιχτός	ADJ	ADJ	Case=Acc|Gender=Neut|Number=Sing	5	conj	_	_
-8	.	.	PUNCT	PUNCT	_	1	punct	_	_
+<pre><code class="language-conllu"># visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 8 7 cc	color:blue
+1	Όμως	όμως	ADV	ADV	_	2	cc	_	_
+2	πρέπει	πρέπει	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	να	να	PART	PART	_	4	aux	_	_
+4	γίνει	γίνομαι	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Pass	2	csubj	_	_
+5	σε	σε	ADP	ADP	_	9	case	_	_
+6	ανοικτή	ανοιχτός	ADJ	ADJ	Case=Acc|Gender=Fem|Number=Sing	9	amod	_	_
+7	και	και	CCONJ	CCONJ	_	8	cc	_	_
+8	συνεκτική	συνεκτικός	ADJ	ADJ	Case=Acc|Gender=Fem|Number=Sing	6	conj	_	_
+9	βάση	βάση	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	4	obl	_	SpaceAfter=No
+10	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 </code></pre>
 
@@ -153,9 +178,25 @@ Average distance between parent and child is 4.8847637415622.</p>
 
 cc in other languages:
 
+[<a href="../../am/dep/cc.html">am</a>]
+
+[<a href="../../ar/dep/cc.html">ar</a>]
+
 [<a href="../../bg/dep/cc.html">bg</a>]
 
+[<a href="../../bxr/dep/cc.html">bxr</a>]
+
+[<a href="../../ca/dep/cc.html">ca</a>]
+
+[<a href="../../ckb/dep/cc.html">ckb</a>]
+
+[<a href="../../cop/dep/cc.html">cop</a>]
+
 [<a href="../../cs/dep/cc.html">cs</a>]
+
+[<a href="../../cu/dep/cc.html">cu</a>]
+
+[<a href="../../da/dep/cc.html">da</a>]
 
 [<a href="../../de/dep/cc.html">de</a>]
 
@@ -165,29 +206,99 @@ cc in other languages:
 
 [<a href="../../es/dep/cc.html">es</a>]
 
+[<a href="../../et/dep/cc.html">et</a>]
+
 [<a href="../../eu/dep/cc.html">eu</a>]
 
 [<a href="../../fa/dep/cc.html">fa</a>]
 
 [<a href="../../fi/dep/cc.html">fi</a>]
 
+[<a href="../../fo/dep/cc.html">fo</a>]
+
 [<a href="../../fr/dep/cc.html">fr</a>]
 
 [<a href="../../ga/dep/cc.html">ga</a>]
 
+[<a href="../../gl/dep/cc.html">gl</a>]
+
+[<a href="../../got/dep/cc.html">got</a>]
+
+[<a href="../../grc/dep/cc.html">grc</a>]
+
 [<a href="../../he/dep/cc.html">he</a>]
 
+[<a href="../../hi/dep/cc.html">hi</a>]
+
+[<a href="../../hr/dep/cc.html">hr</a>]
+
 [<a href="../../hu/dep/cc.html">hu</a>]
+
+[<a href="../../id/dep/cc.html">id</a>]
 
 [<a href="../../it/dep/cc.html">it</a>]
 
 [<a href="../../ja/dep/cc.html">ja</a>]
 
+[<a href="../../kk/dep/cc.html">kk</a>]
+
+[<a href="../../kmr/dep/cc.html">kmr</a>]
+
 [<a href="../../ko/dep/cc.html">ko</a>]
+
+[<a href="../../la/dep/cc.html">la</a>]
+
+[<a href="../../lv/dep/cc.html">lv</a>]
+
+[<a href="../../mr/dep/cc.html">mr</a>]
+
+[<a href="../../nl/dep/cc.html">nl</a>]
+
+[<a href="../../no/dep/cc.html">no</a>]
+
+[<a href="../../pl/dep/cc.html">pl</a>]
+
+[<a href="../../pt/dep/cc.html">pt</a>]
+
+[<a href="../../ro/dep/cc.html">ro</a>]
+
+[<a href="../../ru/dep/cc.html">ru</a>]
+
+[<a href="../../sa/dep/cc.html">sa</a>]
+
+[<a href="../../sk/dep/cc.html">sk</a>]
+
+[<a href="../../sla/dep/cc.html">sla</a>]
+
+[<a href="../../sl/dep/cc.html">sl</a>]
+
+[<a href="../../so/dep/cc.html">so</a>]
+
+[<a href="../../sr/dep/cc.html">sr</a>]
 
 [<a href="../../sv/dep/cc.html">sv</a>]
 
+[<a href="../../swl/dep/cc.html">swl</a>]
+
+[<a href="../../ta/dep/cc.html">ta</a>]
+
+[<a href="../../tr/dep/cc.html">tr</a>]
+
 [<a href="../../u/dep/cc.html">u</a>]
+
+[<a href="../../ug/dep/cc.html">ug</a>]
+
+[<a href="../../uk/dep/cc.html">uk</a>]
+
+[<a href="../../ur/dep/cc.html">ur</a>]
+
+[<a href="../../urj/dep/cc.html">urj</a>]
+
+[<a href="../../vi/dep/cc.html">vi</a>]
+
+[<a href="../../yue/dep/cc.html">yue</a>]
+
+[<a href="../../zh/dep/cc.html">zh</a>]
 
 
 

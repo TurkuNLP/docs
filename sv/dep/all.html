@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-sv">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sv">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -67,7 +84,7 @@ in two places.</p>
 	  <td><a>csubjpass</a></td>
 	</tr>
 	<tr>
-	  <td><a>dobj</a></td>
+	  <td><a>obj</a></td>
 	  <td><a>ccomp</a></td>
 	  <td><a>xcomp</a></td>
 	</tr>
@@ -170,14 +187,14 @@ in two places.</p>
 	<tr><td colspan="3"><strong>Compounding and unanalyzed</strong></td></tr>
 	<tr>
 	  <td><a>compound</a></td>
-	  <td><a>mwe</a></td>
+	  <td><a>fixed</a></td>
 	  <td><a>goeswith</a></td>
 	</tr>
 	<tr>
 	  <td>↳<a>compound:prt</a></td>
 	</tr>
 	<tr>
-	  <td><a>name</a></td>
+	  <td><a>flat</a></td>
 	  <td><a>foreign</a></td>
 	</tr>
       </table>
@@ -214,7 +231,7 @@ in two places.</p>
 	<tr>
 	  <td><a>list</a></td>
 	  <td><a>parataxis</a></td>
-	  <td><a>remnant</a></td>
+	  <td><a>orphan</a></td>
 	</tr>
 	<tr>
 	  <td><a>dislocated</a></td>
@@ -271,7 +288,7 @@ acl(ansvar, gör)
 acl(Han, gråtande)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/acl.md" target="#">edit acl</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/acl.md" target="#">edit acl</a></p>
 
 <p><a id="al-sv-dep/acl:relcl" class="al-dest"></a></p>
 <h2><code>acl:relcl</code>: relative clause modifier</h2>
@@ -284,12 +301,12 @@ and the relative pronoun can be omitted when it does not have the subject functi
 <pre><code class="language-sdparse">Jag såg den man som älskar dig \n I saw the man who loves you
 acl:relcl(man-4, älskar)
 nsubj(älskar, som)
-dobj(älskar, dig)
+obj(älskar, dig)
 </code></pre>
 <pre><code class="language-sdparse">Jag såg den man som du älskar \n I saw the man who you love
 acl:relcl(man-4, älskar)
 nsubj(älskar, du)
-dobj(älskar, som)
+obj(älskar, som)
 </code></pre>
 
 <pre><code class="language-sdparse">Jag såg den man du älskar \n I saw the man you love
@@ -297,7 +314,7 @@ acl:relcl(man-4, älskar)
 nsubj(älskar, du)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/acl-relcl.md" target="#">edit acl:relcl</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/acl-relcl.md" target="#">edit acl:relcl</a></p>
 
 <p><a id="al-sv-dep/advcl" class="al-dest"></a></p>
 <h2><code>advcl</code>: adverbial clause modifier</h2>
@@ -312,7 +329,7 @@ advcl(gör, kommer)
 advcl(arbeta, gå)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/advcl.md" target="#">edit advcl</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/advcl.md" target="#">edit advcl</a></p>
 
 <p><a id="al-sv-dep/advmod" class="al-dest"></a></p>
 <h2><code>advmod</code>: adverbial modifier</h2>
@@ -328,7 +345,13 @@ advmod(understrykas, kraftigt)
 advmod(ofta, mindre)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/advmod.md" target="#">edit advmod</a></p>
+<p>The <em>advmod</em> relation is also used (from v2) for negations (which carries a special feature Polarity=Neg):</p>
+
+<pre><code class="language-sdparse">En social gemenskap existerar inte \n A social community doesn't exist
+advmod(existerar, inte)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/advmod.md" target="#">edit advmod</a></p>
 
 <p><a id="al-sv-dep/amod" class="al-dest"></a></p>
 <h2><code>amod</code>: adjectival modifier</h2>
@@ -348,7 +371,7 @@ amod(kyrkans, ortodoxa)
 amod(hjälpinsatserna, största)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/amod.md" target="#">edit amod</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/amod.md" target="#">edit amod</a></p>
 
 <p><a id="al-sv-dep/appos" class="al-dest"></a></p>
 <h2><code>appos</code>: appositional modifier</h2>
@@ -367,7 +390,7 @@ appos(Sebastian, kusin)
 appos(AB, SKB)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/appos.md" target="#">edit appos</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/appos.md" target="#">edit appos</a></p>
 
 <p><a id="al-sv-dep/aux" class="al-dest"></a></p>
 <h2><code>aux</code>: auxiliary</h2>
@@ -386,7 +409,28 @@ aux(haft, har)
 aux(ha, kan)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/aux_.md" target="#">edit aux</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/aux_.md" target="#">edit aux</a></p>
+
+<p><a id="al-sv-dep/aux:pass" class="al-dest"></a></p>
+<h2><code>aux:pass</code>: passive auxiliary</h2>
+
+<p>A passive auxiliary of a clause is a non-main verb of the clause which contains the passive information.</p>
+
+<pre><code class="language-sdparse">Kennedy blev mördad \n Kennedy was murdered
+aux:pass(mördad, blev)
+nsubj(mördad, Kennedy)
+</code></pre>
+
+<p>Other auxiliaries associated with the same main verb are not labeled <code>aux:pass</code> since they do not themselves 
+indicate passive voice.</p>
+
+<pre><code class="language-sdparse">Kennedy har blivit mördad \n Kennedy has been murdered
+aux:pass(mördad, blivit)
+aux(mördad, har)
+nsubj(mördad, Kennedy)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/aux-pass.md" target="#">edit aux:pass</a></p>
 
 <p><a id="al-sv-dep/auxpass" class="al-dest"></a></p>
 <h2><code>auxpass</code>: passive auxiliary</h2>
@@ -405,7 +449,7 @@ auxpass(mördad, blivit)
 aux(mördad, har)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/auxpass.md" target="#">edit auxpass</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/auxpass.md" target="#">edit auxpass</a></p>
 
 <p><a id="al-sv-dep/case" class="al-dest"></a></p>
 <h2><code>case</code>: case marking</h2>
@@ -424,28 +468,28 @@ case(början, från)
 case(ersättning, för)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/case.md" target="#">edit case</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/case.md" target="#">edit case</a></p>
 
 <p><a id="al-sv-dep/cc" class="al-dest"></a></p>
 <h2><code>cc</code>: coordinating conjunction</h2>
 
-<p>A coordinating conjunction relation holds between the head conjunct of a coordinate structure and any of the coordinating conjunction involved in the structure. This also includes the first element in paired conjunctions like <em>både … och</em> “both … and” and <em>antingen … eller</em> “either … or”. Note that we never treat punctuation as coordinating conjunctions.
+<p>A coordinating conjunction relation holds between the head conjunct of a coordinate structure and any of the coordinating conjunction involved in the structure. This also includes the first element in paired conjunctions like <em>både … och</em> “both … and” and <em>antingen … eller</em> “either … or”. From v2, coordinating conjunctions are attached to the immediately following conjunct. Note that we never treat punctuation as coordinating conjunctions.
 For more on coordination, see the <a href="">conj</a> relation.</p>
 
 <pre><code class="language-sdparse">1500 kr per barn och år \n 1500 kr per child and year
-cc(barn, och)
+cc(år, och)
 conj(barn, år)
 </code></pre>
 
 <pre><code class="language-sdparse">både äpplen och päron \n both apples and pears
 cc(äpplen, både)
-cc(äpplen, och)
+cc(päron, och)
 conj(äpplen, päron)
 </code></pre>
 
 <pre><code class="language-sdparse">äpplen , apelsiner och päron \n apples , oranges and pears
-punct(äpplen, ,)
-cc(äpplen, och)
+punct(apelsiner, ,)
+cc(päron, och)
 conj(äpplen, päron)
 conj(äpplen, apelsiner)
 </code></pre>
@@ -454,7 +498,7 @@ conj(äpplen, apelsiner)
 cc(har, Och)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/cc.md" target="#">edit cc</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/cc.md" target="#">edit cc</a></p>
 
 <p><a id="al-sv-dep/ccomp" class="al-dest"></a></p>
 <h2><code>ccomp</code>: clausal complement</h2>
@@ -469,7 +513,7 @@ ccomp(säger, gillar)
 ccomp(säker, gjorde) 
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/ccomp.md" target="#">edit ccomp</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/ccomp.md" target="#">edit ccomp</a></p>
 
 <p><a id="al-sv-dep/compound" class="al-dest"></a></p>
 <h2><code>compound</code>: compound</h2>
@@ -477,11 +521,11 @@ ccomp(säker, gjorde)
 <p>The <code>compound</code> relation is used in Swedish only for compounds borrowed from other languages and therefore written as two (or more) separate words. Compounds in Swedish are normally written as a single word without space between the compound elements. A subtype, <a href="">compound:prt</a>, is used for verb particles in phrasal verbs.</p>
 
 <pre><code class="language-sdparse">Hon gillar corn flakes \n She likes corn flakes
-dobj(gillar, flakes)
+obj(gillar, flakes)
 compound(flakes, corn)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/compound.md" target="#">edit compound</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/compound.md" target="#">edit compound</a></p>
 
 <p><a id="al-sv-dep/compound:prt" class="al-dest"></a></p>
 <h2><code>compound:prt</code>: verb particle</h2>
@@ -496,7 +540,7 @@ compound(kommit, fram)
 compound(vara, med)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/compound-prt.md" target="#">edit compound:prt</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/compound-prt.md" target="#">edit compound:prt</a></p>
 
 <p><a id="al-sv-dep/conj" class="al-dest"></a></p>
 <h2><code>conj</code>: conjunct</h2>
@@ -507,14 +551,17 @@ conjunct and other conjuncts depend on it via the <code>conj</code> relation.</p
 
 <pre><code class="language-sdparse">1500 kr per barn och år \n 1500 kr per child and year
 conj(barn, år)
+cc(år, och)
 </code></pre>
 
 <pre><code class="language-sdparse">En sekunds tvekan eller dröjsmål eller slarv \n A second's hesitation or delay or carelessness
 conj(tvekan, dröjsmål)
 conj(tvekan, slarv)
+cc(dröjsmål, eller-4)
+cc(slarv, eller-6)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/conj.md" target="#">edit conj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/conj.md" target="#">edit conj</a></p>
 
 <p><a id="al-sv-dep/cop" class="al-dest"></a></p>
 <h2><code>cop</code>: copula</h2>
@@ -567,7 +614,7 @@ cop(Vad, är)
 nsubj(Vad, det)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/cop.md" target="#">edit cop</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/cop.md" target="#">edit cop</a></p>
 
 <p><a id="al-sv-dep/csubj" class="al-dest"></a></p>
 <h2><code>csubj</code>: clausal subject</h2>
@@ -578,7 +625,23 @@ nsubj(Vad, det)
 csubj(stör, säger)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/csubj.md" target="#">edit csubj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/csubj.md" target="#">edit csubj</a></p>
+
+<p><a id="al-sv-dep/csubj:pass" class="al-dest"></a></p>
+<h2><code>csubj:pass</code>: clausal passive subject</h2>
+
+<p>A clausal passive subject is a clausal syntactic subject of a passive
+clause. In the example below, <em>att hon ljög</em> is the subject.</p>
+
+<pre><code class="language-sdparse">Att hon ljög misstänktes av alla . \n That she lied was suspected by everyone .
+csubj:pass(misstänktes, ljög)
+mark(misstänktes, att)
+nsubj(misstänktes, hon)
+obl:agent(misstänktes, alla)
+case(alla, av)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/csubj-pass.md" target="#">edit csubj:pass</a></p>
 
 <p><a id="al-sv-dep/csubjpass" class="al-dest"></a></p>
 <h2><code>csubjpass</code>: clausal passive subject</h2>
@@ -590,7 +653,7 @@ clause. In the example below, <em>att hon ljög</em> is the subject.</p>
 csubjpass(misstänktes, ljög)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/csubjpass.md" target="#">edit csubjpass</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/csubjpass.md" target="#">edit csubjpass</a></p>
 
 <p><a id="al-sv-dep/dep" class="al-dest"></a></p>
 <h2><code>dep</code>: unspecified dependency</h2>
@@ -603,7 +666,7 @@ dependency.</p>
 
 <p>In the current version of the Swedish UD treebank, the <em>dep</em> relation is not used at all.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/dep.md" target="#">edit dep</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/dep.md" target="#">edit dep</a></p>
 
 <p><a id="al-sv-dep/det" class="al-dest"></a></p>
 <h2><code>det</code>: determiner</h2>
@@ -618,7 +681,7 @@ det(parken, Den)
 det(bok, Vilken)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/det.md" target="#">edit det</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/det.md" target="#">edit det</a></p>
 
 <p><a id="al-sv-dep/discourse" class="al-dest"></a></p>
 <h2><code>discourse</code>: discourse element</h2>
@@ -630,7 +693,7 @@ discourse(kul, :)-6)
 discourse(kul, Wow)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/discourse.md" target="#">edit discourse</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/discourse.md" target="#">edit discourse</a></p>
 
 <p><a id="al-sv-dep/dislocated" class="al-dest"></a></p>
 <h2><code>dislocated</code>: dislocated elements</h2>
@@ -641,14 +704,7 @@ for.</p>
 
 <pre><code class="language-sdparse">Peter , honom gillar jag inte \n Peter, I don't like him
 dislocated(gillar, Peter)
-dobj(gillar, honom)
-</code></pre>
-
-<p>A frequent case in Swedish is that of an adverbial clause resumed by the pronominal adverb <em>så</em>:</p>
-
-<pre><code class="language-sdparse">Släpper vi in britterna , så drar de med sig danskar \n If we let the Brits in they'll bring the Danish with them
-dislocated(drar, Släpper)
-advcl(drar, så)
+obj(gillar, honom)
 </code></pre>
 
 <p>In addition, the <code>dislocated</code> relation is used for the focus element in a cleft sentence. This is a slight
@@ -657,13 +713,13 @@ rather of the predicate in the relative clause making up the second part of the 
 
 <pre><code class="language-sdparse">Det var Peter som gjorde det \n It was Peter who did it
 dislocated(var, Peter)
-expletive(var, Det)
+expl(var, Det)
 acl:relcl(Peter, gjorde)
 nsubj(gjorde, som)
-dobj(gjorde, det)
+obj(gjorde, det)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/dislocated.md" target="#">edit dislocated</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/dislocated.md" target="#">edit dislocated</a></p>
 
 <p><a id="al-sv-dep/dobj" class="al-dest"></a></p>
 <h2><code>dobj</code>: direct object</h2>
@@ -685,7 +741,7 @@ dobj(skickar, information)
 iobj(skickar, dig)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/dobj.md" target="#">edit dobj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/dobj.md" target="#">edit dobj</a></p>
 
 <p><a id="al-sv-dep/expl" class="al-dest"></a></p>
 <h2><code>expl</code>: expletive</h2>
@@ -696,7 +752,64 @@ iobj(skickar, dig)
 expl(finns, Det)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/expl.md" target="#">edit expl</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/expl.md" target="#">edit expl</a></p>
+
+<p><a id="al-sv-dep/fixed" class="al-dest"></a></p>
+<h2><code>fixed</code>: multi-word expression</h2>
+
+<p>The <em>fixed</em> relation is one of the three relations (<a href="">compound</a>, <code>fixed</code>, <a href="">flat</a>) for special kinds of multiword expressions.
+It is used for fixed grammaticized expressions that behave like function words or short adverbials. The first word is always
+taken as the head, with all subsequent words as direct dependents.</p>
+
+<pre><code class="language-sdparse">i dag \n today
+fixed(i, dag)
+</code></pre>
+
+<pre><code class="language-sdparse">över huvud taget \n at all
+fixed(över, huvud)
+fixed(över, taget)
+</code></pre>
+
+<pre><code class="language-sdparse">när det gäller \n when it comes to
+fixed(när, det)
+fixed(när, gäller)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/fixed.md" target="#">edit fixed</a></p>
+
+<p><a id="al-sv-dep/flat" class="al-dest"></a></p>
+<h2><code>flat</code>: flat</h2>
+
+<p>The <em>flat</em> relation is one of three relations (<a href="">compound</a>, <a href="">fixed</a>, <em>flat</em>) 
+used for special kinds of multiword expressions. It is used for expressions that
+are semi-flexible (as opposed to <em>fixed</em>) and do not have a clear head (as opposed to
+most cases of <em>compound</em>). The structure of the annotation attaches all non-first elements
+to the first, but this should not be interpreted as an indication of headedness.</p>
+
+<p>A special case of <em>flat</em> is constituted by complex names like <em>Olof Palme</em> and 
+<em>Carl XVI Gustaf</em>, which are annotated with the subtype <em>flat:name</em>.</p>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/flat.md" target="#">edit flat</a></p>
+
+<p><a id="al-sv-dep/flat:name" class="al-dest"></a></p>
+<h2><code>flat:name</code>: flat:name</h2>
+
+<p>The <em>flat:name</em> relation is used for complex names without a clear head.
+Non-first elements are always attached to the first element.</p>
+
+<pre><code class="language-sdparse">Carl XVI Gustaf
+flat:name(Carl-1, Gustaf-3)
+flat:name(Carl-1, XVI-2)
+</code></pre>
+
+<p>For names with a clear syntactic modification structure, the dependencies should instead reflect the syntactic modification structure using regular syntactic relations, as in:</p>
+
+<pre><code class="language-sdparse">Statens veterinärmedicinska anstalt \n The government institute for veterinary medicine
+nmod:poss(anstalt, Statens)
+amod(anstalt, veterinärmedicinska)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/flat-name.md" target="#">edit flat:name</a></p>
 
 <p><a id="al-sv-dep/foreign" class="al-dest"></a></p>
 <h2><code>foreign</code>: foreign words</h2>
@@ -709,7 +822,7 @@ foreign(consensus, facit)
 foreign(consensus, nuptiam)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/foreign.md" target="#">edit foreign</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/foreign.md" target="#">edit foreign</a></p>
 
 <p><a id="al-sv-dep/goeswith" class="al-dest"></a></p>
 <h2><code>goeswith</code>: goes with</h2>
@@ -722,7 +835,7 @@ The head is in some sense the “main” part, often the second part.</p>
 goeswith(beskattning, sär)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/goeswith.md" target="#">edit goeswith</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/goeswith.md" target="#">edit goeswith</a></p>
 
 <p><a id="al-sv-dep/iobj" class="al-dest"></a></p>
 <h2><code>iobj</code>: indirect object</h2>
@@ -740,7 +853,7 @@ nmod(skickar, mig)
 case(mig, till)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/iobj.md" target="#">edit iobj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/iobj.md" target="#">edit iobj</a></p>
 
 <p><a id="al-sv-dep/list" class="al-dest"></a></p>
 <h2><code>list</code>: list</h2>
@@ -752,14 +865,14 @@ case(mig, till)
 <p>In lists with more than two items, all items of the list shoud modify the first one.</p>
 
 <pre><code class="language-sdparse">Steve Jones Mobil: 555-9814 Mejl: jones@abc.edf
-name(Steve-1, Jones-2)
+flat:name(Steve-1, Jones-2)
 list(Steve-1, Mobil:-3)
 list(Steve-1, Mejl:-5)
 appos(Mobil:-3, 555-9814-4)
 appos(Mejl:-5, jones@abc.edf-6)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/list.md" target="#">edit list</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/list.md" target="#">edit list</a></p>
 
 <p><a id="al-sv-dep/mark" class="al-dest"></a></p>
 <h2><code>mark</code>: marker</h2>
@@ -780,13 +893,13 @@ mark(regnar, Om)
 mark(tolka, att)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/mark.md" target="#">edit mark</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/mark.md" target="#">edit mark</a></p>
 
 <p><a id="al-sv-dep/mwe" class="al-dest"></a></p>
 <h2><code>mwe</code>: multi-word expression</h2>
 
 <p>The multi-word expression (modifier) relation is one of the three
-relations (<a href="">compound</a>, <code>mwe</code>, <a href="">name</a>) for compounding.
+relations (<a href="">compound</a>, <code>fixed</code>, <a href="">flat</a>) for compounding.
 It is used for certain fixed grammaticized expressions that behave
 like function words or short adverbials. The first word is always
 taken as the head, with all subsequent words as direct dependents.</p>
@@ -805,28 +918,28 @@ mwe(när, det)
 mwe(när, gäller)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/mwe.md" target="#">edit mwe</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/mwe.md" target="#">edit mwe</a></p>
 
 <p><a id="al-sv-dep/name" class="al-dest"></a></p>
 <h2><code>name</code>: name</h2>
 
 <p>The name relation is one of the three relations for compounding in UD (together
-with <a href="">compound</a> and <a href="">mwe</a>).
+with <a href="">compound</a> and <a href="">fixed</a>).
 It is used for proper nouns constituted of multiple nominal
-elements. For example, <code>name</code> would be used between the words of
+elements. For example, <code>flat</code> would be used between the words of
 <em>Hillary Rodham Clinton, New York,</em> or <em>Carl XVI Gustaf</em> but not to
 replace the usual relations in a phrasal or clausal name like <em>The
 king of Sweden</em> or the novels <em>The Lord of the Rings</em> and <em>Captured By
 Aliens.</em></p>
 
-<p>Words joined by <code>name</code> should all be part of a minimal noun phrase;
+<p>Words joined by <code>flat</code> should all be part of a minimal noun phrase;
 otherwise regular syntactic relations should be used.  This is
 basically similar to the treatment of noun compounds with
 <a href="">compound</a>, except that in many cases parts of the name may be
 another nominal element such as an adjective <em>(United Airlines).</em></p>
 
 <p>In general, names are annotated in a flat, head-initial structure, in
-which all words in the name modify the first one using the <code>name</code>
+which all words in the name modify the first one using the <code>flat</code>
 label.</p>
 
 <pre><code class="language-sdparse">Carl XVI Gustaf
@@ -841,7 +954,7 @@ nmod:poss(anstalt, Statens)
 amod(anstalt, veterinärmedicinska)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/name.md" target="#">edit name</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/name.md" target="#">edit name</a></p>
 
 <p><a id="al-sv-dep/neg" class="al-dest"></a></p>
 <h2><code>neg</code>: negation modifier</h2>
@@ -860,50 +973,47 @@ neg(fråga, inte)
 neg(jämförbara, icke)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/neg.md" target="#">edit neg</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/neg.md" target="#">edit neg</a></p>
 
 <p><a id="al-sv-dep/nmod" class="al-dest"></a></p>
 <h2><code>nmod</code>: nominal modifier</h2>
 
-<p>The <code>nmod</code> relation is used for nominal modifiers of nouns or clausal
-predicates. <code>nmod</code> is a noun functioning as a non-core (oblique)
-argument or adjunct. In Swedish, <code>nmod</code> is used for prepositional complements:</p>
+<p>The <code>nmod</code> relation is used for nominal modifiers of nouns. <code>nmod</code> is a noun functioning as a non-core (oblique)
+argument or adjunct. In Swedish, <code>nmod</code> is used for prepositional modifiers:</p>
 
 <pre><code class="language-sdparse">Ekonomiska bidrag till staten \n Financial contributions to the state
 nmod(bidrag, staten)
 case(staten, till)
 </code></pre>
 
-<pre><code class="language-sdparse">Mamma har hand om barnen \n Mother takes care of the children
-nmod(har, barnen)
-case(barnen, om)
+<p>But also for preposed nominal modifiers:</p>
+
+<pre><code class="language-sdparse">Doktor Andersson \n Doctor Andersson
+nmod(Andersson, Doktor)
 </code></pre>
 
-<pre><code class="language-sdparse">Han växte upp i en kollektiv miljö \n He grew up in a collective environment
-nmod(växte, miljö)
-case(miljö, i)
-</code></pre>
+<p>One subtype of <code>nmod</code> is introduced in Swedish: <a href="">nmod:poss</a> for possessive/genitive modifiers.</p>
 
-<p>Two subtypes of <code>nmod</code> are introduced in Swedish: <a href="">nmod:poss</a> for for possessive/genitive modifiers and <a href="">nmod:agent</a> for agents of passive verbs.</p>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/nmod.md" target="#">edit nmod</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/nmod.md" target="#">edit nmod</a></p>
 
 <p><a id="al-sv-dep/nmod:agent" class="al-dest"></a></p>
 <h2><code>nmod:agent</code>: agent nominal modifier</h2>
 
 <p>The relation <code>nmod:agent</code> is used for agents of passive verbs</p>
 
-<pre><code class="language-sdparse">Börjar hennes jobb att delas av den moderne mannen ? \n Will her job start being shared by the modern man ?
-nmod:agent(delas, mannen)
-case(manne, av)
-</code></pre>
+<p>~~~ sdparse
+ Börjar hennes jobb att delas av den moderne mannen ? \n Will her job start being shared by the modern man ?
+ nmod:agent(delas, mannen)
+ case(manne, av)
+ ~~~</p>
 
-<pre><code class="language-sdparse">Samhällsordningen hotas av social revolution \n Social order is threatened by social revolution
-nmod:agent(hotas, revolution)
-case(revolution, av)
-</code></pre>
+<p>~~~ sdparse
+ Samhällsordningen hotas av social revolution \n Social order is threatened by social revolution
+ nmod:agent(hotas, revolution)
+ case(revolution, av)
+ ~~~</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/nmod-agent.md" target="#">edit nmod:agent</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/nmod-agent.md" target="#">edit nmod:agent</a></p>
 
 <p><a id="al-sv-dep/nmod:poss" class="al-dest"></a></p>
 <h2><code>nmod:poss</code>: possessive nominal modifier</h2>
@@ -918,7 +1028,7 @@ nmod:poss(sida, Livets)
 nmod:poss(hem, våra)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/nmod-poss.md" target="#">edit nmod:poss</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/nmod-poss.md" target="#">edit nmod:poss</a></p>
 
 <p><a id="al-sv-dep/nsubj" class="al-dest"></a></p>
 <h2><code>nsubj</code>: nominal subject</h2>
@@ -937,7 +1047,19 @@ nsubj(sjuk, Pappa)
 nsubj(kock, Pappa)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/nsubj.md" target="#">edit nsubj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/nsubj.md" target="#">edit nsubj</a></p>
+
+<p><a id="al-sv-dep/nsubj:pass" class="al-dest"></a></p>
+<h2><code>nsubj:pass</code>: passive nominal subject</h2>
+
+<p>A passive nominal subject is a noun phrase which is the syntactic
+subject of a passive clause.</p>
+
+<pre><code class="language-sdparse">En ändring krävs av politiker . \n A change is required by politicians .
+nsubj:pass(krävs, ändring)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/nsubj-pass.md" target="#">edit nsubj:pass</a></p>
 
 <p><a id="al-sv-dep/nsubjpass" class="al-dest"></a></p>
 <h2><code>nsubjpass</code>: passive nominal subject</h2>
@@ -949,7 +1071,7 @@ subject of a passive clause.</p>
 nsubjpass(krävs, ändring)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/nsubjpass.md" target="#">edit nsubjpass</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/nsubjpass.md" target="#">edit nsubjpass</a></p>
 
 <p><a id="al-sv-dep/nummod" class="al-dest"></a></p>
 <h2><code>nummod</code>: numeric modifier</h2>
@@ -970,7 +1092,93 @@ nummod(procent, 13)
 nummod(kr, 400)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/nummod.md" target="#">edit nummod</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/nummod.md" target="#">edit nummod</a></p>
+
+<p><a id="al-sv-dep/obj" class="al-dest"></a></p>
+<h2><code>obj</code>: object</h2>
+
+<p>An object is a nominal which is the (direct) object of a verbal predicate.</p>
+
+<pre><code class="language-sdparse">Han äter en smörgås . \n He eats a sandwich .
+obj(äter, smörgås)
+nsubj(äter, Han)
+det(smörgås, en)
+</code></pre>
+
+<p>If there is only one object present, it is always analyzed as <em>obj</em> regardless of the semantic relation to the predicate. 
+If there are two objects, the one most directly related to the verb is treated as the direct object.</p>
+
+<pre><code class="language-sdparse">Han informerar dig . \n He informs you .
+obj(informerar, dig)
+nsubj(informerar, Han)
+</code></pre>
+
+<pre><code class="language-sdparse">Han skickar dig information . \n He sends you information .
+obj(skickar, information)
+iobj(skickar, dig)
+nsubj(skickar, Han)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/obj.md" target="#">edit obj</a></p>
+
+<p><a id="al-sv-dep/obl" class="al-dest"></a></p>
+<h2><code>obl</code>: oblique modifier</h2>
+
+<p>The <code>obl</code> relation is used for non-core nominal dependents of clausal
+predicates. In Swedish, <code>nmod</code> is used for prepositional complements/modifiers:</p>
+
+<pre><code class="language-sdparse">Mamma har hand om barnen \n Mother takes care of the children
+obl(har, barnen)
+case(barnen, om)
+</code></pre>
+
+<pre><code class="language-sdparse">Han växte upp i en kollektiv miljö \n He grew up in a collective environment
+obl(växte, miljö)
+case(miljö, i)
+</code></pre>
+
+<p>But also for bare nominals used as oblique modifiers:</p>
+
+<pre><code class="language-sdparse">Hon kom förra helgen \n She came last weekend
+obl(kom, helgen)
+</code></pre>
+
+<p>One subtype of <code>obl</code> is introduced in Swedish: <a href="">obl:agent</a> for agents of passive verbs.</p>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/obl.md" target="#">edit obl</a></p>
+
+<p><a id="al-sv-dep/obl:agent" class="al-dest"></a></p>
+<h2><code>obl:agent</code>: agent modifier</h2>
+
+<p>The relation <code>obl:agent</code> is used for agents of passive verbs</p>
+
+<p>~~~ sdparse
+ Samhällsordningen hotas av social revolution \n Social order is threatened by social revolution
+ obl:agent(hotas, revolution)
+ case(revolution, av)
+ nsubj:pass(hotas, Samhällsordningen)
+ amod(revolution, social)
+ ~~~</p>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/obl-agent.md" target="#">edit obl:agent</a></p>
+
+<p><a id="al-sv-dep/orphan" class="al-dest"></a></p>
+<h2><code>orphan</code>: orphan in ellipsis</h2>
+
+<p>The <em>orphan</em> relation is used to analyze cases of ellipsis where there is no function word that can be 
+promoted to take the place of the elided content word.</p>
+
+<pre><code class="language-sdparse">Marie åkte till Paris och Miriam till Prag \n Marie went to Paris and Miriam to Prague
+nsubj(åkte, Marie-1)
+obl(åkte-2, Paris-4)
+case(Paris-4, till-3)
+cc(Miriam-6, och-5)
+orphan(Miriam-6, Prag-8)
+case(Prag-8, till-7)
+conj(åkte-2, Miriam-6)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/orphan.md" target="#">edit orphan</a></p>
 
 <p><a id="al-sv-dep/parataxis" class="al-dest"></a></p>
 <h2><code>parataxis</code>: parataxis</h2>
@@ -989,7 +1197,7 @@ parataxis(har, se)
 parataxis(tanken, framtiden)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/parataxis.md" target="#">edit parataxis</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/parataxis.md" target="#">edit parataxis</a></p>
 
 <p><a id="al-sv-dep/punct" class="al-dest"></a></p>
 <h2><code>punct</code>: punctuation</h2>
@@ -1005,7 +1213,7 @@ punct(regnar, ,)
 punct(blir, .)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/punct.md" target="#">edit punct</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/punct.md" target="#">edit punct</a></p>
 
 <p><a id="al-sv-dep/remnant" class="al-dest"></a></p>
 <h2><code>remnant</code>: remnant in ellipsis</h2>
@@ -1022,7 +1230,7 @@ case(Prague-8, till)
 remnant(Paris-4, Prague-8)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/remnant.md" target="#">edit remnant</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/remnant.md" target="#">edit remnant</a></p>
 
 <p><a id="al-sv-dep/reparandum" class="al-dest"></a></p>
 <h2><code>reparandum</code>: overridden disfluency</h2>
@@ -1032,13 +1240,13 @@ repair. The disfluency is the dependent of the repair. There are currently
 no attested uses of this relation in the Swedish treebank.</p>
 
 <pre><code class="language-sdparse">Gå till höge- till vänster . \n Go to the righ- to the left .
-nmod(Gå, vänster)
+obl(Gå, vänster)
 reparandum(vänster, höge-)
 case(höge-, till-2)
 case(vänster, till-4)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/reparandum.md" target="#">edit reparandum</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/reparandum.md" target="#">edit reparandum</a></p>
 
 <p><a id="al-sv-dep/root" class="al-dest"></a></p>
 <h2><code>root</code>: root</h2>
@@ -1053,7 +1261,7 @@ root(ROOT, älskar)
 root(ROOT, man-6)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/root.md" target="#">edit root</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/root.md" target="#">edit root</a></p>
 
 <p><a id="al-sv-dep/vocative" class="al-dest"></a></p>
 <h2><code>vocative</code>: vocative</h2>
@@ -1068,7 +1276,7 @@ vocative(ta, Killar)
 vocative(hur, David)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/vocative.md" target="#">edit vocative</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/vocative.md" target="#">edit vocative</a></p>
 
 <p><a id="al-sv-dep/xcomp" class="al-dest"></a></p>
 <h2><code>xcomp</code>: open clausal complement</h2>
@@ -1087,7 +1295,7 @@ xcomp(låta, studera)
 xcomp(betraktar, vän)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-dep/xcomp.md" target="#">edit xcomp</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/xcomp.md" target="#">edit xcomp</a></p>
 
 
 

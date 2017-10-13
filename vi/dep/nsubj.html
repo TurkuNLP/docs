@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-vi">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/vi/dep">vi/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_vi-dep/nsubj.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-vi">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/vi/dep">vi/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_vi-dep/nsubj.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,65 +80,59 @@ for <code>nsubj</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>3540 nodes (8%) are attached to their parents as <code>nsubj</code>.</p>
+<p>2623 nodes (8%) are attached to their parents as <code>nsubj</code>.</p>
 
-<p>3475 instances of <code>nsubj</code> (98%) are right-to-left (child precedes parent).
-Average distance between parent and child is 2.76214689265537.</p>
+<p>2582 instances of <code>nsubj</code> (98%) are right-to-left (child precedes parent).
+Average distance between parent and child is 2.71521158978269.</p>
 
-<p>The following 22 pairs of parts of speech are connected with <code>nsubj</code>: <a href="">vi-pos/VERB</a>-<a href="">vi-pos/NOUN</a> (2538; 72% instances), <a href="">vi-pos/VERB</a>-<a href="">vi-pos/PROPN</a> (385; 11% instances), <a href="">vi-pos/ADJ</a>-<a href="">vi-pos/NOUN</a> (275; 8% instances), <a href="">vi-pos/NOUN</a>-<a href="">vi-pos/NOUN</a> (183; 5% instances), <a href="">vi-pos/NOUN</a>-<a href="">vi-pos/PROPN</a> (87; 2% instances), <a href="">vi-pos/PROPN</a>-<a href="">vi-pos/NOUN</a> (17; 0% instances), <a href="">vi-pos/ADJ</a>-<a href="">vi-pos/PROPN</a> (16; 0% instances), <a href="">vi-pos/VERB</a>-<a href="">vi-pos/NUM</a> (10; 0% instances), <a href="">vi-pos/X</a>-<a href="">vi-pos/NOUN</a> (6; 0% instances), <a href="">vi-pos/PROPN</a>-<a href="">vi-pos/PROPN</a> (4; 0% instances), <a href="">vi-pos/PUNCT</a>-<a href="">vi-pos/NOUN</a> (4; 0% instances), <a href="">vi-pos/ADP</a>-<a href="">vi-pos/NOUN</a> (3; 0% instances), <a href="">vi-pos/CONJ</a>-<a href="">vi-pos/NOUN</a> (2; 0% instances), <a href="">vi-pos/VERB</a>-<a href="">vi-pos/DET</a> (2; 0% instances), <a href="">vi-pos/ADJ</a>-<a href="">vi-pos/X</a> (1; 0% instances), <a href="">vi-pos/CONJ</a>-<a href="">vi-pos/PROPN</a> (1; 0% instances), <a href="">vi-pos/NOUN</a>-<a href="">vi-pos/CONJ</a> (1; 0% instances), <a href="">vi-pos/NOUN</a>-<a href="">vi-pos/NUM</a> (1; 0% instances), <a href="">vi-pos/NUM</a>-<a href="">vi-pos/NOUN</a> (1; 0% instances), <a href="">vi-pos/VERB</a>-<a href="">vi-pos/PUNCT</a> (1; 0% instances), <a href="">vi-pos/VERB</a>-<a href="">vi-pos/VERB</a> (1; 0% instances), <a href="">vi-pos/VERB</a>-<a href="">vi-pos/X</a> (1; 0% instances).</p>
+<p>The following 20 pairs of parts of speech are connected with <code>nsubj</code>: <a href="">vi-pos/VERB</a>-<a href="">vi-pos/NOUN</a> (1903; 73% instances), <a href="">vi-pos/VERB</a>-<a href="">vi-pos/PROPN</a> (269; 10% instances), <a href="">vi-pos/ADJ</a>-<a href="">vi-pos/NOUN</a> (207; 8% instances), <a href="">vi-pos/NOUN</a>-<a href="">vi-pos/NOUN</a> (125; 5% instances), <a href="">vi-pos/NOUN</a>-<a href="">vi-pos/PROPN</a> (58; 2% instances), <a href="">vi-pos/PROPN</a>-<a href="">vi-pos/NOUN</a> (14; 1% instances), <a href="">vi-pos/ADJ</a>-<a href="">vi-pos/PROPN</a> (13; 0% instances), <a href="">vi-pos/VERB</a>-<a href="">vi-pos/NUM</a> (9; 0% instances), <a href="">vi-pos/X</a>-<a href="">vi-pos/NOUN</a> (6; 0% instances), <a href="">vi-pos/ADP</a>-<a href="">vi-pos/NOUN</a> (3; 0% instances), <a href="">vi-pos/PROPN</a>-<a href="">vi-pos/PROPN</a> (3; 0% instances), <a href="">vi-pos/PUNCT</a>-<a href="">vi-pos/NOUN</a> (3; 0% instances), <a href="">vi-pos/CCONJ</a>-<a href="">vi-pos/NOUN</a> (2; 0% instances), <a href="">vi-pos/VERB</a>-<a href="">vi-pos/DET</a> (2; 0% instances), <a href="">vi-pos/ADJ</a>-<a href="">vi-pos/X</a> (1; 0% instances), <a href="">vi-pos/CCONJ</a>-<a href="">vi-pos/PROPN</a> (1; 0% instances), <a href="">vi-pos/NOUN</a>-<a href="">vi-pos/CCONJ</a> (1; 0% instances), <a href="">vi-pos/NOUN</a>-<a href="">vi-pos/NUM</a> (1; 0% instances), <a href="">vi-pos/VERB</a>-<a href="">vi-pos/VERB</a> (1; 0% instances), <a href="">vi-pos/VERB</a>-<a href="">vi-pos/X</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 1	bgColor:blue
 # visual-style 1	fgColor:white
-# visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 6 1 nsubj	color:blue
-1	cánh	cánh	NOUN	N	_	6	nsubj	_	_
-2	cửa	cửa	NOUN	N	_	1	compound	_	_
-3	hai	hai	NUM	M	_	4	nummod	_	_
-4	chuồng	chuồng	NOUN	N	_	1	compound	_	_
-5	dần_dần	dần_dần	X	R	_	6	advmod	_	_
-6	rút	rút	VERB	V	_	0	root	_	_
-7	lên	lên	X	R	_	6	advmod	_	_
-8	.	.	PUNCT	.	_	6	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 8	bgColor:blue
-# visual-style 8	fgColor:white
-# visual-style 10	bgColor:blue
-# visual-style 10	fgColor:white
-# visual-style 10 8 nsubj	color:blue
-1	con	con	NOUN	Nc	_	2	compound	_	_
-2	Đen	Đen	NOUN	Np	_	3	nsubj	_	_
-3	chạy	chạy	VERB	V	_	0	root	_	_
-4	quanh	quanh	NOUN	N	_	3	dobj	_	_
-5	chuồng	chuồng	NOUN	N	_	4	compound	_	_
-6	,	,	PUNCT	,	_	3	punct	_	_
-7	rồi	rồi	CONJ	C	_	3	cc	_	_
-8	nó	nó	PROPN	P	_	10	nsubj	_	_
-9	cũng	cũng	X	R	_	10	advmod	_	_
-10	dừng	dừng	VERB	V	_	3	parataxis	_	_
-11	lại	lại	X	R	_	10	advmod	_	_
-12	chịu	chịu	VERB	V	_	10	ccomp	_	_
-13	giao_phối	giao_phối	VERB	V	_	12	xcomp	_	_
-14	.	.	PUNCT	.	_	3	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 2	bgColor:blue
+# visual-style 2	bgColor:blue
 # visual-style 2	fgColor:white
-# visual-style 3	bgColor:blue
+# visual-style 2 1 nsubj	color:blue
+1	Phong trào	Phong trào	NOUN	N	_	2	nsubj	_	_
+2	lan truyền	lan truyền	VERB	V	_	0	root	_	_
+3	mạnh mẽ	mạnh mẽ	ADJ	A	_	2	xcomp	_	_
+4	hơn	hơn	X	R	_	3	advmod	_	SpaceAfter=No
+5	.	.	PUNCT	.	_	2	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 1 nsubj	color:blue
+1	Tôi	Tôi	PROPN	P	_	4	nsubj	_	_
+2	cũng	cũng	X	R	_	4	advmod	_	_
+3	đã	đã	X	R	_	4	advmod	_	_
+4	tham gia	tham gia	VERB	V	_	0	root	_	_
+5	quân đội	quân đội	NOUN	N	_	4	obj	_	_
+6	để	để	ADP	E	_	7	case	_	_
+7	chống	chống	VERB	V	_	4	mark	_	_
+8	phát xít	phát xít	NOUN	N	_	7	obj	_	_
+9	Đức	Đức	NOUN	Np	_	8	compound	_	_
+10	tại	tại	ADP	E	_	11	case	_	_
+11	Pháp	Pháp	NOUN	Np	_	8	nmod	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	4	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
 # visual-style 3	fgColor:white
-# visual-style 3 2 nsubj	color:blue
-1	Mọi	Mọi	DET	L	_	2	det	_	_
-2	người	người	NOUN	N	_	3	nsubj	_	_
-3	ồn_ào	ồn_ào	ADJ	A	_	0	root	_	_
-4	đếm	đếm	VERB	V	_	3	xcomp	_	_
-5	tiền	tiền	NOUN	N	_	4	dobj	_	_
-6	,	,	PUNCT	,	_	4	punct	_	_
-7	ký	ký	VERB	V	_	4	conj	_	_
-8	sổ	sổ	NOUN	N	_	7	dobj	_	_
-9	...	...	PUNCT	...	_	3	punct	_	_
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 3 nsubj	color:blue
+1	lúc	lúc	NOUN	N	_	5	nmod	_	_
+2	đó	đó	PROPN	P	_	1	det	_	_
+3	nước	nước	NOUN	N	_	5	nsubj	_	_
+4	Pháp	Pháp	NOUN	Np	_	3	compound	_	_
+5	chuẩn bị	chuẩn bị	ADJ	A	_	0	root	_	_
+6	tấn công	tấn công	VERB	V	_	5	xcomp	_	_
+7	Ai Cập	Ai Cập	NOUN	Np	_	5	obj	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	5	punct	_	_
 
 </code></pre>
 
@@ -133,9 +144,25 @@ Average distance between parent and child is 2.76214689265537.</p>
 
 nsubj in other languages:
 
+[<a href="../../am/dep/nsubj.html">am</a>]
+
+[<a href="../../ar/dep/nsubj.html">ar</a>]
+
 [<a href="../../bg/dep/nsubj.html">bg</a>]
 
+[<a href="../../bxr/dep/nsubj.html">bxr</a>]
+
+[<a href="../../ca/dep/nsubj.html">ca</a>]
+
+[<a href="../../ckb/dep/nsubj.html">ckb</a>]
+
+[<a href="../../cop/dep/nsubj.html">cop</a>]
+
 [<a href="../../cs/dep/nsubj.html">cs</a>]
+
+[<a href="../../cu/dep/nsubj.html">cu</a>]
+
+[<a href="../../da/dep/nsubj.html">da</a>]
 
 [<a href="../../de/dep/nsubj.html">de</a>]
 
@@ -145,29 +172,99 @@ nsubj in other languages:
 
 [<a href="../../es/dep/nsubj.html">es</a>]
 
+[<a href="../../et/dep/nsubj.html">et</a>]
+
 [<a href="../../eu/dep/nsubj.html">eu</a>]
 
 [<a href="../../fa/dep/nsubj.html">fa</a>]
 
 [<a href="../../fi/dep/nsubj.html">fi</a>]
 
+[<a href="../../fo/dep/nsubj.html">fo</a>]
+
 [<a href="../../fr/dep/nsubj.html">fr</a>]
 
 [<a href="../../ga/dep/nsubj.html">ga</a>]
 
+[<a href="../../gl/dep/nsubj.html">gl</a>]
+
+[<a href="../../got/dep/nsubj.html">got</a>]
+
+[<a href="../../grc/dep/nsubj.html">grc</a>]
+
 [<a href="../../he/dep/nsubj.html">he</a>]
 
+[<a href="../../hi/dep/nsubj.html">hi</a>]
+
+[<a href="../../hr/dep/nsubj.html">hr</a>]
+
 [<a href="../../hu/dep/nsubj.html">hu</a>]
+
+[<a href="../../id/dep/nsubj.html">id</a>]
 
 [<a href="../../it/dep/nsubj.html">it</a>]
 
 [<a href="../../ja/dep/nsubj.html">ja</a>]
 
+[<a href="../../kk/dep/nsubj.html">kk</a>]
+
+[<a href="../../kmr/dep/nsubj.html">kmr</a>]
+
 [<a href="../../ko/dep/nsubj.html">ko</a>]
+
+[<a href="../../la/dep/nsubj.html">la</a>]
+
+[<a href="../../lv/dep/nsubj.html">lv</a>]
+
+[<a href="../../mr/dep/nsubj.html">mr</a>]
+
+[<a href="../../nl/dep/nsubj.html">nl</a>]
+
+[<a href="../../no/dep/nsubj.html">no</a>]
+
+[<a href="../../pl/dep/nsubj.html">pl</a>]
+
+[<a href="../../pt/dep/nsubj.html">pt</a>]
+
+[<a href="../../ro/dep/nsubj.html">ro</a>]
+
+[<a href="../../ru/dep/nsubj.html">ru</a>]
+
+[<a href="../../sa/dep/nsubj.html">sa</a>]
+
+[<a href="../../sk/dep/nsubj.html">sk</a>]
+
+[<a href="../../sla/dep/nsubj.html">sla</a>]
+
+[<a href="../../sl/dep/nsubj.html">sl</a>]
+
+[<a href="../../so/dep/nsubj.html">so</a>]
+
+[<a href="../../sr/dep/nsubj.html">sr</a>]
 
 [<a href="../../sv/dep/nsubj.html">sv</a>]
 
+[<a href="../../swl/dep/nsubj.html">swl</a>]
+
+[<a href="../../ta/dep/nsubj.html">ta</a>]
+
+[<a href="../../tr/dep/nsubj.html">tr</a>]
+
 [<a href="../../u/dep/nsubj.html">u</a>]
+
+[<a href="../../ug/dep/nsubj.html">ug</a>]
+
+[<a href="../../uk/dep/nsubj.html">uk</a>]
+
+[<a href="../../ur/dep/nsubj.html">ur</a>]
+
+[<a href="../../urj/dep/nsubj.html">urj</a>]
+
+[<a href="../../vi/dep/nsubj.html">vi</a>]
+
+[<a href="../../yue/dep/nsubj.html">yue</a>]
+
+[<a href="../../zh/dep/nsubj.html">zh</a>]
 
 
 

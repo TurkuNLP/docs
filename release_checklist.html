@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="css/hint.css"/>
     <script type="text/javascript" src="lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-">home</a></span>
 
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/release_checklist.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/release_checklist.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -76,19 +93,29 @@
 
 <h1 id="repository-and-files">Repository and files</h1>
 
-<p>Every language has its own GitHub repository called <code>UD_Language</code>, where <code>Language</code> is the name of the language. For example, the repository for Finnish is called <code>UD_Finnish</code>. Make sure to create the repository for your language if it does not already exist.</p>
+<p>Every language has its own GitHub repository called <code>UD_Language</code>, where <code>Language</code> is the name of the language. For example, the repository for Finnish is called <code>UD_Finnish</code>. Make sure to create the repository for your language if it does not already exist. Some languages have more than one treebank and the additional treebanks have their own repositories with a <code>-Treebank</code> identifier after the language name. For example, <code>UD_Finnish-FTB</code> is the repository for the FinnTreeBank, while the plain <code>UD_Finnish</code> holds the Turku Dependency Treebank.</p>
 
-<p>Every language repository should contain the following five files (where <code>xx</code> is the ISO code for the given language):</p>
+<p>Every language repository should contain the following five files (where <code>xx</code> is the ISO code for the given language; if this is not the first treebank for the language, use <code>xx_y</code> instead, where <code>y</code> is the lowercased treebank identifier):</p>
 
 <ol>
   <li><code>xx-ud-train.conllu</code></li>
   <li><code>xx-ud-dev.conllu</code></li>
-  <li><code>xx-ud-test.conllu</code></li>
+  <li><del>xx-ud-test.conllu</del> temporary rule for UD 2.0: <strong>do not publish the test set!</strong> Validate it offline and then send it by e-mail to ud.conll.shared.task.2017@gmail.com.</li>
   <li><code>README.txt</code> or <code>README.md</code></li>
   <li><code>LICENSE.txt</code></li>
 </ol>
 
-<p>The first three files contain the treebank data split into a training, development and test set. These should be in <code>CONLL-U</code> format and conform to the universal guidelines. They need to be validated as described below. The <code>README.txt</code> file contains basic documentation of the treebank and machine-readable metadata for the UD main page (see below) and the <code>LICENSE.txt</code> specifies under what license the treebank is made available.</p>
+<p>The first three files contain the treebank data split into a training, development and test set. These should be in <code>CONLL-U</code> format and conform to the universal guidelines. They need to be validated as described below.</p>
+
+<p>If the treebank consists of more than 20,000 words, make the test set and dev set at least 10,000 words each, even if it leaves you with training data smaller than development data (that is <a href="http://universaldependencies.org/conll17/inclusion-rules.html">necessary for the CoNLL 2017 shared task</a>). There is no upper limit on the size of dev/test. If you cannot reach 10,000 words of test data, use a more typical split, e.g. 80-10-10% (but the treebank will not be included in the shared task).</p>
+
+<p>The training-development-test data split should be stable across releases. It should not happen that a sentence that was once part of training data ever appears in the test data, and vice versa (except for sentences that are naturally occurring duplicates in independent texts). We want to prevent accidental misguided results of experiments where people take a parser trained on UD 1.1 and apply it to test data from UD 1.2. <strong>We decided to make an exception to this rule for UD 2.0 where it is needed to achieve 10K test or dev, on the ground that v2 annotation is not backward-compatible anyway.</strong></p>
+
+<p>The <code>README.txt</code> file contains basic documentation of the treebank and machine-readable metadata for the UD main page (see below) and the <code>LICENSE.txt</code> specifies under what license the treebank is made available.</p>
+
+<p>Repositories of released treebanks also contain a <code>stats.xml</code> file, which is generated as part of the release-building process, using the script <code>conllu-stats.pl</code> available from the <code>tools</code> repository. Data providers do not have to care about this file.</p>
+
+<h2 id="the-readme-file">The README file</h2>
 
 <p>The <code>README</code> file should minimally contain the following information:</p>
 
@@ -97,7 +124,7 @@
   <li>A description of how the data was split into training, development and test sets</li>
   <li>Basic statistics about number of sentences, tokens, etc.</li>
   <li>Acknowledgments and references that should be cited when using the treebank</li>
-  <li>A machine-readable section with language metadata. This is described [here](</li>
+  <li>A machine-readable section with language metadata. This is described below.</li>
 </ol>
 
 <p>Note that the basic statistics can be produced using the script <code>conllu-stats.py</code>available from the <code>tools</code> repository and run as follows:</p>
@@ -107,15 +134,13 @@
 
 <p>For previously released corpora, the README file should also include a “<a href="http://en.wikipedia.org/wiki/Changelog">changelog</a>” section summarizing changes between versions e.g. as follows</p>
 
-<p>```
-Changelog</p>
+<pre>
+Changelog
 
-<p>2015-05-15 v1.1</p>
-
-<pre><code>* Added lemmas
-
-* Corrected tokenization in sentences 123 and 456 ```
-</code></pre>
+2015-05-15 v1.1
+    * Added lemmas
+    * Corrected tokenization in sentences 123 and 456
+</pre>
 
 <h2 id="language-metadata">Language metadata</h2>
 
@@ -123,12 +148,15 @@ Changelog</p>
 
 <p>The table on the front page is automatically generated from special lines in the <code>README.txt</code> or <code>README.md</code> file for every language. This means that in order to add a new language, also its repository must be created, minimally with the readme file. Here is an example of the language metadata block from the <a href="https://github.com/UniversalDependencies/UD_Finnish/blob/master/README.txt">Finnish README file</a></p>
 
-<pre><code>Documentation status: complete
+<pre><code>=== Machine-readable metadata (DO NOT REMOVE!) ================================
+Documentation status: complete
 Data source: semi-automatic
 Data available since: UD v1.0
 License: CC BY-SA 4.0
 Genre: blog wiki legal news fiction
 Contributors: Ginter, Filip; Kanerva, Jenna; Laippala, Veronika; Missilä, Anna; Pyysalo, Sampo
+Contact: turku@treebank.org
+===============================================================================
 </code></pre>
 
 <p>This block can be anywhere in the readme file. The properties are as follows:</p>
@@ -136,15 +164,50 @@ Contributors: Ginter, Filip; Kanerva, Jenna; Laippala, Veronika; Missilä, Anna;
 <ul>
   <li><code>Documentation status</code> can be <code>complete</code>, <code>partial</code>, or <code>stub</code>.</li>
   <li><code>Data source</code> can be <code>automatic</code>, <code>semi-automatic</code>, or <code>manual</code>. Here, as a rough guidance, <code>manual</code> means that every word of every sentence has been manually checked, whereas <code>semi-automatic</code> means an automatic conversion with major manual checks of various types of constructions.</li>
-  <li><code>Data available since</code> can be <code>UD v1.0</code>, <code>UD v1.1</code>, <code>UD v1.2</code>, and <code>UD v1.3</code>. As the current release is 1.2, new languages which will be included in 1.3 should set this property accordingly.</li>
+  <li><code>Data available since</code> can be <code>UD v1.0</code>, <code>UD v1.1</code>, <code>UD v1.2</code>, <code>UD v1.3</code>, <code>UD v1.4</code>, and <code>UD v2.0</code>. As the current release is 1.4, new languages which will be included in 2.0 should set this property accordingly.</li>
   <li><code>License</code>: anything containing the string <code>BY-NC-SA</code> will be given the CC non-commercial logo, <code>BY-SA</code> or <code>BY</code> the CC logo, and <code>GNU</code> the GNU logo. To add any other license, please provide a suitable icon to ginter@cs.utu.fi and sampo.pyysalo@gmail.com.</li>
   <li><code>Genre</code>: this is simply a space-separated list of genres which gets mapped into symbols in the table. The possible genres are listed in <a href="https://github.com/UniversalDependencies/docs/blob/pages-source/gen_index/genre_symbols.json">this file</a> in the repository. If you don’t see yours, just edit the file on GitHub and add your genre, choosing one of the symbols from <a href="https://fortawesome.github.io/Font-Awesome/icons/">the <em>FontAwesome</em> list</a>. Please make sure you get the syntax right, since this is a machine-readable JSON file. It is also possible to not add the genre to the <code>genre_symbols.json</code> file, in which case the default symbol will be used automatically. The genre name will still remain visible in the mouse-over tooltip.</li>
   <li><code>Contributors</code>: the list of contributors to be included with the data release and in the LINDAT download page. This is a semi-colon separated list where every name is in the <code>Last, First</code> form and the readme file should be utf-8 encoded to make sure special characters are preserved correctly.</li>
+  <li><code>Contact</code>: please add an e-mail address where the current maintainer of the data can be contacted. You can also include several e-mail addresses separated by commas.</li>
 </ul>
 
 <h2 id="repository-branches">Repository branches</h2>
 
-<p>While the official UD release is always through Lindat, many users of UD source their data from the GitHub language repositories. Therefore, the <code>master</code> branch of every language should contain the last, officially released version of the data for the given language. The development in between releases should happen on the <code>dev</code> branch of the repository.</p>
+<p>While the official UD release is always through Lindat, many users of UD source their data from the GitHub language repositories. Therefore, the <code>master</code> branch of every language should contain the last, officially released version of the data for the given language. The development in between releases should happen on the <code>dev</code> branch of the repository.
+Although it is currently not locked, treebank maintainers should never touch the <code>master</code> branch, they should always push to <code>dev</code>. At release time, the release task force will take care of merging the contents of the <code>dev</code> branch into <code>master</code>.
+<strong>Please do not submit pull requests from the dev branch (or from anywhere else) to the master branch.</strong>
+This is not needed for the release merge to take place, and if someone overlooks the destination branch and accepts the pull request,
+it will again result in a commit to the master branch at wrong time.</p>
+
+<p>(To make things a bit more confusing, this policy of data repositories does not apply to some other repositories that we use. In the <code>docs</code> repository you must work with the <code>pages-source</code> branch. That is done automatically if you edit the documentation in your browser via the <em>edit page</em> link. You will also need to access the <code>tools</code> repository and upload the <code>deprel</code> and <code>feat_val</code> files specific for your treebank. In this case, please use the <code>master</code> branch.)</p>
+
+<p>If you have no previous experience with Git, here is a quick tutorial on how to deal with the branches. Please refer to on-line documentation of Git and Github for more details. The tutorial assumes that you are communicating with Github from a Linux shell. The interface may be different if your OS is Windows. If you are working only with the Github web interface, you are not dependent on your operating system but you must remember to switch the <code>Branch: master</code> drop-down menu (left-hand side of the page) to <code>Branch: dev</code>; it always starts in <code>master</code> by default. In contrast, when you want to clone the repository to your local system, you need the address that is hidden under <code>Clone or download</code> in the right-hand side of the page, and that address is common for all branches. Our example is the <a href="https://github.com/UniversalDependencies/UD_Italian/tree/dev">Italian repository</a>. Here is how you clone the repo to your system (<code>git clone</code> is the command, the remainder is the address copied from the Github web):</p>
+
+<pre>
+git clone git@github.com:UniversalDependencies/UD_Italian.git
+<span style="color:blue">Cloning into 'UD_Italian'...
+remote: Counting objects: 215, done.
+remote: Total 215 (delta 0), reused 0 (delta 0), pack-reused 215
+Receiving objects: 100% (215/215), 6.98 MiB | 4.55 MiB/s, done.
+Resolving deltas: 100% (134/134), done.
+Checking connectivity... done.</span>
+</pre>
+
+<p>Then enter the cloned folder and switch to (“checkout”) the <code>dev</code> branch. Your copy of the repository knows that such a branch exists on the server but it only creates your local copy of that branch once you ask for it. You may subsequently want to call <code>git pull</code> to make sure that you have the latest contents of the dev branch from the server:</p>
+
+<pre>
+cd UD_Italian
+git checkout dev
+<span style="color:blue">Branch dev set up to track remote branch dev from origin.
+Switched to a new branch 'dev'</span>
+git branch
+<span style="color:blue">* dev
+master</span>
+git pull
+<span style="color:blue">Already up-to-date.</span>
+</pre>
+
+<p>Once you do this, you are all set. Your copy will stay switched to the dev branch unless you call <code>git checkout master</code> (or other <code>git checkout</code>) again. You will probably mostly need just <code>git status</code>, <code>git diff</code>, <code>git add</code>, <code>git commit</code>, <code>git push</code> and <code>git pull</code> commands. All pushes and pulls will be done against the remote <code>dev</code> branch.</p>
 
 <h1 id="validation">Validation</h1>
 
@@ -197,6 +260,8 @@ $ git commit -m "Adding language-specific data for xx."
 $ git push
 </code></pre>
 
+<p>Since the <code>v2.0</code> release, whitespace is allowed in the <code>FORM</code> and <code>LEMMA</code> fields under conditions specified in <a href="v2/segmentation.html">here</a>. This is supported in the validator through the UD-wide file <code>data/tokens_w_space.ud</code> and its language-specific variants <code>data/tokens_w_space.xx</code>. In these files, each line is a <a href="https://docs.python.org/2/library/re.html">Python regular expression</a> defining the permissible forms and lemmas that can contain a whitespace.</p>
+
 <h1 id="syntax">Syntax</h1>
 
 <p>For the <code>v1.3</code> release, we have created an additional number of tests which try to uncover possible logical inconsistencies in the treebank data. Automatic validation runs for this syntax validation are available <a href="http://universaldependencies.org/svalidation.html">here</a>. Unlike the data format and repository validation, this validation machinery is not streamlined enough to be distributed for offline use, therefore it is important to regularly push your data to the <code>dev</code> branch of the repository.</p>
@@ -215,7 +280,12 @@ $ git push
 </ol>
 
 <p>There are <a href="contributing_language_specific.html">more detailed guidelines for language-specific documentation.</a>
-Also see the general guidelines about <a href="contributing.html">how to contribute.</a></p>
+Also see the general guidelines about <a href="contributing.html">how to contribute</a> (which covers the conventions used in 
+writing UD documentation, such as how to format examples).</p>
+
+<h1 id="building-the-release">Building the release</h1>
+
+<p>Documentation of the steps to be taken by the release task force is <a href="release_checklist_task_force.html">on a separate page</a>.</p>
 
 
       </div>

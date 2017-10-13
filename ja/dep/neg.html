@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ja">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ja/dep">ja/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ja-dep/neg.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ja">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ja/dep">ja/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ja-dep/neg.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -72,12 +89,12 @@ neg(支持, 不)
 
 <p>This relation is universal.</p>
 
-<p>1811 nodes (1%) are attached to their parents as <code>neg</code>.</p>
+<p>1257 nodes (1%) are attached to their parents as <code>neg</code>.</p>
 
-<p>1811 instances of <code>neg</code> (100%) are left-to-right (parent precedes child).
-Average distance between parent and child is 2.16841524019879.</p>
+<p>1257 instances of <code>neg</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 2.19570405727924.</p>
 
-<p>The following 6 pairs of parts of speech are connected with <code>neg</code>: <a href="">ja-pos/VERB</a>-<a href="">ja-pos/AUX</a> (1589; 88% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/AUX</a> (133; 7% instances), <a href="">ja-pos/ADJ</a>-<a href="">ja-pos/AUX</a> (78; 4% instances), <a href="">ja-pos/ADV</a>-<a href="">ja-pos/AUX</a> (6; 0% instances), <a href="">ja-pos/PRON</a>-<a href="">ja-pos/AUX</a> (3; 0% instances), <a href="">ja-pos/PROPN</a>-<a href="">ja-pos/AUX</a> (2; 0% instances).</p>
+<p>The following 5 pairs of parts of speech are connected with <code>neg</code>: <a href="">ja-pos/VERB</a>-<a href="">ja-pos/AUX</a> (1094; 87% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/AUX</a> (102; 8% instances), <a href="">ja-pos/ADJ</a>-<a href="">ja-pos/AUX</a> (56; 4% instances), <a href="">ja-pos/ADV</a>-<a href="">ja-pos/AUX</a> (4; 0% instances), <a href="">ja-pos/PROPN</a>-<a href="">ja-pos/AUX</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 9	bgColor:blue
 # visual-style 9	fgColor:white
@@ -177,9 +194,25 @@ Average distance between parent and child is 2.16841524019879.</p>
 
 neg in other languages:
 
+[<a href="../../am/dep/neg.html">am</a>]
+
+[<a href="../../ar/dep/neg.html">ar</a>]
+
 [<a href="../../bg/dep/neg.html">bg</a>]
 
+[<a href="../../bxr/dep/neg.html">bxr</a>]
+
+[<a href="../../ca/dep/neg.html">ca</a>]
+
+[<a href="../../ckb/dep/neg.html">ckb</a>]
+
+[<a href="../../cop/dep/neg.html">cop</a>]
+
 [<a href="../../cs/dep/neg.html">cs</a>]
+
+[<a href="../../cu/dep/neg.html">cu</a>]
+
+[<a href="../../da/dep/neg.html">da</a>]
 
 [<a href="../../de/dep/neg.html">de</a>]
 
@@ -189,29 +222,97 @@ neg in other languages:
 
 [<a href="../../es/dep/neg.html">es</a>]
 
+[<a href="../../et/dep/neg.html">et</a>]
+
 [<a href="../../eu/dep/neg.html">eu</a>]
 
 [<a href="../../fa/dep/neg.html">fa</a>]
 
 [<a href="../../fi/dep/neg.html">fi</a>]
 
+[<a href="../../fo/dep/neg.html">fo</a>]
+
 [<a href="../../fr/dep/neg.html">fr</a>]
 
 [<a href="../../ga/dep/neg.html">ga</a>]
 
+[<a href="../../gl/dep/neg.html">gl</a>]
+
+[<a href="../../got/dep/neg.html">got</a>]
+
+[<a href="../../grc/dep/neg.html">grc</a>]
+
 [<a href="../../he/dep/neg.html">he</a>]
 
+[<a href="../../hi/dep/neg.html">hi</a>]
+
+[<a href="../../hr/dep/neg.html">hr</a>]
+
 [<a href="../../hu/dep/neg.html">hu</a>]
+
+[<a href="../../id/dep/neg.html">id</a>]
 
 [<a href="../../it/dep/neg.html">it</a>]
 
 [<a href="../../ja/dep/neg.html">ja</a>]
 
+[<a href="../../kk/dep/neg.html">kk</a>]
+
+[<a href="../../kmr/dep/neg.html">kmr</a>]
+
 [<a href="../../ko/dep/neg.html">ko</a>]
+
+[<a href="../../la/dep/neg.html">la</a>]
+
+[<a href="../../lv/dep/neg.html">lv</a>]
+
+[<a href="../../mr/dep/neg.html">mr</a>]
+
+[<a href="../../nl/dep/neg.html">nl</a>]
+
+[<a href="../../no/dep/neg.html">no</a>]
+
+[<a href="../../pl/dep/neg.html">pl</a>]
+
+[<a href="../../pt/dep/neg.html">pt</a>]
+
+[<a href="../../ro/dep/neg.html">ro</a>]
+
+[<a href="../../ru/dep/neg.html">ru</a>]
+
+[<a href="../../sa/dep/neg.html">sa</a>]
+
+[<a href="../../sk/dep/neg.html">sk</a>]
+
+[<a href="../../sla/dep/neg.html">sla</a>]
+
+[<a href="../../sl/dep/neg.html">sl</a>]
+
+[<a href="../../so/dep/neg.html">so</a>]
+
+[<a href="../../sr/dep/neg.html">sr</a>]
 
 [<a href="../../sv/dep/neg.html">sv</a>]
 
-[<a href="../../u/dep/neg.html">u</a>]
+[<a href="../../swl/dep/neg.html">swl</a>]
+
+[<a href="../../ta/dep/neg.html">ta</a>]
+
+[<a href="../../tr/dep/neg.html">tr</a>]
+
+[<a href="../../ug/dep/neg.html">ug</a>]
+
+[<a href="../../uk/dep/neg.html">uk</a>]
+
+[<a href="../../ur/dep/neg.html">ur</a>]
+
+[<a href="../../urj/dep/neg.html">urj</a>]
+
+[<a href="../../vi/dep/neg.html">vi</a>]
+
+[<a href="../../yue/dep/neg.html">yue</a>]
+
+[<a href="../../zh/dep/neg.html">zh</a>]
 
 
 

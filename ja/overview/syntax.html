@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ja">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ja">home</a></span>
 
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ja-overview/syntax.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ja-overview/syntax.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -81,9 +98,9 @@ for the definition of each label.</p>
       <td>太郎 が / <i>Taro ga</i> “Taro-NOM” &lt;-<code>nsubjpass</code>- ほめ られる / <i>home rareru</i> “praise-PASSIVE”</td>
     </tr>
     <tr>
-      <td><code>dobj</code></td>
+      <td><code>obj</code></td>
       <td>Direct object (typically a postpositional phrase with a case marker を / <i>o</i>)</td>
-      <td>ご飯 を / <i>gohan o</i> “rice-ACC” &lt;-<code>dobj</code>- 食べる / <i>taberu</i> “eat”</td>
+      <td>ご飯 を / <i>gohan o</i> “rice-ACC” &lt;-<code>obj</code>- 食べる / <i>taberu</i> “eat”</td>
     </tr>
     <tr>
       <td><code>iobj</code></td>
@@ -232,14 +249,14 @@ for the definition of each label.</p>
       <td>構文 / <i>kobun</i> “syntax” &lt;-<code>compound</code>- 解析 / <i>kaiseki</i> “analysis”, 泳ぎ / <i>oyogi</i> “swim” &lt;-<code>compound</code>- 着く / <i>tsuku</i> “reach”</td>
     </tr>
     <tr>
-      <td><code>name</code></td>
+      <td><code>flat</code></td>
       <td>Proper noun compounds</td>
-      <td>山田 / <i>Yamada</i> “Yamada” -<code>name</code>-&gt; 太郎 / <i>Taro</i> “Taro”</td>
+      <td>山田 / <i>Yamada</i> “Yamada” -<code>flat</code>-&gt; 太郎 / <i>Taro</i> “Taro”</td>
     </tr>
     <tr>
-      <td><code>mwe</code></td>
+      <td><code>fixed</code></td>
       <td>Multi-word functional expressions</td>
-      <td>に / <i>ni</i> -<code>mwe</code>-&gt; よって / <i>yotte</i> “by”, かも / <i>kamo</i> -<code>mwe</code>-&gt; しれ / <i>shire</i> -<code>mwe</code>-&gt; ない / <i>nai</i> (maybe)</td>
+      <td>に / <i>ni</i> -<code>fixed</code>-&gt; よって / <i>yotte</i> “by”, かも / <i>kamo</i> -<code>fixed</code>-&gt; しれ / <i>shire</i> -<code>fixed</code>-&gt; ない / <i>nai</i> (maybe)</td>
     </tr>
     <tr>
       <td><code>foreign</code></td>
@@ -281,7 +298,7 @@ for the definition of each label.</p>
       <td>「 太郎 は 花子 が 好き 。 / <i>Taro wa Hanako ga suki .</i> “Taro loves Hanako.” &lt;-<code>parataxis</code>- 次郎 は 梅子 が 好き 。 / <i>Jiro wa Umeko ga suki .</i> “Jiro loves Umeko” 」 と 三郎 が 言っ た / <i>to Saburo ga it ta</i> “Saburo said”</td>
     </tr>
     <tr>
-      <td><code>remnant</code></td>
+      <td><code>orphan</code></td>
       <td>used to annotate head-less coordination (see the definition in Universal Dependencies for details)</td>
       <td> </td>
     </tr>

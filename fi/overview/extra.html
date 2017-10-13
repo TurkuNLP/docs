@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-fi">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-fi">home</a></span>
 
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_fi-overview/extra.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-overview/extra.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -67,7 +84,7 @@ dependency is the main predicate of the relative clause.</p>
 
 <p>For UD Finnish, relative markers are be mapped to the syntactic role
 that the relative is playing in the relative clause, such as <code>nsubj</code>
-or <code>dobj</code>. This information is present in the second annotation layer
+or <code>obj</code>. This information is present in the second annotation layer
 of the TDT corpus.</p>
 
 <!-- TODO Annotation of relative clauses is more closely examined in Section [relclauses](#sec-relclauses). -->
@@ -382,9 +399,9 @@ gapping.</p>
 <p>Finally, there are two minor changes made in the SD hierarchy. First,
 as prepositional objects are no longer needed in the Finnish-specific
 scheme due to the changes made to handling adpositional phrases, and
-as indirect objects do not occur in Finnish, the type <a href=""><code>dobj</code></a> was
+as indirect objects do not occur in Finnish, the type <a href=""><code>obj</code></a> was
 the sole subtype of the intermediate, unused type <a href=""><code>obj</code></a>, we have
-removed this intermediate type, and made <a href=""><code>dobj</code></a> a direct subtype
+removed this intermediate type, and made <a href=""><code>obj</code></a> a direct subtype
 of <a href=""><code>complement</code></a>.</p>
 
 <p>Second, the <a href=""><code>neg</code></a> dependency type, for marking negations, has been

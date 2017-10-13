@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-en">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-en">home</a></span>
 
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_en-overview/migration-guidelines.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_en-overview/migration-guidelines.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -274,9 +291,9 @@ will be completely implemented in future versions of the parser.</p>
 <h4 id="grammaticalrelation-object-15">GrammaticalRelation object:</h4>
 <p><code>edu.stanford.nlp.trees.UniversalEnglishGrammaticalRelations.DISCOURSE_ELEMENT</code></p>
 
-<h3 id="dobj-dobj"><code>dobj</code>: <code>dobj</code></h3>
+<h3 id="obj-obj"><code>obj</code>: <code>obj</code></h3>
 
-<p><code>dobj</code> relations in SD are still annotated as <a href="en-dep/dobj"><code>dobj</code></a> in UD.</p>
+<p><code>obj</code> relations in SD are still annotated as <a href="en-dep/dobj"><code>obj</code></a> in UD.</p>
 
 <h4 id="grammaticalrelation-object-16">GrammaticalRelation object:</h4>
 <p><code>edu.stanford.nlp.trees.UniversalEnglishGrammaticalRelations.DIRECT_OBJECT</code></p>
@@ -313,12 +330,12 @@ of the pleonastic <em>it</em> differently.</p>
 <h4 id="grammaticalrelation-object-20">GrammaticalRelation object:</h4>
 <p><code>edu.stanford.nlp.trees.UniversalEnglishGrammaticalRelations.MARKER</code></p>
 
-<h3 id="bmwe-mweb"><b><code>mwe</code>: <code>mwe</code></b></h3>
+<h3 id="bfixed-fixedb"><b><code>fixed</code>: <code>fixed</code></b></h3>
 
-<p><code>mwe</code> relations in SD are still annotated as <a href="en-dep/mwe"><code>mwe</code></a> in UD.</p>
+<p><code>fixed</code> relations in SD are still annotated as <a href="en-dep/mwe"><code>fixed</code></a> in UD.</p>
 
 <p>However, the list of expressions which are considered multi-word expressions has changed. See the 
-description of the <a href="en-dep/mwe"><code>mwe</code> relation</a> for the list of multi-word expressions.</p>
+description of the <a href="en-dep/mwe"><code>fixed</code> relation</a> for the list of multi-word expressions.</p>
 
 <h4 id="grammaticalrelation-object-21">GrammaticalRelation object:</h4>
 <p><code>edu.stanford.nlp.trees.UniversalEnglishGrammaticalRelations.MULTI_WORD_EXPRESSION</code></p>
@@ -522,7 +539,7 @@ construction. The <code>advcl</code> relation is used for clauses that modify a 
   <li><a href="en-dep/dislocated"><code>dislocated</code></a></li>
   <li><a href="en-dep/foreign"><code>foreign</code></a></li>
   <li><a href="en-dep/list"><code>list</code></a></li>
-  <li><a href="en-dep/remnant"><code>remnant</code></a></li>
+  <li><a href="en-dep/remnant"><code>orphan</code></a></li>
   <li><a href="en-dep/vocative"><code>vocative</code></a></li>
 </ul>
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-kk">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/kk/pos">kk/pos</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-pos/AUX_.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-kk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/kk/pos">kk/pos</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-pos/AUX_.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -86,128 +103,65 @@ take part in participle constructions. They are tagged <code>AUX</code>.</p>
 
 <h2 id="treebank-statistics-udkazakh">Treebank Statistics (UD_Kazakh)</h2>
 
-<p>There are 20 <code>AUX</code> lemmas (1%), 80 <code>AUX</code> types (3%) and 324 <code>AUX</code> tokens (5%).
-Out of 16 observed tags, the rank of <code>AUX</code> is: 10 in number of lemmas, 7 in number of types and 5 in number of tokens.</p>
+<p>There are 5 <code>AUX</code> lemmas (2%), 13 <code>AUX</code> types (4%) and 25 <code>AUX</code> tokens (5%).
+Out of 15 observed tags, the rank of <code>AUX</code> is: 12 in number of lemmas, 6 in number of types and 6 in number of tokens.</p>
 
-<p>The 10 most frequent <code>AUX</code> lemmas: <em>е, ал, жат, кет, баста, қал, кел, жүр, отыр, бер</em></p>
+<p>The 10 most frequent <code>AUX</code> lemmas: <em>бол, е, болуға, гөр, көр</em></p>
 
-<p>The 10 most frequent <code>AUX</code> types:  <em>_, бастады, жатыр, екен, кетті, еді, емес, қалды, алды, екенін</em></p>
+<p>The 10 most frequent <code>AUX</code> types:  <em>еді, болды, болатын, болмаса, болса, болсам, болушы, болуға, болып, болғандықтан</em></p>
 
-<p>The 10 most frequent ambiguous lemmas: <em>е</em> (<a href="">AUX</a> 174, <a href="">INTJ</a> 1), <em>ал</em> (<a href="">VERB</a> 33, <a href="">AUX</a> 24, <a href="">CONJ</a> 4, <a href="">INTJ</a> 1), <em>жат</em> (<a href="">AUX</a> 19, <a href="">VERB</a> 3), <em>кет</em> (<a href="">AUX</a> 18, <a href="">VERB</a> 8), <em>баста</em> (<a href="">AUX</a> 15, <a href="">VERB</a> 11, <a href="">ADP</a> 1), <em>қал</em> (<a href="">AUX</a> 14, <a href="">VERB</a> 6, <a href="">NOUN</a> 1), <em>кел</em> (<a href="">VERB</a> 28, <a href="">AUX</a> 11), <em>жүр</em> (<a href="">AUX</a> 9, <a href="">VERB</a> 5), <em>отыр</em> (<a href="">AUX</a> 9, <a href="">VERB</a> 2), <em>бер</em> (<a href="">VERB</a> 26, <a href="">AUX</a> 8)</p>
+<p>The 10 most frequent ambiguous lemmas: <em>бол</em> (<a href="">AUX</a> 13, <a href="">VERB</a> 2)</p>
 
-<p>The 10 most frequent ambiguous types:  <em>_</em> (<a href="">AUX</a> 154, <a href="">PART</a> 76, <a href="">NOUN</a> 75, <a href="">ADJ</a> 72, <a href="">VERB</a> 29, <a href="">PRON</a> 23, <a href="">CONJ</a> 13, <a href="">ADV</a> 7, <a href="">ADP</a> 7, <a href="">PROPN</a> 5, <a href="">NUM</a> 4, <a href="">PUNCT</a> 1), <em>кетті</em> (<a href="">AUX</a> 8, <a href="">VERB</a> 2), <em>емес</em> (<a href="">AUX</a> 7, <a href="">PART</a> 2, <a href="">ADV</a> 1), <em>алды</em> (<a href="">AUX</a> 4, <a href="">VERB</a> 2), <em>жатқан</em> (<a href="">AUX</a> 4, <a href="">VERB</a> 1), <em>келеді</em> (<a href="">AUX</a> 4, <a href="">VERB</a> 3), <em>тұрды</em> (<a href="">AUX</a> 3, <a href="">VERB</a> 1), <em>қалады</em> (<a href="">AUX</a> 3, <a href="">VERB</a> 2), <em>алдым</em> (<a href="">AUX</a> 2, <a href="">VERB</a> 1), <em>берді</em> (<a href="">VERB</a> 2, <a href="">AUX</a> 2)</p>
+<p>The 10 most frequent ambiguous types:  <em>болатын</em> (<a href="">AUX</a> 1, <a href="">VERB</a> 1), <em>болып</em> (<a href="">AUX</a> 1, <a href="">X</a> 1)</p>
 
 <ul>
-  <li><em>_</em>
+  <li><em>болатын</em>
     <ul>
-      <li><a href="">AUX</a> 154: <em>Иран — діни _ <b>_</b> .</em></li>
-      <li><a href="">PART</a> 76: <em>Қазірде орыстан оқыған балалардан артық жақсы кісі шыға _ <b>_</b> тұр .</em></li>
-      <li><a href="">NOUN</a> 75: <em>Иран — діни <b>_</b> _ .</em></li>
-      <li><a href="">ADJ</a> 72: <em>Жер беті суы <b>_</b> _ .</em></li>
-      <li><a href="">VERB</a> 29: <em>Құлдық пен құл саудасына , қандай түрде <b>_</b> _ , тыйым салынады .</em></li>
-      <li><a href="">PRON</a> 23: <em>Сіздің атыңыз <b>_</b> _ ?</em></li>
-      <li><a href="">CONJ</a> 13: <em>Ол _ <b>_</b> , _ <b>_</b> емес .</em></li>
-      <li><a href="">ADV</a> 7: <em>— Бәйбіше <b>_</b> _ ?</em></li>
-      <li><a href="">ADP</a> 7: <em>Неке , тек екі жақтың өзара еркін және толық келісімі <b>_</b> _ қиылады .</em></li>
-      <li><a href="">PROPN</a> 5: <em>Баяғыда біреу той жасапты , тойға көп кісі жиналыпты , <b>_</b> _ келіпті .</em></li>
-      <li><a href="">NUM</a> 4: <em>Қала халқы <b>_</b> _ .</em></li>
-      <li><a href="">PUNCT</a> 1: <em>Халқының ұлттық құрамы : парсылар ( 51% ) , әзірбайжандар ( 27% ) , күрдтер ( 5% ) , арабтар , түрікмендер , белуджилер , армяндар , еврейлер , _ _ <b>_</b></em></li>
+      <li><a href="">AUX</a> 1: <em>Мал орнына сатылып , жаны сүймеген жанға жар <b>болатын</b> қазақтың сансыз қыздарының ішінен әлдеқалай өзінің сүйгеніне тиген Шолпан шынында бастапқы жылы бала керек қылмады .</em></li>
+      <li><a href="">VERB</a> 1: <em>Шешуі деп атауға <b>болатын</b> болса , адамның шешуі жалғыз өлім .</em></li>
     </ul>
   </li>
-  <li><em>кетті</em>
+  <li><em>болып</em>
     <ul>
-      <li><a href="">AUX</a> 8: <em>Өлген жирен орысты көп солдат алып <b>кетті</b> .</em></li>
-      <li><a href="">VERB</a> 2: <em>Ол “ Азамат қай жерге <b>кетті</b> ? Оны _ _ ? “ деп іздеп жатыр .</em></li>
-    </ul>
-  </li>
-  <li><em>емес</em>
-    <ul>
-      <li><a href="">AUX</a> 7: <em>Жоқ , олай ниет керек <b>емес</b> .</em></li>
-      <li><a href="">PART</a> 2: <em>1981 _ _ конституциясы бойынша , елде саяси және діни <b>емес</b> ұйымдарға тыйым__салынған .</em></li>
-      <li><a href="">ADV</a> 1: <em>Бұрынғыдай <b>емес</b> , Алтынай тұрмысына енді _ _ .</em></li>
-    </ul>
-  </li>
-  <li><em>алды</em>
-    <ul>
-      <li><a href="">AUX</a> 4: <em>1220 — 56 ж. Иранды Шыңғыс хан әулеті жаулап <b>алды</b> .</em></li>
-      <li><a href="">VERB</a> 2: <em>Непал мен Тибетке бет <b>алды</b> .</em></li>
-    </ul>
-  </li>
-  <li><em>жатқан</em>
-    <ul>
-      <li><a href="">AUX</a> 4: <em>Қуып келе <b>жатқан</b> _ _ өрмектен секіреді .</em></li>
-      <li><a href="">VERB</a> 1: <em>Асумен асып елге бара жатқан , елден мал , азық - түлік алып келе <b>жатқан</b> орыстарды талай көрген .</em></li>
-    </ul>
-  </li>
-  <li><em>келеді</em>
-    <ul>
-      <li><a href="">AUX</a> 4: <em>20 ғасырдың басынан мүсін , графика , кескіндеме жанры дамып <b>келеді</b> .</em></li>
-      <li><a href="">VERB</a> 3: <em>Кемпірі екеуінің тұруға әлдері әрең-әрең <b>келеді</b> .</em></li>
-    </ul>
-  </li>
-  <li><em>тұрды</em>
-    <ul>
-      <li><a href="">AUX</a> 3: <em>1968 жылдан бастап Ширазда театр фестивалы өткізіліп <b>тұрды</b> .</em></li>
-      <li><a href="">VERB</a> 1: <em>Соғыстан кейін Федор Федорович Қарағандыда <b>тұрды</b> .</em></li>
-    </ul>
-  </li>
-  <li><em>қалады</em>
-    <ul>
-      <li><a href="">AUX</a> 3: <em>Өрмектің бірсыпыра жібі үзіліп <b>қалады</b> .</em></li>
-      <li><a href="">VERB</a> 2: <em>Ат отынан <b>қалады</b> дейді , алып қалмайды , қой өрерде жылқышы келе қоймайды .</em></li>
-    </ul>
-  </li>
-  <li><em>алдым</em>
-    <ul>
-      <li><a href="">AUX</a> 2: <em>Мен сөмкемді жоғалтып <b>алдым</b> .</em></li>
-      <li><a href="">VERB</a> 1: <em>Жылқы бағып жүріп , қалың беріп , қатын <b>алдым</b> .</em></li>
-    </ul>
-  </li>
-  <li><em>берді</em>
-    <ul>
-      <li><a href="">VERB</a> 2: <em>Ендеше тілегімді <b>берді</b> , - деді .</em></li>
-      <li><a href="">AUX</a> 2: <em>Жалын қалай шықты , солай қасқырлардың қарасы өше <b>берді</b> .</em></li>
+      <li><a href="">AUX</a> 1: <em>Көл <b>болып</b> төгілген көздің жасы жерге сіңді , тілек тозды , өмір озды , Шолпан бала көтермеді .</em></li>
+      <li><a href="">X</a> 1: <em>2015 жылдың 24 қаңтарындағы Сауд Арабиясының патшасы — Абдулла ибн Абдул Азиз ас-Саудтың өлімінен кейін билік басындағы ең кәрі монарх <b>болып</b> саналады .</em></li>
     </ul>
   </li>
 </ul>
 
 <h2 id="morphology">Morphology</h2>
 
-<p>The form / lemma ratio of <code>AUX</code> is 4.000000 (the average of all parts of speech is 1.549647).</p>
+<p>The form / lemma ratio of <code>AUX</code> is 2.600000 (the average of all parts of speech is 1.240602).</p>
 
-<p>The 1st highest number of forms (13) was observed with the lemma “ал”: <em>_, ала, алады, алды, алдым, алмады, алмай, алмайды, алмаймын, алмас, алмауда, алып, алғаннан</em>.</p>
+<p>The 1st highest number of forms (8) was observed with the lemma “бол”: <em>болатын, болды, болмаса, болса, болсам, болушы, болып, болғандықтан</em>.</p>
 
-<p>The 2nd highest number of forms (8) was observed with the lemma “е”: <em>_, еді, едім, екен, екендіктерін, екенін, емес, еместігіме</em>.</p>
+<p>The 2nd highest number of forms (2) was observed with the lemma “е”: <em>еді, емес</em>.</p>
 
-<p>The 3rd highest number of forms (7) was observed with the lemma “кел”: <em>келген__жоқ, келді, келдім, келе, келеді, келмеді, келіп</em>.</p>
+<p>The 3rd highest number of forms (1) was observed with the lemma “болуға”: <em>болуға</em>.</p>
 
-<p><code>AUX</code> occurs with 11 features: <a href="">kk-feat/Tense</a> (87; 27% instances), <a href="">kk-feat/Number</a> (84; 26% instances), <a href="">kk-feat/Person</a> (84; 26% instances), <a href="">kk-feat/VerbForm</a> (10; 3% instances), <a href="">kk-feat/Aspect</a> (6; 2% instances), <a href="">kk-feat/Polarity</a> (6; 2% instances), <a href="">kk-feat/Evidentiality</a> (4; 1% instances), <a href="">kk-feat/Case</a> (2; 1% instances), <a href="">kk-feat/Mood</a> (1; 0% instances), <a href="">kk-feat/Number[psor]</a> (1; 0% instances), <a href="">kk-feat/Person[psor]</a> (1; 0% instances)</p>
+<p><code>AUX</code> occurs with 8 features: <a href="">kk-feat/VerbForm</a> (25; 100% instances), <a href="">kk-feat/Mood</a> (21; 84% instances), <a href="">kk-feat/Number</a> (20; 80% instances), <a href="">kk-feat/Person</a> (20; 80% instances), <a href="">kk-feat/Tense</a> (15; 60% instances), <a href="">kk-feat/Polarity</a> (3; 12% instances), <a href="">kk-feat/Aspect</a> (2; 8% instances), <a href="">kk-feat/Case</a> (2; 8% instances)</p>
 
-<p><code>AUX</code> occurs with 21 feature-value pairs: <code>Aspect=Impf</code>, <code>Aspect=Perf</code>, <code>Case=Dat</code>, <code>Case=Loc</code>, <code>Evidentiality=Fh</code>, <code>Mood=Imper</code>, <code>Number=Plur</code>, <code>Number=Sing</code>, <code>Number[psor]=Plur,Sing</code>, <code>Person=1</code>, <code>Person=2</code>, <code>Person=3</code>, <code>Person[psor]=3</code>, <code>Polarity=Neg</code>, <code>Tense=Aor</code>, <code>Tense=Past</code>, <code>Tense=Prs</code>, <code>VerbForm=Coverb</code>, <code>VerbForm=Ger</code>, <code>VerbForm=Part</code>, <code>VerbForm=Trans</code></p>
+<p><code>AUX</code> occurs with 19 feature-value pairs: <code>Aspect=Imp</code>, <code>Aspect=Perf</code>, <code>Case=Abl</code>, <code>Case=Dat</code>, <code>Mood=Cnd</code>, <code>Mood=Imp</code>, <code>Mood=Ind</code>, <code>Mood=Pot</code>, <code>Number=Sing</code>, <code>Person=1</code>, <code>Person=2</code>, <code>Person=3</code>, <code>Polarity=Neg</code>, <code>Tense=Aor</code>, <code>Tense=Past</code>, <code>VerbForm=Conv</code>, <code>VerbForm=Fin</code>, <code>VerbForm=Ger</code>, <code>VerbForm=Part</code></p>
 
-<p><code>AUX</code> occurs with 21 feature combinations.
-The most frequent feature combination is <code>_</code> (229 tokens).
-Examples: <em>_, бастады, жатыр, емес, алды, еді, екен, екенін, жүр, алмайды</em></p>
+<p><code>AUX</code> occurs with 12 feature combinations.
+The most frequent feature combination is <code>Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin</code> (14 tokens).
+Examples: <em>еді, болды</em></p>
 
 <h2 id="relations">Relations</h2>
 
-<p><code>AUX</code> nodes are attached to their parents using 4 different relations: <a href="">kk-dep/cop</a> (173; 53% instances), <a href="">kk-dep/aux</a> (149; 46% instances), <a href="">kk-dep/advcl</a> (1; 0% instances), <a href="">kk-dep/dobj</a> (1; 0% instances)</p>
+<p><code>AUX</code> nodes are attached to their parents using 2 different relations: <a href="">kk-dep/cop</a> (23; 92% instances), <a href="">kk-dep/aux</a> (2; 8% instances)</p>
 
-<p>Parents of <code>AUX</code> nodes belong to 7 different parts of speech: <a href="">VERB</a> (148; 46% instances), <a href="">ADJ</a> (80; 25% instances), <a href="">NOUN</a> (64; 20% instances), <a href="">PRON</a> (17; 5% instances), <a href="">ADV</a> (10; 3% instances), <a href="">PROPN</a> (3; 1% instances), <a href="">NUM</a> (2; 1% instances)</p>
+<p>Parents of <code>AUX</code> nodes belong to 4 different parts of speech: <a href="">NOUN</a> (10; 40% instances), <a href="">VERB</a> (10; 40% instances), <a href="">ADJ</a> (4; 16% instances), <a href="">PRON</a> (1; 4% instances)</p>
 
-<p>315 (97%) <code>AUX</code> nodes are leaves.</p>
+<p>24 (96%) <code>AUX</code> nodes are leaves.</p>
 
-<p>7 (2%) <code>AUX</code> nodes have one child.</p>
+<p>1 (4%) <code>AUX</code> nodes have one child.</p>
 
-<p>1 (0%) <code>AUX</code> nodes have two children.</p>
+<p>The highest child degree of a <code>AUX</code> node is 1.</p>
 
-<p>1 (0%) <code>AUX</code> nodes have three or more children.</p>
+<p>Children of <code>AUX</code> nodes are attached using 1 different relations: <a href="">kk-dep/punct</a> (1; 100% instances)</p>
 
-<p>The highest child degree of a <code>AUX</code> node is 3.</p>
-
-<p>Children of <code>AUX</code> nodes are attached using 7 different relations: <a href="">kk-dep/case</a> (3; 25% instances), <a href="">kk-dep/punct</a> (3; 25% instances), <a href="">kk-dep/nmod</a> (2; 17% instances), <a href="">kk-dep/ccomp</a> (1; 8% instances), <a href="">kk-dep/conj</a> (1; 8% instances), <a href="">kk-dep/discourse</a> (1; 8% instances), <a href="">kk-dep/nsubj</a> (1; 8% instances)</p>
-
-<p>Children of <code>AUX</code> nodes belong to 7 different parts of speech: <a href="">ADP</a> (3; 25% instances), <a href="">PUNCT</a> (3; 25% instances), <a href="">PROPN</a> (2; 17% instances), <a href="">INTJ</a> (1; 8% instances), <a href="">NOUN</a> (1; 8% instances), <a href="">PRON</a> (1; 8% instances), <a href="">VERB</a> (1; 8% instances)</p>
+<p>Children of <code>AUX</code> nodes belong to 1 different parts of speech: <a href="">PUNCT</a> (1; 100% instances)</p>
 
 
 
@@ -217,9 +171,25 @@ Examples: <em>_, бастады, жатыр, емес, алды, еді, еке�
 
 AUX in other languages:
 
+[<a href="../../am/pos/AUX.html">am</a>]
+
+[<a href="../../ar/pos/AUX.html">ar</a>]
+
 [<a href="../../bg/pos/AUX.html">bg</a>]
 
+[<a href="../../bxr/pos/AUX.html">bxr</a>]
+
+[<a href="../../ca/pos/AUX.html">ca</a>]
+
+[<a href="../../ckb/pos/AUX.html">ckb</a>]
+
+[<a href="../../cop/pos/AUX.html">cop</a>]
+
 [<a href="../../cs/pos/AUX.html">cs</a>]
+
+[<a href="../../cu/pos/AUX.html">cu</a>]
+
+[<a href="../../da/pos/AUX.html">da</a>]
 
 [<a href="../../de/pos/AUX.html">de</a>]
 
@@ -229,29 +199,99 @@ AUX in other languages:
 
 [<a href="../../es/pos/AUX.html">es</a>]
 
+[<a href="../../et/pos/AUX.html">et</a>]
+
 [<a href="../../eu/pos/AUX.html">eu</a>]
 
 [<a href="../../fa/pos/AUX.html">fa</a>]
 
 [<a href="../../fi/pos/AUX.html">fi</a>]
 
+[<a href="../../fo/pos/AUX.html">fo</a>]
+
 [<a href="../../fr/pos/AUX.html">fr</a>]
 
 [<a href="../../ga/pos/AUX.html">ga</a>]
 
+[<a href="../../gl/pos/AUX.html">gl</a>]
+
+[<a href="../../got/pos/AUX.html">got</a>]
+
+[<a href="../../grc/pos/AUX.html">grc</a>]
+
 [<a href="../../he/pos/AUX.html">he</a>]
 
+[<a href="../../hi/pos/AUX.html">hi</a>]
+
+[<a href="../../hr/pos/AUX.html">hr</a>]
+
 [<a href="../../hu/pos/AUX.html">hu</a>]
+
+[<a href="../../id/pos/AUX.html">id</a>]
 
 [<a href="../../it/pos/AUX.html">it</a>]
 
 [<a href="../../ja/pos/AUX.html">ja</a>]
 
+[<a href="../../kk/pos/AUX.html">kk</a>]
+
+[<a href="../../kmr/pos/AUX.html">kmr</a>]
+
 [<a href="../../ko/pos/AUX.html">ko</a>]
+
+[<a href="../../la/pos/AUX.html">la</a>]
+
+[<a href="../../lv/pos/AUX.html">lv</a>]
+
+[<a href="../../mr/pos/AUX.html">mr</a>]
+
+[<a href="../../nl/pos/AUX.html">nl</a>]
+
+[<a href="../../no/pos/AUX.html">no</a>]
+
+[<a href="../../pl/pos/AUX.html">pl</a>]
+
+[<a href="../../pt/pos/AUX.html">pt</a>]
+
+[<a href="../../ro/pos/AUX.html">ro</a>]
+
+[<a href="../../ru/pos/AUX.html">ru</a>]
+
+[<a href="../../sa/pos/AUX.html">sa</a>]
+
+[<a href="../../sk/pos/AUX.html">sk</a>]
+
+[<a href="../../sla/pos/AUX.html">sla</a>]
+
+[<a href="../../sl/pos/AUX.html">sl</a>]
+
+[<a href="../../so/pos/AUX.html">so</a>]
+
+[<a href="../../sr/pos/AUX.html">sr</a>]
 
 [<a href="../../sv/pos/AUX.html">sv</a>]
 
+[<a href="../../swl/pos/AUX.html">swl</a>]
+
+[<a href="../../ta/pos/AUX.html">ta</a>]
+
+[<a href="../../tr/pos/AUX.html">tr</a>]
+
+[<a href="../../ug/pos/AUX.html">ug</a>]
+
+[<a href="../../uk/pos/AUX.html">uk</a>]
+
 [<a href="../../u/pos/AUX.html">u</a>]
+
+[<a href="../../urj/pos/AUX.html">urj</a>]
+
+[<a href="../../ur/pos/AUX.html">ur</a>]
+
+[<a href="../../vi/pos/AUX.html">vi</a>]
+
+[<a href="../../yue/pos/AUX.html">yue</a>]
+
+[<a href="../../zh/pos/AUX.html">zh</a>]
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-id">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/id/dep">id/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_id-dep/nsubjpass.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-id">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/id/dep">id/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_id-dep/nsubjpass.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -56,79 +73,30 @@ for <code>nsubjpass</code>.</p>
 
 
 
-
-<hr />
-
-<h2 id="treebank-statistics-udindonesian">Treebank Statistics (UD_Indonesian)</h2>
-
-<p>This relation is universal.</p>
-
-<p>2216 nodes (2%) are attached to their parents as <code>nsubjpass</code>.</p>
-
-<p>2173 instances of <code>nsubjpass</code> (98%) are right-to-left (child precedes parent).
-Average distance between parent and child is 2.78249097472924.</p>
-
-<p>The following 23 pairs of parts of speech are connected with <code>nsubjpass</code>: <a href="">id-pos/VERB</a>-<a href="">id-pos/PRON</a> (858; 39% instances), <a href="">id-pos/VERB</a>-<a href="">id-pos/NOUN</a> (823; 37% instances), <a href="">id-pos/VERB</a>-<a href="">id-pos/PROPN</a> (485; 22% instances), <a href="">id-pos/ADJ</a>-<a href="">id-pos/PRON</a> (10; 0% instances), <a href="">id-pos/NOUN</a>-<a href="">id-pos/NOUN</a> (6; 0% instances), <a href="">id-pos/NOUN</a>-<a href="">id-pos/PRON</a> (4; 0% instances), <a href="">id-pos/VERB</a>-<a href="">id-pos/DET</a> (4; 0% instances), <a href="">id-pos/NOUN</a>-<a href="">id-pos/PROPN</a> (3; 0% instances), <a href="">id-pos/PROPN</a>-<a href="">id-pos/NOUN</a> (3; 0% instances), <a href="">id-pos/ADJ</a>-<a href="">id-pos/NOUN</a> (2; 0% instances), <a href="">id-pos/ADV</a>-<a href="">id-pos/PROPN</a> (2; 0% instances), <a href="">id-pos/VERB</a>-<a href="">id-pos/ADJ</a> (2; 0% instances), <a href="">id-pos/VERB</a>-<a href="">id-pos/ADV</a> (2; 0% instances), <a href="">id-pos/VERB</a>-<a href="">id-pos/NUM</a> (2; 0% instances), <a href="">id-pos/VERB</a>-<a href="">id-pos/VERB</a> (2; 0% instances), <a href="">id-pos/ADP</a>-<a href="">id-pos/NOUN</a> (1; 0% instances), <a href="">id-pos/ADV</a>-<a href="">id-pos/NOUN</a> (1; 0% instances), <a href="">id-pos/ADV</a>-<a href="">id-pos/PRON</a> (1; 0% instances), <a href="">id-pos/DET</a>-<a href="">id-pos/PRON</a> (1; 0% instances), <a href="">id-pos/NOUN</a>-<a href="">id-pos/VERB</a> (1; 0% instances), <a href="">id-pos/PART</a>-<a href="">id-pos/PRON</a> (1; 0% instances), <a href="">id-pos/VERB</a>-<a href="">id-pos/ADP</a> (1; 0% instances), <a href="">id-pos/VERB</a>-<a href="">id-pos/SYM</a> (1; 0% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 4 3 nsubjpass	color:blue
-1	Bau	_	NOUN	_	_	0	root	_	_
-2	apakah	_	ADV	_	_	1	advmod	_	_
-3	yang	_	PRON	_	_	4	nsubjpass	_	_
-4	tercium	_	VERB	_	_	1	acl	_	_
-5	olehku	_	NOUN	_	_	4	dobj	_	_
-6	?	_	PUNCT	_	_	1	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 3 1 nsubjpass	color:blue
-1	Film	_	NOUN	_	_	3	nsubjpass	_	_
-2	ini	_	DET	_	_	1	det	_	_
-3	terdiri	_	VERB	_	_	0	root	_	_
-4	dari	_	ADP	_	_	6	case	_	_
-5	6	_	NUM	_	_	6	nummod	_	_
-6	musim	_	NOUN	_	_	3	nmod	_	_
-7	dengan	_	ADP	_	_	9	case	_	_
-8	137	_	NUM	_	_	9	nummod	_	_
-9	episiode	_	NOUN	_	_	6	nmod	_	_
-10	.	_	PUNCT	_	_	3	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 2 1 nsubjpass	color:blue
-1	Dingalan	_	PROPN	_	_	2	nsubjpass	_	_
-2	terbagi	_	VERB	_	_	0	root	_	_
-3	menjadi	_	VERB	_	_	2	xcomp	_	_
-4	11	_	NUM	_	_	5	nummod	_	_
-5	barangay	_	NOUN	_	_	3	dobj	_	_
-6	,	_	PUNCT	_	_	2	punct	_	_
-7	yaitu	_	CONJ	_	_	2	dep	_	_
-8	:	_	PUNCT	_	_	2	punct	_	_
-
-</code></pre>
-
-
-
-
 <!-- "in other languages" links -->
 <hr/>
 
 nsubjpass in other languages:
 
+[<a href="../../am/dep/nsubjpass.html">am</a>]
+
+[<a href="../../ar/dep/nsubjpass.html">ar</a>]
+
 [<a href="../../bg/dep/nsubjpass.html">bg</a>]
 
+[<a href="../../bxr/dep/nsubjpass.html">bxr</a>]
+
+[<a href="../../ca/dep/nsubjpass.html">ca</a>]
+
+[<a href="../../ckb/dep/nsubjpass.html">ckb</a>]
+
+[<a href="../../cop/dep/nsubjpass.html">cop</a>]
+
 [<a href="../../cs/dep/nsubjpass.html">cs</a>]
+
+[<a href="../../cu/dep/nsubjpass.html">cu</a>]
+
+[<a href="../../da/dep/nsubjpass.html">da</a>]
 
 [<a href="../../de/dep/nsubjpass.html">de</a>]
 
@@ -138,27 +106,89 @@ nsubjpass in other languages:
 
 [<a href="../../es/dep/nsubjpass.html">es</a>]
 
+[<a href="../../et/dep/nsubjpass.html">et</a>]
+
 [<a href="../../eu/dep/nsubjpass.html">eu</a>]
 
 [<a href="../../fa/dep/nsubjpass.html">fa</a>]
 
 [<a href="../../fr/dep/nsubjpass.html">fr</a>]
 
-[<a href="../../ga/dep/nsubjpass.html">ga</a>]
+[<a href="../../gl/dep/nsubjpass.html">gl</a>]
+
+[<a href="../../got/dep/nsubjpass.html">got</a>]
+
+[<a href="../../grc/dep/nsubjpass.html">grc</a>]
 
 [<a href="../../he/dep/nsubjpass.html">he</a>]
 
+[<a href="../../hi/dep/nsubjpass.html">hi</a>]
+
+[<a href="../../hr/dep/nsubjpass.html">hr</a>]
+
 [<a href="../../hu/dep/nsubjpass.html">hu</a>]
+
+[<a href="../../id/dep/nsubjpass.html">id</a>]
 
 [<a href="../../it/dep/nsubjpass.html">it</a>]
 
 [<a href="../../ja/dep/nsubjpass.html">ja</a>]
 
+[<a href="../../kmr/dep/nsubjpass.html">kmr</a>]
+
 [<a href="../../ko/dep/nsubjpass.html">ko</a>]
+
+[<a href="../../la/dep/nsubjpass.html">la</a>]
+
+[<a href="../../lv/dep/nsubjpass.html">lv</a>]
+
+[<a href="../../mr/dep/nsubjpass.html">mr</a>]
+
+[<a href="../../nl/dep/nsubjpass.html">nl</a>]
+
+[<a href="../../no/dep/nsubjpass.html">no</a>]
+
+[<a href="../../pl/dep/nsubjpass.html">pl</a>]
+
+[<a href="../../pt/dep/nsubjpass.html">pt</a>]
+
+[<a href="../../ro/dep/nsubjpass.html">ro</a>]
+
+[<a href="../../ru/dep/nsubjpass.html">ru</a>]
+
+[<a href="../../sa/dep/nsubjpass.html">sa</a>]
+
+[<a href="../../sk/dep/nsubjpass.html">sk</a>]
+
+[<a href="../../sla/dep/nsubjpass.html">sla</a>]
+
+[<a href="../../sl/dep/nsubjpass.html">sl</a>]
+
+[<a href="../../so/dep/nsubjpass.html">so</a>]
+
+[<a href="../../sr/dep/nsubjpass.html">sr</a>]
 
 [<a href="../../sv/dep/nsubjpass.html">sv</a>]
 
-[<a href="../../u/dep/nsubjpass.html">u</a>]
+[<a href="../../swl/dep/nsubjpass.html">swl</a>]
+
+[<a href="../../ta/dep/nsubjpass.html">ta</a>]
+
+[<a href="../../tr/dep/nsubjpass.html">tr</a>]
+
+[<a href="../../ug/dep/nsubjpass.html">ug</a>]
+
+[<a href="../../uk/dep/nsubjpass.html">uk</a>]
+
+[<a href="../../ur/dep/nsubjpass.html">ur</a>]
+
+[<a href="../../urj/dep/nsubjpass.html">urj</a>]
+
+[<a href="../../vi/dep/nsubjpass.html">vi</a>]
+
+[<a href="../../yue/dep/nsubjpass.html">yue</a>]
+
+[<a href="../../zh/dep/nsubjpass.html">zh</a>]
 
 
 

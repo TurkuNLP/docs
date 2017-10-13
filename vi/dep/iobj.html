@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-vi">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/vi/dep">vi/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_vi-dep/iobj.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-vi">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/vi/dep">vi/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_vi-dep/iobj.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -45,8 +62,15 @@
 
           <h2><code>iobj</code>: indirect object</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>iobj</code>.</p>
+<p>The indirect object of a VP is the noun phrase which is the object of the verb.</p>
+
+<pre><code class="language-sdparse">Hắn tặng cô ấy hoa 。
+dobj(tặng, hoa)
+iobj(tặng, cô)
+nsubj(tặng, Hắn)
+det:pmod(cô, ấy)
+punct(tặng, 。)
+</code></pre>
 
 
 <!-- "automatic stats" -->
@@ -63,25 +87,32 @@ for <code>iobj</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>42 nodes (0%) are attached to their parents as <code>iobj</code>.</p>
+<p>34 nodes (0%) are attached to their parents as <code>iobj</code>.</p>
 
-<p>42 instances of <code>iobj</code> (100%) are left-to-right (parent precedes child).
-Average distance between parent and child is 3.28571428571429.</p>
+<p>34 instances of <code>iobj</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 3.20588235294118.</p>
 
-<p>The following 5 pairs of parts of speech are connected with <code>iobj</code>: <a href="">vi-pos/VERB</a>-<a href="">vi-pos/VERB</a> (25; 60% instances), <a href="">vi-pos/VERB</a>-<a href="">vi-pos/NOUN</a> (9; 21% instances), <a href="">vi-pos/VERB</a>-<a href="">vi-pos/ADJ</a> (4; 10% instances), <a href="">vi-pos/NOUN</a>-<a href="">vi-pos/NOUN</a> (2; 5% instances), <a href="">vi-pos/NOUN</a>-<a href="">vi-pos/VERB</a> (2; 5% instances).</p>
+<p>The following 5 pairs of parts of speech are connected with <code>iobj</code>: <a href="">vi-pos/VERB</a>-<a href="">vi-pos/VERB</a> (19; 56% instances), <a href="">vi-pos/VERB</a>-<a href="">vi-pos/NOUN</a> (9; 26% instances), <a href="">vi-pos/VERB</a>-<a href="">vi-pos/ADJ</a> (3; 9% instances), <a href="">vi-pos/NOUN</a>-<a href="">vi-pos/NOUN</a> (2; 6% instances), <a href="">vi-pos/NOUN</a>-<a href="">vi-pos/VERB</a> (1; 3% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 1 4 iobj	color:blue
-1	bắt	bắt	VERB	V	_	0	root	_	_
-2	đám	đám	NOUN	Nc	_	1	dobj	_	_
-3	cháy	cháy	VERB	V	_	2	xcomp	_	_
-4	nói	nói	VERB	V	_	1	iobj	_	_
-5	lên	lên	X	R	_	4	advmod	_	_
-6	sự_thật	sự_thật	NOUN	N	_	4	dobj	_	_
-7	.	.	PUNCT	.	_	1	punct	_	_
+<pre><code class="language-conllu"># visual-style 11	bgColor:blue
+# visual-style 11	fgColor:white
+# visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 8 11 iobj	color:blue
+1	Và	Và	CCONJ	C	_	4	cc	_	_
+2	tôi	tôi	PROPN	P	_	4	nsubj	_	_
+3	được	được	VERB	V	_	4	aux:pass	_	_
+4	cử	cử	VERB	V	_	0	root	_	_
+5	sang	sang	VERB	V	_	4	xcomp	_	_
+6	VN	VN	NOUN	Np	_	4	obj	_	_
+7	để	để	ADP	E	_	8	case	_	_
+8	giúp	giúp	VERB	V	_	4	mark	_	_
+9	người	người	NOUN	N	_	8	obj	_	_
+10	VN	VN	NOUN	Ny	_	9	compound	_	_
+11	chống	chống	VERB	V	_	8	iobj	_	_
+12	phát xít	phát xít	NOUN	N	_	11	obj	_	_
+13	Nhật	Nhật	NOUN	Np	_	12	compound	_	SpaceAfter=No
+14	.	.	PUNCT	.	_	4	punct	_	_
 
 </code></pre>
 
@@ -90,13 +121,13 @@ Average distance between parent and child is 3.28571428571429.</p>
 # visual-style 2	bgColor:blue
 # visual-style 2	fgColor:white
 # visual-style 2 7 iobj	color:blue
-1	tập_trung	tập_trung	VERB	V	_	0	root	_	_
-2	khai_thác	khai_thác	VERB	V	_	1	xcomp	_	_
+1	tập trung	tập trung	VERB	V	_	0	root	_	_
+2	khai thác	khai thác	VERB	V	_	1	xcomp	_	_
 3	các	các	DET	L	_	4	det	_	_
-4	nguồn	nguồn	NOUN	N	_	2	dobj	_	_
+4	nguồn	nguồn	NOUN	N	_	2	obj	_	_
 5	vốn	vốn	NOUN	N	_	4	compound	_	_
 6	cho	cho	ADP	E	_	7	case	_	_
-7	ngân_sách	ngân_sách	NOUN	N	_	2	iobj	_	_
+7	ngân sách	ngân sách	NOUN	N	_	2	iobj	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	1	punct	_	_
 
 </code></pre>
@@ -106,19 +137,19 @@ Average distance between parent and child is 3.28571428571429.</p>
 # visual-style 5	bgColor:blue
 # visual-style 5	fgColor:white
 # visual-style 5 11 iobj	color:blue
-1	có	có	VERB	V	_	5	nmod	_	_
-2	bữa	bữa	NOUN	N	_	1	dobj	_	_
+1	có	có	VERB	V	_	5	obl	_	_
+2	bữa	bữa	NOUN	N	_	1	obj	_	_
 3	mẹ	mẹ	NOUN	N	_	5	nsubj	_	_
 4	Tùng	Tùng	NOUN	Np	_	3	compound	_	_
 5	mời	mời	VERB	V	_	0	root	_	_
 6	cả	cả	PROPN	P	_	7	det	_	_
-7	thầy_giáo	thầy_giáo	NOUN	N	_	5	dobj	_	_
+7	thầy giáo	thầy giáo	NOUN	N	_	5	obj	_	_
 8	và	và	SCONJ	CC	_	7	cc	_	_
-9	hai	hai	NUM	M	_	7	nummod	_	_
+9	hai	hai	NUM	M	NumType=Card	7	nummod	_	_
 10	thằng	thằng	PROPN	P	_	9	det	_	_
 11	cùng	cùng	ADJ	A	_	5	iobj	_	_
 12	ăn	ăn	VERB	V	_	11	xcomp	_	_
-13	tối	tối	NOUN	N	_	11	dobj	_	_
+13	tối	tối	NOUN	N	_	11	obj	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	5	punct	_	_
 
 </code></pre>
@@ -131,9 +162,25 @@ Average distance between parent and child is 3.28571428571429.</p>
 
 iobj in other languages:
 
+[<a href="../../am/dep/iobj.html">am</a>]
+
+[<a href="../../ar/dep/iobj.html">ar</a>]
+
 [<a href="../../bg/dep/iobj.html">bg</a>]
 
+[<a href="../../bxr/dep/iobj.html">bxr</a>]
+
+[<a href="../../ca/dep/iobj.html">ca</a>]
+
+[<a href="../../ckb/dep/iobj.html">ckb</a>]
+
+[<a href="../../cop/dep/iobj.html">cop</a>]
+
 [<a href="../../cs/dep/iobj.html">cs</a>]
+
+[<a href="../../cu/dep/iobj.html">cu</a>]
+
+[<a href="../../da/dep/iobj.html">da</a>]
 
 [<a href="../../de/dep/iobj.html">de</a>]
 
@@ -143,27 +190,95 @@ iobj in other languages:
 
 [<a href="../../es/dep/iobj.html">es</a>]
 
+[<a href="../../et/dep/iobj.html">et</a>]
+
 [<a href="../../eu/dep/iobj.html">eu</a>]
 
 [<a href="../../fa/dep/iobj.html">fa</a>]
 
+[<a href="../../fo/dep/iobj.html">fo</a>]
+
 [<a href="../../fr/dep/iobj.html">fr</a>]
 
-[<a href="../../ga/dep/iobj.html">ga</a>]
+[<a href="../../gl/dep/iobj.html">gl</a>]
+
+[<a href="../../got/dep/iobj.html">got</a>]
+
+[<a href="../../grc/dep/iobj.html">grc</a>]
 
 [<a href="../../he/dep/iobj.html">he</a>]
 
+[<a href="../../hi/dep/iobj.html">hi</a>]
+
+[<a href="../../hr/dep/iobj.html">hr</a>]
+
 [<a href="../../hu/dep/iobj.html">hu</a>]
+
+[<a href="../../id/dep/iobj.html">id</a>]
 
 [<a href="../../it/dep/iobj.html">it</a>]
 
 [<a href="../../ja/dep/iobj.html">ja</a>]
 
+[<a href="../../kk/dep/iobj.html">kk</a>]
+
+[<a href="../../kmr/dep/iobj.html">kmr</a>]
+
 [<a href="../../ko/dep/iobj.html">ko</a>]
+
+[<a href="../../la/dep/iobj.html">la</a>]
+
+[<a href="../../lv/dep/iobj.html">lv</a>]
+
+[<a href="../../mr/dep/iobj.html">mr</a>]
+
+[<a href="../../nl/dep/iobj.html">nl</a>]
+
+[<a href="../../no/dep/iobj.html">no</a>]
+
+[<a href="../../pl/dep/iobj.html">pl</a>]
+
+[<a href="../../pt/dep/iobj.html">pt</a>]
+
+[<a href="../../ro/dep/iobj.html">ro</a>]
+
+[<a href="../../ru/dep/iobj.html">ru</a>]
+
+[<a href="../../sa/dep/iobj.html">sa</a>]
+
+[<a href="../../sk/dep/iobj.html">sk</a>]
+
+[<a href="../../sla/dep/iobj.html">sla</a>]
+
+[<a href="../../sl/dep/iobj.html">sl</a>]
+
+[<a href="../../so/dep/iobj.html">so</a>]
+
+[<a href="../../sr/dep/iobj.html">sr</a>]
 
 [<a href="../../sv/dep/iobj.html">sv</a>]
 
+[<a href="../../swl/dep/iobj.html">swl</a>]
+
+[<a href="../../ta/dep/iobj.html">ta</a>]
+
+[<a href="../../tr/dep/iobj.html">tr</a>]
+
 [<a href="../../u/dep/iobj.html">u</a>]
+
+[<a href="../../ug/dep/iobj.html">ug</a>]
+
+[<a href="../../uk/dep/iobj.html">uk</a>]
+
+[<a href="../../ur/dep/iobj.html">ur</a>]
+
+[<a href="../../urj/dep/iobj.html">urj</a>]
+
+[<a href="../../vi/dep/iobj.html">vi</a>]
+
+[<a href="../../yue/dep/iobj.html">yue</a>]
+
+[<a href="../../zh/dep/iobj.html">zh</a>]
 
 
 

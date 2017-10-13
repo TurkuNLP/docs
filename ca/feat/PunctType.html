@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ca">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ca/feat">ca/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ca-feat/PunctType.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ca">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ca/feat">ca/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ca-feat/PunctType.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -65,27 +82,27 @@ for <code>PunctType</code>.</p>
 <p>This feature is language-specific.
 It occurs with 9 different values: <code>Brck</code>, <code>Colo</code>, <code>Comm</code>, <code>Dash</code>, <code>Excl</code>, <code>Peri</code>, <code>Qest</code>, <code>Quot</code>, <code>Semi</code>.</p>
 
-<p>53086 tokens (10%) have a non-empty value of <code>PunctType</code>.
+<p>47279 tokens (10%) have a non-empty value of <code>PunctType</code>.
 20 types (0%) occur at least once with a non-empty value of <code>PunctType</code>.
 18 lemmas (0%) occur at least once with a non-empty value of <code>PunctType</code>.
-The feature is used with 2 part-of-speech tags: <a href="">ca-pos/PUNCT</a> (53081; 10% instances), <a href="">ca-pos/SYM</a> (5; 0% instances).</p>
+The feature is used with 1 part-of-speech tags: <a href="">ca-pos/PUNCT</a> (47279; 10% instances).</p>
 
 <h3 id="punct"><code>PUNCT</code></h3>
 
-<p>53081 <a href="">ca-pos/PUNCT</a> tokens (99% of all <code>PUNCT</code> tokens) have a non-empty value of <code>PunctType</code>.</p>
+<p>47279 <a href="">ca-pos/PUNCT</a> tokens (99% of all <code>PUNCT</code> tokens) have a non-empty value of <code>PunctType</code>.</p>
 
 <p><code>PUNCT</code> tokens may have the following values of <code>PunctType</code>:</p>
 
 <ul>
-  <li><code>Brck</code> (3399; 6% of non-empty <code>PunctType</code>): <em>(, )</em></li>
-  <li><code>Colo</code> (542; 1% of non-empty <code>PunctType</code>): <em>:, /</em></li>
-  <li><code>Comm</code> (26653; 50% of non-empty <code>PunctType</code>): <em>,, …, etc, etcètera, [, ], etc., .</em></li>
-  <li><code>Dash</code> (938; 2% of non-empty <code>PunctType</code>): <em>-, _</em></li>
-  <li><code>Excl</code> (30; 0% of non-empty <code>PunctType</code>): <em>!, ¡</em></li>
-  <li><code>Peri</code> (16453; 31% of non-empty <code>PunctType</code>): <em>., -</em></li>
-  <li><code>Qest</code> (337; 1% of non-empty <code>PunctType</code>): <em>?, ¿</em></li>
-  <li><code>Quot</code> (4305; 8% of non-empty <code>PunctType</code>): <em>”</em></li>
-  <li><code>Semi</code> (424; 1% of non-empty <code>PunctType</code>): <em>;</em></li>
+  <li><code>Brck</code> (3041; 6% of non-empty <code>PunctType</code>): <em>(, )</em></li>
+  <li><code>Colo</code> (483; 1% of non-empty <code>PunctType</code>): <em>:, /</em></li>
+  <li><code>Comm</code> (23722; 50% of non-empty <code>PunctType</code>): <em>,, …, etc, etcètera, [, ], etc., .</em></li>
+  <li><code>Dash</code> (864; 2% of non-empty <code>PunctType</code>): <em>-, _</em></li>
+  <li><code>Excl</code> (28; 0% of non-empty <code>PunctType</code>): <em>!, ¡</em></li>
+  <li><code>Peri</code> (14624; 31% of non-empty <code>PunctType</code>): <em>., -</em></li>
+  <li><code>Qest</code> (316; 1% of non-empty <code>PunctType</code>): <em>?, ¿</em></li>
+  <li><code>Quot</code> (3855; 8% of non-empty <code>PunctType</code>): <em>”</em></li>
+  <li><code>Semi</code> (346; 1% of non-empty <code>PunctType</code>): <em>;</em></li>
 </ul>
 
 <table>
@@ -93,23 +110,22 @@ The feature is used with 2 part-of-speech tags: <a href="">ca-pos/PUNCT</a> (530
   <tr><td><tt></tt></td><td><em>.</em></td><td><em>.</em></td></tr>
 </table>
 
-<h3 id="sym"><code>SYM</code></h3>
-
-<p>5 <a href="">ca-pos/SYM</a> tokens (0% of all <code>SYM</code> tokens) have a non-empty value of <code>PunctType</code>.</p>
-
-<p>The most frequent other feature values with which <code>SYM</code> and <code>PunctType</code> co-occurred: <tt><a href="NumType.html">NumType</a>=EMPTY</tt> (5; 100%), <tt><a href="NumForm.html">NumForm</a>=EMPTY</tt> (5; 100%).</p>
-
-<p><code>SYM</code> tokens may have the following values of <code>PunctType</code>:</p>
-
-<ul>
-  <li><code>Colo</code> (5; 100% of non-empty <code>PunctType</code>): <em>/</em></li>
-</ul>
-
 
 
 
 <!-- "in other languages" links -->
 <hr/>
+
+PunctType in other languages:
+
+[<a href="../../ca/feat/PunctType.html">ca</a>]
+
+[<a href="../../es/feat/PunctType.html">es</a>]
+
+[<a href="../../nl/feat/PunctType.html">nl</a>]
+
+[<a href="../../ta/feat/PunctType.html">ta</a>]
+
 
 
 

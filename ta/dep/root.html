@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ta">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ta/dep">ta/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ta-dep/root.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ta">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ta/dep">ta/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ta-dep/root.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -75,8 +92,8 @@ Average distance between parent and child is 14.2116666666667.</p>
 # visual-style 0	bgColor:blue
 # visual-style 0	fgColor:white
 # visual-style 0 2 root	color:blue
-1	அவர்	அவர்	PRON	RpN-3SH--	Case=Nom|Gender=Com|Number=Sing|Person=3|Polite=Pol|PronType=Prs	2	nsubj	_	Translit=avar|LTranslit=avar
-2	பேசியத்	பேசு	VERB	VzND3SNAA	Case=Nom|Gender=Neut|Negative=Pos|Number=Sing|Person=3|Tense=Past|VerbForm=Ger|Voice=Act	0	root	_	Translit=pēciyat|LTranslit=pēcu
+1	அவர்	அவர்	PRON	RpN-3SH--	Case=Nom|Gender=Com|Number=Sing|Person=3|Polite=Form|PronType=Prs	2	nsubj	_	Translit=avar|LTranslit=avar
+2	பேசியத்	பேசு	VERB	VzND3SNAA	Case=Nom|Gender=Neut|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Ger|Voice=Act	0	root	_	Translit=pēciyat|LTranslit=pēcu
 3	ஆவது	ஆவது	PART	Tl-------	_	2	advmod:emph	_	Translit=āvatu|LTranslit=āvatu
 4	:	:	PUNCT	Z:-------	PunctType=Comm	2	punct	_	SpaceAfter=No|Translit=:|LTranslit=:
 5	.	.	PUNCT	Z#-------	PunctType=Peri	2	punct	_	Translit=.|LTranslit=.
@@ -89,14 +106,14 @@ Average distance between parent and child is 14.2116666666667.</p>
 # visual-style 0	fgColor:white
 # visual-style 0 6 root	color:blue
 1	கிழக்கு	கிழக்கு	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	2	nmod	_	Translit=kilakku|LTranslit=kilakku
-2	ஆசியா	ஆசியா	PROPN	NEN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	3	dobj	_	Translit=āciyā|LTranslit=āciyā
-3	குறித்த	குறி	ADJ	Jd-D----A	Negative=Pos|Tense=Past|VerbForm=Part	4	amod	_	Translit=kuritta|LTranslit=kuri
-4	பேச்சுவார்த்தை	பேச்சுவார்த்தை	NOUN	NNA-3SN--	Case=Acc|Gender=Neut|Number=Sing|Person=3	5	dobj	_	Translit=pēccuvārttai|LTranslit=pēccuvārttai
-5	நடத்த	நடத்து	VERB	Vu-T---AA	Negative=Pos|VerbForm=Inf|Voice=Act	6	advcl	_	Translit=naṭatta|LTranslit=naṭattu
+2	ஆசியா	ஆசியா	PROPN	NEN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	3	obj	_	Translit=āciyā|LTranslit=āciyā
+3	குறித்த	குறி	ADJ	Jd-D----A	Polarity=Pos|Tense=Past|VerbForm=Part	4	amod	_	Translit=kuritta|LTranslit=kuri
+4	பேச்சுவார்த்தை	பேச்சுவார்த்தை	NOUN	NNA-3SN--	Case=Acc|Gender=Neut|Number=Sing|Person=3	5	obj	_	Translit=pēccuvārttai|LTranslit=pēccuvārttai
+5	நடத்த	நடத்து	VERB	Vu-T---AA	Polarity=Pos|VerbForm=Inf|Voice=Act	6	advcl	_	Translit=naṭatta|LTranslit=naṭattu
 6	முடிவு	முடிவு	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	0	root	_	Translit=muṭivu|LTranslit=muṭivu
-7	செய்யப்	செய்	VERB	Vu-T---AA	Negative=Pos|VerbForm=Inf|Voice=Act	6	acl	_	Translit=ceyyap|LTranslit=cey
-8	பட்ட்	படு	AUX	VT-T---PA	Negative=Pos|VerbForm=Part|Voice=Pass	6	aux	_	Translit=paṭṭ|LTranslit=paṭu
-9	உள்ளது	உள்	AUX	VR-T3SNAA	Gender=Neut|Mood=Ind|Negative=Pos|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	6	aux	_	Translit=uḷḷatu|LTranslit=uḷ
+7	செய்யப்	செய்	VERB	Vu-T---AA	Polarity=Pos|VerbForm=Inf|Voice=Act	6	acl	_	Translit=ceyyap|LTranslit=cey
+8	பட்ட்	படு	AUX	VT-T---PA	Polarity=Pos|VerbForm=Part|Voice=Pass	6	aux	_	Translit=paṭṭ|LTranslit=paṭu
+9	உள்ளது	உள்	AUX	VR-T3SNAA	Gender=Neut|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|VerbForm=Fin|Voice=Act	6	aux	_	Translit=uḷḷatu|LTranslit=uḷ
 10	.	.	PUNCT	Z#-------	PunctType=Peri	6	punct	_	Translit=.|LTranslit=.
 
 </code></pre>
@@ -107,12 +124,12 @@ Average distance between parent and child is 14.2116666666667.</p>
 # visual-style 0	fgColor:white
 # visual-style 0 7 root	color:blue
 1	இதுகுறித்து	இதுகுறித்து	ADV	AA-------	_	7	advmod	_	Translit=itukurittu|LTranslit=itukurittu
-2	அவர்	அவர்	PRON	RpN-3SH--	Case=Nom|Gender=Com|Number=Sing|Person=3|Polite=Pol|PronType=Prs	4	nsubj	_	Translit=avar|LTranslit=avar
+2	அவர்	அவர்	PRON	RpN-3SH--	Case=Nom|Gender=Com|Number=Sing|Person=3|Polite=Form|PronType=Prs	4	nsubj	_	Translit=avar|LTranslit=avar
 3	இன்று	இன்று	ADV	AA-------	_	4	advmod	_	Translit=inru|LTranslit=inru
-4	வெளியிட்ட்	வெளியிடு	VERB	Vt-T---AA	Negative=Pos|VerbForm=Part|Voice=Act	5	advcl	_	Translit=veḷiyiṭṭ|LTranslit=veḷiyiṭu
-5	உள்ள	உள்	ADJ	Jd-T----A	Negative=Pos|VerbForm=Part	6	amod	_	Translit=uḷḷa|LTranslit=uḷ
-6	அறிக்கையில்	அறிக்கை	NOUN	NNL-3SN--	Case=Loc|Gender=Neut|Number=Sing|Person=3	7	nmod	_	Translit=arikkaiyil|LTranslit=arikkai
-7	கூறியிருப்பத்	கூறு	AUX	VZNF3SNAA	Case=Nom|Gender=Neut|Negative=Pos|Number=Sing|Person=3|Tense=Fut|VerbForm=Ger|Voice=Act	0	root	_	Translit=kūriyiruppat|LTranslit=kūru
+4	வெளியிட்ட்	வெளியிடு	VERB	Vt-T---AA	Polarity=Pos|VerbForm=Part|Voice=Act	5	advcl	_	Translit=veḷiyiṭṭ|LTranslit=veḷiyiṭu
+5	உள்ள	உள்	ADJ	Jd-T----A	Polarity=Pos|VerbForm=Part	6	amod	_	Translit=uḷḷa|LTranslit=uḷ
+6	அறிக்கையில்	அறிக்கை	NOUN	NNL-3SN--	Case=Loc|Gender=Neut|Number=Sing|Person=3	7	obl	_	Translit=arikkaiyil|LTranslit=arikkai
+7	கூறியிருப்பத்	கூறு	AUX	VZNF3SNAA	Case=Nom|Gender=Neut|Number=Sing|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Ger|Voice=Act	0	root	_	Translit=kūriyiruppat|LTranslit=kūru
 8	ஆவது	ஆவது	PART	Tl-------	_	7	advmod:emph	_	Translit=āvatu|LTranslit=āvatu
 9	:	:	PUNCT	Z:-------	PunctType=Comm	7	punct	_	SpaceAfter=No|Translit=:|LTranslit=:
 10	.	.	PUNCT	Z#-------	PunctType=Peri	7	punct	_	Translit=.|LTranslit=.
@@ -127,9 +144,25 @@ Average distance between parent and child is 14.2116666666667.</p>
 
 root in other languages:
 
+[<a href="../../am/dep/root.html">am</a>]
+
+[<a href="../../ar/dep/root.html">ar</a>]
+
 [<a href="../../bg/dep/root.html">bg</a>]
 
+[<a href="../../bxr/dep/root.html">bxr</a>]
+
+[<a href="../../ca/dep/root.html">ca</a>]
+
+[<a href="../../ckb/dep/root.html">ckb</a>]
+
+[<a href="../../cop/dep/root.html">cop</a>]
+
 [<a href="../../cs/dep/root.html">cs</a>]
+
+[<a href="../../cu/dep/root.html">cu</a>]
+
+[<a href="../../da/dep/root.html">da</a>]
 
 [<a href="../../de/dep/root.html">de</a>]
 
@@ -139,29 +172,99 @@ root in other languages:
 
 [<a href="../../es/dep/root.html">es</a>]
 
+[<a href="../../et/dep/root.html">et</a>]
+
 [<a href="../../eu/dep/root.html">eu</a>]
 
 [<a href="../../fa/dep/root.html">fa</a>]
 
 [<a href="../../fi/dep/root.html">fi</a>]
 
+[<a href="../../fo/dep/root.html">fo</a>]
+
 [<a href="../../fr/dep/root.html">fr</a>]
 
 [<a href="../../ga/dep/root.html">ga</a>]
 
+[<a href="../../gl/dep/root.html">gl</a>]
+
+[<a href="../../got/dep/root.html">got</a>]
+
+[<a href="../../grc/dep/root.html">grc</a>]
+
 [<a href="../../he/dep/root.html">he</a>]
 
+[<a href="../../hi/dep/root.html">hi</a>]
+
+[<a href="../../hr/dep/root.html">hr</a>]
+
 [<a href="../../hu/dep/root.html">hu</a>]
+
+[<a href="../../id/dep/root.html">id</a>]
 
 [<a href="../../it/dep/root.html">it</a>]
 
 [<a href="../../ja/dep/root.html">ja</a>]
 
+[<a href="../../kk/dep/root.html">kk</a>]
+
+[<a href="../../kmr/dep/root.html">kmr</a>]
+
 [<a href="../../ko/dep/root.html">ko</a>]
+
+[<a href="../../la/dep/root.html">la</a>]
+
+[<a href="../../lv/dep/root.html">lv</a>]
+
+[<a href="../../mr/dep/root.html">mr</a>]
+
+[<a href="../../nl/dep/root.html">nl</a>]
+
+[<a href="../../no/dep/root.html">no</a>]
+
+[<a href="../../pl/dep/root.html">pl</a>]
+
+[<a href="../../pt/dep/root.html">pt</a>]
+
+[<a href="../../ro/dep/root.html">ro</a>]
+
+[<a href="../../ru/dep/root.html">ru</a>]
+
+[<a href="../../sa/dep/root.html">sa</a>]
+
+[<a href="../../sk/dep/root.html">sk</a>]
+
+[<a href="../../sla/dep/root.html">sla</a>]
+
+[<a href="../../sl/dep/root.html">sl</a>]
+
+[<a href="../../so/dep/root.html">so</a>]
+
+[<a href="../../sr/dep/root.html">sr</a>]
 
 [<a href="../../sv/dep/root.html">sv</a>]
 
+[<a href="../../swl/dep/root.html">swl</a>]
+
+[<a href="../../ta/dep/root.html">ta</a>]
+
+[<a href="../../tr/dep/root.html">tr</a>]
+
 [<a href="../../u/dep/root.html">u</a>]
+
+[<a href="../../ug/dep/root.html">ug</a>]
+
+[<a href="../../uk/dep/root.html">uk</a>]
+
+[<a href="../../ur/dep/root.html">ur</a>]
+
+[<a href="../../urj/dep/root.html">urj</a>]
+
+[<a href="../../vi/dep/root.html">vi</a>]
+
+[<a href="../../yue/dep/root.html">yue</a>]
+
+[<a href="../../zh/dep/root.html">zh</a>]
 
 
 

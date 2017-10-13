@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ro">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ro/dep">ro/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ro-dep/xcomp.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ro">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ro/dep">ro/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ro-dep/xcomp.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,63 +80,63 @@ for <code>xcomp</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>1128 nodes (1%) are attached to their parents as <code>xcomp</code>.</p>
+<p>1074 nodes (1%) are attached to their parents as <code>xcomp</code>.</p>
 
-<p>1016 instances of <code>xcomp</code> (90%) are left-to-right (parent precedes child).
-Average distance between parent and child is 2.57446808510638.</p>
+<p>969 instances of <code>xcomp</code> (90%) are left-to-right (parent precedes child).
+Average distance between parent and child is 2.68808193668529.</p>
 
-<p>The following 23 pairs of parts of speech are connected with <code>xcomp</code>: <a href="">ro-pos/VERB</a>-<a href="">ro-pos/NOUN</a> (399; 35% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/ADJ</a> (333; 30% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/VERB</a> (233; 21% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/ADV</a> (40; 4% instances), <a href="">ro-pos/ADJ</a>-<a href="">ro-pos/NOUN</a> (36; 3% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/PRON</a> (20; 2% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/PROPN</a> (14; 1% instances), <a href="">ro-pos/ADJ</a>-<a href="">ro-pos/VERB</a> (10; 1% instances), <a href="">ro-pos/ADJ</a>-<a href="">ro-pos/ADJ</a> (9; 1% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/ADP</a> (8; 1% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/NUM</a> (8; 1% instances), <a href="">ro-pos/ADJ</a>-<a href="">ro-pos/PROPN</a> (6; 1% instances), <a href="">ro-pos/AUX</a>-<a href="">ro-pos/VERB</a> (2; 0% instances), <a href="">ro-pos/ADJ</a>-<a href="">ro-pos/ADV</a> (1; 0% instances), <a href="">ro-pos/ADP</a>-<a href="">ro-pos/VERB</a> (1; 0% instances), <a href="">ro-pos/ADV</a>-<a href="">ro-pos/VERB</a> (1; 0% instances), <a href="">ro-pos/INTJ</a>-<a href="">ro-pos/ADJ</a> (1; 0% instances), <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/ADJ</a> (1; 0% instances), <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/PROPN</a> (1; 0% instances), <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/VERB</a> (1; 0% instances), <a href="">ro-pos/PRON</a>-<a href="">ro-pos/ADV</a> (1; 0% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/AUX</a> (1; 0% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/SYM</a> (1; 0% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 9	bgColor:blue
-# visual-style 9	fgColor:white
-# visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
-# visual-style 7 9 xcomp	color:blue
-1	Acolo	acolo	ADV	Rgp	Degree=Pos	7	advmod	_	_
-2	,	,	PUNCT	COMMA	_	1	punct	_	_
-3	lângă	lângă	ADP	Spsa	AdpType=Prep|Case=Acc	4	case	_	_
-4	izvoară	izvoară	NOUN	Ncfsrn	Case=Acc,Nom|Definite=Ind|Gender=Fem|Number=Sing	7	nmod	_	_
-5	,	,	PUNCT	COMMA	_	4	punct	_	_
-6	iarba	iarbă	NOUN	Ncfsry	Case=Acc,Nom|Definite=Def|Gender=Fem|Number=Sing	7	nsubj	_	_
-7	pare	părea	VERB	Vmip3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-8	de	de	ADP	Spsa	AdpType=Prep|Case=Acc	9	case	_	_
-9	omăt	omăt	NOUN	Ncms-n	Definite=Ind|Gender=Masc|Number=Sing	7	xcomp	_	_
-10	.	.	PUNCT	PERIOD	_	7	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 2 3 xcomp	color:blue
-1	fiecare	fiecare	PRON	Pi3-sr	Case=Acc,Nom|Number=Sing|Person=3|PronType=Ind	2	nsubj	_	_
-2	pretinde	pretinde	VERB	Vmip3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	singur	singur	ADJ	Afpms-n	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	2	xcomp	_	_
-4	întreaga	întreg	ADJ	Afpfsry	Case=Acc,Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	5	amod	_	_
-5	moștenire	moștenire	NOUN	Ncfsrn	Case=Acc,Nom|Definite=Ind|Gender=Fem|Number=Sing	2	dobj	_	_
-6	.	.	PUNCT	PERIOD	_	2	punct	_	_
-
-</code></pre>
+<p>The following 22 pairs of parts of speech are connected with <code>xcomp</code>: <a href="">ro-pos/VERB</a>-<a href="">ro-pos/NOUN</a> (352; 33% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/ADJ</a> (341; 32% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/VERB</a> (230; 21% instances), <a href="">ro-pos/ADJ</a>-<a href="">ro-pos/NOUN</a> (35; 3% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/ADV</a> (34; 3% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/PRON</a> (16; 1% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/PROPN</a> (12; 1% instances), <a href="">ro-pos/ADJ</a>-<a href="">ro-pos/ADJ</a> (10; 1% instances), <a href="">ro-pos/ADJ</a>-<a href="">ro-pos/VERB</a> (10; 1% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/ADP</a> (9; 1% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/NUM</a> (8; 1% instances), <a href="">ro-pos/ADJ</a>-<a href="">ro-pos/PROPN</a> (5; 0% instances), <a href="">ro-pos/AUX</a>-<a href="">ro-pos/VERB</a> (2; 0% instances), <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/ADJ</a> (2; 0% instances), <a href="">ro-pos/ADJ</a>-<a href="">ro-pos/ADV</a> (1; 0% instances), <a href="">ro-pos/ADV</a>-<a href="">ro-pos/ADJ</a> (1; 0% instances), <a href="">ro-pos/ADV</a>-<a href="">ro-pos/VERB</a> (1; 0% instances), <a href="">ro-pos/INTJ</a>-<a href="">ro-pos/ADJ</a> (1; 0% instances), <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/PROPN</a> (1; 0% instances), <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/VERB</a> (1; 0% instances), <a href="">ro-pos/PRON</a>-<a href="">ro-pos/ADV</a> (1; 0% instances), <a href="">ro-pos/PRON</a>-<a href="">ro-pos/VERB</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 7	bgColor:blue
 # visual-style 7	fgColor:white
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 7 xcomp	color:blue
+1	În	în	ADP	Spsa	AdpType=Prep|Case=Acc	3	case	_	_
+2	anumite	anumit	DET	Di3fp	Gender=Fem|Number=Plur|Person=3|PronType=Ind	3	det	_	_
+3	cazuri	caz	NOUN	Ncfp-n	Definite=Ind|Gender=Fem|Number=Plur	5	obl	_	_
+4	coletul	colet	NOUN	Ncmsry	Case=Acc,Nom|Definite=Def|Gender=Masc|Number=Sing	5	nsubj	_	_
+5	constituie	constitui	VERB	Vmip3	Mood=Ind|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	un	un	DET	Timsr	Case=Acc,Nom|Gender=Masc|Number=Sing|PronType=Ind	7	det	_	_
+7	ambalaj	ambalaj	NOUN	Ncms-n	Definite=Ind|Gender=Masc|Number=Sing	5	xcomp	_	_
+8	de	de	ADP	Spsa	AdpType=Prep|Case=Acc	9	case	_	_
+9	vânzare	vânzare	NOUN	Ncfsrn	Case=Acc,Nom|Definite=Ind|Gender=Fem|Number=Sing	7	nmod	_	SpaceAfter=No
+10	.	.	PUNCT	PERIOD	_	5	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 4 xcomp	color:blue
+1	Această	acest	DET	Dd3fsr---e	Case=Acc,Nom|Gender=Fem|Number=Sing|Person=3|Position=Prenom|PronType=Dem	2	det	_	_
+2	observație	observație	NOUN	Ncfsrn	Case=Acc,Nom|Definite=Ind|Gender=Fem|Number=Sing	3	nsubj	_	_
+3	rămâne	rămâne	VERB	Vmip3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	adevărată	adevărat	ADJ	Afpfsrn	Case=Acc,Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	3	xcomp	_	_
+5	și	și	CCONJ	Crssp	Polarity=Pos	7	advmod	_	_
+6	în	în	ADP	Spsa	AdpType=Prep|Case=Acc	7	case	_	_
+7	matematici	matematică	NOUN	Ncfp-n	Definite=Ind|Gender=Fem|Number=Plur	3	obl	_	SpaceAfter=No
+8	.	.	PUNCT	PERIOD	_	3	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 9	bgColor:blue
+# visual-style 9	fgColor:white
 # visual-style 6	bgColor:blue
 # visual-style 6	fgColor:white
-# visual-style 6 7 xcomp	color:blue
-1	Țara	țară	NOUN	Ncfsry	Case=Acc,Nom|Definite=Def|Gender=Fem|Number=Sing	2	nsubj	_	_
-2	arde	arde	VERB	Vmip3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	și	și	CONJ	Crssp	Negative=Pos	2	cc	_	_
-4	tu	tu	PRON	Pp2-sn--------s	Case=Nom|Number=Sing|Person=2|PronType=Prs|Strength=Strong	6	nsubj	_	_
-5	-mi	eu	PRON	Pp1-sd--y-----w	Case=Dat|Number=Sing|Person=1|PronType=Prs|Strength=Weak|Variant=Short	6	iobj	_	_
-6	stai	sta	VERB	Vmii2s	Mood=Ind|Number=Sing|Person=2|Tense=Imp|VerbForm=Fin	2	conj	_	_
-7	înfipt	înfige	VERB	Vmp--sm	Gender=Masc|Number=Sing|VerbForm=Part	6	xcomp	_	_
-8	în	în	ADP	Spsa	AdpType=Prep|Case=Acc	9	case	_	_
-9	podele	podea	NOUN	Ncfp-n	Definite=Ind|Gender=Fem|Number=Plur	7	nmod	_	_
-10	ca	ca	ADV	Rc	_	12	advmod	_	_
-11	un	un	DET	Timsr	Case=Acc,Nom|Gender=Masc|Number=Sing|PronType=Ind	12	det	_	_
-12	par	par	NOUN	Ncms-n	Definite=Ind|Gender=Masc|Number=Sing	7	nmod	_	_
-13	?	?	PUNCT	QUEST	_	2	punct	_	_
+# visual-style 6 9 xcomp	color:blue
+1	Sunt	fi	AUX	Vmip3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
+2	de	de	ADP	Spsa	AdpType=Prep|Case=Acc	0	root	_	_
+3	partea	parte	NOUN	Ncfsry	Case=Acc,Nom|Definite=Def|Gender=Fem|Number=Sing	2	fixed	_	_
+4	ta	tău	DET	Ds2fsrs	Case=Acc,Nom|Gender=Fem|Number=Sing|Number[psor]=Sing|Person=2|Poss=Yes|PronType=Prs	3	det	_	SpaceAfter=No
+5	,	,	PUNCT	COMMA	_	6	punct	_	_
+6	păruse	părea	VERB	Vmil3s	Mood=Ind|Number=Sing|Person=3|Tense=Pqp|VerbForm=Fin	2	parataxis	_	_
+7	a	a	PART	Qn	PartType=Inf	9	mark	_	SpaceAfter=No
+8	-i	el	PRON	Pp3-sd--y-----w	Case=Dat|Number=Sing|Person=3|PronType=Prs|Strength=Weak|Variant=Short	9	iobj	_	_
+9	spune	spune	VERB	Vmnp	Tense=Pres|VerbForm=Inf	6	xcomp	_	_
+10	O'Brien	O'Brien	PROPN	Np	_	6	nsubj	_	SpaceAfter=No
+11	.	.	PUNCT	PERIOD	_	2	punct	_	_
 
 </code></pre>
 
@@ -131,9 +148,25 @@ Average distance between parent and child is 2.57446808510638.</p>
 
 xcomp in other languages:
 
+[<a href="../../am/dep/xcomp.html">am</a>]
+
+[<a href="../../ar/dep/xcomp.html">ar</a>]
+
 [<a href="../../bg/dep/xcomp.html">bg</a>]
 
+[<a href="../../bxr/dep/xcomp.html">bxr</a>]
+
+[<a href="../../ca/dep/xcomp.html">ca</a>]
+
+[<a href="../../ckb/dep/xcomp.html">ckb</a>]
+
+[<a href="../../cop/dep/xcomp.html">cop</a>]
+
 [<a href="../../cs/dep/xcomp.html">cs</a>]
+
+[<a href="../../cu/dep/xcomp.html">cu</a>]
+
+[<a href="../../da/dep/xcomp.html">da</a>]
 
 [<a href="../../de/dep/xcomp.html">de</a>]
 
@@ -143,29 +176,99 @@ xcomp in other languages:
 
 [<a href="../../es/dep/xcomp.html">es</a>]
 
+[<a href="../../et/dep/xcomp.html">et</a>]
+
 [<a href="../../eu/dep/xcomp.html">eu</a>]
 
 [<a href="../../fa/dep/xcomp.html">fa</a>]
 
 [<a href="../../fi/dep/xcomp.html">fi</a>]
 
+[<a href="../../fo/dep/xcomp.html">fo</a>]
+
 [<a href="../../fr/dep/xcomp.html">fr</a>]
 
 [<a href="../../ga/dep/xcomp.html">ga</a>]
 
+[<a href="../../gl/dep/xcomp.html">gl</a>]
+
+[<a href="../../got/dep/xcomp.html">got</a>]
+
+[<a href="../../grc/dep/xcomp.html">grc</a>]
+
 [<a href="../../he/dep/xcomp.html">he</a>]
 
+[<a href="../../hi/dep/xcomp.html">hi</a>]
+
+[<a href="../../hr/dep/xcomp.html">hr</a>]
+
 [<a href="../../hu/dep/xcomp.html">hu</a>]
+
+[<a href="../../id/dep/xcomp.html">id</a>]
 
 [<a href="../../it/dep/xcomp.html">it</a>]
 
 [<a href="../../ja/dep/xcomp.html">ja</a>]
 
+[<a href="../../kk/dep/xcomp.html">kk</a>]
+
+[<a href="../../kmr/dep/xcomp.html">kmr</a>]
+
 [<a href="../../ko/dep/xcomp.html">ko</a>]
+
+[<a href="../../la/dep/xcomp.html">la</a>]
+
+[<a href="../../lv/dep/xcomp.html">lv</a>]
+
+[<a href="../../mr/dep/xcomp.html">mr</a>]
+
+[<a href="../../nl/dep/xcomp.html">nl</a>]
+
+[<a href="../../no/dep/xcomp.html">no</a>]
+
+[<a href="../../pl/dep/xcomp.html">pl</a>]
+
+[<a href="../../pt/dep/xcomp.html">pt</a>]
+
+[<a href="../../ro/dep/xcomp.html">ro</a>]
+
+[<a href="../../ru/dep/xcomp.html">ru</a>]
+
+[<a href="../../sa/dep/xcomp.html">sa</a>]
+
+[<a href="../../sk/dep/xcomp.html">sk</a>]
+
+[<a href="../../sla/dep/xcomp.html">sla</a>]
+
+[<a href="../../sl/dep/xcomp.html">sl</a>]
+
+[<a href="../../so/dep/xcomp.html">so</a>]
+
+[<a href="../../sr/dep/xcomp.html">sr</a>]
 
 [<a href="../../sv/dep/xcomp.html">sv</a>]
 
+[<a href="../../swl/dep/xcomp.html">swl</a>]
+
+[<a href="../../ta/dep/xcomp.html">ta</a>]
+
+[<a href="../../tr/dep/xcomp.html">tr</a>]
+
 [<a href="../../u/dep/xcomp.html">u</a>]
+
+[<a href="../../ug/dep/xcomp.html">ug</a>]
+
+[<a href="../../uk/dep/xcomp.html">uk</a>]
+
+[<a href="../../ur/dep/xcomp.html">ur</a>]
+
+[<a href="../../urj/dep/xcomp.html">urj</a>]
+
+[<a href="../../vi/dep/xcomp.html">vi</a>]
+
+[<a href="../../yue/dep/xcomp.html">yue</a>]
+
+[<a href="../../zh/dep/xcomp.html">zh</a>]
 
 
 

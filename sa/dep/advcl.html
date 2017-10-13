@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-sa">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/sa/dep">sa/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_sa-dep/advcl.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sa">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/sa/dep">sa/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sa-dep/advcl.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -75,13 +92,13 @@ Average distance between parent and child is 3.953125.</p>
 # visual-style 3	bgColor:blue
 # visual-style 3	fgColor:white
 # visual-style 3 6 advcl	color:blue
-1	वचः	वचस्	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	3	dobj	_	Translit=vacaḥ|LTranslit=vacas
+1	वचः	वचस्	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	3	obj	_	Translit=vacaḥ|LTranslit=vacas
 2	तत्र	तत्र	ADV	_	_	3	advmod	_	Translit=tatra|LTranslit=tatra
 3	प्रयोक्तव्यं	प्र-युज्	VERB	_	Case=Acc|Gender=Neut|Number=Sing|VerbForm=Part	0	root	_	Translit=prayoktavyaṁ|LTranslit=pra-yuj
 4	यत्र	यत्र	ADV	_	_	5	advmod	_	Translit=yatra|LTranslit=yatra
-5	उक्तं	वच्ह्	NOUN	_	Case=Acc|Gender=Neut|Number=Sing|VerbForm=Part	6	nmod	_	Translit=uktaṁ|LTranslit=vach
+5	उक्तं	वच्ह्	NOUN	_	Case=Acc|Gender=Neut|Number=Sing|VerbForm=Part	6	obl	_	Translit=uktaṁ|LTranslit=vach
 6	लभते	लभ्	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Mid	3	advcl	_	Translit=labhate|LTranslit=labh
-7	फलम्	फल	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	6	dobj	_	Translit=phalam|LTranslit=phala
+7	फलम्	फल	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	6	obj	_	Translit=phalam|LTranslit=phala
 
 </code></pre>
 
@@ -90,7 +107,7 @@ Average distance between parent and child is 3.953125.</p>
 # visual-style 7	bgColor:blue
 # visual-style 7	fgColor:white
 # visual-style 7 3 advcl	color:blue
-1	किम्	क	PRON	_	Case=Acc|Gender=Neut|Number=Sing|PronType=Int	3	nmod	_	Translit=kim|LTranslit=ka
+1	किम्	क	PRON	_	Case=Acc|Gender=Neut|Number=Sing|PronType=Int	3	obl	_	Translit=kim|LTranslit=ka
 2	अहम्	अहम्	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	Translit=aham|LTranslit=aham
 3	जानामि	ज्ञा	VERB	_	Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	7	advcl	_	Translit=jānāmi|LTranslit=jñā_1|LId=ज्ञा-१
 4	त्वयि	त्वद्	DET	_	Case=Loc|Number=Sing|Person=2|PronType=Prs	5	det	_	Translit=tvayi|LTranslit=tvad
@@ -108,8 +125,8 @@ Average distance between parent and child is 3.953125.</p>
 # visual-style 7 5 advcl	color:blue
 1	तस्मै	तद्	PRON	_	Case=Dat|Gender=Masc|Number=Sing|PronType=Dem	7	nmod	_	Translit=tasmai|LTranslit=tad
 2	कदाचिद्	कधाचिद्	DET	_	PronType=Int	3	det	_	Translit=kadācid|LTranslit=kadhācid
-3	रात्रौ	रत्रि	NOUN	_	Case=Loc|Gender=Fem|Number=Sing	5	nmod	_	Translit=rātrau|LTranslit=ratri
-4	शय्या	शय्या	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	5	nmod	_	Translit=śayyā|LTranslit=śayyā
+3	रात्रौ	रत्रि	NOUN	_	Case=Loc|Gender=Fem|Number=Sing	5	obl	_	Translit=rātrau|LTranslit=ratri
+4	शय्या	शय्या	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	5	obl	_	Translit=śayyā|LTranslit=śayyā
 5	आरूढस्य	अअ-रुह्	VERB	_	Case=Gen|Gender=Masc|Number=Sing|VerbForm=Ger	7	advcl	_	Translit=ārūḍhasya|LTranslit=aa-ruh
 6	चिन्ता	चिन्ता	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	7	nsubj	_	Translit=cintā|LTranslit=cintā
 7	समुत्पन्ना	समुत्पन्न	X	_	Case=Nom|Gender=Fem|Number=Sing|VerbForm=Ger	0	root	_	Translit=samutpannā|LTranslit=samutpanna
@@ -124,9 +141,25 @@ Average distance between parent and child is 3.953125.</p>
 
 advcl in other languages:
 
+[<a href="../../am/dep/advcl.html">am</a>]
+
+[<a href="../../ar/dep/advcl.html">ar</a>]
+
 [<a href="../../bg/dep/advcl.html">bg</a>]
 
+[<a href="../../bxr/dep/advcl.html">bxr</a>]
+
+[<a href="../../ca/dep/advcl.html">ca</a>]
+
+[<a href="../../ckb/dep/advcl.html">ckb</a>]
+
+[<a href="../../cop/dep/advcl.html">cop</a>]
+
 [<a href="../../cs/dep/advcl.html">cs</a>]
+
+[<a href="../../cu/dep/advcl.html">cu</a>]
+
+[<a href="../../da/dep/advcl.html">da</a>]
 
 [<a href="../../de/dep/advcl.html">de</a>]
 
@@ -136,29 +169,99 @@ advcl in other languages:
 
 [<a href="../../es/dep/advcl.html">es</a>]
 
+[<a href="../../et/dep/advcl.html">et</a>]
+
 [<a href="../../eu/dep/advcl.html">eu</a>]
 
 [<a href="../../fa/dep/advcl.html">fa</a>]
 
 [<a href="../../fi/dep/advcl.html">fi</a>]
 
+[<a href="../../fo/dep/advcl.html">fo</a>]
+
 [<a href="../../fr/dep/advcl.html">fr</a>]
 
 [<a href="../../ga/dep/advcl.html">ga</a>]
 
+[<a href="../../gl/dep/advcl.html">gl</a>]
+
+[<a href="../../got/dep/advcl.html">got</a>]
+
+[<a href="../../grc/dep/advcl.html">grc</a>]
+
 [<a href="../../he/dep/advcl.html">he</a>]
 
+[<a href="../../hi/dep/advcl.html">hi</a>]
+
+[<a href="../../hr/dep/advcl.html">hr</a>]
+
 [<a href="../../hu/dep/advcl.html">hu</a>]
+
+[<a href="../../id/dep/advcl.html">id</a>]
 
 [<a href="../../it/dep/advcl.html">it</a>]
 
 [<a href="../../ja/dep/advcl.html">ja</a>]
 
+[<a href="../../kk/dep/advcl.html">kk</a>]
+
+[<a href="../../kmr/dep/advcl.html">kmr</a>]
+
 [<a href="../../ko/dep/advcl.html">ko</a>]
+
+[<a href="../../la/dep/advcl.html">la</a>]
+
+[<a href="../../lv/dep/advcl.html">lv</a>]
+
+[<a href="../../mr/dep/advcl.html">mr</a>]
+
+[<a href="../../nl/dep/advcl.html">nl</a>]
+
+[<a href="../../no/dep/advcl.html">no</a>]
+
+[<a href="../../pl/dep/advcl.html">pl</a>]
+
+[<a href="../../pt/dep/advcl.html">pt</a>]
+
+[<a href="../../ro/dep/advcl.html">ro</a>]
+
+[<a href="../../ru/dep/advcl.html">ru</a>]
+
+[<a href="../../sa/dep/advcl.html">sa</a>]
+
+[<a href="../../sk/dep/advcl.html">sk</a>]
+
+[<a href="../../sla/dep/advcl.html">sla</a>]
+
+[<a href="../../sl/dep/advcl.html">sl</a>]
+
+[<a href="../../so/dep/advcl.html">so</a>]
+
+[<a href="../../sr/dep/advcl.html">sr</a>]
 
 [<a href="../../sv/dep/advcl.html">sv</a>]
 
+[<a href="../../swl/dep/advcl.html">swl</a>]
+
+[<a href="../../ta/dep/advcl.html">ta</a>]
+
+[<a href="../../tr/dep/advcl.html">tr</a>]
+
 [<a href="../../u/dep/advcl.html">u</a>]
+
+[<a href="../../ug/dep/advcl.html">ug</a>]
+
+[<a href="../../uk/dep/advcl.html">uk</a>]
+
+[<a href="../../ur/dep/advcl.html">ur</a>]
+
+[<a href="../../urj/dep/advcl.html">urj</a>]
+
+[<a href="../../vi/dep/advcl.html">vi</a>]
+
+[<a href="../../yue/dep/advcl.html">yue</a>]
+
+[<a href="../../zh/dep/advcl.html">zh</a>]
 
 
 

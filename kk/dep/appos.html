@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-kk">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/kk/dep">kk/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/appos.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-kk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/kk/dep">kk/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/appos.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -72,73 +89,90 @@ nsubj(келе-7, Олар-1)
 
 <p>This relation is universal.</p>
 
-<p>50 nodes (1%) are attached to their parents as <code>appos</code>.</p>
+<p>11 nodes (2%) are attached to their parents as <code>appos</code>.</p>
 
-<p>43 instances of <code>appos</code> (86%) are left-to-right (parent precedes child).
-Average distance between parent and child is 3.94.</p>
+<p>11 instances of <code>appos</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 3.72727272727273.</p>
 
-<p>The following 13 pairs of parts of speech are connected with <code>appos</code>: <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/NOUN</a> (16; 32% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/NUM</a> (8; 16% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/PROPN</a> (7; 14% instances), <a href="">kk-pos/PROPN</a>-<a href="">kk-pos/NOUN</a> (5; 10% instances), <a href="">kk-pos/PROPN</a>-<a href="">kk-pos/NUM</a> (4; 8% instances), <a href="">kk-pos/PROPN</a>-<a href="">kk-pos/PROPN</a> (3; 6% instances), <a href="">kk-pos/ADJ</a>-<a href="">kk-pos/NOUN</a> (1; 2% instances), <a href="">kk-pos/NUM</a>-<a href="">kk-pos/NOUN</a> (1; 2% instances), <a href="">kk-pos/PRON</a>-<a href="">kk-pos/NOUN</a> (1; 2% instances), <a href="">kk-pos/PRON</a>-<a href="">kk-pos/NUM</a> (1; 2% instances), <a href="">kk-pos/PRON</a>-<a href="">kk-pos/PRON</a> (1; 2% instances), <a href="">kk-pos/PRON</a>-<a href="">kk-pos/VERB</a> (1; 2% instances), <a href="">kk-pos/VERB</a>-<a href="">kk-pos/PROPN</a> (1; 2% instances).</p>
+<p>The following 4 pairs of parts of speech are connected with <code>appos</code>: <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/PROPN</a> (5; 45% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/NOUN</a> (3; 27% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/NUM</a> (2; 18% instances), <a href="">kk-pos/ADJ</a>-<a href="">kk-pos/ADJ</a> (1; 9% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 8	bgColor:blue
-# visual-style 8	fgColor:white
-# visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 4 8 appos	color:blue
-1	Ұлттық	ұлттық	ADJ	adj	_	2	amod	_	_
-2	мейрамы	мейрам	NOUN	n	_	4	nsubj	_	px3sp|nom
-3	11	11	NUM	num	_	4	nummod	_	_
-4	_	ақпан	NOUN	n	_	0	root	_	nom
-5	_	е	AUX	cop	_	4	cop	_	aor|p3|sg
-6	—	—	PUNCT	guio	_	4	punct	_	_
-7	Революция	революция	NOUN	n	_	8	nmod:poss	_	nom
-8	күні	күн	NOUN	n	_	4	appos	_	px3sp|nom
-9	(	(	PUNCT	lpar	_	10	punct	_	_
-10	1979	1979	NUM	num	_	4	appos	_	_
+<pre><code class="language-conllu"># visual-style 16	bgColor:blue
+# visual-style 16	fgColor:white
+# visual-style 14	bgColor:blue
+# visual-style 14	fgColor:white
+# visual-style 14 16 appos	color:blue
+1	Өзінің	өз	PRON	prn	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	2	nmod:poss	_	_
+2	атын	ат	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	19	obj	_	_
+3	анасының	ана	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	18	nmod:poss	_	_
+4	(	(	PUNCT	lpar	_	5	punct	_	SpaceAfter=No
+5	Елизавета	Елизавета	PROPN	np	Case=Nom|Gender=Fem	3	appos	_	SpaceAfter=No
+6	)	)	PUNCT	rpar	_	5	punct	_	SpaceAfter=No
+7	,	,	PUNCT	cm	_	14	punct	_	_
+8	апасының	апа	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	3	conj	_	_
+9	(	(	PUNCT	lpar	_	10	punct	_	SpaceAfter=No
+10	Мария	Мария	PROPN	np	Case=Nom|Gender=Fem	8	appos	_	SpaceAfter=No
 11	)	)	PUNCT	rpar	_	10	punct	_	_
-12	.	.	PUNCT	sent	_	4	punct	_	_
+12	және	және	CCONJ	cnjcoo	_	14	cc	_	_
+13	арғы	арғы	ADJ	adj	_	14	amod	_	_
+14	әжесінің	әже	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	3	conj	_	_
+15	(	(	PUNCT	lpar	_	16	punct	_	SpaceAfter=No
+16	Александра	Александра	PROPN	np	Case=Nom|Gender=Fem	14	appos	_	SpaceAfter=No
+17	)	)	PUNCT	rpar	_	16	punct	_	_
+18	құрметіне	құрмет	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	19	obl	_	_
+19	алған	ал	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+20	.	.	PUNCT	sent	_	19	punct	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 10	bgColor:blue
-# visual-style 10	fgColor:white
-# visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 4 10 appos	color:blue
-1	Ұлттық	ұлттық	ADJ	adj	_	2	amod	_	_
-2	мейрамы	мейрам	NOUN	n	_	4	nsubj	_	px3sp|nom
-3	11	11	NUM	num	_	4	nummod	_	_
-4	_	ақпан	NOUN	n	_	0	root	_	nom
-5	_	е	AUX	cop	_	4	cop	_	aor|p3|sg
-6	—	—	PUNCT	guio	_	4	punct	_	_
-7	Революция	революция	NOUN	n	_	8	nmod:poss	_	nom
-8	күні	күн	NOUN	n	_	4	appos	_	px3sp|nom
-9	(	(	PUNCT	lpar	_	10	punct	_	_
-10	1979	1979	NUM	num	_	4	appos	_	_
-11	)	)	PUNCT	rpar	_	10	punct	_	_
-12	.	.	PUNCT	sent	_	4	punct	_	_
+<pre><code class="language-conllu"># visual-style 9	bgColor:blue
+# visual-style 9	fgColor:white
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 9 appos	color:blue
+1	Таққа	тақ	NOUN	n	Case=Dat	17	obl	_	_
+2	1952	1952	NUM	num	NumType=Ord	3	amod	_	_
+3	жылдың	жыл	NOUN	n	Case=Gen	5	nmod:poss	_	_
+4	6	6	NUM	num	NumType=Ord	5	amod	_	_
+5	ақпанында	ақпан	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	17	obl	_	SpaceAfter=No
+6	,	,	PUNCT	cm	_	9	punct	_	_
+7	яғни	яғни	SCONJ	cnjsub	_	9	cc	_	_
+8	25	25	NUM	num	NumType=Card	9	nummod	_	_
+9	жасында	жас	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	5	appos	_	SpaceAfter=No
+10	,	,	PUNCT	cm	_	9	punct	_	_
+11	әкесі	әке	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	15	nmod:poss	_	_
+12	—	—	PUNCT	guio	_	14	punct	_	_
+13	VI	VI	NUM	num	NumType=Ord	11	appos	_	_
+14	Георгтың	Георг	PROPN	np	Case=Gen|Gender=Masc	13	flat:name	_	_
+15	өлімінен	өлім	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	17	obl	_	_
+16	кейін	кейін	ADP	post	_	15	case	_	_
+17	отырды	отыр	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+18	.	.	PUNCT	sent	_	17	punct	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 2 4 appos	color:blue
-1	Қазақстан	Қазақстан	PROPN	np	_	2	nmod:poss	_	top|nom
-2	Президенті	президент	NOUN	n	_	14	nsubj	_	px3sp|nom
-3	Нұрсұлтан	Нұрсұлтан	PROPN	np	_	4	name	_	ant|m|attr
-4	Назарбаев	Назарбаев	PROPN	np	_	2	appos	_	cog|m|nom
-5	екі	екі	NUM	num	_	6	nummod	_	_
-6	рет	рет	NOUN	n	_	13	nmod	_	nom
-7	(	(	PUNCT	lpar	_	10	punct	_	_
-8	1992	1992	NUM	num	_	10	conj	_	_
-9	;	;	PUNCT	sent	_	10	punct	_	_
-10	1996	1996	NUM	num	_	6	appos	_	_
-11	)	)	PUNCT	rpar	_	10	punct	_	_
-12	Иранда	Иран	PROPN	np	_	13	nmod	_	top|loc
-13	болып	бол	VERB	v	_	14	advcl	_	iv|prc_perf
-14	қайтты	қайт	VERB	v	_	0	root	_	iv|ifi|p3|sg
-15	.	.	PUNCT	sent	_	14	punct	_	_
+<pre><code class="language-conllu"># visual-style 13	bgColor:blue
+# visual-style 13	fgColor:white
+# visual-style 11	bgColor:blue
+# visual-style 11	fgColor:white
+# visual-style 11 13 appos	color:blue
+1	Таққа	тақ	NOUN	n	Case=Dat	17	obl	_	_
+2	1952	1952	NUM	num	NumType=Ord	3	amod	_	_
+3	жылдың	жыл	NOUN	n	Case=Gen	5	nmod:poss	_	_
+4	6	6	NUM	num	NumType=Ord	5	amod	_	_
+5	ақпанында	ақпан	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	17	obl	_	SpaceAfter=No
+6	,	,	PUNCT	cm	_	9	punct	_	_
+7	яғни	яғни	SCONJ	cnjsub	_	9	cc	_	_
+8	25	25	NUM	num	NumType=Card	9	nummod	_	_
+9	жасында	жас	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	5	appos	_	SpaceAfter=No
+10	,	,	PUNCT	cm	_	9	punct	_	_
+11	әкесі	әке	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	15	nmod:poss	_	_
+12	—	—	PUNCT	guio	_	14	punct	_	_
+13	VI	VI	NUM	num	NumType=Ord	11	appos	_	_
+14	Георгтың	Георг	PROPN	np	Case=Gen|Gender=Masc	13	flat:name	_	_
+15	өлімінен	өлім	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	17	obl	_	_
+16	кейін	кейін	ADP	post	_	15	case	_	_
+17	отырды	отыр	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+18	.	.	PUNCT	sent	_	17	punct	_	_
 
 </code></pre>
 
@@ -150,9 +184,25 @@ Average distance between parent and child is 3.94.</p>
 
 appos in other languages:
 
+[<a href="../../am/dep/appos.html">am</a>]
+
+[<a href="../../ar/dep/appos.html">ar</a>]
+
 [<a href="../../bg/dep/appos.html">bg</a>]
 
+[<a href="../../bxr/dep/appos.html">bxr</a>]
+
+[<a href="../../ca/dep/appos.html">ca</a>]
+
+[<a href="../../ckb/dep/appos.html">ckb</a>]
+
+[<a href="../../cop/dep/appos.html">cop</a>]
+
 [<a href="../../cs/dep/appos.html">cs</a>]
+
+[<a href="../../cu/dep/appos.html">cu</a>]
+
+[<a href="../../da/dep/appos.html">da</a>]
 
 [<a href="../../de/dep/appos.html">de</a>]
 
@@ -162,29 +212,99 @@ appos in other languages:
 
 [<a href="../../es/dep/appos.html">es</a>]
 
+[<a href="../../et/dep/appos.html">et</a>]
+
 [<a href="../../eu/dep/appos.html">eu</a>]
 
 [<a href="../../fa/dep/appos.html">fa</a>]
 
 [<a href="../../fi/dep/appos.html">fi</a>]
 
+[<a href="../../fo/dep/appos.html">fo</a>]
+
 [<a href="../../fr/dep/appos.html">fr</a>]
 
 [<a href="../../ga/dep/appos.html">ga</a>]
 
+[<a href="../../gl/dep/appos.html">gl</a>]
+
+[<a href="../../got/dep/appos.html">got</a>]
+
+[<a href="../../grc/dep/appos.html">grc</a>]
+
 [<a href="../../he/dep/appos.html">he</a>]
 
+[<a href="../../hi/dep/appos.html">hi</a>]
+
+[<a href="../../hr/dep/appos.html">hr</a>]
+
 [<a href="../../hu/dep/appos.html">hu</a>]
+
+[<a href="../../id/dep/appos.html">id</a>]
 
 [<a href="../../it/dep/appos.html">it</a>]
 
 [<a href="../../ja/dep/appos.html">ja</a>]
 
+[<a href="../../kk/dep/appos.html">kk</a>]
+
+[<a href="../../kmr/dep/appos.html">kmr</a>]
+
 [<a href="../../ko/dep/appos.html">ko</a>]
+
+[<a href="../../la/dep/appos.html">la</a>]
+
+[<a href="../../lv/dep/appos.html">lv</a>]
+
+[<a href="../../mr/dep/appos.html">mr</a>]
+
+[<a href="../../nl/dep/appos.html">nl</a>]
+
+[<a href="../../no/dep/appos.html">no</a>]
+
+[<a href="../../pl/dep/appos.html">pl</a>]
+
+[<a href="../../pt/dep/appos.html">pt</a>]
+
+[<a href="../../ro/dep/appos.html">ro</a>]
+
+[<a href="../../ru/dep/appos.html">ru</a>]
+
+[<a href="../../sa/dep/appos.html">sa</a>]
+
+[<a href="../../sk/dep/appos.html">sk</a>]
+
+[<a href="../../sla/dep/appos.html">sla</a>]
+
+[<a href="../../sl/dep/appos.html">sl</a>]
+
+[<a href="../../so/dep/appos.html">so</a>]
+
+[<a href="../../sr/dep/appos.html">sr</a>]
 
 [<a href="../../sv/dep/appos.html">sv</a>]
 
+[<a href="../../swl/dep/appos.html">swl</a>]
+
+[<a href="../../ta/dep/appos.html">ta</a>]
+
+[<a href="../../tr/dep/appos.html">tr</a>]
+
 [<a href="../../u/dep/appos.html">u</a>]
+
+[<a href="../../ug/dep/appos.html">ug</a>]
+
+[<a href="../../uk/dep/appos.html">uk</a>]
+
+[<a href="../../ur/dep/appos.html">ur</a>]
+
+[<a href="../../urj/dep/appos.html">urj</a>]
+
+[<a href="../../vi/dep/appos.html">vi</a>]
+
+[<a href="../../yue/dep/appos.html">yue</a>]
+
+[<a href="../../zh/dep/appos.html">zh</a>]
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ta">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ta/dep">ta/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ta-dep/appos.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ta">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ta/dep">ta/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ta-dep/appos.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -75,25 +92,25 @@ Average distance between parent and child is 4.71428571428571.</p>
 # visual-style 1	bgColor:blue
 # visual-style 1	fgColor:white
 # visual-style 1 7 appos	color:blue
-1	இந்தியாவில்	இந்தியா	PROPN	NEL-3SN--	Case=Loc|Gender=Neut|Number=Sing|Person=3	12	nmod	_	Translit=intiyāvil|LTranslit=intiyā
+1	இந்தியாவில்	இந்தியா	PROPN	NEL-3SN--	Case=Loc|Gender=Neut|Number=Sing|Person=3	12	obl	_	Translit=intiyāvil|LTranslit=intiyā
 2	முதன்முதலில்	முதன்முதல்	NOUN	NNL-3SN--	Case=Loc|Gender=Neut|Number=Sing|Person=3	1	appos	_	Translit=mutanmutalil|LTranslit=mutanmutal
 3	தொகுதி	தொகுதி	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	5	nmod	_	Translit=tokuti|LTranslit=tokuti
 4	மேம்பாட்டு	மேம்பாடு	PROPN	NO--3SN--	Gender=Neut|Number=Sing|Person=3	5	nmod	_	Translit=mēmpāṭṭu|LTranslit=mēmpāṭu
-5	நிதியை	நிதி	NOUN	NNA-3SN--	Case=Acc|Gender=Neut|Number=Sing|Person=3	1	dobj	_	Translit=nitiyai|LTranslit=niti
+5	நிதியை	நிதி	NOUN	NNA-3SN--	Case=Acc|Gender=Neut|Number=Sing|Person=3	1	obj	_	Translit=nitiyai|LTranslit=niti
 6	பொதுப்	பொது	ADJ	JJ-------	_	7	amod	_	Translit=potup|LTranslit=potu
 7	பணிகளுக்கு	பணி	NOUN	NND-3PN--	Case=Dat|Gender=Neut|Number=Plur|Person=3	1	appos	_	Translit=paṇikaḷukku|LTranslit=paṇi
-8	பயன்படுத்திக்	பயன்படுத்து	VERB	Vt-T---AA	Negative=Pos|VerbForm=Part|Voice=Act	2	cc	_	Translit=payanpaṭuttik|LTranslit=payanpaṭuttu
-9	கொள்ளல்	கொள்	AUX	VZNT3SNAA	Case=Nom|Gender=Neut|Negative=Pos|Number=Sing|Person=3|VerbForm=Ger|Voice=Act	1	aux	_	Translit=koḷḷal|LTranslit=koḷ
-10	ஆம்	ஆகு	AUX	VR-T3SNAA	Gender=Neut|Mood=Ind|Negative=Pos|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	aux	_	Translit=ām|LTranslit=āku
-11	என்கிற	என்	PART	Td-P----A	Negative=Pos|Tense=Pres|VerbForm=Part	1	mark	_	Translit=enkira|LTranslit=en
-12	அனுமதியை	அனுமதி	NOUN	NNA-3SN--	Case=Acc|Gender=Neut|Number=Sing|Person=3	18	dobj	_	Translit=anumatiyai|LTranslit=anumati
+8	பயன்படுத்திக்	பயன்படுத்து	VERB	Vt-T---AA	Polarity=Pos|VerbForm=Part|Voice=Act	2	cc	_	Translit=payanpaṭuttik|LTranslit=payanpaṭuttu
+9	கொள்ளல்	கொள்	AUX	VZNT3SNAA	Case=Nom|Gender=Neut|Number=Sing|Person=3|Polarity=Pos|VerbForm=Ger|Voice=Act	1	aux	_	Translit=koḷḷal|LTranslit=koḷ
+10	ஆம்	ஆகு	AUX	VR-T3SNAA	Gender=Neut|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|VerbForm=Fin|Voice=Act	1	aux	_	Translit=ām|LTranslit=āku
+11	என்கிற	என்	PART	Td-P----A	Polarity=Pos|Tense=Pres|VerbForm=Part	1	mark	_	Translit=enkira|LTranslit=en
+12	அனுமதியை	அனுமதி	NOUN	NNA-3SN--	Case=Acc|Gender=Neut|Number=Sing|Person=3	18	obj	_	Translit=anumatiyai|LTranslit=anumati
 13	மத்திய	மத்திய	ADJ	JJ-------	_	14	amod	_	Translit=mattiya|LTranslit=mattiya
 14	அரசு	அரசு	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	18	nsubj	_	Translit=aracu|LTranslit=aracu
 15	ஏற்கெனவே	ஏற்கெனவே	ADV	AA-------	_	18	advmod	_	Translit=ērkenavē|LTranslit=ērkenavē
 16	நாடாளுமன்ற	நாடாளுமன்றம்	PROPN	NO--3SN--	Gender=Neut|Number=Sing|Person=3	17	nmod	_	Translit=nāṭāḷumanra|LTranslit=nāṭāḷumanram
 17	உறுப்பினர்களுக்கு	உறுப்பினர்	NOUN	NND-3PA--	Animacy=Anim|Case=Dat|Gender=Com|Number=Plur|Person=3	18	iobj	_	Translit=uruppinarkaḷukku|LTranslit=uruppinar
-18	வழங்கி	வழங்கு	VERB	Vt-T---AA	Negative=Pos|VerbForm=Part|Voice=Act	0	root	_	Translit=valaṅki|LTranslit=valaṅku
-19	இருந்தது	இரு	AUX	VR-D3SNAA	Gender=Neut|Mood=Ind|Negative=Pos|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	18	aux	_	SpaceAfter=No|Translit=iruntatu|LTranslit=iru
+18	வழங்கி	வழங்கு	VERB	Vt-T---AA	Polarity=Pos|VerbForm=Part|Voice=Act	0	root	_	Translit=valaṅki|LTranslit=valaṅku
+19	இருந்தது	இரு	AUX	VR-D3SNAA	Gender=Neut|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	18	aux	_	SpaceAfter=No|Translit=iruntatu|LTranslit=iru
 20	.	.	PUNCT	Z#-------	PunctType=Peri	18	punct	_	Translit=.|LTranslit=.
 
 </code></pre>
@@ -103,56 +120,51 @@ Average distance between parent and child is 4.71428571428571.</p>
 # visual-style 9	bgColor:blue
 # visual-style 9	fgColor:white
 # visual-style 9 11 appos	color:blue
-1	அதைப்	அது	PRON	RpA-3SN--	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	dobj	_	Translit=ataip|LTranslit=atu
-2	பார்த்து	பார்	VERB	Vt-T---AA	Negative=Pos|VerbForm=Part|Voice=Act	18	advcl	_	SpaceAfter=No|Translit=pārttu|LTranslit=pār
+1	அதைப்	அது	PRON	RpA-3SN--	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	obj	_	Translit=ataip|LTranslit=atu
+2	பார்த்து	பார்	VERB	Vt-T---AA	Polarity=Pos|VerbForm=Part|Voice=Act	18	advcl	_	SpaceAfter=No|Translit=pārttu|LTranslit=pār
 3	,	,	PUNCT	Z:-------	PunctType=Comm	18	punct	_	Translit=,|LTranslit=,
 4	சட்டப்	சட்டம்	PROPN	NO--3SN--	Gender=Neut|Number=Sing|Person=3	5	nmod	_	Translit=caṭṭap|LTranslit=caṭṭam
 5	பேரவை	பேரவை	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	7	nmod	_	Translit=pēravai|LTranslit=pēravai
 6	தொகுதி	தொகுதி	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	7	nmod	_	Translit=tokuti|LTranslit=tokuti
-7	நிதியைய்	நிதி	NOUN	NNA-3SN--	Case=Acc|Gender=Neut|Number=Sing|Person=3	9	dobj	_	Translit=nitiyaiy|LTranslit=niti
+7	நிதியைய்	நிதி	NOUN	NNA-3SN--	Case=Acc|Gender=Neut|Number=Sing|Person=3	9	obj	_	Translit=nitiyaiy|LTranslit=niti
 8	உம்	உம்	PART	Tv-------	_	7	advmod:emph	_	Translit=um|LTranslit=um
 9	ஏன்	ஏன்	ADV	AA-------	_	15	advmod	_	Translit=ēn|LTranslit=ēn
 10	நல்ல	நல்ல	ADJ	JJ-------	_	11	amod	_	Translit=nalla|LTranslit=nalla
 11	பணிகளுக்கு	பணி	NOUN	NND-3PN--	Case=Dat|Gender=Neut|Number=Plur|Person=3	9	appos	_	Translit=paṇikaḷukku|LTranslit=paṇi
-12	ஒதுக்கக்	ஒதுக்கு	VERB	Vu-T---AA	Negative=Pos|VerbForm=Inf|Voice=Act	11	cc	_	Translit=otukkak|LTranslit=otukku
-13	கூடாது	கூடு	AUX	VR-T3SN-N	Gender=Neut|Mood=Ind|Negative=Neg|Number=Sing|Person=3|VerbForm=Fin	9	aux	_	Translit=kūṭātu|LTranslit=kūṭu
-14	என்ற	என்	PART	Td-D----A	Negative=Pos|Tense=Past|VerbForm=Part	9	mark	_	Translit=enra|LTranslit=en
+12	ஒதுக்கக்	ஒதுக்கு	VERB	Vu-T---AA	Polarity=Pos|VerbForm=Inf|Voice=Act	11	cc	_	Translit=otukkak|LTranslit=otukku
+13	கூடாது	கூடு	AUX	VR-T3SN-N	Gender=Neut|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin	9	aux	_	Translit=kūṭātu|LTranslit=kūṭu
+14	என்ற	என்	PART	Td-D----A	Polarity=Pos|Tense=Past|VerbForm=Part	9	mark	_	Translit=enra|LTranslit=en
 15	கேள்வி	கேள்வி	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	18	nsubj	_	Translit=kēḷvi|LTranslit=kēḷvi
-16	என்	என்	PRON	RpG-1SA--	Animacy=Anim|Case=Gen|Gender=Com|Number=Sing|Person=1|PronType=Prs	18	nmod	_	Translit=en|LTranslit=en
+16	என்	என்	PRON	RpG-1SA--	Animacy=Anim|Case=Gen|Gender=Com|Number=Sing|Person=1|PronType=Prs	18	obl	_	Translit=en|LTranslit=en
 17	முன்னால்	முன்னால்	ADP	PP-------	AdpType=Post	16	case	_	Translit=munnāl|LTranslit=munnāl
-18	எழுந்தது	எழு	VERB	Vr-D3SNAA	Gender=Neut|Mood=Ind|Negative=Pos|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No|Translit=eluntatu|LTranslit=elu
+18	எழுந்தது	எழு	VERB	Vr-D3SNAA	Gender=Neut|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No|Translit=eluntatu|LTranslit=elu
 19	.	.	PUNCT	Z#-------	PunctType=Peri	18	punct	_	Translit=.|LTranslit=.
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 17	bgColor:blue
-# visual-style 17	fgColor:white
-# visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 3 17 appos	color:blue
-1	ஜெர்மனி	ஜெர்மனி	PROPN	NEN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	3	nsubj	_	Translit=jermani|LTranslit=jermani
-2	வெற்றி	வெற்றி	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	3	dobj	_	Translit=verri|LTranslit=verri
-3	பெற்றால்	பெறு	VERB	Vw-T---AA	Mood=Cnd|Negative=Pos|VerbForm=Fin|Voice=Act	21	advcl	_	Translit=perrāl|LTranslit=peru
-4	ஜி-4	ஜி-4	NUM	Ux-------	NumType=Card	5	nummod	_	Translit=ji-4|LTranslit=ji-4
-5	நாடுகள்	நாடு	NOUN	NNN-3PN--	Case=Nom|Gender=Neut|Number=Plur|Person=3	15	nmod	_	Translit=nāṭukaḷ|LTranslit=nāṭu
-6	(	(	PUNCT	Z:-------	PunctType=Comm	5	punct	_	SpaceAfter=No|Translit=(|LTranslit=(
-7	இந்தியா	இந்தியா	PROPN	NEN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	5	nmod	_	SpaceAfter=No|Translit=intiyā|LTranslit=intiyā
-8	,	,	PUNCT	Z:-------	PunctType=Comm	7	punct	_	Translit=,|LTranslit=,
-9	பிரேஸில்	பிரேஸில்	PROPN	NEN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	7	conj	_	SpaceAfter=No|Translit=pirēsil|LTranslit=pirēsil
-10	,	,	PUNCT	Z:-------	PunctType=Comm	7	punct	_	Translit=,|LTranslit=,
-11	ஜப்பான்	ஜப்பான்	PROPN	NEN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	7	conj	_	SpaceAfter=No|Translit=jappān|LTranslit=jappān
-12	,	,	PUNCT	Z:-------	PunctType=Comm	7	punct	_	Translit=,|LTranslit=,
-13	ஜெர்மனி	ஜெர்மனி	PROPN	NEN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	7	conj	_	SpaceAfter=No|Translit=jermani|LTranslit=jermani
-14	)	)	PUNCT	Z:-------	PunctType=Comm	5	punct	_	Translit=)|LTranslit=)
-15	அனைத்தும்	அனைத்து	PRON	RpN-3PN--	Case=Nom|Gender=Neut|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	Translit=anaittum|LTranslit=anaittu
-16	பாதுகாப்புக்	பாதுகாப்பு	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	17	nmod	_	Translit=pātukāppuk|LTranslit=pātukāppu
-17	கவுன்சிலில்	கவுன்சில்	NOUN	NNL-3SN--	Case=Loc|Gender=Neut|Number=Sing|Person=3	3	appos	_	Translit=kavuncilil|LTranslit=kavuncil
-18	இடம்பெற்று	இடம்பெறு	VERB	Vt-T---AA	Negative=Pos|VerbForm=Part|Voice=Act	17	cc	_	Translit=iṭamperru|LTranslit=iṭamperu
-19	விட்டன	விடு	AUX	VR-D3PNAA	Gender=Neut|Mood=Ind|Negative=Pos|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	Translit=viṭṭana|LTranslit=viṭu
-20	என்ற	என்	PART	Td-D----A	Negative=Pos|Tense=Past|VerbForm=Part	3	mark	_	Translit=enra|LTranslit=en
-21	பெருமை	பெருமை	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	22	dobj	_	Translit=perumai|LTranslit=perumai
-22	கிடைக்கும்	கிடை	VERB	Vr-F3SNAA	Gender=Neut|Mood=Ind|Negative=Pos|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No|Translit=kiṭaikkum|LTranslit=kiṭai
-23	.	.	PUNCT	Z#-------	PunctType=Peri	22	punct	_	Translit=.|LTranslit=.
+<pre><code class="language-conllu"># visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 8 appos	color:blue
+1	மேலும்	மேலும்	ADV	AA-------	_	17	advmod	_	SpaceAfter=No|Translit=mēlum|LTranslit=mēlum
+2	,	,	PUNCT	Z:-------	PunctType=Comm	17	punct	_	Translit=,|LTranslit=,
+3	இந்தத்	இந்த	DET	DD-------	_	4	det	_	Translit=intat|LTranslit=inta
+4	தொகுதியின்	தொகுதி	NOUN	NNG-3SN--	Case=Gen|Gender=Neut|Number=Sing|Person=3	12	nmod	_	Translit=tokutiyin|LTranslit=tokuti
+5	(	(	PUNCT	Z:-------	PunctType=Comm	4	punct	_	SpaceAfter=No|Translit=(|LTranslit=(
+6	சேப்பாக்கம்	சேப்பாக்கம்	PROPN	NEN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	4	nmod	_	SpaceAfter=No|Translit=cēppākkam|LTranslit=cēppākkam
+7	)	)	PUNCT	Z:-------	PunctType=Comm	4	punct	_	Translit=)|LTranslit=)
+8	சட்டப்	சட்டம்	PROPN	NO--3SN--	Gender=Neut|Number=Sing|Person=3	4	appos	_	Translit=caṭṭap|LTranslit=caṭṭam
+9	பேரவை	பேரவை	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	4	appos	_	Translit=pēravai|LTranslit=pēravai
+10	உறுப்பினர்	உறுப்பினர்	NOUN	NNN-3SH--	Case=Nom|Gender=Com|Number=Sing|Person=3|Polite=Form	8	cc	_	Translit=uruppinar|LTranslit=uruppinar
+11	என்ற	என்	PART	Td-D----A	Polarity=Pos|Tense=Past|VerbForm=Part	4	mark	_	Translit=enra|LTranslit=en
+12	முறையில்	முறை	NOUN	NNL-3SN--	Case=Loc|Gender=Neut|Number=Sing|Person=3	14	obl	_	Translit=muraiyil|LTranslit=murai
+13	நிகழ்ச்சியில்	நிகழ்ச்சி	NOUN	NNL-3SN--	Case=Loc|Gender=Neut|Number=Sing|Person=3	14	obl	_	Translit=nikalcciyil|LTranslit=nikalcci
+14	கலந்து	கல	VERB	Vt-T---AA	Polarity=Pos|VerbForm=Part|Voice=Act	17	csubj	_	Translit=kalantu|LTranslit=kala
+15	கொள்வது	கொள்	AUX	VzNF3SNAA	Case=Nom|Gender=Neut|Number=Sing|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Ger|Voice=Act	14	aux	_	Translit=koḷvatu|LTranslit=koḷ
+16	எனது	என்	PRON	RpG-1SA--	Animacy=Anim|Case=Gen|Gender=Com|Number=Sing|Person=1|PronType=Prs	17	nmod	_	Translit=enatu|LTranslit=en
+17	கடமை	கடமை	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	0	root	_	SpaceAfter=No|Translit=kaṭamai|LTranslit=kaṭamai
+18	.	.	PUNCT	Z#-------	PunctType=Peri	17	punct	_	Translit=.|LTranslit=.
 
 </code></pre>
 
@@ -164,9 +176,25 @@ Average distance between parent and child is 4.71428571428571.</p>
 
 appos in other languages:
 
+[<a href="../../am/dep/appos.html">am</a>]
+
+[<a href="../../ar/dep/appos.html">ar</a>]
+
 [<a href="../../bg/dep/appos.html">bg</a>]
 
+[<a href="../../bxr/dep/appos.html">bxr</a>]
+
+[<a href="../../ca/dep/appos.html">ca</a>]
+
+[<a href="../../ckb/dep/appos.html">ckb</a>]
+
+[<a href="../../cop/dep/appos.html">cop</a>]
+
 [<a href="../../cs/dep/appos.html">cs</a>]
+
+[<a href="../../cu/dep/appos.html">cu</a>]
+
+[<a href="../../da/dep/appos.html">da</a>]
 
 [<a href="../../de/dep/appos.html">de</a>]
 
@@ -176,29 +204,99 @@ appos in other languages:
 
 [<a href="../../es/dep/appos.html">es</a>]
 
+[<a href="../../et/dep/appos.html">et</a>]
+
 [<a href="../../eu/dep/appos.html">eu</a>]
 
 [<a href="../../fa/dep/appos.html">fa</a>]
 
 [<a href="../../fi/dep/appos.html">fi</a>]
 
+[<a href="../../fo/dep/appos.html">fo</a>]
+
 [<a href="../../fr/dep/appos.html">fr</a>]
 
 [<a href="../../ga/dep/appos.html">ga</a>]
 
+[<a href="../../gl/dep/appos.html">gl</a>]
+
+[<a href="../../got/dep/appos.html">got</a>]
+
+[<a href="../../grc/dep/appos.html">grc</a>]
+
 [<a href="../../he/dep/appos.html">he</a>]
 
+[<a href="../../hi/dep/appos.html">hi</a>]
+
+[<a href="../../hr/dep/appos.html">hr</a>]
+
 [<a href="../../hu/dep/appos.html">hu</a>]
+
+[<a href="../../id/dep/appos.html">id</a>]
 
 [<a href="../../it/dep/appos.html">it</a>]
 
 [<a href="../../ja/dep/appos.html">ja</a>]
 
+[<a href="../../kk/dep/appos.html">kk</a>]
+
+[<a href="../../kmr/dep/appos.html">kmr</a>]
+
 [<a href="../../ko/dep/appos.html">ko</a>]
+
+[<a href="../../la/dep/appos.html">la</a>]
+
+[<a href="../../lv/dep/appos.html">lv</a>]
+
+[<a href="../../mr/dep/appos.html">mr</a>]
+
+[<a href="../../nl/dep/appos.html">nl</a>]
+
+[<a href="../../no/dep/appos.html">no</a>]
+
+[<a href="../../pl/dep/appos.html">pl</a>]
+
+[<a href="../../pt/dep/appos.html">pt</a>]
+
+[<a href="../../ro/dep/appos.html">ro</a>]
+
+[<a href="../../ru/dep/appos.html">ru</a>]
+
+[<a href="../../sa/dep/appos.html">sa</a>]
+
+[<a href="../../sk/dep/appos.html">sk</a>]
+
+[<a href="../../sla/dep/appos.html">sla</a>]
+
+[<a href="../../sl/dep/appos.html">sl</a>]
+
+[<a href="../../so/dep/appos.html">so</a>]
+
+[<a href="../../sr/dep/appos.html">sr</a>]
 
 [<a href="../../sv/dep/appos.html">sv</a>]
 
+[<a href="../../swl/dep/appos.html">swl</a>]
+
+[<a href="../../ta/dep/appos.html">ta</a>]
+
+[<a href="../../tr/dep/appos.html">tr</a>]
+
 [<a href="../../u/dep/appos.html">u</a>]
+
+[<a href="../../ug/dep/appos.html">ug</a>]
+
+[<a href="../../uk/dep/appos.html">uk</a>]
+
+[<a href="../../ur/dep/appos.html">ur</a>]
+
+[<a href="../../urj/dep/appos.html">urj</a>]
+
+[<a href="../../vi/dep/appos.html">vi</a>]
+
+[<a href="../../yue/dep/appos.html">yue</a>]
+
+[<a href="../../zh/dep/appos.html">zh</a>]
 
 
 

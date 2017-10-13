@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-sk">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/sk/dep">sk/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_sk-dep/cop.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/sk/dep">sk/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sk-dep/cop.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,27 +80,27 @@ for <code>cop</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>1587 nodes (1%) are attached to their parents as <code>cop</code>.</p>
+<p>1342 nodes (1%) are attached to their parents as <code>cop</code>.</p>
 
-<p>1336 instances of <code>cop</code> (84%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.95400126023945.</p>
+<p>1148 instances of <code>cop</code> (86%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.91281669150522.</p>
 
-<p>The following 10 pairs of parts of speech are connected with <code>cop</code>: <a href="">sk-pos/NOUN</a>-<a href="">sk-pos/VERB</a> (741; 47% instances), <a href="">sk-pos/ADJ</a>-<a href="">sk-pos/VERB</a> (518; 33% instances), <a href="">sk-pos/VERB</a>-<a href="">sk-pos/VERB</a> (196; 12% instances), <a href="">sk-pos/PRON</a>-<a href="">sk-pos/VERB</a> (55; 3% instances), <a href="">sk-pos/NUM</a>-<a href="">sk-pos/VERB</a> (47; 3% instances), <a href="">sk-pos/PROPN</a>-<a href="">sk-pos/VERB</a> (19; 1% instances), <a href="">sk-pos/ADV</a>-<a href="">sk-pos/VERB</a> (8; 1% instances), <a href="">sk-pos/PART</a>-<a href="">sk-pos/VERB</a> (1; 0% instances), <a href="">sk-pos/PRON</a>-<a href="">sk-pos/PRON</a> (1; 0% instances), <a href="">sk-pos/X</a>-<a href="">sk-pos/VERB</a> (1; 0% instances).</p>
+<p>The following 11 pairs of parts of speech are connected with <code>cop</code>: <a href="">sk-pos/NOUN</a>-<a href="">sk-pos/AUX</a> (633; 47% instances), <a href="">sk-pos/ADJ</a>-<a href="">sk-pos/AUX</a> (598; 45% instances), <a href="">sk-pos/NUM</a>-<a href="">sk-pos/AUX</a> (28; 2% instances), <a href="">sk-pos/DET</a>-<a href="">sk-pos/AUX</a> (27; 2% instances), <a href="">sk-pos/PRON</a>-<a href="">sk-pos/AUX</a> (24; 2% instances), <a href="">sk-pos/PROPN</a>-<a href="">sk-pos/AUX</a> (17; 1% instances), <a href="">sk-pos/VERB</a>-<a href="">sk-pos/AUX</a> (7; 1% instances), <a href="">sk-pos/ADV</a>-<a href="">sk-pos/AUX</a> (5; 0% instances), <a href="">sk-pos/PART</a>-<a href="">sk-pos/AUX</a> (1; 0% instances), <a href="">sk-pos/PRON</a>-<a href="">sk-pos/PRON</a> (1; 0% instances), <a href="">sk-pos/X</a>-<a href="">sk-pos/AUX</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 4	bgColor:blue
 # visual-style 4	fgColor:white
 # visual-style 3	bgColor:blue
 # visual-style 3	fgColor:white
 # visual-style 3 4 cop	color:blue
-1	Prvou	prvý	NUM	NAfs7	Case=Ins|Gender=Fem|Number=Sing	3	nummod	_	_
+1	Prvou	prvý	ADJ	NAfs7	Case=Ins|Gender=Fem|Number=Sing|NumType=Ord	3	amod	_	_
 2	Kimovou	kimov	ADJ	AFfs7x:r	Case=Ins|Degree=Pos|Gender=Fem|Number=Sing	3	amod	_	_
 3	zástavkou	zástavka	NOUN	SSfs7	Case=Ins|Gender=Fem|Number=Sing	0	root	_	_
-4	je	byť	VERB	VKesc+	Aspect=Imp|Mood=Ind|Negative=Pos|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
+4	je	byť	AUX	VKesc+	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	3	cop	_	_
 5	centrum	centrum	NOUN	SSns1	Case=Nom|Gender=Neut|Number=Sing	3	nsubj	_	_
 6	čínskeho	čínsky	ADJ	AAis2x	Animacy=Inan|Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	7	amod	_	_
 7	biznisu	biznis	NOUN	SSis2	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	5	nmod	_	_
 8	-	-	PUNCT	ZIP	VerbForm=Inf	9	punct	_	_
-9	Šanghaj	šanghaj	PROPN	SSis1:r	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	5	appos	_	_
+9	Šanghaj	šanghaj	PROPN	SSis1:r	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	5	appos	_	SpaceAfter=No
 10	.	.	PUNCT	ZIP	VerbForm=Inf	3	punct	_	_
 
 </code></pre>
@@ -94,30 +111,29 @@ Average distance between parent and child is 1.95400126023945.</p>
 # visual-style 4	fgColor:white
 # visual-style 4 3 cop	color:blue
 1	Po	po	ADP	Eu6	AdpType=Prep|Case=Loc	2	case	_	_
-2	Silvestri	silvester	PROPN	SSis6:r	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	4	nmod	_	_
-3	sú	byť	VERB	VKepc+	Aspect=Imp|Mood=Ind|Negative=Pos|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
+2	Silvestri	silvester	PROPN	SSis6:r	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	4	obl	_	_
+3	sú	byť	AUX	VKepc+	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	4	cop	_	_
 4	zničení	zničený	ADJ	AAmp1x	Animacy=Anim|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur	0	root	_	_
-5	aj	aj	CONJ	O	_	6	cc	_	_
-6	ľudia	človek	NOUN	SSmp1	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	4	nsubj	_	_
-7	,	,	PUNCT	ZIP	VerbForm=Inf	6	punct	_	_
-8	aj	aj	CONJ	O	_	6	cc	_	_
+5	aj	aj	CCONJ	O	_	6	cc	_	_
+6	ľudia	človek	NOUN	SSmp1	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	4	nsubj	_	SpaceAfter=No
+7	,	,	PUNCT	ZIP	VerbForm=Inf	9	punct	_	_
+8	aj	aj	CCONJ	O	_	9	cc	_	_
 9	zvieratá	zviera	NOUN	SSnp1	Case=Nom|Gender=Neut|Number=Plur	6	conj	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 4	bgColor:blue
 # visual-style 4	fgColor:white
-# visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 5 4 cop	color:blue
-1	Bajraktar	bajraktar	PROPN	SSms1:r	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	3	nmod	_	_
-2	Mustafa	mustafa	PROPN	SSms1:r	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	3	nmod	_	_
-3	Paša	paša	PROPN	SSms1:r	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	_
-4	bol	byť	VERB	VLescm+	Animacy=Anim|Aspect=Imp|Gender=Masc|Negative=Pos|Number=Sing|Person=3|Tense=Past|VerbForm=Part	5	cop	_	_
-5	menovaný	menovaný	VERB	Gtms1x	Animacy=Anim|Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
-6	za	za	ADP	Eu4	AdpType=Prep|Case=Acc	7	case	_	_
-7	veľkovezíra	veľkovezír	NOUN	SSms4	Animacy=Anim|Case=Acc|Gender=Masc|Number=Sing	5	dobj	_	_
-8	.	.	PUNCT	Z	_	5	punct	_	_
+# visual-style 4 3 cop	color:blue
+1	Jeho	jeho	DET	PUip1	Animacy=Inan|Case=Nom|Gender=Masc|Gender[psor]=Masc,Neut|Number=Plur|Number[psor]=Sing|Poss=Yes|PronType=Prs	2	det	_	_
+2	preklady	preklad	NOUN	SSip1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	4	nsubj	_	_
+3	sú	byť	AUX	VKepc+	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	4	cop	_	_
+4	jedny	jeden	NUM	NFip1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+5	z	z	ADP	Eu2	AdpType=Prep|Case=Gen	6	case	_	_
+6	najlepších	dobrý	ADJ	AAip2z	Animacy=Inan|Case=Gen|Degree=Sup|Gender=Masc|Number=Plur	4	amod	_	SpaceAfter=No
+7	.	.	PUNCT	Z	_	4	punct	_	_
 
 </code></pre>
 
@@ -129,9 +145,25 @@ Average distance between parent and child is 1.95400126023945.</p>
 
 cop in other languages:
 
+[<a href="../../am/dep/cop.html">am</a>]
+
+[<a href="../../ar/dep/cop.html">ar</a>]
+
 [<a href="../../bg/dep/cop.html">bg</a>]
 
+[<a href="../../bxr/dep/cop.html">bxr</a>]
+
+[<a href="../../ca/dep/cop.html">ca</a>]
+
+[<a href="../../ckb/dep/cop.html">ckb</a>]
+
+[<a href="../../cop/dep/cop.html">cop</a>]
+
 [<a href="../../cs/dep/cop.html">cs</a>]
+
+[<a href="../../cu/dep/cop.html">cu</a>]
+
+[<a href="../../da/dep/cop.html">da</a>]
 
 [<a href="../../de/dep/cop.html">de</a>]
 
@@ -141,29 +173,99 @@ cop in other languages:
 
 [<a href="../../es/dep/cop.html">es</a>]
 
+[<a href="../../et/dep/cop.html">et</a>]
+
 [<a href="../../eu/dep/cop.html">eu</a>]
 
 [<a href="../../fa/dep/cop.html">fa</a>]
 
 [<a href="../../fi/dep/cop.html">fi</a>]
 
+[<a href="../../fo/dep/cop.html">fo</a>]
+
 [<a href="../../fr/dep/cop.html">fr</a>]
 
 [<a href="../../ga/dep/cop.html">ga</a>]
 
+[<a href="../../gl/dep/cop.html">gl</a>]
+
+[<a href="../../got/dep/cop.html">got</a>]
+
+[<a href="../../grc/dep/cop.html">grc</a>]
+
 [<a href="../../he/dep/cop.html">he</a>]
 
+[<a href="../../hi/dep/cop.html">hi</a>]
+
+[<a href="../../hr/dep/cop.html">hr</a>]
+
 [<a href="../../hu/dep/cop.html">hu</a>]
+
+[<a href="../../id/dep/cop.html">id</a>]
 
 [<a href="../../it/dep/cop.html">it</a>]
 
 [<a href="../../ja/dep/cop.html">ja</a>]
 
+[<a href="../../kk/dep/cop.html">kk</a>]
+
+[<a href="../../kmr/dep/cop.html">kmr</a>]
+
 [<a href="../../ko/dep/cop.html">ko</a>]
+
+[<a href="../../la/dep/cop.html">la</a>]
+
+[<a href="../../lv/dep/cop.html">lv</a>]
+
+[<a href="../../mr/dep/cop.html">mr</a>]
+
+[<a href="../../nl/dep/cop.html">nl</a>]
+
+[<a href="../../no/dep/cop.html">no</a>]
+
+[<a href="../../pl/dep/cop.html">pl</a>]
+
+[<a href="../../pt/dep/cop.html">pt</a>]
+
+[<a href="../../ro/dep/cop.html">ro</a>]
+
+[<a href="../../ru/dep/cop.html">ru</a>]
+
+[<a href="../../sa/dep/cop.html">sa</a>]
+
+[<a href="../../sk/dep/cop.html">sk</a>]
+
+[<a href="../../sla/dep/cop.html">sla</a>]
+
+[<a href="../../sl/dep/cop.html">sl</a>]
+
+[<a href="../../so/dep/cop.html">so</a>]
+
+[<a href="../../sr/dep/cop.html">sr</a>]
 
 [<a href="../../sv/dep/cop.html">sv</a>]
 
+[<a href="../../swl/dep/cop.html">swl</a>]
+
+[<a href="../../ta/dep/cop.html">ta</a>]
+
+[<a href="../../tr/dep/cop.html">tr</a>]
+
 [<a href="../../u/dep/cop.html">u</a>]
+
+[<a href="../../ug/dep/cop.html">ug</a>]
+
+[<a href="../../uk/dep/cop.html">uk</a>]
+
+[<a href="../../ur/dep/cop.html">ur</a>]
+
+[<a href="../../urj/dep/cop.html">urj</a>]
+
+[<a href="../../vi/dep/cop.html">vi</a>]
+
+[<a href="../../yue/dep/cop.html">yue</a>]
+
+[<a href="../../zh/dep/cop.html">zh</a>]
 
 
 

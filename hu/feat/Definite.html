@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-hu">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/hu/feat">hu/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_hu-feat/Definite.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-hu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/hu/feat">hu/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hu-feat/Definite.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -76,23 +93,23 @@ love-PRES-1SG-2SGOBJ
 <p>This feature is universal but the values <code>2</code> are language-specific.
 It occurs with 3 different values: <code>2</code>, <code>Def</code>, <code>Ind</code>.</p>
 
-<p>8683 tokens (21%) have a non-empty value of <code>Definite</code>.
-2078 types (15%) occur at least once with a non-empty value of <code>Definite</code>.
-1148 lemmas (13%) occur at least once with a non-empty value of <code>Definite</code>.
-The feature is used with 3 part-of-speech tags: <a href="">hu-pos/DET</a> (5160; 12% instances), <a href="">hu-pos/VERB</a> (3485; 8% instances), <a href="">hu-pos/AUX</a> (38; 0% instances).</p>
+<p>6540 tokens (21%) have a non-empty value of <code>Definite</code>.
+1654 types (16%) occur at least once with a non-empty value of <code>Definite</code>.
+943 lemmas (13%) occur at least once with a non-empty value of <code>Definite</code>.
+The feature is used with 3 part-of-speech tags: <a href="">hu-pos/DET</a> (3919; 12% instances), <a href="">hu-pos/VERB</a> (2470; 8% instances), <a href="">hu-pos/AUX</a> (151; 0% instances).</p>
 
 <h3 id="det"><code>DET</code></h3>
 
-<p>5160 <a href="">hu-pos/DET</a> tokens (98% of all <code>DET</code> tokens) have a non-empty value of <code>Definite</code>.</p>
+<p>3919 <a href="">hu-pos/DET</a> tokens (97% of all <code>DET</code> tokens) have a non-empty value of <code>Definite</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>Definite</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Art</tt> (4936; 96%).</p>
+<p>The most frequent other feature values with which <code>DET</code> and <code>Definite</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Art</tt> (3733; 95%).</p>
 
 <p><code>DET</code> tokens may have the following values of <code>Definite</code>:</p>
 
 <ul>
-  <li><code>Def</code> (4870; 94% of non-empty <code>Definite</code>): <em>a, az, egyik, saját, mindkét, milyen, mindhárom, semmiféle, valamennyi</em></li>
-  <li><code>Ind</code> (290; 6% of non-empty <code>Definite</code>): <em>egy, több, minden, néhány, sok, más, másik, többek, semmi, kevesebb</em></li>
-  <li><code>EMPTY</code> (115): <em>ez, ezt, azt, ezen, ebben, ilyen, e, arra, az, azokat</em></li>
+  <li><code>Def</code> (3674; 94% of non-empty <code>Definite</code>): <em>a, az, egyik, mindkét, saját, milyen, mindhárom, semmiféle</em></li>
+  <li><code>Ind</code> (245; 6% of non-empty <code>Definite</code>): <em>egy, több, minden, sok, néhány, más, többek, másik, kevesebb, semmi</em></li>
+  <li><code>EMPTY</code> (101): <em>ez, ezt, azt, ebben, ezen, ilyen, e, olyan, Ennek, arra</em></li>
 </ul>
 
 <table>
@@ -100,43 +117,42 @@ The feature is used with 3 part-of-speech tags: <a href="">hu-pos/DET</a> (5160;
   <tr><td><tt></tt></td><td><em>milyen</em></td><td><em>milyen</em></td></tr>
 </table>
 
-<p><code>Definite</code> seems to be <strong>lexical feature</strong> of <code>DET</code>. 93% lemmas (28) occur only with one value of <code>Definite</code>.</p>
+<p><code>Definite</code> seems to be <strong>lexical feature</strong> of <code>DET</code>. 97% lemmas (28) occur only with one value of <code>Definite</code>.</p>
 
 <h3 id="verb"><code>VERB</code></h3>
 
-<p>3485 <a href="">hu-pos/VERB</a> tokens (91% of all <code>VERB</code> tokens) have a non-empty value of <code>Definite</code>.</p>
+<p>2470 <a href="">hu-pos/VERB</a> tokens (90% of all <code>VERB</code> tokens) have a non-empty value of <code>Definite</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Definite</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (3485; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (3427; 98%), <tt><a href="Person.html">Person</a>=3</tt> (3283; 94%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (2970; 85%), <tt><a href="Number.html">Number</a>=Sing</tt> (2560; 73%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (1800; 52%).</p>
+<p>The most frequent other feature values with which <code>VERB</code> and <code>Definite</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (2470; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (2424; 98%), <tt><a href="Person.html">Person</a>=3</tt> (2335; 95%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (2078; 84%), <tt><a href="Number.html">Number</a>=Sing</tt> (1791; 73%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (1392; 56%).</p>
 
 <p><code>VERB</code> tokens may have the following values of <code>Definite</code>:</p>
 
 <ul>
   <li><code>2</code> (1; 0% of non-empty <code>Definite</code>): <em>nézlek</em></li>
-  <li><code>Def</code> (1301; 37% of non-empty <code>Definite</code>): <em>mondta, elmondta, jelentette, teszi, tette, tájékoztatta, közölte, szeretné, tudta, jelezte</em></li>
-  <li><code>Ind</code> (2183; 63% of non-empty <code>Definite</code>): <em>volt, kell, van, lehet, lesz, kellene, lenne, vannak, került, nincs</em></li>
-  <li><code>EMPTY</code> (342): <em>tudni, tartani, folytatni, látni, számítani, ellátni, hívni, kérni, lemondani, menni</em></li>
+  <li><code>Def</code> (973; 39% of non-empty <code>Definite</code>): <em>mondta, elmondta, jelentette, teszi, tette, tájékoztatta, írta, jelezte, mondja, szeretem</em></li>
+  <li><code>Ind</code> (1496; 61% of non-empty <code>Definite</code>): <em>kell, van, volt, lehet, kellene, nincs, kellett, vannak, kerül, került</em></li>
+  <li><code>EMPTY</code> (264): <em>tudni, folytatni, tartani, számítani, lemondani, látni, tárgyalni, venni, adni, beszélni</em></li>
 </ul>
 
 <table>
   <tr><th>Paradigm <i>néz</i></th><th><tt>Ind</tt></th><th><tt>Def</tt></th><th><tt>2</tt></th></tr>
-  <tr><td><tt><a href="Aspect.html">Aspect</a>=Freq|<a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Past</tt></td><td></td><td><em>nézegette</em></td><td></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td><em>nézem</em></td><td><em>nézlek</em></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td><em>nézzük</em></td><td></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Past</tt></td><td></td><td><em>nézték</em></td><td></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Pot|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres</tt></td><td><em>nézhetnek</em></td><td></td><td></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1</tt></td><td></td><td><em>nézem</em></td><td><em>nézlek</em></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1</tt></td><td></td><td><em>nézzük</em></td><td></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Pot|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3</tt></td><td><em>nézhetnek</em></td><td></td><td></td></tr>
 </table>
 
 <h3 id="aux"><code>AUX</code></h3>
 
-<p>38 <a href="">hu-pos/AUX</a> tokens (100% of all <code>AUX</code> tokens) have a non-empty value of <code>Definite</code>.</p>
+<p>151 <a href="">hu-pos/AUX</a> tokens (99% of all <code>AUX</code> tokens) have a non-empty value of <code>Definite</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Definite</code> co-occurred: <tt><a href="Person.html">Person</a>=3</tt> (38; 100%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (38; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (38; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (31; 82%), <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (29; 76%).</p>
+<p>The most frequent other feature values with which <code>AUX</code> and <code>Definite</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (151; 100%), <tt><a href="Person.html">Person</a>=3</tt> (145; 96%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (134; 89%), <tt><a href="Number.html">Number</a>=Sing</tt> (128; 85%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (116; 77%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (77; 51%).</p>
 
 <p><code>AUX</code> tokens may have the following values of <code>Definite</code>:</p>
 
 <ul>
-  <li><code>Def</code> (8; 21% of non-empty <code>Definite</code>): <em>fogja, fogják</em></li>
-  <li><code>Ind</code> (30; 79% of non-empty <code>Definite</code>): <em>volna, fog, fognak</em></li>
+  <li><code>Def</code> (8; 5% of non-empty <code>Definite</code>): <em>fogja, fogják</em></li>
+  <li><code>Ind</code> (143; 95% of non-empty <code>Definite</code>): <em>volt, lesz, lenne, volna, legyen, lehet, voltak, lett, fog, lehetett</em></li>
+  <li><code>EMPTY</code> (2): <em>elszenvedni, lenni</em></li>
 </ul>
 
 <table>
@@ -150,16 +166,16 @@ The feature is used with 3 part-of-speech tags: <a href="">hu-pos/DET</a> (5160;
 <h2 id="relations-with-agreement-in-definite">Relations with Agreement in <code>Definite</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>Definite</code>:
-<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (334; 56%),
-<tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (134; 54%),
-<tt>VERB –[<a href="../dep/csubj.html">csubj</a>]–&gt; VERB</tt> (39; 71%),
-<tt>VERB –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; VERB</tt> (25; 54%),
-<tt>DET –[<a href="../dep/remnant.html">remnant</a>]–&gt; DET</tt> (23; 100%),
-<tt>VERB –[<a href="../dep/dobj.html">dobj</a>]–&gt; DET</tt> (4; 80%),
-<tt>VERB –[<a href="../dep/nmod.html">nmod</a>]–&gt; DET</tt> (4; 67%),
+<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (232; 57%),
+<tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (100; 55%),
+<tt>VERB –[<a href="../dep/csubj.html">csubj</a>]–&gt; VERB</tt> (32; 76%),
+<tt>VERB –[<a href="../dep/obl.html">obl</a>]–&gt; DET</tt> (4; 80%),
+<tt>VERB –[<a href="../dep/obj.html">obj</a>]–&gt; DET</tt> (3; 75%),
 <tt>VERB –[<a href="../dep/ccomp.html">ccomp</a>]–&gt; AUX</tt> (3; 100%),
-<tt>VERB –[<a href="../dep/ccomp:obl.html">ccomp:obl</a>]–&gt; AUX</tt> (1; 100%),
-<tt>VERB –[<a href="../dep/nmod.html">nmod</a>]–&gt; VERB</tt> (1; 100%).</p>
+<tt>VERB –[<a href="../dep/obl.html">obl</a>]–&gt; VERB</tt> (1; 100%),
+<tt>VERB –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; DET</tt> (1; 100%),
+<tt>DET –[<a href="../dep/conj.html">conj</a>]–&gt; DET</tt> (1; 100%),
+<tt>AUX –[<a href="../dep/aux.html">aux</a>]–&gt; AUX</tt> (1; 100%).</p>
 
 
 
@@ -169,9 +185,23 @@ The feature is used with 3 part-of-speech tags: <a href="">hu-pos/DET</a> (5160;
 
 Definite in other languages:
 
+[<a href="../../am/feat/Definite.html">am</a>]
+
+[<a href="../../ar/feat/Definite.html">ar</a>]
+
 [<a href="../../bg/feat/Definite.html">bg</a>]
 
-[<a href="../../cs/feat/Definite.html">cs</a>]
+[<a href="../../bxr/feat/Definite.html">bxr</a>]
+
+[<a href="../../ca/feat/Definite.html">ca</a>]
+
+[<a href="../../ckb/feat/Definite.html">ckb</a>]
+
+[<a href="../../cop/feat/Definite.html">cop</a>]
+
+[<a href="../../cu/feat/Definite.html">cu</a>]
+
+[<a href="../../da/feat/Definite.html">da</a>]
 
 [<a href="../../de/feat/Definite.html">de</a>]
 
@@ -181,27 +211,95 @@ Definite in other languages:
 
 [<a href="../../es/feat/Definite.html">es</a>]
 
+[<a href="../../et/feat/Definite.html">et</a>]
+
 [<a href="../../eu/feat/Definite.html">eu</a>]
 
 [<a href="../../fa/feat/Definite.html">fa</a>]
+
+[<a href="../../fo/feat/Definite.html">fo</a>]
 
 [<a href="../../fr/feat/Definite.html">fr</a>]
 
 [<a href="../../ga/feat/Definite.html">ga</a>]
 
+[<a href="../../gl/feat/Definite.html">gl</a>]
+
+[<a href="../../got/feat/Definite.html">got</a>]
+
+[<a href="../../grc/feat/Definite.html">grc</a>]
+
 [<a href="../../he/feat/Definite.html">he</a>]
 
+[<a href="../../hi/feat/Definite.html">hi</a>]
+
+[<a href="../../hr/feat/Definite.html">hr</a>]
+
 [<a href="../../hu/feat/Definite.html">hu</a>]
+
+[<a href="../../id/feat/Definite.html">id</a>]
 
 [<a href="../../it/feat/Definite.html">it</a>]
 
 [<a href="../../ja/feat/Definite.html">ja</a>]
 
+[<a href="../../kk/feat/Definite.html">kk</a>]
+
+[<a href="../../kmr/feat/Definite.html">kmr</a>]
+
 [<a href="../../ko/feat/Definite.html">ko</a>]
+
+[<a href="../../la/feat/Definite.html">la</a>]
+
+[<a href="../../lv/feat/Definite.html">lv</a>]
+
+[<a href="../../mr/feat/Definite.html">mr</a>]
+
+[<a href="../../nl/feat/Definite.html">nl</a>]
+
+[<a href="../../no/feat/Definite.html">no</a>]
+
+[<a href="../../pl/feat/Definite.html">pl</a>]
+
+[<a href="../../pt/feat/Definite.html">pt</a>]
+
+[<a href="../../ro/feat/Definite.html">ro</a>]
+
+[<a href="../../sa/feat/Definite.html">sa</a>]
+
+[<a href="../../sk/feat/Definite.html">sk</a>]
+
+[<a href="../../sla/feat/Definite.html">sla</a>]
+
+[<a href="../../sl/feat/Definite.html">sl</a>]
+
+[<a href="../../so/feat/Definite.html">so</a>]
+
+[<a href="../../sr/feat/Definite.html">sr</a>]
 
 [<a href="../../sv/feat/Definite.html">sv</a>]
 
+[<a href="../../swl/feat/Definite.html">swl</a>]
+
+[<a href="../../ta/feat/Definite.html">ta</a>]
+
+[<a href="../../tr/feat/Definite.html">tr</a>]
+
 [<a href="../../u/feat/Definite.html">u</a>]
+
+[<a href="../../ug/feat/Definite.html">ug</a>]
+
+[<a href="../../uk/feat/Definite.html">uk</a>]
+
+[<a href="../../ur/feat/Definite.html">ur</a>]
+
+[<a href="../../urj/feat/Definite.html">urj</a>]
+
+[<a href="../../vi/feat/Definite.html">vi</a>]
+
+[<a href="../../yue/feat/Definite.html">yue</a>]
+
+[<a href="../../zh/feat/Definite.html">zh</a>]
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-gl">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/gl/dep">gl/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_gl-dep/root.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-gl">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/gl/dep">gl/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_gl-dep/root.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,41 +80,33 @@ for <code>root</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>4003 nodes (3%) are attached to their parents as <code>root</code>.</p>
+<p>3139 nodes (3%) are attached to their parents as <code>root</code>.</p>
 
-<p>4003 instances of <code>root</code> (100%) are left-to-right (parent precedes child).
-Average distance between parent and child is 8.72045965525856.</p>
+<p>3139 instances of <code>root</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 9.02070723160242.</p>
 
-<p>The following 9 pairs of parts of speech are connected with <code>root</code>: <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/VERB</a> (3787; 95% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/NOUN</a> (170; 4% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/ADP</a> (22; 1% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/PROPN</a> (12; 0% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/ADV</a> (6; 0% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/PRON</a> (3; 0% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/ADJ</a> (1; 0% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/DET</a> (1; 0% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/SCONJ</a> (1; 0% instances).</p>
+<p>The following 10 pairs of parts of speech are connected with <code>root</code>: <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/VERB</a> (2489; 79% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/NOUN</a> (348; 11% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/ADJ</a> (185; 6% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/ADP</a> (75; 2% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/PROPN</a> (15; 0% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/PRON</a> (12; 0% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/ADV</a> (11; 0% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/NUM</a> (2; 0% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/DET</a> (1; 0% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/SCONJ</a> (1; 0% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
+<pre><code class="language-conllu"># visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
 # visual-style 0	bgColor:blue
 # visual-style 0	fgColor:white
-# visual-style 0 4 root	color:blue
-1	O	o	DET	DA0MS0	_	2	det	_	Treeler:spec
-2	mecanismo	mecanismo	NOUN	NCMS000	_	4	nsubj	_	Treeler:suj
-3	empregado	empregado	NOUN	NCMS000	_	2	amod	_	Treeler:s.a
-4	consistiu	consistir	VERB	VMIS3S0	_	0	root	_	Treeler:sentence
-5	en	en	ADP	SPS00	_	4	case	_	Treeler:creg
-6	seleccionar	seleccionar	VERB	VMN0000	_	5	ccomp	_	Treeler:S
-7	as	o	DET	DA0FP0	_	8	det	_	Treeler:spec
-8	cinco	cinco	NOUN	NCMS000	_	6	dobj	_	Treeler:cd
-9	CC	cc	PROPN	NP00000	_	8	nmod	_	Treeler:sn
-10	.	.	PUNCT	Fp	_	4	punct	_	Treeler:f
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 0	bgColor:blue
-# visual-style 0	fgColor:white
-# visual-style 0 3 root	color:blue
-1	Con	con	ADP	SPS00	_	3	det	_	Treeler:spec
-2	respecto	respecto	NOUN	NCMS000	_	1	nmod	_	Treeler:sn
-3	ás	á	NOUN	NCFP000	_	0	root	_	Treeler:sentence
-4	CC	cc	PROPN	NP00000	_	3	amod	_	Treeler:s.a
-5	.	.	PUNCT	Fp	_	4	punct	_	Treeler:f
+# visual-style 0 5 root	color:blue
+1	Así	así	ADV	RG	_	2	det	_	Treeler:spec
+2	mesmo	mesmo	ADV	RG	_	5	case	_	SpaceAfter=No|ToDo=case-upos|Treeler:cc
+3	,	,	PUNCT	Fc	_	2	punct	_	Treeler:f
+4	serán	ser	VERB	VSIF3P0	_	5	aux	_	Treeler:v
+5	publicados	publicar	VERB	VMP00PM	_	0	root	_	Treeler:sentence
+6	en	en	ADP	SPS00	_	9	case	_	Treeler:cc
+7	o	o	DET	DA0MS0	_	9	det	_	Treeler:spec
+8	"	"	PUNCT	Fe	_	9	punct	_	SpaceAfter=No|Treeler:f
+9	Boletín	boletín	NOUN	NCMS000	_	5	obl	_	Treeler:sn
+10	Oficial	oficial	ADJ	AQ0CS0	_	9	amod	_	Treeler:s.a
+11	de	de	ADP	SPS00	_	13	case	_	Treeler:sp
+12	el	el	PRON	PP3MS000	_	13	nmod	_	Treeler:sn
+13	Estado	estado	NOUN	NCMS000	_	9	nmod	_	SpaceAfter=No|Treeler:sn
+14	"	"	PUNCT	Fe	_	9	punct	_	SpaceAfter=No|Treeler:f
+15	.	.	PUNCT	Fp	_	5	punct	_	Treeler:f
 
 </code></pre>
 
@@ -106,11 +115,43 @@ Average distance between parent and child is 8.72045965525856.</p>
 # visual-style 0	bgColor:blue
 # visual-style 0	fgColor:white
 # visual-style 0 1 root	color:blue
-1	Para	para	ADP	SPS00	_	0	root	_	Treeler:sentence
-2	que	que	SCONJ	CS	_	4	mark	_	Treeler:conj
-3	tanto	tanto	DET	DI0MS0	_	4	det	_	Treeler:spec
-4	esforzo	esforzo	NOUN	NCMS000	_	1	ccomp	_	Treeler:S
-5	?	?	PUNCT	Fit	_	1	punct	_	Treeler:f
+1	Táboa	táboa	NOUN	NCFS000	_	0	root	_	Treeler:sentence
+2	44	44	NUM	Z	_	1	amod	_	SpaceAfter=No|Treeler:s.a
+3	.	.	PUNCT	Fp	_	1	punct	_	Treeler:f
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 0	bgColor:blue
+# visual-style 0	fgColor:white
+# visual-style 0 4 root	color:blue
+1	A	o	DET	DA0FS0	_	2	det	_	Treeler:spec
+2	idea	idea	NOUN	NCFS000	_	4	nsubj	_	Treeler:suj
+3	é	ser	AUX	VSIP3S0	_	4	cop	_	Treeler:sentence
+4	boa	bo	ADJ	AQ0FS0	_	0	root	_	SpaceAfter=No|Treeler:atr
+5	,	,	PUNCT	Fc	_	4	punct	_	Treeler:f
+6	pero	pero	CCONJ	CC	_	4	cc	_	ToDo=cc-without-conj|Treeler:coord
+7	é	ser	AUX	VSIP3S0	_	8	cop	_	Treeler:S
+8	difícil	difícil	ADJ	AQ0CS0	_	4	ccomp	_	Treeler:atr
+9	de	de	ADP	SPS00	_	10	case	_	Treeler:sp
+10	levar	levar	VERB	VMN0000	_	8	ccomp	_	Treeler:S
+11	a	o	DET	DA0FS0	_	12	det	_	Treeler:spec
+12	cabo	cabo	NOUN	NCMS000	_	10	obj	_	Treeler:cd
+13	xa	xa	ADV	RG	_	10	case	_	Treeler:cc
+14	que	que	SCONJ	CS	_	23	mark	_	Treeler:conj
+15	en	en	ADP	SPS00	_	17	case	_	Treeler:cc
+16	esas	ese	DET	DD0FP0	_	17	det	_	Treeler:spec
+17	datas	data	NOUN	NCFP000	_	23	obl	_	Treeler:sn
+18	a	a	ADP	SPS00	_	19	case	_	Treeler:sp
+19	maioría	maioría	NOUN	NCFS000	_	17	nmod	_	Treeler:sn
+20	de	de	ADP	SPS00	_	21	case	_	Treeler:sp
+21	xente	xente	NOUN	NCFS000	_	19	nmod	_	Treeler:sn
+22	xa	xa	ADV	RG	_	23	case	_	Treeler:cc
+23	está	estar	VERB	VMIP3S0	_	8	nsubj	_	Treeler:suj
+24	en	en	ADP	SPS00	_	25	case	_	Treeler:creg
+25	Galicia	galicia	PROPN	NP00000	_	23	obl	_	SpaceAfter=No|Treeler:sn
+26	.	.	PUNCT	Fp	_	4	punct	_	Treeler:f
 
 </code></pre>
 
@@ -120,60 +161,61 @@ Average distance between parent and child is 8.72045965525856.</p>
 
 <p>This relation is universal.</p>
 
-<p>1000 nodes (4%) are attached to their parents as <code>root</code>.</p>
+<p>600 nodes (4%) are attached to their parents as <code>root</code>.</p>
 
-<p>1000 instances of <code>root</code> (100%) are left-to-right (parent precedes child).
-Average distance between parent and child is 5.148.</p>
+<p>600 instances of <code>root</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 5.67166666666667.</p>
 
-<p>The following 10 pairs of parts of speech are connected with <code>root</code>: <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/VERB</a> (689; 69% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/NOUN</a> (166; 17% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/ADJ</a> (59; 6% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/PROPN</a> (39; 4% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/PRON</a> (27; 3% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/ADV</a> (15; 2% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/NUM</a> (2; 0% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/ADP</a> (1; 0% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/INTJ</a> (1; 0% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/X</a> (1; 0% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 0	bgColor:blue
-# visual-style 0	fgColor:white
-# visual-style 0 2 root	color:blue
-1	só	só	ADV	Wn	_	2	advmod	_	_
-2	dedican	dedicar	VERB	Vpi30p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	máis	máis	ADV	Wm	_	4	advmod	_	_
-4	tempo	tempo	NOUN	Scms	Gender=Masc|Number=Sing	2	dobj	_	_
-5	en	en	ADP	P	AdpType=Prep	6	case	_	_
-6	Os_Estados_Unidos	Os_Estados_Unidos	PROPN	Sp00	_	2	nmod	_	_
-7	.	.	PUNCT	Q.	_	2	punct	_	_
-
-</code></pre>
+<p>The following 7 pairs of parts of speech are connected with <code>root</code>: <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/VERB</a> (413; 69% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/NOUN</a> (91; 15% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/ADJ</a> (42; 7% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/PRON</a> (23; 4% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/PROPN</a> (21; 4% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/ADV</a> (7; 1% instances), <a href="">gl-pos/ROOT</a>-<a href="">gl-pos/ADP</a> (3; 1% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 1	bgColor:blue
 # visual-style 1	fgColor:white
 # visual-style 0	bgColor:blue
 # visual-style 0	fgColor:white
 # visual-style 0 1 root	color:blue
-1	liberdade	liberdade	NOUN	Scfs	Gender=Fem|Number=Sing	0	root	_	_
-2	,	,	PUNCT	Q,	_	1	punct	_	_
-3	xustiza	xustiza	NOUN	Scfs	Gender=Fem|Number=Sing	1	conj	_	_
-4	,	,	PUNCT	Q,	_	1	punct	_	_
-5	benestar	benestar	NOUN	Scms	Gender=Masc|Number=Sing	1	conj	_	_
+1	Europeizar	europeizar	VERB	V0f000	VerbForm=Inf	0	root	_	_
+2	o	o	DET	Ddms	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	horario	horario	NOUN	Scms	Gender=Masc|Number=Sing	1	obj	_	_
+4	de	de	ADP	P	AdpType=Prep	5	case	_	_
+5	traballo	traballo	NOUN	Scms	Gender=Masc|Number=Sing	3	nmod	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 13	bgColor:blue
-# visual-style 13	fgColor:white
+<pre><code class="language-conllu"># visual-style 10	bgColor:blue
+# visual-style 10	fgColor:white
 # visual-style 0	bgColor:blue
 # visual-style 0	fgColor:white
-# visual-style 0 13 root	color:blue
-1	de	de	ADP	P	AdpType=Prep	3	case	_	_
-2	todos	todo	DET	Idmp	Gender=Masc|Number=Plur|PronType=Ind	3	det	_	_
-3	modos	modo	NOUN	Scmp	Gender=Masc|Number=Plur	13	nmod	_	_
-4	,	,	PUNCT	Q,	_	13	punct	_	_
-5	o	o	DET	Ddms	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-6	meu	meu	DET	Md1sms	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=1|Poss=Yes	7	det	_	_
-7	público	público	NOUN	Scms	Gender=Masc|Number=Sing	13	nsubj	_	_
-8	é	ser	VERB	Vpi30s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	_
-9	,	,	PUNCT	Q,	_	13	punct	_	_
-10	sobre	sobre	ADP	P	AdpType=Prep	11	case	_	_
-11	todo	todo	PRON	Inms	Gender=Masc|Number=Sing|PronType=Ind	13	nmod	_	_
-12	,	,	PUNCT	Q,	_	13	punct	_	_
-13	xuvenil	xuvenil	ADJ	A0ms	Gender=Masc|Number=Sing	0	root	_	_
-14	.	.	PUNCT	Q.	_	13	punct	_	_
+# visual-style 0 10 root	color:blue
+1	"	"	PUNCT	Q"	_	10	punct	_	SpaceAfter=No
+2	A	o	DET	Ddfs	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	cultura	cultura	NOUN	Scfs	Gender=Fem|Number=Sing	10	nsubj	_	_
+4	subsidiada	subsidiado	ADJ	A0fs	Gender=Fem|Number=Sing	3	amod	_	_
+5	_	_	PUNCT	Q_	_	6	punct	_	SpaceAfter=No
+6	di	dicir	VERB	Vpi30s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	parataxis	_	SpaceAfter=No
+7	_	_	PUNCT	Q_	_	6	punct	_	_
+8	non	non	ADV	Wn	Polarity=Neg	10	advmod	_	_
+9	é	ser	AUX	Vpi30s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_
+10	cultura	cultura	NOUN	Scfs	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
+11	"	"	PUNCT	Q"	_	10	punct	_	SpaceAfter=No
+12	.	.	PUNCT	Q.	_	10	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 0	bgColor:blue
+# visual-style 0	fgColor:white
+# visual-style 0 5 root	color:blue
+1	A	o	DET	Ddfs	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	administración	administración	NOUN	Scfs	Gender=Fem|Number=Sing	5	nsubj	_	_
+3	é	ser	AUX	Vpi30s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+4	a	o	DET	Ddfs	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	única	único	ADJ	A0fs	Gender=Fem|Number=Sing	0	root	_	_
+6	que	que	PRON	Tnfs	Gender=Fem|Number=Sing|PronType=Rel	8	nsubj	_	_
+7	se	se	PRON	Rao3aa	Clitic=Yes|Gender=Com|Person=3|PronType=Prs	8	expl	_	_
+8	libra	librar	VERB	Vpi30s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl	_	SpaceAfter=No
+9	"	"	PUNCT	Q"	_	5	punct	_	SpaceAfter=No
+10	.	.	PUNCT	Q.	_	5	punct	_	_
 
 </code></pre>
 
@@ -185,9 +227,25 @@ Average distance between parent and child is 5.148.</p>
 
 root in other languages:
 
+[<a href="../../am/dep/root.html">am</a>]
+
+[<a href="../../ar/dep/root.html">ar</a>]
+
 [<a href="../../bg/dep/root.html">bg</a>]
 
+[<a href="../../bxr/dep/root.html">bxr</a>]
+
+[<a href="../../ca/dep/root.html">ca</a>]
+
+[<a href="../../ckb/dep/root.html">ckb</a>]
+
+[<a href="../../cop/dep/root.html">cop</a>]
+
 [<a href="../../cs/dep/root.html">cs</a>]
+
+[<a href="../../cu/dep/root.html">cu</a>]
+
+[<a href="../../da/dep/root.html">da</a>]
 
 [<a href="../../de/dep/root.html">de</a>]
 
@@ -197,29 +255,99 @@ root in other languages:
 
 [<a href="../../es/dep/root.html">es</a>]
 
+[<a href="../../et/dep/root.html">et</a>]
+
 [<a href="../../eu/dep/root.html">eu</a>]
 
 [<a href="../../fa/dep/root.html">fa</a>]
 
 [<a href="../../fi/dep/root.html">fi</a>]
 
+[<a href="../../fo/dep/root.html">fo</a>]
+
 [<a href="../../fr/dep/root.html">fr</a>]
 
 [<a href="../../ga/dep/root.html">ga</a>]
 
+[<a href="../../gl/dep/root.html">gl</a>]
+
+[<a href="../../got/dep/root.html">got</a>]
+
+[<a href="../../grc/dep/root.html">grc</a>]
+
 [<a href="../../he/dep/root.html">he</a>]
 
+[<a href="../../hi/dep/root.html">hi</a>]
+
+[<a href="../../hr/dep/root.html">hr</a>]
+
 [<a href="../../hu/dep/root.html">hu</a>]
+
+[<a href="../../id/dep/root.html">id</a>]
 
 [<a href="../../it/dep/root.html">it</a>]
 
 [<a href="../../ja/dep/root.html">ja</a>]
 
+[<a href="../../kk/dep/root.html">kk</a>]
+
+[<a href="../../kmr/dep/root.html">kmr</a>]
+
 [<a href="../../ko/dep/root.html">ko</a>]
+
+[<a href="../../la/dep/root.html">la</a>]
+
+[<a href="../../lv/dep/root.html">lv</a>]
+
+[<a href="../../mr/dep/root.html">mr</a>]
+
+[<a href="../../nl/dep/root.html">nl</a>]
+
+[<a href="../../no/dep/root.html">no</a>]
+
+[<a href="../../pl/dep/root.html">pl</a>]
+
+[<a href="../../pt/dep/root.html">pt</a>]
+
+[<a href="../../ro/dep/root.html">ro</a>]
+
+[<a href="../../ru/dep/root.html">ru</a>]
+
+[<a href="../../sa/dep/root.html">sa</a>]
+
+[<a href="../../sk/dep/root.html">sk</a>]
+
+[<a href="../../sla/dep/root.html">sla</a>]
+
+[<a href="../../sl/dep/root.html">sl</a>]
+
+[<a href="../../so/dep/root.html">so</a>]
+
+[<a href="../../sr/dep/root.html">sr</a>]
 
 [<a href="../../sv/dep/root.html">sv</a>]
 
+[<a href="../../swl/dep/root.html">swl</a>]
+
+[<a href="../../ta/dep/root.html">ta</a>]
+
+[<a href="../../tr/dep/root.html">tr</a>]
+
 [<a href="../../u/dep/root.html">u</a>]
+
+[<a href="../../ug/dep/root.html">ug</a>]
+
+[<a href="../../uk/dep/root.html">uk</a>]
+
+[<a href="../../ur/dep/root.html">ur</a>]
+
+[<a href="../../urj/dep/root.html">urj</a>]
+
+[<a href="../../vi/dep/root.html">vi</a>]
+
+[<a href="../../yue/dep/root.html">yue</a>]
+
+[<a href="../../zh/dep/root.html">zh</a>]
 
 
 

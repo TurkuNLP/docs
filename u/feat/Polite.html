@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-u">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/u/feat">u/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-feat/Polite.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-u">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/u/feat">u/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-feat/Polite.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -46,6 +63,16 @@
           <style>h3 {display:block;background-color:#dfeffc}</style>
 
 <h2><code>Polite</code>: politeness</h2>
+
+<table class="typeindex" border="1">
+<tr>
+  <td style="background-color:cornflowerblue;color:white"><strong>Values:</strong> </td>
+  <td><a href="#Elev">Elev</a></td>
+  <td><a href="#Form">Form</a></td>
+  <td><a href="#Humb">Humb</a></td>
+  <td><a href="#Infm">Infm</a></td>
+</tr>
+</table>
 
 <p>Various languages have various means to express politeness or respect; some
 of the means are morphological. Three to four dimensions of politeness are
@@ -80,7 +107,7 @@ and belongs to the speaker-addressee axis. Nevertheless, we currently use the
 same values for both axes, i.e. <code>Polite=Form</code> can be used for teineigo too.
 This approach may be refined in future.</p>
 
-<h3 id="infm-informal-register"><code>Infm</code>: informal register</h3>
+<h3 id="a-nameinfminfma-informal-register"><a name="Infm"><code>Infm</code></a>: informal register</h3>
 
 <p>Usage varies but if the language distinguishes levels of politeness, then
 the informal register is usually meant for communication with family
@@ -95,7 +122,7 @@ members and close friends.</p>
   <li>[ja] <b>行かない <em>ikanai</em></b> (will not go)</li>
 </ul>
 
-<h3 id="form-formal-register"><code>Form</code>: formal register</h3>
+<h3 id="a-nameformforma-formal-register"><a name="Form"><code>Form</code></a>: formal register</h3>
 
 <p>Usage varies but if the language distinguishes levels of politeness, then
 the polite register is usually meant for communication with strangers
@@ -110,7 +137,7 @@ and people of higher social status than the one of the speaker.</p>
   <li>[ja] <b>行きません <em>ikimasen</em></b> (will not go)</li>
 </ul>
 
-<h3 id="elev-referent-elevating"><code>Elev</code>: referent elevating</h3>
+<h3 id="a-nameeleveleva-referent-elevating"><a name="Elev"><code>Elev</code></a>: referent elevating</h3>
 
 <p>This register belongs to the speaker-referent axis and can be seen as a subtype
 of the formal register there. As an example, Japanese sonkeigo (尊敬語) is a set
@@ -120,7 +147,7 @@ of honorific forms that elevate the status of the referent.</p>
   <li>[ja] <b>なさる <em>nasaru,</em></b> なさいます <em>nasaimasu</em> (to do; when talking about a customer or a superior)</li>
 </ul>
 
-<h3 id="humb-speaker-humbling"><code>Humb</code>: speaker humbling</h3>
+<h3 id="a-namehumbhumba-speaker-humbling"><a name="Humb"><code>Humb</code></a>: speaker humbling</h3>
 
 <p>This register belongs to the speaker-referent axis and can be seen as a subtype
 of the formal register there. As an example, Japanese kenjōgo (謙譲語) is a set
@@ -149,6 +176,27 @@ Cambridge.</li>
 
 <!-- "in other languages" links -->
 <hr/>
+
+Polite in other languages:
+
+[<a href="../../ca/feat/Polite.html">ca</a>]
+
+[<a href="../../da/feat/Polite.html">da</a>]
+
+[<a href="../../de/feat/Polite.html">de</a>]
+
+[<a href="../../es/feat/Polite.html">es</a>]
+
+[<a href="../../eu/feat/Polite.html">eu</a>]
+
+[<a href="../../hi/feat/Polite.html">hi</a>]
+
+[<a href="../../sa/feat/Polite.html">sa</a>]
+
+[<a href="../../ta/feat/Polite.html">ta</a>]
+
+[<a href="../../u/feat/Polite.html">u</a>]
+
 
 
 

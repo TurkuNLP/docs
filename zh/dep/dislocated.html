@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-zh">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/zh/dep">zh/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_zh-dep/dislocated.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-zh">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/zh/dep">zh/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_zh-dep/dislocated.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -45,8 +62,129 @@
 
           <h2><code>dislocated</code>: dislocated elements</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>dislocated</code>.</p>
+<p>The <code>dislocated</code> relation is used for elements that have been displaced from its regular syntactic position, often to the very front or back of the clause it resides within or of the whole sentence. This applies often to an argument of a clause that has been moved to the periphery for topic, focus, or similar types of effects. However, this relation is also used generally for topic elements that otherwise do not fulfill any core grammatical relation of a sentence, except for temporal nouns (see <a href="">obl:tmod</a>) or locational nouns (see <a href="">obl</a>) functioning as adjuncts.</p>
+
+<pre><code class="language-conllu"># visual-style 6 4 dislocated	color:blue
+# visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+1	我	_	PRON	_	_	4	nmod	_	1SG
+2	的	_	PART	_	_	1	case	_	GEN
+3	辭職	_	NOUN	_	_	4	compound	_	resignation
+4	信	_	NOUN	_	_	6	dislocated	_	letter
+5	會	_	AUX	_	_	6	aux	_	will
+6	放	_	VERB	_	_	0	root	_	put
+7	在	_	ADP	_	_	9	case	_	on
+8	你	_	PRON	_	_	9	nmod	_	2SG
+9	桌子	_	NOUN	_	_	6	obl	_	table
+10	上	_	ADP	_	_	9	case:loc	_	above
+
+1	"My	_	_	_	_	0	_	_	_
+2	resignation	_	_	_	_	0	_	_	_
+3	letter,	_	_	_	_	0	_	_	_
+4	I	_	_	_	_	0	_	_	_
+5	will	_	_	_	_	0	_	_	_
+6	put	_	_	_	_	0	_	_	_
+7	it	_	_	_	_	0	_	_	_
+8	on	_	_	_	_	0	_	_	_
+9	your	_	_	_	_	0	_	_	_
+10	desk."	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<p>This relation is also used for topicalized and dislocated subjects (followed by a pronoun functioning as the syntactic subject of the sentence and referring back to topicalized subject).</p>
+
+<pre><code class="language-conllu"># visual-style 9 2 dislocated	color:blue
+# visual-style 9	bgColor:blue
+# visual-style 9	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+1	龍	_	PROPN	_	_	2	compound	_	Long
+2	先生	_	NOUN	_	_	9	dislocated	_	Mr.
+3	我	_	PRON	_	_	5	nmod	_	1SG
+4	的	_	PART	_	_	3	case	_	GEN
+5	老闆	_	NOUN	_	_	2	appos	_	boss
+6	他	_	PRON	_	_	9	nsubj	_	3SG.M
+7	是	_	VERB	_	_	9	cop	_	be
+8	個	_	NOUN	_	_	9	det	_	CL:generic
+9	搗蛋鬼	_	NOUN	_	_	0	root	_	troublemaker
+
+1	"Peter,	_	_	_	_	0	_	_	_
+2	my	_	_	_	_	0	_	_	_
+3	boss	_	_	_	_	0	_	_	_
+4	--	_	_	_	_	0	_	_	_
+5	he	_	_	_	_	0	_	_	_
+6	is	_	_	_	_	0	_	_	_
+7	a	_	_	_	_	0	_	_	_
+8	troublemaker."	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<p>Below is an example of a topic phrase that is not an argument of the main verb, but still labeled <code>dislocated</code>.</p>
+
+<pre><code class="language-conllu"># visual-style 5 3 dislocated	color:blue
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+1	今天	_	NOUN	_	_	3	nmod	_	today
+2	的	_	PART	_	_	1	case	_	GEN
+3	午餐	_	NOUN	_	_	5	dislocated	_	lunch
+4	我	_	PRON	_	_	5	nsubj	_	1SG
+5	請客	_	VERB	_	_	0	root	_	invite
+
+1	"As	_	_	_	_	0	_	_	_
+2	for	_	_	_	_	0	_	_	_
+3	lunch	_	_	_	_	0	_	_	_
+4	today,	_	_	_	_	0	_	_	_
+5	I'm	_	_	_	_	0	_	_	_
+6	paying"	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<p>However, this relation does not apply to arguments that appear in non-canonical positions due to valence-changing function words such as 把 <em>bǎ</em> or 给 <em>gěi</em>, which are treated as prepositions instead (see <a href="">obl:patient</a>).</p>
+
+<p><strong>Right dislocation</strong> is also possible but occurs more frequently in spoken data:</p>
+
+<pre><code class="language-conllu"># visual-style 1 6 dislocated	color:blue
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+1	來	_	VERB	_	_	0	root	_	come
+2	了	_	PART	_	_	1	discourse:sp	_	SP
+3	嗎	_	PART	_	_	1	discourse:sp	_	SP:Q
+4	，	_	PUNCT	_	_	6	punct	_	_
+5	你	_	PRON	_	_	6	nmod	_	2SG
+6	哥哥	_	NOUN	_	_	1	dislocated	_	elder-brother
+7	？	_	PUNCT	_	_	1	punct	_	_
+
+1	"Has	_	_	_	_	0	_	_	_
+2	he	_	_	_	_	0	_	_	_
+3	arrived,	_	_	_	_	0	_	_	_
+4	your	_	_	_	_	0	_	_	_
+5	brother?"	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 2 5 dislocated	color:blue
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+1	我們	_	PRON	_	_	2	nsubj	_	1PL
+2	去	_	VERB	_	_	0	root	_	go
+3	吧	_	PART	_	_	2	discourse:sp	_	SP
+4	，	_	PUNCT	_	_	5	punct	_	_
+5	現在	_	NOUN	_	_	2	dislocated	_	now
+
+1	"Let's	_	_	_	_	0	_	_	_
+2	go	_	_	_	_	0	_	_	_
+3	--	_	_	_	_	0	_	_	_
+4	now."	_	_	_	_	0	_	_	_
+
+</code></pre>
 
 
 <!-- "automatic stats" -->
@@ -63,31 +201,31 @@ for <code>dislocated</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>63 nodes (0%) are attached to their parents as <code>dislocated</code>.</p>
+<p>52 nodes (0%) are attached to their parents as <code>dislocated</code>.</p>
 
-<p>61 instances of <code>dislocated</code> (97%) are left-to-right (parent precedes child).
-Average distance between parent and child is 4.6031746031746.</p>
+<p>50 instances of <code>dislocated</code> (96%) are left-to-right (parent precedes child).
+Average distance between parent and child is 4.63461538461539.</p>
 
-<p>The following 16 pairs of parts of speech are connected with <code>dislocated</code>: <a href="">zh-pos/NOUN</a>-<a href="">zh-pos/VERB</a> (24; 38% instances), <a href="">zh-pos/NOUN</a>-<a href="">zh-pos/ADJ</a> (7; 11% instances), <a href="">zh-pos/PROPN</a>-<a href="">zh-pos/VERB</a> (7; 11% instances), <a href="">zh-pos/NOUN</a>-<a href="">zh-pos/NOUN</a> (5; 8% instances), <a href="">zh-pos/PART</a>-<a href="">zh-pos/NOUN</a> (3; 5% instances), <a href="">zh-pos/PART</a>-<a href="">zh-pos/VERB</a> (3; 5% instances), <a href="">zh-pos/PART</a>-<a href="">zh-pos/ADJ</a> (2; 3% instances), <a href="">zh-pos/PRON</a>-<a href="">zh-pos/VERB</a> (2; 3% instances), <a href="">zh-pos/VERB</a>-<a href="">zh-pos/VERB</a> (2; 3% instances), <a href="">zh-pos/X</a>-<a href="">zh-pos/VERB</a> (2; 3% instances), <a href="">zh-pos/NOUN</a>-<a href="">zh-pos/PROPN</a> (1; 2% instances), <a href="">zh-pos/PART</a>-<a href="">zh-pos/PROPN</a> (1; 2% instances), <a href="">zh-pos/PRON</a>-<a href="">zh-pos/ADJ</a> (1; 2% instances), <a href="">zh-pos/PROPN</a>-<a href="">zh-pos/ADJ</a> (1; 2% instances), <a href="">zh-pos/VERB</a>-<a href="">zh-pos/NOUN</a> (1; 2% instances), <a href="">zh-pos/VERB</a>-<a href="">zh-pos/PROPN</a> (1; 2% instances).</p>
+<p>The following 15 pairs of parts of speech are connected with <code>dislocated</code>: <a href="">zh-pos/NOUN</a>-<a href="">zh-pos/VERB</a> (19; 37% instances), <a href="">zh-pos/PROPN</a>-<a href="">zh-pos/VERB</a> (7; 13% instances), <a href="">zh-pos/NOUN</a>-<a href="">zh-pos/ADJ</a> (6; 12% instances), <a href="">zh-pos/PART</a>-<a href="">zh-pos/NOUN</a> (3; 6% instances), <a href="">zh-pos/PART</a>-<a href="">zh-pos/VERB</a> (3; 6% instances), <a href="">zh-pos/NOUN</a>-<a href="">zh-pos/NOUN</a> (2; 4% instances), <a href="">zh-pos/PART</a>-<a href="">zh-pos/ADJ</a> (2; 4% instances), <a href="">zh-pos/VERB</a>-<a href="">zh-pos/VERB</a> (2; 4% instances), <a href="">zh-pos/X</a>-<a href="">zh-pos/VERB</a> (2; 4% instances), <a href="">zh-pos/PART</a>-<a href="">zh-pos/PROPN</a> (1; 2% instances), <a href="">zh-pos/PRON</a>-<a href="">zh-pos/ADJ</a> (1; 2% instances), <a href="">zh-pos/PRON</a>-<a href="">zh-pos/VERB</a> (1; 2% instances), <a href="">zh-pos/PROPN</a>-<a href="">zh-pos/ADJ</a> (1; 2% instances), <a href="">zh-pos/VERB</a>-<a href="">zh-pos/NOUN</a> (1; 2% instances), <a href="">zh-pos/VERB</a>-<a href="">zh-pos/PROPN</a> (1; 2% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 8	bgColor:blue
 # visual-style 8	fgColor:white
 # visual-style 6	bgColor:blue
 # visual-style 6	fgColor:white
 # visual-style 6 8 dislocated	color:blue
-1	總括	_	VERB	VV	_	3	acl	_	_
-2	來	_	ADV	RB	_	3	mark	_	_
-3	說	_	VERB	VV	_	6	dep	_	_
-4	,	_	PUNCT	,	_	6	punct	_	_
-5	名人	_	NOUN	NN	_	6	nmod	_	_
-6	會議	_	NOUN	NN	_	0	root	_	_
-7	旨	_	NOUN	NN	_	8	nsubj	_	_
-8	在	_	VERB	VV	_	6	dislocated	_	_
-9	維持	_	VERB	VV	Voice=Cau	8	xcomp	_	_
-10	國家	_	NOUN	NN	_	12	nsubj	_	_
-11	繁榮	_	ADJ	JJ	_	12	advcl	_	_
-12	安定	_	ADJ	JJ	_	9	ccomp	_	_
-13	.	_	PUNCT	.	_	6	punct	_	_
+1	總括	總括	VERB	VV	_	3	acl	_	SpaceAfter=No
+2	來	來	ADV	RB	_	3	mark	_	SpaceAfter=No
+3	說	說	VERB	VV	_	6	dep	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	6	punct	_	SpaceAfter=No
+5	名人	名人	NOUN	NN	_	6	nmod	_	SpaceAfter=No
+6	會議	會議	NOUN	NN	_	0	root	_	SpaceAfter=No
+7	旨	旨	NOUN	NN	_	8	nsubj	_	SpaceAfter=No
+8	在	在	VERB	VV	_	6	dislocated	_	SpaceAfter=No
+9	維持	維持	VERB	VV	Voice=Cau	8	xcomp	_	SpaceAfter=No
+10	國家	國家	NOUN	NN	_	12	nsubj	_	SpaceAfter=No
+11	繁榮	繁榮	ADJ	JJ	_	12	advcl	_	SpaceAfter=No
+12	安定	安定	ADJ	JJ	_	9	ccomp	_	SpaceAfter=No
+13	.	.	PUNCT	.	_	6	punct	_	SpaceAfter=No
 
 </code></pre>
 
@@ -96,30 +234,30 @@ Average distance between parent and child is 4.6031746031746.</p>
 # visual-style 16	bgColor:blue
 # visual-style 16	fgColor:white
 # visual-style 16 22 dislocated	color:blue
-1	但	_	ADV	RB	_	3	mark	_	_
-2	可以	_	AUX	MD	_	3	aux	_	_
-3	舉	_	VERB	VV	_	10	dep	_	_
-4	一	_	NUM	CD	_	5	nummod	_	_
-5	事	_	NOUN	NN	_	7	nsubj	_	_
-6	爲	_	VERB	VC	_	7	cop	_	_
-7	例	_	NOUN	NN	_	3	ccomp	_	_
-8	,	_	PUNCT	,	_	10	punct	_	_
-9	他	_	PRON	PRP	Person=3	10	nsubj	_	_
-10	說	_	VERB	VV	_	0	root	_	_
-11	他	_	PRON	PRP	Person=3	12	nsubj	_	_
-12	喜歡	_	VERB	VV	_	16	dep	_	_
-13	涉覽	_	VERB	VV	_	12	xcomp	_	_
-14	筆記	_	NOUN	NN	_	13	dobj	_	_
-15	,	_	PUNCT	,	_	16	punct	_	_
-16	中國	_	PROPN	NNP	_	10	ccomp	_	_
-17	的	_	PART	DEC	Case=Gen	16	case:dec	_	_
-18	,	_	PUNCT	,	_	16	punct	_	_
-19	他	_	PRON	PRP	Person=3	22	nsubj	_	_
-20	幾乎	_	ADV	RB	_	22	advmod	_	_
-21	都	_	ADV	RB	_	22	mark	_	_
-22	看	_	VERB	VV	_	16	dislocated	_	_
-23	過	_	PART	AS	Aspect=Perf	22	case:aspect	_	_
-24	.	_	PUNCT	.	_	10	punct	_	_
+1	但	但	ADV	RB	_	3	mark	_	SpaceAfter=No
+2	可以	可以	AUX	MD	_	3	aux	_	SpaceAfter=No
+3	舉	舉	VERB	VV	_	10	dep	_	SpaceAfter=No
+4	一	一	NUM	CD	NumType=Card	5	nummod	_	SpaceAfter=No
+5	事	事	NOUN	NN	_	7	nsubj	_	SpaceAfter=No
+6	爲	爲	AUX	VC	_	7	cop	_	SpaceAfter=No
+7	例	例	NOUN	NN	_	3	ccomp	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	10	punct	_	SpaceAfter=No
+9	他	他	PRON	PRP	Person=3	10	nsubj	_	SpaceAfter=No
+10	說	說	VERB	VV	_	0	root	_	SpaceAfter=No
+11	他	他	PRON	PRP	Person=3	12	nsubj	_	SpaceAfter=No
+12	喜歡	喜歡	VERB	VV	_	16	dep	_	SpaceAfter=No
+13	涉覽	涉覽	VERB	VV	_	12	xcomp	_	SpaceAfter=No
+14	筆記	筆記	NOUN	NN	_	13	obj	_	SpaceAfter=No
+15	,	,	PUNCT	,	_	16	punct	_	SpaceAfter=No
+16	中國	中國	PROPN	NNP	_	10	ccomp	_	SpaceAfter=No
+17	的	的	PART	DEC	Case=Gen	16	case:dec	_	SpaceAfter=No
+18	,	,	PUNCT	,	_	16	punct	_	SpaceAfter=No
+19	他	他	PRON	PRP	Person=3	22	nsubj	_	SpaceAfter=No
+20	幾乎	幾乎	ADV	RB	_	22	advmod	_	SpaceAfter=No
+21	都	都	ADV	RB	_	22	mark	_	SpaceAfter=No
+22	看	看	VERB	VV	_	16	dislocated	_	SpaceAfter=No
+23	過	過	PART	AS	Aspect=Perf	22	case:aspect	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	10	punct	_	SpaceAfter=No
 
 </code></pre>
 
@@ -128,30 +266,30 @@ Average distance between parent and child is 4.6031746031746.</p>
 # visual-style 2	bgColor:blue
 # visual-style 2	fgColor:white
 # visual-style 2 11 dislocated	color:blue
-1	深焙	_	NOUN	NN	_	2	nmod	_	_
-2	咖啡	_	NOUN	NN	_	0	root	_	_
-3	一般	_	ADV	RB	_	11	advmod	_	_
-4	比	_	ADP	IN	_	9	case	_	_
-5	淺焙	_	NOUN	NN	_	6	nmod	_	_
-6	咖啡	_	NOUN	NN	_	9	det	_	_
-7	的	_	PART	DEC	Case=Gen	6	case:dec	_	_
-8	咖啡	_	NOUN	NN	_	9	case:suff	_	_
-9	因	_	PART	SFN	_	11	nmod	_	_
-10	含量	_	NOUN	NN	_	11	nsubj	_	_
-11	少	_	ADJ	JJ	_	2	dislocated	_	_
-12	,	_	PUNCT	,	_	11	punct	_	_
-13	因為	_	ADP	IN	_	16	case	_	_
-14	烘焙	_	VERB	VV	_	16	csubj	_	_
-15	能	_	AUX	MD	_	16	aux	_	_
-16	減少	_	VERB	VV	_	11	xcomp	_	_
-17	咖啡	_	NOUN	NN	_	18	case:suff	_	_
-18	豆	_	PART	SFN	_	23	det	_	_
-19	裡	_	ADP	IN	_	18	acl	_	_
-20	的	_	PART	DEC	Case=Gen	18	case:dec	_	_
-21	咖啡	_	NOUN	NN	_	22	case:suff	_	_
-22	因	_	PART	SFN	_	23	nmod	_	_
-23	含量	_	NOUN	NN	_	16	dobj	_	_
-24	.	_	PUNCT	.	_	2	punct	_	_
+1	深焙	深焙	NOUN	NN	_	2	nmod	_	SpaceAfter=No
+2	咖啡	咖啡	NOUN	NN	_	0	root	_	SpaceAfter=No
+3	一般	一般	ADV	RB	_	11	advmod	_	SpaceAfter=No
+4	比	比	ADP	IN	_	9	case	_	SpaceAfter=No
+5	淺焙	淺焙	NOUN	NN	_	6	nmod	_	SpaceAfter=No
+6	咖啡	咖啡	NOUN	NN	_	9	det	_	SpaceAfter=No
+7	的	的	PART	DEC	Case=Gen	6	case:dec	_	SpaceAfter=No
+8	咖啡	咖啡	NOUN	NN	_	9	case:suff	_	SpaceAfter=No
+9	因	因	PART	SFN	_	11	nmod	_	SpaceAfter=No
+10	含量	含量	NOUN	NN	_	11	nsubj	_	SpaceAfter=No
+11	少	少	ADJ	JJ	_	2	dislocated	_	SpaceAfter=No
+12	,	,	PUNCT	,	_	11	punct	_	SpaceAfter=No
+13	因為	因為	ADP	IN	_	16	case	_	SpaceAfter=No
+14	烘焙	烘焙	VERB	VV	_	16	csubj	_	SpaceAfter=No
+15	能	能	AUX	MD	_	16	aux	_	SpaceAfter=No
+16	減少	減少	VERB	VV	_	11	xcomp	_	SpaceAfter=No
+17	咖啡	咖啡	NOUN	NN	_	18	case:suff	_	SpaceAfter=No
+18	豆	豆	PART	SFN	_	23	det	_	SpaceAfter=No
+19	裡	裡	ADP	IN	_	18	acl	_	SpaceAfter=No
+20	的	的	PART	DEC	Case=Gen	18	case:dec	_	SpaceAfter=No
+21	咖啡	咖啡	NOUN	NN	_	22	case:suff	_	SpaceAfter=No
+22	因	因	PART	SFN	_	23	nmod	_	SpaceAfter=No
+23	含量	含量	NOUN	NN	_	16	obj	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	2	punct	_	SpaceAfter=No
 
 </code></pre>
 
@@ -163,9 +301,23 @@ Average distance between parent and child is 4.6031746031746.</p>
 
 dislocated in other languages:
 
+[<a href="../../am/dep/dislocated.html">am</a>]
+
+[<a href="../../ar/dep/dislocated.html">ar</a>]
+
 [<a href="../../bg/dep/dislocated.html">bg</a>]
 
-[<a href="../../cs/dep/dislocated.html">cs</a>]
+[<a href="../../bxr/dep/dislocated.html">bxr</a>]
+
+[<a href="../../ca/dep/dislocated.html">ca</a>]
+
+[<a href="../../ckb/dep/dislocated.html">ckb</a>]
+
+[<a href="../../cop/dep/dislocated.html">cop</a>]
+
+[<a href="../../cu/dep/dislocated.html">cu</a>]
+
+[<a href="../../da/dep/dislocated.html">da</a>]
 
 [<a href="../../de/dep/dislocated.html">de</a>]
 
@@ -175,29 +327,99 @@ dislocated in other languages:
 
 [<a href="../../es/dep/dislocated.html">es</a>]
 
+[<a href="../../et/dep/dislocated.html">et</a>]
+
 [<a href="../../eu/dep/dislocated.html">eu</a>]
 
 [<a href="../../fa/dep/dislocated.html">fa</a>]
 
 [<a href="../../fi/dep/dislocated.html">fi</a>]
 
+[<a href="../../fo/dep/dislocated.html">fo</a>]
+
 [<a href="../../fr/dep/dislocated.html">fr</a>]
 
 [<a href="../../ga/dep/dislocated.html">ga</a>]
 
+[<a href="../../gl/dep/dislocated.html">gl</a>]
+
+[<a href="../../got/dep/dislocated.html">got</a>]
+
+[<a href="../../grc/dep/dislocated.html">grc</a>]
+
 [<a href="../../he/dep/dislocated.html">he</a>]
 
+[<a href="../../hi/dep/dislocated.html">hi</a>]
+
+[<a href="../../hr/dep/dislocated.html">hr</a>]
+
 [<a href="../../hu/dep/dislocated.html">hu</a>]
+
+[<a href="../../id/dep/dislocated.html">id</a>]
 
 [<a href="../../it/dep/dislocated.html">it</a>]
 
 [<a href="../../ja/dep/dislocated.html">ja</a>]
 
+[<a href="../../kk/dep/dislocated.html">kk</a>]
+
+[<a href="../../kmr/dep/dislocated.html">kmr</a>]
+
 [<a href="../../ko/dep/dislocated.html">ko</a>]
+
+[<a href="../../la/dep/dislocated.html">la</a>]
+
+[<a href="../../lv/dep/dislocated.html">lv</a>]
+
+[<a href="../../mr/dep/dislocated.html">mr</a>]
+
+[<a href="../../nl/dep/dislocated.html">nl</a>]
+
+[<a href="../../no/dep/dislocated.html">no</a>]
+
+[<a href="../../pl/dep/dislocated.html">pl</a>]
+
+[<a href="../../pt/dep/dislocated.html">pt</a>]
+
+[<a href="../../ro/dep/dislocated.html">ro</a>]
+
+[<a href="../../ru/dep/dislocated.html">ru</a>]
+
+[<a href="../../sa/dep/dislocated.html">sa</a>]
+
+[<a href="../../sk/dep/dislocated.html">sk</a>]
+
+[<a href="../../sla/dep/dislocated.html">sla</a>]
+
+[<a href="../../sl/dep/dislocated.html">sl</a>]
+
+[<a href="../../so/dep/dislocated.html">so</a>]
+
+[<a href="../../sr/dep/dislocated.html">sr</a>]
 
 [<a href="../../sv/dep/dislocated.html">sv</a>]
 
+[<a href="../../swl/dep/dislocated.html">swl</a>]
+
+[<a href="../../ta/dep/dislocated.html">ta</a>]
+
+[<a href="../../tr/dep/dislocated.html">tr</a>]
+
 [<a href="../../u/dep/dislocated.html">u</a>]
+
+[<a href="../../ug/dep/dislocated.html">ug</a>]
+
+[<a href="../../uk/dep/dislocated.html">uk</a>]
+
+[<a href="../../ur/dep/dislocated.html">ur</a>]
+
+[<a href="../../urj/dep/dislocated.html">urj</a>]
+
+[<a href="../../vi/dep/dislocated.html">vi</a>]
+
+[<a href="../../yue/dep/dislocated.html">yue</a>]
+
+[<a href="../../zh/dep/dislocated.html">zh</a>]
 
 
 

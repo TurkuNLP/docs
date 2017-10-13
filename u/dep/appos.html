@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-u">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/u/dep">u/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/appos.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-u">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/u/dep">u/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/appos.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -46,7 +63,7 @@
           <h2><code>appos</code>: appositional modifier</h2>
 
 <p>An appositional modifier of a noun is a nominal immediately following
-the first noun that serves to define or modify that noun. It includes
+the first noun that serves to define, modify, name, or describe that noun. It includes
 parenthesized examples, as well as defining abbreviations in one of
 these structures.</p>
 
@@ -62,7 +79,95 @@ appos(Bill-1, cousin-5)
 appos(Corporation-4, ABC-6)
 </code></pre>
 
-<p>In case of more than one appositive nominal, all nouns should be marked as modifying the first noun, rather than being chained:</p>
+<p><code>appos</code> is intended to be used between two nominals. In general, modulo punctuation, the two halves of an apposition can be switched. 
+For example, you could also say <em>My brother, Sam, arrived.</em> There are somewhat similar constructions with titles 
+where the title is less than a full nominal, such as <em>state senator Paul Mnuchin</em>, where reversal is impossible 
+or would require insertion of a determiner to make a 
+full nominal. Some grammatical traditions, descending from Latin, call <em>state senator</em> in such cases a “fixed (or close) apposition” and take the name as the head. However, we seem to have only one nominal not two here. For example:</p>
+
+<blockquote>
+  <p>President Obama</p>
+</blockquote>
+
+<blockquote>
+  <p>*Obama President</p>
+</blockquote>
+
+<blockquote>
+  <p>state senator Paul Mnuchin</p>
+</blockquote>
+
+<blockquote>
+  <p>*Paul Mnuchin state senator</p>
+</blockquote>
+
+<p><code>appos</code> should not be used in such cases. However, the examples can usually be rendered in a fuller form, corresponding to “loose (or wide) apposition” in the Latin tradition, where there are two full phrases. Then the relation <code>appos</code> is appropriate, for example:</p>
+
+<pre><code class="language-sdparse">Paul Mnuchin , the senior Oregon state senator
+appos(Mnuchin-2, senator-8)
+</code></pre>
+
+<p>As is often the case, there are borderline cases. In formal writing, punctuation is usually a good signal of apposition, 
+but there are certainly cases of apposition where no punctuation is used:</p>
+
+<pre><code class="language-sdparse">the leader of the militant Lebanese Shiite group Hassan Nasrallah
+appos(group-8, Hassan-9)
+flat(Hassan-9, Nasrallah-10)
+</code></pre>
+
+<p>Good tests include to ask whether the two halves are full nominals, whether the two halves can be swapped or not, and whether 
+there is case or agreement concord (in a language with rich morphology). So we have:</p>
+
+<pre><code class="language-sdparse">I met the French actor Gaspard Ulliel
+nsubj(met-2, I-1)
+det(actor-5, the-3)
+amod(actor-5, French-4)
+obj(met-2, actor-5)
+appos(actor-5, Gaspard-6)
+flat(Gaspard-6, Ulliel-7)
+</code></pre>
+
+<pre><code class="language-sdparse">I met Gaspard Ulliel the French actor 
+nsubj(met-2, I-1)
+obj(met-2, Gaspard-3)
+flat(Gaspard-3, Ulliel-4)
+det(actor-7, the-5)
+amod(actor-7, French-6)
+appos(Gaspard-3, actor-7)
+</code></pre>
+
+<pre><code class="language-sdparse">I met Gaspard Ulliel , the French actor 
+nsubj(met-2, I-1)
+obj(met-2, Gaspard-3)
+flat(Gaspard-3, Ulliel-4)
+punct(Gaspard-3, ,-5)
+det(actor-8, the-6)
+amod(actor-8, French-7)
+appos(Gaspard-3, actor-8)
+</code></pre>
+
+<pre><code class="language-sdparse">I met French actor Gaspard Ulliel
+nsubj(met-2, I-1)
+amod(actor-4, French-3)
+obj(met-2, actor-4)
+flat(actor-4, Gaspard-5)
+flat(actor-4, Ulliel-6)
+</code></pre>
+
+<p>While items like abbreviations are generally reversable, the determiner test suggested above doesn’t quite work there, since the determiner seems to belong with the main item:</p>
+
+<pre><code class="language-sdparse">The ABC ( Australian Broadcasting Corporation )
+appos(ABC-2, Corporation-6)
+</code></pre>
+
+<p>While <code>appos</code> is normally between two nominals, there are a few cases where there is a relation with a clause, 
+such as when describing facts or events for which <code>appos</code> still feels appropriate:</p>
+
+<pre><code class="language-sdparse">This problem , that people could lower their tax rates by choosing to become corporations , might become acute .
+appos(problem-2, lower-7)
+</code></pre>
+
+<p>In the rare cases of more than one appositive nominal, all nouns should be marked as modifying the first noun, rather than being chained:</p>
 
 <pre><code class="language-sdparse">Sam , my brother , John 's cousin , arrived
 appos(Sam-1, brother-4)
@@ -71,21 +176,21 @@ appos(Sam-1, cousin-8)
 
 <p>Note however that nested apposition cannot be completely excluded. It may occur in combination with coordination:</p>
 
-<pre><code class="language-sdparse">You can choose between four subjects : language ( German or French ) , economy , technology and art .
+<pre><code class="language-sdparse">You can choose between four subjects , language ( German or French ) , economy , technology and art .
 appos(subjects, language)
 conj(language, economy)
 conj(language, technology)
 conj(language, art)
-cc(language, and)
+cc(art, and)
 appos(language, German)
 conj(German, French)
-cc(German, or)
+cc(French, or)
 </code></pre>
 
-<p><em>appos</em> is also used to link key-value pairs in addresses, signatures, etc. (see also the <a href="">list</a> label):</p>
+<p><code>appos</code> is also used to link key-value pairs in addresses, signature blocs, etc. (see also the <a href="">list</a> label):</p>
 
 <pre><code class="language-sdparse">Steve Jones Phone: 555-9814 Email: jones@abc.edf
-name(Steve-1, Jones-2)
+flat:name(Steve-1, Jones-2)
 list(Steve-1, Phone:-3)
 list(Steve-1, Email:-5)
 appos(Phone:-3, 555-9814-4)
@@ -105,9 +210,25 @@ appos(Email:-5, jones@abc.edf-6)
 
 appos in other languages:
 
+[<a href="../../am/dep/appos.html">am</a>]
+
+[<a href="../../ar/dep/appos.html">ar</a>]
+
 [<a href="../../bg/dep/appos.html">bg</a>]
 
+[<a href="../../bxr/dep/appos.html">bxr</a>]
+
+[<a href="../../ca/dep/appos.html">ca</a>]
+
+[<a href="../../ckb/dep/appos.html">ckb</a>]
+
+[<a href="../../cop/dep/appos.html">cop</a>]
+
 [<a href="../../cs/dep/appos.html">cs</a>]
+
+[<a href="../../cu/dep/appos.html">cu</a>]
+
+[<a href="../../da/dep/appos.html">da</a>]
 
 [<a href="../../de/dep/appos.html">de</a>]
 
@@ -117,29 +238,99 @@ appos in other languages:
 
 [<a href="../../es/dep/appos.html">es</a>]
 
+[<a href="../../et/dep/appos.html">et</a>]
+
 [<a href="../../eu/dep/appos.html">eu</a>]
 
 [<a href="../../fa/dep/appos.html">fa</a>]
 
 [<a href="../../fi/dep/appos.html">fi</a>]
 
+[<a href="../../fo/dep/appos.html">fo</a>]
+
 [<a href="../../fr/dep/appos.html">fr</a>]
 
 [<a href="../../ga/dep/appos.html">ga</a>]
 
+[<a href="../../gl/dep/appos.html">gl</a>]
+
+[<a href="../../got/dep/appos.html">got</a>]
+
+[<a href="../../grc/dep/appos.html">grc</a>]
+
 [<a href="../../he/dep/appos.html">he</a>]
 
+[<a href="../../hi/dep/appos.html">hi</a>]
+
+[<a href="../../hr/dep/appos.html">hr</a>]
+
 [<a href="../../hu/dep/appos.html">hu</a>]
+
+[<a href="../../id/dep/appos.html">id</a>]
 
 [<a href="../../it/dep/appos.html">it</a>]
 
 [<a href="../../ja/dep/appos.html">ja</a>]
 
+[<a href="../../kk/dep/appos.html">kk</a>]
+
+[<a href="../../kmr/dep/appos.html">kmr</a>]
+
 [<a href="../../ko/dep/appos.html">ko</a>]
+
+[<a href="../../la/dep/appos.html">la</a>]
+
+[<a href="../../lv/dep/appos.html">lv</a>]
+
+[<a href="../../mr/dep/appos.html">mr</a>]
+
+[<a href="../../nl/dep/appos.html">nl</a>]
+
+[<a href="../../no/dep/appos.html">no</a>]
+
+[<a href="../../pl/dep/appos.html">pl</a>]
+
+[<a href="../../pt/dep/appos.html">pt</a>]
+
+[<a href="../../ro/dep/appos.html">ro</a>]
+
+[<a href="../../ru/dep/appos.html">ru</a>]
+
+[<a href="../../sa/dep/appos.html">sa</a>]
+
+[<a href="../../sk/dep/appos.html">sk</a>]
+
+[<a href="../../sla/dep/appos.html">sla</a>]
+
+[<a href="../../sl/dep/appos.html">sl</a>]
+
+[<a href="../../so/dep/appos.html">so</a>]
+
+[<a href="../../sr/dep/appos.html">sr</a>]
 
 [<a href="../../sv/dep/appos.html">sv</a>]
 
+[<a href="../../swl/dep/appos.html">swl</a>]
+
+[<a href="../../ta/dep/appos.html">ta</a>]
+
+[<a href="../../tr/dep/appos.html">tr</a>]
+
 [<a href="../../u/dep/appos.html">u</a>]
+
+[<a href="../../ug/dep/appos.html">ug</a>]
+
+[<a href="../../uk/dep/appos.html">uk</a>]
+
+[<a href="../../ur/dep/appos.html">ur</a>]
+
+[<a href="../../urj/dep/appos.html">urj</a>]
+
+[<a href="../../vi/dep/appos.html">vi</a>]
+
+[<a href="../../yue/dep/appos.html">yue</a>]
+
+[<a href="../../zh/dep/appos.html">zh</a>]
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ja">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ja/dep">ja/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ja-dep/advcl.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ja">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ja/dep">ja/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ja-dep/advcl.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -69,86 +86,16 @@ punct(行く, 。)
 
 <hr />
 
-<h2 id="treebank-statistics-udjapanese">Treebank Statistics (UD_Japanese)</h2>
-
-<p>This relation is universal.</p>
-
-<p>2239 nodes (2%) are attached to their parents as <code>advcl</code>.</p>
-
-<p>2238 instances of <code>advcl</code> (100%) are right-to-left (child precedes parent).
-Average distance between parent and child is 5.54622599374721.</p>
-
-<p>The following 23 pairs of parts of speech are connected with <code>advcl</code>: <a href="">ja-pos/VERB</a>-<a href="">ja-pos/VERB</a> (1005; 45% instances), <a href="">ja-pos/VERB</a>-<a href="">ja-pos/NOUN</a> (541; 24% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/VERB</a> (208; 9% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/NOUN</a> (131; 6% instances), <a href="">ja-pos/ADJ</a>-<a href="">ja-pos/VERB</a> (110; 5% instances), <a href="">ja-pos/VERB</a>-<a href="">ja-pos/ADJ</a> (93; 4% instances), <a href="">ja-pos/ADJ</a>-<a href="">ja-pos/NOUN</a> (59; 3% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/ADJ</a> (31; 1% instances), <a href="">ja-pos/ADJ</a>-<a href="">ja-pos/ADJ</a> (17; 1% instances), <a href="">ja-pos/VERB</a>-<a href="">ja-pos/NUM</a> (13; 1% instances), <a href="">ja-pos/VERB</a>-<a href="">ja-pos/PRON</a> (7; 0% instances), <a href="">ja-pos/NUM</a>-<a href="">ja-pos/VERB</a> (4; 0% instances), <a href="">ja-pos/ADJ</a>-<a href="">ja-pos/NUM</a> (3; 0% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/PRON</a> (3; 0% instances), <a href="">ja-pos/VERB</a>-<a href="">ja-pos/ADV</a> (3; 0% instances), <a href="">ja-pos/ADV</a>-<a href="">ja-pos/VERB</a> (2; 0% instances), <a href="">ja-pos/NUM</a>-<a href="">ja-pos/NOUN</a> (2; 0% instances), <a href="">ja-pos/PRON</a>-<a href="">ja-pos/VERB</a> (2; 0% instances), <a href="">ja-pos/ADV</a>-<a href="">ja-pos/NOUN</a> (1; 0% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/CONJ</a> (1; 0% instances), <a href="">ja-pos/NUM</a>-<a href="">ja-pos/ADJ</a> (1; 0% instances), <a href="">ja-pos/PRON</a>-<a href="">ja-pos/NOUN</a> (1; 0% instances), <a href="">ja-pos/VERB</a>-<a href="">ja-pos/DET</a> (1; 0% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 13	bgColor:blue
-# visual-style 13	fgColor:white
-# visual-style 13 6 advcl	color:blue
-1	同僚教師の	_	NOUN	NOUN-POSTP	_	2	nmod	_	_
-2	すみれと	_	NOUN	NOUN-CONJ	_	6	nmod	_	_
-3	彩は	_	NOUN	NOUN-PRT	_	2	conj	_	_
-4	そんな	_	ADJ	ADJ	_	5	amod	_	_
-5	夕子と	_	NOUN	NOUN-POSTP	_	6	nmod	_	_
-6	意気投合し	_	VERB	VERB	_	13	advcl	_	_
-7	、	_	PUNCT	.	_	6	punct	_	_
-8	問題を	_	NOUN	NOUN-PRT	_	9	nmod	_	_
-9	解決する	_	VERB	VERB-AUX	_	10	ccomp	_	_
-10	ため	_	NOUN	NOUN	_	6	conj	_	_
-11	行動を	_	NOUN	NOUN-PRT	_	13	nmod	_	_
-12	共に	_	NOUN	NOUN-POSTP	_	13	nmod	_	_
-13	する。	_	VERB	VERB-AUX	_	0	root	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 9	bgColor:blue
-# visual-style 9	fgColor:white
-# visual-style 9 2 advcl	color:blue
-1	ほとんどは	_	NOUN	NOUN-PRT	_	2	nmod	_	_
-2	浅海生だが	_	NOUN	NOUN-VERB-AUX-CONJ	_	9	advcl	_	_
-3	、	_	PUNCT	.	_	2	punct	_	_
-4	水深	_	NOUN	NOUN	_	6	nmod	_	_
-5	数百mほどの	_	NOUN	NOUN-POSTP	_	4	name	_	_
-6	深海まで	_	NOUN	NOUN-POSTP	_	7	nmod	_	_
-7	生息する	_	VERB	VERB-AUX	_	8	acl:relcl	_	_
-8	ものも	_	NOUN	NOUN-POSTP	_	9	nmod	_	_
-9	いる。	_	VERB	VERB-AUX	_	0	root	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 5 2 advcl	color:blue
-1	通信教育で	_	NOUN	NOUN-POSTP	_	2	nmod	_	_
-2	挫折したので	_	VERB	VERB-AUX-CONJ	_	5	advcl	_	_
-3	資格まで	_	NOUN	NOUN-POSTP	_	4	nmod	_	_
-4	とれるのか	_	VERB	VERB-AUX-AUX-NOUN-PRT	_	5	ccomp	_	_
-5	心配でしたが	_	NOUN	NOUN-VERB-AUX-CONJ	_	0	root	_	_
-6	、	_	PUNCT	.	_	5	punct	_	_
-7	無事	_	NOUN	NOUN	_	8	advmod	_	_
-8	合格し	_	VERB	VERB	_	5	conj	_	_
-9	、	_	PUNCT	.	_	8	punct	_	_
-10	仕事も	_	NOUN	NOUN-POSTP	_	11	nmod	_	_
-11	決まりました！	_	VERB	VERB-AUX	_	5	conj	_	_
-
-</code></pre>
-
-<hr />
-
 <h2 id="treebank-statistics-udjapanese-ktc">Treebank Statistics (UD_Japanese-KTC)</h2>
 
 <p>This relation is universal.</p>
 
-<p>6195 nodes (2%) are attached to their parents as <code>advcl</code>.</p>
+<p>4409 nodes (2%) are attached to their parents as <code>advcl</code>.</p>
 
-<p>6195 instances of <code>advcl</code> (100%) are right-to-left (child precedes parent).
-Average distance between parent and child is 11.9572235673931.</p>
+<p>4409 instances of <code>advcl</code> (100%) are right-to-left (child precedes parent).
+Average distance between parent and child is 11.9664322975731.</p>
 
-<p>The following 22 pairs of parts of speech are connected with <code>advcl</code>: <a href="">ja-pos/VERB</a>-<a href="">ja-pos/VERB</a> (4712; 76% instances), <a href="">ja-pos/VERB</a>-<a href="">ja-pos/NOUN</a> (766; 12% instances), <a href="">ja-pos/VERB</a>-<a href="">ja-pos/ADJ</a> (222; 4% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/VERB</a> (206; 3% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/NOUN</a> (101; 2% instances), <a href="">ja-pos/VERB</a>-<a href="">ja-pos/ADV</a> (53; 1% instances), <a href="">ja-pos/ADV</a>-<a href="">ja-pos/VERB</a> (31; 1% instances), <a href="">ja-pos/ADJ</a>-<a href="">ja-pos/VERB</a> (30; 0% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/ADJ</a> (27; 0% instances), <a href="">ja-pos/VERB</a>-<a href="">ja-pos/PROPN</a> (10; 0% instances), <a href="">ja-pos/VERB</a>-<a href="">ja-pos/PRON</a> (7; 0% instances), <a href="">ja-pos/ADV</a>-<a href="">ja-pos/NOUN</a> (5; 0% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/ADV</a> (5; 0% instances), <a href="">ja-pos/VERB</a>-<a href="">ja-pos/CONJ</a> (5; 0% instances), <a href="">ja-pos/ADJ</a>-<a href="">ja-pos/NOUN</a> (4; 0% instances), <a href="">ja-pos/ADJ</a>-<a href="">ja-pos/ADJ</a> (3; 0% instances), <a href="">ja-pos/PRON</a>-<a href="">ja-pos/VERB</a> (3; 0% instances), <a href="">ja-pos/ADV</a>-<a href="">ja-pos/ADJ</a> (1; 0% instances), <a href="">ja-pos/INTJ</a>-<a href="">ja-pos/VERB</a> (1; 0% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/CONJ</a> (1; 0% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/NUM</a> (1; 0% instances), <a href="">ja-pos/VERB</a>-<a href="">ja-pos/NUM</a> (1; 0% instances).</p>
+<p>The following 21 pairs of parts of speech are connected with <code>advcl</code>: <a href="">ja-pos/VERB</a>-<a href="">ja-pos/VERB</a> (3383; 77% instances), <a href="">ja-pos/VERB</a>-<a href="">ja-pos/NOUN</a> (539; 12% instances), <a href="">ja-pos/VERB</a>-<a href="">ja-pos/ADJ</a> (156; 4% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/VERB</a> (138; 3% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/NOUN</a> (66; 1% instances), <a href="">ja-pos/VERB</a>-<a href="">ja-pos/ADV</a> (34; 1% instances), <a href="">ja-pos/ADV</a>-<a href="">ja-pos/VERB</a> (25; 1% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/ADJ</a> (21; 0% instances), <a href="">ja-pos/ADJ</a>-<a href="">ja-pos/VERB</a> (17; 0% instances), <a href="">ja-pos/VERB</a>-<a href="">ja-pos/PROPN</a> (7; 0% instances), <a href="">ja-pos/VERB</a>-<a href="">ja-pos/PRON</a> (5; 0% instances), <a href="">ja-pos/ADV</a>-<a href="">ja-pos/NOUN</a> (4; 0% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/ADV</a> (3; 0% instances), <a href="">ja-pos/VERB</a>-<a href="">ja-pos/CONJ</a> (3; 0% instances), <a href="">ja-pos/ADJ</a>-<a href="">ja-pos/NOUN</a> (2; 0% instances), <a href="">ja-pos/ADJ</a>-<a href="">ja-pos/ADJ</a> (1; 0% instances), <a href="">ja-pos/ADV</a>-<a href="">ja-pos/ADJ</a> (1; 0% instances), <a href="">ja-pos/INTJ</a>-<a href="">ja-pos/VERB</a> (1; 0% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/NUM</a> (1; 0% instances), <a href="">ja-pos/PRON</a>-<a href="">ja-pos/VERB</a> (1; 0% instances), <a href="">ja-pos/VERB</a>-<a href="">ja-pos/NUM</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 13	bgColor:blue
 # visual-style 13	fgColor:white
@@ -272,9 +219,25 @@ Average distance between parent and child is 11.9572235673931.</p>
 
 advcl in other languages:
 
+[<a href="../../am/dep/advcl.html">am</a>]
+
+[<a href="../../ar/dep/advcl.html">ar</a>]
+
 [<a href="../../bg/dep/advcl.html">bg</a>]
 
+[<a href="../../bxr/dep/advcl.html">bxr</a>]
+
+[<a href="../../ca/dep/advcl.html">ca</a>]
+
+[<a href="../../ckb/dep/advcl.html">ckb</a>]
+
+[<a href="../../cop/dep/advcl.html">cop</a>]
+
 [<a href="../../cs/dep/advcl.html">cs</a>]
+
+[<a href="../../cu/dep/advcl.html">cu</a>]
+
+[<a href="../../da/dep/advcl.html">da</a>]
 
 [<a href="../../de/dep/advcl.html">de</a>]
 
@@ -284,29 +247,99 @@ advcl in other languages:
 
 [<a href="../../es/dep/advcl.html">es</a>]
 
+[<a href="../../et/dep/advcl.html">et</a>]
+
 [<a href="../../eu/dep/advcl.html">eu</a>]
 
 [<a href="../../fa/dep/advcl.html">fa</a>]
 
 [<a href="../../fi/dep/advcl.html">fi</a>]
 
+[<a href="../../fo/dep/advcl.html">fo</a>]
+
 [<a href="../../fr/dep/advcl.html">fr</a>]
 
 [<a href="../../ga/dep/advcl.html">ga</a>]
 
+[<a href="../../gl/dep/advcl.html">gl</a>]
+
+[<a href="../../got/dep/advcl.html">got</a>]
+
+[<a href="../../grc/dep/advcl.html">grc</a>]
+
 [<a href="../../he/dep/advcl.html">he</a>]
 
+[<a href="../../hi/dep/advcl.html">hi</a>]
+
+[<a href="../../hr/dep/advcl.html">hr</a>]
+
 [<a href="../../hu/dep/advcl.html">hu</a>]
+
+[<a href="../../id/dep/advcl.html">id</a>]
 
 [<a href="../../it/dep/advcl.html">it</a>]
 
 [<a href="../../ja/dep/advcl.html">ja</a>]
 
+[<a href="../../kk/dep/advcl.html">kk</a>]
+
+[<a href="../../kmr/dep/advcl.html">kmr</a>]
+
 [<a href="../../ko/dep/advcl.html">ko</a>]
+
+[<a href="../../la/dep/advcl.html">la</a>]
+
+[<a href="../../lv/dep/advcl.html">lv</a>]
+
+[<a href="../../mr/dep/advcl.html">mr</a>]
+
+[<a href="../../nl/dep/advcl.html">nl</a>]
+
+[<a href="../../no/dep/advcl.html">no</a>]
+
+[<a href="../../pl/dep/advcl.html">pl</a>]
+
+[<a href="../../pt/dep/advcl.html">pt</a>]
+
+[<a href="../../ro/dep/advcl.html">ro</a>]
+
+[<a href="../../ru/dep/advcl.html">ru</a>]
+
+[<a href="../../sa/dep/advcl.html">sa</a>]
+
+[<a href="../../sk/dep/advcl.html">sk</a>]
+
+[<a href="../../sla/dep/advcl.html">sla</a>]
+
+[<a href="../../sl/dep/advcl.html">sl</a>]
+
+[<a href="../../so/dep/advcl.html">so</a>]
+
+[<a href="../../sr/dep/advcl.html">sr</a>]
 
 [<a href="../../sv/dep/advcl.html">sv</a>]
 
+[<a href="../../swl/dep/advcl.html">swl</a>]
+
+[<a href="../../ta/dep/advcl.html">ta</a>]
+
+[<a href="../../tr/dep/advcl.html">tr</a>]
+
 [<a href="../../u/dep/advcl.html">u</a>]
+
+[<a href="../../ug/dep/advcl.html">ug</a>]
+
+[<a href="../../uk/dep/advcl.html">uk</a>]
+
+[<a href="../../ur/dep/advcl.html">ur</a>]
+
+[<a href="../../urj/dep/advcl.html">urj</a>]
+
+[<a href="../../vi/dep/advcl.html">vi</a>]
+
+[<a href="../../yue/dep/advcl.html">yue</a>]
+
+[<a href="../../zh/dep/advcl.html">zh</a>]
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../css/hint.css"/>
     <script type="text/javascript" src="../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-v2">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/v2/v2">v2/v2</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_v2/summary.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-v2">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/v2/v2">v2/v2</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_v2/summary.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -89,7 +106,6 @@ Complete documentation of the new guidelines will follow as quickly as possible.
       <li><code>Aspect=Pro</code> → <code>Aspect=Prosp</code></li>
       <li><code>VerbForm=Trans</code> → <code>VerbForm=Conv</code></li>
       <li><code>Definite=Red</code> → <code>Definite=Cons</code></li>
-      <li><code>NumType=Gen</code> → <code>NumType=Fold</code> [with a more restricted meaning]</li>
     </ol>
   </li>
   <li>New features are added (or promoted to universal features):
@@ -108,16 +124,17 @@ Complete documentation of the new guidelines will follow as quickly as possible.
       <li><code>Definite=Spec</code> (specific indefinite)</li>
       <li><code>Number=Count</code> (counting form or count plural), <code>Number=Tri</code> (trial), <code>Number=Pauc</code> (paucal), <code>Number=Grpa</code> (greater paucal), <code>Number=Grpl</code> (greater plural), <code>Number=Inv</code> (inverse number)</li>
       <li><code>VerbForm=Gdv</code> (gerundive, not gerund), <code>VerbForm=Vnoun</code> (verbal nouns other than infinitives)</li>
-      <li><code>Mood=Purp</code> (purposive)</li>
+      <li><code>Mood=Prp</code> (purposive), <code>Mood=Adm</code> (admirative)</li>
       <li><code>Aspect=Iter</code> (iterative), <code>Aspect=Hab</code> (habitual)</li>
       <li><code>Voice=Mid</code> (middle voice), <code>Voice=Antip</code> (antipassive), <code>Voice=Dir</code> (direct), <code>Voice=Inv</code> (inverse)</li>
       <li><code>PronType=Emp</code> (emphatic), <code>PronType=Exc</code> (exclamative)</li>
       <li><code>Person=0</code>, <code>Person=4</code></li>
     </ol>
   </li>
-  <li>Unused values are removed from existing features:
+  <li>Unused or poorly defined values are removed from existing features:
     <ol>
       <li><code>Tense=Nar</code> (narrative)</li>
+      <li><code>NumType=Gen</code> (generic)</li>
     </ol>
   </li>
 </ol>
@@ -133,7 +150,7 @@ removed, added or renamed, or where the use of an existing relation has changed 
 
 <ol>
   <li>The <code>dobj</code> relation is renamed <code>obj</code> because this seems to be more easily reconcilable with the intended interpretation of “second core argument” or “P/A argument” (without connection to specific cases or semantic roles).</li>
-  <li>The <code>nsubjpass</code>, <code>csubjpass</code> and <code>auxpass</code> relations are removed. The use of subtypes nsubj:pass, csubj:pass and aux:pass is strongly encouraged for languages where these distinctions are relevant.</li>
+  <li>The <code>nsubjpass</code>, <code>csubjpass</code> and <code>auxpass</code> relations are removed. The use of subtypes <code>nsubj:pass</code>, <code>csubj:pass</code> and <code>aux:pass</code> is strongly encouraged for languages where these distinctions are relevant.</li>
   <li>The <code>nmod</code> relation, which in v1 was used for nominals modifying either predicates or other nominals, is in v2 restricted to modifying nominals. A new relation <code>obl</code> (oblique) is introduced for oblique dependents of predicates.</li>
   <li>The <code>cop</code> relation is restricted to function words (verbal or nonverbal) whose sole function is to link a nonverbal predicate to its subject and which does not add any meaning other than grammaticalized TAME categories. The range of constructions that are analyzed using the <code>cop</code> relation is subject to language-specific variation but can be identified using universal guidelines.</li>
 </ol>

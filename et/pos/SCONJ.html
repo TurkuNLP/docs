@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-et">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/et/pos">et/pos</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_et-pos/SCONJ.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-et">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/et/pos">et/pos</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_et-pos/SCONJ.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -70,96 +87,79 @@
 
 <h2 id="treebank-statistics-udestonian">Treebank Statistics (UD_Estonian)</h2>
 
-<p>There are 14 <code>SCONJ</code> lemmas (0%), 12 <code>SCONJ</code> types (0%) and 4796 <code>SCONJ</code> tokens (2%).
-Out of 15 observed tags, the rank of <code>SCONJ</code> is: 15 in number of lemmas, 15 in number of types and 11 in number of tokens.</p>
+<p>There are 11 <code>SCONJ</code> lemmas (0%), 10 <code>SCONJ</code> types (0%) and 632 <code>SCONJ</code> tokens (2%).
+Out of 16 observed tags, the rank of <code>SCONJ</code> is: 14 in number of lemmas, 14 in number of types and 11 in number of tokens.</p>
 
-<p>The 10 most frequent <code>SCONJ</code> lemmas: <em>et, kui, nagu, sest, kuigi, kuna, ehkki, kuni, just_kui, otse_kui</em></p>
+<p>The 10 most frequent <code>SCONJ</code> lemmas: <em>et, kui, nagu, sest, kuni, kuigi, kuna, otse_kui, ehkki, just_kui</em></p>
 
-<p>The 10 most frequent <code>SCONJ</code> types:  <em>et, kui, nagu, sest, kuigi, kuna, ehkki, kuni, justkui, otsekui</em></p>
+<p>The 10 most frequent <code>SCONJ</code> types:  <em>et, kui, nagu, sest, kuni, kuigi, kuna, otsekui, ehkki, justkui</em></p>
 
-<p>The 10 most frequent ambiguous lemmas: <em>kui</em> (<a href="">SCONJ</a> 1504, <a href="">CONJ</a> 144, <a href="">ADV</a> 124), <em>nagu</em> (<a href="">SCONJ</a> 373, <a href="">ADV</a> 16, <a href="">NOUN</a> 1), <em>kuigi</em> (<a href="">SCONJ</a> 109, <a href="">ADV</a> 9), <em>kuni</em> (<a href="">ADV</a> 43, <a href="">SCONJ</a> 36, <a href="">CONJ</a> 27, <a href="">ADP</a> 22), <em>just_kui</em> (<a href="">SCONJ</a> 22, <a href="">ADV</a> 9), <em>otse_kui</em> (<a href="">SCONJ</a> 17, <a href="">ADV</a> 2)</p>
+<p>The 10 most frequent ambiguous lemmas: <em>kui</em> (<a href="">SCONJ</a> 167, <a href="">ADV</a> 10, <a href="">CCONJ</a> 8), <em>nagu</em> (<a href="">SCONJ</a> 75, <a href="">ADV</a> 2), <em>kuni</em> (<a href="">SCONJ</a> 14, <a href="">CCONJ</a> 2, <a href="">ADP</a> 2), <em>kuigi</em> (<a href="">SCONJ</a> 9, <a href="">ADV</a> 1)</p>
 
-<p>The 10 most frequent ambiguous types:  <em>kui</em> (<a href="">SCONJ</a> 1080, <a href="">CONJ</a> 144, <a href="">ADV</a> 99), <em>nagu</em> (<a href="">SCONJ</a> 333, <a href="">ADV</a> 16), <em>sest</em> (<a href="">SCONJ</a> 257, <a href="">PRON</a> 6), <em>kuigi</em> (<a href="">SCONJ</a> 45, <a href="">ADV</a> 9), <em>kuni</em> (<a href="">ADV</a> 42, <a href="">SCONJ</a> 31, <a href="">CONJ</a> 27, <a href="">ADP</a> 18), <em>justkui</em> (<a href="">SCONJ</a> 16, <a href="">ADV</a> 8), <em>otsekui</em> (<a href="">SCONJ</a> 16, <a href="">ADV</a> 2)</p>
+<p>The 10 most frequent ambiguous types:  <em>kui</em> (<a href="">SCONJ</a> 127, <a href="">CCONJ</a> 8, <a href="">ADV</a> 8), <em>nagu</em> (<a href="">SCONJ</a> 70, <a href="">ADV</a> 2), <em>sest</em> (<a href="">SCONJ</a> 28, <a href="">PRON</a> 1), <em>kuni</em> (<a href="">SCONJ</a> 11, <a href="">CCONJ</a> 2, <a href="">ADP</a> 1), <em>kuigi</em> (<a href="">SCONJ</a> 5, <a href="">ADV</a> 1)</p>
 
 <ul>
   <li><em>kui</em>
     <ul>
-      <li><a href="">SCONJ</a> 1080: <em>” Ma usun , et ta on kohe-kohe ärkamas , <b>kui</b> mitte juba ärganud .</em></li>
-      <li><a href="">CONJ</a> 144: <em>Nii Eestis <b>kui</b> ka kord välismaal .</em></li>
-      <li><a href="">ADV</a> 99: <em>Ta ei teadnud , kuidas oli siia sattunud ja <b>kui</b> kauaks .</em></li>
+      <li><a href="">SCONJ</a> 127: <em>” Ma usun , et ta on kohe-kohe ärkamas , <b>kui</b> mitte juba ärganud .</em></li>
+      <li><a href="">CCONJ</a> 8: <em>Eesti rahval on korraga vaja nii Arnold Rüütlit <b>kui</b> ka Lennart Merit .</em></li>
+      <li><a href="">ADV</a> 8: <em>Kuule , <b>kui</b> palju sul raha on ?</em></li>
     </ul>
   </li>
   <li><em>nagu</em>
     <ul>
-      <li><a href="">SCONJ</a> 333: <em>Süsimust , laineteta vesi läikis nende ümber <b>nagu</b> nafta .</em></li>
-      <li><a href="">ADV</a> 16: <em>” Ma , ma peaksin siin <b>nagu</b> elama ! “ oli Jan jahmunud .</em></li>
+      <li><a href="">SCONJ</a> 70: <em>Indriksoni seksuaalkogemused olid kasinad ja <b>nagu</b> selgus , monotoonsed .</em></li>
+      <li><a href="">ADV</a> 2: <em>Ta näis <b>nagu</b> süüdlaslikult ootavat , kas isand võtab tibukarja omaks .</em></li>
     </ul>
   </li>
   <li><em>sest</em>
     <ul>
-      <li><a href="">SCONJ</a> 257: <em>Jumala eest , seda ma teen , <b>sest</b> ma tahan leida tõde ja õigust ! “</em></li>
-      <li><a href="">PRON</a> 6: <em>Mine tee <b>sest</b> lugu , soovitas tuttav .</em></li>
-    </ul>
-  </li>
-  <li><em>kuigi</em>
-    <ul>
-      <li><a href="">SCONJ</a> 45: <em>Lehast on raske lahti saada , <b>kuigi</b> pesta saab hästi .</em></li>
-      <li><a href="">ADV</a> 9: <em>Täna pole pilt kliendile <b>kuigi</b> roosiline ja pangad kasutavad seda loomulikult ära .</em></li>
+      <li><a href="">SCONJ</a> 28: <em>Ilmselt juba kaua , <b>sest</b> seal tundus olevat vanu probleeme ja konflikte !</em></li>
+      <li><a href="">PRON</a> 1: <em>Mis <b>sest</b> ikka vahtida ! “</em></li>
     </ul>
   </li>
   <li><em>kuni</em>
     <ul>
-      <li><a href="">ADV</a> 42: <em>Kokku põeb neid <b>kuni</b> 4000 põhjanaabrit .</em></li>
-      <li><a href="">SCONJ</a> 31: <em>Seni , <b>kuni</b> süüa vaaritatakse , vaatan tubades ringi .</em></li>
-      <li><a href="">CONJ</a> 27: <em>Tomatite vegetatsiooniperiood kestab 1,5 <b>kuni</b> 2 kuud .</em></li>
-      <li><a href="">ADP</a> 18: <em>Aastast 1893 <b>kuni</b> tänavuse suveni oli tornis rist .</em></li>
+      <li><a href="">SCONJ</a> 11: <em>Seni , <b>kuni</b> süüa vaaritatakse , vaatan tubades ringi .</em></li>
+      <li><a href="">CCONJ</a> 2: <em>Ja niikaua , <b>kuni</b> selline asi kestab , ei saa eestlastest mingeid õigeid töötegijaid .</em></li>
+      <li><a href="">ADP</a> 1: <em>Veerandfinaalis püsis Saarepuu pildil ehk norralase Ola Vigen Hattestadi ja venelase Mihhail Devjatjarovi kannul <b>kuni</b> tõusu tipuni , laskumisel jäi aga lootusetult maha .</em></li>
     </ul>
   </li>
-  <li><em>justkui</em>
+  <li><em>kuigi</em>
     <ul>
-      <li><a href="">SCONJ</a> 16: <em>Meile juba <b>justkui</b> eilne päev .</em></li>
-      <li><a href="">ADV</a> 8: <em>Küsimärgi all oleks <b>justkui</b> kuninganna Beatrixi ( 62 ) kompetentsus .</em></li>
-    </ul>
-  </li>
-  <li><em>otsekui</em>
-    <ul>
-      <li><a href="">SCONJ</a> 16: <em>Põsk värahtas , <b>otsekui</b> puudutanuks seda üleelusuuruses kärnkonn .</em></li>
-      <li><a href="">ADV</a> 2: <em>Kui põldudel häälitsevaid haneparvi mitte arvestada , oli talu <b>otsekui</b> välja surnud .</em></li>
+      <li><a href="">SCONJ</a> 5: <em>Ja mis sa nendega teed , <b>kuigi</b> tomatiäritsemine pole ilus tegu .</em></li>
+      <li><a href="">ADV</a> 1: <em>Mitte küll <b>kuigi</b> sügav , kuid siiski piisav selleks … milleks ta mõeldud oli .</em></li>
     </ul>
   </li>
 </ul>
 
 <h2 id="morphology">Morphology</h2>
 
-<p>The form / lemma ratio of <code>SCONJ</code> is 0.857143 (the average of all parts of speech is 1.839644).</p>
+<p>The form / lemma ratio of <code>SCONJ</code> is 0.909091 (the average of all parts of speech is 1.545328).</p>
 
-<p>The 1st highest number of forms (1) was observed with the lemma “SUB”: <em>et</em>.</p>
+<p>The 1st highest number of forms (1) was observed with the lemma “ehkki”: <em>ehkki</em>.</p>
 
-<p>The 2nd highest number of forms (1) was observed with the lemma “ehkki”: <em>ehkki</em>.</p>
+<p>The 2nd highest number of forms (1) was observed with the lemma “et”: <em>et</em>.</p>
 
-<p>The 3rd highest number of forms (1) was observed with the lemma “et”: <em>et</em>.</p>
+<p>The 3rd highest number of forms (1) was observed with the lemma “just-kui”: <em>justkui</em>.</p>
 
 <p><code>SCONJ</code> does not occur with any features.</p>
 
 <h2 id="relations">Relations</h2>
 
-<p><code>SCONJ</code> nodes are attached to their parents using 6 different relations: <a href="">et-dep/mark</a> (4760; 99% instances), <a href="">et-dep/cc:preconj</a> (18; 0% instances), <a href="">et-dep/cc</a> (13; 0% instances), <a href="">et-dep/conj</a> (2; 0% instances), <a href="">et-dep/root</a> (2; 0% instances), <a href="">et-dep/nmod</a> (1; 0% instances)</p>
+<p><code>SCONJ</code> nodes are attached to their parents using 2 different relations: <a href="">et-dep/mark</a> (630; 100% instances), <a href="">et-dep/cc:preconj</a> (2; 0% instances)</p>
 
-<p>Parents of <code>SCONJ</code> nodes belong to 13 different parts of speech: <a href="">VERB</a> (3527; 74% instances), <a href="">NOUN</a> (640; 13% instances), <a href="">ADJ</a> (377; 8% instances), <a href="">ADV</a> (93; 2% instances), <a href="">PROPN</a> (65; 1% instances), <a href="">PRON</a> (49; 1% instances), <a href="">AUX</a> (20; 0% instances), <a href="">ADP</a> (9; 0% instances), <a href="">NUM</a> (6; 0% instances), <a href="">SCONJ</a> (5; 0% instances), <a href="">INTJ</a> (2; 0% instances), <a href="">ROOT</a> (2; 0% instances), <a href="">CONJ</a> (1; 0% instances)</p>
+<p>Parents of <code>SCONJ</code> nodes belong to 7 different parts of speech: <a href="">VERB</a> (447; 71% instances), <a href="">NOUN</a> (98; 16% instances), <a href="">ADJ</a> (45; 7% instances), <a href="">ADV</a> (19; 3% instances), <a href="">PRON</a> (14; 2% instances), <a href="">PROPN</a> (8; 1% instances), <a href="">NUM</a> (1; 0% instances)</p>
 
-<p>4670 (97%) <code>SCONJ</code> nodes are leaves.</p>
+<p>620 (98%) <code>SCONJ</code> nodes are leaves.</p>
 
-<p>122 (3%) <code>SCONJ</code> nodes have one child.</p>
+<p>12 (2%) <code>SCONJ</code> nodes have one child.</p>
 
-<p>2 (0%) <code>SCONJ</code> nodes have two children.</p>
+<p>The highest child degree of a <code>SCONJ</code> node is 1.</p>
 
-<p>2 (0%) <code>SCONJ</code> nodes have three or more children.</p>
+<p>Children of <code>SCONJ</code> nodes are attached using 2 different relations: <a href="">et-dep/advmod</a> (11; 92% instances), <a href="">et-dep/cc:preconj</a> (1; 8% instances)</p>
 
-<p>The highest child degree of a <code>SCONJ</code> node is 4.</p>
-
-<p>Children of <code>SCONJ</code> nodes are attached using 6 different relations: <a href="">et-dep/advmod</a> (67; 50% instances), <a href="">et-dep/cc:preconj</a> (50; 37% instances), <a href="">et-dep/punct</a> (6; 4% instances), <a href="">et-dep/cc</a> (5; 4% instances), <a href="">et-dep/nmod</a> (4; 3% instances), <a href="">et-dep/conj</a> (2; 1% instances)</p>
-
-<p>Children of <code>SCONJ</code> nodes belong to 7 different parts of speech: <a href="">ADV</a> (110; 82% instances), <a href="">PUNCT</a> (6; 4% instances), <a href="">CONJ</a> (5; 4% instances), <a href="">SCONJ</a> (5; 4% instances), <a href="">PRON</a> (4; 3% instances), <a href="">ADP</a> (2; 1% instances), <a href="">NOUN</a> (2; 1% instances)</p>
+<p>Children of <code>SCONJ</code> nodes belong to 1 different parts of speech: <a href="">ADV</a> (12; 100% instances)</p>
 
 
 
@@ -169,9 +169,25 @@ Out of 15 observed tags, the rank of <code>SCONJ</code> is: 15 in number of lemm
 
 SCONJ in other languages:
 
+[<a href="../../am/pos/SCONJ.html">am</a>]
+
+[<a href="../../ar/pos/SCONJ.html">ar</a>]
+
 [<a href="../../bg/pos/SCONJ.html">bg</a>]
 
+[<a href="../../bxr/pos/SCONJ.html">bxr</a>]
+
+[<a href="../../ca/pos/SCONJ.html">ca</a>]
+
+[<a href="../../ckb/pos/SCONJ.html">ckb</a>]
+
+[<a href="../../cop/pos/SCONJ.html">cop</a>]
+
 [<a href="../../cs/pos/SCONJ.html">cs</a>]
+
+[<a href="../../cu/pos/SCONJ.html">cu</a>]
+
+[<a href="../../da/pos/SCONJ.html">da</a>]
 
 [<a href="../../de/pos/SCONJ.html">de</a>]
 
@@ -181,29 +197,99 @@ SCONJ in other languages:
 
 [<a href="../../es/pos/SCONJ.html">es</a>]
 
+[<a href="../../et/pos/SCONJ.html">et</a>]
+
 [<a href="../../eu/pos/SCONJ.html">eu</a>]
 
 [<a href="../../fa/pos/SCONJ.html">fa</a>]
 
 [<a href="../../fi/pos/SCONJ.html">fi</a>]
 
+[<a href="../../fo/pos/SCONJ.html">fo</a>]
+
 [<a href="../../fr/pos/SCONJ.html">fr</a>]
 
 [<a href="../../ga/pos/SCONJ.html">ga</a>]
 
+[<a href="../../gl/pos/SCONJ.html">gl</a>]
+
+[<a href="../../got/pos/SCONJ.html">got</a>]
+
+[<a href="../../grc/pos/SCONJ.html">grc</a>]
+
 [<a href="../../he/pos/SCONJ.html">he</a>]
 
+[<a href="../../hi/pos/SCONJ.html">hi</a>]
+
+[<a href="../../hr/pos/SCONJ.html">hr</a>]
+
 [<a href="../../hu/pos/SCONJ.html">hu</a>]
+
+[<a href="../../id/pos/SCONJ.html">id</a>]
 
 [<a href="../../it/pos/SCONJ.html">it</a>]
 
 [<a href="../../ja/pos/SCONJ.html">ja</a>]
 
+[<a href="../../kk/pos/SCONJ.html">kk</a>]
+
+[<a href="../../kmr/pos/SCONJ.html">kmr</a>]
+
 [<a href="../../ko/pos/SCONJ.html">ko</a>]
+
+[<a href="../../la/pos/SCONJ.html">la</a>]
+
+[<a href="../../lv/pos/SCONJ.html">lv</a>]
+
+[<a href="../../mr/pos/SCONJ.html">mr</a>]
+
+[<a href="../../nl/pos/SCONJ.html">nl</a>]
+
+[<a href="../../no/pos/SCONJ.html">no</a>]
+
+[<a href="../../pl/pos/SCONJ.html">pl</a>]
+
+[<a href="../../pt/pos/SCONJ.html">pt</a>]
+
+[<a href="../../ro/pos/SCONJ.html">ro</a>]
+
+[<a href="../../ru/pos/SCONJ.html">ru</a>]
+
+[<a href="../../sa/pos/SCONJ.html">sa</a>]
+
+[<a href="../../sk/pos/SCONJ.html">sk</a>]
+
+[<a href="../../sla/pos/SCONJ.html">sla</a>]
+
+[<a href="../../sl/pos/SCONJ.html">sl</a>]
+
+[<a href="../../so/pos/SCONJ.html">so</a>]
+
+[<a href="../../sr/pos/SCONJ.html">sr</a>]
 
 [<a href="../../sv/pos/SCONJ.html">sv</a>]
 
+[<a href="../../swl/pos/SCONJ.html">swl</a>]
+
+[<a href="../../ta/pos/SCONJ.html">ta</a>]
+
+[<a href="../../tr/pos/SCONJ.html">tr</a>]
+
+[<a href="../../ug/pos/SCONJ.html">ug</a>]
+
+[<a href="../../uk/pos/SCONJ.html">uk</a>]
+
 [<a href="../../u/pos/SCONJ.html">u</a>]
+
+[<a href="../../urj/pos/SCONJ.html">urj</a>]
+
+[<a href="../../ur/pos/SCONJ.html">ur</a>]
+
+[<a href="../../vi/pos/SCONJ.html">vi</a>]
+
+[<a href="../../yue/pos/SCONJ.html">yue</a>]
+
+[<a href="../../zh/pos/SCONJ.html">zh</a>]
 
 
 

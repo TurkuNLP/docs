@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-fa">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/fa/dep">fa/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_fa-dep/neg.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-fa">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/fa/dep">fa/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fa-dep/neg.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -56,100 +73,30 @@ for <code>neg</code>.</p>
 
 
 
-
-<hr />
-
-<h2 id="treebank-statistics-udpersian">Treebank Statistics (UD_Persian)</h2>
-
-<p>This relation is universal.</p>
-
-<p>105 nodes (0%) are attached to their parents as <code>neg</code>.</p>
-
-<p>101 instances of <code>neg</code> (96%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.18095238095238.</p>
-
-<p>The following 5 pairs of parts of speech are connected with <code>neg</code>: <a href="">fa-pos/NOUN</a>-<a href="">fa-pos/ADV</a> (46; 44% instances), <a href="">fa-pos/ADJ</a>-<a href="">fa-pos/ADV</a> (26; 25% instances), <a href="">fa-pos/ADP</a>-<a href="">fa-pos/ADV</a> (25; 24% instances), <a href="">fa-pos/ADV</a>-<a href="">fa-pos/ADV</a> (5; 5% instances), <a href="">fa-pos/PRON</a>-<a href="">fa-pos/ADV</a> (3; 3% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
-# visual-style 8	bgColor:blue
-# visual-style 8	fgColor:white
-# visual-style 8 7 neg	color:blue
-1	آیا	آیا	SCONJ	CON	_	11	advmod	_	_
-2	علی	علی	NOUN	N_SING	Number=Sing	11	nsubj	_	_
-3	)	)	PUNCT	DELM	_	2	punct	_	_
-4	ع	ع	NOUN	N_SING	Number=Sing	2	dep	_	_
-5	(	(	PUNCT	DELM	_	2	punct	_	_
-6	بر	بر	ADP	P	_	8	case	_	_
-7	غیر	_	ADV	ADV_NEG	Negative=Neg	8	neg	_	_
-8	دین	دین	NOUN	N_SING	Number=Sing	11	nmod	_	_
-9	پسرعموی	پسرعمو	NOUN	N_SING	Number=Sing	8	nmod:poss	_	_
-10	ش	او	PRON	PRO	Number=Sing|Person=3|PronType=Prs	9	nmod:poss	_	_
-11	بود	بود	VERB	V_PA	Number=Sing|Person=3|Tense=Past	0	root	_	_
-12	؟	؟	PUNCT	DELM	_	11	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 15	bgColor:blue
-# visual-style 15	fgColor:white
-# visual-style 16	bgColor:blue
-# visual-style 16	fgColor:white
-# visual-style 16 15 neg	color:blue
-1	البته	البته	ADV	ADV	_	7	advmod	_	_
-2	فقط	فقط	ADV	ADV	_	7	advmod	_	_
-3	در	در	ADP	P	_	4	case	_	_
-4	محدوده	محدوده	NOUN	N_SING	Number=Sing	7	nmod	_	_
-5	قانون	قانون	NOUN	N_SING	Number=Sing	4	nmod:poss	_	_
-6	نه	نه	ADV	ADV_NEG	Negative=Neg	7	neg	_	_
-7	تندتر	تند	ADJ	ADJ_CMPR	Degree=Cmp	0	root	_	_
-8	و	و	CONJ	CON	_	7	cc	_	_
-9	نه	نه	ADV	ADV_NEG	Negative=Neg	10	neg	_	_
-10	کندتر	کند	ADJ	ADJ_CMPR	Degree=Cmp	7	conj	_	_
-11	و	و	CONJ	CON	_	10	cc	_	_
-12	نه	نه	ADV	ADV_NEG	Negative=Neg	13	neg	_	_
-13	زیادتر	زیاد	ADJ	ADJ_CMPR	Degree=Cmp	10	conj	_	_
-14	و	و	CONJ	CON	_	13	cc	_	_
-15	نه	نه	ADV	ADV_NEG	Negative=Neg	16	neg	_	_
-16	کمتر	کم	ADJ	ADJ_CMPR	Degree=Cmp	13	conj	_	_
-17	.	.	PUNCT	DELM	_	7	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 10	bgColor:blue
-# visual-style 10	fgColor:white
-# visual-style 11	bgColor:blue
-# visual-style 11	fgColor:white
-# visual-style 11 10 neg	color:blue
-1	همچنین	همچنین	CONJ	CON	_	15	cc	_	_
-2	آنطور	آنطور	ADV	ADV	_	15	nmod	_	_
-3	که	که	SCONJ	CON	_	4	mark	_	_
-4	می‌بایست	بایست#باید	AUX	V_AUX	VerbForm=Inf	2	acl:relcl	_	_
-5	مورد	مورد	ADP	P	_	6	case	_	_
-6	مطالعهٔ	مطالعه	NOUN	N_SING	Number=Sing	15	nmod	_	_
-7	علما	عالم	NOUN	N_PL	Number=Plur	6	nmod:poss	_	_
-8	و	و	CONJ	CON	_	7	cc	_	_
-9	فضلا	فاضل	NOUN	N_PL	Number=Plur	7	conj	_	_
-10	غیر	غیر	ADV	ADV_NEG	Negative=Neg	11	neg	_	_
-11	از	از	ADP	P	_	12	case	_	_
-12	احمد	احمد	NOUN	N_SING	Number=Sing	15	nmod	_	_
-13	گلچین	گلچین	NOUN	N_SING	Number=Sing	12	name	_	_
-14	قرار	قرار	NOUN	N_SING	Number=Sing	15	compound:lvc	_	_
-15	نگرفته‌اند	گرفت#گیر	VERB	V_PP	Negative=Neg|Number=Plur|Person=3|VerbForm=Part	0	root	_	_
-16	.	.	PUNCT	DELM	_	15	punct	_	_
-
-</code></pre>
-
-
-
-
 <!-- "in other languages" links -->
 <hr/>
 
 neg in other languages:
 
+[<a href="../../am/dep/neg.html">am</a>]
+
+[<a href="../../ar/dep/neg.html">ar</a>]
+
 [<a href="../../bg/dep/neg.html">bg</a>]
 
+[<a href="../../bxr/dep/neg.html">bxr</a>]
+
+[<a href="../../ca/dep/neg.html">ca</a>]
+
+[<a href="../../ckb/dep/neg.html">ckb</a>]
+
+[<a href="../../cop/dep/neg.html">cop</a>]
+
 [<a href="../../cs/dep/neg.html">cs</a>]
+
+[<a href="../../cu/dep/neg.html">cu</a>]
+
+[<a href="../../da/dep/neg.html">da</a>]
 
 [<a href="../../de/dep/neg.html">de</a>]
 
@@ -159,29 +106,97 @@ neg in other languages:
 
 [<a href="../../es/dep/neg.html">es</a>]
 
+[<a href="../../et/dep/neg.html">et</a>]
+
 [<a href="../../eu/dep/neg.html">eu</a>]
 
 [<a href="../../fa/dep/neg.html">fa</a>]
 
 [<a href="../../fi/dep/neg.html">fi</a>]
 
+[<a href="../../fo/dep/neg.html">fo</a>]
+
 [<a href="../../fr/dep/neg.html">fr</a>]
 
 [<a href="../../ga/dep/neg.html">ga</a>]
 
+[<a href="../../gl/dep/neg.html">gl</a>]
+
+[<a href="../../got/dep/neg.html">got</a>]
+
+[<a href="../../grc/dep/neg.html">grc</a>]
+
 [<a href="../../he/dep/neg.html">he</a>]
 
+[<a href="../../hi/dep/neg.html">hi</a>]
+
+[<a href="../../hr/dep/neg.html">hr</a>]
+
 [<a href="../../hu/dep/neg.html">hu</a>]
+
+[<a href="../../id/dep/neg.html">id</a>]
 
 [<a href="../../it/dep/neg.html">it</a>]
 
 [<a href="../../ja/dep/neg.html">ja</a>]
 
+[<a href="../../kk/dep/neg.html">kk</a>]
+
+[<a href="../../kmr/dep/neg.html">kmr</a>]
+
 [<a href="../../ko/dep/neg.html">ko</a>]
+
+[<a href="../../la/dep/neg.html">la</a>]
+
+[<a href="../../lv/dep/neg.html">lv</a>]
+
+[<a href="../../mr/dep/neg.html">mr</a>]
+
+[<a href="../../nl/dep/neg.html">nl</a>]
+
+[<a href="../../no/dep/neg.html">no</a>]
+
+[<a href="../../pl/dep/neg.html">pl</a>]
+
+[<a href="../../pt/dep/neg.html">pt</a>]
+
+[<a href="../../ro/dep/neg.html">ro</a>]
+
+[<a href="../../ru/dep/neg.html">ru</a>]
+
+[<a href="../../sa/dep/neg.html">sa</a>]
+
+[<a href="../../sk/dep/neg.html">sk</a>]
+
+[<a href="../../sla/dep/neg.html">sla</a>]
+
+[<a href="../../sl/dep/neg.html">sl</a>]
+
+[<a href="../../so/dep/neg.html">so</a>]
+
+[<a href="../../sr/dep/neg.html">sr</a>]
 
 [<a href="../../sv/dep/neg.html">sv</a>]
 
-[<a href="../../u/dep/neg.html">u</a>]
+[<a href="../../swl/dep/neg.html">swl</a>]
+
+[<a href="../../ta/dep/neg.html">ta</a>]
+
+[<a href="../../tr/dep/neg.html">tr</a>]
+
+[<a href="../../ug/dep/neg.html">ug</a>]
+
+[<a href="../../uk/dep/neg.html">uk</a>]
+
+[<a href="../../ur/dep/neg.html">ur</a>]
+
+[<a href="../../urj/dep/neg.html">urj</a>]
+
+[<a href="../../vi/dep/neg.html">vi</a>]
+
+[<a href="../../yue/dep/neg.html">yue</a>]
+
+[<a href="../../zh/dep/neg.html">zh</a>]
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-pt">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/pt/feat">pt/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-feat/Degree.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-pt">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/pt/feat">pt/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-feat/Degree.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -108,105 +125,30 @@ handsome</b>”</li>
 
 
 
-
-<hr />
-
-<h2 id="treebank-statistics-udportuguese">Treebank Statistics (UD_Portuguese)</h2>
-
-<p>This feature is universal.
-It occurs with 2 different values: <code>Cmp</code>, <code>Sup</code>.</p>
-
-<p>1377 tokens (1%) have a non-empty value of <code>Degree</code>.
-59 types (0%) occur at least once with a non-empty value of <code>Degree</code>.
-24 lemmas (0%) occur at least once with a non-empty value of <code>Degree</code>.
-The feature is used with 4 part-of-speech tags: <a href="">pt-pos/ADV</a> (490; 0% instances), <a href="">pt-pos/DET</a> (411; 0% instances), <a href="">pt-pos/ADJ</a> (353; 0% instances), <a href="">pt-pos/PRON</a> (123; 0% instances).</p>
-
-<h3 id="adv"><code>ADV</code></h3>
-
-<p>490 <a href="">pt-pos/ADV</a> tokens (5% of all <code>ADV</code> tokens) have a non-empty value of <code>Degree</code>.</p>
-
-<p>The most frequent other feature values with which <code>ADV</code> and <code>Degree</code> co-occurred: <tt><a href="NumType.html">NumType</a>=Card</tt> (467; 95%), <tt><a href="PronType.html">PronType</a>=Ind,Neg,Tot</tt> (467; 95%).</p>
-
-<p><code>ADV</code> tokens may have the following values of <code>Degree</code>:</p>
-
-<ul>
-  <li><code>Cmp</code> (481; 98% of non-empty <code>Degree</code>): <em>mais, menos, tão, tanto, melhor, assim, pior, superiormente</em></li>
-  <li><code>Sup</code> (9; 2% of non-empty <code>Degree</code>): <em>melhor, Pior</em></li>
-  <li><code>EMPTY</code> (8421): <em>não, como, já, também, mais, ontem, ainda, quando, só, depois</em></li>
-</ul>
-
-<table>
-  <tr><th>Paradigm <i>melhor</i></th><th><tt>Cmp</tt></th><th><tt>Sup</tt></th></tr>
-  <tr><td><tt></tt></td><td><em>melhor</em></td><td><em>melhor</em></td></tr>
-</table>
-
-<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>ADV</code>. 92% lemmas (11) occur only with one value of <code>Degree</code>.</p>
-
-<h3 id="det"><code>DET</code></h3>
-
-<p>411 <a href="">pt-pos/DET</a> tokens (1% of all <code>DET</code> tokens) have a non-empty value of <code>Degree</code>.</p>
-
-<p>The most frequent other feature values with which <code>DET</code> and <code>Degree</code> co-occurred: <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (411; 100%), <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (320; 78%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (221; 54%), <tt><a href="Number.html">Number</a>=Sing</tt> (220; 54%).</p>
-
-<p><code>DET</code> tokens may have the following values of <code>Degree</code>:</p>
-
-<ul>
-  <li><code>Cmp</code> (410; 100% of non-empty <code>Degree</code>): <em>outros, outras, outro, outra, mais, mesmo, mesma, menos, tal, tais</em></li>
-  <li><code>Sup</code> (1; 0% of non-empty <code>Degree</code>): <em>muitíssimo</em></li>
-  <li><code>EMPTY</code> (35249): <em>o, a, os, as, um, uma, sua, seu, este, esta</em></li>
-</ul>
-
-<h3 id="adj"><code>ADJ</code></h3>
-
-<p>353 <a href="">pt-pos/ADJ</a> tokens (3% of all <code>ADJ</code> tokens) have a non-empty value of <code>Degree</code>.</p>
-
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Degree</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (267; 76%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (185; 52%).</p>
-
-<p><code>ADJ</code> tokens may have the following values of <code>Degree</code>:</p>
-
-<ul>
-  <li><code>Cmp</code> (203; 58% of non-empty <code>Degree</code>): <em>maior, maiores, melhor, menor, menores, melhores, superiores, superior, inferior, inferiores</em></li>
-  <li><code>Sup</code> (150; 42% of non-empty <code>Degree</code>): <em>melhor, principal, principais, melhores, pior, mínimo, ótimo, superior, piores, péssimo</em></li>
-  <li><code>EMPTY</code> (10641): <em>nacional, grande, primeiro, novo, primeira, nova, grandes, último, última, segundo</em></li>
-</ul>
-
-<table>
-  <tr><th>Paradigm <i>grande</i></th><th><tt>Cmp</tt></th><th><tt>Sup</tt></th></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td><em>maior</em></td><td><em>máximo</em></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur</tt></td><td><em>maiores</em></td><td><em>máximos</em></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td><em>maior</em></td><td><em>máxima</em></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur</tt></td><td><em>maiores</em></td><td></td></tr>
-</table>
-
-<h3 id="pron"><code>PRON</code></h3>
-
-<p>123 <a href="">pt-pos/PRON</a> tokens (2% of all <code>PRON</code> tokens) have a non-empty value of <code>Degree</code>.</p>
-
-<p>The most frequent other feature values with which <code>PRON</code> and <code>Degree</code> co-occurred: <tt><a href="Person.html">Person</a>=EMPTY</tt> (123; 100%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (123; 100%), <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (123; 100%), <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (90; 73%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (74; 60%).</p>
-
-<p><code>PRON</code> tokens may have the following values of <code>Degree</code>:</p>
-
-<ul>
-  <li><code>Cmp</code> (123; 100% of non-empty <code>Degree</code>): <em>mais, outros, mesmo, outras, outro, outra, mesma, tal, menos, tanto</em></li>
-  <li><code>EMPTY</code> (6595): <em>que, se, -se, ele, o, isso, quem, tudo, eles, eu</em></li>
-</ul>
-
-<h2 id="relations-with-agreement-in-degree">Relations with Agreement in <code>Degree</code></h2>
-
-<p>The 10 most frequent relations where parent and child node agree in <code>Degree</code>:
-<tt>PRON –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (1; 100%).</p>
-
-
-
-
 <!-- "in other languages" links -->
 <hr/>
 
 Degree in other languages:
 
+[<a href="../../am/feat/Degree.html">am</a>]
+
+[<a href="../../ar/feat/Degree.html">ar</a>]
+
 [<a href="../../bg/feat/Degree.html">bg</a>]
 
+[<a href="../../bxr/feat/Degree.html">bxr</a>]
+
+[<a href="../../ca/feat/Degree.html">ca</a>]
+
+[<a href="../../ckb/feat/Degree.html">ckb</a>]
+
+[<a href="../../cop/feat/Degree.html">cop</a>]
+
 [<a href="../../cs/feat/Degree.html">cs</a>]
+
+[<a href="../../cu/feat/Degree.html">cu</a>]
+
+[<a href="../../da/feat/Degree.html">da</a>]
 
 [<a href="../../de/feat/Degree.html">de</a>]
 
@@ -216,29 +158,99 @@ Degree in other languages:
 
 [<a href="../../es/feat/Degree.html">es</a>]
 
+[<a href="../../et/feat/Degree.html">et</a>]
+
 [<a href="../../eu/feat/Degree.html">eu</a>]
 
 [<a href="../../fa/feat/Degree.html">fa</a>]
 
 [<a href="../../fi/feat/Degree.html">fi</a>]
 
+[<a href="../../fo/feat/Degree.html">fo</a>]
+
 [<a href="../../fr/feat/Degree.html">fr</a>]
 
 [<a href="../../ga/feat/Degree.html">ga</a>]
 
+[<a href="../../gl/feat/Degree.html">gl</a>]
+
+[<a href="../../got/feat/Degree.html">got</a>]
+
+[<a href="../../grc/feat/Degree.html">grc</a>]
+
 [<a href="../../he/feat/Degree.html">he</a>]
 
+[<a href="../../hi/feat/Degree.html">hi</a>]
+
+[<a href="../../hr/feat/Degree.html">hr</a>]
+
 [<a href="../../hu/feat/Degree.html">hu</a>]
+
+[<a href="../../id/feat/Degree.html">id</a>]
 
 [<a href="../../it/feat/Degree.html">it</a>]
 
 [<a href="../../ja/feat/Degree.html">ja</a>]
 
+[<a href="../../kk/feat/Degree.html">kk</a>]
+
+[<a href="../../kmr/feat/Degree.html">kmr</a>]
+
 [<a href="../../ko/feat/Degree.html">ko</a>]
+
+[<a href="../../la/feat/Degree.html">la</a>]
+
+[<a href="../../lv/feat/Degree.html">lv</a>]
+
+[<a href="../../mr/feat/Degree.html">mr</a>]
+
+[<a href="../../nl/feat/Degree.html">nl</a>]
+
+[<a href="../../no/feat/Degree.html">no</a>]
+
+[<a href="../../pl/feat/Degree.html">pl</a>]
+
+[<a href="../../pt/feat/Degree.html">pt</a>]
+
+[<a href="../../ro/feat/Degree.html">ro</a>]
+
+[<a href="../../ru/feat/Degree.html">ru</a>]
+
+[<a href="../../sa/feat/Degree.html">sa</a>]
+
+[<a href="../../sk/feat/Degree.html">sk</a>]
+
+[<a href="../../sla/feat/Degree.html">sla</a>]
+
+[<a href="../../sl/feat/Degree.html">sl</a>]
+
+[<a href="../../so/feat/Degree.html">so</a>]
+
+[<a href="../../sr/feat/Degree.html">sr</a>]
 
 [<a href="../../sv/feat/Degree.html">sv</a>]
 
+[<a href="../../swl/feat/Degree.html">swl</a>]
+
+[<a href="../../ta/feat/Degree.html">ta</a>]
+
+[<a href="../../tr/feat/Degree.html">tr</a>]
+
 [<a href="../../u/feat/Degree.html">u</a>]
+
+[<a href="../../ug/feat/Degree.html">ug</a>]
+
+[<a href="../../uk/feat/Degree.html">uk</a>]
+
+[<a href="../../ur/feat/Degree.html">ur</a>]
+
+[<a href="../../urj/feat/Degree.html">urj</a>]
+
+[<a href="../../vi/feat/Degree.html">vi</a>]
+
+[<a href="../../yue/feat/Degree.html">yue</a>]
+
+[<a href="../../zh/feat/Degree.html">zh</a>]
 
 
 

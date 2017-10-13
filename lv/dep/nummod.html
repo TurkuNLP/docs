@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-lv">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/lv/dep">lv/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_lv-dep/nummod.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-lv">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/lv/dep">lv/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_lv-dep/nummod.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,24 +80,24 @@ for <code>nummod</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>290 nodes (1%) are attached to their parents as <code>nummod</code>.</p>
+<p>430 nodes (1%) are attached to their parents as <code>nummod</code>.</p>
 
-<p>290 instances of <code>nummod</code> (100%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.2551724137931.</p>
+<p>416 instances of <code>nummod</code> (97%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.53720930232558.</p>
 
-<p>The following 4 pairs of parts of speech are connected with <code>nummod</code>: <a href="">lv-pos/NOUN</a>-<a href="">lv-pos/NUM</a> (212; 73% instances), <a href="">lv-pos/SYM</a>-<a href="">lv-pos/NUM</a> (68; 23% instances), <a href="">lv-pos/PROPN</a>-<a href="">lv-pos/NUM</a> (6; 2% instances), <a href="">lv-pos/NUM</a>-<a href="">lv-pos/NUM</a> (4; 1% instances).</p>
+<p>The following 7 pairs of parts of speech are connected with <code>nummod</code>: <a href="">lv-pos/NOUN</a>-<a href="">lv-pos/NUM</a> (330; 77% instances), <a href="">lv-pos/SYM</a>-<a href="">lv-pos/NUM</a> (58; 13% instances), <a href="">lv-pos/VERB</a>-<a href="">lv-pos/NUM</a> (13; 3% instances), <a href="">lv-pos/PUNCT</a>-<a href="">lv-pos/NUM</a> (12; 3% instances), <a href="">lv-pos/NUM</a>-<a href="">lv-pos/NUM</a> (6; 1% instances), <a href="">lv-pos/PROPN</a>-<a href="">lv-pos/NUM</a> (6; 1% instances), <a href="">lv-pos/ADJ</a>-<a href="">lv-pos/NUM</a> (5; 1% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 4	bgColor:blue
 # visual-style 4	fgColor:white
-# visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 5 4 nummod	color:blue
-1	Kopā	kopā	ADV	r0m	_	3	advmod	_	_
-2	poligonā	poligons	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	3	nmod	_	_
-3	ir	būt	VERB	vmnipii30an	Mood=Ind|Negative=Neg|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-4	27	27	NUM	xn	NumType=Card	5	nummod	_	_
-5	darbinieki	darbinieks	NOUN	ncmpn1	Case=Nom|Gender=Masc|Number=Plur	3	nsubj	_	SpaceAfter=No
-6	.	.	PUNCT	zs	_	3	punct	_	_
+# visual-style 4 3 nummod	color:blue
+1	Varbūt	varbūt	PART	qs	_	5	discourse	_	_
+2	abi	abi	PRON	pg0mpnn	Case=Nom|Gender=Masc|Number=Plur|PronType=Tot	5	nsubj	_	_
+3	vienā	viena	NUM	mcsfslv	Case=Loc|Gender=Fem|Number=Sing|NumType=Card	4	nummod	_	_
+4	iestādē	iestāde	NOUN	ncfsl5	Case=Loc|Gender=Fem|Number=Sing	5	obl	_	_
+5	strādā	strādāt	VERB	vmnipt230an	Evident=Fh,Nfh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	zs	_	5	punct	_	_
 
 </code></pre>
 
@@ -90,7 +107,7 @@ Average distance between parent and child is 1.2551724137931.</p>
 # visual-style 5	fgColor:white
 # visual-style 5 4 nummod	color:blue
 1	Būvniecības	būvniecība	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	_
-2	nozarē	nozare	NOUN	ncfsl5	Case=Loc|Gender=Fem|Number=Sing	8	nmod	_	_
+2	nozarē	nozare	NOUN	ncfsl5	Case=Loc|Gender=Fem|Number=Sing	8	obl	_	_
 3	(	(	PUNCT	zb	_	5	punct	_	SpaceAfter=No
 4	6,1	6,1	NUM	xn	NumType=Card	5	nummod	_	SpaceAfter=No
 5	%	%	SYM	xx	_	2	parataxis	_	SpaceAfter=No
@@ -99,23 +116,26 @@ Average distance between parent and child is 1.2551724137931.</p>
 8	kāpis	kāpt	VERB	vmnpdmsnasn	Aspect=Perf|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
 9	par	par	ADP	sppdn	_	11	case	_	_
 10	14,6	14,6	NUM	xn	NumType=Card	11	nummod	_	SpaceAfter=No
-11	%	%	SYM	xx	_	8	nmod	_	SpaceAfter=No
+11	%	%	SYM	xx	_	8	obl	_	SpaceAfter=No
 12	.	.	PUNCT	zs	_	8	punct	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
-# visual-style 7 6 nummod	color:blue
-1	Dienas	diena	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	_
-2	Bizness	bizness	NOUN	ncmsn1	Case=Nom|Gender=Masc|Number=Sing	4	parataxis	_	SpaceAfter=No
-3	:	:	PUNCT	zo	_	2	punct	_	_
-4	Nafta	nafta	NOUN	ncfsn4	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
-5	pie	pie	ADP	sppdy	_	7	case	_	_
-6	118	118	NUM	xn	NumType=Card	7	nummod	_	_
-7	USD	USD	PROPN	y	_	4	acl	_	_
+<pre><code class="language-conllu"># visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 1 5 nummod	color:blue
+1	Novilkt	novilkt	VERB	vmnn0t1000n	Polarity=Pos|VerbForm=Inf	9	ccomp	_	_
+2	striktu	strikta	ADJ	arfsanp	Case=Acc|Degree=Pos|Gender=Fem|Number=Sing	3	amod	_	_
+3	robežu	robeža	NOUN	ncfsa4	Case=Acc|Gender=Fem|Number=Sing	1	obj	_	_
+4	starp	starp	ADP	spsay	_	5	case	_	_
+5	vienu	viens	NUM	mcsmsav	Case=Acc|Gender=Masc|Number=Sing|NumType=Card	1	nummod	_	_
+6	un	un	CCONJ	ccs	_	7	cc	_	_
+7	otru	otrs	NUM	mcsmsav	Case=Acc|Gender=Masc|Number=Sing|NumType=Card	5	conj	_	_
+8	ir	būt	VERB	vcnipii30an	Evident=Fh,Nfh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	neiespējami	neiespējami	ADV	r0m	PronType=Neg	0	root	_	SpaceAfter=No
+10	.	.	PUNCT	zs	_	9	punct	_	_
 
 </code></pre>
 
@@ -127,9 +147,25 @@ Average distance between parent and child is 1.2551724137931.</p>
 
 nummod in other languages:
 
+[<a href="../../am/dep/nummod.html">am</a>]
+
+[<a href="../../ar/dep/nummod.html">ar</a>]
+
 [<a href="../../bg/dep/nummod.html">bg</a>]
 
+[<a href="../../bxr/dep/nummod.html">bxr</a>]
+
+[<a href="../../ca/dep/nummod.html">ca</a>]
+
+[<a href="../../ckb/dep/nummod.html">ckb</a>]
+
+[<a href="../../cop/dep/nummod.html">cop</a>]
+
 [<a href="../../cs/dep/nummod.html">cs</a>]
+
+[<a href="../../cu/dep/nummod.html">cu</a>]
+
+[<a href="../../da/dep/nummod.html">da</a>]
 
 [<a href="../../de/dep/nummod.html">de</a>]
 
@@ -139,29 +175,99 @@ nummod in other languages:
 
 [<a href="../../es/dep/nummod.html">es</a>]
 
+[<a href="../../et/dep/nummod.html">et</a>]
+
 [<a href="../../eu/dep/nummod.html">eu</a>]
 
 [<a href="../../fa/dep/nummod.html">fa</a>]
 
 [<a href="../../fi/dep/nummod.html">fi</a>]
 
+[<a href="../../fo/dep/nummod.html">fo</a>]
+
 [<a href="../../fr/dep/nummod.html">fr</a>]
 
 [<a href="../../ga/dep/nummod.html">ga</a>]
 
+[<a href="../../gl/dep/nummod.html">gl</a>]
+
+[<a href="../../got/dep/nummod.html">got</a>]
+
+[<a href="../../grc/dep/nummod.html">grc</a>]
+
 [<a href="../../he/dep/nummod.html">he</a>]
 
+[<a href="../../hi/dep/nummod.html">hi</a>]
+
+[<a href="../../hr/dep/nummod.html">hr</a>]
+
 [<a href="../../hu/dep/nummod.html">hu</a>]
+
+[<a href="../../id/dep/nummod.html">id</a>]
 
 [<a href="../../it/dep/nummod.html">it</a>]
 
 [<a href="../../ja/dep/nummod.html">ja</a>]
 
+[<a href="../../kk/dep/nummod.html">kk</a>]
+
+[<a href="../../kmr/dep/nummod.html">kmr</a>]
+
 [<a href="../../ko/dep/nummod.html">ko</a>]
+
+[<a href="../../la/dep/nummod.html">la</a>]
+
+[<a href="../../lv/dep/nummod.html">lv</a>]
+
+[<a href="../../mr/dep/nummod.html">mr</a>]
+
+[<a href="../../nl/dep/nummod.html">nl</a>]
+
+[<a href="../../no/dep/nummod.html">no</a>]
+
+[<a href="../../pl/dep/nummod.html">pl</a>]
+
+[<a href="../../pt/dep/nummod.html">pt</a>]
+
+[<a href="../../ro/dep/nummod.html">ro</a>]
+
+[<a href="../../ru/dep/nummod.html">ru</a>]
+
+[<a href="../../sa/dep/nummod.html">sa</a>]
+
+[<a href="../../sk/dep/nummod.html">sk</a>]
+
+[<a href="../../sla/dep/nummod.html">sla</a>]
+
+[<a href="../../sl/dep/nummod.html">sl</a>]
+
+[<a href="../../so/dep/nummod.html">so</a>]
+
+[<a href="../../sr/dep/nummod.html">sr</a>]
 
 [<a href="../../sv/dep/nummod.html">sv</a>]
 
+[<a href="../../swl/dep/nummod.html">swl</a>]
+
+[<a href="../../ta/dep/nummod.html">ta</a>]
+
+[<a href="../../tr/dep/nummod.html">tr</a>]
+
 [<a href="../../u/dep/nummod.html">u</a>]
+
+[<a href="../../ug/dep/nummod.html">ug</a>]
+
+[<a href="../../uk/dep/nummod.html">uk</a>]
+
+[<a href="../../ur/dep/nummod.html">ur</a>]
+
+[<a href="../../urj/dep/nummod.html">urj</a>]
+
+[<a href="../../vi/dep/nummod.html">vi</a>]
+
+[<a href="../../yue/dep/nummod.html">yue</a>]
+
+[<a href="../../zh/dep/nummod.html">zh</a>]
 
 
 

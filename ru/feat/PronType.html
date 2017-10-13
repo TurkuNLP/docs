@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ru">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ru/feat">ru/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-feat/PronType.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ru">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ru/feat">ru/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-feat/PronType.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -47,103 +64,7 @@
 
 <h2><code>PronType</code>: pronominal type</h2>
 
-<p>This feature typically applies to <a href="cs-pos/PRON">pronouns</a>,
-<a href="cs-pos/DET">determiners</a>, pronominal <a href="cs-pos/NUM">numerals</a>
-(quantifiers) and pronominal <a href="cs-pos/ADV">adverbs</a>.</p>
-
-<h3 id="prs-personal-or-possessive-personal-pronoun-or-determiner"><code>Prs</code>: personal or possessive personal pronoun or determiner</h3>
-
-<p>See also the <a href="">Poss</a> feature that distinguishes normal personal
-pronouns from possessives. Note that <code>Prs</code> also includes reflexive
-personal/possessive pronouns (e.g. <em>себя / свой;</em> see the
-<a href="">Reflex</a> feature).</p>
-
-<h4 id="examples">Examples</h4>
-
-<ul>
-  <li><em>я, ты, он, она, оно, мы, вы, они, себя </em> “I, you, he, she, it, we, you, they, they, they, oneself”</li>
-  <li><em>мой, твой, его, её, наш, ваш, их, свой </em> “my, your, his/its, her, our, your, their, one’s own”</li>
-</ul>
-
-<h3 id="int-interrogative-pronoun-determiner-numeral-or-adverb"><code>Int</code>: interrogative pronoun, determiner, numeral or adverb</h3>
-
-<p>Note that possessive interrogative determiners (<em>whose</em>) can be
-distinguished by the <a href="">Poss</a> feature.</p>
-
-<h4 id="examples-1">Examples:</h4>
-
-<ul>
-  <li><em>кто </em> “who”</li>
-  <li><em>что </em> “what”</li>
-  <li><em>какой </em> “what kind of”</li>
-  <li><em>который </em> “which”</li>
-  <li><em>чей </em> “whose”</li>
-  <li><em>сколько </em> “how many”</li>
-  <li><em>где </em> “where”</li>
-  <li><em>куда </em> “where to”</li>
-  <li><em>когда </em> “when”</li>
-  <li><em>как </em> “how”</li>
-  <li><em>почему </em> “why”</li>
-</ul>
-
-<h3 id="dem-demonstrative-pronoun-determiner-numeral-or-adverb"><code>Dem</code>: demonstrative pronoun, determiner, numeral or adverb</h3>
-
-<p>These are to some extent parallel to interrogatives.</p>
-
-<h4 id="examples-2">Examples</h4>
-
-<ul>
-  <li><em>этот </em> “this”</li>
-  <li><em>тот </em> “that”</li>
-  <li><em>такой </em> “such”</li>
-  <li><em>такой же </em> “same”</li>
-  <li><em>столько </em> “so many”</li>
-  <li><em>здесь </em> “here”</li>
-  <li><em>там </em> “there”</li>
-  <li><em>так </em> “so”</li>
-</ul>
-
-<h3 id="tot-total-collective-pronoun-determiner-or-adverb"><code>Tot</code>: total (collective) pronoun, determiner or adverb</h3>
-
-<h4 id="examples-3">Examples</h4>
-
-<ul>
-  <li><em>каждый </em> “every, everybody, everyone, each”</li>
-  <li><em>всё </em> “everything, all”</li>
-  <li><em>везде </em> “everywhere”</li>
-  <li><em>всегда </em> “always”</li>
-</ul>
-
-<h3 id="neg-negative-pronoun-determiner-or-adverb"><code>Neg</code>: negative pronoun, determiner or adverb</h3>
-
-<h4 id="examples-4">Examples</h4>
-
-<ul>
-  <li><em>никто </em> “nobody”</li>
-  <li><em>ничто </em> “nothing”</li>
-  <li><em>никакой </em> “no (kind)”</li>
-  <li><em>ничей </em> “no one’s”</li>
-  <li><em>нигде </em> “nowhere”</li>
-  <li><em>никуда </em> “(to) nowhere”</li>
-  <li><em>никогда </em> “never”</li>
-  <li><em>никак </em> “no way” (lit. “no-how”)</li>
-</ul>
-
-<h3 id="ind-indefinite-pronoun-determiner-numeral-or-adverb"><code>Ind</code>: indefinite pronoun, determiner, numeral or adverb</h3>
-
-<h4 id="examples-5">Examples</h4>
-
-<ul>
-  <li><em>кто-то </em> “somebody”; <em>кто-нибудь </em> “anybody”; <em>некто </em> “somebody”</li>
-  <li><em>кто-то </em> “something”; <em>что-нибудь </em> “anything”; <em>нечто </em> “something”</li>
-  <li><em>какой-то </em> “some kind of”; <em>какой-то </em> “any kind of”; <em>любой </em> “just any”; <em>некий </em> “some, certain”</li>
-  <li><em>некоторый </em> “some”;</li>
-  <li><em>чей-то </em> “someone’s”; <em>чей-нибудь </em> “anyone’s”;</li>
-  <li><em>несколько </em> “several”; <em>мало </em> “few”; <em>много </em> “many”</li>
-  <li><em>где-то </em> “somewhere”; <em>где-нибудь </em> “anywhere”;</li>
-  <li><em>когда-то </em> “sometimes”; <em>когда-нибудь </em> “anytime”; <em>некогда </em> “once (long ago)”</li>
-  <li><em>как-то </em> “somehow”; <em>как-нибудь </em> “anyhow”.</li>
-</ul>
+<p>This feature is not used in Russian treebanks.</p>
 
 
 <!-- "automatic stats" -->
@@ -157,9 +78,25 @@ distinguished by the <a href="">Poss</a> feature.</p>
 
 PronType in other languages:
 
+[<a href="../../am/feat/PronType.html">am</a>]
+
+[<a href="../../ar/feat/PronType.html">ar</a>]
+
 [<a href="../../bg/feat/PronType.html">bg</a>]
 
+[<a href="../../bxr/feat/PronType.html">bxr</a>]
+
+[<a href="../../ca/feat/PronType.html">ca</a>]
+
+[<a href="../../ckb/feat/PronType.html">ckb</a>]
+
+[<a href="../../cop/feat/PronType.html">cop</a>]
+
 [<a href="../../cs/feat/PronType.html">cs</a>]
+
+[<a href="../../cu/feat/PronType.html">cu</a>]
+
+[<a href="../../da/feat/PronType.html">da</a>]
 
 [<a href="../../de/feat/PronType.html">de</a>]
 
@@ -169,29 +106,99 @@ PronType in other languages:
 
 [<a href="../../es/feat/PronType.html">es</a>]
 
+[<a href="../../et/feat/PronType.html">et</a>]
+
 [<a href="../../eu/feat/PronType.html">eu</a>]
 
 [<a href="../../fa/feat/PronType.html">fa</a>]
 
 [<a href="../../fi/feat/PronType.html">fi</a>]
 
+[<a href="../../fo/feat/PronType.html">fo</a>]
+
 [<a href="../../fr/feat/PronType.html">fr</a>]
 
 [<a href="../../ga/feat/PronType.html">ga</a>]
 
+[<a href="../../gl/feat/PronType.html">gl</a>]
+
+[<a href="../../got/feat/PronType.html">got</a>]
+
+[<a href="../../grc/feat/PronType.html">grc</a>]
+
 [<a href="../../he/feat/PronType.html">he</a>]
 
+[<a href="../../hi/feat/PronType.html">hi</a>]
+
+[<a href="../../hr/feat/PronType.html">hr</a>]
+
 [<a href="../../hu/feat/PronType.html">hu</a>]
+
+[<a href="../../id/feat/PronType.html">id</a>]
 
 [<a href="../../it/feat/PronType.html">it</a>]
 
 [<a href="../../ja/feat/PronType.html">ja</a>]
 
+[<a href="../../kk/feat/PronType.html">kk</a>]
+
+[<a href="../../kmr/feat/PronType.html">kmr</a>]
+
 [<a href="../../ko/feat/PronType.html">ko</a>]
+
+[<a href="../../la/feat/PronType.html">la</a>]
+
+[<a href="../../lv/feat/PronType.html">lv</a>]
+
+[<a href="../../mr/feat/PronType.html">mr</a>]
+
+[<a href="../../nl/feat/PronType.html">nl</a>]
+
+[<a href="../../no/feat/PronType.html">no</a>]
+
+[<a href="../../pl/feat/PronType.html">pl</a>]
+
+[<a href="../../pt/feat/PronType.html">pt</a>]
+
+[<a href="../../ro/feat/PronType.html">ro</a>]
+
+[<a href="../../ru/feat/PronType.html">ru</a>]
+
+[<a href="../../sa/feat/PronType.html">sa</a>]
+
+[<a href="../../sk/feat/PronType.html">sk</a>]
+
+[<a href="../../sla/feat/PronType.html">sla</a>]
+
+[<a href="../../sl/feat/PronType.html">sl</a>]
+
+[<a href="../../so/feat/PronType.html">so</a>]
+
+[<a href="../../sr/feat/PronType.html">sr</a>]
 
 [<a href="../../sv/feat/PronType.html">sv</a>]
 
+[<a href="../../swl/feat/PronType.html">swl</a>]
+
+[<a href="../../ta/feat/PronType.html">ta</a>]
+
+[<a href="../../tr/feat/PronType.html">tr</a>]
+
 [<a href="../../u/feat/PronType.html">u</a>]
+
+[<a href="../../ug/feat/PronType.html">ug</a>]
+
+[<a href="../../uk/feat/PronType.html">uk</a>]
+
+[<a href="../../ur/feat/PronType.html">ur</a>]
+
+[<a href="../../urj/feat/PronType.html">urj</a>]
+
+[<a href="../../vi/feat/PronType.html">vi</a>]
+
+[<a href="../../yue/feat/PronType.html">yue</a>]
+
+[<a href="../../zh/feat/PronType.html">zh</a>]
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-sk">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/sk/feat">sk/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_sk-feat/Degree.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/sk/feat">sk/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sk-feat/Degree.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -65,24 +82,24 @@ for <code>Degree</code>.</p>
 <p>This feature is universal.
 It occurs with 3 different values: <code>Cmp</code>, <code>Pos</code>, <code>Sup</code>.</p>
 
-<p>12447 tokens (12%) have a non-empty value of <code>Degree</code>.
-7280 types (28%) occur at least once with a non-empty value of <code>Degree</code>.
-3933 lemmas (27%) occur at least once with a non-empty value of <code>Degree</code>.
-The feature is used with 4 part-of-speech tags: <a href="">sk-pos/ADJ</a> (7863; 7% instances), <a href="">sk-pos/ADV</a> (3386; 3% instances), <a href="">sk-pos/VERB</a> (1197; 1% instances), <a href="">sk-pos/NUM</a> (1; 0% instances).</p>
+<p>10450 tokens (11%) have a non-empty value of <code>Degree</code>.
+6184 types (27%) occur at least once with a non-empty value of <code>Degree</code>.
+3454 lemmas (27%) occur at least once with a non-empty value of <code>Degree</code>.
+The feature is used with 3 part-of-speech tags: <a href="">sk-pos/ADJ</a> (7407; 8% instances), <a href="">sk-pos/ADV</a> (3032; 3% instances), <a href="">sk-pos/VERB</a> (11; 0% instances).</p>
 
 <h3 id="adj"><code>ADJ</code></h3>
 
-<p>7863 <a href="">sk-pos/ADJ</a> tokens (100% of all <code>ADJ</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>7407 <a href="">sk-pos/ADJ</a> tokens (95% of all <code>ADJ</code> tokens) have a non-empty value of <code>Degree</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Degree</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (5811; 74%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (4691; 60%).</p>
+<p>The most frequent other feature values with which <code>ADJ</code> and <code>Degree</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (6452; 87%), <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (6452; 87%), <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (6452; 87%), <tt><a href="Number.html">Number</a>=Sing</tt> (5412; 73%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (4311; 58%).</p>
 
 <p><code>ADJ</code> tokens may have the following values of <code>Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (153; 2% of non-empty <code>Degree</code>): <em>lepšie, radšej, starší, vyšších, väčšie, lepšiu, mladší, staršia, väčší, Dôležitejším</em></li>
-  <li><code>Pos</code> (7553; 96% of non-empty <code>Degree</code>): <em>celý, ďalšie, veľký, nové, veľkého, veľké, ďalší, nový, verejných, celé</em></li>
-  <li><code>Sup</code> (157; 2% of non-empty <code>Degree</code>): <em>najväčším, najlepšie, najradšej, najväčšie, najvýznamnejších, najdôležitejšie, najlepšia, najlepší, najmenšie, najväčšou</em></li>
-  <li><code>EMPTY</code> (8): <em>Pelikánia, Džafarove, Zvláštni, Záhorského, bohatý, posledného, živým</em></li>
+  <li><code>Cmp</code> (129; 2% of non-empty <code>Degree</code>): <em>lepšie, radšej, starší, vyšších, lepšiu, staršia, väčšie, väčší, horšie, menšiu</em></li>
+  <li><code>Pos</code> (7142; 96% of non-empty <code>Degree</code>): <em>celý, veľký, ďalšie, nové, verejných, nový, ďalší, ľudské, celé, veľké</em></li>
+  <li><code>Sup</code> (136; 2% of non-empty <code>Degree</code>): <em>najväčším, najradšej, najvýznamnejších, najlepšia, najlepšie, najlepší, najmenšie, najväčšie, Najvyšší, najbezpečnejším</em></li>
+  <li><code>EMPTY</code> (375): <em>druhý, prvý, druhej, prvom, prvé, jediný, prvá, prvej, prvým, druhá</em></li>
 </ul>
 
 <table>
@@ -94,48 +111,47 @@ The feature is used with 4 part-of-speech tags: <a href="">sk-pos/ADJ</a> (7863;
   <tr><td><tt><a href="Animacy.html">Animacy</a>=Anim|<a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td><em>veľký</em></td><td><em>väčší</em></td><td></td></tr>
   <tr><td><tt><a href="Animacy.html">Animacy</a>=Inan|<a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td><em>veľký</em></td><td><em>väčší</em></td><td></td></tr>
   <tr><td><tt><a href="Animacy.html">Animacy</a>=Inan|<a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur</tt></td><td></td><td><em>väčšie</em></td><td></td></tr>
-  <tr><td><tt><a href="Animacy.html">Animacy</a>=Inan|<a href="Case.html">Case</a>=Dat|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur</tt></td><td><em>veľkým</em></td><td></td><td></td></tr>
-  <tr><td><tt><a href="Animacy.html">Animacy</a>=Inan|<a href="Case.html">Case</a>=Gen|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td><em>veľkého</em></td><td><em>väčšieho</em></td><td></td></tr>
-  <tr><td><tt><a href="Animacy.html">Animacy</a>=Inan|<a href="Case.html">Case</a>=Gen|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur</tt></td><td><em>veľkých</em></td><td><em>väčších</em></td><td></td></tr>
+  <tr><td><tt><a href="Animacy.html">Animacy</a>=Inan|<a href="Case.html">Case</a>=Gen|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td><em>veľkého</em></td><td></td><td></td></tr>
   <tr><td><tt><a href="Animacy.html">Animacy</a>=Inan|<a href="Case.html">Case</a>=Ins|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td><em>veľkým</em></td><td><em>väčším</em></td><td><em>najväčším</em></td></tr>
   <tr><td><tt><a href="Animacy.html">Animacy</a>=Inan|<a href="Case.html">Case</a>=Ins|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur</tt></td><td><em>veľkými</em></td><td></td><td></td></tr>
   <tr><td><tt><a href="Animacy.html">Animacy</a>=Inan|<a href="Case.html">Case</a>=Loc|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td><em>veľkom</em></td><td></td><td></td></tr>
   <tr><td><tt><a href="Animacy.html">Animacy</a>=Inan|<a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td><em>veľký</em></td><td><em>väčší</em></td><td><em>najväčší</em></td></tr>
   <tr><td><tt><a href="Animacy.html">Animacy</a>=Inan|<a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur</tt></td><td><em>veľké</em></td><td></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td><em>veľkú</em></td><td><em>väčšiu</em></td><td><em>najväčšiu</em></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td><em>veľkú</em></td><td></td><td><em>najväčšiu</em></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur</tt></td><td><em>veľké</em></td><td></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing</tt></td><td><em>veľké</em></td><td></td><td><em>najväčšie</em></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Plur</tt></td><td><em>veľké</em></td><td></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td><em>veľkej</em></td><td></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td><em>veľkej</em></td><td></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur</tt></td><td><em>veľkých</em></td><td></td><td><em>najväčších</em></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur</tt></td><td><em>veľkých</em></td><td></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing</tt></td><td><em>veľkého</em></td><td></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Ins|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td><em>veľkou</em></td><td></td><td><em>najväčšou</em></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Ins|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur</tt></td><td><em>veľkými</em></td><td></td><td><em>Najväčšími</em></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Ins|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing</tt></td><td><em>veľkým</em></td><td></td><td><em>najväčším</em></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Ins|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td><em>veľkou</em></td><td></td><td><em>Najväčšou</em></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Ins|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur</tt></td><td><em>veľkými</em></td><td></td><td></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Ins|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing</tt></td><td></td><td></td><td><em>najväčším</em></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Ins|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Plur</tt></td><td><em>veľkými</em></td><td></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Ins|<a href="Number.html">Number</a>=Plur</tt></td><td></td><td><em>väčšími</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Loc|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td><em>veľkej</em></td><td></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Loc|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing</tt></td><td><em>veľkom</em></td><td><em>väčšom</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td><em>veľká</em></td><td><em>väčšia</em></td><td><em>najväčšia</em></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur</tt></td><td><em>veľké</em></td><td></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing</tt></td><td><em>veľké</em></td><td></td><td><em>Najväčšie</em></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing</tt></td><td><em>veľké</em></td><td></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Plur</tt></td><td></td><td><em>Väčšie</em></td><td></td></tr>
 </table>
 
-<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 96% lemmas (2393) occur only with one value of <code>Degree</code>.</p>
+<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 97% lemmas (2649) occur only with one value of <code>Degree</code>.</p>
 
 <h3 id="adv"><code>ADV</code></h3>
 
-<p>3386 <a href="">sk-pos/ADV</a> tokens (100% of all <code>ADV</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>3032 <a href="">sk-pos/ADV</a> tokens (77% of all <code>ADV</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+
+<p>The most frequent other feature values with which <code>ADV</code> and <code>Degree</code> co-occurred: <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (3032; 100%).</p>
 
 <p><code>ADV</code> tokens may have the following values of <code>Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (83; 2% of non-empty <code>Degree</code>): <em>viac, bližšie, dlhšie, menej, vyššie, silnejšie, neskôr, nižšie, ľahšie, dávnejšie</em></li>
-  <li><code>Pos</code> (3273; 97% of non-empty <code>Degree</code>): <em>veľmi, potom, opäť, teraz, už, stále, dnes, neskôr, dobre, napokon</em></li>
-  <li><code>Sup</code> (30; 1% of non-empty <code>Degree</code>): <em>najlepšie, najviac, najčastejšie, najrýchlejšie, najskôr, Najdivokejšie, najsilnejšie, Najhoršie, Najvýraznejšie, najdlhšie</em></li>
-  <li><code>EMPTY</code> (1): <em>NETRPEZLIVO</em></li>
+  <li><code>Cmp</code> (68; 2% of non-empty <code>Degree</code>): <em>viac, bližšie, dlhšie, silnejšie, menej, vyššie, neskôr, dávnejšie, nižšie, podrobnejšie</em></li>
+  <li><code>Pos</code> (2936; 97% of non-empty <code>Degree</code>): <em>potom, veľmi, opäť, teraz, stále, dobre, už, dnes, vtom, napokon</em></li>
+  <li><code>Sup</code> (28; 1% of non-empty <code>Degree</code>): <em>najlepšie, najviac, najrýchlejšie, najskôr, najčastejšie, Najdivokejšie, najsilnejšie, Najvýraznejšie, najdlhšie, najefektívnejšie</em></li>
+  <li><code>EMPTY</code> (924): <em>tu, tam, tak, kde, vtedy, nikdy, ako, vždy, takto, prečo</em></li>
 </ul>
 
 <table>
@@ -143,61 +159,36 @@ The feature is used with 4 part-of-speech tags: <a href="">sk-pos/ADJ</a> (7863;
   <tr><td><tt></tt></td><td><em>dobre</em></td><td><em>lepšie</em></td><td><em>najlepšie</em></td></tr>
 </table>
 
-<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>ADV</code>. 96% lemmas (742) occur only with one value of <code>Degree</code>.</p>
+<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>ADV</code>. 96% lemmas (695) occur only with one value of <code>Degree</code>.</p>
 
 <h3 id="verb"><code>VERB</code></h3>
 
-<p>1197 <a href="">sk-pos/VERB</a> tokens (7% of all <code>VERB</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>11 <a href="">sk-pos/VERB</a> tokens (0% of all <code>VERB</code> tokens) have a non-empty value of <code>Degree</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Degree</code> co-occurred: <tt><a href="Person.html">Person</a>=EMPTY</tt> (1197; 100%), <tt><a href="Aspect.html">Aspect</a>=EMPTY</tt> (1197; 100%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (1197; 100%), <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (1197; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (1197; 100%), <tt><a href="Negative.html">Negative</a>=EMPTY</tt> (1197; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (767; 64%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (628; 52%).</p>
+<p>The most frequent other feature values with which <code>VERB</code> and <code>Degree</code> co-occurred: <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (11; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (11; 100%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (11; 100%), <tt><a href="Aspect.html">Aspect</a>=EMPTY</tt> (11; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (11; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (11; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (8; 73%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (7; 64%), <tt><a href="Animacy.html">Animacy</a>=Anim</tt> (7; 64%).</p>
 
 <p><code>VERB</code> tokens may have the following values of <code>Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (4; 0% of non-empty <code>Degree</code>): <em>vzdialenejšími, prekvapujúcejšia, umiernenejšiu</em></li>
-  <li><code>Pos</code> (1191; 99% of non-empty <code>Degree</code>): <em>nasledujúcich, nasledujúci, ozbrojených, sledovaných, zmätený, Zhlúpnutý, nájdené, otvorené, pripravená, pripravený</em></li>
-  <li><code>Sup</code> (2; 0% of non-empty <code>Degree</code>): <em>najobľúbenejšími, najuznávanejší</em></li>
-  <li><code>EMPTY</code> (15650): <em>je, bol, bola, bolo, sú, mal, povedal, boli, povedala, má</em></li>
+  <li><code>Pos</code> (11; 100% of non-empty <code>Degree</code>): <em>zhrozený, odkázaný, očarený, prevrhnuté, rozbité, rozvalený, vychovaný, vyduté, vysvietené, zaskočený</em></li>
+  <li><code>EMPTY</code> (12860): <em>mal, povedal, je, povedala, má, mala, bol, bolo, bola, odvetil</em></li>
 </ul>
 
-<table>
-  <tr><th>Paradigm <i>vzdialený</i></th><th><tt>Pos</tt></th><th><tt>Cmp</tt></th></tr>
-  <tr><td><tt><a href="Animacy.html">Animacy</a>=Inan|<a href="Case.html">Case</a>=Ins|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur</tt></td><td></td><td><em>vzdialenejšími</em></td></tr>
-  <tr><td><tt><a href="Animacy.html">Animacy</a>=Inan|<a href="Case.html">Case</a>=Loc|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td><em>vzdialenom</em></td><td></td></tr>
-  <tr><td><tt><a href="Animacy.html">Animacy</a>=Inan|<a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur</tt></td><td><em>Vzdialené</em></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td><em>vzdialenej</em></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Loc|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing</tt></td><td><em>vzdialenom</em></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur</tt></td><td><em>vzdialené</em></td><td></td></tr>
-</table>
-
-<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 99% lemmas (728) occur only with one value of <code>Degree</code>.</p>
-
-<h3 id="num"><code>NUM</code></h3>
-
-<p>1 <a href="">sk-pos/NUM</a> tokens (0% of all <code>NUM</code> tokens) have a non-empty value of <code>Degree</code>.</p>
-
-<p>The most frequent other feature values with which <code>NUM</code> and <code>Degree</code> co-occurred: <tt><a href="Number.html">Number</a>=Plur</tt> (1; 100%), <tt><a href="Case.html">Case</a>=Ins</tt> (1; 100%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (1; 100%), <tt><a href="NumForm.html">NumForm</a>=EMPTY</tt> (1; 100%), <tt><a href="Animacy.html">Animacy</a>=Anim</tt> (1; 100%).</p>
-
-<p><code>NUM</code> tokens may have the following values of <code>Degree</code>:</p>
-
-<ul>
-  <li><code>Pos</code> (1; 100% of non-empty <code>Degree</code>): <em>prvými</em></li>
-  <li><code>EMPTY</code> (2036): <em>jeden, prvý, II, druhý, dva, 1, raz, tri, 11, 2</em></li>
-</ul>
+<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 100% lemmas (10) occur only with one value of <code>Degree</code>.</p>
 
 <h2 id="relations-with-agreement-in-degree">Relations with Agreement in <code>Degree</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>Degree</code>:
-<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (236; 98%),
-<tt>ADJ –[<a href="../dep/advmod.html">advmod</a>]–&gt; ADV</tt> (219; 90%),
-<tt>ADV –[<a href="../dep/advmod.html">advmod</a>]–&gt; ADV</tt> (60; 85%),
-<tt>ADV –[<a href="../dep/conj.html">conj</a>]–&gt; ADV</tt> (59; 98%),
-<tt>ADJ –[<a href="../dep/amod.html">amod</a>]–&gt; ADJ</tt> (9; 90%),
-<tt>ADJ –[<a href="../dep/advmod:emph.html">advmod:emph</a>]–&gt; ADV</tt> (5; 83%),
-<tt>ADJ –[<a href="../dep/appos.html">appos</a>]–&gt; ADJ</tt> (4; 100%),
-<tt>VERB –[<a href="../dep/advmod:emph.html">advmod:emph</a>]–&gt; ADV</tt> (3; 75%),
-<tt>ADJ –[<a href="../dep/csubj.html">csubj</a>]–&gt; ADJ</tt> (2; 100%),
-<tt>VERB –[<a href="../dep/amod.html">amod</a>]–&gt; ADJ</tt> (1; 100%).</p>
+<tt>ADJ –[<a href="../dep/advmod.html">advmod</a>]–&gt; ADV</tt> (287; 81%),
+<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (266; 98%),
+<tt>ADV –[<a href="../dep/advmod.html">advmod</a>]–&gt; ADV</tt> (52; 69%),
+<tt>ADV –[<a href="../dep/conj.html">conj</a>]–&gt; ADV</tt> (47; 96%),
+<tt>ADJ –[<a href="../dep/amod.html">amod</a>]–&gt; ADJ</tt> (10; 91%),
+<tt>ADJ –[<a href="../dep/advmod:emph.html">advmod:emph</a>]–&gt; ADV</tt> (6; 100%),
+<tt>ADV –[<a href="../dep/orphan.html">orphan</a>]–&gt; ADV</tt> (5; 83%),
+<tt>ADJ –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; ADJ</tt> (3; 100%),
+<tt>ADJ –[<a href="../dep/appos.html">appos</a>]–&gt; ADJ</tt> (3; 100%),
+<tt>ADJ –[<a href="../dep/csubj.html">csubj</a>]–&gt; ADJ</tt> (2; 100%).</p>
 
 
 
@@ -207,9 +198,25 @@ The feature is used with 4 part-of-speech tags: <a href="">sk-pos/ADJ</a> (7863;
 
 Degree in other languages:
 
+[<a href="../../am/feat/Degree.html">am</a>]
+
+[<a href="../../ar/feat/Degree.html">ar</a>]
+
 [<a href="../../bg/feat/Degree.html">bg</a>]
 
+[<a href="../../bxr/feat/Degree.html">bxr</a>]
+
+[<a href="../../ca/feat/Degree.html">ca</a>]
+
+[<a href="../../ckb/feat/Degree.html">ckb</a>]
+
+[<a href="../../cop/feat/Degree.html">cop</a>]
+
 [<a href="../../cs/feat/Degree.html">cs</a>]
+
+[<a href="../../cu/feat/Degree.html">cu</a>]
+
+[<a href="../../da/feat/Degree.html">da</a>]
 
 [<a href="../../de/feat/Degree.html">de</a>]
 
@@ -219,29 +226,99 @@ Degree in other languages:
 
 [<a href="../../es/feat/Degree.html">es</a>]
 
+[<a href="../../et/feat/Degree.html">et</a>]
+
 [<a href="../../eu/feat/Degree.html">eu</a>]
 
 [<a href="../../fa/feat/Degree.html">fa</a>]
 
 [<a href="../../fi/feat/Degree.html">fi</a>]
 
+[<a href="../../fo/feat/Degree.html">fo</a>]
+
 [<a href="../../fr/feat/Degree.html">fr</a>]
 
 [<a href="../../ga/feat/Degree.html">ga</a>]
 
+[<a href="../../gl/feat/Degree.html">gl</a>]
+
+[<a href="../../got/feat/Degree.html">got</a>]
+
+[<a href="../../grc/feat/Degree.html">grc</a>]
+
 [<a href="../../he/feat/Degree.html">he</a>]
 
+[<a href="../../hi/feat/Degree.html">hi</a>]
+
+[<a href="../../hr/feat/Degree.html">hr</a>]
+
 [<a href="../../hu/feat/Degree.html">hu</a>]
+
+[<a href="../../id/feat/Degree.html">id</a>]
 
 [<a href="../../it/feat/Degree.html">it</a>]
 
 [<a href="../../ja/feat/Degree.html">ja</a>]
 
+[<a href="../../kk/feat/Degree.html">kk</a>]
+
+[<a href="../../kmr/feat/Degree.html">kmr</a>]
+
 [<a href="../../ko/feat/Degree.html">ko</a>]
+
+[<a href="../../la/feat/Degree.html">la</a>]
+
+[<a href="../../lv/feat/Degree.html">lv</a>]
+
+[<a href="../../mr/feat/Degree.html">mr</a>]
+
+[<a href="../../nl/feat/Degree.html">nl</a>]
+
+[<a href="../../no/feat/Degree.html">no</a>]
+
+[<a href="../../pl/feat/Degree.html">pl</a>]
+
+[<a href="../../pt/feat/Degree.html">pt</a>]
+
+[<a href="../../ro/feat/Degree.html">ro</a>]
+
+[<a href="../../ru/feat/Degree.html">ru</a>]
+
+[<a href="../../sa/feat/Degree.html">sa</a>]
+
+[<a href="../../sk/feat/Degree.html">sk</a>]
+
+[<a href="../../sla/feat/Degree.html">sla</a>]
+
+[<a href="../../sl/feat/Degree.html">sl</a>]
+
+[<a href="../../so/feat/Degree.html">so</a>]
+
+[<a href="../../sr/feat/Degree.html">sr</a>]
 
 [<a href="../../sv/feat/Degree.html">sv</a>]
 
+[<a href="../../swl/feat/Degree.html">swl</a>]
+
+[<a href="../../ta/feat/Degree.html">ta</a>]
+
+[<a href="../../tr/feat/Degree.html">tr</a>]
+
 [<a href="../../u/feat/Degree.html">u</a>]
+
+[<a href="../../ug/feat/Degree.html">ug</a>]
+
+[<a href="../../uk/feat/Degree.html">uk</a>]
+
+[<a href="../../ur/feat/Degree.html">ur</a>]
+
+[<a href="../../urj/feat/Degree.html">urj</a>]
+
+[<a href="../../vi/feat/Degree.html">vi</a>]
+
+[<a href="../../yue/feat/Degree.html">yue</a>]
+
+[<a href="../../zh/feat/Degree.html">zh</a>]
 
 
 

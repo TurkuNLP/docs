@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-pt">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/pt/dep">pt/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/reparandum.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-pt">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/pt/dep">pt/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/reparandum.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -69,7 +86,7 @@ det(esquerda, a-6)
 
 <hr />
 
-<h2 id="treebank-statistics-udportuguese-bosque">Treebank Statistics (UD_Portuguese-Bosque)</h2>
+<h2 id="treebank-statistics-udportuguese">Treebank Statistics (UD_Portuguese)</h2>
 
 <p>This relation is universal.</p>
 
@@ -86,15 +103,15 @@ Average distance between parent and child is 3.</p>
 # visual-style 25	fgColor:white
 # visual-style 25 22 reparandum	color:blue
 1	Escavou	escavar	VERB	&lt;mv&gt;|V|PS|3S|IND|@FS-ACC&gt;	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	ccomp	_	_
-2	quanto	quanto	PRON	&lt;rel&gt;|DET|M|S|@ACC&gt;	Gender=Masc|Number=Sing|PronType=Rel	3	dobj	_	_
-3	quis	querer	VERB	&lt;mv&gt;|V|PS|3S|IND|@FS-&lt;ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	advcl	_	_
+2	quanto	quanto	PRON	&lt;rel&gt;|DET|M|S|@ACC&gt;	Gender=Masc|Number=Sing|PronType=Rel	3	obj	_	_
+3	quis	querer	VERB	&lt;mv&gt;|V|PS|3S|IND|@FS-&lt;ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	advcl	_	SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 5	imediatamente	imediatamente	ADV	ADV|@&gt;A	_	9	advmod	_	_
-6	atrás	atrás	ADV	ADV|@&lt;ADVL	_	3	advmod	_	MWE:atrás=de
+6	atrás	atrás	ADV	ADV|@&lt;ADVL	_	3	advmod	_	MWE=atrás_de
 7	de	de	ADP	PRP|@A&lt;	_	9	case	_	_
 8	o	o	DET	&lt;artd&gt;|&lt;-sam&gt;|ART|M|S|@&gt;N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	muro	muro	NOUN	&lt;np-def&gt;|N|M|S|@P&lt;	Gender=Masc|Number=Sing	6	nmod	_	_
-10	que	que	PRON	&lt;rel&gt;|INDP|M|S|@ACC&gt;	Gender=Masc|Number=Sing|PronType=Rel	11	dobj	_	_
+9	muro	muro	NOUN	&lt;np-def&gt;|N|M|S|@P&lt;	Gender=Masc|Number=Sing	6	obl	_	_
+10	que	que	PRON	&lt;rel&gt;|INDP|M|S|@ACC&gt;	Gender=Masc|Number=Sing|PronType=Rel	11	obj	_	_
 11	deitou	deitar	VERB	&lt;mv&gt;|V|PS|3S|IND|@FS-N&lt;	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	acl:relcl	_	_
 12	abaixo	abaixo	ADV	ADV|@&lt;ADVL	_	11	advmod	_	_
 13	para	para	ADP	PRP|@&lt;ADVL	_	17	mark	_	_
@@ -109,14 +126,14 @@ Average distance between parent and child is 3.</p>
 22	que	que	X	&lt;nil&gt;|X|@X	_	25	reparandum	_	_
 23	com	com	ADP	PRP|@&lt;ADVL	_	25	case	_	_
 24	a	o	DET	&lt;artd&gt;|ART|F|S|@&gt;N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
-25	promessa	promessa	NOUN	&lt;np-def&gt;|N|F|S|@P&lt;	Gender=Fem|Number=Sing	19	nmod	_	_
-26	de	de	ADP	PRP|@N&lt;ARG	_	30	mark	_	_
+25	promessa	promessa	NOUN	&lt;np-def&gt;|N|F|S|@P&lt;	Gender=Fem|Number=Sing	19	obl	_	_
+26	de	de	ADP	PRP|@N&lt;ARG	_	30	mark	_	SpaceAfter=No
 27	,	,	PUNCT	PU|@PU	_	28	punct	_	_
-28	depois	depois	ADV	ADV|@ADVL&gt;	_	30	advmod	_	_
+28	depois	depois	ADV	ADV|@ADVL&gt;	_	30	advmod	_	SpaceAfter=No
 29	,	,	PUNCT	PU|@PU	_	28	punct	_	_
 30	reconstruir	reconstruir	VERB	&lt;mv&gt;|V|FUT|3S|SUBJ|@FS-P&lt;	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	25	acl	_	_
 31	o	o	DET	&lt;artd&gt;|ART|M|S|@&gt;N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
-32	muro	muro	NOUN	&lt;np-def&gt;|N|M|S|@&lt;ACC	Gender=Masc|Number=Sing	30	dobj	_	_
+32	muro	muro	NOUN	&lt;np-def&gt;|N|M|S|@&lt;ACC	Gender=Masc|Number=Sing	30	obj	_	SpaceAfter=No
 33	.	.	PUNCT	PU|@PU	_	19	punct	_	_
 
 </code></pre>
@@ -129,9 +146,25 @@ Average distance between parent and child is 3.</p>
 
 reparandum in other languages:
 
+[<a href="../../am/dep/reparandum.html">am</a>]
+
+[<a href="../../ar/dep/reparandum.html">ar</a>]
+
 [<a href="../../bg/dep/reparandum.html">bg</a>]
 
+[<a href="../../bxr/dep/reparandum.html">bxr</a>]
+
+[<a href="../../ca/dep/reparandum.html">ca</a>]
+
+[<a href="../../ckb/dep/reparandum.html">ckb</a>]
+
+[<a href="../../cop/dep/reparandum.html">cop</a>]
+
 [<a href="../../cs/dep/reparandum.html">cs</a>]
+
+[<a href="../../cu/dep/reparandum.html">cu</a>]
+
+[<a href="../../da/dep/reparandum.html">da</a>]
 
 [<a href="../../de/dep/reparandum.html">de</a>]
 
@@ -141,29 +174,97 @@ reparandum in other languages:
 
 [<a href="../../es/dep/reparandum.html">es</a>]
 
+[<a href="../../et/dep/reparandum.html">et</a>]
+
 [<a href="../../eu/dep/reparandum.html">eu</a>]
 
 [<a href="../../fa/dep/reparandum.html">fa</a>]
 
 [<a href="../../fi/dep/reparandum.html">fi</a>]
 
+[<a href="../../fo/dep/reparandum.html">fo</a>]
+
 [<a href="../../fr/dep/reparandum.html">fr</a>]
 
-[<a href="../../ga/dep/reparandum.html">ga</a>]
+[<a href="../../gl/dep/reparandum.html">gl</a>]
+
+[<a href="../../got/dep/reparandum.html">got</a>]
+
+[<a href="../../grc/dep/reparandum.html">grc</a>]
 
 [<a href="../../he/dep/reparandum.html">he</a>]
 
+[<a href="../../hi/dep/reparandum.html">hi</a>]
+
+[<a href="../../hr/dep/reparandum.html">hr</a>]
+
 [<a href="../../hu/dep/reparandum.html">hu</a>]
+
+[<a href="../../id/dep/reparandum.html">id</a>]
 
 [<a href="../../it/dep/reparandum.html">it</a>]
 
 [<a href="../../ja/dep/reparandum.html">ja</a>]
 
+[<a href="../../kk/dep/reparandum.html">kk</a>]
+
+[<a href="../../kmr/dep/reparandum.html">kmr</a>]
+
 [<a href="../../ko/dep/reparandum.html">ko</a>]
+
+[<a href="../../la/dep/reparandum.html">la</a>]
+
+[<a href="../../lv/dep/reparandum.html">lv</a>]
+
+[<a href="../../mr/dep/reparandum.html">mr</a>]
+
+[<a href="../../nl/dep/reparandum.html">nl</a>]
+
+[<a href="../../no/dep/reparandum.html">no</a>]
+
+[<a href="../../pl/dep/reparandum.html">pl</a>]
+
+[<a href="../../pt/dep/reparandum.html">pt</a>]
+
+[<a href="../../ro/dep/reparandum.html">ro</a>]
+
+[<a href="../../ru/dep/reparandum.html">ru</a>]
+
+[<a href="../../sa/dep/reparandum.html">sa</a>]
+
+[<a href="../../sk/dep/reparandum.html">sk</a>]
+
+[<a href="../../sla/dep/reparandum.html">sla</a>]
+
+[<a href="../../sl/dep/reparandum.html">sl</a>]
+
+[<a href="../../so/dep/reparandum.html">so</a>]
+
+[<a href="../../sr/dep/reparandum.html">sr</a>]
 
 [<a href="../../sv/dep/reparandum.html">sv</a>]
 
+[<a href="../../swl/dep/reparandum.html">swl</a>]
+
+[<a href="../../ta/dep/reparandum.html">ta</a>]
+
+[<a href="../../tr/dep/reparandum.html">tr</a>]
+
 [<a href="../../u/dep/reparandum.html">u</a>]
+
+[<a href="../../ug/dep/reparandum.html">ug</a>]
+
+[<a href="../../uk/dep/reparandum.html">uk</a>]
+
+[<a href="../../ur/dep/reparandum.html">ur</a>]
+
+[<a href="../../urj/dep/reparandum.html">urj</a>]
+
+[<a href="../../vi/dep/reparandum.html">vi</a>]
+
+[<a href="../../yue/dep/reparandum.html">yue</a>]
+
+[<a href="../../zh/dep/reparandum.html">zh</a>]
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-es">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/es/feat">es/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_es-feat/Degree.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-es">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/es/feat">es/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_es-feat/Degree.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -65,35 +82,37 @@ for <code>Degree</code>.</p>
 <p>This feature is universal.
 It occurs with 3 different values: <code>Abs</code>, <code>Cmp</code>, <code>Sup</code>.</p>
 
-<p>2173 tokens (1%) have a non-empty value of <code>Degree</code>.
+<p>2117 tokens (1%) have a non-empty value of <code>Degree</code>.
 60 types (0%) occur at least once with a non-empty value of <code>Degree</code>.
 40 lemmas (0%) occur at least once with a non-empty value of <code>Degree</code>.
-The feature is used with 4 part-of-speech tags: <a href="">es-pos/ADV</a> (1568; 0% instances), <a href="">es-pos/ADJ</a> (591; 0% instances), <a href="">es-pos/PRON</a> (11; 0% instances), <a href="">es-pos/DET</a> (3; 0% instances).</p>
+The feature is used with 4 part-of-speech tags: <a href="">es-pos/ADV</a> (1530; 0% instances), <a href="">es-pos/ADJ</a> (573; 0% instances), <a href="">es-pos/PRON</a> (11; 0% instances), <a href="">es-pos/DET</a> (3; 0% instances).</p>
 
 <h3 id="adv"><code>ADV</code></h3>
 
-<p>1568 <a href="">es-pos/ADV</a> tokens (13% of all <code>ADV</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>1530 <a href="">es-pos/ADV</a> tokens (13% of all <code>ADV</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+
+<p>The most frequent other feature values with which <code>ADV</code> and <code>Degree</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (1530; 100%).</p>
 
 <p><code>ADV</code> tokens may have the following values of <code>Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (1568; 100% of non-empty <code>Degree</code>): <em>más, menos</em></li>
-  <li><code>EMPTY</code> (10955): <em>no, también, muy, donde, ya, además, así, después, sólo, bien</em></li>
+  <li><code>Cmp</code> (1530; 100% of non-empty <code>Degree</code>): <em>más, menos</em></li>
+  <li><code>EMPTY</code> (10566): <em>no, también, muy, donde, ya, además, así, después, sólo, bien</em></li>
 </ul>
 
 <h3 id="adj"><code>ADJ</code></h3>
 
-<p>591 <a href="">es-pos/ADJ</a> tokens (2% of all <code>ADJ</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>573 <a href="">es-pos/ADJ</a> tokens (2% of all <code>ADJ</code> tokens) have a non-empty value of <code>Degree</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Degree</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (484; 82%), <tt><a href="Number.html">Number</a>=Sing</tt> (446; 75%).</p>
+<p>The most frequent other feature values with which <code>ADJ</code> and <code>Degree</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (468; 82%), <tt><a href="Number.html">Number</a>=Sing</tt> (430; 75%).</p>
 
 <p><code>ADJ</code> tokens may have the following values of <code>Degree</code>:</p>
 
 <ul>
   <li><code>Abs</code> (31; 5% of non-empty <code>Degree</code>): <em>Santísima, buenísimas, aceleradísimo, altísima, altísimo, bellísima, buenísima, buenísimo, completísima, contentísima</em></li>
-  <li><code>Cmp</code> (481; 81% of non-empty <code>Degree</code>): <em>mayor, mejor, mejores, menor, mayores, menores, peor, peores</em></li>
-  <li><code>Sup</code> (79; 13% of non-empty <code>Degree</code>): <em>máximo, máxima, mínima, mínimo, mínimas, óptimo, máximas, máximos, mínimos, óptima</em></li>
-  <li><code>EMPTY</code> (24304): <em>gran, primera, primer, mismo, nuevo, estadounidense, total, nacional, grandes, nueva</em></li>
+  <li><code>Cmp</code> (465; 81% of non-empty <code>Degree</code>): <em>mayor, mejor, mejores, mayores, menor, menores, peor, peores</em></li>
+  <li><code>Sup</code> (77; 13% of non-empty <code>Degree</code>): <em>máximo, máxima, mínima, mínimo, mínimas, óptimo, máximas, máximos, mínimos, óptima</em></li>
+  <li><code>EMPTY</code> (23651): <em>gran, primera, primer, mismo, nuevo, estadounidense, total, grandes, nacional, nueva</em></li>
 </ul>
 
 <p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (34) occur only with one value of <code>Degree</code>.</p>
@@ -102,27 +121,27 @@ The feature is used with 4 part-of-speech tags: <a href="">es-pos/ADV</a> (1568;
 
 <p>11 <a href="">es-pos/PRON</a> tokens (0% of all <code>PRON</code> tokens) have a non-empty value of <code>Degree</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>Degree</code> co-occurred: <tt><a href="Person.html">Person</a>=EMPTY</tt> (11; 100%), <tt><a href="PrepCase.html">PrepCase</a>=EMPTY</tt> (11; 100%), <tt><a href="PronType.html">PronType</a>=Ind</tt> (11; 100%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (11; 100%), <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (11; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (10; 91%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (10; 91%).</p>
+<p>The most frequent other feature values with which <code>PRON</code> and <code>Degree</code> co-occurred: <tt><a href="PrepCase.html">PrepCase</a>=EMPTY</tt> (11; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (11; 100%), <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (11; 100%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (11; 100%), <tt><a href="PronType.html">PronType</a>=Ind</tt> (11; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (10; 91%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (10; 91%).</p>
 
 <p><code>PRON</code> tokens may have the following values of <code>Degree</code>:</p>
 
 <ul>
   <li><code>Abs</code> (8; 73% of non-empty <code>Degree</code>): <em>muchísimo, muchisimo, muchisimio</em></li>
   <li><code>Cmp</code> (3; 27% of non-empty <code>Degree</code>): <em>menos, más</em></li>
-  <li><code>EMPTY</code> (14013): <em>se, lo, que, le, la, me, uno, cual, los, nos</em></li>
+  <li><code>EMPTY</code> (13561): <em>se, lo, que, le, la, me, uno, cual, los, nos</em></li>
 </ul>
 
 <h3 id="det"><code>DET</code></h3>
 
 <p>3 <a href="">es-pos/DET</a> tokens (0% of all <code>DET</code> tokens) have a non-empty value of <code>Degree</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>Degree</code> co-occurred: <tt><a href="Gender.html">Gender</a>=Fem</tt> (3; 100%), <tt><a href="Number.html">Number</a>=Plur</tt> (3; 100%), <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (3; 100%), <tt><a href="PronType.html">PronType</a>=Ind</tt> (3; 100%).</p>
+<p>The most frequent other feature values with which <code>DET</code> and <code>Degree</code> co-occurred: <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (3; 100%), <tt><a href="Gender.html">Gender</a>=Fem</tt> (3; 100%), <tt><a href="Number.html">Number</a>=Plur</tt> (3; 100%), <tt><a href="PronType.html">PronType</a>=Ind</tt> (3; 100%).</p>
 
 <p><code>DET</code> tokens may have the following values of <code>Degree</code>:</p>
 
 <ul>
   <li><code>Abs</code> (3; 100% of non-empty <code>Degree</code>): <em>muchísimas, muchisimas</em></li>
-  <li><code>EMPTY</code> (60869): <em>el, la, los, un, las, una, su, sus, este, esta</em></li>
+  <li><code>EMPTY</code> (59167): <em>el, la, los, un, las, una, su, sus, este, esta</em></li>
 </ul>
 
 <h2 id="relations-with-agreement-in-degree">Relations with Agreement in <code>Degree</code></h2>
@@ -139,9 +158,25 @@ The feature is used with 4 part-of-speech tags: <a href="">es-pos/ADV</a> (1568;
 
 Degree in other languages:
 
+[<a href="../../am/feat/Degree.html">am</a>]
+
+[<a href="../../ar/feat/Degree.html">ar</a>]
+
 [<a href="../../bg/feat/Degree.html">bg</a>]
 
+[<a href="../../bxr/feat/Degree.html">bxr</a>]
+
+[<a href="../../ca/feat/Degree.html">ca</a>]
+
+[<a href="../../ckb/feat/Degree.html">ckb</a>]
+
+[<a href="../../cop/feat/Degree.html">cop</a>]
+
 [<a href="../../cs/feat/Degree.html">cs</a>]
+
+[<a href="../../cu/feat/Degree.html">cu</a>]
+
+[<a href="../../da/feat/Degree.html">da</a>]
 
 [<a href="../../de/feat/Degree.html">de</a>]
 
@@ -151,29 +186,99 @@ Degree in other languages:
 
 [<a href="../../es/feat/Degree.html">es</a>]
 
+[<a href="../../et/feat/Degree.html">et</a>]
+
 [<a href="../../eu/feat/Degree.html">eu</a>]
 
 [<a href="../../fa/feat/Degree.html">fa</a>]
 
 [<a href="../../fi/feat/Degree.html">fi</a>]
 
+[<a href="../../fo/feat/Degree.html">fo</a>]
+
 [<a href="../../fr/feat/Degree.html">fr</a>]
 
 [<a href="../../ga/feat/Degree.html">ga</a>]
 
+[<a href="../../gl/feat/Degree.html">gl</a>]
+
+[<a href="../../got/feat/Degree.html">got</a>]
+
+[<a href="../../grc/feat/Degree.html">grc</a>]
+
 [<a href="../../he/feat/Degree.html">he</a>]
 
+[<a href="../../hi/feat/Degree.html">hi</a>]
+
+[<a href="../../hr/feat/Degree.html">hr</a>]
+
 [<a href="../../hu/feat/Degree.html">hu</a>]
+
+[<a href="../../id/feat/Degree.html">id</a>]
 
 [<a href="../../it/feat/Degree.html">it</a>]
 
 [<a href="../../ja/feat/Degree.html">ja</a>]
 
+[<a href="../../kk/feat/Degree.html">kk</a>]
+
+[<a href="../../kmr/feat/Degree.html">kmr</a>]
+
 [<a href="../../ko/feat/Degree.html">ko</a>]
+
+[<a href="../../la/feat/Degree.html">la</a>]
+
+[<a href="../../lv/feat/Degree.html">lv</a>]
+
+[<a href="../../mr/feat/Degree.html">mr</a>]
+
+[<a href="../../nl/feat/Degree.html">nl</a>]
+
+[<a href="../../no/feat/Degree.html">no</a>]
+
+[<a href="../../pl/feat/Degree.html">pl</a>]
+
+[<a href="../../pt/feat/Degree.html">pt</a>]
+
+[<a href="../../ro/feat/Degree.html">ro</a>]
+
+[<a href="../../ru/feat/Degree.html">ru</a>]
+
+[<a href="../../sa/feat/Degree.html">sa</a>]
+
+[<a href="../../sk/feat/Degree.html">sk</a>]
+
+[<a href="../../sla/feat/Degree.html">sla</a>]
+
+[<a href="../../sl/feat/Degree.html">sl</a>]
+
+[<a href="../../so/feat/Degree.html">so</a>]
+
+[<a href="../../sr/feat/Degree.html">sr</a>]
 
 [<a href="../../sv/feat/Degree.html">sv</a>]
 
+[<a href="../../swl/feat/Degree.html">swl</a>]
+
+[<a href="../../ta/feat/Degree.html">ta</a>]
+
+[<a href="../../tr/feat/Degree.html">tr</a>]
+
 [<a href="../../u/feat/Degree.html">u</a>]
+
+[<a href="../../ug/feat/Degree.html">ug</a>]
+
+[<a href="../../uk/feat/Degree.html">uk</a>]
+
+[<a href="../../ur/feat/Degree.html">ur</a>]
+
+[<a href="../../urj/feat/Degree.html">urj</a>]
+
+[<a href="../../vi/feat/Degree.html">vi</a>]
+
+[<a href="../../yue/feat/Degree.html">yue</a>]
+
+[<a href="../../zh/feat/Degree.html">zh</a>]
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-kk">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/kk/dep">kk/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/parataxis.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-kk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/kk/dep">kk/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/parataxis.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -69,65 +86,82 @@ parataxis(ойнайды-12, көреді-6)
 
 <p>This relation is universal.</p>
 
-<p>48 nodes (1%) are attached to their parents as <code>parataxis</code>.</p>
+<p>16 nodes (3%) are attached to their parents as <code>parataxis</code>.</p>
 
-<p>28 instances of <code>parataxis</code> (58%) are right-to-left (child precedes parent).
-Average distance between parent and child is 6.47916666666667.</p>
+<p>16 instances of <code>parataxis</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 8.0625.</p>
 
-<p>The following 10 pairs of parts of speech are connected with <code>parataxis</code>: <a href="">kk-pos/VERB</a>-<a href="">kk-pos/VERB</a> (29; 60% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/NOUN</a> (6; 13% instances), <a href="">kk-pos/ADJ</a>-<a href="">kk-pos/VERB</a> (4; 8% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/ADJ</a> (2; 4% instances), <a href="">kk-pos/VERB</a>-<a href="">kk-pos/NOUN</a> (2; 4% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/ADV</a> (1; 2% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/NUM</a> (1; 2% instances), <a href="">kk-pos/PRON</a>-<a href="">kk-pos/PRON</a> (1; 2% instances), <a href="">kk-pos/VERB</a>-<a href="">kk-pos/ADJ</a> (1; 2% instances), <a href="">kk-pos/VERB</a>-<a href="">kk-pos/PRON</a> (1; 2% instances).</p>
+<p>The following 7 pairs of parts of speech are connected with <code>parataxis</code>: <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/VERB</a> (6; 38% instances), <a href="">kk-pos/VERB</a>-<a href="">kk-pos/VERB</a> (3; 19% instances), <a href="">kk-pos/ADJ</a>-<a href="">kk-pos/NOUN</a> (2; 13% instances), <a href="">kk-pos/VERB</a>-<a href="">kk-pos/ADJ</a> (2; 13% instances), <a href="">kk-pos/ADJ</a>-<a href="">kk-pos/ADJ</a> (1; 6% instances), <a href="">kk-pos/ADJ</a>-<a href="">kk-pos/VERB</a> (1; 6% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/NOUN</a> (1; 6% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 1 4 parataxis	color:blue
-1	Қаш	қаш	VERB	v	Mood=Imper|Number=Sing|Person=2	0	root	_	қаш|v|iv|imp|p2|sg
-2	,	,	PUNCT	cm	_	1	punct	_	,|cm
-3	маңыма	маң	NOUN	n	Case=Dat|Number[psor]=Sing|Person[psor]=1	4	nmod	_	маң|n|px1sg|dat
-4	жолама	жола	VERB	v	Mood=Imper|Number=Sing|Person=2|Polarity=Neg	1	parataxis	_	жола|v|iv|neg|imp|p2|sg
-5	!	!	PUNCT	sent	_	1	punct	_	!|sent
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 10	bgColor:blue
-# visual-style 10	fgColor:white
-# visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 4 10 parataxis	color:blue
-1	Үй	үй	NOUN	n	_	2	nmod:poss	_	nom
-2	міндеті	міндет	NOUN	n	_	4	nsubj	_	px3sp|nom
-3	-	-	PUNCT	guio	_	4	punct	_	_
-4	_	әйел	NOUN	n	_	0	root	_	loc
-5	_	е	AUX	cop	_	4	cop	_	aor|p3|sg
-6	,	,	PUNCT	cm	_	4	punct	_	_
-7	түз	түз	NOUN	n	_	8	nmod:poss	_	nom
-8	міндеті	міндет	NOUN	n	_	10	nsubj	_	px3sp|nom
-9	—	—	PUNCT	guio	_	10	punct	_	_
-10	_	бай	NOUN	n	_	4	parataxis	_	px3sp|loc
-11	_	е	AUX	cop	_	10	cop	_	_
-12	.	.	PUNCT	sent	_	10	punct	_	_
+<pre><code class="language-conllu"># visual-style 12	bgColor:blue
+# visual-style 12	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 12 parataxis	color:blue
+1	Бітеу	бітеу	ADJ	adj	_	2	amod	_	_
+2	жара	жара	NOUN	n	Case=Nom	0	root	_	_
+3	болды	бол	AUX	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	cop	_	SpaceAfter=No
+4	,	,	PUNCT	cm	_	2	punct	_	_
+5	жалғыз	жалғыз	ADJ	adj	_	6	advmod	_	_
+6	өртенді	өртен	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	parataxis	_	SpaceAfter=No
+7	,	,	PUNCT	cm	_	6	punct	_	_
+8	жалғыз	жалғыз	ADJ	adj	_	9	advmod	_	_
+9	жылады	жыла	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	parataxis	_	SpaceAfter=No
+10	,	,	PUNCT	cm	_	9	punct	_	_
+11	дүниеден	дүние	NOUN	n	Case=Abl	12	obl	_	_
+12	безді	без	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	parataxis	_	SpaceAfter=No
+13	,	,	PUNCT	cm	_	12	punct	_	_
+14	сопы	сопы	NOUN	n	Case=Nom	2	parataxis	_	_
+15	болды	бол	AUX	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	cop	_	SpaceAfter=No
+16	.	.	PUNCT	sent	_	14	punct	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 13	bgColor:blue
-# visual-style 13	fgColor:white
-# visual-style 13 1 parataxis	color:blue
-1	Кірді	кір	VERB	v	_	13	parataxis	_	iv|ifi|p3|sg
-2	,	,	PUNCT	cm	_	1	punct	_	_
-3	шықты	шық	VERB	v	_	13	parataxis	_	iv|ifi|p3|sg
-4	,	,	PUNCT	cm	_	3	punct	_	_
-5	ілді	іл	VERB	v	_	13	parataxis	_	tv|ifi|p3|sg
-6	,	,	PUNCT	cm	_	5	punct	_	_
-7	қайтты	қайт	VERB	v	_	13	parataxis	_	iv|ifi|p3|sg
+<pre><code class="language-conllu"># visual-style 17	bgColor:blue
+# visual-style 17	fgColor:white
+# visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 7 17 parataxis	color:blue
+1	Көл	көл	NOUN	n	Case=Nom	3	advcl	_	_
+2	болып	бол	AUX	v	Aspect=Perf|VerbForm=Conv	1	cop	_	_
+3	төгілген	төк	VERB	v	Tense=Past|VerbForm=Part|Voice=Pass	5	acl:relcl	_	_
+4	көздің	көз	NOUN	n	Case=Gen	5	nmod:poss	_	_
+5	жасы	жас	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	7	nsubj	_	_
+6	жерге	жер	NOUN	n	Case=Dat	7	obl	_	_
+7	сіңді	сің	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 8	,	,	PUNCT	cm	_	7	punct	_	_
-9	түбегейлеп	түбегейлеп	ADV	adv	_	10	advmod	_	_
-10	қуған	қу	VERB	v	_	11	acl:relcl	_	tv|gpr_past
-11	_	бала	NOUN	n	_	13	nsubj	_	nom
-12	_	да	PART	postadv	_	11	advmod	_	_
-13	_	жоқ	ADJ	adj	_	0	root	_	subst|nom
-14	_	е	AUX	cop	_	13	cop	_	aor|p3|sg
+9	тілек	тілек	NOUN	n	Case=Nom	10	nsubj	_	_
+10	тозды	тоз	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	parataxis	_	SpaceAfter=No
+11	,	,	PUNCT	cm	_	10	punct	_	_
+12	өмір	өмір	NOUN	n	Case=Nom	13	nsubj	_	_
+13	озды	оз	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	parataxis	_	SpaceAfter=No
+14	,	,	PUNCT	cm	_	13	punct	_	_
+15	Шолпан	Шолпан	PROPN	np	Case=Nom|Gender=Fem	17	nsubj	_	_
+16	бала	бала	X	x	_	17	dep	_	_
+17	көтермеді	көтер	VERB	v	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past|VerbForm=Fin	7	parataxis	_	SpaceAfter=No
+18	.	.	PUNCT	sent	_	17	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 13	bgColor:blue
+# visual-style 13	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 13 parataxis	color:blue
+1	Кім	кім	PRON	prn	Case=Nom|PronType=Int	2	nsubj	_	_
+2	біледі	біл	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	cm	_	2	punct	_	_
+4	Тәңірінің	Тәңір	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	7	nsubj	_	_
+5	Шолпанға	Шолпан	PROPN	np	Case=Dat|Gender=Fem	7	obl	_	_
+6	бала	бала	NOUN	n	Case=Nom	7	obj	_	_
+7	бермеуі	бер	VERB	v	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|Polarity=Neg|VerbForm=Ger	9	csubj	_	_
+8	өзінше	өз	PRON	prn	Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	9	advmod	_	_
+9	дұрыс	дұрыс	ADJ	adj	_	2	parataxis	_	_
+10	шығар	шығар	PART	mod	_	9	discourse	_	_
+11	,	,	PUNCT	cm	_	9	punct	_	_
+12	өзінше	өз	PRON	prn	Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	13	advmod	_	_
+13	жөн	жөн	ADJ	adj	_	2	parataxis	_	_
+14	шығар	шығар	PART	mod	_	13	discourse	_	_
 15	.	.	PUNCT	sent	_	13	punct	_	_
 
 </code></pre>
@@ -140,9 +174,25 @@ Average distance between parent and child is 6.47916666666667.</p>
 
 parataxis in other languages:
 
+[<a href="../../am/dep/parataxis.html">am</a>]
+
+[<a href="../../ar/dep/parataxis.html">ar</a>]
+
 [<a href="../../bg/dep/parataxis.html">bg</a>]
 
+[<a href="../../bxr/dep/parataxis.html">bxr</a>]
+
+[<a href="../../ca/dep/parataxis.html">ca</a>]
+
+[<a href="../../ckb/dep/parataxis.html">ckb</a>]
+
+[<a href="../../cop/dep/parataxis.html">cop</a>]
+
 [<a href="../../cs/dep/parataxis.html">cs</a>]
+
+[<a href="../../cu/dep/parataxis.html">cu</a>]
+
+[<a href="../../da/dep/parataxis.html">da</a>]
 
 [<a href="../../de/dep/parataxis.html">de</a>]
 
@@ -152,29 +202,99 @@ parataxis in other languages:
 
 [<a href="../../es/dep/parataxis.html">es</a>]
 
+[<a href="../../et/dep/parataxis.html">et</a>]
+
 [<a href="../../eu/dep/parataxis.html">eu</a>]
 
 [<a href="../../fa/dep/parataxis.html">fa</a>]
 
 [<a href="../../fi/dep/parataxis.html">fi</a>]
 
+[<a href="../../fo/dep/parataxis.html">fo</a>]
+
 [<a href="../../fr/dep/parataxis.html">fr</a>]
 
 [<a href="../../ga/dep/parataxis.html">ga</a>]
 
+[<a href="../../gl/dep/parataxis.html">gl</a>]
+
+[<a href="../../got/dep/parataxis.html">got</a>]
+
+[<a href="../../grc/dep/parataxis.html">grc</a>]
+
 [<a href="../../he/dep/parataxis.html">he</a>]
 
+[<a href="../../hi/dep/parataxis.html">hi</a>]
+
+[<a href="../../hr/dep/parataxis.html">hr</a>]
+
 [<a href="../../hu/dep/parataxis.html">hu</a>]
+
+[<a href="../../id/dep/parataxis.html">id</a>]
 
 [<a href="../../it/dep/parataxis.html">it</a>]
 
 [<a href="../../ja/dep/parataxis.html">ja</a>]
 
+[<a href="../../kk/dep/parataxis.html">kk</a>]
+
+[<a href="../../kmr/dep/parataxis.html">kmr</a>]
+
 [<a href="../../ko/dep/parataxis.html">ko</a>]
+
+[<a href="../../la/dep/parataxis.html">la</a>]
+
+[<a href="../../lv/dep/parataxis.html">lv</a>]
+
+[<a href="../../mr/dep/parataxis.html">mr</a>]
+
+[<a href="../../nl/dep/parataxis.html">nl</a>]
+
+[<a href="../../no/dep/parataxis.html">no</a>]
+
+[<a href="../../pl/dep/parataxis.html">pl</a>]
+
+[<a href="../../pt/dep/parataxis.html">pt</a>]
+
+[<a href="../../ro/dep/parataxis.html">ro</a>]
+
+[<a href="../../ru/dep/parataxis.html">ru</a>]
+
+[<a href="../../sa/dep/parataxis.html">sa</a>]
+
+[<a href="../../sk/dep/parataxis.html">sk</a>]
+
+[<a href="../../sla/dep/parataxis.html">sla</a>]
+
+[<a href="../../sl/dep/parataxis.html">sl</a>]
+
+[<a href="../../so/dep/parataxis.html">so</a>]
+
+[<a href="../../sr/dep/parataxis.html">sr</a>]
 
 [<a href="../../sv/dep/parataxis.html">sv</a>]
 
+[<a href="../../swl/dep/parataxis.html">swl</a>]
+
+[<a href="../../ta/dep/parataxis.html">ta</a>]
+
+[<a href="../../tr/dep/parataxis.html">tr</a>]
+
 [<a href="../../u/dep/parataxis.html">u</a>]
+
+[<a href="../../ug/dep/parataxis.html">ug</a>]
+
+[<a href="../../uk/dep/parataxis.html">uk</a>]
+
+[<a href="../../ur/dep/parataxis.html">ur</a>]
+
+[<a href="../../urj/dep/parataxis.html">urj</a>]
+
+[<a href="../../vi/dep/parataxis.html">vi</a>]
+
+[<a href="../../yue/dep/parataxis.html">yue</a>]
+
+[<a href="../../zh/dep/parataxis.html">zh</a>]
 
 
 

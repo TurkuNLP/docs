@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-fa">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/fa/dep">fa/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_fa-dep/nummod.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-fa">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/fa/dep">fa/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fa-dep/nummod.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,12 +80,12 @@ for <code>nummod</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>2875 nodes (2%) are attached to their parents as <code>nummod</code>.</p>
+<p>2564 nodes (2%) are attached to their parents as <code>nummod</code>.</p>
 
-<p>2520 instances of <code>nummod</code> (88%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.33147826086957.</p>
+<p>2245 instances of <code>nummod</code> (88%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.33385335413417.</p>
 
-<p>The following 13 pairs of parts of speech are connected with <code>nummod</code>: <a href="">fa-pos/NOUN</a>-<a href="">fa-pos/NUM</a> (2380; 83% instances), <a href="">fa-pos/NUM</a>-<a href="">fa-pos/NUM</a> (216; 8% instances), <a href="">fa-pos/ADJ</a>-<a href="">fa-pos/NUM</a> (114; 4% instances), <a href="">fa-pos/NOUN</a>-<a href="">fa-pos/ADJ</a> (78; 3% instances), <a href="">fa-pos/VERB</a>-<a href="">fa-pos/NUM</a> (35; 1% instances), <a href="">fa-pos/NOUN</a>-<a href="">fa-pos/NOUN</a> (24; 1% instances), <a href="">fa-pos/ADP</a>-<a href="">fa-pos/NUM</a> (18; 1% instances), <a href="">fa-pos/ADV</a>-<a href="">fa-pos/NUM</a> (4; 0% instances), <a href="">fa-pos/PRON</a>-<a href="">fa-pos/NUM</a> (2; 0% instances), <a href="">fa-pos/ADJ</a>-<a href="">fa-pos/ADJ</a> (1; 0% instances), <a href="">fa-pos/NOUN</a>-<a href="">fa-pos/PRON</a> (1; 0% instances), <a href="">fa-pos/VERB</a>-<a href="">fa-pos/NOUN</a> (1; 0% instances), <a href="">fa-pos/X</a>-<a href="">fa-pos/NUM</a> (1; 0% instances).</p>
+<p>The following 13 pairs of parts of speech are connected with <code>nummod</code>: <a href="">fa-pos/NOUN</a>-<a href="">fa-pos/NUM</a> (2126; 83% instances), <a href="">fa-pos/NUM</a>-<a href="">fa-pos/NUM</a> (186; 7% instances), <a href="">fa-pos/ADJ</a>-<a href="">fa-pos/NUM</a> (94; 4% instances), <a href="">fa-pos/NOUN</a>-<a href="">fa-pos/ADJ</a> (78; 3% instances), <a href="">fa-pos/VERB</a>-<a href="">fa-pos/NUM</a> (30; 1% instances), <a href="">fa-pos/NOUN</a>-<a href="">fa-pos/NOUN</a> (24; 1% instances), <a href="">fa-pos/ADP</a>-<a href="">fa-pos/NUM</a> (17; 1% instances), <a href="">fa-pos/ADV</a>-<a href="">fa-pos/NUM</a> (3; 0% instances), <a href="">fa-pos/PRON</a>-<a href="">fa-pos/NUM</a> (2; 0% instances), <a href="">fa-pos/ADJ</a>-<a href="">fa-pos/ADJ</a> (1; 0% instances), <a href="">fa-pos/NOUN</a>-<a href="">fa-pos/PRON</a> (1; 0% instances), <a href="">fa-pos/VERB</a>-<a href="">fa-pos/NOUN</a> (1; 0% instances), <a href="">fa-pos/X</a>-<a href="">fa-pos/NUM</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 5	bgColor:blue
 # visual-style 5	fgColor:white
@@ -86,8 +103,8 @@ Average distance between parent and child is 1.33147826086957.</p>
 9	بیعت	بیعت	NOUN	N_SING	Number=Sing	7	nmod	_	_
 10	با	با	ADP	P	_	11	case	_	_
 11	یزید	یزید	NOUN	N_SING	Number=Sing	9	nmod	_	_
-12	نشده	کرد#کن	VERB	V_PP	Negative=Neg|Number=Sing|Person=3|VerbForm=Part	7	cop	_	_
-13	است	است	VERB	V_PRS	Number=Sing|Person=3|Tense=Pres	12	aux	_	_
+12	نشده	کرد#کن	AUX	V_PP	Number=Sing|Person=3|Polarity=Neg|VerbForm=Part	7	cop	_	_
+13	است	است	VERB	V_PRS	Number=Sing|Person=3|Tense=Pres	12	aux	_	SpaceAfter=No
 14	.	.	PUNCT	DELM	_	7	punct	_	_
 
 </code></pre>
@@ -100,40 +117,33 @@ Average distance between parent and child is 1.33147826086957.</p>
 1	مزرعه‌ای	_	NOUN	N_SING	Number=Sing	0	root	_	_
 2	که	که	SCONJ	CON	_	5	mark	_	_
 3	در	در	ADP	P	_	4	case	_	_
-4	عقیق	_	NOUN	N_SING	Number=Sing	5	nmod	_	_
+4	عقیق	_	NOUN	N_SING	Number=Sing	5	obl	_	_
 5	بود	بود#باش	VERB	V_PA	Number=Sing|Person=3|Tense=Past	1	acl:relcl	_	_
-6	و	و	CONJ	CON	_	5	cc	_	_
+6	و	و	CCONJ	CON	_	12	cc	_	_
 7	درآمد	درآمد	NOUN	N_SING	Number=Sing	12	nsubj	_	_
 8	آن	آن	PRON	PRO	Number=Sing|PronType=Dem	7	nmod:poss	_	_
-9	سالی	سال	NOUN	N_SING	Number=Sing	12	dobj	_	_
+9	سالی	سال	NOUN	N_SING	Number=Sing	12	obj	_	_
 10	هشت	هشت	NUM	NUM	NumType=Card	11	nummod	_	_
 11	هزار	هزار	NUM	NUM	NumType=Card	12	compound	_	_
 12	دینار	_	NOUN	N_SING	Number=Sing	5	conj	_	_
-13	بود	بود#باش	VERB	V_PA	Number=Sing|Person=3|Tense=Past	12	cop	_	_
+13	بود	بود#باش	AUX	V_PA	Number=Sing|Person=3|Tense=Past	12	cop	_	SpaceAfter=No
 14	.	.	PUNCT	DELM	_	1	punct	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 4	bgColor:blue
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
 # visual-style 4	fgColor:white
-# visual-style 4 3 nummod	color:blue
-1	در	در	ADP	P	_	2	case	_	_
-2	لایحه	لایحه	NOUN	N_SING	Number=Sing	6	nmod	_	_
-3	۵	۵	NUM	NUM	NumType=Card	4	nummod	_	_
-4	ساله	ساله	ADJ	ADJ	Degree=Pos	2	amod	_	_
-5	سوم	سوم	ADJ	ADJ	Degree=Pos	2	amod	_	_
-6	می‌بینیم	دید#بین	VERB	V_PRS	Number=Plur|Person=1|Tense=Pres	0	root	_	_
-7	که	که	SCONJ	CON	_	13	mark	_	_
-8	این	این	DET	DET	_	9	det	_	_
-9	اتکا	اتکاء	NOUN	N_SING	Number=Sing	13	nsubj	_	_
-10	به	به	ADP	P	_	12	case	_	_
-11	۸۵	۸۵	NUM	NUM	NumType=Card	12	nummod	_	_
-12	درصد	درصد	NOUN	N_SING	Number=Sing	13	nmod	_	_
-13	رسیده	رسید#رس	VERB	V_PP	Number=Sing|Person=3|VerbForm=Part	6	ccomp	_	_
-14	است	است	VERB	V_PRS	Number=Sing|Person=3|Tense=Pres	13	aux	_	_
-15	.	.	PUNCT	DELM	_	6	punct	_	_
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 4 nummod	color:blue
+1	برو	رفت#رو	VERB	V_IMP	Mood=Imp|Number=Sing|Person=2	0	root	_	_
+2	هر	هر	DET	DET	_	3	det	_	_
+3	وقت	وقت	NOUN	N_SING	Number=Sing	5	nsubj	_	_
+4	۱۶	۱۶	NUM	NUM	NumType=Card	5	nummod	_	_
+5	ساله	ساله	ADJ	ADJ	Degree=Pos	1	conj	_	_
+6	شدی	_	AUX	V_PA	Number=Sing|Person=2|Tense=Past	5	cop	_	_
+7	بیا	آمد#آ	VERB	V_IMP	Mood=Imp|Number=Sing|Person=2	5	ccomp	_	SpaceAfter=No
+8	.	.	PUNCT	DELM	_	1	punct	_	_
 
 </code></pre>
 
@@ -145,9 +155,25 @@ Average distance between parent and child is 1.33147826086957.</p>
 
 nummod in other languages:
 
+[<a href="../../am/dep/nummod.html">am</a>]
+
+[<a href="../../ar/dep/nummod.html">ar</a>]
+
 [<a href="../../bg/dep/nummod.html">bg</a>]
 
+[<a href="../../bxr/dep/nummod.html">bxr</a>]
+
+[<a href="../../ca/dep/nummod.html">ca</a>]
+
+[<a href="../../ckb/dep/nummod.html">ckb</a>]
+
+[<a href="../../cop/dep/nummod.html">cop</a>]
+
 [<a href="../../cs/dep/nummod.html">cs</a>]
+
+[<a href="../../cu/dep/nummod.html">cu</a>]
+
+[<a href="../../da/dep/nummod.html">da</a>]
 
 [<a href="../../de/dep/nummod.html">de</a>]
 
@@ -157,29 +183,99 @@ nummod in other languages:
 
 [<a href="../../es/dep/nummod.html">es</a>]
 
+[<a href="../../et/dep/nummod.html">et</a>]
+
 [<a href="../../eu/dep/nummod.html">eu</a>]
 
 [<a href="../../fa/dep/nummod.html">fa</a>]
 
 [<a href="../../fi/dep/nummod.html">fi</a>]
 
+[<a href="../../fo/dep/nummod.html">fo</a>]
+
 [<a href="../../fr/dep/nummod.html">fr</a>]
 
 [<a href="../../ga/dep/nummod.html">ga</a>]
 
+[<a href="../../gl/dep/nummod.html">gl</a>]
+
+[<a href="../../got/dep/nummod.html">got</a>]
+
+[<a href="../../grc/dep/nummod.html">grc</a>]
+
 [<a href="../../he/dep/nummod.html">he</a>]
 
+[<a href="../../hi/dep/nummod.html">hi</a>]
+
+[<a href="../../hr/dep/nummod.html">hr</a>]
+
 [<a href="../../hu/dep/nummod.html">hu</a>]
+
+[<a href="../../id/dep/nummod.html">id</a>]
 
 [<a href="../../it/dep/nummod.html">it</a>]
 
 [<a href="../../ja/dep/nummod.html">ja</a>]
 
+[<a href="../../kk/dep/nummod.html">kk</a>]
+
+[<a href="../../kmr/dep/nummod.html">kmr</a>]
+
 [<a href="../../ko/dep/nummod.html">ko</a>]
+
+[<a href="../../la/dep/nummod.html">la</a>]
+
+[<a href="../../lv/dep/nummod.html">lv</a>]
+
+[<a href="../../mr/dep/nummod.html">mr</a>]
+
+[<a href="../../nl/dep/nummod.html">nl</a>]
+
+[<a href="../../no/dep/nummod.html">no</a>]
+
+[<a href="../../pl/dep/nummod.html">pl</a>]
+
+[<a href="../../pt/dep/nummod.html">pt</a>]
+
+[<a href="../../ro/dep/nummod.html">ro</a>]
+
+[<a href="../../ru/dep/nummod.html">ru</a>]
+
+[<a href="../../sa/dep/nummod.html">sa</a>]
+
+[<a href="../../sk/dep/nummod.html">sk</a>]
+
+[<a href="../../sla/dep/nummod.html">sla</a>]
+
+[<a href="../../sl/dep/nummod.html">sl</a>]
+
+[<a href="../../so/dep/nummod.html">so</a>]
+
+[<a href="../../sr/dep/nummod.html">sr</a>]
 
 [<a href="../../sv/dep/nummod.html">sv</a>]
 
+[<a href="../../swl/dep/nummod.html">swl</a>]
+
+[<a href="../../ta/dep/nummod.html">ta</a>]
+
+[<a href="../../tr/dep/nummod.html">tr</a>]
+
 [<a href="../../u/dep/nummod.html">u</a>]
+
+[<a href="../../ug/dep/nummod.html">ug</a>]
+
+[<a href="../../uk/dep/nummod.html">uk</a>]
+
+[<a href="../../ur/dep/nummod.html">ur</a>]
+
+[<a href="../../urj/dep/nummod.html">urj</a>]
+
+[<a href="../../vi/dep/nummod.html">vi</a>]
+
+[<a href="../../yue/dep/nummod.html">yue</a>]
+
+[<a href="../../zh/dep/nummod.html">zh</a>]
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-fi">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-fi">home</a></span>
 
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_fi-overview/specific-syntax.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-overview/specific-syntax.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -616,7 +633,7 @@ dependency types available: <a href=""><code>xcomp</code></a>, <a href=""><code>
 <a href=""><code>xcomp:ds</code></a>.</p>
 
 <p>If the subject of the dependent is shared with the governor (subject
-control), the correct type to use is <a href=""><code>xcomp</code></a>. If any other sentence element is inherited from the higher clause (for example a <code>dobj</code>), the correct type is
+control), the correct type to use is <a href=""><code>xcomp</code></a>. If any other sentence element is inherited from the higher clause (for example a <code>obj</code>), the correct type is
 <a href=""><code>xcomp:ds</code></a>, and otherwise <a href=""><code>ccomp</code></a>.</p>
 
 <h4 id="examples-5">Examples</h4>
@@ -776,7 +793,7 @@ punct(Annoin-1, .-9)
 </code></pre>
 
 <p>The relativizer is annotated with the standard syntactic role that it
-plays in the relative clause, such as <a href="">nsubj</a> or <a href="">dobj</a>.  (Note
+plays in the relative clause, such as <a href="">nsubj</a> or <a href="">obj</a>.  (Note
 that this treatment differs from the annotation of relative clauses in
 previously proposed related schemes, which used specific dependency
 types (e.g. <code>rel</code>) to mark the relativizer. In particular, in the TDT

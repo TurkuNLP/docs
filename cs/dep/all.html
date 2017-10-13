@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-cs">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cs">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -45,8 +62,7 @@
 
           <h1 id="dependencies">Dependencies</h1>
 
-<p>Note: <i>nmod</i>, <i>neg</i>, and <i>punct</i> appear
-in two places.</p>
+<p>Note: <i>punct</i> appears in two places.</p>
 
 <table class="typeindex">
   <tr>
@@ -63,11 +79,11 @@ in two places.</p>
 	  <td><a>csubj</a></td>
 	</tr>
 	<tr>
-	  <td><a>nsubjpass</a></td>
-	  <td><a>csubjpass</a></td>
+	  <td>↳<a>nsubj:pass</a></td>
+	  <td>↳<a>csubj:pass</a></td>
 	</tr>
 	<tr>
-	  <td><a>dobj</a></td>
+	  <td><a>obj</a></td>
 	  <td><a>ccomp</a></td>
 	  <td><a>xcomp</a></td>
 	</tr>
@@ -87,19 +103,9 @@ in two places.</p>
 	  <td><i>Modifier word</i></td>
 	</tr>
 	<tr>
-	  <td><a>nmod</a></td>
+	  <td><a>obl</a></td>
 	  <td><a>advcl</a></td>
 	  <td><a>advmod</a></td>
-	</tr>
-	<tr>
-	  <td>&nbsp;</td>
-	  <td>&nbsp;</td>
-	  <td>↳<a>advmod:emph</a></td>
-	</tr>
-	<tr>
-	  <td>&nbsp;</td>
-	  <td>&nbsp;</td>
-	  <td><a>neg</a></td>
 	</tr>
       </table>
 
@@ -114,22 +120,24 @@ in two places.</p>
 	  <td><i>Other</i></td>
 	</tr>
 	<tr>
-	  <td><a>vocative</a></td>
+	  <td><tt>expl</tt></td>
 	  <td><a>aux</a></td>
 	  <td><a>mark</a></td>
 	</tr>
 	<tr>
-	  <td><a>discourse</a></td>
-	  <td><a>auxpass</a></td>
+	  <td>↳<a>expl:pass</a></td>
+	  <td>↳<a>aux:pass</a></td>
 	  <td><a>punct</a></td>
 	</tr>
 	<tr>
-	  <td><a>expl</a></td>
-	  <td>↳<a>auxpass:reflex</a></td>
+	  <td>↳<a>expl:pv</a></td>
+	  <td><a>cop</a></td>
 	</tr>
 	<tr>
-	  <td>&nbsp;</td>
-	  <td><a>cop</a></td>
+	  <td><a>vocative</a></td>
+	</tr>
+	<tr>
+	  <td><a>discourse</a></td>
 	</tr>
       </table>
 
@@ -153,6 +161,11 @@ in two places.</p>
 	<tr>
 	  <td><a>appos</a></td>
 	  <td>&nbsp;</td>
+	  <td>↳<a>advmod:emph</a></td>
+	</tr>
+	<tr>
+	  <td><strike>clf</strike></td>
+	  <td>&nbsp;</td>
 	  <td><a>det</a></td>
 	</tr>
 	<tr>
@@ -175,11 +188,6 @@ in two places.</p>
 	  <td>&nbsp;</td>
 	  <td>↳<a>nummod:gov</a></td>
 	</tr>
-	<tr>
-	  <td>&nbsp;</td>
-	  <td>&nbsp;</td>
-	  <td><a>neg</a></td>
-	</tr>
       </table>
 
     </td>
@@ -189,13 +197,14 @@ in two places.</p>
 	<tr><td colspan="3"><strong>Compounding and unanalyzed</strong></td></tr>
 	<tr>
 	  <td><a>compound</a></td>
-	  <td><a>mwe</a></td>
+	  <td><a>fixed</a></td>
 	  <td><a>goeswith</a></td>
 	</tr>
 	<tr>
-	  <td><a>name</a></td>
-	  <td><a>foreign</a></td>
-	  <td></td>
+	  <td><a>flat</a></td>
+	</tr>
+	<tr>
+	  <td>↳<a>flat:foreign</a></td>
 	</tr>
       </table>
 
@@ -217,7 +226,7 @@ in two places.</p>
     <td>
 
       <table class="category">
-	<tr><td colspan="3"><strong>Case-marking, prepositions, possessive</strong></td></tr>
+	<tr><td colspan="3"><strong>Case-marking and prepositions</strong></td></tr>
 	<tr>
 	  <td><a>case</a></td>
 	</tr>
@@ -231,7 +240,7 @@ in two places.</p>
 	<tr>
 	  <td><a>list</a></td>
 	  <td><a>parataxis</a></td>
-	  <td><a>remnant</a></td>
+	  <td><a>orphan</a></td>
 	</tr>
 	<tr>
 	  <td><strike>dislocated</strike></td>
@@ -298,7 +307,7 @@ acl(fakt, navštívilo)
 acl(the-fact, visit)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/acl.md" target="#">edit acl</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/acl.md" target="#">edit acl</a></p>
 
 <p><a id="al-cs-dep/advcl" class="al-dest"></a></p>
 <h2><code>advcl</code>: adverbial clause modifier</h2>
@@ -322,7 +331,7 @@ advcl(Spěchal, přišel)
 advcl(He-rushed, come)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/advcl.md" target="#">edit advcl</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/advcl.md" target="#">edit advcl</a></p>
 
 <p><a id="al-cs-dep/advmod" class="al-dest"></a></p>
 <h2><code>advmod</code>: adverbial modifier</h2>
@@ -336,7 +345,7 @@ by adverbs, adpositional phrases, or nouns in particular morphological
 <a href="cs-feat/Case">cases</a>.
 We differentiate adverbials realized as adverbs (<code>advmod</code>) and
 adverbials realized by noun phrases or adpositional phrases
-(<a href="">nmod</a>).</p>
+(<a href="">obl</a>).</p>
 
 <pre><code class="language-sdparse">geneticky upravené potraviny \n genetically modified food
 advmod(upravené, geneticky)
@@ -355,7 +364,7 @@ advmod(to-go, Where)
 advmod(to-go, tomorrow)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/advmod.md" target="#">edit advmod</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/advmod.md" target="#">edit advmod</a></p>
 
 <p><a id="al-cs-dep/advmod:emph" class="al-dest"></a></p>
 <h2><code>advmod:emph</code>: emphasizing word, intensifier</h2>
@@ -389,7 +398,7 @@ advmod:emph(percent, only)
   <li><em>Dá se to dokumentovat <b>právě</b> na početné skupině dětí.</em> “It can be shown <b>just</b> on a large group of children.”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/advmod-emph.md" target="#">edit advmod:emph</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/advmod-emph.md" target="#">edit advmod:emph</a></p>
 
 <p><a id="al-cs-dep/amod" class="al-dest"></a></p>
 <h2><code>amod</code>: adjectival modifier</h2>
@@ -424,7 +433,7 @@ nsubj(první, závodník)
 nsubj(first, racer)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/amod.md" target="#">edit amod</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/amod.md" target="#">edit amod</a></p>
 
 <p><a id="al-cs-dep/appos" class="al-dest"></a></p>
 <h2><code>appos</code>: appositional modifier</h2>
@@ -468,14 +477,14 @@ conj(brother, cousin)
 <p><code>appos</code> is also used to link key-value pairs in addresses, signatures, etc. (see also the <a href="">list</a> label):</p>
 
 <pre><code class="language-sdparse">Jan Novák , tel . : 777-000-111 , e-mail : novak@ab.cz
-name(Novák, Jan)
-list(Novák, tel)
-list(Novák, e-mail)
+flat(Jan, Novák)
+list(Jan, tel)
+list(Jan, e-mail)
 appos(tel, 777-000-111)
 appos(e-mail, novak@ab.cz)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/appos.md" target="#">edit appos</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/appos.md" target="#">edit appos</a></p>
 
 <p><a id="al-cs-dep/aux" class="al-dest"></a></p>
 <h2><code>aux</code>: auxiliary</h2>
@@ -484,9 +493,9 @@ appos(e-mail, novak@ab.cz)
 used to construct the periphrastic future tense, past tense or conditional.</p>
 
 <p>Exception: Auxiliary verb used to construct the passive
-<a href="cs-feat/Voice">voice</a> is not labeled <code>aux</code> but <a href="">auxpass</a>.</p>
+<a href="cs-feat/Voice">voice</a> is not labeled <code>aux</code> but <a href="">aux:pass</a>.</p>
 
-<p>Note that besides <code>aux</code> and <code>auxpass</code>, the verb <em>být</em> may also act as a <a href="cop">copula</a>
+<p>Note that besides <code>aux</code> and <code>aux:pass</code>, the verb <em>být</em> may also act as a <a href="cop">copula</a>
 and as the main verb.</p>
 
 <pre><code class="language-sdparse">Přijel jsem včera . \n Arrived I-have yesterday .
@@ -504,27 +513,27 @@ aux(Přišel, bych)
 aux(Come, I-would)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/aux_.md" target="#">edit aux</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/aux_.md" target="#">edit aux</a></p>
 
-<p><a id="al-cs-dep/auxpass" class="al-dest"></a></p>
-<h2><code>auxpass</code>: passive auxiliary</h2>
+<p><a id="al-cs-dep/aux:pass" class="al-dest"></a></p>
+<h2><code>aux:pass</code>: passive auxiliary</h2>
 
 <p>A passive auxiliary of a clause is a form of the <a href="cs-pos/AUX">auxiliary verb</a> <em>být</em> “to be”
 used to construct the periphrastic passive voice (in any tense or in the infinitive).</p>
 
 <pre><code class="language-sdparse">Kennedy byl zabit . \n Kennedy was killed .
-auxpass(zabit, byl)
-auxpass(killed, was)
+aux:pass(zabit, byl)
+aux:pass(killed, was)
 </code></pre>
 
 <pre><code class="language-sdparse">Kennedy bude zabit . \n Kennedy will-be killed .
-auxpass(zabit, bude)
-auxpass(killed, will-be)
+aux:pass(zabit, bude)
+aux:pass(killed, will-be)
 </code></pre>
 
 <pre><code class="language-sdparse">Kennedy netušil , že jeho osudem je být zabit . \n Kennedy did-not-anticipate that his fate is to-be killed .
-auxpass(zabit, být)
-auxpass(killed, to-be)
+aux:pass(zabit, být)
+aux:pass(killed, to-be)
 </code></pre>
 
 <p>Note that the passive participle may be also used as nominal predicate with <a href="cop">copula</a>.
@@ -536,8 +545,8 @@ The former focuses on the process while the latter emphasizes the result.</p>
 </ul>
 
 <pre><code class="language-sdparse">Smlouva byla podepsána v Bílém domě . \n Contract was signed in White House .
-auxpass(podepsána, byla)
-auxpass(signed, was)
+aux:pass(podepsána, byla)
+aux:pass(signed, was)
 </code></pre>
 
 <ul>
@@ -549,22 +558,7 @@ cop(podepsána, byla)
 cop(signed, was)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/auxpass.md" target="#">edit auxpass</a></p>
-
-<p><a id="al-cs-dep/auxpass:reflex" class="al-dest"></a></p>
-<h2><code>auxpass:reflex</code>: reflexive pronoun used in reflexive passive</h2>
-
-<p>Reflexive pronouns (see the feature <a href="">cs-feat/Reflex</a>) are used in various constructions in Czech,
-including so-called <em>reflexive passive.</em>
-In PDT, their relation to the verb is labeled <code>AuxR</code>.
-The corresponding label in Czech UD is called <code>auxpass:reflex</code>.</p>
-
-<pre><code class="language-sdparse">To se řekne snadno . \n It is said easily .
-auxpass:reflex(řekne, se)
-auxpass:reflex(said, is)
-</code></pre>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/auxpass-reflex.md" target="#">edit auxpass:reflex</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/aux-pass.md" target="#">edit aux:pass</a></p>
 
 <p><a id="al-cs-dep/case" class="al-dest"></a></p>
 <h2><code>case</code>: case marking</h2>
@@ -582,28 +576,26 @@ case(události.Loc, o)
 case(event, about)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/case.md" target="#">edit case</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/case.md" target="#">edit case</a></p>
 
 <p><a id="al-cs-dep/cc" class="al-dest"></a></p>
 <h2><code>cc</code>: coordinating conjunction</h2>
 
 <p>For more on coordination, see the <a href="">conj</a> relation.
-A <code>cc</code> is the relation between the first conjunct and
-the <a href="cs-pos/CONJ">coordinating conjunction</a> delimiting another conjunct.
+A <code>cc</code> is the relation between a conjunct and
+the <a href="cs-pos/CCONJ">coordinating conjunction</a> that precedes it.
 (Note: different dependency grammars have different treatments of coordination.
 We take the first conjunct as the head of the coordination.)</p>
 
 <pre><code class="language-sdparse">Je to starý a moudrý muž . \n Is he old and wise man .
-cc(starý, a)
-cc(old, and)
+cc(moudrý, a)
+cc(wise, and)
 </code></pre>
 
 <p>A coordinating conjunction may also appear at the beginning of a
 sentence. This is also called a <code>cc</code>, and it depends on the root
 predicate of the sentence.
-(In fact there is a coordination that spans multiple sentences.
-We cannot attach a word to the first conjunct because it is in another sentence.
-Thus we attach it to the first conjunct available in the current sentence: its main predicate.)</p>
+(In fact there is a coordination that spans multiple sentences.)</p>
 
 <pre><code class="language-sdparse">A pak jsme odešli . \n And then we-have left .
 cc(odešli, A)
@@ -611,23 +603,23 @@ cc(left, And)
 </code></pre>
 
 <pre><code class="language-sdparse">Máme jablka , hrušky , pomeranče a banány . \n We-have apples , pears , oranges and bananas .
-dobj(Máme, jablka)
-dobj(We-have, apples)
+obj(Máme, jablka)
+obj(We-have, apples)
 conj(jablka, hrušky)
 conj(jablka, pomeranče)
 conj(jablka, banány)
 conj(apples, pears)
 conj(apples, oranges)
 conj(apples, bananas)
-cc(jablka, a)
-cc(apples, and)
-punct(jablka, ,-3)
-punct(jablka, ,-5)
-punct(apples, ,-13)
-punct(apples, ,-15)
+cc(banány, a)
+cc(bananas, and)
+punct(hrušky, ,-3)
+punct(pomeranče, ,-5)
+punct(pears, ,-13)
+punct(oranges, ,-15)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/cc.md" target="#">edit cc</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/cc.md" target="#">edit cc</a></p>
 
 <p><a id="al-cs-dep/ccomp" class="al-dest"></a></p>
 <h2><code>ccomp</code>: clausal complement</h2>
@@ -661,7 +653,7 @@ sentence to mean that the boss will not be doing any digging, in the second
 sentence it is clear that the subject of <strong>digging</strong> can only be <strong>we</strong>. This is
 what distinguishes <code>ccomp</code> and <code>xcomp</code>.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/ccomp.md" target="#">edit ccomp</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/ccomp.md" target="#">edit ccomp</a></p>
 
 <p><a id="al-cs-dep/compound" class="al-dest"></a></p>
 <h2><code>compound</code>: compound</h2>
@@ -686,14 +678,14 @@ compound(tisíc, pět)
 compound(thousand, five)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/compound.md" target="#">edit compound</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/compound.md" target="#">edit compound</a></p>
 
 <p><a id="al-cs-dep/conj" class="al-dest"></a></p>
 <h2><code>conj</code>: conjunct</h2>
 
 <p>A conjunct is the relation between two elements connected by a
 coordinating conjunction, such as <em>and, or,</em> or a comma or other punctuation.
-We treat coordination asymmetrically in what is known as the Stanford style:
+We treat coordination asymmetrically.
 The head of the relation is the first
 conjunct and all the other conjuncts depend on it via the <code>conj</code> relation.</p>
 
@@ -703,20 +695,20 @@ conj(old, wise)
 </code></pre>
 
 <pre><code class="language-sdparse">Máme jablka , hrušky , pomeranče a banány . \n We-have apples , pears , oranges and bananas .
-dobj(Máme, jablka)
-dobj(We-have, apples)
+obj(Máme, jablka)
+obj(We-have, apples)
 conj(jablka, hrušky)
 conj(jablka, pomeranče)
 conj(jablka, banány)
 conj(apples, pears)
 conj(apples, oranges)
 conj(apples, bananas)
-cc(jablka, a)
-cc(apples, and)
-punct(jablka, ,-3)
-punct(jablka, ,-5)
-punct(apples, ,-13)
-punct(apples, ,-15)
+cc(banány, a)
+cc(bananas, and)
+punct(hrušky, ,-3)
+punct(pomeranče, ,-5)
+punct(pears, ,-13)
+punct(oranges, ,-15)
 </code></pre>
 
 <p>Coordinate clauses are treated the same way as coordination of other constituent types:</p>
@@ -726,17 +718,17 @@ conj(Přišel, osprchoval)
 conj(Přišel, šel)
 conj(He-came, showered)
 conj(He-came, went)
-punct(Přišel, ,-3)
-punct(He-came, ,-15)
-cc(Přišel, a)
-cc(He-came, and)
+punct(osprchoval, ,-3)
+punct(showered, ,-15)
+cc(šel, a)
+cc(went, and)
 </code></pre>
 
 <p>See <a href="u-dep/conj">universal/conj</a> for more details on various coordination-related issues.
 Note that the present conversion procedure loses some annotations of shared modifiers and nested
 coordination.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/conj.md" target="#">edit conj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/conj.md" target="#">edit conj</a></p>
 
 <p><a id="al-cs-dep/cop" class="al-dest"></a></p>
 <h2><code>cop</code>: copula</h2>
@@ -770,8 +762,8 @@ The former focuses on the process while the latter emphasizes the result.</p>
 </ul>
 
 <pre><code class="language-sdparse">Smlouva byla podepsána v Bílém domě . \n Contract was signed in White House .
-auxpass(podepsána, byla)
-auxpass(signed, was)
+aux:pass(podepsána, byla)
+aux:pass(signed, was)
 </code></pre>
 
 <pre><code class="language-sdparse">Smlouva byla podepsána červeným inkoustem . \n Contract was signed in-red ink .
@@ -780,19 +772,18 @@ cop(signed, was)
 </code></pre>
 
 <p>The nominal predicate may also be expressed using a prepositional phrase.
-However, not every occurrence of <em>být</em> “to be” with a prepositional phrase is a copula with a nominal predicate.
-Phrases expressing the state of the subject are predicates, e.g. <em>Lenka je v kondici</em> “Lenka is in shape”.
-In contrast, prepositional phrases specifying location are not predicates.
-The verb <em>být</em> is understood as the existential “to be” in such cases, and thus it itself is the predicate, not just a copula.</p>
+Phrases expressing the state of the subject are clear predicates, e.g. <em>Lenka je v kondici</em> “Lenka is in shape”.
+Under the v2 guidelines, prepositional phrases expressing locations are also considered predicates, to increase parallelism across languages.</p>
 
-<p>Thus the following two sentences receive parallel analyses:</p>
+<p>Thus the following sentences receive parallel analyses:</p>
 
 <ul>
   <li><em>Lenka je skvělá.</em> “Lenka is brilliant.”</li>
   <li><em>Lenka je v kondici.</em> “Lenka is in shape.”</li>
+  <li><em>Lenka je v kuchyni.</em> “Lenka is in the kitchen.”</li>
 </ul>
 
-<p>The following two will be parallel, too:</p>
+<p>In contrast, the following two are no longer parallel:</p>
 
 <ul>
   <li><em>Lenka je v kuchyni.</em> “Lenka is in the kitchen.”</li>
@@ -809,15 +800,15 @@ nsubj(shape, Lenka-7)
 </code></pre>
 
 <pre><code class="language-sdparse">Lenka je v kuchyni . \n Lenka is in kitchen .
-nsubj(je, Lenka-1)
-nsubj(is, Lenka-7)
-nmod(je, kuchyni)
-nmod(is, kitchen)
+nsubj(kuchyni, Lenka-1)
+nsubj(kitchen, Lenka-7)
+cop(kuchyni, je)
+cop(kitchen, is)
 case(kuchyni, v)
 case(kitchen, in)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/cop.md" target="#">edit cop</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/cop.md" target="#">edit cop</a></p>
 
 <p><a id="al-cs-dep/csubj" class="al-dest"></a></p>
 <h2><code>csubj</code>: clausal subject</h2>
@@ -840,26 +831,26 @@ csubj(The-essence, splits)
 cop(The-essence, is)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/csubj.md" target="#">edit csubj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/csubj.md" target="#">edit csubj</a></p>
 
-<p><a id="al-cs-dep/csubjpass" class="al-dest"></a></p>
-<h2><code>csubjpass</code>: clausal passive subject</h2>
+<p><a id="al-cs-dep/csubj:pass" class="al-dest"></a></p>
+<h2><code>csubj:pass</code>: clausal passive subject</h2>
 
 <p>A clausal passive subject is a clausal syntactic subject of a passive clause.</p>
 
 <pre><code class="language-sdparse">Bylo mi doporučeno , abych to velmi dobře zvážil . \n It-has-been to-me recommended , that-I it very well weigh .
-csubjpass(doporučeno, zvážil)
-csubjpass(recommended, weigh)
+csubj:pass(doporučeno, zvážil)
+csubj:pass(recommended, weigh)
 </code></pre>
 
 <p>Reflexive passive (the meaning is “You are not expected to come before nine o’clock.”)</p>
 
 <pre><code class="language-sdparse">Nepředpokládá se , že přijdete před devátou . \n It-does-not-expect itself , that you-will-come before nine .
-csubjpass(Nepředpokládá, přijdete)
-csubjpass(It-does-not-expect, you-will-come)
+csubj:pass(Nepředpokládá, přijdete)
+csubj:pass(It-does-not-expect, you-will-come)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/csubjpass.md" target="#">edit csubjpass</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/csubj-pass.md" target="#">edit csubj:pass</a></p>
 
 <p><a id="al-cs-dep/dep" class="al-dest"></a></p>
 <h2><code>dep</code>: unspecified dependency</h2>
@@ -872,15 +863,15 @@ because of an unresolved long distance dependency.</p>
 
 <p>Most <code>dep</code> instances in the current conversion of the PDT 3.0 data
 correspond to the PDT label <code>ExD</code>, which marks ellipsis.
-The current conversion software cannot produce the annotation conforming
-to the UD standard and using the <a href="">remnant</a> relation.</p>
+The current conversion software cannot produce the annotation fully conforming
+to the UD standard and using the <a href="">orphan</a> relation.</p>
 
 <pre><code class="language-sdparse">K čemu ovšem , to nebylo jasné . \n For what however , that was-not clear .
 dep(jasné, čemu)
 dep(clear, what)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/dep.md" target="#">edit dep</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/dep.md" target="#">edit dep</a></p>
 
 <p><a id="al-cs-dep/det" class="al-dest"></a></p>
 <h2><code>det</code>: determiner</h2>
@@ -903,7 +894,7 @@ det(kniha, Která)
 det(book, Which)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/det.md" target="#">edit det</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/det.md" target="#">edit det</a></p>
 
 <p><a id="al-cs-dep/det:numgov" class="al-dest"></a></p>
 <h2><code>det:numgov</code>: pronominal quantifier governing the case of the noun</h2>
@@ -933,17 +924,17 @@ the information about case conditions.</p>
 <pre><code class="language-sdparse">Kolik mužů hrálo karty ? \n How-many men played cards ?
 det:numgov(mužů, Kolik)
 nsubj(hrálo, mužů)
-dobj(hrálo, karty)
+obj(hrálo, karty)
 punct(hrálo, ?-5)
 det:numgov(men, How-many)
 nsubj(played, men)
-dobj(played, cards)
+obj(played, cards)
 punct(played, ?-11)
 </code></pre>
 
 <p>See <a href="">nummod</a> for a broader discussion of the various situations with quantifiers.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/det-numgov.md" target="#">edit det:numgov</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/det-numgov.md" target="#">edit det:numgov</a></p>
 
 <p><a id="al-cs-dep/det:nummod" class="al-dest"></a></p>
 <h2><code>det:nummod</code>: pronominal quantifier agreeing in case with the noun</h2>
@@ -957,19 +948,19 @@ In these situations they are labeled <code>det:nummod</code>.</p>
 
 <pre><code class="language-sdparse">Nepamatuji si , s kolika muži jsem hrál karty . \n I-do-not-remember myself , with how-many men I-have played cards .
 ccomp(Nepamatuji, hrál)
-compound:reflex(Nepamatuji, si)
+expl:pv(Nepamatuji, si)
 punct(hrál, ,-3)
 aux(hrál, jsem)
-dobj(hrál, karty)
+obj(hrál, karty)
 iobj(hrál, muži)
 case(muži, s)
 det:nummod(muži, kolika)
 punct(Nepamatuji, .-10)
 ccomp(I-do-not-remember, played)
-compound:reflex(I-do-not-remember, myself)
+expl:pv(I-do-not-remember, myself)
 punct(played, ,-14)
 aux(played, I-have)
-dobj(played, cards)
+obj(played, cards)
 iobj(played, men)
 case(men, with)
 det:nummod(men, how-many)
@@ -978,7 +969,7 @@ punct(I-do-not-remember, .-21)
 
 <p>See <a href="">nummod</a> for a broader discussion of the various situations with quantifiers.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/det-nummod.md" target="#">edit det:nummod</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/det-nummod.md" target="#">edit det:nummod</a></p>
 
 <p><a id="al-cs-dep/discourse" class="al-dest"></a></p>
 <h2><code>discourse</code>: discourse element</h2>
@@ -992,118 +983,157 @@ discourse(they-betrayed, it)
 </code></pre>
 <p>(meaning “… what they betrayed”)</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/discourse.md" target="#">edit discourse</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/discourse.md" target="#">edit discourse</a></p>
 
-<p><a id="al-cs-dep/dobj" class="al-dest"></a></p>
-<h2><code>dobj</code>: direct object</h2>
+<p><a id="al-cs-dep/expl:pass" class="al-dest"></a></p>
+<h2><code>expl:pass</code>: reflexive pronoun used in reflexive passive</h2>
 
-<p>The direct object of a verb is the noun phrase that denotes the entity acted upon.
-Most often the direct object is in the <a href="cs-feat/Case">accusative case</a> but
-there are verbs that require their objects be in other cases (except for
-nominative and vocative).</p>
+<p>Reflexive pronouns (see the feature <a href="">cs-feat/Reflex</a>) are used in various constructions in Czech,
+including so-called <em>reflexive passive.</em>
+In PDT, their relation to the verb is labeled <code>AuxR</code>.
+The corresponding label in Czech UD is called <code>expl:pass</code>
+(since UD 2.0; in previous versions it was labeled <code>auxpass:reflex</code>).</p>
 
-<p>Accusative example:</p>
-
-<pre><code class="language-sdparse">Koupil jsem auto . \n Bought I-have car .
-dobj(Koupil, auto)
-dobj(Bought, car)
+<pre><code class="language-sdparse">To se řekne snadno . \n It is said easily .
+expl:pass(řekne, se)
+expl:pass(said, is)
 </code></pre>
 
-<p>Genitive example:</p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/expl-pass.md" target="#">edit expl:pass</a></p>
 
-<pre><code class="language-sdparse">Cením si vaší pomoci . \n I-appreciate REFLEX your help .
-dobj(Cením, pomoci)
-dobj(I-appreciate, help)
-</code></pre>
-
-<p>Dative example:</p>
-
-<pre><code class="language-sdparse">Čelíme velkým problémům . \n We-face big problems .
-dobj(Čelíme, problémům)
-dobj(We-face, problems)
-</code></pre>
-
-<p>Instrumental example:</p>
-
-<pre><code class="language-sdparse">Univerzita nedisponuje takovým rozpočtem . \n University does-not-have-at-disposal such budget .
-dobj(nedisponuje, rozpočtem)
-dobj(does-not-have-at-disposal, budget)
-</code></pre>
-
-<p>In general, if there is just one object, it should be labeled <code>dobj</code>,
-regardless of the morphological case or semantic role that it bears. If there are two or more
-objects, one of them should be <code>dobj</code> and the others should be
-<a href="">iobj</a>. In such cases it is necessary to decide what is the most
-directly affected object <em>(patient).</em> The one exception is when there is a clausal complement. Then the clausal complement is regarded as a “clausal direct object” and an object nominal will be an iobj.</p>
-
-<h2 id="diffs">Diffs</h2>
-
-<h3 id="prague-dependency-treebank">Prague Dependency Treebank</h3>
-
-<p>The manual annotation of the PDT does not distinguish direct and indirect objects.
-Therefore all non-clausal dependents labeled <code>Obj</code> in PDT are currently labeled <code>dobj</code>
-in the converted data, even if it results in two or more direct objects attached to one verb.
-In future, the valency lexicon <a href="http://ufal.mff.cuni.cz/vallex">Vallex</a>
-could be used to identify the main object.</p>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/dobj.md" target="#">edit dobj</a></p>
-
-<p><a id="al-cs-dep/expl" class="al-dest"></a></p>
-<h2><code>expl</code>: expletive: reflexive pronoun with an inherently reflexive verb</h2>
+<p><a id="al-cs-dep/expl:pv" class="al-dest"></a></p>
+<h2><code>expl:pv</code>: reflexive clitic with an inherently reflexive verb</h2>
 
 <p>Reflexive pronouns (see the feature <a href="">cs-feat/Reflex</a>) usually replace objects of verbs.
 However, some verbs are inherently reflexive, i.e. the verb always occurs with a reflexive
 prounoun, and the pronoun cannot be replaced by a non-reflexive pronoun.</p>
 
-<p>With these verbs, the reflexive pronoun is attached as <code>expl</code> instead of <a href="">dobj</a>.
+<p>With these verbs, the reflexive pronoun is attached as <code>expl:pv</code> instead of <a href="">obj</a>.
 (Note that the <code>expl</code> relation is first used for this purpose in the UD release 1.2,
+and it is further subtyped as <code>expl:pv</code> since UD 2.0,
 to increase parallelism with other languages. In the previous releases this usage of
 reflexive <em>se/si</em> was labeled <code>compound:reflex</code>.)</p>
 
 <pre><code class="language-sdparse">Martin se bojí zvířat . \n Martin REFLEX fears animals .
-expl(bojí, se)
-expl(fears, REFLEX)
+expl:pv(bojí, se)
+expl:pv(fears, REFLEX)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/expl.md" target="#">edit expl</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/expl-pv.md" target="#">edit expl:pv</a></p>
 
-<p><a id="al-cs-dep/foreign" class="al-dest"></a></p>
-<h2><code>foreign</code>: foreign words</h2>
+<p><a id="al-cs-dep/fixed" class="al-dest"></a></p>
+<h2><code>fixed</code>: multi-word expression</h2>
 
-<p>We use <code>foreign</code> to label sequences of foreign words. These are given
+<p>The <code>fixed</code> multi-word expression relation is one of the
+relations for compounding and it is intended mostly for function words.
+In Czech it is used for multi-word prepositions.
+The leftmost word is the head and all the other words are attached as its <code>fixed</code> modifiers.</p>
+
+<pre><code class="language-sdparse">Na rozdíl od tebe já se nemám zač stydět . \n In contrast to you I myself have-not of-what to-be-ashamed .
+fixed(Na, rozdíl)
+fixed(Na, od)
+case(tebe, Na)
+fixed(In, contrast)
+fixed(In, to)
+case(you, In)
+</code></pre>
+
+<p>Multi-word prepositions usually form a contiguous span of the sentence. In exceptional cases however, they can be interrupted
+by emphasizers and other words:</p>
+
+<pre><code class="language-sdparse">ve srovnání například s úvěry \n in comparison for-example to loans
+fixed(ve, srovnání)
+fixed(ve, s)
+case(úvěry, ve)
+advmod:emph(úvěry, například)
+fixed(in, comparison)
+fixed(in, to)
+case(loans, in)
+advmod:emph(loans, for-example)
+</code></pre>
+
+<p>Another type of interruption is caused by a possessive determiner. For instance, <em>na základě něčeho</em> “based on something”
+contains the multi-word preposition <em>na základě</em> “based on”, lit. <em>on the-basis-of</em>. This expression is etymologically
+a combination of a proper preposition <em>na</em> “on” and the noun <em>základ</em> “basis”; the argument <em>něčeho</em> “something” is in
+genitive. If the phrase <em>na základě</em> were not analyzed as a multi-word expression, we would have a normal genitive
+modification between two nominals: <em>základ něčeho</em> “basis of-something”. A genitive modifier can be substituted by
+a possessive determiner, and this is possible even within the partially frozen multi-word preposition, as with the
+relative possessive determiner in the following example:</p>
+
+<pre><code class="language-sdparse">zákon , na jehož základě byl zřízen fond \n law , on whose basis was created fund
+nmod(zřízen, jehož)
+nmod(created, whose)
+case(jehož, na)
+case(whose, on)
+fixed(na, základě)
+fixed(on, basis)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/fixed.md" target="#">edit fixed</a></p>
+
+<p><a id="al-cs-dep/flat" class="al-dest"></a></p>
+<h2><code>flat</code>: personal name</h2>
+
+<p><code>flat</code> is one of the relations for compounding in UD.
+In Czech it is used to join the first (or middle) and the last name of a person.</p>
+
+<p>The leftmost name is always the head and the other name(s) are attached to it.
+In most cases this is the opposite to PDT where family names are heads and given names are dependents,
+and the family name is usually the last name.</p>
+
+<p>The relation is not used to attach adjectives to nouns within multi-word names of places, organizations etc.
+(e.g. <em>Český Krumlov</em>).</p>
+
+<pre><code class="language-sdparse">Prezident Václav Havel včera navštívil Český Krumlov . \n President Václav Havel yesterday visited Český Krumlov .
+flat(Václav-2, Havel-3)
+flat(Václav-11, Havel-12)
+nmod(Václav-2, Prezident)
+nmod(Václav-11, President)
+amod(Krumlov-7, Český-6)
+amod(Krumlov-16, Český-15)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/flat.md" target="#">edit flat</a></p>
+
+<p><a id="al-cs-dep/flat:foreign" class="al-dest"></a></p>
+<h2><code>flat:foreign</code>: foreign words</h2>
+
+<p>We use <code>flat:foreign</code> to label sequences of foreign words. These are given
 a linear analysis: the head is the first token in the foreign phrase.</p>
 
-<p><code>foreign</code> does not apply to loanwords or to foreign <a href="name">names</a>. 
+<p><code>flat:foreign</code> does not apply to loanwords or to foreign <a href="flat">names</a>.
 It applies to quoted foreign text incorporated in a sentence/discourse
 of the host language (unless we want to and know how to annotate the
 internal structure according to the syntax of the foreign language).</p>
 
 <pre><code class="language-sdparse">Jarmusch se objevil ve Wangově snímku Modrá ve tváři ( Blue in the Face ) .
-foreign(Blue, in)
-foreign(Blue, the)
-foreign(Blue, Face)
+flat:foreign(Blue, in)
+flat:foreign(Blue, the)
+flat:foreign(Blue, Face)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/foreign.md" target="#">edit foreign</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/flat-foreign.md" target="#">edit flat:foreign</a></p>
 
 <p><a id="al-cs-dep/goeswith" class="al-dest"></a></p>
 <h2><code>goeswith</code>: goes with</h2>
 
 <p>This relation links two parts of a word that are separated in text
 that is not well edited.
-The head is in some sense the “main” part, often the second part.</p>
+The head is always the first part, the other parts are attached to it with the <code>goeswith</code> relation
+(for consistency, similarly as in <a href="">flat</a>, <a href="">fixed</a> and <a href="">conj</a>).
+Note that only the last part may be annotated with <code>SpaceAfter=No</code>.</p>
 
 <pre><code class="language-sdparse">Zastavil a z těžka oddychoval .
-goeswith(těžka, z)
+goeswith(z, těžka)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/goeswith.md" target="#">edit goeswith</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/goeswith.md" target="#">edit goeswith</a></p>
 
 <p><a id="al-cs-dep/iobj" class="al-dest"></a></p>
 <h2><code>iobj</code>: indirect object</h2>
 
 <p>The indirect object of a verb is any nominal phrase that is a core
-argument of the verb but is not its subject or <a href="dobj">direct object</a>.
+argument of the verb but is not its subject or <a href="obj">direct object</a>.
 The prototypical example is the recipient of ditransitive verbs of
 exchange:</p>
 
@@ -1118,29 +1148,29 @@ The morphological <a href="">cs-feat/Case</a> of the objects is dictated by verb
 <p>In the following Czech example, the verb takes two arguments, both are nouns in the accusative case. One of them is direct object (patient), the other is indirect (addressee). It is parallel to how the English translation would be annotated (where there is no morphological case marking) and also to verbs of giving (consider a similar sentence, <em>he gave my daughter a class of maths</em>).</p>
 
 <pre><code class="language-sdparse">On učí mou dceru matematiku . \n He teaches my daughter.Acc maths.Acc .
-dobj(učí, matematiku)
+obj(učí, matematiku)
 iobj(učí, dceru)
-dobj(teaches, maths.Acc)
+obj(teaches, maths.Acc)
 iobj(teaches, daughter.Acc)
 </code></pre>
 
 <p>In general, if there is just one object, it should be labeled
-<a href="">dobj</a>, regardless of the morphological case or semantic role.
+<a href="">obj</a>, regardless of the morphological case or semantic role.
 For example, <em>učit</em> “to teach” can take either the subject matter or the recipient as the only object,
-and in both cases it would be analyzed as the <a href="">dobj</a>:</p>
+and in both cases it would be analyzed as the <a href="">obj</a>:</p>
 
 <pre><code class="language-sdparse">Učí úvod do logiky . \n He-teaches introduction to logic .
-dobj(Učí, úvod)
-dobj(He-teaches, introduction)
+obj(Učí, úvod)
+obj(He-teaches, introduction)
 </code></pre>
 
 <pre><code class="language-sdparse">Učí studenty prvního ročníku . \n He-teaches students of-first year .
-dobj(Učí, studenty)
-dobj(He-teaches, students)
+obj(Učí, studenty)
+obj(He-teaches, students)
 </code></pre>
 
 <p>The one exception is when there is a clausal complement.
-Then the clausal complement is regarded as a “clausal direct object” and an object nominal will be an iobj, parallel to
+Then the clausal complement is regarded as a “clausal direct object” and an object nominal will be an <code>iobj</code>, parallel to
 the simple ditransitive case:</p>
 
 <pre><code class="language-sdparse">Řekla studentům , že dnes večer musí studovat . \n She-told students , that today evening they-needed to-study .
@@ -1152,13 +1182,13 @@ ccomp(She-told, they-needed)
 
 <pre><code class="language-sdparse">Řekla studentům svůj plán . \n She-told students her plan .
 iobj(Řekla, studentům)
-dobj(Řekla, plán)
+obj(Řekla, plán)
 iobj(She-told, students)
-dobj(She-told, plan)
+obj(She-told, plan)
 </code></pre>
 
 <p>If there are two or
-more objects, one of them should be <a href="">dobj</a> and the others should be
+more objects, one of them should be <a href="">obj</a> and the others should be
 <code>iobj</code>. In such cases it is necessary to decide what is the
 most directly affected object <em>(patient).</em></p>
 
@@ -1167,12 +1197,14 @@ most directly affected object <em>(patient).</em></p>
 <h3 id="prague-dependency-treebank">Prague Dependency Treebank</h3>
 
 <p>The manual annotation of the PDT does not distinguish direct and indirect objects.
-Therefore all non-clausal dependents labeled <code>Obj</code> in PDT are currently labeled <code>dobj</code>
+Therefore most non-clausal dependents labeled <code>Obj</code> in PDT are currently labeled <code>obj</code>
 in the converted data, even if it results in two or more direct objects attached to one verb.
+Occasionally a heuristic was used: if there are two objects, one of them accusative and the other dative, then the former is obj and the latter iobj.
+But such heuristics do not cover all possible objects, and even ditransitive verbs may occur without one of their objects because of ellipsis.
 In future, the valency lexicon <a href="http://ufal.mff.cuni.cz/vallex">Vallex</a>
 could be used to identify the main object.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/iobj.md" target="#">edit iobj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/iobj.md" target="#">edit iobj</a></p>
 
 <p><a id="al-cs-dep/list" class="al-dest"></a></p>
 <h2><code>list</code>: list</h2>
@@ -1188,7 +1220,7 @@ using the grammatical relations of standard sentences, such as when there is ove
 then it should be analyzed with these more standard relations, even if it is laid out as a list typographically.</p>
 
 <pre><code class="language-sdparse">Steve Jones tel.: 555-9814 e-mail: jones@abc.edf
-name(Steve-1, Jones-2)
+flat(Steve-1, Jones-2)
 list(Steve-1, tel.:-3)
 list(Steve-1, e-mail:-5)
 appos(tel.:-3, 555-9814-4)
@@ -1201,7 +1233,7 @@ appos(e-mail:-5, jones@abc.edf-6)
 
 <p>The <code>list</code> relation is not used in the current conversion of the PDT data to UD.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/list.md" target="#">edit list</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/list.md" target="#">edit list</a></p>
 
 <p><a id="al-cs-dep/mark" class="al-dest"></a></p>
 <h2><code>mark</code>: marker</h2>
@@ -1228,81 +1260,7 @@ advmod(dorazí, kdy)
 advmod(arrive, when)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/mark.md" target="#">edit mark</a></p>
-
-<p><a id="al-cs-dep/mwe" class="al-dest"></a></p>
-<h2><code>mwe</code>: multi-word expression</h2>
-
-<p>The multi-word expression (modifier) relation is one of the
-relations for compounding and it is intended for function words.
-In Czech it is used for multi-word prepositions.
-The leftmost word is the head and all the other words are attached as its <code>mwe</code> modifiers.</p>
-
-<pre><code class="language-sdparse">Na rozdíl od tebe já se nemám zač stydět . \n In contrast to you I myself have-not of-what to-be-ashamed .
-mwe(Na, rozdíl)
-mwe(Na, od)
-case(tebe, Na)
-mwe(In, contrast)
-mwe(In, to)
-case(you, In)
-</code></pre>
-
-<p>Multi-word prepositions usually form a contiguous span of the sentence. In exceptional cases however, they can be interrupted
-by emphasizers and other words:</p>
-
-<pre><code class="language-sdparse">ve srovnání například s úvěry \n in comparison for-example to loans
-mwe(ve, srovnání)
-mwe(ve, s)
-case(úvěry, ve)
-advmod:emph(úvěry, například)
-mwe(in, comparison)
-mwe(in, to)
-case(loans, in)
-advmod:emph(loans, for-example)
-</code></pre>
-
-<p>Another type of interruption is caused by a possessive determiner. For instance, <em>na základě něčeho</em> “based on something”
-contains the multi-word preposition <em>na základě</em> “based on”, lit. <em>on the-basis-of</em>. This expression is etymologically
-a combination of a proper preposition <em>na</em> “on” and the noun <em>základ</em> “basis”; the argument <em>něčeho</em> “something” is in
-genitive. If the phrase <em>na základě</em> were not analyzed as a multi-word expression, we would have a normal genitive
-modification between two nominals: <em>základ něčeho</em> “basis of-something”. A genitive modifier can be substituted by
-a possessive determiner, and this is possible even within the partially frozen multi-word preposition, as with the
-relative possessive determiner in the following example:</p>
-
-<pre><code class="language-sdparse">zákon , na jehož základě byl zřízen fond \n law , on whose basis was created fund
-nmod(zřízen, jehož)
-nmod(created, whose)
-case(jehož, na)
-case(whose, on)
-mwe(na, základě)
-mwe(on, basis)
-</code></pre>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/mwe.md" target="#">edit mwe</a></p>
-
-<p><a id="al-cs-dep/name" class="al-dest"></a></p>
-<h2><code>name</code>: personal name</h2>
-
-<p><code>name</code> is one of the relations for compounding in UD.
-In Czech it is used to join the first (or middle) and the last name of a person.</p>
-
-<p>The leftmost name is always the head and the other name(s) are attached to it.
-In most cases this is the opposite to PDT where family names are heads and given names are dependents,
-and the family name is usually the last name.</p>
-
-<p>The relation is not used to attach adjectives to nouns within multi-word names of places, organizations etc.
-(e.g. <em>Český Krumlov</em>).</p>
-
-<pre><code class="language-sdparse">Prezident Václav Havel včera navštívil Český Krumlov . \n President Václav Havel yesterday visited Český Krumlov .
-name(Václav-2, Havel-3)
-name(Václav-11, Havel-12)
-nmod(Václav-2, Prezident)
-nmod(Václav-11, President)
-amod(Krumlov-7, Český-6)
-amod(Krumlov-16, Český-15)
-</code></pre>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/name.md" target="#">edit name</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/mark.md" target="#">edit mark</a></p>
 
 <p><a id="al-cs-dep/neg" class="al-dest"></a></p>
 <h2><code>neg</code>: negation modifier</h2>
@@ -1326,19 +1284,14 @@ det(hlupák, žádný)
 det(fool, no)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/neg.md" target="#">edit neg</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/neg.md" target="#">edit neg</a></p>
 
 <p><a id="al-cs-dep/nmod" class="al-dest"></a></p>
 <h2><code>nmod</code>: nominal modifier</h2>
 
-<p>The <code>nmod</code> relation is used for nominal modifiers. They depend either
-on another noun (group “noun dependents”) or on a predicate (group
-“non-core dependents of clausal predicates”).</p>
+<p>The <code>nmod</code> relation is used for nominal modifiers of nominals.</p>
 
-<p><code>nmod</code> is a <a href="cs-pos/NOUN">noun</a> (or noun phrase) functioning as a
-non-core (oblique) argument or adjunct.
-This means that it functionally corresponds to an adverbial when it attaches to a verb, adjective or other adverb.
-But when attaching to a noun, it usually corresponds to a non-agreeing attribute <em>(přívlastek neshodný)</em>
+<p>It usually corresponds to a non-agreeing attribute <em>(přívlastek neshodný)</em>
 in genitive. (See below for an example of an agreeing attribute, <em>přívlastek shodný</em>.)</p>
 
 <p>In Czech the <code>nmod</code> relation covers only those possessives that are expressed using the genitive <a href="">cs-feat/Case</a>.
@@ -1359,37 +1312,30 @@ det(kancelář, jeho)
 det(office, his)
 </code></pre>
 
-<p><code>nmod</code> is also used for temporal nominal modifiers:</p>
-
-<pre><code class="language-sdparse">Potkal jsem ho minulý čtvrtek . \n Met I-have him last Thursday .
-nmod(Potkal, čtvrtek)
-nmod(Met, Thursday)
-</code></pre>
-
 <h2 id="agreeing-attribute-of-a-noun">Agreeing attribute of a noun</h2>
 
 <p><code>nmod</code> noun phrases attached to nouns are usually in the genitive <a href="">cs-feat/Case</a> and follow the modified noun.
 However, there is also a different kind of <code>nmod</code> that precedes the modified noun and agrees with it in case and number.
-A typical example is a title attached to a name of a person. The relation is similar to the <a href="">name</a> relation
-that links the first and the last name, but it is not labeled <code>name</code> because the title is not part of the name:</p>
+A typical example is a title attached to a name of a person. The relation is similar to the <a href="">flat</a> relation
+that links the first and the last name, but it is not labeled <code>flat</code> because the title is not part of the name:</p>
 
 <pre><code class="language-sdparse">český prezident Václav Havel
 amod(prezident, český)
-nmod(Havel, prezident)
-name(Havel, Václav)
+nmod(Václav, prezident)
+flat(Václav, Havel)
 </code></pre>
 
 <p>Note that the same thing can be also expressed using an <a href="appos">apposition</a>.
 In the case of apposition, the title follows the modified name and is separated by a punctuation symbol:</p>
 
 <pre><code class="language-sdparse">Václav Havel , český prezident
-name(Havel, Václav)
+flat(Václav, Havel)
 punct(prezident, ,-3)
 amod(prezident, český)
-appos(Havel, prezident)
+appos(Václav, prezident)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/nmod.md" target="#">edit nmod</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/nmod.md" target="#">edit nmod</a></p>
 
 <p><a id="al-cs-dep/nsubj" class="al-dest"></a></p>
 <h2><code>nsubj</code>: nominal subject</h2>
@@ -1397,7 +1343,7 @@ appos(Havel, prezident)
 <p>A nominal subject is a nominal phrase which is the syntactic subject of a clause;
 in Czech, the phrase is in the nominative <a href="">cs-feat/Case</a>.
 (See <a href="">csubj</a> for when the subject is clausal.
-See <a href="">nsubjpass</a> and <a href="">csubjpass</a> for when the subject is not the proto-agent argument due to valence changing operations.)
+See <a href="">nsubj:pass</a> and <a href="">csubj:pass</a> for when the subject is not the proto-agent argument due to valence changing operations.)
 The governor of the <code>nsubj</code> relation might not always be a verb: when
 the verb is a copular verb, the root of the clause is the complement
 of the copular verb, which can be an adjective or noun.</p>
@@ -1412,27 +1358,27 @@ nsubj(červené, Auto)
 nsubj(red, Car)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/nsubj.md" target="#">edit nsubj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/nsubj.md" target="#">edit nsubj</a></p>
 
-<p><a id="al-cs-dep/nsubjpass" class="al-dest"></a></p>
-<h2><code>nsubjpass</code>: passive nominal subject</h2>
+<p><a id="al-cs-dep/nsubj:pass" class="al-dest"></a></p>
+<h2><code>nsubj:pass</code>: passive nominal subject</h2>
 
 <p>A passive nominal subject is a noun phrase which is the syntactic
 subject of a passive clause.</p>
 
 <pre><code class="language-sdparse">Schwarzenberg byl poražen Zemanem . \n Schwarzenberg was defeated by-Zeman .
-nsubjpass(poražen, Schwarzenberg-1)
-nsubjpass(defeated, Schwarzenberg-7)
+nsubj:pass(poražen, Schwarzenberg-1)
+nsubj:pass(defeated, Schwarzenberg-7)
 </code></pre>
 
 <p>Reflexive passive (the meaning is “This will be solved tomorrow.”)</p>
 
 <pre><code class="language-sdparse">Tohle se bude řešit zítra . \n This itself will solve tomorrow .
-nsubjpass(řešit, Tohle)
-nsubjpass(solve, This)
+nsubj:pass(řešit, Tohle)
+nsubj:pass(solve, This)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/nsubjpass.md" target="#">edit nsubjpass</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/nsubj-pass.md" target="#">edit nsubj:pass</a></p>
 
 <p><a id="al-cs-dep/nummod" class="al-dest"></a></p>
 <h2><code>nummod</code>: numeric modifier</h2>
@@ -1583,45 +1529,45 @@ There are four labels used:</p>
 <pre><code class="language-sdparse">Tři muži hráli karty . \n Three men played cards .
 nummod(muži, Tři)
 nsubj(hráli, muži)
-dobj(hráli, karty)
+obj(hráli, karty)
 punct(hráli, .-5)
 nummod(men, Three)
 nsubj(played, men)
-dobj(played, cards)
+obj(played, cards)
 punct(played, .-11)
 </code></pre>
 
 <pre><code class="language-sdparse">Pět mužů hrálo karty . \n Five men played cards .
 nummod:gov(mužů, Pět)
 nsubj(hrálo, mužů)
-dobj(hrálo, karty)
+obj(hrálo, karty)
 punct(hrálo, .-5)
 nummod:gov(men, Five)
 nsubj(played, men)
-dobj(played, cards)
+obj(played, cards)
 punct(played, .-11)
 </code></pre>
 
 <pre><code class="language-sdparse">Kolik mužů hrálo karty ? \n How-many men played cards ?
 det:numgov(mužů, Kolik)
 nsubj(hrálo, mužů)
-dobj(hrálo, karty)
+obj(hrálo, karty)
 punct(hrálo, ?-5)
 det:numgov(men, How-many)
 nsubj(played, men)
-dobj(played, cards)
+obj(played, cards)
 punct(played, ?-11)
 </code></pre>
 
 <pre><code class="language-sdparse">Hrál jsem karty s pěti muži . \n Played I-have cards with five men .
 aux(Hrál, jsem)
-dobj(Hrál, karty)
+obj(Hrál, karty)
 iobj(Hrál, muži)
 case(muži, s)
 nummod(muži, pěti)
 punct(Hrál, .-7)
 aux(Played, I-have)
-dobj(Played, cards)
+obj(Played, cards)
 iobj(Played, men)
 case(men, with)
 nummod(men, five)
@@ -1630,19 +1576,19 @@ punct(Played, .-15)
 
 <pre><code class="language-sdparse">Nepamatuji si , s kolika muži jsem hrál karty . \n I-do-not-remember myself , with how-many men I-have played cards .
 ccomp(Nepamatuji, hrál)
-compound:reflex(Nepamatuji, si)
+expl:pv(Nepamatuji, si)
 punct(hrál, ,-3)
 aux(hrál, jsem)
-dobj(hrál, karty)
+obj(hrál, karty)
 iobj(hrál, muži)
 case(muži, s)
 det:nummod(muži, kolika)
 punct(Nepamatuji, .-10)
 ccomp(I-do-not-remember, played)
-compound:reflex(I-do-not-remember, myself)
+expl:pv(I-do-not-remember, myself)
 punct(played, ,-14)
 aux(played, I-have)
-dobj(played, cards)
+obj(played, cards)
 iobj(played, men)
 case(men, with)
 det:nummod(men, how-many)
@@ -1788,7 +1734,7 @@ case(poříčí-10, Na-9)
 nummod(poříčí-10, 12-11)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/nummod.md" target="#">edit nummod</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/nummod.md" target="#">edit nummod</a></p>
 
 <p><a id="al-cs-dep/nummod:gov" class="al-dest"></a></p>
 <h2><code>nummod:gov</code>: numeric modifier governing the case of the noun</h2>
@@ -1815,17 +1761,113 @@ the information about case conditions.</p>
 <pre><code class="language-sdparse">Pět mužů hrálo karty . \n Five men played cards .
 nummod:gov(mužů, Pět)
 nsubj(hrálo, mužů)
-dobj(hrálo, karty)
+obj(hrálo, karty)
 punct(hrálo, .-5)
 nummod:gov(men, Five)
 nsubj(played, men)
-dobj(played, cards)
+obj(played, cards)
 punct(played, .-11)
 </code></pre>
 
 <p>See <a href="">nummod</a> for a broader discussion of the various situations with quantifiers.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/nummod-gov.md" target="#">edit nummod:gov</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/nummod-gov.md" target="#">edit nummod:gov</a></p>
+
+<p><a id="al-cs-dep/obj" class="al-dest"></a></p>
+<h2><code>obj</code>: direct object</h2>
+
+<p>The direct object of a verb is the noun phrase that denotes the entity acted upon.
+Most often the direct object is in the <a href="cs-feat/Case">accusative case</a> but
+there are verbs that require their objects be in other cases (except for
+nominative and vocative).</p>
+
+<p>Accusative example:</p>
+
+<pre><code class="language-sdparse">Koupil jsem auto . \n Bought I-have car .
+obj(Koupil, auto)
+obj(Bought, car)
+</code></pre>
+
+<p>Genitive example:</p>
+
+<pre><code class="language-sdparse">Cením si vaší pomoci . \n I-appreciate REFLEX your help .
+obj(Cením, pomoci)
+obj(I-appreciate, help)
+</code></pre>
+
+<p>Dative example:</p>
+
+<pre><code class="language-sdparse">Čelíme velkým problémům . \n We-face big problems .
+obj(Čelíme, problémům)
+obj(We-face, problems)
+</code></pre>
+
+<p>Instrumental example:</p>
+
+<pre><code class="language-sdparse">Univerzita nedisponuje takovým rozpočtem . \n University does-not-have-at-disposal such budget .
+obj(nedisponuje, rozpočtem)
+obj(does-not-have-at-disposal, budget)
+</code></pre>
+
+<p>In general, if there is just one object, it should be labeled <code>obj</code>,
+regardless of the morphological case or semantic role that it bears. If there are two or more
+objects, one of them should be <code>obj</code> and the others should be
+<a href="">iobj</a>. In such cases it is necessary to decide what is the most
+directly affected object <em>(patient).</em> The one exception is when there is a clausal complement. Then the clausal complement is regarded as a “clausal direct object” and an object nominal will be an iobj.</p>
+
+<h2 id="diffs">Diffs</h2>
+
+<h3 id="prague-dependency-treebank">Prague Dependency Treebank</h3>
+
+<p>The manual annotation of the PDT does not distinguish direct and indirect objects.
+Therefore most non-clausal dependents labeled <code>Obj</code> in PDT are currently labeled <code>obj</code>
+in the converted data, even if it results in two or more direct objects attached to one verb.
+Occasionally a heuristic was used: if there are two objects, one of them accusative and the other dative,
+then the former is <code>obj</code> and the latter <code>iobj</code>. But such heuristics do not cover all possible objects,
+and even ditransitive verbs may occur without one of their objects because of ellipsis.
+In future, the valency lexicon <a href="http://ufal.mff.cuni.cz/vallex">Vallex</a>
+could be used to identify the main object.</p>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/obj.md" target="#">edit obj</a></p>
+
+<p><a id="al-cs-dep/obl" class="al-dest"></a></p>
+<h2><code>obl</code>: oblique argument or adjunct</h2>
+
+<p>The <code>obl</code> relation is used for oblique nominal arguments and adjuncts of verbs, adjectives or adverbs.</p>
+
+<p><code>obl</code> is a <a href="cs-pos/NOUN">noun</a> (or noun phrase) functioning as a
+non-core (oblique) argument or adjunct.
+This means that it functionally corresponds to an adverbial when it attaches to a verb, adjective or other adverb.</p>
+
+<pre><code class="language-sdparse">Potkal jsem ho minulý čtvrtek . \n Met I-have him last Thursday .
+obl(Potkal, čtvrtek)
+obl(Met, Thursday)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/obl.md" target="#">edit obl</a></p>
+
+<p><a id="al-cs-dep/orphan" class="al-dest"></a></p>
+<h2><code>orphan</code>: connecting orphaned arguments of elided predicate</h2>
+
+<p>The <code>orphan</code> relation is used to provide a satisfactory treatment of certain instances of
+<a href="http://universaldependencies.org/cs/overview/specific-syntax.html#ellipsis">ellipsis</a>
+(in the case of gapping and stripping, where a predicational or verbal
+head gets elided).</p>
+
+<pre><code class="language-sdparse">Pavel si objednal hovězí a Markéta vepřové . \n Pavel himself ordered beef and Markéta pork .
+nsubj(objednal, Pavel-1)
+nsubj(ordered, Pavel-10)
+obj(objednal, hovězí)
+obj(ordered, beef)
+conj(objednal, Markéta-6)
+conj(ordered, Markéta-15)
+orphan(Markéta-6, vepřové)
+orphan(Markéta-15, pork)
+cc(Markéta-6, a)
+cc(Markéta-15, and)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/orphan.md" target="#">edit orphan</a></p>
 
 <p><a id="al-cs-dep/parataxis" class="al-dest"></a></p>
 <h2><code>parataxis</code>: parataxis</h2>
@@ -1905,7 +1947,7 @@ parataxis(extended, concerns)
 <p>At present the PDT data converted to UD use <code>parataxis</code> only for interjected parentheticals.
 The other examples above are analyzed differently (legacy PDT structure).</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/parataxis.md" target="#">edit parataxis</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/parataxis.md" target="#">edit parataxis</a></p>
 
 <p><a id="al-cs-dep/punct" class="al-dest"></a></p>
 <h2><code>punct</code>: punctuation</h2>
@@ -1919,31 +1961,31 @@ punct(Go, !-7)
 </code></pre>
 
 <p>Tokens with the relation <code>punct</code> always attach to content words (except in cases of ellipsis) and can never have dependents.
-Since <code>punct</code> is not a normal dependency relation, the usual criteria for determining the head word do not apply. 
+Since <code>punct</code> is not a normal dependency relation, the usual criteria for determining the head word do not apply.
 Instead, we use the following principles:</p>
 
 <ol>
-  <li>A punctuation mark separating coordinated units is attached to the first conjunct.</li>
+  <li>A punctuation mark separating coordinated units is attached to the following conjunct.</li>
   <li>A punctuation mark preceding or following a subordinated unit is attached to this unit.</li>
   <li>Within the relevant unit, a punctuation mark is attached at the highest possible node that preserves projectivity.</li>
   <li>Paired punctuation marks (quotes and brackets) should be attached to the same word unless that would create non-projectivity. This word is usually the head of the phrase enclosed in the paired punctuation.</li>
 </ol>
 
 <pre><code class="language-sdparse">Máme jablka , hrušky , pomeranče a banány . \n We-have apples , pears , oranges and bananas .
-dobj(Máme, jablka)
-dobj(We-have, apples)
+obj(Máme, jablka)
+obj(We-have, apples)
 conj(jablka, hrušky)
 conj(jablka, pomeranče)
 conj(jablka, banány)
 conj(apples, pears)
 conj(apples, oranges)
 conj(apples, bananas)
-cc(jablka, a)
-cc(apples, and)
-punct(jablka, ,-3)
-punct(jablka, ,-5)
-punct(apples, ,-13)
-punct(apples, ,-15)
+cc(banány, a)
+cc(bananas, and)
+punct(hrušky, ,-3)
+punct(pomeranče, ,-5)
+punct(pears, ,-13)
+punct(oranges, ,-15)
 </code></pre>
 
 <pre><code class="language-sdparse">Muž , kterého jste včera viděl , přišel zas . \n Man , whom you-have yesterday seen , came again .
@@ -1966,41 +2008,7 @@ punct(znamená, .-8)
 punct(means, .-17)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/punct.md" target="#">edit punct</a></p>
-
-<p><a id="al-cs-dep/remnant" class="al-dest"></a></p>
-<h2><code>remnant</code>: remnant in ellipsis</h2>
-
-<p>The <code>remnant</code> relation is used to provide a satisfactory treatment of certain instances of
-<a href="http://universaldependencies.org/cs/overview/specific-syntax.html#ellipsis">ellipsis</a>
-(in the case of gapping and stripping, where a predicational or verbal
-head gets elided).</p>
-
-<pre><code class="language-sdparse">Pavel si objednal hovězí a Markéta vepřové . \n Pavel himself ordered beef and Markéta pork .
-nsubj(objednal, Pavel-1)
-nsubj(ordered, Pavel-10)
-dobj(objednal, hovězí)
-dobj(ordered, beef)
-remnant(Pavel-1, Markéta-6)
-remnant(Pavel-10, Markéta-15)
-remnant(hovězí, vepřové)
-remnant(beef, pork)
-</code></pre>
-
-<h2 id="diffs">Diffs</h2>
-
-<h3 id="prague-dependency-treebank">Prague Dependency Treebank</h3>
-
-<p>At present the conversion of the PDT data to UD does not handle ellipsis properly
-and the <code>remnant</code> relation is not used.</p>
-
-<p>In the analytical layer of PDT, ellipsis
-(together with some other issues, such as the <a href="">vocative</a>) is signalled by the
-dependency relation <code>ExD</code> (ex-dependent).
-All the <code>ExD</code> relations that are not vocatives or comparatives are currently just re-labeled <a href="">dep</a>
-or <a href="">root</a>.</p>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/remnant.md" target="#">edit remnant</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/punct.md" target="#">edit punct</a></p>
 
 <p><a id="al-cs-dep/reparandum" class="al-dest"></a></p>
 <h2><code>reparandum</code>: overridden disfluency</h2>
@@ -2013,7 +2021,7 @@ reparandum(doleva, dopra-)
 reparandum(to-the-left, to-the-righ-)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/reparandum.md" target="#">edit reparandum</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/reparandum.md" target="#">edit reparandum</a></p>
 
 <p><a id="al-cs-dep/root" class="al-dest"></a></p>
 <h2><code>root</code>: root</h2>
@@ -2032,7 +2040,7 @@ there is just one node with the <code>root</code> dependency relation in every
 tree. If the main predicate is not present (due to
 <a href="http://universaldependencies.org/cs/overview/specific-syntax.html#ellipsis">ellipsis</a>)
 and there are
-multiple orphaned dependents, the leftmost dependent is promoted to
+multiple orphaned dependents, the dependent that is highest in the obliqueness hierarchy is promoted to
 the head (root) position and the other orphans are attached to it.</p>
 
 <p>An example sentence-like segment that lacks the main verb:
@@ -2040,35 +2048,37 @@ the head (root) position and the other orphans are attached to it.</p>
 “And what [does] MF [say] to it?”</p>
 
 <pre><code class="language-sdparse">ROOT A co na to MF ? \n ROOT And what to it MF ?
-root(ROOT-1, A)
-root(ROOT-9, And)
-dobj(A, co)
-dobj(And, what)
-nmod(A, to-5)
-nmod(And, it)
+root(ROOT-1, MF-6)
+root(ROOT-9, MF-14)
+orphan(MF-6, co)
+orphan(MF-14, what)
+orphan(MF-6, to-5)
+orphan(MF-14, it)
 case(to-5, na)
 case(it, to-12)
-nsubj(A, MF-6)
-nsubj(And, MF-14)
-punct(A, ?-7)
-punct(And, ?-15)
+cc(MF-6, A)
+cc(MF-14, And)
+punct(MF-6, ?-7)
+punct(MF-14, ?-15)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/root.md" target="#">edit root</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/root.md" target="#">edit root</a></p>
 
 <p><a id="al-cs-dep/vocative" class="al-dest"></a></p>
 <h2><code>vocative</code>: vocative</h2>
 
-<p>The <code>vocative</code> relation is used to mark dialogue participant addressed in text.
-The relation links the addressee’s name to its host sentence.
+<p>The <code>vocative</code> relation is used to mark the dialogue participant addressed in text.
+The relation links the addressee’s name or title to its host sentence.
 In Czech, the addressee’s name must also appear in the vocative <a href="">cs-feat/Case</a> form.</p>
 
 <pre><code class="language-sdparse">Pane , jste blázen ! \n Sir , you-are a-fool !
-vocative(jste, Pane)
-vocative(you-are, Sir)
+vocative(blázen, Pane)
+vocative(a-fool, Sir)
+cop(blázen, jste)
+cop(a-fool, you-are)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/vocative.md" target="#">edit vocative</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/vocative.md" target="#">edit vocative</a></p>
 
 <p><a id="al-cs-dep/xcomp" class="al-dest"></a></p>
 <h2><code>xcomp</code>: open clausal complement</h2>
@@ -2122,7 +2132,7 @@ xcomp(Slíbil, psát)
 xcomp(Promised, to-write)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-dep/xcomp.md" target="#">edit xcomp</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/xcomp.md" target="#">edit xcomp</a></p>
 
 
 

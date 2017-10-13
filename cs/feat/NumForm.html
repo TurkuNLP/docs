@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-cs">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/cs/feat">cs/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-feat/NumForm.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cs">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/cs/feat">cs/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-feat/NumForm.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -47,10 +64,19 @@
 
 <h2><code>NumForm</code>: numeral form</h2>
 
+<table class="typeindex" border="1">
+<tr>
+  <td style="background-color:cornflowerblue;color:white"><strong>Values:</strong> </td>
+  <td><a href="#Digit">Digit</a></td>
+  <td><a href="#Roman">Roman</a></td>
+  <td><a href="#Word">Word</a></td>
+</tr>
+</table>
+
 <p>Feature of cardinal and ordinal numbers. Is the number expressed by
 digits or as a word?</p>
 
-<h3 id="word-number-expressed-as-word">Word: number expressed as word</h3>
+<h3 id="a-namewordworda-number-expressed-as-word"><a name="Word"><code>Word</code></a>: number expressed as word</h3>
 
 <h4 id="examples">Examples</h4>
 
@@ -58,7 +84,7 @@ digits or as a word?</p>
   <li><em>jeden</em> “one”, <em>dva</em> “two”, <em>tři</em> “three”</li>
 </ul>
 
-<h3 id="digit-number-expressed-using-digits">Digit: number expressed using digits</h3>
+<h3 id="a-namedigitdigita-number-expressed-using-digits"><a name="Digit"><code>Digit</code></a>: number expressed using digits</h3>
 
 <h4 id="examples-1">Examples</h4>
 
@@ -66,7 +92,7 @@ digits or as a word?</p>
   <li><em>1, 2, 3</em></li>
 </ul>
 
-<h3 id="roman-roman-numeral">Roman: roman numeral</h3>
+<h3 id="a-nameromanromana-roman-numeral"><a name="Roman"><code>Roman</code></a>: roman numeral</h3>
 
 <h4 id="examples-2">Examples</h4>
 
@@ -89,33 +115,34 @@ digits or as a word?</p>
 <p>This feature is language-specific.
 It occurs with 3 different values: <code>Digit</code>, <code>Roman</code>, <code>Word</code>.</p>
 
-<p>41165 tokens (3%) have a non-empty value of <code>NumForm</code>.
-3589 types (3%) occur at least once with a non-empty value of <code>NumForm</code>.
-3428 lemmas (6%) occur at least once with a non-empty value of <code>NumForm</code>.
-The feature is used with 1 part-of-speech tags: <a href="">cs-pos/NUM</a> (41165; 3% instances).</p>
+<p>36547 tokens (3%) have a non-empty value of <code>NumForm</code>.
+3403 types (3%) occur at least once with a non-empty value of <code>NumForm</code>.
+3244 lemmas (6%) occur at least once with a non-empty value of <code>NumForm</code>.
+The feature is used with 1 part-of-speech tags: <a href="">cs-pos/NUM</a> (36547; 3% instances).</p>
 
 <h3 id="num"><code>NUM</code></h3>
 
-<p>41165 <a href="">cs-pos/NUM</a> tokens (99% of all <code>NUM</code> tokens) have a non-empty value of <code>NumForm</code>.</p>
+<p>36547 <a href="">cs-pos/NUM</a> tokens (99% of all <code>NUM</code> tokens) have a non-empty value of <code>NumForm</code>.</p>
 
-<p>The most frequent other feature values with which <code>NUM</code> and <code>NumForm</code> co-occurred: <tt><a href="NumType.html">NumType</a>=Card</tt> (41165; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (36748; 89%), <tt><a href="NumValue.html">NumValue</a>=EMPTY</tt> (33115; 80%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (29884; 73%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (29858; 73%).</p>
+<p>The most frequent other feature values with which <code>NUM</code> and <code>NumForm</code> co-occurred: <tt><a href="NumType.html">NumType</a>=Card</tt> (36547; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (32665; 89%), <tt><a href="NumValue.html">NumValue</a>=EMPTY</tt> (29468; 81%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (26598; 73%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (26574; 73%).</p>
 
 <p><code>NUM</code> tokens may have the following values of <code>NumForm</code>:</p>
 
 <ul>
-  <li><code>Digit</code> (29481; 72% of non-empty <code>NumForm</code>): <em>1, 2, 3, 4, 6, 5, 1992, 10, 1994, 1993</em></li>
-  <li><code>Roman</code> (376; 1% of non-empty <code>NumForm</code>): <em>II, I, III, IV, V, VI, XX, D, C, IX</em></li>
-  <li><code>Word</code> (11308; 27% of non-empty <code>NumForm</code>): <em>dva, tři, jeden, dvě, tisíc, dvou, pět, čtyři, obou, jednoho</em></li>
+  <li><code>Digit</code> (26226; 72% of non-empty <code>NumForm</code>): <em>1, 2, 3, 4, 6, 5, 10, 1992, 1994, 1993</em></li>
+  <li><code>Roman</code> (348; 1% of non-empty <code>NumForm</code>): <em>II, I, III, IV, V, VI, D, XX, C, IX</em></li>
+  <li><code>Word</code> (9973; 27% of non-empty <code>NumForm</code>): <em>dva, tři, jeden, dvě, tisíc, dvou, pět, obou, čtyři, jednoho</em></li>
 </ul>
 
-<p><code>NumForm</code> seems to be <strong>lexical feature</strong> of <code>NUM</code>. 100% lemmas (3428) occur only with one value of <code>NumForm</code>.</p>
+<p><code>NumForm</code> seems to be <strong>lexical feature</strong> of <code>NUM</code>. 100% lemmas (3244) occur only with one value of <code>NumForm</code>.</p>
 
 <h2 id="relations-with-agreement-in-numform">Relations with Agreement in <code>NumForm</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>NumForm</code>:
-<tt>NUM –[<a href="../dep/conj.html">conj</a>]–&gt; NUM</tt> (3365; 100%),
-<tt>NUM –[<a href="../dep/compound.html">compound</a>]–&gt; NUM</tt> (2671; 95%),
-<tt>NUM –[<a href="../dep/dep.html">dep</a>]–&gt; NUM</tt> (50; 96%).</p>
+<tt>NUM –[<a href="../dep/conj.html">conj</a>]–&gt; NUM</tt> (2900; 100%),
+<tt>NUM –[<a href="../dep/compound.html">compound</a>]–&gt; NUM</tt> (2481; 96%),
+<tt>NUM –[<a href="../dep/orphan.html">orphan</a>]–&gt; NUM</tt> (73; 97%),
+<tt>NUM –[<a href="../dep/dep.html">dep</a>]–&gt; NUM</tt> (38; 97%).</p>
 
 <hr />
 
@@ -124,22 +151,22 @@ The feature is used with 1 part-of-speech tags: <a href="">cs-pos/NUM</a> (41165
 <p>This feature is language-specific.
 It occurs with 2 different values: <code>Digit</code>, <code>Word</code>.</p>
 
-<p>7247 tokens (1%) have a non-empty value of <code>NumForm</code>.
-124 types (0%) occur at least once with a non-empty value of <code>NumForm</code>.
+<p>7149 tokens (1%) have a non-empty value of <code>NumForm</code>.
+123 types (0%) occur at least once with a non-empty value of <code>NumForm</code>.
 50 lemmas (0%) occur at least once with a non-empty value of <code>NumForm</code>.
-The feature is used with 1 part-of-speech tags: <a href="">cs-pos/NUM</a> (7247; 1% instances).</p>
+The feature is used with 1 part-of-speech tags: <a href="">cs-pos/NUM</a> (7149; 1% instances).</p>
 
 <h3 id="num-1"><code>NUM</code></h3>
 
-<p>7247 <a href="">cs-pos/NUM</a> tokens (99% of all <code>NUM</code> tokens) have a non-empty value of <code>NumForm</code>.</p>
+<p>7149 <a href="">cs-pos/NUM</a> tokens (99% of all <code>NUM</code> tokens) have a non-empty value of <code>NumForm</code>.</p>
 
-<p>The most frequent other feature values with which <code>NUM</code> and <code>NumForm</code> co-occurred: <tt><a href="NumType.html">NumType</a>=Card</tt> (7247; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (6108; 84%), <tt><a href="NumValue.html">NumValue</a>=EMPTY</tt> (5285; 73%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (4836; 67%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (4836; 67%).</p>
+<p>The most frequent other feature values with which <code>NUM</code> and <code>NumForm</code> co-occurred: <tt><a href="NumType.html">NumType</a>=Card</tt> (7149; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (6031; 84%), <tt><a href="NumValue.html">NumValue</a>=EMPTY</tt> (5219; 73%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (4784; 67%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (4784; 67%).</p>
 
 <p><code>NUM</code> tokens may have the following values of <code>NumForm</code>:</p>
 
 <ul>
-  <li><code>Digit</code> (4836; 67% of non-empty <code>NumForm</code>): <em>#</em></li>
-  <li><code>Word</code> (2411; 33% of non-empty <code>NumForm</code>): <em>dvou, jeden, dvě, tři, dva, obou, jedné, jednoho, jedním, dvěma</em></li>
+  <li><code>Digit</code> (4784; 67% of non-empty <code>NumForm</code>): <em>#</em></li>
+  <li><code>Word</code> (2365; 33% of non-empty <code>NumForm</code>): <em>dvou, jeden, dvě, tři, dva, obou, jednoho, jedné, jedním, dvěma</em></li>
 </ul>
 
 <p><code>NumForm</code> seems to be <strong>lexical feature</strong> of <code>NUM</code>. 100% lemmas (50) occur only with one value of <code>NumForm</code>.</p>
@@ -147,8 +174,9 @@ The feature is used with 1 part-of-speech tags: <a href="">cs-pos/NUM</a> (7247;
 <h2 id="relations-with-agreement-in-numform-1">Relations with Agreement in <code>NumForm</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>NumForm</code>:
-<tt>NUM –[<a href="../dep/conj.html">conj</a>]–&gt; NUM</tt> (315; 100%),
-<tt>NUM –[<a href="../dep/compound.html">compound</a>]–&gt; NUM</tt> (31; 74%).</p>
+<tt>NUM –[<a href="../dep/conj.html">conj</a>]–&gt; NUM</tt> (308; 100%),
+<tt>NUM –[<a href="../dep/compound.html">compound</a>]–&gt; NUM</tt> (31; 74%),
+<tt>NUM –[<a href="../dep/orphan.html">orphan</a>]–&gt; NUM</tt> (16; 100%).</p>
 
 <hr />
 
@@ -157,37 +185,61 @@ The feature is used with 1 part-of-speech tags: <a href="">cs-pos/NUM</a> (7247;
 <p>This feature is language-specific.
 It occurs with 2 different values: <code>Roman</code>, <code>Word</code>.</p>
 
-<p>440 tokens (1%) have a non-empty value of <code>NumForm</code>.
-97 types (2%) occur at least once with a non-empty value of <code>NumForm</code>.
-83 lemmas (3%) occur at least once with a non-empty value of <code>NumForm</code>.
-The feature is used with 1 part-of-speech tags: <a href="">cs-pos/NUM</a> (440; 1% instances).</p>
+<p>310 tokens (1%) have a non-empty value of <code>NumForm</code>.
+86 types (2%) occur at least once with a non-empty value of <code>NumForm</code>.
+76 lemmas (3%) occur at least once with a non-empty value of <code>NumForm</code>.
+The feature is used with 1 part-of-speech tags: <a href="">cs-pos/NUM</a> (310; 1% instances).</p>
 
 <h3 id="num-2"><code>NUM</code></h3>
 
-<p>440 <a href="">cs-pos/NUM</a> tokens (100% of all <code>NUM</code> tokens) have a non-empty value of <code>NumForm</code>.</p>
+<p>310 <a href="">cs-pos/NUM</a> tokens (100% of all <code>NUM</code> tokens) have a non-empty value of <code>NumForm</code>.</p>
 
-<p>The most frequent other feature values with which <code>NUM</code> and <code>NumForm</code> co-occurred: <tt><a href="NumType.html">NumType</a>=Card</tt> (440; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (394; 90%), <tt><a href="NumValue.html">NumValue</a>=EMPTY</tt> (382; 87%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (371; 84%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (371; 84%).</p>
+<p>The most frequent other feature values with which <code>NUM</code> and <code>NumForm</code> co-occurred: <tt><a href="NumType.html">NumType</a>=Card</tt> (310; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (278; 90%), <tt><a href="NumValue.html">NumValue</a>=EMPTY</tt> (272; 88%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (264; 85%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (264; 85%).</p>
 
 <p><code>NUM</code> tokens may have the following values of <code>NumForm</code>:</p>
 
 <ul>
-  <li><code>Roman</code> (371; 84% of non-empty <code>NumForm</code>): <em>1, 3, 2, 4, 5, 41, 7, 10, 2004, 2008</em></li>
-  <li><code>Word</code> (69; 16% of non-empty <code>NumForm</code>): <em>jeden, jedné, tří, dvanáct, dvě, dvanácti, jedno, jednoho, jednou, obě</em></li>
+  <li><code>Roman</code> (264; 85% of non-empty <code>NumForm</code>): <em>1, 3, 2, 4, 5, 41, 2004, 2008, 31, 2005</em></li>
+  <li><code>Word</code> (46; 15% of non-empty <code>NumForm</code>): <em>jeden, dvanáct, tří, dvě, jednoho, jedno, jednou, pět, dvanácti, dvou</em></li>
 </ul>
 
-<p><code>NumForm</code> seems to be <strong>lexical feature</strong> of <code>NUM</code>. 100% lemmas (83) occur only with one value of <code>NumForm</code>.</p>
+<p><code>NumForm</code> seems to be <strong>lexical feature</strong> of <code>NUM</code>. 100% lemmas (76) occur only with one value of <code>NumForm</code>.</p>
 
 <h2 id="relations-with-agreement-in-numform-2">Relations with Agreement in <code>NumForm</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>NumForm</code>:
-<tt>NUM –[<a href="../dep/conj.html">conj</a>]–&gt; NUM</tt> (39; 100%),
-<tt>NUM –[<a href="../dep/compound.html">compound</a>]–&gt; NUM</tt> (1; 100%).</p>
+<tt>NUM –[<a href="../dep/conj.html">conj</a>]–&gt; NUM</tt> (29; 100%).</p>
 
 
 
 
 <!-- "in other languages" links -->
 <hr/>
+
+NumForm in other languages:
+
+[<a href="../../ar/feat/NumForm.html">ar</a>]
+
+[<a href="../../ca/feat/NumForm.html">ca</a>]
+
+[<a href="../../cs/feat/NumForm.html">cs</a>]
+
+[<a href="../../es/feat/NumForm.html">es</a>]
+
+[<a href="../../et/feat/NumForm.html">et</a>]
+
+[<a href="../../la/feat/NumForm.html">la</a>]
+
+[<a href="../../nl/feat/NumForm.html">nl</a>]
+
+[<a href="../../pt/feat/NumForm.html">pt</a>]
+
+[<a href="../../ro/feat/NumForm.html">ro</a>]
+
+[<a href="../../sl/feat/NumForm.html">sl</a>]
+
+[<a href="../../ta/feat/NumForm.html">ta</a>]
+
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-gl">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/gl/dep">gl/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_gl-dep/auxpass.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-gl">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/gl/dep">gl/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_gl-dep/auxpass.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -56,122 +73,30 @@ for <code>auxpass</code>.</p>
 
 
 
-
-<hr />
-
-<h2 id="treebank-statistics-udgalician-treegal">Treebank Statistics (UD_Galician-TreeGal)</h2>
-
-<p>This relation is universal.</p>
-
-<p>37 nodes (0%) are attached to their parents as <code>auxpass</code>.</p>
-
-<p>37 instances of <code>auxpass</code> (100%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.02702702702703.</p>
-
-<p>The following 2 pairs of parts of speech are connected with <code>auxpass</code>: <a href="">gl-pos/VERB</a>-<a href="">gl-pos/VERB</a> (36; 97% instances), <a href="">gl-pos/ADJ</a>-<a href="">gl-pos/VERB</a> (1; 3% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
-# visual-style 8	bgColor:blue
-# visual-style 8	fgColor:white
-# visual-style 8 7 auxpass	color:blue
-1	hai	haber	VERB	Vpi30s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	moitas	moito	DET	Idfp	Gender=Fem|Number=Plur|PronType=Ind	3	det	_	_
-3	obras	obra	NOUN	Scfp	Gender=Fem|Number=Plur	1	dobj	_	_
-4	que	que	PRON	Tnfp	Gender=Fem|Number=Plur|PronType=Rel	8	nsubjpass	_	_
-5	aínda	aínda	ADV	Wn	_	8	advmod	_	_
-6	non	non	ADV	Wn	_	8	neg	_	_
-7	foron	ser	VERB	Vei30p	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	8	auxpass	_	_
-8	tocadas	tocar	VERB	V0p0fp	Gender=Fem|Number=Plur|VerbForm=Part	3	acl	_	_
-9	,	,	PUNCT	Q,	_	8	punct	_	_
-10	que	que	PRON	Tnfp	Gender=Fem|Number=Plur|PronType=Rel	16	dobj	_	_
-11	non	non	ADV	Wm	_	12	neg	_	_
-12	todo	todo	DET	Idms	Gender=Masc|Number=Sing|PronType=Ind	14	det	_	_
-13	o	o	DET	Ddms	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
-14	mundo	mundo	NOUN	Scms	Gender=Masc|Number=Sing	15	nsubj	_	_
-15	quere	querer	VERB	Vpi30s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj	_	_
-16	facer	facer	VERB	V0f000	VerbForm=Inf	15	xcomp	_	_
-17	.	.	PUNCT	Q.	_	16	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 3 2 auxpass	color:blue
-1	Contos_por_palabras	Contos_por_palabras	PROPN	Sp00	_	3	nsubjpass	_	_
-2	foi	ser	VERB	Vei30s	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	auxpass	_	_
-3	merecente	merecente	ADJ	A0ms	Gender=Masc|Number=Sing	0	root	_	_
-4	en	en	ADP	P	AdpType=Prep	7	case	_	_
-5	o	o	DET	Ddms	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-6	seu	seu	DET	Md3sms	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes	7	det	_	_
-7	tempo	tempo	NOUN	Scms	Gender=Masc|Number=Sing	3	nmod	_	_
-8	de	de	ADP	P	AdpType=Prep	10	case	_	_
-9	o	o	DET	Ddms	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
-10	premio	premio	NOUN	Scms	Gender=Masc|Number=Sing	3	nmod	_	_
-11	Lazarillo	Lazarillo	PROPN	Sp00	_	10	nmod	_	_
-12	e	e	CONJ	Cc	_	3	cc	_	_
-13	foi	ser	VERB	Vei30s	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	auxpass	_	_
-14	incluído	incluír	VERB	V0p0ms	Gender=Masc|Number=Sing|VerbForm=Part	3	conj	_	_
-15	en	en	ADP	P	AdpType=Prep	17	case	_	_
-16	a	o	DET	Ddfs	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-17	lista	lista	NOUN	Scfs	Gender=Fem|Number=Sing	14	nmod	_	_
-18	de	de	ADP	P	AdpType=Prep	19	case	_	_
-19	honra	honra	NOUN	Scfs	Gender=Fem|Number=Sing	17	nmod	_	_
-20	de	de	ADP	P	AdpType=Prep	22	case	_	_
-21	o	o	DET	Ddms	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
-22	IBBY	IBBY	PROPN	Zgms	Gender=Masc|Number=Sing	19	nmod	_	_
-23	,	,	PUNCT	Q,	_	14	punct	_	_
-24	traducido	traducir	VERB	V0p0ms	Gender=Masc|Number=Sing|VerbForm=Part	3	conj	_	_
-25	a	a	ADP	P	AdpType=Prep	27	case	_	_
-26	varios	varios	DET	Idmp	Gender=Masc|Number=Plur|PronType=Ind	27	det	_	_
-27	idiomas	idioma	NOUN	Scmp	Gender=Masc|Number=Plur	24	nmod	_	_
-28	agora	agora	ADV	Wn	_	31	advmod	_	_
-29	con	con	ADP	P	AdpType=Prep	31	case	_	_
-30	as	o	DET	Ddfp	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	31	det	_	_
-31	ilustracións	ilustración	NOUN	Scfp	Gender=Fem|Number=Plur	27	nmod	_	_
-32	de	de	ADP	P	AdpType=Prep	33	case	_	_
-33	Enjamio	Enjamio	PROPN	Sp00	_	31	nmod	_	_
-34	e	e	CONJ	Cc	_	3	cc	_	_
-35	en	en	ADP	P	AdpType=Prep	37	case	_	_
-36	esta	este	DET	Edfs	Gender=Fem|Number=Sing|PronType=Dem	37	det	_	_
-37	edición	edición	NOUN	Scfs	Gender=Fem|Number=Sing	41	nmod	_	_
-38	que	que	PRON	Tnfs	Gender=Fem|Number=Sing|PronType=Rel	39	nsubj	_	_
-39	coido	coidar	VERB	Vpi10s	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	37	acl	_	_
-40	definitiva	definitivo	ADJ	A0fs	Gender=Fem|Number=Sing	39	xcomp	_	_
-41	agardo	agardar	VERB	Vpi10s	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	conj	_	_
-42	que	que	SCONJ	Cs	_	43	mark	_	_
-43	siga	seguir	VERB	Vps30s	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	41	ccomp	_	_
-44	a	a	ADP	P	AdpType=Prep	45	mark	_	_
-45	recolleitar	recolleitar	VERB	V0f000	VerbForm=Inf	43	xcomp	_	_
-46	o	o	DET	Ddms	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	_	_
-47	favor	favor	NOUN	Scms	Gender=Masc|Number=Sing	45	dobj	_	_
-48	de	de	ADP	P	AdpType=Prep	50	case	_	_
-49	os	o	DET	Ddmp	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	50	det	_	_
-50	lectores	lector	NOUN	Scmp	Gender=Masc|Number=Plur	47	nmod	_	_
-51	,	,	PUNCT	Q,	_	43	punct	_	_
-52	como	como	ADV	Wr	PronType=Rel	53	advmod	_	_
-53	fixo	facer	VERB	Vei30s	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	45	advcl	_	_
-54	dende	dende	ADP	P	AdpType=Prep	57	case	_	_
-55	a	o	DET	Ddfs	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	57	det	_	_
-56	súa	seu	DET	Md3sfs	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes	57	det	_	_
-57	publicación	publicación	NOUN	Scfs	Gender=Fem|Number=Sing	53	nmod	_	_
-58	.	.	PUNCT	Q.	_	3	punct	_	_
-
-</code></pre>
-
-
-
-
 <!-- "in other languages" links -->
 <hr/>
 
 auxpass in other languages:
 
+[<a href="../../am/dep/auxpass.html">am</a>]
+
+[<a href="../../ar/dep/auxpass.html">ar</a>]
+
 [<a href="../../bg/dep/auxpass.html">bg</a>]
 
+[<a href="../../bxr/dep/auxpass.html">bxr</a>]
+
+[<a href="../../ca/dep/auxpass.html">ca</a>]
+
+[<a href="../../ckb/dep/auxpass.html">ckb</a>]
+
+[<a href="../../cop/dep/auxpass.html">cop</a>]
+
 [<a href="../../cs/dep/auxpass.html">cs</a>]
+
+[<a href="../../cu/dep/auxpass.html">cu</a>]
+
+[<a href="../../da/dep/auxpass.html">da</a>]
 
 [<a href="../../de/dep/auxpass.html">de</a>]
 
@@ -181,29 +106,95 @@ auxpass in other languages:
 
 [<a href="../../es/dep/auxpass.html">es</a>]
 
+[<a href="../../et/dep/auxpass.html">et</a>]
+
 [<a href="../../eu/dep/auxpass.html">eu</a>]
 
 [<a href="../../fa/dep/auxpass.html">fa</a>]
 
 [<a href="../../fi/dep/auxpass.html">fi</a>]
 
+[<a href="../../fo/dep/auxpass.html">fo</a>]
+
 [<a href="../../fr/dep/auxpass.html">fr</a>]
 
-[<a href="../../ga/dep/auxpass.html">ga</a>]
+[<a href="../../gl/dep/auxpass.html">gl</a>]
+
+[<a href="../../got/dep/auxpass.html">got</a>]
+
+[<a href="../../grc/dep/auxpass.html">grc</a>]
 
 [<a href="../../he/dep/auxpass.html">he</a>]
 
+[<a href="../../hi/dep/auxpass.html">hi</a>]
+
+[<a href="../../hr/dep/auxpass.html">hr</a>]
+
 [<a href="../../hu/dep/auxpass.html">hu</a>]
+
+[<a href="../../id/dep/auxpass.html">id</a>]
 
 [<a href="../../it/dep/auxpass.html">it</a>]
 
 [<a href="../../ja/dep/auxpass.html">ja</a>]
 
+[<a href="../../kk/dep/auxpass.html">kk</a>]
+
+[<a href="../../kmr/dep/auxpass.html">kmr</a>]
+
 [<a href="../../ko/dep/auxpass.html">ko</a>]
+
+[<a href="../../la/dep/auxpass.html">la</a>]
+
+[<a href="../../lv/dep/auxpass.html">lv</a>]
+
+[<a href="../../mr/dep/auxpass.html">mr</a>]
+
+[<a href="../../nl/dep/auxpass.html">nl</a>]
+
+[<a href="../../no/dep/auxpass.html">no</a>]
+
+[<a href="../../pl/dep/auxpass.html">pl</a>]
+
+[<a href="../../pt/dep/auxpass.html">pt</a>]
+
+[<a href="../../ro/dep/auxpass.html">ro</a>]
+
+[<a href="../../ru/dep/auxpass.html">ru</a>]
+
+[<a href="../../sa/dep/auxpass.html">sa</a>]
+
+[<a href="../../sk/dep/auxpass.html">sk</a>]
+
+[<a href="../../sla/dep/auxpass.html">sla</a>]
+
+[<a href="../../sl/dep/auxpass.html">sl</a>]
+
+[<a href="../../so/dep/auxpass.html">so</a>]
+
+[<a href="../../sr/dep/auxpass.html">sr</a>]
 
 [<a href="../../sv/dep/auxpass.html">sv</a>]
 
-[<a href="../../u/dep/auxpass.html">u</a>]
+[<a href="../../swl/dep/auxpass.html">swl</a>]
+
+[<a href="../../ta/dep/auxpass.html">ta</a>]
+
+[<a href="../../tr/dep/auxpass.html">tr</a>]
+
+[<a href="../../ug/dep/auxpass.html">ug</a>]
+
+[<a href="../../uk/dep/auxpass.html">uk</a>]
+
+[<a href="../../ur/dep/auxpass.html">ur</a>]
+
+[<a href="../../urj/dep/auxpass.html">urj</a>]
+
+[<a href="../../vi/dep/auxpass.html">vi</a>]
+
+[<a href="../../yue/dep/auxpass.html">yue</a>]
+
+[<a href="../../zh/dep/auxpass.html">zh</a>]
 
 
 

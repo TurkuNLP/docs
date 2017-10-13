@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-kk">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/kk/dep">kk/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/iobj.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-kk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/kk/dep">kk/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/iobj.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -46,7 +63,7 @@
           <h2><code>iobj</code>: indirect object</h2>
 
 <p>The indirect object of a verb is any nominal phrase that is a core
-argument of the verb but is not its subject or <a href="dobj">direct object</a>.
+argument of the verb but is not its subject or <a href="obj">direct object</a>.
 The prototypical example is the recipient of ditransitive verbs of
 exchange:</p>
 
@@ -66,46 +83,30 @@ probably be discarded in favour of subcategorising <code>nmod</code>.</p>
 
 
 
-
-<hr />
-
-<h2 id="treebank-statistics-udkazakh">Treebank Statistics (UD_Kazakh)</h2>
-
-<p>This relation is universal.</p>
-
-<p>5 nodes (0%) are attached to their parents as <code>iobj</code>.</p>
-
-<p>5 instances of <code>iobj</code> (100%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.8.</p>
-
-<p>The following 1 pairs of parts of speech are connected with <code>iobj</code>: <a href="">kk-pos/VERB</a>-<a href="">kk-pos/NOUN</a> (5; 100% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 4 3 iobj	color:blue
-1	Ендеше	ендеше	ADV	adv	_	5	discourse	_	ендеше|adv
-2	,	,	PUNCT	cm	_	1	punct	_	,|cm
-3	орысқа	орыс	NOUN	n	Case=Dat	4	iobj	_	орыс|n|dat
-4	бағынуы	бағын	VERB	v	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|VerbForm=Ger	5	nsubj	_	бағын|v|iv|ger|px3sp|nom
-5	_	керек	ADJ	adj	_	0	root	_	керек|adj
-6	_	е	AUX	cop	Number=Sing|Person=3|Tense=Aor	5	cop	_	е|cop|aor|p3|sg
-7	.	.	PUNCT	sent	_	5	punct	_	.|sent
-
-</code></pre>
-
-
-
-
 <!-- "in other languages" links -->
 <hr/>
 
 iobj in other languages:
 
+[<a href="../../am/dep/iobj.html">am</a>]
+
+[<a href="../../ar/dep/iobj.html">ar</a>]
+
 [<a href="../../bg/dep/iobj.html">bg</a>]
 
+[<a href="../../bxr/dep/iobj.html">bxr</a>]
+
+[<a href="../../ca/dep/iobj.html">ca</a>]
+
+[<a href="../../ckb/dep/iobj.html">ckb</a>]
+
+[<a href="../../cop/dep/iobj.html">cop</a>]
+
 [<a href="../../cs/dep/iobj.html">cs</a>]
+
+[<a href="../../cu/dep/iobj.html">cu</a>]
+
+[<a href="../../da/dep/iobj.html">da</a>]
 
 [<a href="../../de/dep/iobj.html">de</a>]
 
@@ -115,27 +116,95 @@ iobj in other languages:
 
 [<a href="../../es/dep/iobj.html">es</a>]
 
+[<a href="../../et/dep/iobj.html">et</a>]
+
 [<a href="../../eu/dep/iobj.html">eu</a>]
 
 [<a href="../../fa/dep/iobj.html">fa</a>]
 
+[<a href="../../fo/dep/iobj.html">fo</a>]
+
 [<a href="../../fr/dep/iobj.html">fr</a>]
 
-[<a href="../../ga/dep/iobj.html">ga</a>]
+[<a href="../../gl/dep/iobj.html">gl</a>]
+
+[<a href="../../got/dep/iobj.html">got</a>]
+
+[<a href="../../grc/dep/iobj.html">grc</a>]
 
 [<a href="../../he/dep/iobj.html">he</a>]
 
+[<a href="../../hi/dep/iobj.html">hi</a>]
+
+[<a href="../../hr/dep/iobj.html">hr</a>]
+
 [<a href="../../hu/dep/iobj.html">hu</a>]
+
+[<a href="../../id/dep/iobj.html">id</a>]
 
 [<a href="../../it/dep/iobj.html">it</a>]
 
 [<a href="../../ja/dep/iobj.html">ja</a>]
 
+[<a href="../../kk/dep/iobj.html">kk</a>]
+
+[<a href="../../kmr/dep/iobj.html">kmr</a>]
+
 [<a href="../../ko/dep/iobj.html">ko</a>]
+
+[<a href="../../la/dep/iobj.html">la</a>]
+
+[<a href="../../lv/dep/iobj.html">lv</a>]
+
+[<a href="../../mr/dep/iobj.html">mr</a>]
+
+[<a href="../../nl/dep/iobj.html">nl</a>]
+
+[<a href="../../no/dep/iobj.html">no</a>]
+
+[<a href="../../pl/dep/iobj.html">pl</a>]
+
+[<a href="../../pt/dep/iobj.html">pt</a>]
+
+[<a href="../../ro/dep/iobj.html">ro</a>]
+
+[<a href="../../ru/dep/iobj.html">ru</a>]
+
+[<a href="../../sa/dep/iobj.html">sa</a>]
+
+[<a href="../../sk/dep/iobj.html">sk</a>]
+
+[<a href="../../sla/dep/iobj.html">sla</a>]
+
+[<a href="../../sl/dep/iobj.html">sl</a>]
+
+[<a href="../../so/dep/iobj.html">so</a>]
+
+[<a href="../../sr/dep/iobj.html">sr</a>]
 
 [<a href="../../sv/dep/iobj.html">sv</a>]
 
+[<a href="../../swl/dep/iobj.html">swl</a>]
+
+[<a href="../../ta/dep/iobj.html">ta</a>]
+
+[<a href="../../tr/dep/iobj.html">tr</a>]
+
 [<a href="../../u/dep/iobj.html">u</a>]
+
+[<a href="../../ug/dep/iobj.html">ug</a>]
+
+[<a href="../../uk/dep/iobj.html">uk</a>]
+
+[<a href="../../ur/dep/iobj.html">ur</a>]
+
+[<a href="../../urj/dep/iobj.html">urj</a>]
+
+[<a href="../../vi/dep/iobj.html">vi</a>]
+
+[<a href="../../yue/dep/iobj.html">yue</a>]
+
+[<a href="../../zh/dep/iobj.html">zh</a>]
 
 
 

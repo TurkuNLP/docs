@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-u">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/u/feat">u/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-feat/Tense.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-u">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/u/feat">u/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-feat/Tense.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -46,6 +63,17 @@
           <style>h3 {display:block;background-color:#dfeffc}</style>
 
 <h2><code>Tense</code>: tense</h2>
+
+<table class="typeindex" border="1">
+<tr>
+  <td style="background-color:cornflowerblue;color:white"><strong>Values:</strong> </td>
+  <td><a href="#Fut">Fut</a></td>
+  <td><a href="#Imp">Imp</a></td>
+  <td><a href="#Past">Past</a></td>
+  <td><a href="#Pqp">Pqp</a></td>
+  <td><a href="#Pres">Pres</a></td>
+</tr>
+</table>
 
 <p>Tense is typically a feature of <a href="u-pos/VERB">verbs</a>.
 It may also occur with other parts of speech
@@ -74,7 +102,7 @@ will have <code>VerbForm=Part|Tense=Past</code>; none of the two will have
 morphologically as just one word, such as <em>estivera</em>, which will thus be tagged
 <code>VerbForm=Fin|Mood=Ind|Tense=Pqp</code>.</p>
 
-<h3 id="past-past-tense--preterite--aorist"><code>Past</code>: past tense / preterite / aorist</h3>
+<h3 id="a-namepastpasta-past-tense--preterite--aorist"><a name="Past"><code>Past</code></a>: past tense / preterite / aorist</h3>
 
 <p>The past tense denotes actions that happened before the current
 moment. In English, this is the simple past form. In German, this is
@@ -89,7 +117,7 @@ imperfect).</p>
   <li>[en] <em>he <b>went</b> home</em></li>
 </ul>
 
-<h3 id="pres-present-tense"><code>Pres</code>: present tense</h3>
+<h3 id="a-nameprespresa-present-tense"><a name="Pres"><code>Pres</code></a>: present tense</h3>
 
 <p>The present tense denotes actions that are happening right now or that
 usually happen.</p>
@@ -100,7 +128,7 @@ usually happen.</p>
   <li>[en] <em>he <b>goes</b> home</em></li>
 </ul>
 
-<h3 id="fut-future-tense"><code>Fut</code>: future tense</h3>
+<h3 id="a-namefutfuta-future-tense"><a name="Fut"><code>Fut</code></a>: future tense</h3>
 
 <p>The future tense denotes actions that will happen after the current
 moment.</p>
@@ -111,7 +139,7 @@ moment.</p>
   <li>[es] <em><b>irá</b> a la casa</em> “he/she/it will go home”</li>
 </ul>
 
-<h3 id="imp-imperfect"><code>Imp</code>: imperfect</h3>
+<h3 id="a-nameimpimpa-imperfect"><a name="Imp"><code>Imp</code></a>: imperfect</h3>
 
 <p>Used in e.g. Bulgarian and Croatian, imperfect is a special case of
 the past tense. Note that, unfortunately, imperfect tense is not
@@ -122,13 +150,7 @@ lexical one. In main clauses, imperfective verbs can have imperfect
 tense and perfective verbs have perfect tense. However, both rules can
 be violated in embedded clauses.</p>
 
-<h3 id="nar-narrative"><code>Nar</code>: narrative</h3>
-
-<p>Special case of the past tense, this is the Turkish <em>miş</em>-past. The
-difference is whether the speaker personally witnessed the action he
-is describing, or not.</p>
-
-<h3 id="pqp-pluperfect"><code>Pqp</code>: pluperfect</h3>
+<h3 id="a-namepqppqpa-pluperfect"><a name="Pqp"><code>Pqp</code></a>: pluperfect</h3>
 
 <p>The pluperfect denotes action that happened before another action in
 past. This value does not apply to English where the pluperfect (past
@@ -146,9 +168,25 @@ perfect) is constructed analytically. It applies e.g. to Portuguese.</p>
 
 Tense in other languages:
 
+[<a href="../../am/feat/Tense.html">am</a>]
+
+[<a href="../../ar/feat/Tense.html">ar</a>]
+
 [<a href="../../bg/feat/Tense.html">bg</a>]
 
+[<a href="../../bxr/feat/Tense.html">bxr</a>]
+
+[<a href="../../ca/feat/Tense.html">ca</a>]
+
+[<a href="../../ckb/feat/Tense.html">ckb</a>]
+
+[<a href="../../cop/feat/Tense.html">cop</a>]
+
 [<a href="../../cs/feat/Tense.html">cs</a>]
+
+[<a href="../../cu/feat/Tense.html">cu</a>]
+
+[<a href="../../da/feat/Tense.html">da</a>]
 
 [<a href="../../de/feat/Tense.html">de</a>]
 
@@ -158,29 +196,99 @@ Tense in other languages:
 
 [<a href="../../es/feat/Tense.html">es</a>]
 
+[<a href="../../et/feat/Tense.html">et</a>]
+
 [<a href="../../eu/feat/Tense.html">eu</a>]
 
 [<a href="../../fa/feat/Tense.html">fa</a>]
 
 [<a href="../../fi/feat/Tense.html">fi</a>]
 
+[<a href="../../fo/feat/Tense.html">fo</a>]
+
 [<a href="../../fr/feat/Tense.html">fr</a>]
 
 [<a href="../../ga/feat/Tense.html">ga</a>]
 
+[<a href="../../gl/feat/Tense.html">gl</a>]
+
+[<a href="../../got/feat/Tense.html">got</a>]
+
+[<a href="../../grc/feat/Tense.html">grc</a>]
+
 [<a href="../../he/feat/Tense.html">he</a>]
 
+[<a href="../../hi/feat/Tense.html">hi</a>]
+
+[<a href="../../hr/feat/Tense.html">hr</a>]
+
 [<a href="../../hu/feat/Tense.html">hu</a>]
+
+[<a href="../../id/feat/Tense.html">id</a>]
 
 [<a href="../../it/feat/Tense.html">it</a>]
 
 [<a href="../../ja/feat/Tense.html">ja</a>]
 
+[<a href="../../kk/feat/Tense.html">kk</a>]
+
+[<a href="../../kmr/feat/Tense.html">kmr</a>]
+
 [<a href="../../ko/feat/Tense.html">ko</a>]
+
+[<a href="../../la/feat/Tense.html">la</a>]
+
+[<a href="../../lv/feat/Tense.html">lv</a>]
+
+[<a href="../../mr/feat/Tense.html">mr</a>]
+
+[<a href="../../nl/feat/Tense.html">nl</a>]
+
+[<a href="../../no/feat/Tense.html">no</a>]
+
+[<a href="../../pl/feat/Tense.html">pl</a>]
+
+[<a href="../../pt/feat/Tense.html">pt</a>]
+
+[<a href="../../ro/feat/Tense.html">ro</a>]
+
+[<a href="../../ru/feat/Tense.html">ru</a>]
+
+[<a href="../../sa/feat/Tense.html">sa</a>]
+
+[<a href="../../sk/feat/Tense.html">sk</a>]
+
+[<a href="../../sla/feat/Tense.html">sla</a>]
+
+[<a href="../../sl/feat/Tense.html">sl</a>]
+
+[<a href="../../so/feat/Tense.html">so</a>]
+
+[<a href="../../sr/feat/Tense.html">sr</a>]
 
 [<a href="../../sv/feat/Tense.html">sv</a>]
 
+[<a href="../../swl/feat/Tense.html">swl</a>]
+
+[<a href="../../ta/feat/Tense.html">ta</a>]
+
+[<a href="../../tr/feat/Tense.html">tr</a>]
+
 [<a href="../../u/feat/Tense.html">u</a>]
+
+[<a href="../../ug/feat/Tense.html">ug</a>]
+
+[<a href="../../uk/feat/Tense.html">uk</a>]
+
+[<a href="../../ur/feat/Tense.html">ur</a>]
+
+[<a href="../../urj/feat/Tense.html">urj</a>]
+
+[<a href="../../vi/feat/Tense.html">vi</a>]
+
+[<a href="../../yue/feat/Tense.html">yue</a>]
+
+[<a href="../../zh/feat/Tense.html">zh</a>]
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-kk">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/kk/pos">kk/pos</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-pos/ADV.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-kk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/kk/pos">kk/pos</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-pos/ADV.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -73,128 +90,48 @@ direction or manner.</p>
 
 <h2 id="treebank-statistics-udkazakh">Treebank Statistics (UD_Kazakh)</h2>
 
-<p>There are 75 <code>ADV</code> lemmas (4%), 78 <code>ADV</code> types (3%) and 123 <code>ADV</code> tokens (2%).
-Out of 16 observed tags, the rank of <code>ADV</code> is: 6 in number of lemmas, 8 in number of types and 10 in number of tokens.</p>
+<p>There are 7 <code>ADV</code> lemmas (3%), 8 <code>ADV</code> types (2%) and 12 <code>ADV</code> tokens (2%).
+Out of 15 observed tags, the rank of <code>ADV</code> is: 9 in number of lemmas, 10 in number of types and 10 in number of tokens.</p>
 
-<p>The 10 most frequent <code>ADV</code> lemmas: <em>қайда, енді, ендеше, тағы, тек, бұрын, жақсы, қазір, қайта, әбден</em></p>
+<p>The 10 most frequent <code>ADV</code> lemmas: <em>да, ең, шынында, ылғи, ғана, қайта, әлдеқалай</em></p>
 
-<p>The 10 most frequent <code>ADV</code> types:  <em>енді, _, Ендеше, қайда, тағы, тек, жақсы, қайта, әбден, өте</em></p>
+<p>The 10 most frequent <code>ADV</code> types:  <em>да, ең, де, шынында, ылғи, ғана, қайта, әлдеқалай</em></p>
 
-<p>The 10 most frequent ambiguous lemmas: <em>ендеше</em> (<a href="">ADV</a> 5, <a href="">INTJ</a> 1), <em>тағы</em> (<a href="">ADV</a> 4, <a href="">PART</a> 1), <em>тек</em> (<a href="">ADV</a> 4, <a href="">NOUN</a> 2), <em>бұрын</em> (<a href="">ADV</a> 3, <a href="">ADP</a> 1), <em>жақсы</em> (<a href="">ADJ</a> 11, <a href="">ADV</a> 3), <em>артық</em> (<a href="">ADJ</a> 3, <a href="">ADV</a> 2, <a href="">ADP</a> 1), <em>бірге</em> (<a href="">ADV</a> 2, <a href="">ADP</a> 1), <em>соң</em> (<a href="">ADP</a> 9, <a href="">ADV</a> 2), <em>аман</em> (<a href="">ADJ</a> 2, <a href="">ADV</a> 1), <em>емес</em> (<a href="">PART</a> 2, <a href="">ADV</a> 1)</p>
+<p>The 10 most frequent ambiguous lemmas: <em>да</em> (<a href="">ADV</a> 5, <a href="">CCONJ</a> 2, <a href="">SCONJ</a> 1)</p>
 
-<p>The 10 most frequent ambiguous types:  <em>енді</em> (<a href="">ADV</a> 4, <a href="">VERB</a> 1), <em>_</em> (<a href="">AUX</a> 154, <a href="">PART</a> 76, <a href="">NOUN</a> 75, <a href="">ADJ</a> 72, <a href="">VERB</a> 29, <a href="">PRON</a> 23, <a href="">CONJ</a> 13, <a href="">ADV</a> 7, <a href="">ADP</a> 7, <a href="">PROPN</a> 5, <a href="">NUM</a> 4, <a href="">PUNCT</a> 1), <em>Ендеше</em> (<a href="">ADV</a> 5, <a href="">INTJ</a> 1), <em>тағы</em> (<a href="">ADV</a> 4, <a href="">PART</a> 1), <em>жақсы</em> (<a href="">ADJ</a> 7, <a href="">ADV</a> 3), <em>қайта</em> (<a href="">ADV</a> 3, <a href="">VERB</a> 2), <em>артық</em> (<a href="">ADJ</a> 3, <a href="">ADV</a> 2, <a href="">ADP</a> 1), <em>бірге</em> (<a href="">ADV</a> 2, <a href="">ADP</a> 1), <em>бұрын</em> (<a href="">ADV</a> 1, <a href="">ADP</a> 1), <em>аман</em> (<a href="">ADJ</a> 2, <a href="">ADV</a> 1)</p>
+<p>The 10 most frequent ambiguous types:  <em>да</em> (<a href="">ADV</a> 4, <a href="">CCONJ</a> 2, <a href="">SCONJ</a> 1)</p>
 
 <ul>
-  <li><em>енді</em>
+  <li><em>да</em>
     <ul>
-      <li><a href="">ADV</a> 4: <em>Ол <b>енді</b> ол дыбысты анығырақ ести бастады .</em></li>
-      <li><a href="">VERB</a> 1: <em>10 ғасырда пайда__болған мистерия діни ғұрып шахсей-вахсейдің құрамына <b>енді</b> .</em></li>
-    </ul>
-  </li>
-  <li><em>_</em>
-    <ul>
-      <li><a href="">AUX</a> 154: <em>Иран — діни _ <b>_</b> .</em></li>
-      <li><a href="">PART</a> 76: <em>Қазірде орыстан оқыған балалардан артық жақсы кісі шыға _ <b>_</b> тұр .</em></li>
-      <li><a href="">NOUN</a> 75: <em>Иран — діни <b>_</b> _ .</em></li>
-      <li><a href="">ADJ</a> 72: <em>Жер беті суы <b>_</b> _ .</em></li>
-      <li><a href="">VERB</a> 29: <em>Құлдық пен құл саудасына , қандай түрде <b>_</b> _ , тыйым салынады .</em></li>
-      <li><a href="">PRON</a> 23: <em>Сіздің атыңыз <b>_</b> _ ?</em></li>
-      <li><a href="">CONJ</a> 13: <em>Ол _ <b>_</b> , _ <b>_</b> емес .</em></li>
-      <li><a href="">ADV</a> 7: <em>— Бәйбіше <b>_</b> _ ?</em></li>
-      <li><a href="">ADP</a> 7: <em>Неке , тек екі жақтың өзара еркін және толық келісімі <b>_</b> _ қиылады .</em></li>
-      <li><a href="">PROPN</a> 5: <em>Баяғыда біреу той жасапты , тойға көп кісі жиналыпты , <b>_</b> _ келіпті .</em></li>
-      <li><a href="">NUM</a> 4: <em>Қала халқы <b>_</b> _ .</em></li>
-      <li><a href="">PUNCT</a> 1: <em>Халқының ұлттық құрамы : парсылар ( 51% ) , әзірбайжандар ( 27% ) , күрдтер ( 5% ) , арабтар , түрікмендер , белуджилер , армяндар , еврейлер , _ _ <b>_</b></em></li>
-    </ul>
-  </li>
-  <li><em>Ендеше</em>
-    <ul>
-      <li><a href="">ADV</a> 5: <em><b>Ендеше</b> , біз тіршілік қып жүрміз .</em></li>
-      <li><a href="">INTJ</a> 1: <em><b>Ендеше</b> , артық жеріңді алғанға өкпелеме .</em></li>
-    </ul>
-  </li>
-  <li><em>тағы</em>
-    <ul>
-      <li><a href="">ADV</a> 4: <em>Сол сөзді бітірген кезде <b>тағы</b> үш орыс келді .</em></li>
-      <li><a href="">PART</a> 1: <em>Ләкин осы күнде орыс ғылымын баласына үйреткен жандар соның қаруымен <b>тағы</b> қазақты аңдысам__екен дейді .</em></li>
-    </ul>
-  </li>
-  <li><em>жақсы</em>
-    <ul>
-      <li><a href="">ADJ</a> 7: <em>Мен Қазақ тілінде <b>жақсы</b> сөйлей алмаймын .</em></li>
-      <li><a href="">ADV</a> 3: <em>— Мына төре сені <b>жақсы</b> көрген .</em></li>
-    </ul>
-  </li>
-  <li><em>қайта</em>
-    <ul>
-      <li><a href="">ADV</a> 3: <em>Ол дыбыс <b>қайта</b> естіледі !</em></li>
-      <li><a href="">VERB</a> 2: <em>Қожа үйден шығып _ _ үйіне барып , тәуір киімдерін киіп , <b>қайта</b> келеді .</em></li>
-    </ul>
-  </li>
-  <li><em>артық</em>
-    <ul>
-      <li><a href="">ADJ</a> 3: <em>Ендеше , <b>артық</b> жеріңді алғанға өкпелеме .</em></li>
-      <li><a href="">ADV</a> 2: <em>Қазірде орыстан оқыған балалардан <b>артық</b> жақсы кісі шыға _ _ тұр .</em></li>
-      <li><a href="">ADP</a> 1: <em>Олар осыдан <b>артық</b> қайда барсын ?</em></li>
-    </ul>
-  </li>
-  <li><em>бірге</em>
-    <ul>
-      <li><a href="">ADV</a> 2: <em>Олардың анасы мысығымен <b>бірге</b> үйде , ол терезеден Азамат пен Айгүлдің ойнағанына қарап тұр .</em></li>
-      <li><a href="">ADP</a> 1: <em>Сондай әмірліктердің бірі Самани әулеті биліктен кеткеннен кейін Шығыс Иран Ауғанстанмен және Орта__Азияның бір бөлігімен <b>бірге</b> түркі _ _ Ғазнауи әулеті билеген мемлекеттің құрамына кірді .</em></li>
-    </ul>
-  </li>
-  <li><em>бұрын</em>
-    <ul>
-      <li><a href="">ADV</a> 1: <em>Төстік <b>бұрын</b> ағалары бар екенін естіген__жоқ__екен .</em></li>
-      <li><a href="">ADP</a> 1: <em>Жауыңнан <b>бұрын</b> қимылда - жеріңе жамандық келмейді .</em></li>
-    </ul>
-  </li>
-  <li><em>аман</em>
-    <ul>
-      <li><a href="">ADJ</a> 2: <em>Сен бұл жолдан <b>аман</b> - есен қайтарсың , еліңе <b>аман</b> барарсың … — деді .</em></li>
-      <li><a href="">ADV</a> 1: <em>Торғайды ажалдан <b>аман</b> алып қалғанына қуанды .</em></li>
+      <li><a href="">ADV</a> 4: <em>Қанша жалынса <b>да</b> , қанша жыласа <b>да</b> Жасаған оған бала бермеді .</em></li>
+      <li><a href="">CCONJ</a> 2: <em>Күнмен таласа Шолпан <b>да</b> өмірімен қоштасты .</em></li>
+      <li><a href="">SCONJ</a> 1: <em>Бала сұрады , қалай <b>да</b> бала болмады .</em></li>
     </ul>
   </li>
 </ul>
 
 <h2 id="morphology">Morphology</h2>
 
-<p>The form / lemma ratio of <code>ADV</code> is 1.040000 (the average of all parts of speech is 1.549647).</p>
+<p>The form / lemma ratio of <code>ADV</code> is 1.142857 (the average of all parts of speech is 1.240602).</p>
 
-<p>The 1st highest number of forms (2) was observed with the lemma “бұрын”: <em>Бұрынғыдай, бұрын</em>.</p>
+<p>The 1st highest number of forms (2) was observed with the lemma “да”: <em>да, де</em>.</p>
 
-<p>The 2nd highest number of forms (2) was observed with the lemma “қазір”: <em>қазір, қазіргі</em>.</p>
+<p>The 2nd highest number of forms (1) was observed with the lemma “ең”: <em>ең</em>.</p>
 
-<p>The 3rd highest number of forms (2) was observed with the lemma “қайда”: <em>_, қайда</em>.</p>
+<p>The 3rd highest number of forms (1) was observed with the lemma “шынында”: <em>шынында</em>.</p>
 
-<p><code>ADV</code> occurs with 2 features: <a href="">kk-feat/PronType</a> (7; 6% instances), <a href="">kk-feat/Case</a> (2; 2% instances)</p>
-
-<p><code>ADV</code> occurs with 2 feature-value pairs: <code>Case=Nom</code>, <code>PronType=Itg</code></p>
-
-<p><code>ADV</code> occurs with 4 feature combinations.
-The most frequent feature combination is <code>_</code> (115 tokens).
-Examples: <em>енді, Ендеше, қайда, _, тағы, тек, жақсы, қайта, әбден, өте</em></p>
+<p><code>ADV</code> does not occur with any features.</p>
 
 <h2 id="relations">Relations</h2>
 
-<p><code>ADV</code> nodes are attached to their parents using 7 different relations: <a href="">kk-dep/advmod</a> (100; 81% instances), <a href="">kk-dep/amod</a> (8; 7% instances), <a href="">kk-dep/root</a> (7; 6% instances), <a href="">kk-dep/ccomp</a> (3; 2% instances), <a href="">kk-dep/discourse</a> (3; 2% instances), <a href="">kk-dep/compound</a> (1; 1% instances), <a href="">kk-dep/parataxis</a> (1; 1% instances)</p>
+<p><code>ADV</code> nodes are attached to their parents using 2 different relations: <a href="">kk-dep/advmod</a> (11; 92% instances), <a href="">kk-dep/cc</a> (1; 8% instances)</p>
 
-<p>Parents of <code>ADV</code> nodes belong to 7 different parts of speech: <a href="">VERB</a> (74; 60% instances), <a href="">ADJ</a> (19; 15% instances), <a href="">NOUN</a> (18; 15% instances), <a href="">ROOT</a> (7; 6% instances), <a href="">ADV</a> (2; 2% instances), <a href="">NUM</a> (2; 2% instances), <a href="">PROPN</a> (1; 1% instances)</p>
+<p>Parents of <code>ADV</code> nodes belong to 4 different parts of speech: <a href="">VERB</a> (7; 58% instances), <a href="">ADJ</a> (2; 17% instances), <a href="">NOUN</a> (2; 17% instances), <a href="">NUM</a> (1; 8% instances)</p>
 
-<p>101 (82%) <code>ADV</code> nodes are leaves.</p>
+<p>12 (100%) <code>ADV</code> nodes are leaves.</p>
 
-<p>9 (7%) <code>ADV</code> nodes have one child.</p>
-
-<p>4 (3%) <code>ADV</code> nodes have two children.</p>
-
-<p>9 (7%) <code>ADV</code> nodes have three or more children.</p>
-
-<p>The highest child degree of a <code>ADV</code> node is 4.</p>
-
-<p>Children of <code>ADV</code> nodes are attached using 6 different relations: <a href="">kk-dep/punct</a> (19; 42% instances), <a href="">kk-dep/nsubj</a> (11; 24% instances), <a href="">kk-dep/cop</a> (10; 22% instances), <a href="">kk-dep/nmod</a> (3; 7% instances), <a href="">kk-dep/advmod</a> (1; 2% instances), <a href="">kk-dep/compound</a> (1; 2% instances)</p>
-
-<p>Children of <code>ADV</code> nodes belong to 7 different parts of speech: <a href="">PUNCT</a> (17; 38% instances), <a href="">AUX</a> (10; 22% instances), <a href="">NOUN</a> (8; 18% instances), <a href="">PROPN</a> (4; 9% instances), <a href="">ADV</a> (2; 4% instances), <a href="">PART</a> (2; 4% instances), <a href="">PRON</a> (2; 4% instances)</p>
+<p>The highest child degree of a <code>ADV</code> node is 0.</p>
 
 
 
@@ -204,9 +141,25 @@ Examples: <em>енді, Ендеше, қайда, _, тағы, тек, жақс�
 
 ADV in other languages:
 
+[<a href="../../am/pos/ADV.html">am</a>]
+
+[<a href="../../ar/pos/ADV.html">ar</a>]
+
 [<a href="../../bg/pos/ADV.html">bg</a>]
 
+[<a href="../../bxr/pos/ADV.html">bxr</a>]
+
+[<a href="../../ca/pos/ADV.html">ca</a>]
+
+[<a href="../../ckb/pos/ADV.html">ckb</a>]
+
+[<a href="../../cop/pos/ADV.html">cop</a>]
+
 [<a href="../../cs/pos/ADV.html">cs</a>]
+
+[<a href="../../cu/pos/ADV.html">cu</a>]
+
+[<a href="../../da/pos/ADV.html">da</a>]
 
 [<a href="../../de/pos/ADV.html">de</a>]
 
@@ -216,29 +169,99 @@ ADV in other languages:
 
 [<a href="../../es/pos/ADV.html">es</a>]
 
+[<a href="../../et/pos/ADV.html">et</a>]
+
 [<a href="../../eu/pos/ADV.html">eu</a>]
 
 [<a href="../../fa/pos/ADV.html">fa</a>]
 
 [<a href="../../fi/pos/ADV.html">fi</a>]
 
+[<a href="../../fo/pos/ADV.html">fo</a>]
+
 [<a href="../../fr/pos/ADV.html">fr</a>]
 
 [<a href="../../ga/pos/ADV.html">ga</a>]
 
+[<a href="../../gl/pos/ADV.html">gl</a>]
+
+[<a href="../../got/pos/ADV.html">got</a>]
+
+[<a href="../../grc/pos/ADV.html">grc</a>]
+
 [<a href="../../he/pos/ADV.html">he</a>]
 
+[<a href="../../hi/pos/ADV.html">hi</a>]
+
+[<a href="../../hr/pos/ADV.html">hr</a>]
+
 [<a href="../../hu/pos/ADV.html">hu</a>]
+
+[<a href="../../id/pos/ADV.html">id</a>]
 
 [<a href="../../it/pos/ADV.html">it</a>]
 
 [<a href="../../ja/pos/ADV.html">ja</a>]
 
+[<a href="../../kk/pos/ADV.html">kk</a>]
+
+[<a href="../../kmr/pos/ADV.html">kmr</a>]
+
 [<a href="../../ko/pos/ADV.html">ko</a>]
+
+[<a href="../../la/pos/ADV.html">la</a>]
+
+[<a href="../../lv/pos/ADV.html">lv</a>]
+
+[<a href="../../mr/pos/ADV.html">mr</a>]
+
+[<a href="../../nl/pos/ADV.html">nl</a>]
+
+[<a href="../../no/pos/ADV.html">no</a>]
+
+[<a href="../../pl/pos/ADV.html">pl</a>]
+
+[<a href="../../pt/pos/ADV.html">pt</a>]
+
+[<a href="../../ro/pos/ADV.html">ro</a>]
+
+[<a href="../../ru/pos/ADV.html">ru</a>]
+
+[<a href="../../sa/pos/ADV.html">sa</a>]
+
+[<a href="../../sk/pos/ADV.html">sk</a>]
+
+[<a href="../../sla/pos/ADV.html">sla</a>]
+
+[<a href="../../sl/pos/ADV.html">sl</a>]
+
+[<a href="../../so/pos/ADV.html">so</a>]
+
+[<a href="../../sr/pos/ADV.html">sr</a>]
 
 [<a href="../../sv/pos/ADV.html">sv</a>]
 
+[<a href="../../swl/pos/ADV.html">swl</a>]
+
+[<a href="../../ta/pos/ADV.html">ta</a>]
+
+[<a href="../../tr/pos/ADV.html">tr</a>]
+
+[<a href="../../ug/pos/ADV.html">ug</a>]
+
+[<a href="../../uk/pos/ADV.html">uk</a>]
+
 [<a href="../../u/pos/ADV.html">u</a>]
+
+[<a href="../../urj/pos/ADV.html">urj</a>]
+
+[<a href="../../ur/pos/ADV.html">ur</a>]
+
+[<a href="../../vi/pos/ADV.html">vi</a>]
+
+[<a href="../../yue/pos/ADV.html">yue</a>]
+
+[<a href="../../zh/pos/ADV.html">zh</a>]
 
 
 

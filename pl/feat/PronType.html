@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-pl">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/pl/feat">pl/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_pl-feat/PronType.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-pl">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/pl/feat">pl/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pl-feat/PronType.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -66,52 +83,57 @@ for <code>PronType</code>.</p>
 It occurs with 7 different values: <code>Dem</code>, <code>Ind</code>, <code>Int</code>, <code>Neg</code>, <code>Prs</code>, <code>Rel</code>, <code>Tot</code>.
 Some words have combined values of the feature; 1 combinations have been observed: <code>Int|Rel</code>.</p>
 
-<p>6076 tokens (7%) have a non-empty value of <code>PronType</code>.
-254 types (1%) occur at least once with a non-empty value of <code>PronType</code>.
-38 lemmas (0%) occur at least once with a non-empty value of <code>PronType</code>.
-The feature is used with 2 part-of-speech tags: <a href="">pl-pos/PRON</a> (5023; 6% instances), <a href="">pl-pos/DET</a> (1053; 1% instances).</p>
+<p>5616 tokens (8%) have a non-empty value of <code>PronType</code>.
+316 types (1%) occur at least once with a non-empty value of <code>PronType</code>.
+43 lemmas (0%) occur at least once with a non-empty value of <code>PronType</code>.
+The feature is used with 2 part-of-speech tags: <a href="">pl-pos/PRON</a> (3919; 5% instances), <a href="">pl-pos/DET</a> (1697; 2% instances).</p>
 
 <h3 id="pron"><code>PRON</code></h3>
 
-<p>5023 <a href="">pl-pos/PRON</a> tokens (100% of all <code>PRON</code> tokens) have a non-empty value of <code>PronType</code>.</p>
+<p>3919 <a href="">pl-pos/PRON</a> tokens (100% of all <code>PRON</code> tokens) have a non-empty value of <code>PronType</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>PronType</code> co-occurred: <tt><a href="PrepCase.html">PrepCase</a>=EMPTY</tt> (3809; 76%), <tt><a href="Variant.html">Variant</a>=EMPTY</tt> (3527; 70%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (3449; 69%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (3319; 66%), <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (3143; 63%).</p>
+<p>The most frequent other feature values with which <code>PRON</code> and <code>PronType</code> co-occurred: <tt><a href="PrepCase.html">PrepCase</a>=EMPTY</tt> (2861; 73%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (2802; 71%), <tt><a href="Variant.html">Variant</a>=EMPTY</tt> (2634; 67%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (2455; 63%), <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (2279; 58%).</p>
 
 <p><code>PRON</code> tokens may have the following values of <code>PronType</code>:</p>
 
 <ul>
-  <li><code>Dem</code> (463; 9% of non-empty <code>PronType</code>): <em>to, tym, tego, temu, ten, takie, takiego, tych, ta, Ci</em></li>
-  <li><code>Ind</code> (141; 3% of non-empty <code>PronType</code>): <em>coś, ktoś, czegoś, czymś, kilku, Niektórzy, kogoś, cokolwiek, kilkoma, kilkunastu</em></li>
-  <li><code>Int,Rel</code> (607; 12% of non-empty <code>PronType</code>): <em>co, które, który, która, kto, którzy, których, którym, której, czym</em></li>
-  <li><code>Neg</code> (100; 2% of non-empty <code>PronType</code>): <em>nic, nikt, niczego, nikogo, nikomu, żaden, niczym, Żadne, żadna, żadnego</em></li>
-  <li><code>Prs</code> (3584; 71% of non-empty <code>PronType</code>): <em>się, jego, go, ich, jej, mnie, mu, sobie, mi, ją</em></li>
-  <li><code>Tot</code> (128; 3% of non-empty <code>PronType</code>): <em>wszystko, wszystkim, wszyscy, każdy, wszystkiego, wszystkich, każdego, każdym, wszystkie, Każda</em></li>
+  <li><code>Dem</code> (372; 9% of non-empty <code>PronType</code>): <em>to, tym, tego, temu</em></li>
+  <li><code>Ind</code> (102; 3% of non-empty <code>PronType</code>): <em>coś, ktoś, czegoś, czymś, cokolwiek, kogoś, komukolwiek, komuś</em></li>
+  <li><code>Int,Rel</code> (164; 4% of non-empty <code>PronType</code>): <em>co, kto, czym, kim, czego, komu, czemu, kogo</em></li>
+  <li><code>Neg</code> (84; 2% of non-empty <code>PronType</code>): <em>nic, nikt, niczego, nikogo, nikomu, niczym</em></li>
+  <li><code>Prs</code> (3104; 79% of non-empty <code>PronType</code>): <em>się, go, jego, ich, jej, mnie, mu, sobie, mi, ją</em></li>
+  <li><code>Tot</code> (93; 2% of non-empty <code>PronType</code>): <em>wszystko, wszystkim, wszyscy, wszystkiego, wszystkich</em></li>
 </ul>
 
-<p><code>PronType</code> seems to be <strong>lexical feature</strong> of <code>PRON</code>. 100% lemmas (32) occur only with one value of <code>PronType</code>.</p>
+<p><code>PronType</code> seems to be <strong>lexical feature</strong> of <code>PRON</code>. 100% lemmas (18) occur only with one value of <code>PronType</code>.</p>
 
 <h3 id="det"><code>DET</code></h3>
 
-<p>1053 <a href="">pl-pos/DET</a> tokens (100% of all <code>DET</code> tokens) have a non-empty value of <code>PronType</code>.</p>
+<p>1697 <a href="">pl-pos/DET</a> tokens (100% of all <code>DET</code> tokens) have a non-empty value of <code>PronType</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>PronType</code> co-occurred: <tt><a href="Degree.html">Degree</a>=Pos</tt> (955; 91%), <tt><a href="Number.html">Number</a>=Sing</tt> (661; 63%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (530; 50%).</p>
+<p>The most frequent other feature values with which <code>DET</code> and <code>PronType</code> co-occurred: <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (1519; 90%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (1499; 88%), <tt><a href="Number[psor].html">Number[psor]</a>=EMPTY</tt> (1499; 88%), <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (1321; 78%), <tt><a href="Number.html">Number</a>=Sing</tt> (1076; 63%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (851; 50%).</p>
 
 <p><code>DET</code> tokens may have the following values of <code>PronType</code>:</p>
 
 <ul>
-  <li><code>Dem</code> (682; 65% of non-empty <code>PronType</code>): <em>tej, ten, tym, tego, te, tych, to, ta, takie, tę</em></li>
-  <li><code>Ind</code> (179; 17% of non-empty <code>PronType</code>): <em>kilka, jakieś, jakiś, kilku, kilkanaście, kilkadziesiąt, jakąś, kilkuset, niektóre, niektórych</em></li>
-  <li><code>Int,Rel</code> (28; 3% of non-empty <code>PronType</code>): <em>jakie, jaki, jakich, Jakim, Które, jaka, jakiej, jaką, który, którym</em></li>
-  <li><code>Neg</code> (36; 3% of non-empty <code>PronType</code>): <em>żadnych, żadnego, żaden, żadnej, żadne, żadna, żadnym, żadną</em></li>
-  <li><code>Tot</code> (128; 12% of non-empty <code>PronType</code>): <em>wszystkie, wszystkich, każdy, wszelki, każde, każdym, wszelkie, każdego, każdą, wszelkich</em></li>
+  <li><code>Dem</code> (613; 36% of non-empty <code>PronType</code>): <em>ten, tej, tym, tego, te, tych, ta, to, takie, tę</em></li>
+  <li><code>Ind</code> (182; 11% of non-empty <code>PronType</code>): <em>kilka, jakieś, kilku, jakiś, kilkanaście, kilkadziesiąt, kilkunastu, niektóre, jakąś, kilkuset</em></li>
+  <li><code>Int,Rel</code> (358; 21% of non-empty <code>PronType</code>): <em>które, który, która, którzy, których, którym, której, którego, którą, jakie</em></li>
+  <li><code>Neg</code> (32; 2% of non-empty <code>PronType</code>): <em>żaden, żadnych, żadnego, żadne, żadnej, żadna, żadnym, żadną</em></li>
+  <li><code>Prs</code> (376; 22% of non-empty <code>PronType</code>): <em>swoje, swoich, swoim, naszej, swój, swojej, naszym, swoją, naszych, swych</em></li>
+  <li><code>Tot</code> (136; 8% of non-empty <code>PronType</code>): <em>wszystkie, wszystkich, każdy, każdym, wszyscy, każde, każdego, wszelki, wszelkich, wszelkie</em></li>
 </ul>
 
-<p><code>PronType</code> seems to be <strong>lexical feature</strong> of <code>DET</code>. 100% lemmas (20) occur only with one value of <code>PronType</code>.</p>
+<p><code>PronType</code> seems to be <strong>lexical feature</strong> of <code>DET</code>. 100% lemmas (25) occur only with one value of <code>PronType</code>.</p>
 
 <h2 id="relations-with-agreement-in-prontype">Relations with Agreement in <code>PronType</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>PronType</code>:
-<tt>PRON –[<a href="../dep/conj.html">conj</a>]–&gt; PRON</tt> (6; 100%).</p>
+<tt>PRON –[<a href="../dep/conj.html">conj</a>]–&gt; PRON</tt> (4; 100%),
+<tt>DET –[<a href="../dep/conj.html">conj</a>]–&gt; DET</tt> (2; 100%),
+<tt>DET –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; DET</tt> (1; 100%),
+<tt>PRON –[<a href="../dep/nmod.html">nmod</a>]–&gt; PRON</tt> (1; 100%),
+<tt>DET –[<a href="../dep/obl.html">obl</a>]–&gt; DET</tt> (1; 100%).</p>
 
 
 
@@ -121,9 +143,25 @@ The feature is used with 2 part-of-speech tags: <a href="">pl-pos/PRON</a> (5023
 
 PronType in other languages:
 
+[<a href="../../am/feat/PronType.html">am</a>]
+
+[<a href="../../ar/feat/PronType.html">ar</a>]
+
 [<a href="../../bg/feat/PronType.html">bg</a>]
 
+[<a href="../../bxr/feat/PronType.html">bxr</a>]
+
+[<a href="../../ca/feat/PronType.html">ca</a>]
+
+[<a href="../../ckb/feat/PronType.html">ckb</a>]
+
+[<a href="../../cop/feat/PronType.html">cop</a>]
+
 [<a href="../../cs/feat/PronType.html">cs</a>]
+
+[<a href="../../cu/feat/PronType.html">cu</a>]
+
+[<a href="../../da/feat/PronType.html">da</a>]
 
 [<a href="../../de/feat/PronType.html">de</a>]
 
@@ -133,29 +171,99 @@ PronType in other languages:
 
 [<a href="../../es/feat/PronType.html">es</a>]
 
+[<a href="../../et/feat/PronType.html">et</a>]
+
 [<a href="../../eu/feat/PronType.html">eu</a>]
 
 [<a href="../../fa/feat/PronType.html">fa</a>]
 
 [<a href="../../fi/feat/PronType.html">fi</a>]
 
+[<a href="../../fo/feat/PronType.html">fo</a>]
+
 [<a href="../../fr/feat/PronType.html">fr</a>]
 
 [<a href="../../ga/feat/PronType.html">ga</a>]
 
+[<a href="../../gl/feat/PronType.html">gl</a>]
+
+[<a href="../../got/feat/PronType.html">got</a>]
+
+[<a href="../../grc/feat/PronType.html">grc</a>]
+
 [<a href="../../he/feat/PronType.html">he</a>]
 
+[<a href="../../hi/feat/PronType.html">hi</a>]
+
+[<a href="../../hr/feat/PronType.html">hr</a>]
+
 [<a href="../../hu/feat/PronType.html">hu</a>]
+
+[<a href="../../id/feat/PronType.html">id</a>]
 
 [<a href="../../it/feat/PronType.html">it</a>]
 
 [<a href="../../ja/feat/PronType.html">ja</a>]
 
+[<a href="../../kk/feat/PronType.html">kk</a>]
+
+[<a href="../../kmr/feat/PronType.html">kmr</a>]
+
 [<a href="../../ko/feat/PronType.html">ko</a>]
+
+[<a href="../../la/feat/PronType.html">la</a>]
+
+[<a href="../../lv/feat/PronType.html">lv</a>]
+
+[<a href="../../mr/feat/PronType.html">mr</a>]
+
+[<a href="../../nl/feat/PronType.html">nl</a>]
+
+[<a href="../../no/feat/PronType.html">no</a>]
+
+[<a href="../../pl/feat/PronType.html">pl</a>]
+
+[<a href="../../pt/feat/PronType.html">pt</a>]
+
+[<a href="../../ro/feat/PronType.html">ro</a>]
+
+[<a href="../../ru/feat/PronType.html">ru</a>]
+
+[<a href="../../sa/feat/PronType.html">sa</a>]
+
+[<a href="../../sk/feat/PronType.html">sk</a>]
+
+[<a href="../../sla/feat/PronType.html">sla</a>]
+
+[<a href="../../sl/feat/PronType.html">sl</a>]
+
+[<a href="../../so/feat/PronType.html">so</a>]
+
+[<a href="../../sr/feat/PronType.html">sr</a>]
 
 [<a href="../../sv/feat/PronType.html">sv</a>]
 
+[<a href="../../swl/feat/PronType.html">swl</a>]
+
+[<a href="../../ta/feat/PronType.html">ta</a>]
+
+[<a href="../../tr/feat/PronType.html">tr</a>]
+
 [<a href="../../u/feat/PronType.html">u</a>]
+
+[<a href="../../ug/feat/PronType.html">ug</a>]
+
+[<a href="../../uk/feat/PronType.html">uk</a>]
+
+[<a href="../../ur/feat/PronType.html">ur</a>]
+
+[<a href="../../urj/feat/PronType.html">urj</a>]
+
+[<a href="../../vi/feat/PronType.html">vi</a>]
+
+[<a href="../../yue/feat/PronType.html">yue</a>]
+
+[<a href="../../zh/feat/PronType.html">zh</a>]
 
 
 

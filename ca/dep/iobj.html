@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ca">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ca/dep">ca/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ca-dep/iobj.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ca">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ca/dep">ca/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ca-dep/iobj.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,30 +80,24 @@ for <code>iobj</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>1528 nodes (0%) are attached to their parents as <code>iobj</code>.</p>
+<p>1394 nodes (0%) are attached to their parents as <code>iobj</code>.</p>
 
-<p>773 instances of <code>iobj</code> (51%) are left-to-right (parent precedes child).
-Average distance between parent and child is 2.69698952879581.</p>
+<p>710 instances of <code>iobj</code> (51%) are left-to-right (parent precedes child).
+Average distance between parent and child is 2.66929698708752.</p>
 
-<p>The following 9 pairs of parts of speech are connected with <code>iobj</code>: <a href="">ca-pos/VERB</a>-<a href="">ca-pos/PRON</a> (676; 44% instances), <a href="">ca-pos/VERB</a>-<a href="">ca-pos/NOUN</a> (535; 35% instances), <a href="">ca-pos/VERB</a>-<a href="">ca-pos/PROPN</a> (195; 13% instances), <a href="">ca-pos/VERB</a>-<a href="">ca-pos/ADJ</a> (114; 7% instances), <a href="">ca-pos/VERB</a>-<a href="">ca-pos/ADV</a> (3; 0% instances), <a href="">ca-pos/VERB</a>-<a href="">ca-pos/NUM</a> (2; 0% instances), <a href="">ca-pos/VERB</a>-<a href="">ca-pos/ADP</a> (1; 0% instances), <a href="">ca-pos/VERB</a>-<a href="">ca-pos/SCONJ</a> (1; 0% instances), <a href="">ca-pos/VERB</a>-<a href="">ca-pos/SYM</a> (1; 0% instances).</p>
+<p>The following 10 pairs of parts of speech are connected with <code>iobj</code>: <a href="">ca-pos/VERB</a>-<a href="">ca-pos/PRON</a> (614; 44% instances), <a href="">ca-pos/VERB</a>-<a href="">ca-pos/NOUN</a> (492; 35% instances), <a href="">ca-pos/VERB</a>-<a href="">ca-pos/PROPN</a> (179; 13% instances), <a href="">ca-pos/VERB</a>-<a href="">ca-pos/ADJ</a> (98; 7% instances), <a href="">ca-pos/AUX</a>-<a href="">ca-pos/NOUN</a> (3; 0% instances), <a href="">ca-pos/VERB</a>-<a href="">ca-pos/ADV</a> (3; 0% instances), <a href="">ca-pos/VERB</a>-<a href="">ca-pos/NUM</a> (2; 0% instances), <a href="">ca-pos/VERB</a>-<a href="">ca-pos/ADP</a> (1; 0% instances), <a href="">ca-pos/VERB</a>-<a href="">ca-pos/SCONJ</a> (1; 0% instances), <a href="">ca-pos/VERB</a>-<a href="">ca-pos/SYM</a> (1; 0% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 5	bgColor:blue
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 5	bgColor:blue
 # visual-style 5	fgColor:white
-# visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 6 5 iobj	color:blue
-1	Ara	ara	ADV	ADV	_	6	advmod	_	_
-2	,	,	PUNCT	PUNCT	PunctType=Comm	3	punct	_	_
-3	però	però	ADV	ADV	_	6	advmod	_	_
-4	,	,	PUNCT	PUNCT	PunctType=Comm	3	punct	_	_
-5	es	ell	PRON	PRON	Person=3	6	iobj	_	_
-6	proposa	proposar	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-7	augmentar	augmentar	VERB	VERB	VerbForm=Inf	6	xcomp	_	_
-8	-ne	en	PRON	PRON	Person=3|PronType=Prs	7	dobj	_	_
-9	l'	el	DET	DET	Definite=Def|Number=Sing|PronType=Art	10	det	_	_
-10	ús	ús	NOUN	NOUN	Gender=Masc|Number=Sing	7	dobj	_	_
-11	social	social	ADJ	ADJ	Number=Sing	10	amod	_	_
-12	.	.	PUNCT	PUNCT	PunctType=Peri	6	punct	_	_
+# visual-style 5 3 iobj	color:blue
+1	¿	¿	PUNCT	PUNCT	PunctSide=Ini|PunctType=Qest	5	punct	_	SpaceAfter=No
+2	Qui	qui	PRON	PRON	Number=Sing|PronType=Int	5	nsubj	_	_
+3	els	ell	PRON	PRON	Number=Plur|Person=3|PronType=Prs	5	iobj	_	_
+4	la	ell	PRON	PRON	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	obj	_	_
+5	proporcionarà	proporcionar	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	PUNCT	PunctSide=Fin|PunctType=Qest	5	punct	_	_
 
 </code></pre>
 
@@ -97,14 +108,14 @@ Average distance between parent and child is 2.69698952879581.</p>
 # visual-style 5 2 iobj	color:blue
 1	La	el	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	peregrinació	peregrinació	NOUN	NOUN	Gender=Fem|Number=Sing	5	iobj	_	_
-3	l'	ell	PRON	PRON	Case=Acc|Number=Sing|Person=3|PronType=Prs	5	dobj	_	_
+3	l'	ell	PRON	PRON	Case=Acc|Number=Sing|Person=3|PronType=Prs	5	obj	_	SpaceAfter=No
 4	ha	haver	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
 5	organitzat	organitzar	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
 6	el	el	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	sindicat	sindicat	NOUN	NOUN	Gender=Masc|Number=Sing	5	nsubj	_	_
 8	Unió	Unió	PROPN	PROPN	_	7	appos	_	MWE=Unió_de_Pagesos|MWEPOS=PROPN
 9	de	de	ADP	ADP	AdpType=Prep	10	case	_	_
-10	Pagesos	Pagesos	PROPN	PROPN	_	8	name	_	_
+10	Pagesos	Pagesos	PROPN	PROPN	_	8	flat	_	SpaceAfter=No
 11	.	.	PUNCT	PUNCT	PunctType=Peri	5	punct	_	_
 
 </code></pre>
@@ -114,14 +125,14 @@ Average distance between parent and child is 2.69698952879581.</p>
 # visual-style 6	bgColor:blue
 # visual-style 6	fgColor:white
 # visual-style 6 3 iobj	color:blue
-1	"	"	PUNCT	PUNCT	PunctType=Quot	6	punct	_	_
+1	"	"	PUNCT	PUNCT	PunctType=Quot	6	punct	_	SpaceAfter=No
 2	A	a	ADP	ADP	AdpType=Prep	3	case	_	_
 3	Dutruel	Dutruel	PROPN	PROPN	_	6	iobj	_	_
-4	no	no	ADV	ADV	Negative=Neg	6	neg	_	_
-5	el	ell	PRON	PRON	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	dobj	_	_
+4	no	no	ADV	ADV	Polarity=Neg	6	advmod	_	_
+5	el	ell	PRON	PRON	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	obj	_	_
 6	rebran	rebre	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 7	amb	amb	ADP	ADP	AdpType=Prep	8	case	_	_
-8	aplaudiments	aplaudiment	NOUN	NOUN	Gender=Masc|Number=Plur	6	nmod	_	_
+8	aplaudiments	aplaudiment	NOUN	NOUN	Gender=Masc|Number=Plur	6	obl	_	SpaceAfter=No
 9	.	.	PUNCT	PUNCT	PunctType=Peri	6	punct	_	_
 
 </code></pre>
@@ -134,9 +145,25 @@ Average distance between parent and child is 2.69698952879581.</p>
 
 iobj in other languages:
 
+[<a href="../../am/dep/iobj.html">am</a>]
+
+[<a href="../../ar/dep/iobj.html">ar</a>]
+
 [<a href="../../bg/dep/iobj.html">bg</a>]
 
+[<a href="../../bxr/dep/iobj.html">bxr</a>]
+
+[<a href="../../ca/dep/iobj.html">ca</a>]
+
+[<a href="../../ckb/dep/iobj.html">ckb</a>]
+
+[<a href="../../cop/dep/iobj.html">cop</a>]
+
 [<a href="../../cs/dep/iobj.html">cs</a>]
+
+[<a href="../../cu/dep/iobj.html">cu</a>]
+
+[<a href="../../da/dep/iobj.html">da</a>]
 
 [<a href="../../de/dep/iobj.html">de</a>]
 
@@ -146,27 +173,95 @@ iobj in other languages:
 
 [<a href="../../es/dep/iobj.html">es</a>]
 
+[<a href="../../et/dep/iobj.html">et</a>]
+
 [<a href="../../eu/dep/iobj.html">eu</a>]
 
 [<a href="../../fa/dep/iobj.html">fa</a>]
 
+[<a href="../../fo/dep/iobj.html">fo</a>]
+
 [<a href="../../fr/dep/iobj.html">fr</a>]
 
-[<a href="../../ga/dep/iobj.html">ga</a>]
+[<a href="../../gl/dep/iobj.html">gl</a>]
+
+[<a href="../../got/dep/iobj.html">got</a>]
+
+[<a href="../../grc/dep/iobj.html">grc</a>]
 
 [<a href="../../he/dep/iobj.html">he</a>]
 
+[<a href="../../hi/dep/iobj.html">hi</a>]
+
+[<a href="../../hr/dep/iobj.html">hr</a>]
+
 [<a href="../../hu/dep/iobj.html">hu</a>]
+
+[<a href="../../id/dep/iobj.html">id</a>]
 
 [<a href="../../it/dep/iobj.html">it</a>]
 
 [<a href="../../ja/dep/iobj.html">ja</a>]
 
+[<a href="../../kk/dep/iobj.html">kk</a>]
+
+[<a href="../../kmr/dep/iobj.html">kmr</a>]
+
 [<a href="../../ko/dep/iobj.html">ko</a>]
+
+[<a href="../../la/dep/iobj.html">la</a>]
+
+[<a href="../../lv/dep/iobj.html">lv</a>]
+
+[<a href="../../mr/dep/iobj.html">mr</a>]
+
+[<a href="../../nl/dep/iobj.html">nl</a>]
+
+[<a href="../../no/dep/iobj.html">no</a>]
+
+[<a href="../../pl/dep/iobj.html">pl</a>]
+
+[<a href="../../pt/dep/iobj.html">pt</a>]
+
+[<a href="../../ro/dep/iobj.html">ro</a>]
+
+[<a href="../../ru/dep/iobj.html">ru</a>]
+
+[<a href="../../sa/dep/iobj.html">sa</a>]
+
+[<a href="../../sk/dep/iobj.html">sk</a>]
+
+[<a href="../../sla/dep/iobj.html">sla</a>]
+
+[<a href="../../sl/dep/iobj.html">sl</a>]
+
+[<a href="../../so/dep/iobj.html">so</a>]
+
+[<a href="../../sr/dep/iobj.html">sr</a>]
 
 [<a href="../../sv/dep/iobj.html">sv</a>]
 
+[<a href="../../swl/dep/iobj.html">swl</a>]
+
+[<a href="../../ta/dep/iobj.html">ta</a>]
+
+[<a href="../../tr/dep/iobj.html">tr</a>]
+
 [<a href="../../u/dep/iobj.html">u</a>]
+
+[<a href="../../ug/dep/iobj.html">ug</a>]
+
+[<a href="../../uk/dep/iobj.html">uk</a>]
+
+[<a href="../../ur/dep/iobj.html">ur</a>]
+
+[<a href="../../urj/dep/iobj.html">urj</a>]
+
+[<a href="../../vi/dep/iobj.html">vi</a>]
+
+[<a href="../../yue/dep/iobj.html">yue</a>]
+
+[<a href="../../zh/dep/iobj.html">zh</a>]
 
 
 

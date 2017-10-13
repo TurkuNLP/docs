@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ug">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ug/dep">ug/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ug-dep/amod.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ug">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ug/dep">ug/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ug-dep/amod.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,60 +80,65 @@ for <code>amod</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>286 nodes (4%) are attached to their parents as <code>amod</code>.</p>
+<p>163 nodes (10%) are attached to their parents as <code>amod</code>.</p>
 
-<p>286 instances of <code>amod</code> (100%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.32517482517483.</p>
+<p>163 instances of <code>amod</code> (100%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.82208588957055.</p>
 
-<p>The following 12 pairs of parts of speech are connected with <code>amod</code>: <a href="">ug-pos/NOUN</a>-<a href="">ug-pos/ADJ</a> (174; 61% instances), <a href="">ug-pos/NOUN</a>-<a href="">ug-pos/NOUN</a> (69; 24% instances), <a href="">ug-pos/ADJ</a>-<a href="">ug-pos/ADJ</a> (8; 3% instances), <a href="">ug-pos/NOUN</a>-<a href="">ug-pos/DET</a> (7; 2% instances), <a href="">ug-pos/VERB</a>-<a href="">ug-pos/ADJ</a> (7; 2% instances), <a href="">ug-pos/NOUN</a>-<a href="">ug-pos/PRON</a> (6; 2% instances), <a href="">ug-pos/VERB</a>-<a href="">ug-pos/NOUN</a> (5; 2% instances), <a href="">ug-pos/NOUN</a>-<a href="">ug-pos/NUM</a> (3; 1% instances), <a href="">ug-pos/NOUN</a>-<a href="">ug-pos/VERB</a> (3; 1% instances), <a href="">ug-pos/DET</a>-<a href="">ug-pos/PRON</a> (2; 1% instances), <a href="">ug-pos/NUM</a>-<a href="">ug-pos/PRON</a> (1; 0% instances), <a href="">ug-pos/VERB</a>-<a href="">ug-pos/DET</a> (1; 0% instances).</p>
+<p>The following 9 pairs of parts of speech are connected with <code>amod</code>: <a href="">ug-pos/NOUN</a>-<a href="">ug-pos/ADJ</a> (92; 56% instances), <a href="">ug-pos/NOUN</a>-<a href="">ug-pos/NOUN</a> (48; 29% instances), <a href="">ug-pos/NOUN</a>-<a href="">ug-pos/DET</a> (7; 4% instances), <a href="">ug-pos/ADJ</a>-<a href="">ug-pos/ADJ</a> (5; 3% instances), <a href="">ug-pos/NOUN</a>-<a href="">ug-pos/VERB</a> (4; 2% instances), <a href="">ug-pos/ADJ</a>-<a href="">ug-pos/NOUN</a> (3; 2% instances), <a href="">ug-pos/VERB</a>-<a href="">ug-pos/NOUN</a> (2; 1% instances), <a href="">ug-pos/ADP</a>-<a href="">ug-pos/ADJ</a> (1; 1% instances), <a href="">ug-pos/NOUN</a>-<a href="">ug-pos/PRON</a> (1; 1% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 6 5 amod	color:blue
-1	كەنتىمىزنىڭ	_	NOUN	N	_	3	nmod:poss	_	Translit=kentimizning
-2	ئالدى	_	NOUN	N	_	3	compound	_	Translit=aldi
-3	تەرىپىدە	_	NOUN	N	_	7	nmod	_	Translit=teripide
-4	بىر	_	NUM	M	_	6	det	_	Translit=bir
-5	كىچىك	_	ADJ	A	_	6	amod	_	Translit=kichik
-6	تاغ	_	NOUN	N	_	7	nsubj	_	Translit=tagh
-7	بار	_	ADJ	A	_	0	root	_	Translit=bar
-8	،	_	PUNCT	Y	_	7	punct	_	Translit=,
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 1 amod	color:blue
+1	قارا	_	ADJ	A	_	2	amod	_	Translit=qara
+2	قەلبىم	_	NOUN	N	_	10	obl	_	Translit=qelbim
+3	بىلەن	_	ADP	R	_	2	case	_	Translit=bilen
+4	سېنىڭ	_	PRON	P	_	6	nmod:poss	_	Translit=sëning
+5	روھ	_	NOUN	N	_	6	nmod	_	Translit=roh
+6	تېمىڭغا	_	NOUN	N	_	10	obl	_	Translit=tëminggha
+7	بىر	_	NUM	M	_	8	nummod	_	Translit=bir
+8	سىقىم	_	DET	Q	_	9	amod	_	Translit=siqim
+9	لايدەك	_	NOUN	N	_	10	obl	_	Translit=laydek
+10	چاپلىشىمەن	_	VERB	V	_	0	root	_	SpaceAfter=No|Translit=chaplishimen
+11	.	_	PUNCT	Y	_	10	punct	_	Translit=.
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 4	bgColor:blue
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
 # visual-style 4	fgColor:white
-# visual-style 4 3 amod	color:blue
-1	ئۇلارنىڭ	_	PRON	P	_	2	nmod:poss	_	Translit=ularning
-2	چىككىنى	_	NOUN	N	_	4	nsubj	_	Translit=chikkini
-3	ئارقا	_	NOUN	N	_	4	amod	_	Translit=arqa
-4	پەشمىش	_	NOUN	N	_	0	root	_	Translit=peshmish
-5	.	_	PUNCT	Y	_	4	punct	_	Translit=.
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 4 amod	color:blue
+1	ئەمەلىيەتتە	_	NOUN	N	_	7	advmod	_	Translit=emeliyette
+2	مېنىڭ	_	PRON	P	_	6	nmod:poss	_	Translit=mëning
+3	بۇ	_	PRON	P	_	5	det	_	Translit=bu
+4	قاباھەتلىك	_	NOUN	N	_	5	amod	_	Translit=qabahetlik
+5	رېئاللىقنى	_	NOUN	N	_	6	obj	_	Translit=rëalliqni
+6	كۆرگۈم	_	VERB	V	_	7	acl	_	Translit=körgüm
+7	يوق	_	ADJ	A	_	0	root	_	Translit=yoq
+8	ئىدى	_	AUX	V	_	7	cop	_	SpaceAfter=No|Translit=idi
+9	.	_	PUNCT	Y	_	8	punct	_	Translit=.
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 6 5 amod	color:blue
-1	_	_	PUNCT	Y	_	3	punct	_	Translit=_
-2	_	_	PUNCT	Y	_	3	punct	_	Translit=_
-3	بۇ	_	PRON	P	_	4	det	_	Translit=bu
-4	رەخت	_	NOUN	N	_	6	nsubj	_	Translit=rext
-5	راست	_	ADJ	A	_	6	amod	_	Translit=rast
-6	ئېسىل	_	ADJ	A	_	8	conj	_	Translit=ësil
-7	!	_	PUNCT	N	_	6	punct	_	Translit=!
-8	نەپىس	_	ADJ	A	_	11	parataxis	_	Translit=nepis
-9	!	_	PUNCT	A	_	8	punct	_	Translit=!
-10	تەڭدىشى	_	NOUN	N	_	11	nsubj	_	Translit=tengdishi
-11	يوق	_	ADJ	A	_	0	root	_	Translit=yoq
-12	ئىكەن	_	VERB	V	_	11	cop	_	Translit=iken
-13	!	_	PUNCT	Y	_	12	punct	_	Translit=!
+<pre><code class="language-conllu"># visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 9	bgColor:blue
+# visual-style 9	fgColor:white
+# visual-style 9 8 amod	color:blue
+1	قارا	_	ADJ	A	_	2	amod	_	Translit=qara
+2	قەلبىم	_	NOUN	N	_	10	obl	_	Translit=qelbim
+3	بىلەن	_	ADP	R	_	2	case	_	Translit=bilen
+4	سېنىڭ	_	PRON	P	_	6	nmod:poss	_	Translit=sëning
+5	روھ	_	NOUN	N	_	6	nmod	_	Translit=roh
+6	تېمىڭغا	_	NOUN	N	_	10	obl	_	Translit=tëminggha
+7	بىر	_	NUM	M	_	8	nummod	_	Translit=bir
+8	سىقىم	_	DET	Q	_	9	amod	_	Translit=siqim
+9	لايدەك	_	NOUN	N	_	10	obl	_	Translit=laydek
+10	چاپلىشىمەن	_	VERB	V	_	0	root	_	SpaceAfter=No|Translit=chaplishimen
+11	.	_	PUNCT	Y	_	10	punct	_	Translit=.
 
 </code></pre>
 
@@ -128,9 +150,25 @@ Average distance between parent and child is 1.32517482517483.</p>
 
 amod in other languages:
 
+[<a href="../../am/dep/amod.html">am</a>]
+
+[<a href="../../ar/dep/amod.html">ar</a>]
+
 [<a href="../../bg/dep/amod.html">bg</a>]
 
+[<a href="../../bxr/dep/amod.html">bxr</a>]
+
+[<a href="../../ca/dep/amod.html">ca</a>]
+
+[<a href="../../ckb/dep/amod.html">ckb</a>]
+
+[<a href="../../cop/dep/amod.html">cop</a>]
+
 [<a href="../../cs/dep/amod.html">cs</a>]
+
+[<a href="../../cu/dep/amod.html">cu</a>]
+
+[<a href="../../da/dep/amod.html">da</a>]
 
 [<a href="../../de/dep/amod.html">de</a>]
 
@@ -140,29 +178,99 @@ amod in other languages:
 
 [<a href="../../es/dep/amod.html">es</a>]
 
+[<a href="../../et/dep/amod.html">et</a>]
+
 [<a href="../../eu/dep/amod.html">eu</a>]
 
 [<a href="../../fa/dep/amod.html">fa</a>]
 
 [<a href="../../fi/dep/amod.html">fi</a>]
 
+[<a href="../../fo/dep/amod.html">fo</a>]
+
 [<a href="../../fr/dep/amod.html">fr</a>]
 
 [<a href="../../ga/dep/amod.html">ga</a>]
 
+[<a href="../../gl/dep/amod.html">gl</a>]
+
+[<a href="../../got/dep/amod.html">got</a>]
+
+[<a href="../../grc/dep/amod.html">grc</a>]
+
 [<a href="../../he/dep/amod.html">he</a>]
 
+[<a href="../../hi/dep/amod.html">hi</a>]
+
+[<a href="../../hr/dep/amod.html">hr</a>]
+
 [<a href="../../hu/dep/amod.html">hu</a>]
+
+[<a href="../../id/dep/amod.html">id</a>]
 
 [<a href="../../it/dep/amod.html">it</a>]
 
 [<a href="../../ja/dep/amod.html">ja</a>]
 
+[<a href="../../kk/dep/amod.html">kk</a>]
+
+[<a href="../../kmr/dep/amod.html">kmr</a>]
+
 [<a href="../../ko/dep/amod.html">ko</a>]
+
+[<a href="../../la/dep/amod.html">la</a>]
+
+[<a href="../../lv/dep/amod.html">lv</a>]
+
+[<a href="../../mr/dep/amod.html">mr</a>]
+
+[<a href="../../nl/dep/amod.html">nl</a>]
+
+[<a href="../../no/dep/amod.html">no</a>]
+
+[<a href="../../pl/dep/amod.html">pl</a>]
+
+[<a href="../../pt/dep/amod.html">pt</a>]
+
+[<a href="../../ro/dep/amod.html">ro</a>]
+
+[<a href="../../ru/dep/amod.html">ru</a>]
+
+[<a href="../../sa/dep/amod.html">sa</a>]
+
+[<a href="../../sk/dep/amod.html">sk</a>]
+
+[<a href="../../sla/dep/amod.html">sla</a>]
+
+[<a href="../../sl/dep/amod.html">sl</a>]
+
+[<a href="../../so/dep/amod.html">so</a>]
+
+[<a href="../../sr/dep/amod.html">sr</a>]
 
 [<a href="../../sv/dep/amod.html">sv</a>]
 
+[<a href="../../swl/dep/amod.html">swl</a>]
+
+[<a href="../../ta/dep/amod.html">ta</a>]
+
+[<a href="../../tr/dep/amod.html">tr</a>]
+
 [<a href="../../u/dep/amod.html">u</a>]
+
+[<a href="../../ug/dep/amod.html">ug</a>]
+
+[<a href="../../uk/dep/amod.html">uk</a>]
+
+[<a href="../../ur/dep/amod.html">ur</a>]
+
+[<a href="../../urj/dep/amod.html">urj</a>]
+
+[<a href="../../vi/dep/amod.html">vi</a>]
+
+[<a href="../../yue/dep/amod.html">yue</a>]
+
+[<a href="../../zh/dep/amod.html">zh</a>]
 
 
 

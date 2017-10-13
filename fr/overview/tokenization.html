@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-fr">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-fr">home</a></span>
 
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_fr-overview/tokenization.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fr-overview/tokenization.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -46,6 +63,23 @@
           <h1 id="tokenization">Tokenization</h1>
 
 <p>The French tokenization follows the universal guidelines: contractions are undone (e.g., <em>au</em> becomes two tokens <em>à le</em>). Otherwise the tokenization is based on white spaces and punctuations (except for multiword expressions with hyphens which are not split, e.g., <em>Etats-Unis</em> “United States”, <em>sous-marin</em> “submarine” stay one token).</p>
+
+<p>FrenchSpoken does a strictly formal tokenizing where the hyphens are considered as tokens.
+This means that, in a sentence like  <em>A-t-elle bien dormi ?</em>,  there are five tokens in <em>a-t-elle</em>: <em>a</em>, <em>-</em>, <em>t</em>, <em>-</em> and <em>elle</em>.
+The first hyphen is the head (i.e. it receives the link <code>nsubj</code>) and the other tokens are linked with a <code>goeswith</code>:</p>
+
+<pre><code class="language-sdparse">a - t - elle bien dormi ? \n did she sleep well?
+nsubj(a,-)
+goeswith(-,t)
+goeswith(--2,--4)
+goeswith(-,elle)
+</code></pre>
+
+<p>As for the POS, the hyphens could be tagged with PUNCT and the <em>t</em> with PART (and of course <em>elle</em> with PRON).
+This way of tokanizing and segmentating seems easier for the parsing and does not require an external source since we keep everything separated.	We also don’t have to wonder where to attach the hyphens as they constitute separated tokens.
+Thus it becomes easier to automatically analyze together cases like <em>là-dessus</em> and <em>là-bas</em> where the hyphen belongs to the left part (<em>là-</em> and <em>dessus</em> or <em>bas</em>) and cases like <em>est-elle</em> where we can choose to attach the hyphen to the right part (<em>-elle</em>).</p>
+
+<p>N.B.: This tokenizing and segmentating choice is arbitrary and other French treebanks could choose to do otherwise (for example they could consider <em>a-t-</em> or <em>-t-elle</em> as a token, or annotate the <em>-t-</em> with <code>expl</code>).</p>
 
 
       </div>

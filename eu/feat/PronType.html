@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-eu">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/eu/feat">eu/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_eu-feat/PronType.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-eu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/eu/feat">eu/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_eu-feat/PronType.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -65,41 +82,40 @@ for <code>PronType</code>.</p>
 <p>This feature is universal.
 It occurs with 2 different values: <code>Int</code>, <code>Prs</code>.</p>
 
-<p>693 tokens (1%) have a non-empty value of <code>PronType</code>.
-104 types (0%) occur at least once with a non-empty value of <code>PronType</code>.
+<p>540 tokens (1%) have a non-empty value of <code>PronType</code>.
+90 types (0%) occur at least once with a non-empty value of <code>PronType</code>.
 18 lemmas (0%) occur at least once with a non-empty value of <code>PronType</code>.
-The feature is used with 2 part-of-speech tags: <a href="">eu-pos/PRON</a> (554; 0% instances), <a href="">eu-pos/ADV</a> (139; 0% instances).</p>
+The feature is used with 2 part-of-speech tags: <a href="">eu-pos/PRON</a> (437; 0% instances), <a href="">eu-pos/ADV</a> (103; 0% instances).</p>
 
 <h3 id="pron"><code>PRON</code></h3>
 
-<p>554 <a href="">eu-pos/PRON</a> tokens (71% of all <code>PRON</code> tokens) have a non-empty value of <code>PronType</code>.</p>
+<p>437 <a href="">eu-pos/PRON</a> tokens (71% of all <code>PRON</code> tokens) have a non-empty value of <code>PronType</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>PronType</code> co-occurred: <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (554; 100%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (554; 100%).</p>
+<p>The most frequent other feature values with which <code>PRON</code> and <code>PronType</code> co-occurred: <tt><a href="Case.html">Case</a>=EMPTY</tt> (437; 100%), <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (437; 100%).</p>
 
 <p><code>PRON</code> tokens may have the following values of <code>PronType</code>:</p>
 
 <ul>
-  <li><code>Int</code> (29; 5% of non-empty <code>PronType</code>): <em>nork, nor, noren, nori, nortzuren</em></li>
-  <li><code>Prs</code> (525; 95% of non-empty <code>PronType</code>): <em>gure, nire, nik, euren, guk, ni, zure, gu, beraiek, niri</em></li>
-  <li><code>EMPTY</code> (231): <em>zerbait, ezer, inork, inor, elkarrekin, elkarren, norbait, neure, elkar, elkarri</em></li>
+  <li><code>Int</code> (23; 5% of non-empty <code>PronType</code>): <em>nork, nor, noren, nori, nortzuren</em></li>
+  <li><code>Prs</code> (414; 95% of non-empty <code>PronType</code>): <em>gure, nire, nik, guk, euren, ni, zure, gu, beraiek, niri</em></li>
+  <li><code>EMPTY</code> (180): <em>zerbait, ezer, inork, inor, norbait, elkarrekin, elkarren, elkarri, norberaren, elkar</em></li>
 </ul>
 
 <h3 id="adv"><code>ADV</code></h3>
 
-<p>139 <a href="">eu-pos/ADV</a> tokens (3% of all <code>ADV</code> tokens) have a non-empty value of <code>PronType</code>.</p>
+<p>103 <a href="">eu-pos/ADV</a> tokens (3% of all <code>ADV</code> tokens) have a non-empty value of <code>PronType</code>.</p>
 
 <p><code>ADV</code> tokens may have the following values of <code>PronType</code>:</p>
 
 <ul>
-  <li><code>Int</code> (139; 100% of non-empty <code>PronType</code>): <em>nola, zergatik, non, noiz, nondik, zelan, nora, zertan, noraino, nolaz</em></li>
-  <li><code>EMPTY</code> (5039): <em>atzo, oso, gaur, orain, ondoren, gero, hala, bertan, beti, ondo</em></li>
+  <li><code>Int</code> (103; 100% of non-empty <code>PronType</code>): <em>nola, zergatik, non, noiz, nondik, zelan, zertan, nora, noraino, nolaz</em></li>
+  <li><code>EMPTY</code> (3977): <em>atzo, oso, gaur, orain, ondoren, gero, hala, bertan, beti, ondo</em></li>
 </ul>
 
 <h2 id="relations-with-agreement-in-prontype">Relations with Agreement in <code>PronType</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>PronType</code>:
 <tt>ADV –[<a href="../dep/dep.html">dep</a>]–&gt; ADV</tt> (4; 67%),
-<tt>ADV –[<a href="../dep/advcl.html">advcl</a>]–&gt; ADV</tt> (1; 100%),
 <tt>ADV –[<a href="../dep/conj.html">conj</a>]–&gt; PRON</tt> (1; 100%).</p>
 
 
@@ -110,9 +126,25 @@ The feature is used with 2 part-of-speech tags: <a href="">eu-pos/PRON</a> (554;
 
 PronType in other languages:
 
+[<a href="../../am/feat/PronType.html">am</a>]
+
+[<a href="../../ar/feat/PronType.html">ar</a>]
+
 [<a href="../../bg/feat/PronType.html">bg</a>]
 
+[<a href="../../bxr/feat/PronType.html">bxr</a>]
+
+[<a href="../../ca/feat/PronType.html">ca</a>]
+
+[<a href="../../ckb/feat/PronType.html">ckb</a>]
+
+[<a href="../../cop/feat/PronType.html">cop</a>]
+
 [<a href="../../cs/feat/PronType.html">cs</a>]
+
+[<a href="../../cu/feat/PronType.html">cu</a>]
+
+[<a href="../../da/feat/PronType.html">da</a>]
 
 [<a href="../../de/feat/PronType.html">de</a>]
 
@@ -122,29 +154,99 @@ PronType in other languages:
 
 [<a href="../../es/feat/PronType.html">es</a>]
 
+[<a href="../../et/feat/PronType.html">et</a>]
+
 [<a href="../../eu/feat/PronType.html">eu</a>]
 
 [<a href="../../fa/feat/PronType.html">fa</a>]
 
 [<a href="../../fi/feat/PronType.html">fi</a>]
 
+[<a href="../../fo/feat/PronType.html">fo</a>]
+
 [<a href="../../fr/feat/PronType.html">fr</a>]
 
 [<a href="../../ga/feat/PronType.html">ga</a>]
 
+[<a href="../../gl/feat/PronType.html">gl</a>]
+
+[<a href="../../got/feat/PronType.html">got</a>]
+
+[<a href="../../grc/feat/PronType.html">grc</a>]
+
 [<a href="../../he/feat/PronType.html">he</a>]
 
+[<a href="../../hi/feat/PronType.html">hi</a>]
+
+[<a href="../../hr/feat/PronType.html">hr</a>]
+
 [<a href="../../hu/feat/PronType.html">hu</a>]
+
+[<a href="../../id/feat/PronType.html">id</a>]
 
 [<a href="../../it/feat/PronType.html">it</a>]
 
 [<a href="../../ja/feat/PronType.html">ja</a>]
 
+[<a href="../../kk/feat/PronType.html">kk</a>]
+
+[<a href="../../kmr/feat/PronType.html">kmr</a>]
+
 [<a href="../../ko/feat/PronType.html">ko</a>]
+
+[<a href="../../la/feat/PronType.html">la</a>]
+
+[<a href="../../lv/feat/PronType.html">lv</a>]
+
+[<a href="../../mr/feat/PronType.html">mr</a>]
+
+[<a href="../../nl/feat/PronType.html">nl</a>]
+
+[<a href="../../no/feat/PronType.html">no</a>]
+
+[<a href="../../pl/feat/PronType.html">pl</a>]
+
+[<a href="../../pt/feat/PronType.html">pt</a>]
+
+[<a href="../../ro/feat/PronType.html">ro</a>]
+
+[<a href="../../ru/feat/PronType.html">ru</a>]
+
+[<a href="../../sa/feat/PronType.html">sa</a>]
+
+[<a href="../../sk/feat/PronType.html">sk</a>]
+
+[<a href="../../sla/feat/PronType.html">sla</a>]
+
+[<a href="../../sl/feat/PronType.html">sl</a>]
+
+[<a href="../../so/feat/PronType.html">so</a>]
+
+[<a href="../../sr/feat/PronType.html">sr</a>]
 
 [<a href="../../sv/feat/PronType.html">sv</a>]
 
+[<a href="../../swl/feat/PronType.html">swl</a>]
+
+[<a href="../../ta/feat/PronType.html">ta</a>]
+
+[<a href="../../tr/feat/PronType.html">tr</a>]
+
 [<a href="../../u/feat/PronType.html">u</a>]
+
+[<a href="../../ug/feat/PronType.html">ug</a>]
+
+[<a href="../../uk/feat/PronType.html">uk</a>]
+
+[<a href="../../ur/feat/PronType.html">ur</a>]
+
+[<a href="../../urj/feat/PronType.html">urj</a>]
+
+[<a href="../../vi/feat/PronType.html">vi</a>]
+
+[<a href="../../yue/feat/PronType.html">yue</a>]
+
+[<a href="../../zh/feat/PronType.html">zh</a>]
 
 
 

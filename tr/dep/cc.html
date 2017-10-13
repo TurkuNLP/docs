@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-tr">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/tr/dep">tr/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_tr-dep/cc.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-tr">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/tr/dep">tr/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-dep/cc.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -45,7 +62,7 @@
 
           <h2><code>cc</code>: coordinating conjunction</h2>
 
-<p>A <code>cc</code> is the relation between the first conjunct and the <a href="../pos/CONJ">coordinating conjunction</a> delimiting another conjunct.</p>
+<p>A <code>cc</code> is the relation between the first conjunct and the <a href="../pos/CCONJ">coordinating conjunction</a> delimiting another conjunct.</p>
 
 <p>Note that we currently diverge from UD specification by marking the last conjunct as the head.
 See the <a href="">conj</a> relation, for more information.</p>
@@ -103,59 +120,65 @@ conj(pahalı, isterim)
 
 <p>This relation is universal.</p>
 
-<p>1077 nodes (2%) are attached to their parents as <code>cc</code>.</p>
+<p>716 nodes (1%) are attached to their parents as <code>cc</code>.</p>
 
-<p>974 instances of <code>cc</code> (90%) are right-to-left (child precedes parent).
-Average distance between parent and child is 3.80129990714949.</p>
+<p>645 instances of <code>cc</code> (90%) are right-to-left (child precedes parent).
+Average distance between parent and child is 2.99860335195531.</p>
 
-<p>The following 25 pairs of parts of speech are connected with <code>cc</code>: <a href="">tr-pos/VERB</a>-<a href="">tr-pos/CONJ</a> (418; 39% instances), <a href="">tr-pos/NOUN</a>-<a href="">tr-pos/CONJ</a> (396; 37% instances), <a href="">tr-pos/ADJ</a>-<a href="">tr-pos/CONJ</a> (137; 13% instances), <a href="">tr-pos/PROPN</a>-<a href="">tr-pos/CONJ</a> (43; 4% instances), <a href="">tr-pos/PRON</a>-<a href="">tr-pos/CONJ</a> (12; 1% instances), <a href="">tr-pos/ADV</a>-<a href="">tr-pos/CONJ</a> (11; 1% instances), <a href="">tr-pos/DET</a>-<a href="">tr-pos/CONJ</a> (6; 1% instances), <a href="">tr-pos/NUM</a>-<a href="">tr-pos/CONJ</a> (6; 1% instances), <a href="">tr-pos/VERB</a>-<a href="">tr-pos/ADJ</a> (6; 1% instances), <a href="">tr-pos/VERB</a>-<a href="">tr-pos/PUNCT</a> (6; 1% instances), <a href="">tr-pos/VERB</a>-<a href="">tr-pos/NOUN</a> (5; 0% instances), <a href="">tr-pos/VERB</a>-<a href="">tr-pos/VERB</a> (5; 0% instances), <a href="">tr-pos/ADP</a>-<a href="">tr-pos/CONJ</a> (4; 0% instances), <a href="">tr-pos/ADJ</a>-<a href="">tr-pos/PUNCT</a> (3; 0% instances), <a href="">tr-pos/NOUN</a>-<a href="">tr-pos/ADJ</a> (3; 0% instances), <a href="">tr-pos/NOUN</a>-<a href="">tr-pos/NOUN</a> (3; 0% instances), <a href="">tr-pos/PUNCT</a>-<a href="">tr-pos/CONJ</a> (3; 0% instances), <a href="">tr-pos/PROPN</a>-<a href="">tr-pos/ADP</a> (2; 0% instances), <a href="">tr-pos/VERB</a>-<a href="">tr-pos/PRON</a> (2; 0% instances), <a href="">tr-pos/ADV</a>-<a href="">tr-pos/PUNCT</a> (1; 0% instances), <a href="">tr-pos/CONJ</a>-<a href="">tr-pos/CONJ</a> (1; 0% instances), <a href="">tr-pos/CONJ</a>-<a href="">tr-pos/PUNCT</a> (1; 0% instances), <a href="">tr-pos/INTJ</a>-<a href="">tr-pos/CONJ</a> (1; 0% instances), <a href="">tr-pos/NOUN</a>-<a href="">tr-pos/PUNCT</a> (1; 0% instances), <a href="">tr-pos/VERB</a>-<a href="">tr-pos/PROPN</a> (1; 0% instances).</p>
+<p>The following 28 pairs of parts of speech are connected with <code>cc</code>: <a href="">tr-pos/NOUN</a>-<a href="">tr-pos/CCONJ</a> (311; 43% instances), <a href="">tr-pos/VERB</a>-<a href="">tr-pos/CCONJ</a> (201; 28% instances), <a href="">tr-pos/ADJ</a>-<a href="">tr-pos/CCONJ</a> (102; 14% instances), <a href="">tr-pos/PROPN</a>-<a href="">tr-pos/CCONJ</a> (34; 5% instances), <a href="">tr-pos/PRON</a>-<a href="">tr-pos/CCONJ</a> (7; 1% instances), <a href="">tr-pos/ADV</a>-<a href="">tr-pos/CCONJ</a> (6; 1% instances), <a href="">tr-pos/NUM</a>-<a href="">tr-pos/CCONJ</a> (5; 1% instances), <a href="">tr-pos/VERB</a>-<a href="">tr-pos/ADJ</a> (5; 1% instances), <a href="">tr-pos/VERB</a>-<a href="">tr-pos/PUNCT</a> (5; 1% instances), <a href="">tr-pos/ADP</a>-<a href="">tr-pos/CCONJ</a> (4; 1% instances), <a href="">tr-pos/DET</a>-<a href="">tr-pos/CCONJ</a> (4; 1% instances), <a href="">tr-pos/NOUN</a>-<a href="">tr-pos/NOUN</a> (4; 1% instances), <a href="">tr-pos/VERB</a>-<a href="">tr-pos/VERB</a> (4; 1% instances), <a href="">tr-pos/ADJ</a>-<a href="">tr-pos/PUNCT</a> (3; 0% instances), <a href="">tr-pos/NOUN</a>-<a href="">tr-pos/ADJ</a> (3; 0% instances), <a href="">tr-pos/ADJ</a>-<a href="">tr-pos/ADJ</a> (2; 0% instances), <a href="">tr-pos/CCONJ</a>-<a href="">tr-pos/CCONJ</a> (2; 0% instances), <a href="">tr-pos/PROPN</a>-<a href="">tr-pos/ADP</a> (2; 0% instances), <a href="">tr-pos/PUNCT</a>-<a href="">tr-pos/CCONJ</a> (2; 0% instances), <a href="">tr-pos/VERB</a>-<a href="">tr-pos/NOUN</a> (2; 0% instances), <a href="">tr-pos/ADV</a>-<a href="">tr-pos/PUNCT</a> (1; 0% instances), <a href="">tr-pos/NOUN</a>-<a href="">tr-pos/PRON</a> (1; 0% instances), <a href="">tr-pos/NOUN</a>-<a href="">tr-pos/PUNCT</a> (1; 0% instances), <a href="">tr-pos/NOUN</a>-<a href="">tr-pos/VERB</a> (1; 0% instances), <a href="">tr-pos/PRON</a>-<a href="">tr-pos/PRON</a> (1; 0% instances), <a href="">tr-pos/VERB</a>-<a href="">tr-pos/AUX</a> (1; 0% instances), <a href="">tr-pos/VERB</a>-<a href="">tr-pos/DET</a> (1; 0% instances), <a href="">tr-pos/VERB</a>-<a href="">tr-pos/PROPN</a> (1; 0% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 3 2 cc	color:blue
-1	Cumhurbaşkanı	cumhurbaşkanı	NOUN	Noun	Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3	2	nmod	_	_
-2	ile	ile	CONJ	Conj	_	3	cc	_	_
-3	sürtüşen	sürtüş	VERB	Verb	Aspect=Perf|Mood=Ind|Negative=Pos|Tense=Pres|VerbForm=Part	5	acl	_	_
-4	bir	bir	NUM	ANum	NumType=Card	5	det	_	_
-5	iktidar	iktidar	NOUN	Noun	Case=Nom|Number=Sing|Person=3	6	compound:lvc	_	_
-6	olmak	ol	VERB	Verb	Aspect=Perf|Case=Nom|Mood=Ind|Negative=Pos|Tense=Pres|VerbForm=Ger	7	ccomp	_	_
-7	istemiyoruz	iste	VERB	Verb	Aspect=Prog|Mood=Ind|Negative=Neg|Number=Plur|Person=1|Register=Inf|Tense=Pres	0	root	_	_
-8	.	.	PUNCT	Punc	_	7	punct	_	_
+<pre><code class="language-conllu"># visual-style 10	bgColor:blue
+# visual-style 10	fgColor:white
+# visual-style 12	bgColor:blue
+# visual-style 12	fgColor:white
+# visual-style 12 10 cc	color:blue
+1	Ama	ama	CCONJ	Conj	_	3	obj	_	SpaceAfter=No
+2	,	,	PUNCT	Punc	_	8	punct	_	_
+3	dedim	de	VERB	Verb	Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punc	_	3	punct	_	_
+5	ben	ben	PRON	Pers	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_
+6	ne	ne	CCONJ	Conj	_	8	cc	_	_
+7	şiir	şiir	NOUN	Noun	Case=Nom|Number=Sing|Person=3	8	obj	_	_
+8	okuyabilirim	oku	VERB	Verb	Aspect=Imp|Mood=Pot|Number=Sing|Person=1|Polarity=Pos|Tense=Aor	1	conj	_	SpaceAfter=No
+9	,	,	PUNCT	Punc	_	12	punct	_	_
+10	ne	ne	CCONJ	Conj	_	12	cc	_	_
+11	de	de	CCONJ	Conj	_	10	advmod:emph	_	_
+12	şarkı	şarkı	NOUN	Noun	Case=Nom|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
+13	.	.	PUNCT	Punc	_	12	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 8 6 cc	color:blue
+1	Ama	ama	CCONJ	Conj	_	3	obj	_	SpaceAfter=No
+2	,	,	PUNCT	Punc	_	8	punct	_	_
+3	dedim	de	VERB	Verb	Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punc	_	3	punct	_	_
+5	ben	ben	PRON	Pers	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_
+6	ne	ne	CCONJ	Conj	_	8	cc	_	_
+7	şiir	şiir	NOUN	Noun	Case=Nom|Number=Sing|Person=3	8	obj	_	_
+8	okuyabilirim	oku	VERB	Verb	Aspect=Imp|Mood=Pot|Number=Sing|Person=1|Polarity=Pos|Tense=Aor	1	conj	_	SpaceAfter=No
+9	,	,	PUNCT	Punc	_	12	punct	_	_
+10	ne	ne	CCONJ	Conj	_	12	cc	_	_
+11	de	de	CCONJ	Conj	_	10	advmod:emph	_	_
+12	şarkı	şarkı	NOUN	Noun	Case=Nom|Number=Sing|Person=3	1	conj	_	SpaceAfter=No
+13	.	.	PUNCT	Punc	_	12	punct	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu"># visual-style 3	bgColor:blue
 # visual-style 3	fgColor:white
-# visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 5 3 cc	color:blue
-1	Buz	buz	NOUN	Noun	Case=Nom|Number=Sing|Person=3	5	conj	_	_
-2	lu	li	ADP	With	_	1	case	_	_
-3	ve	ve	CONJ	Conj	_	5	cc	_	_
-4	çok	çok	ADV	Adverb	_	5	advmod	_	_
-5	soda	soda	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	_
-6	lı	li	ADP	With	_	5	case	_	_
-7	.	.	PUNCT	Punc	_	5	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 8	bgColor:blue
-# visual-style 8	fgColor:white
-# visual-style 8 5 cc	color:blue
-1	Ulusal	ulusal	ADJ	Adj	_	8	conj	_	_
-2	,	,	PUNCT	Punc	_	9	punct	_	_
-3	arsıulusal	arsıulusal	ADJ	Adj	_	8	conj	_	_
-4	,	,	PUNCT	Punc	_	9	punct	_	_
-5	ama	ama	CONJ	Conj	_	8	cc	_	_
-6	her	her	DET	Det	_	7	mwe	_	_
-7	zaman	zaman	NOUN	Noun	Case=Nom|Number=Sing|Person=3	9	nmod	_	_
-8	parasal	parasal	ADJ	Adj	_	9	amod	_	_
-9	danışmalar	danışma	NOUN	Noun	Case=Nom|Number=Plur|Person=3	0	root	_	_
-10	.	.	PUNCT	Punc	_	9	punct	_	_
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 3 cc	color:blue
+1	Ağırlık	ağırlık	NOUN	Noun	Case=Nom|Number=Sing|Person=3	2	nsubj	_	_
+2	Japonlar	Japon	ADJ	NAdj	Case=Nom|Number=Plur|Person=3	0	root	_	_
+3	ve	ve	CCONJ	Conj	_	4	cc	_	_
+4	Ruslar'da	Rus	ADJ	NAdj	Case=Loc|Number=Plur|Person=3	2	conj	_	SpaceAfter=No
+5	.	.	PUNCT	Punc	_	4	punct	_	_
 
 </code></pre>
 
@@ -167,9 +190,25 @@ Average distance between parent and child is 3.80129990714949.</p>
 
 cc in other languages:
 
+[<a href="../../am/dep/cc.html">am</a>]
+
+[<a href="../../ar/dep/cc.html">ar</a>]
+
 [<a href="../../bg/dep/cc.html">bg</a>]
 
+[<a href="../../bxr/dep/cc.html">bxr</a>]
+
+[<a href="../../ca/dep/cc.html">ca</a>]
+
+[<a href="../../ckb/dep/cc.html">ckb</a>]
+
+[<a href="../../cop/dep/cc.html">cop</a>]
+
 [<a href="../../cs/dep/cc.html">cs</a>]
+
+[<a href="../../cu/dep/cc.html">cu</a>]
+
+[<a href="../../da/dep/cc.html">da</a>]
 
 [<a href="../../de/dep/cc.html">de</a>]
 
@@ -179,29 +218,99 @@ cc in other languages:
 
 [<a href="../../es/dep/cc.html">es</a>]
 
+[<a href="../../et/dep/cc.html">et</a>]
+
 [<a href="../../eu/dep/cc.html">eu</a>]
 
 [<a href="../../fa/dep/cc.html">fa</a>]
 
 [<a href="../../fi/dep/cc.html">fi</a>]
 
+[<a href="../../fo/dep/cc.html">fo</a>]
+
 [<a href="../../fr/dep/cc.html">fr</a>]
 
 [<a href="../../ga/dep/cc.html">ga</a>]
 
+[<a href="../../gl/dep/cc.html">gl</a>]
+
+[<a href="../../got/dep/cc.html">got</a>]
+
+[<a href="../../grc/dep/cc.html">grc</a>]
+
 [<a href="../../he/dep/cc.html">he</a>]
 
+[<a href="../../hi/dep/cc.html">hi</a>]
+
+[<a href="../../hr/dep/cc.html">hr</a>]
+
 [<a href="../../hu/dep/cc.html">hu</a>]
+
+[<a href="../../id/dep/cc.html">id</a>]
 
 [<a href="../../it/dep/cc.html">it</a>]
 
 [<a href="../../ja/dep/cc.html">ja</a>]
 
+[<a href="../../kk/dep/cc.html">kk</a>]
+
+[<a href="../../kmr/dep/cc.html">kmr</a>]
+
 [<a href="../../ko/dep/cc.html">ko</a>]
+
+[<a href="../../la/dep/cc.html">la</a>]
+
+[<a href="../../lv/dep/cc.html">lv</a>]
+
+[<a href="../../mr/dep/cc.html">mr</a>]
+
+[<a href="../../nl/dep/cc.html">nl</a>]
+
+[<a href="../../no/dep/cc.html">no</a>]
+
+[<a href="../../pl/dep/cc.html">pl</a>]
+
+[<a href="../../pt/dep/cc.html">pt</a>]
+
+[<a href="../../ro/dep/cc.html">ro</a>]
+
+[<a href="../../ru/dep/cc.html">ru</a>]
+
+[<a href="../../sa/dep/cc.html">sa</a>]
+
+[<a href="../../sk/dep/cc.html">sk</a>]
+
+[<a href="../../sla/dep/cc.html">sla</a>]
+
+[<a href="../../sl/dep/cc.html">sl</a>]
+
+[<a href="../../so/dep/cc.html">so</a>]
+
+[<a href="../../sr/dep/cc.html">sr</a>]
 
 [<a href="../../sv/dep/cc.html">sv</a>]
 
+[<a href="../../swl/dep/cc.html">swl</a>]
+
+[<a href="../../ta/dep/cc.html">ta</a>]
+
+[<a href="../../tr/dep/cc.html">tr</a>]
+
 [<a href="../../u/dep/cc.html">u</a>]
+
+[<a href="../../ug/dep/cc.html">ug</a>]
+
+[<a href="../../uk/dep/cc.html">uk</a>]
+
+[<a href="../../ur/dep/cc.html">ur</a>]
+
+[<a href="../../urj/dep/cc.html">urj</a>]
+
+[<a href="../../vi/dep/cc.html">vi</a>]
+
+[<a href="../../yue/dep/cc.html">yue</a>]
+
+[<a href="../../zh/dep/cc.html">zh</a>]
 
 
 

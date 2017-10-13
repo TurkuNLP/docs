@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-yue">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/yue/pos">yue/pos</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_yue-pos/PROPN.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-yue">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/yue/pos">yue/pos</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_yue-pos/PROPN.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -45,8 +62,17 @@
 
           <h2><code>PROPN</code>: proper noun</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>PROPN</code>.</p>
+<h3 id="definition">Definition</h3>
+
+<p>A proper noun is a noun (or nominal content word) that is the name (or part of the name) of a specific individual, place, or object. For institutional names that contain regular words belonging to other parts of speech such as nouns (e.g., 公司 / <em>gung1si1</em> “company”, 大學 / <em>daai6hok6</em> “university”, etc.), those words should be segmented as their own tokens and still tagged their native part of speech; only the proper nouns in such complex names should be tagged PROPN.</p>
+
+<h3 id="examples">Examples</h3>
+
+<ul>
+  <li>孔子 / <em>hung2zi2</em> “Confucius”</li>
+  <li>亞洲 / <em>aa3zau1</em> “Asia”</li>
+  <li><b>威威</b> 木材 公司 ／ <em><b>wai1wai1</b> muk6coi4 gung1si1</em> “<b>Weiwei</b> Timber Company”</li>
+</ul>
 
 
 <!-- "automatic stats" -->
@@ -61,9 +87,25 @@ for <code>PROPN</code>.</p>
 
 PROPN in other languages:
 
+[<a href="../../am/pos/PROPN.html">am</a>]
+
+[<a href="../../ar/pos/PROPN.html">ar</a>]
+
 [<a href="../../bg/pos/PROPN.html">bg</a>]
 
+[<a href="../../bxr/pos/PROPN.html">bxr</a>]
+
+[<a href="../../ca/pos/PROPN.html">ca</a>]
+
+[<a href="../../ckb/pos/PROPN.html">ckb</a>]
+
+[<a href="../../cop/pos/PROPN.html">cop</a>]
+
 [<a href="../../cs/pos/PROPN.html">cs</a>]
+
+[<a href="../../cu/pos/PROPN.html">cu</a>]
+
+[<a href="../../da/pos/PROPN.html">da</a>]
 
 [<a href="../../de/pos/PROPN.html">de</a>]
 
@@ -73,29 +115,99 @@ PROPN in other languages:
 
 [<a href="../../es/pos/PROPN.html">es</a>]
 
+[<a href="../../et/pos/PROPN.html">et</a>]
+
 [<a href="../../eu/pos/PROPN.html">eu</a>]
 
 [<a href="../../fa/pos/PROPN.html">fa</a>]
 
 [<a href="../../fi/pos/PROPN.html">fi</a>]
 
+[<a href="../../fo/pos/PROPN.html">fo</a>]
+
 [<a href="../../fr/pos/PROPN.html">fr</a>]
 
 [<a href="../../ga/pos/PROPN.html">ga</a>]
 
+[<a href="../../gl/pos/PROPN.html">gl</a>]
+
+[<a href="../../got/pos/PROPN.html">got</a>]
+
+[<a href="../../grc/pos/PROPN.html">grc</a>]
+
 [<a href="../../he/pos/PROPN.html">he</a>]
 
+[<a href="../../hi/pos/PROPN.html">hi</a>]
+
+[<a href="../../hr/pos/PROPN.html">hr</a>]
+
 [<a href="../../hu/pos/PROPN.html">hu</a>]
+
+[<a href="../../id/pos/PROPN.html">id</a>]
 
 [<a href="../../it/pos/PROPN.html">it</a>]
 
 [<a href="../../ja/pos/PROPN.html">ja</a>]
 
+[<a href="../../kk/pos/PROPN.html">kk</a>]
+
+[<a href="../../kmr/pos/PROPN.html">kmr</a>]
+
 [<a href="../../ko/pos/PROPN.html">ko</a>]
+
+[<a href="../../la/pos/PROPN.html">la</a>]
+
+[<a href="../../lv/pos/PROPN.html">lv</a>]
+
+[<a href="../../mr/pos/PROPN.html">mr</a>]
+
+[<a href="../../nl/pos/PROPN.html">nl</a>]
+
+[<a href="../../no/pos/PROPN.html">no</a>]
+
+[<a href="../../pl/pos/PROPN.html">pl</a>]
+
+[<a href="../../pt/pos/PROPN.html">pt</a>]
+
+[<a href="../../ro/pos/PROPN.html">ro</a>]
+
+[<a href="../../ru/pos/PROPN.html">ru</a>]
+
+[<a href="../../sa/pos/PROPN.html">sa</a>]
+
+[<a href="../../sk/pos/PROPN.html">sk</a>]
+
+[<a href="../../sla/pos/PROPN.html">sla</a>]
+
+[<a href="../../sl/pos/PROPN.html">sl</a>]
+
+[<a href="../../so/pos/PROPN.html">so</a>]
+
+[<a href="../../sr/pos/PROPN.html">sr</a>]
 
 [<a href="../../sv/pos/PROPN.html">sv</a>]
 
+[<a href="../../swl/pos/PROPN.html">swl</a>]
+
+[<a href="../../ta/pos/PROPN.html">ta</a>]
+
+[<a href="../../tr/pos/PROPN.html">tr</a>]
+
+[<a href="../../ug/pos/PROPN.html">ug</a>]
+
+[<a href="../../uk/pos/PROPN.html">uk</a>]
+
 [<a href="../../u/pos/PROPN.html">u</a>]
+
+[<a href="../../urj/pos/PROPN.html">urj</a>]
+
+[<a href="../../ur/pos/PROPN.html">ur</a>]
+
+[<a href="../../vi/pos/PROPN.html">vi</a>]
+
+[<a href="../../yue/pos/PROPN.html">yue</a>]
+
+[<a href="../../zh/pos/PROPN.html">zh</a>]
 
 
 

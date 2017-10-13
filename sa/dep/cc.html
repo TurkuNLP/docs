@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-sa">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/sa/dep">sa/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_sa-dep/cc.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sa">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/sa/dep">sa/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sa-dep/cc.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -65,30 +82,30 @@ for <code>cc</code>.</p>
 
 <p>12 nodes (1%) are attached to their parents as <code>cc</code>.</p>
 
-<p>12 instances of <code>cc</code> (100%) are left-to-right (parent precedes child).
-Average distance between parent and child is 3.83333333333333.</p>
+<p>6 instances of <code>cc</code> (50%) are left-to-right (parent precedes child).
+Average distance between parent and child is 1.16666666666667.</p>
 
-<p>The following 3 pairs of parts of speech are connected with <code>cc</code>: <a href="">sa-pos/NOUN</a>-<a href="">sa-pos/CONJ</a> (9; 75% instances), <a href="">sa-pos/PROPN</a>-<a href="">sa-pos/CONJ</a> (2; 17% instances), <a href="">sa-pos/VERB</a>-<a href="">sa-pos/CONJ</a> (1; 8% instances).</p>
+<p>The following 3 pairs of parts of speech are connected with <code>cc</code>: <a href="">sa-pos/NOUN</a>-<a href="">sa-pos/CCONJ</a> (9; 75% instances), <a href="">sa-pos/PROPN</a>-<a href="">sa-pos/CCONJ</a> (2; 17% instances), <a href="">sa-pos/VERB</a>-<a href="">sa-pos/CCONJ</a> (1; 8% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 5	bgColor:blue
 # visual-style 5	fgColor:white
-# visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 4 5 cc	color:blue
+# visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 6 5 cc	color:blue
 1	जायन्ते	जन्	VERB	_	Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=jāyante|LTranslit=jan
 2	विरला	विरल	ADJ	_	Case=Acc|Gender=Fem|Number=Plur	3	amod	_	Translit=viralā|LTranslit=virala
-3	लोके	लोक्	NOUN	_	Case=Loc|Gender=Masc|Number=Sing	1	nmod	_	Translit=loke|LTranslit=lok
+3	लोके	लोक्	NOUN	_	Case=Loc|Gender=Masc|Number=Sing	1	obl	_	Translit=loke|LTranslit=lok
 4	जलदा	जलद	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	1	nsubj	_	Translit=jaladā|LTranslit=jalada
-5	इव	इव	CONJ	_	_	4	cc	_	Translit=iva|LTranslit=iva
+5	इव	इव	CCONJ	_	_	6	cc	_	Translit=iva|LTranslit=iva
 6	सज्जनाः	सत्हनाः	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	4	conj	_	Translit=sajjanāḥ|LTranslit=sathanāḥ
 
 </code></pre>
 
 <pre><code class="language-conllu"># visual-style 9	bgColor:blue
 # visual-style 9	fgColor:white
-# visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 6 9 cc	color:blue
+# visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 8 9 cc	color:blue
 1	तस्य	तद्	DET	_	Case=Gen|Gender=Masc|Number=Sing|Poss=Yes|PronType=Dem	3	det	_	Translit=tasya|LTranslit=tad
 2	त्रयः	त्रि	NUM	_	Case=Nom|Gender=Masc|Number=Plur|NumType=Card	3	nummod	_	Translit=trayaḥ|LTranslit=tri
 3	पुत्राः	पुत्र	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	11	nsubj	_	Translit=putrāḥ|LTranslit=putra
@@ -97,7 +114,7 @@ Average distance between parent and child is 3.83333333333333.</p>
 6	वसुशक्तिः	वसुशक्ति	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	3	nmod	_	Translit=vasuśaktiḥ|LTranslit=vasuśakti
 7	उग्रशक्तिः	उग्रशक्ति	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	6	conj	_	Translit=ugraśaktiḥ|LTranslit=ugraśakti
 8	अनन्तशक्तिश्	अनन्तशक्ति	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	6	conj	_	Translit=anantaśaktiś|LTranslit=anantaśakti
-9	च	च	CONJ	_	_	6	cc	_	Translit=ca|LTranslit=ca
+9	च	च	CCONJ	_	_	8	cc	_	Translit=ca|LTranslit=ca
 10	इति	इति	ADV	_	_	11	advmod	_	Translit=iti|LTranslit=iti
 11	बभूवुः	भू	VERB	_	Aspect=Perf|Mood=Ind|Number=Plur|Person=3|VerbForm=Fin|Voice=Act	0	root	_	Translit=babhūvuḥ|LTranslit=bhū_1|LId=भू-१
 
@@ -105,16 +122,16 @@ Average distance between parent and child is 3.83333333333333.</p>
 
 <pre><code class="language-conllu"># visual-style 7	bgColor:blue
 # visual-style 7	fgColor:white
-# visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 1 7 cc	color:blue
+# visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 6 7 cc	color:blue
 1	अधीते	अधी	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Translit=adhīte|LTranslit=adhī
 2	य	यद्	PRON	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Rel	6	nsubj	_	Translit=ya|LTranslit=yad
 3	इदम्	इदम्	DET	_	Case=Acc|Gender=Masc|Number=Sing|PronType=Dem	5	det	_	Translit=idam|LTranslit=idam
 4	नित्यम्	नित्य	ADV	_	Case=Nom	6	advmod	_	Translit=nityam|LTranslit=nitya
-5	नीतिशस्त्रम्	नीतिशस्त्र	PROPN	_	Case=Acc|Gender=Neut|Number=Sing	6	dobj	_	Translit=nītiśastram|LTranslit=nītiśastra
+5	नीतिशस्त्रम्	नीतिशस्त्र	PROPN	_	Case=Acc|Gender=Neut|Number=Sing	6	obj	_	Translit=nītiśastram|LTranslit=nītiśastra
 6	शृणोति	श्रु	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	conj	_	Translit=śr̥ṇoti|LTranslit=śru
-7	च	च	CONJ	_	_	1	cc	_	Translit=ca|LTranslit=ca
+7	च	च	CCONJ	_	_	6	cc	_	Translit=ca|LTranslit=ca
 
 </code></pre>
 
@@ -126,9 +143,25 @@ Average distance between parent and child is 3.83333333333333.</p>
 
 cc in other languages:
 
+[<a href="../../am/dep/cc.html">am</a>]
+
+[<a href="../../ar/dep/cc.html">ar</a>]
+
 [<a href="../../bg/dep/cc.html">bg</a>]
 
+[<a href="../../bxr/dep/cc.html">bxr</a>]
+
+[<a href="../../ca/dep/cc.html">ca</a>]
+
+[<a href="../../ckb/dep/cc.html">ckb</a>]
+
+[<a href="../../cop/dep/cc.html">cop</a>]
+
 [<a href="../../cs/dep/cc.html">cs</a>]
+
+[<a href="../../cu/dep/cc.html">cu</a>]
+
+[<a href="../../da/dep/cc.html">da</a>]
 
 [<a href="../../de/dep/cc.html">de</a>]
 
@@ -138,29 +171,99 @@ cc in other languages:
 
 [<a href="../../es/dep/cc.html">es</a>]
 
+[<a href="../../et/dep/cc.html">et</a>]
+
 [<a href="../../eu/dep/cc.html">eu</a>]
 
 [<a href="../../fa/dep/cc.html">fa</a>]
 
 [<a href="../../fi/dep/cc.html">fi</a>]
 
+[<a href="../../fo/dep/cc.html">fo</a>]
+
 [<a href="../../fr/dep/cc.html">fr</a>]
 
 [<a href="../../ga/dep/cc.html">ga</a>]
 
+[<a href="../../gl/dep/cc.html">gl</a>]
+
+[<a href="../../got/dep/cc.html">got</a>]
+
+[<a href="../../grc/dep/cc.html">grc</a>]
+
 [<a href="../../he/dep/cc.html">he</a>]
 
+[<a href="../../hi/dep/cc.html">hi</a>]
+
+[<a href="../../hr/dep/cc.html">hr</a>]
+
 [<a href="../../hu/dep/cc.html">hu</a>]
+
+[<a href="../../id/dep/cc.html">id</a>]
 
 [<a href="../../it/dep/cc.html">it</a>]
 
 [<a href="../../ja/dep/cc.html">ja</a>]
 
+[<a href="../../kk/dep/cc.html">kk</a>]
+
+[<a href="../../kmr/dep/cc.html">kmr</a>]
+
 [<a href="../../ko/dep/cc.html">ko</a>]
+
+[<a href="../../la/dep/cc.html">la</a>]
+
+[<a href="../../lv/dep/cc.html">lv</a>]
+
+[<a href="../../mr/dep/cc.html">mr</a>]
+
+[<a href="../../nl/dep/cc.html">nl</a>]
+
+[<a href="../../no/dep/cc.html">no</a>]
+
+[<a href="../../pl/dep/cc.html">pl</a>]
+
+[<a href="../../pt/dep/cc.html">pt</a>]
+
+[<a href="../../ro/dep/cc.html">ro</a>]
+
+[<a href="../../ru/dep/cc.html">ru</a>]
+
+[<a href="../../sa/dep/cc.html">sa</a>]
+
+[<a href="../../sk/dep/cc.html">sk</a>]
+
+[<a href="../../sla/dep/cc.html">sla</a>]
+
+[<a href="../../sl/dep/cc.html">sl</a>]
+
+[<a href="../../so/dep/cc.html">so</a>]
+
+[<a href="../../sr/dep/cc.html">sr</a>]
 
 [<a href="../../sv/dep/cc.html">sv</a>]
 
+[<a href="../../swl/dep/cc.html">swl</a>]
+
+[<a href="../../ta/dep/cc.html">ta</a>]
+
+[<a href="../../tr/dep/cc.html">tr</a>]
+
 [<a href="../../u/dep/cc.html">u</a>]
+
+[<a href="../../ug/dep/cc.html">ug</a>]
+
+[<a href="../../uk/dep/cc.html">uk</a>]
+
+[<a href="../../ur/dep/cc.html">ur</a>]
+
+[<a href="../../urj/dep/cc.html">urj</a>]
+
+[<a href="../../vi/dep/cc.html">vi</a>]
+
+[<a href="../../yue/dep/cc.html">yue</a>]
+
+[<a href="../../zh/dep/cc.html">zh</a>]
 
 
 

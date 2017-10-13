@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-de">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/de/pos">de/pos</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_de-pos/PART.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-de">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/de/pos">de/pos</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_de-pos/PART.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -61,77 +78,65 @@ for <code>PART</code>.</p>
 
 <h2 id="treebank-statistics-udgerman">Treebank Statistics (UD_German)</h2>
 
-<p>There are 35 <code>PART</code> lemmas (0%), 35 <code>PART</code> types (0%) and 2203 <code>PART</code> tokens (1%).
+<p>There are 31 <code>PART</code> lemmas (0%), 31 <code>PART</code> types (0%) and 1989 <code>PART</code> tokens (1%).
 Out of 15 observed tags, the rank of <code>PART</code> is: 13 in number of lemmas, 15 in number of types and 13 in number of tokens.</p>
 
-<p>The 10 most frequent <code>PART</code> lemmas: <em>nicht, zu, aus, an, ja, nein, es, hallo, hin, to</em></p>
+<p>The 10 most frequent <code>PART</code> lemmas: <em>nicht, zu, aus, an, es, hin, nein, to, her, ja</em></p>
 
-<p>The 10 most frequent <code>PART</code> types:  <em>nicht, zu, aus, an, ja, nein, ‘s, Hallo, hin, to</em></p>
+<p>The 10 most frequent <code>PART</code> types:  <em>nicht, zu, aus, an, ‘s, hin, nein, to, her, ja</em></p>
 
-<p>The 10 most frequent ambiguous lemmas: <em>nicht</em> (<a href="">PART</a> 1107, <a href="">NOUN</a> 2, <a href="">ADV</a> 2, <a href="">PROPN</a> 2), <em>zu</em> (<a href="">ADP</a> 2264, <a href="">PART</a> 1021, <a href="">ADV</a> 62, <a href="">PROPN</a> 25, <a href="">ADJ</a> 1, <a href="">AUX</a> 1), <em>aus</em> (<a href="">ADP</a> 1035, <a href="">PART</a> 9, <a href="">ADV</a> 4, <a href="">PROPN</a> 1), <em>an</em> (<a href="">ADP</a> 1918, <a href="">PROPN</a> 30, <a href="">PART</a> 8, <a href="">NOUN</a> 3, <a href="">ADV</a> 1), <em>ja</em> (<a href="">ADV</a> 20, <a href="">PART</a> 5), <em>es</em> (<a href="">PRON</a> 1122, <a href="">PROPN</a> 32, <a href="">PART</a> 4, <a href="">X</a> 2, <a href="">PUNCT</a> 1), <em>hallo</em> (<a href="">PART</a> 4, <a href="">X</a> 1), <em>hin</em> (<a href="">ADV</a> 44, <a href="">NOUN</a> 7, <a href="">PART</a> 4, <a href="">ADP</a> 3), <em>to</em> (<a href="">PROPN</a> 4, <a href="">PART</a> 2), <em>her</em> (<a href="">ADV</a> 16, <a href="">PART</a> 3, <a href="">NOUN</a> 1)</p>
+<p>The 10 most frequent ambiguous lemmas: <em>nicht</em> (<a href="">PART</a> 978, <a href="">PROPN</a> 2, <a href="">ADV</a> 2, <a href="">NOUN</a> 1), <em>zu</em> (<a href="">ADP</a> 2145, <a href="">PART</a> 951, <a href="">ADV</a> 59, <a href="">PROPN</a> 25, <a href="">AUX</a> 1, <a href="">ADJ</a> 1), <em>aus</em> (<a href="">ADP</a> 984, <a href="">PART</a> 9, <a href="">ADV</a> 4, <a href="">PROPN</a> 1), <em>an</em> (<a href="">ADP</a> 1781, <a href="">PROPN</a> 30, <a href="">PART</a> 7, <a href="">NOUN</a> 3, <a href="">ADV</a> 1), <em>es</em> (<a href="">PRON</a> 1034, <a href="">PROPN</a> 32, <a href="">PART</a> 4, <a href="">X</a> 2, <a href="">PUNCT</a> 1), <em>hin</em> (<a href="">ADV</a> 41, <a href="">NOUN</a> 7, <a href="">PART</a> 4, <a href="">ADP</a> 3), <em>to</em> (<a href="">PROPN</a> 4, <a href="">PART</a> 2), <em>her</em> (<a href="">ADV</a> 14, <a href="">PART</a> 3, <a href="">NOUN</a> 1), <em>ja</em> (<a href="">ADV</a> 17, <a href="">PART</a> 2), <em>einnehmen</em> (<a href="">VERB</a> 10, <a href="">PART</a> 2)</p>
 
-<p>The 10 most frequent ambiguous types:  <em>nicht</em> (<a href="">PART</a> 1089, <a href="">ADV</a> 2, <a href="">PROPN</a> 1), <em>zu</em> (<a href="">ADP</a> 2121, <a href="">PART</a> 1021, <a href="">ADV</a> 61, <a href="">PROPN</a> 24, <a href="">ADJ</a> 1), <em>aus</em> (<a href="">ADP</a> 990, <a href="">PART</a> 9, <a href="">ADV</a> 4), <em>an</em> (<a href="">ADP</a> 1815, <a href="">PROPN</a> 24, <a href="">PART</a> 8, <a href="">ADV</a> 1, <a href="">NOUN</a> 1), <em>ja</em> (<a href="">ADV</a> 20, <a href="">PART</a> 4), <em>’s</em> (<a href="">PROPN</a> 32, <a href="">PRON</a> 5, <a href="">PART</a> 4, <a href="">X</a> 2, <a href="">PUNCT</a> 1), <em>Hallo</em> (<a href="">PART</a> 4, <a href="">X</a> 1), <em>hin</em> (<a href="">ADV</a> 44, <a href="">PART</a> 4, <a href="">ADP</a> 3, <a href="">NOUN</a> 3), <em>to</em> (<a href="">PROPN</a> 5, <a href="">PART</a> 4), <em>her</em> (<a href="">ADV</a> 16, <a href="">PART</a> 3)</p>
+<p>The 10 most frequent ambiguous types:  <em>nicht</em> (<a href="">PART</a> 961, <a href="">ADV</a> 2, <a href="">PROPN</a> 1), <em>zu</em> (<a href="">ADP</a> 2008, <a href="">PART</a> 951, <a href="">ADV</a> 58, <a href="">PROPN</a> 24, <a href="">ADJ</a> 1), <em>aus</em> (<a href="">ADP</a> 940, <a href="">PART</a> 9, <a href="">ADV</a> 4), <em>an</em> (<a href="">ADP</a> 1686, <a href="">PROPN</a> 24, <a href="">PART</a> 7, <a href="">NOUN</a> 1, <a href="">ADV</a> 1), <em>’s</em> (<a href="">PROPN</a> 32, <a href="">PART</a> 4, <a href="">PRON</a> 3, <a href="">X</a> 2, <a href="">PUNCT</a> 1), <em>hin</em> (<a href="">ADV</a> 41, <a href="">PART</a> 4, <a href="">NOUN</a> 3, <a href="">ADP</a> 3), <em>to</em> (<a href="">PROPN</a> 5, <a href="">PART</a> 4), <em>her</em> (<a href="">ADV</a> 14, <a href="">PART</a> 3), <em>ja</em> (<a href="">ADV</a> 17, <a href="">PART</a> 2), <em>einnahm</em> (<a href="">VERB</a> 3, <a href="">PART</a> 2)</p>
 
 <ul>
   <li><em>nicht</em>
     <ul>
-      <li><a href="">PART</a> 1089: <em>Mehr braucht man <b>nicht</b> sagen .</em></li>
+      <li><a href="">PART</a> 961: <em>Mehr braucht man <b>nicht</b> sagen .</em></li>
       <li><a href="">ADV</a> 2: <em>Blöcke mit den Köpfen von Karl Marx , Ernst Thälmann und August Bebel und etlichen anderen bekommt man heute <b>nicht</b> unter 300 Mark .</em></li>
       <li><a href="">PROPN</a> 1: <em>Auch für das Medizindrama Ist das <b>nicht</b> mein Leben ?</em></li>
     </ul>
   </li>
   <li><em>zu</em>
     <ul>
-      <li><a href="">ADP</a> 2121: <em>Es war für mich Ausgangspunkt <b>zu</b> einer Parfümkreation .</em></li>
-      <li><a href="">PART</a> 1021: <em>Ich hatte Gelegenheit eines seiner Seminare <b>zu</b> besuchen .</em></li>
-      <li><a href="">ADV</a> 61: <em>Mein Sakko - Ärmel war <b>zu</b> lang , da haben sie es wie original gekürzt .</em></li>
+      <li><a href="">ADP</a> 2008: <em>Es war für mich Ausgangspunkt <b>zu</b> einer Parfümkreation .</em></li>
+      <li><a href="">PART</a> 951: <em>Ich hatte Gelegenheit eines seiner Seminare <b>zu</b> besuchen .</em></li>
+      <li><a href="">ADV</a> 58: <em>Mein Sakko - Ärmel war <b>zu</b> lang , da haben sie es wie original gekürzt .</em></li>
       <li><a href="">PROPN</a> 24: <em>Alois übernahm den väterlichen Gasthof <b>zu</b> dem Krebs in Donauwörth .</em></li>
       <li><a href="">ADJ</a> 1: <em>Damit wurde die ab Mitte der 1990er Jahre von Anwohnern und Medien problematisierte Entwicklung einer sogenannten offene Drogenszene zu einer Auseinandersetzung um die strukturelle Zukunft des gesamten Quartiers , prägnant zusammengefasst unter der Überschrift : “ Das Fenster zu dem Elend ist <b>zu</b> “ .</em></li>
     </ul>
   </li>
   <li><em>aus</em>
     <ul>
-      <li><a href="">ADP</a> 990: <em>Ein Kompliment von hier <b>aus</b> nochmal an den Koch !</em></li>
+      <li><a href="">ADP</a> 940: <em>Ein Kompliment von hier <b>aus</b> nochmal an den Koch !</em></li>
       <li><a href="">PART</a> 9: <em>Fahrzeuge wie PKW oder LKW können direkt von dem Boden <b>aus</b> in den Laderaum fahren .</em></li>
       <li><a href="">ADV</a> 4: <em>Jahrhundert , das von dem alten Hauptbahnhof <b>aus</b> mit Dampfschiffen angefahren wurde .</em></li>
     </ul>
   </li>
   <li><em>an</em>
     <ul>
-      <li><a href="">ADP</a> 1815: <em>Sie hingen zu dem Schluss hin wie ein nasser Sack <b>an</b> mir .</em></li>
+      <li><a href="">ADP</a> 1686: <em>Sie hingen zu dem Schluss hin wie ein nasser Sack <b>an</b> mir .</em></li>
       <li><a href="">PROPN</a> 24: <em>Nie wieder in das “ Hotel <b>an</b> dem Rathaus “ !</em></li>
-      <li><a href="">PART</a> 8: <em>Oktober 1908 eine Wahlreform in dem Königreich Preußen <b>an</b> .</em></li>
-      <li><a href="">ADV</a> 1: <em>Die Telekom stellt von sofort <b>an</b> alle ausländischen Ansagedienste wieder auf Handvermittlung um .</em></li>
+      <li><a href="">PART</a> 7: <em>Oktober 1908 eine Wahlreform in dem Königreich Preußen <b>an</b> .</em></li>
       <li><a href="">NOUN</a> 1: <em>Dabei werden die abzudichtenden Bauteile automatisiert <b>an</b> - und abtransportiert ( es ist auch ein umgekehrter Aufbau möglich , bei dem die Düse mit dem Dichtmaterial fest montiert ist und die Bauteile geführt werden ) .</em></li>
-    </ul>
-  </li>
-  <li><em>ja</em>
-    <ul>
-      <li><a href="">ADV</a> 20: <em>Bei über 150 T € ist es auch <b>ja</b> nicht so schwer .</em></li>
-      <li><a href="">PART</a> 4: <em>Ist <b>ja</b> wohl ein Witz .</em></li>
+      <li><a href="">ADV</a> 1: <em>Die Telekom stellt von sofort <b>an</b> alle ausländischen Ansagedienste wieder auf Handvermittlung um .</em></li>
     </ul>
   </li>
   <li><em>’s</em>
     <ul>
       <li><a href="">PROPN</a> 32: <em>Diese Militäroperation wurde unter dem Namen Morgan <b>’s</b> Raid bekannt .</em></li>
-      <li><a href="">PRON</a> 5: <em>Ich fand <b>’s</b> gut .</em></li>
       <li><a href="">PART</a> 4: <em>Leider viel unsere Wahl auf das Schuchmann <b>’s</b> .</em></li>
+      <li><a href="">PRON</a> 3: <em>Ich fand <b>’s</b> gut .</em></li>
       <li><a href="">X</a> 2: <em>Nebst den neuen TV <b>’s</b> wird die Fassade total renoviert .</em></li>
       <li><a href="">PUNCT</a> 1: <em>Dennoch verfolgt er sein Ziel rücksichtslos , als er in Sally <b>’s</b> Tankstelle nicht nur die Telefonzelle umfährt , in der sein Opfer gerade die Polizei zu benachrichtigen versucht , sondern auch die Tierkäfige zerstört , in denen die Inhaberin der Tankstelle exotische Tiere wie Schlangen , Spinnen und Leguane hält .</em></li>
     </ul>
   </li>
-  <li><em>Hallo</em>
-    <ul>
-      <li><a href="">PART</a> 4: <em><b>Hallo</b> zusammen .</em></li>
-      <li><a href="">X</a> 1: <em><b>Hallo</b> , Sie beschreiben alle das gleiche , Zusammenführung auf Ehrenamt mit Extraabschnitten für 1 +2 .</em></li>
-    </ul>
-  </li>
   <li><em>hin</em>
     <ul>
-      <li><a href="">ADV</a> 44: <em>Sie hingen zu dem Schluss <b>hin</b> wie ein nasser Sack an mir .</em></li>
+      <li><a href="">ADV</a> 41: <em>Sie hingen zu dem Schluss <b>hin</b> wie ein nasser Sack an mir .</em></li>
       <li><a href="">PART</a> 4: <em>Es wird durch verschiedene Mulden untergliedert , die sich zu dem Ruisseau des Écoulottes <b>hin</b> öffnen .</em></li>
-      <li><a href="">ADP</a> 3: <em>Auf Brittas Wunsch <b>hin</b> halten beide ihre Beziehung jedoch geheim .</em></li>
       <li><a href="">NOUN</a> 3: <em>Der Spieler kann immer drei Waffen gleichzeitig tragen , und mit Knopfdruck zwischen diesen <b>hin</b> - und herschalten .</em></li>
+      <li><a href="">ADP</a> 3: <em>Auf Brittas Wunsch <b>hin</b> halten beide ihre Beziehung jedoch geheim .</em></li>
     </ul>
   </li>
   <li><em>to</em>
@@ -142,15 +147,27 @@ Out of 15 observed tags, the rank of <code>PART</code> is: 13 in number of lemma
   </li>
   <li><em>her</em>
     <ul>
-      <li><a href="">ADV</a> 16: <em>Komme immer wieder gerne <b>her</b> ;-)</em></li>
+      <li><a href="">ADV</a> 14: <em>Komme immer wieder gerne <b>her</b> ;-)</em></li>
       <li><a href="">PART</a> 3: <em>Reicht dies nicht aus , richten sie ihren Oberkörper auf und schaukeln hin und <b>her</b> , wobei man ihre gelbschwarze Unterseite erkennen kann .</em></li>
+    </ul>
+  </li>
+  <li><em>ja</em>
+    <ul>
+      <li><a href="">ADV</a> 17: <em>Bei über 150 T € ist es auch <b>ja</b> nicht so schwer .</em></li>
+      <li><a href="">PART</a> 2: <em>Na <b>ja</b> , da weiß man wenigstens wo das Personal die Unfreundlichkeit her hat .</em></li>
+    </ul>
+  </li>
+  <li><em>einnahm</em>
+    <ul>
+      <li><a href="">VERB</a> 3: <em>Eine Ehrenpforte und ein Prachtzelt für 100 Personen erwarteten die Prinzessin , die an der Goldenen Bremm ihr Frühstück <b>einnahm</b> .</em></li>
+      <li><a href="">PART</a> 2: <em>Brachauchenius war ein sehr großer Pliosaurier und erreichte eine Länge von elf Metern , von denen der Schädel 1,5 Meter <b>einnahm</b> .</em></li>
     </ul>
   </li>
 </ul>
 
 <h2 id="morphology">Morphology</h2>
 
-<p>The form / lemma ratio of <code>PART</code> is 1.000000 (the average of all parts of speech is 1.186521).</p>
+<p>The form / lemma ratio of <code>PART</code> is 1.000000 (the average of all parts of speech is 1.182851).</p>
 
 <p>The 1st highest number of forms (1) was observed with the lemma “;-)”: <em>;-)</em>.</p>
 
@@ -158,33 +175,33 @@ Out of 15 observed tags, the rank of <code>PART</code> is: 13 in number of lemma
 
 <p>The 3rd highest number of forms (1) was observed with the lemma “Ja”: <em>Ja</em>.</p>
 
-<p><code>PART</code> occurs with 1 features: <a href="">de-feat/Negative</a> (1; 0% instances)</p>
+<p><code>PART</code> occurs with 1 features: <a href="">de-feat/Polarity</a> (984; 49% instances)</p>
 
-<p><code>PART</code> occurs with 1 feature-value pairs: <code>Negative=Neg</code></p>
+<p><code>PART</code> occurs with 1 feature-value pairs: <code>Polarity=Neg</code></p>
 
 <p><code>PART</code> occurs with 2 feature combinations.
-The most frequent feature combination is <code>_</code> (2202 tokens).
-Examples: <em>nicht, zu, aus, an, ja, nein, ‘s, Hallo, hin, to</em></p>
+The most frequent feature combination is <code>_</code> (1005 tokens).
+Examples: <em>zu, aus, an, ‘s, hin, to, her, ja, Nein, einnahm</em></p>
 
 <h2 id="relations">Relations</h2>
 
-<p><code>PART</code> nodes are attached to their parents using 17 different relations: <a href="">de-dep/neg</a> (1097; 50% instances), <a href="">de-dep/mark</a> (1008; 46% instances), <a href="">de-dep/mwe</a> (21; 1% instances), <a href="">de-dep/aux</a> (12; 1% instances), <a href="">de-dep/cc</a> (12; 1% instances), <a href="">de-dep/advmod</a> (11; 0% instances), <a href="">de-dep/appos</a> (7; 0% instances), <a href="">de-dep/root</a> (7; 0% instances), <a href="">de-dep/conj</a> (6; 0% instances), <a href="">de-dep/dep</a> (6; 0% instances), <a href="">de-dep/case</a> (4; 0% instances), <a href="">de-dep/compound:prt</a> (3; 0% instances), <a href="">de-dep/nmod</a> (3; 0% instances), <a href="">de-dep/acl</a> (2; 0% instances), <a href="">de-dep/nsubj</a> (2; 0% instances), <a href="">de-dep/advcl</a> (1; 0% instances), <a href="">de-dep/parataxis</a> (1; 0% instances)</p>
+<p><code>PART</code> nodes are attached to their parents using 17 different relations: <a href="">de-dep/advmod</a> (976; 49% instances), <a href="">de-dep/mark</a> (938; 47% instances), <a href="">de-dep/fixed</a> (20; 1% instances), <a href="">de-dep/aux</a> (12; 1% instances), <a href="">de-dep/cc</a> (11; 1% instances), <a href="">de-dep/dep</a> (6; 0% instances), <a href="">de-dep/conj</a> (5; 0% instances), <a href="">de-dep/root</a> (5; 0% instances), <a href="">de-dep/case</a> (4; 0% instances), <a href="">de-dep/compound:prt</a> (3; 0% instances), <a href="">de-dep/acl</a> (2; 0% instances), <a href="">de-dep/nsubj</a> (2; 0% instances), <a href="">de-dep/advcl</a> (1; 0% instances), <a href="">de-dep/appos</a> (1; 0% instances), <a href="">de-dep/nmod</a> (1; 0% instances), <a href="">de-dep/obl</a> (1; 0% instances), <a href="">de-dep/parataxis</a> (1; 0% instances)</p>
 
-<p>Parents of <code>PART</code> nodes belong to 14 different parts of speech: <a href="">VERB</a> (1763; 80% instances), <a href="">ADV</a> (148; 7% instances), <a href="">ADJ</a> (119; 5% instances), <a href="">NOUN</a> (71; 3% instances), <a href="">AUX</a> (48; 2% instances), <a href="">PROPN</a> (14; 1% instances), <a href="">PRON</a> (13; 1% instances), <a href="">ROOT</a> (7; 0% instances), <a href="">CONJ</a> (6; 0% instances), <a href="">NUM</a> (5; 0% instances), <a href="">PART</a> (4; 0% instances), <a href="">ADP</a> (2; 0% instances), <a href="">SCONJ</a> (2; 0% instances), <a href="">DET</a> (1; 0% instances)</p>
+<p>Parents of <code>PART</code> nodes belong to 13 different parts of speech: <a href="">VERB</a> (1595; 80% instances), <a href="">ADV</a> (134; 7% instances), <a href="">ADJ</a> (111; 6% instances), <a href="">NOUN</a> (60; 3% instances), <a href="">AUX</a> (39; 2% instances), <a href="">PRON</a> (13; 1% instances), <a href="">PROPN</a> (12; 1% instances), <a href="">CCONJ</a> (6; 0% instances), <a href="">NUM</a> (5; 0% instances), <a href="">ROOT</a> (5; 0% instances), <a href="">PART</a> (4; 0% instances), <a href="">ADP</a> (3; 0% instances), <a href="">SCONJ</a> (2; 0% instances)</p>
 
-<p>1998 (91%) <code>PART</code> nodes are leaves.</p>
+<p>1809 (91%) <code>PART</code> nodes are leaves.</p>
 
-<p>180 (8%) <code>PART</code> nodes have one child.</p>
+<p>159 (8%) <code>PART</code> nodes have one child.</p>
 
-<p>17 (1%) <code>PART</code> nodes have two children.</p>
+<p>12 (1%) <code>PART</code> nodes have two children.</p>
 
-<p>8 (0%) <code>PART</code> nodes have three or more children.</p>
+<p>9 (0%) <code>PART</code> nodes have three or more children.</p>
 
 <p>The highest child degree of a <code>PART</code> node is 8.</p>
 
-<p>Children of <code>PART</code> nodes are attached using 16 different relations: <a href="">de-dep/advmod</a> (196; 79% instances), <a href="">de-dep/punct</a> (16; 6% instances), <a href="">de-dep/nmod</a> (8; 3% instances), <a href="">de-dep/case</a> (4; 2% instances), <a href="">de-dep/cc</a> (3; 1% instances), <a href="">de-dep/dep</a> (3; 1% instances), <a href="">de-dep/neg</a> (3; 1% instances), <a href="">de-dep/nsubj</a> (3; 1% instances), <a href="">de-dep/advcl</a> (2; 1% instances), <a href="">de-dep/conj</a> (2; 1% instances), <a href="">de-dep/det</a> (2; 1% instances), <a href="">de-dep/dobj</a> (2; 1% instances), <a href="">de-dep/iobj</a> (2; 1% instances), <a href="">de-dep/ccomp</a> (1; 0% instances), <a href="">de-dep/mark</a> (1; 0% instances), <a href="">de-dep/parataxis</a> (1; 0% instances)</p>
+<p>Children of <code>PART</code> nodes are attached using 15 different relations: <a href="">de-dep/advmod</a> (173; 78% instances), <a href="">de-dep/punct</a> (16; 7% instances), <a href="">de-dep/cc</a> (6; 3% instances), <a href="">de-dep/nmod</a> (6; 3% instances), <a href="">de-dep/case</a> (3; 1% instances), <a href="">de-dep/dep</a> (3; 1% instances), <a href="">de-dep/nsubj</a> (3; 1% instances), <a href="">de-dep/advcl</a> (2; 1% instances), <a href="">de-dep/conj</a> (2; 1% instances), <a href="">de-dep/iobj</a> (2; 1% instances), <a href="">de-dep/obj</a> (2; 1% instances), <a href="">de-dep/ccomp</a> (1; 0% instances), <a href="">de-dep/det</a> (1; 0% instances), <a href="">de-dep/mark</a> (1; 0% instances), <a href="">de-dep/parataxis</a> (1; 0% instances)</p>
 
-<p>Children of <code>PART</code> nodes belong to 14 different parts of speech: <a href="">ADV</a> (194; 78% instances), <a href="">PUNCT</a> (16; 6% instances), <a href="">NOUN</a> (10; 4% instances), <a href="">ADP</a> (4; 2% instances), <a href="">PART</a> (4; 2% instances), <a href="">PRON</a> (4; 2% instances), <a href="">VERB</a> (4; 2% instances), <a href="">ADJ</a> (3; 1% instances), <a href="">CONJ</a> (3; 1% instances), <a href="">DET</a> (2; 1% instances), <a href="">PROPN</a> (2; 1% instances), <a href="">NUM</a> (1; 0% instances), <a href="">SCONJ</a> (1; 0% instances), <a href="">X</a> (1; 0% instances)</p>
+<p>Children of <code>PART</code> nodes belong to 13 different parts of speech: <a href="">ADV</a> (168; 76% instances), <a href="">PUNCT</a> (16; 7% instances), <a href="">NOUN</a> (8; 4% instances), <a href="">CCONJ</a> (6; 3% instances), <a href="">PART</a> (4; 2% instances), <a href="">PRON</a> (4; 2% instances), <a href="">VERB</a> (4; 2% instances), <a href="">ADJ</a> (3; 1% instances), <a href="">ADP</a> (3; 1% instances), <a href="">PROPN</a> (3; 1% instances), <a href="">DET</a> (1; 0% instances), <a href="">SCONJ</a> (1; 0% instances), <a href="">X</a> (1; 0% instances)</p>
 
 
 
@@ -194,9 +211,25 @@ Examples: <em>nicht, zu, aus, an, ja, nein, ‘s, Hallo, hin, to</em></p>
 
 PART in other languages:
 
+[<a href="../../am/pos/PART.html">am</a>]
+
+[<a href="../../ar/pos/PART.html">ar</a>]
+
 [<a href="../../bg/pos/PART.html">bg</a>]
 
+[<a href="../../bxr/pos/PART.html">bxr</a>]
+
+[<a href="../../ca/pos/PART.html">ca</a>]
+
+[<a href="../../ckb/pos/PART.html">ckb</a>]
+
+[<a href="../../cop/pos/PART.html">cop</a>]
+
 [<a href="../../cs/pos/PART.html">cs</a>]
+
+[<a href="../../cu/pos/PART.html">cu</a>]
+
+[<a href="../../da/pos/PART.html">da</a>]
 
 [<a href="../../de/pos/PART.html">de</a>]
 
@@ -206,29 +239,99 @@ PART in other languages:
 
 [<a href="../../es/pos/PART.html">es</a>]
 
+[<a href="../../et/pos/PART.html">et</a>]
+
 [<a href="../../eu/pos/PART.html">eu</a>]
 
 [<a href="../../fa/pos/PART.html">fa</a>]
 
 [<a href="../../fi/pos/PART.html">fi</a>]
 
+[<a href="../../fo/pos/PART.html">fo</a>]
+
 [<a href="../../fr/pos/PART.html">fr</a>]
 
 [<a href="../../ga/pos/PART.html">ga</a>]
 
+[<a href="../../gl/pos/PART.html">gl</a>]
+
+[<a href="../../got/pos/PART.html">got</a>]
+
+[<a href="../../grc/pos/PART.html">grc</a>]
+
 [<a href="../../he/pos/PART.html">he</a>]
 
+[<a href="../../hi/pos/PART.html">hi</a>]
+
+[<a href="../../hr/pos/PART.html">hr</a>]
+
 [<a href="../../hu/pos/PART.html">hu</a>]
+
+[<a href="../../id/pos/PART.html">id</a>]
 
 [<a href="../../it/pos/PART.html">it</a>]
 
 [<a href="../../ja/pos/PART.html">ja</a>]
 
+[<a href="../../kk/pos/PART.html">kk</a>]
+
+[<a href="../../kmr/pos/PART.html">kmr</a>]
+
 [<a href="../../ko/pos/PART.html">ko</a>]
+
+[<a href="../../la/pos/PART.html">la</a>]
+
+[<a href="../../lv/pos/PART.html">lv</a>]
+
+[<a href="../../mr/pos/PART.html">mr</a>]
+
+[<a href="../../nl/pos/PART.html">nl</a>]
+
+[<a href="../../no/pos/PART.html">no</a>]
+
+[<a href="../../pl/pos/PART.html">pl</a>]
+
+[<a href="../../pt/pos/PART.html">pt</a>]
+
+[<a href="../../ro/pos/PART.html">ro</a>]
+
+[<a href="../../ru/pos/PART.html">ru</a>]
+
+[<a href="../../sa/pos/PART.html">sa</a>]
+
+[<a href="../../sk/pos/PART.html">sk</a>]
+
+[<a href="../../sla/pos/PART.html">sla</a>]
+
+[<a href="../../sl/pos/PART.html">sl</a>]
+
+[<a href="../../so/pos/PART.html">so</a>]
+
+[<a href="../../sr/pos/PART.html">sr</a>]
 
 [<a href="../../sv/pos/PART.html">sv</a>]
 
+[<a href="../../swl/pos/PART.html">swl</a>]
+
+[<a href="../../ta/pos/PART.html">ta</a>]
+
+[<a href="../../tr/pos/PART.html">tr</a>]
+
+[<a href="../../ug/pos/PART.html">ug</a>]
+
+[<a href="../../uk/pos/PART.html">uk</a>]
+
 [<a href="../../u/pos/PART.html">u</a>]
+
+[<a href="../../urj/pos/PART.html">urj</a>]
+
+[<a href="../../ur/pos/PART.html">ur</a>]
+
+[<a href="../../vi/pos/PART.html">vi</a>]
+
+[<a href="../../yue/pos/PART.html">yue</a>]
+
+[<a href="../../zh/pos/PART.html">zh</a>]
 
 
 

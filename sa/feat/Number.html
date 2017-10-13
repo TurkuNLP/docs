@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-sa">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/sa/feat">sa/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_sa-feat/Number.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sa">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/sa/feat">sa/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sa-feat/Number.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -253,7 +270,7 @@ The feature is used with 9 part-of-speech tags: <a href="">sa-pos/NOUN</a> (410;
 
 <p>1 <a href="">sa-pos/AUX</a> tokens (100% of all <code>AUX</code> tokens) have a non-empty value of <code>Number</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Number</code> co-occurred: <tt><a href="Mood.html">Mood</a>=Ind</tt> (1; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (1; 100%), <tt><a href="Person.html">Person</a>=3</tt> (1; 100%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (1; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (1; 100%).</p>
+<p>The most frequent other feature values with which <code>AUX</code> and <code>Number</code> co-occurred: <tt><a href="Person.html">Person</a>=3</tt> (1; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (1; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (1; 100%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (1; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (1; 100%).</p>
 
 <p><code>AUX</code> tokens may have the following values of <code>Number</code>:</p>
 
@@ -264,16 +281,16 @@ The feature is used with 9 part-of-speech tags: <a href="">sa-pos/NOUN</a> (410;
 <h2 id="relations-with-agreement-in-number">Relations with Agreement in <code>Number</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>Number</code>:
-<tt>VERB –[<a href="../dep/nmod.html">nmod</a>]–&gt; NOUN</tt> (75; 78%),
+<tt>VERB –[<a href="../dep/obl.html">obl</a>]–&gt; NOUN</tt> (75; 78%),
 <tt>VERB –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; NOUN</tt> (72; 88%),
-<tt>VERB –[<a href="../dep/dobj.html">dobj</a>]–&gt; NOUN</tt> (54; 70%),
+<tt>VERB –[<a href="../dep/obj.html">obj</a>]–&gt; NOUN</tt> (54; 70%),
 <tt>NOUN –[<a href="../dep/nmod.html">nmod</a>]–&gt; NOUN</tt> (53; 90%),
 <tt>VERB –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; PRON</tt> (45; 88%),
 <tt>NOUN –[<a href="../dep/amod.html">amod</a>]–&gt; ADJ</tt> (42; 93%),
 <tt>NOUN –[<a href="../dep/det.html">det</a>]–&gt; DET</tt> (32; 82%),
 <tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (28; 52%),
 <tt>NOUN –[<a href="../dep/nmod.html">nmod</a>]–&gt; PRON</tt> (26; 63%),
-<tt>VERB –[<a href="../dep/nmod.html">nmod</a>]–&gt; PRON</tt> (15; 79%).</p>
+<tt>NOUN –[<a href="../dep/conj.html">conj</a>]–&gt; NOUN</tt> (15; 75%).</p>
 
 
 
@@ -283,9 +300,25 @@ The feature is used with 9 part-of-speech tags: <a href="">sa-pos/NOUN</a> (410;
 
 Number in other languages:
 
+[<a href="../../am/feat/Number.html">am</a>]
+
+[<a href="../../ar/feat/Number.html">ar</a>]
+
 [<a href="../../bg/feat/Number.html">bg</a>]
 
+[<a href="../../bxr/feat/Number.html">bxr</a>]
+
+[<a href="../../ca/feat/Number.html">ca</a>]
+
+[<a href="../../ckb/feat/Number.html">ckb</a>]
+
+[<a href="../../cop/feat/Number.html">cop</a>]
+
 [<a href="../../cs/feat/Number.html">cs</a>]
+
+[<a href="../../cu/feat/Number.html">cu</a>]
+
+[<a href="../../da/feat/Number.html">da</a>]
 
 [<a href="../../de/feat/Number.html">de</a>]
 
@@ -295,29 +328,99 @@ Number in other languages:
 
 [<a href="../../es/feat/Number.html">es</a>]
 
+[<a href="../../et/feat/Number.html">et</a>]
+
 [<a href="../../eu/feat/Number.html">eu</a>]
 
 [<a href="../../fa/feat/Number.html">fa</a>]
 
 [<a href="../../fi/feat/Number.html">fi</a>]
 
+[<a href="../../fo/feat/Number.html">fo</a>]
+
 [<a href="../../fr/feat/Number.html">fr</a>]
 
 [<a href="../../ga/feat/Number.html">ga</a>]
 
+[<a href="../../gl/feat/Number.html">gl</a>]
+
+[<a href="../../got/feat/Number.html">got</a>]
+
+[<a href="../../grc/feat/Number.html">grc</a>]
+
 [<a href="../../he/feat/Number.html">he</a>]
 
+[<a href="../../hi/feat/Number.html">hi</a>]
+
+[<a href="../../hr/feat/Number.html">hr</a>]
+
 [<a href="../../hu/feat/Number.html">hu</a>]
+
+[<a href="../../id/feat/Number.html">id</a>]
 
 [<a href="../../it/feat/Number.html">it</a>]
 
 [<a href="../../ja/feat/Number.html">ja</a>]
 
+[<a href="../../kk/feat/Number.html">kk</a>]
+
+[<a href="../../kmr/feat/Number.html">kmr</a>]
+
 [<a href="../../ko/feat/Number.html">ko</a>]
+
+[<a href="../../la/feat/Number.html">la</a>]
+
+[<a href="../../lv/feat/Number.html">lv</a>]
+
+[<a href="../../mr/feat/Number.html">mr</a>]
+
+[<a href="../../nl/feat/Number.html">nl</a>]
+
+[<a href="../../no/feat/Number.html">no</a>]
+
+[<a href="../../pl/feat/Number.html">pl</a>]
+
+[<a href="../../pt/feat/Number.html">pt</a>]
+
+[<a href="../../ro/feat/Number.html">ro</a>]
+
+[<a href="../../ru/feat/Number.html">ru</a>]
+
+[<a href="../../sa/feat/Number.html">sa</a>]
+
+[<a href="../../sk/feat/Number.html">sk</a>]
+
+[<a href="../../sla/feat/Number.html">sla</a>]
+
+[<a href="../../sl/feat/Number.html">sl</a>]
+
+[<a href="../../so/feat/Number.html">so</a>]
+
+[<a href="../../sr/feat/Number.html">sr</a>]
 
 [<a href="../../sv/feat/Number.html">sv</a>]
 
+[<a href="../../swl/feat/Number.html">swl</a>]
+
+[<a href="../../ta/feat/Number.html">ta</a>]
+
+[<a href="../../tr/feat/Number.html">tr</a>]
+
 [<a href="../../u/feat/Number.html">u</a>]
+
+[<a href="../../ug/feat/Number.html">ug</a>]
+
+[<a href="../../uk/feat/Number.html">uk</a>]
+
+[<a href="../../ur/feat/Number.html">ur</a>]
+
+[<a href="../../urj/feat/Number.html">urj</a>]
+
+[<a href="../../vi/feat/Number.html">vi</a>]
+
+[<a href="../../yue/feat/Number.html">yue</a>]
+
+[<a href="../../zh/feat/Number.html">zh</a>]
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-u">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/u/feat">u/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-feat/Evident.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-u">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/u/feat">u/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-feat/Evident.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -47,6 +64,14 @@
 
 <h2><code>Evident</code>: evidentiality</h2>
 
+<table class="typeindex" border="1">
+<tr>
+  <td style="background-color:cornflowerblue;color:white"><strong>Values:</strong> </td>
+  <td><a href="#Fh">Fh</a></td>
+  <td><a href="#Nfh">Nfh</a></td>
+</tr>
+</table>
+
 <p>Evidentiality is the morphological marking of a speaker’s source of information
 (Aikhenvald, 2004). It is sometimes viewed as a category of mood and modality.</p>
 
@@ -62,20 +87,20 @@ and Latvian, among others. We currently use the quotative <a href="">Mood</a> fo
 <p>Note: <code>Evident</code> is a new universal feature in UD version 2. It was used as
 a language-specific feature (under the name <code>Evidentiality</code>) in UD v1 for Turkish.</p>
 
-<h3 id="fh-firsthand"><code>Fh</code>: firsthand</h3>
+<h3 id="a-namefhfha-firsthand"><a name="Fh"><code>Fh</code></a>: firsthand</h3>
 
 <h4 id="examples">Examples</h4>
 
 <ul>
-  <li>[tr] <em><b>geldi</b></em> (he/she/it came)</li>
+  <li>[tr] <em><b>geldi</b></em> “he/she/it came” (and I was there and saw them coming)</li>
 </ul>
 
-<h3 id="nfh-non-firsthand"><code>Nfh</code>: non-firsthand</h3>
+<h3 id="a-namenfhnfha-non-firsthand"><a name="Nfh"><code>Nfh</code></a>: non-firsthand</h3>
 
 <h4 id="examples-1">Examples</h4>
 
 <ul>
-  <li>[tr] <em><b>gelmiş</b></em> (he/she/it has come)</li>
+  <li>[tr] <em><b>gelmiş</b></em> “he/she/it has come” (I did not witness them coming but I know it because someone told me / because I see that they are there now)</li>
 </ul>
 
 <h3 id="references">References</h3>
@@ -94,6 +119,11 @@ a language-specific feature (under the name <code>Evidentiality</code>) in UD v1
 
 <!-- "in other languages" links -->
 <hr/>
+
+Evident in other languages:
+
+[<a href="../../u/feat/Evident.html">u</a>]
+
 
 
 

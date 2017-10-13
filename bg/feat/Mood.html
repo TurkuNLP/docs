@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-bg">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/bg/feat">bg/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_bg-feat/Mood.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-bg">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/bg/feat">bg/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-feat/Mood.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -109,24 +126,24 @@ happen. It usually presupposes volition. The forms in Bulgarian are analytic.</p
 <p>This feature is universal.
 It occurs with 3 different values: <code>Cnd</code>, <code>Imp</code>, <code>Ind</code>.</p>
 
-<p>18627 tokens (12%) have a non-empty value of <code>Mood</code>.
-5271 types (20%) occur at least once with a non-empty value of <code>Mood</code>.
-2522 lemmas (17%) occur at least once with a non-empty value of <code>Mood</code>.
-The feature is used with 2 part-of-speech tags: <a href="">bg-pos/VERB</a> (16738; 11% instances), <a href="">bg-pos/AUX</a> (1889; 1% instances).</p>
+<p>16999 tokens (12%) have a non-empty value of <code>Mood</code>.
+4922 types (20%) occur at least once with a non-empty value of <code>Mood</code>.
+2393 lemmas (17%) occur at least once with a non-empty value of <code>Mood</code>.
+The feature is used with 2 part-of-speech tags: <a href="">bg-pos/VERB</a> (13083; 9% instances), <a href="">bg-pos/AUX</a> (3916; 3% instances).</p>
 
 <h3 id="verb"><code>VERB</code></h3>
 
-<p>16738 <a href="">bg-pos/VERB</a> tokens (86% of all <code>VERB</code> tokens) have a non-empty value of <code>Mood</code>.</p>
+<p>13083 <a href="">bg-pos/VERB</a> tokens (84% of all <code>VERB</code> tokens) have a non-empty value of <code>Mood</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Mood</code> co-occurred: <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (16611; 99%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (16611; 99%), <tt><a href="Voice.html">Voice</a>=Act</tt> (16458; 98%), <tt><a href="Person.html">Person</a>=3</tt> (13729; 82%), <tt><a href="Number.html">Number</a>=Sing</tt> (11852; 71%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (11733; 70%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (10557; 63%).</p>
+<p>The most frequent other feature values with which <code>VERB</code> and <code>Mood</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (13070; 100%), <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (13068; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (13068; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (12832; 98%), <tt><a href="Person.html">Person</a>=3</tt> (10650; 81%), <tt><a href="Number.html">Number</a>=Sing</tt> (9192; 70%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (8879; 68%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (7580; 58%).</p>
 
 <p><code>VERB</code> tokens may have the following values of <code>Mood</code>:</p>
 
 <ul>
-  <li><code>Cnd</code> (32; 0% of non-empty <code>Mood</code>): <em>би</em></li>
-  <li><code>Imp</code> (248; 1% of non-empty <code>Mood</code>): <em>виж, кажи, вземи, опитай, Излез, Прочети, вж., върни, дай, дайте</em></li>
-  <li><code>Ind</code> (16458; 98% of non-empty <code>Mood</code>): <em>е, са, има, няма, може, трябва, беше, каза, могат, съобщи</em></li>
-  <li><code>EMPTY</code> (2814): <em>имало, направил, дал, е, трябвало, заминал, направено, искал, казал, направили</em></li>
+  <li><code>Cnd</code> (27; 0% of non-empty <code>Mood</code>): <em>би</em></li>
+  <li><code>Imp</code> (224; 2% of non-empty <code>Mood</code>): <em>виж, опитай, Кажи, Прочети, вж., вземи, дай, ела, иди, върни</em></li>
+  <li><code>Ind</code> (12832; 98% of non-empty <code>Mood</code>): <em>има, може, няма, трябва, е, каза, могат, съобщи, заяви, стана</em></li>
+  <li><code>EMPTY</code> (2409): <em>имало, дал, заминал, искал, направил, направили, трябвало, имал, станал, станало</em></li>
 </ul>
 
 <table>
@@ -135,69 +152,71 @@ The feature is used with 2 part-of-speech tags: <a href="">bg-pos/VERB</a> (1673
   <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing|<a href="VerbForm.html">VerbForm</a>=Part|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>била</em></td><td></td></tr>
   <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing|<a href="VerbForm.html">VerbForm</a>=Part|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>било</em></td><td></td></tr>
   <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="VerbForm.html">VerbForm</a>=Part|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>били</em></td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>бях</em></td><td></td></tr>
   <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>съм</em></td><td></td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>бях</em></td><td></td></tr>
   <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=2|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>си</em></td><td></td></tr>
   <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td></td><td><em>би</em></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>беше, бе</em></td><td></td></tr>
   <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>е</em></td><td></td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>беше, бе</em></td><td></td></tr>
   <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>сме</em></td><td></td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=2|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>сте</em></td><td></td></tr>
   <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=2|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>бяхте</em></td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>бяха</em></td><td></td></tr>
   <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>са</em></td><td></td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>бяха</em></td><td></td></tr>
 </table>
 
-<p><code>Mood</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 95% lemmas (2399) occur only with one value of <code>Mood</code>.</p>
+<p><code>Mood</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 95% lemmas (2280) occur only with one value of <code>Mood</code>.</p>
 
 <h3 id="aux"><code>AUX</code></h3>
 
-<p>1889 <a href="">bg-pos/AUX</a> tokens (93% of all <code>AUX</code> tokens) have a non-empty value of <code>Mood</code>.</p>
+<p>3916 <a href="">bg-pos/AUX</a> tokens (50% of all <code>AUX</code> tokens) have a non-empty value of <code>Mood</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Mood</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (1889; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (1787; 95%), <tt><a href="Person.html">Person</a>=3</tt> (1667; 88%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (1641; 87%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (1384; 73%), <tt><a href="Number.html">Number</a>=Sing</tt> (1285; 68%).</p>
+<p>The most frequent other feature values with which <code>AUX</code> and <code>Mood</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (3816; 97%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (3705; 95%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (3586; 92%), <tt><a href="Person.html">Person</a>=3</tt> (3342; 85%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (3029; 77%), <tt><a href="Number.html">Number</a>=Sing</tt> (2795; 71%).</p>
 
 <p><code>AUX</code> tokens may have the following values of <code>Mood</code>:</p>
 
 <ul>
-  <li><code>Cnd</code> (102; 5% of non-empty <code>Mood</code>): <em>би, бих, биха, бихте, бихме</em></li>
-  <li><code>Ind</code> (1787; 95% of non-empty <code>Mood</code>): <em>е, са, бе, бъде, бяха, бъдат, беше, съм, сме, си</em></li>
-  <li><code>EMPTY</code> (142): <em>бил, били, била, било, е, са, би, бъдат, съм, беше</em></li>
+  <li><code>Cnd</code> (100; 3% of non-empty <code>Mood</code>): <em>би, бих, биха, бихте, бихме</em></li>
+  <li><code>Ind</code> (3816; 97% of non-empty <code>Mood</code>): <em>е, са, бе, бъде, беше, бяха, съм, бъдат, сме, бил</em></li>
+  <li><code>EMPTY</code> (3986): <em>да, ще, е, бъдат, са, беше, бъде, съм</em></li>
 </ul>
 
 <table>
   <tr><th>Paradigm <i>съм</i></th><th><tt>Ind</tt></th><th><tt>Cnd</tt></th></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Past|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>бях</em></td><td></td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Pres|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>съм</em></td><td></td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1</tt></td><td></td><td><em>бих</em></td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=2|<a href="Tense.html">Tense</a>=Past|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>беше</em></td><td></td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=2|<a href="Tense.html">Tense</a>=Pres|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>си</em></td><td></td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=2</tt></td><td></td><td><em>Би</em></td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Past|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>бе, беше</em></td><td></td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>е</em></td><td></td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3</tt></td><td></td><td><em>би</em></td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Past|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>бяхме</em></td><td></td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Pres|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>сме</em></td><td></td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1</tt></td><td></td><td><em>бихме</em></td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=2|<a href="Tense.html">Tense</a>=Pres|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>сте</em></td><td></td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=2</tt></td><td></td><td><em>бихте</em></td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Past|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>бяха</em></td><td></td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>са</em></td><td></td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3</tt></td><td></td><td><em>биха</em></td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing|<a href="VerbForm.html">VerbForm</a>=Part|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>бил</em></td><td></td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing|<a href="VerbForm.html">VerbForm</a>=Part|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>била</em></td><td></td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing|<a href="VerbForm.html">VerbForm</a>=Part|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>било</em></td><td></td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="VerbForm.html">VerbForm</a>=Part|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>били</em></td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>бях</em></td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>съм</em></td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td></td><td><em>бих</em></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=2|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>беше</em></td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=2|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>си</em></td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=2|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td></td><td><em>Би</em></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td></td><td><em>би</em></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>бе, беше</em></td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>е</em></td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>бяхме</em></td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>сме</em></td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td></td><td><em>бихме</em></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=2|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>сте</em></td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=2|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td></td><td><em>бихте</em></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=2|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>бяхте</em></td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>бяха</em></td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>са</em></td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td></td><td><em>биха</em></td></tr>
 </table>
 
 <h2 id="relations-with-agreement-in-mood">Relations with Agreement in <code>Mood</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>Mood</code>:
-<tt>VERB –[<a href="../dep/ccomp.html">ccomp</a>]–&gt; VERB</tt> (1691; 75%),
-<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (1314; 86%),
-<tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (969; 79%),
-<tt>VERB –[<a href="../dep/xcomp.html">xcomp</a>]–&gt; VERB</tt> (391; 86%),
-<tt>VERB –[<a href="../dep/csubj.html">csubj</a>]–&gt; VERB</tt> (173; 83%),
-<tt>VERB –[<a href="../dep/dobj.html">dobj</a>]–&gt; VERB</tt> (162; 81%),
-<tt>VERB –[<a href="../dep/nmod.html">nmod</a>]–&gt; VERB</tt> (55; 75%),
-<tt>VERB –[<a href="../dep/csubjpass.html">csubjpass</a>]–&gt; VERB</tt> (29; 55%),
-<tt>VERB –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; VERB</tt> (3; 100%),
-<tt>VERB –[<a href="../dep/iobj.html">iobj</a>]–&gt; VERB</tt> (1; 100%).</p>
+<tt>VERB –[<a href="../dep/ccomp.html">ccomp</a>]–&gt; VERB</tt> (1238; 76%),
+<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (1114; 86%),
+<tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (888; 79%),
+<tt>VERB –[<a href="../dep/xcomp.html">xcomp</a>]–&gt; VERB</tt> (523; 82%),
+<tt>VERB –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; VERB</tt> (245; 70%),
+<tt>VERB –[<a href="../dep/csubj.html">csubj</a>]–&gt; VERB</tt> (119; 78%),
+<tt>VERB –[<a href="../dep/csubj:pass.html">csubj:pass</a>]–&gt; VERB</tt> (31; 57%),
+<tt>VERB –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; VERB</tt> (2; 100%).</p>
 
 
 
@@ -207,9 +226,25 @@ The feature is used with 2 part-of-speech tags: <a href="">bg-pos/VERB</a> (1673
 
 Mood in other languages:
 
+[<a href="../../am/feat/Mood.html">am</a>]
+
+[<a href="../../ar/feat/Mood.html">ar</a>]
+
 [<a href="../../bg/feat/Mood.html">bg</a>]
 
+[<a href="../../bxr/feat/Mood.html">bxr</a>]
+
+[<a href="../../ca/feat/Mood.html">ca</a>]
+
+[<a href="../../ckb/feat/Mood.html">ckb</a>]
+
+[<a href="../../cop/feat/Mood.html">cop</a>]
+
 [<a href="../../cs/feat/Mood.html">cs</a>]
+
+[<a href="../../cu/feat/Mood.html">cu</a>]
+
+[<a href="../../da/feat/Mood.html">da</a>]
 
 [<a href="../../de/feat/Mood.html">de</a>]
 
@@ -219,29 +254,99 @@ Mood in other languages:
 
 [<a href="../../es/feat/Mood.html">es</a>]
 
+[<a href="../../et/feat/Mood.html">et</a>]
+
 [<a href="../../eu/feat/Mood.html">eu</a>]
 
 [<a href="../../fa/feat/Mood.html">fa</a>]
 
 [<a href="../../fi/feat/Mood.html">fi</a>]
 
+[<a href="../../fo/feat/Mood.html">fo</a>]
+
 [<a href="../../fr/feat/Mood.html">fr</a>]
 
 [<a href="../../ga/feat/Mood.html">ga</a>]
 
+[<a href="../../gl/feat/Mood.html">gl</a>]
+
+[<a href="../../got/feat/Mood.html">got</a>]
+
+[<a href="../../grc/feat/Mood.html">grc</a>]
+
 [<a href="../../he/feat/Mood.html">he</a>]
 
+[<a href="../../hi/feat/Mood.html">hi</a>]
+
+[<a href="../../hr/feat/Mood.html">hr</a>]
+
 [<a href="../../hu/feat/Mood.html">hu</a>]
+
+[<a href="../../id/feat/Mood.html">id</a>]
 
 [<a href="../../it/feat/Mood.html">it</a>]
 
 [<a href="../../ja/feat/Mood.html">ja</a>]
 
+[<a href="../../kk/feat/Mood.html">kk</a>]
+
+[<a href="../../kmr/feat/Mood.html">kmr</a>]
+
 [<a href="../../ko/feat/Mood.html">ko</a>]
+
+[<a href="../../la/feat/Mood.html">la</a>]
+
+[<a href="../../lv/feat/Mood.html">lv</a>]
+
+[<a href="../../mr/feat/Mood.html">mr</a>]
+
+[<a href="../../nl/feat/Mood.html">nl</a>]
+
+[<a href="../../no/feat/Mood.html">no</a>]
+
+[<a href="../../pl/feat/Mood.html">pl</a>]
+
+[<a href="../../pt/feat/Mood.html">pt</a>]
+
+[<a href="../../ro/feat/Mood.html">ro</a>]
+
+[<a href="../../ru/feat/Mood.html">ru</a>]
+
+[<a href="../../sa/feat/Mood.html">sa</a>]
+
+[<a href="../../sk/feat/Mood.html">sk</a>]
+
+[<a href="../../sla/feat/Mood.html">sla</a>]
+
+[<a href="../../sl/feat/Mood.html">sl</a>]
+
+[<a href="../../so/feat/Mood.html">so</a>]
+
+[<a href="../../sr/feat/Mood.html">sr</a>]
 
 [<a href="../../sv/feat/Mood.html">sv</a>]
 
+[<a href="../../swl/feat/Mood.html">swl</a>]
+
+[<a href="../../ta/feat/Mood.html">ta</a>]
+
+[<a href="../../tr/feat/Mood.html">tr</a>]
+
 [<a href="../../u/feat/Mood.html">u</a>]
+
+[<a href="../../ug/feat/Mood.html">ug</a>]
+
+[<a href="../../uk/feat/Mood.html">uk</a>]
+
+[<a href="../../ur/feat/Mood.html">ur</a>]
+
+[<a href="../../urj/feat/Mood.html">urj</a>]
+
+[<a href="../../vi/feat/Mood.html">vi</a>]
+
+[<a href="../../yue/feat/Mood.html">yue</a>]
+
+[<a href="../../zh/feat/Mood.html">zh</a>]
 
 
 

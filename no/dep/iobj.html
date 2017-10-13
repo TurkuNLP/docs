@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-no">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/no/dep">no/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_no-dep/iobj.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-no">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/no/dep">no/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_no-dep/iobj.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -45,7 +62,7 @@
 
           <h2><code>iobj</code>: indirect object</h2>
 
-<p>The indirect object of a verb is any nominal phrase that is a core argument of the verb but is not its subject or direct object. The <code>iobj</code> relation presupposes a <code>dobj</code> argument of the same word and is only used for nominal arguments. Note that nominals with a preposition such as <em>til</em> “to” which are semantically similar to indirect object in the expression of a recipient role are not analyzed as <code>iobj</code>.</p>
+<p>The indirect object of a verb is any nominal phrase that is a core argument of the verb but is not its subject or direct object. The <code>iobj</code> relation presupposes a <code>obj</code> argument of the same word and is only used for nominal arguments. Note that nominals with a preposition such as <em>til</em> “to” which are semantically similar to indirect object in the expression of a recipient role are not analyzed as <code>iobj</code>.</p>
 
 <pre><code class="language-sdparse">gi den ubehøvlede unge mannen en sjanse \n give the rude young man a chance
 iobj(gi-1,mannen-5)
@@ -63,16 +80,16 @@ dobj(gi-1,sjanse-7)
 
 <hr />
 
-<h2 id="treebank-statistics-udnorwegian">Treebank Statistics (UD_Norwegian)</h2>
+<h2 id="treebank-statistics-udnorwegian-bokmaal">Treebank Statistics (UD_Norwegian-Bokmaal)</h2>
 
 <p>This relation is universal.</p>
 
-<p>695 nodes (0%) are attached to their parents as <code>iobj</code>.</p>
+<p>634 nodes (0%) are attached to their parents as <code>iobj</code>.</p>
 
-<p>594 instances of <code>iobj</code> (85%) are left-to-right (parent precedes child).
-Average distance between parent and child is 1.44892086330935.</p>
+<p>543 instances of <code>iobj</code> (86%) are left-to-right (parent precedes child).
+Average distance between parent and child is 1.44479495268139.</p>
 
-<p>The following 7 pairs of parts of speech are connected with <code>iobj</code>: <a href="">no-pos/VERB</a>-<a href="">no-pos/PRON</a> (482; 69% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/NOUN</a> (145; 21% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/PROPN</a> (48; 7% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/ADJ</a> (12; 2% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/DET</a> (4; 1% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/SCONJ</a> (3; 0% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/VERB</a> (1; 0% instances).</p>
+<p>The following 7 pairs of parts of speech are connected with <code>iobj</code>: <a href="">no-pos/VERB</a>-<a href="">no-pos/PRON</a> (434; 68% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/NOUN</a> (135; 21% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/PROPN</a> (46; 7% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/ADJ</a> (11; 2% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/DET</a> (4; 1% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/SCONJ</a> (3; 0% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/VERB</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 4	bgColor:blue
 # visual-style 4	fgColor:white
@@ -84,11 +101,11 @@ Average distance between parent and child is 1.44892086330935.</p>
 3	påtatt	påta	VERB	_	VerbForm=Part	0	root	_	_
 4	seg	seg	PRON	_	Case=Acc|PronType=Prs|Reflex=Yes	3	iobj	_	_
 5	en	en	DET	_	Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
-6	både	både	CONJ	_	_	7	cc	_	_
+6	både	både	CCONJ	_	_	7	cc	_	_
 7	viktig	viktig	ADJ	_	Definite=Ind|Degree=Pos|Number=Sing	10	amod	_	_
-8	og	og	CONJ	_	_	7	cc	_	_
+8	og	og	CCONJ	_	_	9	cc	_	_
 9	vanskelig	vanskelig	ADJ	_	Definite=Ind|Degree=Pos|Number=Sing	7	conj	_	_
-10	oppgave	oppgave	NOUN	_	Definite=Ind|Gender=Masc|Number=Sing	3	dobj	_	SpaceAfter=No
+10	oppgave	oppgave	NOUN	_	Definite=Ind|Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No
 11	.	$.	PUNCT	_	_	3	punct	_	_
 
 </code></pre>
@@ -98,17 +115,17 @@ Average distance between parent and child is 1.44892086330935.</p>
 # visual-style 5	bgColor:blue
 # visual-style 5	fgColor:white
 # visual-style 5 6 iobj	color:blue
-1	Jeg	jeg	PRON	_	Animacy=Anim|Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+1	Jeg	jeg	PRON	_	Animacy=Hum|Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
 2	håper	håpe	VERB	_	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	du	du	PRON	_	Animacy=Anim|Case=Nom|Number=Sing|Person=2|PronType=Prs	5	nsubj	_	_
+3	du	du	PRON	_	Animacy=Hum|Case=Nom|Number=Sing|Person=2|PronType=Prs	5	nsubj	_	_
 4	virkelig	virkelig	ADJ	_	Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	5	advmod	_	_
 5	forteller	fortelle	VERB	_	Mood=Ind|Tense=Pres|VerbForm=Fin	2	ccomp	_	_
 6	nordmennene	nordmann	NOUN	_	Definite=Def|Gender=Masc|Number=Plur	5	iobj	_	_
-7	hva	hva	PRON	_	PronType=Int	9	dobj	_	_
-8	vi	vi	PRON	_	Animacy=Anim|Case=Nom|Number=Plur|Person=1|PronType=Prs	9	nsubj	_	_
+7	hva	hva	PRON	_	PronType=Int	9	obj	_	_
+8	vi	vi	PRON	_	Animacy=Hum|Case=Nom|Number=Plur|Person=1|PronType=Prs	9	nsubj	_	_
 9	synes	synes	VERB	_	Mood=Ind|Tense=Pres|VerbForm=Fin	5	ccomp	_	_
 10	om	om	ADP	_	_	11	case	_	_
-11	det	det	PRON	_	Gender=Neut|Number=Sing|Person=3|PronType=Prs	9	nmod	_	SpaceAfter=No
+11	det	det	PRON	_	Gender=Neut|Number=Sing|Person=3|PronType=Prs	9	obl	_	SpaceAfter=No
 12	.	$.	PUNCT	_	_	2	punct	_	_
 
 </code></pre>
@@ -118,7 +135,7 @@ Average distance between parent and child is 1.44892086330935.</p>
 # visual-style 6	bgColor:blue
 # visual-style 6	fgColor:white
 # visual-style 6 8 iobj	color:blue
-1	Jeg	jeg	PRON	_	Animacy=Anim|Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+1	Jeg	jeg	PRON	_	Animacy=Hum|Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
 2	skal	skulle	AUX	_	Mood=Ind|Tense=Pres|VerbForm=Fin	4	aux	_	_
 3	ihvertfall	ihvertfall	ADV	_	_	4	advmod	_	_
 4	prøve	prøve	VERB	_	VerbForm=Inf	0	root	_	SpaceAfter=No
@@ -130,6 +147,73 @@ Average distance between parent and child is 1.44892086330935.</p>
 
 </code></pre>
 
+<hr />
+
+<h2 id="treebank-statistics-udnorwegian-nynorsk">Treebank Statistics (UD_Norwegian-Nynorsk)</h2>
+
+<p>This relation is universal.</p>
+
+<p>617 nodes (0%) are attached to their parents as <code>iobj</code>.</p>
+
+<p>484 instances of <code>iobj</code> (78%) are left-to-right (parent precedes child).
+Average distance between parent and child is 1.62722852512156.</p>
+
+<p>The following 7 pairs of parts of speech are connected with <code>iobj</code>: <a href="">no-pos/VERB</a>-<a href="">no-pos/PRON</a> (416; 67% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/NOUN</a> (146; 24% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/PROPN</a> (34; 6% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/ADJ</a> (11; 2% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/VERB</a> (5; 1% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/DET</a> (4; 1% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/SCONJ</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 9	bgColor:blue
+# visual-style 9	fgColor:white
+# visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 8 9 iobj	color:blue
+1	Hell	helle	VERB	_	Mood=Imp|VerbForm=Fin	0	root	_	_
+2	kjøtdeigen	kjøtdeig	NOUN	_	Definite=Def|Gender=Masc|Number=Sing	1	obj	_	_
+3	på	på	ADP	_	_	5	case	_	_
+4	ein	ein	DET	_	Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	tallerken	tallerken	NOUN	_	Definite=Ind|Gender=Masc|Number=Sing	1	obl	_	SpaceAfter=No
+6	,	$,	PUNCT	_	_	1	punct	_	_
+7	og	og	CCONJ	_	_	8	cc	_	_
+8	la	la	VERB	_	Mood=Imp|VerbForm=Fin	1	conj	_	_
+9	den	den	PRON	_	Gender=Fem,Masc|Number=Sing|Person=3|PronType=Prs	8	iobj	_	_
+10	kolne	kolne	VERB	_	VerbForm=Inf	8	xcomp	_	SpaceAfter=No
+11	.	$.	PUNCT	_	_	1	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 1 2 iobj	color:blue
+1	La	la	VERB	_	Mood=Imp|VerbForm=Fin	0	root	_	_
+2	deigen	deig	NOUN	_	Definite=Def|Gender=Masc|Number=Sing	1	iobj	_	_
+3	heve	heve	VERB	_	VerbForm=Inf	1	xcomp	_	_
+4	til	til	ADP	_	_	6	case	_	_
+5	dobbel	dobbel	ADJ	_	Definite=Ind|Degree=Pos|Number=Sing	6	amod	_	_
+6	storleik	storleik	NOUN	_	Definite=Ind|Gender=Masc|Number=Sing	3	obl	_	SpaceAfter=No
+7	,	$,	PUNCT	_	_	6	punct	_	_
+8	ca.	ca.	ADV	_	Abbr=Yes	10	advmod	_	_
+9	ein	ein	DET	_	Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	time	time	NOUN	_	Definite=Ind|Gender=Masc|Number=Sing	3	obl	_	SpaceAfter=No
+11	.	$.	PUNCT	_	_	1	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 4 iobj	color:blue
+1	Dette	dette	PRON	_	Gender=Neut|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	har	ha	AUX	_	Mood=Ind|Tense=Pres|VerbForm=Fin	3	aux	_	_
+3	valda	valde	VERB	_	VerbForm=Part	0	root	_	_
+4	Nortura	Nortura	PROPN	_	_	3	iobj	_	_
+5	ein	ein	DET	_	Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	del	del	NOUN	_	Definite=Ind|Gender=Masc|Number=Sing	7	nmod	_	_
+7	styr	styr	NOUN	_	Definite=Ind|Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No
+8	.	$.	PUNCT	_	_	3	punct	_	_
+
+</code></pre>
+
 
 
 
@@ -138,9 +222,25 @@ Average distance between parent and child is 1.44892086330935.</p>
 
 iobj in other languages:
 
+[<a href="../../am/dep/iobj.html">am</a>]
+
+[<a href="../../ar/dep/iobj.html">ar</a>]
+
 [<a href="../../bg/dep/iobj.html">bg</a>]
 
+[<a href="../../bxr/dep/iobj.html">bxr</a>]
+
+[<a href="../../ca/dep/iobj.html">ca</a>]
+
+[<a href="../../ckb/dep/iobj.html">ckb</a>]
+
+[<a href="../../cop/dep/iobj.html">cop</a>]
+
 [<a href="../../cs/dep/iobj.html">cs</a>]
+
+[<a href="../../cu/dep/iobj.html">cu</a>]
+
+[<a href="../../da/dep/iobj.html">da</a>]
 
 [<a href="../../de/dep/iobj.html">de</a>]
 
@@ -150,27 +250,95 @@ iobj in other languages:
 
 [<a href="../../es/dep/iobj.html">es</a>]
 
+[<a href="../../et/dep/iobj.html">et</a>]
+
 [<a href="../../eu/dep/iobj.html">eu</a>]
 
 [<a href="../../fa/dep/iobj.html">fa</a>]
 
+[<a href="../../fo/dep/iobj.html">fo</a>]
+
 [<a href="../../fr/dep/iobj.html">fr</a>]
 
-[<a href="../../ga/dep/iobj.html">ga</a>]
+[<a href="../../gl/dep/iobj.html">gl</a>]
+
+[<a href="../../got/dep/iobj.html">got</a>]
+
+[<a href="../../grc/dep/iobj.html">grc</a>]
 
 [<a href="../../he/dep/iobj.html">he</a>]
 
+[<a href="../../hi/dep/iobj.html">hi</a>]
+
+[<a href="../../hr/dep/iobj.html">hr</a>]
+
 [<a href="../../hu/dep/iobj.html">hu</a>]
+
+[<a href="../../id/dep/iobj.html">id</a>]
 
 [<a href="../../it/dep/iobj.html">it</a>]
 
 [<a href="../../ja/dep/iobj.html">ja</a>]
 
+[<a href="../../kk/dep/iobj.html">kk</a>]
+
+[<a href="../../kmr/dep/iobj.html">kmr</a>]
+
 [<a href="../../ko/dep/iobj.html">ko</a>]
+
+[<a href="../../la/dep/iobj.html">la</a>]
+
+[<a href="../../lv/dep/iobj.html">lv</a>]
+
+[<a href="../../mr/dep/iobj.html">mr</a>]
+
+[<a href="../../nl/dep/iobj.html">nl</a>]
+
+[<a href="../../no/dep/iobj.html">no</a>]
+
+[<a href="../../pl/dep/iobj.html">pl</a>]
+
+[<a href="../../pt/dep/iobj.html">pt</a>]
+
+[<a href="../../ro/dep/iobj.html">ro</a>]
+
+[<a href="../../ru/dep/iobj.html">ru</a>]
+
+[<a href="../../sa/dep/iobj.html">sa</a>]
+
+[<a href="../../sk/dep/iobj.html">sk</a>]
+
+[<a href="../../sla/dep/iobj.html">sla</a>]
+
+[<a href="../../sl/dep/iobj.html">sl</a>]
+
+[<a href="../../so/dep/iobj.html">so</a>]
+
+[<a href="../../sr/dep/iobj.html">sr</a>]
 
 [<a href="../../sv/dep/iobj.html">sv</a>]
 
+[<a href="../../swl/dep/iobj.html">swl</a>]
+
+[<a href="../../ta/dep/iobj.html">ta</a>]
+
+[<a href="../../tr/dep/iobj.html">tr</a>]
+
 [<a href="../../u/dep/iobj.html">u</a>]
+
+[<a href="../../ug/dep/iobj.html">ug</a>]
+
+[<a href="../../uk/dep/iobj.html">uk</a>]
+
+[<a href="../../ur/dep/iobj.html">ur</a>]
+
+[<a href="../../urj/dep/iobj.html">urj</a>]
+
+[<a href="../../vi/dep/iobj.html">vi</a>]
+
+[<a href="../../yue/dep/iobj.html">yue</a>]
+
+[<a href="../../zh/dep/iobj.html">zh</a>]
 
 
 

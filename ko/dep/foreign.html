@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ko">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ko/dep">ko/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ko-dep/foreign.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ko">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ko/dep">ko/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ko-dep/foreign.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -56,14 +73,152 @@ for <code>foreign</code>.</p>
 
 
 
+
+<hr />
+
+<h2 id="treebank-statistics-udkorean-sejong">Treebank Statistics (UD_Korean-Sejong)</h2>
+
+<p>This relation is universal.</p>
+
+<p>526 nodes (1%) are attached to their parents as <code>foreign</code>.</p>
+
+<p>364 instances of <code>foreign</code> (69%) are right-to-left (child precedes parent).
+Average distance between parent and child is 3.65209125475285.</p>
+
+<p>The following 11 pairs of parts of speech are connected with <code>foreign</code>: <a href="">ko-pos/NOUN</a>-<a href="">ko-pos/X</a> (213; 40% instances), <a href="">ko-pos/X</a>-<a href="">ko-pos/X</a> (177; 34% instances), <a href="">ko-pos/VERB</a>-<a href="">ko-pos/X</a> (68; 13% instances), <a href="">ko-pos/PUNCT</a>-<a href="">ko-pos/X</a> (35; 7% instances), <a href="">ko-pos/NUM</a>-<a href="">ko-pos/X</a> (11; 2% instances), <a href="">ko-pos/PROPN</a>-<a href="">ko-pos/X</a> (10; 2% instances), <a href="">ko-pos/PART</a>-<a href="">ko-pos/X</a> (5; 1% instances), <a href="">ko-pos/ADJ</a>-<a href="">ko-pos/X</a> (4; 1% instances), <a href="">ko-pos/ADP</a>-<a href="">ko-pos/X</a> (1; 0% instances), <a href="">ko-pos/SYM</a>-<a href="">ko-pos/X</a> (1; 0% instances), <a href="">ko-pos/VERB</a>-<a href="">ko-pos/NOUN</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 15	bgColor:blue
+# visual-style 15	fgColor:white
+# visual-style 13	bgColor:blue
+# visual-style 13	fgColor:white
+# visual-style 13 15 foreign	color:blue
+1	_	_	ADV	_	_	2	advmod	_	_
+2	_	_	NOUN	_	_	20	advmod	_	_
+3	_	_	PART	_	_	2	case	_	_
+4	_	_	PART	_	_	3	case	_	_
+5	_	_	PART	_	_	4	case	_	_
+6	_	_	DET	_	_	7	det	_	_
+7	_	_	NOUN	_	_	9	nmod	_	_
+8	_	_	ADJ	_	_	9	amod	_	_
+9	_	_	NOUN	_	_	11	dobj	_	_
+10	_	_	ADP	_	_	9	case	_	_
+11	_	_	VERB	_	_	20	advmod	_	_
+12	_	_	PART	_	_	11	case	_	_
+13	_	_	NOUN	_	_	20	nsubj	_	_
+14	_	_	PUNCT	_	_	13	punct	_	_
+15	_	_	X	_	_	13	foreign	_	_
+16	_	_	PUNCT	_	_	13	punct	_	_
+17	_	_	PART	_	_	16	appos	_	_
+18	_	_	PART	_	_	17	case	_	_
+19	_	_	ADV	_	_	20	advmod	_	_
+20	_	_	VERB	_	_	0	root	_	_
+21	_	_	PART	_	_	20	case	_	_
+22	_	_	PART	_	_	21	case	_	_
+23	_	_	PUNCT	_	_	22	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 3 foreign	color:blue
+1	_	_	PROPN	_	_	5	acl	_	_
+2	_	_	PART	_	_	1	case	_	_
+3	_	_	X	_	_	4	foreign	_	_
+4	_	_	X	_	_	5	foreign	_	_
+5	_	_	X	_	_	27	foreign	_	_
+6	_	_	PART	_	_	5	case	_	_
+7	_	_	ADJ	_	_	10	amod	_	_
+8	_	_	NOUN	_	_	10	nmod	_	_
+9	_	_	PART	_	_	8	case	_	_
+10	_	_	NOUN	_	_	13	dobj	_	_
+11	_	_	PART	_	_	10	case	_	_
+12	_	_	PART	_	_	10	case	_	_
+13	_	_	NOUN	_	_	20	amod	_	_
+14	_	_	PART	_	_	13	case	_	_
+15	_	_	NOUN	_	_	18	acl	_	_
+16	_	_	PART	_	_	15	case	_	_
+17	_	_	NOUN	_	_	18	amod	_	_
+18	_	_	NOUN	_	_	20	dobj	_	_
+19	_	_	PART	_	_	18	case	_	_
+20	_	_	NOUN	_	_	23	acl	_	_
+21	_	_	PART	_	_	20	case	_	_
+22	_	_	PART	_	_	21	case	_	_
+23	_	_	NOUN	_	_	27	dobj	_	_
+24	_	_	PART	_	_	23	case	_	_
+25	_	_	NOUN	_	_	27	advcl	_	_
+26	_	_	ADP	_	_	25	case	_	_
+27	_	_	VERB	_	_	0	root	_	_
+28	_	_	PART	_	_	27	case	_	_
+29	_	_	PUNCT	_	_	28	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 27	bgColor:blue
+# visual-style 27	fgColor:white
+# visual-style 27 5 foreign	color:blue
+1	_	_	PROPN	_	_	5	acl	_	_
+2	_	_	PART	_	_	1	case	_	_
+3	_	_	X	_	_	4	foreign	_	_
+4	_	_	X	_	_	5	foreign	_	_
+5	_	_	X	_	_	27	foreign	_	_
+6	_	_	PART	_	_	5	case	_	_
+7	_	_	ADJ	_	_	10	amod	_	_
+8	_	_	NOUN	_	_	10	nmod	_	_
+9	_	_	PART	_	_	8	case	_	_
+10	_	_	NOUN	_	_	13	dobj	_	_
+11	_	_	PART	_	_	10	case	_	_
+12	_	_	PART	_	_	10	case	_	_
+13	_	_	NOUN	_	_	20	amod	_	_
+14	_	_	PART	_	_	13	case	_	_
+15	_	_	NOUN	_	_	18	acl	_	_
+16	_	_	PART	_	_	15	case	_	_
+17	_	_	NOUN	_	_	18	amod	_	_
+18	_	_	NOUN	_	_	20	dobj	_	_
+19	_	_	PART	_	_	18	case	_	_
+20	_	_	NOUN	_	_	23	acl	_	_
+21	_	_	PART	_	_	20	case	_	_
+22	_	_	PART	_	_	21	case	_	_
+23	_	_	NOUN	_	_	27	dobj	_	_
+24	_	_	PART	_	_	23	case	_	_
+25	_	_	NOUN	_	_	27	advcl	_	_
+26	_	_	ADP	_	_	25	case	_	_
+27	_	_	VERB	_	_	0	root	_	_
+28	_	_	PART	_	_	27	case	_	_
+29	_	_	PUNCT	_	_	28	punct	_	_
+
+</code></pre>
+
+
+
+
 <!-- "in other languages" links -->
 <hr/>
 
 foreign in other languages:
 
+[<a href="../../am/dep/foreign.html">am</a>]
+
+[<a href="../../ar/dep/foreign.html">ar</a>]
+
 [<a href="../../bg/dep/foreign.html">bg</a>]
 
+[<a href="../../bxr/dep/foreign.html">bxr</a>]
+
+[<a href="../../ca/dep/foreign.html">ca</a>]
+
+[<a href="../../ckb/dep/foreign.html">ckb</a>]
+
+[<a href="../../cop/dep/foreign.html">cop</a>]
+
 [<a href="../../cs/dep/foreign.html">cs</a>]
+
+[<a href="../../cu/dep/foreign.html">cu</a>]
+
+[<a href="../../da/dep/foreign.html">da</a>]
 
 [<a href="../../de/dep/foreign.html">de</a>]
 
@@ -73,29 +228,97 @@ foreign in other languages:
 
 [<a href="../../es/dep/foreign.html">es</a>]
 
+[<a href="../../et/dep/foreign.html">et</a>]
+
 [<a href="../../eu/dep/foreign.html">eu</a>]
 
 [<a href="../../fa/dep/foreign.html">fa</a>]
 
 [<a href="../../fi/dep/foreign.html">fi</a>]
 
+[<a href="../../fo/dep/foreign.html">fo</a>]
+
 [<a href="../../fr/dep/foreign.html">fr</a>]
 
 [<a href="../../ga/dep/foreign.html">ga</a>]
 
+[<a href="../../gl/dep/foreign.html">gl</a>]
+
+[<a href="../../got/dep/foreign.html">got</a>]
+
+[<a href="../../grc/dep/foreign.html">grc</a>]
+
 [<a href="../../he/dep/foreign.html">he</a>]
 
+[<a href="../../hi/dep/foreign.html">hi</a>]
+
+[<a href="../../hr/dep/foreign.html">hr</a>]
+
 [<a href="../../hu/dep/foreign.html">hu</a>]
+
+[<a href="../../id/dep/foreign.html">id</a>]
 
 [<a href="../../it/dep/foreign.html">it</a>]
 
 [<a href="../../ja/dep/foreign.html">ja</a>]
 
+[<a href="../../kk/dep/foreign.html">kk</a>]
+
+[<a href="../../kmr/dep/foreign.html">kmr</a>]
+
 [<a href="../../ko/dep/foreign.html">ko</a>]
+
+[<a href="../../la/dep/foreign.html">la</a>]
+
+[<a href="../../lv/dep/foreign.html">lv</a>]
+
+[<a href="../../mr/dep/foreign.html">mr</a>]
+
+[<a href="../../nl/dep/foreign.html">nl</a>]
+
+[<a href="../../no/dep/foreign.html">no</a>]
+
+[<a href="../../pl/dep/foreign.html">pl</a>]
+
+[<a href="../../pt/dep/foreign.html">pt</a>]
+
+[<a href="../../ro/dep/foreign.html">ro</a>]
+
+[<a href="../../ru/dep/foreign.html">ru</a>]
+
+[<a href="../../sa/dep/foreign.html">sa</a>]
+
+[<a href="../../sk/dep/foreign.html">sk</a>]
+
+[<a href="../../sla/dep/foreign.html">sla</a>]
+
+[<a href="../../sl/dep/foreign.html">sl</a>]
+
+[<a href="../../so/dep/foreign.html">so</a>]
+
+[<a href="../../sr/dep/foreign.html">sr</a>]
 
 [<a href="../../sv/dep/foreign.html">sv</a>]
 
-[<a href="../../u/dep/foreign.html">u</a>]
+[<a href="../../swl/dep/foreign.html">swl</a>]
+
+[<a href="../../ta/dep/foreign.html">ta</a>]
+
+[<a href="../../tr/dep/foreign.html">tr</a>]
+
+[<a href="../../ug/dep/foreign.html">ug</a>]
+
+[<a href="../../uk/dep/foreign.html">uk</a>]
+
+[<a href="../../ur/dep/foreign.html">ur</a>]
+
+[<a href="../../urj/dep/foreign.html">urj</a>]
+
+[<a href="../../vi/dep/foreign.html">vi</a>]
+
+[<a href="../../yue/dep/foreign.html">yue</a>]
+
+[<a href="../../zh/dep/foreign.html">zh</a>]
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-tr">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-tr">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -97,7 +114,7 @@
         </tr>
         <tr>
           <td></td>
-          <td><a>Negative</a></td>
+          <td><a>Polarity</a></td>
         </tr>
       </table>
     </td>
@@ -111,7 +128,7 @@
 
 <p>Animacy is not used.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_tr-feat/Animacy.md" target="#">edit Animacy</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-feat/Animacy.md" target="#">edit Animacy</a></p>
 
 <p><a id="al-tr-feat/Aspect" class="al-dest"></a></p>
 <h2><code>Aspect</code>: aspect</h2>
@@ -220,7 +237,7 @@ and it only combines with the past tense forms.</p>
   <li>Jaklin Kornfilt. <em>Turkish</em>. London and New York: Routledge, 1997.</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_tr-feat/Aspect.md" target="#">edit Aspect</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-feat/Aspect.md" target="#">edit Aspect</a></p>
 
 <p><a id="al-tr-feat/Case" class="al-dest"></a></p>
 <h2><code>Case</code>: case</h2>
@@ -338,7 +355,7 @@ The oblique arguments of some verbs and complements (noun phrases) of some postp
   <li><em>Bunlar Akara’dakiler<b>den</b> dolayı oluyor</em> “All these are happening because of people in Ankara”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_tr-feat/Case.md" target="#">edit Case</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-feat/Case.md" target="#">edit Case</a></p>
 
 <p><a id="al-tr-feat/Definite" class="al-dest"></a></p>
 <h2><code>Definite</code>: definiteness or state</h2>
@@ -366,7 +383,7 @@ Its value distinguishes whether we are talking about something known and concret
   <li><em>her</em> “all/each”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_tr-feat/Definite.md" target="#">edit Definite</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-feat/Definite.md" target="#">edit Definite</a></p>
 
 <p><a id="al-tr-feat/Degree" class="al-dest"></a></p>
 <h2><code>Degree</code>: degree of comparison</h2>
@@ -398,7 +415,7 @@ We only annotate these two adverbs with the <code>Degree</code> feature.</p>
   <li><em>en çabuk</em>  “quickest/fastest”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_tr-feat/Degree.md" target="#">edit Degree</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-feat/Degree.md" target="#">edit Degree</a></p>
 
 <p><a id="al-tr-feat/Echo" class="al-dest"></a></p>
 <h2><code>Echo</code>: Echo</h2>
@@ -406,7 +423,7 @@ We only annotate these two adverbs with the <code>Degree</code> feature.</p>
 <p>This document is a placeholder for the language-specific documentation
 for <code>Echo</code>.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_tr-feat/Echo.md" target="#">edit Echo</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-feat/Echo.md" target="#">edit Echo</a></p>
 
 <p><a id="al-tr-feat/Evidential" class="al-dest"></a></p>
 <h2><code>Evidential</code>: evidential</h2>
@@ -452,7 +469,7 @@ The speaker has first-hand evidence for the statement/event.</p>
   <li><em>eve gitmemişmiş</em> ‘(evidently) she had gone home (by the time I arrived)’</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_tr-feat/Evidential.md" target="#">edit Evidential</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-feat/Evidential.md" target="#">edit Evidential</a></p>
 
 <p><a id="al-tr-feat/Evidentiality" class="al-dest"></a></p>
 <h2><code>Evidentiality</code>: Evidentiality</h2>
@@ -460,14 +477,14 @@ The speaker has first-hand evidence for the statement/event.</p>
 <p>This document is a placeholder for the language-specific documentation
 for <code>Evidentiality</code>.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_tr-feat/Evidentiality.md" target="#">edit Evidentiality</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-feat/Evidentiality.md" target="#">edit Evidentiality</a></p>
 
 <p><a id="al-tr-feat/Gender" class="al-dest"></a></p>
 <h2><code>Gender</code>: gender</h2>
 
 <p><code>Gender</code> is not used in Turkish.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_tr-feat/Gender.md" target="#">edit Gender</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-feat/Gender.md" target="#">edit Gender</a></p>
 
 <p><a id="al-tr-feat/Mood" class="al-dest"></a></p>
 <h2><code>Mood</code>: mood</h2>
@@ -603,43 +620,7 @@ However, it is also very difficult to disambiguate between these two moods.</p>
 London: Routledge, 2005.</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_tr-feat/Mood.md" target="#">edit Mood</a></p>
-
-<p><a id="al-tr-feat/Negative" class="al-dest"></a></p>
-<h2><code>Negative</code>: whether the word can be or is negated</h2>
-
-<p>In Turkish <a href="tr-pos/VERB">verbs</a> are negated with the suffix <em>-mA</em> (and its allomorphs).
-Only exception is the verb/particle <em>değil</em> which functions as an auxiliary or copula
-(it is the main means of negating a copular clause, but it can also be used to negate a verbal clause).
-<em>değil</em> is marked as <code>Negative=Neg</code> when it is used as a copula or auxiliary.
-We use the POS tag <a href="tr-pos/PART">particle</a> when <em>değil</em> is used for negating non-predicates,
-in which case we use the feature <a href="PronType"><code>PronType</code></a> for marking its negativity.</p>
-
-<p>In Turkish <a href="tr-pos/ADJ">adjectives</a> are normally negated by forming adjectival
-clauses with copula <em>ol-</em>, e.g., <em>verimli olmayan</em> “<b>un</b>productive”
-(lit: “(something) that is not productive”).
-A non-productive prefix (of Arabic origin), <em>na-</em>, can be used for negating a lexicalized set of adjectives, e.g., <em><b>na</b>müsait</em> “not suitable”.
-We (currently) do not mark adjectives for the <code>Negative</code> feature.</p>
-
-<h3 id="pos-positive-affirmative"><code>Pos</code>: positive, affirmative</h3>
-
-<h4 id="examples">Examples</h4>
-
-<ul>
-  <li><em>Okuyacak</em> “he/she will read”</li>
-  <li><em>Ali doktor</em> “Ali is a doctor”</li>
-</ul>
-
-<h3 id="neg-negative"><code>Neg</code>: negative</h3>
-
-<h4 id="examples-1">Examples</h4>
-
-<ul>
-  <li><em>Oku<b>ma</b>yacak</em> “he/she will not read”</li>
-  <li><em>Ali doktor <b>değil</b></em> “Ali is not a doctor”</li>
-</ul>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_tr-feat/Negative.md" target="#">edit Negative</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-feat/Mood.md" target="#">edit Mood</a></p>
 
 <p><a id="al-tr-feat/NumType" class="al-dest"></a></p>
 <h2><code>NumType</code>: numeral type</h2>
@@ -687,7 +668,7 @@ A period following a numeral may also indicate ordinal use of the number.</p>
   <li><em>kaç<b>ar</b> kitap okudunuz</em> “how many books have you each read”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_tr-feat/NumType.md" target="#">edit NumType</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-feat/NumType.md" target="#">edit NumType</a></p>
 
 <p><a id="al-tr-feat/Number" class="al-dest"></a></p>
 <h2><code>Number</code>: number</h2>
@@ -737,7 +718,7 @@ Plurality on verbs is indicated by a set of person/number suffixes which vary de
   <li><em>Kitap okuyacak<b>lar</b></em> ‘(They) will read books’ – Plurality of the subject is inferred from the agreement marker on the verb</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_tr-feat/Number.md" target="#">edit Number</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-feat/Number.md" target="#">edit Number</a></p>
 
 <p><a id="al-tr-feat/Number[psor]" class="al-dest"></a></p>
 <h2><code>Number[psor]</code>: possessor’s number</h2>
@@ -762,7 +743,7 @@ Plurality on verbs is indicated by a set of person/number suffixes which vary de
   <li><em>kitabımız</em> “our book” <code>Number[psor]=Plur|Number=Sing</code></li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_tr-feat/Number-psor.md" target="#">edit Number[psor]</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-feat/Number-psor.md" target="#">edit Number[psor]</a></p>
 
 <p><a id="al-tr-feat/Person" class="al-dest"></a></p>
 <h2><code>Person</code>: person</h2>
@@ -836,7 +817,7 @@ speakers nor addressees.</p>
   <li><em>okudu<b>lar</b></em> ‘they read-PAST’</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_tr-feat/Person.md" target="#">edit Person</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-feat/Person.md" target="#">edit Person</a></p>
 
 <p><a id="al-tr-feat/Person[psor]" class="al-dest"></a></p>
 <h2><code>Person[psor]</code>: person of possessor</h2>
@@ -878,7 +859,43 @@ speakers nor addressees.</p>
 
 <p>(note that last three forms are ambiguous)</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_tr-feat/Person-psor.md" target="#">edit Person[psor]</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-feat/Person-psor.md" target="#">edit Person[psor]</a></p>
+
+<p><a id="al-tr-feat/Polarity" class="al-dest"></a></p>
+<h2><code>Polarity</code>: whether the word can be or is negated</h2>
+
+<p>In Turkish <a href="tr-pos/VERB">verbs</a> are negated with the suffix <em>-mA</em> (and its allomorphs).
+Only exception is the verb/particle <em>değil</em> which functions as an auxiliary or copula
+(it is the main means of negating a copular clause, but it can also be used to negate a verbal clause).
+<em>değil</em> is marked as <code>Negative=Neg</code> when it is used as a copula or auxiliary.
+We use the POS tag <a href="tr-pos/PART">particle</a> when <em>değil</em> is used for negating non-predicates,
+in which case we use the feature <a href="PronType"><code>PronType</code></a> for marking its negativity.</p>
+
+<p>In Turkish <a href="tr-pos/ADJ">adjectives</a> are normally negated by forming adjectival
+clauses with copula <em>ol-</em>, e.g., <em>verimli olmayan</em> “<b>un</b>productive”
+(lit: “(something) that is not productive”).
+A non-productive prefix (of Arabic origin), <em>na-</em>, can be used for negating a lexicalized set of adjectives, e.g., <em><b>na</b>müsait</em> “not suitable”.
+We (currently) do not mark adjectives for the <code>Polarity</code> feature.</p>
+
+<h3 id="pos-positive-affirmative"><code>Pos</code>: positive, affirmative</h3>
+
+<h4 id="examples">Examples</h4>
+
+<ul>
+  <li><em>Okuyacak</em> “he/she will read”</li>
+  <li><em>Ali doktor</em> “Ali is a doctor”</li>
+</ul>
+
+<h3 id="neg-negative"><code>Neg</code>: negative</h3>
+
+<h4 id="examples-1">Examples</h4>
+
+<ul>
+  <li><em>Oku<b>ma</b>yacak</em> “he/she will not read”</li>
+  <li><em>Ali doktor <b>değil</b></em> “Ali is not a doctor”</li>
+</ul>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-feat/Polarity.md" target="#">edit Polarity</a></p>
 
 <p><a id="al-tr-feat/Poss" class="al-dest"></a></p>
 <h2><code>Poss</code>: possessive</h2>
@@ -888,7 +905,7 @@ Possessive use of a pronoun (similar to English <em>my</em>, <em>your</em>)
 corresponds pronouns with <em>genitive</em> <a href="Case">case</a> suffix, e.g.,
 <em>ben<b>im</b></em> “my”.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_tr-feat/Poss.md" target="#">edit Poss</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-feat/Poss.md" target="#">edit Poss</a></p>
 
 <p><a id="al-tr-feat/PronType" class="al-dest"></a></p>
 <h2><code>PronType</code>: pronominal type</h2>
@@ -952,7 +969,7 @@ forms.</p>
   <li><em>ora</em> “there”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_tr-feat/PronType.md" target="#">edit PronType</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-feat/PronType.md" target="#">edit PronType</a></p>
 
 <p><a id="al-tr-feat/Reflex" class="al-dest"></a></p>
 <h2><code>Reflex</code>: reflexive</h2>
@@ -975,7 +992,7 @@ column. (Which means that empty value has the <code>No</code> meaning.)</p>
   <li><em>kendimiz</em> “ourselves”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_tr-feat/Reflex.md" target="#">edit Reflex</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-feat/Reflex.md" target="#">edit Reflex</a></p>
 
 <p><a id="al-tr-feat/Register" class="al-dest"></a></p>
 <h2><code>Register</code>: Register</h2>
@@ -983,7 +1000,7 @@ column. (Which means that empty value has the <code>No</code> meaning.)</p>
 <p>This document is a placeholder for the language-specific documentation
 for <code>Register</code>.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_tr-feat/Register.md" target="#">edit Register</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-feat/Register.md" target="#">edit Register</a></p>
 
 <p><a id="al-tr-feat/Tense" class="al-dest"></a></p>
 <h2><code>Tense</code>: tense</h2>
@@ -1056,7 +1073,7 @@ Hence, we only mark verbal predicates with double past indicators as <code>Pqp</
   <li><em>eve gittiydi</em> ‘she had gone home’ (colloquial)</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_tr-feat/Tense.md" target="#">edit Tense</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-feat/Tense.md" target="#">edit Tense</a></p>
 
 <p><a id="al-tr-feat/VerbForm" class="al-dest"></a></p>
 <h2><code>VerbForm</code>: form of verb or deverbative</h2>
@@ -1098,7 +1115,7 @@ we use the same label.</p>
   <li><em>okuyunca anlayacaksın</em> “You will understand when you read it”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_tr-feat/VerbForm.md" target="#">edit VerbForm</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-feat/VerbForm.md" target="#">edit VerbForm</a></p>
 
 <p><a id="al-tr-feat/Voice" class="al-dest"></a></p>
 <h2><code>Voice</code>: voice</h2>
@@ -1177,7 +1194,7 @@ Like reciprocal, reflexive is rather unproductive, and a very limited set of ver
   <li><em>giy<b>in</b></em> “to dress oneself”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_tr-feat/Voice.md" target="#">edit Voice</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-feat/Voice.md" target="#">edit Voice</a></p>
 
 
 

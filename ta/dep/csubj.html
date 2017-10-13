@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ta">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ta/dep">ta/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ta-dep/csubj.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ta">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ta/dep">ta/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ta-dep/csubj.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -75,16 +92,16 @@ Average distance between parent and child is 3.36363636363636.</p>
 # visual-style 9	bgColor:blue
 # visual-style 9	fgColor:white
 # visual-style 9 5 csubj	color:blue
-1	அவர்	அவர்	PRON	RpN-3SH--	Case=Nom|Gender=Com|Number=Sing|Person=3|Polite=Pol|PronType=Prs	5	nsubj	_	Translit=avar|LTranslit=avar
+1	அவர்	அவர்	PRON	RpN-3SH--	Case=Nom|Gender=Com|Number=Sing|Person=3|Polite=Form|PronType=Prs	5	nsubj	_	Translit=avar|LTranslit=avar
 2	எந்தத்	எந்த	DET	DD-------	_	3	det	_	Translit=entat|LTranslit=enta
-3	தேதியில்	தேதி	NOUN	NNL-3SN--	Case=Loc|Gender=Neut|Number=Sing|Person=3	5	nmod	_	Translit=tētiyil|LTranslit=tēti
-4	இந்தியாவுக்குச்	இந்தியா	PROPN	NED-3SN--	Case=Dat|Gender=Neut|Number=Sing|Person=3	5	nmod	_	Translit=intiyāvukkuc|LTranslit=intiyā
-5	செல்கிறார்	செல்	VERB	Vr-P3SHAA	Gender=Com|Mood=Ind|Negative=Pos|Number=Sing|Person=3|Polite=Pol|Tense=Pres|VerbForm=Fin|Voice=Act	9	csubj	_	Translit=celkirār|LTranslit=cel
-6	என்பது	என்	PART	TzNF3SN-A	Case=Nom|Gender=Neut|Negative=Pos|Number=Sing|Person=3|Tense=Fut|VerbForm=Ger	5	mark	_	Translit=enpatu|LTranslit=en
+3	தேதியில்	தேதி	NOUN	NNL-3SN--	Case=Loc|Gender=Neut|Number=Sing|Person=3	5	obl	_	Translit=tētiyil|LTranslit=tēti
+4	இந்தியாவுக்குச்	இந்தியா	PROPN	NED-3SN--	Case=Dat|Gender=Neut|Number=Sing|Person=3	5	obl	_	Translit=intiyāvukkuc|LTranslit=intiyā
+5	செல்கிறார்	செல்	VERB	Vr-P3SHAA	Gender=Com|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Polite=Form|Tense=Pres|VerbForm=Fin|Voice=Act	9	csubj	_	Translit=celkirār|LTranslit=cel
+6	என்பது	என்	PART	TzNF3SN-A	Case=Nom|Gender=Neut|Number=Sing|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Ger	5	mark	_	Translit=enpatu|LTranslit=en
 7	இதுவரை	இதுவரை	ADV	AA-------	_	9	advmod	_	Translit=ituvarai|LTranslit=ituvarai
-8	உறுதி	உறுதி	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	9	dobj	_	Translit=uruti|LTranslit=uruti
-9	செய்யப்படவ்	செய்	VERB	Vu-T---AA	Negative=Pos|VerbForm=Inf|Voice=Act	0	root	_	Translit=ceyyappaṭav|LTranslit=cey
-10	இல்லை	இல்	AUX	VR-T3PNAA	Gender=Neut|Mood=Ind|Negative=Pos|Number=Plur|Person=3|VerbForm=Fin|Voice=Act	9	aux	_	Translit=illai|LTranslit=il
+8	உறுதி	உறுதி	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	9	obj	_	Translit=uruti|LTranslit=uruti
+9	செய்யப்படவ்	செய்	VERB	Vu-T---AA	Polarity=Pos|VerbForm=Inf|Voice=Act	0	root	_	Translit=ceyyappaṭav|LTranslit=cey
+10	இல்லை	இல்	AUX	VR-T3PNAA	Gender=Neut|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|VerbForm=Fin|Voice=Act	9	aux	_	Translit=illai|LTranslit=il
 11	.	.	PUNCT	Z#-------	PunctType=Peri	9	punct	_	Translit=.|LTranslit=.
 
 </code></pre>
@@ -95,18 +112,18 @@ Average distance between parent and child is 3.36363636363636.</p>
 # visual-style 17	fgColor:white
 # visual-style 17 13 csubj	color:blue
 1	குரல்	குரல்	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	2	nmod	_	Translit=kural|LTranslit=kural
-2	வாக்கெடுப்பு	வாக்கெடுப்பு	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	7	nmod	_	Translit=vākkeṭuppu|LTranslit=vākkeṭuppu
+2	வாக்கெடுப்பு	வாக்கெடுப்பு	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	7	obl	_	Translit=vākkeṭuppu|LTranslit=vākkeṭuppu
 3	மூலம்	மூலம்	ADP	PP-------	AdpType=Post	2	case	_	Translit=mūlam|LTranslit=mūlam
 4	ஒரு	ஒரு	ADJ	JJ-------	_	5	amod	_	Translit=oru|LTranslit=oru
-5	வாக்கு	வாக்கு	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	7	dobj	_	Translit=vākku|LTranslit=vākku
+5	வாக்கு	வாக்கு	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	7	obj	_	Translit=vākku|LTranslit=vākku
 6	கூடுதலாக	கூடுதல்	ADV	AA-------	_	7	advmod	_	Translit=kūṭutalāka|LTranslit=kūṭutal
-7	பெற்று	பெறு	VERB	Vt-T---AA	Negative=Pos|VerbForm=Part|Voice=Act	10	advcl	_	Translit=perru|LTranslit=peru
-8	எடியூரப்பா	எடியூரப்பா	PROPN	NEN-3SH--	Case=Nom|Gender=Com|Number=Sing|Person=3|Polite=Pol	9	nmod	_	Translit=eṭiyūrappā|LTranslit=eṭiyūrappā
+7	பெற்று	பெறு	VERB	Vt-T---AA	Polarity=Pos|VerbForm=Part|Voice=Act	10	advcl	_	Translit=perru|LTranslit=peru
+8	எடியூரப்பா	எடியூரப்பா	PROPN	NEN-3SH--	Case=Nom|Gender=Com|Number=Sing|Person=3|Polite=Form	9	nmod	_	Translit=eṭiyūrappā|LTranslit=eṭiyūrappā
 9	அரசு	அரசு	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	10	nsubj	_	Translit=aracu|LTranslit=aracu
-10	வெற்றி	வெற்றி	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	13	dobj	_	Translit=verri|LTranslit=verri
-11	பெற்றுவிட்டத்	பெறு	AUX	VZND3SNAA	Case=Nom|Gender=Neut|Negative=Pos|Number=Sing|Person=3|Tense=Past|VerbForm=Ger|Voice=Act	10	acl	_	Translit=perruviṭṭat|LTranslit=peru
+10	வெற்றி	வெற்றி	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	13	obj	_	Translit=verri|LTranslit=verri
+11	பெற்றுவிட்டத்	பெறு	AUX	VZND3SNAA	Case=Nom|Gender=Neut|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Ger|Voice=Act	10	acl	_	Translit=perruviṭṭat|LTranslit=peru
 12	ஆக	ஆக	PART	Tg-------	_	10	mark	_	Translit=āka|LTranslit=āka
-13	அறிவித்தது	அறிவி	VERB	VzND3SNAA	Case=Nom|Gender=Neut|Negative=Pos|Number=Sing|Person=3|Tense=Past|VerbForm=Ger|Voice=Act	17	csubj	_	Translit=arivittatu|LTranslit=arivi
+13	அறிவித்தது	அறிவி	VERB	VzND3SNAA	Case=Nom|Gender=Neut|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Ger|Voice=Act	17	csubj	_	Translit=arivittatu|LTranslit=arivi
 14	சட்ட	சட்டம்	PROPN	NO--3SN--	Gender=Neut|Number=Sing|Person=3	15	nmod	_	Translit=caṭṭa|LTranslit=caṭṭam
 15	விரோதம்	விரோதம்	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	16	nmod	_	Translit=virōtam|LTranslit=virōtam
 16	ஆன	ஆன	PART	Tg-------	_	17	nmod	_	Translit=āna|LTranslit=āna
@@ -117,23 +134,21 @@ Average distance between parent and child is 3.36363636363636.</p>
 
 <pre><code class="language-conllu"># visual-style 9	bgColor:blue
 # visual-style 9	fgColor:white
-# visual-style 13	bgColor:blue
-# visual-style 13	fgColor:white
-# visual-style 13 9 csubj	color:blue
-1	2022-ம்	2022	ADJ	Uy-------	NumType=Ord	2	amod	_	Translit=2022-m|LTranslit=2022
-2	ஆண்டில்	ஆண்டு	NOUN	NNL-3SN--	Case=Loc|Gender=Neut|Number=Sing|Person=3	9	nmod	_	Translit=āṇṭil|LTranslit=āṇṭu
-3	gஎர்மனியில்	gஎர்மனி	NOUN	NNL-3SN--	Case=Loc|Gender=Neut|Number=Sing|Person=3	9	nmod	_	Translit=germaniyil|LTranslit=germani
-4	அணுஉலைக்	அணுஉலை	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	5	nmod	_	Translit=aṇuulaik|LTranslit=aṇuulai
-5	கூடங்கள்	கூடம்	NOUN	NNN-3PN--	Case=Nom|Gender=Neut|Number=Plur|Person=3	8	nmod	_	Translit=kūṭaṅkaḷ|LTranslit=kūṭam
-6	ஏ	ஏ	PART	Tq-------	_	5	advmod:emph	_	Translit=ē|LTranslit=ē
-7	இல்லாத	இல்	ADP	PP-------	AdpType=Post	5	case	_	Translit=illāta|LTranslit=il
-8	நிலை	நிலை	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	9	dobj	_	Translit=nilai|LTranslit=nilai
-9	ஏற்பட	ஏற்படு	VERB	Vu-T---AA	Negative=Pos|VerbForm=Inf|Voice=Act	13	csubj	_	Translit=ērpaṭa|LTranslit=ērpaṭu
-10	வேண்டும்	வேண்டு	AUX	VR-F3SNAA	Gender=Neut|Mood=Ind|Negative=Pos|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin|Voice=Act	9	aux	_	Translit=vēṇṭum|LTranslit=vēṇṭu
-11	என்பது	என்	X	TQ-------	_	9	mark	_	Translit=enpatu|LTranslit=en
-12	தான்	தான்	PART	Tq-------	_	9	advmod:emph	_	Translit=tān|LTranslit=tān
-13	அது	அது	PRON	RpN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	0	root	_	SpaceAfter=No|Translit=atu|LTranslit=atu
-14	.	.	PUNCT	Z#-------	PunctType=Peri	13	punct	_	Translit=.|LTranslit=.
+# visual-style 10	bgColor:blue
+# visual-style 10	fgColor:white
+# visual-style 10 9 csubj	color:blue
+1	ஐக்கிய	ஐக்கிய	PROPN	NO--3SN--	Gender=Neut|Number=Sing|Person=3	3	nmod	_	Translit=aikkiya|LTranslit=aikkiya
+2	நாடுகள்	நாடு	NOUN	NNN-3PN--	Case=Nom|Gender=Neut|Number=Plur|Person=3	3	nmod	_	Translit=nāṭukaḷ|LTranslit=nāṭu
+3	சபையின்	சபை	NOUN	NNG-3SN--	Case=Gen|Gender=Neut|Number=Sing|Person=3	5	nmod	_	Translit=capaiyin|LTranslit=capai
+4	பாதுகாப்புக்	பாதுகாப்பு	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	5	nmod	_	Translit=pātukāppuk|LTranslit=pātukāppu
+5	கவுன்சிலில்	கவுன்சில்	NOUN	NNL-3SN--	Case=Loc|Gender=Neut|Number=Sing|Person=3	9	obl	_	Translit=kavuncilil|LTranslit=kavuncil
+6	இந்தியாவுக்கு	இந்தியா	PROPN	NED-3SN--	Case=Dat|Gender=Neut|Number=Sing|Person=3	9	obj	_	Translit=intiyāvukku|LTranslit=intiyā
+7	உறுப்பினர்	உறுப்பினர்	NOUN	NNN-3SH--	Case=Nom|Gender=Com|Number=Sing|Person=3|Polite=Form	8	nmod	_	Translit=uruppinar|LTranslit=uruppinar
+8	அந்தஸ்து	அந்தஸ்து	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	9	obj	_	Translit=antastu|LTranslit=antastu
+9	கிடைப்பது	கிடை	AUX	VZNF3SNAA	Case=Nom|Gender=Neut|Number=Sing|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Ger|Voice=Act	10	csubj	_	Translit=kiṭaippatu|LTranslit=kiṭai
+10	உறுதியாகி	உறுதியாகு	VERB	Vt-T---AA	Polarity=Pos|VerbForm=Part|Voice=Act	0	root	_	Translit=urutiyāki|LTranslit=urutiyāku
+11	விட்டது	விடு	AUX	VR-D3SNAA	Gender=Neut|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	10	aux	_	SpaceAfter=No|Translit=viṭṭatu|LTranslit=viṭu
+12	.	.	PUNCT	Z#-------	PunctType=Peri	10	punct	_	Translit=.|LTranslit=.
 
 </code></pre>
 
@@ -145,9 +160,25 @@ Average distance between parent and child is 3.36363636363636.</p>
 
 csubj in other languages:
 
+[<a href="../../am/dep/csubj.html">am</a>]
+
+[<a href="../../ar/dep/csubj.html">ar</a>]
+
 [<a href="../../bg/dep/csubj.html">bg</a>]
 
+[<a href="../../bxr/dep/csubj.html">bxr</a>]
+
+[<a href="../../ca/dep/csubj.html">ca</a>]
+
+[<a href="../../ckb/dep/csubj.html">ckb</a>]
+
+[<a href="../../cop/dep/csubj.html">cop</a>]
+
 [<a href="../../cs/dep/csubj.html">cs</a>]
+
+[<a href="../../cu/dep/csubj.html">cu</a>]
+
+[<a href="../../da/dep/csubj.html">da</a>]
 
 [<a href="../../de/dep/csubj.html">de</a>]
 
@@ -157,29 +188,99 @@ csubj in other languages:
 
 [<a href="../../es/dep/csubj.html">es</a>]
 
+[<a href="../../et/dep/csubj.html">et</a>]
+
 [<a href="../../eu/dep/csubj.html">eu</a>]
 
 [<a href="../../fa/dep/csubj.html">fa</a>]
 
 [<a href="../../fi/dep/csubj.html">fi</a>]
 
+[<a href="../../fo/dep/csubj.html">fo</a>]
+
 [<a href="../../fr/dep/csubj.html">fr</a>]
 
 [<a href="../../ga/dep/csubj.html">ga</a>]
 
+[<a href="../../gl/dep/csubj.html">gl</a>]
+
+[<a href="../../got/dep/csubj.html">got</a>]
+
+[<a href="../../grc/dep/csubj.html">grc</a>]
+
 [<a href="../../he/dep/csubj.html">he</a>]
 
+[<a href="../../hi/dep/csubj.html">hi</a>]
+
+[<a href="../../hr/dep/csubj.html">hr</a>]
+
 [<a href="../../hu/dep/csubj.html">hu</a>]
+
+[<a href="../../id/dep/csubj.html">id</a>]
 
 [<a href="../../it/dep/csubj.html">it</a>]
 
 [<a href="../../ja/dep/csubj.html">ja</a>]
 
+[<a href="../../kk/dep/csubj.html">kk</a>]
+
+[<a href="../../kmr/dep/csubj.html">kmr</a>]
+
 [<a href="../../ko/dep/csubj.html">ko</a>]
+
+[<a href="../../la/dep/csubj.html">la</a>]
+
+[<a href="../../lv/dep/csubj.html">lv</a>]
+
+[<a href="../../mr/dep/csubj.html">mr</a>]
+
+[<a href="../../nl/dep/csubj.html">nl</a>]
+
+[<a href="../../no/dep/csubj.html">no</a>]
+
+[<a href="../../pl/dep/csubj.html">pl</a>]
+
+[<a href="../../pt/dep/csubj.html">pt</a>]
+
+[<a href="../../ro/dep/csubj.html">ro</a>]
+
+[<a href="../../ru/dep/csubj.html">ru</a>]
+
+[<a href="../../sa/dep/csubj.html">sa</a>]
+
+[<a href="../../sk/dep/csubj.html">sk</a>]
+
+[<a href="../../sla/dep/csubj.html">sla</a>]
+
+[<a href="../../sl/dep/csubj.html">sl</a>]
+
+[<a href="../../so/dep/csubj.html">so</a>]
+
+[<a href="../../sr/dep/csubj.html">sr</a>]
 
 [<a href="../../sv/dep/csubj.html">sv</a>]
 
+[<a href="../../swl/dep/csubj.html">swl</a>]
+
+[<a href="../../ta/dep/csubj.html">ta</a>]
+
+[<a href="../../tr/dep/csubj.html">tr</a>]
+
 [<a href="../../u/dep/csubj.html">u</a>]
+
+[<a href="../../ug/dep/csubj.html">ug</a>]
+
+[<a href="../../uk/dep/csubj.html">uk</a>]
+
+[<a href="../../ur/dep/csubj.html">ur</a>]
+
+[<a href="../../urj/dep/csubj.html">urj</a>]
+
+[<a href="../../vi/dep/csubj.html">vi</a>]
+
+[<a href="../../yue/dep/csubj.html">yue</a>]
+
+[<a href="../../zh/dep/csubj.html">zh</a>]
 
 
 

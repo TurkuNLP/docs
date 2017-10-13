@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-uk">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/uk/dep">uk/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_uk-dep/mark.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-uk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/uk/dep">uk/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-dep/mark.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,56 +80,67 @@ for <code>mark</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>57 nodes (3%) are attached to their parents as <code>mark</code>.</p>
+<p>264 nodes (2%) are attached to their parents as <code>mark</code>.</p>
 
-<p>55 instances of <code>mark</code> (96%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.82456140350877.</p>
+<p>264 instances of <code>mark</code> (100%) are right-to-left (child precedes parent).
+Average distance between parent and child is 2.70454545454545.</p>
 
-<p>The following 13 pairs of parts of speech are connected with <code>mark</code>: <a href="">uk-pos/VERB</a>-<a href="">uk-pos/SCONJ</a> (34; 60% instances), <a href="">uk-pos/VERB</a>-<a href="">uk-pos/ADV</a> (5; 9% instances), <a href="">uk-pos/VERB</a>-<a href="">uk-pos/CONJ</a> (4; 7% instances), <a href="">uk-pos/ADV</a>-<a href="">uk-pos/SCONJ</a> (3; 5% instances), <a href="">uk-pos/ADV</a>-<a href="">uk-pos/PART</a> (2; 4% instances), <a href="">uk-pos/VERB</a>-<a href="">uk-pos/PART</a> (2; 4% instances), <a href="">uk-pos/ADJ</a>-<a href="">uk-pos/PART</a> (1; 2% instances), <a href="">uk-pos/DET</a>-<a href="">uk-pos/PART</a> (1; 2% instances), <a href="">uk-pos/NOUN</a>-<a href="">uk-pos/ADV</a> (1; 2% instances), <a href="">uk-pos/PART</a>-<a href="">uk-pos/PART</a> (1; 2% instances), <a href="">uk-pos/PRON</a>-<a href="">uk-pos/PART</a> (1; 2% instances), <a href="">uk-pos/PRON</a>-<a href="">uk-pos/SCONJ</a> (1; 2% instances), <a href="">uk-pos/VERB</a>-<a href="">uk-pos/DET</a> (1; 2% instances).</p>
+<p>The following 10 pairs of parts of speech are connected with <code>mark</code>: <a href="">uk-pos/VERB</a>-<a href="">uk-pos/SCONJ</a> (164; 62% instances), <a href="">uk-pos/NOUN</a>-<a href="">uk-pos/SCONJ</a> (57; 22% instances), <a href="">uk-pos/ADJ</a>-<a href="">uk-pos/SCONJ</a> (14; 5% instances), <a href="">uk-pos/VERB</a>-<a href="">uk-pos/ADV</a> (11; 4% instances), <a href="">uk-pos/ADV</a>-<a href="">uk-pos/SCONJ</a> (7; 3% instances), <a href="">uk-pos/PROPN</a>-<a href="">uk-pos/SCONJ</a> (4; 2% instances), <a href="">uk-pos/ADJ</a>-<a href="">uk-pos/ADV</a> (2; 1% instances), <a href="">uk-pos/INTJ</a>-<a href="">uk-pos/SCONJ</a> (2; 1% instances), <a href="">uk-pos/PRON</a>-<a href="">uk-pos/SCONJ</a> (2; 1% instances), <a href="">uk-pos/NOUN</a>-<a href="">uk-pos/ADV</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 4	bgColor:blue
 # visual-style 4	fgColor:white
 # visual-style 6	bgColor:blue
 # visual-style 6	fgColor:white
 # visual-style 6 4 mark	color:blue
-1	Микола	Микола	PROPN	noun:anim:m:v_naz:prop:fname	Animacy=Anim|Case=Nom|Gender=Masc	2	nsubj	_	_
-2	сказав	сказати	VERB	verb:perf:past:m	Aspect=Perf|Gender=Masc|Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
-3	,	,	PUNCT	punct	_	2	punct	_	_
-4	що	що	SCONJ	conj:subord	_	6	mark	_	_
-5	Хлопець	хлопець	NOUN	noun:anim:m:v_naz	Animacy=Anim|Case=Nom|Gender=Masc	6	nsubj	_	_
-6	пішов	піти	VERB	verb:perf:past:m	Aspect=Perf|Gender=Masc|Mood=Ind|Tense=Past|VerbForm=Fin	2	ccomp	_	_
-7	раніше	раніше	ADV	adv:compr	Degree=Cmp	6	advmod	_	SpaceAfter=No
-8	.	.	PUNCT	punct	_	2	punct	_	_
+1	Скінчилося	скінчитися	VERB	Vmeis-sn	Aspect=Perf|Gender=Neut|Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+2	тим	те	PRON	Pd--nnsin	Animacy=Inan|Case=Ins|Gender=Neut|PronType=Dem	1	obl	_	SpaceAfter=No
+3	,	,	PUNCT	U	_	6	punct	_	_
+4	що	що	SCONJ	Css	_	6	mark	_	_
+5	вони	вони	PRON	Pp-3--pnn	Case=Nom|Number=Plur|Person=3|PronType=Prs	6	nsubj	_	_
+6	побили	побити	VERB	Vmeis-p	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin	2	acl	_	_
+7	нашого	наш	DET	Ppp1mysaa	Animacy=Anim|Case=Acc|Gender=Masc|Person=1|Poss=Yes|PronType=Prs	8	det	_	_
+8	товариша	товариш	NOUN	Ncmsay	Animacy=Anim|Case=Acc|Gender=Masc	6	obj	_	SpaceAfter=No
+9	.	.	PUNCT	U	_	1	punct	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 5 3 mark	color:blue
-1	Пишу	писати	VERB	verb:imperf:pres:s:1	Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
-2	,	,	PUNCT	punct	_	1	punct	_	_
-3	тому	тому	ADV	adv:xp2:&amp;pron:dem	PronType=Dem	5	mark	_	_
-4	що	що	SCONJ	conj:subord	_	3	compound	_	_
-5	обіцяла	обіцяти	VERB	verb:imperf:past:f	Aspect=Imp|Gender=Fem|Mood=Ind|Tense=Past|VerbForm=Fin	1	ccomp	_	SpaceAfter=No
-6	.	.	PUNCT	punct	_	1	punct	_	_
+<pre><code class="language-conllu"># visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 9	bgColor:blue
+# visual-style 9	fgColor:white
+# visual-style 9 6 mark	color:blue
+1	На	на	ADP	Spsl	Case=Loc	2	case	_	_
+2	підвищенні	підвищення	NOUN	Ncnsln	Animacy=Inan|Case=Loc|Gender=Neut	3	obl	_	_
+3	сидить	сидіти	VERB	Vmpip3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	міцний	міцний	ADJ	Afpmsnf	Case=Nom|Degree=Pos|Gender=Masc	11	amod	_	SpaceAfter=No
+5	,	,	PUNCT	U	_	9	punct	_	_
+6	мов	мов	SCONJ	Css	_	9	mark	_	_
+7	із	із	ADP	Spsg	Case=Gen	9	case	_	_
+8	закам’янілої	закам’янілий	ADJ	Ap-fsgf-ea	Aspect=Perf|Case=Gen|Gender=Fem|VerbForm=Part|Voice=Act	9	amod	_	_
+9	гуми	гума	NOUN	Ncfsgn	Animacy=Inan|Case=Gen|Gender=Fem	4	advcl	_	SpaceAfter=No
+10	,	,	PUNCT	U	_	9	punct	_	_
+11	негр	негр	NOUN	Ncmsny	Animacy=Anim|Case=Nom|Gender=Masc	3	nsubj	_	SpaceAfter=No
+12	.	.	PUNCT	U	_	3	punct	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 3 1 mark	color:blue
-1	Чи	чи	CONJ	conj:coord	_	3	mark	_	_
-2	я	я	PRON	noun:anim:s:v_naz:&amp;pron:pers:1	Animacy=Anim|Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
-3	сплю	спати	VERB	verb:imperf:pres:s:1	Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	чи	чи	CONJ	conj:coord	_	6	mark	_	_
-5	то	то	PRON	noun:inanim:n:v_naz:&amp;pron:dem	Animacy=Inan|Case=Nom|Gender=Neut|PronType=Dem	6	discourse	_	_
-6	сниться	снитися	VERB	verb:rev:imperf:pres:s:3	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	_	_
-7	мені	я	PRON	noun:anim:s:v_dav:&amp;pron:pers:1	Animacy=Anim|Case=Dat|Number=Sing|Person=1|PronType=Prs	6	iobj	_	SpaceAfter=No
-8	?	?	PUNCT	punct	_	3	punct	_	_
+<pre><code class="language-conllu"># visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 11	bgColor:blue
+# visual-style 11	fgColor:white
+# visual-style 11 8 mark	color:blue
+1	Я	я	PRON	Pp-1-ysnn	Animacy=Anim|Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	приходив	приходити	VERB	Vmpis-sm	Aspect=Imp|Gender=Masc|Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+3	щодня	щодня	ADV	R	_	2	advmod	_	_
+4	у	у	ADP	Spsa	Case=Acc	6	case	_	_
+5	молочну	молочний	ADJ	Ao-fsas	Case=Acc|Gender=Fem	6	amod	_	_
+6	чергу	черга	NOUN	Ncfsan	Animacy=Inan|Case=Acc|Gender=Fem	2	obl	_	SpaceAfter=No
+7	,	,	PUNCT	U	_	11	punct	_	_
+8	бо	бо	SCONJ	Css	_	11	mark	_	_
+9	діти	дитина	NOUN	Ncfpny	Animacy=Anim|Case=Nom|Gender=Fem|Number=Plur	11	nsubj	_	_
+10	були	бути	AUX	Vapis-p	Aspect=Imp|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin	11	cop	_	_
+11	малесенькі	малесенький	ADJ	Ao--pns	Case=Nom|Number=Plur	2	advcl	_	SpaceAfter=No
+12	.	.	PUNCT	U	_	2	punct	_	_
 
 </code></pre>
 
@@ -124,9 +152,25 @@ Average distance between parent and child is 1.82456140350877.</p>
 
 mark in other languages:
 
+[<a href="../../am/dep/mark.html">am</a>]
+
+[<a href="../../ar/dep/mark.html">ar</a>]
+
 [<a href="../../bg/dep/mark.html">bg</a>]
 
+[<a href="../../bxr/dep/mark.html">bxr</a>]
+
+[<a href="../../ca/dep/mark.html">ca</a>]
+
+[<a href="../../ckb/dep/mark.html">ckb</a>]
+
+[<a href="../../cop/dep/mark.html">cop</a>]
+
 [<a href="../../cs/dep/mark.html">cs</a>]
+
+[<a href="../../cu/dep/mark.html">cu</a>]
+
+[<a href="../../da/dep/mark.html">da</a>]
 
 [<a href="../../de/dep/mark.html">de</a>]
 
@@ -136,29 +180,99 @@ mark in other languages:
 
 [<a href="../../es/dep/mark.html">es</a>]
 
+[<a href="../../et/dep/mark.html">et</a>]
+
 [<a href="../../eu/dep/mark.html">eu</a>]
 
 [<a href="../../fa/dep/mark.html">fa</a>]
 
 [<a href="../../fi/dep/mark.html">fi</a>]
 
+[<a href="../../fo/dep/mark.html">fo</a>]
+
 [<a href="../../fr/dep/mark.html">fr</a>]
 
 [<a href="../../ga/dep/mark.html">ga</a>]
 
+[<a href="../../gl/dep/mark.html">gl</a>]
+
+[<a href="../../got/dep/mark.html">got</a>]
+
+[<a href="../../grc/dep/mark.html">grc</a>]
+
 [<a href="../../he/dep/mark.html">he</a>]
 
+[<a href="../../hi/dep/mark.html">hi</a>]
+
+[<a href="../../hr/dep/mark.html">hr</a>]
+
 [<a href="../../hu/dep/mark.html">hu</a>]
+
+[<a href="../../id/dep/mark.html">id</a>]
 
 [<a href="../../it/dep/mark.html">it</a>]
 
 [<a href="../../ja/dep/mark.html">ja</a>]
 
+[<a href="../../kk/dep/mark.html">kk</a>]
+
+[<a href="../../kmr/dep/mark.html">kmr</a>]
+
 [<a href="../../ko/dep/mark.html">ko</a>]
+
+[<a href="../../la/dep/mark.html">la</a>]
+
+[<a href="../../lv/dep/mark.html">lv</a>]
+
+[<a href="../../mr/dep/mark.html">mr</a>]
+
+[<a href="../../nl/dep/mark.html">nl</a>]
+
+[<a href="../../no/dep/mark.html">no</a>]
+
+[<a href="../../pl/dep/mark.html">pl</a>]
+
+[<a href="../../pt/dep/mark.html">pt</a>]
+
+[<a href="../../ro/dep/mark.html">ro</a>]
+
+[<a href="../../ru/dep/mark.html">ru</a>]
+
+[<a href="../../sa/dep/mark.html">sa</a>]
+
+[<a href="../../sk/dep/mark.html">sk</a>]
+
+[<a href="../../sla/dep/mark.html">sla</a>]
+
+[<a href="../../sl/dep/mark.html">sl</a>]
+
+[<a href="../../so/dep/mark.html">so</a>]
+
+[<a href="../../sr/dep/mark.html">sr</a>]
 
 [<a href="../../sv/dep/mark.html">sv</a>]
 
+[<a href="../../swl/dep/mark.html">swl</a>]
+
+[<a href="../../ta/dep/mark.html">ta</a>]
+
+[<a href="../../tr/dep/mark.html">tr</a>]
+
 [<a href="../../u/dep/mark.html">u</a>]
+
+[<a href="../../ug/dep/mark.html">ug</a>]
+
+[<a href="../../uk/dep/mark.html">uk</a>]
+
+[<a href="../../ur/dep/mark.html">ur</a>]
+
+[<a href="../../urj/dep/mark.html">urj</a>]
+
+[<a href="../../vi/dep/mark.html">vi</a>]
+
+[<a href="../../yue/dep/mark.html">yue</a>]
+
+[<a href="../../zh/dep/mark.html">zh</a>]
 
 
 

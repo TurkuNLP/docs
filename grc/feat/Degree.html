@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-grc">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/grc/feat">grc/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_grc-feat/Degree.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-grc">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/grc/feat">grc/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_grc-feat/Degree.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -109,74 +126,63 @@ set of objects. This corresponds in Ancient Greek to the the absolute superlativ
 <p>This feature is universal.
 It occurs with 2 different values: <code>Cmp</code>, <code>Sup</code>.</p>
 
-<p>1074 tokens (0%) have a non-empty value of <code>Degree</code>.
-638 types (1%) occur at least once with a non-empty value of <code>Degree</code>.
-296 lemmas (2%) occur at least once with a non-empty value of <code>Degree</code>.
-The feature is used with 2 part-of-speech tags: <a href="">grc-pos/ADJ</a> (1021; 0% instances), <a href="">grc-pos/ADV</a> (53; 0% instances).</p>
+<p>745 tokens (0%) have a non-empty value of <code>Degree</code>.
+456 types (1%) occur at least once with a non-empty value of <code>Degree</code>.
+215 lemmas (2%) occur at least once with a non-empty value of <code>Degree</code>.
+The feature is used with 2 part-of-speech tags: <a href="">grc-pos/ADJ</a> (700; 0% instances), <a href="">grc-pos/ADV</a> (45; 0% instances).</p>
 
 <h3 id="adj"><code>ADJ</code></h3>
 
-<p>1021 <a href="">grc-pos/ADJ</a> tokens (4% of all <code>ADJ</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>700 <a href="">grc-pos/ADJ</a> tokens (4% of all <code>ADJ</code> tokens) have a non-empty value of <code>Degree</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Degree</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (682; 67%), <tt><a href="Case.html">Case</a>=Acc</tt> (522; 51%).</p>
+<p>The most frequent other feature values with which <code>ADJ</code> and <code>Degree</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (437; 62%).</p>
 
 <p><code>ADJ</code> tokens may have the following values of <code>Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (687; 67% of non-empty <code>Degree</code>): <em>πλείους, πλέον, μεῖζον, ἧσσον, ἧττον, πλείω, κέρδιον, ἄμεινον, θᾶττον, μείζω</em></li>
-  <li><code>Sup</code> (334; 33% of non-empty <code>Degree</code>): <em>πρῶτον, τάχιστα, ἐπιφανεστάτων, αἰνότατον, δυνατωτάτους, μέγιστον, μέγιστος, μεγίστην, πρῶτα, ἄριστος</em></li>
-  <li><code>EMPTY</code> (24755): <em>πάντα, πολλὰ, αὐτὸς, πάντες, μέγα, πρῶτον, ταῦτα, πᾶν, οὐδὲν, πάντας</em></li>
+  <li><code>Cmp</code> (374; 53% of non-empty <code>Degree</code>): <em>πλείους, θᾶσσον, πλείω, κέρδιον, πλέον, ἧσσον, ἧττον, ἀμείνων, πρότερος, μεῖζον</em></li>
+  <li><code>Sup</code> (326; 47% of non-empty <code>Degree</code>): <em>πρῶτον, τάχιστα, ἄριστοι, πρῶτος, αἰνότατε, πρῶτα, ἄριστος, μέγιστον, φίλτατος, ἀκρότατον</em></li>
+  <li><code>EMPTY</code> (19105): <em>Ἀχαιῶν, μέγα, πάντα, αὐτὸς, πάντες, πολλὰ, πρῶτον, φίλον, ταῦτα, αὐτῷ</em></li>
 </ul>
 
 <table>
   <tr><th>Paradigm <i>μέγας</i></th><th><tt>Cmp</tt></th><th><tt>Sup</tt></th></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td><em>μείζονα, μείζονά</em></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur</tt></td><td><em>μείζονας, μέζονας</em></td><td><em>μεγίστους</em></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td><em>μείζω, μείζονα</em></td><td><em>μεγίστην, μεγάλην</em></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur</tt></td><td><em>μείζονας, μέζονας, μείζους</em></td><td><em>μεγίστας</em></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing</tt></td><td><em>μεῖζον, μεῖζόν, μέσδων</em></td><td><em>μέγιστον</em></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Plur</tt></td><td><em>μέζω, μέζονα, μείζον̓, μείζονα, μείζω</em></td><td><em>μέγιστα</em></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td><em>μείζονα, μείζον̓</em></td><td><em>μέγιστον</em></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur</tt></td><td><em>μέζονας, μείζονας</em></td><td><em>μεγίστους</em></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td><em>μείζω, μείζονα</em></td><td><em>μεγίστην</em></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur</tt></td><td></td><td><em>μεγίστας</em></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing</tt></td><td><em>μεῖζον, μεῖζόν</em></td><td><em>μέγιστον</em></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Plur</tt></td><td><em>μείζω, μείζον̓, μέζω</em></td><td><em>μέγιστα</em></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td><em>μείζονι</em></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur</tt></td><td></td><td><em>μεγίστοις</em></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td></td><td><em>μεγίστῃ</em></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur</tt></td><td><em>μείζοσιν</em></td><td><em>μεγίσταις</em></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Plur</tt></td><td><em>μέζοσι</em></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Number.html">Number</a>=Sing</tt></td><td><em>μείζονι</em></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td><em>μείζονος</em></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur</tt></td><td></td><td><em>μεγίστων</em></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur</tt></td><td><em>μειζόνων</em></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Number.html">Number</a>=Sing</tt></td><td><em>μέζονος, μείζονος</em></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Number.html">Number</a>=Plur</tt></td><td><em>μειζόνων</em></td><td></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur</tt></td><td><em>μείζοσιν</em></td><td></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing</tt></td><td><em>μείζονι</em></td><td></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td></td><td><em>μεγίστου</em></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur</tt></td><td></td><td><em>μεγίστων</em></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Number.html">Number</a>=Sing</tt></td><td><em>μείζονος</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td><em>μείζων, μέζων</em></td><td><em>μέγιστος</em></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur</tt></td><td><em>μείζους, μείζονες</em></td><td></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur</tt></td><td><em>μείζονες</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td><em>μείζων</em></td><td><em>μεγίστη</em></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur</tt></td><td><em>μείζους</em></td><td><em>μέγισται</em></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing</tt></td><td><em>μεῖζον, μεῖζόν</em></td><td><em>μέγιστον</em></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Voc|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td></td><td><em>μέγιστε</em></td></tr>
 </table>
 
 <h3 id="adv"><code>ADV</code></h3>
 
-<p>53 <a href="">grc-pos/ADV</a> tokens (0% of all <code>ADV</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>45 <a href="">grc-pos/ADV</a> tokens (0% of all <code>ADV</code> tokens) have a non-empty value of <code>Degree</code>.</p>
 
 <p><code>ADV</code> tokens may have the following values of <code>Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (32; 60% of non-empty <code>Degree</code>): <em>μᾶλλον, πρότερον, ἀπωτέρω, ὕστερον, βράδιον, θειοτέρως, θᾶττον, κατωτέρω, μεγάλως, περαιτέρω</em></li>
-  <li><code>Sup</code> (21; 40% of non-empty <code>Degree</code>): <em>μάλιστα, πρῶτον, καὶ, μάλισθ̓, ἑκαστάτω, ῥᾷστα, αἴσχισθ̓, κάλλιστ̓, μάλιστ̓</em></li>
-  <li><code>EMPTY</code> (38426): <em>δ̓, δὲ, καὶ, μὲν, τε, γὰρ, οὐ, δέ, οὐκ, ἂν</em></li>
+  <li><code>Cmp</code> (20; 44% of non-empty <code>Degree</code>): <em>μᾶλλον, ἆσσον, θειοτέρως, μεγάλως, ἀπωτέρω</em></li>
+  <li><code>Sup</code> (25; 56% of non-empty <code>Degree</code>): <em>μάλιστα, μάλιστ̓, ἑκαστάτω, κάλλιστ̓, μάλισθ̓, ἐγγυτάτω, ἰθύντατα, ῥᾷστα</em></li>
+  <li><code>EMPTY</code> (16467): <em>δὲ, καὶ, οὐ, μὲν, ὣς, οὐκ, γὰρ, νῦν, τε, οὔ</em></li>
 </ul>
 
 <table>
   <tr><th>Paradigm <i>μάλα</i></th><th><tt>Cmp</tt></th><th><tt>Sup</tt></th></tr>
-  <tr><td><tt></tt></td><td><em>μᾶλλον</em></td><td><em>μάλιστα, μάλισθ̓, μάλιστ̓</em></td></tr>
+  <tr><td><tt></tt></td><td><em>μᾶλλον</em></td><td><em>μάλιστα, μάλιστ̓, μάλισθ̓</em></td></tr>
 </table>
-
-<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>ADV</code>. 94% lemmas (17) occur only with one value of <code>Degree</code>.</p>
-
-<h2 id="relations-with-agreement-in-degree">Relations with Agreement in <code>Degree</code></h2>
-
-<p>The 10 most frequent relations where parent and child node agree in <code>Degree</code>:
-<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (38; 56%).</p>
 
 <hr />
 
@@ -185,24 +191,24 @@ The feature is used with 2 part-of-speech tags: <a href="">grc-pos/ADJ</a> (1021
 <p>This feature is universal.
 It occurs with 3 different values: <code>Cmp</code>, <code>Pos</code>, <code>Sup</code>.</p>
 
-<p>11542 tokens (6%) have a non-empty value of <code>Degree</code>.
-4307 types (13%) occur at least once with a non-empty value of <code>Degree</code>.
-1641 lemmas (18%) occur at least once with a non-empty value of <code>Degree</code>.
-The feature is used with 2 part-of-speech tags: <a href="">grc-pos/ADJ</a> (10793; 5% instances), <a href="">grc-pos/ADV</a> (749; 0% instances).</p>
+<p>11031 tokens (6%) have a non-empty value of <code>Degree</code>.
+4194 types (14%) occur at least once with a non-empty value of <code>Degree</code>.
+1607 lemmas (18%) occur at least once with a non-empty value of <code>Degree</code>.
+The feature is used with 2 part-of-speech tags: <a href="">grc-pos/ADJ</a> (10318; 5% instances), <a href="">grc-pos/ADV</a> (713; 0% instances).</p>
 
 <h3 id="adj-1"><code>ADJ</code></h3>
 
-<p>10793 <a href="">grc-pos/ADJ</a> tokens (67% of all <code>ADJ</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>10318 <a href="">grc-pos/ADJ</a> tokens (67% of all <code>ADJ</code> tokens) have a non-empty value of <code>Degree</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Degree</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (5872; 54%).</p>
+<p>The most frequent other feature values with which <code>ADJ</code> and <code>Degree</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (5623; 54%).</p>
 
 <p><code>ADJ</code> tokens may have the following values of <code>Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (533; 5% of non-empty <code>Degree</code>): <em>μείζων, πρεσβυτέρων, πλέον, πρεσβύτεροι, πλεῦνας, πλεῖον, πλεῦνες, ἧσσον, πλέω, πρεσβυτέρους</em></li>
-  <li><code>Pos</code> (9898; 92% of non-empty <code>Degree</code>): <em>πρότερον, πολλοὶ, πολλὰ, νεκρῶν, μόνον, Ἰουδαίων, Ἀθηναίων, Ἀθηναῖοι, πολλῶν, Ἰουδαῖοι</em></li>
-  <li><code>Sup</code> (362; 3% of non-empty <code>Degree</code>): <em>μέγιστον, ταχίστην, πλεῖστον, ἄριστα, κάλλιστα, τάχιστα, ἄριστον, ὑψίστου, κάλλιστον, μέγιστα</em></li>
-  <li><code>EMPTY</code> (5359): <em>ταῦτα, τοῦτο, τούτων, οὗτος, οὗτοι, τούτου, τοῦτον, αὐτὸς, τάδε, τούτῳ</em></li>
+  <li><code>Cmp</code> (514; 5% of non-empty <code>Degree</code>): <em>μείζων, πρεσβυτέρων, πλέον, πρεσβύτεροι, πλεῖον, πλεῦνας, ἧσσον, πλεῦνες, πλέω, πρεσβυτέρους</em></li>
+  <li><code>Pos</code> (9472; 92% of non-empty <code>Degree</code>): <em>πρότερον, πολλὰ, πολλοὶ, νεκρῶν, μόνον, Ἀθηναίων, Ἰουδαίων, Ἀθηναῖοι, πολλῶν, μέγα</em></li>
+  <li><code>Sup</code> (332; 3% of non-empty <code>Degree</code>): <em>μέγιστον, ταχίστην, πλεῖστον, ἄριστα, κάλλιστα, τάχιστα, ἄριστον, κάλλιστον, ὑψίστου, μέγιστα</em></li>
+  <li><code>EMPTY</code> (5138): <em>ταῦτα, τοῦτο, πάντα, τις, τούτων, οὗτοι, οὗτος, τάδε, πάντες, οὐδεὶς</em></li>
 </ul>
 
 <table>
@@ -210,16 +216,16 @@ The feature is used with 2 part-of-speech tags: <a href="">grc-pos/ADJ</a> (1079
   <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Masc,Neut|<a href="Number.html">Number</a>=Sing</tt></td><td><em>πολλὸν, πολλόν</em></td><td><em>πλέω, πλείονα</em></td><td><em>πλεῖστον</em></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td><em>πολλὸν, πολὺν, πολλόν, πολύν</em></td><td><em>πλείονα, πλέω</em></td><td><em>πλεῖστον</em></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur</tt></td><td><em>πολλοὺς, πολλούς</em></td><td><em>πλεῦνας, πλείονας, πλέω</em></td><td><em>πλείστους</em></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Fem,Masc|<a href="Number.html">Number</a>=Sing</tt></td><td></td><td><em>πλείονα, πλέω</em></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Fem,Masc|<a href="Number.html">Number</a>=Plur</tt></td><td></td><td><em>πλείους, πλεῦνας</em></td><td></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Fem,Masc|<a href="Number.html">Number</a>=Sing</tt></td><td></td><td><em>πλείονα</em></td><td></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Fem,Masc|<a href="Number.html">Number</a>=Plur</tt></td><td></td><td><em>πλείους</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td><em>πολλὴν, πολλήν</em></td><td><em>πλείονα</em></td><td><em>πλείστην</em></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur</tt></td><td><em>πολλὰς, πολλάς</em></td><td><em>πλεῦνας, πλείους, πλείονας, πλέω</em></td><td><em>πλείστας</em></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur</tt></td><td><em>πολλὰς, πολλάς</em></td><td><em>πλεῦνας, πλείους, πλέω, πλείονας</em></td><td><em>πλείστας</em></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing</tt></td><td><em>πολλὸν, πολὺ, πολλόν, πολύ</em></td><td><em>πλέον, πλεῖον, πλεῖόν</em></td><td><em>πλεῖστον</em></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Plur</tt></td><td><em>πολλὰ, πολλά, πόλλ’</em></td><td><em>πλέω, πλείω, πλείονα, πολλὰ</em></td><td><em>πλεῖστα</em></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Plur</tt></td><td><em>πολλὰ, πολλά, πόλλ’</em></td><td><em>πλέω, πλείω, πλείονα</em></td><td><em>πλεῖστα</em></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Gender.html">Gender</a>=Masc,Neut|<a href="Number.html">Number</a>=Sing</tt></td><td><em>πολλῷ</em></td><td></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Gender.html">Gender</a>=Masc,Neut|<a href="Number.html">Number</a>=Plur</tt></td><td><em>πολλοῖσι</em></td><td><em>πλείοσιν</em></td><td></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Gender.html">Gender</a>=Masc,Neut|<a href="Number.html">Number</a>=Plur</tt></td><td></td><td><em>πλείοσιν</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td><em>πολλῷ</em></td><td></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur</tt></td><td><em>πολλοῖς, πολλοῖσι, πολλοῖσιν</em></td><td><em>πλείοσιν, πλέοσι</em></td><td></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur</tt></td><td><em>πολλοῖς, πολλοῖσι</em></td><td><em>πλέοσι, πλείοσιν</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td><em>πολλῇ, πολλὴ</em></td><td></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur</tt></td><td><em>πολλαῖς, πολλῇσι</em></td><td></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing</tt></td><td><em>πολλῷ, πολλῶ</em></td><td></td><td></td></tr>
@@ -229,31 +235,33 @@ The feature is used with 2 part-of-speech tags: <a href="">grc-pos/ADJ</a> (1079
   <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur</tt></td><td><em>πολλῶν</em></td><td><em>πλειόνων, πλεόνων</em></td><td><em>πλείστων</em></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td><em>πολλῆς</em></td><td></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur</tt></td><td><em>πολλῶν, πολλέων</em></td><td></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing</tt></td><td><em>πολλοῦ</em></td><td><em>πλεῦνός, πλεῦνος</em></td><td><em>πλείστου</em></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing</tt></td><td><em>πολλοῦ</em></td><td><em>πλεῦνος, πλεῦνός</em></td><td><em>πλείστου</em></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Plur</tt></td><td><em>πολλῶν</em></td><td><em>πλειόνων</em></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Number.html">Number</a>=Plur</tt></td><td><em>πολλῶν</em></td><td><em>πλεόνων, πλειόνων</em></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td><em>πολὺς, πολλὸς, πολύς, πολλός</em></td><td></td><td><em>πλεῖστος</em></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Number.html">Number</a>=Plur</tt></td><td><em>πολλῶν</em></td><td><em>πλειόνων, πλεόνων</em></td><td></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td><em>πολλὸς, πολὺς, πολύς, πολλός</em></td><td></td><td><em>πλεῖστος</em></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur</tt></td><td><em>πολλοὶ, πολλοί</em></td><td><em>πλεῦνες, πλείους, πλείονες, πλείονές</em></td><td><em>πλεῖστοι</em></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td><em>πολλὴ, πολλή, πολλῇ</em></td><td></td><td><em>πλείστη</em></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td><em>πολλὴ, πολλή, πολλῇ</em></td><td></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur</tt></td><td><em>πολλαὶ, πολλαί</em></td><td><em>πλεῦνες, πλείους</em></td><td><em>πλεῖσται</em></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing</tt></td><td><em>πολὺ, πολλὸν, πολύ, πολλόν</em></td><td><em>πλεῖον, πλεῖόν, πλέον</em></td><td><em>πλεῖστον</em></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Plur</tt></td><td><em>πολλὰ, πολλά</em></td><td><em>πλείονα, πλέω</em></td><td><em>πλεῖστα</em></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing</tt></td><td><em>πολὺ, πολλὸν, πολύ, πολλόν</em></td><td><em>πλεῖον, πλέον, πλεῖόν</em></td><td><em>πλεῖστον</em></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Plur</tt></td><td><em>πολλὰ, πολλά</em></td><td><em>πλέω, πλείονα</em></td><td><em>πλεῖστα</em></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Number.html">Number</a>=Sing</tt></td><td></td><td><em>πλείονος</em></td><td></td></tr>
 </table>
 
-<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 93% lemmas (1398) occur only with one value of <code>Degree</code>.</p>
+<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 93% lemmas (1374) occur only with one value of <code>Degree</code>.</p>
 
 <h3 id="adv-1"><code>ADV</code></h3>
 
-<p>749 <a href="">grc-pos/ADV</a> tokens (3% of all <code>ADV</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>713 <a href="">grc-pos/ADV</a> tokens (3% of all <code>ADV</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+
+<p>The most frequent other feature values with which <code>ADV</code> and <code>Degree</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (713; 100%).</p>
 
 <p><code>ADV</code> tokens may have the following values of <code>Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (159; 21% of non-empty <code>Degree</code>): <em>μᾶλλον, περισσοτέρως, μᾶλλόν, μεζόνως, προσωτέρω, τάχιον, ἀκριβέστερον, ἑκαστέρω, θειοτέρως, κάκιον</em></li>
-  <li><code>Pos</code> (451; 60% of non-empty <code>Degree</code>): <em>καλῶς, μεγάλως, κακῶς, κάτω, ἄλλως, ἀληθῶς, ἀτρεκέως, ὀρθῶς, ἐγγὺς, ταχέως</em></li>
-  <li><code>Sup</code> (139; 19% of non-empty <code>Degree</code>): <em>μάλιστα, τάχιστα, μάλιστά, ἀγχοτάτω, ἄγχιστα, ἥκιστα, ἑκαστάτω, ἥδιστα, μεγαλοπρεπέστατα, τάχιστά</em></li>
-  <li><code>EMPTY</code> (21725): <em>δὲ, γὰρ, καὶ, μὲν, μὴ, οὐκ, οὐ, ὡς, δὴ, οὖν</em></li>
+  <li><code>Cmp</code> (155; 22% of non-empty <code>Degree</code>): <em>μᾶλλον, περισσοτέρως, μᾶλλόν, ἀκριβέστερον, μεζόνως, προσωτέρω, τάχιον, ἑκαστέρω, κάκιον, κάλλιον</em></li>
+  <li><code>Pos</code> (432; 61% of non-empty <code>Degree</code>): <em>καλῶς, μεγάλως, κακῶς, κάτω, ἄλλως, ἀληθῶς, ἀτρεκέως, ὀρθῶς, ἐγγὺς, προθύμως</em></li>
+  <li><code>Sup</code> (126; 18% of non-empty <code>Degree</code>): <em>μάλιστα, τάχιστα, μάλιστά, ἀγχοτάτω, ἥκιστα, ἄγχιστα, ἥδιστα, μεγαλοπρεπέστατα, τάχιστά, ἀγαυρότατα</em></li>
+  <li><code>EMPTY</code> (20593): <em>δὲ, γὰρ, καὶ, μὲν, οὐκ, μὴ, οὐ, ὡς, δὴ, οὖν</em></li>
 </ul>
 
 <table>
@@ -261,17 +269,15 @@ The feature is used with 2 part-of-speech tags: <a href="">grc-pos/ADJ</a> (1079
   <tr><td><tt></tt></td><td><em>ταχέως</em></td><td><em>τάχιον</em></td><td><em>τάχιστα, τάχιστά</em></td></tr>
 </table>
 
-<h2 id="relations-with-agreement-in-degree-1">Relations with Agreement in <code>Degree</code></h2>
+<h2 id="relations-with-agreement-in-degree">Relations with Agreement in <code>Degree</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>Degree</code>:
-<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (473; 93%),
-<tt>ADJ –[<a href="../dep/amod.html">amod</a>]–&gt; ADJ</tt> (86; 74%),
-<tt>ADJ –[<a href="../dep/advmod.html">advmod</a>]–&gt; ADJ</tt> (51; 51%),
-<tt>ADJ –[<a href="../dep/remnant.html">remnant</a>]–&gt; ADJ</tt> (43; 84%),
-<tt>ADJ –[<a href="../dep/advcl.html">advcl</a>]–&gt; ADJ</tt> (24; 83%),
-<tt>ADJ –[<a href="../dep/dobj.html">dobj</a>]–&gt; ADJ</tt> (2; 100%),
-<tt>ADJ –[<a href="../dep/nmod.html">nmod</a>]–&gt; ADV</tt> (1; 100%),
-<tt>ADJ –[<a href="../dep/ccomp.html">ccomp</a>]–&gt; ADJ</tt> (1; 100%).</p>
+<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (466; 92%),
+<tt>ADJ –[<a href="../dep/amod.html">amod</a>]–&gt; ADJ</tt> (85; 57%),
+<tt>ADJ –[<a href="../dep/advmod.html">advmod</a>]–&gt; ADJ</tt> (49; 53%),
+<tt>ADJ –[<a href="../dep/advcl.html">advcl</a>]–&gt; ADJ</tt> (21; 81%),
+<tt>ADJ –[<a href="../dep/obj:dir.html">obj:dir</a>]–&gt; ADJ</tt> (2; 100%),
+<tt>ADJ –[<a href="../dep/nmod.html">nmod</a>]–&gt; ADV</tt> (1; 100%).</p>
 
 
 
@@ -281,9 +287,25 @@ The feature is used with 2 part-of-speech tags: <a href="">grc-pos/ADJ</a> (1079
 
 Degree in other languages:
 
+[<a href="../../am/feat/Degree.html">am</a>]
+
+[<a href="../../ar/feat/Degree.html">ar</a>]
+
 [<a href="../../bg/feat/Degree.html">bg</a>]
 
+[<a href="../../bxr/feat/Degree.html">bxr</a>]
+
+[<a href="../../ca/feat/Degree.html">ca</a>]
+
+[<a href="../../ckb/feat/Degree.html">ckb</a>]
+
+[<a href="../../cop/feat/Degree.html">cop</a>]
+
 [<a href="../../cs/feat/Degree.html">cs</a>]
+
+[<a href="../../cu/feat/Degree.html">cu</a>]
+
+[<a href="../../da/feat/Degree.html">da</a>]
 
 [<a href="../../de/feat/Degree.html">de</a>]
 
@@ -293,29 +315,99 @@ Degree in other languages:
 
 [<a href="../../es/feat/Degree.html">es</a>]
 
+[<a href="../../et/feat/Degree.html">et</a>]
+
 [<a href="../../eu/feat/Degree.html">eu</a>]
 
 [<a href="../../fa/feat/Degree.html">fa</a>]
 
 [<a href="../../fi/feat/Degree.html">fi</a>]
 
+[<a href="../../fo/feat/Degree.html">fo</a>]
+
 [<a href="../../fr/feat/Degree.html">fr</a>]
 
 [<a href="../../ga/feat/Degree.html">ga</a>]
 
+[<a href="../../gl/feat/Degree.html">gl</a>]
+
+[<a href="../../got/feat/Degree.html">got</a>]
+
+[<a href="../../grc/feat/Degree.html">grc</a>]
+
 [<a href="../../he/feat/Degree.html">he</a>]
 
+[<a href="../../hi/feat/Degree.html">hi</a>]
+
+[<a href="../../hr/feat/Degree.html">hr</a>]
+
 [<a href="../../hu/feat/Degree.html">hu</a>]
+
+[<a href="../../id/feat/Degree.html">id</a>]
 
 [<a href="../../it/feat/Degree.html">it</a>]
 
 [<a href="../../ja/feat/Degree.html">ja</a>]
 
+[<a href="../../kk/feat/Degree.html">kk</a>]
+
+[<a href="../../kmr/feat/Degree.html">kmr</a>]
+
 [<a href="../../ko/feat/Degree.html">ko</a>]
+
+[<a href="../../la/feat/Degree.html">la</a>]
+
+[<a href="../../lv/feat/Degree.html">lv</a>]
+
+[<a href="../../mr/feat/Degree.html">mr</a>]
+
+[<a href="../../nl/feat/Degree.html">nl</a>]
+
+[<a href="../../no/feat/Degree.html">no</a>]
+
+[<a href="../../pl/feat/Degree.html">pl</a>]
+
+[<a href="../../pt/feat/Degree.html">pt</a>]
+
+[<a href="../../ro/feat/Degree.html">ro</a>]
+
+[<a href="../../ru/feat/Degree.html">ru</a>]
+
+[<a href="../../sa/feat/Degree.html">sa</a>]
+
+[<a href="../../sk/feat/Degree.html">sk</a>]
+
+[<a href="../../sla/feat/Degree.html">sla</a>]
+
+[<a href="../../sl/feat/Degree.html">sl</a>]
+
+[<a href="../../so/feat/Degree.html">so</a>]
+
+[<a href="../../sr/feat/Degree.html">sr</a>]
 
 [<a href="../../sv/feat/Degree.html">sv</a>]
 
+[<a href="../../swl/feat/Degree.html">swl</a>]
+
+[<a href="../../ta/feat/Degree.html">ta</a>]
+
+[<a href="../../tr/feat/Degree.html">tr</a>]
+
 [<a href="../../u/feat/Degree.html">u</a>]
+
+[<a href="../../ug/feat/Degree.html">ug</a>]
+
+[<a href="../../uk/feat/Degree.html">uk</a>]
+
+[<a href="../../ur/feat/Degree.html">ur</a>]
+
+[<a href="../../urj/feat/Degree.html">urj</a>]
+
+[<a href="../../vi/feat/Degree.html">vi</a>]
+
+[<a href="../../yue/feat/Degree.html">yue</a>]
+
+[<a href="../../zh/feat/Degree.html">zh</a>]
 
 
 

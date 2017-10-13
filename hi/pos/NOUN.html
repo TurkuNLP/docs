@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-hi">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/hi/pos">hi/pos</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_hi-pos/NOUN.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-hi">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/hi/pos">hi/pos</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hi-pos/NOUN.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -61,124 +78,121 @@ for <code>NOUN</code>.</p>
 
 <h2 id="treebank-statistics-udhindi">Treebank Statistics (UD_Hindi)</h2>
 
-<p>There are 6463 <code>NOUN</code> lemmas (35%), 8039 <code>NOUN</code> types (36%) and 78155 <code>NOUN</code> tokens (22%).
+<p>There are 6136 <code>NOUN</code> lemmas (36%), 7609 <code>NOUN</code> types (37%) and 70119 <code>NOUN</code> tokens (22%).
 Out of 16 observed tags, the rank of <code>NOUN</code> is: 2 in number of lemmas, 1 in number of types and 1 in number of tokens.</p>
 
-<p>The 10 most frequent <code>NOUN</code> lemmas: सरकार, लोग, मामला, पुलिस, राज्य, देश, नेता, पार्टी, बात, चुनाव</p>
+<p>The 10 most frequent <code>NOUN</code> lemmas: सरकार, लोग, मामला, पुलिस, देश, राज्य, नेता, पार्टी, बात, चुनाव</p>
 
-<p>The 10 most frequent <code>NOUN</code> types:  सरकार, पुलिस, लोगों, मामले, पार्टी, बात, राज्य, चुनाव, तरह, देश</p>
+<p>The 10 most frequent <code>NOUN</code> types:  सरकार, पुलिस, लोगों, मामले, पार्टी, बात, तरह, राज्य, चुनाव, देश</p>
 
-<p>The 10 most frequent ambiguous lemmas: सरकार (<a href="">NOUN</a> 981, <a href="">PROPN</a> 286, <a href="">ADJ</a> 1), लोग (<a href="">NOUN</a> 925, <a href="">PROPN</a> 1), मामला (<a href="">NOUN</a> 694, <a href="">PROPN</a> 16), पुलिस (<a href="">NOUN</a> 679, <a href="">PROPN</a> 15, <a href="">ADJ</a> 1), राज्य (<a href="">NOUN</a> 617, <a href="">PROPN</a> 54, <a href="">ADJ</a> 1), नेता (<a href="">NOUN</a> 545, <a href="">PROPN</a> 1), पार्टी (<a href="">NOUN</a> 528, <a href="">PROPN</a> 77, <a href="">ADJ</a> 1), चुनाव (<a href="">NOUN</a> 440, <a href="">PROPN</a> 24, <a href="">ADJ</a> 5), तरह (<a href="">NOUN</a> 386, <a href="">ADP</a> 67, <a href="">PROPN</a> 1), क्षेत्र (<a href="">NOUN</a> 379, <a href="">PROPN</a> 3)</p>
+<p>The 10 most frequent ambiguous lemmas: सरकार (<a href="">NOUN</a> 895, <a href="">PROPN</a> 267, <a href="">ADJ</a> 1), लोग (<a href="">NOUN</a> 833, <a href="">PROPN</a> 1), मामला (<a href="">NOUN</a> 623, <a href="">PROPN</a> 14), पुलिस (<a href="">NOUN</a> 600, <a href="">PROPN</a> 12, <a href="">ADJ</a> 1), राज्य (<a href="">NOUN</a> 518, <a href="">PROPN</a> 46, <a href="">ADJ</a> 1), नेता (<a href="">NOUN</a> 498, <a href="">PROPN</a> 1), पार्टी (<a href="">NOUN</a> 472, <a href="">PROPN</a> 64), चुनाव (<a href="">NOUN</a> 392, <a href="">PROPN</a> 24, <a href="">ADJ</a> 4), तरह (<a href="">NOUN</a> 358, <a href="">ADP</a> 57), क्षेत्र (<a href="">NOUN</a> 352, <a href="">PROPN</a> 2)</p>
 
-<p>The 10 most frequent ambiguous types:  सरकार (<a href="">NOUN</a> 940, <a href="">PROPN</a> 286, <a href="">ADJ</a> 1), पुलिस (<a href="">NOUN</a> 679, <a href="">PROPN</a> 15, <a href="">ADJ</a> 1), लोगों (<a href="">NOUN</a> 637, <a href="">PROPN</a> 1), मामले (<a href="">NOUN</a> 488, <a href="">PROPN</a> 11), पार्टी (<a href="">NOUN</a> 487, <a href="">PROPN</a> 77, <a href="">ADJ</a> 1), राज्य (<a href="">NOUN</a> 412, <a href="">PROPN</a> 54, <a href="">ADJ</a> 1), चुनाव (<a href="">NOUN</a> 387, <a href="">PROPN</a> 24, <a href="">ADJ</a> 5), तरह (<a href="">NOUN</a> 386, <a href="">ADP</a> 67, <a href="">PROPN</a> 1), बैठक (<a href="">NOUN</a> 361, <a href="">PROPN</a> 3), समय (<a href="">NOUN</a> 346, <a href="">ADP</a> 81, <a href="">ADJ</a> 1)</p>
+<p>The 10 most frequent ambiguous types:  सरकार (<a href="">NOUN</a> 861, <a href="">PROPN</a> 267, <a href="">ADJ</a> 1), पुलिस (<a href="">NOUN</a> 600, <a href="">PROPN</a> 12, <a href="">ADJ</a> 1), लोगों (<a href="">NOUN</a> 570, <a href="">PROPN</a> 1), मामले (<a href="">NOUN</a> 438, <a href="">PROPN</a> 11), पार्टी (<a href="">NOUN</a> 433, <a href="">PROPN</a> 64), तरह (<a href="">NOUN</a> 358, <a href="">ADP</a> 57), राज्य (<a href="">NOUN</a> 350, <a href="">PROPN</a> 46, <a href="">ADJ</a> 1), चुनाव (<a href="">NOUN</a> 346, <a href="">PROPN</a> 24, <a href="">ADJ</a> 4), बैठक (<a href="">NOUN</a> 327, <a href="">PROPN</a> 3), शुरू (<a href="">NOUN</a> 312, <a href="">ADJ</a> 1)</p>
 
 <ul>
   <li>सरकार
     <ul>
-      <li><a href="">NOUN</a> 940: <b>सरकार</b> ने इसके विभिन्न पहलुओं पर विचार के लिए समिति गठित की है ।</li>
-      <li><a href="">PROPN</a> 286: मंदिर का निर्माण थाईलैंड <b>सरकार</b> के सौजन्‍य से किया गया है ।</li>
+      <li><a href="">NOUN</a> 861: <b>सरकार</b> ने इसके विभिन्न पहलुओं पर विचार के लिए समिति गठित की है ।</li>
+      <li><a href="">PROPN</a> 267: मंदिर का निर्माण थाईलैंड <b>सरकार</b> के सौजन्‍य से किया गया है ।</li>
       <li><a href="">ADJ</a> 1: नक्सली <b>सरकार</b> - विरोधी और पुलिस विरोधी नारे भी लगा रहे थे ।</li>
     </ul>
   </li>
   <li>पुलिस
     <ul>
-      <li><a href="">NOUN</a> 679: हालांकि , जिला <b>पुलिस</b> इस बात की पुष्टि करने को तैयार नहीं है ।</li>
-      <li><a href="">PROPN</a> 15: इसके बाद दिल्ली <b>पुलिस</b> ने पूरी योजना के साथ पटियाला में डेरा डाला ।</li>
+      <li><a href="">NOUN</a> 600: हालांकि , जिला <b>पुलिस</b> इस बात की पुष्टि करने को तैयार नहीं है ।</li>
+      <li><a href="">PROPN</a> 12: इसके बाद दिल्ली <b>पुलिस</b> ने पूरी योजना के साथ पटियाला में डेरा डाला ।</li>
       <li><a href="">ADJ</a> 1: नक्सली सरकार - विरोधी और <b>पुलिस</b> विरोधी नारे भी लगा रहे थे ।</li>
     </ul>
   </li>
   <li>लोगों
     <ul>
-      <li><a href="">NOUN</a> 637: उन्होंने कहा कि अब मैं जरूरतमंद <b>लोगों</b> के लिए अदालत में बहस कर सकूंगी ।</li>
+      <li><a href="">NOUN</a> 570: उन्होंने कहा कि अब मैं जरूरतमंद <b>लोगों</b> के लिए अदालत में बहस कर सकूंगी ।</li>
       <li><a href="">PROPN</a> 1: राजधानी पहुंचने के बाद खोखर ने वार्ताकारों से कहा कि वह पाकिस्तान सरकार और वहां की जनता की तरफ से भारत के <b>लोगों</b> को शुभकामनाएं देते हैं ।</li>
     </ul>
   </li>
   <li>मामले
     <ul>
-      <li><a href="">NOUN</a> 488: हालांकि भारत के <b>मामले</b> में यह क्रमशः २४ और २२ प्रतिशत ही है ।</li>
+      <li><a href="">NOUN</a> 438: हालांकि भारत के <b>मामले</b> में यह क्रमशः २४ और २२ प्रतिशत ही है ।</li>
       <li><a href="">PROPN</a> 11: चिंकारा शिकार <b>मामले</b> में जोधपुर की एक स्थानीय अदालत सोमवार को अपना फैसला सुनाएगी ।</li>
     </ul>
   </li>
   <li>पार्टी
     <ul>
-      <li><a href="">NOUN</a> 487: पर सरकार और <b>पार्टी</b> इस दलील से सहमत नहीं थीं ।</li>
-      <li><a href="">PROPN</a> 77: लेकिन समाजवादी <b>पार्टी</b> यह विकल्प नहीं चुनने जा रही है ।</li>
-      <li><a href="">ADJ</a> 1: <b>पार्टी</b> विरोधी गतिविधियों के चलते तीन महीने पहले से जनता दल ( एस ) से निलंबित होने के बाद अलग पार्टी बनाने वाले नेता सी. एम. इब्राहिम ने आयोग के पास इस बात की अर्जी दी थी कि जनता दल ( एस ) के चुनाव चिह्न को जब्त कर लिया जाए ।</li>
+      <li><a href="">NOUN</a> 433: पर सरकार और <b>पार्टी</b> इस दलील से सहमत नहीं थीं ।</li>
+      <li><a href="">PROPN</a> 64: लेकिन समाजवादी <b>पार्टी</b> यह विकल्प नहीं चुनने जा रही है ।</li>
+    </ul>
+  </li>
+  <li>तरह
+    <ul>
+      <li><a href="">NOUN</a> 358: विहिप को इस <b>तरह</b> की भाषा का प्रयोग नहीं करना चाहिए ।</li>
+      <li><a href="">ADP</a> 57: मंदिर के डाट हूबहू अजंता की गुफाओं के डाट की <b>तरह</b> हैं ।</li>
     </ul>
   </li>
   <li>राज्य
     <ul>
-      <li><a href="">NOUN</a> 412: उन्होंने माकपा पर <b>राज्य</b> में लोकतंत्र की हत्या का आरोप लगाया ।</li>
-      <li><a href="">PROPN</a> 54: अंजलि कर्नाटक <b>राज्य</b> महिला आयोग में भी अपनी शिकायत दर्ज करा चुकी है ।</li>
+      <li><a href="">NOUN</a> 350: उन्होंने माकपा पर <b>राज्य</b> में लोकतंत्र की हत्या का आरोप लगाया ।</li>
+      <li><a href="">PROPN</a> 46: इसके बावजूद <b>राज्य</b> सरकार इस मामले को लेकर गंभीर नहीं है ।</li>
       <li><a href="">ADJ</a> 1: इस एजेंसी को राष्ट्रीय सुरक्षा के गंभीर खतरों वाले अंतर - <b>राज्य</b> या अंतर्राष्ट्रीय प्रकृति के अपराधों की जांच का अधिकार होगा ।</li>
     </ul>
   </li>
   <li>चुनाव
     <ul>
-      <li><a href="">NOUN</a> 387: असम विधानसभा <b>चुनाव</b> में एक साल का समय शेष रह गया है ।</li>
+      <li><a href="">NOUN</a> 346: असम विधानसभा <b>चुनाव</b> में एक साल का समय शेष रह गया है ।</li>
       <li><a href="">PROPN</a> 24: पासवान ने कहा कि उनके मन में <b>चुनाव</b> आयोग के प्रति काफी इज्जत है ।</li>
-      <li><a href="">ADJ</a> 5: इन लोगों को स्थानीय निकाय <b>चुनाव</b> विरोधी अभियान चलाने पर गिरफ्तार किया गया ।</li>
-    </ul>
-  </li>
-  <li>तरह
-    <ul>
-      <li><a href="">NOUN</a> 386: विहिप को इस <b>तरह</b> की भाषा का प्रयोग नहीं करना चाहिए ।</li>
-      <li><a href="">ADP</a> 67: मंदिर के डाट हूबहू अजंता की गुफाओं के डाट की <b>तरह</b> हैं ।</li>
-      <li><a href="">PROPN</a> 1: अजीत टोकस के अनुसार अभी भी प्रशांत पूरी <b>तरह</b> से ठीक नहीं हुआ है ।</li>
+      <li><a href="">ADJ</a> 4: इन लोगों को स्थानीय निकाय <b>चुनाव</b> विरोधी अभियान चलाने पर गिरफ्तार किया गया ।</li>
     </ul>
   </li>
   <li>बैठक
     <ul>
-      <li><a href="">NOUN</a> 361: इसकी पहली <b>बैठक</b> जून के तीसरे सप्ताह में अयोध्या में आयोजित होगी ।</li>
+      <li><a href="">NOUN</a> 327: इसकी पहली <b>बैठक</b> जून के तीसरे सप्ताह में अयोध्या में आयोजित होगी ।</li>
       <li><a href="">PROPN</a> 3: इससे पहले प्रधानमंत्री मनमोहन सिंह और कोइजुमी की भारत - आसियान <b>बैठक</b> के दौरान नवंबर में लाओस में मुलाकात हो चुकी है ।</li>
     </ul>
   </li>
-  <li>समय
+  <li>शुरू
     <ul>
-      <li><a href="">NOUN</a> 346: इन आसनों को एक बार करने में तकरीबन १० मिनट का <b>समय</b> लगता है ।</li>
-      <li><a href="">ADP</a> 81: यहाँ जाते <b>समय</b> पैरों के नीचे यत्र - तत्र हिम राशि खिसकती दिखाई पड़ती है ।</li>
-      <li><a href="">ADJ</a> 1: इससे इन्हें शैक्षणिक पदों को सृजित करने और <b>समय</b> आधारित स्टाफ के जरिए इन्हें भरने तथा समीक्षा के बाद इसे जारी रखने में काफी मदद मिलेगी ।</li>
+      <li><a href="">NOUN</a> 312: इसके लिए प्रस्ताव पर चर्चा <b>शुरू</b> होने वाली है ।</li>
+      <li><a href="">ADJ</a> 1: कई राज्यों में आशंकित मंत्रियों ने तो इस पर सवाल भी खड़े करना <b>शुरू</b> कर दिए हैं , क्योंकि इस तरह असंतुष्ट खेमों के मंत्रियों को निशाना बनाया जा सकता है ।</li>
     </ul>
   </li>
 </ul>
 
 <h2 id="morphology">Morphology</h2>
 
-<p>The form / lemma ratio of <code>NOUN</code> is 1.243850 (the average of all parts of speech is 1.207208).</p>
+<p>The form / lemma ratio of <code>NOUN</code> is 1.240059 (the average of all parts of speech is 1.207113).</p>
 
-<p>The 1st highest number of forms (6) was observed with the lemma “इलाका”: इलाक़े, इलाक़ों, इलाका, इलाके, इलाकों, इलाक़े.</p>
+<p>The 1st highest number of forms (6) was observed with the lemma “कीमत”: क़ीमत, कीमत, कीमतें, कीमतों, क़ीमत, क़ीमतों.</p>
 
-<p>The 2nd highest number of forms (6) was observed with the lemma “कीमत”: क़ीमत, कीमत, कीमतें, कीमतों, क़ीमत, क़ीमतों.</p>
+<p>The 2nd highest number of forms (5) was observed with the lemma “इस्तीफा”: इस्तीफा, इस्तीफे, इस्तीफों, इस्तीफ़ा, इस्तीफ़े.</p>
 
-<p>The 3rd highest number of forms (5) was observed with the lemma “इस्तीफा”: इस्तीफा, इस्तीफे, इस्तीफों, इस्तीफ़ा, इस्तीफ़े.</p>
+<p>The 3rd highest number of forms (5) was observed with the lemma “उडान”: उड़ान, उड़ानों, उड़ान, उड़ाने, उड़ानों.</p>
 
-<p><code>NOUN</code> occurs with 10 features: <a href="">hi-feat/Case</a> (78053; 100% instances), <a href="">hi-feat/Number</a> (77436; 99% instances), <a href="">hi-feat/Person</a> (77405; 99% instances), <a href="">hi-feat/Gender</a> (77241; 99% instances), <a href="">hi-feat/Echo</a> (69; 0% instances), <a href="">hi-feat/AdpType</a> (56; 0% instances), <a href="">hi-feat/VerbForm</a> (3; 0% instances), <a href="">hi-feat/Voice</a> (3; 0% instances), <a href="">hi-feat/Aspect</a> (2; 0% instances), <a href="">hi-feat/Polite</a> (2; 0% instances)</p>
+<p><code>NOUN</code> occurs with 10 features: <a href="">hi-feat/Case</a> (70028; 100% instances), <a href="">hi-feat/Number</a> (69453; 99% instances), <a href="">hi-feat/Person</a> (69423; 99% instances), <a href="">hi-feat/Gender</a> (69275; 99% instances), <a href="">hi-feat/Echo</a> (67; 0% instances), <a href="">hi-feat/AdpType</a> (53; 0% instances), <a href="">hi-feat/VerbForm</a> (3; 0% instances), <a href="">hi-feat/Voice</a> (3; 0% instances), <a href="">hi-feat/Aspect</a> (2; 0% instances), <a href="">hi-feat/Polite</a> (2; 0% instances)</p>
 
-<p><code>NOUN</code> occurs with 17 feature-value pairs: <code>AdpType=Post</code>, <code>Aspect=Perf</code>, <code>Case=Acc</code>, <code>Case=Acc,Dat</code>, <code>Case=Nom</code>, <code>Echo=Rdp</code>, <code>Gender=Fem</code>, <code>Gender=Masc</code>, <code>Number=Plur</code>, <code>Number=Sing</code>, <code>Person=1</code>, <code>Person=3</code>, <code>Polite=Pol</code>, <code>VerbForm=Inf</code>, <code>VerbForm=Part</code>, <code>Voice=Act</code>, <code>Voice=Pass</code></p>
+<p><code>NOUN</code> occurs with 17 feature-value pairs: <code>AdpType=Post</code>, <code>Aspect=Perf</code>, <code>Case=Acc</code>, <code>Case=Acc,Dat</code>, <code>Case=Nom</code>, <code>Echo=Rdp</code>, <code>Gender=Fem</code>, <code>Gender=Masc</code>, <code>Number=Plur</code>, <code>Number=Sing</code>, <code>Person=1</code>, <code>Person=3</code>, <code>Polite=Form</code>, <code>VerbForm=Inf</code>, <code>VerbForm=Part</code>, <code>Voice=Act</code>, <code>Voice=Pass</code></p>
 
 <p><code>NOUN</code> occurs with 46 feature combinations.
-The most frequent feature combination is <code>Case=Acc|Gender=Masc|Number=Sing|Person=3</code> (19197 tokens).
-Examples: मामले, देश, क्षेत्र, राज्य, साल, मुद्दे, चुनाव, आयोग, रूप, नेता</p>
+The most frequent feature combination is <code>Case=Acc|Gender=Masc|Number=Sing|Person=3</code> (17192 tokens).
+Examples: मामले, देश, क्षेत्र, राज्य, साल, मुद्दे, चुनाव, रूप, नेता, फैसले</p>
 
 <h2 id="relations">Relations</h2>
 
-<p><code>NOUN</code> nodes are attached to their parents using 19 different relations: <a href="">hi-dep/nmod</a> (34382; 44% instances), <a href="">hi-dep/compound</a> (16036; 21% instances), <a href="">hi-dep/dobj</a> (10408; 13% instances), <a href="">hi-dep/nsubj</a> (9673; 12% instances), <a href="">hi-dep/conj</a> (2666; 3% instances), <a href="">hi-dep/iobj</a> (1396; 2% instances), <a href="">hi-dep/advmod</a> (1351; 2% instances), <a href="">hi-dep/root</a> (1249; 2% instances), <a href="">hi-dep/nsubjpass</a> (320; 0% instances), <a href="">hi-dep/acl</a> (280; 0% instances), <a href="">hi-dep/xcomp</a> (268; 0% instances), <a href="">hi-dep/acl:relcl</a> (96; 0% instances), <a href="">hi-dep/case</a> (10; 0% instances), <a href="">hi-dep/cc</a> (5; 0% instances), <a href="">hi-dep/vocative</a> (5; 0% instances), <a href="">hi-dep/dislocated</a> (4; 0% instances), <a href="">hi-dep/mark</a> (3; 0% instances), <a href="">hi-dep/dep</a> (2; 0% instances), <a href="">hi-dep/punct</a> (1; 0% instances)</p>
+<p><code>NOUN</code> nodes are attached to their parents using 20 different relations: <a href="">hi-dep/obl</a> (15631; 22% instances), <a href="">hi-dep/nmod</a> (15131; 22% instances), <a href="">hi-dep/compound</a> (14407; 21% instances), <a href="">hi-dep/obj</a> (9311; 13% instances), <a href="">hi-dep/nsubj</a> (8740; 12% instances), <a href="">hi-dep/conj</a> (2383; 3% instances), <a href="">hi-dep/iobj</a> (1251; 2% instances), <a href="">hi-dep/advmod</a> (1250; 2% instances), <a href="">hi-dep/root</a> (1099; 2% instances), <a href="">hi-dep/nsubj:pass</a> (299; 0% instances), <a href="">hi-dep/xcomp</a> (251; 0% instances), <a href="">hi-dep/acl</a> (250; 0% instances), <a href="">hi-dep/acl:relcl</a> (88; 0% instances), <a href="">hi-dep/case</a> (11; 0% instances), <a href="">hi-dep/vocative</a> (5; 0% instances), <a href="">hi-dep/cc</a> (3; 0% instances), <a href="">hi-dep/dislocated</a> (3; 0% instances), <a href="">hi-dep/mark</a> (3; 0% instances), <a href="">hi-dep/dep</a> (2; 0% instances), <a href="">hi-dep/punct</a> (1; 0% instances)</p>
 
-<p>Parents of <code>NOUN</code> nodes belong to 14 different parts of speech: <a href="">VERB</a> (47764; 61% instances), <a href="">NOUN</a> (22896; 29% instances), <a href="">PROPN</a> (3810; 5% instances), <a href="">ADJ</a> (1696; 2% instances), <a href="">ROOT</a> (1249; 2% instances), <a href="">PRON</a> (282; 0% instances), <a href="">DET</a> (180; 0% instances), <a href="">ADV</a> (128; 0% instances), <a href="">NUM</a> (103; 0% instances), <a href="">ADP</a> (31; 0% instances), <a href="">AUX</a> (6; 0% instances), <a href="">X</a> (5; 0% instances), <a href="">PART</a> (3; 0% instances), <a href="">PUNCT</a> (2; 0% instances)</p>
+<p>Parents of <code>NOUN</code> nodes belong to 14 different parts of speech: <a href="">VERB</a> (43077; 61% instances), <a href="">NOUN</a> (20398; 29% instances), <a href="">PROPN</a> (3381; 5% instances), <a href="">ADJ</a> (1509; 2% instances), <a href="">ROOT</a> (1099; 2% instances), <a href="">PRON</a> (262; 0% instances), <a href="">DET</a> (148; 0% instances), <a href="">ADV</a> (115; 0% instances), <a href="">NUM</a> (88; 0% instances), <a href="">ADP</a> (29; 0% instances), <a href="">X</a> (5; 0% instances), <a href="">AUX</a> (3; 0% instances), <a href="">PART</a> (3; 0% instances), <a href="">PUNCT</a> (2; 0% instances)</p>
 
-<p>16904 (22%) <code>NOUN</code> nodes are leaves.</p>
+<p>14491 (21%) <code>NOUN</code> nodes are leaves.</p>
 
-<p>24922 (32%) <code>NOUN</code> nodes have one child.</p>
+<p>22489 (32%) <code>NOUN</code> nodes have one child.</p>
 
-<p>22268 (28%) <code>NOUN</code> nodes have two children.</p>
+<p>20722 (30%) <code>NOUN</code> nodes have two children.</p>
 
-<p>14061 (18%) <code>NOUN</code> nodes have three or more children.</p>
+<p>12417 (18%) <code>NOUN</code> nodes have three or more children.</p>
 
-<p>The highest child degree of a <code>NOUN</code> node is 14.</p>
+<p>The highest child degree of a <code>NOUN</code> node is 12.</p>
 
-<p>Children of <code>NOUN</code> nodes are attached using 21 different relations: <a href="">hi-dep/case</a> (44397; 37% instances), <a href="">hi-dep/nmod</a> (27572; 23% instances), <a href="">hi-dep/amod</a> (12662; 11% instances), <a href="">hi-dep/compound</a> (6942; 6% instances), <a href="">hi-dep/det</a> (6739; 6% instances), <a href="">hi-dep/nummod</a> (5391; 4% instances), <a href="">hi-dep/punct</a> (2779; 2% instances), <a href="">hi-dep/conj</a> (2526; 2% instances), <a href="">hi-dep/cc</a> (2161; 2% instances), <a href="">hi-dep/cop</a> (2129; 2% instances), <a href="">hi-dep/dep</a> (2120; 2% instances), <a href="">hi-dep/acl</a> (1932; 2% instances), <a href="">hi-dep/nsubj</a> (1152; 1% instances), <a href="">hi-dep/mark</a> (803; 1% instances), <a href="">hi-dep/acl:relcl</a> (706; 1% instances), <a href="">hi-dep/advmod</a> (110; 0% instances), <a href="">hi-dep/advcl</a> (94; 0% instances), <a href="">hi-dep/dislocated</a> (86; 0% instances), <a href="">hi-dep/dobj</a> (49; 0% instances), <a href="">hi-dep/iobj</a> (28; 0% instances), <a href="">hi-dep/vocative</a> (1; 0% instances)</p>
+<p>Children of <code>NOUN</code> nodes are attached using 21 different relations: <a href="">hi-dep/case</a> (39822; 37% instances), <a href="">hi-dep/nmod</a> (24624; 23% instances), <a href="">hi-dep/amod</a> (11509; 11% instances), <a href="">hi-dep/compound</a> (6158; 6% instances), <a href="">hi-dep/det</a> (6081; 6% instances), <a href="">hi-dep/nummod</a> (4867; 5% instances), <a href="">hi-dep/punct</a> (2448; 2% instances), <a href="">hi-dep/conj</a> (2250; 2% instances), <a href="">hi-dep/cc</a> (2047; 2% instances), <a href="">hi-dep/dep</a> (1906; 2% instances), <a href="">hi-dep/cop</a> (1904; 2% instances), <a href="">hi-dep/acl</a> (1777; 2% instances), <a href="">hi-dep/nsubj</a> (1035; 1% instances), <a href="">hi-dep/mark</a> (735; 1% instances), <a href="">hi-dep/acl:relcl</a> (633; 1% instances), <a href="">hi-dep/advmod</a> (104; 0% instances), <a href="">hi-dep/advcl</a> (85; 0% instances), <a href="">hi-dep/dislocated</a> (73; 0% instances), <a href="">hi-dep/obj</a> (42; 0% instances), <a href="">hi-dep/iobj</a> (26; 0% instances), <a href="">hi-dep/vocative</a> (1; 0% instances)</p>
 
-<p>Children of <code>NOUN</code> nodes belong to 14 different parts of speech: <a href="">ADP</a> (43986; 37% instances), <a href="">NOUN</a> (22896; 19% instances), <a href="">ADJ</a> (11998; 10% instances), <a href="">PROPN</a> (8792; 7% instances), <a href="">VERB</a> (7770; 6% instances), <a href="">DET</a> (6863; 6% instances), <a href="">NUM</a> (5512; 5% instances), <a href="">PRON</a> (4713; 4% instances), <a href="">PUNCT</a> (2781; 2% instances), <a href="">CONJ</a> (2114; 2% instances), <a href="">PART</a> (2083; 2% instances), <a href="">SCONJ</a> (689; 1% instances), <a href="">ADV</a> (178; 0% instances), <a href="">X</a> (4; 0% instances)</p>
+<p>Children of <code>NOUN</code> nodes belong to 15 different parts of speech: <a href="">ADP</a> (39447; 36% instances), <a href="">NOUN</a> (20398; 19% instances), <a href="">ADJ</a> (10901; 10% instances), <a href="">PROPN</a> (7831; 7% instances), <a href="">DET</a> (6184; 6% instances), <a href="">VERB</a> (5105; 5% instances), <a href="">NUM</a> (4972; 5% instances), <a href="">PRON</a> (4257; 4% instances), <a href="">PUNCT</a> (2448; 2% instances), <a href="">CCONJ</a> (2005; 2% instances), <a href="">AUX</a> (1904; 2% instances), <a href="">PART</a> (1877; 2% instances), <a href="">SCONJ</a> (629; 1% instances), <a href="">ADV</a> (165; 0% instances), <a href="">X</a> (4; 0% instances)</p>
 
 
 
@@ -188,9 +202,25 @@ Examples: मामले, देश, क्षेत्र, राज्य, �
 
 NOUN in other languages:
 
+[<a href="../../am/pos/NOUN.html">am</a>]
+
+[<a href="../../ar/pos/NOUN.html">ar</a>]
+
 [<a href="../../bg/pos/NOUN.html">bg</a>]
 
+[<a href="../../bxr/pos/NOUN.html">bxr</a>]
+
+[<a href="../../ca/pos/NOUN.html">ca</a>]
+
+[<a href="../../ckb/pos/NOUN.html">ckb</a>]
+
+[<a href="../../cop/pos/NOUN.html">cop</a>]
+
 [<a href="../../cs/pos/NOUN.html">cs</a>]
+
+[<a href="../../cu/pos/NOUN.html">cu</a>]
+
+[<a href="../../da/pos/NOUN.html">da</a>]
 
 [<a href="../../de/pos/NOUN.html">de</a>]
 
@@ -200,29 +230,99 @@ NOUN in other languages:
 
 [<a href="../../es/pos/NOUN.html">es</a>]
 
+[<a href="../../et/pos/NOUN.html">et</a>]
+
 [<a href="../../eu/pos/NOUN.html">eu</a>]
 
 [<a href="../../fa/pos/NOUN.html">fa</a>]
 
 [<a href="../../fi/pos/NOUN.html">fi</a>]
 
+[<a href="../../fo/pos/NOUN.html">fo</a>]
+
 [<a href="../../fr/pos/NOUN.html">fr</a>]
 
 [<a href="../../ga/pos/NOUN.html">ga</a>]
 
+[<a href="../../gl/pos/NOUN.html">gl</a>]
+
+[<a href="../../got/pos/NOUN.html">got</a>]
+
+[<a href="../../grc/pos/NOUN.html">grc</a>]
+
 [<a href="../../he/pos/NOUN.html">he</a>]
 
+[<a href="../../hi/pos/NOUN.html">hi</a>]
+
+[<a href="../../hr/pos/NOUN.html">hr</a>]
+
 [<a href="../../hu/pos/NOUN.html">hu</a>]
+
+[<a href="../../id/pos/NOUN.html">id</a>]
 
 [<a href="../../it/pos/NOUN.html">it</a>]
 
 [<a href="../../ja/pos/NOUN.html">ja</a>]
 
+[<a href="../../kk/pos/NOUN.html">kk</a>]
+
+[<a href="../../kmr/pos/NOUN.html">kmr</a>]
+
 [<a href="../../ko/pos/NOUN.html">ko</a>]
+
+[<a href="../../la/pos/NOUN.html">la</a>]
+
+[<a href="../../lv/pos/NOUN.html">lv</a>]
+
+[<a href="../../mr/pos/NOUN.html">mr</a>]
+
+[<a href="../../nl/pos/NOUN.html">nl</a>]
+
+[<a href="../../no/pos/NOUN.html">no</a>]
+
+[<a href="../../pl/pos/NOUN.html">pl</a>]
+
+[<a href="../../pt/pos/NOUN.html">pt</a>]
+
+[<a href="../../ro/pos/NOUN.html">ro</a>]
+
+[<a href="../../ru/pos/NOUN.html">ru</a>]
+
+[<a href="../../sa/pos/NOUN.html">sa</a>]
+
+[<a href="../../sk/pos/NOUN.html">sk</a>]
+
+[<a href="../../sla/pos/NOUN.html">sla</a>]
+
+[<a href="../../sl/pos/NOUN.html">sl</a>]
+
+[<a href="../../so/pos/NOUN.html">so</a>]
+
+[<a href="../../sr/pos/NOUN.html">sr</a>]
 
 [<a href="../../sv/pos/NOUN.html">sv</a>]
 
+[<a href="../../swl/pos/NOUN.html">swl</a>]
+
+[<a href="../../ta/pos/NOUN.html">ta</a>]
+
+[<a href="../../tr/pos/NOUN.html">tr</a>]
+
+[<a href="../../ug/pos/NOUN.html">ug</a>]
+
+[<a href="../../uk/pos/NOUN.html">uk</a>]
+
 [<a href="../../u/pos/NOUN.html">u</a>]
+
+[<a href="../../urj/pos/NOUN.html">urj</a>]
+
+[<a href="../../ur/pos/NOUN.html">ur</a>]
+
+[<a href="../../vi/pos/NOUN.html">vi</a>]
+
+[<a href="../../yue/pos/NOUN.html">yue</a>]
+
+[<a href="../../zh/pos/NOUN.html">zh</a>]
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-eu">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/eu/dep">eu/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_eu-dep/case.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-eu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/eu/dep">eu/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_eu-dep/case.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,12 +80,12 @@ for <code>case</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>1890 nodes (2%) are attached to their parents as <code>case</code>.</p>
+<p>1481 nodes (2%) are attached to their parents as <code>case</code>.</p>
 
-<p>1890 instances of <code>case</code> (100%) are left-to-right (parent precedes child).
-Average distance between parent and child is 1.00952380952381.</p>
+<p>1481 instances of <code>case</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 1.00742741390952.</p>
 
-<p>The following 10 pairs of parts of speech are connected with <code>case</code>: <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADP</a> (1069; 57% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/ADP</a> (232; 12% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/ADP</a> (206; 11% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/ADP</a> (132; 7% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/ADP</a> (105; 6% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/ADP</a> (86; 5% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/ADP</a> (41; 2% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NOUN</a> (10; 1% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/PROPN</a> (6; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/ADV</a> (3; 0% instances).</p>
+<p>The following 10 pairs of parts of speech are connected with <code>case</code>: <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADP</a> (838; 57% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/ADP</a> (179; 12% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/ADP</a> (173; 12% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/ADP</a> (103; 7% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/ADP</a> (85; 6% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/ADP</a> (66; 4% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/ADP</a> (26; 2% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NOUN</a> (5; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/PROPN</a> (4; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/ADV</a> (2; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 3	bgColor:blue
 # visual-style 3	fgColor:white
@@ -76,16 +93,16 @@ Average distance between parent and child is 1.00952380952381.</p>
 # visual-style 2	fgColor:white
 # visual-style 2 3 case	color:blue
 1	Hortik	hor	ADV	_	Case=Abl	7	advmod	_	_
-2	amaiera	amaiera	NOUN	_	Case=All	7	nmod	_	_
-3	arte	arte	ADP	_	Animacy=Inan|Case=Abs	2	case	_	_
+2	amaiera	amaiera	NOUN	_	Case=All	7	obl	_	_
+3	arte	arte	ADP	_	Animacy=Inan|Case=Abs	2	case	_	SpaceAfter=No
 4	,	,	PUNCT	_	_	7	punct	_	_
-5	bina	bi+na	NUM	_	_	6	nmod	_	_
-6	tanto	tanto	NOUN	_	Case=Abs|Definite=Ind	7	dobj	_	_
+5	bina	bi+na	NUM	_	NumType=Card	6	nmod	_	_
+6	tanto	tanto	NOUN	_	Case=Abs|Definite=Ind	7	obj	_	_
 7	egin	egin	VERB	_	Aspect=Perf|VerbForm=Part	0	root	_	_
 8	zituzten	*edun	AUX	_	Mood=Ind|Number[abs]=Plur|Number[erg]=Plur|Person[abs]=3|Person[erg]=3	7	aux	_	_
-9	(	(	PUNCT	_	_	7	punct	_	_
-10	22-20	22-20	NUM	_	NumType=Card	7	parataxis	_	_
-11	)	)	PUNCT	_	_	7	punct	_	_
+9	(	(	PUNCT	_	_	7	punct	_	SpaceAfter=No
+10	22-20	22-20	NUM	_	NumType=Card	7	parataxis	_	SpaceAfter=No
+11	)	)	PUNCT	_	_	7	punct	_	SpaceAfter=No
 12	.	.	PUNCT	_	_	7	punct	_	_
 
 </code></pre>
@@ -95,12 +112,12 @@ Average distance between parent and child is 1.00952380952381.</p>
 # visual-style 1	bgColor:blue
 # visual-style 1	fgColor:white
 # visual-style 1 2 case	color:blue
-1	Haroren	Haro	PROPN	_	Case=Gen	3	nmod	_	_
+1	Haroren	Haro	PROPN	_	Case=Gen	3	obl	_	_
 2	aurka	aurka	ADP	_	Case=Abs|Definite=Def|Number=Sing	1	case	_	_
-3	jokatuko	jokatu	VERB	_	Aspect=Pro|VerbForm=Part	0	root	_	_
+3	jokatuko	jokatu	VERB	_	Aspect=Prosp|VerbForm=Part	0	root	_	_
 4	du	*edun	AUX	_	Mood=Ind|Number[abs]=Sing|Number[erg]=Sing|Person[abs]=3|Person[erg]=3	3	aux	_	_
 5	gaur	gaur	ADV	_	_	3	advmod	_	_
-6	Alavesek	Alaves	PROPN	_	Case=Erg|Definite=Def|Number=Sing	3	nsubj	_	_
+6	Alavesek	Alaves	PROPN	_	Case=Erg|Definite=Def|Number=Sing	3	nsubj	_	SpaceAfter=No
 7	.	.	PUNCT	_	_	3	punct	_	_
 
 </code></pre>
@@ -111,12 +128,12 @@ Average distance between parent and child is 1.00952380952381.</p>
 # visual-style 2	fgColor:white
 # visual-style 2 3 case	color:blue
 1	Horren	hori	DET	_	Case=Gen|Definite=Def|Number=Sing	3	nmod	_	_
-2	guztiaren	guzti	DET	_	Case=Gen	7	nmod	_	_
+2	guztiaren	guzti	DET	_	Case=Gen	7	obl	_	_
 3	atzean	atze	ADP	_	Case=Ine|Definite=Def|Number=Sing	2	case	_	_
 4	mezu	mezu	NOUN	_	_	7	nsubj	_	_
 5	argi	argi	ADJ	_	_	4	amod	_	_
 6	bat	bat	NUM	_	NumType=Card	4	nummod	_	_
-7	dago	egon	VERB	_	Aspect=Prog|Mood=Ind|Number[abs]=Sing|Person[abs]=3	0	root	_	_
+7	dago	egon	VERB	_	Aspect=Prog|Mood=Ind|Number[abs]=Sing|Person[abs]=3	0	root	_	SpaceAfter=No
 8	.	.	PUNCT	_	_	7	punct	_	_
 
 </code></pre>
@@ -129,9 +146,25 @@ Average distance between parent and child is 1.00952380952381.</p>
 
 case in other languages:
 
+[<a href="../../am/dep/case.html">am</a>]
+
+[<a href="../../ar/dep/case.html">ar</a>]
+
 [<a href="../../bg/dep/case.html">bg</a>]
 
+[<a href="../../bxr/dep/case.html">bxr</a>]
+
+[<a href="../../ca/dep/case.html">ca</a>]
+
+[<a href="../../ckb/dep/case.html">ckb</a>]
+
+[<a href="../../cop/dep/case.html">cop</a>]
+
 [<a href="../../cs/dep/case.html">cs</a>]
+
+[<a href="../../cu/dep/case.html">cu</a>]
+
+[<a href="../../da/dep/case.html">da</a>]
 
 [<a href="../../de/dep/case.html">de</a>]
 
@@ -141,29 +174,99 @@ case in other languages:
 
 [<a href="../../es/dep/case.html">es</a>]
 
+[<a href="../../et/dep/case.html">et</a>]
+
 [<a href="../../eu/dep/case.html">eu</a>]
 
 [<a href="../../fa/dep/case.html">fa</a>]
 
 [<a href="../../fi/dep/case.html">fi</a>]
 
+[<a href="../../fo/dep/case.html">fo</a>]
+
 [<a href="../../fr/dep/case.html">fr</a>]
 
 [<a href="../../ga/dep/case.html">ga</a>]
 
+[<a href="../../gl/dep/case.html">gl</a>]
+
+[<a href="../../got/dep/case.html">got</a>]
+
+[<a href="../../grc/dep/case.html">grc</a>]
+
 [<a href="../../he/dep/case.html">he</a>]
 
+[<a href="../../hi/dep/case.html">hi</a>]
+
+[<a href="../../hr/dep/case.html">hr</a>]
+
 [<a href="../../hu/dep/case.html">hu</a>]
+
+[<a href="../../id/dep/case.html">id</a>]
 
 [<a href="../../it/dep/case.html">it</a>]
 
 [<a href="../../ja/dep/case.html">ja</a>]
 
+[<a href="../../kk/dep/case.html">kk</a>]
+
+[<a href="../../kmr/dep/case.html">kmr</a>]
+
 [<a href="../../ko/dep/case.html">ko</a>]
+
+[<a href="../../la/dep/case.html">la</a>]
+
+[<a href="../../lv/dep/case.html">lv</a>]
+
+[<a href="../../mr/dep/case.html">mr</a>]
+
+[<a href="../../nl/dep/case.html">nl</a>]
+
+[<a href="../../no/dep/case.html">no</a>]
+
+[<a href="../../pl/dep/case.html">pl</a>]
+
+[<a href="../../pt/dep/case.html">pt</a>]
+
+[<a href="../../ro/dep/case.html">ro</a>]
+
+[<a href="../../ru/dep/case.html">ru</a>]
+
+[<a href="../../sa/dep/case.html">sa</a>]
+
+[<a href="../../sk/dep/case.html">sk</a>]
+
+[<a href="../../sla/dep/case.html">sla</a>]
+
+[<a href="../../sl/dep/case.html">sl</a>]
+
+[<a href="../../so/dep/case.html">so</a>]
+
+[<a href="../../sr/dep/case.html">sr</a>]
 
 [<a href="../../sv/dep/case.html">sv</a>]
 
+[<a href="../../swl/dep/case.html">swl</a>]
+
+[<a href="../../ta/dep/case.html">ta</a>]
+
+[<a href="../../tr/dep/case.html">tr</a>]
+
 [<a href="../../u/dep/case.html">u</a>]
+
+[<a href="../../ug/dep/case.html">ug</a>]
+
+[<a href="../../uk/dep/case.html">uk</a>]
+
+[<a href="../../ur/dep/case.html">ur</a>]
+
+[<a href="../../urj/dep/case.html">urj</a>]
+
+[<a href="../../vi/dep/case.html">vi</a>]
+
+[<a href="../../yue/dep/case.html">yue</a>]
+
+[<a href="../../zh/dep/case.html">zh</a>]
 
 
 

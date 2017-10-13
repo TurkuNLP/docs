@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-hu">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/hu/feat">hu/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_hu-feat/Aspect.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-hu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/hu/feat">hu/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hu-feat/Aspect.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -65,28 +82,26 @@
 
 <h2 id="treebank-statistics-udhungarian">Treebank Statistics (UD_Hungarian)</h2>
 
-<p>This feature is universal but the values <code>Freq</code> are language-specific.
-It occurs with 1 different values: <code>Freq</code>.</p>
+<p>This feature is universal but the values <code>Iter</code> are language-specific.
+It occurs with 1 different values: <code>Iter</code>.</p>
 
-<p>12 tokens (0%) have a non-empty value of <code>Aspect</code>.
-11 types (0%) occur at least once with a non-empty value of <code>Aspect</code>.
-12 lemmas (0%) occur at least once with a non-empty value of <code>Aspect</code>.
-The feature is used with 1 part-of-speech tags: <a href="">hu-pos/VERB</a> (12; 0% instances).</p>
+<p>8 tokens (0%) have a non-empty value of <code>Aspect</code>.
+7 types (0%) occur at least once with a non-empty value of <code>Aspect</code>.
+8 lemmas (0%) occur at least once with a non-empty value of <code>Aspect</code>.
+The feature is used with 1 part-of-speech tags: <a href="">hu-pos/VERB</a> (8; 0% instances).</p>
 
 <h3 id="verb"><code>VERB</code></h3>
 
-<p>12 <a href="">hu-pos/VERB</a> tokens (0% of all <code>VERB</code> tokens) have a non-empty value of <code>Aspect</code>.</p>
+<p>8 <a href="">hu-pos/VERB</a> tokens (0% of all <code>VERB</code> tokens) have a non-empty value of <code>Aspect</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Aspect</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (12; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (12; 100%), <tt><a href="Person.html">Person</a>=3</tt> (11; 92%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (11; 92%), <tt><a href="Definite.html">Definite</a>=Def</tt> (9; 75%), <tt><a href="Tense.html">Tense</a>=Past</tt> (7; 58%), <tt><a href="Number.html">Number</a>=Sing</tt> (7; 58%).</p>
+<p>The most frequent other feature values with which <code>VERB</code> and <code>Aspect</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (8; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (8; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (8; 100%), <tt><a href="Person.html">Person</a>=3</tt> (7; 88%), <tt><a href="Definite.html">Definite</a>=Def</tt> (6; 75%).</p>
 
 <p><code>VERB</code> tokens may have the following values of <code>Aspect</code>:</p>
 
 <ul>
-  <li><code>Freq</code> (12; 100% of non-empty <code>Aspect</code>): <em>bizonygatta, forgatnak, forgatta, hajtogatják, ijesztgette, iszogatnak, nyalogathatja, nézegette, találgatta, telefonálgattak</em></li>
-  <li><code>EMPTY</code> (3815): <em>volt, kell, van, lehet, mondta, lesz, elmondta, kellene, lenne, vannak</em></li>
+  <li><code>Iter</code> (8; 100% of non-empty <code>Aspect</code>): <em>bizonygatta, forgatnak, forgatta, hajtogatják, ijesztgette, iszogatnak, tologatjuk</em></li>
+  <li><code>EMPTY</code> (2726): <em>kell, van, volt, lehet, mondta, kellene, elmondta, nincs, jelentette, kellett</em></li>
 </ul>
-
-<p><code>Aspect</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 100% lemmas (12) occur only with one value of <code>Aspect</code>.</p>
 
 
 
@@ -96,9 +111,25 @@ The feature is used with 1 part-of-speech tags: <a href="">hu-pos/VERB</a> (12; 
 
 Aspect in other languages:
 
+[<a href="../../am/feat/Aspect.html">am</a>]
+
+[<a href="../../ar/feat/Aspect.html">ar</a>]
+
 [<a href="../../bg/feat/Aspect.html">bg</a>]
 
+[<a href="../../bxr/feat/Aspect.html">bxr</a>]
+
+[<a href="../../ca/feat/Aspect.html">ca</a>]
+
+[<a href="../../ckb/feat/Aspect.html">ckb</a>]
+
+[<a href="../../cop/feat/Aspect.html">cop</a>]
+
 [<a href="../../cs/feat/Aspect.html">cs</a>]
+
+[<a href="../../cu/feat/Aspect.html">cu</a>]
+
+[<a href="../../da/feat/Aspect.html">da</a>]
 
 [<a href="../../de/feat/Aspect.html">de</a>]
 
@@ -108,29 +139,95 @@ Aspect in other languages:
 
 [<a href="../../es/feat/Aspect.html">es</a>]
 
+[<a href="../../et/feat/Aspect.html">et</a>]
+
 [<a href="../../eu/feat/Aspect.html">eu</a>]
 
 [<a href="../../fa/feat/Aspect.html">fa</a>]
 
-[<a href="../../fi/feat/Aspect.html">fi</a>]
+[<a href="../../fo/feat/Aspect.html">fo</a>]
 
 [<a href="../../fr/feat/Aspect.html">fr</a>]
 
 [<a href="../../ga/feat/Aspect.html">ga</a>]
 
+[<a href="../../gl/feat/Aspect.html">gl</a>]
+
+[<a href="../../got/feat/Aspect.html">got</a>]
+
+[<a href="../../grc/feat/Aspect.html">grc</a>]
+
 [<a href="../../he/feat/Aspect.html">he</a>]
 
+[<a href="../../hi/feat/Aspect.html">hi</a>]
+
+[<a href="../../hr/feat/Aspect.html">hr</a>]
+
 [<a href="../../hu/feat/Aspect.html">hu</a>]
+
+[<a href="../../id/feat/Aspect.html">id</a>]
 
 [<a href="../../it/feat/Aspect.html">it</a>]
 
 [<a href="../../ja/feat/Aspect.html">ja</a>]
 
+[<a href="../../kk/feat/Aspect.html">kk</a>]
+
+[<a href="../../kmr/feat/Aspect.html">kmr</a>]
+
 [<a href="../../ko/feat/Aspect.html">ko</a>]
 
-[<a href="../../sv/feat/Aspect.html">sv</a>]
+[<a href="../../la/feat/Aspect.html">la</a>]
+
+[<a href="../../lv/feat/Aspect.html">lv</a>]
+
+[<a href="../../mr/feat/Aspect.html">mr</a>]
+
+[<a href="../../nl/feat/Aspect.html">nl</a>]
+
+[<a href="../../no/feat/Aspect.html">no</a>]
+
+[<a href="../../pl/feat/Aspect.html">pl</a>]
+
+[<a href="../../pt/feat/Aspect.html">pt</a>]
+
+[<a href="../../ro/feat/Aspect.html">ro</a>]
+
+[<a href="../../ru/feat/Aspect.html">ru</a>]
+
+[<a href="../../sa/feat/Aspect.html">sa</a>]
+
+[<a href="../../sk/feat/Aspect.html">sk</a>]
+
+[<a href="../../sla/feat/Aspect.html">sla</a>]
+
+[<a href="../../sl/feat/Aspect.html">sl</a>]
+
+[<a href="../../so/feat/Aspect.html">so</a>]
+
+[<a href="../../sr/feat/Aspect.html">sr</a>]
+
+[<a href="../../swl/feat/Aspect.html">swl</a>]
+
+[<a href="../../ta/feat/Aspect.html">ta</a>]
+
+[<a href="../../tr/feat/Aspect.html">tr</a>]
 
 [<a href="../../u/feat/Aspect.html">u</a>]
+
+[<a href="../../ug/feat/Aspect.html">ug</a>]
+
+[<a href="../../uk/feat/Aspect.html">uk</a>]
+
+[<a href="../../ur/feat/Aspect.html">ur</a>]
+
+[<a href="../../urj/feat/Aspect.html">urj</a>]
+
+[<a href="../../vi/feat/Aspect.html">vi</a>]
+
+[<a href="../../yue/feat/Aspect.html">yue</a>]
+
+[<a href="../../zh/feat/Aspect.html">zh</a>]
 
 
 

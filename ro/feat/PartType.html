@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ro">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ro/feat">ro/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ro-feat/PartType.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ro">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ro/feat">ro/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ro-feat/PartType.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -65,21 +82,21 @@ for <code>PartType</code>.</p>
 <p>This feature is language-specific.
 It occurs with 1 different values: <code>Inf</code>.</p>
 
-<p>834 tokens (0%) have a non-empty value of <code>PartType</code>.
-4 types (0%) occur at least once with a non-empty value of <code>PartType</code>.
+<p>774 tokens (0%) have a non-empty value of <code>PartType</code>.
+3 types (0%) occur at least once with a non-empty value of <code>PartType</code>.
 1 lemmas (0%) occur at least once with a non-empty value of <code>PartType</code>.
-The feature is used with 1 part-of-speech tags: <a href="">ro-pos/PART</a> (834; 0% instances).</p>
+The feature is used with 1 part-of-speech tags: <a href="">ro-pos/PART</a> (774; 0% instances).</p>
 
 <h3 id="part"><code>PART</code></h3>
 
-<p>834 <a href="">ro-pos/PART</a> tokens (17% of all <code>PART</code> tokens) have a non-empty value of <code>PartType</code>.</p>
+<p>774 <a href="">ro-pos/PART</a> tokens (17% of all <code>PART</code> tokens) have a non-empty value of <code>PartType</code>.</p>
 
-<p>The most frequent other feature values with which <code>PART</code> and <code>PartType</code> co-occurred: <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (834; 100%), <tt><a href="Negative.html">Negative</a>=EMPTY</tt> (834; 100%).</p>
+<p>The most frequent other feature values with which <code>PART</code> and <code>PartType</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (774; 100%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (774; 100%).</p>
 
 <p><code>PART</code> tokens may have the following values of <code>PartType</code>:</p>
 
 <ul>
-  <li><code>Inf</code> (834; 100% of non-empty <code>PartType</code>): <em>a, a-, -a</em></li>
+  <li><code>Inf</code> (774; 100% of non-empty <code>PartType</code>): <em>a, a-</em></li>
 </ul>
 
 
@@ -87,6 +104,17 @@ The feature is used with 1 part-of-speech tags: <a href="">ro-pos/PART</a> (834;
 
 <!-- "in other languages" links -->
 <hr/>
+
+PartType in other languages:
+
+[<a href="../../da/feat/PartType.html">da</a>]
+
+[<a href="../../ga/feat/PartType.html">ga</a>]
+
+[<a href="../../nl/feat/PartType.html">nl</a>]
+
+[<a href="../../ro/feat/PartType.html">ro</a>]
+
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-el">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/el/dep">el/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/mark.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-el">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/el/dep">el/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/mark.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -107,7 +124,7 @@ conj(μάθει, δουλέψει)
 aux(δουλέψει, να)
 </code></pre>
 
-<p>For certain multiword subordinate conjunctions, we use combinations of the <code>mark</code> and the <a href="mwe">mwe</a> relations.</p>
+<p>For certain multiword subordinate conjunctions, we use combinations of the <code>mark</code> and the <a href="fixed">mwe</a> relations.</p>
 
 <pre><code class="language-sdparse">Αν και βρίσκεται στο σωστό δρόμο χρειάζεται περισσότερο χρόνο
 advcl(χρειάζεται, βρίσκεται)
@@ -131,28 +148,50 @@ mwe(Αν, και)
 
 <p>This relation is universal.</p>
 
-<p>1034 nodes (2%) are attached to their parents as <code>mark</code>.</p>
+<p>881 nodes (2%) are attached to their parents as <code>mark</code>.</p>
 
-<p>1017 instances of <code>mark</code> (98%) are right-to-left (child precedes parent).
-Average distance between parent and child is 4.65570599613153.</p>
+<p>873 instances of <code>mark</code> (99%) are right-to-left (child precedes parent).
+Average distance between parent and child is 4.50170261066969.</p>
 
-<p>The following 14 pairs of parts of speech are connected with <code>mark</code>: <a href="">el-pos/VERB</a>-<a href="">el-pos/CONJ</a> (755; 73% instances), <a href="">el-pos/ADJ</a>-<a href="">el-pos/CONJ</a> (91; 9% instances), <a href="">el-pos/VERB</a>-<a href="">el-pos/ADP</a> (87; 8% instances), <a href="">el-pos/NOUN</a>-<a href="">el-pos/CONJ</a> (66; 6% instances), <a href="">el-pos/VERB</a>-<a href="">el-pos/ADV</a> (12; 1% instances), <a href="">el-pos/ADV</a>-<a href="">el-pos/CONJ</a> (10; 1% instances), <a href="">el-pos/NUM</a>-<a href="">el-pos/CONJ</a> (3; 0% instances), <a href="">el-pos/ADV</a>-<a href="">el-pos/ADP</a> (2; 0% instances), <a href="">el-pos/NOUN</a>-<a href="">el-pos/ADV</a> (2; 0% instances), <a href="">el-pos/PRON</a>-<a href="">el-pos/CONJ</a> (2; 0% instances), <a href="">el-pos/ADJ</a>-<a href="">el-pos/ADP</a> (1; 0% instances), <a href="">el-pos/ADJ</a>-<a href="">el-pos/ADV</a> (1; 0% instances), <a href="">el-pos/NOUN</a>-<a href="">el-pos/ADP</a> (1; 0% instances), <a href="">el-pos/PRON</a>-<a href="">el-pos/ADP</a> (1; 0% instances).</p>
+<p>The following 15 pairs of parts of speech are connected with <code>mark</code>: <a href="">el-pos/VERB</a>-<a href="">el-pos/SCONJ</a> (675; 77% instances), <a href="">el-pos/VERB</a>-<a href="">el-pos/ADP</a> (73; 8% instances), <a href="">el-pos/ADJ</a>-<a href="">el-pos/SCONJ</a> (60; 7% instances), <a href="">el-pos/NOUN</a>-<a href="">el-pos/SCONJ</a> (28; 3% instances), <a href="">el-pos/VERB</a>-<a href="">el-pos/ADV</a> (16; 2% instances), <a href="">el-pos/VERB</a>-<a href="">el-pos/CCONJ</a> (11; 1% instances), <a href="">el-pos/ADV</a>-<a href="">el-pos/SCONJ</a> (7; 1% instances), <a href="">el-pos/PRON</a>-<a href="">el-pos/SCONJ</a> (3; 0% instances), <a href="">el-pos/NUM</a>-<a href="">el-pos/SCONJ</a> (2; 0% instances), <a href="">el-pos/ADJ</a>-<a href="">el-pos/ADV</a> (1; 0% instances), <a href="">el-pos/ADV</a>-<a href="">el-pos/ADP</a> (1; 0% instances), <a href="">el-pos/NOUN</a>-<a href="">el-pos/ADV</a> (1; 0% instances), <a href="">el-pos/NOUN</a>-<a href="">el-pos/CCONJ</a> (1; 0% instances), <a href="">el-pos/PRON</a>-<a href="">el-pos/ADP</a> (1; 0% instances), <a href="">el-pos/X</a>-<a href="">el-pos/SCONJ</a> (1; 0% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 7	bgColor:blue
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 10	bgColor:blue
+# visual-style 10	fgColor:white
+# visual-style 10 3 mark	color:blue
+1	Ελπίζω	ελπίζω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	μάλιστα	μάλιστα	ADV	ADV	_	1	advmod	_	_
+3	ότι	ότι	SCONJ	SCONJ	_	10	mark	_	_
+4	και	και	CCONJ	CCONJ	_	7	cc	_	_
+5	οι	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_
+6	λοιπές	λοιπός	ADJ	ADJ	Case=Nom|Gender=Fem|Number=Plur	7	amod	_	_
+7	ομάδες	ομάδα	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Plur	10	nsubj	_	_
+8	θα	θα	PART	PART	_	10	aux	_	_
+9	την	εγώ	PRON	PRON	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	10	obj	_	_
+10	εγκρίνουν	εγκρίνω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	ccomp	_	SpaceAfter=No
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 7	bgColor:blue
 # visual-style 7	fgColor:white
-# visual-style 7 4 mark	color:blue
-1	Είναι	είμαι	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Pass	3	cop	_	_
-2	ασφαλώς	ασφαλώς	ADV	ADV	_	3	advmod	_	_
-3	σαφές	σαφής	ADJ	ADJ	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
-4	ότι	ότι	CONJ	CONJ	_	7	mark	_	_
-5	το	ο	DET	DET	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	6	det	_	_
-6	προεδρείο	προεδρείο	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Sing	7	nsubj	_	_
-7	κατέχει	κατέχω	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Act	3	csubj	_	_
-8	ηγετικό	ηγετικός	ADJ	ADJ	Case=Acc|Gender=Masc|Number=Sing	9	amod	_	_
-9	ρόλο	ρόλος	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Sing	7	dobj	_	_
-10	.	.	PUNCT	PUNCT	_	3	punct	_	_
+# visual-style 9	bgColor:blue
+# visual-style 9	fgColor:white
+# visual-style 9 7 mark	color:blue
+1	Όχι	όχι	ADV	ADV	_	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	PUNCT	_	6	punct	_	_
+3	η	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	υπηρεσία	υπηρεσία	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	6	nsubj	_	_
+5	αυτή	αυτός	PRON	PRON	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Dem	4	det	_	_
+6	συγκροτήθηκε	συγκροτώ	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	1	conj	_	_
+7	για	για	ADP	ADP	_	9	mark	_	_
+8	να	να	PART	PART	_	9	aux	_	_
+9	ελέγχει	ελέγχω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	advcl	_	_
+10	ακριβώς	ακριβώς	ADV	ADV	_	11	advmod	_	_
+11	τέτοιες	τέτοιος	PRON	PRON	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Dem	12	det	_	_
+12	επικρίσεις	επίκριση	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Plur	9	obj	_	SpaceAfter=No
+13	!	!	PUNCT	PUNCT	_	1	punct	_	_
 
 </code></pre>
 
@@ -161,33 +200,12 @@ Average distance between parent and child is 4.65570599613153.</p>
 # visual-style 5	bgColor:blue
 # visual-style 5	fgColor:white
 # visual-style 5 2 mark	color:blue
-1	Θεωρώ	θεωρώ	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|Voice=Act	0	root	_	_
-2	ότι	ότι	CONJ	CONJ	_	5	mark	_	_
+1	Θεωρώ	θεωρώ	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	ότι	ότι	SCONJ	SCONJ	_	5	mark	_	_
 3	αυτό	αυτός	PRON	PRON	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Dem	5	nsubj	_	_
-4	είναι	είμαι	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Pass	5	cop	_	_
-5	σωστό	σωστός	ADJ	ADJ	Case=Nom|Gender=Neut|Number=Sing	1	ccomp	_	_
+4	είναι	είμαι	AUX	AUX	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	5	cop	_	_
+5	σωστό	σωστός	ADJ	ADJ	Case=Nom|Gender=Neut|Number=Sing	1	ccomp	_	SpaceAfter=No
 6	.	.	PUNCT	PUNCT	_	1	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 8	bgColor:blue
-# visual-style 8	fgColor:white
-# visual-style 8 6 mark	color:blue
-1	Επίσης	επίσης	ADV	ADV	_	2	advmod	_	_
-2	δήλωσε	δηλώνω	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	_
-3	ότι	ότι	CONJ	CONJ	_	4	mark	_	_
-4	γίνεται	γίνομαι	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Pass	2	ccomp	_	_
-5	έρευνα	έρευνα	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	4	nsubj	_	_
-6	για	για	ADP	ADP	_	8	mark	_	_
-7	να	να	PART	PART	_	8	aux	_	_
-8	καθοριστούν	καθορίζω	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Voice=Pass	4	advcl	_	_
-9	τα	ο	DET	DET	Case=Nom|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	10	det	_	_
-10	αίτια	αίτιο	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Plur	8	nsubj	_	_
-11	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	12	det	_	_
-12	δυστυχήματος	δυστύχημα	NOUN	NOUN	Case=Gen|Gender=Neut|Number=Sing	10	nmod	_	_
-13	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 </code></pre>
 
@@ -199,9 +217,25 @@ Average distance between parent and child is 4.65570599613153.</p>
 
 mark in other languages:
 
+[<a href="../../am/dep/mark.html">am</a>]
+
+[<a href="../../ar/dep/mark.html">ar</a>]
+
 [<a href="../../bg/dep/mark.html">bg</a>]
 
+[<a href="../../bxr/dep/mark.html">bxr</a>]
+
+[<a href="../../ca/dep/mark.html">ca</a>]
+
+[<a href="../../ckb/dep/mark.html">ckb</a>]
+
+[<a href="../../cop/dep/mark.html">cop</a>]
+
 [<a href="../../cs/dep/mark.html">cs</a>]
+
+[<a href="../../cu/dep/mark.html">cu</a>]
+
+[<a href="../../da/dep/mark.html">da</a>]
 
 [<a href="../../de/dep/mark.html">de</a>]
 
@@ -211,29 +245,99 @@ mark in other languages:
 
 [<a href="../../es/dep/mark.html">es</a>]
 
+[<a href="../../et/dep/mark.html">et</a>]
+
 [<a href="../../eu/dep/mark.html">eu</a>]
 
 [<a href="../../fa/dep/mark.html">fa</a>]
 
 [<a href="../../fi/dep/mark.html">fi</a>]
 
+[<a href="../../fo/dep/mark.html">fo</a>]
+
 [<a href="../../fr/dep/mark.html">fr</a>]
 
 [<a href="../../ga/dep/mark.html">ga</a>]
 
+[<a href="../../gl/dep/mark.html">gl</a>]
+
+[<a href="../../got/dep/mark.html">got</a>]
+
+[<a href="../../grc/dep/mark.html">grc</a>]
+
 [<a href="../../he/dep/mark.html">he</a>]
 
+[<a href="../../hi/dep/mark.html">hi</a>]
+
+[<a href="../../hr/dep/mark.html">hr</a>]
+
 [<a href="../../hu/dep/mark.html">hu</a>]
+
+[<a href="../../id/dep/mark.html">id</a>]
 
 [<a href="../../it/dep/mark.html">it</a>]
 
 [<a href="../../ja/dep/mark.html">ja</a>]
 
+[<a href="../../kk/dep/mark.html">kk</a>]
+
+[<a href="../../kmr/dep/mark.html">kmr</a>]
+
 [<a href="../../ko/dep/mark.html">ko</a>]
+
+[<a href="../../la/dep/mark.html">la</a>]
+
+[<a href="../../lv/dep/mark.html">lv</a>]
+
+[<a href="../../mr/dep/mark.html">mr</a>]
+
+[<a href="../../nl/dep/mark.html">nl</a>]
+
+[<a href="../../no/dep/mark.html">no</a>]
+
+[<a href="../../pl/dep/mark.html">pl</a>]
+
+[<a href="../../pt/dep/mark.html">pt</a>]
+
+[<a href="../../ro/dep/mark.html">ro</a>]
+
+[<a href="../../ru/dep/mark.html">ru</a>]
+
+[<a href="../../sa/dep/mark.html">sa</a>]
+
+[<a href="../../sk/dep/mark.html">sk</a>]
+
+[<a href="../../sla/dep/mark.html">sla</a>]
+
+[<a href="../../sl/dep/mark.html">sl</a>]
+
+[<a href="../../so/dep/mark.html">so</a>]
+
+[<a href="../../sr/dep/mark.html">sr</a>]
 
 [<a href="../../sv/dep/mark.html">sv</a>]
 
+[<a href="../../swl/dep/mark.html">swl</a>]
+
+[<a href="../../ta/dep/mark.html">ta</a>]
+
+[<a href="../../tr/dep/mark.html">tr</a>]
+
 [<a href="../../u/dep/mark.html">u</a>]
+
+[<a href="../../ug/dep/mark.html">ug</a>]
+
+[<a href="../../uk/dep/mark.html">uk</a>]
+
+[<a href="../../ur/dep/mark.html">ur</a>]
+
+[<a href="../../urj/dep/mark.html">urj</a>]
+
+[<a href="../../vi/dep/mark.html">vi</a>]
+
+[<a href="../../yue/dep/mark.html">yue</a>]
+
+[<a href="../../zh/dep/mark.html">zh</a>]
 
 
 

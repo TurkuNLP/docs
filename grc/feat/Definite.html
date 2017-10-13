@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-grc">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/grc/feat">grc/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_grc-feat/Definite.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-grc">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/grc/feat">grc/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_grc-feat/Definite.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -64,43 +81,41 @@
 <p>This feature is universal.
 It occurs with 1 different values: <code>Def</code>.</p>
 
-<p>27346 tokens (13%) have a non-empty value of <code>Definite</code>.
-54 types (0%) occur at least once with a non-empty value of <code>Definite</code>.
+<p>26343 tokens (13%) have a non-empty value of <code>Definite</code>.
+51 types (0%) occur at least once with a non-empty value of <code>Definite</code>.
 1 lemmas (0%) occur at least once with a non-empty value of <code>Definite</code>.
-The feature is used with 2 part-of-speech tags: <a href="">grc-pos/DET</a> (27319; 13% instances), <a href="">grc-pos/ADJ</a> (27; 0% instances).</p>
+The feature is used with 2 part-of-speech tags: <a href="">grc-pos/DET</a> (26313; 13% instances), <a href="">grc-pos/ADJ</a> (30; 0% instances).</p>
 
 <h3 id="det"><code>DET</code></h3>
 
-<p>27319 <a href="">grc-pos/DET</a> tokens (100% of all <code>DET</code> tokens) have a non-empty value of <code>Definite</code>.</p>
+<p>26313 <a href="">grc-pos/DET</a> tokens (89% of all <code>DET</code> tokens) have a non-empty value of <code>Definite</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>Definite</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Dem</tt> (27319; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (19116; 70%).</p>
+<p>The most frequent other feature values with which <code>DET</code> and <code>Definite</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Dem</tt> (26313; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (18436; 70%).</p>
 
 <p><code>DET</code> tokens may have the following values of <code>Definite</code>:</p>
 
 <ul>
-  <li><code>Def</code> (27319; 100% of non-empty <code>Definite</code>): <em>ὁ, τοῦ, τὴν, τὸ, τὸν, τῶν, τῆς, οἱ, τῷ, τὰ</em></li>
-  <li><code>EMPTY</code> (6): <em>αὐτοὶ, αὐτοὺς, τούτου, τούτων, τοῦτο</em></li>
+  <li><code>Def</code> (26313; 100% of non-empty <code>Definite</code>): <em>ὁ, τοῦ, τὴν, τὸ, τὸν, τῶν, τῆς, οἱ, τῷ, τὰ</em></li>
+  <li><code>EMPTY</code> (3267): <em>πάντα, πάντων, τι, τούτου, πᾶσαν, τοῦτον, πᾶν, τοῦτο, πάντες, οὗτος</em></li>
 </ul>
 
 <h3 id="adj"><code>ADJ</code></h3>
 
-<p>27 <a href="">grc-pos/ADJ</a> tokens (0% of all <code>ADJ</code> tokens) have a non-empty value of <code>Definite</code>.</p>
+<p>30 <a href="">grc-pos/ADJ</a> tokens (0% of all <code>ADJ</code> tokens) have a non-empty value of <code>Definite</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Definite</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (27; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (16; 59%).</p>
+<p>The most frequent other feature values with which <code>ADJ</code> and <code>Definite</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (30; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (19; 63%).</p>
 
 <p><code>ADJ</code> tokens may have the following values of <code>Definite</code>:</p>
 
 <ul>
-  <li><code>Def</code> (27; 100% of non-empty <code>Definite</code>): <em>τὸ, τὰ, ὁ, οἳ, τοὺς, τὸν, τῶν, ὃ, οἱ, τό</em></li>
-  <li><code>EMPTY</code> (16125): <em>ταῦτα, τοῦτο, τούτων, οὗτος, οὗτοι, τούτου, τοῦτον, αὐτὸς, τάδε, τούτῳ</em></li>
+  <li><code>Def</code> (30; 100% of non-empty <code>Definite</code>): <em>τὸ, τὰ, τῶν, ὁ, οἳ, τὴν, ὃ, τοὺς, τοῖσι, τοῦ</em></li>
+  <li><code>EMPTY</code> (15426): <em>ταῦτα, τοῦτο, πάντα, τις, τούτων, οὗτοι, οὗτος, τάδε, πρότερον, πάντες</em></li>
 </ul>
 
 <h2 id="relations-with-agreement-in-definite">Relations with Agreement in <code>Definite</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>Definite</code>:
-<tt>DET –[<a href="../dep/remnant.html">remnant</a>]–&gt; ADJ</tt> (3; 100%),
-<tt>DET –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (1; 100%),
-<tt>ADJ –[<a href="../dep/remnant.html">remnant</a>]–&gt; ADJ</tt> (1; 100%).</p>
+<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (1; 100%).</p>
 
 
 
@@ -110,9 +125,23 @@ The feature is used with 2 part-of-speech tags: <a href="">grc-pos/DET</a> (2731
 
 Definite in other languages:
 
+[<a href="../../am/feat/Definite.html">am</a>]
+
+[<a href="../../ar/feat/Definite.html">ar</a>]
+
 [<a href="../../bg/feat/Definite.html">bg</a>]
 
-[<a href="../../cs/feat/Definite.html">cs</a>]
+[<a href="../../bxr/feat/Definite.html">bxr</a>]
+
+[<a href="../../ca/feat/Definite.html">ca</a>]
+
+[<a href="../../ckb/feat/Definite.html">ckb</a>]
+
+[<a href="../../cop/feat/Definite.html">cop</a>]
+
+[<a href="../../cu/feat/Definite.html">cu</a>]
+
+[<a href="../../da/feat/Definite.html">da</a>]
 
 [<a href="../../de/feat/Definite.html">de</a>]
 
@@ -122,27 +151,95 @@ Definite in other languages:
 
 [<a href="../../es/feat/Definite.html">es</a>]
 
+[<a href="../../et/feat/Definite.html">et</a>]
+
 [<a href="../../eu/feat/Definite.html">eu</a>]
 
 [<a href="../../fa/feat/Definite.html">fa</a>]
+
+[<a href="../../fo/feat/Definite.html">fo</a>]
 
 [<a href="../../fr/feat/Definite.html">fr</a>]
 
 [<a href="../../ga/feat/Definite.html">ga</a>]
 
+[<a href="../../gl/feat/Definite.html">gl</a>]
+
+[<a href="../../got/feat/Definite.html">got</a>]
+
+[<a href="../../grc/feat/Definite.html">grc</a>]
+
 [<a href="../../he/feat/Definite.html">he</a>]
 
+[<a href="../../hi/feat/Definite.html">hi</a>]
+
+[<a href="../../hr/feat/Definite.html">hr</a>]
+
 [<a href="../../hu/feat/Definite.html">hu</a>]
+
+[<a href="../../id/feat/Definite.html">id</a>]
 
 [<a href="../../it/feat/Definite.html">it</a>]
 
 [<a href="../../ja/feat/Definite.html">ja</a>]
 
+[<a href="../../kk/feat/Definite.html">kk</a>]
+
+[<a href="../../kmr/feat/Definite.html">kmr</a>]
+
 [<a href="../../ko/feat/Definite.html">ko</a>]
+
+[<a href="../../la/feat/Definite.html">la</a>]
+
+[<a href="../../lv/feat/Definite.html">lv</a>]
+
+[<a href="../../mr/feat/Definite.html">mr</a>]
+
+[<a href="../../nl/feat/Definite.html">nl</a>]
+
+[<a href="../../no/feat/Definite.html">no</a>]
+
+[<a href="../../pl/feat/Definite.html">pl</a>]
+
+[<a href="../../pt/feat/Definite.html">pt</a>]
+
+[<a href="../../ro/feat/Definite.html">ro</a>]
+
+[<a href="../../sa/feat/Definite.html">sa</a>]
+
+[<a href="../../sk/feat/Definite.html">sk</a>]
+
+[<a href="../../sla/feat/Definite.html">sla</a>]
+
+[<a href="../../sl/feat/Definite.html">sl</a>]
+
+[<a href="../../so/feat/Definite.html">so</a>]
+
+[<a href="../../sr/feat/Definite.html">sr</a>]
 
 [<a href="../../sv/feat/Definite.html">sv</a>]
 
+[<a href="../../swl/feat/Definite.html">swl</a>]
+
+[<a href="../../ta/feat/Definite.html">ta</a>]
+
+[<a href="../../tr/feat/Definite.html">tr</a>]
+
 [<a href="../../u/feat/Definite.html">u</a>]
+
+[<a href="../../ug/feat/Definite.html">ug</a>]
+
+[<a href="../../uk/feat/Definite.html">uk</a>]
+
+[<a href="../../ur/feat/Definite.html">ur</a>]
+
+[<a href="../../urj/feat/Definite.html">urj</a>]
+
+[<a href="../../vi/feat/Definite.html">vi</a>]
+
+[<a href="../../yue/feat/Definite.html">yue</a>]
+
+[<a href="../../zh/feat/Definite.html">zh</a>]
 
 
 

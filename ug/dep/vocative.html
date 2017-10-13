@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ug">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ug/dep">ug/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ug-dep/vocative.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ug">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ug/dep">ug/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ug-dep/vocative.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -56,96 +73,30 @@ for <code>vocative</code>.</p>
 
 
 
-
-<hr />
-
-<h2 id="treebank-statistics-uduyghur">Treebank Statistics (UD_Uyghur)</h2>
-
-<p>This relation is universal.</p>
-
-<p>14 nodes (0%) are attached to their parents as <code>vocative</code>.</p>
-
-<p>8 instances of <code>vocative</code> (57%) are right-to-left (child precedes parent).
-Average distance between parent and child is 3.85714285714286.</p>
-
-<p>The following 4 pairs of parts of speech are connected with <code>vocative</code>: <a href="">ug-pos/VERB</a>-<a href="">ug-pos/NOUN</a> (10; 71% instances), <a href="">ug-pos/NOUN</a>-<a href="">ug-pos/NOUN</a> (2; 14% instances), <a href="">ug-pos/ADJ</a>-<a href="">ug-pos/NOUN</a> (1; 7% instances), <a href="">ug-pos/VERB</a>-<a href="">ug-pos/ADJ</a> (1; 7% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 8	bgColor:blue
-# visual-style 8	fgColor:white
-# visual-style 8 2 vocative	color:blue
-1	-	_	PUNCT	Y	_	8	punct	_	Translit=-
-2	ئاپا	_	NOUN	N	_	8	vocative	_	Translit=apa
-3	،	_	PUNCT	Y	_	2	punct	_	Translit=,
-4	مەن	_	PRON	P	_	5	nsubj	_	Translit=men
-5	يەي	_	VERB	V	_	8	parataxis	_	Translit=yey
-6	،	_	PUNCT	Y	_	5	punct	_	Translit=,
-7	مەن	_	PRON	P	_	8	nsubj	_	Translit=men
-8	يەيچۇ	_	VERB	V	_	0	root	_	Translit=yeychu
-9	!	_	PUNCT	Y	_	8	punct	_	Translit=!
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 11	bgColor:blue
-# visual-style 11	fgColor:white
-# visual-style 11 5 vocative	color:blue
-1	بۇ	_	PRON	P	_	3	nsubj	_	Translit=bu
-2	بەك	_	ADV	D	_	3	advmod	_	Translit=bek
-3	ياخشىكەن	_	ADJ	A	_	11	parataxis	_	Translit=yaxshiken
-4	،	_	PUNCT	Y	_	3	punct	_	Translit=,
-5	ئاپا	_	NOUN	N	_	11	vocative	_	Translit=apa
-6	،	_	PUNCT	Y	_	5	punct	_	Translit=,
-7	ئېيتىڭا	_	VERB	V	_	11	discourse	_	Translit=ëytinga
-8	،	_	PUNCT	Y	_	7	punct	_	Translit=,
-9	بۇ	_	PRON	P	_	11	nsubj	_	Translit=bu
-10	قانداق	_	PRON	P	_	11	amod	_	Translit=qandaq
-11	نەرسە	_	NOUN	N	_	0	root	_	Translit=nerse
-12	؟	_	PUNCT	Y	_	11	punct	_	Translit=?
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
-# visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 4 7 vocative	color:blue
-1	ھۇششەررە	_	NOUN	N	_	4	discourse	_	Translit=hushsherre
-2	،	_	PUNCT	Y	_	1	punct	_	Translit=,
-3	تېخىمۇ	_	ADV	D	_	4	advmod	_	Translit=tëximu
-4	ئەقىللىق	_	ADJ	A	_	10	ccomp	_	Translit=eqilliq
-5	بولۇڭ	_	VERB	V	_	4	cop	_	Translit=bolung
-6	،	_	PUNCT	Y	_	5	punct	_	Translit=,
-7	قىزىم	_	NOUN	N	_	4	vocative	_	Translit=qizim
-8	،	_	PUNCT	Y	_	7	punct	_	Translit=,
-9	-	_	PUNCT	Y	_	10	punct	_	Translit=-
-10	دېدى	_	VERB	V	_	0	root	_	Translit=dëdi
-11	مىرزا	_	NOUN	N	_	12	nmod	_	Translit=mirza
-12	مەھمۇد	_	NOUN	N	_	10	nsubj	_	Translit=mehmud
-13	ئىچ	_	NOUN	N	_	14	compound	_	Translit=ich
-14	كۆيەرلىك	_	NOUN	N	_	18	advcl	_	Translit=köyerlik
-15	بىلەن	_	ADP	R	_	14	case	_	Translit=bilen
-16	قىزىنىڭ	_	NOUN	N	_	17	nmod:poss	_	Translit=qizining
-17	پىشانىسىگە	_	NOUN	N	_	18	nmod	_	Translit=pishanisige
-18	سۆيۈپ	_	VERB	V	_	10	advcl	_	Translit=söyüp
-19	قويۇپ	_	VERB	V	_	18	aux	_	Translit=qoyup
-20	،	_	PUNCT	Y	_	19	punct	_	Translit=,
-
-</code></pre>
-
-
-
-
 <!-- "in other languages" links -->
 <hr/>
 
 vocative in other languages:
 
+[<a href="../../am/dep/vocative.html">am</a>]
+
+[<a href="../../ar/dep/vocative.html">ar</a>]
+
 [<a href="../../bg/dep/vocative.html">bg</a>]
 
+[<a href="../../bxr/dep/vocative.html">bxr</a>]
+
+[<a href="../../ca/dep/vocative.html">ca</a>]
+
+[<a href="../../ckb/dep/vocative.html">ckb</a>]
+
+[<a href="../../cop/dep/vocative.html">cop</a>]
+
 [<a href="../../cs/dep/vocative.html">cs</a>]
+
+[<a href="../../cu/dep/vocative.html">cu</a>]
+
+[<a href="../../da/dep/vocative.html">da</a>]
 
 [<a href="../../de/dep/vocative.html">de</a>]
 
@@ -155,29 +106,99 @@ vocative in other languages:
 
 [<a href="../../es/dep/vocative.html">es</a>]
 
+[<a href="../../et/dep/vocative.html">et</a>]
+
 [<a href="../../eu/dep/vocative.html">eu</a>]
 
 [<a href="../../fa/dep/vocative.html">fa</a>]
 
 [<a href="../../fi/dep/vocative.html">fi</a>]
 
+[<a href="../../fo/dep/vocative.html">fo</a>]
+
 [<a href="../../fr/dep/vocative.html">fr</a>]
 
 [<a href="../../ga/dep/vocative.html">ga</a>]
 
+[<a href="../../gl/dep/vocative.html">gl</a>]
+
+[<a href="../../got/dep/vocative.html">got</a>]
+
+[<a href="../../grc/dep/vocative.html">grc</a>]
+
 [<a href="../../he/dep/vocative.html">he</a>]
 
+[<a href="../../hi/dep/vocative.html">hi</a>]
+
+[<a href="../../hr/dep/vocative.html">hr</a>]
+
 [<a href="../../hu/dep/vocative.html">hu</a>]
+
+[<a href="../../id/dep/vocative.html">id</a>]
 
 [<a href="../../it/dep/vocative.html">it</a>]
 
 [<a href="../../ja/dep/vocative.html">ja</a>]
 
+[<a href="../../kk/dep/vocative.html">kk</a>]
+
+[<a href="../../kmr/dep/vocative.html">kmr</a>]
+
 [<a href="../../ko/dep/vocative.html">ko</a>]
+
+[<a href="../../la/dep/vocative.html">la</a>]
+
+[<a href="../../lv/dep/vocative.html">lv</a>]
+
+[<a href="../../mr/dep/vocative.html">mr</a>]
+
+[<a href="../../nl/dep/vocative.html">nl</a>]
+
+[<a href="../../no/dep/vocative.html">no</a>]
+
+[<a href="../../pl/dep/vocative.html">pl</a>]
+
+[<a href="../../pt/dep/vocative.html">pt</a>]
+
+[<a href="../../ro/dep/vocative.html">ro</a>]
+
+[<a href="../../ru/dep/vocative.html">ru</a>]
+
+[<a href="../../sa/dep/vocative.html">sa</a>]
+
+[<a href="../../sk/dep/vocative.html">sk</a>]
+
+[<a href="../../sla/dep/vocative.html">sla</a>]
+
+[<a href="../../sl/dep/vocative.html">sl</a>]
+
+[<a href="../../so/dep/vocative.html">so</a>]
+
+[<a href="../../sr/dep/vocative.html">sr</a>]
 
 [<a href="../../sv/dep/vocative.html">sv</a>]
 
+[<a href="../../swl/dep/vocative.html">swl</a>]
+
+[<a href="../../ta/dep/vocative.html">ta</a>]
+
+[<a href="../../tr/dep/vocative.html">tr</a>]
+
 [<a href="../../u/dep/vocative.html">u</a>]
+
+[<a href="../../ug/dep/vocative.html">ug</a>]
+
+[<a href="../../uk/dep/vocative.html">uk</a>]
+
+[<a href="../../ur/dep/vocative.html">ur</a>]
+
+[<a href="../../urj/dep/vocative.html">urj</a>]
+
+[<a href="../../vi/dep/vocative.html">vi</a>]
+
+[<a href="../../yue/dep/vocative.html">yue</a>]
+
+[<a href="../../zh/dep/vocative.html">zh</a>]
 
 
 

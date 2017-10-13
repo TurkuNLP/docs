@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-cu">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/cu/dep">cu/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_cu-dep/iobj.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/cu/dep">cu/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cu-dep/iobj.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,60 +80,47 @@ for <code>iobj</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>4288 nodes (7%) are attached to their parents as <code>iobj</code>.</p>
+<p>1942 nodes (4%) are attached to their parents as <code>iobj</code>.</p>
 
-<p>3701 instances of <code>iobj</code> (86%) are left-to-right (parent precedes child).
-Average distance between parent and child is 1.9316697761194.</p>
+<p>1681 instances of <code>iobj</code> (87%) are left-to-right (parent precedes child).
+Average distance between parent and child is 1.36766220391349.</p>
 
-<p>The following 27 pairs of parts of speech are connected with <code>iobj</code>: <a href="">cu-pos/VERB</a>-<a href="">cu-pos/PRON</a> (2232; 52% instances), <a href="">cu-pos/VERB</a>-<a href="">cu-pos/NOUN</a> (1495; 35% instances), <a href="">cu-pos/VERB</a>-<a href="">cu-pos/PROPN</a> (218; 5% instances), <a href="">cu-pos/VERB</a>-<a href="">cu-pos/ADJ</a> (128; 3% instances), <a href="">cu-pos/ADJ</a>-<a href="">cu-pos/NOUN</a> (61; 1% instances), <a href="">cu-pos/ADJ</a>-<a href="">cu-pos/PRON</a> (29; 1% instances), <a href="">cu-pos/INTJ</a>-<a href="">cu-pos/PRON</a> (21; 0% instances), <a href="">cu-pos/VERB</a>-<a href="">cu-pos/NUM</a> (19; 0% instances), <a href="">cu-pos/ADV</a>-<a href="">cu-pos/NOUN</a> (18; 0% instances), <a href="">cu-pos/ADJ</a>-<a href="">cu-pos/ADJ</a> (10; 0% instances), <a href="">cu-pos/ADV</a>-<a href="">cu-pos/PRON</a> (8; 0% instances), <a href="">cu-pos/INTJ</a>-<a href="">cu-pos/NOUN</a> (7; 0% instances), <a href="">cu-pos/ADV</a>-<a href="">cu-pos/PROPN</a> (6; 0% instances), <a href="">cu-pos/NOUN</a>-<a href="">cu-pos/PRON</a> (6; 0% instances), <a href="">cu-pos/PROPN</a>-<a href="">cu-pos/PRON</a> (6; 0% instances), <a href="">cu-pos/INTJ</a>-<a href="">cu-pos/ADJ</a> (4; 0% instances), <a href="">cu-pos/ADJ</a>-<a href="">cu-pos/NUM</a> (3; 0% instances), <a href="">cu-pos/ADJ</a>-<a href="">cu-pos/PROPN</a> (3; 0% instances), <a href="">cu-pos/ADV</a>-<a href="">cu-pos/NUM</a> (3; 0% instances), <a href="">cu-pos/ADV</a>-<a href="">cu-pos/ADJ</a> (2; 0% instances), <a href="">cu-pos/CONJ</a>-<a href="">cu-pos/NOUN</a> (2; 0% instances), <a href="">cu-pos/PRON</a>-<a href="">cu-pos/PRON</a> (2; 0% instances), <a href="">cu-pos/CONJ</a>-<a href="">cu-pos/PRON</a> (1; 0% instances), <a href="">cu-pos/NOUN</a>-<a href="">cu-pos/NOUN</a> (1; 0% instances), <a href="">cu-pos/NUM</a>-<a href="">cu-pos/NUM</a> (1; 0% instances), <a href="">cu-pos/PROPN</a>-<a href="">cu-pos/NOUN</a> (1; 0% instances), <a href="">cu-pos/SCONJ</a>-<a href="">cu-pos/NOUN</a> (1; 0% instances).</p>
+<p>The following 30 pairs of parts of speech are connected with <code>iobj</code>: <a href="">cu-pos/VERB</a>-<a href="">cu-pos/PRON</a> (1315; 68% instances), <a href="">cu-pos/VERB</a>-<a href="">cu-pos/NOUN</a> (334; 17% instances), <a href="">cu-pos/VERB</a>-<a href="">cu-pos/ADJ</a> (80; 4% instances), <a href="">cu-pos/ADJ</a>-<a href="">cu-pos/NOUN</a> (52; 3% instances), <a href="">cu-pos/VERB</a>-<a href="">cu-pos/PROPN</a> (48; 2% instances), <a href="">cu-pos/ADJ</a>-<a href="">cu-pos/PRON</a> (23; 1% instances), <a href="">cu-pos/ADJ</a>-<a href="">cu-pos/ADJ</a> (13; 1% instances), <a href="">cu-pos/INTJ</a>-<a href="">cu-pos/PRON</a> (11; 1% instances), <a href="">cu-pos/VERB</a>-<a href="">cu-pos/NUM</a> (9; 0% instances), <a href="">cu-pos/INTJ</a>-<a href="">cu-pos/NOUN</a> (7; 0% instances), <a href="">cu-pos/PROPN</a>-<a href="">cu-pos/PRON</a> (6; 0% instances), <a href="">cu-pos/ADV</a>-<a href="">cu-pos/NOUN</a> (5; 0% instances), <a href="">cu-pos/ADV</a>-<a href="">cu-pos/PRON</a> (5; 0% instances), <a href="">cu-pos/ADV</a>-<a href="">cu-pos/PROPN</a> (5; 0% instances), <a href="">cu-pos/NOUN</a>-<a href="">cu-pos/PRON</a> (5; 0% instances), <a href="">cu-pos/INTJ</a>-<a href="">cu-pos/ADJ</a> (4; 0% instances), <a href="">cu-pos/ADJ</a>-<a href="">cu-pos/PROPN</a> (3; 0% instances), <a href="">cu-pos/ADJ</a>-<a href="">cu-pos/NUM</a> (2; 0% instances), <a href="">cu-pos/ADV</a>-<a href="">cu-pos/ADJ</a> (2; 0% instances), <a href="">cu-pos/CCONJ</a>-<a href="">cu-pos/NOUN</a> (2; 0% instances), <a href="">cu-pos/VERB</a>-<a href="">cu-pos/VERB</a> (2; 0% instances), <a href="">cu-pos/ADV</a>-<a href="">cu-pos/NUM</a> (1; 0% instances), <a href="">cu-pos/ADV</a>-<a href="">cu-pos/VERB</a> (1; 0% instances), <a href="">cu-pos/CCONJ</a>-<a href="">cu-pos/ADJ</a> (1; 0% instances), <a href="">cu-pos/CCONJ</a>-<a href="">cu-pos/PRON</a> (1; 0% instances), <a href="">cu-pos/NOUN</a>-<a href="">cu-pos/NOUN</a> (1; 0% instances), <a href="">cu-pos/NUM</a>-<a href="">cu-pos/NUM</a> (1; 0% instances), <a href="">cu-pos/PRON</a>-<a href="">cu-pos/PRON</a> (1; 0% instances), <a href="">cu-pos/PROPN</a>-<a href="">cu-pos/NOUN</a> (1; 0% instances), <a href="">cu-pos/SCONJ</a>-<a href="">cu-pos/NOUN</a> (1; 0% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 12	bgColor:blue
-# visual-style 12	fgColor:white
-# visual-style 10	bgColor:blue
-# visual-style 10	fgColor:white
-# visual-style 10 12 iobj	color:blue
-1	и	и	CONJ	C-	_	10	cc	_	_
-2	аще	аще	SCONJ	G-	_	4	mark	_	_
-3	къто	къто	PRON	Px	Case=Nom|Number=Sing	4	nsubj	_	_
-4	поиметъ	поѩти	VERB	V-	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	advcl	_	_
-5	тѧ	тꙑ	PRON	Pp	Case=Acc|Number=Sing|Person=2|PronType=Prs	4	dobj	_	_
-6	по	по	ADP	R-	_	7	case	_	_
-7	силѣ	сила	NOUN	Nb	Case=Dat|Gender=Fem|Number=Sing	4	nmod	_	_
-8	попьрище	попьрище	NOUN	Nb	Case=Acc|Gender=Neut|Number=Sing	4	remnant	_	_
-9	едино	ѥдинъ	NUM	Ma	Case=Acc|Gender=Neut|Number=Sing	8	nummod	_	_
-10	ꙇди	ити	VERB	V-	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-11	съ	съ	ADP	R-	_	12	case	_	_
-12	нимь	и	PRON	Pp	Case=Ins|Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	iobj	_	_
-13	дьвѣ	дъва	NUM	Ma	Case=Acc|Gender=Neut|Number=Dual	10	nmod	_	_
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 3 iobj	color:blue
+1	аминь	аминъ	INTJ	I-	_	2	vocative	_	ref=MATT_5.26
+2	г҃лѭ	глаголати	VERB	V-	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	ref=MATT_5.26
+3	тебѣ	тꙑ	PRON	Pp	Case=Dat|Number=Sing|Person=2|PronType=Prs	2	iobj	_	ref=MATT_5.26
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
 # visual-style 1	bgColor:blue
 # visual-style 1	fgColor:white
-# visual-style 1 2 iobj	color:blue
-1	довьлетъ	довьлѣти	VERB	V-	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-2	дьни	дьнь	NOUN	Nb	Case=Dat|Gender=Masc|Number=Sing	1	iobj	_	_
-3	зълоба	зълоба	NOUN	Nb	Case=Nom|Gender=Fem|Number=Sing	1	nsubj	_	_
-4	своѣ	свои	PRON	Pt	Case=Nom|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	3	nmod	_	_
+# visual-style 1 3 iobj	color:blue
+1	въздаси	въздати	VERB	V-	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	ref=MATT_5.33
+2	же	же	ADV	Df	_	1	discourse	_	ref=MATT_5.33
+3	г҃ви	господь	NOUN	Nb	Case=Dat|Gender=Masc|Number=Sing	1	iobj	_	ref=MATT_5.33
+4	клѧтвꙑ	клѧтва	NOUN	Nb	Case=Acc|Gender=Fem|Number=Plur	1	obj:dir	_	ref=MATT_5.33
+5	твоѩ	твои	ADJ	Ps	Case=Acc|Gender=Fem,Masc|Number=Plur|Person=2|Poss=Yes	4	nmod	_	ref=MATT_5.33
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 8	bgColor:blue
-# visual-style 8	fgColor:white
-# visual-style 8 6 iobj	color:blue
-1	тъгда	тъгда	ADV	Df	_	2	advmod	_	_
-2	разоумѣшѧ	разоумѣти	VERB	V-	Aspect=Perf|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
-3	оученици	оученикъ	NOUN	Nb	Case=Nom|Gender=Masc|Number=Plur	2	nsubj	_	_
-4	ѣко	ꙗко	SCONJ	G-	_	8	mark	_	_
-5	о	о	ADP	R-	_	6	case	_	_
-6	иоанѣ	иоанъ	PROPN	Ne	Case=Loc|Gender=Masc|Number=Sing	8	iobj	_	_
-7	кръстители	крьститель	NOUN	Nb	Case=Loc|Gender=Masc|Number=Sing	6	appos	_	_
-8	рече	рещи	VERB	V-	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	ccomp	_	_
-9	имъ	и	PRON	Pp	Case=Dat|Gender=Masc|Number=Plur|Person=3|PronType=Prs	8	iobj	_	_
+<pre><code class="language-conllu"># visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 5 iobj	color:blue
+1	Слꙑшасте	слꙑшати	VERB	V-	Aspect=Perf|Mood=Ind|Number=Plur|Person=2|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	ref=MATT_5.27
+2	ѣко	ꙗко	SCONJ	G-	_	4	mark	_	ref=MATT_5.27
+3	речено	рещи	VERB	V-	Case=Nom|Gender=Neut|Number=Sing|Strength=Strong|Tense=Past|VerbForm=Part|Voice=Pass	4	xcomp	_	ref=MATT_5.27
+4	бꙑⷭ҇	бꙑти	VERB	V-	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	ccomp	_	ref=MATT_5.27
+5	древънимъ	древльнь	ADJ	A-	Case=Dat|Degree=Pos|Gender=Masc|Number=Plur|Strength=Weak	3	iobj	_	ref=MATT_5.27
 
 </code></pre>
 
@@ -128,9 +132,25 @@ Average distance between parent and child is 1.9316697761194.</p>
 
 iobj in other languages:
 
+[<a href="../../am/dep/iobj.html">am</a>]
+
+[<a href="../../ar/dep/iobj.html">ar</a>]
+
 [<a href="../../bg/dep/iobj.html">bg</a>]
 
+[<a href="../../bxr/dep/iobj.html">bxr</a>]
+
+[<a href="../../ca/dep/iobj.html">ca</a>]
+
+[<a href="../../ckb/dep/iobj.html">ckb</a>]
+
+[<a href="../../cop/dep/iobj.html">cop</a>]
+
 [<a href="../../cs/dep/iobj.html">cs</a>]
+
+[<a href="../../cu/dep/iobj.html">cu</a>]
+
+[<a href="../../da/dep/iobj.html">da</a>]
 
 [<a href="../../de/dep/iobj.html">de</a>]
 
@@ -140,27 +160,95 @@ iobj in other languages:
 
 [<a href="../../es/dep/iobj.html">es</a>]
 
+[<a href="../../et/dep/iobj.html">et</a>]
+
 [<a href="../../eu/dep/iobj.html">eu</a>]
 
 [<a href="../../fa/dep/iobj.html">fa</a>]
 
+[<a href="../../fo/dep/iobj.html">fo</a>]
+
 [<a href="../../fr/dep/iobj.html">fr</a>]
 
-[<a href="../../ga/dep/iobj.html">ga</a>]
+[<a href="../../gl/dep/iobj.html">gl</a>]
+
+[<a href="../../got/dep/iobj.html">got</a>]
+
+[<a href="../../grc/dep/iobj.html">grc</a>]
 
 [<a href="../../he/dep/iobj.html">he</a>]
 
+[<a href="../../hi/dep/iobj.html">hi</a>]
+
+[<a href="../../hr/dep/iobj.html">hr</a>]
+
 [<a href="../../hu/dep/iobj.html">hu</a>]
+
+[<a href="../../id/dep/iobj.html">id</a>]
 
 [<a href="../../it/dep/iobj.html">it</a>]
 
 [<a href="../../ja/dep/iobj.html">ja</a>]
 
+[<a href="../../kk/dep/iobj.html">kk</a>]
+
+[<a href="../../kmr/dep/iobj.html">kmr</a>]
+
 [<a href="../../ko/dep/iobj.html">ko</a>]
+
+[<a href="../../la/dep/iobj.html">la</a>]
+
+[<a href="../../lv/dep/iobj.html">lv</a>]
+
+[<a href="../../mr/dep/iobj.html">mr</a>]
+
+[<a href="../../nl/dep/iobj.html">nl</a>]
+
+[<a href="../../no/dep/iobj.html">no</a>]
+
+[<a href="../../pl/dep/iobj.html">pl</a>]
+
+[<a href="../../pt/dep/iobj.html">pt</a>]
+
+[<a href="../../ro/dep/iobj.html">ro</a>]
+
+[<a href="../../ru/dep/iobj.html">ru</a>]
+
+[<a href="../../sa/dep/iobj.html">sa</a>]
+
+[<a href="../../sk/dep/iobj.html">sk</a>]
+
+[<a href="../../sla/dep/iobj.html">sla</a>]
+
+[<a href="../../sl/dep/iobj.html">sl</a>]
+
+[<a href="../../so/dep/iobj.html">so</a>]
+
+[<a href="../../sr/dep/iobj.html">sr</a>]
 
 [<a href="../../sv/dep/iobj.html">sv</a>]
 
+[<a href="../../swl/dep/iobj.html">swl</a>]
+
+[<a href="../../ta/dep/iobj.html">ta</a>]
+
+[<a href="../../tr/dep/iobj.html">tr</a>]
+
 [<a href="../../u/dep/iobj.html">u</a>]
+
+[<a href="../../ug/dep/iobj.html">ug</a>]
+
+[<a href="../../uk/dep/iobj.html">uk</a>]
+
+[<a href="../../ur/dep/iobj.html">ur</a>]
+
+[<a href="../../urj/dep/iobj.html">urj</a>]
+
+[<a href="../../vi/dep/iobj.html">vi</a>]
+
+[<a href="../../yue/dep/iobj.html">yue</a>]
+
+[<a href="../../zh/dep/iobj.html">zh</a>]
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-lv">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/lv/dep">lv/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_lv-dep/csubj.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-lv">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/lv/dep">lv/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_lv-dep/csubj.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -56,14 +73,105 @@ for <code>csubj</code>.</p>
 
 
 
+
+<hr />
+
+<h2 id="treebank-statistics-udlatvian">Treebank Statistics (UD_Latvian)</h2>
+
+<p>This relation is universal.
+There are 1 language-specific subtypes of <code>csubj</code>: <a href="">csubj:pass</a>.</p>
+
+<p>70 nodes (0%) are attached to their parents as <code>csubj</code>.</p>
+
+<p>69 instances of <code>csubj</code> (99%) are left-to-right (parent precedes child).
+Average distance between parent and child is 5.78571428571429.</p>
+
+<p>The following 12 pairs of parts of speech are connected with <code>csubj</code>: <a href="">lv-pos/VERB</a>-<a href="">lv-pos/VERB</a> (38; 54% instances), <a href="">lv-pos/ADV</a>-<a href="">lv-pos/VERB</a> (9; 13% instances), <a href="">lv-pos/ADJ</a>-<a href="">lv-pos/VERB</a> (4; 6% instances), <a href="">lv-pos/VERB</a>-<a href="">lv-pos/ADJ</a> (4; 6% instances), <a href="">lv-pos/VERB</a>-<a href="">lv-pos/NOUN</a> (4; 6% instances), <a href="">lv-pos/PRON</a>-<a href="">lv-pos/VERB</a> (3; 4% instances), <a href="">lv-pos/ADJ</a>-<a href="">lv-pos/NOUN</a> (2; 3% instances), <a href="">lv-pos/VERB</a>-<a href="">lv-pos/ADV</a> (2; 3% instances), <a href="">lv-pos/ADJ</a>-<a href="">lv-pos/ADJ</a> (1; 1% instances), <a href="">lv-pos/ADJ</a>-<a href="">lv-pos/ADV</a> (1; 1% instances), <a href="">lv-pos/NOUN</a>-<a href="">lv-pos/ADJ</a> (1; 1% instances), <a href="">lv-pos/PUNCT</a>-<a href="">lv-pos/VERB</a> (1; 1% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 7 csubj	color:blue
+1	-	-	PUNCT	zd	_	3	punct	_	_
+2	Man	es	PRON	pp10sdn	Case=Dat|Number=Sing|Person=1|PronType=Prs	3	obl	_	_
+3	liekas	likties	VERB	vmyipi130an	Evident=Fh,Nfh|Mood=Ind|Person=3|Polarity=Pos|Reflex=Yes|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	zc	_	7	punct	_	_
+5	viņa	viņa	PRON	pp3fsnn	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+6	mūs	mēs	PRON	pp10pan	Case=Acc|Number=Plur|Person=1|PronType=Prs	7	obj	_	_
+7	vēro	vērot	VERB	vmnipt230an	Evident=Fh,Nfh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	3	csubj	_	SpaceAfter=No
+8	.	.	PUNCT	zs	_	3	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 7 csubj	color:blue
+1	Vai	vai	PART	qs	_	3	discourse	_	_
+2	nav	nebūt	VERB	vcnipii30ay	Evident=Fh,Nfh|Mood=Ind|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	savādi	savādi	ADV	r0m	_	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	zc	_	7	punct	_	_
+5	kā	kā	ADV	r0m	PronType=Int	7	advmod	_	_
+6	viss	viss	PRON	pg0msnn	Case=Nom|Gender=Masc|Number=Sing|PronType=Tot	7	nsubj	_	_
+7	sāk	sākt	VERB	vpnipt130an	Evident=Fh,Nfh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	3	csubj	_	_
+8	briest	briest	VERB	vmnn0i1000n	Polarity=Pos|VerbForm=Inf	7	xcomp	_	_
+9	un	un	CCONJ	ccs	_	10	cc	_	_
+10	augt	augt	VERB	vmnn0i1000n	Polarity=Pos|VerbForm=Inf	8	conj	_	_
+11	šajā	šis	DET	pd0msln	Case=Loc|Gender=Masc|Number=Sing|PronType=Dem	12	det	_	_
+12	gadalaikā	gadalaiks	NOUN	ncmsl1	Case=Loc|Gender=Masc|Number=Sing	7	obl	_	SpaceAfter=No
+13	?	?	PUNCT	zs	_	3	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 7 csubj	color:blue
+1	Vai	vai	PART	qs	_	3	discourse	_	_
+2	nav	nebūt	VERB	vcnipii30ay	Evident=Fh,Nfh|Mood=Ind|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	jocīgi	jocīgs	ADJ	afmpnnp	Case=Nom|Degree=Pos|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	zc	_	7	punct	_	_
+5	ka	ka	SCONJ	css	_	7	mark	_	_
+6	viņa	viņa	PRON	pp3fsnn	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+7	nezina	nezināt	VERB	vmnipt330ay	Evident=Fh,Nfh|Mood=Ind|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin|Voice=Act	3	csubj	_	SpaceAfter=No
+8	,	,	PUNCT	zc	_	9	punct	_	_
+9	kas	kas	PRON	pq000nn	Case=Nom|PronType=Int	7	ccomp	_	_
+10	viņa	viņa	PRON	pp3fsnn	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+11	ir	būt	VERB	vcnipii30an	Evident=Fh,Nfh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	SpaceAfter=No
+12	?	?	PUNCT	zs	_	3	punct	_	_
+
+</code></pre>
+
+
+
+
 <!-- "in other languages" links -->
 <hr/>
 
 csubj in other languages:
 
+[<a href="../../am/dep/csubj.html">am</a>]
+
+[<a href="../../ar/dep/csubj.html">ar</a>]
+
 [<a href="../../bg/dep/csubj.html">bg</a>]
 
+[<a href="../../bxr/dep/csubj.html">bxr</a>]
+
+[<a href="../../ca/dep/csubj.html">ca</a>]
+
+[<a href="../../ckb/dep/csubj.html">ckb</a>]
+
+[<a href="../../cop/dep/csubj.html">cop</a>]
+
 [<a href="../../cs/dep/csubj.html">cs</a>]
+
+[<a href="../../cu/dep/csubj.html">cu</a>]
+
+[<a href="../../da/dep/csubj.html">da</a>]
 
 [<a href="../../de/dep/csubj.html">de</a>]
 
@@ -73,29 +181,99 @@ csubj in other languages:
 
 [<a href="../../es/dep/csubj.html">es</a>]
 
+[<a href="../../et/dep/csubj.html">et</a>]
+
 [<a href="../../eu/dep/csubj.html">eu</a>]
 
 [<a href="../../fa/dep/csubj.html">fa</a>]
 
 [<a href="../../fi/dep/csubj.html">fi</a>]
 
+[<a href="../../fo/dep/csubj.html">fo</a>]
+
 [<a href="../../fr/dep/csubj.html">fr</a>]
 
 [<a href="../../ga/dep/csubj.html">ga</a>]
 
+[<a href="../../gl/dep/csubj.html">gl</a>]
+
+[<a href="../../got/dep/csubj.html">got</a>]
+
+[<a href="../../grc/dep/csubj.html">grc</a>]
+
 [<a href="../../he/dep/csubj.html">he</a>]
 
+[<a href="../../hi/dep/csubj.html">hi</a>]
+
+[<a href="../../hr/dep/csubj.html">hr</a>]
+
 [<a href="../../hu/dep/csubj.html">hu</a>]
+
+[<a href="../../id/dep/csubj.html">id</a>]
 
 [<a href="../../it/dep/csubj.html">it</a>]
 
 [<a href="../../ja/dep/csubj.html">ja</a>]
 
+[<a href="../../kk/dep/csubj.html">kk</a>]
+
+[<a href="../../kmr/dep/csubj.html">kmr</a>]
+
 [<a href="../../ko/dep/csubj.html">ko</a>]
+
+[<a href="../../la/dep/csubj.html">la</a>]
+
+[<a href="../../lv/dep/csubj.html">lv</a>]
+
+[<a href="../../mr/dep/csubj.html">mr</a>]
+
+[<a href="../../nl/dep/csubj.html">nl</a>]
+
+[<a href="../../no/dep/csubj.html">no</a>]
+
+[<a href="../../pl/dep/csubj.html">pl</a>]
+
+[<a href="../../pt/dep/csubj.html">pt</a>]
+
+[<a href="../../ro/dep/csubj.html">ro</a>]
+
+[<a href="../../ru/dep/csubj.html">ru</a>]
+
+[<a href="../../sa/dep/csubj.html">sa</a>]
+
+[<a href="../../sk/dep/csubj.html">sk</a>]
+
+[<a href="../../sla/dep/csubj.html">sla</a>]
+
+[<a href="../../sl/dep/csubj.html">sl</a>]
+
+[<a href="../../so/dep/csubj.html">so</a>]
+
+[<a href="../../sr/dep/csubj.html">sr</a>]
 
 [<a href="../../sv/dep/csubj.html">sv</a>]
 
+[<a href="../../swl/dep/csubj.html">swl</a>]
+
+[<a href="../../ta/dep/csubj.html">ta</a>]
+
+[<a href="../../tr/dep/csubj.html">tr</a>]
+
 [<a href="../../u/dep/csubj.html">u</a>]
+
+[<a href="../../ug/dep/csubj.html">ug</a>]
+
+[<a href="../../uk/dep/csubj.html">uk</a>]
+
+[<a href="../../ur/dep/csubj.html">ur</a>]
+
+[<a href="../../urj/dep/csubj.html">urj</a>]
+
+[<a href="../../vi/dep/csubj.html">vi</a>]
+
+[<a href="../../yue/dep/csubj.html">yue</a>]
+
+[<a href="../../zh/dep/csubj.html">zh</a>]
 
 
 

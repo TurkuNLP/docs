@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-en">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/en/dep">en/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_en-dep/auxpass.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-en">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/en/dep">en/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_en-dep/auxpass.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -71,84 +88,16 @@ auxpass(killed, got)
 
 <hr />
 
-<h2 id="treebank-statistics-udenglish">Treebank Statistics (UD_English)</h2>
-
-<p>This relation is universal.</p>
-
-<p>1605 nodes (1%) are attached to their parents as <code>auxpass</code>.</p>
-
-<p>1568 instances of <code>auxpass</code> (98%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.22554517133956.</p>
-
-<p>The following 7 pairs of parts of speech are connected with <code>auxpass</code>: <a href="">en-pos/VERB</a>-<a href="">en-pos/AUX</a> (1550; 97% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/VERB</a> (24; 1% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/VERB</a> (23; 1% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/AUX</a> (3; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/AUX</a> (3; 0% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/AUX</a> (1; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/VERB</a> (1; 0% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
-# visual-style 7 6 auxpass	color:blue
-1	Four	four	NUM	CD	NumType=Card	2	nummod	_	_
-2	months	month	NOUN	NNS	Number=Plur	3	nmod:npmod	_	_
-3	later	later	ADV	RB	_	7	advmod	_	SpaceAfter=No
-4	,	,	PUNCT	,	_	7	punct	_	_
-5	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1|PronType=Prs	7	nsubjpass	_	_
-6	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	7	auxpass	_	_
-7	married	marry	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No
-8	.	.	PUNCT	.	_	7	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 6 3 auxpass	color:blue
-1	Aplo.	aplo.	NOUN	NN	Number=Sing	2	compound	_	_
-2	lineatus	lineatus	NOUN	NN	Number=Sing	6	nsubjpass	_	_
-3	are	be	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	6	auxpass	_	_
-4	wide	wide	ADJ	JJ	Degree=Pos	6	advmod	_	SpaceAfter=No
-5	-	-	PUNCT	HYPH	_	6	punct	_	SpaceAfter=No
-6	spread	spread	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
-7	over	over	ADP	IN	_	9	case	_	_
-8	southern	southern	ADJ	JJ	Degree=Pos	9	amod	_	_
-9	India	India	PROPN	NNP	Number=Sing	6	nmod	_	SpaceAfter=No
-10	.	.	PUNCT	.	_	6	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 11	bgColor:blue
-# visual-style 11	fgColor:white
-# visual-style 12	bgColor:blue
-# visual-style 12	fgColor:white
-# visual-style 12 11 auxpass	color:blue
-1	Try	try	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	_	_
-2	googling	google	VERB	VBG	VerbForm=Ger	1	xcomp	_	_
-3	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	dobj	_	_
-4	or	or	CONJ	CC	_	1	cc	_	_
-5	type	type	VERB	VB	Mood=Imp|VerbForm=Fin	1	conj	_	_
-6	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	5	dobj	_	_
-7	into	into	ADP	IN	_	8	case	_	_
-8	youtube	youtube	PROPN	NNP	Number=Sing	5	nmod	_	_
-9	you	you	PRON	PRP	Case=Nom|Person=2|PronType=Prs	12	nsubjpass	_	_
-10	might	might	AUX	MD	VerbForm=Fin	12	aux	_	_
-11	get	get	VERB	VB	VerbForm=Inf	12	auxpass	_	_
-12	lucky	lucky	ADJ	JJ	Degree=Pos	1	parataxis	_	SpaceAfter=No
-13	.	.	PUNCT	.	_	1	punct	_	_
-
-</code></pre>
-
-<hr />
-
 <h2 id="treebank-statistics-udenglish-esl">Treebank Statistics (UD_English-ESL)</h2>
 
 <p>This relation is universal.</p>
 
-<p>495 nodes (1%) are attached to their parents as <code>auxpass</code>.</p>
+<p>453 nodes (1%) are attached to their parents as <code>auxpass</code>.</p>
 
-<p>495 instances of <code>auxpass</code> (100%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.11919191919192.</p>
+<p>453 instances of <code>auxpass</code> (100%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.11037527593819.</p>
 
-<p>The following 3 pairs of parts of speech are connected with <code>auxpass</code>: <a href="">en-pos/VERB</a>-<a href="">en-pos/AUX</a> (490; 99% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/AUX</a> (3; 1% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/AUX</a> (2; 0% instances).</p>
+<p>The following 3 pairs of parts of speech are connected with <code>auxpass</code>: <a href="">en-pos/VERB</a>-<a href="">en-pos/AUX</a> (448; 99% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/AUX</a> (3; 1% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/AUX</a> (2; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 9	bgColor:blue
 # visual-style 9	fgColor:white
@@ -243,62 +192,6 @@ Average distance between parent and child is 1.11919191919192.</p>
 
 </code></pre>
 
-<hr />
-
-<h2 id="treebank-statistics-udenglish-lines">Treebank Statistics (UD_English-LinES)</h2>
-
-<p>This relation is universal.</p>
-
-<p>503 nodes (1%) are attached to their parents as <code>auxpass</code>.</p>
-
-<p>501 instances of <code>auxpass</code> (100%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.20675944333996.</p>
-
-<p>The following 2 pairs of parts of speech are connected with <code>auxpass</code>: <a href="">en-pos/VERB</a>-<a href="">en-pos/AUX</a> (501; 100% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/VERB</a> (2; 0% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 6 5 auxpass	color:blue
-1	The	_	DET	DEF	_	3	det	_	_
-2	converted	_	ADJ	PASS	_	3	amod	_	_
-3	data	_	NOUN	PL	_	6	nsubjpass	_	_
-4	will	_	AUX	PRES-AUX	_	6	aux	_	_
-5	be	_	AUX	INF	_	6	auxpass	_	_
-6	displayed	_	VERB	PASS	_	0	root	_	_
-7	as	_	ADP	_	_	12	case	_	_
-8	Mom	_	NOUN	SG	_	10	amod	_	_
-9	's	_	PART	GEN	_	8	case	_	_
-10	Boston	_	PROPN	SG	_	12	compound	_	_
-11	Crab	_	NOUN	SG	_	10	name	_	_
-12	Meat	_	NOUN	SG	_	6	nmod	_	_
-13	.	_	PUNCT	Period	_	6	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 4 3 auxpass	color:blue
-1	It	_	PRON	PERS-SG	_	4	nsubjpass	_	_
-2	had	_	AUX	PAST-AUX	_	4	aux	_	_
-3	got	_	VERB	PERF	_	4	auxpass	_	_
-4	filled	_	VERB	PASS	_	0	root	_	_
-5	since	_	ADP	_	_	7	case	_	_
-6	my	_	PRON	P1SG-GEN	_	7	nmod:poss	_	_
-7	boyhood	_	NOUN	SG	_	4	nmod	_	_
-8	with	_	ADP	_	_	9	case	_	_
-9	rivers	_	NOUN	PL	_	4	nmod	_	_
-10	and	_	CONJ	_	_	9	cc	_	_
-11	lakes	_	NOUN	PL	_	9	conj	_	_
-12	and	_	CONJ	_	_	9	cc	_	_
-13	names	_	NOUN	PL	_	9	conj	_	_
-14	.	_	PUNCT	Period	_	4	punct	_	_
-
-</code></pre>
-
 
 
 
@@ -307,9 +200,25 @@ Average distance between parent and child is 1.20675944333996.</p>
 
 auxpass in other languages:
 
+[<a href="../../am/dep/auxpass.html">am</a>]
+
+[<a href="../../ar/dep/auxpass.html">ar</a>]
+
 [<a href="../../bg/dep/auxpass.html">bg</a>]
 
+[<a href="../../bxr/dep/auxpass.html">bxr</a>]
+
+[<a href="../../ca/dep/auxpass.html">ca</a>]
+
+[<a href="../../ckb/dep/auxpass.html">ckb</a>]
+
+[<a href="../../cop/dep/auxpass.html">cop</a>]
+
 [<a href="../../cs/dep/auxpass.html">cs</a>]
+
+[<a href="../../cu/dep/auxpass.html">cu</a>]
+
+[<a href="../../da/dep/auxpass.html">da</a>]
 
 [<a href="../../de/dep/auxpass.html">de</a>]
 
@@ -319,29 +228,95 @@ auxpass in other languages:
 
 [<a href="../../es/dep/auxpass.html">es</a>]
 
+[<a href="../../et/dep/auxpass.html">et</a>]
+
 [<a href="../../eu/dep/auxpass.html">eu</a>]
 
 [<a href="../../fa/dep/auxpass.html">fa</a>]
 
 [<a href="../../fi/dep/auxpass.html">fi</a>]
 
+[<a href="../../fo/dep/auxpass.html">fo</a>]
+
 [<a href="../../fr/dep/auxpass.html">fr</a>]
 
-[<a href="../../ga/dep/auxpass.html">ga</a>]
+[<a href="../../gl/dep/auxpass.html">gl</a>]
+
+[<a href="../../got/dep/auxpass.html">got</a>]
+
+[<a href="../../grc/dep/auxpass.html">grc</a>]
 
 [<a href="../../he/dep/auxpass.html">he</a>]
 
+[<a href="../../hi/dep/auxpass.html">hi</a>]
+
+[<a href="../../hr/dep/auxpass.html">hr</a>]
+
 [<a href="../../hu/dep/auxpass.html">hu</a>]
+
+[<a href="../../id/dep/auxpass.html">id</a>]
 
 [<a href="../../it/dep/auxpass.html">it</a>]
 
 [<a href="../../ja/dep/auxpass.html">ja</a>]
 
+[<a href="../../kk/dep/auxpass.html">kk</a>]
+
+[<a href="../../kmr/dep/auxpass.html">kmr</a>]
+
 [<a href="../../ko/dep/auxpass.html">ko</a>]
+
+[<a href="../../la/dep/auxpass.html">la</a>]
+
+[<a href="../../lv/dep/auxpass.html">lv</a>]
+
+[<a href="../../mr/dep/auxpass.html">mr</a>]
+
+[<a href="../../nl/dep/auxpass.html">nl</a>]
+
+[<a href="../../no/dep/auxpass.html">no</a>]
+
+[<a href="../../pl/dep/auxpass.html">pl</a>]
+
+[<a href="../../pt/dep/auxpass.html">pt</a>]
+
+[<a href="../../ro/dep/auxpass.html">ro</a>]
+
+[<a href="../../ru/dep/auxpass.html">ru</a>]
+
+[<a href="../../sa/dep/auxpass.html">sa</a>]
+
+[<a href="../../sk/dep/auxpass.html">sk</a>]
+
+[<a href="../../sla/dep/auxpass.html">sla</a>]
+
+[<a href="../../sl/dep/auxpass.html">sl</a>]
+
+[<a href="../../so/dep/auxpass.html">so</a>]
+
+[<a href="../../sr/dep/auxpass.html">sr</a>]
 
 [<a href="../../sv/dep/auxpass.html">sv</a>]
 
-[<a href="../../u/dep/auxpass.html">u</a>]
+[<a href="../../swl/dep/auxpass.html">swl</a>]
+
+[<a href="../../ta/dep/auxpass.html">ta</a>]
+
+[<a href="../../tr/dep/auxpass.html">tr</a>]
+
+[<a href="../../ug/dep/auxpass.html">ug</a>]
+
+[<a href="../../uk/dep/auxpass.html">uk</a>]
+
+[<a href="../../ur/dep/auxpass.html">ur</a>]
+
+[<a href="../../urj/dep/auxpass.html">urj</a>]
+
+[<a href="../../vi/dep/auxpass.html">vi</a>]
+
+[<a href="../../yue/dep/auxpass.html">yue</a>]
+
+[<a href="../../zh/dep/auxpass.html">zh</a>]
 
 
 

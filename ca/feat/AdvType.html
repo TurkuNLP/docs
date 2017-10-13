@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ca">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ca/feat">ca/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ca-feat/AdvType.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ca">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ca/feat">ca/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ca-feat/AdvType.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -65,42 +82,30 @@ for <code>AdvType</code>.</p>
 <p>This feature is language-specific.
 It occurs with 1 different values: <code>Tim</code>.</p>
 
-<p>1693 tokens (0%) have a non-empty value of <code>AdvType</code>.
-302 types (1%) occur at least once with a non-empty value of <code>AdvType</code>.
-302 lemmas (1%) occur at least once with a non-empty value of <code>AdvType</code>.
-The feature is used with 3 part-of-speech tags: <a href="">ca-pos/NOUN</a> (1691; 0% instances), <a href="">ca-pos/ADV</a> (1; 0% instances), <a href="">ca-pos/SYM</a> (1; 0% instances).</p>
+<p>1477 tokens (0%) have a non-empty value of <code>AdvType</code>.
+283 types (1%) occur at least once with a non-empty value of <code>AdvType</code>.
+283 lemmas (1%) occur at least once with a non-empty value of <code>AdvType</code>.
+The feature is used with 3 part-of-speech tags: <a href="">ca-pos/NOUN</a> (1475; 0% instances), <a href="">ca-pos/ADV</a> (1; 0% instances), <a href="">ca-pos/SYM</a> (1; 0% instances).</p>
 
 <h3 id="noun"><code>NOUN</code></h3>
 
-<p>1691 <a href="">ca-pos/NOUN</a> tokens (2% of all <code>NOUN</code> tokens) have a non-empty value of <code>AdvType</code>.</p>
+<p>1475 <a href="">ca-pos/NOUN</a> tokens (2% of all <code>NOUN</code> tokens) have a non-empty value of <code>AdvType</code>.</p>
 
-<p>The most frequent other feature values with which <code>NOUN</code> and <code>AdvType</code> co-occurred: <tt><a href="Number.html">Number</a>=EMPTY</tt> (1691; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (1691; 100%).</p>
+<p>The most frequent other feature values with which <code>NOUN</code> and <code>AdvType</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (1475; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (1475; 100%).</p>
 
 <p><code>NOUN</code> tokens may have the following values of <code>AdvType</code>:</p>
 
 <ul>
-  <li><code>Tim</code> (1691; 100% of non-empty <code>AdvType</code>): <em>1999, divendres, 1998, dilluns, diumenge, dimecres, dissabte, 2001, dijous, 2000</em></li>
+  <li><code>Tim</code> (1475; 100% of non-empty <code>AdvType</code>): <em>1999, divendres, diumenge, 1998, dimecres, dilluns, dissabte, 2001, dijous, 2000</em></li>
 </ul>
 
-<p><code>AdvType</code> seems to be <strong>lexical feature</strong> of <code>NOUN</code>. 100% lemmas (300) occur only with one value of <code>AdvType</code>.</p>
-
-<h3 id="adv"><code>ADV</code></h3>
-
-<p>1 <a href="">ca-pos/ADV</a> tokens (0% of all <code>ADV</code> tokens) have a non-empty value of <code>AdvType</code>.</p>
-
-<p>The most frequent other feature values with which <code>ADV</code> and <code>AdvType</code> co-occurred: <tt><a href="Negative.html">Negative</a>=EMPTY</tt> (1; 100%).</p>
-
-<p><code>ADV</code> tokens may have the following values of <code>AdvType</code>:</p>
-
-<ul>
-  <li><code>Tim</code> (1; 100% of non-empty <code>AdvType</code>): <em>més</em></li>
-</ul>
+<p><code>AdvType</code> seems to be <strong>lexical feature</strong> of <code>NOUN</code>. 100% lemmas (281) occur only with one value of <code>AdvType</code>.</p>
 
 <h3 id="sym"><code>SYM</code></h3>
 
 <p>1 <a href="">ca-pos/SYM</a> tokens (0% of all <code>SYM</code> tokens) have a non-empty value of <code>AdvType</code>.</p>
 
-<p>The most frequent other feature values with which <code>SYM</code> and <code>AdvType</code> co-occurred: <tt><a href="NumType.html">NumType</a>=EMPTY</tt> (1; 100%), <tt><a href="NumForm.html">NumForm</a>=EMPTY</tt> (1; 100%).</p>
+<p>The most frequent other feature values with which <code>SYM</code> and <code>AdvType</code> co-occurred: <tt><a href="NumForm.html">NumForm</a>=EMPTY</tt> (1; 100%), <tt><a href="NumType.html">NumType</a>=EMPTY</tt> (1; 100%).</p>
 
 <p><code>SYM</code> tokens may have the following values of <code>AdvType</code>:</p>
 
@@ -108,16 +113,39 @@ The feature is used with 3 part-of-speech tags: <a href="">ca-pos/NOUN</a> (1691
   <li><code>Tim</code> (1; 100% of non-empty <code>AdvType</code>): <em>22,7%</em></li>
 </ul>
 
+<h3 id="adv"><code>ADV</code></h3>
+
+<p>1 <a href="">ca-pos/ADV</a> tokens (0% of all <code>ADV</code> tokens) have a non-empty value of <code>AdvType</code>.</p>
+
+<p>The most frequent other feature values with which <code>ADV</code> and <code>AdvType</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (1; 100%).</p>
+
+<p><code>ADV</code> tokens may have the following values of <code>AdvType</code>:</p>
+
+<ul>
+  <li><code>Tim</code> (1; 100% of non-empty <code>AdvType</code>): <em>més</em></li>
+</ul>
+
 <h2 id="relations-with-agreement-in-advtype">Relations with Agreement in <code>AdvType</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>AdvType</code>:
-<tt>NOUN –[<a href="../dep/conj.html">conj</a>]–&gt; NOUN</tt> (82; 59%).</p>
+<tt>NOUN –[<a href="../dep/conj.html">conj</a>]–&gt; NOUN</tt> (68; 56%).</p>
 
 
 
 
 <!-- "in other languages" links -->
 <hr/>
+
+AdvType in other languages:
+
+[<a href="../../ca/feat/AdvType.html">ca</a>]
+
+[<a href="../../es/feat/AdvType.html">es</a>]
+
+[<a href="../../hi/feat/AdvType.html">hi</a>]
+
+[<a href="../../nl/feat/AdvType.html">nl</a>]
+
 
 
 

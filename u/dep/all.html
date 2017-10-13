@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-u">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-u">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -45,7 +62,7 @@
 
           <h1 id="universal-dependencies">Universal Dependencies</h1>
 
-<p>The following table lists the 36 universal syntactic relations used in UD v2. It is a revised version of the relations 
+<p>The following table lists the 37 universal syntactic relations used in UD v2. It is a revised version of the relations 
 originally described in <a href="http://nlp.stanford.edu/pubs/USD_LREC14_paper_camera_ready.pdf"><em>Universal Stanford Dependencies: A cross-linguistic typology</em></a> (de Marneffe <em>et al.</em> 2014).</p>
 
 <p>The upper part of the table follows the main organizing principles of the UD taxonomy:</p>
@@ -346,6 +363,18 @@ modifies the noun.</p>
 acl(issues, sees)
 </code></pre>
 
+<pre><code class="language-sdparse">There are many online sites offering booking facilities .
+acl(sites, offering)
+</code></pre>
+
+<pre><code class="language-sdparse">I have a parakeet named cookie .
+acl(parakeet, named)
+</code></pre>
+
+<pre><code class="language-sdparse">I just want a simple way to get my discount .
+acl(way, get)
+</code></pre>
+
 <pre><code class="language-sdparse">Cette affaire à suivre \n This case to follow 
 acl(affaire, suivre)
 </code></pre>
@@ -361,10 +390,10 @@ acl(model, naked)
 </code></pre>
 
 <p>A relative clause is an instance of <code>acl</code>, characterized by finiteness and usually omission of 
-the modified noun in the embedded clause. Some languages use a language-particular subtype for the traditional class of relative clauses.</p>
+the modified noun in the embedded clause. Some languages use a language-particular subtype <code>acl:relcl</code> for the traditional class of relative clauses.</p>
 
 <pre><code class="language-sdparse">I saw the man you love
-acl(man, love)
+acl:relcl(man, love)
 </code></pre>
 
 <p>Some languages allow finite clausal complements for nouns with 
@@ -375,7 +404,7 @@ clauses” in Huddleston and Pullum 2002). These are also analyzed as <code>acl<
 acl(fact, cares)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/acl.md" target="#">edit acl</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/acl.md" target="#">edit acl</a></p>
 
 <p><a id="al-u-dep/advcl" class="al-dest"></a></p>
 <h2><code>advcl</code>: adverbial clause modifier</h2>
@@ -400,7 +429,7 @@ advcl(talked, secure)
 advcl(upset, talked)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/advcl.md" target="#">edit advcl</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/advcl.md" target="#">edit advcl</a></p>
 
 <p><a id="al-u-dep/advmod" class="al-dest"></a></p>
 <h2><code>advmod</code>: adverbial modifier</h2>
@@ -436,7 +465,7 @@ advmod(go, later)
 advmod(200, About)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/advmod.md" target="#">edit advmod</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/advmod.md" target="#">edit advmod</a></p>
 
 <p><a id="al-u-dep/amod" class="al-dest"></a></p>
 <h2><code>amod</code>: adjectival modifier</h2>
@@ -456,13 +485,13 @@ amod(loan, dollar)
 amod(loan, $)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/amod.md" target="#">edit amod</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/amod.md" target="#">edit amod</a></p>
 
 <p><a id="al-u-dep/appos" class="al-dest"></a></p>
 <h2><code>appos</code>: appositional modifier</h2>
 
 <p>An appositional modifier of a noun is a nominal immediately following
-the first noun that serves to define or modify that noun. It includes
+the first noun that serves to define, modify, name, or describe that noun. It includes
 parenthesized examples, as well as defining abbreviations in one of
 these structures.</p>
 
@@ -478,7 +507,95 @@ appos(Bill-1, cousin-5)
 appos(Corporation-4, ABC-6)
 </code></pre>
 
-<p>In case of more than one appositive nominal, all nouns should be marked as modifying the first noun, rather than being chained:</p>
+<p><code>appos</code> is intended to be used between two nominals. In general, modulo punctuation, the two halves of an apposition can be switched. 
+For example, you could also say <em>My brother, Sam, arrived.</em> There are somewhat similar constructions with titles 
+where the title is less than a full nominal, such as <em>state senator Paul Mnuchin</em>, where reversal is impossible 
+or would require insertion of a determiner to make a 
+full nominal. Some grammatical traditions, descending from Latin, call <em>state senator</em> in such cases a “fixed (or close) apposition” and take the name as the head. However, we seem to have only one nominal not two here. For example:</p>
+
+<blockquote>
+  <p>President Obama</p>
+</blockquote>
+
+<blockquote>
+  <p>*Obama President</p>
+</blockquote>
+
+<blockquote>
+  <p>state senator Paul Mnuchin</p>
+</blockquote>
+
+<blockquote>
+  <p>*Paul Mnuchin state senator</p>
+</blockquote>
+
+<p><code>appos</code> should not be used in such cases. However, the examples can usually be rendered in a fuller form, corresponding to “loose (or wide) apposition” in the Latin tradition, where there are two full phrases. Then the relation <code>appos</code> is appropriate, for example:</p>
+
+<pre><code class="language-sdparse">Paul Mnuchin , the senior Oregon state senator
+appos(Mnuchin-2, senator-8)
+</code></pre>
+
+<p>As is often the case, there are borderline cases. In formal writing, punctuation is usually a good signal of apposition, 
+but there are certainly cases of apposition where no punctuation is used:</p>
+
+<pre><code class="language-sdparse">the leader of the militant Lebanese Shiite group Hassan Nasrallah
+appos(group-8, Hassan-9)
+flat(Hassan-9, Nasrallah-10)
+</code></pre>
+
+<p>Good tests include to ask whether the two halves are full nominals, whether the two halves can be swapped or not, and whether 
+there is case or agreement concord (in a language with rich morphology). So we have:</p>
+
+<pre><code class="language-sdparse">I met the French actor Gaspard Ulliel
+nsubj(met-2, I-1)
+det(actor-5, the-3)
+amod(actor-5, French-4)
+obj(met-2, actor-5)
+appos(actor-5, Gaspard-6)
+flat(Gaspard-6, Ulliel-7)
+</code></pre>
+
+<pre><code class="language-sdparse">I met Gaspard Ulliel the French actor 
+nsubj(met-2, I-1)
+obj(met-2, Gaspard-3)
+flat(Gaspard-3, Ulliel-4)
+det(actor-7, the-5)
+amod(actor-7, French-6)
+appos(Gaspard-3, actor-7)
+</code></pre>
+
+<pre><code class="language-sdparse">I met Gaspard Ulliel , the French actor 
+nsubj(met-2, I-1)
+obj(met-2, Gaspard-3)
+flat(Gaspard-3, Ulliel-4)
+punct(Gaspard-3, ,-5)
+det(actor-8, the-6)
+amod(actor-8, French-7)
+appos(Gaspard-3, actor-8)
+</code></pre>
+
+<pre><code class="language-sdparse">I met French actor Gaspard Ulliel
+nsubj(met-2, I-1)
+amod(actor-4, French-3)
+obj(met-2, actor-4)
+flat(actor-4, Gaspard-5)
+flat(actor-4, Ulliel-6)
+</code></pre>
+
+<p>While items like abbreviations are generally reversable, the determiner test suggested above doesn’t quite work there, since the determiner seems to belong with the main item:</p>
+
+<pre><code class="language-sdparse">The ABC ( Australian Broadcasting Corporation )
+appos(ABC-2, Corporation-6)
+</code></pre>
+
+<p>While <code>appos</code> is normally between two nominals, there are a few cases where there is a relation with a clause, 
+such as when describing facts or events for which <code>appos</code> still feels appropriate:</p>
+
+<pre><code class="language-sdparse">This problem , that people could lower their tax rates by choosing to become corporations , might become acute .
+appos(problem-2, lower-7)
+</code></pre>
+
+<p>In the rare cases of more than one appositive nominal, all nouns should be marked as modifying the first noun, rather than being chained:</p>
 
 <pre><code class="language-sdparse">Sam , my brother , John 's cousin , arrived
 appos(Sam-1, brother-4)
@@ -487,28 +604,28 @@ appos(Sam-1, cousin-8)
 
 <p>Note however that nested apposition cannot be completely excluded. It may occur in combination with coordination:</p>
 
-<pre><code class="language-sdparse">You can choose between four subjects : language ( German or French ) , economy , technology and art .
+<pre><code class="language-sdparse">You can choose between four subjects , language ( German or French ) , economy , technology and art .
 appos(subjects, language)
 conj(language, economy)
 conj(language, technology)
 conj(language, art)
-cc(language, and)
+cc(art, and)
 appos(language, German)
 conj(German, French)
-cc(German, or)
+cc(French, or)
 </code></pre>
 
-<p><em>appos</em> is also used to link key-value pairs in addresses, signatures, etc. (see also the <a href="">list</a> label):</p>
+<p><code>appos</code> is also used to link key-value pairs in addresses, signature blocs, etc. (see also the <a href="">list</a> label):</p>
 
 <pre><code class="language-sdparse">Steve Jones Phone: 555-9814 Email: jones@abc.edf
-name(Steve-1, Jones-2)
+flat:name(Steve-1, Jones-2)
 list(Steve-1, Phone:-3)
 list(Steve-1, Email:-5)
 appos(Phone:-3, 555-9814-4)
 appos(Email:-5, jones@abc.edf-6)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/appos.md" target="#">edit appos</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/appos.md" target="#">edit appos</a></p>
 
 <p><a id="al-u-dep/aux" class="al-dest"></a></p>
 <h2><code>aux</code>: auxiliary</h2>
@@ -518,7 +635,7 @@ expresses categories such as tense, mood, aspect, voice or evidentiality. It is 
 (which may have non-auxiliary uses as well) but many languages have nonverbal TAME markers and these
 are also treated as instances of <code>aux</code>.</p>
 
-<p><strong>New from v2:</strong> Auxiliares used to construct the passive voice <a href="u-feat/Voice">voice</a> are now also labeled <code>aux</code>,
+<p><strong>New from v2:</strong> Auxiliares used to construct the passive <a href="u-feat/Voice">voice</a> are now also labeled <code>aux</code>,
 although we strongly encourage the use of the subtype <code>aux:pass</code> in language that have a grammaticalized (periphrastic)
 passive.</p>
 
@@ -536,7 +653,7 @@ aux(left, will)
 aux(left, have)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/aux_.md" target="#">edit aux</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/aux_.md" target="#">edit aux</a></p>
 
 <p><a id="al-u-dep/case" class="al-dest"></a></p>
 <h2><code>case</code>: case marking</h2>
@@ -698,7 +815,7 @@ det(lookout-6, the-5)
 nmod(cafe-2, lookout-6)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/case.md" target="#">edit case</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/case.md" target="#">edit case</a></p>
 
 <p><a id="al-u-dep/cc" class="al-dest"></a></p>
 <h2><code>cc</code>: coordinating conjunction</h2>
@@ -724,7 +841,7 @@ cc(left, And)
 
 <div id="punct1" class="sd-parse">
 We have apples , pears , oranges , and bananas .
-dobj(have, apples)
+obj(have, apples)
 conj(apples, pears)
 conj(apples, oranges)
 conj(apples, bananas)
@@ -734,7 +851,7 @@ punct(oranges, ,-6)
 punct(bananas, ,-8)
 </div>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/cc.md" target="#">edit cc</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/cc.md" target="#">edit cc</a></p>
 
 <p><a id="al-u-dep/ccomp" class="al-dest"></a></p>
 <h2><code>ccomp</code>: clausal complement</h2>
@@ -791,14 +908,31 @@ clauses with nouns like <em>fact</em> or <em>report</em> were also analyzed as <
 However, we now analyze them as <a href="">acl</a>. Hence, <code>ccomp</code> does not appear in nominals.
 This makes sense, since nominals normally do not take core arguments.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/ccomp.md" target="#">edit ccomp</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/ccomp.md" target="#">edit ccomp</a></p>
 
 <p><a id="al-u-dep/clf" class="al-dest"></a></p>
 <h2><code>clf</code>: classifier</h2>
 
-<p>A <code>clf</code> (classifier) is a word which accompanies a noun in certain grammatical contexts, and generally reflects some kind of 
+<p>A <code>clf</code> (classifier) is a word which accompanies a noun in certain grammatical contexts. 
+The most canonical use is numeral classifiers, where the word is used with a number for counting objects. 
+A classifier generally reflects some kind of 
 conceptual classification of nouns, based principally on features of their referents. 
-Here are some examples from Mandarin Chinese:</p>
+Etymologically, classifiers are normally historically nouns, and the words may still also be used as independent nouns,
+but in their classifier use they have scant semantics left.
+In most cases, the most appropriate UPOS to give classifiers will still be NOUN, though you may wish to give the words a feature
+indicating their special status as a classifier. (There is at present no Universal feature for classifiers, but <code>NounType=Clf</code>
+might be apt.)
+The <code>clf</code> function is intended for languages which have highly grammaticalized systems of classifiers.
+The greatest density of such languages is in Asia.
+As well as core classifiers, there are often also other words, sometimes called “massifiers” that are used in counting with
+similar behavior to classifiers. These typically include words for containers (“cup”, “box”) and units (“month”, “inch”),
+such as Chinese 袋 ‘bag’ in 一袋米 [one bag rice] ‘a bag of rice’.
+In a classifier language, it is usually most appropriate to also analyze these words as classifiers.
+Most other languages also count things with units, however, for these languages, such as English, <code>clf</code> is not used and rather
+standard noun phrase relations are still used (despite there also being incipient grammaticalization in many cases, including English).
+See the examples for English at the end.</p>
+
+<p>Here are some examples from Mandarin/Putonghua Chinese:</p>
 
 <ul>
   <li>三个学生 (三個學生) sān gè xuéshēng = “three students”, literally “three [human-classifier] student”</li>
@@ -807,15 +941,59 @@ Here are some examples from Mandarin Chinese:</p>
   <li>三条河 (三條河) sān tiáo hé = “three rivers”, literally “three [long-wavy-classifier] river”</li>
 </ul>
 
-<p>Syntactically, the classifier groups with the numeral, rather than the noun, and we therefore treat
-classifiers as functional dependents of numerals (or possessives) using the new <code>clf</code> relation.</p>
+<p>Syntactically, the classifier groups with the numeral rather than the noun and we therefore treat
+classifiers as functional dependents of numerals (or possessives) using the new <code>clf</code> relation. (This
+is one of Greenberg’s universals and is true in almost all cases. 
+A couple of exceptions are noted in Aikhenvald (2000: 105) <em>Classifiers</em>, OUP, but it is noticeable that in those languages
+the putative head noun is in the genitive case.)</p>
 
-<pre><code class="language-sdparse">sān gè xuéshēng \n three clf student
+<div class="sd-parse">
+sān gè xuéshēng \n three clf student
 nummod(xuéshēng, sān)
 clf(sān, gè)
-</code></pre>
+</div>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/clf.md" target="#">edit clf</a></p>
+<p>Classifier words also occur in various other constructions, and so it is important to distinguish the word in a particular
+language from the universal classifier function proposed in UD. We go through here some further examples with Chinese classifiers.</p>
+
+<p>No noun may appear with the number and classifier. 
+In this case, the classifier takes the role of the missing noun, and we promote the classifier to be the head.
+So 我 買 兩 本 “I am buying two” is regarded as “I am buying two [books-CLF]”.</p>
+
+<div class="sd-parse">
+我 買 兩 本 \n I buy two CLF
+obj(買, 本)
+nummod(本, 兩)
+</div>
+
+<p>In some languages, including Chinese, a classifier can also appear without a number, and frequently then has some sort of
+determinative function. We use the relation <code>det</code> for such uses of a classifier. For instance, in Cantonese ‘She bought a/the book’:</p>
+
+<div class="sd-parse">
+佢 買 咗 本 書 \n keoi maai zo bun syu \n 3sg buy PERF CLF book
+obj(買, 書)
+det(書, 本)
+</div>
+
+<p>For languages without highly grammaticalized classifier systems, standard nominal modification relationships are used
+even when things are being counted in groups (with “massifiers”). For example, in English:</p>
+
+<div class="sd-parse">
+three cups of rolled oats
+nummod(cups, three)
+case(oats, of)
+amod(oats, rolled)
+nmod(cups, oats)
+</div>
+
+<div class="sd-parse">
+three cups rolled oats
+nummod(cups, three)
+amod(oats, rolled)
+nmod(cups, oats)
+</div>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/clf.md" target="#">edit clf</a></p>
 
 <p><a id="al-u-dep/compound" class="al-dest"></a></p>
 <h2><code>compound</code>: compound</h2>
@@ -849,7 +1027,9 @@ compound:svc(bé, lá)
 obj(bé, èbi)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/compound.md" target="#">edit compound</a></p>
+<p>The <code>compound</code> relation (nor any subtype thereof) is not used to link an inherently reflexive verb with the reflexive morpheme, despite the similarity of this construction to particle verbs. The current UD guideline is to use an appropriate <a href="/2015-08-23-uppsala/clitics.html">subtype</a> of the <a href="">expl</a> relation.</p>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/compound.md" target="#">edit compound</a></p>
 
 <p><a id="al-u-dep/conj" class="al-dest"></a></p>
 <h2><code>conj</code>: conjunct</h2>
@@ -865,14 +1045,14 @@ conj(big, honest)
 
 <div id="punct1" class="sd-parse">
 We have apples , pears , oranges , and bananas .
-dobj(have, apples)
+obj(have, apples)
 conj(apples, pears)
 conj(apples, oranges)
 conj(apples, bananas)
-cc(apples, and)
-punct(apples, ,-4)
-punct(apples, ,-6)
-punct(apples, ,-8)
+cc(bananas, and)
+punct(pears, ,-4)
+punct(oranges, ,-6)
+punct(bananas, ,-8)
 </div>
 
 <p>Coordinated clauses are treated the same way as coordination of other constituent types:</p>
@@ -937,9 +1117,9 @@ ccomp(saw, kissed)
 
 <p>If a dependent is shared among conjuncts, the basic representation always links it to the
 first conjunct (coordination head), while the enhanced representation shows all dependencies.
-In the following example, relations that are only part of the enhanced representation are shown in red.
-~~~ conllu
-# visual-style 6 1 amod color:red
+In the following example, relations that are only part of the enhanced representation are shown in red.</p>
+
+<pre><code class="language-conllu"># visual-style 6 1 amod color:red
 # visual-style 4 3 amod color:red
 # visual-style 6 3 amod color:red
 1 American   _ _ _ _ 4 amod 6:amod        _
@@ -948,11 +1128,11 @@ In the following example, relations that are only part of the enhanced represent
 4 professors _ _ _ _ 0 root _             _
 5 and        _ _ _ _ 6 cc   _             _
 6 students   _ _ _ _ 4 conj 0:root        _
-~~~</p>
+</code></pre>
 
 <h3 id="nested-coordination">Nested Coordination</h3>
 
-<p>Note further that the basuc annotation scheme has only a limited capability to capture nested coordination
+<p>Note further that the basic annotation scheme has only a limited capability to capture nested coordination
 such as <em>apples and pears or oranges and lemons.</em>
 Consider coordinations</p>
 
@@ -976,7 +1156,7 @@ conj(B, C)
 conj(A, B)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/conj.md" target="#">edit conj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/conj.md" target="#">edit conj</a></p>
 
 <p><a id="al-u-dep/cop" class="al-dest"></a></p>
 <h2><code>cop</code>: copula</h2>
@@ -1001,7 +1181,7 @@ amod(dancer-5, best-4)
 
 <p>The copula <em>be</em> is not treated as the head of a clause, but rather the nonverbal predicate, as exemplified above.</p>
 
-<p>Such an analysis is motivated by the fact that many languages often or always lack an overt copula in such 
+<p>Such an analysis is motivated by the fact that many languages often or always lack an overt copula in such
 constructions, as in the the following Russian example:</p>
 
 <pre><code class="language-sdparse">Ivan lučšij tancor \n Ivan best dancer
@@ -1016,7 +1196,7 @@ nsubj(free, Email)
 </code></pre>
 
 <p>This analysis is adopted also when the predicate is a prepositional phrase, provided that the same copula
-(or absence thereof) is used here, in which case the nominal part of the 
+(or absence thereof) is used here, in which case the nominal part of the
 prepositional phrase is the head of the clause.</p>
 
 <pre><code class="language-sdparse">Sue is in shape
@@ -1034,7 +1214,7 @@ copula language:
 ~~~ sdparse
 I judge Ivan the best dancer
 nsubj(judge-2, I-1)
-dobj(judge-2, Ivan-3)
+obj(judge-2, Ivan-3)
 xcomp(judge-2, dancer-6)
 det(dancer-6, the-4)
 amod(dancer-6, best-5)
@@ -1074,7 +1254,7 @@ nsubj(is, problem)
 
 <p>If we took the predicate of the clause as the head, instead of the copula verb, it would have two subjects, which would be unworkable. Examples like the above <em>could</em> be analyzed reversed with the initial noun phrase as the predicate, but in addition to this seeming undesirable, it would fail to be a solution if there were a clause on both sides of <em>be</em>, such as in: <em>(For us) to not attempt to solve the problem is (for us) to acknowledge defeat</em>. (Note: This solution is not perfect and refining it is a possible direction for the future.)</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/cop.md" target="#">edit cop</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/cop.md" target="#">edit cop</a></p>
 
 <p><a id="al-u-dep/csubj" class="al-dest"></a></p>
 <h2><code>csubj</code>: clausal subject</h2>
@@ -1102,7 +1282,7 @@ csubj(interesting, said)
 csubj:pass(received, said)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/csubj.md" target="#">edit csubj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/csubj.md" target="#">edit csubj</a></p>
 
 <p><a id="al-u-dep/dep" class="al-dest"></a></p>
 <h2><code>dep</code>: unspecified dependency</h2>
@@ -1111,7 +1291,7 @@ csubj:pass(received, said)
 This may be because of a weird grammatical construction, or a limitation in conversion or parsing software.
 The use of <code>dep</code> should be avoided as much as possible.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/dep.md" target="#">edit dep</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/dep.md" target="#">edit dep</a></p>
 
 <p><a id="al-u-dep/det" class="al-dest"></a></p>
 <h2><code>det</code>: determiner</h2>
@@ -1131,7 +1311,7 @@ det(man, The)
 det(book, Which)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/det.md" target="#">edit det</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/det.md" target="#">edit det</a></p>
 
 <p><a id="al-u-dep/discourse" class="al-dest"></a></p>
 <h2><code>discourse</code>: discourse element</h2>
@@ -1152,7 +1332,7 @@ not dependents of the predicates as such.</p>
 discourse(is-2, :)-5)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/discourse.md" target="#">edit discourse</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/discourse.md" target="#">edit discourse</a></p>
 
 <p><a id="al-u-dep/dislocated" class="al-dest"></a></p>
 <h2><code>dislocated</code>: dislocated elements</h2>
@@ -1186,7 +1366,7 @@ dislocated(eat, playdough)
 dislocated(kserume, jani)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/dislocated.md" target="#">edit dislocated</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/dislocated.md" target="#">edit dislocated</a></p>
 
 <p><a id="al-u-dep/expl" class="al-dest"></a></p>
 <h2><code>expl</code>: expletive</h2>
@@ -1233,7 +1413,7 @@ obl(mentioned, Mary)
 ccomp(mentioned, leaving)
 </code></pre>
 
-<p>A second, related, use of the <code>expl</code> relation is for cases of true clitic doubling.  For languages in which clitics and lexical nominals are ususally in complementary distribution – languages, such as French, which obey “Kayne’s generalization” – then whichever of a clitic or a lexical nominal occurs will get the appropriate role, such as <code>dobj</code> or <code>iobj</code>. In such languages, when doubling does occur, such as in spoken French, the right analysis is to regard the lexical nominal as <a href="">dislocated</a> (see the examples there). As such, the analysis will be the same as when a noun phrase doubles another noun phrase or a regular pronoun that fills a nominal argument position. However, other languages, such as Greek and Bulgarian, standardly allow doubling of a lexical nominal and a pronominal clitic, with the former still appearing in its regular role as an argument of the predicate. In these cases, if only one of the lexical nominal and the clitic appear in a clause, then whichever appears will be given the grammatical role of <code>dobj</code>, <code>iobj</code>, etc. – parallel to the treatment of lexical nominals and pronouns in other languages, modulo the clitic pronoun having a different position in the sentence.  However, if both occur, the lexical nominal will be given the grammatical role of <code>dobj</code>, <code>iobj</code>, etc., and the clitic will be treated as a pronominal copy, which does not receive its own semantic role, and hence will get the role <code>expl</code>. Modulo the different word order, this is fairly parallel to the treatment of <em>it</em> and <em>there</em> in English mentioned above, where another phrase satisfies the semantic role of the predicate. Examples from Greek and Bulgarian follow:</p>
+<p>A second, related, use of the <code>expl</code> relation is for cases of true clitic doubling.  For languages in which clitics and lexical nominals are ususally in complementary distribution – languages, such as French, which obey “Kayne’s generalization” – then whichever of a clitic or a lexical nominal occurs will get the appropriate role, such as <a href="">obj</a> or <a href="">iobj</a>. In such languages, when doubling does occur, such as in spoken French, the right analysis is to regard the lexical nominal as <a href="">dislocated</a> (see the examples there). As such, the analysis will be the same as when a noun phrase doubles another noun phrase or a regular pronoun that fills a nominal argument position. However, other languages, such as Greek and Bulgarian, standardly allow doubling of a lexical nominal and a pronominal clitic, with the former still appearing in its regular role as an argument of the predicate. In these cases, if only one of the lexical nominal and the clitic appear in a clause, then whichever appears will be given the grammatical role of <a href="">obj</a>, <a href="">iobj</a>, etc. – parallel to the treatment of lexical nominals and pronouns in other languages, modulo the clitic pronoun having a different position in the sentence.  However, if both occur, the lexical nominal will be given the grammatical role of <a href="">obj</a>, <a href="">iobj</a>, etc., and the clitic will be treated as a pronominal copy, which does not receive its own semantic role, and hence will get the role <code>expl</code>. Modulo the different word order, this is fairly parallel to the treatment of <em>it</em> and <em>there</em> in English mentioned above, where another phrase satisfies the semantic role of the predicate. Examples from Greek and Bulgarian follow:</p>
 
 <pre><code class="language-sdparse">Της τον έδωσε της Καίτης τον αναπτήρα \n PRON.Fem.Gen PRON.Masc.Acc gave ART.Fem.Gen Keti.Gen ART.Masc.Acc lighter.Acc
 expl(έδωσε, Της-1)
@@ -1264,7 +1444,7 @@ expl(fears, REFLEX)
 
 <p>Further general discussion of expletives can be found in Postal, P. M., and G. K. Pullum (1988) “Expletive Noun Phrases in Subcategorized Positions,” <em>Linguistic Inquiry</em> 19(4): 635–670. The status of clitic doubling, and arguments for the lexical nominal being an argument with the clitic a kind of pronominal copy, appear inter alia in Boris Harizanov (2014) <a href="http://stanford.edu/~bharizan/pdfs/Harizanov_2014_NLLT.pdf">Clitic doubling at the syntax-morphology interface: A-movement and morphological merger in Bulgarian</a>. <em>Natural Language and Linguistic Theory</em>.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/expl.md" target="#">edit expl</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/expl.md" target="#">edit expl</a></p>
 
 <p><a id="al-u-dep/fixed" class="al-dest"></a></p>
 <h2><code>fixed</code>: fixed multiword expression</h2>
@@ -1274,7 +1454,7 @@ expl(fears, REFLEX)
 It is used for certain fixed grammaticized expressions that behave
 like function words or short adverbials.</p>
 
-<p><strong>New from v2:</strong> The <code>fixed</code> relation replaces the old <code>mwe</code> relation to prevent misunderstanding regarding its scope.</p>
+<p><strong>New from v2:</strong> The <code>fixed</code> relation replaces the old <code>fixed</code> relation to prevent misunderstanding regarding its scope.</p>
 
 <p>The scope of <code>fixed</code> MWEs corresponds roughly to the <em>fixed
 expressions</em> category of
@@ -1300,7 +1480,7 @@ fixed(because, of)
 fixed(plutôt, qu')
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/fixed.md" target="#">edit fixed</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/fixed.md" target="#">edit fixed</a></p>
 
 <p><a id="al-u-dep/flat" class="al-dest"></a></p>
 <h2><code>flat</code>: flat multiword expression</h2>
@@ -1308,17 +1488,17 @@ fixed(plutôt, qu')
 <p>The <code>flat</code> relation is one of three relations for multiword expressions multiword expressions (MWEs) in UD 
 (the other two being <a href="">fixed</a> and <a href="">compound</a>). It is used for exocentric (headless) semi-fixed MWEs like
 names (<em>Hillary Rodham Clinton</em>) and dates (<em>24 December</em>). It contrasts with <a href="">fixed</a>, which applies to
-to completely fixed grammaticized MWEs (like <em>in spite of</em>), and with <a href="">compound</a>, which applies to
+completely fixed grammaticized (function word-like) MWEs (like <em>in spite of</em>), and with <a href="">compound</a>, which applies to
 endocentric (headed) MWEs (like <em>apple pie</em>).</p>
 
-<p>Flat MWEs are annotated in a flat structure, where all subsequent words in the expression are attached to the 
-first one using the fixed label. The assumption is that these expressions do not have any internal syntactic structure 
+<p>Flat MWEs are annotated with a flat structure, where all subsequent words in the expression are attached to the 
+first one using the <code>flat</code> label. The assumption is that these expressions do not have any internal syntactic structure 
 and that the structural annotation is in principle arbitrary. In practice, however, it is highly desirable to use 
-a consistent annotation of all fixed MWEs in all languages.</p>
+a consistent annotation of all flat MWEs in all languages.</p>
 
-<p>Below we describe some of the most common uses of <a href="">flat</a> across languages. Note, however, that semantically
-equivalent expressions in other languages (or even in the same language) may require a different analysis if it
-has a regular compositional syntactic structure.</p>
+<p>Below we describe some of the most common uses of <a href="">flat</a> across languages. Note that semantically
+equivalent expressions in different languages (or even in the same language) may require a different analysis if sometimes
+there is and sometimes there is not a regular compositional syntactic structure.</p>
 
 <h2 id="names">Names</h2>
 
@@ -1340,14 +1520,48 @@ flat(Carl-1, XVI-2)
 flat(New, York)
 </code></pre>
 
-<p>By contrast, names that have a regular syntactic structure, like <em>The Lord of the Rings</em> and <em>Captured By
+<p>Titles/honorifics are also analyzed using the <code>flat</code> relation. Note that some titles are complex
+and have their own internal syntactic structure. Such structure is shown with regular relations embedded under <code>flat</code>:</p>
+
+<pre><code class="language-sdparse">Mr. Smith
+flat(Mr., Smith)
+</code></pre>
+
+<pre><code class="language-sdparse">President Obama
+flat(President, Obama)
+</code></pre>
+
+<pre><code class="language-sdparse">French actor Gaspard Ulliel
+amod(actor-2, French-1)
+flat(actor-2, Gaspard-3)
+flat(actor-2, Ulliel-4)
+</code></pre>
+
+<pre><code class="language-sdparse">Milliardär Ross Perot \n billionaire Ross Perot
+flat(Milliardär-1, Ross-2)
+flat(Milliardär-1, Perot-3)
+</code></pre>
+
+<p>However if the two halves of a descriptive title and a name appear to be two separate nominals, 
+then analysis with <code>flat</code> is not appropriate, and <a href="">u-dep/appos</a> is appropriate. These cases are often set off by
+punctuation, such as a comma, but no punctuation may appear in more informal text. 
+You can generally test for such examples by asking if the two halves can be reversed; if they can, it is probably an <code>appos</code>; 
+see the examples there.</p>
+
+<p>In contrast to the above, names that have a regular syntactic structure, like <em>The Lord of the Rings</em> and <em>Captured By
 Aliens</em>, should be annotated with regular syntactic relations.</p>
 
-<pre><code class="language-sdparse">The Lord of the Ring
+<pre><code class="language-sdparse">The Lord of the Rings
 det(Lord, The)
-nmod(Lord, Ring)
-case(Ring, of)
-det(Ring, the)
+nmod(Lord, Rings)
+case(Rings, of)
+det(Rings, the)
+</code></pre>
+
+<pre><code class="language-sdparse">The king of Sweden
+det(king-2, The-1)
+nmod(king-2, Sweden-4)
+case(Sweden-4, of-3)
 </code></pre>
 
 <p>For organization names with clear syntactic modification structure, the dependencies should 
@@ -1359,8 +1573,11 @@ compound(Conservation-3, Resources-2)
 compound(Service-4, Conservation-3)
 </code></pre>
 
-<p>In addition, regular syntactic relations are used: (i) for a modifying determiner or (ii) to connect 
-together the words of a description or name which involve embedded prepositional phrases, sentences, etc.</p>
+<p>In addition, regular syntactic relations are used: (i) for a modifying determiner or similar function word and (ii) to connect 
+together the words of a description or name which involve embedded prepositional phrases, sentences, etc.,
+when these relations are (i) recognized in the language being annotated (i.e., the analyses below are for
+French, German, and Spanish, not English) and (ii) deemed not to be grammaticalized to the extent that the original role
+of the function words has been lost.</p>
 
 <pre><code class="language-sdparse">Le Japon
 det(Japon-2, Le-1)
@@ -1368,18 +1585,14 @@ det(Japon-2, Le-1)
 
 <pre><code class="language-sdparse">Ludwig van Beethoven
 case(Beethoven, van)
+nmod(Ludwig, Beethoven)
 </code></pre>
 
 <pre><code class="language-sdparse">Miguel de Cervantes y Saavedra
 conj(Cervantes, Saavedra)
 cc(Saavedra, y)
 case(Cervantes, de)
-</code></pre>
-
-<pre><code class="language-sdparse">The king of Sweden
-det(king-2, The-1)
-nmod(king-2, Sweden-4)
-case(Sweden-4, of-3)
+nmod(Miguel, Cervantes)
 </code></pre>
 
 <pre><code class="language-sdparse">Río de la Plata
@@ -1388,17 +1601,57 @@ det(Plata-4, la-3)
 nmod(Río-1, Plata-4)
 </code></pre>
 
+<p>The above analyses of <em>Ludwig van Beethoven</em> and <em>Miguel de Cervantes y Saavedra</em> assume that <em>van</em> resp. <em>de</em> are prepositions.
+This is true in the languages of the names’ origin, but it can be expected to change when the name is used in foreign text 
+or when sufficient grammaticalization has taken place. For example,
+when names like this are annotated in English, the appropriate analysis is as a <code>flat</code> name:</p>
+
+<pre><code class="language-sdparse">Ludwig van Beethoven was a famous German composer .
+flat(Ludwig, van)
+flat(Ludwig, Beethoven)
+det(composer, a)
+amod(composer, famous)
+amod(composer, German)
+cop(composer, was)
+nsubj(composer, Ludwig)
+punct(composer, .)
+</code></pre>
+
+<pre><code class="language-sdparse">Río de la Plata
+flat(Río-1, de-2)
+flat(Río-1, la-3)
+flat(Río-1, Plata-4)
+</code></pre>
+
+<pre><code class="language-sdparse">Al Arabiya is a Saudi-owned news organization
+flat(Al-1, Arabiya-2)
+nsubj(organization-7, Al-1)
+</code></pre>
+
+<p>And in Modern German or French, these prepositions have generally just become a fossilized part of a family name 
+and regularly appear without the given name. Again, here, analysis as <code>flat</code> seems correct:</p>
+
+<pre><code class="language-sdparse">Von Hohenlohe gewann das Rennen . \n Von Hohenlohe won the race .
+flat(Von-1, Hohenlohe-2)
+nsubj(gewann-3, Von-1)
+</code></pre>
+
 <p>In the case of proper entities named after people, e.g. <em>Leland Stanford Jr. University</em>, the <code>flat</code> relation 
 should only be used inside the person name, with the rest of the construction analyzed compositionally using 
 normal syntactic relations:</p>
 
 <pre><code class="language-sdparse">Leland Stanford Jr. University
-compound(University-4, Leland-1)
-flat(Stanford-2, Leland-1)
-flat(Jr.-3, Leland-1)
+compound(Leland-1, University-4)
+flat(Leland-1, Stanford-2)
+flat(Leland-1, Jr.-3)
 </code></pre>
 
-<h2 id="dates-and-complex-numerlas">Dates and Complex Numerlas</h2>
+<h3 id="some-further-notes-on-relations-for-names">Some further notes on relations for names</h3>
+
+<p><em>This paragraph briefly records some of the arguments that have been made in the past on relations for name structure. It is an issue over which there has historically been variation and about which there is some continuing debate.</em> Examples like 
+<em>French actor Gaspard Ulliel:</em> Some treebanks have used <code>nmod</code> for titles and honorifics like <em>Mr.</em> or <em>French actor</em>. Most people think this is inappropriate, since an <code>nmod</code> dependent should be a full phrase, which will typically take its own case as a modifier in a cased language. In contrast, these titles seem to be part of the same phrase as the name that follows them; they show case agreement concord in a cased language. Some grammatical traditions, descending from Latin, call <em>French actor</em> in such cases a “fixed (or close) apposition” and take the name as the head. UD has restricted the <code>appos</code> relation to following appositives (corresponding to “loose (or wide) apposition” in the Latin tradition). The relation <code>appos</code> is only used when you have two full nominals, typically joined loosely, and often separated by a punctuation mark like a comma. So <code>appos</code> is not correct for these cases. Sometimes the relation <code>compound</code> has been used, but this does not seem right. It implies headedness, and titles do not usually behave like compounds: in German, they are not joined to the following words, as compounds are normally joined in German, and they appear at the beginning of names in both German and Hebrew, even though German compounds are head last and Hebrew compounds are head first. So <code>compound</code> does not seem appropriate either. Some UDv1 treebanks used <code>flat</code> for honorifics like <em>Mr.</em>, although some felt that was wrong and <code>flat</code> should be restricted to joining the proper nouns of multi-word names. In UDv2, <code>flat</code> was removed and replaced by <code>flat</code>, which allowed a broader notion of a chunk of unheaded material. In the UDv2 guidelines, cases of both titles and honorifics are joined to names with <code>flat</code>.</p>
+
+<h2 id="dates-and-complex-numerals">Dates and Complex Numerals</h2>
 
 <p>Date expressions come in many shapes and forms across languages. In some cases, they have a very clear syntactic
 structure, as in <em>the 4th of July</em>, and should be annotated with regular dependency relations. In other cases, they
@@ -1434,20 +1687,27 @@ flat(gjiko, frac)
 flat(gjiko, zen)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/flat.md" target="#">edit flat</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/flat.md" target="#">edit flat</a></p>
 
 <p><a id="al-u-dep/goeswith" class="al-dest"></a></p>
 <h2><code>goeswith</code>: goes with</h2>
 
-<p>This relation links two parts of a word that are separated in text
-that is not well edited.
-The head is in some sense the “main” part, often the second part.</p>
+<p>This relation links two or more parts of a word that are separated in text that is not well edited.
+These parts should be written together as one word according to the ortographic rules of a given language.
+The head is always the first part, the other parts are attached to it with the <code>goeswith</code> relation
+(for consistency, similarly as in <a href="">flat</a>, <a href="">fixed</a> and <a href="">conj</a>).
+Note that only the last part may be annotated with <code>SpaceAfter=No</code>.</p>
 
 <pre><code class="language-sdparse">They come here with out legal permission
-goeswith(out-5, with-4)
+goeswith(with-4, out-5)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/goeswith.md" target="#">edit goeswith</a></p>
+<pre><code class="language-sdparse">never the less/[SpaceAfter=No] ,
+goeswith(never, the)
+goeswith(never, less)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/goeswith.md" target="#">edit goeswith</a></p>
 
 <p><a id="al-u-dep/iobj" class="al-dest"></a></p>
 <h2><code>iobj</code>: indirect object</h2>
@@ -1492,28 +1752,33 @@ obj(teaches, students)
 
 <p>This is consistent with the analysis of Huddleston and Pullum (2002) “The Cambridge Grammar of the English Language”,
 chapter 4 section 4 (p. 251).  As they note, it is no different to the same semantic role being sometimes the subject
-and sometimes the object in intransitive/transitive alternations. The one exception is when there is a clausal complement.
-Then the clausal complement is regarded as a “clausal object” and an object nominal will be an iobj, parallel to
-the simple ditransitive case:</p>
+and sometimes the object in intransitive/transitive alternations.</p>
 
-<pre><code class="language-sdparse">She told the students that they needed to study this evening
+<!--The one exception is when there is a clausal complement.
+Then the clausal complement is regarded as a “clausal object” and an object nominal will be an iobj, parallel to
+the simple ditransitive case:
+
+~~~ sdparse
+She told the students that they needed to study this evening
 iobj(told, students)
 ccomp(told, needed)
-</code></pre>
+~~~
 
-<pre><code class="language-sdparse">She told the students the plan
+~~~ sdparse
+She told the students the plan
 iobj(told, students)
 obj(told, plan)
-</code></pre>
+~~~
 
-<p>If there are two or
-more objects, one of them should be <a href="">obj</a> and the others should be
-<code>iobj</code>. In such cases it is necessary to decide what is the
-most directly affected object <em>(patient).</em> If possible,
+If there are two or
+more objects, one of them should be [obj]() and the others should be
+`iobj`. In such cases it is necessary to decide what is the
+most directly affected object _(patient)._ If possible,
 language-specific documentation should help identify direct and
-indirect objects.</p>
+indirect objects.
+-->
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/iobj.md" target="#">edit iobj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/iobj.md" target="#">edit iobj</a></p>
 
 <p><a id="al-u-dep/list" class="al-dest"></a></p>
 <h2><code>list</code>: list</h2>
@@ -1521,7 +1786,7 @@ indirect objects.</p>
 <p>The <code>list</code> relation is used for chains of comparable items. In lists with more than two items, all items of the list should modify the first one. Informal and web text often contains passages which are meant to be interpreted as lists but are parsed as single sentences. Email signatures often contain these structures, in the form of contact information: the different contact information items are labeled as <code>list</code>; the key-value pair relations are labeled as <a href="">appos</a>.</p>
 
 <pre><code class="language-sdparse">Steve Jones Phone: 555-9814 Email: jones@abc.edf
-name(Steve-1, Jones-2)
+flat:name(Steve-1, Jones-2)
 list(Steve-1, Phone:-3)
 list(Steve-1, Email:-5)
 appos(Phone:-3, 555-9814-4)
@@ -1538,7 +1803,7 @@ list(Lines, Food)
 
 <p>However, <code>list</code> should not be over-used. If a construction can be easily analyzed using the grammatical relations of standard sentences, such as when there is overt coordination, then it should be analyzed with these more standard relations, even if it is laid out as a list typographically.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/list.md" target="#">edit list</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/list.md" target="#">edit list</a></p>
 
 <p><a id="al-u-dep/mark" class="al-dest"></a></p>
 <h2><code>mark</code>: marker</h2>
@@ -1564,7 +1829,7 @@ mark(bring, so-that)
 mark(bring, to-22)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/mark.md" target="#">edit mark</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/mark.md" target="#">edit mark</a></p>
 
 <p><a id="al-u-dep/nmod" class="al-dest"></a></p>
 <h2><code>nmod</code>: nominal modifier</h2>
@@ -1574,13 +1839,7 @@ an attribute, or genitive complement.</p>
 
 <p><strong>New from v2:</strong> The <code>nmod</code> relation was previously used also for nominal dependents of verbs, adjectives, and adverbs. The latter are now covered by the new <a href="">obl</a> relation.</p>
 
-<p>In conjunction with the <a href="">case</a> relation, the <code>nmod</code> provides a uniform analysis for the possessive alternation:</p>
-
-<pre><code class="language-sdparse">the Chair 's office
-det(Chair-2, the-1)
-nmod(office-4, Chair-2)
-case(Chair-2, 's-3)
-</code></pre>
+<p>In conjunction with the <a href="">case</a> relation, <code>nmod</code> provides a uniform analysis for the possessive alternation (with the option of a subtype like <code>nmod:poss</code> to distinguish non-adpositional case):</p>
 
 <pre><code class="language-sdparse">the office of the Chair
 det(office-2, the-1)
@@ -1589,7 +1848,13 @@ case(Chair-5, of-3)
 det(Chair-5, the-4)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/nmod.md" target="#">edit nmod</a></p>
+<pre><code class="language-sdparse">the Chair 's office
+det(Chair-2, the-1)
+nmod:poss(office-4, Chair-2)
+case(Chair-2, 's-3)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/nmod.md" target="#">edit nmod</a></p>
 
 <p><a id="al-u-dep/nsubj" class="al-dest"></a></p>
 <h2><code>nsubj</code>: nominal subject</h2>
@@ -1648,7 +1913,7 @@ acl(viewpoints, existed)
 nsubj(existed, that)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/nsubj.md" target="#">edit nsubj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/nsubj.md" target="#">edit nsubj</a></p>
 
 <p><a id="al-u-dep/nummod" class="al-dest"></a></p>
 <h2><code>nummod</code>: numeric modifier</h2>
@@ -1677,7 +1942,7 @@ Therefore their relation to the quantified noun is not <code>nummod</code> but
 det(sheep, many)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/nummod.md" target="#">edit nummod</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/nummod.md" target="#">edit nummod</a></p>
 
 <p><a id="al-u-dep/obj" class="al-dest"></a></p>
 <h2><code>obj</code>: object</h2>
@@ -1702,12 +1967,15 @@ obj(begegnen, jemandem)
 regardless of the morphological case or semantic role that it bears. If there are two or more
 objects, one of them should be <code>obj</code> and the others should be
 <a href="">iobj</a>. In such cases it is necessary to decide what is the most
-directly affected object <em>(patient).</em> The one exception is when there is a clausal complement. 
-Then the clausal complement is regarded as a “clausal object” and an object nominal will be an <a href="">iobj</a>. 
-There is more discussion of constructions with multiple objects on the page for <a href="">iobj</a>. 
+directly affected object <em>(patient).</em></p>
+
+<!--The one exception is when there is a clausal complement. 
+Then the clausal complement is regarded as a “clausal object” and an object nominal will be an [iobj]().-->
+
+<p>There is more discussion of constructions with multiple objects on the page for <a href="">iobj</a>. 
 If possible, language-specific documentation should be available to help identify the primary (or direct) object.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/obj.md" target="#">edit obj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/obj.md" target="#">edit obj</a></p>
 
 <p><a id="al-u-dep/obl" class="al-dest"></a></p>
 <h2><code>obl</code>: oblique nominal</h2>
@@ -1775,12 +2043,12 @@ nsubj:pass(chased, cat)
 obl:agent(chased, dog)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/obl.md" target="#">edit obl</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/obl.md" target="#">edit obl</a></p>
 
 <p><a id="al-u-dep/orphan" class="al-dest"></a></p>
 <h2><code>orphan</code>: orphan</h2>
 
-<p>The ‘orphan’ relation is used in cases of head ellipisis where simple promotion would result in unnatural 
+<p>The ‘orphan’ relation is used in cases of head <a href="http://universaldependencies.org/u/overview/specific-syntax.html#ellipsis">ellipsis</a> where simple promotion would result in unnatural 
 and misleading dependency relation. The typical case is predicate ellipsis where one of the core arguments
 have to be promoted to clausal head.</p>
 
@@ -1799,7 +2067,9 @@ the <code>orphan</code> relation is used to indicate that this is a non-standard
 conjunction <em>and</em> performs essentially the same function as in the non-elliptical case and therefore retains
 its normal relation <code>cc</code>.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/orphan.md" target="#">edit orphan</a></p>
+<p>See further discussion of <a href="http://universaldependencies.org/u/overview/specific-syntax.html#ellipsis">ellipsis</a>.</p>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/orphan.md" target="#">edit orphan</a></p>
 
 <p><a id="al-u-dep/parataxis" class="al-dest"></a></p>
 <h2><code>parataxis</code>: parataxis</h2>
@@ -1816,6 +2086,8 @@ parataxis(Let, annoyed)
 
 <pre><code class="language-sdparse">The guy , John said , left early in the morning
 parataxis(left, said)
+punct(said, ,-3)
+punct(said, ,-6)
 </code></pre>
 
 <h2 id="an-inventory-of-constructions-to-which-parataxis-has-been-applied">An inventory of constructions to which parataxis has been applied</h2>
@@ -1834,6 +2106,7 @@ dependents of the first one, to maximize similarity to the analysis used for con
 
 <pre><code class="language-sdparse">Bearded dragons are sight hunters , they need to see the food to move .
 parataxis(hunters, need)
+punct(need, ,)
 </code></pre>
 
 <p>This relation may happen with units that are smaller than sentences:</p>
@@ -1850,6 +2123,8 @@ det(CIA, the)
 
 <pre><code class="language-sdparse">The guy , John said , left early in the morning
 parataxis(left, said)
+punct(said, ,-3)
+punct(said, ,-6)
 </code></pre>
 
 <p>there are paraphrases that convey essentially the same meaning but
@@ -1872,18 +2147,27 @@ ccomp(said, left)
 
 <pre><code class="language-sdparse">John said : “ The guy left early in the morning . ”
 parataxis(said, left)
+punct(left, :)
+punct(left, “)
+punct(left, ”)
 </code></pre>
 
 <pre><code class="language-sdparse">“ The guy left early in the morning ” , John said .
 parataxis(left, said)
+punct(said, ,)
+punct(left, “)
+punct(left, ”)
 </code></pre>
 
 <pre><code class="language-sdparse">The guy left early in the morning , John said .
 parataxis(left, said)
+punct(said, ,)
 </code></pre>
 
 <pre><code class="language-sdparse">The guy , he said , left early in the morning .
 parataxis(left, said)
+punct(said, ,-3)
+punct(said, ,-6)
 </code></pre>
 
 <p>An argument for this analysis is that in the cases analyzed as embedding, the entire clause
@@ -1898,6 +2182,9 @@ There does not seem to be a better relation to use.</p>
 
 <pre><code class="language-sdparse">Washington ( CNN ) :
 parataxis(Washington, CNN)
+punct(CNN, ()
+punct(CNN, ))
+punct(CNN, :)
 </code></pre>
 
 <h3 id="interjected-clauses">Interjected clauses</h3>
@@ -1906,6 +2193,8 @@ parataxis(Washington, CNN)
 
 <pre><code class="language-sdparse">Calafia has great fries ( they are to die for ! )
 parataxis(has, are)
+punct(are, ()
+punct(are, ))
 </code></pre>
 
 <pre><code class="language-sdparse">Just to let you all know Matt has confirmed the booking for 3rd Dec is OK .
@@ -1921,9 +2210,10 @@ because the first half feels like a whole clause interjection, not like the main
 
 <pre><code class="language-sdparse">It 's not me , is it ?
 parataxis(me, is)
+punct(is, ,)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/parataxis.md" target="#">edit parataxis</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/parataxis.md" target="#">edit parataxis</a></p>
 
 <p><a id="al-u-dep/punct" class="al-dest"></a></p>
 <h2><code>punct</code>: punctuation</h2>
@@ -1940,15 +2230,15 @@ Since <code>punct</code> is not a normal dependency relation, the usual criteria
 Instead, we use the following principles:</p>
 
 <ol>
-  <li>A punctuation mark separating coordinated units is attached to the first conjunct.</li>
-  <li>A punctuation mark preceding or following a subordinated unit is attached to this unit.</li>
+  <li>A punctuation mark separating coordinated units is attached to the following conjunct.</li>
+  <li>A punctuation mark preceding or following a dependent unit is attached to that unit.</li>
   <li>Within the relevant unit, a punctuation mark is attached at the highest possible node that preserves projectivity.</li>
-  <li>Paired punctuation marks (quotes and brackets) should be attached to the same word unless that would create non-projectivity. This word is usually the head of the phrase enclosed in the paired punctuation.</li>
+  <li>Paired punctuation marks (e.g. quotes and brackets, sometimes also dashes, commas and other) should be attached to the same word unless that would create non-projectivity. This word is usually the head of the phrase enclosed in the paired punctuation.</li>
 </ol>
 
 <div id="punct1" class="sd-parse">
 We have apples , pears , oranges , and bananas .
-dobj(have, apples)
+obj(have, apples)
 conj(apples, pears)
 conj(apples, oranges)
 conj(apples, bananas)
@@ -1967,14 +2257,14 @@ punct(kam, .)
 
 <div id="punct3" class="sd-parse">
 A.K.A. , AKA , or a\/k\/a may refer to : “ Also known as ” , used to introduce pseudonyms , aliases , etc. ( Compare f.k.a. for “ formerly known as ” . )
-punct(A.K.A., ,-2)
-punct(A.K.A., ,-4)
+punct(AKA, ,-2)
+punct(a/k/a, ,-4)
 punct(refer, :)
 punct(known-13, “-11)
 punct(known-13, ”-15)
 punct(used, ,-16)
-punct(pseudonyms, ,-21)
-punct(pseudonyms, ,-23)
+punct(aliases, ,-21)
+punct(etc., ,-23)
 punct(Compare, (-25)
 punct(Compare, )-35)
 punct(known-31, “-29)
@@ -1982,7 +2272,9 @@ punct(known-31, ”-33)
 punct(Compare, .-34)
 </div>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/punct.md" target="#">edit punct</a></p>
+<p>See also examples at <a href="">parataxis</a>.</p>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/punct.md" target="#">edit punct</a></p>
 
 <p><a id="al-u-dep/reparandum" class="al-dest"></a></p>
 <h2><code>reparandum</code>: overridden disfluency</h2>
@@ -1991,7 +2283,7 @@ punct(Compare, .-34)
 repair. The disfluency is the dependent of the repair.</p>
 
 <pre><code class="language-sdparse">Go to the righ- to the left .
-nmod(Go-1, left-7)
+obl(Go-1, left-7)
 reparandum(left-7, righ-)
 case(righ-, to-2)
 det(righ-, the-3)
@@ -1999,7 +2291,7 @@ case(left-7, to-5)
 det(left-7, the-6)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/reparandum.md" target="#">edit reparandum</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/reparandum.md" target="#">edit reparandum</a></p>
 
 <p><a id="al-u-dep/root" class="al-dest"></a></p>
 <h2><code>root</code>: root</h2>
@@ -2026,7 +2318,7 @@ amod(place, fourth)
 det(place, the)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/root.md" target="#">edit root</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/root.md" target="#">edit root</a></p>
 
 <p><a id="al-u-dep/vocative" class="al-dest"></a></p>
 <h2><code>vocative</code>: vocative</h2>
@@ -2041,7 +2333,7 @@ vocative(take, Guys)
 vocative(vas, Marie)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/vocative.md" target="#">edit vocative</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/vocative.md" target="#">edit vocative</a></p>
 
 <p><a id="al-u-dep/xcomp" class="al-dest"></a></p>
 <h2><code>xcomp</code>: open clausal complement</h2>
@@ -2057,11 +2349,12 @@ but they can be finite as well. The name <code>xcomp</code> is
 borrowed from Lexical-Functional Grammar.</p>
 
 <pre><code class="language-sdparse">He says that you like to swim
-xcomp(like, swim)
+ccomp(says, like)
 </code></pre>
 
 <pre><code class="language-sdparse">Sue asked George to respond to her offer
 xcomp(asked, respond)
+obj(asked, George)
 </code></pre>
 
 <pre><code class="language-sdparse">You look great
@@ -2082,6 +2375,7 @@ xcomp(consider, honest)
 
 <pre><code class="language-sdparse">We expect them to change their minds
 xcomp(expect, change)
+obj(expect, them)
 </code></pre>
 
 <p>Note that the above condition “without its own subject” does not mean that a 
@@ -2156,7 +2450,7 @@ will either render the sentence ungrammatical or lead to a different interpretat
 <p>The result is that in <em>She entered the room sad,</em> <em>sad</em> will depend on <em>She</em>
 and the relation will be <a href="">acl</a> instead of <code>xcomp</code>.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/xcomp.md" target="#">edit xcomp</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/xcomp.md" target="#">edit xcomp</a></p>
 
 
 

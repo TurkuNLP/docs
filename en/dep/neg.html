@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-en">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/en/dep">en/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_en-dep/neg.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-en">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/en/dep">en/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_en-dep/neg.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -71,74 +88,16 @@ neg(accidents, no)
 
 <hr />
 
-<h2 id="treebank-statistics-udenglish">Treebank Statistics (UD_English)</h2>
-
-<p>This relation is universal.</p>
-
-<p>2588 nodes (1%) are attached to their parents as <code>neg</code>.</p>
-
-<p>2517 instances of <code>neg</code> (97%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.36051004636785.</p>
-
-<p>The following 27 pairs of parts of speech are connected with <code>neg</code>: <a href="">en-pos/VERB</a>-<a href="">en-pos/PART</a> (1440; 56% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/DET</a> (304; 12% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/PART</a> (218; 8% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/ADV</a> (187; 7% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/PART</a> (143; 6% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/ADV</a> (73; 3% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/PART</a> (58; 2% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/ADV</a> (50; 2% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/ADV</a> (38; 1% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/PART</a> (14; 1% instances), <a href="">en-pos/AUX</a>-<a href="">en-pos/PART</a> (12; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/PART</a> (9; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/ADV</a> (8; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/ADV</a> (6; 0% instances), <a href="">en-pos/DET</a>-<a href="">en-pos/ADV</a> (5; 0% instances), <a href="">en-pos/DET</a>-<a href="">en-pos/PART</a> (4; 0% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/DET</a> (3; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/DET</a> (3; 0% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/CONJ</a> (2; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/CONJ</a> (2; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/ADV</a> (2; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/DET</a> (2; 0% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/X</a> (1; 0% instances), <a href="">en-pos/CONJ</a>-<a href="">en-pos/PART</a> (1; 0% instances), <a href="">en-pos/INTJ</a>-<a href="">en-pos/INTJ</a> (1; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/PART</a> (1; 0% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/CONJ</a> (1; 0% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 5 4 neg	color:blue
-1	Yet	yet	CONJ	CC	_	5	cc	_	_
-2	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1|PronType=Prs	5	nsubj	_	_
-3	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	aux	_	SpaceAfter=No
-4	n't	not	PART	RB	_	5	neg	_	_
-5	charge	charge	VERB	VB	VerbForm=Inf	0	root	_	_
-6	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	5	dobj	_	_
-7	for	for	ADP	IN	_	9	case	_	_
-8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
-9	evacuation	evacuation	NOUN	NN	Number=Sing	5	nmod	_	SpaceAfter=No
-10	.	.	PUNCT	.	_	5	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 2 1 neg	color:blue
-1	No	no	DET	DT	_	2	neg	_	_
-2	communications	communication	NOUN	NNS	Number=Plur	0	root	_	_
-3	nothing	nothing	PRON	NN	Number=Sing	2	conj	_	SpaceAfter=No
-4	.	.	PUNCT	.	_	2	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 6 4 neg	color:blue
-1	those	those	DET	DT	Number=Plur|PronType=Dem	2	det	_	_
-2	dogs	dog	NOUN	NNS	Number=Plur	6	nsubj	_	_
-3	are	be	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	6	cop	_	SpaceAfter=No
-4	n't	not	PART	RB	_	6	neg	_	_
-5	even	even	ADV	RB	_	6	advmod	_	_
-6	friendly	friendly	ADJ	JJ	Degree=Pos	0	root	_	SpaceAfter=No
-7	.	.	PUNCT	.	_	6	punct	_	_
-
-</code></pre>
-
-<hr />
-
 <h2 id="treebank-statistics-udenglish-esl">Treebank Statistics (UD_English-ESL)</h2>
 
 <p>This relation is universal.</p>
 
-<p>1173 nodes (1%) are attached to their parents as <code>neg</code>.</p>
+<p>1052 nodes (1%) are attached to their parents as <code>neg</code>.</p>
 
-<p>1120 instances of <code>neg</code> (95%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.34697357203751.</p>
+<p>1003 instances of <code>neg</code> (95%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.34220532319392.</p>
 
-<p>The following 21 pairs of parts of speech are connected with <code>neg</code>: <a href="">en-pos/VERB</a>-<a href="">en-pos/PART</a> (630; 54% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/PART</a> (164; 14% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/ADV</a> (108; 9% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/PART</a> (86; 7% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/DET</a> (81; 7% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/PART</a> (28; 2% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/ADV</a> (15; 1% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/ADV</a> (14; 1% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/ADV</a> (10; 1% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/PART</a> (10; 1% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/PART</a> (9; 1% instances), <a href="">en-pos/AUX</a>-<a href="">en-pos/PART</a> (5; 0% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/DET</a> (2; 0% instances), <a href="">en-pos/DET</a>-<a href="">en-pos/PART</a> (2; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/PART</a> (2; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/ADV</a> (2; 0% instances), <a href="">en-pos/ADP</a>-<a href="">en-pos/PART</a> (1; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/ADV</a> (1; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/DET</a> (1; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/ADV</a> (1; 0% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/DET</a> (1; 0% instances).</p>
+<p>The following 21 pairs of parts of speech are connected with <code>neg</code>: <a href="">en-pos/VERB</a>-<a href="">en-pos/PART</a> (565; 54% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/PART</a> (148; 14% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/ADV</a> (93; 9% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/PART</a> (79; 8% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/DET</a> (75; 7% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/PART</a> (26; 2% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/ADV</a> (15; 1% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/ADV</a> (11; 1% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/ADV</a> (8; 1% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/PART</a> (8; 1% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/PART</a> (8; 1% instances), <a href="">en-pos/AUX</a>-<a href="">en-pos/PART</a> (4; 0% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/DET</a> (2; 0% instances), <a href="">en-pos/DET</a>-<a href="">en-pos/PART</a> (2; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/ADV</a> (2; 0% instances), <a href="">en-pos/ADP</a>-<a href="">en-pos/PART</a> (1; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/ADV</a> (1; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/DET</a> (1; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/PART</a> (1; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/ADV</a> (1; 0% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/DET</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 13	bgColor:blue
 # visual-style 13	fgColor:white
@@ -221,74 +180,6 @@ Average distance between parent and child is 1.34697357203751.</p>
 
 </code></pre>
 
-<hr />
-
-<h2 id="treebank-statistics-udenglish-lines">Treebank Statistics (UD_English-LinES)</h2>
-
-<p>This relation is universal.</p>
-
-<p>794 nodes (1%) are attached to their parents as <code>neg</code>.</p>
-
-<p>738 instances of <code>neg</code> (93%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.43073047858942.</p>
-
-<p>The following 24 pairs of parts of speech are connected with <code>neg</code>: <a href="">en-pos/VERB</a>-<a href="">en-pos/PART</a> (455; 57% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/DET</a> (79; 10% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/PART</a> (70; 9% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/PART</a> (53; 7% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/ADV</a> (51; 6% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/PART</a> (25; 3% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/ADV</a> (12; 2% instances), <a href="">en-pos/AUX</a>-<a href="">en-pos/PART</a> (10; 1% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/PART</a> (8; 1% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/DET</a> (5; 1% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/ADV</a> (4; 1% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/DET</a> (3; 0% instances), <a href="">en-pos/AUX</a>-<a href="">en-pos/ADV</a> (3; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/ADV</a> (3; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/PART</a> (3; 0% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/PRON</a> (2; 0% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/DET</a> (1; 0% instances), <a href="">en-pos/CONJ</a>-<a href="">en-pos/PART</a> (1; 0% instances), <a href="">en-pos/DET</a>-<a href="">en-pos/PART</a> (1; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/PRON</a> (1; 0% instances), <a href="">en-pos/PART</a>-<a href="">en-pos/PART</a> (1; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/DET</a> (1; 0% instances), <a href="">en-pos/PUNCT</a>-<a href="">en-pos/PART</a> (1; 0% instances), <a href="">en-pos/SCONJ</a>-<a href="">en-pos/PART</a> (1; 0% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
-# visual-style 7 6 neg	color:blue
-1	But	_	CONJ	_	_	2	cc	_	_
-2	no	_	INTJ	_	_	7	discourse	_	_
-3	,	_	PUNCT	Comma	_	2	punct	_	_
-4	that	_	PRON	DEM-SG	_	7	nsubj	_	_
-5	did	_	AUX	PAST-AUX	_	7	aux	_	_
-6	not	_	PART	NEG	_	7	neg	_	_
-7	seem	_	VERB	INF	_	0	root	_	_
-8	possible	_	ADJ	POS	_	7	xcomp	_	_
-9	.	_	PUNCT	Period	_	7	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 12	bgColor:blue
-# visual-style 12	fgColor:white
-# visual-style 13	bgColor:blue
-# visual-style 13	fgColor:white
-# visual-style 13 12 neg	color:blue
-1	Returning	_	VERB	ING	_	8	advcl	_	_
-2	to	_	ADP	_	_	3	case	_	_
-3	it	_	PRON	PERS-SG	_	1	nmod	_	_
-4	next	_	ADJ	POS	_	5	amod	_	_
-5	day	_	NOUN	SG	_	1	nmod	_	_
-6	,	_	PUNCT	Comma	_	1	punct	_	_
-7	I	_	PRON	PERS-P1SG-NOM	_	8	nsubj	_	_
-8	found	_	VERB	PAST	_	0	root	_	_
-9	Faulkner	_	PROPN	SG	_	8	dobj	_	_
-10	guilty	_	ADJ	POS	_	8	xcomp	_	_
-11	of	_	ADP	_	_	13	case	_	_
-12	no	_	DET	NEG	_	13	neg	_	_
-13	offense	_	NOUN	SG	_	10	nmod	_	_
-14	.	_	PUNCT	Period	_	8	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 5 4 neg	color:blue
-1	His	_	PRON	P3SG-GEN	_	2	nmod:poss	_	_
-2	paper	_	NOUN	SG	_	5	nsubj	_	_
-3	is	_	VERB	PRES	_	5	cop	_	_
-4	not	_	PART	NEG	_	5	neg	_	_
-5	friendly	_	ADJ	POS	_	0	root	_	_
-6	to	_	ADP	_	_	7	case	_	_
-7	Israel	_	PROPN	SG	_	5	nmod	_	_
-8	.	_	PUNCT	Period	_	5	punct	_	_
-
-</code></pre>
-
 
 
 
@@ -297,9 +188,25 @@ Average distance between parent and child is 1.43073047858942.</p>
 
 neg in other languages:
 
+[<a href="../../am/dep/neg.html">am</a>]
+
+[<a href="../../ar/dep/neg.html">ar</a>]
+
 [<a href="../../bg/dep/neg.html">bg</a>]
 
+[<a href="../../bxr/dep/neg.html">bxr</a>]
+
+[<a href="../../ca/dep/neg.html">ca</a>]
+
+[<a href="../../ckb/dep/neg.html">ckb</a>]
+
+[<a href="../../cop/dep/neg.html">cop</a>]
+
 [<a href="../../cs/dep/neg.html">cs</a>]
+
+[<a href="../../cu/dep/neg.html">cu</a>]
+
+[<a href="../../da/dep/neg.html">da</a>]
 
 [<a href="../../de/dep/neg.html">de</a>]
 
@@ -309,29 +216,97 @@ neg in other languages:
 
 [<a href="../../es/dep/neg.html">es</a>]
 
+[<a href="../../et/dep/neg.html">et</a>]
+
 [<a href="../../eu/dep/neg.html">eu</a>]
 
 [<a href="../../fa/dep/neg.html">fa</a>]
 
 [<a href="../../fi/dep/neg.html">fi</a>]
 
+[<a href="../../fo/dep/neg.html">fo</a>]
+
 [<a href="../../fr/dep/neg.html">fr</a>]
 
 [<a href="../../ga/dep/neg.html">ga</a>]
 
+[<a href="../../gl/dep/neg.html">gl</a>]
+
+[<a href="../../got/dep/neg.html">got</a>]
+
+[<a href="../../grc/dep/neg.html">grc</a>]
+
 [<a href="../../he/dep/neg.html">he</a>]
 
+[<a href="../../hi/dep/neg.html">hi</a>]
+
+[<a href="../../hr/dep/neg.html">hr</a>]
+
 [<a href="../../hu/dep/neg.html">hu</a>]
+
+[<a href="../../id/dep/neg.html">id</a>]
 
 [<a href="../../it/dep/neg.html">it</a>]
 
 [<a href="../../ja/dep/neg.html">ja</a>]
 
+[<a href="../../kk/dep/neg.html">kk</a>]
+
+[<a href="../../kmr/dep/neg.html">kmr</a>]
+
 [<a href="../../ko/dep/neg.html">ko</a>]
+
+[<a href="../../la/dep/neg.html">la</a>]
+
+[<a href="../../lv/dep/neg.html">lv</a>]
+
+[<a href="../../mr/dep/neg.html">mr</a>]
+
+[<a href="../../nl/dep/neg.html">nl</a>]
+
+[<a href="../../no/dep/neg.html">no</a>]
+
+[<a href="../../pl/dep/neg.html">pl</a>]
+
+[<a href="../../pt/dep/neg.html">pt</a>]
+
+[<a href="../../ro/dep/neg.html">ro</a>]
+
+[<a href="../../ru/dep/neg.html">ru</a>]
+
+[<a href="../../sa/dep/neg.html">sa</a>]
+
+[<a href="../../sk/dep/neg.html">sk</a>]
+
+[<a href="../../sla/dep/neg.html">sla</a>]
+
+[<a href="../../sl/dep/neg.html">sl</a>]
+
+[<a href="../../so/dep/neg.html">so</a>]
+
+[<a href="../../sr/dep/neg.html">sr</a>]
 
 [<a href="../../sv/dep/neg.html">sv</a>]
 
-[<a href="../../u/dep/neg.html">u</a>]
+[<a href="../../swl/dep/neg.html">swl</a>]
+
+[<a href="../../ta/dep/neg.html">ta</a>]
+
+[<a href="../../tr/dep/neg.html">tr</a>]
+
+[<a href="../../ug/dep/neg.html">ug</a>]
+
+[<a href="../../uk/dep/neg.html">uk</a>]
+
+[<a href="../../ur/dep/neg.html">ur</a>]
+
+[<a href="../../urj/dep/neg.html">urj</a>]
+
+[<a href="../../vi/dep/neg.html">vi</a>]
+
+[<a href="../../yue/dep/neg.html">yue</a>]
+
+[<a href="../../zh/dep/neg.html">zh</a>]
 
 
 

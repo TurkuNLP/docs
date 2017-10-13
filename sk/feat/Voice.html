@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-sk">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/sk/feat">sk/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_sk-feat/Voice.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/sk/feat">sk/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sk-feat/Voice.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -65,23 +82,23 @@ for <code>Voice</code>.</p>
 <p>This feature is universal.
 It occurs with 2 different values: <code>Act</code>, <code>Pass</code>.</p>
 
-<p>1197 tokens (1%) have a non-empty value of <code>Voice</code>.
-1028 types (4%) occur at least once with a non-empty value of <code>Voice</code>.
-733 lemmas (5%) occur at least once with a non-empty value of <code>Voice</code>.
-The feature is used with 1 part-of-speech tags: <a href="">sk-pos/VERB</a> (1197; 1% instances).</p>
+<p>966 tokens (1%) have a non-empty value of <code>Voice</code>.
+844 types (4%) occur at least once with a non-empty value of <code>Voice</code>.
+617 lemmas (5%) occur at least once with a non-empty value of <code>Voice</code>.
+The feature is used with 2 part-of-speech tags: <a href="">sk-pos/ADJ</a> (955; 1% instances), <a href="">sk-pos/VERB</a> (11; 0% instances).</p>
 
-<h3 id="verb"><code>VERB</code></h3>
+<h3 id="adj"><code>ADJ</code></h3>
 
-<p>1197 <a href="">sk-pos/VERB</a> tokens (7% of all <code>VERB</code> tokens) have a non-empty value of <code>Voice</code>.</p>
+<p>955 <a href="">sk-pos/ADJ</a> tokens (12% of all <code>ADJ</code> tokens) have a non-empty value of <code>Voice</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Voice</code> co-occurred: <tt><a href="Person.html">Person</a>=EMPTY</tt> (1197; 100%), <tt><a href="Aspect.html">Aspect</a>=EMPTY</tt> (1197; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (1197; 100%), <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (1197; 100%), <tt><a href="Negative.html">Negative</a>=EMPTY</tt> (1197; 100%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (1197; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (767; 64%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (628; 52%).</p>
+<p>The most frequent other feature values with which <code>ADJ</code> and <code>Voice</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (955; 100%), <tt><a href="Degree.html">Degree</a>=Pos</tt> (949; 99%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (934; 98%), <tt><a href="Number.html">Number</a>=Sing</tt> (609; 64%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (488; 51%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>Voice</code>:</p>
+<p><code>ADJ</code> tokens may have the following values of <code>Voice</code>:</p>
 
 <ul>
-  <li><code>Act</code> (220; 18% of non-empty <code>Voice</code>): <em>nasledujúcich, nasledujúci, nasledujúcej, týkajúcich, Lietajúca, krútiace, nasledujúcom, predchádzajúce, predsedajúci, provokujúce</em></li>
-  <li><code>Pass</code> (977; 82% of non-empty <code>Voice</code>): <em>ozbrojených, sledovaných, zmätený, Zhlúpnutý, nájdené, otvorené, pripravená, pripravený, uvedených, zatajeným</em></li>
-  <li><code>EMPTY</code> (15650): <em>je, bol, bola, bolo, sú, mal, povedal, boli, povedala, má</em></li>
+  <li><code>Act</code> (167; 17% of non-empty <code>Voice</code>): <em>nasledujúci, nasledujúcej, nasledujúcich, Lietajúca, krútiace, nasledujúcom, predsedajúci, provokujúce, spiace, vládnúcej</em></li>
+  <li><code>Pass</code> (788; 83% of non-empty <code>Voice</code>): <em>ozbrojených, sledovaných, zmätený, Zhlúpnutý, otvorené, pripravená, zatajeným, chránených, nájdené, obkľúčený</em></li>
+  <li><code>EMPTY</code> (6827): <em>celý, druhý, prvý, veľký, ďalšie, nové, verejných, nový, ďalší, druhej</em></li>
 </ul>
 
 <table>
@@ -91,14 +108,28 @@ The feature is used with 1 part-of-speech tags: <a href="">sk-pos/VERB</a> (1197
   <tr><td><tt><a href="Animacy.html">Animacy</a>=Inan|<a href="Case.html">Case</a>=Loc|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td><em>nasledujúcom</em></td><td></td></tr>
   <tr><td><tt><a href="Animacy.html">Animacy</a>=Inan|<a href="Case.html">Case</a>=Loc|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur</tt></td><td><em>nasledujúcich</em></td><td></td></tr>
   <tr><td><tt><a href="Animacy.html">Animacy</a>=Inan|<a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td><em>Nasledujúci</em></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td><em>nasledujúcu</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur</tt></td><td><em>nasledujúcich</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Loc|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td><em>nasledujúcej</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Loc|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing</tt></td><td><em>nasledujúcom</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Loc|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Plur</tt></td><td><em>nasledujúcich</em></td><td></td></tr>
 </table>
 
-<p><code>Voice</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 99% lemmas (729) occur only with one value of <code>Voice</code>.</p>
+<p><code>Voice</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 99% lemmas (603) occur only with one value of <code>Voice</code>.</p>
+
+<h3 id="verb"><code>VERB</code></h3>
+
+<p>11 <a href="">sk-pos/VERB</a> tokens (0% of all <code>VERB</code> tokens) have a non-empty value of <code>Voice</code>.</p>
+
+<p>The most frequent other feature values with which <code>VERB</code> and <code>Voice</code> co-occurred: <tt><a href="Person.html">Person</a>=EMPTY</tt> (11; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (11; 100%), <tt><a href="Aspect.html">Aspect</a>=EMPTY</tt> (11; 100%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (11; 100%), <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (11; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (11; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (8; 73%), <tt><a href="Animacy.html">Animacy</a>=Anim</tt> (7; 64%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (7; 64%).</p>
+
+<p><code>VERB</code> tokens may have the following values of <code>Voice</code>:</p>
+
+<ul>
+  <li><code>Pass</code> (11; 100% of non-empty <code>Voice</code>): <em>zhrozený, odkázaný, očarený, prevrhnuté, rozbité, rozvalený, vychovaný, vyduté, vysvietené, zaskočený</em></li>
+  <li><code>EMPTY</code> (12860): <em>mal, povedal, je, povedala, má, mala, bol, bolo, bola, odvetil</em></li>
+</ul>
+
+<p><code>Voice</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 100% lemmas (10) occur only with one value of <code>Voice</code>.</p>
 
 
 
@@ -108,9 +139,25 @@ The feature is used with 1 part-of-speech tags: <a href="">sk-pos/VERB</a> (1197
 
 Voice in other languages:
 
+[<a href="../../am/feat/Voice.html">am</a>]
+
+[<a href="../../ar/feat/Voice.html">ar</a>]
+
 [<a href="../../bg/feat/Voice.html">bg</a>]
 
+[<a href="../../bxr/feat/Voice.html">bxr</a>]
+
+[<a href="../../ca/feat/Voice.html">ca</a>]
+
+[<a href="../../ckb/feat/Voice.html">ckb</a>]
+
+[<a href="../../cop/feat/Voice.html">cop</a>]
+
 [<a href="../../cs/feat/Voice.html">cs</a>]
+
+[<a href="../../cu/feat/Voice.html">cu</a>]
+
+[<a href="../../da/feat/Voice.html">da</a>]
 
 [<a href="../../de/feat/Voice.html">de</a>]
 
@@ -120,29 +167,97 @@ Voice in other languages:
 
 [<a href="../../es/feat/Voice.html">es</a>]
 
+[<a href="../../et/feat/Voice.html">et</a>]
+
 [<a href="../../eu/feat/Voice.html">eu</a>]
 
 [<a href="../../fa/feat/Voice.html">fa</a>]
 
 [<a href="../../fi/feat/Voice.html">fi</a>]
 
+[<a href="../../fo/feat/Voice.html">fo</a>]
+
 [<a href="../../fr/feat/Voice.html">fr</a>]
 
 [<a href="../../ga/feat/Voice.html">ga</a>]
 
+[<a href="../../gl/feat/Voice.html">gl</a>]
+
+[<a href="../../got/feat/Voice.html">got</a>]
+
+[<a href="../../grc/feat/Voice.html">grc</a>]
+
 [<a href="../../he/feat/Voice.html">he</a>]
 
+[<a href="../../hi/feat/Voice.html">hi</a>]
+
+[<a href="../../hr/feat/Voice.html">hr</a>]
+
 [<a href="../../hu/feat/Voice.html">hu</a>]
+
+[<a href="../../id/feat/Voice.html">id</a>]
 
 [<a href="../../it/feat/Voice.html">it</a>]
 
 [<a href="../../ja/feat/Voice.html">ja</a>]
 
+[<a href="../../kk/feat/Voice.html">kk</a>]
+
+[<a href="../../kmr/feat/Voice.html">kmr</a>]
+
 [<a href="../../ko/feat/Voice.html">ko</a>]
+
+[<a href="../../la/feat/Voice.html">la</a>]
+
+[<a href="../../lv/feat/Voice.html">lv</a>]
+
+[<a href="../../mr/feat/Voice.html">mr</a>]
+
+[<a href="../../nl/feat/Voice.html">nl</a>]
+
+[<a href="../../no/feat/Voice.html">no</a>]
+
+[<a href="../../pl/feat/Voice.html">pl</a>]
+
+[<a href="../../pt/feat/Voice.html">pt</a>]
+
+[<a href="../../ro/feat/Voice.html">ro</a>]
+
+[<a href="../../ru/feat/Voice.html">ru</a>]
+
+[<a href="../../sa/feat/Voice.html">sa</a>]
+
+[<a href="../../sk/feat/Voice.html">sk</a>]
+
+[<a href="../../sla/feat/Voice.html">sla</a>]
+
+[<a href="../../so/feat/Voice.html">so</a>]
+
+[<a href="../../sr/feat/Voice.html">sr</a>]
 
 [<a href="../../sv/feat/Voice.html">sv</a>]
 
+[<a href="../../swl/feat/Voice.html">swl</a>]
+
+[<a href="../../ta/feat/Voice.html">ta</a>]
+
+[<a href="../../tr/feat/Voice.html">tr</a>]
+
 [<a href="../../u/feat/Voice.html">u</a>]
+
+[<a href="../../ug/feat/Voice.html">ug</a>]
+
+[<a href="../../uk/feat/Voice.html">uk</a>]
+
+[<a href="../../ur/feat/Voice.html">ur</a>]
+
+[<a href="../../urj/feat/Voice.html">urj</a>]
+
+[<a href="../../vi/feat/Voice.html">vi</a>]
+
+[<a href="../../yue/feat/Voice.html">yue</a>]
+
+[<a href="../../zh/feat/Voice.html">zh</a>]
 
 
 

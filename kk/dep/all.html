@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-kk">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-kk">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -67,7 +84,7 @@ in two places.</p>
 	  <td><strike>csubjpass</strike></td>
 	</tr>
 	<tr>
-	  <td><a>dobj</a></td>
+	  <td><a>obj</a></td>
 	  <td><a>ccomp</a></td>
 	  <td><a>xcomp</a></td>
 	</tr>
@@ -160,11 +177,11 @@ in two places.</p>
 	<tr><td colspan="3"><strong>Compounding and unanalyzed</strong></td></tr>
 	<tr>
 	  <td><a>compound</a></td>
-	  <td><a>mwe</a></td>
+	  <td><a>fixed</a></td>
 	  <td><a>goeswith</a></td>
 	</tr>
 	<tr>
-	  <td><a>name</a></td>
+	  <td><a>flat</a></td>
 	  <td><a>foreign</a></td>
 	</tr>
       </table>
@@ -201,7 +218,7 @@ in two places.</p>
 	<tr>
 	  <td><a>list</a></td>
 	  <td><a>parataxis</a></td>
-	  <td><a>remnant</a></td>
+	  <td><a>orphan</a></td>
 	</tr>
 	<tr>
 	  <td><a>dislocated</a></td>
@@ -281,7 +298,7 @@ advmod(болса-8, да-9)
 
 <p>Secondary predication:</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/acl.md" target="#">edit acl</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/acl.md" target="#">edit acl</a></p>
 
 <p><a id="al-kk-dep/advcl" class="al-dest"></a></p>
 <h2><code>advcl</code>: adverbial clause modifier</h2>
@@ -300,7 +317,7 @@ subj(қарады-6, Айгүл-1)
 obj(қарады-6, айналасына-5)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/advcl.md" target="#">edit advcl</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/advcl.md" target="#">edit advcl</a></p>
 
 <p><a id="al-kk-dep/advmod" class="al-dest"></a></p>
 <h2><code>advmod</code>: adverb modifier</h2>
@@ -327,7 +344,7 @@ cop(суық-4, еді-5)
 
 <p>Note that adjectives used adverbially are also given this relation.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/advmod.md" target="#">edit advmod</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/advmod.md" target="#">edit advmod</a></p>
 
 <p><a id="al-kk-dep/amod" class="al-dest"></a></p>
 <h2><code>amod</code>: adjectival modifier</h2>
@@ -364,7 +381,7 @@ nmod(ойнайды-8, бақшада-6)
 subj(ойнайды-8, Олар-1)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/amod.md" target="#">edit amod</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/amod.md" target="#">edit amod</a></p>
 
 <p><a id="al-kk-dep/appos" class="al-dest"></a></p>
 <h2><code>appos</code>: apposition</h2>
@@ -381,7 +398,7 @@ nsubj(келе-7, Олар-1)
 
 <!-- more examples -->
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/appos.md" target="#">edit appos</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/appos.md" target="#">edit appos</a></p>
 
 <p><a id="al-kk-dep/aux" class="al-dest"></a></p>
 <h2><code>aux</code>: auxiliary</h2>
@@ -427,7 +444,7 @@ conj(Азамат-3, пен-4)
 ccomp(қарап-7, ойнағанына-6)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/aux_.md" target="#">edit aux</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/aux_.md" target="#">edit aux</a></p>
 
 <p><a id="al-kk-dep/auxpass" class="al-dest"></a></p>
 <h2><code>auxpass</code>: passive auxiliary</h2>
@@ -435,7 +452,7 @@ ccomp(қарап-7, ойнағанына-6)
 <p>This document is a placeholder for the language-specific documentation
 for <code>auxpass</code>.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/auxpass.md" target="#">edit auxpass</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/auxpass.md" target="#">edit auxpass</a></p>
 
 <p><a id="al-kk-dep/case" class="al-dest"></a></p>
 <h2><code>case</code>: case marking</h2>
@@ -473,7 +490,7 @@ punct(басып-5, .-7)
 
 <!-- TODO: @case with verbal nouns -->
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/case.md" target="#">edit case</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/case.md" target="#">edit case</a></p>
 
 <p><a id="al-kk-dep/cc" class="al-dest"></a></p>
 <h2><code>cc</code>: coordinating conjunction</h2>
@@ -494,7 +511,7 @@ nmod(барды-9, Ресейге-8)
 
 <p>Note: Coordination directionality is under discussion.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/cc.md" target="#">edit cc</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/cc.md" target="#">edit cc</a></p>
 
 <p><a id="al-kk-dep/ccomp" class="al-dest"></a></p>
 <h2><code>ccomp</code>: clausal complement</h2>
@@ -542,13 +559,13 @@ nmod(шық-3, Төрге-2)
 punct(демепті-10, .-11)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/ccomp.md" target="#">edit ccomp</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/ccomp.md" target="#">edit ccomp</a></p>
 
 <p><a id="al-kk-dep/compound" class="al-dest"></a></p>
 <h2><code>compound</code>: compound</h2>
 
 <p><code>compound</code> is one of the three UD relations UD for compounding,
-together with <a href="">mwe</a> and <a href="">name</a>.</p>
+together with <a href="">fixed</a> and <a href="">flat</a>.</p>
 
 <p>Nouns should modify appropriate noun in the compound in order to respect the branching structure.</p>
 
@@ -581,7 +598,7 @@ compound(миллиард-6, 16,3-5)
 punct(түседі-9, .-10)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/compound.md" target="#">edit compound</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/compound.md" target="#">edit compound</a></p>
 
 <p><a id="al-kk-dep/conj" class="al-dest"></a></p>
 <h2><code>conj</code>: coordinated element</h2>
@@ -608,7 +625,7 @@ nmod(барды-9, Ресейге-8)
 
 <p>Note: Coordination directionality is under discussion.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/conj.md" target="#">edit conj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/conj.md" target="#">edit conj</a></p>
 
 <p><a id="al-kk-dep/cop" class="al-dest"></a></p>
 <h2><code>cop</code>: copula</h2>
@@ -667,7 +684,7 @@ cop(суық-4, еді-5)
 
 <p><em>Warning: DRAFT</em></p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/cop.md" target="#">edit cop</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/cop.md" target="#">edit cop</a></p>
 
 <p><a id="al-kk-dep/csubj" class="al-dest"></a></p>
 <h2><code>csubj</code>: clausal subject</h2>
@@ -680,7 +697,7 @@ csubj(алды-9, қашау-6)
 dobj(алды-9, орын-8)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/csubj.md" target="#">edit csubj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/csubj.md" target="#">edit csubj</a></p>
 
 <p><a id="al-kk-dep/dep" class="al-dest"></a></p>
 <h2><code>dep</code>: unspecified dependency</h2>
@@ -688,7 +705,7 @@ dobj(алды-9, орын-8)
 <p>This document is a placeholder for the language-specific documentation
 for <code>dep</code>.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/dep.md" target="#">edit dep</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/dep.md" target="#">edit dep</a></p>
 
 <p><a id="al-kk-dep/det" class="al-dest"></a></p>
 <h2><code>det</code>: determiner</h2>
@@ -714,7 +731,7 @@ obj(жақсы_көресің-3, кітапты-2)
 det(шығыстарды-2, Барлық-1)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/det.md" target="#">edit det</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/det.md" target="#">edit det</a></p>
 
 <p><a id="al-kk-dep/discourse" class="al-dest"></a></p>
 <h2><code>discourse</code>: discourse element</h2>
@@ -742,7 +759,7 @@ nsubj(бар-4, күшігі-3)
 
 <!-- TODO: more modals -->
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/discourse.md" target="#">edit discourse</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/discourse.md" target="#">edit discourse</a></p>
 
 <p><a id="al-kk-dep/dislocated" class="al-dest"></a></p>
 <h2><code>dislocated</code>: dislocated elements</h2>
@@ -750,12 +767,12 @@ nsubj(бар-4, күшігі-3)
 <p>This document is a placeholder for the language-specific documentation
 for <code>dislocated</code>.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/dislocated.md" target="#">edit dislocated</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/dislocated.md" target="#">edit dislocated</a></p>
 
 <p><a id="al-kk-dep/dobj" class="al-dest"></a></p>
 <h2><code>dobj</code>: direct object</h2>
 
-<p>The dependency type <code>dobj</code> is used for (nominal) direct objects of the
+<p>The dependency type <code>obj</code> is used for (nominal) direct objects of the
 verb.</p>
 
 <p>Direct objects are typically in “nominative” (unmarked, indefinite
@@ -784,7 +801,7 @@ nsubj(қарайды-5, Айгүл-1)
 punct(қарайды-5, .-6)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/dobj.md" target="#">edit dobj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/obj.md" target="#">edit dobj</a></p>
 
 <p><a id="al-kk-dep/expl" class="al-dest"></a></p>
 <h2><code>expl</code>: expletive</h2>
@@ -792,7 +809,37 @@ punct(қарайды-5, .-6)
 <p>This document is a placeholder for the language-specific documentation
 for <code>expl</code>.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/expl.md" target="#">edit expl</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/expl.md" target="#">edit expl</a></p>
+
+<p><a id="al-kk-dep/fixed" class="al-dest"></a></p>
+<h2><code>fixed</code>: multi-word expression</h2>
+
+<p>This document is a placeholder for the language-specific documentation
+for <code>fixed</code>.</p>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/fixed.md" target="#">edit fixed</a></p>
+
+<p><a id="al-kk-dep/flat" class="al-dest"></a></p>
+<h2><code>flat</code>: name</h2>
+
+<p>Proper names constituted of more than one word are annotated using the dependency type <code>flat</code>. The last (rightmost) word is the head, and the other words are direct dependents of the head. The last word is chosen to be the head because in Kazakh the last word carries the inflectional information of the whole structure.</p>
+
+<p>The <code>flat</code> dependency relation is used in cases where the multi-word name does not have an obvious internal syntactic structure, as is the case with for instance names of people (**).</p>
+
+<p>If a name has an obvious internal structure, as is often the case in names of books and movies for instance, this structure is marked instead.</p>
+
+<pre><code class="language-sdparse">Соғыстан кейін Федор Федорович Қарағандыда тұрды . \n War-from after Fëdor Fëdorovič Qarağandı-in stood .
+name(Федорович-4, Федор-3)
+nsubj(тұрды-6, Федорович-4)
+</code></pre>
+
+<h2 id="diffs">Diffs</h2>
+
+<p>Contrary to the general UD definition of <a href="">u-dep/name</a>, in
+UD Kazakh the last word of the multi-word name expression is
+considered the head.</p>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/flat.md" target="#">edit flat</a></p>
 
 <p><a id="al-kk-dep/foreign" class="al-dest"></a></p>
 <h2><code>foreign</code>: foreign words</h2>
@@ -800,7 +847,7 @@ for <code>expl</code>.</p>
 <p>This document is a placeholder for the language-specific documentation
 for <code>foreign</code>.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/foreign.md" target="#">edit foreign</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/foreign.md" target="#">edit foreign</a></p>
 
 <p><a id="al-kk-dep/goeswith" class="al-dest"></a></p>
 <h2><code>goeswith</code>: goes with</h2>
@@ -808,13 +855,13 @@ for <code>foreign</code>.</p>
 <p>This document is a placeholder for the language-specific documentation
 for <code>goeswith</code>.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/goeswith.md" target="#">edit goeswith</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/goeswith.md" target="#">edit goeswith</a></p>
 
 <p><a id="al-kk-dep/iobj" class="al-dest"></a></p>
 <h2><code>iobj</code>: indirect object</h2>
 
 <p>The indirect object of a verb is any nominal phrase that is a core
-argument of the verb but is not its subject or <a href="dobj">direct object</a>.
+argument of the verb but is not its subject or <a href="obj">direct object</a>.
 The prototypical example is the recipient of ditransitive verbs of
 exchange:</p>
 
@@ -826,7 +873,7 @@ obj(етті-11, әсер-10)
 <p><em>Note:</em> Discussion of what constitutes a core argument in Kazakh is ongoing. The <code>iobj</code> relation will
 probably be discarded in favour of subcategorising <code>nmod</code>.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/iobj.md" target="#">edit iobj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/iobj.md" target="#">edit iobj</a></p>
 
 <p><a id="al-kk-dep/list" class="al-dest"></a></p>
 <h2><code>list</code>: list</h2>
@@ -834,7 +881,7 @@ probably be discarded in favour of subcategorising <code>nmod</code>.</p>
 <p>This document is a placeholder for the language-specific documentation
 for <code>list</code>.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/list.md" target="#">edit list</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/list.md" target="#">edit list</a></p>
 
 <p><a id="al-kk-dep/mark" class="al-dest"></a></p>
 <h2><code>mark</code>: marker</h2>
@@ -859,44 +906,14 @@ subj(жауса-4, жаңбыр-3)
 <em>complementiser</em> appearing in most clausal complements, where the head
 of the dependency is the main verb of the subordinate clause.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/mark.md" target="#">edit mark</a></p>
-
-<p><a id="al-kk-dep/mwe" class="al-dest"></a></p>
-<h2><code>mwe</code>: multi-word expression</h2>
-
-<p>This document is a placeholder for the language-specific documentation
-for <code>mwe</code>.</p>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/mwe.md" target="#">edit mwe</a></p>
-
-<p><a id="al-kk-dep/name" class="al-dest"></a></p>
-<h2><code>name</code>: name</h2>
-
-<p>Proper names constituted of more than one word are annotated using the dependency type <code>name</code>. The last (rightmost) word is the head, and the other words are direct dependents of the head. The last word is chosen to be the head because in Kazakh the last word carries the inflectional information of the whole structure.</p>
-
-<p>The <code>name</code> dependency relation is used in cases where the multi-word name does not have an obvious internal syntactic structure, as is the case with for instance names of people (**).</p>
-
-<p>If a name has an obvious internal structure, as is often the case in names of books and movies for instance, this structure is marked instead.</p>
-
-<pre><code class="language-sdparse">Соғыстан кейін Федор Федорович Қарағандыда тұрды . \n War-from after Fëdor Fëdorovič Qarağandı-in stood .
-name(Федорович-4, Федор-3)
-nsubj(тұрды-6, Федорович-4)
-</code></pre>
-
-<h2 id="diffs">Diffs</h2>
-
-<p>Contrary to the general UD definition of <a href="">u-dep/name</a>, in
-UD Kazakh the last word of the multi-word name expression is
-considered the head.</p>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/name.md" target="#">edit name</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/mark.md" target="#">edit mark</a></p>
 
 <p><a id="al-kk-dep/neg" class="al-dest"></a></p>
 <h2><code>neg</code>: negation modifier</h2>
 
 <p>The <code>neg</code> relation is not used in Kazakh.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/neg.md" target="#">edit neg</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/neg.md" target="#">edit neg</a></p>
 
 <p><a id="al-kk-dep/nmod" class="al-dest"></a></p>
 <h2><code>nmod</code>: nominal modifier</h2>
@@ -931,7 +948,7 @@ obj(тастады-7, экономикасын-5)
 
 <p>Nouns in ablative case which depend on adjectives as object of comparison get <code>nmod:comp</code>:</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/nmod.md" target="#">edit nmod</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/nmod.md" target="#">edit nmod</a></p>
 
 <p><a id="al-kk-dep/nmod:comp" class="al-dest"></a></p>
 <h2><code>nmod:comp</code>: object of comparison</h2>
@@ -939,7 +956,7 @@ obj(тастады-7, экономикасын-5)
 <p>We use the <code>nmod:comp</code> relation for the comparator in comparison constructions like “X is bigger 
 than Y”, in Turkic, the “than Y” is in the ablative case and this depends on the adjective X.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/nmod-comp.md" target="#">edit nmod:comp</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/nmod-comp.md" target="#">edit nmod:comp</a></p>
 
 <p><a id="al-kk-dep/nmod:poss" class="al-dest"></a></p>
 <h2><code>nmod:poss</code>: nmod:poss</h2>
@@ -947,7 +964,7 @@ than Y”, in Turkic, the “than Y” is in the ablative case and this depends 
 <p>This document is a placeholder for the language-specific documentation
 for <code>nmod:poss</code>.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/nmod-poss.md" target="#">edit nmod:poss</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/nmod-poss.md" target="#">edit nmod:poss</a></p>
 
 <p><a id="al-kk-dep/nsubj" class="al-dest"></a></p>
 <h2><code>nsubj</code>: nominal subject</h2>
@@ -979,7 +996,7 @@ amod(түс-3, жылы-2)
 punct(түс-3, .-4)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/nsubj.md" target="#">edit nsubj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/nsubj.md" target="#">edit nsubj</a></p>
 
 <p><a id="al-kk-dep/nummod" class="al-dest"></a></p>
 <h2><code>nummod</code>: numeric modifier</h2>
@@ -1002,7 +1019,25 @@ amod(ел-9, бесінші-8)
 nummod(күн-4, үш-3)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/nummod.md" target="#">edit nummod</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/nummod.md" target="#">edit nummod</a></p>
+
+<p><a id="al-kk-dep/orphan" class="al-dest"></a></p>
+<h2><code>orphan</code>: remnant in ellipsis</h2>
+
+<p>The <code>orphan</code> relation is used to provide a treatment of ellipsis (in
+the case of gapping and stripping, where a predicational or verbal
+head gets elided). In particular, <code>orphan</code> aims to provide analyses
+that do not postulate empty nodes.</p>
+
+<pre><code class="language-sdparse">Ашылу матчы Сан-Паулуда , ал финалы Рио-де-Жанейрода орын алды . \n Opening match São-Paulo-in , and final Rio-de-Janeiro-in place took .
+remnant(Рио-де-Жанейрода-7, Сан-Паулуда-3)
+remnant(финалы-6 ,матчы-2)
+nmod(алды-9, Рио-де-Жанейрода-7)
+nsubj(алды-9, финалы-6)
+nmod(матчы-2, Ашылу-1)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/orphan.md" target="#">edit orphan</a></p>
 
 <p><a id="al-kk-dep/parataxis" class="al-dest"></a></p>
 <h2><code>parataxis</code>: parataxis</h2>
@@ -1016,7 +1051,7 @@ Also parenthetical and interjected clauses can receive the <code>parataxis</code
 parataxis(ойнайды-12, көреді-6)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/parataxis.md" target="#">edit parataxis</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/parataxis.md" target="#">edit parataxis</a></p>
 
 <p><a id="al-kk-dep/punct" class="al-dest"></a></p>
 <h2><code>punct</code>: punctuation</h2>
@@ -1045,25 +1080,7 @@ nmod(барды-9, Ресейге-8)
 
 <p>The punctuation attaches to the head of the adverbial phrase.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/punct.md" target="#">edit punct</a></p>
-
-<p><a id="al-kk-dep/remnant" class="al-dest"></a></p>
-<h2><code>remnant</code>: remnant in ellipsis</h2>
-
-<p>The <code>remnant</code> relation is used to provide a treatment of ellipsis (in
-the case of gapping and stripping, where a predicational or verbal
-head gets elided). In particular, <code>remnant</code> aims to provide analyses
-that do not postulate empty nodes.</p>
-
-<pre><code class="language-sdparse">Ашылу матчы Сан-Паулуда , ал финалы Рио-де-Жанейрода орын алды . \n Opening match São-Paulo-in , and final Rio-de-Janeiro-in place took .
-remnant(Рио-де-Жанейрода-7, Сан-Паулуда-3)
-remnant(финалы-6 ,матчы-2)
-nmod(алды-9, Рио-де-Жанейрода-7)
-nsubj(алды-9, финалы-6)
-nmod(матчы-2, Ашылу-1)
-</code></pre>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/remnant.md" target="#">edit remnant</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/punct.md" target="#">edit punct</a></p>
 
 <p><a id="al-kk-dep/reparandum" class="al-dest"></a></p>
 <h2><code>reparandum</code>: overridden disfluency</h2>
@@ -1071,7 +1088,7 @@ nmod(матчы-2, Ашылу-1)
 <p>This document is a placeholder for the language-specific documentation
 for <code>reparandum</code>.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/reparandum.md" target="#">edit reparandum</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/reparandum.md" target="#">edit reparandum</a></p>
 
 <p><a id="al-kk-dep/root" class="al-dest"></a></p>
 <h2><code>root</code>: root</h2>
@@ -1087,7 +1104,7 @@ punct(жүгірді-5, .-6)
 nmod(жүгірді-5, ағашқа-3)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/root.md" target="#">edit root</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/root.md" target="#">edit root</a></p>
 
 <p><a id="al-kk-dep/vocative" class="al-dest"></a></p>
 <h2><code>vocative</code>: vocative modifier</h2>
@@ -1104,7 +1121,7 @@ discourse(айта-5, Жоқ-1)
 aux(айта-5, алмаймын-6)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/vocative.md" target="#">edit vocative</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/vocative.md" target="#">edit vocative</a></p>
 
 <p><a id="al-kk-dep/xcomp" class="al-dest"></a></p>
 <h2><code>xcomp</code>: open clausal complement</h2>
@@ -1123,7 +1140,7 @@ dobj(табуға-3, Азаматты-2)
 <p><em>Note:</em> The existence of <code>xcomp</code> is uncertain in Kazakh, the vast majority of clausal
 complements are not controlled and should get <code>ccomp</code> instead.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-dep/xcomp.md" target="#">edit xcomp</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/xcomp.md" target="#">edit xcomp</a></p>
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-sl">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/sl/dep">sl/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_sl-dep/compound.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sl">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/sl/dep">sl/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-dep/compound.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -56,139 +73,30 @@ for <code>compound</code>.</p>
 
 
 
-
-<hr />
-
-<h2 id="treebank-statistics-udslovenian">Treebank Statistics (UD_Slovenian)</h2>
-
-<p>This relation is universal.</p>
-
-<p>114 nodes (0%) are attached to their parents as <code>compound</code>.</p>
-
-<p>107 instances of <code>compound</code> (94%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.07894736842105.</p>
-
-<p>The following 2 pairs of parts of speech are connected with <code>compound</code>: <a href="">sl-pos/NOUN</a>-<a href="">sl-pos/NUM</a> (80; 70% instances), <a href="">sl-pos/NUM</a>-<a href="">sl-pos/NUM</a> (34; 30% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 8	bgColor:blue
-# visual-style 8	fgColor:white
-# visual-style 8 6 compound	color:blue
-1	Stala	stati	VERB	Vmpp-sf	Aspect=Imp|Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	Dep=0|Rel=Root
-2	je	biti	AUX	Va-r3s-n	Mood=Ind|Negative=Pos|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	aux	_	Dep=1|Rel=PPart
-3	milijardo	milijarda	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	1	nmod	_	Dep=1|Rel=AdvM
-4	tolarjev	tolar	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	3	nmod	_	Dep=3|Rel=Atr
-5	in	in	CONJ	Cc	_	3	cc	_	Dep=8|Rel=Conj
-6	dvesto	dvesto	NUM	Mlc-pa	Case=Acc|Number=Plur|NumForm=Word|NumType=Card	8	compound	_	Dep=8|Rel=Atr
-7	petdeset	petdeset	NUM	Mlc-pa	Case=Acc|Number=Plur|NumForm=Word|NumType=Card	8	compound	_	Dep=8|Rel=Atr
-8	milijonov	milijon	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	3	conj	_	SpaceAfter=No|Dep=3|Rel=Coord
-9	.	.	PUNCT	Z	_	1	punct	_	SpaceAfter=No|Dep=0|Rel=Root
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
-# visual-style 8	bgColor:blue
-# visual-style 8	fgColor:white
-# visual-style 8 7 compound	color:blue
-1	Lastnik	lastnik	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	4	nsubj	_	Dep=4|Rel=Sb
-2	iz	iz	ADP	Sg	Case=Gen	3	case	_	Dep=3|Rel=Atr
-3	Ljubljane	Ljubljana	PROPN	Npfsg	Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	Dep=1|Rel=Atr
-4	ima	imeti	VERB	Vmpr3s-n	Aspect=Imp|Mood=Ind|Negative=Pos|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Dep=0|Rel=Root
-5	za	za	ADP	Sa	Case=Acc	9	case	_	Dep=9|Rel=Atr
-6	približno	približno	ADV	Rgp	Degree=Pos	7	advmod	_	Dep=7|Rel=Atr
-7	300	300	NUM	Mdc	NumForm=Digit|NumType=Card	8	compound	_	Dep=8|Rel=Atr
-8	tisoč	tisoč	NUM	Mlc-pa	Case=Acc|Number=Plur|NumForm=Word|NumType=Card	9	nummod	_	Dep=9|Rel=Atr
-9	tolarjev	tolar	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	4	xcomp	_	Dep=4|Rel=Obj
-10	škode	škoda	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	9	nmod	_	SpaceAfter=No|Dep=9|Rel=Atr
-11	.	.	PUNCT	Z	_	4	punct	_	SpaceAfter=No|Dep=0|Rel=Root
-
-</code></pre>
-
-<hr />
-
-<h2 id="treebank-statistics-udslovenian-sst">Treebank Statistics (UD_Slovenian-SST)</h2>
-
-<p>This relation is universal.</p>
-
-<p>61 nodes (0%) are attached to their parents as <code>compound</code>.</p>
-
-<p>40 instances of <code>compound</code> (66%) are left-to-right (parent precedes child).
-Average distance between parent and child is 1.85245901639344.</p>
-
-<p>The following 5 pairs of parts of speech are connected with <code>compound</code>: <a href="">sl-pos/NUM</a>-<a href="">sl-pos/NUM</a> (48; 79% instances), <a href="">sl-pos/NUM</a>-<a href="">sl-pos/PRON</a> (6; 10% instances), <a href="">sl-pos/PRON</a>-<a href="">sl-pos/NUM</a> (3; 5% instances), <a href="">sl-pos/NOUN</a>-<a href="">sl-pos/NUM</a> (2; 3% instances), <a href="">sl-pos/PRON</a>-<a href="">sl-pos/PRON</a> (2; 3% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 1 2 compound	color:blue
-1	sto	sto	NUM	Mlc-pa	Case=Acc|Number=Plur|NumForm=Word|NumType=Card	5	nummod	_	word=sto|msd=Kbg-mt
-2	šestdeset	šestdeset	NUM	Mlc-pa	Case=Acc|Number=Plur|NumForm=Word|NumType=Card	1	compound	_	word=šestdeset|msd=Kbg-mt
-3	sto	sto	NUM	Mlc-pa	Case=Acc|Number=Plur|NumForm=Word|NumType=Card	1	conj	_	word=sto|msd=Kbg-mt
-4	sedemdeset	sedemdeset	NUM	Mlc-pa	Case=Acc|Number=Plur|NumForm=Word|NumType=Card	3	compound	_	word=sendeset|msd=Kbg-mt
-5	glav	glava	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	0	root	_	word=glav|msd=Sozmr
-6	živine	živina	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	5	nmod	_	word=žvine|msd=Sozer
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 13	bgColor:blue
-# visual-style 13	fgColor:white
-# visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
-# visual-style 7 13 compound	color:blue
-1	tom	Tom	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	word=Tom|msd=Slmei
-2	jones	Jones	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	1	name	_	word=Džovns|msd=Slmei
-3	quincy	Quincy	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	1	conj	_	word=Kvinsi|msd=Slmei
-4	jones	Jones	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	3	name	_	word=Džovns|msd=Slmei
-5	tom	Tom	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	1	conj	_	word=Tom|msd=Slmei
-6	petty	Petty	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	5	name	_	word=Peti|msd=Slmei
-7	šest	šest	NUM	Mlc-pn	Case=Nom|Number=Plur|NumForm=Word|NumType=Card	1	parataxis	_	word=šest|msd=Kbg-mi
-8	šest	šest	NUM	Mlc-pn	Case=Nom|Number=Plur|NumForm=Word|NumType=Card	7	compound	_	word=šest|msd=Kbg-mi
-9	osem	osem	NUM	Mlc-pn	Case=Nom|Number=Plur|NumForm=Word|NumType=Card	7	compound	_	word=osem|msd=Kbg-mi
-10	nič	nič	PRON	Pz-nsn	Case=Nom|Gender=Neut|Number=Sing|PronType=Neg	7	compound	_	word=nič|msd=Zl-sei
-11	osem	osem	NUM	Mlc-pn	Case=Nom|Number=Plur|NumForm=Word|NumType=Card	7	compound	_	word=osem|msd=Kbg-mi
-12	nič	nič	PRON	Pz-nsn	Case=Nom|Gender=Neut|Number=Sing|PronType=Neg	7	compound	_	word=nič|msd=Zl-sei
-13	nič	nič	PRON	Pz-nsn	Case=Nom|Gender=Neut|Number=Sing|PronType=Neg	7	compound	_	word=nič|msd=Zl-sei
-14	pokličite	poklicati	VERB	Vmem2p	Aspect=Perf|Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	1	parataxis	_	word=pokličite|msd=Ggdvdm
-15	zdaj	zdaj	ADV	Rgp	Degree=Pos	14	advmod	_	word=zdaj|msd=Rsn
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 1 6 compound	color:blue
-1	nič	nič	PRON	Pz-nsn	Case=Nom|Gender=Neut|Number=Sing|PronType=Neg	0	root	_	word=nič|msd=Zl-sei
-2	osem	osem	NUM	Mlc-pn	Case=Nom|Number=Plur|NumForm=Word|NumType=Card	1	compound	_	word=osem|msd=Kbg-mi
-3	nič	nič	PRON	Pz-nsn	Case=Nom|Gender=Neut|Number=Sing|PronType=Neg	1	compound	_	word=nič|msd=Zl-sei
-4	trinajst	trinajst	NUM	Mlc-pn	Case=Nom|Number=Plur|NumForm=Word|NumType=Card	1	compound	_	word=trinajst|msd=Kbg-mi
-5	nič	nič	PRON	Pz-nsn	Case=Nom|Gender=Neut|Number=Sing|PronType=Neg	1	compound	_	word=nič|msd=Zl-sei
-6	ena	en	NUM	Mlpfsn	Case=Nom|Gender=Fem|Number=Sing|NumForm=Word|NumType=Card	1	compound	_	word=ena|msd=Kbzzei
-7	je	biti	VERB	Va-r3s-n	Mood=Ind|Negative=Pos|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	word=je|msd=Gp-ste-n
-8	naša	naš	DET	Ps1fsnp	Case=Nom|Gender=Fem|Number=Sing|Number[psor]=Plur|Person=1|Poss=Yes|PronType=Prs	11	det	_	word=naša|msd=Zspzeim
-9	brezplačna	brezplačen	ADJ	Agpfsn	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	11	amod	_	word=brezplačna|msd=Ppnzei
-10	telefonska	telefonski	ADJ	Agpfsn	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	11	amod	_	word=telefonska|msd=Ppnzei
-11	številka	številka	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	1	nsubj	_	word=številka|msd=Sozei
-12	kaj	kaj	PRON	Pq-nsa	Case=Acc|Gender=Neut|Number=Sing|PronType=Int	13	dobj	_	word=kaj|msd=Zv-set
-13	pravite	praviti	VERB	Vmbr2p	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	1	parataxis	_	word=pravite|msd=Ggvsdm
-14	?	?	PUNCT	Z	_	13	punct	_	word=?|msd=U
-
-</code></pre>
-
-
-
-
 <!-- "in other languages" links -->
 <hr/>
 
 compound in other languages:
 
+[<a href="../../am/dep/compound.html">am</a>]
+
+[<a href="../../ar/dep/compound.html">ar</a>]
+
 [<a href="../../bg/dep/compound.html">bg</a>]
 
+[<a href="../../bxr/dep/compound.html">bxr</a>]
+
+[<a href="../../ca/dep/compound.html">ca</a>]
+
+[<a href="../../ckb/dep/compound.html">ckb</a>]
+
+[<a href="../../cop/dep/compound.html">cop</a>]
+
 [<a href="../../cs/dep/compound.html">cs</a>]
+
+[<a href="../../cu/dep/compound.html">cu</a>]
+
+[<a href="../../da/dep/compound.html">da</a>]
 
 [<a href="../../de/dep/compound.html">de</a>]
 
@@ -198,29 +106,99 @@ compound in other languages:
 
 [<a href="../../es/dep/compound.html">es</a>]
 
+[<a href="../../et/dep/compound.html">et</a>]
+
 [<a href="../../eu/dep/compound.html">eu</a>]
 
 [<a href="../../fa/dep/compound.html">fa</a>]
 
 [<a href="../../fi/dep/compound.html">fi</a>]
 
+[<a href="../../fo/dep/compound.html">fo</a>]
+
 [<a href="../../fr/dep/compound.html">fr</a>]
 
 [<a href="../../ga/dep/compound.html">ga</a>]
 
+[<a href="../../gl/dep/compound.html">gl</a>]
+
+[<a href="../../got/dep/compound.html">got</a>]
+
+[<a href="../../grc/dep/compound.html">grc</a>]
+
 [<a href="../../he/dep/compound.html">he</a>]
 
+[<a href="../../hi/dep/compound.html">hi</a>]
+
+[<a href="../../hr/dep/compound.html">hr</a>]
+
 [<a href="../../hu/dep/compound.html">hu</a>]
+
+[<a href="../../id/dep/compound.html">id</a>]
 
 [<a href="../../it/dep/compound.html">it</a>]
 
 [<a href="../../ja/dep/compound.html">ja</a>]
 
+[<a href="../../kk/dep/compound.html">kk</a>]
+
+[<a href="../../kmr/dep/compound.html">kmr</a>]
+
 [<a href="../../ko/dep/compound.html">ko</a>]
+
+[<a href="../../la/dep/compound.html">la</a>]
+
+[<a href="../../lv/dep/compound.html">lv</a>]
+
+[<a href="../../mr/dep/compound.html">mr</a>]
+
+[<a href="../../nl/dep/compound.html">nl</a>]
+
+[<a href="../../no/dep/compound.html">no</a>]
+
+[<a href="../../pl/dep/compound.html">pl</a>]
+
+[<a href="../../pt/dep/compound.html">pt</a>]
+
+[<a href="../../ro/dep/compound.html">ro</a>]
+
+[<a href="../../ru/dep/compound.html">ru</a>]
+
+[<a href="../../sa/dep/compound.html">sa</a>]
+
+[<a href="../../sk/dep/compound.html">sk</a>]
+
+[<a href="../../sla/dep/compound.html">sla</a>]
+
+[<a href="../../sl/dep/compound.html">sl</a>]
+
+[<a href="../../so/dep/compound.html">so</a>]
+
+[<a href="../../sr/dep/compound.html">sr</a>]
 
 [<a href="../../sv/dep/compound.html">sv</a>]
 
+[<a href="../../swl/dep/compound.html">swl</a>]
+
+[<a href="../../ta/dep/compound.html">ta</a>]
+
+[<a href="../../tr/dep/compound.html">tr</a>]
+
 [<a href="../../u/dep/compound.html">u</a>]
+
+[<a href="../../ug/dep/compound.html">ug</a>]
+
+[<a href="../../uk/dep/compound.html">uk</a>]
+
+[<a href="../../ur/dep/compound.html">ur</a>]
+
+[<a href="../../urj/dep/compound.html">urj</a>]
+
+[<a href="../../vi/dep/compound.html">vi</a>]
+
+[<a href="../../yue/dep/compound.html">yue</a>]
+
+[<a href="../../zh/dep/compound.html">zh</a>]
 
 
 

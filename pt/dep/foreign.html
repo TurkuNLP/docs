@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-pt">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/pt/dep">pt/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/foreign.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-pt">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/pt/dep">pt/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/foreign.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -48,7 +65,7 @@
 <p>We use <code>foreign</code> to label sequences of foreign words. These are given
 a linear analysis: the head is the first token in the foreign phrase.</p>
 
-<p><code>foreign</code> does not apply to loanwords or to foreign <a href="name">names</a>. 
+<p><code>foreign</code> does not apply to loanwords or to foreign <a href="flat">names</a>. 
 It applies to quoted foreign text incorporated in a sentence/discourse
 of the host language (unless we want to and know how to annotate the
 internal structure according to the syntax of the foreign language).</p>
@@ -75,9 +92,25 @@ foreign(c'-4, vie-7)
 
 foreign in other languages:
 
+[<a href="../../am/dep/foreign.html">am</a>]
+
+[<a href="../../ar/dep/foreign.html">ar</a>]
+
 [<a href="../../bg/dep/foreign.html">bg</a>]
 
+[<a href="../../bxr/dep/foreign.html">bxr</a>]
+
+[<a href="../../ca/dep/foreign.html">ca</a>]
+
+[<a href="../../ckb/dep/foreign.html">ckb</a>]
+
+[<a href="../../cop/dep/foreign.html">cop</a>]
+
 [<a href="../../cs/dep/foreign.html">cs</a>]
+
+[<a href="../../cu/dep/foreign.html">cu</a>]
+
+[<a href="../../da/dep/foreign.html">da</a>]
 
 [<a href="../../de/dep/foreign.html">de</a>]
 
@@ -87,29 +120,97 @@ foreign in other languages:
 
 [<a href="../../es/dep/foreign.html">es</a>]
 
+[<a href="../../et/dep/foreign.html">et</a>]
+
 [<a href="../../eu/dep/foreign.html">eu</a>]
 
 [<a href="../../fa/dep/foreign.html">fa</a>]
 
 [<a href="../../fi/dep/foreign.html">fi</a>]
 
+[<a href="../../fo/dep/foreign.html">fo</a>]
+
 [<a href="../../fr/dep/foreign.html">fr</a>]
 
 [<a href="../../ga/dep/foreign.html">ga</a>]
 
+[<a href="../../gl/dep/foreign.html">gl</a>]
+
+[<a href="../../got/dep/foreign.html">got</a>]
+
+[<a href="../../grc/dep/foreign.html">grc</a>]
+
 [<a href="../../he/dep/foreign.html">he</a>]
 
+[<a href="../../hi/dep/foreign.html">hi</a>]
+
+[<a href="../../hr/dep/foreign.html">hr</a>]
+
 [<a href="../../hu/dep/foreign.html">hu</a>]
+
+[<a href="../../id/dep/foreign.html">id</a>]
 
 [<a href="../../it/dep/foreign.html">it</a>]
 
 [<a href="../../ja/dep/foreign.html">ja</a>]
 
+[<a href="../../kk/dep/foreign.html">kk</a>]
+
+[<a href="../../kmr/dep/foreign.html">kmr</a>]
+
 [<a href="../../ko/dep/foreign.html">ko</a>]
+
+[<a href="../../la/dep/foreign.html">la</a>]
+
+[<a href="../../lv/dep/foreign.html">lv</a>]
+
+[<a href="../../mr/dep/foreign.html">mr</a>]
+
+[<a href="../../nl/dep/foreign.html">nl</a>]
+
+[<a href="../../no/dep/foreign.html">no</a>]
+
+[<a href="../../pl/dep/foreign.html">pl</a>]
+
+[<a href="../../pt/dep/foreign.html">pt</a>]
+
+[<a href="../../ro/dep/foreign.html">ro</a>]
+
+[<a href="../../ru/dep/foreign.html">ru</a>]
+
+[<a href="../../sa/dep/foreign.html">sa</a>]
+
+[<a href="../../sk/dep/foreign.html">sk</a>]
+
+[<a href="../../sla/dep/foreign.html">sla</a>]
+
+[<a href="../../sl/dep/foreign.html">sl</a>]
+
+[<a href="../../so/dep/foreign.html">so</a>]
+
+[<a href="../../sr/dep/foreign.html">sr</a>]
 
 [<a href="../../sv/dep/foreign.html">sv</a>]
 
-[<a href="../../u/dep/foreign.html">u</a>]
+[<a href="../../swl/dep/foreign.html">swl</a>]
+
+[<a href="../../ta/dep/foreign.html">ta</a>]
+
+[<a href="../../tr/dep/foreign.html">tr</a>]
+
+[<a href="../../ug/dep/foreign.html">ug</a>]
+
+[<a href="../../uk/dep/foreign.html">uk</a>]
+
+[<a href="../../ur/dep/foreign.html">ur</a>]
+
+[<a href="../../urj/dep/foreign.html">urj</a>]
+
+[<a href="../../vi/dep/foreign.html">vi</a>]
+
+[<a href="../../yue/dep/foreign.html">yue</a>]
+
+[<a href="../../zh/dep/foreign.html">zh</a>]
 
 
 

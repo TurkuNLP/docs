@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-da">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/da/dep">da/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_da-dep/ccomp.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-da">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/da/dep">da/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_da-dep/ccomp.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,12 +80,12 @@ for <code>ccomp</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>595 nodes (1%) are attached to their parents as <code>ccomp</code>.</p>
+<p>518 nodes (1%) are attached to their parents as <code>ccomp</code>.</p>
 
-<p>327 instances of <code>ccomp</code> (55%) are left-to-right (parent precedes child).
-Average distance between parent and child is 10.5294117647059.</p>
+<p>289 instances of <code>ccomp</code> (56%) are left-to-right (parent precedes child).
+Average distance between parent and child is 10.6138996138996.</p>
 
-<p>The following 5 pairs of parts of speech are connected with <code>ccomp</code>: <a href="">da-pos/VERB</a>-<a href="">da-pos/VERB</a> (542; 91% instances), <a href="">da-pos/VERB</a>-<a href="">da-pos/NOUN</a> (38; 6% instances), <a href="">da-pos/NOUN</a>-<a href="">da-pos/VERB</a> (9; 2% instances), <a href="">da-pos/VERB</a>-<a href="">da-pos/PRON</a> (5; 1% instances), <a href="">da-pos/VERB</a>-<a href="">da-pos/PROPN</a> (1; 0% instances).</p>
+<p>The following 7 pairs of parts of speech are connected with <code>ccomp</code>: <a href="">da-pos/VERB</a>-<a href="">da-pos/VERB</a> (469; 91% instances), <a href="">da-pos/VERB</a>-<a href="">da-pos/NOUN</a> (33; 6% instances), <a href="">da-pos/NOUN</a>-<a href="">da-pos/VERB</a> (7; 1% instances), <a href="">da-pos/VERB</a>-<a href="">da-pos/PRON</a> (4; 1% instances), <a href="">da-pos/VERB</a>-<a href="">da-pos/CCONJ</a> (3; 1% instances), <a href="">da-pos/NOUN</a>-<a href="">da-pos/CCONJ</a> (1; 0% instances), <a href="">da-pos/VERB</a>-<a href="">da-pos/PROPN</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 4	bgColor:blue
 # visual-style 4	fgColor:white
@@ -76,16 +93,16 @@ Average distance between parent and child is 10.5294117647059.</p>
 # visual-style 9	fgColor:white
 # visual-style 9 4 ccomp	color:blue
 1	Kelds	Keld	PROPN	_	Case=Gen	2	nmod:poss	_	_
-2	oplæg	oplæg	NOUN	_	Definite=Ind|Gender=Neut|Number=Sing	4	nsubjpass	_	_
-3	blev	blive	AUX	_	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	4	auxpass	_	_
-4	fulgt	følge	VERB	_	Definite=Ind|Number=Sing|Tense=Past|VerbForm=Part,Trans	9	ccomp	_	_
+2	oplæg	oplæg	NOUN	_	Definite=Ind|Gender=Neut|Number=Sing	4	nsubj	_	_
+3	blev	blive	AUX	_	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	fulgt	følge	VERB	_	Definite=Ind|Number=Sing|Tense=Past|VerbForm=Part	9	ccomp	_	_
 5	100	100	NUM	_	NumType=Card	6	nummod	_	_
-6	procent	procent	NOUN	_	Definite=Ind|Gender=Com|Number=Plur	4	nmod	_	_
+6	procent	procent	NOUN	_	Definite=Ind|Gender=Com|Number=Plur	4	obl	_	_
 7	,	,	PUNCT	_	_	4	punct	_	_
 8	"	"	PUNCT	_	_	4	punct	_	_
 9	pointerer	pointere	VERB	_	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 10	Susan	Susan	PROPN	_	_	9	nsubj	_	_
-11	Mackensie	Mackensie	PROPN	_	_	10	name	_	_
+11	Mackensie	Mackensie	PROPN	_	_	10	flat	_	_
 12	.	.	PUNCT	_	_	9	punct	_	_
 
 </code></pre>
@@ -97,9 +114,9 @@ Average distance between parent and child is 10.5294117647059.</p>
 # visual-style 4 10 ccomp	color:blue
 1	Hun	hun	PRON	_	Case=Nom|Gender=Com|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
 2	lod	lade	VERB	_	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
-3	mig	jeg	PRON	_	Case=Acc|Gender=Com|Number=Sing|Person=1|PronType=Prs	2	dobj	_	_
+3	mig	jeg	PRON	_	Case=Acc|Gender=Com|Number=Sing|Person=1|PronType=Prs	2	obj	_	_
 4	tro	tro	VERB	_	VerbForm=Inf|Voice=Act	2	xcomp	_	_
-5	,	,	PUNCT	_	_	10	punct	_	_
+5	,	,	PUNCT	_	_	4	punct	_	_
 6	at	at	SCONJ	_	_	10	mark	_	_
 7	du	du	PRON	_	Case=Nom|Gender=Com|Number=Sing|Person=2|PronType=Prs	10	nsubj	_	_
 8	var	være	AUX	_	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	10	cop	_	_
@@ -109,19 +126,23 @@ Average distance between parent and child is 10.5294117647059.</p>
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 5	bgColor:blue
+<pre><code class="language-conllu"># visual-style 10	bgColor:blue
+# visual-style 10	fgColor:white
+# visual-style 5	bgColor:blue
 # visual-style 5	fgColor:white
-# visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 1 5 ccomp	color:blue
-1	Computermanden	computermand	NOUN	_	Definite=Def|Gender=Com|Number=Sing	0	root	_	_
-2	:	:	PUNCT	_	_	1	punct	_	_
-3	"	"	PUNCT	_	_	5	punct	_	_
-4	Hvorfor	hvorfor	ADV	_	_	5	advmod	_	_
-5	skulle	skulle	VERB	_	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	1	ccomp	_	_
-6	den	den	PRON	_	Case=Acc|Gender=Com|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
-7	det	det	PRON	_	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	5	dobj	_	_
-8	?	?	PUNCT	_	_	5	punct	_	_
+# visual-style 5 10 ccomp	color:blue
+1	De	de	PRON	_	Case=Nom|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
+2	har	have	AUX	_	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	ofte	ofte	ADV	_	Degree=Pos	4	advmod	_	_
+4	stillet	stille	VERB	_	Definite=Ind|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+5	spørgsmålet	spørgsmål	NOUN	_	Definite=Def|Gender=Neut|Number=Sing	4	obj	_	_
+6	:	:	PUNCT	_	_	5	punct	_	_
+7	Hvad	hvad	PRON	_	Number=Sing|PronType=Int,Rel	10	obl	_	_
+8	skal	skulle	AUX	_	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	10	aux	_	_
+9	det	det	PRON	_	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+10	bruges	bruge	VERB	_	VerbForm=Inf|Voice=Pass	5	ccomp	_	_
+11	til	til	ADP	_	AdpType=Prep	7	case	_	_
+12	?	?	PUNCT	_	_	4	punct	_	_
 
 </code></pre>
 
@@ -133,9 +154,25 @@ Average distance between parent and child is 10.5294117647059.</p>
 
 ccomp in other languages:
 
+[<a href="../../am/dep/ccomp.html">am</a>]
+
+[<a href="../../ar/dep/ccomp.html">ar</a>]
+
 [<a href="../../bg/dep/ccomp.html">bg</a>]
 
+[<a href="../../bxr/dep/ccomp.html">bxr</a>]
+
+[<a href="../../ca/dep/ccomp.html">ca</a>]
+
+[<a href="../../ckb/dep/ccomp.html">ckb</a>]
+
+[<a href="../../cop/dep/ccomp.html">cop</a>]
+
 [<a href="../../cs/dep/ccomp.html">cs</a>]
+
+[<a href="../../cu/dep/ccomp.html">cu</a>]
+
+[<a href="../../da/dep/ccomp.html">da</a>]
 
 [<a href="../../de/dep/ccomp.html">de</a>]
 
@@ -145,29 +182,99 @@ ccomp in other languages:
 
 [<a href="../../es/dep/ccomp.html">es</a>]
 
+[<a href="../../et/dep/ccomp.html">et</a>]
+
 [<a href="../../eu/dep/ccomp.html">eu</a>]
 
 [<a href="../../fa/dep/ccomp.html">fa</a>]
 
 [<a href="../../fi/dep/ccomp.html">fi</a>]
 
+[<a href="../../fo/dep/ccomp.html">fo</a>]
+
 [<a href="../../fr/dep/ccomp.html">fr</a>]
 
 [<a href="../../ga/dep/ccomp.html">ga</a>]
 
+[<a href="../../gl/dep/ccomp.html">gl</a>]
+
+[<a href="../../got/dep/ccomp.html">got</a>]
+
+[<a href="../../grc/dep/ccomp.html">grc</a>]
+
 [<a href="../../he/dep/ccomp.html">he</a>]
 
+[<a href="../../hi/dep/ccomp.html">hi</a>]
+
+[<a href="../../hr/dep/ccomp.html">hr</a>]
+
 [<a href="../../hu/dep/ccomp.html">hu</a>]
+
+[<a href="../../id/dep/ccomp.html">id</a>]
 
 [<a href="../../it/dep/ccomp.html">it</a>]
 
 [<a href="../../ja/dep/ccomp.html">ja</a>]
 
+[<a href="../../kk/dep/ccomp.html">kk</a>]
+
+[<a href="../../kmr/dep/ccomp.html">kmr</a>]
+
 [<a href="../../ko/dep/ccomp.html">ko</a>]
+
+[<a href="../../la/dep/ccomp.html">la</a>]
+
+[<a href="../../lv/dep/ccomp.html">lv</a>]
+
+[<a href="../../mr/dep/ccomp.html">mr</a>]
+
+[<a href="../../nl/dep/ccomp.html">nl</a>]
+
+[<a href="../../no/dep/ccomp.html">no</a>]
+
+[<a href="../../pl/dep/ccomp.html">pl</a>]
+
+[<a href="../../pt/dep/ccomp.html">pt</a>]
+
+[<a href="../../ro/dep/ccomp.html">ro</a>]
+
+[<a href="../../ru/dep/ccomp.html">ru</a>]
+
+[<a href="../../sa/dep/ccomp.html">sa</a>]
+
+[<a href="../../sk/dep/ccomp.html">sk</a>]
+
+[<a href="../../sla/dep/ccomp.html">sla</a>]
+
+[<a href="../../sl/dep/ccomp.html">sl</a>]
+
+[<a href="../../so/dep/ccomp.html">so</a>]
+
+[<a href="../../sr/dep/ccomp.html">sr</a>]
 
 [<a href="../../sv/dep/ccomp.html">sv</a>]
 
+[<a href="../../swl/dep/ccomp.html">swl</a>]
+
+[<a href="../../ta/dep/ccomp.html">ta</a>]
+
+[<a href="../../tr/dep/ccomp.html">tr</a>]
+
 [<a href="../../u/dep/ccomp.html">u</a>]
+
+[<a href="../../ug/dep/ccomp.html">ug</a>]
+
+[<a href="../../uk/dep/ccomp.html">uk</a>]
+
+[<a href="../../ur/dep/ccomp.html">ur</a>]
+
+[<a href="../../urj/dep/ccomp.html">urj</a>]
+
+[<a href="../../vi/dep/ccomp.html">vi</a>]
+
+[<a href="../../yue/dep/ccomp.html">yue</a>]
+
+[<a href="../../zh/dep/ccomp.html">zh</a>]
 
 
 

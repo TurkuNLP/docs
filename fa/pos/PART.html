@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-fa">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/fa/pos">fa/pos</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_fa-pos/PART.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-fa">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/fa/pos">fa/pos</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fa-pos/PART.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -61,37 +78,36 @@ for <code>PART</code>.</p>
 
 <h2 id="treebank-statistics-udpersian">Treebank Statistics (UD_Persian)</h2>
 
-<p>There are 2 <code>PART</code> lemmas (0%), 3 <code>PART</code> types (0%) and 2570 <code>PART</code> tokens (2%).
-Out of 15 observed tags, the rank of <code>PART</code> is: 15 in number of lemmas, 15 in number of types and 12 in number of tokens.</p>
+<p>There are 2 <code>PART</code> lemmas (0%), 3 <code>PART</code> types (0%) and 2333 <code>PART</code> tokens (2%).
+Out of 15 observed tags, the rank of <code>PART</code> is: 15 in number of lemmas, 15 in number of types and 13 in number of tokens.</p>
 
 <p>The 10 most frequent <code>PART</code> lemmas: را، رو</p>
 
 <p>The 10 most frequent <code>PART</code> types:  را، رو، و</p>
 
-<p>The 10 most frequent ambiguous lemmas: را (<a href="">PART</a> 2568, <a href="">NOUN</a> 1), رو (<a href="">ADP</a> 105, <a href="">NOUN</a> 55, <a href="">PART</a> 2)</p>
+<p>The 10 most frequent ambiguous lemmas: را (<a href="">PART</a> 2331, <a href="">NOUN</a> 1), رو (<a href="">ADP</a> 97, <a href="">NOUN</a> 49, <a href="">PART</a> 2)</p>
 
-<p>The 10 most frequent ambiguous types:  را (<a href="">PART</a> 2567, <a href="">NOUN</a> 1), رو (<a href="">NOUN</a> 20, <a href="">PART</a> 2), و (<a href="">CONJ</a> 6956, <a href="">X</a> 12, <a href="">SCONJ</a> 2, <a href="">NOUN</a> 2, <a href="">PRON</a> 2, <a href="">PART</a> 1)</p>
+<p>The 10 most frequent ambiguous types:  را (<a href="">PART</a> 2330, <a href="">NOUN</a> 1), رو (<a href="">NOUN</a> 16, <a href="">PART</a> 2), و (<a href="">CCONJ</a> 6252, <a href="">X</a> 12, <a href="">SCONJ</a> 2, <a href="">NOUN</a> 2, <a href="">PART</a> 1)</p>
 
 <ul>
   <li>را
     <ul>
-      <li><a href="">PART</a> 2567: خواسته‌های مردم <b>را</b> به گوش حکومت می‌رسانند .</li>
+      <li><a href="">PART</a> 2330: خواسته‌های مردم <b>را</b> به گوش حکومت می‌رسانند .</li>
       <li><a href="">NOUN</a> 1: همه این‌ها <b>را</b> می‌بینید ، برای ش ملموس و برای ش محسوستر است و این که احساس نمی‌کند داریم گول ش می‌زنیم .</li>
     </ul>
   </li>
   <li>رو
     <ul>
-      <li><a href="">NOUN</a> 20: شاید با یک لکه نور پشت آن زندان ، این قدر قضیه <b>رو</b> نبود .</li>
+      <li><a href="">NOUN</a> 16: شاید با یک لکه نور پشت آن زندان ، این قدر قضیه <b>رو</b> نبود .</li>
       <li><a href="">PART</a> 2: مریم : این مساله <b>رو</b> حل کنم ، چشم .</li>
     </ul>
   </li>
   <li>و
     <ul>
-      <li><a href="">CONJ</a> 6956: ادامه این وضعیت موج‌آفرینی <b>و</b> بحران‌سازی به صلاح کشور نیست .</li>
+      <li><a href="">CCONJ</a> 6252: ادامه این وضعیت موج‌آفرینی <b>و</b> بحران‌سازی به صلاح کشور نیست .</li>
       <li><a href="">X</a> 12: آیا تو ادعا نکردی که زیاد فرزند ابوسفیان است و حال آن که پیامبر ) ص ( فرمود : الولد للفراش <b>و</b> للعاهر الحجر .</li>
       <li><a href="">SCONJ</a> 2: آقای صافی ، مدیر شبکه ، که دائما نظارت کامل داشتند <b>و</b> دارند .</li>
       <li><a href="">NOUN</a> 2: به‌رغم کاهش ارزش سهام عمده بازار بورس فرانکفورت ، ارزش سهام شرکت بی ام <b>و</b> همچنان در حال افزایش است .</li>
-      <li><a href="">PRON</a> 2: می‌گوید : خروشیدم و خواستم ز <b>و</b> چراغ !</li>
       <li><a href="">PART</a> 1: خب این یعنی آینه تمام‌نما که آقا اگر خود ت را دیدی ، اصلاح کن و اگر خود ت <b>و</b> ندیدی فبها .</li>
     </ul>
   </li>
@@ -99,7 +115,7 @@ Out of 15 observed tags, the rank of <code>PART</code> is: 15 in number of lemma
 
 <h2 id="morphology">Morphology</h2>
 
-<p>The form / lemma ratio of <code>PART</code> is 1.500000 (the average of all parts of speech is 1.914149).</p>
+<p>The form / lemma ratio of <code>PART</code> is 1.500000 (the average of all parts of speech is 1.968250).</p>
 
 <p>The 1st highest number of forms (2) was observed with the lemma “را”: را, و.</p>
 
@@ -109,11 +125,11 @@ Out of 15 observed tags, the rank of <code>PART</code> is: 15 in number of lemma
 
 <h2 id="relations">Relations</h2>
 
-<p><code>PART</code> nodes are attached to their parents using 5 different relations: <a href="">fa-dep/case</a> (2557; 99% instances), <a href="">fa-dep/dep</a> (9; 0% instances), <a href="">fa-dep/advmod</a> (2; 0% instances), <a href="">fa-dep/ccomp</a> (1; 0% instances), <a href="">fa-dep/dobj</a> (1; 0% instances)</p>
+<p><code>PART</code> nodes are attached to their parents using 5 different relations: <a href="">fa-dep/case</a> (2321; 99% instances), <a href="">fa-dep/dep</a> (8; 0% instances), <a href="">fa-dep/advmod</a> (2; 0% instances), <a href="">fa-dep/ccomp</a> (1; 0% instances), <a href="">fa-dep/obj</a> (1; 0% instances)</p>
 
-<p>Parents of <code>PART</code> nodes belong to 9 different parts of speech: <a href="">NOUN</a> (2203; 86% instances), <a href="">PRON</a> (325; 13% instances), <a href="">ADJ</a> (14; 1% instances), <a href="">ADV</a> (8; 0% instances), <a href="">NUM</a> (8; 0% instances), <a href="">DET</a> (5; 0% instances), <a href="">ADP</a> (4; 0% instances), <a href="">VERB</a> (2; 0% instances), <a href="">X</a> (1; 0% instances)</p>
+<p>Parents of <code>PART</code> nodes belong to 9 different parts of speech: <a href="">NOUN</a> (1999; 86% instances), <a href="">PRON</a> (294; 13% instances), <a href="">ADJ</a> (13; 1% instances), <a href="">ADV</a> (8; 0% instances), <a href="">NUM</a> (8; 0% instances), <a href="">DET</a> (5; 0% instances), <a href="">ADP</a> (3; 0% instances), <a href="">VERB</a> (2; 0% instances), <a href="">X</a> (1; 0% instances)</p>
 
-<p>2570 (100%) <code>PART</code> nodes are leaves.</p>
+<p>2333 (100%) <code>PART</code> nodes are leaves.</p>
 
 <p>The highest child degree of a <code>PART</code> node is 0.</p>
 
@@ -125,9 +141,25 @@ Out of 15 observed tags, the rank of <code>PART</code> is: 15 in number of lemma
 
 PART in other languages:
 
+[<a href="../../am/pos/PART.html">am</a>]
+
+[<a href="../../ar/pos/PART.html">ar</a>]
+
 [<a href="../../bg/pos/PART.html">bg</a>]
 
+[<a href="../../bxr/pos/PART.html">bxr</a>]
+
+[<a href="../../ca/pos/PART.html">ca</a>]
+
+[<a href="../../ckb/pos/PART.html">ckb</a>]
+
+[<a href="../../cop/pos/PART.html">cop</a>]
+
 [<a href="../../cs/pos/PART.html">cs</a>]
+
+[<a href="../../cu/pos/PART.html">cu</a>]
+
+[<a href="../../da/pos/PART.html">da</a>]
 
 [<a href="../../de/pos/PART.html">de</a>]
 
@@ -137,29 +169,99 @@ PART in other languages:
 
 [<a href="../../es/pos/PART.html">es</a>]
 
+[<a href="../../et/pos/PART.html">et</a>]
+
 [<a href="../../eu/pos/PART.html">eu</a>]
 
 [<a href="../../fa/pos/PART.html">fa</a>]
 
 [<a href="../../fi/pos/PART.html">fi</a>]
 
+[<a href="../../fo/pos/PART.html">fo</a>]
+
 [<a href="../../fr/pos/PART.html">fr</a>]
 
 [<a href="../../ga/pos/PART.html">ga</a>]
 
+[<a href="../../gl/pos/PART.html">gl</a>]
+
+[<a href="../../got/pos/PART.html">got</a>]
+
+[<a href="../../grc/pos/PART.html">grc</a>]
+
 [<a href="../../he/pos/PART.html">he</a>]
 
+[<a href="../../hi/pos/PART.html">hi</a>]
+
+[<a href="../../hr/pos/PART.html">hr</a>]
+
 [<a href="../../hu/pos/PART.html">hu</a>]
+
+[<a href="../../id/pos/PART.html">id</a>]
 
 [<a href="../../it/pos/PART.html">it</a>]
 
 [<a href="../../ja/pos/PART.html">ja</a>]
 
+[<a href="../../kk/pos/PART.html">kk</a>]
+
+[<a href="../../kmr/pos/PART.html">kmr</a>]
+
 [<a href="../../ko/pos/PART.html">ko</a>]
+
+[<a href="../../la/pos/PART.html">la</a>]
+
+[<a href="../../lv/pos/PART.html">lv</a>]
+
+[<a href="../../mr/pos/PART.html">mr</a>]
+
+[<a href="../../nl/pos/PART.html">nl</a>]
+
+[<a href="../../no/pos/PART.html">no</a>]
+
+[<a href="../../pl/pos/PART.html">pl</a>]
+
+[<a href="../../pt/pos/PART.html">pt</a>]
+
+[<a href="../../ro/pos/PART.html">ro</a>]
+
+[<a href="../../ru/pos/PART.html">ru</a>]
+
+[<a href="../../sa/pos/PART.html">sa</a>]
+
+[<a href="../../sk/pos/PART.html">sk</a>]
+
+[<a href="../../sla/pos/PART.html">sla</a>]
+
+[<a href="../../sl/pos/PART.html">sl</a>]
+
+[<a href="../../so/pos/PART.html">so</a>]
+
+[<a href="../../sr/pos/PART.html">sr</a>]
 
 [<a href="../../sv/pos/PART.html">sv</a>]
 
+[<a href="../../swl/pos/PART.html">swl</a>]
+
+[<a href="../../ta/pos/PART.html">ta</a>]
+
+[<a href="../../tr/pos/PART.html">tr</a>]
+
+[<a href="../../ug/pos/PART.html">ug</a>]
+
+[<a href="../../uk/pos/PART.html">uk</a>]
+
 [<a href="../../u/pos/PART.html">u</a>]
+
+[<a href="../../urj/pos/PART.html">urj</a>]
+
+[<a href="../../ur/pos/PART.html">ur</a>]
+
+[<a href="../../vi/pos/PART.html">vi</a>]
+
+[<a href="../../yue/pos/PART.html">yue</a>]
+
+[<a href="../../zh/pos/PART.html">zh</a>]
 
 
 

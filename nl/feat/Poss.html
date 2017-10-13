@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-nl">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/nl/feat">nl/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_nl-feat/Poss.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-nl">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/nl/feat">nl/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_nl-feat/Poss.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -65,22 +82,22 @@ for <code>Poss</code>.</p>
 <p>This feature is universal.
 It occurs with 1 different values: <code>Yes</code>.</p>
 
-<p>1598 tokens (1%) have a non-empty value of <code>Poss</code>.
+<p>1531 tokens (1%) have a non-empty value of <code>Poss</code>.
 38 types (0%) occur at least once with a non-empty value of <code>Poss</code>.
 29 lemmas (0%) occur at least once with a non-empty value of <code>Poss</code>.
-The feature is used with 3 part-of-speech tags: <a href="">nl-pos/PRON</a> (1581; 1% instances), <a href="">nl-pos/X</a> (15; 0% instances), <a href="">nl-pos/DET</a> (2; 0% instances).</p>
+The feature is used with 3 part-of-speech tags: <a href="">nl-pos/PRON</a> (1514; 1% instances), <a href="">nl-pos/X</a> (15; 0% instances), <a href="">nl-pos/DET</a> (2; 0% instances).</p>
 
 <h3 id="pron"><code>PRON</code></h3>
 
-<p>1581 <a href="">nl-pos/PRON</a> tokens (9% of all <code>PRON</code> tokens) have a non-empty value of <code>Poss</code>.</p>
+<p>1514 <a href="">nl-pos/PRON</a> tokens (10% of all <code>PRON</code> tokens) have a non-empty value of <code>Poss</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>Poss</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (1581; 100%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (1580; 100%), <tt><a href="Person.html">Person</a>=3</tt> (1268; 80%), <tt><a href="Number.html">Number</a>=Sing</tt> (1144; 72%).</p>
+<p>The most frequent other feature values with which <code>PRON</code> and <code>Poss</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (1514; 100%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (1513; 100%), <tt><a href="Person.html">Person</a>=3</tt> (1206; 80%), <tt><a href="Number.html">Number</a>=Sing</tt> (1103; 73%).</p>
 
 <p><code>PRON</code> tokens may have the following values of <code>Poss</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (1581; 100% of non-empty <code>Poss</code>): <em>zijn, hun, haar, mijn, onze, ons, je, uw, z’n, m’n</em></li>
-  <li><code>EMPTY</code> (15543): <em>die, hij, ik, het, dat, wat, welke, zich, dit, deze</em></li>
+  <li><code>Yes</code> (1514; 100% of non-empty <code>Poss</code>): <em>zijn, hun, haar, mijn, onze, ons, je, uw, z’n, m’n</em></li>
+  <li><code>EMPTY</code> (14325): <em>die, hij, ik, het, dat, wat, welke, zich, dit, deze</em></li>
 </ul>
 
 <p><code>Poss</code> seems to be <strong>lexical feature</strong> of <code>PRON</code>. 100% lemmas (17) occur only with one value of <code>Poss</code>.</p>
@@ -95,7 +112,7 @@ The feature is used with 3 part-of-speech tags: <a href="">nl-pos/PRON</a> (1581
 
 <ul>
   <li><code>Yes</code> (15; 100% of non-empty <code>Poss</code>): <em>inziens, zijns, Lieve, Maria, Vrouw, gunstige, heilige, je, ons, reinste</em></li>
-  <li><code>EMPTY</code> (4620): <em>van, het, op, flo, voor, met, ten, aan, een, onder</em></li>
+  <li><code>EMPTY</code> (4211): <em>van, het, flo, op, voor, ten, met, aan, een, te</em></li>
 </ul>
 
 <p><code>Poss</code> seems to be <strong>lexical feature</strong> of <code>X</code>. 100% lemmas (12) occur only with one value of <code>Poss</code>.</p>
@@ -104,13 +121,13 @@ The feature is used with 3 part-of-speech tags: <a href="">nl-pos/PRON</a> (1581
 
 <p>2 <a href="">nl-pos/DET</a> tokens (0% of all <code>DET</code> tokens) have a non-empty value of <code>Poss</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>Poss</code> co-occurred: <tt><a href="Gender.html">Gender</a>=Fem</tt> (2; 100%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (2; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (2; 100%), <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (2; 100%).</p>
+<p>The most frequent other feature values with which <code>DET</code> and <code>Poss</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (2; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (2; 100%), <tt><a href="Gender.html">Gender</a>=Fem</tt> (2; 100%), <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (2; 100%).</p>
 
 <p><code>DET</code> tokens may have the following values of <code>Poss</code>:</p>
 
 <ul>
   <li><code>Yes</code> (2; 100% of non-empty <code>Poss</code>): <em>Nostra, nuestra</em></li>
-  <li><code>EMPTY</code> (21848): <em>de, een, het, veel, meer, der, vele, meeste, weinig, minder</em></li>
+  <li><code>EMPTY</code> (21254): <em>de, een, het, veel, meer, hoeveel, minder, weinig, der, tot</em></li>
 </ul>
 
 <h2 id="relations-with-agreement-in-poss">Relations with Agreement in <code>Poss</code></h2>
@@ -127,9 +144,25 @@ The feature is used with 3 part-of-speech tags: <a href="">nl-pos/PRON</a> (1581
 
 Poss in other languages:
 
+[<a href="../../am/feat/Poss.html">am</a>]
+
+[<a href="../../ar/feat/Poss.html">ar</a>]
+
 [<a href="../../bg/feat/Poss.html">bg</a>]
 
+[<a href="../../bxr/feat/Poss.html">bxr</a>]
+
+[<a href="../../ca/feat/Poss.html">ca</a>]
+
+[<a href="../../ckb/feat/Poss.html">ckb</a>]
+
+[<a href="../../cop/feat/Poss.html">cop</a>]
+
 [<a href="../../cs/feat/Poss.html">cs</a>]
+
+[<a href="../../cu/feat/Poss.html">cu</a>]
+
+[<a href="../../da/feat/Poss.html">da</a>]
 
 [<a href="../../de/feat/Poss.html">de</a>]
 
@@ -139,29 +172,99 @@ Poss in other languages:
 
 [<a href="../../es/feat/Poss.html">es</a>]
 
+[<a href="../../et/feat/Poss.html">et</a>]
+
 [<a href="../../eu/feat/Poss.html">eu</a>]
 
 [<a href="../../fa/feat/Poss.html">fa</a>]
 
 [<a href="../../fi/feat/Poss.html">fi</a>]
 
+[<a href="../../fo/feat/Poss.html">fo</a>]
+
 [<a href="../../fr/feat/Poss.html">fr</a>]
 
 [<a href="../../ga/feat/Poss.html">ga</a>]
 
+[<a href="../../gl/feat/Poss.html">gl</a>]
+
+[<a href="../../got/feat/Poss.html">got</a>]
+
+[<a href="../../grc/feat/Poss.html">grc</a>]
+
 [<a href="../../he/feat/Poss.html">he</a>]
 
+[<a href="../../hi/feat/Poss.html">hi</a>]
+
+[<a href="../../hr/feat/Poss.html">hr</a>]
+
 [<a href="../../hu/feat/Poss.html">hu</a>]
+
+[<a href="../../id/feat/Poss.html">id</a>]
 
 [<a href="../../it/feat/Poss.html">it</a>]
 
 [<a href="../../ja/feat/Poss.html">ja</a>]
 
+[<a href="../../kk/feat/Poss.html">kk</a>]
+
+[<a href="../../kmr/feat/Poss.html">kmr</a>]
+
 [<a href="../../ko/feat/Poss.html">ko</a>]
+
+[<a href="../../la/feat/Poss.html">la</a>]
+
+[<a href="../../lv/feat/Poss.html">lv</a>]
+
+[<a href="../../mr/feat/Poss.html">mr</a>]
+
+[<a href="../../nl/feat/Poss.html">nl</a>]
+
+[<a href="../../no/feat/Poss.html">no</a>]
+
+[<a href="../../pl/feat/Poss.html">pl</a>]
+
+[<a href="../../pt/feat/Poss.html">pt</a>]
+
+[<a href="../../ro/feat/Poss.html">ro</a>]
+
+[<a href="../../ru/feat/Poss.html">ru</a>]
+
+[<a href="../../sa/feat/Poss.html">sa</a>]
+
+[<a href="../../sk/feat/Poss.html">sk</a>]
+
+[<a href="../../sla/feat/Poss.html">sla</a>]
+
+[<a href="../../sl/feat/Poss.html">sl</a>]
+
+[<a href="../../so/feat/Poss.html">so</a>]
+
+[<a href="../../sr/feat/Poss.html">sr</a>]
 
 [<a href="../../sv/feat/Poss.html">sv</a>]
 
+[<a href="../../swl/feat/Poss.html">swl</a>]
+
+[<a href="../../ta/feat/Poss.html">ta</a>]
+
+[<a href="../../tr/feat/Poss.html">tr</a>]
+
 [<a href="../../u/feat/Poss.html">u</a>]
+
+[<a href="../../ug/feat/Poss.html">ug</a>]
+
+[<a href="../../uk/feat/Poss.html">uk</a>]
+
+[<a href="../../ur/feat/Poss.html">ur</a>]
+
+[<a href="../../urj/feat/Poss.html">urj</a>]
+
+[<a href="../../vi/feat/Poss.html">vi</a>]
+
+[<a href="../../yue/feat/Poss.html">yue</a>]
+
+[<a href="../../zh/feat/Poss.html">zh</a>]
 
 
 

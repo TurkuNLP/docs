@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-pt">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/pt/dep">pt/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/vocative.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-pt">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/pt/dep">pt/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/vocative.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -72,36 +89,16 @@ vocative(favorito, Oliveira)
 
 <hr />
 
-<h2 id="treebank-statistics-udportuguese-bosque">Treebank Statistics (UD_Portuguese-Bosque)</h2>
+<h2 id="treebank-statistics-udportuguese">Treebank Statistics (UD_Portuguese)</h2>
 
 <p>This relation is universal.</p>
 
-<p>31 nodes (0%) are attached to their parents as <code>vocative</code>.</p>
+<p>11 nodes (0%) are attached to their parents as <code>vocative</code>.</p>
 
-<p>24 instances of <code>vocative</code> (77%) are left-to-right (parent precedes child).
-Average distance between parent and child is 3.29032258064516.</p>
+<p>7 instances of <code>vocative</code> (64%) are right-to-left (child precedes parent).
+Average distance between parent and child is 6.45454545454545.</p>
 
-<p>The following 6 pairs of parts of speech are connected with <code>vocative</code>: <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PRON</a> (18; 58% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NOUN</a> (7; 23% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/NOUN</a> (2; 6% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PROPN</a> (2; 6% instances), <a href="">pt-pos/INTJ</a>-<a href="">pt-pos/NOUN</a> (1; 3% instances), <a href="">pt-pos/INTJ</a>-<a href="">pt-pos/PROPN</a> (1; 3% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 1 2 vocative	color:blue
-1	Pense-	pensar	VERB	&lt;mv&gt;|V|PR|3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	se	se	PRON	PERS|M/F|3S/P|ACC|@VOC	Case=Acc|Gender=Unsp|PronType=Prs	1	vocative	_	_
-3	em	em	ADP	PRP|@&lt;PIV	_	4	case	_	_
-4	Kingsley	Kingsley	PROPN	&lt;first-cjt&gt;|PROP|M/F|S|@P&lt;	Gender=Unsp|Number=Sing	1	nmod	_	MWE:Kingsley=Amis
-5	Amis	Amis	PROPN	PROP|@N&lt;	Number=Sing	4	name	_	_
-6	,	,	PUNCT	PU|@PU	_	1	punct	_	_
-7	Malcolm	Malcolm	PROPN	PROP|M|S|@P&lt;	Gender=Masc|Number=Sing	4	nmod	_	MWE:Malcolm=Bradbury
-8	Bradbury	Bradbury	PROPN	PROP|@N&lt;	Number=Sing	7	name	_	_
-9	e	e	CONJ	&lt;co-prparg&gt;|KC|@CO	_	4	cc	_	_
-10	Albert	Albert	PROPN	PROP|M|S|@P&lt;	Gender=Masc|Number=Sing	4	nmod	_	MWE:Albert=Finney
-11	Finney	Finney	PROPN	PROP|@N&lt;	Number=Sing	10	name	_	_
-12	.	.	PUNCT	PU|@PU	_	1	punct	_	_
-
-</code></pre>
+<p>The following 5 pairs of parts of speech are connected with <code>vocative</code>: <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NOUN</a> (5; 45% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/NOUN</a> (2; 18% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PROPN</a> (2; 18% instances), <a href="">pt-pos/INTJ</a>-<a href="">pt-pos/NOUN</a> (1; 9% instances), <a href="">pt-pos/INTJ</a>-<a href="">pt-pos/PROPN</a> (1; 9% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 10	bgColor:blue
 # visual-style 10	fgColor:white
@@ -112,13 +109,27 @@ Average distance between parent and child is 3.29032258064516.</p>
 2	precisava	precisar	VERB	&lt;mv&gt;|V|IMPF|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	_
 3	de	de	ADP	PRP|@&lt;PIV	_	5	case	_	_
 4	uma	um	DET	&lt;arti&gt;|ART|F|S|@&gt;N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	ajuda	ajuda	NOUN	&lt;np-idf&gt;|N|F|S|@P&lt;	Gender=Fem|Number=Sing	2	nmod	_	_
+5	ajuda	ajuda	NOUN	&lt;np-idf&gt;|N|F|S|@P&lt;	Gender=Fem|Number=Sing	2	obl	_	_
 6	de	de	ADP	&lt;sam-&gt;|PRP|@N&lt;	_	8	case	_	_
 7	o	o	DET	&lt;-sam&gt;|&lt;artd&gt;|ART|M|S|@&gt;N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	senhor	senhor	NOUN	&lt;np-def&gt;|N|M|S|@P&lt;	Gender=Masc|Number=Sing	5	nmod	_	_
+8	senhor	senhor	NOUN	&lt;np-def&gt;|N|M|S|@P&lt;	Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 10	deputado	deputado	NOUN	&lt;np-idf&gt;|N|M|S|@VOK	Gender=Masc|Number=Sing	2	vocative	_	_
 11	...	...	PUNCT	PU|@PU	_	2	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 1 vocative	color:blue
+1	Gente	gente	NOUN	&lt;np-idf&gt;|N|F|S|@VOK	Gender=Fem|Number=Sing	5	vocative	_	SpaceAfter=No
+2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+3	é	ser	AUX	&lt;mv&gt;|V|PR|3S|IND|@FS-EXC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+4	cada	cada	DET	&lt;quant&gt;|DET|M|S|@&gt;N	Gender=Masc|Number=Sing|PronType=Tot	5	det	_	_
+5	piranhão	piranhão	NOUN	&lt;np-def&gt;|N|M|S|@&lt;SC	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+6	!	!	PUNCT	PU|@PU	_	5	punct	_	_
 
 </code></pre>
 
@@ -130,13 +141,13 @@ Average distance between parent and child is 3.29032258064516.</p>
 1	Alec	Alec	PROPN	PROP|F|S|@VOK	Gender=Fem|Number=Sing	3	vocative	_	_
 2	Eu	eu	PRON	PERS|M|1S|NOM|@SUBJ&gt;	Case=Nom|Gender=Masc|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
 3	quero	querer	VERB	&lt;mv&gt;|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	viver	viver	VERB	&lt;mv&gt;|V|INF|@ICL-&lt;ACC	VerbForm=Inf	3	xcomp	_	_
+4	viver	viver	VERB	&lt;mv&gt;|V|INF|@ICL-&lt;ACC	VerbForm=Inf	3	xcomp	_	SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 6	eu	eu	PRON	PERS|M|1S|NOM|@SUBJ&gt;	Case=Nom|Gender=Masc|Number=Sing|Person=1|PronType=Prs	7	nsubj	_	_
 7	quero	querer	VERB	&lt;mv&gt;|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	parataxis	_	_
-8	não	não	ADV	ADV|@ADVL&gt;	_	9	neg	_	_
+8	não	não	ADV	_	Polarity=Neg	9	advmod	_	_
 9	fazer	fazer	VERB	&lt;mv&gt;|V|INF|@ICL-&lt;ACC	VerbForm=Inf	7	xcomp	_	_
-10	nada	nada	PRON	&lt;quant&gt;|INDP|M|S|@&lt;ACC	Gender=Masc|Number=Sing|PronType=Ind	9	dobj	_	_
+10	nada	nada	PRON	&lt;quant&gt;|INDP|M|S|@&lt;ACC	Gender=Masc|Number=Sing|PronType=Ind	9	obj	_	SpaceAfter=No
 11	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 </code></pre>
@@ -149,9 +160,25 @@ Average distance between parent and child is 3.29032258064516.</p>
 
 vocative in other languages:
 
+[<a href="../../am/dep/vocative.html">am</a>]
+
+[<a href="../../ar/dep/vocative.html">ar</a>]
+
 [<a href="../../bg/dep/vocative.html">bg</a>]
 
+[<a href="../../bxr/dep/vocative.html">bxr</a>]
+
+[<a href="../../ca/dep/vocative.html">ca</a>]
+
+[<a href="../../ckb/dep/vocative.html">ckb</a>]
+
+[<a href="../../cop/dep/vocative.html">cop</a>]
+
 [<a href="../../cs/dep/vocative.html">cs</a>]
+
+[<a href="../../cu/dep/vocative.html">cu</a>]
+
+[<a href="../../da/dep/vocative.html">da</a>]
 
 [<a href="../../de/dep/vocative.html">de</a>]
 
@@ -161,29 +188,99 @@ vocative in other languages:
 
 [<a href="../../es/dep/vocative.html">es</a>]
 
+[<a href="../../et/dep/vocative.html">et</a>]
+
 [<a href="../../eu/dep/vocative.html">eu</a>]
 
 [<a href="../../fa/dep/vocative.html">fa</a>]
 
 [<a href="../../fi/dep/vocative.html">fi</a>]
 
+[<a href="../../fo/dep/vocative.html">fo</a>]
+
 [<a href="../../fr/dep/vocative.html">fr</a>]
 
 [<a href="../../ga/dep/vocative.html">ga</a>]
 
+[<a href="../../gl/dep/vocative.html">gl</a>]
+
+[<a href="../../got/dep/vocative.html">got</a>]
+
+[<a href="../../grc/dep/vocative.html">grc</a>]
+
 [<a href="../../he/dep/vocative.html">he</a>]
 
+[<a href="../../hi/dep/vocative.html">hi</a>]
+
+[<a href="../../hr/dep/vocative.html">hr</a>]
+
 [<a href="../../hu/dep/vocative.html">hu</a>]
+
+[<a href="../../id/dep/vocative.html">id</a>]
 
 [<a href="../../it/dep/vocative.html">it</a>]
 
 [<a href="../../ja/dep/vocative.html">ja</a>]
 
+[<a href="../../kk/dep/vocative.html">kk</a>]
+
+[<a href="../../kmr/dep/vocative.html">kmr</a>]
+
 [<a href="../../ko/dep/vocative.html">ko</a>]
+
+[<a href="../../la/dep/vocative.html">la</a>]
+
+[<a href="../../lv/dep/vocative.html">lv</a>]
+
+[<a href="../../mr/dep/vocative.html">mr</a>]
+
+[<a href="../../nl/dep/vocative.html">nl</a>]
+
+[<a href="../../no/dep/vocative.html">no</a>]
+
+[<a href="../../pl/dep/vocative.html">pl</a>]
+
+[<a href="../../pt/dep/vocative.html">pt</a>]
+
+[<a href="../../ro/dep/vocative.html">ro</a>]
+
+[<a href="../../ru/dep/vocative.html">ru</a>]
+
+[<a href="../../sa/dep/vocative.html">sa</a>]
+
+[<a href="../../sk/dep/vocative.html">sk</a>]
+
+[<a href="../../sla/dep/vocative.html">sla</a>]
+
+[<a href="../../sl/dep/vocative.html">sl</a>]
+
+[<a href="../../so/dep/vocative.html">so</a>]
+
+[<a href="../../sr/dep/vocative.html">sr</a>]
 
 [<a href="../../sv/dep/vocative.html">sv</a>]
 
+[<a href="../../swl/dep/vocative.html">swl</a>]
+
+[<a href="../../ta/dep/vocative.html">ta</a>]
+
+[<a href="../../tr/dep/vocative.html">tr</a>]
+
 [<a href="../../u/dep/vocative.html">u</a>]
+
+[<a href="../../ug/dep/vocative.html">ug</a>]
+
+[<a href="../../uk/dep/vocative.html">uk</a>]
+
+[<a href="../../ur/dep/vocative.html">ur</a>]
+
+[<a href="../../urj/dep/vocative.html">urj</a>]
+
+[<a href="../../vi/dep/vocative.html">vi</a>]
+
+[<a href="../../yue/dep/vocative.html">yue</a>]
+
+[<a href="../../zh/dep/vocative.html">zh</a>]
 
 
 

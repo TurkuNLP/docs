@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-u">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/u/pos">u/pos</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-pos/PRON.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-u">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/u/pos">u/pos</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-pos/PRON.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -57,24 +74,33 @@ substitute for <a href="ADJ">adjectives</a>. Such words are not tagged <code>PRO
 under our universal scheme. They are tagged as <a href="DET">determiners</a> in
 order to annotate the same thing the same way across languages.</p>
 
-<p>For instance, [en] <em>this</em> is either pronoun <em>(I saw <b>this</b>
-yesterday.)</em> or determiner <em>(I saw <b>this</b> car yesterday.)</em> Its
-Czech translation, [cs] <em>tohle</em>, is traditionally called pronoun in
-Czech grammar, regardless of context (the notion of determiners does
-not exist in Czech grammar). To make the annotation parallel across
-languages, it should be now tagged <code>PRON</code> in <em><b>Tohle</b> jsem viděl
-včera.</em> and <code>DET</code> in <em><b>Tohle</b> auto jsem viděl včera.</em></p>
+<p>It is not always crystal clear where pronouns end and determiners start.
+Unlike in UD v1 it is no longer required that they are told apart solely on
+the base of the context. The words can be pre-classified in the dictionary
+as either <code>PRON</code> or <code>DET</code>, based on their <em>typical</em> syntactic distribution
+(and morphology, when applicable).
+Language-specific documentation should list all pronouns (it is a closed class)
+and point out ambiguities, if any.</p>
+
+<p>See also <a href="../overview/morphology.html#pronominal-words">general principles on pronominal words</a>
+for more tips on how to define pronouns.
+In particular:</p>
+
+<ul>
+  <li>Non-possessive personal, reflexive or reciprocal pronouns are always tagged <code>PRON</code>.</li>
+  <li>Possessives vary across languages. In some languages the above tests put them in the <code>DET</code> category.
+In others, they are more like a normal personal pronoun in a specific case (often the genitive), or a personal pronoun with an adposition; they are tagged <code>PRON</code>.</li>
+</ul>
 
 <h3 id="examples">Examples</h3>
 
 <ul>
   <li>personal pronouns: <em>I, you, he, she, it, we, they</em></li>
   <li>reflexive pronouns: <em>myself, yourself, himself, herself, itself, ourselves, yourselves, theirselves</em></li>
-  <li>demonstrative pronouns: <em>this</em> as in <em>I saw <b>this</b> yesterday.</em></li>
   <li>interrogative pronouns: <em>who, what</em> as in <em><b>What</b> do you think?</em></li>
   <li>relative pronouns: <em>who, what</em> as in <em>I wonder <b>what</b> you think.</em> (Note, however, that some relative clause introducing words, such as [en] <em>that</em> are better analyzed as subordinating conjunctions (otherwise known as “complementizers” in the literature), and so are tagged as <a href="">SCONJ</a>.)</li>
   <li>indefinite pronouns: <em>somebody, something, anybody, anything</em></li>
-  <li>totality pronouns: <em>everybody, everything</em></li>
+  <li>total pronouns: <em>everybody, everything</em></li>
   <li>negative pronouns: <em>nobody, nothing</em></li>
 </ul>
 
@@ -98,9 +124,25 @@ včera.</em> and <code>DET</code> in <em><b>Tohle</b> auto jsem viděl včera.</
 
 PRON in other languages:
 
+[<a href="../../am/pos/PRON.html">am</a>]
+
+[<a href="../../ar/pos/PRON.html">ar</a>]
+
 [<a href="../../bg/pos/PRON.html">bg</a>]
 
+[<a href="../../bxr/pos/PRON.html">bxr</a>]
+
+[<a href="../../ca/pos/PRON.html">ca</a>]
+
+[<a href="../../ckb/pos/PRON.html">ckb</a>]
+
+[<a href="../../cop/pos/PRON.html">cop</a>]
+
 [<a href="../../cs/pos/PRON.html">cs</a>]
+
+[<a href="../../cu/pos/PRON.html">cu</a>]
+
+[<a href="../../da/pos/PRON.html">da</a>]
 
 [<a href="../../de/pos/PRON.html">de</a>]
 
@@ -110,29 +152,99 @@ PRON in other languages:
 
 [<a href="../../es/pos/PRON.html">es</a>]
 
+[<a href="../../et/pos/PRON.html">et</a>]
+
 [<a href="../../eu/pos/PRON.html">eu</a>]
 
 [<a href="../../fa/pos/PRON.html">fa</a>]
 
 [<a href="../../fi/pos/PRON.html">fi</a>]
 
+[<a href="../../fo/pos/PRON.html">fo</a>]
+
 [<a href="../../fr/pos/PRON.html">fr</a>]
 
 [<a href="../../ga/pos/PRON.html">ga</a>]
 
+[<a href="../../gl/pos/PRON.html">gl</a>]
+
+[<a href="../../got/pos/PRON.html">got</a>]
+
+[<a href="../../grc/pos/PRON.html">grc</a>]
+
 [<a href="../../he/pos/PRON.html">he</a>]
 
+[<a href="../../hi/pos/PRON.html">hi</a>]
+
+[<a href="../../hr/pos/PRON.html">hr</a>]
+
 [<a href="../../hu/pos/PRON.html">hu</a>]
+
+[<a href="../../id/pos/PRON.html">id</a>]
 
 [<a href="../../it/pos/PRON.html">it</a>]
 
 [<a href="../../ja/pos/PRON.html">ja</a>]
 
+[<a href="../../kk/pos/PRON.html">kk</a>]
+
+[<a href="../../kmr/pos/PRON.html">kmr</a>]
+
 [<a href="../../ko/pos/PRON.html">ko</a>]
+
+[<a href="../../la/pos/PRON.html">la</a>]
+
+[<a href="../../lv/pos/PRON.html">lv</a>]
+
+[<a href="../../mr/pos/PRON.html">mr</a>]
+
+[<a href="../../nl/pos/PRON.html">nl</a>]
+
+[<a href="../../no/pos/PRON.html">no</a>]
+
+[<a href="../../pl/pos/PRON.html">pl</a>]
+
+[<a href="../../pt/pos/PRON.html">pt</a>]
+
+[<a href="../../ro/pos/PRON.html">ro</a>]
+
+[<a href="../../ru/pos/PRON.html">ru</a>]
+
+[<a href="../../sa/pos/PRON.html">sa</a>]
+
+[<a href="../../sk/pos/PRON.html">sk</a>]
+
+[<a href="../../sla/pos/PRON.html">sla</a>]
+
+[<a href="../../sl/pos/PRON.html">sl</a>]
+
+[<a href="../../so/pos/PRON.html">so</a>]
+
+[<a href="../../sr/pos/PRON.html">sr</a>]
 
 [<a href="../../sv/pos/PRON.html">sv</a>]
 
+[<a href="../../swl/pos/PRON.html">swl</a>]
+
+[<a href="../../ta/pos/PRON.html">ta</a>]
+
+[<a href="../../tr/pos/PRON.html">tr</a>]
+
+[<a href="../../ug/pos/PRON.html">ug</a>]
+
+[<a href="../../uk/pos/PRON.html">uk</a>]
+
 [<a href="../../u/pos/PRON.html">u</a>]
+
+[<a href="../../urj/pos/PRON.html">urj</a>]
+
+[<a href="../../ur/pos/PRON.html">ur</a>]
+
+[<a href="../../vi/pos/PRON.html">vi</a>]
+
+[<a href="../../yue/pos/PRON.html">yue</a>]
+
+[<a href="../../zh/pos/PRON.html">zh</a>]
 
 
 

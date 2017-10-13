@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ru">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ru">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -97,7 +114,7 @@
         </tr>
         <tr>
           <td></td>
-          <td><a>Negative</a></td>
+          <td><a>Polarity</a></td>
         </tr>
       </table>
     </td>
@@ -133,13 +150,13 @@ the cars may become and be inflected as animates.</p>
 
 <p>Nouns that are not animate are inanimate.</p>
 
-<p>RNC (Russian Narional Corpus) examples of masculine inanimate nouns:</p>
+<p>RNC (Russian National Corpus) examples of masculine inanimate nouns:</p>
 
 <ul>
   <li><em>род </em> “year”, <em>закон </em> “law”, <em>состояние </em> “state”, <em>падеж </em> “case”, <em>миллион </em> “million”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-feat/Animacy.md" target="#">edit Animacy</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-feat/Animacy.md" target="#">edit Animacy</a></p>
 
 <p><a id="al-ru-feat/Aspect" class="al-dest"></a></p>
 <h2><code>Aspect</code>: aspect</h2>
@@ -179,7 +196,7 @@ these actually have a future meaning.</p>
 baked a bread”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-feat/Aspect.md" target="#">edit Aspect</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-feat/Aspect.md" target="#">edit Aspect</a></p>
 
 <p><a id="al-ru-feat/Case" class="al-dest"></a></p>
 <h2><code>Case</code>: case</h2>
@@ -308,7 +325,7 @@ constructions (cf. the English preposition <em>by</em>).</p>
 approved <b>by the government</b>.” (Passive example)</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-feat/Case.md" target="#">edit Case</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-feat/Case.md" target="#">edit Case</a></p>
 
 <p><a id="al-ru-feat/Degree" class="al-dest"></a></p>
 <h2><code>Degree</code>: degree of comparison</h2>
@@ -326,7 +343,7 @@ compared, too.</p>
 <h4 id="examples">Examples</h4>
 
 <ul>
-  <li><em><b>умный</b> человек </em> “<b>young</b> man”</li>
+  <li><em><b>умный</b> человек </em> “<b>clever</b> man”</li>
 </ul>
 
 <h3 id="cmp-comparative-second-degree"><code>Cmp</code>: comparative, second degree</h3>
@@ -337,7 +354,7 @@ object.</p>
 <h4 id="examples-1">Examples</h4>
 
 <ul>
-  <li><em>этот человек <b>умнее</b> меня </em> “the man is <b>younger</b> than me”</li>
+  <li><em>этот человек <b>умнее</b> меня </em> “the man is <b>cleverer</b> than me”</li>
 </ul>
 
 <h3 id="sup-superlative-third-degree"><code>Sup</code>: superlative, third degree</h3>
@@ -348,10 +365,10 @@ objects within a set.</p>
 <h4 id="examples-2">Examples</h4>
 
 <ul>
-  <li><em>это <b>наиумнейший</b> человек в нашей команде </em> “this is the <b>youngest</b> man in our team”</li>
+  <li><em>это <b>наиумнейший</b> человек в нашей команде </em> “this is the <b>cleverest</b> man in our team”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-feat/Degree.md" target="#">edit Degree</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-feat/Degree.md" target="#">edit Degree</a></p>
 
 <p><a id="al-ru-feat/Gender" class="al-dest"></a></p>
 <h2><code>Gender</code>: gender</h2>
@@ -408,7 +425,7 @@ are usually neuter.</p>
   <li><em><b>здание</b> </em> “building”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-feat/Gender.md" target="#">edit Gender</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-feat/Gender.md" target="#">edit Gender</a></p>
 
 <p><a id="al-ru-feat/Mood" class="al-dest"></a></p>
 <h2><code>Mood</code>: mood</h2>
@@ -463,7 +480,7 @@ because it can also be used in past indicative.</p>
 university.”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-feat/Mood.md" target="#">edit Mood</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-feat/Mood.md" target="#">edit Mood</a></p>
 
 <p><a id="al-ru-feat/NameType" class="al-dest"></a></p>
 <h2><code>NameType</code>: type of named entity</h2>
@@ -474,25 +491,15 @@ in multi-word foreign names, <a href="ru-pos/ADJ">adjectives</a> may also have t
 (they preserve the <code>ADJ</code> tag but at the same time they would not exist in Russian
 otherwise than in the named entity).</p>
 
-<h3 id="conversion-from-the-prague-dependency-treebank">Conversion from the Prague Dependency Treebank</h3>
-
-<p>Lemmas in PDT contain features
-that also encode types of named entities. When converting the PDT annotation
-to UD, these lemma features are removed and the feature
-<code>NameType</code> is added to the universal features to preserve the type.</p>
-
-<p>The following table lists the name types together with the most frequent examples.
-See <a href="http://ufal.mff.cuni.cz/techrep/tr27.pdf">http://ufal.mff.cuni.cz/techrep/tr27.pdf</a>,
-page 8, section 2.1 (Lemma structure) for more details.</p>
+<p>The following table lists the name types together with the most frequent examples.</p>
 
 <table>
-<tr><td><tt>_;Y</tt></td><td>given name</td><td><em>Jan, Jiří, Václav, Petr, Josef</em></td><td>“Jan, Jiří, Václav, Petr, Josef”</td></tr>
-<tr><td><tt>_;S</tt></td><td>surname</td><td><em>Klaus, Havel, Němec, Jelcin, Svoboda</em></td><td>“Klaus, Havel, Němec, Yeltsin, Svoboda”</td></tr>
-<tr><td><tt>_;E</tt></td><td>member of a particular nation, inhabitant of a particular territory</td><td><em>Němec, Čech, Srb, Američan, Slovák</em></td><td>“German, Czech, Serbian, American, Slovak”</td></tr>
-<tr><td><tt>_;G</tt></td><td>geographical name</td><td><em>Praha, ČR, Evropa, Německo, Brno</em></td><td>“Prague, CR, Europe, Germany, Brno”</td></tr>
-<tr><td><tt>_;K</tt></td><td>company, organization, institution</td><td><em>ODS, OSN, Sparta, ODA, Slavia</em></td><td>“ODS, UN, Sparta, ODA, Slavia”</td></tr>
-<tr><td><tt>_;R</tt></td><td>product</td><td><em>LN, Mercedes, Tatra, PC, MF</em></td><td>“LN, Mercedes, Tatra, PC, MF”</td></tr>
-<tr><td><tt>_;m</tt></td><td>other proper name: names of mines, stadiums, guerilla bases etc.</td><td><em>US, PVP, Prix, Rapaport, Tour</em></td><td>“US, PVP, Prix, Rapaport, Tour”</td></tr>
+<tr><td><tt>_;Y</tt></td><td>given name</td><td><em>Александр, Игорь, Петр</em></td><td>“Александр, Игорь, Петр”</td></tr>
+<tr><td><tt>_;S</tt></td><td>surname</td><td><em>Иванов, Петров, Кожевников</em></td><td>“Иванов, Петров, Кожевников”</td></tr>
+<tr><td><tt>_;G</tt></td><td>geographical name</td><td><em>Москва, Россия, Азия</em></td><td>“Москва, Россия, Азия”</td></tr>
+<tr><td><tt>_;K</tt></td><td>company, organization, institution</td><td><em>Афиша, Просвещение, МТС</em></td><td>“Афиша, Просвещение, МТС”</td></tr>
+<tr><td><tt>_;R</tt></td><td>product</td><td><em>Мерседес, Тайд</em></td><td>“Мерседес, Тайд”</td></tr>
+<tr><td><tt>_;m</tt></td><td>other proper name: names of mines, stadiums, guerilla bases etc.</td><td><em>Лужники, Крокус Сити Холл</em></td><td>“Лужники, Крокус Сити Холл”</td></tr>
 </table>
 
 <h3 id="geo-geographical-name"><code>Geo</code>: geographical name</h3>
@@ -502,7 +509,7 @@ page 8, section 2.1 (Lemma structure) for more details.</p>
 <h4 id="examples">Examples</h4>
 
 <ul>
-  <li><em><b>Praha</b> </em> “Prague”, <em><b>Kostelec</b> nad Černými lesy, <b>Německo</b> </em> “Germany”</li>
+  <li><em><b>Москва</b> </em> “Moscow”, <b>Россия</b> _ “Russia”</li>
 </ul>
 
 <h3 id="prs-name-of-person"><code>Prs</code>: name of person</h3>
@@ -516,7 +523,7 @@ page 8, section 2.1 (Lemma structure) for more details.</p>
 <h4 id="examples-1">Examples</h4>
 
 <ul>
-  <li><em><b>Jan</b>, <b>Jiří</b>, <b>Václav</b></em></li>
+  <li><em><b>Александр</b>, <b>Дмитрий</b></em></li>
 </ul>
 
 <h3 id="sur-surname--family-name-of-person"><code>Sur</code>: surname / family name of person</h3>
@@ -526,21 +533,7 @@ page 8, section 2.1 (Lemma structure) for more details.</p>
 <h4 id="examples-2">Examples</h4>
 
 <ul>
-  <li><em><b>Klaus</b>, <b>Havel</b>, <b>Němec</b></em></li>
-</ul>
-
-<h3 id="nat-nationality"><code>Nat</code>: nationality</h3>
-
-<p>Name denoting a member of a particular nation, or inhabitant of a particular territory.
-This does not include derived adjectives,
-nor nouns denoting languages (both groups are written in lowercase).
-Thus <em><b>Čech</b> </em> “Czech [man]” belongs here
-but <em>český </em> “Czech” and <em>čeština </em> “Czech [language]” do not.</p>
-
-<h4 id="examples-3">Examples</h4>
-
-<ul>
-  <li><em><b>Čech</b> </em> “Czech”, <em><b>Němec</b> </em> “German”, <em><b>Pražan</b> </em> “Praguer”</li>
+  <li><em><b>Иванов</b>, <b>Сидоров</b></em></li>
 </ul>
 
 <h3 id="com-company-organization"><code>Com</code>: company, organization</h3>
@@ -551,49 +544,7 @@ but <em>český </em> “Czech” and <em>čeština </em> “Czech [language]�
 
 <p>Names of stadiums, guerilla bases, events etc.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-feat/NumType.md" target="#">edit NameType</a></p>
-
-<p><a id="al-ru-feat/Negative" class="al-dest"></a></p>
-<h2><code>Negative</code>: whether the word can be or is negated</h2>
-
-<p>In Russian, negation is done both by using the bound morpheme <em>не-</em>
-and an independent negating particle (equivalent to English “not”). Words that can take the morpheme/particle of negation have
-the feature of negativeness.</p>
-
-<p>It applies to <a href="ru-pos/VERB">verbs</a>,
-<a href="ru-pos/ADJ">adjectives</a>, sometimes also <a href="ru-pos/ADV">adverbs</a> and
-even <a href="ru-pos/NOUN">nouns</a>.
-(Most nouns have just <code>Negative=Pos</code>;
-deverbative nouns can have also <code>Negative=Neg</code>.)</p>
-
-<p>Note that <code>Negative=Neg</code> is not the same thing as
-<a href="">PronType</a><code>=Neg</code>. For pronouns and other pronominal parts of speech
-there is no such binary opposition as for verbs and adjectives. (There
-is no such thing as “affirmative pronoun”.)</p>
-
-<h3 id="pos-positive-affirmative"><code>Pos</code>: positive, affirmative</h3>
-
-<h4 id="examples">Examples</h4>
-
-<ul>
-  <li><em>он <b>пришёл</b> </em> “he came”</li>
-  <li><em><b>разумный</b> </em> “wise”</li>
-  <li><em><b>хорошо</b> </em> “nicely”</li>
-  <li><em><b>приятие</b> </em> “acceptance”</li>
-</ul>
-
-<h3 id="neg-negative">Neg: negative</h3>
-
-<h4 id="examples-1">Examples</h4>
-
-<ul>
-  <li><em>он <b>не пришёл</b> </em> “he did not come”</li>
-  <li><em><b>неразумный</b> </em> “unwise”</li>
-  <li><em><b>нехорошо</b> </em> “nastily”</li>
-  <li><em><b>неприятие</b> </em> “non-acceptance, rejection”</li>
-</ul>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-feat/Negative.md" target="#">edit Negative</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-feat/NumType.md" target="#">edit NameType</a></p>
 
 <p><a id="al-ru-feat/Number" class="al-dest"></a></p>
 <h2><code>Number</code>: number</h2>
@@ -609,7 +560,7 @@ other parts of speech (<a href="ru-pos/ADJ">adjectives</a>,
 <h4 id="examples">Examples</h4>
 
 <ul>
-  <li><em><b>стырый мужчина пришёл</b> </em> “an old man came”</li>
+  <li><em><b>старый мужчина пришёл</b> </em> “an old man came”</li>
   <li><em><b>молодая женщина пришла</b> </em> “a young woman came”</li>
   <li><em><b>маленький цыплёнок пришёл</b> </em> “a small chicken came”</li>
 </ul>
@@ -621,7 +572,7 @@ other parts of speech (<a href="ru-pos/ADJ">adjectives</a>,
 <h4 id="examples-1">Examples</h4>
 
 <ul>
-  <li><em><b>старый мужчины пришли</b> </em> “old men came”</li>
+  <li><em><b>старые мужчины пришли</b> </em> “old men came”</li>
   <li><em><b>молодые женщины пришли</b> </em> “young women came”</li>
   <li><em><b>маленькие цыплята пришли</b> </em> “small chickens came”</li>
 </ul>
@@ -633,7 +584,7 @@ thing (semantic singular); some tagsets mark this distinction.
 Grammatically they behave like plurals, so <code>Plur</code> is obviously the
 back-off value here; however, the
 non-existence of singular form sometimes means that the gender is
-unknown. In Czech, special type of numerals is used when counting
+unknown. In Russian, special type of numerals is used when counting
 nouns that are plurale tantum (<a href="">NumType</a><code>=Sets</code>).</p>
 
 <h4 id="examples-2">Examples</h4>
@@ -664,7 +615,7 @@ semantically plausible. Sometimes, the plural form exists and means
 <p>The RNC tagset does not distinguish <code>Ptan</code> from <code>Plur</code> and <code>Coll</code> from <code>Sing</code>,
 therefore this distinction is not being made in the converted data.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-feat/Number.md" target="#">edit Number</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-feat/Number.md" target="#">edit Number</a></p>
 
 <p><a id="al-ru-feat/Person" class="al-dest"></a></p>
 <h2><code>Person</code>: person</h2>
@@ -713,7 +664,49 @@ speakers nor addressees.</p>
   <li><em><b>делают</b> </em> “<b>they</b> do”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-feat/Person.md" target="#">edit Person</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-feat/Person.md" target="#">edit Person</a></p>
+
+<p><a id="al-ru-feat/Polarity" class="al-dest"></a></p>
+<h2><code>Polarity</code>: polarity</h2>
+
+<p>Polarity in Russian is a feature of verbs, adjectives, adverbs and nouns used to express negation. Negation in Russian is done both by using the bound morpheme <em>не-</em>
+and an independent negating particle (equivalent to English “not”). Words that can take the morpheme/particle of negation have
+the feature of negativeness.</p>
+
+<p>It applies to <a href="ru-pos/VERB">verbs</a>,
+<a href="ru-pos/ADJ">adjectives</a>, sometimes also <a href="ru-pos/ADV">adverbs</a> and
+even <a href="ru-pos/NOUN">nouns</a>.
+(Most nouns have just <code>Polarity=Pos</code>;
+deverbative nouns can have also <code>Polarity=Neg</code>.)</p>
+
+<p>Note that <code>Polaritye=Neg</code> is not the same thing as
+<a href="">PronType</a><code>=Neg</code>. For pronouns and other pronominal parts of speech
+there is no such binary opposition as for verbs and adjectives. (There
+is no such thing as “affirmative pronoun”.)</p>
+
+<h3 id="pos-positive-affirmative"><code>Pos</code>: positive, affirmative</h3>
+
+<h4 id="examples">Examples</h4>
+
+<ul>
+  <li><em>он <b>пришёл</b> </em> “he came”</li>
+  <li><em><b>разумный</b> </em> “wise”</li>
+  <li><em><b>хорошо</b> </em> “nicely”</li>
+  <li><em><b>приятие</b> </em> “acceptance”</li>
+</ul>
+
+<h3 id="polarity-negative">Polarity: negative</h3>
+
+<h4 id="examples-1">Examples</h4>
+
+<ul>
+  <li><em>он <b>не пришёл</b> </em> “he did not come”</li>
+  <li><em><b>неразумный</b> </em> “unwise”</li>
+  <li><em><b>нехорошо</b> </em> “nastily”</li>
+  <li><em><b>неприятие</b> </em> “non-acceptance, rejection”</li>
+</ul>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-feat/Polarity.md" target="#">edit Polarity</a></p>
 
 <p><a id="al-ru-feat/Poss" class="al-dest"></a></p>
 <h2><code>Poss</code>: possessive</h2>
@@ -741,110 +734,14 @@ means that empty value has the <code>No</code> meaning.)</p>
   <li>possessive adjectives: <em>папин </em> “father’s”, <em>мамин </em> “mother’s”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-feat/Poss.md" target="#">edit Poss</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-feat/Poss.md" target="#">edit Poss</a></p>
 
 <p><a id="al-ru-feat/PronType" class="al-dest"></a></p>
 <h2><code>PronType</code>: pronominal type</h2>
 
-<p>This feature typically applies to <a href="cs-pos/PRON">pronouns</a>,
-<a href="cs-pos/DET">determiners</a>, pronominal <a href="cs-pos/NUM">numerals</a>
-(quantifiers) and pronominal <a href="cs-pos/ADV">adverbs</a>.</p>
+<p>This feature is not used in Russian treebanks.</p>
 
-<h3 id="prs-personal-or-possessive-personal-pronoun-or-determiner"><code>Prs</code>: personal or possessive personal pronoun or determiner</h3>
-
-<p>See also the <a href="">Poss</a> feature that distinguishes normal personal
-pronouns from possessives. Note that <code>Prs</code> also includes reflexive
-personal/possessive pronouns (e.g. <em>себя / свой;</em> see the
-<a href="">Reflex</a> feature).</p>
-
-<h4 id="examples">Examples</h4>
-
-<ul>
-  <li><em>я, ты, он, она, оно, мы, вы, они, себя </em> “I, you, he, she, it, we, you, they, they, they, oneself”</li>
-  <li><em>мой, твой, его, её, наш, ваш, их, свой </em> “my, your, his/its, her, our, your, their, one’s own”</li>
-</ul>
-
-<h3 id="int-interrogative-pronoun-determiner-numeral-or-adverb"><code>Int</code>: interrogative pronoun, determiner, numeral or adverb</h3>
-
-<p>Note that possessive interrogative determiners (<em>whose</em>) can be
-distinguished by the <a href="">Poss</a> feature.</p>
-
-<h4 id="examples-1">Examples:</h4>
-
-<ul>
-  <li><em>кто </em> “who”</li>
-  <li><em>что </em> “what”</li>
-  <li><em>какой </em> “what kind of”</li>
-  <li><em>который </em> “which”</li>
-  <li><em>чей </em> “whose”</li>
-  <li><em>сколько </em> “how many”</li>
-  <li><em>где </em> “where”</li>
-  <li><em>куда </em> “where to”</li>
-  <li><em>когда </em> “when”</li>
-  <li><em>как </em> “how”</li>
-  <li><em>почему </em> “why”</li>
-</ul>
-
-<h3 id="dem-demonstrative-pronoun-determiner-numeral-or-adverb"><code>Dem</code>: demonstrative pronoun, determiner, numeral or adverb</h3>
-
-<p>These are to some extent parallel to interrogatives.</p>
-
-<h4 id="examples-2">Examples</h4>
-
-<ul>
-  <li><em>этот </em> “this”</li>
-  <li><em>тот </em> “that”</li>
-  <li><em>такой </em> “such”</li>
-  <li><em>такой же </em> “same”</li>
-  <li><em>столько </em> “so many”</li>
-  <li><em>здесь </em> “here”</li>
-  <li><em>там </em> “there”</li>
-  <li><em>так </em> “so”</li>
-</ul>
-
-<h3 id="tot-total-collective-pronoun-determiner-or-adverb"><code>Tot</code>: total (collective) pronoun, determiner or adverb</h3>
-
-<h4 id="examples-3">Examples</h4>
-
-<ul>
-  <li><em>каждый </em> “every, everybody, everyone, each”</li>
-  <li><em>всё </em> “everything, all”</li>
-  <li><em>везде </em> “everywhere”</li>
-  <li><em>всегда </em> “always”</li>
-</ul>
-
-<h3 id="neg-negative-pronoun-determiner-or-adverb"><code>Neg</code>: negative pronoun, determiner or adverb</h3>
-
-<h4 id="examples-4">Examples</h4>
-
-<ul>
-  <li><em>никто </em> “nobody”</li>
-  <li><em>ничто </em> “nothing”</li>
-  <li><em>никакой </em> “no (kind)”</li>
-  <li><em>ничей </em> “no one’s”</li>
-  <li><em>нигде </em> “nowhere”</li>
-  <li><em>никуда </em> “(to) nowhere”</li>
-  <li><em>никогда </em> “never”</li>
-  <li><em>никак </em> “no way” (lit. “no-how”)</li>
-</ul>
-
-<h3 id="ind-indefinite-pronoun-determiner-numeral-or-adverb"><code>Ind</code>: indefinite pronoun, determiner, numeral or adverb</h3>
-
-<h4 id="examples-5">Examples</h4>
-
-<ul>
-  <li><em>кто-то </em> “somebody”; <em>кто-нибудь </em> “anybody”; <em>некто </em> “somebody”</li>
-  <li><em>кто-то </em> “something”; <em>что-нибудь </em> “anything”; <em>нечто </em> “something”</li>
-  <li><em>какой-то </em> “some kind of”; <em>какой-то </em> “any kind of”; <em>любой </em> “just any”; <em>некий </em> “some, certain”</li>
-  <li><em>некоторый </em> “some”;</li>
-  <li><em>чей-то </em> “someone’s”; <em>чей-нибудь </em> “anyone’s”;</li>
-  <li><em>несколько </em> “several”; <em>мало </em> “few”; <em>много </em> “many”</li>
-  <li><em>где-то </em> “somewhere”; <em>где-нибудь </em> “anywhere”;</li>
-  <li><em>когда-то </em> “sometimes”; <em>когда-нибудь </em> “anytime”; <em>некогда </em> “once (long ago)”</li>
-  <li><em>как-то </em> “somehow”; <em>как-нибудь </em> “anyhow”.</li>
-</ul>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-feat/PronType.md" target="#">edit PronType</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-feat/PronType.md" target="#">edit PronType</a></p>
 
 <p><a id="al-ru-feat/Reflex" class="al-dest"></a></p>
 <h2><code>Reflex</code>: reflexive</h2>
@@ -879,7 +776,7 @@ column. (Which means that empty value has the <code>No</code> meaning.)</p>
   <li>reflexive possessive pronoun: <em>свой</em></li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-feat/Reflex.md" target="#">edit Reflex</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-feat/Reflex.md" target="#">edit Reflex</a></p>
 
 <p><a id="al-ru-feat/Tense" class="al-dest"></a></p>
 <h2><code>Tense</code>: tense</h2>
@@ -948,15 +845,33 @@ at the infinitive.</li>
   <li><em><b>Буду</b> идти домой. </em> “I <b>will</b> be coming home.” (<em>Идти </em> is an imperfective verb and it forms future periphrastically.)</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-feat/Tense.md" target="#">edit Tense</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-feat/Tense.md" target="#">edit Tense</a></p>
 
 <p><a id="al-ru-feat/Variant" class="al-dest"></a></p>
 <h2><code>Variant</code>: Variant</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>Variant</code>.</p>
+<p>Sometimes there are multiple word forms for the same lemma and set of features.
+The <code>Variant</code> feature helps distinguish alternate forms.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-feat/Variant.md" target="#">edit Variant</a></p>
+<p>In Russian <a href="ru-pos/ADJ">adjectives</a> may have a short form.
+This feature only marks the non-standard short forms, hence there is only one value, <code>Short</code>.
+For the long standard forms the <code>Variant</code> feature remains unspecified.</p>
+
+<h3 id="short-short-form-of-adjectives"><code>Short</code>: short form of adjectives</h3>
+
+<p>The short form is called <em>nominal form of adjective (краткая форма прилагательных),</em>
+as opposed to the long form, which is <em>pronominal</em> because it originated as
+a combination of a nominal form and a personal pronoun._</p>
+
+<h4 id="examples">Examples</h4>
+
+<ul>
+  <li><em><b>красив</b></em> “beautiful”, <em><b>возможен</b></em> “able”, <em><b>нужен</b></em> “necessary”, <em><b>известен</b></em> “known”,
+<em><b>доволен</b></em> “satisfied”, <em><b>уверен</b></em> “sure”, <em><b>равен</b></em> “equal”, <em><b>готов</b></em> “finished”, <em><b>связан</b></em> “connected”, <em><b>виновен</b></em> “guilty”</li>
+  <li>Long equivalents: красивый, возможный, нужный, известный, довольный, уверенный, равный, готовый, связанный, виновный</li>
+</ul>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-feat/Variant.md" target="#">edit Variant</a></p>
 
 <p><a id="al-ru-feat/VerbForm" class="al-dest"></a></p>
 <h2><code>VerbForm</code>: form of verb or deverbative</h2>
@@ -1038,7 +953,7 @@ stared at me <b>while gripping</b> their guns”</li>
 prepared</b> the dinner, she called her family to the table”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-feat/VerbForm.md" target="#">edit VerbForm</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-feat/VerbForm.md" target="#">edit VerbForm</a></p>
 
 <p><a id="al-ru-feat/Voice" class="al-dest"></a></p>
 <h2><code>Voice</code>: voice</h2>
@@ -1048,31 +963,49 @@ such as subject and object, to semantic roles, such as agent and pacient.</p>
 
 <h3 id="act-active-voice"><code>Act</code>: active voice</h3>
 
-<p>The subject of the verb is the doer of the action (agent), the object
-is affected by the action (pacient).</p>
+<p>Prototypically, the subject of the verb is the doer of the action (agent), the object
+is affected by the action (patient).</p>
 
-<p>All finite verb forms and the active/past participles are tagged <code>Voice=Act</code>.</p>
+<p>All active participles (in present and past form) are tagged <code>Voice=Act</code>.
+By default, the finite forms, ininitives and gerunds of non-reflexive verbs are also labeled <code>Voice=Act</code>, except for the cases when they are labeled <code>Voice=Pass</code> and <code>Voice=Mid</code>, see below.</p>
 
 <h4 id="examples">Examples</h4>
 
 <ul>
-  <li><em>мы <b>нападали</b> на врага. </em> “We <b>attacked</b> the enemy”</li>
+  <li><em>мы <b>атаковали</b> врага. </em> “We <b>attacked</b> the enemy”</li>
 </ul>
 
 <h3 id="pass-passive-voice"><code>Pass</code>: passive voice</h3>
 
 <p>The subject of the verb is affected by the action (patient). The doer
-(agent) is either unexpressed or it appears as an object of the verb.</p>
+(agent) is either a non-obligatory oblique phrase of the verb or not overtly expressed;.</p>
 
-<p>Only the passive participle is tagged <code>Voice=Pass</code>.</p>
+<p>The passive participles (in present and past form) are tagged <code>Voice=Pass</code>. The finite non-reflexive forms are labeled <code>Voice=Pass</code> in the passive construction; in this case, the form is marked with -sja (but the lemma is tagged as non-reflexive).</p>
 
 <h4 id="examples-1">Examples</h4>
 
 <ul>
-  <li><em>Мы <b>атакованы</b> врагом. </em> “We are <b>attacked</b> by</li>
+  <li><em>Мы были <b>атакованы</b> врагом. </em> “We were <b>attacked</b> by the enemy”</li>
+  <li><em>Разработки лекарства <b>ведутся</b> несколькими международными компаниями. </em> “Drug development is <b>conducted</b> by several international companies”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-feat/Voice.md" target="#">edit Voice</a></p>
+<h3 id="mid-middle-voice"><code>Mid</code>: middle voice</h3>
+
+<p>Between active and passive, needed for the reflexive verbs (in all forms except active participle).</p>
+
+<h4 id="examples-2">Examples</h4>
+
+<ul>
+  <li><em>Я <b>занялся</b> музыкой. </em> “I <b>took up.Refl</b> music”</li>
+</ul>
+
+<h4 id="references">References</h4>
+
+<p>Anna Siewierska. 2013. Passive Constructions. In: Dryer, Matthew S. &amp; Haspelmath, Martin (eds.) 
+The World Atlas of Language Structures Online. Leipzig: Max Planck Institute for Evolutionary Anthropology. 
+(http://wals.info/chapter/107)</p>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-feat/Voice.md" target="#">edit Voice</a></p>
 
 
 

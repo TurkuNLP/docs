@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-cu">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/cu/feat">cu/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_cu-feat/Degree.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/cu/feat">cu/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cu-feat/Degree.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -65,34 +82,34 @@ for <code>Degree</code>.</p>
 <p>This feature is universal.
 It occurs with 2 different values: <code>Cmp</code>, <code>Pos</code>.</p>
 
-<p>2745 tokens (5%) have a non-empty value of <code>Degree</code>.
-1277 types (13%) occur at least once with a non-empty value of <code>Degree</code>.
-478 lemmas (16%) occur at least once with a non-empty value of <code>Degree</code>.
-The feature is used with 2 part-of-speech tags: <a href="">cu-pos/ADJ</a> (2572; 4% instances), <a href="">cu-pos/ADV</a> (173; 0% instances).</p>
+<p>2257 tokens (5%) have a non-empty value of <code>Degree</code>.
+1103 types (13%) occur at least once with a non-empty value of <code>Degree</code>.
+454 lemmas (16%) occur at least once with a non-empty value of <code>Degree</code>.
+The feature is used with 2 part-of-speech tags: <a href="">cu-pos/ADJ</a> (2123; 4% instances), <a href="">cu-pos/ADV</a> (134; 0% instances).</p>
 
 <h3 id="adj"><code>ADJ</code></h3>
 
-<p>2572 <a href="">cu-pos/ADJ</a> tokens (64% of all <code>ADJ</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>2123 <a href="">cu-pos/ADJ</a> tokens (49% of all <code>ADJ</code> tokens) have a non-empty value of <code>Degree</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Degree</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (1831; 71%), <tt><a href="Strength.html">Strength</a>=Strong</tt> (1678; 65%).</p>
+<p>The most frequent other feature values with which <code>ADJ</code> and <code>Degree</code> co-occurred: <tt><a href="Person.html">Person</a>=EMPTY</tt> (2123; 100%), <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (2123; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (1532; 72%), <tt><a href="Strength.html">Strength</a>=Strong</tt> (1391; 66%).</p>
 
 <p><code>ADJ</code> tokens may have the following values of <code>Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (134; 5% of non-empty <code>Degree</code>): <em>болеи, болии, боле, оудобѣе, оунѣе, вꙑшънѣаго, добрѣа, лише, старѣи, больши</em></li>
-  <li><code>Pos</code> (2438; 95% of non-empty <code>Degree</code>): <em>мъноѕи, вьсѣкъ, б҃жие, мъногꙑ, б҃жии, мъногъ, добро, б҃жиѣ, мрътвꙑхъ, б҃жіи</em></li>
-  <li><code>EMPTY</code> (1468): <em>онъ, си, тъ, се, сь, сего, они, сихъ, самъ, томоу</em></li>
+  <li><code>Cmp</code> (112; 5% of non-empty <code>Degree</code>): <em>болеи, болии, оудобѣе, оунѣе, боле, вꙑшънѣаго, добрѣа, лише, старѣи, больша</em></li>
+  <li><code>Pos</code> (2011; 95% of non-empty <code>Degree</code>): <em>мъноѕи, вьсѣкъ, б҃жие, мъногꙑ, б҃жии, мъногъ, б҃жиѣ, добро, б҃жіи, мрътвꙑхъ</em></li>
+  <li><code>EMPTY</code> (2228): <em>онъ, си, мои, се, сь, тъ, своего, они, твои, моего</em></li>
 </ul>
 
 <table>
   <tr><th>Paradigm <i>мъногъ</i></th><th><tt>Pos</tt></th><th><tt>Cmp</tt></th></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing|<a href="Strength.html">Strength</a>=Strong</tt></td><td><em>мъногъ</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur|<a href="Strength.html">Strength</a>=Strong</tt></td><td><em>мъногꙑ, многꙑ</em></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Fem,Masc|<a href="Number.html">Number</a>=Plur|<a href="Strength.html">Strength</a>=Strong</tt></td><td><em>мъногꙑ, мьногꙑ</em></td><td><em>мъножаишѧ</em></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing|<a href="Strength.html">Strength</a>=Strong</tt></td><td><em>мъного, много, мьного</em></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Plur|<a href="Strength.html">Strength</a>=Strong</tt></td><td><em>мънога, многа, мьнога</em></td><td></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Fem,Masc|<a href="Number.html">Number</a>=Plur|<a href="Strength.html">Strength</a>=Strong</tt></td><td><em>мъногꙑ</em></td><td><em>мъножаишѧ</em></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing|<a href="Strength.html">Strength</a>=Strong</tt></td><td><em>мъного, мьного</em></td><td></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Acc|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Plur|<a href="Strength.html">Strength</a>=Strong</tt></td><td><em>мънога, мьнога, многа</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Gender.html">Gender</a>=Masc,Neut|<a href="Number.html">Number</a>=Sing|<a href="Strength.html">Strength</a>=Strong</tt></td><td><em>мъногоу</em></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Gender.html">Gender</a>=Masc,Neut|<a href="Number.html">Number</a>=Plur|<a href="Strength.html">Strength</a>=Strong</tt></td><td><em>мьногомь, мъногомъ</em></td><td></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Gender.html">Gender</a>=Masc,Neut|<a href="Number.html">Number</a>=Plur|<a href="Strength.html">Strength</a>=Strong</tt></td><td><em>мъногомъ, мьногомь</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing|<a href="Strength.html">Strength</a>=Strong</tt></td><td><em>мъногоу</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur|<a href="Strength.html">Strength</a>=Strong</tt></td><td><em>мъногомъ</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Dat|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing|<a href="Strength.html">Strength</a>=Strong</tt></td><td><em>мъногоу</em></td><td></td></tr>
@@ -107,13 +124,12 @@ The feature is used with 2 part-of-speech tags: <a href="">cu-pos/ADJ</a> (2572;
   <tr><td><tt><a href="Case.html">Case</a>=Ins|<a href="Gender.html">Gender</a>=Masc,Neut|<a href="Number.html">Number</a>=Plur|<a href="Strength.html">Strength</a>=Strong</tt></td><td><em>мъногꙑ</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Ins|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td><em>мъногоѭ҄</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Ins|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing|<a href="Strength.html">Strength</a>=Strong</tt></td><td><em>мъногоѭ</em></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Ins|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Plur|<a href="Strength.html">Strength</a>=Strong</tt></td><td><em>мъногꙑ</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Ins|<a href="Number.html">Number</a>=Plur|<a href="Strength.html">Strength</a>=Weak</tt></td><td><em>мъноѕѣми</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Loc|<a href="Gender.html">Gender</a>=Masc,Neut|<a href="Number.html">Number</a>=Plur|<a href="Strength.html">Strength</a>=Strong</tt></td><td><em>мъноѕѣхъ</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Loc|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing|<a href="Strength.html">Strength</a>=Strong</tt></td><td><em>мьнозѣ, мъноѕѣ</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Loc|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Plur|<a href="Strength.html">Strength</a>=Weak</tt></td><td></td><td><em>мъножаишиихъ</em></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Loc|<a href="Number.html">Number</a>=Sing|<a href="Strength.html">Strength</a>=Strong</tt></td><td><em>мъноѕѣ</em></td><td></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Loc|<a href="Number.html">Number</a>=Plur|<a href="Strength.html">Strength</a>=Strong</tt></td><td><em>мноѕѣхъ, мьнозѣхъ</em></td><td></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Loc|<a href="Number.html">Number</a>=Plur|<a href="Strength.html">Strength</a>=Strong</tt></td><td><em>мноѕѣхъ</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing|<a href="Strength.html">Strength</a>=Strong</tt></td><td><em>мъногъ</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur|<a href="Strength.html">Strength</a>=Strong</tt></td><td><em>мъноѕи, мьноѕи, мънози, мьнози, мноѕи</em></td><td><em>мъножѣише</em></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing|<a href="Strength.html">Strength</a>=Strong</tt></td><td><em>мънога</em></td><td></td></tr>
@@ -123,20 +139,20 @@ The feature is used with 2 part-of-speech tags: <a href="">cu-pos/ADJ</a> (2572;
   <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Plur|<a href="Strength.html">Strength</a>=Strong</tt></td><td><em>мънога</em></td><td></td></tr>
 </table>
 
-<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 97% lemmas (433) occur only with one value of <code>Degree</code>.</p>
+<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 97% lemmas (413) occur only with one value of <code>Degree</code>.</p>
 
 <h3 id="adv"><code>ADV</code></h3>
 
-<p>173 <a href="">cu-pos/ADV</a> tokens (3% of all <code>ADV</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>134 <a href="">cu-pos/ADV</a> tokens (3% of all <code>ADV</code> tokens) have a non-empty value of <code>Degree</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADV</code> and <code>Degree</code> co-occurred: <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (173; 100%).</p>
+<p>The most frequent other feature values with which <code>ADV</code> and <code>Degree</code> co-occurred: <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (134; 100%), <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (134; 100%).</p>
 
 <p><code>ADV</code> tokens may have the following values of <code>Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (63; 36% of non-empty <code>Degree</code>): <em>паче, отърадьнѣе, вѧште, вꙑше, поздѣ, мъножѣе, боле, дале, лише, мьножѣе</em></li>
-  <li><code>Pos</code> (110; 64% of non-empty <code>Degree</code>): <em>мъного, мало, далече, добрѣ, поздѣ, не.оудобь, ѩдро, зълѣ, лютѣ, скоро</em></li>
-  <li><code>EMPTY</code> (5723): <em>же, не, бо, и, ли, егда, оубо, ѣко, ѣкоже, пакꙑ</em></li>
+  <li><code>Cmp</code> (49; 37% of non-empty <code>Degree</code>): <em>паче, отърадьнѣе, вѧште, вꙑше, поздѣ, мъножѣе, боле, дале, мьножѣе, мьньшьми</em></li>
+  <li><code>Pos</code> (85; 63% of non-empty <code>Degree</code>): <em>мъного, мало, далече, добрѣ, поздѣ, ѩдро, не, зълѣ, оудобь, горько</em></li>
+  <li><code>EMPTY</code> (4824): <em>же, не, бо, ли, и, егда, оубо, ѣко, ѣкоже, да</em></li>
 </ul>
 
 <table>
@@ -147,13 +163,13 @@ The feature is used with 2 part-of-speech tags: <a href="">cu-pos/ADJ</a> (2572;
 <h2 id="relations-with-agreement-in-degree">Relations with Agreement in <code>Degree</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>Degree</code>:
-<tt>ADJ –[<a href="../dep/amod.html">amod</a>]–&gt; ADJ</tt> (85; 94%),
-<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (67; 97%),
-<tt>ADJ –[<a href="../dep/remnant.html">remnant</a>]–&gt; ADJ</tt> (18; 64%),
+<tt>ADJ –[<a href="../dep/amod.html">amod</a>]–&gt; ADJ</tt> (80; 93%),
+<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (51; 98%),
+<tt>ADJ –[<a href="../dep/flat.html">flat</a>]–&gt; ADJ</tt> (10; 100%),
 <tt>ADJ –[<a href="../dep/advmod.html">advmod</a>]–&gt; ADJ</tt> (9; 100%),
-<tt>ADJ –[<a href="../dep/remnant.html">remnant</a>]–&gt; ADV</tt> (3; 75%),
-<tt>ADJ –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; ADV</tt> (2; 100%),
-<tt>ADJ –[<a href="../dep/dobj.html">dobj</a>]–&gt; ADJ</tt> (1; 100%).</p>
+<tt>ADV –[<a href="../dep/flat.html">flat</a>]–&gt; ADV</tt> (4; 100%),
+<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADV</tt> (1; 100%),
+<tt>ADJ –[<a href="../dep/obj:dir.html">obj:dir</a>]–&gt; ADJ</tt> (1; 100%).</p>
 
 
 
@@ -163,9 +179,25 @@ The feature is used with 2 part-of-speech tags: <a href="">cu-pos/ADJ</a> (2572;
 
 Degree in other languages:
 
+[<a href="../../am/feat/Degree.html">am</a>]
+
+[<a href="../../ar/feat/Degree.html">ar</a>]
+
 [<a href="../../bg/feat/Degree.html">bg</a>]
 
+[<a href="../../bxr/feat/Degree.html">bxr</a>]
+
+[<a href="../../ca/feat/Degree.html">ca</a>]
+
+[<a href="../../ckb/feat/Degree.html">ckb</a>]
+
+[<a href="../../cop/feat/Degree.html">cop</a>]
+
 [<a href="../../cs/feat/Degree.html">cs</a>]
+
+[<a href="../../cu/feat/Degree.html">cu</a>]
+
+[<a href="../../da/feat/Degree.html">da</a>]
 
 [<a href="../../de/feat/Degree.html">de</a>]
 
@@ -175,29 +207,99 @@ Degree in other languages:
 
 [<a href="../../es/feat/Degree.html">es</a>]
 
+[<a href="../../et/feat/Degree.html">et</a>]
+
 [<a href="../../eu/feat/Degree.html">eu</a>]
 
 [<a href="../../fa/feat/Degree.html">fa</a>]
 
 [<a href="../../fi/feat/Degree.html">fi</a>]
 
+[<a href="../../fo/feat/Degree.html">fo</a>]
+
 [<a href="../../fr/feat/Degree.html">fr</a>]
 
 [<a href="../../ga/feat/Degree.html">ga</a>]
 
+[<a href="../../gl/feat/Degree.html">gl</a>]
+
+[<a href="../../got/feat/Degree.html">got</a>]
+
+[<a href="../../grc/feat/Degree.html">grc</a>]
+
 [<a href="../../he/feat/Degree.html">he</a>]
 
+[<a href="../../hi/feat/Degree.html">hi</a>]
+
+[<a href="../../hr/feat/Degree.html">hr</a>]
+
 [<a href="../../hu/feat/Degree.html">hu</a>]
+
+[<a href="../../id/feat/Degree.html">id</a>]
 
 [<a href="../../it/feat/Degree.html">it</a>]
 
 [<a href="../../ja/feat/Degree.html">ja</a>]
 
+[<a href="../../kk/feat/Degree.html">kk</a>]
+
+[<a href="../../kmr/feat/Degree.html">kmr</a>]
+
 [<a href="../../ko/feat/Degree.html">ko</a>]
+
+[<a href="../../la/feat/Degree.html">la</a>]
+
+[<a href="../../lv/feat/Degree.html">lv</a>]
+
+[<a href="../../mr/feat/Degree.html">mr</a>]
+
+[<a href="../../nl/feat/Degree.html">nl</a>]
+
+[<a href="../../no/feat/Degree.html">no</a>]
+
+[<a href="../../pl/feat/Degree.html">pl</a>]
+
+[<a href="../../pt/feat/Degree.html">pt</a>]
+
+[<a href="../../ro/feat/Degree.html">ro</a>]
+
+[<a href="../../ru/feat/Degree.html">ru</a>]
+
+[<a href="../../sa/feat/Degree.html">sa</a>]
+
+[<a href="../../sk/feat/Degree.html">sk</a>]
+
+[<a href="../../sla/feat/Degree.html">sla</a>]
+
+[<a href="../../sl/feat/Degree.html">sl</a>]
+
+[<a href="../../so/feat/Degree.html">so</a>]
+
+[<a href="../../sr/feat/Degree.html">sr</a>]
 
 [<a href="../../sv/feat/Degree.html">sv</a>]
 
+[<a href="../../swl/feat/Degree.html">swl</a>]
+
+[<a href="../../ta/feat/Degree.html">ta</a>]
+
+[<a href="../../tr/feat/Degree.html">tr</a>]
+
 [<a href="../../u/feat/Degree.html">u</a>]
+
+[<a href="../../ug/feat/Degree.html">ug</a>]
+
+[<a href="../../uk/feat/Degree.html">uk</a>]
+
+[<a href="../../ur/feat/Degree.html">ur</a>]
+
+[<a href="../../urj/feat/Degree.html">urj</a>]
+
+[<a href="../../vi/feat/Degree.html">vi</a>]
+
+[<a href="../../yue/feat/Degree.html">yue</a>]
+
+[<a href="../../zh/feat/Degree.html">zh</a>]
 
 
 

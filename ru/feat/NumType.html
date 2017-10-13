@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ru">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ru/feat">ru/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-feat/NumType.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ru">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ru/feat">ru/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-feat/NumType.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -53,25 +70,15 @@ in multi-word foreign names, <a href="ru-pos/ADJ">adjectives</a> may also have t
 (they preserve the <code>ADJ</code> tag but at the same time they would not exist in Russian
 otherwise than in the named entity).</p>
 
-<h3 id="conversion-from-the-prague-dependency-treebank">Conversion from the Prague Dependency Treebank</h3>
-
-<p>Lemmas in PDT contain features
-that also encode types of named entities. When converting the PDT annotation
-to UD, these lemma features are removed and the feature
-<code>NameType</code> is added to the universal features to preserve the type.</p>
-
-<p>The following table lists the name types together with the most frequent examples.
-See <a href="http://ufal.mff.cuni.cz/techrep/tr27.pdf">http://ufal.mff.cuni.cz/techrep/tr27.pdf</a>,
-page 8, section 2.1 (Lemma structure) for more details.</p>
+<p>The following table lists the name types together with the most frequent examples.</p>
 
 <table>
-<tr><td><tt>_;Y</tt></td><td>given name</td><td><em>Jan, Jiří, Václav, Petr, Josef</em></td><td>“Jan, Jiří, Václav, Petr, Josef”</td></tr>
-<tr><td><tt>_;S</tt></td><td>surname</td><td><em>Klaus, Havel, Němec, Jelcin, Svoboda</em></td><td>“Klaus, Havel, Němec, Yeltsin, Svoboda”</td></tr>
-<tr><td><tt>_;E</tt></td><td>member of a particular nation, inhabitant of a particular territory</td><td><em>Němec, Čech, Srb, Američan, Slovák</em></td><td>“German, Czech, Serbian, American, Slovak”</td></tr>
-<tr><td><tt>_;G</tt></td><td>geographical name</td><td><em>Praha, ČR, Evropa, Německo, Brno</em></td><td>“Prague, CR, Europe, Germany, Brno”</td></tr>
-<tr><td><tt>_;K</tt></td><td>company, organization, institution</td><td><em>ODS, OSN, Sparta, ODA, Slavia</em></td><td>“ODS, UN, Sparta, ODA, Slavia”</td></tr>
-<tr><td><tt>_;R</tt></td><td>product</td><td><em>LN, Mercedes, Tatra, PC, MF</em></td><td>“LN, Mercedes, Tatra, PC, MF”</td></tr>
-<tr><td><tt>_;m</tt></td><td>other proper name: names of mines, stadiums, guerilla bases etc.</td><td><em>US, PVP, Prix, Rapaport, Tour</em></td><td>“US, PVP, Prix, Rapaport, Tour”</td></tr>
+<tr><td><tt>_;Y</tt></td><td>given name</td><td><em>Александр, Игорь, Петр</em></td><td>“Александр, Игорь, Петр”</td></tr>
+<tr><td><tt>_;S</tt></td><td>surname</td><td><em>Иванов, Петров, Кожевников</em></td><td>“Иванов, Петров, Кожевников”</td></tr>
+<tr><td><tt>_;G</tt></td><td>geographical name</td><td><em>Москва, Россия, Азия</em></td><td>“Москва, Россия, Азия”</td></tr>
+<tr><td><tt>_;K</tt></td><td>company, organization, institution</td><td><em>Афиша, Просвещение, МТС</em></td><td>“Афиша, Просвещение, МТС”</td></tr>
+<tr><td><tt>_;R</tt></td><td>product</td><td><em>Мерседес, Тайд</em></td><td>“Мерседес, Тайд”</td></tr>
+<tr><td><tt>_;m</tt></td><td>other proper name: names of mines, stadiums, guerilla bases etc.</td><td><em>Лужники, Крокус Сити Холл</em></td><td>“Лужники, Крокус Сити Холл”</td></tr>
 </table>
 
 <h3 id="geo-geographical-name"><code>Geo</code>: geographical name</h3>
@@ -81,7 +88,7 @@ page 8, section 2.1 (Lemma structure) for more details.</p>
 <h4 id="examples">Examples</h4>
 
 <ul>
-  <li><em><b>Praha</b> </em> “Prague”, <em><b>Kostelec</b> nad Černými lesy, <b>Německo</b> </em> “Germany”</li>
+  <li><em><b>Москва</b> </em> “Moscow”, <b>Россия</b> _ “Russia”</li>
 </ul>
 
 <h3 id="prs-name-of-person"><code>Prs</code>: name of person</h3>
@@ -95,7 +102,7 @@ page 8, section 2.1 (Lemma structure) for more details.</p>
 <h4 id="examples-1">Examples</h4>
 
 <ul>
-  <li><em><b>Jan</b>, <b>Jiří</b>, <b>Václav</b></em></li>
+  <li><em><b>Александр</b>, <b>Дмитрий</b></em></li>
 </ul>
 
 <h3 id="sur-surname--family-name-of-person"><code>Sur</code>: surname / family name of person</h3>
@@ -105,21 +112,7 @@ page 8, section 2.1 (Lemma structure) for more details.</p>
 <h4 id="examples-2">Examples</h4>
 
 <ul>
-  <li><em><b>Klaus</b>, <b>Havel</b>, <b>Němec</b></em></li>
-</ul>
-
-<h3 id="nat-nationality"><code>Nat</code>: nationality</h3>
-
-<p>Name denoting a member of a particular nation, or inhabitant of a particular territory.
-This does not include derived adjectives,
-nor nouns denoting languages (both groups are written in lowercase).
-Thus <em><b>Čech</b> </em> “Czech [man]” belongs here
-but <em>český </em> “Czech” and <em>čeština </em> “Czech [language]” do not.</p>
-
-<h4 id="examples-3">Examples</h4>
-
-<ul>
-  <li><em><b>Čech</b> </em> “Czech”, <em><b>Němec</b> </em> “German”, <em><b>Pražan</b> </em> “Praguer”</li>
+  <li><em><b>Иванов</b>, <b>Сидоров</b></em></li>
 </ul>
 
 <h3 id="com-company-organization"><code>Com</code>: company, organization</h3>
@@ -139,6 +132,13 @@ but <em>český </em> “Czech” and <em>čeština </em> “Czech [language]�
 
 <!-- "in other languages" links -->
 <hr/>
+
+NameType in other languages:
+
+[<a href="../../cs/feat/NameType.html">cs</a>]
+
+[<a href="../../fo/feat/NameType.html">fo</a>]
+
 
 
 

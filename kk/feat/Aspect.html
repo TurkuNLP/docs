@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-kk">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/kk/feat">kk/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_kk-feat/Aspect.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-kk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/kk/feat">kk/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-feat/Aspect.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -62,53 +79,49 @@ for <code>Aspect</code>.</p>
 
 <h2 id="treebank-statistics-udkazakh">Treebank Statistics (UD_Kazakh)</h2>
 
-<p>This feature is universal but the values <code>Impf</code> are language-specific.
-It occurs with 2 different values: <code>Impf</code>, <code>Perf</code>.</p>
+<p>This feature is universal.
+It occurs with 2 different values: <code>Imp</code>, <code>Perf</code>.</p>
 
-<p>88 tokens (1%) have a non-empty value of <code>Aspect</code>.
-65 types (2%) occur at least once with a non-empty value of <code>Aspect</code>.
-53 lemmas (3%) occur at least once with a non-empty value of <code>Aspect</code>.
-The feature is used with 2 part-of-speech tags: <a href="">kk-pos/VERB</a> (82; 1% instances), <a href="">kk-pos/AUX</a> (6; 0% instances).</p>
+<p>22 tokens (4%) have a non-empty value of <code>Aspect</code>.
+17 types (5%) occur at least once with a non-empty value of <code>Aspect</code>.
+16 lemmas (6%) occur at least once with a non-empty value of <code>Aspect</code>.
+The feature is used with 2 part-of-speech tags: <a href="">kk-pos/VERB</a> (20; 4% instances), <a href="">kk-pos/AUX</a> (2; 0% instances).</p>
 
 <h3 id="verb"><code>VERB</code></h3>
 
-<p>82 <a href="">kk-pos/VERB</a> tokens (8% of all <code>VERB</code> tokens) have a non-empty value of <code>Aspect</code>.</p>
+<p>20 <a href="">kk-pos/VERB</a> tokens (26% of all <code>VERB</code> tokens) have a non-empty value of <code>Aspect</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Aspect</code> co-occurred: <tt><a href="Person.html">Person</a>=EMPTY</tt> (82; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (82; 100%), <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (82; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Coverb</tt> (42; 51%).</p>
+<p>The most frequent other feature values with which <code>VERB</code> and <code>Aspect</code> co-occurred: <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (20; 100%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (20; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (20; 100%), <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (20; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (20; 100%), <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (19; 95%), <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (18; 90%), <tt><a href="VerbForm.html">VerbForm</a>=Conv</tt> (12; 60%).</p>
 
 <p><code>VERB</code> tokens may have the following values of <code>Aspect</code>:</p>
 
 <ul>
-  <li><code>Impf</code> (18; 22% of non-empty <code>Aspect</code>): <em>келе, тұра, ала, алыса, асыратын, бара, біле, білетін, жиренетін, жығатынын</em></li>
-  <li><code>Perf</code> (64; 78% of non-empty <code>Aspect</code>): <em>алып, деп, болып, атып, беріп, келіп, көріп, қашып, Шошып, абыржып</em></li>
-  <li><code>EMPTY</code> (973): <em>_, деп, болып, болған, біледі, болды, береді, болады, бастап, басып</em></li>
+  <li><code>Imp</code> (8; 40% of non-empty <code>Aspect</code>): <em>бере, болатын, ойлайтын, отыратын, таласа, тілейтін, өсетіндей</em></li>
+  <li><code>Perf</code> (12; 60% of non-empty <code>Aspect</code>): <em>деп, аспай, атанып, барып, бастап, сатылып, Қиюласып, құрып, құшақтап</em></li>
+  <li><code>EMPTY</code> (57): <em>шешуі, айтты, жатса, шыққан, Туған, айтарлықтай, айтушы, алған, атауға, безді</em></li>
 </ul>
 
-<table>
-  <tr><th>Paradigm <i>ал</i></th><th><tt>Perf</tt></th><th><tt>Impf</tt></th></tr>
-  <tr><td><tt><a href="VerbForm.html">VerbForm</a>=Coverb</tt></td><td><em>алып</em></td><td><em>ала</em></td></tr>
-  <tr><td><tt><a href="VerbForm.html">VerbForm</a>=Coverb|<a href="Voice.html">Voice</a>=Coop</tt></td><td></td><td><em>алыса</em></td></tr>
-  <tr><td><tt><a href="VerbForm.html">VerbForm</a>=Trans</tt></td><td><em>алып</em></td><td></td></tr>
-</table>
+<p><code>Aspect</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 100% lemmas (16) occur only with one value of <code>Aspect</code>.</p>
 
 <h3 id="aux"><code>AUX</code></h3>
 
-<p>6 <a href="">kk-pos/AUX</a> tokens (2% of all <code>AUX</code> tokens) have a non-empty value of <code>Aspect</code>.</p>
+<p>2 <a href="">kk-pos/AUX</a> tokens (8% of all <code>AUX</code> tokens) have a non-empty value of <code>Aspect</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Aspect</code> co-occurred: <tt><a href="Person.html">Person</a>=EMPTY</tt> (6; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (6; 100%), <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (6; 100%).</p>
+<p>The most frequent other feature values with which <code>AUX</code> and <code>Aspect</code> co-occurred: <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (2; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (2; 100%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (2; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (2; 100%), <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (2; 100%).</p>
 
 <p><code>AUX</code> tokens may have the following values of <code>Aspect</code>:</p>
 
 <ul>
-  <li><code>Impf</code> (3; 50% of non-empty <code>Aspect</code>): <em>ала, бара, сала</em></li>
-  <li><code>Perf</code> (3; 50% of non-empty <code>Aspect</code>): <em>беріп, жіберіп, жүріп</em></li>
-  <li><code>EMPTY</code> (318): <em>_, бастады, жатыр, екен, кетті, еді, емес, қалды, алды, екенін</em></li>
+  <li><code>Imp</code> (1; 50% of non-empty <code>Aspect</code>): <em>болатын</em></li>
+  <li><code>Perf</code> (1; 50% of non-empty <code>Aspect</code>): <em>болып</em></li>
+  <li><code>EMPTY</code> (23): <em>еді, болды, болмаса, болса, болсам, болушы, болуға, болғандықтан, гөр, емес</em></li>
 </ul>
 
-<h2 id="relations-with-agreement-in-aspect">Relations with Agreement in <code>Aspect</code></h2>
-
-<p>The 10 most frequent relations where parent and child node agree in <code>Aspect</code>:
-<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (4; 100%).</p>
+<table>
+  <tr><th>Paradigm <i>бол</i></th><th><tt>Imp</tt></th><th><tt>Perf</tt></th></tr>
+  <tr><td><tt><a href="VerbForm.html">VerbForm</a>=Conv</tt></td><td></td><td><em>болып</em></td></tr>
+  <tr><td><tt><a href="VerbForm.html">VerbForm</a>=Part</tt></td><td><em>болатын</em></td><td></td></tr>
+</table>
 
 
 
@@ -118,9 +131,25 @@ The feature is used with 2 part-of-speech tags: <a href="">kk-pos/VERB</a> (82; 
 
 Aspect in other languages:
 
+[<a href="../../am/feat/Aspect.html">am</a>]
+
+[<a href="../../ar/feat/Aspect.html">ar</a>]
+
 [<a href="../../bg/feat/Aspect.html">bg</a>]
 
+[<a href="../../bxr/feat/Aspect.html">bxr</a>]
+
+[<a href="../../ca/feat/Aspect.html">ca</a>]
+
+[<a href="../../ckb/feat/Aspect.html">ckb</a>]
+
+[<a href="../../cop/feat/Aspect.html">cop</a>]
+
 [<a href="../../cs/feat/Aspect.html">cs</a>]
+
+[<a href="../../cu/feat/Aspect.html">cu</a>]
+
+[<a href="../../da/feat/Aspect.html">da</a>]
 
 [<a href="../../de/feat/Aspect.html">de</a>]
 
@@ -130,29 +159,95 @@ Aspect in other languages:
 
 [<a href="../../es/feat/Aspect.html">es</a>]
 
+[<a href="../../et/feat/Aspect.html">et</a>]
+
 [<a href="../../eu/feat/Aspect.html">eu</a>]
 
 [<a href="../../fa/feat/Aspect.html">fa</a>]
 
-[<a href="../../fi/feat/Aspect.html">fi</a>]
+[<a href="../../fo/feat/Aspect.html">fo</a>]
 
 [<a href="../../fr/feat/Aspect.html">fr</a>]
 
 [<a href="../../ga/feat/Aspect.html">ga</a>]
 
+[<a href="../../gl/feat/Aspect.html">gl</a>]
+
+[<a href="../../got/feat/Aspect.html">got</a>]
+
+[<a href="../../grc/feat/Aspect.html">grc</a>]
+
 [<a href="../../he/feat/Aspect.html">he</a>]
 
+[<a href="../../hi/feat/Aspect.html">hi</a>]
+
+[<a href="../../hr/feat/Aspect.html">hr</a>]
+
 [<a href="../../hu/feat/Aspect.html">hu</a>]
+
+[<a href="../../id/feat/Aspect.html">id</a>]
 
 [<a href="../../it/feat/Aspect.html">it</a>]
 
 [<a href="../../ja/feat/Aspect.html">ja</a>]
 
+[<a href="../../kk/feat/Aspect.html">kk</a>]
+
+[<a href="../../kmr/feat/Aspect.html">kmr</a>]
+
 [<a href="../../ko/feat/Aspect.html">ko</a>]
 
-[<a href="../../sv/feat/Aspect.html">sv</a>]
+[<a href="../../la/feat/Aspect.html">la</a>]
+
+[<a href="../../lv/feat/Aspect.html">lv</a>]
+
+[<a href="../../mr/feat/Aspect.html">mr</a>]
+
+[<a href="../../nl/feat/Aspect.html">nl</a>]
+
+[<a href="../../no/feat/Aspect.html">no</a>]
+
+[<a href="../../pl/feat/Aspect.html">pl</a>]
+
+[<a href="../../pt/feat/Aspect.html">pt</a>]
+
+[<a href="../../ro/feat/Aspect.html">ro</a>]
+
+[<a href="../../ru/feat/Aspect.html">ru</a>]
+
+[<a href="../../sa/feat/Aspect.html">sa</a>]
+
+[<a href="../../sk/feat/Aspect.html">sk</a>]
+
+[<a href="../../sla/feat/Aspect.html">sla</a>]
+
+[<a href="../../sl/feat/Aspect.html">sl</a>]
+
+[<a href="../../so/feat/Aspect.html">so</a>]
+
+[<a href="../../sr/feat/Aspect.html">sr</a>]
+
+[<a href="../../swl/feat/Aspect.html">swl</a>]
+
+[<a href="../../ta/feat/Aspect.html">ta</a>]
+
+[<a href="../../tr/feat/Aspect.html">tr</a>]
 
 [<a href="../../u/feat/Aspect.html">u</a>]
+
+[<a href="../../ug/feat/Aspect.html">ug</a>]
+
+[<a href="../../uk/feat/Aspect.html">uk</a>]
+
+[<a href="../../ur/feat/Aspect.html">ur</a>]
+
+[<a href="../../urj/feat/Aspect.html">urj</a>]
+
+[<a href="../../vi/feat/Aspect.html">vi</a>]
+
+[<a href="../../yue/feat/Aspect.html">yue</a>]
+
+[<a href="../../zh/feat/Aspect.html">zh</a>]
 
 
 

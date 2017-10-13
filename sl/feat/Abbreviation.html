@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-sl">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/sl/feat">sl/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_sl-feat/Abbreviation.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sl">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/sl/feat">sl/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/Abbreviation.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -71,8 +88,69 @@
 
 
 
+
+<hr />
+
+<h2 id="treebank-statistics-udslovenian">Treebank Statistics (UD_Slovenian)</h2>
+
+<p>This feature is language-specific.
+It occurs with 1 different values: <code>Yes</code>.</p>
+
+<p>157 tokens (0%) have a non-empty value of <code>Abbr</code>.
+45 types (0%) occur at least once with a non-empty value of <code>Abbr</code>.
+42 lemmas (0%) occur at least once with a non-empty value of <code>Abbr</code>.
+The feature is used with 1 part-of-speech tags: <a href="">sl-pos/X</a> (157; 0% instances).</p>
+
+<h3 id="x"><code>X</code></h3>
+
+<p>157 <a href="">sl-pos/X</a> tokens (48% of all <code>X</code> tokens) have a non-empty value of <code>Abbr</code>.</p>
+
+<p>The most frequent other feature values with which <code>X</code> and <code>Abbr</code> co-occurred: <tt><a href="Foreign.html">Foreign</a>=EMPTY</tt> (157; 100%).</p>
+
+<p><code>X</code> tokens may have the following values of <code>Abbr</code>:</p>
+
+<ul>
+  <li><code>Yes</code> (157; 100% of non-empty <code>Abbr</code>): <em>dr., t., d., oz., sv., P., i., M., j., o.</em></li>
+</ul>
+
+<p><code>Abbr</code> seems to be <strong>lexical feature</strong> of <code>X</code>. 100% lemmas (42) occur only with one value of <code>Abbr</code>.</p>
+
+<h2 id="relations-with-agreement-in-abbr">Relations with Agreement in <code>Abbr</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code>Abbr</code>:
+<tt>X –[<a href="../dep/nmod.html">nmod</a>]–&gt; X</tt> (24; 100%),
+<tt>X –[<a href="../dep/fixed.html">fixed</a>]–&gt; X</tt> (20; 100%),
+<tt>X –[<a href="../dep/conj.html">conj</a>]–&gt; X</tt> (4; 100%),
+<tt>X –[<a href="../dep/flat.html">flat</a>]–&gt; X</tt> (3; 100%).</p>
+
+
+
+
 <!-- "in other languages" links -->
 <hr/>
+
+Abbr in other languages:
+
+[<a href="../../ar/feat/Abbr.html">ar</a>]
+
+[<a href="../../cs/feat/Abbr.html">cs</a>]
+
+[<a href="../../da/feat/Abbr.html">da</a>]
+
+[<a href="../../et/feat/Abbr.html">et</a>]
+
+[<a href="../../fi/feat/Abbr.html">fi</a>]
+
+[<a href="../../fo/feat/Abbr.html">fo</a>]
+
+[<a href="../../la/feat/Abbr.html">la</a>]
+
+[<a href="../../pl/feat/Abbr.html">pl</a>]
+
+[<a href="../../ro/feat/Abbr.html">ro</a>]
+
+[<a href="../../u/feat/Abbr.html">u</a>]
+
 
 
 

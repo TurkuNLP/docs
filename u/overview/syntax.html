@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-u">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-u">home</a></span>
 
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-overview/syntax.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-overview/syntax.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -45,8 +62,8 @@
 
           <h1 id="syntax-general-principles">Syntax: General Principles</h1>
 
-<p>Syntactic annotation in the UD scheme consists of typed dependency relations between words. The <em>basic</em> dependency representation forms a tree, where exactly one word is dependent on a notional ROOT and all other words are dependent 
-on another word in the sentence, as exemplified below (where we explicitly represent the root dependency which will 
+<p>Syntactic annotation in the UD scheme consists of typed dependency relations between words. The <em>basic</em> dependency representation forms a tree, where exactly one word is the head of the sentence, dependent on a notional ROOT and all other words are dependent
+on another word in the sentence, as exemplified below (where we explicitly represent the root dependency which will
 otherwise be left implicit).</p>
 
 <pre><code class="language-sdparse">ROOT she wanted to buy and eat an apple
@@ -60,25 +77,40 @@ det(apple, an)
 obj(buy, apple)
 </code></pre>
 
-<p>In addition to the basic dependency representation, which is obligatory in all UD treebanks, it is possible to give an <em>enhanced</em> dependency representation, which adds (and in a few cases changes) relations in order to give a more complete
-basis for semantic interpretation. The enhanced representation is in general 
-not a tree but a general graph structure, as shown below.</p>
+<p>In addition to the basic dependency representation, which is obligatory for all UD treebanks, it is possible to give an <em>enhanced</em> dependency representation, which adds (and in a few cases changes) relations in order to give a more complete
+basis for semantic interpretation. The enhanced representation is in general
+not a tree but a general graph structure, as shown below (enhanced dependencies in blue).</p>
 
-<pre><code class="language-sdparse">ROOT she wanted to buy and eat an apple
-nsubj(wanted, she)
-nsubj(buy, she)
-nsubj(eat, she)
-root(ROOT, wanted)
-mark(buy, to)
-xcomp(wanted, buy)
-cc(eat, and)
-conj(buy, eat)
-det(apple, and)
-obj(eat, apple)
-obj(buy, apple)
+<pre><code class="language-conllu"># visual-style 5 2 nsubj color:blue
+# visual-style 7 2 nsubj color:blue
+# visual-style 3 7 xcomp color:blue
+# visual-style 7 4 mark color:blue
+# visual-style 7 9 obj color:blue
+1	ROOT	_	_	_	_	0	root	_	_
+2	she	_	_	_	_	3	nsubj	5:nsubj|7:nsubj	_
+3	wanted	_	_	_	_	1	root	_	_
+4	to	_	_	_	_	5	mark	7:mark	_
+5	buy	_	_	_	_	3	xcomp	_	_
+6	and	_	_	_	_	7	cc	_	_
+7	eat	_	_	_	_	5	conj	3:xcomp	_
+8	an	_	_	_	_	9	det	_	_
+9	apple	_	_	_	_	5	obj	7:obj	_
+
 </code></pre>
 
-<p>In the rest of this document, we discuss the fundamental principles of our dependency annotation, focusing on aspects that are common to both the basic and the enhanced representation. More detailed annotation guidelines can be found separately for <a href="specific-syntax.html">basic dependencies</a> and <a href="enhanced-syntax.html">enhanced dependencies</a>.</p>
+<p>In the rest of this document, we discuss the fundamental principles of our dependency annotation, focusing on aspects that are common to both the basic and the enhanced representation. For more information about basic and enhanced dependencies, we refer to the detailed annotation guidelines:</p>
+
+<ul>
+  <li>Basic dependencies
+    <ul>
+      <li><a href="simple-syntax.html">Simple clauses</a></li>
+      <li><a href="complex-syntax.html">Complex clauses</a></li>
+      <li><a href="nominal-syntax.html">Nominal phrases</a></li>
+      <li><a href="specific-syntax.html">Other constructions</a></li>
+    </ul>
+  </li>
+  <li><a href="enhanced-syntax.html">Enhanced dependencies</a></li>
+</ul>
 
 <p>The goal of the typed dependency relations is a set of broadly observed “universal dependencies” that work across languages. Such dependencies seek to maximize parallelism by allowing the same grammatical relation to be annotated the same way across languages, while making enough crucial distinctions such that different things can be differentiated. Two things should be noted from the outset:</p>
 
@@ -169,8 +201,8 @@ amod(tancor, lučšij)
 
 <h2 id="the-status-of-function-words">The Status of Function Words</h2>
 
-<p>The primacy of content words implies that function words normally do not have dependents of their own. 
-In particular, it means that multiple function words related to the same content word always appear as 
+<p>The primacy of content words implies that function words normally do not have dependents of their own.
+In particular, it means that multiple function words related to the same content word always appear as
 siblings, never in a nested structure, regardless of their interpretation.
 A typical case is that of auxiliary verbs, which never depend on each other.</p>
 
@@ -200,12 +232,11 @@ det(books, these)
 nummod(books, three)
 </div>
 
-<p>We are aware that the choice to treat function words formally as dependents of content words is at odds with some
-versions of dependency grammar, which prefer the opposite relation for many syntactic constructions. 
-We prefer to view the relations between content words and function words, not as dependency relations in the narrow 
-sense, but as operations that modify the grammatical category of the content word so that it can participate in 
-different dependency relations with other content words. We refer to these relations as <em>functional relations</em> or 
-<em>function word relations</em> when we want to emphasize that they are different from dependency relations between content words. 
+<p>We are aware that the choice to treat function words formally as dependents of content words is at odds with many versions of dependency grammar, which prefer the opposite relation for many syntactic constructions.
+We prefer to view the relations between content words and function words, not as dependency relations in the narrow
+sense, but as operations that modify the grammatical category of the content word so that it can participate in
+different dependency relations with other content words. We refer to these relations as <em>functional relations</em> or
+<em>function word relations</em> when we want to emphasize that they are different from dependency relations between content words.
 This view makes function words functionally (but not structurally) similar to morphological operations and is compatible with Tesnière’s notion of the nucleus as the locus of syntactic dependencies.</p>
 
 <p>Nevertheless, there are four important exceptions to the rule that function words do not take dependents:</p>
@@ -219,8 +250,8 @@ This view makes function words functionally (but not structurally) similar to mo
 
 <h3 id="multiword-function-words">Multiword Function Words</h3>
 
-<p>The word forms that make up a fixed multiword expression are connected into a head-initial structure
-using the special dependency relation <a href="">u-dep/fixed</a> (see below). When the multiword expression is a functional element,
+<p>The word forms that make up a fixed function-word multiword expression (MWE) are connected
+using the special dependency relation <a href="">u-dep/fixed</a> (see below). By convention, the first word is always taken as the head, so when the multiword expression is a functional element,
 the initial word form will then superficially look like a function word with dependents.</p>
 
 <div id="s6" class="sd-parse">
@@ -236,7 +267,7 @@ obl(had,rain)
 <h3 id="coordinated-function-words">Coordinated Function Words</h3>
 
 <p>Head coordination is a syntactic process that can apply to almost any word category, including
-function words like conjunctions and prepositions.</p>
+function words like conjunctions and prepositions. In such cases, the standard analysis of coordination is used and function words have dependents.</p>
 
 <div id="s4a" class="sd-parse">
 She drove to and from work .
@@ -278,7 +309,7 @@ advmod(when, just)
 
 <p>Negation can modify any function word, but other types of modifiers are disallowed for function words that express
 properties of the head word often expressed morphologically in other languages. This class, which we refer to as
-<em>pure function words</em>, includes auxiliary verbs, case markers (adposition), and articles, but needs to be defined
+<em>pure function words</em>, includes auxiliary verbs, case markers (adpositions), and articles, but needs to be defined
 explicitly for each language. When pure function words appear with modifiers other than negation, we take the modifier
 to apply to the entire phrase and therefore attach it to the head word of the function word, as illustrated in
 the following example.</p>
@@ -289,8 +320,8 @@ case(midnight, before)
 advmod(midnight, right)
 </div>
 
-<p>The analysis here is that <em>right</em> modifies the entire phrase <em>before midnight</em> and therefore attaches to <em>midnight</em>, 
-which is the head of this phrase. (It is a general property of dependency trees that phrase modification is 
+<p>The analysis here is that <em>right</em> modifies the entire phrase <em>before midnight</em> and therefore attaches to <em>midnight</em>,
+which is the head of this phrase. (It is a general property of dependency trees that phrase modification is
 structurally indistinguishable from head modification.) Further support for this analysis comes from the possibility
 of replacing <em>before midnight</em> by the adverb <em>then</em>.</p>
 
@@ -299,8 +330,8 @@ right then
 advmod(then, right)
 </div>
 
-<p>Making sure that pure function words do not have dependents of their own facilitates the
-comparison with languages where the corresponding properties are expressed morphologically as well as the conversion
+<p>Making sure that pure function words do not have dependents of their own facilitates
+comparison with languages where the corresponding properties are expressed morphologically as well as conversion
 to the enhanced representation where this difference is neutralized.</p>
 
 <p>To sum up, our treatment of function word modifiers can be expressed in three principles:</p>
@@ -311,15 +342,15 @@ to the enhanced representation where this difference is neutralized.</p>
   <li>When in doubt, prefer a flat structure where function words attach to a content word.</li>
 </ol>
 
-<p>Note also that the language-specific documentation should specify what words (if any) are treated as pure function words 
+<p>Note also that the language-specific documentation should specify what words (if any) are treated as pure function words
 in that language.</p>
 
 <h3 id="promotion-by-head-elision">Promotion by Head Elision</h3>
 
 <p>When the natural head of a function word is elided, the function word will be “promoted”
-to the function normally assumed by the content word head. This type of analysis should 
+to the function normally assumed by the content word head. This type of analysis should
 in general be preferred over an analysis using the <a href="">u-dep/orphan</a> relation, because it disrupts
-the structure less. The remnant analysis should be used only when there is no function word 
+the structure less. The orphan analysis of ellipsis should only be used when there is no function word
 that can be promoted. The following examples illustrate promotion of auxiliaries, prepositions
 and subordinating conjunctions.</p>
 
@@ -333,7 +364,7 @@ nsubj(could-8, Ann)
 
 <div id="s5b" class="sd-parse">
 The address she wrote to .
-relcl(address, wrote)
+acl:relcl(address, wrote)
 nsubj(wrote, she)
 obl(wrote, to)
 </div>
@@ -352,13 +383,41 @@ dependency relations between content words.</p>
 <h3 id="core-arguments-vs-oblique-modifiers">Core Arguments vs. Oblique Modifiers</h3>
 
 <p>The UD taxonomy is centered around the fairly clear distinction between core arguments (subjects, objects, clausal complements) versus other dependents.
-It does not make a distinction between adjuncts and oblique arguments.
-This latter distinction is taken to be sufficiently subtle, unclear, and argued over
-that it is eliminated (echoing the viewpoint of the original Penn Treebank annotators).</p>
+It does not make a distinction between adjuncts (general modifiers) versus oblique arguments (arguments said to be selected by a head but not expressed as a core argument).
+The rest of this section expands on the linguistic basis of these choices, and may be skipped.</p>
+
+<h4 id="the-definition-of-core-arguments">The definition of core arguments</h4>
+
+<p>The core/oblique distinction is ultimately an information packaging distinction. All or nearly all languages have a basic way of expressing the one or two arguments of most verbs (intransitive and transitive verbs), and this unmarked form of argument expression is as a core argument. If additional arguments can appear that are treated similarly to these arguments, they may also be regarded as core arguments. (Some languages have no additional core arguments, while other languages allow multiple object arguments, for instance.) Status as a core argument is decoupled from the semantic roles of participants. Normally, depending on the meaning of a verb, many different semantic roles can be expressed by the same means of encoding core arguments. Nevertheless, there is a correlation: agent and patient or theme roles of predicates in their unmarked valence are normally realized as core arguments.</p>
+
+<p>Syntactically, there is not a single criterion which can be used crosslinguistically to distinguish core arguments from obliques, though there are often good and useful criteria for particular languages. These include:</p>
+
+<ul>
+  <li>Verbs usually only agree with core arguments</li>
+  <li>Oblique arguments may usually or always appear marked by an adposition while core arguments appear as bare nominals</li>
+  <li>Certain cases, traditionally called nominative, accusative, and absolutive typically mark core arguments</li>
+  <li>Core arguments in many languages occupy special positions in the clause, often adjacent to the verb</li>
+  <li>Syntactic phenomena such as being the controller of a subordinate clause argument or the target of relativization are limited to core arguments in some languages</li>
+</ul>
+
+<p>At the end of the day, the distinction must be drawn and documented on language particular grounds. For example, many languages have certain verbs which take arguments in oblique cases such as dative or an experiencer case, but these arguments should be regarded as core arguments based on their syntactic behavior being parallel to the arguments of other transitive verbs.</p>
+
+<h4 id="avoiding-an-argumentadjunct-distinction">Avoiding an argument/adjunct distinction</h4>
+
+<p>Many grammatical frameworks suggest that some obliques are selected by or are arguments of a head (for instance, a source argument of <em>from the Queen</em> is an argument of the head <em>receive</em>), while other obliques are general adjuncts, which can appear with any predicate without the head selecting for them (for instance, a temporal argument such as <em>after the holidays</em>).</p>
+
+<p>However, the argument/adjunct distinction is subtle, unclear, and frequently argued over. For instance, syntacticians at certain times have argued for various obliques to be arguments, while at other times arguing that they are adjuncts, particularly for certain semantic roles such as oblique instruments or sources. We take the distinction to be sufficiently subtle (and its existence as a categorical distinction sufficiently questionable) that the best practical solution is to eliminate it. This approach echoes the viewpoint of the original Penn Treebank annotators.</p>
+
+<p>The core-oblique distinction is generally accepted in language typology as being both more relevant and easier to apply cross-linguistically than the argument-adjunct distinction. See, for example:</p>
+
+<ul>
+  <li>Avery D. Andrews. 2007. The Major Functions of the Noun Phrase. In Timothy Shopen (ed.) Language Typology and Syntactic Description: Clause Structure (2nd ed), Cambridge University Press, Cambridge, United Kingdom, pp. 132-223. (1st edition, 1985.)</li>
+  <li>Sandra A. Thompson. 1997. Discourse Motivations for the Core-Oblique Distinction as a Language Universal. In Akio Kamio (ed.) Directions in Functional Linguistics. Benjamins, Amsterdam, the Netherlands, pp. 59-82.</li>
+</ul>
 
 <h3 id="a-mixed-functional-structural-system">A Mixed Functional-Structural System</h3>
 
-<p>One major role of dependencies is to represent function, but the Universal Dependencies also encode structural notions. 
+<p>One major role of dependencies is to represent function, but the Universal Dependencies also encode structural notions.
 On the structural side, languages are taken to principally involve three things:</p>
 
 <ul>
@@ -413,32 +472,32 @@ Relation names attempt to differentiate canonical voice (where the proto-agent a
 </ul>
 
 <p>Additional distinctions (for example, with respect to voice) can be captured via language-specific subtypes
-(such as <code>nsubj:pass</code> for the subject of a passivized verb). 
+(such as <code>nsubj:pass</code> for the subject of a passivized verb).
 Note that the UD taxonomy does not attempt to differentiate finite from nonfinite clauses.</p>
 
 <h3 id="coordination">Coordination</h3>
 
 <p>We treat coordinate structures asymmetrically:
 The head of the relation is the first conjunct and all the other conjuncts depend on it via the <a href="">u-dep/conj</a> relation.
-Coordinating conjunctions and punctuation delimiting the conjuncts are attached using the <a href="">u-dep/cc</a> and <a href="">u-dep/punct</a> relations respectively.</p>
+Coordinating conjunctions and punctuation delimiting the conjuncts are attached using the <a href="">u-dep/cc</a> and <a href="">u-dep/punct</a> relations respectively to the immediately <strong>following</strong> conjunct.</p>
 
 <pre><code class="language-sdparse">He came home , took a shower and immediately went to bed .
 conj(came, took)
 conj(came, went)
-punct(went, ,-4)
+punct(took, ,-4)
 cc(went, and)
 </code></pre>
 
 <h3 id="multiword-expressions">Multiword Expressions</h3>
 
 <p>Multiword expressions (MWEs) are combinations of words that (in some respect and to different degrees) behave
-as lexical units rather than compositional syntactic phrases. The UD taxonomy contains three special relations 
+as lexical units rather than compositional syntactic phrases. The UD taxonomy contains three special relations
 for analyzing MWEs:</p>
 
 <ul>
-  <li><a href="">u-dep/fixed</a> are used to analyze fixed grammaticized MWEs like <em>in spite of</em> (see above)</li>
-  <li><a href="">u-dep/flat</a> are used to analyze exocentric semi-fixed MWEs like <em>Barack Obama</em></li>
-  <li><a href="">u-dep/compound</a> are used to analyze (endocentric) compounds like <em>noun phrase</em></li>
+  <li><a href="">u-dep/fixed</a> is used to analyze fixed grammaticized function-word MWEs like <em>in spite of</em> (see above)</li>
+  <li><a href="">u-dep/flat</a> is used to analyze exocentric semi-fixed MWEs like <em>Barack Obama</em> with no clear head</li>
+  <li><a href="">u-dep/compound</a> is used to analyze (headed or endocentric) compounds like <em>noun phrase</em>, with head <em>phrase</em></li>
 </ul>
 
 <p>Structures analyzed with <a href="">u-dep/fixed</a> and <a href="">u-dep/flat</a> are headless by definition and are consistently
@@ -473,16 +532,16 @@ obj(bought, enclosure)
 
 <h3 id="special-relations">Special Relations</h3>
 
-<p>Besides core dependency relations, functional relations, and relations for analyzing coordination, MWEs and punctuation, 
+<p>Besides core dependency relations, functional relations, and relations for analyzing coordination, MWEs and punctuation,
 the UD taxonomy includes a number of special relations for handling things like orthographic errors in text, disfluencies in speech, and list structures without internal syntactic structure.</p>
 
-<!--Some of the universal relations do not really encode syntactic dependency relations but are used to represent 
-punctuation, various kinds of multiword units, or unanalyzable segments. The use of these relations is subject 
+<!--Some of the universal relations do not really encode syntactic dependency relations but are used to represent
+punctuation, various kinds of multiword units, or unanalyzable segments. The use of these relations is subject
 to special restrictions explained below.
 
 Tokens with the relation [u-dep/punct]() always attach to content words (except in cases of ellipsis) and can never have dependents.
 
-Since `punct` is not a normal dependency relation, the usual criteria for determining the head word do not apply. 
+Since `punct` is not a normal dependency relation, the usual criteria for determining the head word do not apply.
 Instead, we use the following principles:
 
 1. A punctuation mark separating coordinated units is attached to the first conjunct.
@@ -492,7 +551,7 @@ Instead, we use the following principles:
 
 <div id="punct1" class="sd-parse">
 We have apples , pears , oranges , and bananas .
-dobj(have, apples)
+obj(have, apples)
 conj(apples, pears)
 conj(apples, oranges)
 conj(apples, bananas)

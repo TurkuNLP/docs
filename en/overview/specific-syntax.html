@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-en">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-en">home</a></span>
 
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_en-overview/specific-syntax.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_en-overview/specific-syntax.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -124,7 +141,7 @@ mark(predicting, with)
 
 <h3 id="core-arguments">Core arguments</h3>
 
-<p>UD makes a distinction between core arguments and other dependents of predicates. In English, the UD relations that can designate core arguments are <code>nsubj</code>, <code>nsubjpass</code>, <code>dobj</code> and <code>iobj</code> for nominal arguments, and <code>ccomp</code>, <code>xcomp</code>, <code>csubj</code> and <code>csubjpass</code> for clausal arguments.</p>
+<p>UD makes a distinction between core arguments and other dependents of predicates. In English, the UD relations that can designate core arguments are <code>nsubj</code>, <code>nsubjpass</code>, <code>obj</code> and <code>iobj</code> for nominal arguments, and <code>ccomp</code>, <code>xcomp</code>, <code>csubj</code> and <code>csubjpass</code> for clausal arguments.</p>
 
 <p><code>nsubj</code> and <code>nsubjpass</code> are used for external arguments of any predicate (as in the examples above); the only difference is that <code>nsubjpass</code> is used in passive-voice clauses.</p>
 
@@ -161,23 +178,23 @@ expl(is, There)
 nsubj(is, dinner)
 </code></pre>
 
-<p>The internal argument labels, <code>dobj</code> and <code>iobj</code>, are exclusive to verbal predicates and a handful of adjectives (namely: <em>worth</em>, <em>like</em> and <em>unlike</em>, following Huddleston and Pullum (2001)).</p>
+<p>The internal argument labels, <code>obj</code> and <code>iobj</code>, are exclusive to verbal predicates and a handful of adjectives (namely: <em>worth</em>, <em>like</em> and <em>unlike</em>, following Huddleston and Pullum (2001)).</p>
 
-<p>The distinction between <code>dobj</code> and <code>iobj</code> is strictly syntactic; <code>iobj</code> is reserved for “second objects” with restricted theta-roles, and is relatively rare in English. Only when another internal argument is present can <code>iobj</code> occur.</p>
+<p>The distinction between <code>obj</code> and <code>iobj</code> is strictly syntactic; <code>iobj</code> is reserved for “second objects” with restricted theta-roles, and is relatively rare in English. Only when another internal argument is present can <code>iobj</code> occur.</p>
 
 <pre><code class="language-sdparse">They gave me the trip as a gift.
 iobj(gave, me)
 dobj(gave, trip)
 </code></pre>
 
-<p>The other internal argument need not be nominal. In English, some verbs can take a nominal complement and a clausal complement together. In the case of these verbs, the nominal complement is always thematically restricted, which suggests it is an <code>iobj</code> serving as a “second object” to the clausal complement. For that reason, the clausal complement label <code>ccomp</code> never cooccurs with <code>dobj</code>, but does cooccur with <code>dobj</code>.</p>
+<p>The other internal argument need not be nominal. In English, some verbs can take a nominal complement and a clausal complement together. In the case of these verbs, the nominal complement is always thematically restricted, which suggests it is an <code>iobj</code> serving as a “second object” to the clausal complement. For that reason, the clausal complement label <code>ccomp</code> never cooccurs with <code>obj</code>, but does cooccur with <code>obj</code>.</p>
 
 <pre><code class="language-sdparse">I told them that I 'm planning to come visit .
 ccomp(told, planning)
 iobj(told, them)
 </code></pre>
 
-<p>However, the same observation does not hold of verbs that take open complements, labeled <code>xcomp</code> (more on this label below). Those can clearly cooccur with thematically unrestricted objects under some verbs. For that reason, nominal complements cooccuring with <code>xcomp</code> are uniformly labeled <code>dobj</code>, and never <code>iobj</code>.</p>
+<p>However, the same observation does not hold of verbs that take open complements, labeled <code>xcomp</code> (more on this label below). Those can clearly cooccur with thematically unrestricted objects under some verbs. For that reason, nominal complements cooccuring with <code>xcomp</code> are uniformly labeled <code>obj</code>, and never <code>iobj</code>.</p>
 
 <pre><code class="language-sdparse">I told them to expect my visit.
 dobj(told, them)
@@ -387,9 +404,9 @@ nsubjpass(put, I)
 goeswith(priced, over)
 </code></pre>
 
-<p>The other two relations, <code>mwe</code> and <code>compound</code>, are more interesting. The main difference between them is that <code>mwe</code> applies between function words and other function words or lexical words, while <code>compound</code> applies only between lexical words.</p>
+<p>The other two relations, <code>fixed</code> and <code>compound</code>, are more interesting. The main difference between them is that <code>fixed</code> applies between function words and other function words or lexical words, while <code>compound</code> applies only between lexical words.</p>
 
-<p>The <code>mwe</code> relation is used sparingly. In general, the relation is used in grammaticalized uses of two or more function words together, often giving rise to noncompositional meaning. Since words joined by the <code>mwe</code> relation often have equal claim to the status of head, any such construction is, by convention, head-initial.</p>
+<p>The <code>fixed</code> relation is used sparingly. In general, the relation is used in grammaticalized uses of two or more function words together, often giving rise to noncompositional meaning. Since words joined by the <code>fixed</code> relation often have equal claim to the status of head, any such construction is, by convention, head-initial.</p>
 
 <pre><code class="language-sdparse">How come no one bothers to ask any questions in this section ?
 mwe(How, come)
@@ -408,7 +425,7 @@ case(reasons, due)
 
 <p>When the multiword expression is composed of more than two words, all non-head words attach directly to the head, in a flat structure.</p>
 
-<p>Decisions about what should be annotated as a multiword expression are difficult due to the fact that such expressions exist in a continuous spectrum between phrases built via fully productive rules on the one hand, and fixed lexicalized expressions on the other. A series of criteria can be used to rule out the <code>mwe</code> label: optionality of one word in the construction; meaning compositionality;  availability of variants in which one of the words is substituted.</p>
+<p>Decisions about what should be annotated as a multiword expression are difficult due to the fact that such expressions exist in a continuous spectrum between phrases built via fully productive rules on the one hand, and fixed lexicalized expressions on the other. A series of criteria can be used to rule out the <code>fixed</code> label: optionality of one word in the construction; meaning compositionality;  availability of variants in which one of the words is substituted.</p>
 
 <p>The <code>compound</code> relation, on the other hand, can be used freely to represent productive phrase-building. The difference is that <code>compound</code> is used when a string of words joined together are analyzed as a single lexical unit that behaves as a head (i.e., an X^0 node) rather than as a constituent (i.e., an XP node) in the sentence.</p>
 
@@ -439,7 +456,7 @@ compound(extract, tea)
 
 <h3 id="the-nominal-domain-nominal-and-prepositional-phrases">The nominal domain: nominal and prepositional phrases</h3>
 
-<p>Nominal and prepositional phrases are uniformly organized around their nominal lexical head in UD. In addition to their argument roles, labeled <code>nsubj</code>, <code>nsubjpass</code>, <code>dobj</code> and <code>iobj</code>, nominal phrases can have roles as noncore dependents. In these roles, they are labeled <code>nmod</code> (and subtypes). Commonly, noncore dependents are realized as prepositional phrases.</p>
+<p>Nominal and prepositional phrases are uniformly organized around their nominal lexical head in UD. In addition to their argument roles, labeled <code>nsubj</code>, <code>nsubjpass</code>, <code>obj</code> and <code>iobj</code>, nominal phrases can have roles as noncore dependents. In these roles, they are labeled <code>nmod</code> (and subtypes). Commonly, noncore dependents are realized as prepositional phrases.</p>
 
 <h4 id="prepositions">Prepositions</h4>
 
@@ -714,7 +731,7 @@ nmod(talked, about)
 
 <h4 id="gapping--stripping">Gapping / Stripping</h4>
 
-<p>In ‘gapping’ constructions, where the head of a clause has been elided but two arguments that contrast with arguments in the antecedent clause remain, and ‘stripping’ constructions, where the head of a clause has been elided but one contrasting argument and one polarity adverbial such as <em>not</em> or <em>only</em> remain, the <code>remnant</code> relation is used between the remaining constituents and the words they contrast with:</p>
+<p>In ‘gapping’ constructions, where the head of a clause has been elided but two arguments that contrast with arguments in the antecedent clause remain, and ‘stripping’ constructions, where the head of a clause has been elided but one contrasting argument and one polarity adverbial such as <em>not</em> or <em>only</em> remain, the <code>orphan</code> relation is used between the remaining constituents and the words they contrast with:</p>
 
 <pre><code class="language-sdparse">it took another 20 mins to get our orders and a further 45 mins till our starters landed on our table.
 cc(took, and)
@@ -880,7 +897,7 @@ mark(solve, for)
 root(-ROOT-, helpful)
 csubj(helpful, solve)
 nsubj(solve, John)
-mark(solve, for)
+mark(solve, For)
 </code></pre>
 
 <p>When the subject <em>is</em> an argument of the higher clause, the lower verb phrase (in its gerund form) or its object (in its nominative form) can be fronted, displacing the expletive and maintaining its <code>csubj</code> label. In the latter case, the clause is no longer a <code>csubj</code>, being instead analyzed as an <code>xcomp</code>.</p>
@@ -1067,7 +1084,7 @@ mark(hard, that)
 <p>In the canonical case, <em>wh</em>-clauses function as interrogative clauses or as adverbial clauses. In these cases, the head of the <em>wh</em>-clause is taken to be the verb, and the <em>wh</em>-word is assigned the label corresponding to its grammatical function in the <em>wh</em>-clause:</p>
 
 <pre><code class="language-sdparse">I need to know who you are planning to leave with .
-dobj(leave, who)
+nmod(leave, who)
 case(who, with)
 ccomp(know, leave)
 </code></pre>
@@ -1116,7 +1133,7 @@ nsubj(transpired, events)
 root(-ROOT-, why)
 </code></pre>
 
-<p>The phrase <em>no matter</em> is analyzed as taking a <code>dobj</code> complement in, e.g., <em>no matter the cost</em>. When it takes free relative object, that object is also analyzed according to the rules above.</p>
+<p>The phrase <em>no matter</em> is analyzed as taking a <code>obj</code> complement in, e.g., <em>no matter the cost</em>. When it takes free relative object, that object is also analyzed according to the rules above.</p>
 
 <pre><code class="language-sdparse">No matter what progress we make as individuals, we will never achieve real health until ...
 neg(matter, No)

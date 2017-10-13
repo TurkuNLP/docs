@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ta">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ta/dep">ta/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ta-dep/advcl.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ta">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ta/dep">ta/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ta-dep/advcl.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -75,15 +92,15 @@ Average distance between parent and child is 4.4593837535014.</p>
 # visual-style 8	bgColor:blue
 # visual-style 8	fgColor:white
 # visual-style 8 3 advcl	color:blue
-1	அவர்	அவர்	PRON	RpN-3SH--	Case=Nom|Gender=Com|Number=Sing|Person=3|Polite=Pol|PronType=Prs	3	nsubj	_	Translit=avar|LTranslit=avar
-2	தற்கொலை	தற்கொலை	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	3	dobj	_	Translit=tarkolai|LTranslit=tarkolai
-3	செய்து	செய்	VERB	Vt-T---AA	Negative=Pos|VerbForm=Part|Voice=Act	8	advcl	_	Translit=ceytu|LTranslit=cey
-4	கொண்ட	கொள்	ADJ	Jd-D----A	Negative=Pos|Tense=Past|VerbForm=Part	3	amod	_	Translit=koṇṭa|LTranslit=koḷ
+1	அவர்	அவர்	PRON	RpN-3SH--	Case=Nom|Gender=Com|Number=Sing|Person=3|Polite=Form|PronType=Prs	3	nsubj	_	Translit=avar|LTranslit=avar
+2	தற்கொலை	தற்கொலை	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	3	obj	_	Translit=tarkolai|LTranslit=tarkolai
+3	செய்து	செய்	VERB	Vt-T---AA	Polarity=Pos|VerbForm=Part|Voice=Act	8	advcl	_	Translit=ceytu|LTranslit=cey
+4	கொண்ட	கொள்	ADJ	Jd-D----A	Polarity=Pos|Tense=Past|VerbForm=Part	3	amod	_	Translit=koṇṭa|LTranslit=koḷ
 5	போது	போது	PART	Tn-------	_	3	mark	_	Translit=pōtu|LTranslit=pōtu
-6	வீட்டில்	வீடு	NOUN	NNL-3SN--	Case=Loc|Gender=Neut|Number=Sing|Person=3	8	nmod	_	Translit=vīṭṭil|LTranslit=vīṭu
+6	வீட்டில்	வீடு	NOUN	NNL-3SN--	Case=Loc|Gender=Neut|Number=Sing|Person=3	8	obl	_	Translit=vīṭṭil|LTranslit=vīṭu
 7	யாரும்	யார்	PRON	RBN-3SA--	Animacy=Anim|Case=Nom|Gender=Com|Number=Sing|Person=3|PronType=Ind	8	nsubj	_	Translit=yārum|LTranslit=yār
-8	இருக்கவ்	இரு	VERB	Vu-T---AA	Negative=Pos|VerbForm=Inf|Voice=Act	0	root	_	Translit=irukkav|LTranslit=iru
-9	இல்லை	இல்	AUX	VR-T3PNAA	Gender=Neut|Mood=Ind|Negative=Pos|Number=Plur|Person=3|VerbForm=Fin|Voice=Act	8	aux	_	Translit=illai|LTranslit=il
+8	இருக்கவ்	இரு	VERB	Vu-T---AA	Polarity=Pos|VerbForm=Inf|Voice=Act	0	root	_	Translit=irukkav|LTranslit=iru
+9	இல்லை	இல்	AUX	VR-T3PNAA	Gender=Neut|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|VerbForm=Fin|Voice=Act	8	aux	_	Translit=illai|LTranslit=il
 10	.	.	PUNCT	Z#-------	PunctType=Peri	8	punct	_	Translit=.|LTranslit=.
 
 </code></pre>
@@ -94,12 +111,12 @@ Average distance between parent and child is 4.4593837535014.</p>
 # visual-style 3	fgColor:white
 # visual-style 3 2 advcl	color:blue
 1	இப்போது	இப்போது	ADV	AA-------	_	2	advmod	_	Translit=ippōtu|LTranslit=ippōtu
-2	நடந்து	நட	VERB	Vt-T---AA	Negative=Pos|VerbForm=Part|Voice=Act	3	advcl	_	Translit=naṭantu|LTranslit=naṭa
-3	வரும்	வரு	ADJ	Jd-F----A	Negative=Pos|Tense=Fut|VerbForm=Part	4	amod	_	Translit=varum|LTranslit=varu
+2	நடந்து	நட	VERB	Vt-T---AA	Polarity=Pos|VerbForm=Part|Voice=Act	3	advcl	_	Translit=naṭantu|LTranslit=naṭa
+3	வரும்	வரு	ADJ	Jd-F----A	Polarity=Pos|Tense=Fut|VerbForm=Part	4	amod	_	Translit=varum|LTranslit=varu
 4	பேச்சுகள்	பேச்சு	NOUN	NNN-3PN--	Case=Nom|Gender=Neut|Number=Plur|Person=3	7	nsubj	_	Translit=pēccukaḷ|LTranslit=pēccu
-5	தூண்டுதல்	தூண்டுதல்	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	7	nmod	_	Translit=tūṇṭutal|LTranslit=tūṇṭutal
+5	தூண்டுதல்	தூண்டுதல்	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	7	obl	_	Translit=tūṇṭutal|LTranslit=tūṇṭutal
 6	ஆக	ஆகு	ADP	PP-------	AdpType=Post	5	case	_	Translit=āka|LTranslit=āku
-7	உள்ளது	உள்	VERB	Vr-T3SNAA	Gender=Neut|Mood=Ind|Negative=Pos|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No|Translit=uḷḷatu|LTranslit=uḷ
+7	உள்ளது	உள்	VERB	Vr-T3SNAA	Gender=Neut|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No|Translit=uḷḷatu|LTranslit=uḷ
 8	.	.	PUNCT	Z#-------	PunctType=Peri	7	punct	_	Translit=.|LTranslit=.
 
 </code></pre>
@@ -109,15 +126,15 @@ Average distance between parent and child is 4.4593837535014.</p>
 # visual-style 3	bgColor:blue
 # visual-style 3	fgColor:white
 # visual-style 3 2 advcl	color:blue
-1	சிலையை	சிலை	NOUN	NNA-3SN--	Case=Acc|Gender=Neut|Number=Sing|Person=3	3	dobj	_	Translit=cilaiyai|LTranslit=cilai
-2	திருப்பி	திருப்பு	VERB	Vt-T---AA	Negative=Pos|VerbForm=Part|Voice=Act	3	advcl	_	Translit=tiruppi|LTranslit=tiruppu
-3	கொடுப்பவர்கள்	கொடு	NOUN	NNN-3PA--	Animacy=Anim|Case=Nom|Gender=Com|Number=Plur|Person=3	8	nmod	_	Translit=koṭuppavarkaḷ|LTranslit=koṭu
+1	சிலையை	சிலை	NOUN	NNA-3SN--	Case=Acc|Gender=Neut|Number=Sing|Person=3	3	obj	_	Translit=cilaiyai|LTranslit=cilai
+2	திருப்பி	திருப்பு	VERB	Vt-T---AA	Polarity=Pos|VerbForm=Part|Voice=Act	3	advcl	_	Translit=tiruppi|LTranslit=tiruppu
+3	கொடுப்பவர்கள்	கொடு	NOUN	NNN-3PA--	Animacy=Anim|Case=Nom|Gender=Com|Number=Plur|Person=3	8	obl	_	Translit=koṭuppavarkaḷ|LTranslit=koṭu
 4	மீது	மீது	ADP	PP-------	AdpType=Post	3	case	_	Translit=mītu|LTranslit=mītu
 5	எவ்வித	எவ்விதம்	ADJ	JJ-------	_	6	amod	_	Translit=evvita|LTranslit=evvitam
 6	நடவடிக்கைய்	நடவடிக்கை	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	8	nsubj	_	Translit=naṭavaṭikkaiy|LTranslit=naṭavaṭikkai
 7	உம்	உம்	PART	Tv-------	_	6	advmod:emph	_	Translit=um|LTranslit=um
-8	எடுக்கப்	எடு	VERB	Vu-T---AA	Negative=Pos|VerbForm=Inf|Voice=Act	0	root	_	Translit=eṭukkap|LTranslit=eṭu
-9	படாது	படு	AUX	VR-T3SN-N	Gender=Neut|Mood=Ind|Negative=Neg|Number=Sing|Person=3|VerbForm=Fin	8	aux	_	SpaceAfter=No|Translit=paṭātu|LTranslit=paṭu
+8	எடுக்கப்	எடு	VERB	Vu-T---AA	Polarity=Pos|VerbForm=Inf|Voice=Act	0	root	_	Translit=eṭukkap|LTranslit=eṭu
+9	படாது	படு	AUX	VR-T3SN-N	Gender=Neut|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin	8	aux	_	SpaceAfter=No|Translit=paṭātu|LTranslit=paṭu
 10	.	.	PUNCT	Z#-------	PunctType=Peri	8	punct	_	Translit=.|LTranslit=.
 
 </code></pre>
@@ -130,9 +147,25 @@ Average distance between parent and child is 4.4593837535014.</p>
 
 advcl in other languages:
 
+[<a href="../../am/dep/advcl.html">am</a>]
+
+[<a href="../../ar/dep/advcl.html">ar</a>]
+
 [<a href="../../bg/dep/advcl.html">bg</a>]
 
+[<a href="../../bxr/dep/advcl.html">bxr</a>]
+
+[<a href="../../ca/dep/advcl.html">ca</a>]
+
+[<a href="../../ckb/dep/advcl.html">ckb</a>]
+
+[<a href="../../cop/dep/advcl.html">cop</a>]
+
 [<a href="../../cs/dep/advcl.html">cs</a>]
+
+[<a href="../../cu/dep/advcl.html">cu</a>]
+
+[<a href="../../da/dep/advcl.html">da</a>]
 
 [<a href="../../de/dep/advcl.html">de</a>]
 
@@ -142,29 +175,99 @@ advcl in other languages:
 
 [<a href="../../es/dep/advcl.html">es</a>]
 
+[<a href="../../et/dep/advcl.html">et</a>]
+
 [<a href="../../eu/dep/advcl.html">eu</a>]
 
 [<a href="../../fa/dep/advcl.html">fa</a>]
 
 [<a href="../../fi/dep/advcl.html">fi</a>]
 
+[<a href="../../fo/dep/advcl.html">fo</a>]
+
 [<a href="../../fr/dep/advcl.html">fr</a>]
 
 [<a href="../../ga/dep/advcl.html">ga</a>]
 
+[<a href="../../gl/dep/advcl.html">gl</a>]
+
+[<a href="../../got/dep/advcl.html">got</a>]
+
+[<a href="../../grc/dep/advcl.html">grc</a>]
+
 [<a href="../../he/dep/advcl.html">he</a>]
 
+[<a href="../../hi/dep/advcl.html">hi</a>]
+
+[<a href="../../hr/dep/advcl.html">hr</a>]
+
 [<a href="../../hu/dep/advcl.html">hu</a>]
+
+[<a href="../../id/dep/advcl.html">id</a>]
 
 [<a href="../../it/dep/advcl.html">it</a>]
 
 [<a href="../../ja/dep/advcl.html">ja</a>]
 
+[<a href="../../kk/dep/advcl.html">kk</a>]
+
+[<a href="../../kmr/dep/advcl.html">kmr</a>]
+
 [<a href="../../ko/dep/advcl.html">ko</a>]
+
+[<a href="../../la/dep/advcl.html">la</a>]
+
+[<a href="../../lv/dep/advcl.html">lv</a>]
+
+[<a href="../../mr/dep/advcl.html">mr</a>]
+
+[<a href="../../nl/dep/advcl.html">nl</a>]
+
+[<a href="../../no/dep/advcl.html">no</a>]
+
+[<a href="../../pl/dep/advcl.html">pl</a>]
+
+[<a href="../../pt/dep/advcl.html">pt</a>]
+
+[<a href="../../ro/dep/advcl.html">ro</a>]
+
+[<a href="../../ru/dep/advcl.html">ru</a>]
+
+[<a href="../../sa/dep/advcl.html">sa</a>]
+
+[<a href="../../sk/dep/advcl.html">sk</a>]
+
+[<a href="../../sla/dep/advcl.html">sla</a>]
+
+[<a href="../../sl/dep/advcl.html">sl</a>]
+
+[<a href="../../so/dep/advcl.html">so</a>]
+
+[<a href="../../sr/dep/advcl.html">sr</a>]
 
 [<a href="../../sv/dep/advcl.html">sv</a>]
 
+[<a href="../../swl/dep/advcl.html">swl</a>]
+
+[<a href="../../ta/dep/advcl.html">ta</a>]
+
+[<a href="../../tr/dep/advcl.html">tr</a>]
+
 [<a href="../../u/dep/advcl.html">u</a>]
+
+[<a href="../../ug/dep/advcl.html">ug</a>]
+
+[<a href="../../uk/dep/advcl.html">uk</a>]
+
+[<a href="../../ur/dep/advcl.html">ur</a>]
+
+[<a href="../../urj/dep/advcl.html">urj</a>]
+
+[<a href="../../vi/dep/advcl.html">vi</a>]
+
+[<a href="../../yue/dep/advcl.html">yue</a>]
+
+[<a href="../../zh/dep/advcl.html">zh</a>]
 
 
 

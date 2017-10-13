@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-cop">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/cop/dep">cop/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_cop-dep/dislocated.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cop">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/cop/dep">cop/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cop-dep/dislocated.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -45,8 +62,28 @@
 
           <h2><code>dislocated</code>: dislocated elements</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>dislocated</code>.</p>
+<p>This label is used for arguments or ‘hanging topics’ that are preposed before the verbal complex, and which are referred to again as pronouns governed by the verbal complex.</p>
+
+<pre><code class="language-sdparse">ⲡ/DET ϣⲓⲡⲉ/NOUN ⲙ/ADP ⲡⲉⲓ/DET ⲙⲁ/NOUN ,/PUNCT ⲡ/DET ⲉⲟⲟⲩ/NOUN ⲙ/ADP ⲡⲉⲓ/DET ⲙⲁ/NOUN ⲁ/AUX ⲓ/PRON ⲡⲁⲣⲁⲓⲧⲉⲓ/VERB ⲙⲙⲟ/ADP ⲩ/PRON \n The shame of this place, the glory of this place, I have forsaken them.
+
+det(ϣⲓⲡⲉ, ⲡ)
+nmod(ϣⲓⲡⲉ, ⲙⲁ-5)
+det(ⲙⲁ-5, ⲡⲉⲓ)
+case(ⲙⲁ-5, ⲙ)
+conj(ⲙⲁ-5, ⲉⲟⲟⲩ)
+det(ⲉⲟⲟⲩ, ⲡ)
+nmod(ⲉⲟⲟⲩ, ⲙⲁ-11)
+det(ⲙⲁ-11, ⲡⲉⲓ)
+case(ⲙⲁ-11, ⲙ)
+appos(ⲩ, ϣⲓⲡⲉ)
+case(ⲩ, ⲙⲙⲟ)
+dobj(ⲡⲁⲣⲁⲓⲧⲉⲓ, ⲩ)
+aux(ⲡⲁⲣⲁⲓⲧⲉⲓ, ⲁ) 
+nsubj(ⲡⲁⲣⲁⲓⲧⲉⲓ, ⲓ)
+</code></pre>
+
+<p>Note how the lexical arguments ‘the shame … the glory’ act as dislocated and are pre-posed, to be referred to again as pronouns by the pronoun object ‘them’, which acts as dobj (forsaken what? them. What is them? shame + glory). The dislocation is linked to the word governing the ‘duplicate pronoun’, usually the verb (here ⲡⲁⲣⲁⲓⲧⲉⲓ ‘forsake’, which also governs the object pronoun).</p>
+
 
 
 <!-- "automatic stats" -->
@@ -63,30 +100,27 @@ for <code>dislocated</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>68 nodes (1%) are attached to their parents as <code>dislocated</code>.</p>
+<p>133 nodes (2%) are attached to their parents as <code>dislocated</code>.</p>
 
-<p>47 instances of <code>dislocated</code> (69%) are right-to-left (child precedes parent).
-Average distance between parent and child is 4.88235294117647.</p>
+<p>87 instances of <code>dislocated</code> (65%) are right-to-left (child precedes parent).
+Average distance between parent and child is 5.61654135338346.</p>
 
-<p>The following 7 pairs of parts of speech are connected with <code>dislocated</code>: <a href="">cop-pos/VERB</a>-<a href="">cop-pos/NOUN</a> (40; 59% instances), <a href="">cop-pos/VERB</a>-<a href="">cop-pos/PRON</a> (10; 15% instances), <a href="">cop-pos/VERB</a>-<a href="">cop-pos/PROPN</a> (10; 15% instances), <a href="">cop-pos/VERB</a>-<a href="">cop-pos/DET</a> (5; 7% instances), <a href="">cop-pos/NOUN</a>-<a href="">cop-pos/PRON</a> (1; 1% instances), <a href="">cop-pos/PRON</a>-<a href="">cop-pos/SCONJ</a> (1; 1% instances), <a href="">cop-pos/VERB</a>-<a href="">cop-pos/NUM</a> (1; 1% instances).</p>
+<p>The following 10 pairs of parts of speech are connected with <code>dislocated</code>: <a href="">cop-pos/VERB</a>-<a href="">cop-pos/NOUN</a> (68; 51% instances), <a href="">cop-pos/VERB</a>-<a href="">cop-pos/PROPN</a> (19; 14% instances), <a href="">cop-pos/VERB</a>-<a href="">cop-pos/DET</a> (18; 14% instances), <a href="">cop-pos/VERB</a>-<a href="">cop-pos/PRON</a> (16; 12% instances), <a href="">cop-pos/VERB</a>-<a href="">cop-pos/NUM</a> (5; 4% instances), <a href="">cop-pos/NOUN</a>-<a href="">cop-pos/NOUN</a> (2; 2% instances), <a href="">cop-pos/NOUN</a>-<a href="">cop-pos/PRON</a> (2; 2% instances), <a href="">cop-pos/DET</a>-<a href="">cop-pos/DET</a> (1; 1% instances), <a href="">cop-pos/PRON</a>-<a href="">cop-pos/PROPN</a> (1; 1% instances), <a href="">cop-pos/PRON</a>-<a href="">cop-pos/SCONJ</a> (1; 1% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
 # visual-style 6	bgColor:blue
 # visual-style 6	fgColor:white
-# visual-style 6 1 dislocated	color:blue
-1	ϩⲟⲓⲛⲉ	ϩⲟⲓⲛⲉ	NOUN	N	_	6	dislocated	_	_
-2	ⲙⲉⲛ	ⲙⲉⲛ	PART	PTC	_	4	advcl	_	_
-3	ⲉ	ⲉ	ADP	PREP	_	4	mark	_	_
-4	ⲧⲣⲉ	ⲧⲣⲉ	VERB	ACAUS	_	0	root	_	_
+# visual-style 6 3 dislocated	color:blue
+1	ⲁⲩⲱ	ⲁⲩⲱ	CCONJ	CONJ	_	6	cc	_	_
+2	ⲛ	ⲡ	DET	ART	_	3	det	_	_
+3	ⲁⲅⲅⲉⲗⲟⲥ	ⲁⲅⲅⲉⲗⲟⲥ	NOUN	N	_	6	dislocated	_	_
+4	ⲛⲉ	ⲛⲉⲣⲉ	AUX	CPRET	_	6	mark	_	_
 5	ⲩ	ⲛⲧⲟⲟⲩ	PRON	PPERS	_	6	nsubj	_	_
-6	ⲧⲁⲁ	ϯ	VERB	V	_	4	xcomp	_	_
-7	ⲩ	ⲛⲧⲟⲟⲩ	PRON	PPERO	_	6	dobj	_	_
-8	ⲛⲏ	ⲛⲁ	ADP	PREP	_	9	case	_	_
-9	ⲧⲛ	ⲛⲧⲱⲧⲛ	PRON	PPERO	_	6	nmod	_	_
-10	ⲛ	ⲛ	ADP	PREP	_	11	case	_	_
-11	ⲧⲁⲉⲓⲟ	ⲧⲁⲉⲓⲟ	NOUN	N	_	6	nmod	_	_
-12	,	,	PUNCT	PUNCT	_	4	punct	_	_
+6	ⲇⲓⲁⲕⲟⲛⲓ	ⲇⲓⲁⲕⲟⲛⲉⲓ	VERB	V	_	0	root	_	_
+7	ⲛⲁ	ⲛⲁ	ADP	PREP	_	8	case	_	_
+8	ϥ	ⲛⲧⲟϥ	PRON	PPERO	_	6	obl	_	_
+9	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
 </code></pre>
 
@@ -95,16 +129,16 @@ Average distance between parent and child is 4.88235294117647.</p>
 # visual-style 4	bgColor:blue
 # visual-style 4	fgColor:white
 # visual-style 4 9 dislocated	color:blue
-1	ⲁⲩⲱ	ⲁⲩⲱ	CONJ	CONJ	_	4	cc	_	_
+1	ⲁⲩⲱ	ⲁⲩⲱ	CCONJ	CONJ	_	4	cc	_	_
 2	ⲁ	ⲁ	AUX	APST	_	4	aux	_	_
 3	ⲩ	ⲛⲧⲟⲟⲩ	PRON	PPERS	_	4	nsubj	_	_
 4	ⲡⲱⲧ	ⲡⲱⲧ	VERB	V	_	0	root	_	_
 5	ⲉⲃⲟⲗ	ⲉⲃⲟⲗ	ADV	ADV	_	4	advmod	_	_
 6	ⲛⲥⲱ	ⲛⲥⲁ	ADP	PREP	_	7	case	_	_
-7	ϥ	ⲛⲧⲟϥ	PRON	PPERO	_	4	nmod	_	_
+7	ϥ	ⲛⲧⲟϥ	PRON	PPERO	_	4	obl	_	_
 8	ⲛϭⲓ	ⲛϭⲓ	PART	PTC	_	9	case	_	_
 9	ⲥⲓⲙⲱⲛ	ⲥⲓⲙⲱⲛ	PROPN	NPROP	_	4	dislocated	_	_
-10	ⲙⲛ	ⲙⲛ	ADP	PREP	_	9	cc	_	_
+10	ⲙⲛ	ⲙⲛ	ADP	PREP	_	11	cc	_	_
 11	ⲛ	ⲡ	DET	ART	_	9	conj	_	_
 12	ⲉⲧ	ⲉⲧⲉⲣⲉ	SCONJ	CREL	_	14	mark	_	_
 13	ⲛⲙⲙⲁ	ⲙⲛ	ADP	PREP	_	14	case	_	_
@@ -112,27 +146,31 @@ Average distance between parent and child is 4.88235294117647.</p>
 15	ⲁ	ⲁ	AUX	APST	_	17	aux	_	_
 16	ⲩ	ⲛⲧⲟⲟⲩ	PRON	PPERS	_	17	nsubj	_	_
 17	ⲧⲁϩⲟ	ⲧⲁϩⲟ	VERB	V	_	4	parataxis	_	_
-18	ϥ	ⲛⲧⲟϥ	PRON	PPERO	_	17	dobj	_	_
+18	ϥ	ⲛⲧⲟϥ	PRON	PPERO	_	17	obj	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 5 1 dislocated	color:blue
-1	ⲛⲧⲱⲧⲛ	ⲛⲧⲱⲧⲛ	PRON	PPERI	_	5	dislocated	_	_
-2	ⲇⲉ	ⲇⲉ	PART	PTC	_	5	advmod	_	_
-3	ⲧⲉⲛⲟⲩ	ⲧⲉⲛⲟⲩ	ADV	ADV	_	5	advmod	_	_
-4	ⲧⲉⲧⲛ	ⲛⲧⲱⲧⲛ	PRON	PPERS	_	5	nsubj	_	_
-5	ⲫⲟⲣⲉⲓ	ⲫⲟⲣⲉⲓ	VERB	V	_	0	root	_	_
-6	ⲛ	ⲛ	ADP	PREP	_	8	case	_	_
-7	ϩⲉⲛ	ⲟⲩ	DET	ART	_	8	det	_	_
-8	ϣⲧⲏⲛ	ϣⲧⲏⲛ	NOUN	N	_	5	dobj	_	_
-9	ⲉ	ⲉⲧⲉⲣⲉ	SCONJ	CREL	_	11	mark	_	_
-10	ⲩ	ⲛⲧⲟⲟⲩ	PRON	PPERS	_	11	nsubj	_	_
-11	ⲧⲁⲉⲓⲏⲩ	ⲧⲁⲉⲓⲟ	VERB	VSTAT	_	8	acl	_	_
-12	.	.	PUNCT	PUNCT	_	5	punct	_	_
+<pre><code class="language-conllu"># visual-style 10	bgColor:blue
+# visual-style 10	fgColor:white
+# visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 7 10 dislocated	color:blue
+1	ϫⲉ	ϫⲉ	CCONJ	CONJ	_	2	mark	_	_
+2	ⲥⲱⲧⲙ	ⲥⲱⲧⲙ	VERB	V	_	0	root	_	_
+3	ⲉⲓⲥ	ⲉⲓⲥ	PART	PTC	_	7	advmod	_	_
+4	ϩⲏⲏⲧⲉ	ϩⲏⲏⲧⲉ	NOUN	N	_	3	fixed	_	_
+5	ⲁ	ⲁ	AUX	APST	_	7	aux	_	_
+6	ϥ	ⲛⲧⲟϥ	PRON	PPERS	_	7	nsubj	_	_
+7	ⲉⲓ	ⲉⲓ	VERB	V	_	2	parataxis	_	_
+8	ⲉⲃⲟⲗ	ⲉⲃⲟⲗ	ADV	ADV	_	7	advmod	_	_
+9	ⲛϭⲓ	ⲛϭⲓ	PART	PTC	_	10	case	_	_
+10	ⲡ	ⲡ	DET	ART	_	7	dislocated	_	_
+11	ⲉⲧ	ⲉⲧⲉⲣⲉ	SCONJ	CREL	_	12	mark	_	_
+12	ϫⲟ	ϫⲟ	VERB	V	_	10	acl	_	_
+13	ⲉ	ⲉ	ADP	PREP	_	15	case	_	_
+14	ⲧ	ⲡ	DET	ART	_	15	det	_	_
+15	ϫⲟ	ϫⲟ	NOUN	N	_	7	obl	_	_
+16	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 </code></pre>
 
@@ -144,9 +182,23 @@ Average distance between parent and child is 4.88235294117647.</p>
 
 dislocated in other languages:
 
+[<a href="../../am/dep/dislocated.html">am</a>]
+
+[<a href="../../ar/dep/dislocated.html">ar</a>]
+
 [<a href="../../bg/dep/dislocated.html">bg</a>]
 
-[<a href="../../cs/dep/dislocated.html">cs</a>]
+[<a href="../../bxr/dep/dislocated.html">bxr</a>]
+
+[<a href="../../ca/dep/dislocated.html">ca</a>]
+
+[<a href="../../ckb/dep/dislocated.html">ckb</a>]
+
+[<a href="../../cop/dep/dislocated.html">cop</a>]
+
+[<a href="../../cu/dep/dislocated.html">cu</a>]
+
+[<a href="../../da/dep/dislocated.html">da</a>]
 
 [<a href="../../de/dep/dislocated.html">de</a>]
 
@@ -156,29 +208,99 @@ dislocated in other languages:
 
 [<a href="../../es/dep/dislocated.html">es</a>]
 
+[<a href="../../et/dep/dislocated.html">et</a>]
+
 [<a href="../../eu/dep/dislocated.html">eu</a>]
 
 [<a href="../../fa/dep/dislocated.html">fa</a>]
 
 [<a href="../../fi/dep/dislocated.html">fi</a>]
 
+[<a href="../../fo/dep/dislocated.html">fo</a>]
+
 [<a href="../../fr/dep/dislocated.html">fr</a>]
 
 [<a href="../../ga/dep/dislocated.html">ga</a>]
 
+[<a href="../../gl/dep/dislocated.html">gl</a>]
+
+[<a href="../../got/dep/dislocated.html">got</a>]
+
+[<a href="../../grc/dep/dislocated.html">grc</a>]
+
 [<a href="../../he/dep/dislocated.html">he</a>]
 
+[<a href="../../hi/dep/dislocated.html">hi</a>]
+
+[<a href="../../hr/dep/dislocated.html">hr</a>]
+
 [<a href="../../hu/dep/dislocated.html">hu</a>]
+
+[<a href="../../id/dep/dislocated.html">id</a>]
 
 [<a href="../../it/dep/dislocated.html">it</a>]
 
 [<a href="../../ja/dep/dislocated.html">ja</a>]
 
+[<a href="../../kk/dep/dislocated.html">kk</a>]
+
+[<a href="../../kmr/dep/dislocated.html">kmr</a>]
+
 [<a href="../../ko/dep/dislocated.html">ko</a>]
+
+[<a href="../../la/dep/dislocated.html">la</a>]
+
+[<a href="../../lv/dep/dislocated.html">lv</a>]
+
+[<a href="../../mr/dep/dislocated.html">mr</a>]
+
+[<a href="../../nl/dep/dislocated.html">nl</a>]
+
+[<a href="../../no/dep/dislocated.html">no</a>]
+
+[<a href="../../pl/dep/dislocated.html">pl</a>]
+
+[<a href="../../pt/dep/dislocated.html">pt</a>]
+
+[<a href="../../ro/dep/dislocated.html">ro</a>]
+
+[<a href="../../ru/dep/dislocated.html">ru</a>]
+
+[<a href="../../sa/dep/dislocated.html">sa</a>]
+
+[<a href="../../sk/dep/dislocated.html">sk</a>]
+
+[<a href="../../sla/dep/dislocated.html">sla</a>]
+
+[<a href="../../sl/dep/dislocated.html">sl</a>]
+
+[<a href="../../so/dep/dislocated.html">so</a>]
+
+[<a href="../../sr/dep/dislocated.html">sr</a>]
 
 [<a href="../../sv/dep/dislocated.html">sv</a>]
 
+[<a href="../../swl/dep/dislocated.html">swl</a>]
+
+[<a href="../../ta/dep/dislocated.html">ta</a>]
+
+[<a href="../../tr/dep/dislocated.html">tr</a>]
+
 [<a href="../../u/dep/dislocated.html">u</a>]
+
+[<a href="../../ug/dep/dislocated.html">ug</a>]
+
+[<a href="../../uk/dep/dislocated.html">uk</a>]
+
+[<a href="../../ur/dep/dislocated.html">ur</a>]
+
+[<a href="../../urj/dep/dislocated.html">urj</a>]
+
+[<a href="../../vi/dep/dislocated.html">vi</a>]
+
+[<a href="../../yue/dep/dislocated.html">yue</a>]
+
+[<a href="../../zh/dep/dislocated.html">zh</a>]
 
 
 

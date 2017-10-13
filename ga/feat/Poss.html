@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ga">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ga/feat">ga/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ga-feat/Poss.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ga">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ga/feat">ga/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ga-feat/Poss.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -47,8 +64,32 @@
 
 <h2><code>Poss</code>: possessive</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>Poss</code>.</p>
+<p>Possessive is a feature of prepositions and determiners in Irish. Possessive prepositions can inflect to show person and number. Possessive determiners cause morphological changes in the noun they are dependent on.</p>
+
+<h3 id="yes--possessive"><code>Yes</code> : possessive</h3>
+
+<p>The following table describes the determiners and the morphological changes they cause.</p>
+
+<table>
+<tr><td></td><td>Determiner</td><td>Before consonant</td><td>Before vowel</td><td>Ex: <em>cóta</em> "coat"</td><td>Ex: <em>athair</em> "father"</td></tr>
+<tr><td>1st sing</td><td><em>mo</em></td><td>lenition</td><td>no change</td><td><em>mo c<b>h</b>óta</em></td><td><em>m' athair</em></td></tr>
+<tr><td>2nd sing</td><td><em>do</em></td><td>lenition</td><td>no change</td><td><em>do c<b>h</b>óta</em></td><td><em>d' athair</em></td></tr>
+<tr><td>3rd sing masc</td><td><em>a</em></td><td>lenition</td><td>no change</td><td><em>a c<b>h</b>óta</em></td><td><em>a athair</em></td></tr>
+<tr><td>3rd sing fem</td><td><em>a</em></td><td>no change</td><td>h-prefix</td><td><em>a cóta</em></td><td><em>a <b>h</b>athair</em></td></tr>
+<tr><td>1st pl</td><td><em>ár</em></td><td>eclipsis</td><td>eclipsis</td><td><em>ár <b>g</b>cóta</em></td><td><em>ár <b>n-</b>athair</em></td></tr>
+<tr><td>2nd pl</td><td><em>bhur</em></td><td>eclipsis</td><td>eclipsis</td><td><em>bhur <b>g</b>cóta</em></td><td><em>bhur <b>n-</b>athair</em></td></tr>
+<tr><td>3rd pl</td><td><em>a</em></td><td>eclipsis</td><td>eclipsis</td><td><em>a <b>g</b>cóta</em></td><td><em>a <b>n-</b>athair</em></td></tr>
+</table>
+
+<p>Certain prepositions (e.g. <em>faoi</em> “under”, <em>i</em> “in”, <em>le</em> “with”) in Irish can absorb the possessive determiners to become possessive prepositions. For instance, <em>le</em> + <em>ár</em> becomes <em>lenár</em>. The noun attached to the prepostion will inflect accordingly.</p>
+
+<h4 id="examples">Examples:</h4>
+
+<ul>
+  <li><em>ina c<b>h</b>orpán</em> “in his body”</li>
+  <li><em>ina cónaí</em> “she lives in (lit. in her dwelling)”</li>
+  <li><em>ina <b>g</b>cónaí</em> “they live in (lit. in their dwelling)”</li>
+</ul>
 
 
 <!-- "automatic stats" -->
@@ -65,38 +106,38 @@ for <code>Poss</code>.</p>
 <p>This feature is universal.
 It occurs with 1 different values: <code>Yes</code>.</p>
 
-<p>444 tokens (2%) have a non-empty value of <code>Poss</code>.
-27 types (0%) occur at least once with a non-empty value of <code>Poss</code>.
-14 lemmas (0%) occur at least once with a non-empty value of <code>Poss</code>.
-The feature is used with 2 part-of-speech tags: <a href="">ga-pos/DET</a> (244; 1% instances), <a href="">ga-pos/ADP</a> (200; 1% instances).</p>
-
-<h3 id="det"><code>DET</code></h3>
-
-<p>244 <a href="">ga-pos/DET</a> tokens (11% of all <code>DET</code> tokens) have a non-empty value of <code>Poss</code>.</p>
-
-<p>The most frequent other feature values with which <code>DET</code> and <code>Poss</code> co-occurred: <tt><a href="Case.html">Case</a>=EMPTY</tt> (244; 100%), <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (244; 100%), <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (244; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (189; 77%), <tt><a href="Person.html">Person</a>=3</tt> (182; 75%).</p>
-
-<p><code>DET</code> tokens may have the following values of <code>Poss</code>:</p>
-
-<ul>
-  <li><code>Yes</code> (244; 100% of non-empty <code>Poss</code>): <em>a, mo, do, m’, ár, d’</em></li>
-  <li><code>EMPTY</code> (1890): <em>an, na, seo, sin, aon, eile, gach, cibé, a, a’</em></li>
-</ul>
+<p>254 tokens (2%) have a non-empty value of <code>Poss</code>.
+22 types (1%) occur at least once with a non-empty value of <code>Poss</code>.
+13 lemmas (0%) occur at least once with a non-empty value of <code>Poss</code>.
+The feature is used with 2 part-of-speech tags: <a href="">ga-pos/ADP</a> (131; 1% instances), <a href="">ga-pos/DET</a> (123; 1% instances).</p>
 
 <h3 id="adp"><code>ADP</code></h3>
 
-<p>200 <a href="">ga-pos/ADP</a> tokens (6% of all <code>ADP</code> tokens) have a non-empty value of <code>Poss</code>.</p>
+<p>131 <a href="">ga-pos/ADP</a> tokens (6% of all <code>ADP</code> tokens) have a non-empty value of <code>Poss</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADP</code> and <code>Poss</code> co-occurred: <tt><a href="Person.html">Person</a>=3</tt> (174; 87%), <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (163; 82%), <tt><a href="Number.html">Number</a>=Sing</tt> (134; 67%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (109; 55%).</p>
+<p>The most frequent other feature values with which <code>ADP</code> and <code>Poss</code> co-occurred: <tt><a href="Person.html">Person</a>=3</tt> (120; 92%), <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (104; 79%), <tt><a href="Number.html">Number</a>=Sing</tt> (93; 71%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (78; 60%).</p>
 
 <p><code>ADP</code> tokens may have the following values of <code>Poss</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (200; 100% of non-empty <code>Poss</code>): <em>ina, á, dá, lena, faoina, arna, óna, dhá, lenár, dár</em></li>
-  <li><code>EMPTY</code> (3427): <em>ar, i, ag, le, sa, de, leis, mar, ann, chun</em></li>
+  <li><code>Yes</code> (131; 100% of non-empty <code>Poss</code>): <em>ina, á, dá, lena, faoina, arna, dhá, dár, fána, im</em></li>
+  <li><code>EMPTY</code> (2109): <em>ar, i, ag, le, de, sa, leis, mar, ann, den</em></li>
 </ul>
 
-<p><code>Poss</code> seems to be <strong>lexical feature</strong> of <code>ADP</code>. 100% lemmas (11) occur only with one value of <code>Poss</code>.</p>
+<p><code>Poss</code> seems to be <strong>lexical feature</strong> of <code>ADP</code>. 100% lemmas (10) occur only with one value of <code>Poss</code>.</p>
+
+<h3 id="det"><code>DET</code></h3>
+
+<p>123 <a href="">ga-pos/DET</a> tokens (10% of all <code>DET</code> tokens) have a non-empty value of <code>Poss</code>.</p>
+
+<p>The most frequent other feature values with which <code>DET</code> and <code>Poss</code> co-occurred: <tt><a href="Case.html">Case</a>=EMPTY</tt> (123; 100%), <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (123; 100%), <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (123; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (89; 72%).</p>
+
+<p><code>DET</code> tokens may have the following values of <code>Poss</code>:</p>
+
+<ul>
+  <li><code>Yes</code> (123; 100% of non-empty <code>Poss</code>): <em>a, mo, do, m’, ár</em></li>
+  <li><code>EMPTY</code> (1153): <em>an, na, seo, sin, aon, eile, gach, cibé, uile, s’</em></li>
+</ul>
 
 
 
@@ -106,9 +147,25 @@ The feature is used with 2 part-of-speech tags: <a href="">ga-pos/DET</a> (244; 
 
 Poss in other languages:
 
+[<a href="../../am/feat/Poss.html">am</a>]
+
+[<a href="../../ar/feat/Poss.html">ar</a>]
+
 [<a href="../../bg/feat/Poss.html">bg</a>]
 
+[<a href="../../bxr/feat/Poss.html">bxr</a>]
+
+[<a href="../../ca/feat/Poss.html">ca</a>]
+
+[<a href="../../ckb/feat/Poss.html">ckb</a>]
+
+[<a href="../../cop/feat/Poss.html">cop</a>]
+
 [<a href="../../cs/feat/Poss.html">cs</a>]
+
+[<a href="../../cu/feat/Poss.html">cu</a>]
+
+[<a href="../../da/feat/Poss.html">da</a>]
 
 [<a href="../../de/feat/Poss.html">de</a>]
 
@@ -118,29 +175,99 @@ Poss in other languages:
 
 [<a href="../../es/feat/Poss.html">es</a>]
 
+[<a href="../../et/feat/Poss.html">et</a>]
+
 [<a href="../../eu/feat/Poss.html">eu</a>]
 
 [<a href="../../fa/feat/Poss.html">fa</a>]
 
 [<a href="../../fi/feat/Poss.html">fi</a>]
 
+[<a href="../../fo/feat/Poss.html">fo</a>]
+
 [<a href="../../fr/feat/Poss.html">fr</a>]
 
 [<a href="../../ga/feat/Poss.html">ga</a>]
 
+[<a href="../../gl/feat/Poss.html">gl</a>]
+
+[<a href="../../got/feat/Poss.html">got</a>]
+
+[<a href="../../grc/feat/Poss.html">grc</a>]
+
 [<a href="../../he/feat/Poss.html">he</a>]
 
+[<a href="../../hi/feat/Poss.html">hi</a>]
+
+[<a href="../../hr/feat/Poss.html">hr</a>]
+
 [<a href="../../hu/feat/Poss.html">hu</a>]
+
+[<a href="../../id/feat/Poss.html">id</a>]
 
 [<a href="../../it/feat/Poss.html">it</a>]
 
 [<a href="../../ja/feat/Poss.html">ja</a>]
 
+[<a href="../../kk/feat/Poss.html">kk</a>]
+
+[<a href="../../kmr/feat/Poss.html">kmr</a>]
+
 [<a href="../../ko/feat/Poss.html">ko</a>]
+
+[<a href="../../la/feat/Poss.html">la</a>]
+
+[<a href="../../lv/feat/Poss.html">lv</a>]
+
+[<a href="../../mr/feat/Poss.html">mr</a>]
+
+[<a href="../../nl/feat/Poss.html">nl</a>]
+
+[<a href="../../no/feat/Poss.html">no</a>]
+
+[<a href="../../pl/feat/Poss.html">pl</a>]
+
+[<a href="../../pt/feat/Poss.html">pt</a>]
+
+[<a href="../../ro/feat/Poss.html">ro</a>]
+
+[<a href="../../ru/feat/Poss.html">ru</a>]
+
+[<a href="../../sa/feat/Poss.html">sa</a>]
+
+[<a href="../../sk/feat/Poss.html">sk</a>]
+
+[<a href="../../sla/feat/Poss.html">sla</a>]
+
+[<a href="../../sl/feat/Poss.html">sl</a>]
+
+[<a href="../../so/feat/Poss.html">so</a>]
+
+[<a href="../../sr/feat/Poss.html">sr</a>]
 
 [<a href="../../sv/feat/Poss.html">sv</a>]
 
+[<a href="../../swl/feat/Poss.html">swl</a>]
+
+[<a href="../../ta/feat/Poss.html">ta</a>]
+
+[<a href="../../tr/feat/Poss.html">tr</a>]
+
 [<a href="../../u/feat/Poss.html">u</a>]
+
+[<a href="../../ug/feat/Poss.html">ug</a>]
+
+[<a href="../../uk/feat/Poss.html">uk</a>]
+
+[<a href="../../ur/feat/Poss.html">ur</a>]
+
+[<a href="../../urj/feat/Poss.html">urj</a>]
+
+[<a href="../../vi/feat/Poss.html">vi</a>]
+
+[<a href="../../yue/feat/Poss.html">yue</a>]
+
+[<a href="../../zh/feat/Poss.html">zh</a>]
 
 
 

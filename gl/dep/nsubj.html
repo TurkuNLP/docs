@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-gl">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/gl/dep">gl/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_gl-dep/nsubj.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-gl">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/gl/dep">gl/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_gl-dep/nsubj.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,28 +80,35 @@ for <code>nsubj</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>6531 nodes (5%) are attached to their parents as <code>nsubj</code>.</p>
+<p>5152 nodes (5%) are attached to their parents as <code>nsubj</code>.</p>
 
-<p>5435 instances of <code>nsubj</code> (83%) are right-to-left (child precedes parent).
-Average distance between parent and child is 4.03904455672944.</p>
+<p>4273 instances of <code>nsubj</code> (83%) are right-to-left (child precedes parent).
+Average distance between parent and child is 4.34607919254658.</p>
 
-<p>The following 17 pairs of parts of speech are connected with <code>nsubj</code>: <a href="">gl-pos/VERB</a>-<a href="">gl-pos/NOUN</a> (3832; 59% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/PRON</a> (1995; 31% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/PROPN</a> (245; 4% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/VERB</a> (243; 4% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/NUM</a> (84; 1% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/ADJ</a> (55; 1% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/DET</a> (42; 1% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/ADP</a> (21; 0% instances), <a href="">gl-pos/ADP</a>-<a href="">gl-pos/PRON</a> (4; 0% instances), <a href="">gl-pos/NUM</a>-<a href="">gl-pos/SYM</a> (2; 0% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/INTJ</a> (2; 0% instances), <a href="">gl-pos/ADJ</a>-<a href="">gl-pos/PRON</a> (1; 0% instances), <a href="">gl-pos/PRON</a>-<a href="">gl-pos/NOUN</a> (1; 0% instances), <a href="">gl-pos/PRON</a>-<a href="">gl-pos/PRON</a> (1; 0% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/PART</a> (1; 0% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/PUNCT</a> (1; 0% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/SYM</a> (1; 0% instances).</p>
+<p>The following 47 pairs of parts of speech are connected with <code>nsubj</code>: <a href="">gl-pos/VERB</a>-<a href="">gl-pos/NOUN</a> (2480; 48% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/PRON</a> (1450; 28% instances), <a href="">gl-pos/ADJ</a>-<a href="">gl-pos/NOUN</a> (242; 5% instances), <a href="">gl-pos/NOUN</a>-<a href="">gl-pos/NOUN</a> (201; 4% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/PROPN</a> (166; 3% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/VERB</a> (100; 2% instances), <a href="">gl-pos/ADP</a>-<a href="">gl-pos/NOUN</a> (66; 1% instances), <a href="">gl-pos/ADJ</a>-<a href="">gl-pos/PRON</a> (65; 1% instances), <a href="">gl-pos/ADJ</a>-<a href="">gl-pos/VERB</a> (63; 1% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/NUM</a> (59; 1% instances), <a href="">gl-pos/NOUN</a>-<a href="">gl-pos/PRON</a> (50; 1% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/ADJ</a> (30; 1% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/DET</a> (23; 0% instances), <a href="">gl-pos/NOUN</a>-<a href="">gl-pos/PROPN</a> (20; 0% instances), <a href="">gl-pos/ADP</a>-<a href="">gl-pos/PRON</a> (18; 0% instances), <a href="">gl-pos/NOUN</a>-<a href="">gl-pos/VERB</a> (17; 0% instances), <a href="">gl-pos/PRON</a>-<a href="">gl-pos/NOUN</a> (12; 0% instances), <a href="">gl-pos/ADJ</a>-<a href="">gl-pos/PROPN</a> (9; 0% instances), <a href="">gl-pos/NOUN</a>-<a href="">gl-pos/ADP</a> (9; 0% instances), <a href="">gl-pos/NOUN</a>-<a href="">gl-pos/ADJ</a> (7; 0% instances), <a href="">gl-pos/ADJ</a>-<a href="">gl-pos/ADJ</a> (6; 0% instances), <a href="">gl-pos/NOUN</a>-<a href="">gl-pos/NUM</a> (6; 0% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/ADP</a> (6; 0% instances), <a href="">gl-pos/PROPN</a>-<a href="">gl-pos/NOUN</a> (5; 0% instances), <a href="">gl-pos/ADP</a>-<a href="">gl-pos/PROPN</a> (3; 0% instances), <a href="">gl-pos/ADP</a>-<a href="">gl-pos/VERB</a> (3; 0% instances), <a href="">gl-pos/ADV</a>-<a href="">gl-pos/NOUN</a> (3; 0% instances), <a href="">gl-pos/NOUN</a>-<a href="">gl-pos/DET</a> (3; 0% instances), <a href="">gl-pos/PRON</a>-<a href="">gl-pos/PRON</a> (3; 0% instances), <a href="">gl-pos/SCONJ</a>-<a href="">gl-pos/NOUN</a> (3; 0% instances), <a href="">gl-pos/ADJ</a>-<a href="">gl-pos/ADP</a> (2; 0% instances), <a href="">gl-pos/ADJ</a>-<a href="">gl-pos/DET</a> (2; 0% instances), <a href="">gl-pos/ADJ</a>-<a href="">gl-pos/NUM</a> (2; 0% instances), <a href="">gl-pos/ADP</a>-<a href="">gl-pos/NUM</a> (2; 0% instances), <a href="">gl-pos/NUM</a>-<a href="">gl-pos/SYM</a> (2; 0% instances), <a href="">gl-pos/PROPN</a>-<a href="">gl-pos/PRON</a> (2; 0% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/INTJ</a> (2; 0% instances), <a href="">gl-pos/ADP</a>-<a href="">gl-pos/ADJ</a> (1; 0% instances), <a href="">gl-pos/ADP</a>-<a href="">gl-pos/DET</a> (1; 0% instances), <a href="">gl-pos/ADV</a>-<a href="">gl-pos/NUM</a> (1; 0% instances), <a href="">gl-pos/ADV</a>-<a href="">gl-pos/PRON</a> (1; 0% instances), <a href="">gl-pos/DET</a>-<a href="">gl-pos/PRON</a> (1; 0% instances), <a href="">gl-pos/NOUN</a>-<a href="">gl-pos/SYM</a> (1; 0% instances), <a href="">gl-pos/PRON</a>-<a href="">gl-pos/PROPN</a> (1; 0% instances), <a href="">gl-pos/PRON</a>-<a href="">gl-pos/VERB</a> (1; 0% instances), <a href="">gl-pos/PROPN</a>-<a href="">gl-pos/NUM</a> (1; 0% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/PUNCT</a> (1; 0% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 4 2 nsubj	color:blue
-1	O	o	DET	DA0MS0	_	2	det	_	Treeler:spec
-2	mecanismo	mecanismo	NOUN	NCMS000	_	4	nsubj	_	Treeler:suj
-3	empregado	empregado	NOUN	NCMS000	_	2	amod	_	Treeler:s.a
-4	consistiu	consistir	VERB	VMIS3S0	_	0	root	_	Treeler:sentence
-5	en	en	ADP	SPS00	_	4	case	_	Treeler:creg
-6	seleccionar	seleccionar	VERB	VMN0000	_	5	ccomp	_	Treeler:S
-7	as	o	DET	DA0FP0	_	8	det	_	Treeler:spec
-8	cinco	cinco	NOUN	NCMS000	_	6	dobj	_	Treeler:cd
-9	CC	cc	PROPN	NP00000	_	8	nmod	_	Treeler:sn
-10	.	.	PUNCT	Fp	_	4	punct	_	Treeler:f
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 1 3 nsubj	color:blue
+1	Teñen	ter	VERB	VMIP3P0	_	0	root	_	Treeler:sentence
+2	moitas	moito	DET	DI0FP0	_	3	det	_	Treeler:spec
+3	razóns	razón	NOUN	NCFP000	_	1	nsubj	_	Treeler:suj
+4	históricas	histórico	ADJ	AQ0FP0	_	3	amod	_	Treeler:s.a
+5	en	en	ADP	SPS00	_	6	case	_	Treeler:cc
+6	común	común	ADJ	AQ0CS0	_	1	amod	_	SpaceAfter=No|Treeler:s.a
+7	,	,	PUNCT	Fc	_	1	punct	_	Treeler:f
+8	pero	pero	CCONJ	CC	_	1	cc	_	ToDo=cc-without-conj|Treeler:coord
+9	os	o	DET	DA0MP0	_	10	det	_	Treeler:spec
+10	espazos	espazo	NOUN	NCMP000	_	16	nsubj	_	Treeler:suj
+11	de	de	ADP	SPS00	_	12	case	_	Treeler:sp
+12	actuación	actuación	NOUN	NCFS000	_	10	nmod	_	Treeler:sn
+13	non	non	PART	RN	_	16	advmod	_	Treeler:mod
+14	son	ser	AUX	VSIP1S0	_	16	cop	_	Treeler:S
+15	necesariamente	necesariamente	ADV	RG	_	16	det	_	Treeler:spec
+16	unívocos	unívoco	ADJ	AQ0MP0	_	1	ccomp	_	SpaceAfter=No|Treeler:atr
+17	.	.	PUNCT	Fp	_	1	punct	_	Treeler:f
 
 </code></pre>
 
@@ -93,55 +117,56 @@ Average distance between parent and child is 4.03904455672944.</p>
 # visual-style 15	bgColor:blue
 # visual-style 15	fgColor:white
 # visual-style 15 14 nsubj	color:blue
-1	Entre	entre	ADP	SPS00	_	12	case	_	Treeler:cc
+1	Entre	entre	ADP	SPS00	_	3	case	_	Treeler:cc
 2	os	o	DET	DA0MP0	_	3	det	_	Treeler:spec
-3	sistemas	sistema	NOUN	NCMP000	_	1	nmod	_	Treeler:sn
-4	de	de	ADP	SPS00	_	3	case	_	Treeler:sp
-5	desulfuración	desulfuración	NOUN	NCFS000	_	4	nmod	_	Treeler:sn
-6	,	,	PUNCT	Fc	_	1	punct	_	Treeler:f
+3	sistemas	sistema	NOUN	NCMP000	_	15	obl	_	Treeler:sn
+4	de	de	ADP	SPS00	_	5	case	_	Treeler:sp
+5	desulfuración	desulfuración	NOUN	NCFS000	_	3	nmod	_	SpaceAfter=No|Treeler:sn
+6	,	,	PUNCT	Fc	_	3	punct	_	Treeler:f
 7	os	o	DET	DA0MP0	_	8	det	_	Treeler:spec
-8	procesos	proceso	NOUN	NCMP000	_	12	nsubj	_	Treeler:suj
-9	por	por	ADP	SPS00	_	8	case	_	Treeler:sp
-10	vía	vía	NOUN	NCFS000	_	9	nmod	_	Treeler:sn
+8	procesos	proceso	NOUN	NCMP000	_	15	nsubj	_	Treeler:suj
+9	por	por	ADP	SPS00	_	10	case	_	Treeler:sp
+10	vía	vía	NOUN	NCFS000	_	8	nmod	_	Treeler:sn
 11	húmida	húmido	ADJ	AQ0FS0	_	10	amod	_	Treeler:s.a
-12	son	ser	VERB	VSIP1S0	_	0	root	_	Treeler:sentence
+12	son	ser	AUX	VSIP1S0	_	15	cop	_	Treeler:sentence
 13	os	o	DET	DA0MP0	_	15	det	_	Treeler:spec
 14	que	que	PRON	PR0CN000	_	15	nsubj	_	Treeler:suj
-15	acadaron	acadar	VERB	VMIS3P0	_	12	cop	_	Treeler:atr
+15	acadaron	acadar	VERB	VMIS3P0	_	0	root	_	Treeler:atr
 16	maior	maior	ADJ	AQ0CS0	_	17	amod	_	Treeler:s.a
-17	difusión	difusión	NOUN	NCFS000	_	15	dobj	_	Treeler:cd
-18	(	(	PUNCT	Fpa	_	19	punct	_	Treeler:f
-19	80	80	NUM	Z	_	15	foreign	_	Treeler:inc
-20	%	%	SYM	Ft	_	19	nmod	_	Treeler:sn
+17	difusión	difusión	NOUN	NCFS000	_	15	obj	_	Treeler:cd
+18	(	(	PUNCT	Fpa	_	19	punct	_	SpaceAfter=No|Treeler:f
+19	80	80	NUM	Z	Foreign=Yes	15	flat	_	Treeler:inc
+20	%	%	SYM	Ft	_	19	nmod	_	SpaceAfter=No|Treeler:sn
 21	)	)	PUNCT	Fpt	_	19	punct	_	Treeler:f
-22	ata	ata	ADP	SPS00	_	15	case	_	Treeler:cc
+22	ata	ata	ADP	SPS00	_	24	case	_	Treeler:cc
 23	o	o	DET	DA0MS0	_	24	det	_	Treeler:spec
-24	momento	momento	NOUN	NCMS000	_	22	nmod	_	Treeler:sn
-25	.	.	PUNCT	Fp	_	12	punct	_	Treeler:f
+24	momento	momento	NOUN	NCMS000	_	15	obl	_	SpaceAfter=No|Treeler:sn
+25	.	.	PUNCT	Fp	_	15	punct	_	Treeler:f
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 13	bgColor:blue
-# visual-style 13	fgColor:white
-# visual-style 13 1 nsubj	color:blue
-1	PP.	pp.	PROPN	NP00000	_	13	nsubj	_	Treeler:suj
-2	,	,	PUNCT	Fc	_	3	punct	_	Treeler:f
-3	sen	sen	ADP	SPS00	_	13	case	_	Treeler:cc
-4	embargo	embargo	NOUN	NCMS000	_	3	nmod	_	Treeler:sn
-5	os	o	DET	DA0MP0	_	6	det	_	Treeler:spec
-6	resultados	resultado	NOUN	NCMP000	_	13	nsubj	_	Treeler:suj
-7	que	que	PRON	PR0CN000	_	8	dobj	_	Treeler:cd
-8	presentamos	presentar	VERB	VMIP1P0	_	6	ccomp	_	Treeler:S
-9	en	en	ADP	SPS00	_	8	case	_	Treeler:cc
-10	a	o	DET	DA0FS0	_	11	det	_	Treeler:spec
-11	táboa	táboa	NOUN	NCFS000	_	9	nmod	_	Treeler:sn
-12	7	7	PROPN	NP00000	_	11	nmod	_	Treeler:sn
-13	contradín	contradicir	VERB	VMIP3P0	_	0	root	_	Treeler:sentence
-14	esta	este	DET	DD0FS0	_	15	det	_	Treeler:spec
-15	conclusión	conclusión	NOUN	NCFS000	_	13	dobj	_	Treeler:cd
-16	.	.	PUNCT	Fp	_	13	punct	_	Treeler:f
+<pre><code class="language-conllu"># visual-style 10	bgColor:blue
+# visual-style 10	fgColor:white
+# visual-style 16	bgColor:blue
+# visual-style 16	fgColor:white
+# visual-style 16 10 nsubj	color:blue
+1	Teñen	ter	VERB	VMIP3P0	_	0	root	_	Treeler:sentence
+2	moitas	moito	DET	DI0FP0	_	3	det	_	Treeler:spec
+3	razóns	razón	NOUN	NCFP000	_	1	nsubj	_	Treeler:suj
+4	históricas	histórico	ADJ	AQ0FP0	_	3	amod	_	Treeler:s.a
+5	en	en	ADP	SPS00	_	6	case	_	Treeler:cc
+6	común	común	ADJ	AQ0CS0	_	1	amod	_	SpaceAfter=No|Treeler:s.a
+7	,	,	PUNCT	Fc	_	1	punct	_	Treeler:f
+8	pero	pero	CCONJ	CC	_	1	cc	_	ToDo=cc-without-conj|Treeler:coord
+9	os	o	DET	DA0MP0	_	10	det	_	Treeler:spec
+10	espazos	espazo	NOUN	NCMP000	_	16	nsubj	_	Treeler:suj
+11	de	de	ADP	SPS00	_	12	case	_	Treeler:sp
+12	actuación	actuación	NOUN	NCFS000	_	10	nmod	_	Treeler:sn
+13	non	non	PART	RN	_	16	advmod	_	Treeler:mod
+14	son	ser	AUX	VSIP1S0	_	16	cop	_	Treeler:S
+15	necesariamente	necesariamente	ADV	RG	_	16	det	_	Treeler:spec
+16	unívocos	unívoco	ADJ	AQ0MP0	_	1	ccomp	_	SpaceAfter=No|Treeler:atr
+17	.	.	PUNCT	Fp	_	1	punct	_	Treeler:f
 
 </code></pre>
 
@@ -149,43 +174,33 @@ Average distance between parent and child is 4.03904455672944.</p>
 
 <h2 id="treebank-statistics-udgalician-treegal">Treebank Statistics (UD_Galician-TreeGal)</h2>
 
-<p>This relation is universal.</p>
+<p>This relation is universal.
+There are 1 language-specific subtypes of <code>nsubj</code>: <a href="">nsubj:pass</a>.</p>
 
-<p>1155 nodes (5%) are attached to their parents as <code>nsubj</code>.</p>
+<p>724 nodes (5%) are attached to their parents as <code>nsubj</code>.</p>
 
-<p>957 instances of <code>nsubj</code> (83%) are right-to-left (child precedes parent).
-Average distance between parent and child is 3.34891774891775.</p>
+<p>585 instances of <code>nsubj</code> (81%) are right-to-left (child precedes parent).
+Average distance between parent and child is 3.54419889502762.</p>
 
-<p>The following 23 pairs of parts of speech are connected with <code>nsubj</code>: <a href="">gl-pos/VERB</a>-<a href="">gl-pos/NOUN</a> (400; 35% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/PRON</a> (348; 30% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/PROPN</a> (201; 17% instances), <a href="">gl-pos/ADJ</a>-<a href="">gl-pos/NOUN</a> (47; 4% instances), <a href="">gl-pos/NOUN</a>-<a href="">gl-pos/NOUN</a> (43; 4% instances), <a href="">gl-pos/NOUN</a>-<a href="">gl-pos/PRON</a> (23; 2% instances), <a href="">gl-pos/NOUN</a>-<a href="">gl-pos/PROPN</a> (20; 2% instances), <a href="">gl-pos/ADJ</a>-<a href="">gl-pos/PRON</a> (17; 1% instances), <a href="">gl-pos/PRON</a>-<a href="">gl-pos/NOUN</a> (15; 1% instances), <a href="">gl-pos/PRON</a>-<a href="">gl-pos/PRON</a> (12; 1% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/ADJ</a> (5; 0% instances), <a href="">gl-pos/ADV</a>-<a href="">gl-pos/NOUN</a> (4; 0% instances), <a href="">gl-pos/ADJ</a>-<a href="">gl-pos/PROPN</a> (3; 0% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/NUM</a> (3; 0% instances), <a href="">gl-pos/ADJ</a>-<a href="">gl-pos/VERB</a> (2; 0% instances), <a href="">gl-pos/ADV</a>-<a href="">gl-pos/PRON</a> (2; 0% instances), <a href="">gl-pos/NOUN</a>-<a href="">gl-pos/VERB</a> (2; 0% instances), <a href="">gl-pos/PRON</a>-<a href="">gl-pos/PROPN</a> (2; 0% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/VERB</a> (2; 0% instances), <a href="">gl-pos/NOUN</a>-<a href="">gl-pos/ADJ</a> (1; 0% instances), <a href="">gl-pos/NUM</a>-<a href="">gl-pos/NOUN</a> (1; 0% instances), <a href="">gl-pos/PRON</a>-<a href="">gl-pos/ADJ</a> (1; 0% instances), <a href="">gl-pos/PROPN</a>-<a href="">gl-pos/NOUN</a> (1; 0% instances).</p>
+<p>The following 24 pairs of parts of speech are connected with <code>nsubj</code>: <a href="">gl-pos/VERB</a>-<a href="">gl-pos/NOUN</a> (245; 34% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/PRON</a> (215; 30% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/PROPN</a> (122; 17% instances), <a href="">gl-pos/ADJ</a>-<a href="">gl-pos/NOUN</a> (34; 5% instances), <a href="">gl-pos/NOUN</a>-<a href="">gl-pos/NOUN</a> (27; 4% instances), <a href="">gl-pos/NOUN</a>-<a href="">gl-pos/PRON</a> (19; 3% instances), <a href="">gl-pos/PRON</a>-<a href="">gl-pos/PRON</a> (13; 2% instances), <a href="">gl-pos/NOUN</a>-<a href="">gl-pos/PROPN</a> (10; 1% instances), <a href="">gl-pos/ADJ</a>-<a href="">gl-pos/PRON</a> (8; 1% instances), <a href="">gl-pos/PRON</a>-<a href="">gl-pos/NOUN</a> (8; 1% instances), <a href="">gl-pos/ADJ</a>-<a href="">gl-pos/PROPN</a> (3; 0% instances), <a href="">gl-pos/PROPN</a>-<a href="">gl-pos/NOUN</a> (3; 0% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/ADJ</a> (3; 0% instances), <a href="">gl-pos/VERB</a>-<a href="">gl-pos/NUM</a> (3; 0% instances), <a href="">gl-pos/ADP</a>-<a href="">gl-pos/NOUN</a> (2; 0% instances), <a href="">gl-pos/ADJ</a>-<a href="">gl-pos/VERB</a> (1; 0% instances), <a href="">gl-pos/ADV</a>-<a href="">gl-pos/NOUN</a> (1; 0% instances), <a href="">gl-pos/ADV</a>-<a href="">gl-pos/PRON</a> (1; 0% instances), <a href="">gl-pos/DET</a>-<a href="">gl-pos/PROPN</a> (1; 0% instances), <a href="">gl-pos/NOUN</a>-<a href="">gl-pos/ADJ</a> (1; 0% instances), <a href="">gl-pos/NOUN</a>-<a href="">gl-pos/DET</a> (1; 0% instances), <a href="">gl-pos/NOUN</a>-<a href="">gl-pos/VERB</a> (1; 0% instances), <a href="">gl-pos/PRON</a>-<a href="">gl-pos/ADJ</a> (1; 0% instances), <a href="">gl-pos/PRON</a>-<a href="">gl-pos/PROPN</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 2	bgColor:blue
 # visual-style 2	fgColor:white
-# visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 6 2 nsubj	color:blue
-1	a	o	DET	Ddfs	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	denuncia	denuncia	NOUN	Scfs	Gender=Fem|Number=Sing	6	nsubj	_	_
-3	a_tempo	a_tempo	ADV	La0	_	2	advmod	_	_
-4	tamén	tamén	ADV	Wn	_	5	advmod	_	_
-5	pode	poder	VERB	Vpi30s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
-6	gañar	gañar	VERB	V0f000	VerbForm=Inf	0	root	_	_
-7	unha	un	DET	Difs	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	batalla	batalla	NOUN	Scfs	Gender=Fem|Number=Sing	6	dobj	_	_
-9	.	.	PUNCT	Q.	_	6	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 4 1 nsubj	color:blue
-1	eu	eu	PRON	Rtn1as	Case=Nom|Gender=Com|Number=Sing|Person=1	4	nsubj	_	_
-2	non	non	ADV	Wn	_	3	neg	_	_
-3	podía	poder	VERB	Vii10s	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	4	aux	_	_
-4	entrar	entrar	VERB	V0f000	VerbForm=Inf	0	root	_	_
-5	así	así	ADV	Wn	_	4	advmod	_	_
-6	.	.	PUNCT	Q.	_	4	punct	_	_
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 2 nsubj	color:blue
+1	Esa	ese	DET	Edfs	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_
+2	compañía	compañía	NOUN	Scfs	Gender=Fem|Number=Sing	3	nsubj	_	_
+3	di	dicir	VERB	Vpi30s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	que	que	SCONJ	Cs	_	9	mark	_	_
+5	a	o	DET	Ddfs	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+6	única	único	ADJ	A0fs	Gender=Fem|Number=Sing	7	amod	_	_
+7	saída	saída	NOUN	Scfs	Gender=Fem|Number=Sing	9	nsubj	_	_
+8	é	ser	AUX	Vpi30s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+9	continuar	continuar	VERB	V0f000	VerbForm=Inf	3	ccomp	_	_
+10	onde	onde	ADV	Wr	PronType=Rel	9	advcl	_	_
+11	está	estar	AUX	Vpi30s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	SpaceAfter=No
+12	.	.	PUNCT	Q.	_	3	punct	_	_
 
 </code></pre>
 
@@ -194,11 +209,28 @@ Average distance between parent and child is 3.34891774891775.</p>
 # visual-style 2	bgColor:blue
 # visual-style 2	fgColor:white
 # visual-style 2 1 nsubj	color:blue
-1	Walesa	Walesa	PROPN	Sp00	_	2	nsubj	_	_
-2	critica	criticar	VERB	Vpi30s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	unha	un	DET	Difs	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	emisora	emisora	NOUN	Scfs	Gender=Fem|Number=Sing	2	dobj	_	_
-5	católica	católico	ADJ	A0fs	Gender=Fem|Number=Sing	4	amod	_	_
+1	Algúns	algún	PRON	Inmp	Gender=Masc|Number=Plur|PronType=Ind	2	nsubj	_	_
+2	fan	facer	VERB	Vpi30p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	xornadas	xornada	NOUN	Scfp	Gender=Fem|Number=Plur	2	obj	_	_
+4	de	de	ADP	P	AdpType=Prep	5	case	_	_
+5	máis	máis	ADV	Wn	_	3	advmod	_	_
+6	de	de	ADP	P	AdpType=Prep	8	case	_	_
+7	12	12	NUM	Ncdfp	Gender=Fem|Number=Plur|NumType=Card	8	nummod	_	_
+8	horas	hora	NOUN	Scfp	Gender=Fem|Number=Plur	5	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Q.	_	2	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 1 nsubj	color:blue
+1	Miguel	miguel	PROPN	Spm0	Gender=Masc	3	nsubj	_	_
+2	Barros	barros	PROPN	Spm0	Gender=Masc	1	flat:name	_	_
+3	elixido	elixir	VERB	V0p0ms	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
+4	secretario	secretario	NOUN	Scms	Gender=Masc|Number=Sing	3	obj	_	_
+5	comarcal	comarcal	ADJ	A0ms	Gender=Masc|Number=Sing	4	amod	_	_
 
 </code></pre>
 
@@ -210,9 +242,25 @@ Average distance between parent and child is 3.34891774891775.</p>
 
 nsubj in other languages:
 
+[<a href="../../am/dep/nsubj.html">am</a>]
+
+[<a href="../../ar/dep/nsubj.html">ar</a>]
+
 [<a href="../../bg/dep/nsubj.html">bg</a>]
 
+[<a href="../../bxr/dep/nsubj.html">bxr</a>]
+
+[<a href="../../ca/dep/nsubj.html">ca</a>]
+
+[<a href="../../ckb/dep/nsubj.html">ckb</a>]
+
+[<a href="../../cop/dep/nsubj.html">cop</a>]
+
 [<a href="../../cs/dep/nsubj.html">cs</a>]
+
+[<a href="../../cu/dep/nsubj.html">cu</a>]
+
+[<a href="../../da/dep/nsubj.html">da</a>]
 
 [<a href="../../de/dep/nsubj.html">de</a>]
 
@@ -222,29 +270,99 @@ nsubj in other languages:
 
 [<a href="../../es/dep/nsubj.html">es</a>]
 
+[<a href="../../et/dep/nsubj.html">et</a>]
+
 [<a href="../../eu/dep/nsubj.html">eu</a>]
 
 [<a href="../../fa/dep/nsubj.html">fa</a>]
 
 [<a href="../../fi/dep/nsubj.html">fi</a>]
 
+[<a href="../../fo/dep/nsubj.html">fo</a>]
+
 [<a href="../../fr/dep/nsubj.html">fr</a>]
 
 [<a href="../../ga/dep/nsubj.html">ga</a>]
 
+[<a href="../../gl/dep/nsubj.html">gl</a>]
+
+[<a href="../../got/dep/nsubj.html">got</a>]
+
+[<a href="../../grc/dep/nsubj.html">grc</a>]
+
 [<a href="../../he/dep/nsubj.html">he</a>]
 
+[<a href="../../hi/dep/nsubj.html">hi</a>]
+
+[<a href="../../hr/dep/nsubj.html">hr</a>]
+
 [<a href="../../hu/dep/nsubj.html">hu</a>]
+
+[<a href="../../id/dep/nsubj.html">id</a>]
 
 [<a href="../../it/dep/nsubj.html">it</a>]
 
 [<a href="../../ja/dep/nsubj.html">ja</a>]
 
+[<a href="../../kk/dep/nsubj.html">kk</a>]
+
+[<a href="../../kmr/dep/nsubj.html">kmr</a>]
+
 [<a href="../../ko/dep/nsubj.html">ko</a>]
+
+[<a href="../../la/dep/nsubj.html">la</a>]
+
+[<a href="../../lv/dep/nsubj.html">lv</a>]
+
+[<a href="../../mr/dep/nsubj.html">mr</a>]
+
+[<a href="../../nl/dep/nsubj.html">nl</a>]
+
+[<a href="../../no/dep/nsubj.html">no</a>]
+
+[<a href="../../pl/dep/nsubj.html">pl</a>]
+
+[<a href="../../pt/dep/nsubj.html">pt</a>]
+
+[<a href="../../ro/dep/nsubj.html">ro</a>]
+
+[<a href="../../ru/dep/nsubj.html">ru</a>]
+
+[<a href="../../sa/dep/nsubj.html">sa</a>]
+
+[<a href="../../sk/dep/nsubj.html">sk</a>]
+
+[<a href="../../sla/dep/nsubj.html">sla</a>]
+
+[<a href="../../sl/dep/nsubj.html">sl</a>]
+
+[<a href="../../so/dep/nsubj.html">so</a>]
+
+[<a href="../../sr/dep/nsubj.html">sr</a>]
 
 [<a href="../../sv/dep/nsubj.html">sv</a>]
 
+[<a href="../../swl/dep/nsubj.html">swl</a>]
+
+[<a href="../../ta/dep/nsubj.html">ta</a>]
+
+[<a href="../../tr/dep/nsubj.html">tr</a>]
+
 [<a href="../../u/dep/nsubj.html">u</a>]
+
+[<a href="../../ug/dep/nsubj.html">ug</a>]
+
+[<a href="../../uk/dep/nsubj.html">uk</a>]
+
+[<a href="../../ur/dep/nsubj.html">ur</a>]
+
+[<a href="../../urj/dep/nsubj.html">urj</a>]
+
+[<a href="../../vi/dep/nsubj.html">vi</a>]
+
+[<a href="../../yue/dep/nsubj.html">yue</a>]
+
+[<a href="../../zh/dep/nsubj.html">zh</a>]
 
 
 

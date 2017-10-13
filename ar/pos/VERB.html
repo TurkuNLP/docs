@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ar">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ar/pos">ar/pos</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ar-pos/VERB.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ar">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ar/pos">ar/pos</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ar-pos/VERB.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -61,120 +78,194 @@ for <code>VERB</code>.</p>
 
 <h2 id="treebank-statistics-udarabic">Treebank Statistics (UD_Arabic)</h2>
 
-<p>There are 1552 <code>VERB</code> lemmas (9%), 3990 <code>VERB</code> types (14%) and 21543 <code>VERB</code> tokens (8%).
+<p>There are 1486 <code>VERB</code> lemmas (9%), 3728 <code>VERB</code> types (14%) and 18750 <code>VERB</code> tokens (7%).
 Out of 16 observed tags, the rank of <code>VERB</code> is: 4 in number of lemmas, 4 in number of types and 7 in number of tokens.</p>
 
-<p>The 10 most frequent <code>VERB</code> lemmas: كَان، قَال، تَمّ، أَكَّد، أَعلَن، أَضَاف، أَشَار، وَصَل، ذَكَر، بَلَغ</p>
+<p>The 10 most frequent <code>VERB</code> lemmas: قَال، كَان، تَمّ، أَكَّد، أَعلَن، أَضَاف، أَشَار، وَصَل، ذَكَر، بَلَغ</p>
 
-<p>The 10 most frequent <code>VERB</code> types:  قال، كان، كانت، أضاف، تم، أكد، يتم، يكون، يمكن، أشار</p>
+<p>The 10 most frequent <code>VERB</code> types:  قال، كان، أضاف، كانت، أكد، تم، يتم، يمكن، أشار، أوضح</p>
 
-<p>The 10 most frequent ambiguous lemmas: ذَكَر (<a href="">VERB</a> 251, <a href="">NOUN</a> 3), أَوضَح (<a href="">VERB</a> 211, <a href="">ADJ</a> 1), لَيس (<a href="">VERB</a> 153, <a href="">AUX</a> 37), ضَمّ (<a href="">VERB</a> 111, <a href="">NOUN</a> 18), عَاد (<a href="">VERB</a> 95, <a href="">AUX</a> 1), طَلَب (<a href="">NOUN</a> 174, <a href="">VERB</a> 84), عَدّ (<a href="">VERB</a> 60, <a href="">NOUN</a> 1), حَدَث (<a href="">VERB</a> 52, <a href="">NOUN</a> 48), هَدَف (<a href="">NOUN</a> 148, <a href="">VERB</a> 52), حَمَل (<a href="">VERB</a> 48, <a href="">NOUN</a> 2)</p>
+<p>The 10 most frequent ambiguous lemmas: قَال (<a href="">VERB</a> 867, <a href="">AUX</a> 21), كَان (<a href="">VERB</a> 813, <a href="">AUX</a> 342), أَكَّد (<a href="">VERB</a> 399, <a href="">AUX</a> 2), أَعلَن (<a href="">VERB</a> 329, <a href="">AUX</a> 3), أَضَاف (<a href="">VERB</a> 323, <a href="">AUX</a> 2), ذَكَر (<a href="">VERB</a> 216, <a href="">AUX</a> 3, <a href="">NOUN</a> 3), أَوضَح (<a href="">VERB</a> 193, <a href="">AUX</a> 2, <a href="">ADJ</a> 1), بَدَأ (<a href="">VERB</a> 180, <a href="">AUX</a> 1), اِعتَبَر (<a href="">VERB</a> 142, <a href="">AUX</a> 22), جَاء (<a href="">VERB</a> 124, <a href="">AUX</a> 1)</p>
 
-<p>The 10 most frequent ambiguous types:  ليس (<a href="">VERB</a> 108, <a href="">AUX</a> 34), ذكر (<a href="">VERB</a> 98, <a href="">NOUN</a> 13), تقدم (<a href="">VERB</a> 70, <a href="">NOUN</a> 12), عقد (<a href="">NOUN</a> 98, <a href="">VERB</a> 69, <a href="">X</a> 1), كشف (<a href="">VERB</a> 62, <a href="">NOUN</a> 15), تقوم (<a href="">VERB</a> 59, <a href="">X</a> 3), طالب (<a href="">VERB</a> 54, <a href="">X</a> 3, <a href="">NOUN</a> 3), يقوم (<a href="">VERB</a> 49, <a href="">X</a> 5), تعد (<a href="">VERB</a> 48, <a href="">X</a> 1, <a href="">AUX</a> 1), تمثل (<a href="">VERB</a> 48, <a href="">NOUN</a> 2)</p>
+<p>The 10 most frequent ambiguous types:  قال (<a href="">VERB</a> 668, <a href="">AUX</a> 18), كان (<a href="">VERB</a> 339, <a href="">AUX</a> 100), أضاف (<a href="">VERB</a> 253, <a href="">AUX</a> 1), كانت (<a href="">VERB</a> 223, <a href="">AUX</a> 56), أكد (<a href="">VERB</a> 217, <a href="">AUX</a> 1), أوضح (<a href="">VERB</a> 138, <a href="">AUX</a> 1), أعلن (<a href="">VERB</a> 128, <a href="">AUX</a> 1), قالت (<a href="">VERB</a> 107, <a href="">AUX</a> 1), يكون (<a href="">VERB</a> 89, <a href="">AUX</a> 79), ذكر (<a href="">VERB</a> 85, <a href="">NOUN</a> 12, <a href="">AUX</a> 2)</p>
 
 <ul>
-  <li>ليس
+  <li>قال
     <ul>
-      <li><a href="">VERB</a> 108: أ <b>ليس</b> هذا أفضل من أن نزرع القمح في رومانيا ؟ !</li>
-      <li><a href="">AUX</a> 34: و مضى قائلا : “ ألفكرة واردة و لٰكن <b>ليس</b> هناك اقتراح رسمي ب ذٰلك بعد “ .</li>
+      <li><a href="">VERB</a> 668: و <b>قال</b> الناصري : “ إن ه لم يتم بعد بحث أي أجل محدد ل التأجيل المحتمل “ .</li>
+      <li><a href="">AUX</a> 18: و <b>قال</b> : “ هذا تصرف باطل و مخالف ل الأحكام الشرعية “ .</li>
+    </ul>
+  </li>
+  <li>كان
+    <ul>
+      <li><a href="">VERB</a> 339: وماهندرا شودري <b>كان</b> اول مواطن من اصل هندي يترأس الحكومة في تاريخ فيدجي .</li>
+      <li><a href="">AUX</a> 100: و <b>كان</b> من الممكن جدا ان يحصل هجوم لو لم نبدا ب قصف هم “ .</li>
+    </ul>
+  </li>
+  <li>أضاف
+    <ul>
+      <li><a href="">VERB</a> 253: و <b>أضاف</b> رمضان ان “ العراق لا يثق في مجلس الامن .</li>
+      <li><a href="">AUX</a> 1: و <b>أضاف</b> واد “ لكن من الواضح أن نا س نتوصل الى اقناع البلدين او الثلاثة الذين لم يوقعوا المعاهدة التاسيسية ل الاتحاد الافريقي “ مؤكدا “ انا شخصيا مستعد ل القيام ب مساع ل إقناع هذه البلدان و لا سيما و أن ه لا يوجد تعارض بين هوية الدول و بين هذا الكيان الذي س نؤسس ه على مستوى دول نا “ .</li>
+    </ul>
+  </li>
+  <li>كانت
+    <ul>
+      <li><a href="">VERB</a> 223: و <b>كانت</b> تونس فازت اليوم ايضا على الاردن 28 - 25 ( 11 - 8 ) .</li>
+      <li><a href="">AUX</a> 56: سواء أ <b>كانت</b> صحية ، أو غير ها . .</li>
+    </ul>
+  </li>
+  <li>أكد
+    <ul>
+      <li><a href="">VERB</a> 217: و <b>أكد</b> ان “ بطارية المدفعية قصفت على الفور .</li>
+      <li><a href="">AUX</a> 1: و <b>أكد</b> أن ه “ من المستحيل عمليا ان تلتحم كبسولة ب فتحة الانقاذ في مثل هذا الانحناء “ .</li>
+    </ul>
+  </li>
+  <li>أوضح
+    <ul>
+      <li><a href="">VERB</a> 138: و <b>أوضح</b> المصدر نفس ه ان عرفات س يلتقي نظير ه الفيتنامي تران دوك لوونغ .</li>
+      <li><a href="">AUX</a> 1: و <b>أوضح</b> شريف أن من بين تلك الشركات شركة “ اليطاليا “ التابعة ل الخطوط الجوية الإيطالية و شركة “ لوفتهانزا “ الألمانية و شركة “ سويس انترناشيونال “ و الخطوط الجوية الأردنية .</li>
+    </ul>
+  </li>
+  <li>أعلن
+    <ul>
+      <li><a href="">VERB</a> 128: <b>أعلن</b> ذلك الدكتور مصطفى أحمد المستشار ب المعهد .</li>
+      <li><a href="">AUX</a> 1: <b>أعلن</b> فضيلة الشيخ الدكتور محمد سيد طنطاوي شيخ الأزهر الشريف ، أن من حق فرنسا إصدار قانون يحظر ارتداء الحجاب .</li>
+    </ul>
+  </li>
+  <li>قالت
+    <ul>
+      <li><a href="">VERB</a> 107: و <b>قالت</b> “ س نلتقي عند عودة نا من مدينة البصرة “ .</li>
+      <li><a href="">AUX</a> 1: و <b>قالت</b> مصادر مطلعة : “ من المنتظر أن يطلع حجاني الأمين العام ل الجامعة العربية ، كما أطلع المسؤولين المصريين ، على موقف بلاد ه من موضوع الملف النووي ، و الضغوط الأمريكية علي ها ، ب جانب المخاوف من تصعيد هذه القضية “ .</li>
+    </ul>
+  </li>
+  <li>يكون
+    <ul>
+      <li><a href="">VERB</a> 89: رمضان : رفع الحظر المفروض على العراق “ لن <b>يكون</b> ب قرار من مجلس الامن “</li>
+      <li><a href="">AUX</a> 79: الإفراط في المتعة قد <b>يكون</b> مشكلة .</li>
     </ul>
   </li>
   <li>ذكر
     <ul>
-      <li><a href="">VERB</a> 98: و لا يزال عدد المناطق المعزولة دون تغيير ، حسب ما <b>ذكر</b> تقرير ل المجموعة .</li>
-      <li><a href="">NOUN</a> 13: و قال المسئول الذى اشترط عدم <b>ذكر</b> اسم ه , ان العراق س يقسم الى ثلاثة قطاعات تقود ها هذه الدول الثلاث ب شكل منفصل .</li>
-    </ul>
-  </li>
-  <li>تقدم
-    <ul>
-      <li><a href="">VERB</a> 70: تستمتع كثيراً ب مشاركة ك ل المؤسسات التي <b>تقدم</b> إعانات خيرية .</li>
-      <li><a href="">NOUN</a> 12: و تابع : » دخل السكان في مصر في <b>تقدم</b> و س يكون ب وسع الناس نتيجة ذلك الحصول على مساكن أكثر من اليوم ، و هٰذه جميع ها تعتبر مؤشرات منطقية إلى ارتفاع الطلب على الاسمنت مستقبلاً « .</li>
-    </ul>
-  </li>
-  <li>عقد
-    <ul>
-      <li><a href="">NOUN</a> 98: ايران تعتبر أن ه من السابق ل أوان ه <b>عقد</b> اجتماع طارئ ل منظمة اوبك</li>
-      <li><a href="">VERB</a> 69: <b>عقد</b> اول مناظرة بين المرشحين الديمقراطيين ل الرئاسة فى الولايات المتحدة</li>
-      <li><a href="">X</a> 1: لا يطرح المشروع التغييري الوحيد في المنطقة على “ القوى الوطنية “ العربية تحديا فكريا فحسب فحسب ، بل يطرح ايضا تحديا اخلاقيا عميقا ، اذا كان الجذر الاخلاقي اساس الشرعية السياسية . . . فـ “ الوطنيات “ العربية ، ب ما هي حصيلة او بقايا المنظومة الفكرية السياسية ل الحركة القومية ذات المضمون اليساري ، انظمةً و أحزابا و مفكرين ( بمعنى بمعنى افراد ) تبدو منذ اكثر من <b>عقد</b> و قد اصبحت مرادفة ل كل ما هو دفاع عن الوضع القائم . . . اي إن ها مرادفة ل رفض التغيير . و هٰذا موقع مفلس فكريا حتى لو كان يمثل انظمة و مصالح كبرى . فلقد فلقد انتهى “ التغييريون “ ممثلين ل أكثر انواع “ المحافظة “ العربية محافظةً . . . اذن “ رجعية “ . . . هذا المصطلح الذي عممت ه بل سقطت ب اسم ه انظمة عديدة في العالم العربي منذ اواخر الاربعينات والخمسينات والخمسينات .</li>
-    </ul>
-  </li>
-  <li>كشف
-    <ul>
-      <li><a href="">VERB</a> 62: و <b>كشف</b> البيان ان مروجي العملات المزورة كانوا متجهين من هولندا الى بلجيكا .</li>
-      <li><a href="">NOUN</a> 15: و جاءت ردود الفعل هذه بعد قيام مسؤول ثقافي في البلاد ب <b>كشف</b> ارقام مقلقة حول انتشار الدعارة بين الشابات في ايران .</li>
-    </ul>
-  </li>
-  <li>تقوم
-    <ul>
-      <li><a href="">VERB</a> 59: 1945 - الولايات المتحدة <b>تقوم</b> ب اختبار اول قنبلة نووية في نيومكسيكو .</li>
-      <li><a href="">X</a> 3: و أضاف ساويرس ان قائمة الرسوم تتضمن رسوم الحجر الصحي ، و تختلف نسبة ها حسب مدة الاقامة ، اضافة الى رسوم <b>تقوم</b> ب تحصيل ها مصلحة الهجرة عن كل شخص على اليخت و حسب مدة إقامة ه .</li>
-    </ul>
-  </li>
-  <li>طالب
-    <ul>
-      <li><a href="">VERB</a> 54: و <b>طالب</b> الفلسطينيون في المقابل ب السيادة على القدس الشرقية ب كامل ها .</li>
-      <li><a href="">X</a> 3: الأستاذ الأمريكي عبد الله <b>طالب</b> دونالد كول نطق ب الشهادتين أمام شيخ الأزهر وأسلم وأسلم</li>
-      <li><a href="">NOUN</a> 3: و أشارت إلى أن هؤلاء المدرسين يعملون في 31 ألف مدرسة ، و يدرسون ل نحو 15.5 مليون <b>طالب</b> و طالبة .</li>
-    </ul>
-  </li>
-  <li>يقوم
-    <ul>
-      <li><a href="">VERB</a> 49: جوه تشوك تونج <b>يقوم</b> ب زيارة رسمية ل الولايات المتحدة</li>
-      <li><a href="">X</a> 5: و ب اختصار ، إن المشروع الشرق أوسطي الجديد هو مشروع استثمار سياسي و إستراتيجي إسرائيلي ـ أمريكي مشترك ، <b>يقوم</b> على إحكام الهيمنة الأمريكية ـ الإسرائيلية على المنطقة ، و عزل مصر عن بلدان المشرق العربي و الخليج العربي .</li>
-    </ul>
-  </li>
-  <li>تعد
-    <ul>
-      <li><a href="">VERB</a> 48: و لم <b>تعد</b> قادرة على تحمّل الخسائر البشرية اليومية المتزايدة .</li>
-      <li><a href="">X</a> 1: لم <b>تعد</b> هذه الأخبار وحد ها تقليدية ، فردود فردود الفعل الاسرائيلية علي ها أصبحت تقليدية أيضاً ، و الإسرائيليون ضربوا فوراً مقراً فلسطينياً خالياً ، ما جعل جريدة » هاتزوفيه « تسخر من ان الجيش الاسرائيلي أصاب أكياس الرمل خارج المقر اصابات قاتلة .</li>
-      <li><a href="">AUX</a> 1: و تصر اسرائيل ، التى لم <b>تعد</b> تقبل الزعيم الفلسطينى ياسر عرفات ك شريك ل ها ، على وجود رئيس وزراء فلسطينى معتدل ب هدف اضعاف سلطة عرفات وذلك وذلك كاحد كاحد شروط ها لاستئناف لاستئناف محادثات السلام .</li>
-    </ul>
-  </li>
-  <li>تمثل
-    <ul>
-      <li><a href="">VERB</a> 48: 3 - فلسطين ما زالت <b>تمثل</b> ل هم ارض الميعاد .</li>
-      <li><a href="">NOUN</a> 2: جاء في محضر مناقشة دستور 1926 حول المادة : 95 “ <b>تمثل</b> الطوائف مؤقتاً . . . “ .</li>
+      <li><a href="">VERB</a> 85: حسبما <b>ذكر</b> متحدث ب اسم رئيس الوزراء جان كريتيان يوم الجمعة .</li>
+      <li><a href="">NOUN</a> 12: و قال المسئول الذى اشترط عدم <b>ذكر</b> اسم ه , ان العراق س يقسم الى ثلاثة قطاعات تقود ها هذه الدول الثلاث ب شكل منفصل .</li>
+      <li><a href="">AUX</a> 2: و <b>ذكر</b> سارنا ردا على أسئلة أن ه “ من الواضح تماما أن ه من أجل مشاركة هادفة يتعين أن يكون هناك استعدادات متأنية “ .</li>
     </ul>
   </li>
 </ul>
 
 <h2 id="morphology">Morphology</h2>
 
-<p>The form / lemma ratio of <code>VERB</code> is 2.570876 (the average of all parts of speech is 1.685612).</p>
+<p>The form / lemma ratio of <code>VERB</code> is 2.508748 (the average of all parts of speech is 1.677757).</p>
 
-<p>The 1st highest number of forms (20) was observed with the lemma “كَان”: أكون, اكن, اكون, تكـــون, تكن, تكون, تكونون, كان, كانا, كانت, كانتا, كانوا, كن, كنا, كنت, نكون, يكن, يكون, يكونا, يكونوا.</p>
+<p>The 1st highest number of forms (15) was observed with the lemma “أَصَاب”: أصاب, أصابت, أصيب, أصيبا, أصيبت, أصيبوا, اصاب, اصبن, اصيب, اصيبوا, تصاب, تصيب, يصابوا, يصب, يصيب.</p>
 
-<p>The 2nd highest number of forms (16) was observed with the lemma “أَصَاب”: أصاب, أصابت, أصيب, أصيبا, أصيبت, أصيبوا, اصاب, اصبن, اصيب, اصيبت, اصيبوا, تصاب, تصيب, يصابوا, يصب, يصيب.</p>
+<p>The 2nd highest number of forms (15) was observed with the lemma “أَكَّد”: أكد, أكدا, أكدت, أكدنا, أكدوا, أكّد, اكد, اكدت, اكدوا, اكـــدت, تؤكد, يؤكد, يؤكدون, يؤكّد, يــؤكد.</p>
 
-<p>The 3rd highest number of forms (16) was observed with the lemma “أَكَّد”: أكد, أكدا, أكدت, أكدتا, أكدنا, أكدوا, أكّد, اكد, اكدت, اكدوا, اكـــدت, تؤكد, يؤكد, يؤكدون, يؤكّد, يــؤكد.</p>
+<p>The 3rd highest number of forms (15) was observed with the lemma “كَان”: أكون, اكن, تكـــون, تكن, تكون, كان, كانا, كانت, كانتا, كانوا, كنا, كنت, يكن, يكون, يكونوا.</p>
 
-<p><code>VERB</code> occurs with 7 features: <a href="">ar-feat/Gender</a> (21543; 100% instances), <a href="">ar-feat/Number</a> (21543; 100% instances), <a href="">ar-feat/Aspect</a> (21491; 100% instances), <a href="">ar-feat/Person</a> (21491; 100% instances), <a href="">ar-feat/Voice</a> (21491; 100% instances), <a href="">ar-feat/Mood</a> (10101; 47% instances), <a href="">ar-feat/VerbForm</a> (10101; 47% instances)</p>
+<p><code>VERB</code> occurs with 7 features: <a href="">ar-feat/Gender</a> (18750; 100% instances), <a href="">ar-feat/Number</a> (18750; 100% instances), <a href="">ar-feat/Aspect</a> (18700; 100% instances), <a href="">ar-feat/Person</a> (18700; 100% instances), <a href="">ar-feat/Voice</a> (18700; 100% instances), <a href="">ar-feat/Mood</a> (8842; 47% instances), <a href="">ar-feat/VerbForm</a> (8842; 47% instances)</p>
 
 <p><code>VERB</code> occurs with 17 feature-value pairs: <code>Aspect=Imp</code>, <code>Aspect=Perf</code>, <code>Gender=Fem</code>, <code>Gender=Masc</code>, <code>Mood=Imp</code>, <code>Mood=Ind</code>, <code>Mood=Jus</code>, <code>Mood=Sub</code>, <code>Number=Dual</code>, <code>Number=Plur</code>, <code>Number=Sing</code>, <code>Person=1</code>, <code>Person=2</code>, <code>Person=3</code>, <code>VerbForm=Fin</code>, <code>Voice=Act</code>, <code>Voice=Pass</code></p>
 
-<p><code>VERB</code> occurs with 61 feature combinations.
-The most frequent feature combination is <code>Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act</code> (6730 tokens).
-Examples: قال، كان، أضاف، تم، أكد، أشار، أوضح، أعلن، ليس، جاء</p>
+<p><code>VERB</code> occurs with 60 feature combinations.
+The most frequent feature combination is <code>Aspect=Perf|Gender=Masc|Number=Sing|Person=3|Voice=Act</code> (5857 tokens).
+Examples: قال، كان، أضاف، أكد، تم، أشار، أوضح، أعلن، جاء، ذكر</p>
 
 <h2 id="relations">Relations</h2>
 
-<p><code>VERB</code> nodes are attached to their parents using 18 different relations: <a href="">ar-dep/acl</a> (5186; 24% instances), <a href="">ar-dep/parataxis</a> (5036; 23% instances), <a href="">ar-dep/conj</a> (3031; 14% instances), <a href="">ar-dep/ccomp</a> (3026; 14% instances), <a href="">ar-dep/root</a> (1888; 9% instances), <a href="">ar-dep/advcl</a> (1504; 7% instances), <a href="">ar-dep/xcomp</a> (664; 3% instances), <a href="">ar-dep/cop</a> (642; 3% instances), <a href="">ar-dep/csubj</a> (508; 2% instances), <a href="">ar-dep/dep</a> (15; 0% instances), <a href="">ar-dep/appos</a> (13; 0% instances), <a href="">ar-dep/cc</a> (8; 0% instances), <a href="">ar-dep/case</a> (6; 0% instances), <a href="">ar-dep/mark</a> (6; 0% instances), <a href="">ar-dep/mwe</a> (5; 0% instances), <a href="">ar-dep/advmod</a> (3; 0% instances), <a href="">ar-dep/advmod:emph</a> (1; 0% instances), <a href="">ar-dep/csubjpass</a> (1; 0% instances)</p>
+<p><code>VERB</code> nodes are attached to their parents using 18 different relations: <a href="">ar-dep/acl</a> (4643; 25% instances), <a href="">ar-dep/parataxis</a> (4555; 24% instances), <a href="">ar-dep/ccomp</a> (2720; 15% instances), <a href="">ar-dep/conj</a> (2685; 14% instances), <a href="">ar-dep/root</a> (1714; 9% instances), <a href="">ar-dep/advcl</a> (1319; 7% instances), <a href="">ar-dep/xcomp</a> (593; 3% instances), <a href="">ar-dep/csubj</a> (469; 3% instances), <a href="">ar-dep/dep</a> (14; 0% instances), <a href="">ar-dep/appos</a> (10; 0% instances), <a href="">ar-dep/cc</a> (8; 0% instances), <a href="">ar-dep/mark</a> (5; 0% instances), <a href="">ar-dep/case</a> (4; 0% instances), <a href="">ar-dep/fixed</a> (4; 0% instances), <a href="">ar-dep/orphan</a> (3; 0% instances), <a href="">ar-dep/advmod</a> (2; 0% instances), <a href="">ar-dep/advmod:emph</a> (1; 0% instances), <a href="">ar-dep/csubj:pass</a> (1; 0% instances)</p>
 
-<p>Parents of <code>VERB</code> nodes belong to 16 different parts of speech: <a href="">VERB</a> (7399; 34% instances), <a href="">NOUN</a> (5151; 24% instances), <a href="">CONJ</a> (4311; 20% instances), <a href="">ROOT</a> (1888; 9% instances), <a href="">ADJ</a> (1048; 5% instances), <a href="">X</a> (731; 3% instances), <a href="">PRON</a> (554; 3% instances), <a href="">DET</a> (194; 1% instances), <a href="">NUM</a> (175; 1% instances), <a href="">ADV</a> (38; 0% instances), <a href="">PART</a> (38; 0% instances), <a href="">ADP</a> (8; 0% instances), <a href="">PROPN</a> (3; 0% instances), <a href="">PUNCT</a> (3; 0% instances), <a href="">INTJ</a> (1; 0% instances), <a href="">SYM</a> (1; 0% instances)</p>
+<p>Parents of <code>VERB</code> nodes belong to 17 different parts of speech: <a href="">VERB</a> (6572; 35% instances), <a href="">NOUN</a> (4393; 23% instances), <a href="">CCONJ</a> (3879; 21% instances), <a href="">ROOT</a> (1714; 9% instances), <a href="">ADJ</a> (662; 4% instances), <a href="">X</a> (659; 4% instances), <a href="">DET</a> (327; 2% instances), <a href="">PRON</a> (313; 2% instances), <a href="">NUM</a> (141; 1% instances), <a href="">ADV</a> (36; 0% instances), <a href="">PART</a> (34; 0% instances), <a href="">ADP</a> (7; 0% instances), <a href="">AUX</a> (6; 0% instances), <a href="">PUNCT</a> (3; 0% instances), <a href="">PROPN</a> (2; 0% instances), <a href="">INTJ</a> (1; 0% instances), <a href="">SYM</a> (1; 0% instances)</p>
 
-<p>784 (4%) <code>VERB</code> nodes are leaves.</p>
+<p>102 (1%) <code>VERB</code> nodes are leaves.</p>
 
-<p>3515 (16%) <code>VERB</code> nodes have one child.</p>
+<p>2513 (13%) <code>VERB</code> nodes have one child.</p>
 
-<p>5669 (26%) <code>VERB</code> nodes have two children.</p>
+<p>5033 (27%) <code>VERB</code> nodes have two children.</p>
 
-<p>11575 (54%) <code>VERB</code> nodes have three or more children.</p>
+<p>11102 (59%) <code>VERB</code> nodes have three or more children.</p>
 
-<p>The highest child degree of a <code>VERB</code> node is 39.</p>
+<p>The highest child degree of a <code>VERB</code> node is 23.</p>
 
-<p>Children of <code>VERB</code> nodes are attached using 25 different relations: <a href="">ar-dep/dobj</a> (12818; 20% instances), <a href="">ar-dep/nsubj</a> (12349; 19% instances), <a href="">ar-dep/nmod</a> (8883; 14% instances), <a href="">ar-dep/mark</a> (6095; 9% instances), <a href="">ar-dep/cc</a> (3683; 6% instances), <a href="">ar-dep/punct</a> (3521; 5% instances), <a href="">ar-dep/conj</a> (3171; 5% instances), <a href="">ar-dep/ccomp</a> (2690; 4% instances), <a href="">ar-dep/advmod</a> (2475; 4% instances), <a href="">ar-dep/iobj</a> (1644; 3% instances), <a href="">ar-dep/xcomp</a> (1491; 2% instances), <a href="">ar-dep/aux</a> (1484; 2% instances), <a href="">ar-dep/advcl</a> (1177; 2% instances), <a href="">ar-dep/neg</a> (1115; 2% instances), <a href="">ar-dep/advmod:emph</a> (649; 1% instances), <a href="">ar-dep/nsubjpass</a> (529; 1% instances), <a href="">ar-dep/csubj</a> (317; 0% instances), <a href="">ar-dep/parataxis</a> (300; 0% instances), <a href="">ar-dep/appos</a> (201; 0% instances), <a href="">ar-dep/dep</a> (183; 0% instances), <a href="">ar-dep/auxpass</a> (113; 0% instances), <a href="">ar-dep/acl</a> (30; 0% instances), <a href="">ar-dep/nummod</a> (20; 0% instances), <a href="">ar-dep/amod</a> (19; 0% instances), <a href="">ar-dep/csubjpass</a> (1; 0% instances)</p>
+<p>Children of <code>VERB</code> nodes are attached using 27 different relations: <a href="">ar-dep/obj</a> (11457; 20% instances), <a href="">ar-dep/nsubj</a> (11070; 19% instances), <a href="">ar-dep/obl</a> (8849; 15% instances), <a href="">ar-dep/mark</a> (5469; 9% instances), <a href="">ar-dep/cc</a> (3188; 6% instances), <a href="">ar-dep/punct</a> (3149; 5% instances), <a href="">ar-dep/conj</a> (2656; 5% instances), <a href="">ar-dep/ccomp</a> (2424; 4% instances), <a href="">ar-dep/advmod</a> (2136; 4% instances), <a href="">ar-dep/iobj</a> (1457; 3% instances), <a href="">ar-dep/aux</a> (1353; 2% instances), <a href="">ar-dep/xcomp</a> (1350; 2% instances), <a href="">ar-dep/advcl</a> (1024; 2% instances), <a href="">ar-dep/advmod:emph</a> (589; 1% instances), <a href="">ar-dep/nsubj:pass</a> (461; 1% instances), <a href="">ar-dep/csubj</a> (291; 1% instances), <a href="">ar-dep/parataxis</a> (254; 0% instances), <a href="">ar-dep/nmod</a> (231; 0% instances), <a href="">ar-dep/appos</a> (185; 0% instances), <a href="">ar-dep/dep</a> (166; 0% instances), <a href="">ar-dep/aux:pass</a> (100; 0% instances), <a href="">ar-dep/acl</a> (24; 0% instances), <a href="">ar-dep/amod</a> (18; 0% instances), <a href="">ar-dep/nummod</a> (18; 0% instances), <a href="">ar-dep/det</a> (3; 0% instances), <a href="">ar-dep/orphan</a> (3; 0% instances), <a href="">ar-dep/csubj:pass</a> (1; 0% instances)</p>
 
-<p>Children of <code>VERB</code> nodes belong to 15 different parts of speech: <a href="">NOUN</a> (28555; 44% instances), <a href="">CONJ</a> (8501; 13% instances), <a href="">VERB</a> (7399; 11% instances), <a href="">X</a> (4034; 6% instances), <a href="">PRON</a> (3838; 6% instances), <a href="">PUNCT</a> (3520; 5% instances), <a href="">PART</a> (3096; 5% instances), <a href="">ADJ</a> (2539; 4% instances), <a href="">NUM</a> (1739; 3% instances), <a href="">ADP</a> (1212; 2% instances), <a href="">ADV</a> (494; 1% instances), <a href="">PROPN</a> (18; 0% instances), <a href="">AUX</a> (8; 0% instances), <a href="">INTJ</a> (4; 0% instances), <a href="">SYM</a> (1; 0% instances)</p>
+<p>Children of <code>VERB</code> nodes belong to 15 different parts of speech: <a href="">NOUN</a> (25504; 44% instances), <a href="">CCONJ</a> (7566; 13% instances), <a href="">VERB</a> (6572; 11% instances), <a href="">X</a> (3615; 6% instances), <a href="">PUNCT</a> (3149; 5% instances), <a href="">PRON</a> (3053; 5% instances), <a href="">PART</a> (2780; 5% instances), <a href="">ADJ</a> (2265; 4% instances), <a href="">NUM</a> (1518; 3% instances), <a href="">ADP</a> (1069; 2% instances), <a href="">ADV</a> (454; 1% instances), <a href="">DET</a> (354; 1% instances), <a href="">PROPN</a> (15; 0% instances), <a href="">AUX</a> (8; 0% instances), <a href="">INTJ</a> (4; 0% instances)</p>
+
+<hr />
+
+<h2 id="treebank-statistics-udarabic-nyuad">Treebank Statistics (UD_Arabic-NYUAD)</h2>
+
+<p>There are 37 <code>VERB</code> lemmas (1%), 1 <code>VERB</code> types (6%) and 55215 <code>VERB</code> tokens (7%).
+Out of 16 observed tags, the rank of <code>VERB</code> is: 8 in number of lemmas, 15 in number of types and 6 in number of tokens.</p>
+
+<p>The 10 most frequent <code>VERB</code> lemmas: _، None، TBupdate، w، ,، b، .، hA، l، “</p>
+
+<p>The 10 most frequent <code>VERB</code> types:  _</p>
+
+<p>The 10 most frequent ambiguous lemmas: _ (<a href="">NOUN</a> 216429, <a href="">PUNCT</a> 72574, <a href="">ADJ</a> 66760, <a href="">ADP</a> 62646, <a href="">VERB</a> 54473, <a href="">PROPN</a> 48965, <a href="">ADV</a> 26129, <a href="">SCONJ</a> 23987, <a href="">NUM</a> 15122, <a href="">AUX</a> 6581, <a href="">DET</a> 6330, <a href="">PART</a> 5856, <a href="">CCONJ</a> 5168, <a href="">PRON</a> 2460, <a href="">INTJ</a> 54, <a href="">X</a> 32), None (<a href="">NOUN</a> 457, <a href="">X</a> 344, <a href="">VERB</a> 264, <a href="">ADJ</a> 125, <a href="">PROPN</a> 124, <a href="">ADV</a> 34, <a href="">CCONJ</a> 20, <a href="">SCONJ</a> 16, <a href="">PRON</a> 16, <a href="">PART</a> 14, <a href="">ADP</a> 8, <a href="">DET</a> 6, <a href="">AUX</a> 2), TBupdate (<a href="">NOUN</a> 401, <a href="">ADJ</a> 280, <a href="">VERB</a> 263, <a href="">X</a> 174, <a href="">ADV</a> 74, <a href="">PROPN</a> 69, <a href="">ADP</a> 4, <a href="">SCONJ</a> 2, <a href="">PRON</a> 1, <a href="">PART</a> 1, <a href="">DET</a> 1, <a href="">CCONJ</a> 1), w (<a href="">CCONJ</a> 43321, <a href="">NOUN</a> 190, <a href="">PUNCT</a> 136, <a href="">ADP</a> 120, <a href="">ADV</a> 117, <a href="">PROPN</a> 78, <a href="">VERB</a> 71, <a href="">SCONJ</a> 69, <a href="">ADJ</a> 55, <a href="">PRON</a> 33, <a href="">PART</a> 10, <a href="">DET</a> 9, <a href="">NUM</a> 8, <a href="">AUX</a> 5, <a href="">X</a> 3), , (<a href="">NOUN</a> 100, <a href="">CCONJ</a> 96, <a href="">VERB</a> 34, <a href="">PROPN</a> 33, <a href="">ADJ</a> 30, <a href="">ADP</a> 30, <a href="">PRON</a> 11, <a href="">SCONJ</a> 11, <a href="">PART</a> 10, <a href="">DET</a> 5, <a href="">AUX</a> 5, <a href="">ADV</a> 4), b (<a href="">ADP</a> 12204, <a href="">NOUN</a> 65, <a href="">VERB</a> 17, <a href="">ADJ</a> 16, <a href="">PUNCT</a> 15, <a href="">PRON</a> 12, <a href="">CCONJ</a> 10, <a href="">SCONJ</a> 7, <a href="">PROPN</a> 6, <a href="">ADV</a> 5, <a href="">X</a> 2, <a href="">AUX</a> 2, <a href="">PART</a> 2, <a href="">NUM</a> 1, <a href="">DET</a> 1), . (<a href="">NOUN</a> 107, <a href="">ADJ</a> 95, <a href="">PROPN</a> 67, <a href="">PRON</a> 20, <a href="">VERB</a> 12, <a href="">PART</a> 6, <a href="">ADP</a> 5, <a href="">X</a> 5, <a href="">CCONJ</a> 3, <a href="">DET</a> 2, <a href="">ADV</a> 2, <a href="">AUX</a> 2, <a href="">SCONJ</a> 1), hA (<a href="">PRON</a> 10321, <a href="">SCONJ</a> 313, <a href="">AUX</a> 69, <a href="">NOUN</a> 56, <a href="">ADP</a> 25, <a href="">CCONJ</a> 19, <a href="">ADJ</a> 18, <a href="">PUNCT</a> 17, <a href="">VERB</a> 9, <a href="">PROPN</a> 9, <a href="">ADV</a> 4, <a href="">NUM</a> 3, <a href="">PART</a> 3, <a href="">DET</a> 1), l (<a href="">ADP</a> 15449, <a href="">PART</a> 123, <a href="">NOUN</a> 98, <a href="">AUX</a> 67, <a href="">CCONJ</a> 33, <a href="">ADJ</a> 30, <a href="">PUNCT</a> 19, <a href="">VERB</a> 9, <a href="">SCONJ</a> 8, <a href="">PROPN</a> 7, <a href="">ADV</a> 6, <a href="">PRON</a> 5, <a href="">DET</a> 2, <a href="">INTJ</a> 2, <a href="">X</a> 1, <a href="">NUM</a> 1), “ (<a href="">NOUN</a> 112, <a href="">ADP</a> 34, <a href="">CCONJ</a> 20, <a href="">PROPN</a> 20, <a href="">ADJ</a> 12, <a href="">VERB</a> 8, <a href="">PART</a> 6, <a href="">PRON</a> 6, <a href="">SCONJ</a> 6, <a href="">ADV</a> 5, <a href="">AUX</a> 2, <a href="">X</a> 2, <a href="">DET</a> 2)</p>
+
+<p>The 10 most frequent ambiguous types:  _ (<a href="">NOUN</a> 218254, <a href="">ADP</a> 91694, <a href="">PUNCT</a> 75148, <a href="">ADJ</a> 67604, <a href="">PROPN</a> 58325, <a href="">VERB</a> 55215, <a href="">CCONJ</a> 50032, <a href="">PRON</a> 31239, <a href="">ADV</a> 26527, <a href="">SCONJ</a> 26034, <a href="">NUM</a> 15147, <a href="">PART</a> 8612, <a href="">AUX</a> 7723, <a href="">DET</a> 6362, <a href="">X</a> 917, <a href="">INTJ</a> 56)</p>
+
+<ul>
+  <li>_
+    <ul>
+      <li><a href="">NOUN</a> 218254: _ _ <b>_</b> _ _ _ <b>_</b> _ _ _ _ <b>_</b> _ _ _</li>
+      <li><a href="">ADP</a> 91694: _ _ _ _ _ _ _ _ _ _ _ <b>_</b> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</li>
+      <li><a href="">PUNCT</a> 75148: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <b>_</b></li>
+      <li><a href="">ADJ</a> 67604: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <b>_</b> _ _ _ _ <b>_</b> _</li>
+      <li><a href="">PROPN</a> 58325: _ _ _ _ _ _ <b>_</b> <b>_</b> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</li>
+      <li><a href="">VERB</a> 55215: _ <b>_</b> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <b>_</b> _ _ _ _ _ _ _ _ _ _</li>
+      <li><a href="">CCONJ</a> 50032: <b>_</b> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</li>
+      <li><a href="">PRON</a> 31239: _ _ _ _ _ _ _ _ _ _ _ _ _ <b>_</b> _ _ _ _ _ _ _ _ _ _ <b>_</b> _ _ _ _ _</li>
+      <li><a href="">ADV</a> 26527: _ _ _ _ _ _ _ _ _ _ <b>_</b> _ _ _ _ _ _ _ <b>_</b> _ _ _ _ _ _ _ _ _ _ _ _ _</li>
+      <li><a href="">SCONJ</a> 26034: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <b>_</b> _ _ _ _ _ _ <b>_</b> _ _ _ _ _</li>
+      <li><a href="">NUM</a> 15147: _ _ _ _ <b>_</b> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</li>
+      <li><a href="">PART</a> 8612: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <b>_</b> _ _ _ _ _ _ <b>_</b> _ _ _ _</li>
+      <li><a href="">AUX</a> 7723: _ _ _ _ _ _ _ _ _ _ _ <b>_</b> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</li>
+      <li><a href="">DET</a> 6362: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <b>_</b> _ _</li>
+      <li><a href="">X</a> 917: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <b>_</b> _ _ _ _ _ _ _ _ _</li>
+      <li><a href="">INTJ</a> 56: <b>_</b> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="morphology-1">Morphology</h2>
+
+<p>The form / lemma ratio of <code>VERB</code> is 0.027027 (the average of all parts of speech is 0.002933).</p>
+
+<p>The 1st highest number of forms (1) was observed with the lemma “””: _.</p>
+
+<p>The 2nd highest number of forms (1) was observed with the lemma “(”: _.</p>
+
+<p>The 3rd highest number of forms (1) was observed with the lemma “,”: _.</p>
+
+<p><code>VERB</code> occurs with 9 features: <a href="">ar-feat/Gender</a> (54927; 99% instances), <a href="">ar-feat/Number</a> (54927; 99% instances), <a href="">ar-feat/Person</a> (54615; 99% instances), <a href="">ar-feat/Voice</a> (54515; 99% instances), <a href="">ar-feat/Aspect</a> (54462; 99% instances), <a href="">ar-feat/Mood</a> (54157; 98% instances), <a href="">ar-feat/Definite</a> (341; 1% instances), <a href="">ar-feat/Case</a> (214; 0% instances), <a href="">ar-feat/Polarity</a> (11; 0% instances)</p>
+
+<p><code>VERB</code> occurs with 22 feature-value pairs: <code>Aspect=Imp</code>, <code>Aspect=Perf</code>, <code>Case=Acc</code>, <code>Case=Gen</code>, <code>Case=Nom</code>, <code>Definite=Com</code>, <code>Definite=Def</code>, <code>Definite=Ind</code>, <code>Gender=Fem</code>, <code>Gender=Masc</code>, <code>Mood=Ind</code>, <code>Mood=Jus</code>, <code>Mood=Sub</code>, <code>Number=Dual</code>, <code>Number=Plur</code>, <code>Number=Sing</code>, <code>Person=1</code>, <code>Person=2</code>, <code>Person=3</code>, <code>Polarity=Neg</code>, <code>Voice=Act</code>, <code>Voice=Pass</code></p>
+
+<p><code>VERB</code> occurs with 127 feature combinations.
+The most frequent feature combination is <code>Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Person=3|Voice=Act</code> (16531 tokens).
+Examples: _</p>
+
+<h2 id="relations-1">Relations</h2>
+
+<p><code>VERB</code> nodes are attached to their parents using 6 different relations: <a href="">ar-dep/ccomp</a> (17963; 33% instances), <a href="">ar-dep/root</a> (14429; 26% instances), <a href="">ar-dep/xcomp</a> (10594; 19% instances), <a href="">ar-dep/conj</a> (7785; 14% instances), <a href="">ar-dep/parataxis</a> (3353; 6% instances), <a href="">ar-dep/csubj</a> (1091; 2% instances)</p>
+
+<p>Parents of <code>VERB</code> nodes belong to 15 different parts of speech: <a href="">NOUN</a> (17912; 32% instances), <a href="">VERB</a> (15020; 27% instances), <a href="">ROOT</a> (14429; 26% instances), <a href="">PROPN</a> (2149; 4% instances), <a href="">PRON</a> (1926; 3% instances), <a href="">ADV</a> (1859; 3% instances), <a href="">ADJ</a> (761; 1% instances), <a href="">NUM</a> (360; 1% instances), <a href="">CCONJ</a> (268; 0% instances), <a href="">PART</a> (195; 0% instances), <a href="">DET</a> (119; 0% instances), <a href="">PUNCT</a> (72; 0% instances), <a href="">SCONJ</a> (65; 0% instances), <a href="">AUX</a> (40; 0% instances), <a href="">X</a> (40; 0% instances)</p>
+
+<p>819 (1%) <code>VERB</code> nodes are leaves.</p>
+
+<p>6205 (11%) <code>VERB</code> nodes have one child.</p>
+
+<p>10774 (20%) <code>VERB</code> nodes have two children.</p>
+
+<p>37417 (68%) <code>VERB</code> nodes have three or more children.</p>
+
+<p>The highest child degree of a <code>VERB</code> node is 36.</p>
+
+<p>Children of <code>VERB</code> nodes are attached using 23 different relations: <a href="">ar-dep/nmod</a> (41822; 20% instances), <a href="">ar-dep/punct</a> (34719; 16% instances), <a href="">ar-dep/obj</a> (25331; 12% instances), <a href="">ar-dep/nsubj</a> (24140; 11% instances), <a href="">ar-dep/cc</a> (20383; 10% instances), <a href="">ar-dep/mark</a> (14030; 7% instances), <a href="">ar-dep/advmod</a> (12400; 6% instances), <a href="">ar-dep/conj</a> (7446; 4% instances), <a href="">ar-dep/aux</a> (6136; 3% instances), <a href="">ar-dep/ccomp</a> (4523; 2% instances), <a href="">ar-dep/parataxis</a> (4181; 2% instances), <a href="">ar-dep/dep</a> (2797; 1% instances), <a href="">ar-dep/cop</a> (2379; 1% instances), <a href="">ar-dep/xcomp</a> (2370; 1% instances), <a href="">ar-dep/case</a> (2292; 1% instances), <a href="">ar-dep/amod</a> (1742; 1% instances), <a href="">ar-dep/nsubj:pass</a> (1618; 1% instances), <a href="">ar-dep/nummod</a> (707; 0% instances), <a href="">ar-dep/csubj</a> (656; 0% instances), <a href="">ar-dep/iobj</a> (440; 0% instances), <a href="">ar-dep/det</a> (272; 0% instances), <a href="">ar-dep/flat</a> (193; 0% instances), <a href="">ar-dep/nmod:poss</a> (54; 0% instances)</p>
+
+<p>Children of <code>VERB</code> nodes belong to 16 different parts of speech: <a href="">NOUN</a> (74300; 35% instances), <a href="">PUNCT</a> (34721; 16% instances), <a href="">CCONJ</a> (20399; 10% instances), <a href="">VERB</a> (15020; 7% instances), <a href="">SCONJ</a> (14136; 7% instances), <a href="">ADV</a> (13775; 7% instances), <a href="">PRON</a> (10309; 5% instances), <a href="">PROPN</a> (8877; 4% instances), <a href="">PART</a> (6778; 3% instances), <a href="">AUX</a> (4097; 2% instances), <a href="">ADJ</a> (3730; 2% instances), <a href="">ADP</a> (2322; 1% instances), <a href="">NUM</a> (993; 0% instances), <a href="">DET</a> (729; 0% instances), <a href="">X</a> (415; 0% instances), <a href="">INTJ</a> (30; 0% instances)</p>
 
 
 
@@ -184,9 +275,25 @@ Examples: قال، كان، أضاف، تم، أكد، أشار، أوضح، أ�
 
 VERB in other languages:
 
+[<a href="../../am/pos/VERB.html">am</a>]
+
+[<a href="../../ar/pos/VERB.html">ar</a>]
+
 [<a href="../../bg/pos/VERB.html">bg</a>]
 
+[<a href="../../bxr/pos/VERB.html">bxr</a>]
+
+[<a href="../../ca/pos/VERB.html">ca</a>]
+
+[<a href="../../ckb/pos/VERB.html">ckb</a>]
+
+[<a href="../../cop/pos/VERB.html">cop</a>]
+
 [<a href="../../cs/pos/VERB.html">cs</a>]
+
+[<a href="../../cu/pos/VERB.html">cu</a>]
+
+[<a href="../../da/pos/VERB.html">da</a>]
 
 [<a href="../../de/pos/VERB.html">de</a>]
 
@@ -196,29 +303,99 @@ VERB in other languages:
 
 [<a href="../../es/pos/VERB.html">es</a>]
 
+[<a href="../../et/pos/VERB.html">et</a>]
+
 [<a href="../../eu/pos/VERB.html">eu</a>]
 
 [<a href="../../fa/pos/VERB.html">fa</a>]
 
 [<a href="../../fi/pos/VERB.html">fi</a>]
 
+[<a href="../../fo/pos/VERB.html">fo</a>]
+
 [<a href="../../fr/pos/VERB.html">fr</a>]
 
 [<a href="../../ga/pos/VERB.html">ga</a>]
 
+[<a href="../../gl/pos/VERB.html">gl</a>]
+
+[<a href="../../got/pos/VERB.html">got</a>]
+
+[<a href="../../grc/pos/VERB.html">grc</a>]
+
 [<a href="../../he/pos/VERB.html">he</a>]
 
+[<a href="../../hi/pos/VERB.html">hi</a>]
+
+[<a href="../../hr/pos/VERB.html">hr</a>]
+
 [<a href="../../hu/pos/VERB.html">hu</a>]
+
+[<a href="../../id/pos/VERB.html">id</a>]
 
 [<a href="../../it/pos/VERB.html">it</a>]
 
 [<a href="../../ja/pos/VERB.html">ja</a>]
 
+[<a href="../../kk/pos/VERB.html">kk</a>]
+
+[<a href="../../kmr/pos/VERB.html">kmr</a>]
+
 [<a href="../../ko/pos/VERB.html">ko</a>]
+
+[<a href="../../la/pos/VERB.html">la</a>]
+
+[<a href="../../lv/pos/VERB.html">lv</a>]
+
+[<a href="../../mr/pos/VERB.html">mr</a>]
+
+[<a href="../../nl/pos/VERB.html">nl</a>]
+
+[<a href="../../no/pos/VERB.html">no</a>]
+
+[<a href="../../pl/pos/VERB.html">pl</a>]
+
+[<a href="../../pt/pos/VERB.html">pt</a>]
+
+[<a href="../../ro/pos/VERB.html">ro</a>]
+
+[<a href="../../ru/pos/VERB.html">ru</a>]
+
+[<a href="../../sa/pos/VERB.html">sa</a>]
+
+[<a href="../../sk/pos/VERB.html">sk</a>]
+
+[<a href="../../sla/pos/VERB.html">sla</a>]
+
+[<a href="../../sl/pos/VERB.html">sl</a>]
+
+[<a href="../../so/pos/VERB.html">so</a>]
+
+[<a href="../../sr/pos/VERB.html">sr</a>]
 
 [<a href="../../sv/pos/VERB.html">sv</a>]
 
+[<a href="../../swl/pos/VERB.html">swl</a>]
+
+[<a href="../../ta/pos/VERB.html">ta</a>]
+
+[<a href="../../tr/pos/VERB.html">tr</a>]
+
+[<a href="../../ug/pos/VERB.html">ug</a>]
+
+[<a href="../../uk/pos/VERB.html">uk</a>]
+
 [<a href="../../u/pos/VERB.html">u</a>]
+
+[<a href="../../urj/pos/VERB.html">urj</a>]
+
+[<a href="../../ur/pos/VERB.html">ur</a>]
+
+[<a href="../../vi/pos/VERB.html">vi</a>]
+
+[<a href="../../yue/pos/VERB.html">yue</a>]
+
+[<a href="../../zh/pos/VERB.html">zh</a>]
 
 
 

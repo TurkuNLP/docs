@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-bg">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/bg/dep">bg/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_bg-dep/expl.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-bg">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/bg/dep">bg/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-dep/expl.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,12 +80,12 @@ for <code>expl</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>3502 nodes (2%) are attached to their parents as <code>expl</code>.</p>
+<p>3060 nodes (2%) are attached to their parents as <code>expl</code>.</p>
 
-<p>3024 instances of <code>expl</code> (86%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.05254140491148.</p>
+<p>2650 instances of <code>expl</code> (87%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.0516339869281.</p>
 
-<p>The following 7 pairs of parts of speech are connected with <code>expl</code>: <a href="">bg-pos/VERB</a>-<a href="">bg-pos/PRON</a> (3418; 98% instances), <a href="">bg-pos/ADJ</a>-<a href="">bg-pos/PRON</a> (58; 2% instances), <a href="">bg-pos/NOUN</a>-<a href="">bg-pos/PRON</a> (13; 0% instances), <a href="">bg-pos/ADV</a>-<a href="">bg-pos/PRON</a> (10; 0% instances), <a href="">bg-pos/DET</a>-<a href="">bg-pos/PRON</a> (1; 0% instances), <a href="">bg-pos/PART</a>-<a href="">bg-pos/PRON</a> (1; 0% instances), <a href="">bg-pos/PRON</a>-<a href="">bg-pos/PRON</a> (1; 0% instances).</p>
+<p>The following 7 pairs of parts of speech are connected with <code>expl</code>: <a href="">bg-pos/VERB</a>-<a href="">bg-pos/PRON</a> (2978; 97% instances), <a href="">bg-pos/ADJ</a>-<a href="">bg-pos/PRON</a> (53; 2% instances), <a href="">bg-pos/NOUN</a>-<a href="">bg-pos/PRON</a> (15; 0% instances), <a href="">bg-pos/ADV</a>-<a href="">bg-pos/PRON</a> (10; 0% instances), <a href="">bg-pos/DET</a>-<a href="">bg-pos/PRON</a> (2; 0% instances), <a href="">bg-pos/PART</a>-<a href="">bg-pos/PRON</a> (1; 0% instances), <a href="">bg-pos/PRON</a>-<a href="">bg-pos/PRON</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 2	bgColor:blue
 # visual-style 2	fgColor:white
@@ -77,9 +94,9 @@ Average distance between parent and child is 1.05254140491148.</p>
 # visual-style 3 2 expl	color:blue
 1	Щом	щом	SCONJ	Cs	_	3	mark	_	_
 2	се	се	PRON	Ppxta	Case=Acc|PronType=Prs|Reflex=Yes	3	expl	_	_
-3	наям	наям-(се)	VERB	Vpptf-r1s	Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	5	advcl	_	_
+3	наям	наям-(се)	VERB	Vpptf-r1s	Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	5	advcl	_	SpaceAfter=No
 4	,	,	PUNCT	punct	_	3	punct	_	_
-5	ставам	ставам	VERB	Vpiif-r1s	Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	ставам	ставам	VERB	Vpiif-r1s	Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
 6	.	.	PUNCT	punct	_	5	punct	_	_
 
 </code></pre>
@@ -93,12 +110,12 @@ Average distance between parent and child is 1.05254140491148.</p>
 2	гледаше	гледам	VERB	Vpitf-m3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin|Voice=Act	0	root	_	_
 3	към	към	ADP	R	_	8	case	_	_
 4	бясно	бясно	ADV	Dm	Degree=Pos	5	advmod	_	_
-5	въртящия	въртя-(се)	ADJ	Vpitcar-smh	Aspect=Imp|Definite=Def|Gender=Masc|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Act	8	amod	_	_
+5	въртящия	въртя-(се)	ADJ	Vpitcar-smh	Aspect=Imp|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Act	8	amod	_	_
 6	се	се	PRON	Ppxta	Case=Acc|PronType=Prs|Reflex=Yes	5	expl	_	_
 7	цифров	цифров	ADJ	Amsi	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	8	amod	_	_
 8	брояч	брояч	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	2	iobj	_	_
 9	на	на	ADP	R	_	10	case	_	_
-10	годините	година	NOUN	Ncfpd	Definite=Def|Gender=Fem|Number=Plur	8	nmod	_	_
+10	годините	година	NOUN	Ncfpd	Definite=Def|Gender=Fem|Number=Plur	8	nmod	_	SpaceAfter=No
 11	.	.	PUNCT	punct	_	2	punct	_	_
 
 </code></pre>
@@ -109,17 +126,17 @@ Average distance between parent and child is 1.05254140491148.</p>
 # visual-style 12	fgColor:white
 # visual-style 12 9 expl	color:blue
 1	Ако	ако	SCONJ	Cs	_	2	mark	_	_
-2	мисли	мисля	VERB	Vpitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	advcl	_	_
+2	мисли	мисля	VERB	Vpitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	advcl	_	SpaceAfter=No
 3	,	,	PUNCT	punct	_	6	punct	_	_
 4	че	че	SCONJ	Cs	_	6	mark	_	_
-5	е	съм	VERB	Vxitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
-6	най-добрият	добър	ADJ	Amsf	Definite=Def|Degree=Sup|Gender=Masc|Number=Sing	2	ccomp	_	_
+5	е	съм	AUX	Vxitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+6	най-добрият	добър	ADJ	Amsf	Definite=Def|Degree=Sup|Gender=Masc|Number=Sing	2	ccomp	_	SpaceAfter=No
 7	,	,	PUNCT	punct	_	2	punct	_	_
 8	това	този	PRON	Pde-os-n	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	12	nsubj	_	_
 9	си	се	PRON	Ppxtd	Case=Dat|PronType=Prs|Reflex=Yes	12	expl	_	_
-10	е	съм	VERB	Vxitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	cop	_	_
+10	е	съм	AUX	Vxitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	cop	_	_
 11	негов	мой	DET	Psol-s3mim	Definite=Ind|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	12	det	_	_
-12	проблем	проблем	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	0	root	_	_
+12	проблем	проблем	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 13	.	.	PUNCT	punct	_	12	punct	_	_
 
 </code></pre>
@@ -132,9 +149,25 @@ Average distance between parent and child is 1.05254140491148.</p>
 
 expl in other languages:
 
+[<a href="../../am/dep/expl.html">am</a>]
+
+[<a href="../../ar/dep/expl.html">ar</a>]
+
 [<a href="../../bg/dep/expl.html">bg</a>]
 
+[<a href="../../bxr/dep/expl.html">bxr</a>]
+
+[<a href="../../ca/dep/expl.html">ca</a>]
+
+[<a href="../../ckb/dep/expl.html">ckb</a>]
+
+[<a href="../../cop/dep/expl.html">cop</a>]
+
 [<a href="../../cs/dep/expl.html">cs</a>]
+
+[<a href="../../cu/dep/expl.html">cu</a>]
+
+[<a href="../../da/dep/expl.html">da</a>]
 
 [<a href="../../de/dep/expl.html">de</a>]
 
@@ -144,29 +177,97 @@ expl in other languages:
 
 [<a href="../../es/dep/expl.html">es</a>]
 
+[<a href="../../et/dep/expl.html">et</a>]
+
 [<a href="../../eu/dep/expl.html">eu</a>]
 
 [<a href="../../fa/dep/expl.html">fa</a>]
 
 [<a href="../../fi/dep/expl.html">fi</a>]
 
+[<a href="../../fo/dep/expl.html">fo</a>]
+
 [<a href="../../fr/dep/expl.html">fr</a>]
 
-[<a href="../../ga/dep/expl.html">ga</a>]
+[<a href="../../gl/dep/expl.html">gl</a>]
+
+[<a href="../../got/dep/expl.html">got</a>]
+
+[<a href="../../grc/dep/expl.html">grc</a>]
 
 [<a href="../../he/dep/expl.html">he</a>]
 
+[<a href="../../hi/dep/expl.html">hi</a>]
+
+[<a href="../../hr/dep/expl.html">hr</a>]
+
 [<a href="../../hu/dep/expl.html">hu</a>]
+
+[<a href="../../id/dep/expl.html">id</a>]
 
 [<a href="../../it/dep/expl.html">it</a>]
 
 [<a href="../../ja/dep/expl.html">ja</a>]
 
+[<a href="../../kk/dep/expl.html">kk</a>]
+
+[<a href="../../kmr/dep/expl.html">kmr</a>]
+
 [<a href="../../ko/dep/expl.html">ko</a>]
+
+[<a href="../../la/dep/expl.html">la</a>]
+
+[<a href="../../lv/dep/expl.html">lv</a>]
+
+[<a href="../../mr/dep/expl.html">mr</a>]
+
+[<a href="../../nl/dep/expl.html">nl</a>]
+
+[<a href="../../no/dep/expl.html">no</a>]
+
+[<a href="../../pl/dep/expl.html">pl</a>]
+
+[<a href="../../pt/dep/expl.html">pt</a>]
+
+[<a href="../../ro/dep/expl.html">ro</a>]
+
+[<a href="../../ru/dep/expl.html">ru</a>]
+
+[<a href="../../sa/dep/expl.html">sa</a>]
+
+[<a href="../../sk/dep/expl.html">sk</a>]
+
+[<a href="../../sla/dep/expl.html">sla</a>]
+
+[<a href="../../sl/dep/expl.html">sl</a>]
+
+[<a href="../../so/dep/expl.html">so</a>]
+
+[<a href="../../sr/dep/expl.html">sr</a>]
 
 [<a href="../../sv/dep/expl.html">sv</a>]
 
+[<a href="../../swl/dep/expl.html">swl</a>]
+
+[<a href="../../ta/dep/expl.html">ta</a>]
+
+[<a href="../../tr/dep/expl.html">tr</a>]
+
 [<a href="../../u/dep/expl.html">u</a>]
+
+[<a href="../../ug/dep/expl.html">ug</a>]
+
+[<a href="../../uk/dep/expl.html">uk</a>]
+
+[<a href="../../ur/dep/expl.html">ur</a>]
+
+[<a href="../../urj/dep/expl.html">urj</a>]
+
+[<a href="../../vi/dep/expl.html">vi</a>]
+
+[<a href="../../yue/dep/expl.html">yue</a>]
+
+[<a href="../../zh/dep/expl.html">zh</a>]
 
 
 

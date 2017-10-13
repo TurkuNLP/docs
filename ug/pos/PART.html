@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ug">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ug/pos">ug/pos</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ug-pos/PART.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ug">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ug/pos">ug/pos</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ug-pos/PART.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -61,78 +78,49 @@ for <code>PART</code>.</p>
 
 <h2 id="treebank-statistics-uduyghur">Treebank Statistics (UD_Uyghur)</h2>
 
-<p>There are 1 <code>PART</code> lemmas (7%), 18 <code>PART</code> types (1%) and 56 <code>PART</code> tokens (1%).
-Out of 14 observed tags, the rank of <code>PART</code> is: 10 in number of lemmas, 9 in number of types and 10 in number of tokens.</p>
+<p>There are 1 <code>PART</code> lemmas (8%), 4 <code>PART</code> types (0%) and 13 <code>PART</code> tokens (1%).
+Out of 12 observed tags, the rank of <code>PART</code> is: 9 in number of lemmas, 12 in number of types and 11 in number of tokens.</p>
 
 <p>The 10 most frequent <code>PART</code> lemmas: _</p>
 
-<p>The 10 most frequent <code>PART</code> types:  دە، خۇددى، قېنى، مانا، ھە، ئەلۋەتتە، بولغاي، تېخى، جۇمۇ، دەيمەن</p>
+<p>The 10 most frequent <code>PART</code> types:  خۇددى، مانا، پات، گوياكى</p>
 
-<p>The 10 most frequent ambiguous lemmas: _ (<a href="">NOUN</a> 1936, <a href="">VERB</a> 1499, <a href="">PUNCT</a> 1401, <a href="">PRON</a> 513, <a href="">ADJ</a> 416, <a href="">ADV</a> 184, <a href="">NUM</a> 175, <a href="">CONJ</a> 114, <a href="">ADP</a> 69, <a href="">PART</a> 56, <a href="">AUX</a> 32, <a href="">INTJ</a> 27, <a href="">DET</a> 18, <a href="">X</a> 2)</p>
+<p>The 10 most frequent ambiguous lemmas: _ (<a href="">NOUN</a> 584, <a href="">VERB</a> 323, <a href="">PUNCT</a> 188, <a href="">ADJ</a> 181, <a href="">PRON</a> 143, <a href="">AUX</a> 65, <a href="">NUM</a> 60, <a href="">CCONJ</a> 35, <a href="">ADP</a> 31, <a href="">ADV</a> 31, <a href="">PART</a> 13, <a href="">DET</a> 8)</p>
 
-<p>The 10 most frequent ambiguous types:  دە (<a href="">PART</a> 19, <a href="">VERB</a> 1), مانا (<a href="">PART</a> 5, <a href="">PRON</a> 2), ھە (<a href="">PART</a> 4, <a href="">INTJ</a> 1), تېخى (<a href="">ADV</a> 6, <a href="">PART</a> 2), يەنە (<a href="">ADV</a> 12, <a href="">CONJ</a> 2, <a href="">PART</a> 1)</p>
+<p>The 10 most frequent ambiguous types:  پات (<a href="">PART</a> 1, <a href="">VERB</a> 1)</p>
 
 <ul>
-  <li>دە
+  <li>پات
     <ul>
-      <li><a href="">PART</a> 19: - جۇڭنى ئىكەنسىز - <b>دە</b> ، - دەيدۇ لاۋزى ،</li>
-      <li><a href="">VERB</a> 1: ئۇ ئۆزىنى دەرياغا ئېتىپتۇ – <b>دە</b> ، قارشى قىرغاققا قاراپ ئېقىپ كېتىپتۇ .</li>
-    </ul>
-  </li>
-  <li>مانا
-    <ul>
-      <li><a href="">PART</a> 5: <b>مانا</b> بۇ كەنتىمىزنىڭ چىرايلىق مارجانبۇلىقى .</li>
-      <li><a href="">PRON</a> 2: <b>مانا</b> بۇ بىزنىڭ مارجانبۇلىقىمىز ،</li>
-    </ul>
-  </li>
-  <li>ھە
-    <ul>
-      <li><a href="">PART</a> 4: قاراڭ ، ئۇلار تىزىق - تىزىق رەڭدار مارجانلارغا نەقەدەر ئوخشايدۇ - <b>ھە</b> !</li>
-      <li><a href="">INTJ</a> 1: ھەي ، ئەگەر ئۇنى تىللىمىغان بولسام ، ئۇنىڭغا يۈز كىلەلمەيدىغان ئىشنى قىلمىغان بولسام نېمىدېگەن ياخشى بولاتتى - <b>ھە</b> ! ؟</li>
-    </ul>
-  </li>
-  <li>تېخى
-    <ul>
-      <li><a href="">ADV</a> 6: مەن <b>تېخى</b> دادامنى خۇش بولىدۇ دەپ ئويلاپتىمەن ،</li>
-      <li><a href="">PART</a> 2: _ _ گۈللىرىنى قاراڭلار ! رەڭگىچۇ <b>تېخى</b> !</li>
-    </ul>
-  </li>
-  <li>يەنە
-    <ul>
-      <li><a href="">ADV</a> 12: ئۇ <b>يەنە</b> ئەينەك ئالدىدا چۆگىلەشكە باشلاپتۇ .</li>
-      <li><a href="">CONJ</a> 2: <b>يەنە</b> تېخى دائىم ئۇلارغا بولكا ئۇۋىقى ۋە تېرىق ئالغاچ كېلەتتى .</li>
-      <li><a href="">PART</a> 1: سېنى سىرىتتا ساقلايمەن ! - دېدى ئۇ <b>يەنە</b> .</li>
+      <li><a href="">PART</a> 1: شۇنداقتىمۇ قاپىقىدىن مۇز يېغىپ تۇرىدىغان سۆرۈن تەلەت داداڭنىڭ ساڭا بۇزۇق كانايدەك كاركىراپ ۋارقىراشلىرى ، سېنى شۇمدىن شۇمغا سېلىپ تىللاپ ئۇرۇشلىرىنى پات - <b>پات</b> ئاڭلاپ ، كۆرۈپ قالاتتىم .</li>
+      <li><a href="">VERB</a> 1: شۇنداقتىمۇ قاپىقىدىن مۇز يېغىپ تۇرىدىغان سۆرۈن تەلەت داداڭنىڭ ساڭا بۇزۇق كانايدەك كاركىراپ ۋارقىراشلىرى ، سېنى شۇمدىن شۇمغا سېلىپ تىللاپ ئۇرۇشلىرىنى <b>پات</b> - پات ئاڭلاپ ، كۆرۈپ قالاتتىم .</li>
     </ul>
   </li>
 </ul>
 
 <h2 id="morphology">Morphology</h2>
 
-<p>The form / lemma ratio of <code>PART</code> is 18.000000 (the average of all parts of speech is 195.000000).</p>
+<p>The form / lemma ratio of <code>PART</code> is 4.000000 (the average of all parts of speech is 82.500000).</p>
 
-<p>The 1st highest number of forms (18) was observed with the lemma “_”: ئەلۋەتتە, ئەمەسمۇ, ئەپسۇس, بولغاي, بەلكىم, تېخى, جۇمۇ, خۇددى, دە, دەرۋەقە, دەيمەن, زادى, قېنى, مانا, يۇ, يەنە, گويا, ھە.</p>
+<p>The 1st highest number of forms (4) was observed with the lemma “_”: خۇددى, مانا, پات, گوياكى.</p>
 
 <p><code>PART</code> does not occur with any features.</p>
 
 <h2 id="relations">Relations</h2>
 
-<p><code>PART</code> nodes are attached to their parents using 8 different relations: <a href="">ug-dep/mark</a> (29; 52% instances), <a href="">ug-dep/discourse</a> (14; 25% instances), <a href="">ug-dep/advmod</a> (5; 9% instances), <a href="">ug-dep/advmod:emph</a> (4; 7% instances), <a href="">ug-dep/cop</a> (1; 2% instances), <a href="">ug-dep/neg</a> (1; 2% instances), <a href="">ug-dep/parataxis</a> (1; 2% instances), <a href="">ug-dep/root</a> (1; 2% instances)</p>
+<p><code>PART</code> nodes are attached to their parents using 5 different relations: <a href="">ug-dep/nmod</a> (7; 54% instances), <a href="">ug-dep/advmod</a> (2; 15% instances), <a href="">ug-dep/obl</a> (2; 15% instances), <a href="">ug-dep/discourse</a> (1; 8% instances), <a href="">ug-dep/mark</a> (1; 8% instances)</p>
 
-<p>Parents of <code>PART</code> nodes belong to 5 different parts of speech: <a href="">VERB</a> (44; 79% instances), <a href="">NOUN</a> (8; 14% instances), <a href="">PRON</a> (2; 4% instances), <a href="">ADJ</a> (1; 2% instances), <a href="">ROOT</a> (1; 2% instances)</p>
+<p>Parents of <code>PART</code> nodes belong to 3 different parts of speech: <a href="">NOUN</a> (6; 46% instances), <a href="">VERB</a> (6; 46% instances), <a href="">PRON</a> (1; 8% instances)</p>
 
-<p>21 (38%) <code>PART</code> nodes are leaves.</p>
+<p>11 (85%) <code>PART</code> nodes are leaves.</p>
 
-<p>29 (52%) <code>PART</code> nodes have one child.</p>
+<p>2 (15%) <code>PART</code> nodes have one child.</p>
 
-<p>3 (5%) <code>PART</code> nodes have two children.</p>
+<p>The highest child degree of a <code>PART</code> node is 1.</p>
 
-<p>3 (5%) <code>PART</code> nodes have three or more children.</p>
+<p>Children of <code>PART</code> nodes are attached using 2 different relations: <a href="">ug-dep/compound:redup</a> (1; 50% instances), <a href="">ug-dep/punct</a> (1; 50% instances)</p>
 
-<p>The highest child degree of a <code>PART</code> node is 3.</p>
-
-<p>Children of <code>PART</code> nodes are attached using 3 different relations: <a href="">ug-dep/punct</a> (42; 95% instances), <a href="">ug-dep/ccomp</a> (1; 2% instances), <a href="">ug-dep/nsubj</a> (1; 2% instances)</p>
-
-<p>Children of <code>PART</code> nodes belong to 3 different parts of speech: <a href="">PUNCT</a> (42; 95% instances), <a href="">PRON</a> (1; 2% instances), <a href="">VERB</a> (1; 2% instances)</p>
+<p>Children of <code>PART</code> nodes belong to 2 different parts of speech: <a href="">PUNCT</a> (1; 50% instances), <a href="">VERB</a> (1; 50% instances)</p>
 
 
 
@@ -142,9 +130,25 @@ Out of 14 observed tags, the rank of <code>PART</code> is: 10 in number of lemma
 
 PART in other languages:
 
+[<a href="../../am/pos/PART.html">am</a>]
+
+[<a href="../../ar/pos/PART.html">ar</a>]
+
 [<a href="../../bg/pos/PART.html">bg</a>]
 
+[<a href="../../bxr/pos/PART.html">bxr</a>]
+
+[<a href="../../ca/pos/PART.html">ca</a>]
+
+[<a href="../../ckb/pos/PART.html">ckb</a>]
+
+[<a href="../../cop/pos/PART.html">cop</a>]
+
 [<a href="../../cs/pos/PART.html">cs</a>]
+
+[<a href="../../cu/pos/PART.html">cu</a>]
+
+[<a href="../../da/pos/PART.html">da</a>]
 
 [<a href="../../de/pos/PART.html">de</a>]
 
@@ -154,29 +158,99 @@ PART in other languages:
 
 [<a href="../../es/pos/PART.html">es</a>]
 
+[<a href="../../et/pos/PART.html">et</a>]
+
 [<a href="../../eu/pos/PART.html">eu</a>]
 
 [<a href="../../fa/pos/PART.html">fa</a>]
 
 [<a href="../../fi/pos/PART.html">fi</a>]
 
+[<a href="../../fo/pos/PART.html">fo</a>]
+
 [<a href="../../fr/pos/PART.html">fr</a>]
 
 [<a href="../../ga/pos/PART.html">ga</a>]
 
+[<a href="../../gl/pos/PART.html">gl</a>]
+
+[<a href="../../got/pos/PART.html">got</a>]
+
+[<a href="../../grc/pos/PART.html">grc</a>]
+
 [<a href="../../he/pos/PART.html">he</a>]
 
+[<a href="../../hi/pos/PART.html">hi</a>]
+
+[<a href="../../hr/pos/PART.html">hr</a>]
+
 [<a href="../../hu/pos/PART.html">hu</a>]
+
+[<a href="../../id/pos/PART.html">id</a>]
 
 [<a href="../../it/pos/PART.html">it</a>]
 
 [<a href="../../ja/pos/PART.html">ja</a>]
 
+[<a href="../../kk/pos/PART.html">kk</a>]
+
+[<a href="../../kmr/pos/PART.html">kmr</a>]
+
 [<a href="../../ko/pos/PART.html">ko</a>]
+
+[<a href="../../la/pos/PART.html">la</a>]
+
+[<a href="../../lv/pos/PART.html">lv</a>]
+
+[<a href="../../mr/pos/PART.html">mr</a>]
+
+[<a href="../../nl/pos/PART.html">nl</a>]
+
+[<a href="../../no/pos/PART.html">no</a>]
+
+[<a href="../../pl/pos/PART.html">pl</a>]
+
+[<a href="../../pt/pos/PART.html">pt</a>]
+
+[<a href="../../ro/pos/PART.html">ro</a>]
+
+[<a href="../../ru/pos/PART.html">ru</a>]
+
+[<a href="../../sa/pos/PART.html">sa</a>]
+
+[<a href="../../sk/pos/PART.html">sk</a>]
+
+[<a href="../../sla/pos/PART.html">sla</a>]
+
+[<a href="../../sl/pos/PART.html">sl</a>]
+
+[<a href="../../so/pos/PART.html">so</a>]
+
+[<a href="../../sr/pos/PART.html">sr</a>]
 
 [<a href="../../sv/pos/PART.html">sv</a>]
 
+[<a href="../../swl/pos/PART.html">swl</a>]
+
+[<a href="../../ta/pos/PART.html">ta</a>]
+
+[<a href="../../tr/pos/PART.html">tr</a>]
+
+[<a href="../../ug/pos/PART.html">ug</a>]
+
+[<a href="../../uk/pos/PART.html">uk</a>]
+
 [<a href="../../u/pos/PART.html">u</a>]
+
+[<a href="../../urj/pos/PART.html">urj</a>]
+
+[<a href="../../ur/pos/PART.html">ur</a>]
+
+[<a href="../../vi/pos/PART.html">vi</a>]
+
+[<a href="../../yue/pos/PART.html">yue</a>]
+
+[<a href="../../zh/pos/PART.html">zh</a>]
 
 
 

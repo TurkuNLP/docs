@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-u">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/u/feat">u/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-feat/Number.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-u">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/u/feat">u/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-feat/Number.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -47,12 +64,29 @@
 
 <h2><code>Number</code>: number</h2>
 
+<table class="typeindex" border="1">
+<tr>
+  <td style="background-color:cornflowerblue;color:white"><strong>Values:</strong> </td>
+  <td><a href="#Coll">Coll</a></td>
+  <td><a href="#Count">Count</a></td>
+  <td><a href="#Dual">Dual</a></td>
+  <td><a href="#Grpa">Grpa</a></td>
+  <td><a href="#Grpl">Grpl</a></td>
+  <td><a href="#Inv">Inv</a></td>
+  <td><a href="#Pauc">Pauc</a></td>
+  <td><a href="#Plur">Plur</a></td>
+  <td><a href="#Ptan">Ptan</a></td>
+  <td><a href="#Sing">Sing</a></td>
+  <td><a href="#Tri">Tri</a></td>
+</tr>
+</table>
+
 <p><code>Number</code> is usually an inflectional feature of <a href="u-pos/NOUN">nouns</a> and,
 depending on language, other parts of speech (<a href="u-pos/PRON">pronouns</a>,
 <a href="u-pos/ADJ">adjectives</a>, <a href="u-pos/DET">determiners</a>, <a href="u-pos/NUM">numerals</a>,
 <a href="u-pos/VERB">verbs</a>) that mark agreement with nouns.</p>
 
-<h3 id="sing-singular-number"><code>Sing</code>: singular number</h3>
+<h3 id="a-namesingsinga-singular-number"><a name="Sing"><code>Sing</code></a>: singular number</h3>
 
 <p>A singular noun denotes one person, animal or thing.</p>
 
@@ -62,7 +96,7 @@ depending on language, other parts of speech (<a href="u-pos/PRON">pronouns</a>,
   <li>[en] <em><b>car</b></em></li>
 </ul>
 
-<h3 id="plur-plural-number"><code>Plur</code>: plural number</h3>
+<h3 id="a-nameplurplura-plural-number"><a name="Plur"><code>Plur</code></a>: plural number</h3>
 
 <p>A plural noun denotes several persons, animals or things.</p>
 
@@ -72,7 +106,7 @@ depending on language, other parts of speech (<a href="u-pos/PRON">pronouns</a>,
   <li>[en] <em><b>cars</b></em></li>
 </ul>
 
-<h3 id="dual-dual-number"><code>Dual</code>: dual number</h3>
+<h3 id="a-namedualduala-dual-number"><a name="Dual"><code>Dual</code></a>: dual number</h3>
 
 <p>A dual noun denotes two persons, animals or things.</p>
 
@@ -85,7 +119,46 @@ depending on language, other parts of speech (<a href="u-pos/PRON">pronouns</a>,
 <em>sanatāni</em></b> “years”, plural سِنُونَ <em>sinūna</em> “years”.</li>
 </ul>
 
-<h3 id="ptan-plurale-tantum"><code>Ptan</code>: plurale tantum</h3>
+<h3 id="a-nametritria-trial-number"><a name="Tri"><code>Tri</code></a>: trial number</h3>
+
+<p>A trial pronoun denotes three persons, animals or things.
+It occurs in pronouns of several Austronesian languages.</p>
+
+<h3 id="a-namepaucpauca-paucal-number"><a name="Pauc"><code>Pauc</code></a>: paucal number</h3>
+
+<p>A paucal noun denotes “a few” persons, animals or things.</p>
+
+<h3 id="a-namegrpagrpaa-greater-paucal-number"><a name="Grpa"><code>Grpa</code></a>: greater paucal number</h3>
+
+<p>A greater paucal noun denotes “more than several but not many” persons, animals or things.
+It occurs in Sursurunga, an Austronesian language.</p>
+
+<h3 id="a-namegrplgrpla-greater-plural-number"><a name="Grpl"><code>Grpl</code></a>: greater plural number</h3>
+
+<p>A greater plural noun denotes “many, all possible” persons, animals or things.
+Precise semantics varies across languages.</p>
+
+<h3 id="a-nameinvinva-inverse-number"><a name="Inv"><code>Inv</code></a>: inverse number</h3>
+
+<p>Inverse number means non-default for that particular noun. (Some nouns are by
+default assumed to be singular, some plural.) Occurs e.g. in Kiowa.</p>
+
+<h3 id="a-namecountcounta-count-plural"><a name="Count"><code>Count</code></a> count plural</h3>
+
+<p>Attested in Bulgarian and Macedonian. It is known variously as “counting form”,
+“count plural” or “quantitative plural” (Sussex and Cubberley 2006, p. 324).
+It is a special plural form of nouns if they occur after numerals.
+(The form originates in the Proto-Slavic dual but it should not be marked
+<code>Number=Dual</code> because 1. the dual vanished from Bulgarian and 2. the form is
+no longer semantically tied to the number two.)</p>
+
+<h4 id="examples-3">Examples</h4>
+
+<ul>
+  <li>[bg] <em>tri <b>stola</b></em> “three chairs” vs. <em>stolove</em> “chairs”</li>
+</ul>
+
+<h3 id="a-nameptanptana-plurale-tantum"><a name="Ptan"><code>Ptan</code></a>: plurale tantum</h3>
 
 <p>Some nouns appear only in the plural form even though they denote one
 thing (semantic singular); some tagsets mark this distinction.
@@ -95,14 +168,14 @@ non-existence of singular form sometimes means that the gender is
 unknown. In Czech, special type of numerals is used when counting
 nouns that are plurale tantum (<a href="">NumType</a> = Sets).</p>
 
-<h4 id="examples-3">Examples</h4>
+<h4 id="examples-4">Examples</h4>
 
 <ul>
   <li>[en] <em><b>scissors, pants</b></em></li>
   <li>[cs] <em><b>nůžky, kalhoty</b></em></li>
 </ul>
 
-<h3 id="coll-collective--mass--singulare-tantum"><code>Coll</code>: collective / mass / singulare tantum</h3>
+<h3 id="a-namecollcolla-collective--mass--singulare-tantum"><a name="Coll"><code>Coll</code></a>: collective / mass / singulare tantum</h3>
 
 <p>Collective or mass or singulare tantum is a special case of
 singular. It applies to words that use grammatical singular to
@@ -111,11 +184,18 @@ they might be able to form plural, in practice it would be rarely
 semantically plausible. Sometimes, the plural form exists and means
 “several sorts of” or “several packages of”.</p>
 
-<h4 id="examples-4">Examples</h4>
+<h4 id="examples-5">Examples</h4>
 
 <ul>
   <li>[cs] <em><b>lidstvo</b></em> “mankind”</li>
 </ul>
+
+<h3 id="references">References</h3>
+
+<ul>
+  <li>Sussex, Roland and Cubberley, Paul. 2006. <em>The Slavic Languages.</em> Cambridge University Press.</li>
+</ul>
+
 
 
 <!-- "automatic stats" -->
@@ -129,9 +209,25 @@ semantically plausible. Sometimes, the plural form exists and means
 
 Number in other languages:
 
+[<a href="../../am/feat/Number.html">am</a>]
+
+[<a href="../../ar/feat/Number.html">ar</a>]
+
 [<a href="../../bg/feat/Number.html">bg</a>]
 
+[<a href="../../bxr/feat/Number.html">bxr</a>]
+
+[<a href="../../ca/feat/Number.html">ca</a>]
+
+[<a href="../../ckb/feat/Number.html">ckb</a>]
+
+[<a href="../../cop/feat/Number.html">cop</a>]
+
 [<a href="../../cs/feat/Number.html">cs</a>]
+
+[<a href="../../cu/feat/Number.html">cu</a>]
+
+[<a href="../../da/feat/Number.html">da</a>]
 
 [<a href="../../de/feat/Number.html">de</a>]
 
@@ -141,29 +237,99 @@ Number in other languages:
 
 [<a href="../../es/feat/Number.html">es</a>]
 
+[<a href="../../et/feat/Number.html">et</a>]
+
 [<a href="../../eu/feat/Number.html">eu</a>]
 
 [<a href="../../fa/feat/Number.html">fa</a>]
 
 [<a href="../../fi/feat/Number.html">fi</a>]
 
+[<a href="../../fo/feat/Number.html">fo</a>]
+
 [<a href="../../fr/feat/Number.html">fr</a>]
 
 [<a href="../../ga/feat/Number.html">ga</a>]
 
+[<a href="../../gl/feat/Number.html">gl</a>]
+
+[<a href="../../got/feat/Number.html">got</a>]
+
+[<a href="../../grc/feat/Number.html">grc</a>]
+
 [<a href="../../he/feat/Number.html">he</a>]
 
+[<a href="../../hi/feat/Number.html">hi</a>]
+
+[<a href="../../hr/feat/Number.html">hr</a>]
+
 [<a href="../../hu/feat/Number.html">hu</a>]
+
+[<a href="../../id/feat/Number.html">id</a>]
 
 [<a href="../../it/feat/Number.html">it</a>]
 
 [<a href="../../ja/feat/Number.html">ja</a>]
 
+[<a href="../../kk/feat/Number.html">kk</a>]
+
+[<a href="../../kmr/feat/Number.html">kmr</a>]
+
 [<a href="../../ko/feat/Number.html">ko</a>]
+
+[<a href="../../la/feat/Number.html">la</a>]
+
+[<a href="../../lv/feat/Number.html">lv</a>]
+
+[<a href="../../mr/feat/Number.html">mr</a>]
+
+[<a href="../../nl/feat/Number.html">nl</a>]
+
+[<a href="../../no/feat/Number.html">no</a>]
+
+[<a href="../../pl/feat/Number.html">pl</a>]
+
+[<a href="../../pt/feat/Number.html">pt</a>]
+
+[<a href="../../ro/feat/Number.html">ro</a>]
+
+[<a href="../../ru/feat/Number.html">ru</a>]
+
+[<a href="../../sa/feat/Number.html">sa</a>]
+
+[<a href="../../sk/feat/Number.html">sk</a>]
+
+[<a href="../../sla/feat/Number.html">sla</a>]
+
+[<a href="../../sl/feat/Number.html">sl</a>]
+
+[<a href="../../so/feat/Number.html">so</a>]
+
+[<a href="../../sr/feat/Number.html">sr</a>]
 
 [<a href="../../sv/feat/Number.html">sv</a>]
 
+[<a href="../../swl/feat/Number.html">swl</a>]
+
+[<a href="../../ta/feat/Number.html">ta</a>]
+
+[<a href="../../tr/feat/Number.html">tr</a>]
+
 [<a href="../../u/feat/Number.html">u</a>]
+
+[<a href="../../ug/feat/Number.html">ug</a>]
+
+[<a href="../../uk/feat/Number.html">uk</a>]
+
+[<a href="../../ur/feat/Number.html">ur</a>]
+
+[<a href="../../urj/feat/Number.html">urj</a>]
+
+[<a href="../../vi/feat/Number.html">vi</a>]
+
+[<a href="../../yue/feat/Number.html">yue</a>]
+
+[<a href="../../zh/feat/Number.html">zh</a>]
 
 
 

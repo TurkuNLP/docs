@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../css/hint.css"/>
     <script type="text/javascript" src="../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-tagset">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/tagset/conversion">tagset/conversion</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_tagset-conversion/la-conll-uposf.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-tagset">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/tagset/conversion">tagset/conversion</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tagset-conversion/la-conll-uposf.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -152,7 +169,7 @@ The table requires manual postprocessing in order to provide accurate and comple
   <tr><td>a a pos=a|per=-|num=s|ten=-|mod=-|voi=-|gen=n|cas=n|deg=c</td><td>=&gt;</td><td>ADJ</td><td>Case=Nom|Degree=Cmp|Gender=Neut|Number=Sing</td><td><em>levius, minus, melius, rectius, gravius</em></td></tr>
   <tr style="background:lightgray"><td>a a pos=a|per=-|num=s|ten=-|mod=-|voi=-|gen=n|cas=n|deg=s</td><td>=&gt;</td><td>ADJ</td><td>Case=Nom|Degree=Sup|Gender=Neut|Number=Sing</td><td><em>bellissimum, facillumum</em></td></tr>
   <tr><td>a a pos=a|per=-|num=s|ten=-|mod=-|voi=-|gen=n|cas=v|deg=-</td><td>=&gt;</td><td>ADJ</td><td>Case=Voc|Gender=Neut|Number=Sing</td><td><em>primum</em></td></tr>
-  <tr style="background:lightgray"><td>c c pos=c|per=-|num=-|ten=-|mod=-|voi=-|gen=-|cas=-|deg=-</td><td>=&gt;</td><td>CONJ</td><td>_</td><td><em>et, que, ut, atque, si</em></td></tr>
+  <tr style="background:lightgray"><td>c c pos=c|per=-|num=-|ten=-|mod=-|voi=-|gen=-|cas=-|deg=-</td><td>=&gt;</td><td>CCONJ</td><td>_</td><td><em>et, que, ut, atque, si</em></td></tr>
   <tr><td>d d pos=d|per=-|num=-|ten=-|mod=-|voi=-|gen=-|cas=-|deg=-</td><td>=&gt;</td><td>ADV</td><td>_</td><td><em>non, ne, iam, etiam, tamen</em></td></tr>
   <tr style="background:lightgray"><td>d d pos=d|per=-|num=-|ten=-|mod=-|voi=-|gen=-|cas=-|deg=c</td><td>=&gt;</td><td>ADV</td><td>Degree=Cmp</td><td><em>plus, valdius</em></td></tr>
   <tr><td>d d pos=d|per=-|num=-|ten=-|mod=-|voi=-|gen=-|cas=-|deg=s</td><td>=&gt;</td><td>ADV</td><td>Degree=Sup</td><td><em>cupidissume, optimemanu</em></td></tr>

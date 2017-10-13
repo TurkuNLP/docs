@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-zh">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/zh/dep">zh/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_zh-dep/mark.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-zh">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/zh/dep">zh/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_zh-dep/mark.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -45,8 +62,108 @@
 
           <h2><code>mark</code>: marker</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>mark</code>.</p>
+<p>The <code>mark</code> relation applies to a function word that marks a subordinate clause. It can be distributed at its beginning (1,3) or at its end (2,4). We take a broad definition of “subordinate” to include adverbial clauses of any kind (see <a href="">advcl</a>).</p>
+
+<p>For relative clauses, nominalized clauses, and adjectives formed with 的 <em>de</em>, see <a href="">mark:rel</a>. For the manner adverbializer 地 <em>de</em>, see <a href="">mark:adv</a>.</p>
+
+<pre><code class="language-conllu"># visual-style 3 1 mark	color:blue
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+1	如果	_	SCONJ	_	_	3	mark	_	if
+2	我	_	PRON	_	_	3	nsubj	_	1SG
+3	買	_	VERB	_	_	0	root	_	buy
+4	藥	_	NOUN	_	_	3	obj	_	medicine
+5	回來	_	VERB	_	_	3	compound:dir	_	come-back
+
+1	"If	_	_	_	_	0	_	_	_
+2	I	_	_	_	_	0	_	_	_
+3	buy	_	_	_	_	0	_	_	_
+4	medicine	_	_	_	_	0	_	_	_
+5	back"	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 1 3 mark	color:blue
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+1	要	_	AUX	_	_	7	advcl	_	want
+2	玩	_	VERB	_	_	1	xcomp	_	play
+3	的話	_	SCONJ	_	_	1	mark	_	COND
+4	就	_	ADV	_	_	7	advmod	_	then
+5	將	_	ADP	_	_	6	case	_	BA
+6	事情	_	NOUN	_	_	7	obl	_	affair
+7	鬧	_	VERB	_	_	0	root	_	make-noise
+8	大	_	ADJ	_	_	7	compound:vv	_	big
+
+1	"If	_	_	_	_	0	_	_	_
+2	somebody	_	_	_	_	0	_	_	_
+3	wants	_	_	_	_	0	_	_	_
+4	to	_	_	_	_	0	_	_	_
+5	play,	_	_	_	_	0	_	_	_
+6	then	_	_	_	_	0	_	_	_
+7	let's	_	_	_	_	0	_	_	_
+8	make	_	_	_	_	0	_	_	_
+9	everyone	_	_	_	_	0	_	_	_
+10	know	_	_	_	_	0	_	_	_
+11	about	_	_	_	_	0	_	_	_
+12	it."	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 8 7 mark	color:blue
+# visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+1	你	_	PRON	_	_	2	nsubj	_	2SG
+2	搶	_	VERB	_	_	0	root	_	steal
+3	走	_	VERB	_	_	2	compound:vv	_	go-away
+4	他	_	PRON	_	_	6	nmod	_	3SG.M
+5	的	_	PART	_	_	4	case	_	GEN
+6	襪子	_	NOUN	_	_	2	obj	_	socks
+7	來	_	SCONJ	_	_	8	mark	_	to
+8	穿	_	VERB	_	_	2	advcl	_	wear
+
+1	"You	_	_	_	_	0	_	_	_
+2	stole	_	_	_	_	0	_	_	_
+3	his	_	_	_	_	0	_	_	_
+4	socks	_	_	_	_	0	_	_	_
+5	to	_	_	_	_	0	_	_	_
+6	wear	_	_	_	_	0	_	_	_
+7	them."	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 2 4 mark	color:blue
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+1	她	_	PRON	_	_	2	nsubj	_	3SG.F
+2	走	_	VERB	_	_	6	advcl	_	go
+3	了	_	AUX	_	_	2	aux	_	PERF
+4	之後	_	ADP	_	_	2	mark	_	after
+5	，	_	PUNCT	_	_	2	punct	_	_
+6	希望	_	VERB	_	_	0	root	_	hope
+7	你	_	PRON	_	_	8	nsubj	_	2SG
+8	開開心心	_	ADJ	_	_	6	ccomp	_	happy
+
+1	"After	_	_	_	_	0	_	_	_
+2	she	_	_	_	_	0	_	_	_
+3	leaves,	_	_	_	_	0	_	_	_
+4	she	_	_	_	_	0	_	_	_
+5	hopes	_	_	_	_	0	_	_	_
+6	that	_	_	_	_	0	_	_	_
+7	you	_	_	_	_	0	_	_	_
+8	will	_	_	_	_	0	_	_	_
+9	be	_	_	_	_	0	_	_	_
+10	happy."	_	_	_	_	0	_	_	_
+
+</code></pre>
 
 
 <!-- "automatic stats" -->
@@ -61,42 +178,43 @@ for <code>mark</code>.</p>
 
 <h2 id="treebank-statistics-udchinese">Treebank Statistics (UD_Chinese)</h2>
 
-<p>This relation is universal.</p>
+<p>This relation is universal.
+There are 3 language-specific subtypes of <code>mark</code>: <a href="">mark:advb</a>, <a href="">mark:comp</a>, <a href="">mark:relcl</a>.</p>
 
-<p>4682 nodes (4%) are attached to their parents as <code>mark</code>.</p>
+<p>4122 nodes (4%) are attached to their parents as <code>mark</code>.</p>
 
-<p>2803 instances of <code>mark</code> (60%) are right-to-left (child precedes parent).
-Average distance between parent and child is 2.80264844083725.</p>
+<p>2424 instances of <code>mark</code> (59%) are right-to-left (child precedes parent).
+Average distance between parent and child is 2.83842794759825.</p>
 
-<p>The following 23 pairs of parts of speech are connected with <code>mark</code>: <a href="">zh-pos/VERB</a>-<a href="">zh-pos/ADV</a> (2466; 53% instances), <a href="">zh-pos/VERB</a>-<a href="">zh-pos/VERB</a> (1361; 29% instances), <a href="">zh-pos/VERB</a>-<a href="">zh-pos/ADP</a> (471; 10% instances), <a href="">zh-pos/ADJ</a>-<a href="">zh-pos/ADV</a> (108; 2% instances), <a href="">zh-pos/VERB</a>-<a href="">zh-pos/PART</a> (98; 2% instances), <a href="">zh-pos/NOUN</a>-<a href="">zh-pos/ADV</a> (67; 1% instances), <a href="">zh-pos/ADJ</a>-<a href="">zh-pos/PART</a> (29; 1% instances), <a href="">zh-pos/ADJ</a>-<a href="">zh-pos/VERB</a> (21; 0% instances), <a href="">zh-pos/PART</a>-<a href="">zh-pos/ADV</a> (12; 0% instances), <a href="">zh-pos/NOUN</a>-<a href="">zh-pos/ADP</a> (11; 0% instances), <a href="">zh-pos/ADJ</a>-<a href="">zh-pos/ADP</a> (10; 0% instances), <a href="">zh-pos/ADV</a>-<a href="">zh-pos/ADV</a> (5; 0% instances), <a href="">zh-pos/AUX</a>-<a href="">zh-pos/ADV</a> (5; 0% instances), <a href="">zh-pos/PROPN</a>-<a href="">zh-pos/ADV</a> (4; 0% instances), <a href="">zh-pos/VERB</a>-<a href="">zh-pos/NOUN</a> (4; 0% instances), <a href="">zh-pos/NOUN</a>-<a href="">zh-pos/VERB</a> (2; 0% instances), <a href="">zh-pos/NUM</a>-<a href="">zh-pos/ADV</a> (2; 0% instances), <a href="">zh-pos/ADP</a>-<a href="">zh-pos/ADP</a> (1; 0% instances), <a href="">zh-pos/ADP</a>-<a href="">zh-pos/ADV</a> (1; 0% instances), <a href="">zh-pos/CONJ</a>-<a href="">zh-pos/ADV</a> (1; 0% instances), <a href="">zh-pos/NOUN</a>-<a href="">zh-pos/PART</a> (1; 0% instances), <a href="">zh-pos/PART</a>-<a href="">zh-pos/VERB</a> (1; 0% instances), <a href="">zh-pos/PRON</a>-<a href="">zh-pos/ADV</a> (1; 0% instances).</p>
+<p>The following 19 pairs of parts of speech are connected with <code>mark</code>: <a href="">zh-pos/VERB</a>-<a href="">zh-pos/ADV</a> (2227; 54% instances), <a href="">zh-pos/VERB</a>-<a href="">zh-pos/VERB</a> (1238; 30% instances), <a href="">zh-pos/VERB</a>-<a href="">zh-pos/ADP</a> (422; 10% instances), <a href="">zh-pos/ADJ</a>-<a href="">zh-pos/ADV</a> (101; 2% instances), <a href="">zh-pos/NOUN</a>-<a href="">zh-pos/ADV</a> (61; 1% instances), <a href="">zh-pos/ADJ</a>-<a href="">zh-pos/VERB</a> (20; 0% instances), <a href="">zh-pos/ADJ</a>-<a href="">zh-pos/ADP</a> (10; 0% instances), <a href="">zh-pos/NOUN</a>-<a href="">zh-pos/ADP</a> (10; 0% instances), <a href="">zh-pos/PART</a>-<a href="">zh-pos/ADV</a> (10; 0% instances), <a href="">zh-pos/ADV</a>-<a href="">zh-pos/ADV</a> (5; 0% instances), <a href="">zh-pos/AUX</a>-<a href="">zh-pos/ADV</a> (5; 0% instances), <a href="">zh-pos/VERB</a>-<a href="">zh-pos/NOUN</a> (4; 0% instances), <a href="">zh-pos/NUM</a>-<a href="">zh-pos/ADV</a> (2; 0% instances), <a href="">zh-pos/PROPN</a>-<a href="">zh-pos/ADV</a> (2; 0% instances), <a href="">zh-pos/ADP</a>-<a href="">zh-pos/ADP</a> (1; 0% instances), <a href="">zh-pos/ADP</a>-<a href="">zh-pos/ADV</a> (1; 0% instances), <a href="">zh-pos/NOUN</a>-<a href="">zh-pos/VERB</a> (1; 0% instances), <a href="">zh-pos/PART</a>-<a href="">zh-pos/VERB</a> (1; 0% instances), <a href="">zh-pos/PRON</a>-<a href="">zh-pos/ADV</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 9	bgColor:blue
 # visual-style 9	fgColor:white
 # visual-style 12	bgColor:blue
 # visual-style 12	fgColor:white
 # visual-style 12 9 mark	color:blue
-1	數百萬	_	NUM	CD	_	4	det	_	_
-2	的	_	PART	DEC	Case=Gen	1	case:dec	_	_
-3	巧克力	_	NOUN	NN	_	4	case:suff	_	_
-4	棒	_	PART	SFN	_	6	nsubjpass	_	_
-5	被	_	VERB	BB	Voice=Pass	6	auxpass	_	_
-6	撤下	_	VERB	VV	_	18	dep	_	_
-7	櫃檯	_	NOUN	NN	_	6	dobj	_	_
-8	,	_	PUNCT	,	_	18	punct	_	_
-9	而	_	ADV	RB	_	12	mark	_	_
-10	瑪氏	_	PROPN	NNP	_	12	nsubj	_	_
-11	則	_	ADV	RB	_	12	mark	_	_
-12	中斷	_	VERB	VV	_	18	dep	_	_
-13	了	_	PART	AS	Aspect=Perf	12	case:aspect	_	_
-14	生產	_	NOUN	NN	_	12	dobj	_	_
-15	,	_	PUNCT	,	_	18	punct	_	_
-16	公司	_	NOUN	NN	_	17	nmod	_	_
-17	損失	_	NOUN	NN	_	18	nsubj	_	_
-18	達	_	VERB	VV	_	0	root	_	_
-19	四百五十萬	_	NUM	CD	_	21	nummod	_	_
-20	美	_	PROPN	NNP	_	21	nmod	_	_
-21	元	_	NOUN	NNB	_	18	dobj	_	_
-22	.	_	PUNCT	.	_	18	punct	_	_
+1	數百萬	數百萬	NUM	CD	NumType=Card	4	det	_	SpaceAfter=No
+2	的	的	PART	DEC	Case=Gen	1	case:dec	_	SpaceAfter=No
+3	巧克力	巧克力	NOUN	NN	_	4	case:suff	_	SpaceAfter=No
+4	棒	棒	PART	SFN	_	6	nsubj:pass	_	SpaceAfter=No
+5	被	被	VERB	BB	Voice=Pass	6	aux:pass	_	SpaceAfter=No
+6	撤下	撤下	VERB	VV	_	18	dep	_	SpaceAfter=No
+7	櫃檯	櫃檯	NOUN	NN	_	6	obj	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	18	punct	_	SpaceAfter=No
+9	而	而	ADV	RB	_	12	mark	_	SpaceAfter=No
+10	瑪氏	瑪氏	PROPN	NNP	_	12	nsubj	_	SpaceAfter=No
+11	則	則	ADV	RB	_	12	mark	_	SpaceAfter=No
+12	中斷	中斷	VERB	VV	_	18	dep	_	SpaceAfter=No
+13	了	了	PART	AS	Aspect=Perf	12	case:aspect	_	SpaceAfter=No
+14	生產	生產	NOUN	NN	_	12	obj	_	SpaceAfter=No
+15	,	,	PUNCT	,	_	18	punct	_	SpaceAfter=No
+16	公司	公司	NOUN	NN	_	17	nmod	_	SpaceAfter=No
+17	損失	損失	NOUN	NN	_	18	nsubj	_	SpaceAfter=No
+18	達	達	VERB	VV	_	0	root	_	SpaceAfter=No
+19	四百五十萬	四百五十萬	NUM	CD	NumType=Card	21	nummod	_	SpaceAfter=No
+20	美	美	PROPN	NNP	_	21	nmod	_	SpaceAfter=No
+21	元	元	NOUN	NNB	_	18	obj	_	SpaceAfter=No
+22	.	.	PUNCT	.	_	18	punct	_	SpaceAfter=No
 
 </code></pre>
 
@@ -105,22 +223,22 @@ Average distance between parent and child is 2.80264844083725.</p>
 # visual-style 12	bgColor:blue
 # visual-style 12	fgColor:white
 # visual-style 12 13 mark	color:blue
-1	1355	_	NUM	CD	_	2	nummod	_	_
-2	年	_	NOUN	NNB	_	12	nmod:tmod	_	_
-3	,	_	PUNCT	,	_	12	punct	_	_
-4	勃蘭登堡	_	PROPN	NNP	_	12	nsubjpass	_	_
-5	被	_	VERB	BB	Voice=Pass	12	auxpass	_	_
-6	神聖	_	ADJ	JJ	_	8	amod	_	_
-7	羅馬	_	PROPN	NNP	_	8	nmod	_	_
-8	帝國	_	NOUN	NN	_	9	nmod	_	_
-9	皇帝	_	NOUN	NN	_	11	appos	_	_
-10	查理	_	PROPN	NNP	_	11	nmod	_	_
-11	四世	_	PROPN	NNP	_	12	nsubj	_	_
-12	升	_	VERB	VV	_	0	root	_	_
-13	為	_	VERB	VC	_	12	mark	_	_
-14	選侯	_	VERB	VV	_	15	case:suff	_	_
-15	國	_	PART	SFN	_	12	dobj	_	_
-16	.	_	PUNCT	.	_	12	punct	_	_
+1	1355	1355	NUM	CD	NumType=Card	2	nummod	_	SpaceAfter=No
+2	年	年	NOUN	NNB	_	12	nmod:tmod	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	12	punct	_	SpaceAfter=No
+4	勃蘭登堡	勃蘭登堡	PROPN	NNP	_	12	nsubj:pass	_	SpaceAfter=No
+5	被	被	VERB	BB	Voice=Pass	12	aux:pass	_	SpaceAfter=No
+6	神聖	神聖	ADJ	JJ	_	8	amod	_	SpaceAfter=No
+7	羅馬	羅馬	PROPN	NNP	_	8	nmod	_	SpaceAfter=No
+8	帝國	帝國	NOUN	NN	_	9	nmod	_	SpaceAfter=No
+9	皇帝	皇帝	NOUN	NN	_	11	appos	_	SpaceAfter=No
+10	查理	查理	PROPN	NNP	_	11	nmod	_	SpaceAfter=No
+11	四世	四世	PROPN	NNP	_	12	nsubj	_	SpaceAfter=No
+12	升	升	VERB	VV	_	0	root	_	SpaceAfter=No
+13	為	為	VERB	VC	_	12	mark	_	SpaceAfter=No
+14	選侯	選侯	VERB	VV	_	15	case:suff	_	SpaceAfter=No
+15	國	國	PART	SFN	_	12	obj	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	12	punct	_	SpaceAfter=No
 
 </code></pre>
 
@@ -129,30 +247,30 @@ Average distance between parent and child is 2.80264844083725.</p>
 # visual-style 12	bgColor:blue
 # visual-style 12	fgColor:white
 # visual-style 12 13 mark	color:blue
-1	在	_	VERB	VV	_	12	acl	_	_
-2	平原	_	NOUN	NN	_	1	dobj	_	_
-3	、	_	PUNCT	EC	_	2	punct	_	_
-4	塔	_	NOUN	NN	_	2	conj	_	_
-5	、	_	PUNCT	EC	_	2	punct	_	_
-6	洞窟	_	NOUN	NN	_	2	conj	_	_
-7	、	_	PUNCT	EC	_	2	punct	_	_
-8	海	_	NOUN	NN	_	2	conj	_	_
-9	或	_	CONJ	CC	_	2	cc	_	_
-10	迷宮	_	NOUN	NN	_	2	conj	_	_
-11	中	_	NOUN	NN	_	2	acl	_	_
-12	移動	_	VERB	VV	_	23	acl	_	_
-13	時	_	ADP	IN	_	12	mark	_	_
-14	,	_	PUNCT	,	_	23	punct	_	_
-15	玩家	_	NOUN	NN	_	23	nsubj	_	_
-16	將	_	ADV	RB	_	23	advmod	_	_
-17	會	_	AUX	MD	_	23	aux	_	_
-18	和	_	ADP	IN	_	22	case	_	_
-19	隨機	_	ADV	RB	_	20	advmod	_	_
-20	遇到	_	VERB	VV	_	22	acl:relcl	_	_
-21	的	_	PART	DEC	Case=Rel	20	acl:relcl	_	_
-22	敵人	_	NOUN	NN	_	23	nmod	_	_
-23	作戰	_	VERB	VV	_	0	root	_	_
-24	.	_	PUNCT	.	_	23	punct	_	_
+1	在	在	VERB	VV	_	12	acl	_	SpaceAfter=No
+2	平原	平原	NOUN	NN	_	1	obj	_	SpaceAfter=No
+3	、	、	PUNCT	EC	_	4	punct	_	SpaceAfter=No
+4	塔	塔	NOUN	NN	_	2	conj	_	SpaceAfter=No
+5	、	、	PUNCT	EC	_	6	punct	_	SpaceAfter=No
+6	洞窟	洞窟	NOUN	NN	_	2	conj	_	SpaceAfter=No
+7	、	、	PUNCT	EC	_	8	punct	_	SpaceAfter=No
+8	海	海	NOUN	NN	_	2	conj	_	SpaceAfter=No
+9	或	或	CCONJ	CC	_	10	cc	_	SpaceAfter=No
+10	迷宮	迷宮	NOUN	NN	_	2	conj	_	SpaceAfter=No
+11	中	中	NOUN	NN	_	2	acl	_	SpaceAfter=No
+12	移動	移動	VERB	VV	_	23	acl	_	SpaceAfter=No
+13	時	時	ADP	IN	_	12	mark	_	SpaceAfter=No
+14	,	,	PUNCT	,	_	23	punct	_	SpaceAfter=No
+15	玩家	玩家	NOUN	NN	_	23	nsubj	_	SpaceAfter=No
+16	將	將	ADV	RB	_	23	advmod	_	SpaceAfter=No
+17	會	會	AUX	MD	_	23	aux	_	SpaceAfter=No
+18	和	和	ADP	IN	_	22	case	_	SpaceAfter=No
+19	隨機	隨機	ADV	RB	_	20	advmod	_	SpaceAfter=No
+20	遇到	遇到	VERB	VV	_	22	acl:relcl	_	SpaceAfter=No
+21	的	的	PART	DEC	_	20	mark:relcl	_	SpaceAfter=No
+22	敵人	敵人	NOUN	NN	_	23	obl	_	SpaceAfter=No
+23	作戰	作戰	VERB	VV	_	0	root	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	23	punct	_	SpaceAfter=No
 
 </code></pre>
 
@@ -164,9 +282,25 @@ Average distance between parent and child is 2.80264844083725.</p>
 
 mark in other languages:
 
+[<a href="../../am/dep/mark.html">am</a>]
+
+[<a href="../../ar/dep/mark.html">ar</a>]
+
 [<a href="../../bg/dep/mark.html">bg</a>]
 
+[<a href="../../bxr/dep/mark.html">bxr</a>]
+
+[<a href="../../ca/dep/mark.html">ca</a>]
+
+[<a href="../../ckb/dep/mark.html">ckb</a>]
+
+[<a href="../../cop/dep/mark.html">cop</a>]
+
 [<a href="../../cs/dep/mark.html">cs</a>]
+
+[<a href="../../cu/dep/mark.html">cu</a>]
+
+[<a href="../../da/dep/mark.html">da</a>]
 
 [<a href="../../de/dep/mark.html">de</a>]
 
@@ -176,29 +310,99 @@ mark in other languages:
 
 [<a href="../../es/dep/mark.html">es</a>]
 
+[<a href="../../et/dep/mark.html">et</a>]
+
 [<a href="../../eu/dep/mark.html">eu</a>]
 
 [<a href="../../fa/dep/mark.html">fa</a>]
 
 [<a href="../../fi/dep/mark.html">fi</a>]
 
+[<a href="../../fo/dep/mark.html">fo</a>]
+
 [<a href="../../fr/dep/mark.html">fr</a>]
 
 [<a href="../../ga/dep/mark.html">ga</a>]
 
+[<a href="../../gl/dep/mark.html">gl</a>]
+
+[<a href="../../got/dep/mark.html">got</a>]
+
+[<a href="../../grc/dep/mark.html">grc</a>]
+
 [<a href="../../he/dep/mark.html">he</a>]
 
+[<a href="../../hi/dep/mark.html">hi</a>]
+
+[<a href="../../hr/dep/mark.html">hr</a>]
+
 [<a href="../../hu/dep/mark.html">hu</a>]
+
+[<a href="../../id/dep/mark.html">id</a>]
 
 [<a href="../../it/dep/mark.html">it</a>]
 
 [<a href="../../ja/dep/mark.html">ja</a>]
 
+[<a href="../../kk/dep/mark.html">kk</a>]
+
+[<a href="../../kmr/dep/mark.html">kmr</a>]
+
 [<a href="../../ko/dep/mark.html">ko</a>]
+
+[<a href="../../la/dep/mark.html">la</a>]
+
+[<a href="../../lv/dep/mark.html">lv</a>]
+
+[<a href="../../mr/dep/mark.html">mr</a>]
+
+[<a href="../../nl/dep/mark.html">nl</a>]
+
+[<a href="../../no/dep/mark.html">no</a>]
+
+[<a href="../../pl/dep/mark.html">pl</a>]
+
+[<a href="../../pt/dep/mark.html">pt</a>]
+
+[<a href="../../ro/dep/mark.html">ro</a>]
+
+[<a href="../../ru/dep/mark.html">ru</a>]
+
+[<a href="../../sa/dep/mark.html">sa</a>]
+
+[<a href="../../sk/dep/mark.html">sk</a>]
+
+[<a href="../../sla/dep/mark.html">sla</a>]
+
+[<a href="../../sl/dep/mark.html">sl</a>]
+
+[<a href="../../so/dep/mark.html">so</a>]
+
+[<a href="../../sr/dep/mark.html">sr</a>]
 
 [<a href="../../sv/dep/mark.html">sv</a>]
 
+[<a href="../../swl/dep/mark.html">swl</a>]
+
+[<a href="../../ta/dep/mark.html">ta</a>]
+
+[<a href="../../tr/dep/mark.html">tr</a>]
+
 [<a href="../../u/dep/mark.html">u</a>]
+
+[<a href="../../ug/dep/mark.html">ug</a>]
+
+[<a href="../../uk/dep/mark.html">uk</a>]
+
+[<a href="../../ur/dep/mark.html">ur</a>]
+
+[<a href="../../urj/dep/mark.html">urj</a>]
+
+[<a href="../../vi/dep/mark.html">vi</a>]
+
+[<a href="../../yue/dep/mark.html">yue</a>]
+
+[<a href="../../zh/dep/mark.html">zh</a>]
 
 
 

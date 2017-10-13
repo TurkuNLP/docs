@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-lv">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/lv/dep">lv/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_lv-dep/goeswith.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-lv">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/lv/dep">lv/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_lv-dep/goeswith.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -56,14 +73,60 @@ for <code>goeswith</code>.</p>
 
 
 
+
+<hr />
+
+<h2 id="treebank-statistics-udlatvian">Treebank Statistics (UD_Latvian)</h2>
+
+<p>This relation is universal.</p>
+
+<p>2 nodes (0%) are attached to their parents as <code>goeswith</code>.</p>
+
+<p>2 instances of <code>goeswith</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 1.5.</p>
+
+<p>The following 1 pairs of parts of speech are connected with <code>goeswith</code>: <a href="">lv-pos/SYM</a>-<a href="">lv-pos/SYM</a> (2; 100% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 4 goeswith	color:blue
+1	Tel.	Tel	SYM	y	Abbr=Yes	0	root	_	SpaceAfter=No
+2	:	:	PUNCT	zo	_	3	punct	_	_
+3	+371	+371	SYM	xx_SPLIT_FIRST	_	1	parataxis	_	_
+4	6777	6777	SYM	xx_SPLIT_PART	_	3	goeswith	_	_
+5	5432	5432	SYM	xx_SPLIT_PART	_	3	goeswith	_	_
+
+</code></pre>
+
+
+
+
 <!-- "in other languages" links -->
 <hr/>
 
 goeswith in other languages:
 
+[<a href="../../am/dep/goeswith.html">am</a>]
+
+[<a href="../../ar/dep/goeswith.html">ar</a>]
+
 [<a href="../../bg/dep/goeswith.html">bg</a>]
 
+[<a href="../../bxr/dep/goeswith.html">bxr</a>]
+
+[<a href="../../ca/dep/goeswith.html">ca</a>]
+
+[<a href="../../ckb/dep/goeswith.html">ckb</a>]
+
+[<a href="../../cop/dep/goeswith.html">cop</a>]
+
 [<a href="../../cs/dep/goeswith.html">cs</a>]
+
+[<a href="../../cu/dep/goeswith.html">cu</a>]
+
+[<a href="../../da/dep/goeswith.html">da</a>]
 
 [<a href="../../de/dep/goeswith.html">de</a>]
 
@@ -73,29 +136,97 @@ goeswith in other languages:
 
 [<a href="../../es/dep/goeswith.html">es</a>]
 
+[<a href="../../et/dep/goeswith.html">et</a>]
+
 [<a href="../../eu/dep/goeswith.html">eu</a>]
 
 [<a href="../../fa/dep/goeswith.html">fa</a>]
 
 [<a href="../../fi/dep/goeswith.html">fi</a>]
 
+[<a href="../../fo/dep/goeswith.html">fo</a>]
+
 [<a href="../../fr/dep/goeswith.html">fr</a>]
 
-[<a href="../../ga/dep/goeswith.html">ga</a>]
+[<a href="../../gl/dep/goeswith.html">gl</a>]
+
+[<a href="../../got/dep/goeswith.html">got</a>]
+
+[<a href="../../grc/dep/goeswith.html">grc</a>]
 
 [<a href="../../he/dep/goeswith.html">he</a>]
 
+[<a href="../../hi/dep/goeswith.html">hi</a>]
+
+[<a href="../../hr/dep/goeswith.html">hr</a>]
+
 [<a href="../../hu/dep/goeswith.html">hu</a>]
+
+[<a href="../../id/dep/goeswith.html">id</a>]
 
 [<a href="../../it/dep/goeswith.html">it</a>]
 
 [<a href="../../ja/dep/goeswith.html">ja</a>]
 
+[<a href="../../kk/dep/goeswith.html">kk</a>]
+
+[<a href="../../kmr/dep/goeswith.html">kmr</a>]
+
 [<a href="../../ko/dep/goeswith.html">ko</a>]
+
+[<a href="../../la/dep/goeswith.html">la</a>]
+
+[<a href="../../lv/dep/goeswith.html">lv</a>]
+
+[<a href="../../mr/dep/goeswith.html">mr</a>]
+
+[<a href="../../nl/dep/goeswith.html">nl</a>]
+
+[<a href="../../no/dep/goeswith.html">no</a>]
+
+[<a href="../../pl/dep/goeswith.html">pl</a>]
+
+[<a href="../../pt/dep/goeswith.html">pt</a>]
+
+[<a href="../../ro/dep/goeswith.html">ro</a>]
+
+[<a href="../../ru/dep/goeswith.html">ru</a>]
+
+[<a href="../../sa/dep/goeswith.html">sa</a>]
+
+[<a href="../../sk/dep/goeswith.html">sk</a>]
+
+[<a href="../../sla/dep/goeswith.html">sla</a>]
+
+[<a href="../../sl/dep/goeswith.html">sl</a>]
+
+[<a href="../../so/dep/goeswith.html">so</a>]
+
+[<a href="../../sr/dep/goeswith.html">sr</a>]
 
 [<a href="../../sv/dep/goeswith.html">sv</a>]
 
+[<a href="../../swl/dep/goeswith.html">swl</a>]
+
+[<a href="../../ta/dep/goeswith.html">ta</a>]
+
+[<a href="../../tr/dep/goeswith.html">tr</a>]
+
 [<a href="../../u/dep/goeswith.html">u</a>]
+
+[<a href="../../ug/dep/goeswith.html">ug</a>]
+
+[<a href="../../uk/dep/goeswith.html">uk</a>]
+
+[<a href="../../ur/dep/goeswith.html">ur</a>]
+
+[<a href="../../urj/dep/goeswith.html">urj</a>]
+
+[<a href="../../vi/dep/goeswith.html">vi</a>]
+
+[<a href="../../yue/dep/goeswith.html">yue</a>]
+
+[<a href="../../zh/dep/goeswith.html">zh</a>]
 
 
 

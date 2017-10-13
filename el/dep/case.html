@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-el">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/el/dep">el/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/case.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-el">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/el/dep">el/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/case.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -59,7 +76,7 @@ nmod(σταμάτησαν, αρχή)
 nmod(σταμάτησαν, τέλος)
 </code></pre>
 
-<p>A small list of postpositions in fixed expressions are labeled with <code>case</code>. <strong>TODO:</strong> An alternative analysis would be to label them using the <a href="mwe">mwe</a> relation.</p>
+<p>A small list of postpositions in fixed expressions are labeled with <code>case</code>. <strong>TODO:</strong> An alternative analysis would be to label them using the <a href="fixed">mwe</a> relation.</p>
 
 <pre><code class="language-sdparse">λόγου χάριν 
 case(λόγου,  χάριν)
@@ -131,64 +148,53 @@ mark(συναντήσω, πριν)
 
 <p>This relation is universal.</p>
 
-<p>5095 nodes (9%) are attached to their parents as <code>case</code>.</p>
+<p>4466 nodes (9%) are attached to their parents as <code>case</code>.</p>
 
-<p>5014 instances of <code>case</code> (98%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.88537782139352.</p>
+<p>4425 instances of <code>case</code> (99%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.78056426332288.</p>
 
-<p>The following 16 pairs of parts of speech are connected with <code>case</code>: <a href="">el-pos/NOUN</a>-<a href="">el-pos/ADP</a> (4259; 84% instances), <a href="">el-pos/PRON</a>-<a href="">el-pos/ADP</a> (255; 5% instances), <a href="">el-pos/CONJ</a>-<a href="">el-pos/ADP</a> (186; 4% instances), <a href="">el-pos/ADV</a>-<a href="">el-pos/ADP</a> (96; 2% instances), <a href="">el-pos/NUM</a>-<a href="">el-pos/ADP</a> (81; 2% instances), <a href="">el-pos/ADJ</a>-<a href="">el-pos/ADP</a> (71; 1% instances), <a href="">el-pos/NOUN</a>-<a href="">el-pos/ADV</a> (70; 1% instances), <a href="">el-pos/VERB</a>-<a href="">el-pos/ADP</a> (53; 1% instances), <a href="">el-pos/VERB</a>-<a href="">el-pos/ADV</a> (11; 0% instances), <a href="">el-pos/PRON</a>-<a href="">el-pos/ADV</a> (4; 0% instances), <a href="">el-pos/CONJ</a>-<a href="">el-pos/ADV</a> (3; 0% instances), <a href="">el-pos/ADV</a>-<a href="">el-pos/ADV</a> (2; 0% instances), <a href="">el-pos/ADJ</a>-<a href="">el-pos/ADV</a> (1; 0% instances), <a href="">el-pos/NOUN</a>-<a href="">el-pos/NOUN</a> (1; 0% instances), <a href="">el-pos/NUM</a>-<a href="">el-pos/ADV</a> (1; 0% instances), <a href="">el-pos/PART</a>-<a href="">el-pos/ADP</a> (1; 0% instances).</p>
+<p>The following 19 pairs of parts of speech are connected with <code>case</code>: <a href="">el-pos/NOUN</a>-<a href="">el-pos/ADP</a> (3386; 76% instances), <a href="">el-pos/PROPN</a>-<a href="">el-pos/ADP</a> (354; 8% instances), <a href="">el-pos/PRON</a>-<a href="">el-pos/ADP</a> (227; 5% instances), <a href="">el-pos/X</a>-<a href="">el-pos/ADP</a> (124; 3% instances), <a href="">el-pos/NOUN</a>-<a href="">el-pos/ADV</a> (97; 2% instances), <a href="">el-pos/ADV</a>-<a href="">el-pos/ADP</a> (83; 2% instances), <a href="">el-pos/NUM</a>-<a href="">el-pos/ADP</a> (76; 2% instances), <a href="">el-pos/ADJ</a>-<a href="">el-pos/ADP</a> (58; 1% instances), <a href="">el-pos/VERB</a>-<a href="">el-pos/ADP</a> (40; 1% instances), <a href="">el-pos/PRON</a>-<a href="">el-pos/ADV</a> (10; 0% instances), <a href="">el-pos/ADJ</a>-<a href="">el-pos/ADV</a> (2; 0% instances), <a href="">el-pos/PROPN</a>-<a href="">el-pos/ADV</a> (2; 0% instances), <a href="">el-pos/ADV</a>-<a href="">el-pos/ADV</a> (1; 0% instances), <a href="">el-pos/CCONJ</a>-<a href="">el-pos/ADP</a> (1; 0% instances), <a href="">el-pos/NUM</a>-<a href="">el-pos/ADV</a> (1; 0% instances), <a href="">el-pos/PART</a>-<a href="">el-pos/ADP</a> (1; 0% instances), <a href="">el-pos/SCONJ</a>-<a href="">el-pos/ADP</a> (1; 0% instances), <a href="">el-pos/X</a>-<a href="">el-pos/ADV</a> (1; 0% instances), <a href="">el-pos/X</a>-<a href="">el-pos/X</a> (1; 0% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 8	bgColor:blue
-# visual-style 8	fgColor:white
-# visual-style 9	bgColor:blue
-# visual-style 9	fgColor:white
-# visual-style 9 8 case	color:blue
-1	Η	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	Σπόρτινγκ	Σπόρτινγκ	NOUN	NOUN	_	4	nsubj	_	_
-3	Λισαβόνας	Λισαβόνα	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	_
-4	νίκησε	νικώ	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	_
-5	την	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	Μάντσεστερ	Μάντσεστερ	NOUN	NOUN	_	4	dobj	_	_
-7	Σίτι	Σίτι	NOUN	NOUN	_	6	nmod	_	_
-8	με	με	ADP	ADP	_	9	case	_	_
-9	σκορ	σκορ	NOUN	NOUN	_	4	nmod	_	_
-10	1:0	1:0	NUM	NUM	_	9	nmod	_	_
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 1 case	color:blue
+1	Στα	στου	ADP	ADP	Case=Acc|Gender=Neut|Number=Plur	2	case	_	_
+2	χωριά	χωριό	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Plur	0	root	_	_
+3	του	ο	DET	DET	Case=Gen|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	5	det	_	_
+4	Παγγαίου	Παγγαίο	PROPN	PROPN	Case=Gen|Gender=Neut|Number=Sing	5	nmod	_	_
+5	όρους	όρος	NOUN	NOUN	Case=Gen|Gender=Neut|Number=Sing	2	nmod	_	SpaceAfter=No
+6	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
 # visual-style 3	bgColor:blue
 # visual-style 3	fgColor:white
-# visual-style 3 2 case	color:blue
-1	Πολλοί	πολύς	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Plur	4	nsubj	_	_
-2	από	από	ADP	ADP	_	3	case	_	_
-3	αυτούς	αυτός	PRON	PRON	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Dem	1	det	_	_
-4	κινδυνεύουν	κινδυνεύω	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|Voice=Act	0	root	_	_
-5	να	να	PART	PART	_	7	aux	_	_
-6	μείνουν	μένω	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Voice=Act	7	cop	_	_
-7	άστεγοι	άστεγος	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Plur	4	ccomp	_	_
-8	"	"	PUNCT	PUNCT	_	4	punct	_	_
-9	.	.	PUNCT	PUNCT	_	4	punct	_	_
+# visual-style 3 1 case	color:blue
+1	Στη	στου	ADP	ADP	Case=Acc|Gender=Fem|Number=Sing	3	case	_	_
+2	νησίδα	νησίδα	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	3	nmod	_	_
+3	Βίδο	Βίδο	PROPN	PROPN	Case=Acc|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 5	bgColor:blue
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 5	bgColor:blue
 # visual-style 5	fgColor:white
-# visual-style 8	bgColor:blue
-# visual-style 8	fgColor:white
-# visual-style 8 5 case	color:blue
-1	Μία	ένας	DET	DET	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
-2	τελευταία	τελευταίος	ADJ	ADJ	Case=Nom|Gender=Fem|Number=Sing	3	amod	_	_
-3	λέξη	λέξη	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
-4	σχετικά	σχετικά	ADV	ADV	_	3	amod	_	_
-5	με	με	ADP	ADP	_	8	case	_	_
-6	τη	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	διακυβέρνηση	διακυβέρνηση	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	4	nmod	_	_
-8	και	και	CONJ	CONJ	_	7	cc	_	_
-9	τη	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-10	συναπόφαση	συναπόφαση	NOUN	NOUN	Case=Acc|Gender=Fem|Number=Sing	7	conj	_	_
-11	.	.	PUNCT	PUNCT	_	3	punct	_	_
+# visual-style 5 4 case	color:blue
+1	Το	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	2	amod	_	_
+2	2001	2001	NOUN	NOUN	_	3	obl	_	_
+3	προσχώρησε	προσχωρώ	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	σε	σε	ADP	ADP	_	5	case	_	_
+5	αυτήν	αυτός	PRON	PRON	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Dem	3	obl	_	_
+6	και	και	CCONJ	CCONJ	_	8	cc	_	_
+7	η	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	Ελλάδα	Ελλάδα	PROPN	PROPN	Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	SpaceAfter=No
+9	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 </code></pre>
 
@@ -200,9 +206,25 @@ Average distance between parent and child is 1.88537782139352.</p>
 
 case in other languages:
 
+[<a href="../../am/dep/case.html">am</a>]
+
+[<a href="../../ar/dep/case.html">ar</a>]
+
 [<a href="../../bg/dep/case.html">bg</a>]
 
+[<a href="../../bxr/dep/case.html">bxr</a>]
+
+[<a href="../../ca/dep/case.html">ca</a>]
+
+[<a href="../../ckb/dep/case.html">ckb</a>]
+
+[<a href="../../cop/dep/case.html">cop</a>]
+
 [<a href="../../cs/dep/case.html">cs</a>]
+
+[<a href="../../cu/dep/case.html">cu</a>]
+
+[<a href="../../da/dep/case.html">da</a>]
 
 [<a href="../../de/dep/case.html">de</a>]
 
@@ -212,29 +234,99 @@ case in other languages:
 
 [<a href="../../es/dep/case.html">es</a>]
 
+[<a href="../../et/dep/case.html">et</a>]
+
 [<a href="../../eu/dep/case.html">eu</a>]
 
 [<a href="../../fa/dep/case.html">fa</a>]
 
 [<a href="../../fi/dep/case.html">fi</a>]
 
+[<a href="../../fo/dep/case.html">fo</a>]
+
 [<a href="../../fr/dep/case.html">fr</a>]
 
 [<a href="../../ga/dep/case.html">ga</a>]
 
+[<a href="../../gl/dep/case.html">gl</a>]
+
+[<a href="../../got/dep/case.html">got</a>]
+
+[<a href="../../grc/dep/case.html">grc</a>]
+
 [<a href="../../he/dep/case.html">he</a>]
 
+[<a href="../../hi/dep/case.html">hi</a>]
+
+[<a href="../../hr/dep/case.html">hr</a>]
+
 [<a href="../../hu/dep/case.html">hu</a>]
+
+[<a href="../../id/dep/case.html">id</a>]
 
 [<a href="../../it/dep/case.html">it</a>]
 
 [<a href="../../ja/dep/case.html">ja</a>]
 
+[<a href="../../kk/dep/case.html">kk</a>]
+
+[<a href="../../kmr/dep/case.html">kmr</a>]
+
 [<a href="../../ko/dep/case.html">ko</a>]
+
+[<a href="../../la/dep/case.html">la</a>]
+
+[<a href="../../lv/dep/case.html">lv</a>]
+
+[<a href="../../mr/dep/case.html">mr</a>]
+
+[<a href="../../nl/dep/case.html">nl</a>]
+
+[<a href="../../no/dep/case.html">no</a>]
+
+[<a href="../../pl/dep/case.html">pl</a>]
+
+[<a href="../../pt/dep/case.html">pt</a>]
+
+[<a href="../../ro/dep/case.html">ro</a>]
+
+[<a href="../../ru/dep/case.html">ru</a>]
+
+[<a href="../../sa/dep/case.html">sa</a>]
+
+[<a href="../../sk/dep/case.html">sk</a>]
+
+[<a href="../../sla/dep/case.html">sla</a>]
+
+[<a href="../../sl/dep/case.html">sl</a>]
+
+[<a href="../../so/dep/case.html">so</a>]
+
+[<a href="../../sr/dep/case.html">sr</a>]
 
 [<a href="../../sv/dep/case.html">sv</a>]
 
+[<a href="../../swl/dep/case.html">swl</a>]
+
+[<a href="../../ta/dep/case.html">ta</a>]
+
+[<a href="../../tr/dep/case.html">tr</a>]
+
 [<a href="../../u/dep/case.html">u</a>]
+
+[<a href="../../ug/dep/case.html">ug</a>]
+
+[<a href="../../uk/dep/case.html">uk</a>]
+
+[<a href="../../ur/dep/case.html">ur</a>]
+
+[<a href="../../urj/dep/case.html">urj</a>]
+
+[<a href="../../vi/dep/case.html">vi</a>]
+
+[<a href="../../yue/dep/case.html">yue</a>]
+
+[<a href="../../zh/dep/case.html">zh</a>]
 
 
 

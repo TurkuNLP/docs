@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-el">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-el">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -67,7 +84,7 @@ in two places.</p>
 	  <td><a>csubjpass</a></td>
 	</tr>
 	<tr>
-	  <td><a>dobj</a></td>
+	  <td><a>obj</a></td>
 	  <td><a>ccomp</a></td>
 	  <td><a>xcomp</a></td>
 	</tr>
@@ -164,11 +181,11 @@ in two places.</p>
 	<tr><td colspan="3"><strong>Compounding and unanalyzed</strong></td></tr>
 	<tr>
 	  <td><a>compound</a></td>
-	  <td><a>mwe</a></td>
+	  <td><a>fixed</a></td>
 	  <td><a>goeswith</a></td>
 	</tr>
 	<tr>
-	  <td><a>name</a></td>
+	  <td><a>flat</a></td>
 	  <td><a>foreign</a></td>
 	</tr>
       </table>
@@ -205,7 +222,7 @@ in two places.</p>
 	<tr>
 	  <td><a>list</a></td>
 	  <td><a>parataxis</a></td>
-	  <td><a>remnant</a></td>
+	  <td><a>orphan</a></td>
 	</tr>
 	<tr>
 	  <td><a>dislocated</a></td>
@@ -270,12 +287,12 @@ TODO: advcl from nominals
 TODO: What about χαρά που πέρασε στο Πανεπιστήμιο
 -->
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/acl.md" target="#">edit acl</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/acl.md" target="#">edit acl</a></p>
 
 <p><a id="al-el-dep/acl:relcl" class="al-dest"></a></p>
 <h2><code>acl:relcl</code>: relative clause modifier</h2>
 
-<p>A relative clause modifier of an noun is a finite clause that modifies the noun and is introduced by <em>που</em> or a (structure including) an <em>οποίος</em>-relative pronoun. The relation points from the noun that is modified to the head of the relative clause. <em>οποίος</em>-relative pronoun are assigned typical nominal relations like  <a href="dobj">dobj</a>, <a href="nsubj">nsubj</a> and <a href="nmod">nmod</a>. A <a href="det">det</a> relation is also possible.</p>
+<p>A relative clause modifier of an noun is a finite clause that modifies the noun and is introduced by <em>που</em> or a (structure including) an <em>οποίος</em>-relative pronoun. The relation points from the noun that is modified to the head of the relative clause. <em>οποίος</em>-relative pronoun are assigned typical nominal relations like  <a href="obj">dobj</a>, <a href="nsubj">nsubj</a> and <a href="nmod">nmod</a>. A <a href="det">det</a> relation is also possible.</p>
 
 <pre><code class="language-sdparse">το Όσκαρ με το οποίο τιμήθηκε
 acl:relcl(Όσκαρ, τιμήθηκε)
@@ -312,7 +329,7 @@ neg(περιέχει, μην)
 TODO: Revisit arguments for pou being a marker or a relative pronoun
 -->
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/acl-rel.md" target="#">edit acl:relcl</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/acl-rel.md" target="#">edit acl:relcl</a></p>
 
 <p><a id="al-el-dep/acl:relcl" class="al-dest"></a></p>
 <h2><code>acl:relcl</code>: acl:relcl</h2>
@@ -320,7 +337,7 @@ TODO: Revisit arguments for pou being a marker or a relative pronoun
 <p>This document is a placeholder for the language-specific documentation
 for <code>acl:relcl</code>.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/acl-relcl.md" target="#">edit acl:relcl</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/acl-relcl.md" target="#">edit acl:relcl</a></p>
 
 <p><a id="al-el-dep/advcl" class="al-dest"></a></p>
 <h2><code>advcl</code>: adverbial clause modifier</h2>
@@ -386,7 +403,7 @@ TODO: επιρρηματικά κατηγορούμενα έφυγε σκυφτ�
 
 -->
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/advcl.md" target="#">edit advcl</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/advcl.md" target="#">edit advcl</a></p>
 
 <p><a id="al-el-dep/advmod" class="al-dest"></a></p>
 <h2><code>advmod</code>: adverbial modifier</h2>
@@ -427,7 +444,7 @@ advmod(τρία, Περίπου)
 advmod(τρία, περίπου)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/advmod.md" target="#">edit advmod</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/advmod.md" target="#">edit advmod</a></p>
 
 <p><a id="al-el-dep/amod" class="al-dest"></a></p>
 <h2><code>amod</code>: adjectival modifier</h2>
@@ -483,7 +500,7 @@ amod(loan, $)
 ~~~
 -->
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/amod.md" target="#">edit amod</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/amod.md" target="#">edit amod</a></p>
 
 <p><a id="al-el-dep/appos" class="al-dest"></a></p>
 <h2><code>appos</code>: appositional modifier</h2>
@@ -530,7 +547,7 @@ appos(Email:-5, jones@abc.edf-6)
 ~~~
 -->
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/appos.md" target="#">edit appos</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/appos.md" target="#">edit appos</a></p>
 
 <p><a id="al-el-dep/aux" class="al-dest"></a></p>
 <h2><code>aux</code>: auxiliary</h2>
@@ -611,7 +628,7 @@ TODO
 Include φαίνεται πρόκειται?
 -->
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/aux_.md" target="#">edit aux</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/aux_.md" target="#">edit aux</a></p>
 
 <p><a id="al-el-dep/auxpass" class="al-dest"></a></p>
 <h2><code>auxpass</code>: passive auxiliary</h2>
@@ -620,7 +637,7 @@ Include φαίνεται πρόκειται?
 
 <p>The <code>auxpass</code> is not used for UD Greek.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/auxpass.md" target="#">edit auxpass</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/auxpass.md" target="#">edit auxpass</a></p>
 
 <p><a id="al-el-dep/case" class="al-dest"></a></p>
 <h2><code>case</code>: case marking</h2>
@@ -639,7 +656,7 @@ nmod(σταμάτησαν, αρχή)
 nmod(σταμάτησαν, τέλος)
 </code></pre>
 
-<p>A small list of postpositions in fixed expressions are labeled with <code>case</code>. <strong>TODO:</strong> An alternative analysis would be to label them using the <a href="mwe">mwe</a> relation.</p>
+<p>A small list of postpositions in fixed expressions are labeled with <code>case</code>. <strong>TODO:</strong> An alternative analysis would be to label them using the <a href="fixed">mwe</a> relation.</p>
 
 <pre><code class="language-sdparse">λόγου χάριν 
 case(λόγου,  χάριν)
@@ -696,7 +713,7 @@ mark(συναντήσω, πριν)
 
 <p>Add guidelines on tokenization of  <em>στ-</em> preposition+article combinations.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/case.md" target="#">edit case</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/case.md" target="#">edit case</a></p>
 
 <p><a id="al-el-dep/cc" class="al-dest"></a></p>
 <h2><code>cc</code>: coordinating conjunction</h2>
@@ -705,7 +722,7 @@ mark(συναντήσω, πριν)
 A <code>cc</code> is the relation between the first conjunct and
 <!--
 TODO 
-a [coordinating conjunction](../pos/CONJ) 
+a [coordinating conjunction](../pos/CCONJ) 
 -->
 a coordinating conjunction like <em>και</em> or <em>αλλά</em> delimiting another conjunct.</p>
 
@@ -728,7 +745,7 @@ TODO
 Όμως πέρασε ένας χρόνος και το σύστημα δεν εφαρμόστηκε
 -->
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/cc.md" target="#">edit cc</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/cc.md" target="#">edit cc</a></p>
 
 <p><a id="al-el-dep/ccomp" class="al-dest"></a></p>
 <h2><code>ccomp</code>: clausal complement</h2>
@@ -749,7 +766,7 @@ ccomp(θέλει, αρχίσουν)
 xcomp(αρχίσουν, γράφουν)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/ccomp.md" target="#">edit ccomp</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/ccomp.md" target="#">edit ccomp</a></p>
 
 <p><a id="al-el-dep/compound" class="al-dest"></a></p>
 <h2><code>compound</code>: compound</h2>
@@ -790,11 +807,11 @@ nummod(ευρώ, εκατομμύρια)
 <p>The two other compounding relations are:</p>
 
 <ul>
-  <li><a href="">mwe</a> for fixed grammaticized expressions with function words</li>
-  <li><a href="">name</a> for proper nouns constituted of multiple nominal elements</li>
+  <li><a href="">fixed</a> for fixed grammaticized expressions with function words</li>
+  <li><a href="">flat</a> for proper nouns constituted of multiple nominal elements</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/compound.md" target="#">edit compound</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/compound.md" target="#">edit compound</a></p>
 
 <p><a id="al-el-dep/conj" class="al-dest"></a></p>
 <h2><code>conj</code>: conjunct</h2>
@@ -863,7 +880,7 @@ conj(εάν, εφόσον)
 <p>Shared dependents. 
 Nested coordination.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/conj.md" target="#">edit conj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/conj.md" target="#">edit conj</a></p>
 
 <p><a id="al-el-dep/cop" class="al-dest"></a></p>
 <h2><code>cop</code>: copula</h2>
@@ -906,7 +923,7 @@ ccomp(είναι, κινδυνέψουν)
 nsubj(είναι, Αυτό)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/cop.md" target="#">edit cop</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/cop.md" target="#">edit cop</a></p>
 
 <p><a id="al-el-dep/csubj" class="al-dest"></a></p>
 <h2><code>csubj</code>: clausal subject</h2>
@@ -931,7 +948,7 @@ dobj(στεναχωρεί, Με)
 mark(έρχεται, που)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/csubj.md" target="#">edit csubj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/csubj.md" target="#">edit csubj</a></p>
 
 <p><a id="al-el-dep/csubjpass" class="al-dest"></a></p>
 <h2><code>csubjpass</code>: clausal passive subject</h2>
@@ -949,7 +966,7 @@ csubjpass(Αποφασίστηκε, συνεχιστούν)
 nsubj(συνεχιστούν, συνομιλίες)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/csubjpass.md" target="#">edit csubjpass</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/csubjpass.md" target="#">edit csubjpass</a></p>
 
 <p><a id="al-el-dep/dep" class="al-dest"></a></p>
 <h2><code>dep</code>: unspecified dependency</h2>
@@ -957,7 +974,7 @@ nsubj(συνεχιστούν, συνομιλίες)
 <p>This document is a placeholder for the language-specific documentation
 for <code>dep</code>.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/dep.md" target="#">edit dep</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/dep.md" target="#">edit dep</a></p>
 
 <p><a id="al-el-dep/det" class="al-dest"></a></p>
 <h2><code>det</code>: determiner</h2>
@@ -1001,7 +1018,7 @@ det(πουκάμισο, το-3)
 amod(πουκάμισο, θαλασσί)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/det.md" target="#">edit det</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/det.md" target="#">edit det</a></p>
 
 <p><a id="al-el-dep/discourse" class="al-dest"></a></p>
 <h2><code>discourse</code>: discourse element</h2>
@@ -1013,7 +1030,7 @@ discourse(έχασα, :()
 discourse(έχασα, Ουφ)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/discourse.md" target="#">edit discourse</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/discourse.md" target="#">edit discourse</a></p>
 
 <p><a id="al-el-dep/dislocated" class="al-dest"></a></p>
 <h2><code>dislocated</code>: dislocated elements</h2>
@@ -1029,7 +1046,7 @@ dobj(θέλει, λάστιχα)
 ccomp(έλεγα, θέλει)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/dislocated.md" target="#">edit dislocated</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/dislocated.md" target="#">edit dislocated</a></p>
 
 <p><a id="al-el-dep/dobj" class="al-dest"></a></p>
 <h2><code>dobj</code>: direct object</h2>
@@ -1050,14 +1067,14 @@ dobj(μοιάζει, Αρετής.Gen)
 dobj(προηγούνται, αποφάσεων.Gen)
 </code></pre>
 
-<p>In general, if there is just one object, it should be labeled <code>dobj</code>,
+<p>In general, if there is just one object, it should be labeled <code>obj</code>,
 regardless of the morphological case or semantic role that it bears.</p>
 
-<p>When two objects are present, one of them is labeled as <code>dobj</code> and the other as <a href="">iobj</a>. Generally, the most directly affected object <em>(patient)</em> is marked as <code>dobj</code>. The one exception is when there is a clausal complement. Then the clausal complement is regarded as <a href="">iobj</a> “clausal direct object” and an object nominal will be an iobj. See <a href="">iobj</a> for more details.</p>
+<p>When two objects are present, one of them is labeled as <code>obj</code> and the other as <a href="">iobj</a>. Generally, the most directly affected object <em>(patient)</em> is marked as <code>obj</code>. The one exception is when there is a clausal complement. Then the clausal complement is regarded as <a href="">iobj</a> “clausal direct object” and an object nominal will be an iobj. See <a href="">iobj</a> for more details.</p>
 
 <p>See the <a href="">expl</a>  relation for cases of clitic doubling.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/dobj.md" target="#">edit dobj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/obj.md" target="#">edit dobj</a></p>
 
 <p><a id="al-el-dep/expl" class="al-dest"></a></p>
 <h2><code>expl</code>: expletive</h2>
@@ -1078,7 +1095,111 @@ iobj(έδωσε, Της)
 dobj(έδωσε, τον)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/expl.md" target="#">edit expl</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/expl.md" target="#">edit expl</a></p>
+
+<p><a id="al-el-dep/fixed" class="al-dest"></a></p>
+<h2><code>fixed</code>: multi-word expression</h2>
+
+<p>For examples of multiword expressions, see and <a href="">case</a> and <a href="">mark</a>. 
+Multiword expressions are annotated in a flat, head-initial structure,
+in which all words in the expression modify the first one using the
+<code>fixed</code> label.</p>
+
+<p><strong>TODO</strong></p>
+
+<p>A list of common mwe’s</p>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/fixed.md" target="#">edit fixed</a></p>
+
+<p><a id="al-el-dep/flat" class="al-dest"></a></p>
+<h2><code>flat</code>: name</h2>
+
+<p>We use the <code>flat</code> relation for proper nouns constituted of more than one words. 
+The first (leftmost) word is the head, and the other words are direct dependents of the head.</p>
+
+<pre><code class="language-sdparse">Τάκης Παπαδόπουλος
+name(Τάκης, Παπαδόπουλος)
+</code></pre>
+
+<pre><code class="language-sdparse">Ρωμανός Δ' Διογένης
+name(Ρωμανός, Δ')
+name(Ρωμανός, Διογένης)
+</code></pre>
+
+<pre><code class="language-sdparse">Μάο Τσε Τουνγκ
+name(Μάο, Τσε)
+name(Μάο, Τουνγκ)
+</code></pre>
+
+<p>Regular syntactic relations are used for Greek:
+(i) for a modifier word including determiners, adjectives and adverbs
+(ii) to connect together the words of a description or name which involve embedded prepositional phrases, sentences, etc.</p>
+
+<pre><code class="language-sdparse">την Παλιά Κοκκινιά
+amod(Κοκκινιά, Παλιά)
+det(Κοκκινιά, την)
+</code></pre>
+
+<pre><code class="language-sdparse">της Νέας Υόρκης
+amod(Υόρκης, Νέας)
+det(Υόρκης, της)
+</code></pre>
+
+<pre><code class="language-sdparse">Τα Άνω Δολιανά
+det(Δολιανά, Τα)
+advmod(Δολιανά, Άνω)
+</code></pre>
+
+<pre><code class="language-sdparse">Ο Βασιλιάς της Αγγλίας
+det(Βασιλιάς, Ο)
+nmod(Βασιλιάς, Αγγλίας)
+det(Αγγλίας, της)
+</code></pre>
+
+<p>This also holds for organization names with clear syntactic modification structure as in:</p>
+
+<pre><code class="language-sdparse">Γενική Γραμματεία Εκπαίδευσης Ενηλίκων
+amod(Γραμματεία, Γενική)
+nmod(Γραμματεία, Εκπαίδευσης)
+nmod(Εκπαίδευσης, Ενηλίκων)
+</code></pre>
+
+<p>This convention is not used for foreign names (transliterated or not), which are annotated in a flat, head-initial structure, in 
+which all words in the name modify the first one using the <code>flat</code> label.</p>
+
+<pre><code class="language-sdparse">Σαν Σεμπαστιάν
+name(Σαν, Σεμπαστιάν)
+</code></pre>
+
+<pre><code class="language-sdparse">Στράτφορντ απόν Έιβον
+name(Στράτφορντ, απόν)
+name(Στράτφορντ, Έιβον)
+</code></pre>
+
+<pre><code class="language-sdparse">Río de la Plata
+name(Río, de)
+name(Río, la)
+name(Río, Plata)
+</code></pre>
+
+<pre><code class="language-sdparse">Ζαν ντ' Αρκ
+name(Ζαν, ντ')
+name(Ζαν, Αρκ)
+</code></pre>
+
+<pre><code class="language-sdparse">Ludwig van Beethoven
+name(Ludwig, van)
+name(Ludwig, Beethoven)
+</code></pre>
+
+<pre><code class="language-sdparse">Miguel de Cervantes y Saavedra
+name(Miguel, de)
+name(Miguel, y)
+name(Miguel, Cervantes)
+name(Miguel, Saavedra)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/flat.md" target="#">edit flat</a></p>
 
 <p><a id="al-el-dep/foreign" class="al-dest"></a></p>
 <h2><code>foreign</code>: foreign words</h2>
@@ -1087,7 +1208,7 @@ dobj(έδωσε, τον)
 a linear analysis: the head is the first token in the foreign phrase.</p>
 
 <p><code>foreign</code> does not apply to words transliterated to the Greek script, 
-loanwords or to foreign <a href="name">names</a>. It applies to quoted foreign text 
+loanwords or to foreign <a href="flat">names</a>. It applies to quoted foreign text 
 incorporated in a sentence/discourse of the host language (unless we want 
 to and know how to annotate the internal structure according 
 to the syntax of the foreign language).</p>
@@ -1098,7 +1219,7 @@ foreign(Cogito, ergo)
 foreign(Cogito, sum)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/foreign.md" target="#">edit foreign</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/foreign.md" target="#">edit foreign</a></p>
 
 <p><a id="al-el-dep/goeswith" class="al-dest"></a></p>
 <h2><code>goeswith</code>: goes with</h2>
@@ -1111,13 +1232,13 @@ The head is in some sense the “main” part, often the second part.</p>
 goeswith(ευρωπαϊκός, παν)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/goeswith.md" target="#">edit goeswith</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/goeswith.md" target="#">edit goeswith</a></p>
 
 <p><a id="al-el-dep/iobj" class="al-dest"></a></p>
 <h2><code>iobj</code>: indirect object</h2>
 
 <p>The indirect object of a verb is any nominal structure that is a core
-argument of the verb but is not its subject or <a href="dobj">direct object</a>.
+argument of the verb but is not its subject or <a href="obj">direct object</a>.
 The prototypical example is the recipient of ditransitive verbs of exchange,
 that is often realized as a nominal element preceded by a σε-preposition.</p>
 
@@ -1171,14 +1292,14 @@ iobj(πήραν, Του)
 obj(πήραν, χιλιάρικα)
 </code></pre>
 
-<p>When two objects in accusative are present, one of them is annotated as <code>dobj</code> and the other as <a href="">iobj</a>.  Generally, the most directly affected object <em>(patient)</em> is marked as <code>dobj</code>.</p>
+<p>When two objects in accusative are present, one of them is annotated as <code>obj</code> and the other as <a href="">iobj</a>.  Generally, the most directly affected object <em>(patient)</em> is marked as <code>obj</code>.</p>
 
 <pre><code class="language-sdparse">Διδάσκει τα παιδιά.Acc ιστορία.Acc
 obj(Διδάσκει, ιστορία.Acc)
 iobj(Διδάσκει, παιδιά.Acc)
 </code></pre>
 
-<p>If there is just one object, it should be labeled <a href="">dobj</a>, regardless of the morphological case or semantic role. For example,  <em>διδάσκω</em> can take either the subject matter or the recipient as the only object, and in both cases it would be analyzed as the <a href="">dobj</a>:</p>
+<p>If there is just one object, it should be labeled <a href="">obj</a>, regardless of the morphological case or semantic role. For example,  <em>διδάσκω</em> can take either the subject matter or the recipient as the only object, and in both cases it would be analyzed as the <a href="">obj</a>:</p>
 
 <pre><code class="language-sdparse">Διδάσκει μαθηματικά
 dobj(Διδάσκει, μαθηματικά)
@@ -1208,7 +1329,7 @@ dobj(Είπε, πρόγραμμα)
 <p>At present and contrary to the general UD definition of <a href="">u-dep/iobj</a>, in
 UD Greek we allow prepositional indirect objects.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/iobj.md" target="#">edit iobj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/iobj.md" target="#">edit iobj</a></p>
 
 <p><a id="al-el-dep/list" class="al-dest"></a></p>
 <h2><code>list</code>: list</h2>
@@ -1223,7 +1344,7 @@ appos(Τηλέφωνο, 2100447000)
 appos(E-mail, gpapadopoulos@paradeigma.com)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/list.md" target="#">edit list</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/list.md" target="#">edit list</a></p>
 
 <p><a id="al-el-dep/mark" class="al-dest"></a></p>
 <h2><code>mark</code>: marker</h2>
@@ -1290,7 +1411,7 @@ conj(μάθει, δουλέψει)
 aux(δουλέψει, να)
 </code></pre>
 
-<p>For certain multiword subordinate conjunctions, we use combinations of the <code>mark</code> and the <a href="mwe">mwe</a> relations.</p>
+<p>For certain multiword subordinate conjunctions, we use combinations of the <code>mark</code> and the <a href="fixed">mwe</a> relations.</p>
 
 <pre><code class="language-sdparse">Αν και βρίσκεται στο σωστό δρόμο χρειάζεται περισσότερο χρόνο
 advcl(χρειάζεται, βρίσκεται)
@@ -1298,111 +1419,7 @@ mark(βρίσκεται, Αν)
 mwe(Αν, και)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/mark.md" target="#">edit mark</a></p>
-
-<p><a id="al-el-dep/mwe" class="al-dest"></a></p>
-<h2><code>mwe</code>: multi-word expression</h2>
-
-<p>For examples of multiword expressions, see and <a href="">case</a> and <a href="">mark</a>. 
-Multiword expressions are annotated in a flat, head-initial structure,
-in which all words in the expression modify the first one using the
-<code>mwe</code> label.</p>
-
-<p><strong>TODO</strong></p>
-
-<p>A list of common mwe’s</p>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/mwe.md" target="#">edit mwe</a></p>
-
-<p><a id="al-el-dep/name" class="al-dest"></a></p>
-<h2><code>name</code>: name</h2>
-
-<p>We use the <code>name</code> relation for proper nouns constituted of more than one words. 
-The first (leftmost) word is the head, and the other words are direct dependents of the head.</p>
-
-<pre><code class="language-sdparse">Τάκης Παπαδόπουλος
-name(Τάκης, Παπαδόπουλος)
-</code></pre>
-
-<pre><code class="language-sdparse">Ρωμανός Δ' Διογένης
-name(Ρωμανός, Δ')
-name(Ρωμανός, Διογένης)
-</code></pre>
-
-<pre><code class="language-sdparse">Μάο Τσε Τουνγκ
-name(Μάο, Τσε)
-name(Μάο, Τουνγκ)
-</code></pre>
-
-<p>Regular syntactic relations are used for Greek:
-(i) for a modifier word including determiners, adjectives and adverbs
-(ii) to connect together the words of a description or name which involve embedded prepositional phrases, sentences, etc.</p>
-
-<pre><code class="language-sdparse">την Παλιά Κοκκινιά
-amod(Κοκκινιά, Παλιά)
-det(Κοκκινιά, την)
-</code></pre>
-
-<pre><code class="language-sdparse">της Νέας Υόρκης
-amod(Υόρκης, Νέας)
-det(Υόρκης, της)
-</code></pre>
-
-<pre><code class="language-sdparse">Τα Άνω Δολιανά
-det(Δολιανά, Τα)
-advmod(Δολιανά, Άνω)
-</code></pre>
-
-<pre><code class="language-sdparse">Ο Βασιλιάς της Αγγλίας
-det(Βασιλιάς, Ο)
-nmod(Βασιλιάς, Αγγλίας)
-det(Αγγλίας, της)
-</code></pre>
-
-<p>This also holds for organization names with clear syntactic modification structure as in:</p>
-
-<pre><code class="language-sdparse">Γενική Γραμματεία Εκπαίδευσης Ενηλίκων
-amod(Γραμματεία, Γενική)
-nmod(Γραμματεία, Εκπαίδευσης)
-nmod(Εκπαίδευσης, Ενηλίκων)
-</code></pre>
-
-<p>This convention is not used for foreign names (transliterated or not), which are annotated in a flat, head-initial structure, in 
-which all words in the name modify the first one using the <code>name</code> label.</p>
-
-<pre><code class="language-sdparse">Σαν Σεμπαστιάν
-name(Σαν, Σεμπαστιάν)
-</code></pre>
-
-<pre><code class="language-sdparse">Στράτφορντ απόν Έιβον
-name(Στράτφορντ, απόν)
-name(Στράτφορντ, Έιβον)
-</code></pre>
-
-<pre><code class="language-sdparse">Río de la Plata
-name(Río, de)
-name(Río, la)
-name(Río, Plata)
-</code></pre>
-
-<pre><code class="language-sdparse">Ζαν ντ' Αρκ
-name(Ζαν, ντ')
-name(Ζαν, Αρκ)
-</code></pre>
-
-<pre><code class="language-sdparse">Ludwig van Beethoven
-name(Ludwig, van)
-name(Ludwig, Beethoven)
-</code></pre>
-
-<pre><code class="language-sdparse">Miguel de Cervantes y Saavedra
-name(Miguel, de)
-name(Miguel, y)
-name(Miguel, Cervantes)
-name(Miguel, Saavedra)
-</code></pre>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/name.md" target="#">edit name</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/mark.md" target="#">edit mark</a></p>
 
 <p><a id="al-el-dep/neg" class="al-dest"></a></p>
 <h2><code>neg</code>: negation modifier</h2>
@@ -1430,7 +1447,7 @@ neg(ανταγωνιστικές, μη)
 neg(αντικατάστασης, μη)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/neg.md" target="#">edit neg</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/neg.md" target="#">edit neg</a></p>
 
 <p><a id="al-el-dep/nmod" class="al-dest"></a></p>
 <h2><code>nmod</code>: nominal modifier</h2>
@@ -1492,7 +1509,7 @@ obj(Ζήτησε, κούκλα)
 nmod(δω, Κυριακή)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/nmod.md" target="#">edit nmod</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/nmod.md" target="#">edit nmod</a></p>
 
 <p><a id="al-el-dep/nsubj" class="al-dest"></a></p>
 <h2><code>nsubj</code>: nominal subject</h2>
@@ -1518,7 +1535,7 @@ nsubj(red, car)
 ~~~
 -->
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/nsubj.md" target="#">edit nsubj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/nsubj.md" target="#">edit nsubj</a></p>
 
 <p><a id="al-el-dep/nsubjpass" class="al-dest"></a></p>
 <h2><code>nsubjpass</code>: passive nominal subject</h2>
@@ -1556,7 +1573,7 @@ nsubj(κοιμάται, παιδί)
 nsubj(Έρχεται, παγετός)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/nsubjpass.md" target="#">edit nsubjpass</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/nsubjpass.md" target="#">edit nsubjpass</a></p>
 
 <p><a id="al-el-dep/nummod" class="al-dest"></a></p>
 <h2><code>nummod</code>: numeric modifier</h2>
@@ -1574,7 +1591,25 @@ amod(χρόνια, τελευταία)
 nummod(ευρώ, 10)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/nummod.md" target="#">edit nummod</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/nummod.md" target="#">edit nummod</a></p>
+
+<p><a id="al-el-dep/orphan" class="al-dest"></a></p>
+<h2><code>orphan</code>: remnant in ellipsis</h2>
+
+<p>The <code>orphan</code> relation is used to provide a treatment of ellipsis (in
+the case of gapping and stripping, where a predicational or verbal
+head gets elided). A <code>orphan</code> corresponds to a <em>correlate</em> in a preceding clause. 
+The <code>orphan</code> relation connects each remnant to its correlate in the basic dependency representation.</p>
+
+<pre><code class="language-sdparse">Η Προοδευτική κέρδισε το Αιγάλεω , και ο Ιωνικός τη Δόξα . 
+nsubj(κέρδισε, Προοδευτική)
+dobj(κέρδισε, Αιγάλεω)
+cc(κέρδισε, και)
+remnant(Προοδευτική, Ιωνικός)
+remnant(Αιγάλεω, Δόξα)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/orphan.md" target="#">edit orphan</a></p>
 
 <p><a id="al-el-dep/parataxis" class="al-dest"></a></p>
 <h2><code>parataxis</code>: parataxis</h2>
@@ -1597,7 +1632,7 @@ parataxis(παραδεχτούμε, αποτύχαμε)
 parataxis(Ρίξε, κάνει)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/parataxis.md" target="#">edit parataxis</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/parataxis.md" target="#">edit parataxis</a></p>
 
 <p><a id="al-el-dep/punct" class="al-dest"></a></p>
 <h2><code>punct</code>: punctuation</h2>
@@ -1693,25 +1728,7 @@ What does the following regarding ellipsis mean?
 Tokens with the relation [u-dep/punct]() always attach to content words (except in cases of ellipsis) and can never have dependents.
 -->
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/punct.md" target="#">edit punct</a></p>
-
-<p><a id="al-el-dep/remnant" class="al-dest"></a></p>
-<h2><code>remnant</code>: remnant in ellipsis</h2>
-
-<p>The <code>remnant</code> relation is used to provide a treatment of ellipsis (in
-the case of gapping and stripping, where a predicational or verbal
-head gets elided). A <code>remnant</code> corresponds to a <em>correlate</em> in a preceding clause. 
-The <code>remnant</code> relation connects each remnant to its correlate in the basic dependency representation.</p>
-
-<pre><code class="language-sdparse">Η Προοδευτική κέρδισε το Αιγάλεω , και ο Ιωνικός τη Δόξα . 
-nsubj(κέρδισε, Προοδευτική)
-dobj(κέρδισε, Αιγάλεω)
-cc(κέρδισε, και)
-remnant(Προοδευτική, Ιωνικός)
-remnant(Αιγάλεω, Δόξα)
-</code></pre>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/remnant.md" target="#">edit remnant</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/punct.md" target="#">edit punct</a></p>
 
 <p><a id="al-el-dep/reparandum" class="al-dest"></a></p>
 <h2><code>reparandum</code>: overridden disfluency</h2>
@@ -1726,7 +1743,7 @@ reparandum(Κατερίνα, καρδερ-)
 det(καρδερ-, η-2)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/reparandum.md" target="#">edit reparandum</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/reparandum.md" target="#">edit reparandum</a></p>
 
 <p><a id="al-el-dep/root" class="al-dest"></a></p>
 <h2><code>root</code>: root</h2>
@@ -1743,7 +1760,7 @@ root(ROOT, αποσυρθούν)
 root(ROOT, τέλος)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/root.md" target="#">edit root</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/root.md" target="#">edit root</a></p>
 
 <p><a id="al-el-dep/vocative" class="al-dest"></a></p>
 <h2><code>vocative</code>: vocative</h2>
@@ -1767,7 +1784,7 @@ vocative(έχετε, Πρόεδρε)
 ~~~
 -->
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/vocative.md" target="#">edit vocative</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/vocative.md" target="#">edit vocative</a></p>
 
 <p><a id="al-el-dep/xcomp" class="al-dest"></a></p>
 <h2><code>xcomp</code>: open clausal complement</h2>
@@ -1843,7 +1860,7 @@ xcomp(έκανε, αγνώριστο)
 
 <p>For other optional secondary predicates of an adverbial nature, see <a href="el-dep/advcl">advcl</a>.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/xcomp.md" target="#">edit xcomp</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/xcomp.md" target="#">edit xcomp</a></p>
 
 
 

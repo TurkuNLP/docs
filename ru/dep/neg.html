@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ru">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ru/dep">ru/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/neg.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ru">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ru/dep">ru/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/neg.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -77,159 +94,30 @@ det(fool, no)
 
 
 
-
-<hr />
-
-<h2 id="treebank-statistics-udrussian">Treebank Statistics (UD_Russian)</h2>
-
-<p>This relation is universal.</p>
-
-<p>434 nodes (0%) are attached to their parents as <code>neg</code>.</p>
-
-<p>433 instances of <code>neg</code> (100%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.12672811059908.</p>
-
-<p>The following 10 pairs of parts of speech are connected with <code>neg</code>: <a href="">ru-pos/VERB</a>-<a href="">ru-pos/PART</a> (304; 70% instances), <a href="">ru-pos/ADJ</a>-<a href="">ru-pos/PART</a> (43; 10% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/PART</a> (32; 7% instances), <a href="">ru-pos/ADV</a>-<a href="">ru-pos/PART</a> (21; 5% instances), <a href="">ru-pos/NUM</a>-<a href="">ru-pos/PART</a> (12; 3% instances), <a href="">ru-pos/AUX</a>-<a href="">ru-pos/PART</a> (6; 1% instances), <a href="">ru-pos/PART</a>-<a href="">ru-pos/PART</a> (5; 1% instances), <a href="">ru-pos/DET</a>-<a href="">ru-pos/PART</a> (4; 1% instances), <a href="">ru-pos/PRON</a>-<a href="">ru-pos/PART</a> (4; 1% instances), <a href="">ru-pos/ADP</a>-<a href="">ru-pos/PART</a> (3; 1% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 10	bgColor:blue
-# visual-style 10	fgColor:white
-# visual-style 11	bgColor:blue
-# visual-style 11	fgColor:white
-# visual-style 11 10 neg	color:blue
-1	Кассандра	КАССАНДРА	PROPN	NNP	Animacy=Anim|Case=Nom|Gender=Fem|Number=Sing	11	nsubj	_	_
-2	,	,	PUNCT	,	_	5	punct	_	_
-3	как	КАК	ADP	IN	_	5	case	_	_
-4	и	И	PART	UH	_	5	discourse	_	_
-5	сестра	СЕСТРА	NOUN	NN	Animacy=Anim|Case=Nom|Gender=Fem|Number=Sing	1	nmod	_	_
-6	,	,	PUNCT	,	_	5	punct	_	_
-7	замуж	ЗАМУЖ	ADV	RB	_	11	advmod	_	_
-8	так	ТАК	ADV	RB	_	11	advmod	_	_
-9	и	И	PART	UH	_	11	discourse	_	_
-10	не	НЕ	PART	NEG	_	11	neg	_	_
-11	вышла	ВЫЙТИ	VERB	VBC	Aspect=Perf|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
-12	.	.	PUNCT	.	_	11	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 4 3 neg	color:blue
-1	Голова	ГОЛОВА	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	4	nsubj	_	_
-2	сверху	СВЕРХУ	ADV	RB	_	4	advmod	_	_
-3	не	НЕ	PART	NEG	_	4	neg	_	_
-4	видна	ВИДНЫЙ	ADJ	JJH	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing|Variant=Brev	0	root	_	_
-5	,	,	PUNCT	,	_	8	punct	_	_
-6	так	ТАК	SCONJ	IN	_	8	mark	_	_
-7	как	КАК	ADV	WRB	_	6	mwe	_	_
-8	прикрыта	ПРИКРЫТЬ	VERB	VBNH	Animacy=Inan|Aspect=Perf|Case=Nom|Gender=Fem|Number=Sing|Tense=Past|Variant=Brev|VerbForm=Part|Voice=Pass	4	advcl	_	_
-9	переднеспинкой	ПЕРЕДНЕСПИНКА	NOUN	NN	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	8	iobj	_	_
-10	.	.	PUNCT	.	_	4	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
-# visual-style 9	bgColor:blue
-# visual-style 9	fgColor:white
-# visual-style 9 7 neg	color:blue
-1	Для	ДЛЯ	ADP	IN	_	2	case	_	_
-2	уменьшения	УМЕНЬШЕНИЕ	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	6	nmod	_	_
-3	веса	ВЕС	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	_
-4	судна	СУДНО	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	3	nmod	_	_
-5	его	ОНО	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3	6	dobj	_	_
-6	строили	СТРОИТЬ	VERB	VBC	Aspect=Imp|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin	0	root	_	_
-7	не	НЕ	PART	NEG	_	9	neg	_	_
-8	из	ИЗ	ADP	IN	_	9	case	_	_
-9	стали	СТАЛЬ	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	6	nmod	_	_
-10	,	,	PUNCT	,	_	9	punct	_	_
-11	а	А	CONJ	CC	_	9	cc	_	_
-12	из	ИЗ	ADP	IN	_	9	conj	_	_
-13	алюминиево	АЛЮМИНИЕВО	ADV	AFX	_	15	goeswith	_	_
-14	-	-	PUNCT	-	_	15	goeswith	_	_
-15	магниевого	МАГНИЕВЫЙ	ADJ	JJL	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing|Variant=Full	16	amod	_	_
-16	сплава	СПЛАВ	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	12	nmod	_	_
-17	.	.	PUNCT	.	_	6	punct	_	_
-
-</code></pre>
-
-<hr />
-
-<h2 id="treebank-statistics-udrussian-syntagrus">Treebank Statistics (UD_Russian-SynTagRus)</h2>
-
-<p>This relation is universal.</p>
-
-<p>13482 nodes (1%) are attached to their parents as <code>neg</code>.</p>
-
-<p>13370 instances of <code>neg</code> (99%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.13462394303516.</p>
-
-<p>The following 17 pairs of parts of speech are connected with <code>neg</code>: <a href="">ru-pos/VERB</a>-<a href="">ru-pos/PART</a> (8976; 67% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/PART</a> (1410; 10% instances), <a href="">ru-pos/ADV</a>-<a href="">ru-pos/PART</a> (1056; 8% instances), <a href="">ru-pos/ADJ</a>-<a href="">ru-pos/PART</a> (1011; 7% instances), <a href="">ru-pos/PART</a>-<a href="">ru-pos/PART</a> (669; 5% instances), <a href="">ru-pos/PROPN</a>-<a href="">ru-pos/PART</a> (102; 1% instances), <a href="">ru-pos/PRON</a>-<a href="">ru-pos/PART</a> (96; 1% instances), <a href="">ru-pos/DET</a>-<a href="">ru-pos/PART</a> (88; 1% instances), <a href="">ru-pos/NUM</a>-<a href="">ru-pos/PART</a> (49; 0% instances), <a href="">ru-pos/SCONJ</a>-<a href="">ru-pos/PART</a> (12; 0% instances), <a href="">ru-pos/CONJ</a>-<a href="">ru-pos/VERB</a> (3; 0% instances), <a href="">ru-pos/CONJ</a>-<a href="">ru-pos/PART</a> (2; 0% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/VERB</a> (2; 0% instances), <a href="">ru-pos/SYM</a>-<a href="">ru-pos/PART</a> (2; 0% instances), <a href="">ru-pos/VERB</a>-<a href="">ru-pos/VERB</a> (2; 0% instances), <a href="">ru-pos/SCONJ</a>-<a href="">ru-pos/VERB</a> (1; 0% instances), <a href="">ru-pos/X</a>-<a href="">ru-pos/PART</a> (1; 0% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
-# visual-style 8	bgColor:blue
-# visual-style 8	fgColor:white
-# visual-style 8 7 neg	color:blue
-1	К	к	ADP	_	_	2	case	_	_
-2	сожалению	сожаление	NOUN	_	Animacy=Inan|Case=Dat|Gender=Neut|Number=Sing	8	parataxis	_	_
-3	,	,	PUNCT	,	_	2	punct	_	_
-4	арабский	арабский	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	5	amod	_	_
-5	оригинал	оригинал	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	8	nsubj	_	_
-6	книги	книга	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	5	nmod	_	_
-7	не	не	PART	_	_	8	neg	_	_
-8	сохранился	сохраняться	VERB	_	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
-9	.	.	PUNCT	.	_	8	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 8	bgColor:blue
-# visual-style 8	fgColor:white
-# visual-style 9	bgColor:blue
-# visual-style 9	fgColor:white
-# visual-style 9 8 neg	color:blue
-1	Разумеется	разумеется	ADV	_	Degree=Pos	6	parataxis	_	_
-2	,	,	PUNCT	,	_	1	punct	_	_
-3	в	в	ADP	_	_	4	case	_	_
-4	существование	существование	NOUN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	6	nmod	_	_
-5	Атлантиды	атлантида	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	4	nmod	_	_
-6	верят	верить	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-7	далеко	далеко	ADV	_	Degree=Pos	8	advmod	_	_
-8	не	не	PART	_	_	9	neg	_	_
-9	все	все	NOUN	_	Animacy=Anim|Case=Nom|Number=Plur	6	nsubj	_	_
-10	.	.	PUNCT	.	_	6	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
-# visual-style 8	bgColor:blue
-# visual-style 8	fgColor:white
-# visual-style 8 7 neg	color:blue
-1	Слаженность	слаженность	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	6	nsubjpass	_	_
-2	работы	работа	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	_
-3	сложных	сложный	ADJ	_	Case=Gen|Degree=Pos|Number=Plur	4	amod	_	_
-4	систем	система	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	2	nmod	_	_
-5	была	быть	AUX	_	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	6	auxpass	_	_
-6	отмечена	отмечать	VERB	_	Aspect=Perf|Gender=Fem|Number=Sing|Tense=Past|Variant=Brev|VerbForm=Part|Voice=Pass	0	root	_	_
-7	не	не	PART	_	_	8	neg	_	_
-8	случайно	случайно	ADV	_	Degree=Pos	6	advmod	_	_
-9	:	:	PUNCT	:	_	6	punct	_	_
-
-</code></pre>
-
-
-
-
 <!-- "in other languages" links -->
 <hr/>
 
 neg in other languages:
 
+[<a href="../../am/dep/neg.html">am</a>]
+
+[<a href="../../ar/dep/neg.html">ar</a>]
+
 [<a href="../../bg/dep/neg.html">bg</a>]
 
+[<a href="../../bxr/dep/neg.html">bxr</a>]
+
+[<a href="../../ca/dep/neg.html">ca</a>]
+
+[<a href="../../ckb/dep/neg.html">ckb</a>]
+
+[<a href="../../cop/dep/neg.html">cop</a>]
+
 [<a href="../../cs/dep/neg.html">cs</a>]
+
+[<a href="../../cu/dep/neg.html">cu</a>]
+
+[<a href="../../da/dep/neg.html">da</a>]
 
 [<a href="../../de/dep/neg.html">de</a>]
 
@@ -239,29 +127,97 @@ neg in other languages:
 
 [<a href="../../es/dep/neg.html">es</a>]
 
+[<a href="../../et/dep/neg.html">et</a>]
+
 [<a href="../../eu/dep/neg.html">eu</a>]
 
 [<a href="../../fa/dep/neg.html">fa</a>]
 
 [<a href="../../fi/dep/neg.html">fi</a>]
 
+[<a href="../../fo/dep/neg.html">fo</a>]
+
 [<a href="../../fr/dep/neg.html">fr</a>]
 
 [<a href="../../ga/dep/neg.html">ga</a>]
 
+[<a href="../../gl/dep/neg.html">gl</a>]
+
+[<a href="../../got/dep/neg.html">got</a>]
+
+[<a href="../../grc/dep/neg.html">grc</a>]
+
 [<a href="../../he/dep/neg.html">he</a>]
 
+[<a href="../../hi/dep/neg.html">hi</a>]
+
+[<a href="../../hr/dep/neg.html">hr</a>]
+
 [<a href="../../hu/dep/neg.html">hu</a>]
+
+[<a href="../../id/dep/neg.html">id</a>]
 
 [<a href="../../it/dep/neg.html">it</a>]
 
 [<a href="../../ja/dep/neg.html">ja</a>]
 
+[<a href="../../kk/dep/neg.html">kk</a>]
+
+[<a href="../../kmr/dep/neg.html">kmr</a>]
+
 [<a href="../../ko/dep/neg.html">ko</a>]
+
+[<a href="../../la/dep/neg.html">la</a>]
+
+[<a href="../../lv/dep/neg.html">lv</a>]
+
+[<a href="../../mr/dep/neg.html">mr</a>]
+
+[<a href="../../nl/dep/neg.html">nl</a>]
+
+[<a href="../../no/dep/neg.html">no</a>]
+
+[<a href="../../pl/dep/neg.html">pl</a>]
+
+[<a href="../../pt/dep/neg.html">pt</a>]
+
+[<a href="../../ro/dep/neg.html">ro</a>]
+
+[<a href="../../ru/dep/neg.html">ru</a>]
+
+[<a href="../../sa/dep/neg.html">sa</a>]
+
+[<a href="../../sk/dep/neg.html">sk</a>]
+
+[<a href="../../sla/dep/neg.html">sla</a>]
+
+[<a href="../../sl/dep/neg.html">sl</a>]
+
+[<a href="../../so/dep/neg.html">so</a>]
+
+[<a href="../../sr/dep/neg.html">sr</a>]
 
 [<a href="../../sv/dep/neg.html">sv</a>]
 
-[<a href="../../u/dep/neg.html">u</a>]
+[<a href="../../swl/dep/neg.html">swl</a>]
+
+[<a href="../../ta/dep/neg.html">ta</a>]
+
+[<a href="../../tr/dep/neg.html">tr</a>]
+
+[<a href="../../ug/dep/neg.html">ug</a>]
+
+[<a href="../../uk/dep/neg.html">uk</a>]
+
+[<a href="../../ur/dep/neg.html">ur</a>]
+
+[<a href="../../urj/dep/neg.html">urj</a>]
+
+[<a href="../../vi/dep/neg.html">vi</a>]
+
+[<a href="../../yue/dep/neg.html">yue</a>]
+
+[<a href="../../zh/dep/neg.html">zh</a>]
 
 
 

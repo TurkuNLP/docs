@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-sv">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sv">home</a></span>
 
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-overview/morphology.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-overview/morphology.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -45,18 +62,22 @@
 
           <h1 id="morphology">Morphology</h1>
 
-<p>The morphological annotation in the Swedish UD treebank follows the general guidelines and does not add any language-specific features. The language-specific tags (including features) follow the guidelines of the Stockholm-Umeå Corpus.</p>
+<p>The morphological annotation in the Swedish UD treebanks follows the general guidelines and does not add any language-specific features. The following may be noted:</p>
 
-<p>The mapping from language-specific tags and features to universal tags and features was done automatically. We are not aware of any remaining errors or inconsistences but the mapping has not been validated manually.</p>
-
-<p>Lemmas were assigned using SALDO (Borin et al., 2008) in combination with the language-specific SUC tags. Cases of remaining ambiguity were resolved heuristically, which may have introduced errors. For words and symbols not covered by SALDO, lemmas were added manually.</p>
+<ul>
+  <li>XPOSTAG: There are two sets of language-specific tags in use for Swedish. UD Swedish adopts the tagset of the Stockholm-Umeå Corpus, while UD Swedish-LinES uses a different inventory based on Tapanainen and Järvinen (1997).</li>
+  <li>FEATS: Features are currently lacking in UD Swedish-LinES.</li>
+  <li>LEMMA: Lemmas in UD Swedish are based on SALDO (Borin et al., 2008). Lemmas are currently lacking in UD Swedish-LinES.</li>
+</ul>
 
 <h2 id="references">References</h2>
 
+<p>Lars Borin, Markus Forsberg, Lennart Lönngren. 2008. <a href="http://spraakbanken.gu.se/personal/markus/publications/saldo_1.0.pdf">Saldo 1.0 (Svenskt associationslexikon version 2).</a> Språkbanken, Göteborg universitet</p>
+
+<p>Pasi Tapanainen and Timo Järvinen. 1997. <a href="http://dx.doi.org/10.3115/974557.974568">A Non-projective Dependency Parser.</a> In <em>Proceedings of the Fifth Conference on Applied Natural Language Processing</em>, 64-71.</p>
+
 <p><a href="http://www.ling.su.se/english/nlp/corpora-and-resources/suc/stockholm-ume%C3%A5-corpus-suc-1.14045">The Stockholm Umeå Corpus. Version 2.0. 2006.</a>
 Stockholm University: Department of Linguistics.</p>
-
-<p>Lars Borin, Markus Forsberg, Lennart Lönngren. 2008. <a href="http://spraakbanken.gu.se/personal/markus/publications/saldo_1.0.pdf">Saldo 1.0 (Svenskt associationslexikon version 2).</a> Språkbanken, Göteborg universitet</p>
 
 
       </div>

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-fr">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/fr/dep">fr/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_fr-dep/mwe.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-fr">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/fr/dep">fr/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fr-dep/mwe.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -46,7 +63,7 @@
           <h2><code>mwe</code>: multi-word expression</h2>
 
 <p>The multi-word expression (modifier) relation is one of the three
-relations (<a href="">compound</a>, <code>mwe</code>, <a href="">name</a>) for compounding.
+relations (<a href="">compound</a>, <code>fixed</code>, <a href="">flat</a>) for compounding.
 It is used for certain fixed grammaticized expressions that behave
 like function words or short adverbials.</p>
 
@@ -71,89 +88,30 @@ mwe(de, avant)
 
 
 
-
-<hr />
-
-<h2 id="treebank-statistics-udfrench">Treebank Statistics (UD_French)</h2>
-
-<p>This relation is universal.</p>
-
-<p>4037 nodes (1%) are attached to their parents as <code>mwe</code>.</p>
-
-<p>4036 instances of <code>mwe</code> (100%) are left-to-right (parent precedes child).
-Average distance between parent and child is 1.25712162496904.</p>
-
-<p>The following 84 pairs of parts of speech are connected with <code>mwe</code>: <a href="">fr-pos/ADV</a>-<a href="">fr-pos/ADP</a> (1112; 28% instances), <a href="">fr-pos/ADV</a>-<a href="">fr-pos/SCONJ</a> (548; 14% instances), <a href="">fr-pos/ADP</a>-<a href="">fr-pos/ADP</a> (471; 12% instances), <a href="">fr-pos/ADP</a>-<a href="">fr-pos/NOUN</a> (404; 10% instances), <a href="">fr-pos/ADP</a>-<a href="">fr-pos/ADV</a> (333; 8% instances), <a href="">fr-pos/ADP</a>-<a href="">fr-pos/SCONJ</a> (202; 5% instances), <a href="">fr-pos/ADP</a>-<a href="">fr-pos/DET</a> (187; 5% instances), <a href="">fr-pos/ADP</a>-<a href="">fr-pos/VERB</a> (126; 3% instances), <a href="">fr-pos/NOUN</a>-<a href="">fr-pos/ADP</a> (91; 2% instances), <a href="">fr-pos/ADP</a>-<a href="">fr-pos/ADJ</a> (71; 2% instances), <a href="">fr-pos/ADV</a>-<a href="">fr-pos/ADV</a> (53; 1% instances), <a href="">fr-pos/DET</a>-<a href="">fr-pos/ADV</a> (48; 1% instances), <a href="">fr-pos/ADJ</a>-<a href="">fr-pos/SCONJ</a> (45; 1% instances), <a href="">fr-pos/ADP</a>-<a href="">fr-pos/PRON</a> (36; 1% instances), <a href="">fr-pos/VERB</a>-<a href="">fr-pos/NOUN</a> (28; 1% instances), <a href="">fr-pos/ADV</a>-<a href="">fr-pos/DET</a> (23; 1% instances), <a href="">fr-pos/DET</a>-<a href="">fr-pos/NOUN</a> (18; 0% instances), <a href="">fr-pos/PRON</a>-<a href="">fr-pos/PRON</a> (15; 0% instances), <a href="">fr-pos/ADV</a>-<a href="">fr-pos/NOUN</a> (14; 0% instances), <a href="">fr-pos/ADJ</a>-<a href="">fr-pos/ADP</a> (13; 0% instances), <a href="">fr-pos/DET</a>-<a href="">fr-pos/ADP</a> (12; 0% instances), <a href="">fr-pos/NOUN</a>-<a href="">fr-pos/NOUN</a> (12; 0% instances), <a href="">fr-pos/CONJ</a>-<a href="">fr-pos/ADV</a> (10; 0% instances), <a href="">fr-pos/SCONJ</a>-<a href="">fr-pos/SCONJ</a> (10; 0% instances), <a href="">fr-pos/ADV</a>-<a href="">fr-pos/ADJ</a> (9; 0% instances), <a href="">fr-pos/AUX</a>-<a href="">fr-pos/ADP</a> (8; 0% instances), <a href="">fr-pos/NOUN</a>-<a href="">fr-pos/PART</a> (8; 0% instances), <a href="">fr-pos/ADJ</a>-<a href="">fr-pos/NOUN</a> (6; 0% instances), <a href="">fr-pos/PRON</a>-<a href="">fr-pos/ADV</a> (6; 0% instances), <a href="">fr-pos/PRON</a>-<a href="">fr-pos/SCONJ</a> (6; 0% instances), <a href="">fr-pos/SCONJ</a>-<a href="">fr-pos/ADV</a> (6; 0% instances), <a href="">fr-pos/ADV</a>-<a href="">fr-pos/VERB</a> (5; 0% instances), <a href="">fr-pos/DET</a>-<a href="">fr-pos/DET</a> (5; 0% instances), <a href="">fr-pos/NOUN</a>-<a href="">fr-pos/VERB</a> (5; 0% instances), <a href="">fr-pos/PART</a>-<a href="">fr-pos/VERB</a> (5; 0% instances), <a href="">fr-pos/PRON</a>-<a href="">fr-pos/VERB</a> (5; 0% instances), <a href="">fr-pos/ADV</a>-<a href="">fr-pos/CONJ</a> (4; 0% instances), <a href="">fr-pos/SCONJ</a>-<a href="">fr-pos/ADP</a> (4; 0% instances), <a href="">fr-pos/SCONJ</a>-<a href="">fr-pos/PRON</a> (4; 0% instances), <a href="">fr-pos/ADJ</a>-<a href="">fr-pos/ADV</a> (3; 0% instances), <a href="">fr-pos/ADP</a>-<a href="">fr-pos/CONJ</a> (3; 0% instances), <a href="">fr-pos/NOUN</a>-<a href="">fr-pos/ADJ</a> (3; 0% instances), <a href="">fr-pos/NOUN</a>-<a href="">fr-pos/DET</a> (3; 0% instances), <a href="">fr-pos/PART</a>-<a href="">fr-pos/PRON</a> (3; 0% instances), <a href="">fr-pos/PRON</a>-<a href="">fr-pos/ADP</a> (3; 0% instances), <a href="">fr-pos/VERB</a>-<a href="">fr-pos/ADP</a> (3; 0% instances), <a href="">fr-pos/VERB</a>-<a href="">fr-pos/DET</a> (3; 0% instances), <a href="">fr-pos/ADJ</a>-<a href="">fr-pos/ADJ</a> (2; 0% instances), <a href="">fr-pos/AUX</a>-<a href="">fr-pos/NOUN</a> (2; 0% instances), <a href="">fr-pos/AUX</a>-<a href="">fr-pos/VERB</a> (2; 0% instances), <a href="">fr-pos/PART</a>-<a href="">fr-pos/ADJ</a> (2; 0% instances), <a href="">fr-pos/PRON</a>-<a href="">fr-pos/NOUN</a> (2; 0% instances), <a href="">fr-pos/VERB</a>-<a href="">fr-pos/ADJ</a> (2; 0% instances), <a href="">fr-pos/VERB</a>-<a href="">fr-pos/SCONJ</a> (2; 0% instances), <a href="">fr-pos/X</a>-<a href="">fr-pos/X</a> (2; 0% instances), <a href="">fr-pos/ADJ</a>-<a href="">fr-pos/CONJ</a> (1; 0% instances), <a href="">fr-pos/ADJ</a>-<a href="">fr-pos/PRON</a> (1; 0% instances), <a href="">fr-pos/ADJ</a>-<a href="">fr-pos/PROPN</a> (1; 0% instances), <a href="">fr-pos/ADP</a>-<a href="">fr-pos/NUM</a> (1; 0% instances), <a href="">fr-pos/ADV</a>-<a href="">fr-pos/PRON</a> (1; 0% instances), <a href="">fr-pos/CONJ</a>-<a href="">fr-pos/ADP</a> (1; 0% instances), <a href="">fr-pos/CONJ</a>-<a href="">fr-pos/NOUN</a> (1; 0% instances), <a href="">fr-pos/CONJ</a>-<a href="">fr-pos/SCONJ</a> (1; 0% instances), <a href="">fr-pos/DET</a>-<a href="">fr-pos/ADJ</a> (1; 0% instances), <a href="">fr-pos/DET</a>-<a href="">fr-pos/PRON</a> (1; 0% instances), <a href="">fr-pos/DET</a>-<a href="">fr-pos/SCONJ</a> (1; 0% instances), <a href="">fr-pos/INTJ</a>-<a href="">fr-pos/ADJ</a> (1; 0% instances), <a href="">fr-pos/NOUN</a>-<a href="">fr-pos/ADV</a> (1; 0% instances), <a href="">fr-pos/NOUN</a>-<a href="">fr-pos/SCONJ</a> (1; 0% instances), <a href="">fr-pos/NOUN</a>-<a href="">fr-pos/X</a> (1; 0% instances), <a href="">fr-pos/NUM</a>-<a href="">fr-pos/NUM</a> (1; 0% instances), <a href="">fr-pos/NUM</a>-<a href="">fr-pos/PART</a> (1; 0% instances), <a href="">fr-pos/PRON</a>-<a href="">fr-pos/DET</a> (1; 0% instances), <a href="">fr-pos/PRON</a>-<a href="">fr-pos/PART</a> (1; 0% instances), <a href="">fr-pos/PROPN</a>-<a href="">fr-pos/ADP</a> (1; 0% instances), <a href="">fr-pos/PROPN</a>-<a href="">fr-pos/DET</a> (1; 0% instances), <a href="">fr-pos/PROPN</a>-<a href="">fr-pos/NOUN</a> (1; 0% instances), <a href="">fr-pos/SCONJ</a>-<a href="">fr-pos/ADJ</a> (1; 0% instances), <a href="">fr-pos/SCONJ</a>-<a href="">fr-pos/NOUN</a> (1; 0% instances), <a href="">fr-pos/SCONJ</a>-<a href="">fr-pos/PART</a> (1; 0% instances), <a href="">fr-pos/SCONJ</a>-<a href="">fr-pos/VERB</a> (1; 0% instances), <a href="">fr-pos/VERB</a>-<a href="">fr-pos/ADV</a> (1; 0% instances), <a href="">fr-pos/VERB</a>-<a href="">fr-pos/PRON</a> (1; 0% instances), <a href="">fr-pos/VERB</a>-<a href="">fr-pos/VERB</a> (1; 0% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 8	bgColor:blue
-# visual-style 8	fgColor:white
-# visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
-# visual-style 7 8 mwe	color:blue
-1	Boutique	boutique	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_
-2	agréable	agréable	ADJ	_	Gender=Fem|Number=Sing	1	amod	_	_
-3	,	,	PUNCT	_	_	6	punct	_	_
-4	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	6	nsubj	_	_
-5	y	y	ADV	_	_	6	advmod	_	_
-6	trouve	trouver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-7	plein	plein	ADV	_	_	9	det	_	_
-8	de	de	ADP	_	_	7	mwe	_	_
-9	marques	marque	NOUN	_	Gender=Fem|Number=Plur	6	dobj	_	_
-10	.	.	PUNCT	_	_	6	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 3 4 mwe	color:blue
-1	Est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	-ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	1	nsubj	_	_
-3	parce	parce	ADV	_	_	7	mark	_	_
-4	que	que	SCONJ	_	_	3	mwe	_	_
-5	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	7	nsubj	_	_
-6	ne	ne	PART	_	_	7	neg	_	_
-7	prenez	prendre	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	1	advcl	_	_
-8	pas	pas	ADV	_	_	7	neg	_	_
-9	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_
-10	choses	chose	NOUN	_	Gender=Fem|Number=Plur	7	dobj	_	_
-11	à	à	ADP	_	_	13	case	_	_
-12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
-13	sérieux	sérieux	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_
-14	?	?	PUNCT	_	_	1	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 1 3 mwe	color:blue
-1	À	à	ADP	_	_	4	case	_	_
-2	partir	partir	VERB	_	VerbForm=Inf	1	mwe	_	_
-3	de	de	ADP	_	_	1	mwe	_	_
-4	1882	1882	NUM	_	_	6	nmod	_	_
-5	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
-6	obtient	obtenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-7	divers	divers	DET	_	Gender=Masc|Number=Plur	8	det	_	_
-8	diplômes	diplôme	NOUN	_	Gender=Masc|Number=Plur	6	dobj	_	_
-9	ecclésiastiques	ecclésiastique	ADJ	_	Gender=Masc|Number=Plur	8	amod	_	_
-10	.	.	PUNCT	_	_	6	punct	_	_
-
-</code></pre>
-
-
-
-
 <!-- "in other languages" links -->
 <hr/>
 
 mwe in other languages:
 
+[<a href="../../am/dep/mwe.html">am</a>]
+
+[<a href="../../ar/dep/mwe.html">ar</a>]
+
 [<a href="../../bg/dep/mwe.html">bg</a>]
 
+[<a href="../../bxr/dep/mwe.html">bxr</a>]
+
+[<a href="../../ca/dep/mwe.html">ca</a>]
+
+[<a href="../../ckb/dep/mwe.html">ckb</a>]
+
+[<a href="../../cop/dep/mwe.html">cop</a>]
+
 [<a href="../../cs/dep/mwe.html">cs</a>]
+
+[<a href="../../cu/dep/mwe.html">cu</a>]
+
+[<a href="../../da/dep/mwe.html">da</a>]
 
 [<a href="../../de/dep/mwe.html">de</a>]
 
@@ -163,29 +121,95 @@ mwe in other languages:
 
 [<a href="../../es/dep/mwe.html">es</a>]
 
+[<a href="../../et/dep/mwe.html">et</a>]
+
 [<a href="../../eu/dep/mwe.html">eu</a>]
 
 [<a href="../../fa/dep/mwe.html">fa</a>]
 
 [<a href="../../fi/dep/mwe.html">fi</a>]
 
+[<a href="../../fo/dep/mwe.html">fo</a>]
+
 [<a href="../../fr/dep/mwe.html">fr</a>]
 
-[<a href="../../ga/dep/mwe.html">ga</a>]
+[<a href="../../gl/dep/mwe.html">gl</a>]
+
+[<a href="../../got/dep/mwe.html">got</a>]
+
+[<a href="../../grc/dep/mwe.html">grc</a>]
 
 [<a href="../../he/dep/mwe.html">he</a>]
 
+[<a href="../../hi/dep/mwe.html">hi</a>]
+
+[<a href="../../hr/dep/mwe.html">hr</a>]
+
 [<a href="../../hu/dep/mwe.html">hu</a>]
+
+[<a href="../../id/dep/mwe.html">id</a>]
 
 [<a href="../../it/dep/mwe.html">it</a>]
 
 [<a href="../../ja/dep/mwe.html">ja</a>]
 
+[<a href="../../kk/dep/mwe.html">kk</a>]
+
+[<a href="../../kmr/dep/mwe.html">kmr</a>]
+
 [<a href="../../ko/dep/mwe.html">ko</a>]
+
+[<a href="../../la/dep/mwe.html">la</a>]
+
+[<a href="../../lv/dep/mwe.html">lv</a>]
+
+[<a href="../../mr/dep/mwe.html">mr</a>]
+
+[<a href="../../nl/dep/mwe.html">nl</a>]
+
+[<a href="../../no/dep/mwe.html">no</a>]
+
+[<a href="../../pl/dep/mwe.html">pl</a>]
+
+[<a href="../../pt/dep/mwe.html">pt</a>]
+
+[<a href="../../ro/dep/mwe.html">ro</a>]
+
+[<a href="../../ru/dep/mwe.html">ru</a>]
+
+[<a href="../../sa/dep/mwe.html">sa</a>]
+
+[<a href="../../sk/dep/mwe.html">sk</a>]
+
+[<a href="../../sla/dep/mwe.html">sla</a>]
+
+[<a href="../../sl/dep/mwe.html">sl</a>]
+
+[<a href="../../so/dep/mwe.html">so</a>]
+
+[<a href="../../sr/dep/mwe.html">sr</a>]
 
 [<a href="../../sv/dep/mwe.html">sv</a>]
 
-[<a href="../../u/dep/mwe.html">u</a>]
+[<a href="../../swl/dep/mwe.html">swl</a>]
+
+[<a href="../../ta/dep/mwe.html">ta</a>]
+
+[<a href="../../tr/dep/mwe.html">tr</a>]
+
+[<a href="../../ug/dep/mwe.html">ug</a>]
+
+[<a href="../../uk/dep/mwe.html">uk</a>]
+
+[<a href="../../ur/dep/mwe.html">ur</a>]
+
+[<a href="../../urj/dep/mwe.html">urj</a>]
+
+[<a href="../../vi/dep/mwe.html">vi</a>]
+
+[<a href="../../yue/dep/mwe.html">yue</a>]
+
+[<a href="../../zh/dep/mwe.html">zh</a>]
 
 
 

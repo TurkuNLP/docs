@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-yue">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/yue/dep">yue/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_yue-dep/det.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-yue">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/yue/dep">yue/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_yue-dep/det.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -45,8 +62,65 @@
 
           <h2><code>det</code>: determiner</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>det</code>.</p>
+<p>The <code>det</code> relation applies to the head of a nominal and its determiner. All determiners are tagged <a href="">DET</a>, and thus all words with the tag will be a <code>det</code> dependent. Classifiers may also function as determiners (see further below).</p>
+
+<pre><code class="language-conllu"># visual-style 3 1 det	color:blue
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+1	呢	_	DET	_	_	3	det	_	this
+2	餐	_	NOUN	_	_	1	clf	_	CL:meal
+3	飯	_	NOUN	_	_	0	root	_	meal
+
+1	"this	_	_	_	_	0	_	_	_
+2	meal"	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 2 1 det	color:blue
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+1	邊	_	DET	_	_	2	det	_	which
+2	位	_	NOUN	_	_	0	root	_	CL:person
+
+1	"Which	_	_	_	_	0	_	_	_
+2	person?"	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 2 1 det	color:blue
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+1	每	_	DET	_	_	2	det	_	every
+2	次	_	NOUN	_	_	0	root	_	CL:time
+
+1	"every	_	_	_	_	0	_	_	_
+2	time"	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<p>Classifiers are treated as determiners in the syntax when a noun phrase begins with a bare classifier. In Cantonese, this may occur both preverbally and postverbally. In preverbal position, it has a definite interpretation; in postverbal position, it may be ambiguous between definite and indefinite interpretations.</p>
+
+<pre><code class="language-conllu"># visual-style 4 3 det	color:blue
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+1	買	_	VERB	_	_	0	root	_	buy
+2	咗	_	AUX	_	_	1	aux	_	PERF
+3	本	_	NOUN	_	_	4	det	_	CL:book
+4	書	_	NOUN	_	_	1	obj	_	book
+
+1	"bought	_	_	_	_	0	_	_	_
+2	a/the	_	_	_	_	0	_	_	_
+3	book"	_	_	_	_	0	_	_	_
+
+</code></pre>
 
 
 <!-- "automatic stats" -->
@@ -61,9 +135,25 @@ for <code>det</code>.</p>
 
 det in other languages:
 
+[<a href="../../am/dep/det.html">am</a>]
+
+[<a href="../../ar/dep/det.html">ar</a>]
+
 [<a href="../../bg/dep/det.html">bg</a>]
 
+[<a href="../../bxr/dep/det.html">bxr</a>]
+
+[<a href="../../ca/dep/det.html">ca</a>]
+
+[<a href="../../ckb/dep/det.html">ckb</a>]
+
+[<a href="../../cop/dep/det.html">cop</a>]
+
 [<a href="../../cs/dep/det.html">cs</a>]
+
+[<a href="../../cu/dep/det.html">cu</a>]
+
+[<a href="../../da/dep/det.html">da</a>]
 
 [<a href="../../de/dep/det.html">de</a>]
 
@@ -73,29 +163,99 @@ det in other languages:
 
 [<a href="../../es/dep/det.html">es</a>]
 
+[<a href="../../et/dep/det.html">et</a>]
+
 [<a href="../../eu/dep/det.html">eu</a>]
 
 [<a href="../../fa/dep/det.html">fa</a>]
 
 [<a href="../../fi/dep/det.html">fi</a>]
 
+[<a href="../../fo/dep/det.html">fo</a>]
+
 [<a href="../../fr/dep/det.html">fr</a>]
 
 [<a href="../../ga/dep/det.html">ga</a>]
 
+[<a href="../../gl/dep/det.html">gl</a>]
+
+[<a href="../../got/dep/det.html">got</a>]
+
+[<a href="../../grc/dep/det.html">grc</a>]
+
 [<a href="../../he/dep/det.html">he</a>]
 
+[<a href="../../hi/dep/det.html">hi</a>]
+
+[<a href="../../hr/dep/det.html">hr</a>]
+
 [<a href="../../hu/dep/det.html">hu</a>]
+
+[<a href="../../id/dep/det.html">id</a>]
 
 [<a href="../../it/dep/det.html">it</a>]
 
 [<a href="../../ja/dep/det.html">ja</a>]
 
+[<a href="../../kk/dep/det.html">kk</a>]
+
+[<a href="../../kmr/dep/det.html">kmr</a>]
+
 [<a href="../../ko/dep/det.html">ko</a>]
+
+[<a href="../../la/dep/det.html">la</a>]
+
+[<a href="../../lv/dep/det.html">lv</a>]
+
+[<a href="../../mr/dep/det.html">mr</a>]
+
+[<a href="../../nl/dep/det.html">nl</a>]
+
+[<a href="../../no/dep/det.html">no</a>]
+
+[<a href="../../pl/dep/det.html">pl</a>]
+
+[<a href="../../pt/dep/det.html">pt</a>]
+
+[<a href="../../ro/dep/det.html">ro</a>]
+
+[<a href="../../ru/dep/det.html">ru</a>]
+
+[<a href="../../sa/dep/det.html">sa</a>]
+
+[<a href="../../sk/dep/det.html">sk</a>]
+
+[<a href="../../sla/dep/det.html">sla</a>]
+
+[<a href="../../sl/dep/det.html">sl</a>]
+
+[<a href="../../so/dep/det.html">so</a>]
+
+[<a href="../../sr/dep/det.html">sr</a>]
 
 [<a href="../../sv/dep/det.html">sv</a>]
 
+[<a href="../../swl/dep/det.html">swl</a>]
+
+[<a href="../../ta/dep/det.html">ta</a>]
+
+[<a href="../../tr/dep/det.html">tr</a>]
+
 [<a href="../../u/dep/det.html">u</a>]
+
+[<a href="../../ug/dep/det.html">ug</a>]
+
+[<a href="../../uk/dep/det.html">uk</a>]
+
+[<a href="../../ur/dep/det.html">ur</a>]
+
+[<a href="../../urj/dep/det.html">urj</a>]
+
+[<a href="../../vi/dep/det.html">vi</a>]
+
+[<a href="../../yue/dep/det.html">yue</a>]
+
+[<a href="../../zh/dep/det.html">zh</a>]
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-el">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/el/dep">el/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/vocative.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-el">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/el/dep">el/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/vocative.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -72,14 +89,113 @@ vocative(έχετε, Πρόεδρε)
 
 
 
+
+<hr />
+
+<h2 id="treebank-statistics-udgreek">Treebank Statistics (UD_Greek)</h2>
+
+<p>This relation is universal.</p>
+
+<p>63 nodes (0%) are attached to their parents as <code>vocative</code>.</p>
+
+<p>50 instances of <code>vocative</code> (79%) are right-to-left (child precedes parent).
+Average distance between parent and child is 6.33333333333333.</p>
+
+<p>The following 5 pairs of parts of speech are connected with <code>vocative</code>: <a href="">el-pos/VERB</a>-<a href="">el-pos/NOUN</a> (52; 83% instances), <a href="">el-pos/NOUN</a>-<a href="">el-pos/NOUN</a> (5; 8% instances), <a href="">el-pos/ADJ</a>-<a href="">el-pos/NOUN</a> (4; 6% instances), <a href="">el-pos/PRON</a>-<a href="">el-pos/NOUN</a> (1; 2% instances), <a href="">el-pos/VERB</a>-<a href="">el-pos/X</a> (1; 2% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 8 vocative	color:blue
+1	(	(	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No
+2	ES	ES	X	X	Foreign=Yes	4	orphan	_	SpaceAfter=No
+3	)	)	PUNCT	PUNCT	_	2	punct	_	_
+4	Ευχαριστώ	ευχαριστώ	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	πολύ	πολύ	ADV	ADV	_	4	advmod	_	SpaceAfter=No
+6	,	,	PUNCT	PUNCT	_	8	punct	_	_
+7	κύριε	κύριος	NOUN	NOUN	Case=Voc|Gender=Masc|Number=Sing	8	nmod	_	_
+8	Πρόεδρε	πρόεδρος	NOUN	NOUN	Case=Voc|Gender=Masc|Number=Sing	4	vocative	_	SpaceAfter=No
+9	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 6 vocative	color:blue
+1	Διότι	διότι	SCONJ	SCONJ	_	17	advmod	_	_
+2	τόσο	τόσο	ADV	ADV	_	4	cc	_	_
+3	το	ο	DET	DET	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	4	det	_	_
+4	ευρώ	ευρώ	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Sing	17	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	PUNCT	_	6	punct	_	_
+6	κυρίες	κυρία	NOUN	NOUN	Case=Voc|Gender=Fem|Number=Plur	4	vocative	_	_
+7	και	και	CCONJ	CCONJ	_	8	cc	_	_
+8	κύριοι	κύριος	NOUN	NOUN	Case=Voc|Gender=Masc|Number=Plur	6	conj	_	SpaceAfter=No
+9	,	,	PUNCT	PUNCT	_	6	punct	_	_
+10	όσο	όσο	ADV	ADV	_	11	advmod	_	_
+11	και	και	CCONJ	CCONJ	_	16	cc	_	_
+12	η	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+13	Οικονομική	οικονομικός	ADJ	ADJ	Case=Nom|Gender=Fem|Number=Sing	16	amod	_	_
+14	και	και	CCONJ	CCONJ	_	15	cc	_	_
+15	Νομισματική	νομισματικός	ADJ	ADJ	Case=Nom|Gender=Fem|Number=Sing	13	conj	_	_
+16	Ένωση	ένωση	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Sing	4	conj	_	_
+17	γεννήθηκαν	γεννώ	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+18	στην	στου	ADP	ADP	Case=Acc|Gender=Fem|Number=Sing	19	case	_	_
+19	Μαδρίτη	Μαδρίτη	PROPN	PROPN	Case=Acc|Gender=Fem|Number=Sing	17	obl	_	SpaceAfter=No
+20	.	.	PUNCT	PUNCT	_	17	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 2 vocative	color:blue
+1	Κύριε	κύριος	NOUN	NOUN	Case=Voc|Gender=Masc|Number=Sing	2	nmod	_	_
+2	Πρόεδρε	πρόεδρος	NOUN	NOUN	Case=Voc|Gender=Masc|Number=Sing	5	vocative	_	SpaceAfter=No
+3	,	,	PUNCT	PUNCT	_	5	punct	_	_
+4	ήταν	είμαι	AUX	AUX	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	5	cop	_	_
+5	σαφές	σαφής	ADJ	ADJ	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
+6	ότι	ότι	SCONJ	SCONJ	_	10	mark	_	_
+7	αυτό	αυτός	PRON	PRON	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Dem	9	det	_	_
+8	το	ο	DET	DET	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	9	det	_	_
+9	πνεύμα	πνεύμα	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Sing	10	nsubj	_	_
+10	διέπνεε	διαπνέω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	csubj	_	_
+11	όσα	όσος	PRON	PRON	Case=Acc|Gender=Neut|Number=Plur|Person=3|PronType=Ind,Rel	12	obj	_	_
+12	είπατε	λέγω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Plur|Person=2|Tense=Past|VerbForm=Fin|Voice=Act	10	ccomp	_	SpaceAfter=No
+13	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+</code></pre>
+
+
+
+
 <!-- "in other languages" links -->
 <hr/>
 
 vocative in other languages:
 
+[<a href="../../am/dep/vocative.html">am</a>]
+
+[<a href="../../ar/dep/vocative.html">ar</a>]
+
 [<a href="../../bg/dep/vocative.html">bg</a>]
 
+[<a href="../../bxr/dep/vocative.html">bxr</a>]
+
+[<a href="../../ca/dep/vocative.html">ca</a>]
+
+[<a href="../../ckb/dep/vocative.html">ckb</a>]
+
+[<a href="../../cop/dep/vocative.html">cop</a>]
+
 [<a href="../../cs/dep/vocative.html">cs</a>]
+
+[<a href="../../cu/dep/vocative.html">cu</a>]
+
+[<a href="../../da/dep/vocative.html">da</a>]
 
 [<a href="../../de/dep/vocative.html">de</a>]
 
@@ -89,29 +205,99 @@ vocative in other languages:
 
 [<a href="../../es/dep/vocative.html">es</a>]
 
+[<a href="../../et/dep/vocative.html">et</a>]
+
 [<a href="../../eu/dep/vocative.html">eu</a>]
 
 [<a href="../../fa/dep/vocative.html">fa</a>]
 
 [<a href="../../fi/dep/vocative.html">fi</a>]
 
+[<a href="../../fo/dep/vocative.html">fo</a>]
+
 [<a href="../../fr/dep/vocative.html">fr</a>]
 
 [<a href="../../ga/dep/vocative.html">ga</a>]
 
+[<a href="../../gl/dep/vocative.html">gl</a>]
+
+[<a href="../../got/dep/vocative.html">got</a>]
+
+[<a href="../../grc/dep/vocative.html">grc</a>]
+
 [<a href="../../he/dep/vocative.html">he</a>]
 
+[<a href="../../hi/dep/vocative.html">hi</a>]
+
+[<a href="../../hr/dep/vocative.html">hr</a>]
+
 [<a href="../../hu/dep/vocative.html">hu</a>]
+
+[<a href="../../id/dep/vocative.html">id</a>]
 
 [<a href="../../it/dep/vocative.html">it</a>]
 
 [<a href="../../ja/dep/vocative.html">ja</a>]
 
+[<a href="../../kk/dep/vocative.html">kk</a>]
+
+[<a href="../../kmr/dep/vocative.html">kmr</a>]
+
 [<a href="../../ko/dep/vocative.html">ko</a>]
+
+[<a href="../../la/dep/vocative.html">la</a>]
+
+[<a href="../../lv/dep/vocative.html">lv</a>]
+
+[<a href="../../mr/dep/vocative.html">mr</a>]
+
+[<a href="../../nl/dep/vocative.html">nl</a>]
+
+[<a href="../../no/dep/vocative.html">no</a>]
+
+[<a href="../../pl/dep/vocative.html">pl</a>]
+
+[<a href="../../pt/dep/vocative.html">pt</a>]
+
+[<a href="../../ro/dep/vocative.html">ro</a>]
+
+[<a href="../../ru/dep/vocative.html">ru</a>]
+
+[<a href="../../sa/dep/vocative.html">sa</a>]
+
+[<a href="../../sk/dep/vocative.html">sk</a>]
+
+[<a href="../../sla/dep/vocative.html">sla</a>]
+
+[<a href="../../sl/dep/vocative.html">sl</a>]
+
+[<a href="../../so/dep/vocative.html">so</a>]
+
+[<a href="../../sr/dep/vocative.html">sr</a>]
 
 [<a href="../../sv/dep/vocative.html">sv</a>]
 
+[<a href="../../swl/dep/vocative.html">swl</a>]
+
+[<a href="../../ta/dep/vocative.html">ta</a>]
+
+[<a href="../../tr/dep/vocative.html">tr</a>]
+
 [<a href="../../u/dep/vocative.html">u</a>]
+
+[<a href="../../ug/dep/vocative.html">ug</a>]
+
+[<a href="../../uk/dep/vocative.html">uk</a>]
+
+[<a href="../../ur/dep/vocative.html">ur</a>]
+
+[<a href="../../urj/dep/vocative.html">urj</a>]
+
+[<a href="../../vi/dep/vocative.html">vi</a>]
+
+[<a href="../../yue/dep/vocative.html">yue</a>]
+
+[<a href="../../zh/dep/vocative.html">zh</a>]
 
 
 

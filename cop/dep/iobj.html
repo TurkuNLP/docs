@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-cop">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/cop/dep">cop/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_cop-dep/iobj.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cop">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/cop/dep">cop/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cop-dep/iobj.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -45,8 +62,16 @@
 
           <h2><code>iobj</code>: indirect object</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>iobj</code>.</p>
+<p>Only used to mark the possessor in the possessive existential construction:</p>
+
+<pre><code class="language-sdparse">ⲟⲩⲛⲧⲁ/VERB ⲩ/PRON ⲓⲏⲥⲟⲩⲥ/PROPN \n They have Jesus
+
+iobj(ⲟⲩⲛⲧⲁ, ⲩ)
+nsubj(ⲟⲩⲛⲧⲁ, ⲓⲏⲥⲟⲩⲥ)
+</code></pre>
+
+<p>The above example can be interpreted as ‘exists to-them Jesus’, etymologically ⲟⲩⲛⲧⲁ-ⲩ &lt; ‘exists in their hand.’</p>
+
 
 
 <!-- "automatic stats" -->
@@ -63,12 +88,12 @@ for <code>iobj</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>7 nodes (0%) are attached to their parents as <code>iobj</code>.</p>
+<p>13 nodes (0%) are attached to their parents as <code>iobj</code>.</p>
 
-<p>7 instances of <code>iobj</code> (100%) are left-to-right (parent precedes child).
-Average distance between parent and child is 1.14285714285714.</p>
+<p>13 instances of <code>iobj</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 1.07692307692308.</p>
 
-<p>The following 2 pairs of parts of speech are connected with <code>iobj</code>: <a href="">cop-pos/VERB</a>-<a href="">cop-pos/PRON</a> (6; 86% instances), <a href="">cop-pos/VERB</a>-<a href="">cop-pos/NOUN</a> (1; 14% instances).</p>
+<p>The following 2 pairs of parts of speech are connected with <code>iobj</code>: <a href="">cop-pos/VERB</a>-<a href="">cop-pos/PRON</a> (12; 92% instances), <a href="">cop-pos/VERB</a>-<a href="">cop-pos/NOUN</a> (1; 8% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 4	bgColor:blue
 # visual-style 4	fgColor:white
@@ -81,7 +106,7 @@ Average distance between parent and child is 1.14285714285714.</p>
 4	ⲩ	ⲛⲧⲟⲟⲩ	PRON	PPERS	_	3	iobj	_	_
 5	ⲡ	ⲡ	DET	ART	_	6	det	_	_
 6	ⲉⲟⲟⲩ	ⲉⲟⲟⲩ	NOUN	N	_	3	nsubj	_	_
-7	ⲙⲛ	ⲙⲛ	ADP	PREP	_	6	cc	_	_
+7	ⲙⲛ	ⲙⲛ	ADP	PREP	_	9	cc	_	_
 8	ⲡ	ⲡ	DET	ART	_	9	det	_	_
 9	ⲧⲁⲉⲓⲟ	ⲧⲁⲉⲓⲟ	NOUN	N	_	6	conj	_	_
 10	ⲉⲃⲟⲗ	ⲉⲃⲟⲗ	ADV	ADV	_	11	advmod	_	_
@@ -96,63 +121,63 @@ Average distance between parent and child is 1.14285714285714.</p>
 # visual-style 2	bgColor:blue
 # visual-style 2	fgColor:white
 # visual-style 2 4 iobj	color:blue
-1	ⲙⲏ	ⲙⲏ	CONJ	CONJ	_	2	advmod	_	_
+1	ⲙⲏ	ⲙⲏ	CCONJ	CONJ	_	2	advmod	_	_
 2	ⲟⲩⲛⲧⲉ	ⲟⲩⲛⲧⲁ	VERB	EXIST	_	0	root	_	_
 3	ⲡⲉⲕ	ⲡⲉⲕ	DET	PPOS	_	4	det	_	_
 4	ⲉⲓⲱⲧ	ⲉⲓⲱⲧ	NOUN	N	_	2	iobj	_	_
 5	ⲕⲣⲟⲛⲟⲥ	ⲕⲣⲟⲛⲟⲥ	PROPN	NPROP	_	2	nsubj	_	_
-6	ⲗⲁⲁⲩ	ⲗⲁⲁⲩ	NOUN	N	_	2	dobj	_	_
+6	ⲗⲁⲁⲩ	ⲗⲁⲁⲩ	NOUN	N	_	2	obj	_	_
 7	ⲣⲱ	ⲣⲱ	PART	PTC	_	2	advmod	_	_
 8	ⲛⲧⲟϥ	ⲛⲧⲟϥ	PRON	PPERI	_	5	appos	_	_
 9	ⲛⲥⲁ	ⲛⲥⲁ	ADP	PREP	_	11	case	_	_
 10	ϩⲉⲛ	ⲟⲩ	DET	ART	_	11	det	_	_
-11	ⲛⲟⲃⲉ	ⲛⲟⲃⲉ	NOUN	N	_	2	nmod	_	_
+11	ⲛⲟⲃⲉ	ⲛⲟⲃⲉ	NOUN	N	_	2	obl	_	_
 12	ⲛⲁⲓ	ⲡⲁⲓ	DET	PDEM	_	11	appos	_	_
 13	ⲉⲧ	ⲉⲧⲉⲣⲉ	SCONJ	CREL	_	15	mark	_	_
 14	ⲕ	ⲛⲧⲟⲕ	PRON	PPERS	_	15	nsubj	_	_
 15	ⲟ	ⲉⲓⲣⲉ	VERB	VSTAT	_	12	acl	_	_
 16	ⲛ	ⲛ	ADP	PREP	_	18	case	_	_
 17	ⲟⲩ	ⲟⲩ	DET	ART	_	18	det	_	_
-18	ⲟⲉⲓⲉ	ⲟⲉⲓⲉ	NOUN	N	_	15	dobj	_	_
+18	ⲟⲉⲓⲉ	ⲟⲉⲓⲉ	NOUN	N	_	15	obj	_	_
 19	ⲉⲣⲟ	ⲉ	ADP	PREP	_	20	case	_	_
 20	ⲟⲩ	ⲛⲧⲟⲟⲩ	PRON	PPERO	_	18	nmod	_	_
 21	ⲛⲁ	ⲛⲁ	ADP	PREP	_	22	case	_	_
-22	ϥ	ⲛⲧⲟϥ	PRON	PPERO	_	15	nmod	_	_
+22	ϥ	ⲛⲧⲟϥ	PRON	PPERO	_	15	obl	_	_
 23	ⲛⲧⲟⲕ	ⲛⲧⲟⲕ	PRON	PPERI	_	14	appos	_	_
-24	ⲙⲛ	ⲙⲛ	ADP	PREP	_	23	cc	_	_
+24	ⲙⲛ	ⲙⲛ	ADP	PREP	_	25	cc	_	_
 25	ⲛ	ⲡ	DET	ART	_	23	conj	_	_
 26	ⲉⲧ	ⲉⲧⲉⲣⲉ	SCONJ	CREL	_	27	mark	_	_
 27	ⲉⲓⲛⲉ	ⲉⲓⲛⲉ	VERB	V	_	25	acl	_	_
 28	ⲙⲙⲟ	ⲛ	ADP	PREP	_	29	case	_	_
-29	ⲕ	ⲛⲧⲟⲕ	PRON	PPERO	_	27	dobj	_	_
+29	ⲕ	ⲛⲧⲟⲕ	PRON	PPERO	_	27	obj	_	_
 30	.	.	PUNCT	PUNCT	_	2	punct	_	_
 31	ⲉ	ⲉⲣⲉ	SCONJ	CCIRC	_	33	mark	_	_
 32	ⲧⲉⲧⲛ	ⲛⲧⲱⲧⲛ	PRON	PPERS	_	33	nsubj	_	_
 33	ϫⲟ	ϫⲟ	VERB	V	_	27	advcl	_	_
-34	ⲁⲩⲱ	ⲁⲩⲱ	CONJ	CONJ	_	33	cc	_	_
+34	ⲁⲩⲱ	ⲁⲩⲱ	CCONJ	CONJ	_	37	cc	_	_
 35	ⲉ	ⲉⲣⲉ	PART	CFOC	_	37	mark	_	_
 36	ⲧⲉⲧⲛ	ⲛⲧⲱⲧⲛ	PRON	PPERS	_	37	nsubj	_	_
 37	ⲱⲗ	ⲱⲗ	VERB	V	_	33	conj	_	_
 38	ⲛⲁ	ⲛⲁ	ADP	PREP	_	39	case	_	_
-39	ϥ	ⲛⲧⲟϥ	PRON	PPERO	_	37	nmod	_	_
+39	ϥ	ⲛⲧⲟϥ	PRON	PPERO	_	37	obl	_	_
 40	ⲉϩⲟⲩⲛ	ⲉϩⲟⲩⲛ	ADV	ADV	_	37	advmod	_	_
 41	ⲛ	ⲛ	ADP	PREP	_	43	case	_	_
 42	ⲙ	ⲡ	DET	ART	_	43	det	_	_
-43	ⲙⲛⲧⲁⲡⲓⲥⲧⲟⲥ	ⲙⲛⲧⲁⲡⲓⲥⲧⲟⲥ	NOUN	N	_	37	dobj	_	_
-44	ⲙⲛ	ⲙⲛ	ADP	PREP	_	43	cc	_	_
+43	ⲙⲛⲧⲁⲡⲓⲥⲧⲟⲥ	ⲙⲛⲧⲁⲡⲓⲥⲧⲟⲥ	NOUN	N	_	37	obj	_	_
+44	ⲙⲛ	ⲙⲛ	ADP	PREP	_	58	cc	_	_
 45	ⲛ	ⲡ	DET	ART	_	46	det	_	_
 46	ϭⲟⲗ	ϭⲟⲗ	NOUN	N	_	43	conj	_	_
 47	,	,	PUNCT	PUNCT	_	2	punct	_	_
-48	ⲙⲛ	ⲙⲛ	ADP	PREP	_	43	cc	_	_
+48	ⲙⲛ	ⲙⲛ	ADP	PREP	_	58	cc	_	_
 49	ⲛ	ⲡ	DET	ART	_	50	det	_	_
 50	ϫⲓ	ϫⲓ	NOUN	N	_	43	conj	_	_
 51	ⲛ	ⲛ	ADP	PREP	_	52	case	_	_
-52	ϭⲟⲛⲥ	ϭⲟⲛⲥ	NOUN	N	_	50	dobj	_	_
+52	ϭⲟⲛⲥ	ϭⲟⲛⲥ	NOUN	N	_	50	obj	_	_
 53	,	,	PUNCT	PUNCT	_	52	punct	_	_
-54	ⲙⲛ	ⲙⲛ	ADP	PREP	_	43	cc	_	_
+54	ⲙⲛ	ⲙⲛ	ADP	PREP	_	58	cc	_	_
 55	ⲛ	ⲡ	DET	ART	_	56	det	_	_
 56	ⲟⲩⲁ	ⲟⲩⲁ	NOUN	N	_	43	conj	_	_
-57	ⲙⲛ	ⲙⲛ	ADP	PREP	_	43	cc	_	_
+57	ⲙⲛ	ⲙⲛ	ADP	PREP	_	58	cc	_	_
 58	ϩⲱⲃ	ϩⲱⲃ	NOUN	N	_	43	conj	_	_
 59	ⲛⲓⲙ	ⲛⲓⲙ	PRON	PINT	_	58	det	_	_
 60	ⲙ	ⲛ	ADP	PREP	_	61	case	_	_
@@ -169,9 +194,25 @@ Average distance between parent and child is 1.14285714285714.</p>
 
 iobj in other languages:
 
+[<a href="../../am/dep/iobj.html">am</a>]
+
+[<a href="../../ar/dep/iobj.html">ar</a>]
+
 [<a href="../../bg/dep/iobj.html">bg</a>]
 
+[<a href="../../bxr/dep/iobj.html">bxr</a>]
+
+[<a href="../../ca/dep/iobj.html">ca</a>]
+
+[<a href="../../ckb/dep/iobj.html">ckb</a>]
+
+[<a href="../../cop/dep/iobj.html">cop</a>]
+
 [<a href="../../cs/dep/iobj.html">cs</a>]
+
+[<a href="../../cu/dep/iobj.html">cu</a>]
+
+[<a href="../../da/dep/iobj.html">da</a>]
 
 [<a href="../../de/dep/iobj.html">de</a>]
 
@@ -181,27 +222,95 @@ iobj in other languages:
 
 [<a href="../../es/dep/iobj.html">es</a>]
 
+[<a href="../../et/dep/iobj.html">et</a>]
+
 [<a href="../../eu/dep/iobj.html">eu</a>]
 
 [<a href="../../fa/dep/iobj.html">fa</a>]
 
+[<a href="../../fo/dep/iobj.html">fo</a>]
+
 [<a href="../../fr/dep/iobj.html">fr</a>]
 
-[<a href="../../ga/dep/iobj.html">ga</a>]
+[<a href="../../gl/dep/iobj.html">gl</a>]
+
+[<a href="../../got/dep/iobj.html">got</a>]
+
+[<a href="../../grc/dep/iobj.html">grc</a>]
 
 [<a href="../../he/dep/iobj.html">he</a>]
 
+[<a href="../../hi/dep/iobj.html">hi</a>]
+
+[<a href="../../hr/dep/iobj.html">hr</a>]
+
 [<a href="../../hu/dep/iobj.html">hu</a>]
+
+[<a href="../../id/dep/iobj.html">id</a>]
 
 [<a href="../../it/dep/iobj.html">it</a>]
 
 [<a href="../../ja/dep/iobj.html">ja</a>]
 
+[<a href="../../kk/dep/iobj.html">kk</a>]
+
+[<a href="../../kmr/dep/iobj.html">kmr</a>]
+
 [<a href="../../ko/dep/iobj.html">ko</a>]
+
+[<a href="../../la/dep/iobj.html">la</a>]
+
+[<a href="../../lv/dep/iobj.html">lv</a>]
+
+[<a href="../../mr/dep/iobj.html">mr</a>]
+
+[<a href="../../nl/dep/iobj.html">nl</a>]
+
+[<a href="../../no/dep/iobj.html">no</a>]
+
+[<a href="../../pl/dep/iobj.html">pl</a>]
+
+[<a href="../../pt/dep/iobj.html">pt</a>]
+
+[<a href="../../ro/dep/iobj.html">ro</a>]
+
+[<a href="../../ru/dep/iobj.html">ru</a>]
+
+[<a href="../../sa/dep/iobj.html">sa</a>]
+
+[<a href="../../sk/dep/iobj.html">sk</a>]
+
+[<a href="../../sla/dep/iobj.html">sla</a>]
+
+[<a href="../../sl/dep/iobj.html">sl</a>]
+
+[<a href="../../so/dep/iobj.html">so</a>]
+
+[<a href="../../sr/dep/iobj.html">sr</a>]
 
 [<a href="../../sv/dep/iobj.html">sv</a>]
 
+[<a href="../../swl/dep/iobj.html">swl</a>]
+
+[<a href="../../ta/dep/iobj.html">ta</a>]
+
+[<a href="../../tr/dep/iobj.html">tr</a>]
+
 [<a href="../../u/dep/iobj.html">u</a>]
+
+[<a href="../../ug/dep/iobj.html">ug</a>]
+
+[<a href="../../uk/dep/iobj.html">uk</a>]
+
+[<a href="../../ur/dep/iobj.html">ur</a>]
+
+[<a href="../../urj/dep/iobj.html">urj</a>]
+
+[<a href="../../vi/dep/iobj.html">vi</a>]
+
+[<a href="../../yue/dep/iobj.html">yue</a>]
+
+[<a href="../../zh/dep/iobj.html">zh</a>]
 
 
 

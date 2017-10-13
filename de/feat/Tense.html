@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-de">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/de/feat">de/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_de-feat/Tense.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-de">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/de/feat">de/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_de-feat/Tense.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -65,23 +82,23 @@ for <code>Tense</code>.</p>
 <p>This feature is universal.
 It occurs with 2 different values: <code>Past</code>, <code>Pres</code>.</p>
 
-<p>10488 tokens (4%) have a non-empty value of <code>Tense</code>.
-99 types (0%) occur at least once with a non-empty value of <code>Tense</code>.
-13 lemmas (0%) occur at least once with a non-empty value of <code>Tense</code>.
-The feature is used with 2 part-of-speech tags: <a href="">de-pos/AUX</a> (5622; 2% instances), <a href="">de-pos/VERB</a> (4866; 2% instances).</p>
+<p>9811 tokens (3%) have a non-empty value of <code>Tense</code>.
+96 types (0%) occur at least once with a non-empty value of <code>Tense</code>.
+12 lemmas (0%) occur at least once with a non-empty value of <code>Tense</code>.
+The feature is used with 2 part-of-speech tags: <a href="">de-pos/AUX</a> (5188; 2% instances), <a href="">de-pos/VERB</a> (4623; 2% instances).</p>
 
 <h3 id="aux"><code>AUX</code></h3>
 
-<p>5622 <a href="">de-pos/AUX</a> tokens (81% of all <code>AUX</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>5188 <a href="">de-pos/AUX</a> tokens (81% of all <code>AUX</code> tokens) have a non-empty value of <code>Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Tense</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (5622; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (5326; 95%), <tt><a href="Person.html">Person</a>=3</tt> (4716; 84%), <tt><a href="Number.html">Number</a>=Sing</tt> (3598; 64%).</p>
+<p>The most frequent other feature values with which <code>AUX</code> and <code>Tense</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (5188; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (4943; 95%), <tt><a href="Person.html">Person</a>=3</tt> (4366; 84%), <tt><a href="Number.html">Number</a>=Sing</tt> (3342; 64%).</p>
 
 <p><code>AUX</code> tokens may have the following values of <code>Tense</code>:</p>
 
 <ul>
-  <li><code>Past</code> (2569; 46% of non-empty <code>Tense</code>): <em>wurde, hatte, konnte, war, sollte, musste, waren, hatten, konnten, wollte</em></li>
-  <li><code>Pres</code> (3053; 54% of non-empty <code>Tense</code>): <em>wird, kann, hat, werden, ist, haben, habe, sind, können, soll</em></li>
-  <li><code>EMPTY</code> (1291): <em>wurden, werden, worden, können, sein, sei, muß, haben, würden, müssen</em></li>
+  <li><code>Past</code> (2440; 47% of non-empty <code>Tense</code>): <em>wurde, hatte, konnte, war, sollte, musste, waren, hatten, konnten, wollte</em></li>
+  <li><code>Pres</code> (2748; 53% of non-empty <code>Tense</code>): <em>wird, kann, hat, werden, ist, haben, habe, sind, können, soll</em></li>
+  <li><code>EMPTY</code> (1187): <em>wurden, werden, worden, können, sein, sei, muß, haben, gewesen, würden</em></li>
 </ul>
 
 <table>
@@ -90,7 +107,7 @@ The feature is used with 2 part-of-speech tags: <a href="">de-pos/AUX</a> (5622;
   <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=2</tt></td><td><em>wirst</em></td><td></td></tr>
   <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3</tt></td><td><em>wird, werde</em></td><td><em>wurde</em></td></tr>
   <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1</tt></td><td><em>werden</em></td><td></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=2</tt></td><td><em>werden, werdet</em></td><td></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=2</tt></td><td><em>werdet</em></td><td></td></tr>
   <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3</tt></td><td><em>werden, wird</em></td><td></td></tr>
   <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Person.html">Person</a>=3</tt></td><td><em>wird</em></td><td></td></tr>
   <tr><td><tt><a href="Mood.html">Mood</a>=Ind</tt></td><td><em>wird, werden, werde</em></td><td><em>wurde</em></td></tr>
@@ -100,16 +117,16 @@ The feature is used with 2 part-of-speech tags: <a href="">de-pos/AUX</a> (5622;
 
 <h3 id="verb"><code>VERB</code></h3>
 
-<p>4866 <a href="">de-pos/VERB</a> tokens (19% of all <code>VERB</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>4623 <a href="">de-pos/VERB</a> tokens (20% of all <code>VERB</code> tokens) have a non-empty value of <code>Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Tense</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (4866; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (4810; 99%), <tt><a href="Person.html">Person</a>=3</tt> (4298; 88%), <tt><a href="Number.html">Number</a>=Sing</tt> (3317; 68%).</p>
+<p>The most frequent other feature values with which <code>VERB</code> and <code>Tense</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (4623; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (4579; 99%), <tt><a href="Person.html">Person</a>=3</tt> (4104; 89%), <tt><a href="Number.html">Number</a>=Sing</tt> (3180; 69%).</p>
 
 <p><code>VERB</code> tokens may have the following values of <code>Tense</code>:</p>
 
 <ul>
-  <li><code>Past</code> (1927; 40% of non-empty <code>Tense</code>): <em>war, waren, wurde, hatte, hatten, wäre, wollte, wären, wollten, hätten</em></li>
-  <li><code>Pres</code> (2939; 60% of non-empty <code>Tense</code>): <em>ist, sind, hat, haben, bin, wird, seien, habe, weiß, will</em></li>
-  <li><code>EMPTY</code> (20175): <em>gibt, kam, liegt, gab, befindet, erhielt, sein, gehört, lassen, bezeichnet</em></li>
+  <li><code>Past</code> (1861; 40% of non-empty <code>Tense</code>): <em>war, waren, wurde, hatte, hatten, wäre, wollte, wären, wollten, hätten</em></li>
+  <li><code>Pres</code> (2762; 60% of non-empty <code>Tense</code>): <em>ist, sind, hat, haben, bin, wird, seien, weiß, will, habe</em></li>
+  <li><code>EMPTY</code> (18940): <em>gibt, kam, liegt, gab, erhielt, befindet, sein, gehört, bezeichnet, begann</em></li>
 </ul>
 
 <table>
@@ -128,6 +145,11 @@ The feature is used with 2 part-of-speech tags: <a href="">de-pos/AUX</a> (5622;
   <tr><td><tt><a href="Mood.html">Mood</a>=Sub</tt></td><td><em>seien</em></td><td></td></tr>
 </table>
 
+<h2 id="relations-with-agreement-in-tense">Relations with Agreement in <code>Tense</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code>Tense</code>:
+<tt>AUX –[<a href="../dep/conj.html">conj</a>]–&gt; AUX</tt> (4; 57%).</p>
+
 
 
 
@@ -136,9 +158,25 @@ The feature is used with 2 part-of-speech tags: <a href="">de-pos/AUX</a> (5622;
 
 Tense in other languages:
 
+[<a href="../../am/feat/Tense.html">am</a>]
+
+[<a href="../../ar/feat/Tense.html">ar</a>]
+
 [<a href="../../bg/feat/Tense.html">bg</a>]
 
+[<a href="../../bxr/feat/Tense.html">bxr</a>]
+
+[<a href="../../ca/feat/Tense.html">ca</a>]
+
+[<a href="../../ckb/feat/Tense.html">ckb</a>]
+
+[<a href="../../cop/feat/Tense.html">cop</a>]
+
 [<a href="../../cs/feat/Tense.html">cs</a>]
+
+[<a href="../../cu/feat/Tense.html">cu</a>]
+
+[<a href="../../da/feat/Tense.html">da</a>]
 
 [<a href="../../de/feat/Tense.html">de</a>]
 
@@ -148,29 +186,99 @@ Tense in other languages:
 
 [<a href="../../es/feat/Tense.html">es</a>]
 
+[<a href="../../et/feat/Tense.html">et</a>]
+
 [<a href="../../eu/feat/Tense.html">eu</a>]
 
 [<a href="../../fa/feat/Tense.html">fa</a>]
 
 [<a href="../../fi/feat/Tense.html">fi</a>]
 
+[<a href="../../fo/feat/Tense.html">fo</a>]
+
 [<a href="../../fr/feat/Tense.html">fr</a>]
 
 [<a href="../../ga/feat/Tense.html">ga</a>]
 
+[<a href="../../gl/feat/Tense.html">gl</a>]
+
+[<a href="../../got/feat/Tense.html">got</a>]
+
+[<a href="../../grc/feat/Tense.html">grc</a>]
+
 [<a href="../../he/feat/Tense.html">he</a>]
 
+[<a href="../../hi/feat/Tense.html">hi</a>]
+
+[<a href="../../hr/feat/Tense.html">hr</a>]
+
 [<a href="../../hu/feat/Tense.html">hu</a>]
+
+[<a href="../../id/feat/Tense.html">id</a>]
 
 [<a href="../../it/feat/Tense.html">it</a>]
 
 [<a href="../../ja/feat/Tense.html">ja</a>]
 
+[<a href="../../kk/feat/Tense.html">kk</a>]
+
+[<a href="../../kmr/feat/Tense.html">kmr</a>]
+
 [<a href="../../ko/feat/Tense.html">ko</a>]
+
+[<a href="../../la/feat/Tense.html">la</a>]
+
+[<a href="../../lv/feat/Tense.html">lv</a>]
+
+[<a href="../../mr/feat/Tense.html">mr</a>]
+
+[<a href="../../nl/feat/Tense.html">nl</a>]
+
+[<a href="../../no/feat/Tense.html">no</a>]
+
+[<a href="../../pl/feat/Tense.html">pl</a>]
+
+[<a href="../../pt/feat/Tense.html">pt</a>]
+
+[<a href="../../ro/feat/Tense.html">ro</a>]
+
+[<a href="../../ru/feat/Tense.html">ru</a>]
+
+[<a href="../../sa/feat/Tense.html">sa</a>]
+
+[<a href="../../sk/feat/Tense.html">sk</a>]
+
+[<a href="../../sla/feat/Tense.html">sla</a>]
+
+[<a href="../../sl/feat/Tense.html">sl</a>]
+
+[<a href="../../so/feat/Tense.html">so</a>]
+
+[<a href="../../sr/feat/Tense.html">sr</a>]
 
 [<a href="../../sv/feat/Tense.html">sv</a>]
 
+[<a href="../../swl/feat/Tense.html">swl</a>]
+
+[<a href="../../ta/feat/Tense.html">ta</a>]
+
+[<a href="../../tr/feat/Tense.html">tr</a>]
+
 [<a href="../../u/feat/Tense.html">u</a>]
+
+[<a href="../../ug/feat/Tense.html">ug</a>]
+
+[<a href="../../uk/feat/Tense.html">uk</a>]
+
+[<a href="../../ur/feat/Tense.html">ur</a>]
+
+[<a href="../../urj/feat/Tense.html">urj</a>]
+
+[<a href="../../vi/feat/Tense.html">vi</a>]
+
+[<a href="../../yue/feat/Tense.html">yue</a>]
+
+[<a href="../../zh/feat/Tense.html">zh</a>]
 
 
 

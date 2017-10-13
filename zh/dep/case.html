@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-zh">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/zh/dep">zh/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_zh-dep/case.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-zh">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/zh/dep">zh/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_zh-dep/case.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -45,8 +62,145 @@
 
           <h2><code>case</code>: case marking</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>case</code>.</p>
+<p>The case relation for Mandarin Chinese is applied to various particles that mark non-clausal dependents, including the genitive 的 <em>de</em> (1); prepositions (2, 3), including “coverbs” (4); and the valence markers 把 <em>bǎ</em> and 將 <em>jiāng</em> (5) in “BA constructions” (see <a href="">obl:patient</a>); the comparative 比 <em>bǐ</em> (6); and 被 <em>bèi</em> in “long passive” constructions where the agent is mentioned (7).</p>
+
+<p>Note that 的 <em>de</em> has other grammaticalized functions that require the <a href="">mark:rel</a> relation instead.</p>
+
+<p>Postpositions, also known as “localizers”, are labeled with <a href="">case:loc</a> instead.</p>
+
+<pre><code class="language-conllu"># visual-style 1 2 case	color:blue
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+1	你	_	PRON	_	_	3	nmod	_	2SG
+2	的	_	PART	_	_	1	case	_	GEN
+3	電話	_	NOUN	_	_	0	root	_	phone
+
+1	"your	_	_	_	_	0	_	_	_
+2	phone"	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 3 2 case	color:blue
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+1	我	_	PRON	_	_	5	nsubj	_	1SG
+2	在	_	ADP	_	_	3	case	_	at
+3	公司	_	NOUN	_	_	5	obl	_	company
+4	已經	_	ADV	_	_	5	advmod	_	already
+5	完成	_	VERB	_	_	0	root	_	complete
+6	了	_	PART	_	_	5	discourse:sp	_	SP
+
+1	"I	_	_	_	_	0	_	_	_
+2	already	_	_	_	_	0	_	_	_
+3	completed	_	_	_	_	0	_	_	_
+4	it	_	_	_	_	0	_	_	_
+5	at	_	_	_	_	0	_	_	_
+6	the	_	_	_	_	0	_	_	_
+7	office."	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 3 2 case	color:blue
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+1	戴	_	VERB	_	_	0	root	_	wear
+2	在	_	ADP	_	_	3	case	_	on
+3	手	_	NOUN	_	_	1	obl	_	hand
+4	上	_	ADP	_	_	3	case:loc	_	above
+
+1	"wear	_	_	_	_	0	_	_	_
+2	it	_	_	_	_	0	_	_	_
+3	on	_	_	_	_	0	_	_	_
+4	the	_	_	_	_	0	_	_	_
+5	hand"	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 2 1 case	color:blue
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+1	跟	_	ADP	_	_	2	case	_	with
+2	我	_	PRON	_	_	3	obl	_	1SG
+3	來	_	VERB	_	_	0	root	_	come
+
+1	"Come	_	_	_	_	0	_	_	_
+2	with	_	_	_	_	0	_	_	_
+3	me."	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 2 1 case	color:blue
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+1	把	_	ADP	_	_	2	case	_	BA
+2	他們	_	PRON	_	_	3	obl:patient	_	3PL
+3	藏	_	VERB	_	_	0	root	_	hide
+4	在	_	ADP	_	_	5	case	_	in
+5	房	_	NOUN	_	_	3	obl	_	room
+6	裡	_	ADP	_	_	5	case:loc	_	inside
+
+1	"Hide	_	_	_	_	0	_	_	_
+2	them	_	_	_	_	0	_	_	_
+3	inside	_	_	_	_	0	_	_	_
+4	the	_	_	_	_	0	_	_	_
+5	room."	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 4 3 case	color:blue
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+1	我們	_	PRON	_	_	7	nsubj	_	1PL
+2	應該	_	AUX	_	_	7	aux	_	should
+3	比	_	ADP	_	_	4	case	_	COMP
+4	他們	_	PRON	_	_	7	obl	_	3PL
+5	更	_	ADV	_	_	6	advmod	_	more
+6	早	_	ADJ	_	_	7	advmod	_	early
+7	到達	_	VERB	_	_	0	root	_	arrive
+8	公司	_	NOUN	_	_	7	obj	_	company
+
+1	"We	_	_	_	_	0	_	_	_
+2	may	_	_	_	_	0	_	_	_
+3	arrive	_	_	_	_	0	_	_	_
+4	at	_	_	_	_	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	company	_	_	_	_	0	_	_	_
+7	before	_	_	_	_	0	_	_	_
+8	(earlier	_	_	_	_	0	_	_	_
+9	than)	_	_	_	_	0	_	_	_
+10	them."	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 2 1 case	color:blue
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+1	被	_	ADP	_	_	2	case	_	by
+2	你	_	PRON	_	_	3	obl:agent	_	2SG
+3	偷	_	VERB	_	_	0	root	_	steal
+4	了	_	PART	_	_	3	discourse:sp	_	SP
+
+1	"It	_	_	_	_	0	_	_	_
+2	was	_	_	_	_	0	_	_	_
+3	stolen	_	_	_	_	0	_	_	_
+4	by	_	_	_	_	0	_	_	_
+5	you."	_	_	_	_	0	_	_	_
+
+</code></pre>
 
 
 <!-- "automatic stats" -->
@@ -64,42 +218,42 @@ for <code>case</code>.</p>
 <p>This relation is universal.
 There are 4 language-specific subtypes of <code>case</code>: <a href="">case:aspect</a>, <a href="">case:dec</a>, <a href="">case:pref</a>, <a href="">case:suff</a>.</p>
 
-<p>3546 nodes (3%) are attached to their parents as <code>case</code>.</p>
+<p>3218 nodes (3%) are attached to their parents as <code>case</code>.</p>
 
-<p>3528 instances of <code>case</code> (99%) are right-to-left (child precedes parent).
-Average distance between parent and child is 3.21630005640158.</p>
+<p>3201 instances of <code>case</code> (99%) are right-to-left (child precedes parent).
+Average distance between parent and child is 3.2119328775637.</p>
 
-<p>The following 13 pairs of parts of speech are connected with <code>case</code>: <a href="">zh-pos/NOUN</a>-<a href="">zh-pos/ADP</a> (2088; 59% instances), <a href="">zh-pos/VERB</a>-<a href="">zh-pos/ADP</a> (654; 18% instances), <a href="">zh-pos/PART</a>-<a href="">zh-pos/ADP</a> (272; 8% instances), <a href="">zh-pos/PROPN</a>-<a href="">zh-pos/ADP</a> (228; 6% instances), <a href="">zh-pos/PRON</a>-<a href="">zh-pos/ADP</a> (175; 5% instances), <a href="">zh-pos/ADJ</a>-<a href="">zh-pos/ADP</a> (67; 2% instances), <a href="">zh-pos/X</a>-<a href="">zh-pos/ADP</a> (29; 1% instances), <a href="">zh-pos/ADV</a>-<a href="">zh-pos/ADP</a> (13; 0% instances), <a href="">zh-pos/NUM</a>-<a href="">zh-pos/ADP</a> (10; 0% instances), <a href="">zh-pos/ADP</a>-<a href="">zh-pos/ADP</a> (6; 0% instances), <a href="">zh-pos/PUNCT</a>-<a href="">zh-pos/ADP</a> (2; 0% instances), <a href="">zh-pos/AUX</a>-<a href="">zh-pos/ADP</a> (1; 0% instances), <a href="">zh-pos/DET</a>-<a href="">zh-pos/ADP</a> (1; 0% instances).</p>
+<p>The following 13 pairs of parts of speech are connected with <code>case</code>: <a href="">zh-pos/NOUN</a>-<a href="">zh-pos/ADP</a> (1897; 59% instances), <a href="">zh-pos/VERB</a>-<a href="">zh-pos/ADP</a> (588; 18% instances), <a href="">zh-pos/PART</a>-<a href="">zh-pos/ADP</a> (244; 8% instances), <a href="">zh-pos/PROPN</a>-<a href="">zh-pos/ADP</a> (208; 6% instances), <a href="">zh-pos/PRON</a>-<a href="">zh-pos/ADP</a> (164; 5% instances), <a href="">zh-pos/ADJ</a>-<a href="">zh-pos/ADP</a> (59; 2% instances), <a href="">zh-pos/X</a>-<a href="">zh-pos/ADP</a> (26; 1% instances), <a href="">zh-pos/ADV</a>-<a href="">zh-pos/ADP</a> (12; 0% instances), <a href="">zh-pos/NUM</a>-<a href="">zh-pos/ADP</a> (10; 0% instances), <a href="">zh-pos/ADP</a>-<a href="">zh-pos/ADP</a> (6; 0% instances), <a href="">zh-pos/PUNCT</a>-<a href="">zh-pos/ADP</a> (2; 0% instances), <a href="">zh-pos/AUX</a>-<a href="">zh-pos/ADP</a> (1; 0% instances), <a href="">zh-pos/DET</a>-<a href="">zh-pos/ADP</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 18	bgColor:blue
 # visual-style 18	fgColor:white
 # visual-style 22	bgColor:blue
 # visual-style 22	fgColor:white
 # visual-style 22 18 case	color:blue
-1	在	_	VERB	VV	_	12	acl	_	_
-2	平原	_	NOUN	NN	_	1	dobj	_	_
-3	、	_	PUNCT	EC	_	2	punct	_	_
-4	塔	_	NOUN	NN	_	2	conj	_	_
-5	、	_	PUNCT	EC	_	2	punct	_	_
-6	洞窟	_	NOUN	NN	_	2	conj	_	_
-7	、	_	PUNCT	EC	_	2	punct	_	_
-8	海	_	NOUN	NN	_	2	conj	_	_
-9	或	_	CONJ	CC	_	2	cc	_	_
-10	迷宮	_	NOUN	NN	_	2	conj	_	_
-11	中	_	NOUN	NN	_	2	acl	_	_
-12	移動	_	VERB	VV	_	23	acl	_	_
-13	時	_	ADP	IN	_	12	mark	_	_
-14	,	_	PUNCT	,	_	23	punct	_	_
-15	玩家	_	NOUN	NN	_	23	nsubj	_	_
-16	將	_	ADV	RB	_	23	advmod	_	_
-17	會	_	AUX	MD	_	23	aux	_	_
-18	和	_	ADP	IN	_	22	case	_	_
-19	隨機	_	ADV	RB	_	20	advmod	_	_
-20	遇到	_	VERB	VV	_	22	acl:relcl	_	_
-21	的	_	PART	DEC	Case=Rel	20	acl:relcl	_	_
-22	敵人	_	NOUN	NN	_	23	nmod	_	_
-23	作戰	_	VERB	VV	_	0	root	_	_
-24	.	_	PUNCT	.	_	23	punct	_	_
+1	在	在	VERB	VV	_	12	acl	_	SpaceAfter=No
+2	平原	平原	NOUN	NN	_	1	obj	_	SpaceAfter=No
+3	、	、	PUNCT	EC	_	4	punct	_	SpaceAfter=No
+4	塔	塔	NOUN	NN	_	2	conj	_	SpaceAfter=No
+5	、	、	PUNCT	EC	_	6	punct	_	SpaceAfter=No
+6	洞窟	洞窟	NOUN	NN	_	2	conj	_	SpaceAfter=No
+7	、	、	PUNCT	EC	_	8	punct	_	SpaceAfter=No
+8	海	海	NOUN	NN	_	2	conj	_	SpaceAfter=No
+9	或	或	CCONJ	CC	_	10	cc	_	SpaceAfter=No
+10	迷宮	迷宮	NOUN	NN	_	2	conj	_	SpaceAfter=No
+11	中	中	NOUN	NN	_	2	acl	_	SpaceAfter=No
+12	移動	移動	VERB	VV	_	23	acl	_	SpaceAfter=No
+13	時	時	ADP	IN	_	12	mark	_	SpaceAfter=No
+14	,	,	PUNCT	,	_	23	punct	_	SpaceAfter=No
+15	玩家	玩家	NOUN	NN	_	23	nsubj	_	SpaceAfter=No
+16	將	將	ADV	RB	_	23	advmod	_	SpaceAfter=No
+17	會	會	AUX	MD	_	23	aux	_	SpaceAfter=No
+18	和	和	ADP	IN	_	22	case	_	SpaceAfter=No
+19	隨機	隨機	ADV	RB	_	20	advmod	_	SpaceAfter=No
+20	遇到	遇到	VERB	VV	_	22	acl:relcl	_	SpaceAfter=No
+21	的	的	PART	DEC	_	20	mark:relcl	_	SpaceAfter=No
+22	敵人	敵人	NOUN	NN	_	23	obl	_	SpaceAfter=No
+23	作戰	作戰	VERB	VV	_	0	root	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	23	punct	_	SpaceAfter=No
 
 </code></pre>
 
@@ -108,32 +262,32 @@ Average distance between parent and child is 3.21630005640158.</p>
 # visual-style 4	bgColor:blue
 # visual-style 4	fgColor:white
 # visual-style 4 3 case	color:blue
-1	這種	_	DET	DT	_	2	det	_	_
-2	車輛	_	NOUN	NN	_	10	nsubj	_	_
-3	如果	_	ADP	IN	_	4	case	_	_
-4	歸	_	VERB	VV	_	10	xcomp	_	_
-5	私人	_	NOUN	NN	_	6	nsubj	_	_
-6	擁有	_	VERB	VV	_	4	ccomp	_	_
-7	,	_	PUNCT	,	_	10	punct	_	_
-8	多半	_	ADV	RB	_	10	advmod	_	_
-9	會	_	AUX	MD	_	10	aux	_	_
-10	設置	_	VERB	VV	_	0	root	_	_
-11	昂貴	_	ADJ	JJ	_	14	amod	_	_
-12	的	_	PART	DEC	Case=Rel	11	acl:relcl	_	_
-13	音頻	_	NOUN	NN	_	14	nmod	_	_
-14	設備	_	NOUN	NN	_	10	dobj	_	_
-15	、	_	PUNCT	EC	_	14	punct	_	_
-16	電視	_	NOUN	NN	_	17	case:suff	_	_
-17	機	_	PART	SFN	_	14	conj	_	_
-18	、	_	PUNCT	EC	_	14	punct	_	_
-19	影碟	_	NOUN	NN	_	20	case:suff	_	_
-20	機	_	PART	SFN	_	14	conj	_	_
-21	,	_	PUNCT	,	_	14	punct	_	_
-22	以及	_	CONJ	CC	_	14	cc	_	_
-23	吧台	_	NOUN	NN	_	14	conj	_	_
-24	和	_	CONJ	CC	_	23	cc	_	_
-25	冰箱	_	NOUN	NN	_	23	conj	_	_
-26	.	_	PUNCT	.	_	10	punct	_	_
+1	這種	這種	DET	DT	_	2	det	_	SpaceAfter=No
+2	車輛	車輛	NOUN	NN	_	10	nsubj	_	SpaceAfter=No
+3	如果	如果	ADP	IN	_	4	case	_	SpaceAfter=No
+4	歸	歸	VERB	VV	_	10	xcomp	_	SpaceAfter=No
+5	私人	私人	NOUN	NN	_	6	nsubj	_	SpaceAfter=No
+6	擁有	擁有	VERB	VV	_	4	ccomp	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	10	punct	_	SpaceAfter=No
+8	多半	多半	ADV	RB	_	10	advmod	_	SpaceAfter=No
+9	會	會	AUX	MD	_	10	aux	_	SpaceAfter=No
+10	設置	設置	VERB	VV	_	0	root	_	SpaceAfter=No
+11	昂貴	昂貴	ADJ	JJ	_	14	amod	_	SpaceAfter=No
+12	的	的	PART	DEC	_	11	mark:relcl	_	SpaceAfter=No
+13	音頻	音頻	NOUN	NN	_	14	nmod	_	SpaceAfter=No
+14	設備	設備	NOUN	NN	_	10	obj	_	SpaceAfter=No
+15	、	、	PUNCT	EC	_	17	punct	_	SpaceAfter=No
+16	電視	電視	NOUN	NN	_	17	case:suff	_	SpaceAfter=No
+17	機	機	PART	SFN	_	14	conj	_	SpaceAfter=No
+18	、	、	PUNCT	EC	_	20	punct	_	SpaceAfter=No
+19	影碟	影碟	NOUN	NN	_	20	case:suff	_	SpaceAfter=No
+20	機	機	PART	SFN	_	14	conj	_	SpaceAfter=No
+21	,	,	PUNCT	,	_	23	punct	_	SpaceAfter=No
+22	以及	以及	CCONJ	CC	_	23	cc	_	SpaceAfter=No
+23	吧台	吧台	NOUN	NN	_	14	conj	_	SpaceAfter=No
+24	和	和	CCONJ	CC	_	25	cc	_	SpaceAfter=No
+25	冰箱	冰箱	NOUN	NN	_	23	conj	_	SpaceAfter=No
+26	.	.	PUNCT	.	_	10	punct	_	SpaceAfter=No
 
 </code></pre>
 
@@ -142,30 +296,30 @@ Average distance between parent and child is 3.21630005640158.</p>
 # visual-style 4	bgColor:blue
 # visual-style 4	fgColor:white
 # visual-style 4 2 case	color:blue
-1	支線	_	NOUN	NN	_	19	nsubj	_	_
-2	從	_	ADP	IN	_	4	case	_	_
-3	朝陽	_	PROPN	NNP	_	4	case:suff	_	_
-4	門	_	PART	SFN	_	5	nmod	_	_
-5	到	_	VERB	VV	_	9	acl	_	_
-6	楊閘	_	PROPN	NNP	_	7	nmod	_	_
-7	環島	_	NOUN	NN	_	5	dobj	_	_
-8	後	_	ADP	IN	_	5	mark	_	_
-9	繼續	_	VERB	VV	_	19	acl	_	_
-10	向	_	ADP	IN	_	11	case	_	_
-11	東	_	NOUN	NN	_	12	nmod	_	_
-12	行駛	_	VERB	VV	_	9	xcomp	_	_
-13	,	_	PUNCT	,	_	19	punct	_	_
-14	上	_	VERB	VV	_	19	acl	_	_
-15	京	_	PROPN	NNP	_	17	nmod	_	_
-16	哈	_	PROPN	NNP	_	17	nmod	_	_
-17	高速	_	NOUN	NN	_	14	dobj	_	_
-18	後	_	ADP	IN	_	14	mark	_	_
-19	到達	_	VERB	VV	_	0	root	_	_
-20	通州	_	PROPN	NNP	_	23	nmod	_	_
-21	武夷	_	PROPN	NNP	_	23	nmod	_	_
-22	花園	_	NOUN	NN	_	23	nmod	_	_
-23	小區	_	NOUN	NN	_	19	dobj	_	_
-24	.	_	PUNCT	.	_	19	punct	_	_
+1	支線	支線	NOUN	NN	_	19	nsubj	_	SpaceAfter=No
+2	從	從	ADP	IN	_	4	case	_	SpaceAfter=No
+3	朝陽	朝陽	PROPN	NNP	_	4	case:suff	_	SpaceAfter=No
+4	門	門	PART	SFN	_	5	obl	_	SpaceAfter=No
+5	到	到	VERB	VV	_	9	acl	_	SpaceAfter=No
+6	楊閘	楊閘	PROPN	NNP	_	7	nmod	_	SpaceAfter=No
+7	環島	環島	NOUN	NN	_	5	obj	_	SpaceAfter=No
+8	後	後	ADP	IN	_	5	mark	_	SpaceAfter=No
+9	繼續	繼續	VERB	VV	_	19	acl	_	SpaceAfter=No
+10	向	向	ADP	IN	_	11	case	_	SpaceAfter=No
+11	東	東	NOUN	NN	_	12	obl	_	SpaceAfter=No
+12	行駛	行駛	VERB	VV	_	9	xcomp	_	SpaceAfter=No
+13	,	,	PUNCT	,	_	19	punct	_	SpaceAfter=No
+14	上	上	VERB	VV	_	19	acl	_	SpaceAfter=No
+15	京	京	PROPN	NNP	_	17	nmod	_	SpaceAfter=No
+16	哈	哈	PROPN	NNP	_	17	nmod	_	SpaceAfter=No
+17	高速	高速	NOUN	NN	_	14	obj	_	SpaceAfter=No
+18	後	後	ADP	IN	_	14	mark	_	SpaceAfter=No
+19	到達	到達	VERB	VV	_	0	root	_	SpaceAfter=No
+20	通州	通州	PROPN	NNP	_	23	nmod	_	SpaceAfter=No
+21	武夷	武夷	PROPN	NNP	_	23	nmod	_	SpaceAfter=No
+22	花園	花園	NOUN	NN	_	23	nmod	_	SpaceAfter=No
+23	小區	小區	NOUN	NN	_	19	obj	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	19	punct	_	SpaceAfter=No
 
 </code></pre>
 
@@ -177,9 +331,25 @@ Average distance between parent and child is 3.21630005640158.</p>
 
 case in other languages:
 
+[<a href="../../am/dep/case.html">am</a>]
+
+[<a href="../../ar/dep/case.html">ar</a>]
+
 [<a href="../../bg/dep/case.html">bg</a>]
 
+[<a href="../../bxr/dep/case.html">bxr</a>]
+
+[<a href="../../ca/dep/case.html">ca</a>]
+
+[<a href="../../ckb/dep/case.html">ckb</a>]
+
+[<a href="../../cop/dep/case.html">cop</a>]
+
 [<a href="../../cs/dep/case.html">cs</a>]
+
+[<a href="../../cu/dep/case.html">cu</a>]
+
+[<a href="../../da/dep/case.html">da</a>]
 
 [<a href="../../de/dep/case.html">de</a>]
 
@@ -189,29 +359,99 @@ case in other languages:
 
 [<a href="../../es/dep/case.html">es</a>]
 
+[<a href="../../et/dep/case.html">et</a>]
+
 [<a href="../../eu/dep/case.html">eu</a>]
 
 [<a href="../../fa/dep/case.html">fa</a>]
 
 [<a href="../../fi/dep/case.html">fi</a>]
 
+[<a href="../../fo/dep/case.html">fo</a>]
+
 [<a href="../../fr/dep/case.html">fr</a>]
 
 [<a href="../../ga/dep/case.html">ga</a>]
 
+[<a href="../../gl/dep/case.html">gl</a>]
+
+[<a href="../../got/dep/case.html">got</a>]
+
+[<a href="../../grc/dep/case.html">grc</a>]
+
 [<a href="../../he/dep/case.html">he</a>]
 
+[<a href="../../hi/dep/case.html">hi</a>]
+
+[<a href="../../hr/dep/case.html">hr</a>]
+
 [<a href="../../hu/dep/case.html">hu</a>]
+
+[<a href="../../id/dep/case.html">id</a>]
 
 [<a href="../../it/dep/case.html">it</a>]
 
 [<a href="../../ja/dep/case.html">ja</a>]
 
+[<a href="../../kk/dep/case.html">kk</a>]
+
+[<a href="../../kmr/dep/case.html">kmr</a>]
+
 [<a href="../../ko/dep/case.html">ko</a>]
+
+[<a href="../../la/dep/case.html">la</a>]
+
+[<a href="../../lv/dep/case.html">lv</a>]
+
+[<a href="../../mr/dep/case.html">mr</a>]
+
+[<a href="../../nl/dep/case.html">nl</a>]
+
+[<a href="../../no/dep/case.html">no</a>]
+
+[<a href="../../pl/dep/case.html">pl</a>]
+
+[<a href="../../pt/dep/case.html">pt</a>]
+
+[<a href="../../ro/dep/case.html">ro</a>]
+
+[<a href="../../ru/dep/case.html">ru</a>]
+
+[<a href="../../sa/dep/case.html">sa</a>]
+
+[<a href="../../sk/dep/case.html">sk</a>]
+
+[<a href="../../sla/dep/case.html">sla</a>]
+
+[<a href="../../sl/dep/case.html">sl</a>]
+
+[<a href="../../so/dep/case.html">so</a>]
+
+[<a href="../../sr/dep/case.html">sr</a>]
 
 [<a href="../../sv/dep/case.html">sv</a>]
 
+[<a href="../../swl/dep/case.html">swl</a>]
+
+[<a href="../../ta/dep/case.html">ta</a>]
+
+[<a href="../../tr/dep/case.html">tr</a>]
+
 [<a href="../../u/dep/case.html">u</a>]
+
+[<a href="../../ug/dep/case.html">ug</a>]
+
+[<a href="../../uk/dep/case.html">uk</a>]
+
+[<a href="../../ur/dep/case.html">ur</a>]
+
+[<a href="../../urj/dep/case.html">urj</a>]
+
+[<a href="../../vi/dep/case.html">vi</a>]
+
+[<a href="../../yue/dep/case.html">yue</a>]
+
+[<a href="../../zh/dep/case.html">zh</a>]
 
 
 

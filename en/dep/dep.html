@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-en">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/en/dep">en/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_en-dep/dep.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-en">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/en/dep">en/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_en-dep/dep.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -70,12 +87,22 @@ dep(show, if)
 
 <p>This relation is universal.</p>
 
-<p>11 nodes (0%) are attached to their parents as <code>dep</code>.</p>
+<p>10 nodes (0%) are attached to their parents as <code>dep</code>.</p>
 
-<p>8 instances of <code>dep</code> (73%) are left-to-right (parent precedes child).
-Average distance between parent and child is 3.90909090909091.</p>
+<p>8 instances of <code>dep</code> (80%) are left-to-right (parent precedes child).
+Average distance between parent and child is 4.2.</p>
 
-<p>The following 8 pairs of parts of speech are connected with <code>dep</code>: <a href="">en-pos/NOUN</a>-<a href="">en-pos/X</a> (2; 18% instances), <a href="">en-pos/PUNCT</a>-<a href="">en-pos/NOUN</a> (2; 18% instances), <a href="">en-pos/PUNCT</a>-<a href="">en-pos/PUNCT</a> (2; 18% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/ADP</a> (1; 9% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/NOUN</a> (1; 9% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/NOUN</a> (1; 9% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/ADV</a> (1; 9% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/VERB</a> (1; 9% instances).</p>
+<p>The following 7 pairs of parts of speech are connected with <code>dep</code>: <a href="">en-pos/NOUN</a>-<a href="">en-pos/X</a> (2; 20% instances), <a href="">en-pos/PUNCT</a>-<a href="">en-pos/NOUN</a> (2; 20% instances), <a href="">en-pos/PUNCT</a>-<a href="">en-pos/PUNCT</a> (2; 20% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/ADP</a> (1; 10% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/NOUN</a> (1; 10% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/ADV</a> (1; 10% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/VERB</a> (1; 10% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 1 dep	color:blue
+1	---------------------------------------------------------------------------	---------------------------------------------------------------------------	PUNCT	NFP	_	2	dep	_	_
+2	-----	-----	PUNCT	NFP	_	0	root	_	_
+
+</code></pre>
 
 <pre><code class="language-conllu"># visual-style 5	bgColor:blue
 # visual-style 5	fgColor:white
@@ -90,16 +117,6 @@ Average distance between parent and child is 3.90909090909091.</p>
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 2 1 dep	color:blue
-1	---------------------------------------------------------------------------	---------------------------------------------------------------------------	PUNCT	NFP	_	2	dep	_	_
-2	-----	-----	PUNCT	NFP	_	0	root	_	_
-
-</code></pre>
-
 <pre><code class="language-conllu"># visual-style 12	bgColor:blue
 # visual-style 12	fgColor:white
 # visual-style 4	bgColor:blue
@@ -109,10 +126,10 @@ Average distance between parent and child is 3.90909090909091.</p>
 2	:	:	PUNCT	:	_	1	punct	_	SpaceAfter=No
 3	3,40	3,40	NUM	CD	NumType=Card	4	nummod	_	_
 4	Euros	euro	NOUN	NNS	Number=Plur	1	appos	_	SpaceAfter=No
-5	,	,	PUNCT	,	_	4	punct	_	_
+5	,	,	PUNCT	,	_	7	punct	_	_
 6	5	5	NUM	CD	NumType=Card	7	nummod	_	_
 7	Euros	euro	NOUN	NNS	Number=Plur	4	conj	_	_
-8	or	or	CONJ	CC	_	4	cc	_	_
+8	or	or	CCONJ	CC	_	10	cc	_	_
 9	7,5	7,5	NUM	CD	NumType=Card	10	nummod	_	_
 10	Euros	euro	NOUN	NNS	Number=Plur	4	conj	_	_
 11	(	(	PUNCT	-LRB-	_	12	punct	_	SpaceAfter=No
@@ -127,6 +144,46 @@ Average distance between parent and child is 3.90909090909091.</p>
 
 </code></pre>
 
+<hr />
+
+<h2 id="treebank-statistics-udenglish-partut">Treebank Statistics (UD_English-ParTUT)</h2>
+
+<p>This relation is universal.</p>
+
+<p>1 nodes (0%) are attached to their parents as <code>dep</code>.</p>
+
+<p>1 instances of <code>dep</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 3.</p>
+
+<p>The following 1 pairs of parts of speech are connected with <code>dep</code>: <a href="">en-pos/VERB</a>-<a href="">en-pos/NOUN</a> (1; 100% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 15	bgColor:blue
+# visual-style 15	fgColor:white
+# visual-style 12	bgColor:blue
+# visual-style 12	fgColor:white
+# visual-style 12 15 dep	color:blue
+1	Choose	choose	VERB	V	Mood=Imp|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	to	to	PART	PART	_	3	mark	_	_
+3	pay	pay	VERB	V	VerbForm=Inf	1	xcomp	_	_
+4	only	only	ADV	B	_	7	advmod	_	_
+5	when	when	SCONJ	CS	_	7	mark	_	_
+6	people	people	NOUN	S	Number=Plur	7	nsubj	_	_
+7	click	click	VERB	V	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	3	advcl	_	_
+8	(	(	PUNCT	FB	_	9	punct	_	SpaceAfter=No
+9	CPC	CPC	PROPN	SP	_	7	appos	_	SpaceAfter=No
+10	)	)	PUNCT	FB	_	9	punct	_	_
+11	or	or	CCONJ	CC	_	12	cc	_	_
+12	see	see	VERB	V	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	7	conj	_	_
+13	people	people	NOUN	S	Number=Plur	12	obj	_	_
+14	your	you	DET	AP	Poss=Yes|PronType=Prs	15	nmod:poss	_	_
+15	advert	advert	NOUN	S	Number=Sing	12	dep	_	_
+16	(	(	PUNCT	FB	_	17	punct	_	SpaceAfter=No
+17	CPM	CPM	PROPN	SP	_	12	appos	_	SpaceAfter=No
+18	)	)	PUNCT	FB	_	17	punct	_	SpaceAfter=No
+19	.	.	PUNCT	FS	_	1	punct	_	_
+
+</code></pre>
+
 
 
 
@@ -135,9 +192,25 @@ Average distance between parent and child is 3.90909090909091.</p>
 
 dep in other languages:
 
+[<a href="../../am/dep/dep.html">am</a>]
+
+[<a href="../../ar/dep/dep.html">ar</a>]
+
 [<a href="../../bg/dep/dep.html">bg</a>]
 
+[<a href="../../bxr/dep/dep.html">bxr</a>]
+
+[<a href="../../ca/dep/dep.html">ca</a>]
+
+[<a href="../../ckb/dep/dep.html">ckb</a>]
+
+[<a href="../../cop/dep/dep.html">cop</a>]
+
 [<a href="../../cs/dep/dep.html">cs</a>]
+
+[<a href="../../cu/dep/dep.html">cu</a>]
+
+[<a href="../../da/dep/dep.html">da</a>]
 
 [<a href="../../de/dep/dep.html">de</a>]
 
@@ -147,29 +220,99 @@ dep in other languages:
 
 [<a href="../../es/dep/dep.html">es</a>]
 
+[<a href="../../et/dep/dep.html">et</a>]
+
 [<a href="../../eu/dep/dep.html">eu</a>]
 
 [<a href="../../fa/dep/dep.html">fa</a>]
 
 [<a href="../../fi/dep/dep.html">fi</a>]
 
+[<a href="../../fo/dep/dep.html">fo</a>]
+
 [<a href="../../fr/dep/dep.html">fr</a>]
 
 [<a href="../../ga/dep/dep.html">ga</a>]
 
+[<a href="../../gl/dep/dep.html">gl</a>]
+
+[<a href="../../got/dep/dep.html">got</a>]
+
+[<a href="../../grc/dep/dep.html">grc</a>]
+
 [<a href="../../he/dep/dep.html">he</a>]
 
+[<a href="../../hi/dep/dep.html">hi</a>]
+
+[<a href="../../hr/dep/dep.html">hr</a>]
+
 [<a href="../../hu/dep/dep.html">hu</a>]
+
+[<a href="../../id/dep/dep.html">id</a>]
 
 [<a href="../../it/dep/dep.html">it</a>]
 
 [<a href="../../ja/dep/dep.html">ja</a>]
 
+[<a href="../../kk/dep/dep.html">kk</a>]
+
+[<a href="../../kmr/dep/dep.html">kmr</a>]
+
 [<a href="../../ko/dep/dep.html">ko</a>]
+
+[<a href="../../la/dep/dep.html">la</a>]
+
+[<a href="../../lv/dep/dep.html">lv</a>]
+
+[<a href="../../mr/dep/dep.html">mr</a>]
+
+[<a href="../../nl/dep/dep.html">nl</a>]
+
+[<a href="../../no/dep/dep.html">no</a>]
+
+[<a href="../../pl/dep/dep.html">pl</a>]
+
+[<a href="../../pt/dep/dep.html">pt</a>]
+
+[<a href="../../ro/dep/dep.html">ro</a>]
+
+[<a href="../../ru/dep/dep.html">ru</a>]
+
+[<a href="../../sa/dep/dep.html">sa</a>]
+
+[<a href="../../sk/dep/dep.html">sk</a>]
+
+[<a href="../../sla/dep/dep.html">sla</a>]
+
+[<a href="../../sl/dep/dep.html">sl</a>]
+
+[<a href="../../so/dep/dep.html">so</a>]
+
+[<a href="../../sr/dep/dep.html">sr</a>]
 
 [<a href="../../sv/dep/dep.html">sv</a>]
 
+[<a href="../../swl/dep/dep.html">swl</a>]
+
+[<a href="../../ta/dep/dep.html">ta</a>]
+
+[<a href="../../tr/dep/dep.html">tr</a>]
+
 [<a href="../../u/dep/dep.html">u</a>]
+
+[<a href="../../ug/dep/dep.html">ug</a>]
+
+[<a href="../../uk/dep/dep.html">uk</a>]
+
+[<a href="../../ur/dep/dep.html">ur</a>]
+
+[<a href="../../urj/dep/dep.html">urj</a>]
+
+[<a href="../../vi/dep/dep.html">vi</a>]
+
+[<a href="../../yue/dep/dep.html">yue</a>]
+
+[<a href="../../zh/dep/dep.html">zh</a>]
 
 
 

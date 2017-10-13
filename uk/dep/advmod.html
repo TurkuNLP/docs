@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-uk">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/uk/dep">uk/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_uk-dep/advmod.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-uk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/uk/dep">uk/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-dep/advmod.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,41 +80,29 @@ for <code>advmod</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>72 nodes (4%) are attached to their parents as <code>advmod</code>.</p>
+<p>811 nodes (6%) are attached to their parents as <code>advmod</code>.</p>
 
-<p>51 instances of <code>advmod</code> (71%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.52777777777778.</p>
+<p>660 instances of <code>advmod</code> (81%) are right-to-left (child precedes parent).
+Average distance between parent and child is 2.00739827373613.</p>
 
-<p>The following 6 pairs of parts of speech are connected with <code>advmod</code>: <a href="">uk-pos/VERB</a>-<a href="">uk-pos/ADV</a> (46; 64% instances), <a href="">uk-pos/NOUN</a>-<a href="">uk-pos/ADV</a> (8; 11% instances), <a href="">uk-pos/ADV</a>-<a href="">uk-pos/ADV</a> (7; 10% instances), <a href="">uk-pos/ADJ</a>-<a href="">uk-pos/ADV</a> (5; 7% instances), <a href="">uk-pos/NUM</a>-<a href="">uk-pos/ADV</a> (4; 6% instances), <a href="">uk-pos/PRON</a>-<a href="">uk-pos/ADV</a> (2; 3% instances).</p>
+<p>The following 19 pairs of parts of speech are connected with <code>advmod</code>: <a href="">uk-pos/VERB</a>-<a href="">uk-pos/ADV</a> (499; 62% instances), <a href="">uk-pos/VERB</a>-<a href="">uk-pos/PART</a> (110; 14% instances), <a href="">uk-pos/ADV</a>-<a href="">uk-pos/ADV</a> (59; 7% instances), <a href="">uk-pos/NOUN</a>-<a href="">uk-pos/ADV</a> (46; 6% instances), <a href="">uk-pos/ADJ</a>-<a href="">uk-pos/ADV</a> (44; 5% instances), <a href="">uk-pos/ADV</a>-<a href="">uk-pos/PART</a> (12; 1% instances), <a href="">uk-pos/NOUN</a>-<a href="">uk-pos/PART</a> (9; 1% instances), <a href="">uk-pos/DET</a>-<a href="">uk-pos/ADV</a> (5; 1% instances), <a href="">uk-pos/PRON</a>-<a href="">uk-pos/ADV</a> (5; 1% instances), <a href="">uk-pos/ADJ</a>-<a href="">uk-pos/PART</a> (4; 0% instances), <a href="">uk-pos/NUM</a>-<a href="">uk-pos/ADV</a> (4; 0% instances), <a href="">uk-pos/PART</a>-<a href="">uk-pos/PART</a> (3; 0% instances), <a href="">uk-pos/PRON</a>-<a href="">uk-pos/PART</a> (3; 0% instances), <a href="">uk-pos/AUX</a>-<a href="">uk-pos/ADV</a> (2; 0% instances), <a href="">uk-pos/PROPN</a>-<a href="">uk-pos/ADV</a> (2; 0% instances), <a href="">uk-pos/AUX</a>-<a href="">uk-pos/PART</a> (1; 0% instances), <a href="">uk-pos/DET</a>-<a href="">uk-pos/PART</a> (1; 0% instances), <a href="">uk-pos/PART</a>-<a href="">uk-pos/ADV</a> (1; 0% instances), <a href="">uk-pos/PROPN</a>-<a href="">uk-pos/PART</a> (1; 0% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 8	bgColor:blue
-# visual-style 8	fgColor:white
-# visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 6 8 advmod	color:blue
-1	Хлопець	хлопець	NOUN	noun:anim:m:v_naz	Animacy=Anim|Case=Nom|Gender=Masc	6	nsubj	_	SpaceAfter=No
-2	,	,	PUNCT	punct	_	3	punct	_	_
-3	сказав	сказати	VERB	verb:perf:past:m	Aspect=Perf|Gender=Masc|Mood=Ind|Tense=Past|VerbForm=Fin	6	parataxis	_	_
-4	Микола	Микола	PROPN	noun:anim:m:v_naz:prop:fname	Animacy=Anim|Case=Nom|Gender=Masc	3	nsubj	_	SpaceAfter=No
-5	,	,	PUNCT	punct	_	3	punct	_	_
-6	пішов	піти	VERB	verb:perf:past:m	Aspect=Perf|Gender=Masc|Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
-7	собі	себе	PRON	noun:v_dav:&amp;pron:refl	Case=Dat|PronType=Prs|Reflex=Yes	6	expl	_	_
-8	раніше	раніше	ADV	adv:compr	Degree=Cmp	6	advmod	_	SpaceAfter=No
-9	.	.	PUNCT	punct	_	6	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 5 3 advmod	color:blue
-1	Маріє	Марія	PROPN	noun:anim:f:v_kly:prop:fname	Animacy=Anim|Case=Voc|Gender=Fem	5	vocative	_	SpaceAfter=No
-2	,	,	PUNCT	punct	_	1	punct	_	_
-3	як	як	ADV	adv:&amp;pron:int	PronType=Int	5	advmod	_	_
-4	Ваші	ваш	DET	adj:p:v_naz:poss:&amp;pron:pers:2	Case=Nom|Number=Plur|Person=2|Poss=Yes|PronType=Prs	5	det	_	_
-5	справи	справа	NOUN	noun:inanim:p:f:v_naz	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
-6	?	?	PUNCT	punct	_	5	punct	_	_
+<pre><code class="language-conllu"># visual-style 10	bgColor:blue
+# visual-style 10	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 10 advmod	color:blue
+1	Він	він	PRON	Pp-3m-snn	Case=Nom|Gender=Masc|Person=3|PronType=Prs	2	nsubj	_	_
+2	акомпанує	акомпанувати	VERB	Vmpip3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	вечір	вечір	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc	2	obl	_	_
+4	і	і	CCONJ	Ccs	_	6	cc	_	_
+5	цілу	цілий	ADJ	Ao-fsas	Case=Acc|Gender=Fem	6	amod	_	_
+6	ніч	ніч	NOUN	Ncfsan	Animacy=Inan|Case=Acc|Gender=Fem	3	conj	_	_
+7	і	і	CCONJ	Ccs	_	10	cc	_	_
+8	зовсім	зовсім	ADV	R	_	10	advmod	_	_
+9	не	не	PART	Q	Polarity=Neg	10	advmod	_	_
+10	механічно	механічно	ADV	R	_	2	advmod	_	SpaceAfter=No
+11	.	.	PUNCT	U	_	2	punct	_	_
 
 </code></pre>
 
@@ -106,12 +111,31 @@ Average distance between parent and child is 1.52777777777778.</p>
 # visual-style 5	bgColor:blue
 # visual-style 5	fgColor:white
 # visual-style 5 4 advmod	color:blue
-1	Пане	пан	NOUN	noun:anim:m:v_kly	Animacy=Anim|Case=Voc|Gender=Masc	2	nmod	_	_
-2	Президенте	президент	NOUN	noun:anim:m:v_kly	Animacy=Anim|Case=Voc|Gender=Masc	5	vocative	_	SpaceAfter=No
-3	,	,	PUNCT	punct	_	5	punct	_	_
-4	скільки	скільки	ADV	adv:&amp;pron:int	Case=Nom|Number=Plur|NumType=Card|PronType=Int	5	advmod	_	_
-5	можна	можна	ADV	adv	_	0	root	_	SpaceAfter=No
-6	?	?	PUNCT	punct	_	5	punct	_	_
+1	Такого	таке	PRON	Pd--nnsgn	Animacy=Inan|Case=Gen|Gender=Neut|PronType=Dem	5	obj	_	_
+2	ми	ми	PRON	Pp-1-ypnn	Animacy=Anim|Case=Nom|Number=Plur|Person=1|PronType=Prs	5	nsubj	_	_
+3	ще	ще	ADV	R	_	5	advmod	_	_
+4	не	не	PART	Q	Polarity=Neg	5	advmod	_	_
+5	бачили	бачити	VERB	Vmpis-p	Aspect=Imp|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	U	_	5	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 10	bgColor:blue
+# visual-style 10	fgColor:white
+# visual-style 10 8 advmod	color:blue
+1	Він	він	PRON	Pp-3m-snn	Case=Nom|Gender=Masc|Person=3|PronType=Prs	2	nsubj	_	_
+2	акомпанує	акомпанувати	VERB	Vmpip3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	вечір	вечір	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc	2	obl	_	_
+4	і	і	CCONJ	Ccs	_	6	cc	_	_
+5	цілу	цілий	ADJ	Ao-fsas	Case=Acc|Gender=Fem	6	amod	_	_
+6	ніч	ніч	NOUN	Ncfsan	Animacy=Inan|Case=Acc|Gender=Fem	3	conj	_	_
+7	і	і	CCONJ	Ccs	_	10	cc	_	_
+8	зовсім	зовсім	ADV	R	_	10	advmod	_	_
+9	не	не	PART	Q	Polarity=Neg	10	advmod	_	_
+10	механічно	механічно	ADV	R	_	2	advmod	_	SpaceAfter=No
+11	.	.	PUNCT	U	_	2	punct	_	_
 
 </code></pre>
 
@@ -123,9 +147,25 @@ Average distance between parent and child is 1.52777777777778.</p>
 
 advmod in other languages:
 
+[<a href="../../am/dep/advmod.html">am</a>]
+
+[<a href="../../ar/dep/advmod.html">ar</a>]
+
 [<a href="../../bg/dep/advmod.html">bg</a>]
 
+[<a href="../../bxr/dep/advmod.html">bxr</a>]
+
+[<a href="../../ca/dep/advmod.html">ca</a>]
+
+[<a href="../../ckb/dep/advmod.html">ckb</a>]
+
+[<a href="../../cop/dep/advmod.html">cop</a>]
+
 [<a href="../../cs/dep/advmod.html">cs</a>]
+
+[<a href="../../cu/dep/advmod.html">cu</a>]
+
+[<a href="../../da/dep/advmod.html">da</a>]
 
 [<a href="../../de/dep/advmod.html">de</a>]
 
@@ -135,29 +175,99 @@ advmod in other languages:
 
 [<a href="../../es/dep/advmod.html">es</a>]
 
+[<a href="../../et/dep/advmod.html">et</a>]
+
 [<a href="../../eu/dep/advmod.html">eu</a>]
 
 [<a href="../../fa/dep/advmod.html">fa</a>]
 
 [<a href="../../fi/dep/advmod.html">fi</a>]
 
+[<a href="../../fo/dep/advmod.html">fo</a>]
+
 [<a href="../../fr/dep/advmod.html">fr</a>]
 
 [<a href="../../ga/dep/advmod.html">ga</a>]
 
+[<a href="../../gl/dep/advmod.html">gl</a>]
+
+[<a href="../../got/dep/advmod.html">got</a>]
+
+[<a href="../../grc/dep/advmod.html">grc</a>]
+
 [<a href="../../he/dep/advmod.html">he</a>]
 
+[<a href="../../hi/dep/advmod.html">hi</a>]
+
+[<a href="../../hr/dep/advmod.html">hr</a>]
+
 [<a href="../../hu/dep/advmod.html">hu</a>]
+
+[<a href="../../id/dep/advmod.html">id</a>]
 
 [<a href="../../it/dep/advmod.html">it</a>]
 
 [<a href="../../ja/dep/advmod.html">ja</a>]
 
+[<a href="../../kk/dep/advmod.html">kk</a>]
+
+[<a href="../../kmr/dep/advmod.html">kmr</a>]
+
 [<a href="../../ko/dep/advmod.html">ko</a>]
+
+[<a href="../../la/dep/advmod.html">la</a>]
+
+[<a href="../../lv/dep/advmod.html">lv</a>]
+
+[<a href="../../mr/dep/advmod.html">mr</a>]
+
+[<a href="../../nl/dep/advmod.html">nl</a>]
+
+[<a href="../../no/dep/advmod.html">no</a>]
+
+[<a href="../../pl/dep/advmod.html">pl</a>]
+
+[<a href="../../pt/dep/advmod.html">pt</a>]
+
+[<a href="../../ro/dep/advmod.html">ro</a>]
+
+[<a href="../../ru/dep/advmod.html">ru</a>]
+
+[<a href="../../sa/dep/advmod.html">sa</a>]
+
+[<a href="../../sk/dep/advmod.html">sk</a>]
+
+[<a href="../../sla/dep/advmod.html">sla</a>]
+
+[<a href="../../sl/dep/advmod.html">sl</a>]
+
+[<a href="../../so/dep/advmod.html">so</a>]
+
+[<a href="../../sr/dep/advmod.html">sr</a>]
 
 [<a href="../../sv/dep/advmod.html">sv</a>]
 
+[<a href="../../swl/dep/advmod.html">swl</a>]
+
+[<a href="../../ta/dep/advmod.html">ta</a>]
+
+[<a href="../../tr/dep/advmod.html">tr</a>]
+
 [<a href="../../u/dep/advmod.html">u</a>]
+
+[<a href="../../ug/dep/advmod.html">ug</a>]
+
+[<a href="../../uk/dep/advmod.html">uk</a>]
+
+[<a href="../../ur/dep/advmod.html">ur</a>]
+
+[<a href="../../urj/dep/advmod.html">urj</a>]
+
+[<a href="../../vi/dep/advmod.html">vi</a>]
+
+[<a href="../../yue/dep/advmod.html">yue</a>]
+
+[<a href="../../zh/dep/advmod.html">zh</a>]
 
 
 

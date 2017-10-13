@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ru">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ru">home</a></span>
 
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-overview/introduction.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-overview/introduction.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -45,7 +62,72 @@
 
           <h1 id="introduction">Introduction</h1>
 
-<p>This document is a placeholder for the language-specific introduction.</p>
+<p>The Russian UD treebank is based on the <a href="http://corpus-i.compling.net/res01/rtb.php">RUS_Treebank</a> (RTB)
+The treebank consists of 1357119 sentences</p>
+
+<p>The morphological and syntactic annotation of the Russian UD treebank is created through a conversion of RTB data.
+The conversion procedure has been designed by the Higher School of Economics team, governed by Olga Lyashevskaya.</p>
+
+<h2 id="source-of-annotations">Source of annotations</h2>
+
+<p>This table summarizes the origins and checking of the various columns of the CoNLL-U data.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Column</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ID</td>
+      <td>Sentence segmentation and (surface) tokenization was automatically done and then hand-corrected; see <a href="http://ufal.mff.cuni.cz/pdt2.0/doc/pdt-guide/en/html/ch02.html">PDT documentation</a>. Splitting of fused tokens into syntactic words was done automatically during PDT-to-UD conversion.</td>
+    </tr>
+    <tr>
+      <td>FORM</td>
+      <td>Identical to Prague Dependency Treebank 3.0 form.</td>
+    </tr>
+    <tr>
+      <td>LEMMA</td>
+      <td>Manual selection from possibilities provided by morphological analysis: two annotators and then an arbiter. PDT-to-UD conversion stripped from lemmas the ID numbers distinguishing homonyms, semantic tags and comments; this information is preserved as attributes in the MISC column.</td>
+    </tr>
+    <tr>
+      <td>UPOSTAG</td>
+      <td>Converted automatically from XPOSTAG (via <a href="https://ufal.mff.cuni.cz/interset">Interset</a>), from the semantic tags in PDT lemma, and occasionally from other information available in the treebank; human checking of patterns revealed by automatic consistency tests.</td>
+    </tr>
+    <tr>
+      <td>XPOSTAG</td>
+      <td>Manual selection from possibilities provided by morphological analysis: two annotators and then an arbiter.</td>
+    </tr>
+    <tr>
+      <td>FEATS</td>
+      <td>Converted automatically from XPOSTAG (via Interset), from the semantic tags in PDT lemma, and occasionally from other information available in the treebank; human checking of patterns revealed by automatic consistency tests.</td>
+    </tr>
+    <tr>
+      <td>HEAD</td>
+      <td>Original PDT annotation is manual, done by two independent annotators and then an arbiter. Automatic conversion to UD; human checking of patterns revealed by automatic consistency tests.</td>
+    </tr>
+    <tr>
+      <td>DEPREL</td>
+      <td>Original PDT annotation is manual, done by two independent annotators and then an arbiter. Automatic conversion to UD; human checking of patterns revealed by automatic consistency tests.</td>
+    </tr>
+    <tr>
+      <td>DEPS</td>
+      <td>— (currently unused)</td>
+    </tr>
+    <tr>
+      <td>MISC</td>
+      <td>Information about token spacing taken from PDT annotation. Lemma / word sense IDs, semantic tags and comments on meaning moved here from the PDT lemma.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="acknowledgments">Acknowledgments</h2>
+
+<p>We wish to thank all of the contributors to the original RTB annotation effort, including
+Daniel Zeman, Olga Lyashevskaya, Kira Droganova, Svatlana Toldova, Andrey Kutuzov, Maria Alexeeva, Tatiana Gavrilova, Nina Mustafina, and Elena Shakurova.</p>
+
 
 
       </div>

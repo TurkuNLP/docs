@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-fr">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/fr/feat">fr/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_fr-feat/Definite.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-fr">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/fr/feat">fr/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fr-feat/Definite.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -64,23 +81,84 @@
 <p>This feature is universal.
 It occurs with 2 different values: <code>Def</code>, <code>Ind</code>.</p>
 
-<p>53479 tokens (13%) have a non-empty value of <code>Definite</code>.
+<p>52226 tokens (13%) have a non-empty value of <code>Definite</code>.
 28 types (0%) occur at least once with a non-empty value of <code>Definite</code>.
-3 lemmas (0%) occur at least once with a non-empty value of <code>Definite</code>.
-The feature is used with 1 part-of-speech tags: <a href="">fr-pos/DET</a> (53479; 13% instances).</p>
+6 lemmas (0%) occur at least once with a non-empty value of <code>Definite</code>.
+The feature is used with 1 part-of-speech tags: <a href="">fr-pos/DET</a> (52226; 13% instances).</p>
 
 <h3 id="det"><code>DET</code></h3>
 
-<p>53479 <a href="">fr-pos/DET</a> tokens (87% of all <code>DET</code> tokens) have a non-empty value of <code>Definite</code>.</p>
+<p>52226 <a href="">fr-pos/DET</a> tokens (87% of all <code>DET</code> tokens) have a non-empty value of <code>Definite</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>Definite</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Art</tt> (53399; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (41337; 77%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (28207; 53%).</p>
+<p>The most frequent other feature values with which <code>DET</code> and <code>Definite</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Art</tt> (52145; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (40392; 77%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (27507; 53%).</p>
 
 <p><code>DET</code> tokens may have the following values of <code>Definite</code>:</p>
 
 <ul>
-  <li><code>Def</code> (43321; 81% of non-empty <code>Definite</code>): <em>le, la, les, l’, the, l, là</em></li>
-  <li><code>Ind</code> (10158; 19% of non-empty <code>Definite</code>): <em>un, une, des, de, d’, in</em></li>
-  <li><code>EMPTY</code> (8287): <em>son, sa, cette, ses, ce, leur, ces, plusieurs, leurs, tous</em></li>
+  <li><code>Def</code> (42314; 81% of non-empty <code>Definite</code>): <em>le, la, les, l’, the, l, là</em></li>
+  <li><code>Ind</code> (9912; 19% of non-empty <code>Definite</code>): <em>un, une, des, de, d’, telle, in</em></li>
+  <li><code>EMPTY</code> (8067): <em>son, sa, cette, ses, ce, leur, ces, plusieurs, leurs, tous</em></li>
+</ul>
+
+<hr />
+
+<h2 id="treebank-statistics-udfrench-partut">Treebank Statistics (UD_French-ParTUT)</h2>
+
+<p>This feature is universal.
+It occurs with 2 different values: <code>Def</code>, <code>Ind</code>.</p>
+
+<p>2478 tokens (14%) have a non-empty value of <code>Definite</code>.
+17 types (1%) occur at least once with a non-empty value of <code>Definite</code>.
+5 lemmas (0%) occur at least once with a non-empty value of <code>Definite</code>.
+The feature is used with 1 part-of-speech tags: <a href="">fr-pos/DET</a> (2478; 14% instances).</p>
+
+<h3 id="det-1"><code>DET</code></h3>
+
+<p>2478 <a href="">fr-pos/DET</a> tokens (83% of all <code>DET</code> tokens) have a non-empty value of <code>Definite</code>.</p>
+
+<p>The most frequent other feature values with which <code>DET</code> and <code>Definite</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Art</tt> (2374; 96%), <tt><a href="Number.html">Number</a>=Sing</tt> (1750; 71%).</p>
+
+<p><code>DET</code> tokens may have the following values of <code>Definite</code>:</p>
+
+<ul>
+  <li><code>Def</code> (2094; 85% of non-empty <code>Definite</code>): <em>les, le, la, l’, des, d’, de</em></li>
+  <li><code>Ind</code> (384; 15% of non-empty <code>Definite</code>): <em>une, un, des, de, d’, du</em></li>
+  <li><code>EMPTY</code> (506): <em>cette, ce, ces, toute, son, sa, votre, leur, tous, notre</em></li>
+</ul>
+
+<table>
+  <tr><th>Paradigm <i>le</i></th><th><tt>Ind</tt></th><th><tt>Def</tt></th></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td></td><td><em>le</em></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur</tt></td><td></td><td><em>les</em></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td></td><td><em>la</em></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing</tt></td><td></td><td><em>l', le</em></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Plur</tt></td><td><em>Des</em></td><td><em>les</em></td></tr>
+</table>
+
+<hr />
+
+<h2 id="treebank-statistics-udfrench-sequoia">Treebank Statistics (UD_French-Sequoia)</h2>
+
+<p>This feature is universal.
+It occurs with 2 different values: <code>Def</code>, <code>Ind</code>.</p>
+
+<p>7947 tokens (13%) have a non-empty value of <code>Definite</code>.
+35 types (0%) occur at least once with a non-empty value of <code>Definite</code>.
+6 lemmas (0%) occur at least once with a non-empty value of <code>Definite</code>.
+The feature is used with 1 part-of-speech tags: <a href="">fr-pos/DET</a> (7947; 13% instances).</p>
+
+<h3 id="det-2"><code>DET</code></h3>
+
+<p>7947 <a href="">fr-pos/DET</a> tokens (89% of all <code>DET</code> tokens) have a non-empty value of <code>Definite</code>.</p>
+
+<p>The most frequent other feature values with which <code>DET</code> and <code>Definite</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Art</tt> (7947; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (5862; 74%).</p>
+
+<p><code>DET</code> tokens may have the following values of <code>Definite</code>:</p>
+
+<ul>
+  <li><code>Def</code> (6372; 80% of non-empty <code>Definite</code>): <em>le, les, la, l’</em></li>
+  <li><code>Ind</code> (1575; 20% of non-empty <code>Definite</code>): <em>une, un, des, de, d’, quelques, tout, toute, tous, divers</em></li>
+  <li><code>EMPTY</code> (1018): <em>cette, ce, son, ces, ses, votre, sa, leur, plusieurs, leurs</em></li>
 </ul>
 
 
@@ -91,9 +169,23 @@ The feature is used with 1 part-of-speech tags: <a href="">fr-pos/DET</a> (53479
 
 Definite in other languages:
 
+[<a href="../../am/feat/Definite.html">am</a>]
+
+[<a href="../../ar/feat/Definite.html">ar</a>]
+
 [<a href="../../bg/feat/Definite.html">bg</a>]
 
-[<a href="../../cs/feat/Definite.html">cs</a>]
+[<a href="../../bxr/feat/Definite.html">bxr</a>]
+
+[<a href="../../ca/feat/Definite.html">ca</a>]
+
+[<a href="../../ckb/feat/Definite.html">ckb</a>]
+
+[<a href="../../cop/feat/Definite.html">cop</a>]
+
+[<a href="../../cu/feat/Definite.html">cu</a>]
+
+[<a href="../../da/feat/Definite.html">da</a>]
 
 [<a href="../../de/feat/Definite.html">de</a>]
 
@@ -103,27 +195,95 @@ Definite in other languages:
 
 [<a href="../../es/feat/Definite.html">es</a>]
 
+[<a href="../../et/feat/Definite.html">et</a>]
+
 [<a href="../../eu/feat/Definite.html">eu</a>]
 
 [<a href="../../fa/feat/Definite.html">fa</a>]
+
+[<a href="../../fo/feat/Definite.html">fo</a>]
 
 [<a href="../../fr/feat/Definite.html">fr</a>]
 
 [<a href="../../ga/feat/Definite.html">ga</a>]
 
+[<a href="../../gl/feat/Definite.html">gl</a>]
+
+[<a href="../../got/feat/Definite.html">got</a>]
+
+[<a href="../../grc/feat/Definite.html">grc</a>]
+
 [<a href="../../he/feat/Definite.html">he</a>]
 
+[<a href="../../hi/feat/Definite.html">hi</a>]
+
+[<a href="../../hr/feat/Definite.html">hr</a>]
+
 [<a href="../../hu/feat/Definite.html">hu</a>]
+
+[<a href="../../id/feat/Definite.html">id</a>]
 
 [<a href="../../it/feat/Definite.html">it</a>]
 
 [<a href="../../ja/feat/Definite.html">ja</a>]
 
+[<a href="../../kk/feat/Definite.html">kk</a>]
+
+[<a href="../../kmr/feat/Definite.html">kmr</a>]
+
 [<a href="../../ko/feat/Definite.html">ko</a>]
+
+[<a href="../../la/feat/Definite.html">la</a>]
+
+[<a href="../../lv/feat/Definite.html">lv</a>]
+
+[<a href="../../mr/feat/Definite.html">mr</a>]
+
+[<a href="../../nl/feat/Definite.html">nl</a>]
+
+[<a href="../../no/feat/Definite.html">no</a>]
+
+[<a href="../../pl/feat/Definite.html">pl</a>]
+
+[<a href="../../pt/feat/Definite.html">pt</a>]
+
+[<a href="../../ro/feat/Definite.html">ro</a>]
+
+[<a href="../../sa/feat/Definite.html">sa</a>]
+
+[<a href="../../sk/feat/Definite.html">sk</a>]
+
+[<a href="../../sla/feat/Definite.html">sla</a>]
+
+[<a href="../../sl/feat/Definite.html">sl</a>]
+
+[<a href="../../so/feat/Definite.html">so</a>]
+
+[<a href="../../sr/feat/Definite.html">sr</a>]
 
 [<a href="../../sv/feat/Definite.html">sv</a>]
 
+[<a href="../../swl/feat/Definite.html">swl</a>]
+
+[<a href="../../ta/feat/Definite.html">ta</a>]
+
+[<a href="../../tr/feat/Definite.html">tr</a>]
+
 [<a href="../../u/feat/Definite.html">u</a>]
+
+[<a href="../../ug/feat/Definite.html">ug</a>]
+
+[<a href="../../uk/feat/Definite.html">uk</a>]
+
+[<a href="../../ur/feat/Definite.html">ur</a>]
+
+[<a href="../../urj/feat/Definite.html">urj</a>]
+
+[<a href="../../vi/feat/Definite.html">vi</a>]
+
+[<a href="../../yue/feat/Definite.html">yue</a>]
+
+[<a href="../../zh/feat/Definite.html">zh</a>]
 
 
 

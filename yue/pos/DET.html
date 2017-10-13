@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-yue">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/yue/pos">yue/pos</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_yue-pos/DET.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-yue">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/yue/pos">yue/pos</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_yue-pos/DET.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -45,8 +62,33 @@
 
           <h2><code>DET</code>: determiner</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>DET</code>.</p>
+<h3 id="definition">Definition</h3>
+
+<p>Determiners are words that modify nouns or noun phrases and express the reference of the noun phrase in context.</p>
+
+<p>Note that Chinese does not traditionally define determiners as a separate word class, but categorizes them as pronouns and/or adjectives. For this reason, in the UD framework some words in Cantonese may function as determiners and be tagged <code>DET</code> in one syntactic context (i.e., when modifying a noun), and as pronouns (tagged <a><code>PRON</code></a>) when behaving as a nominal or the head of a nominal phrase.</p>
+
+<h3 id="examples">Examples</h3>
+
+<ul>
+  <li>Demonstrative determiners
+  - 呢 / <em>ni1</em> “this”, 嗰 / <em>go2</em> “that”</li>
+  <li>Possessive determiner
+  - 本 / <em>bun2</em> “our”</li>
+  <li>Quantifying determiners
+    <ul>
+      <li>Definite: 每 / <em>mui5</em> “every”, 成 / <em>sing4/seng4</em> “whole”, 全 / <em>cyun4</em> “whole”, 全部 / cyun4bou6 “all”, 所有 / <em>so2jau5</em> “all”</li>
+      <li>Indefinite: 任何 / <em>jam3ho4</em> “any”, 有的 / <em>jau5di1</em> “some”, (好)多 / <em>(hou2)do1</em> “many”, (好)少 / <em>(hou2)siu2</em> “few”, 幾 / <em>gei2</em> “several”, 大部分 / <em>daai6bou6fan6</em> “the majority of”, 唔少 / <em>m4siu2</em> “not few”, 多數 / <em>do1sou3</em> “most”</li>
+    </ul>
+  </li>
+  <li>Interrogative determiners
+  - 邊 / <em>bin1</em> “which”, 乜(嘢) / <em>mat1(je5)</em> “what”, 咩 / <em>me1</em> “what”, 幾多 / <em>gei2do1</em> “how many”</li>
+  <li>Other
+    <ul>
+      <li>上 / <em>soeng6</em> “the previous”, 下 / <em>haa6</em> “the next”, 前 / <em>cin4</em> “the previous”, 後 / <em>hau6</em> “the following”, 頭 / <em>tau4</em> “the first”, 其餘 / <em>kei4jyu4</em> “the rest”, 某 / <em>mau2</em> “some, certain (singular)”, 其他 / <em>kei4taa1</em> “other”, 另(外) / <em>ling6(ngoi5)</em> “another”, 同 / <em>tong4</em> “the same”</li>
+    </ul>
+  </li>
+</ul>
 
 
 <!-- "automatic stats" -->
@@ -61,9 +103,25 @@ for <code>DET</code>.</p>
 
 DET in other languages:
 
+[<a href="../../am/pos/DET.html">am</a>]
+
+[<a href="../../ar/pos/DET.html">ar</a>]
+
 [<a href="../../bg/pos/DET.html">bg</a>]
 
+[<a href="../../bxr/pos/DET.html">bxr</a>]
+
+[<a href="../../ca/pos/DET.html">ca</a>]
+
+[<a href="../../ckb/pos/DET.html">ckb</a>]
+
+[<a href="../../cop/pos/DET.html">cop</a>]
+
 [<a href="../../cs/pos/DET.html">cs</a>]
+
+[<a href="../../cu/pos/DET.html">cu</a>]
+
+[<a href="../../da/pos/DET.html">da</a>]
 
 [<a href="../../de/pos/DET.html">de</a>]
 
@@ -73,29 +131,99 @@ DET in other languages:
 
 [<a href="../../es/pos/DET.html">es</a>]
 
+[<a href="../../et/pos/DET.html">et</a>]
+
 [<a href="../../eu/pos/DET.html">eu</a>]
 
 [<a href="../../fa/pos/DET.html">fa</a>]
 
 [<a href="../../fi/pos/DET.html">fi</a>]
 
+[<a href="../../fo/pos/DET.html">fo</a>]
+
 [<a href="../../fr/pos/DET.html">fr</a>]
 
 [<a href="../../ga/pos/DET.html">ga</a>]
 
+[<a href="../../gl/pos/DET.html">gl</a>]
+
+[<a href="../../got/pos/DET.html">got</a>]
+
+[<a href="../../grc/pos/DET.html">grc</a>]
+
 [<a href="../../he/pos/DET.html">he</a>]
 
+[<a href="../../hi/pos/DET.html">hi</a>]
+
+[<a href="../../hr/pos/DET.html">hr</a>]
+
 [<a href="../../hu/pos/DET.html">hu</a>]
+
+[<a href="../../id/pos/DET.html">id</a>]
 
 [<a href="../../it/pos/DET.html">it</a>]
 
 [<a href="../../ja/pos/DET.html">ja</a>]
 
+[<a href="../../kk/pos/DET.html">kk</a>]
+
+[<a href="../../kmr/pos/DET.html">kmr</a>]
+
 [<a href="../../ko/pos/DET.html">ko</a>]
+
+[<a href="../../la/pos/DET.html">la</a>]
+
+[<a href="../../lv/pos/DET.html">lv</a>]
+
+[<a href="../../mr/pos/DET.html">mr</a>]
+
+[<a href="../../nl/pos/DET.html">nl</a>]
+
+[<a href="../../no/pos/DET.html">no</a>]
+
+[<a href="../../pl/pos/DET.html">pl</a>]
+
+[<a href="../../pt/pos/DET.html">pt</a>]
+
+[<a href="../../ro/pos/DET.html">ro</a>]
+
+[<a href="../../ru/pos/DET.html">ru</a>]
+
+[<a href="../../sa/pos/DET.html">sa</a>]
+
+[<a href="../../sk/pos/DET.html">sk</a>]
+
+[<a href="../../sla/pos/DET.html">sla</a>]
+
+[<a href="../../sl/pos/DET.html">sl</a>]
+
+[<a href="../../so/pos/DET.html">so</a>]
+
+[<a href="../../sr/pos/DET.html">sr</a>]
 
 [<a href="../../sv/pos/DET.html">sv</a>]
 
+[<a href="../../swl/pos/DET.html">swl</a>]
+
+[<a href="../../ta/pos/DET.html">ta</a>]
+
+[<a href="../../tr/pos/DET.html">tr</a>]
+
+[<a href="../../ug/pos/DET.html">ug</a>]
+
+[<a href="../../uk/pos/DET.html">uk</a>]
+
 [<a href="../../u/pos/DET.html">u</a>]
+
+[<a href="../../urj/pos/DET.html">urj</a>]
+
+[<a href="../../ur/pos/DET.html">ur</a>]
+
+[<a href="../../vi/pos/DET.html">vi</a>]
+
+[<a href="../../yue/pos/DET.html">yue</a>]
+
+[<a href="../../zh/pos/DET.html">zh</a>]
 
 
 

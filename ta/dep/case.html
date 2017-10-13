@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ta">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ta/dep">ta/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ta-dep/case.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ta">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ta/dep">ta/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ta-dep/case.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -75,9 +92,9 @@ Average distance between parent and child is 1.2059925093633.</p>
 # visual-style 1	bgColor:blue
 # visual-style 1	fgColor:white
 # visual-style 1 2 case	color:blue
-1	வளர்ச்சிக்க்	வளர்ச்சி	NOUN	NND-3SN--	Case=Dat|Gender=Neut|Number=Sing|Person=3	3	nmod	_	Translit=vaḷarccikk|LTranslit=vaḷarcci
+1	வளர்ச்சிக்க்	வளர்ச்சி	NOUN	NND-3SN--	Case=Dat|Gender=Neut|Number=Sing|Person=3	3	obl	_	Translit=vaḷarccikk|LTranslit=vaḷarcci
 2	ஆக	ஆக	ADP	PP-------	AdpType=Post	1	case	_	Translit=āka|LTranslit=āka
-3	போராடுவோம்	போராடு	VERB	Vr-F1P-AA	Mood=Ind|Negative=Pos|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No|Translit=pōrāṭuvōm|LTranslit=pōrāṭu
+3	போராடுவோம்	போராடு	VERB	Vr-F1P-AA	Mood=Ind|Number=Plur|Person=1|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No|Translit=pōrāṭuvōm|LTranslit=pōrāṭu
 4	.	.	PUNCT	Z#-------	PunctType=Peri	3	punct	_	Translit=.|LTranslit=.
 
 </code></pre>
@@ -87,11 +104,11 @@ Average distance between parent and child is 1.2059925093633.</p>
 # visual-style 1	bgColor:blue
 # visual-style 1	fgColor:white
 # visual-style 1 2 case	color:blue
-1	பாஜகவ்	பாஜக	PROPN	NEN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	4	nmod	_	Translit=pājakav|LTranslit=pājaka
+1	பாஜகவ்	பாஜக	PROPN	NEN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	4	obl	_	Translit=pājakav|LTranslit=pājaka
 2	உடன்	உடன்	ADP	PP-------	AdpType=Post	1	case	_	Translit=uṭan|LTranslit=uṭan
-3	கூட்டணி	கூட்டணி	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	4	dobj	_	Translit=kūṭṭaṇi|LTranslit=kūṭṭaṇi
-4	வைத்த்	வை	VERB	Vt-T---AA	Negative=Pos|VerbForm=Part|Voice=Act	0	root	_	Translit=vaitt|LTranslit=vai
-5	இருக்கிறீர்கள்	இரு	AUX	VR-P2PHAA	Gender=Com|Mood=Ind|Negative=Pos|Number=Plur|Person=2|Polite=Pol|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	Translit=irukkirīrkaḷ|LTranslit=iru
+3	கூட்டணி	கூட்டணி	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	4	obj	_	Translit=kūṭṭaṇi|LTranslit=kūṭṭaṇi
+4	வைத்த்	வை	VERB	Vt-T---AA	Polarity=Pos|VerbForm=Part|Voice=Act	0	root	_	Translit=vaitt|LTranslit=vai
+5	இருக்கிறீர்கள்	இரு	AUX	VR-P2PHAA	Gender=Com|Mood=Ind|Number=Plur|Person=2|Polarity=Pos|Polite=Form|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	Translit=irukkirīrkaḷ|LTranslit=iru
 6	.	.	PUNCT	Z#-------	PunctType=Peri	4	punct	_	Translit=.|LTranslit=.
 
 </code></pre>
@@ -101,12 +118,12 @@ Average distance between parent and child is 1.2059925093633.</p>
 # visual-style 1	bgColor:blue
 # visual-style 1	fgColor:white
 # visual-style 1 2 case	color:blue
-1	அதனைத்	அது	PRON	RpA-3SN--	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	6	nmod	_	Translit=atanait|LTranslit=atu
+1	அதனைத்	அது	PRON	RpA-3SN--	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	6	obl	_	Translit=atanait|LTranslit=atu
 2	தொடர்ந்து	தொடர்	ADP	PP-------	AdpType=Post	1	case	_	Translit=toṭarntu|LTranslit=toṭar
 3	மற்ற	மற்ற	ADJ	JJ-------	_	5	amod	_	Translit=marra|LTranslit=marra
 4	பூஜை	பூஜை	NOUN	NNN-3SN--	Case=Nom|Gender=Neut|Number=Sing|Person=3	5	nmod	_	Translit=pūjai|LTranslit=pūjai
 5	காலங்கள்	காலம்	NOUN	NNN-3PN--	Case=Nom|Gender=Neut|Number=Plur|Person=3	6	nsubj	_	Translit=kālaṅkaḷ|LTranslit=kālam
-6	நடைபெற்றது	நடைபெறு	VERB	Vr-D3SNAA	Gender=Neut|Mood=Ind|Negative=Pos|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No|Translit=naṭaiperratu|LTranslit=naṭaiperu
+6	நடைபெற்றது	நடைபெறு	VERB	Vr-D3SNAA	Gender=Neut|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No|Translit=naṭaiperratu|LTranslit=naṭaiperu
 7	.	.	PUNCT	Z#-------	PunctType=Peri	6	punct	_	Translit=.|LTranslit=.
 
 </code></pre>
@@ -119,9 +136,25 @@ Average distance between parent and child is 1.2059925093633.</p>
 
 case in other languages:
 
+[<a href="../../am/dep/case.html">am</a>]
+
+[<a href="../../ar/dep/case.html">ar</a>]
+
 [<a href="../../bg/dep/case.html">bg</a>]
 
+[<a href="../../bxr/dep/case.html">bxr</a>]
+
+[<a href="../../ca/dep/case.html">ca</a>]
+
+[<a href="../../ckb/dep/case.html">ckb</a>]
+
+[<a href="../../cop/dep/case.html">cop</a>]
+
 [<a href="../../cs/dep/case.html">cs</a>]
+
+[<a href="../../cu/dep/case.html">cu</a>]
+
+[<a href="../../da/dep/case.html">da</a>]
 
 [<a href="../../de/dep/case.html">de</a>]
 
@@ -131,29 +164,99 @@ case in other languages:
 
 [<a href="../../es/dep/case.html">es</a>]
 
+[<a href="../../et/dep/case.html">et</a>]
+
 [<a href="../../eu/dep/case.html">eu</a>]
 
 [<a href="../../fa/dep/case.html">fa</a>]
 
 [<a href="../../fi/dep/case.html">fi</a>]
 
+[<a href="../../fo/dep/case.html">fo</a>]
+
 [<a href="../../fr/dep/case.html">fr</a>]
 
 [<a href="../../ga/dep/case.html">ga</a>]
 
+[<a href="../../gl/dep/case.html">gl</a>]
+
+[<a href="../../got/dep/case.html">got</a>]
+
+[<a href="../../grc/dep/case.html">grc</a>]
+
 [<a href="../../he/dep/case.html">he</a>]
 
+[<a href="../../hi/dep/case.html">hi</a>]
+
+[<a href="../../hr/dep/case.html">hr</a>]
+
 [<a href="../../hu/dep/case.html">hu</a>]
+
+[<a href="../../id/dep/case.html">id</a>]
 
 [<a href="../../it/dep/case.html">it</a>]
 
 [<a href="../../ja/dep/case.html">ja</a>]
 
+[<a href="../../kk/dep/case.html">kk</a>]
+
+[<a href="../../kmr/dep/case.html">kmr</a>]
+
 [<a href="../../ko/dep/case.html">ko</a>]
+
+[<a href="../../la/dep/case.html">la</a>]
+
+[<a href="../../lv/dep/case.html">lv</a>]
+
+[<a href="../../mr/dep/case.html">mr</a>]
+
+[<a href="../../nl/dep/case.html">nl</a>]
+
+[<a href="../../no/dep/case.html">no</a>]
+
+[<a href="../../pl/dep/case.html">pl</a>]
+
+[<a href="../../pt/dep/case.html">pt</a>]
+
+[<a href="../../ro/dep/case.html">ro</a>]
+
+[<a href="../../ru/dep/case.html">ru</a>]
+
+[<a href="../../sa/dep/case.html">sa</a>]
+
+[<a href="../../sk/dep/case.html">sk</a>]
+
+[<a href="../../sla/dep/case.html">sla</a>]
+
+[<a href="../../sl/dep/case.html">sl</a>]
+
+[<a href="../../so/dep/case.html">so</a>]
+
+[<a href="../../sr/dep/case.html">sr</a>]
 
 [<a href="../../sv/dep/case.html">sv</a>]
 
+[<a href="../../swl/dep/case.html">swl</a>]
+
+[<a href="../../ta/dep/case.html">ta</a>]
+
+[<a href="../../tr/dep/case.html">tr</a>]
+
 [<a href="../../u/dep/case.html">u</a>]
+
+[<a href="../../ug/dep/case.html">ug</a>]
+
+[<a href="../../uk/dep/case.html">uk</a>]
+
+[<a href="../../ur/dep/case.html">ur</a>]
+
+[<a href="../../urj/dep/case.html">urj</a>]
+
+[<a href="../../vi/dep/case.html">vi</a>]
+
+[<a href="../../yue/dep/case.html">yue</a>]
+
+[<a href="../../zh/dep/case.html">zh</a>]
 
 
 

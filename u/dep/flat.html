@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-u">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/u/dep">u/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/flat.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-u">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/u/dep">u/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/flat.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -48,17 +65,17 @@
 <p>The <code>flat</code> relation is one of three relations for multiword expressions multiword expressions (MWEs) in UD 
 (the other two being <a href="">fixed</a> and <a href="">compound</a>). It is used for exocentric (headless) semi-fixed MWEs like
 names (<em>Hillary Rodham Clinton</em>) and dates (<em>24 December</em>). It contrasts with <a href="">fixed</a>, which applies to
-to completely fixed grammaticized MWEs (like <em>in spite of</em>), and with <a href="">compound</a>, which applies to
+completely fixed grammaticized (function word-like) MWEs (like <em>in spite of</em>), and with <a href="">compound</a>, which applies to
 endocentric (headed) MWEs (like <em>apple pie</em>).</p>
 
-<p>Flat MWEs are annotated in a flat structure, where all subsequent words in the expression are attached to the 
-first one using the fixed label. The assumption is that these expressions do not have any internal syntactic structure 
+<p>Flat MWEs are annotated with a flat structure, where all subsequent words in the expression are attached to the 
+first one using the <code>flat</code> label. The assumption is that these expressions do not have any internal syntactic structure 
 and that the structural annotation is in principle arbitrary. In practice, however, it is highly desirable to use 
 a consistent annotation of all flat MWEs in all languages.</p>
 
-<p>Below we describe some of the most common uses of <a href="">flat</a> across languages. Note, however, that semantically
-equivalent expressions in other languages (or even in the same language) may require a different analysis if it
-has a regular compositional syntactic structure.</p>
+<p>Below we describe some of the most common uses of <a href="">flat</a> across languages. Note that semantically
+equivalent expressions in different languages (or even in the same language) may require a different analysis if sometimes
+there is and sometimes there is not a regular compositional syntactic structure.</p>
 
 <h2 id="names">Names</h2>
 
@@ -80,7 +97,35 @@ flat(Carl-1, XVI-2)
 flat(New, York)
 </code></pre>
 
-<p>By contrast, names that have a regular syntactic structure, like <em>The Lord of the Rings</em> and <em>Captured By
+<p>Titles/honorifics are also analyzed using the <code>flat</code> relation. Note that some titles are complex
+and have their own internal syntactic structure. Such structure is shown with regular relations embedded under <code>flat</code>:</p>
+
+<pre><code class="language-sdparse">Mr. Smith
+flat(Mr., Smith)
+</code></pre>
+
+<pre><code class="language-sdparse">President Obama
+flat(President, Obama)
+</code></pre>
+
+<pre><code class="language-sdparse">French actor Gaspard Ulliel
+amod(actor-2, French-1)
+flat(actor-2, Gaspard-3)
+flat(actor-2, Ulliel-4)
+</code></pre>
+
+<pre><code class="language-sdparse">Milliardär Ross Perot \n billionaire Ross Perot
+flat(Milliardär-1, Ross-2)
+flat(Milliardär-1, Perot-3)
+</code></pre>
+
+<p>However if the two halves of a descriptive title and a name appear to be two separate nominals, 
+then analysis with <code>flat</code> is not appropriate, and <a href="">u-dep/appos</a> is appropriate. These cases are often set off by
+punctuation, such as a comma, but no punctuation may appear in more informal text. 
+You can generally test for such examples by asking if the two halves can be reversed; if they can, it is probably an <code>appos</code>; 
+see the examples there.</p>
+
+<p>In contrast to the above, names that have a regular syntactic structure, like <em>The Lord of the Rings</em> and <em>Captured By
 Aliens</em>, should be annotated with regular syntactic relations.</p>
 
 <pre><code class="language-sdparse">The Lord of the Rings
@@ -88,6 +133,12 @@ det(Lord, The)
 nmod(Lord, Rings)
 case(Rings, of)
 det(Rings, the)
+</code></pre>
+
+<pre><code class="language-sdparse">The king of Sweden
+det(king-2, The-1)
+nmod(king-2, Sweden-4)
+case(Sweden-4, of-3)
 </code></pre>
 
 <p>For organization names with clear syntactic modification structure, the dependencies should 
@@ -99,8 +150,11 @@ compound(Conservation-3, Resources-2)
 compound(Service-4, Conservation-3)
 </code></pre>
 
-<p>In addition, regular syntactic relations are used: (i) for a modifying determiner or (ii) to connect 
-together the words of a description or name which involve embedded prepositional phrases, sentences, etc.</p>
+<p>In addition, regular syntactic relations are used: (i) for a modifying determiner or similar function word and (ii) to connect 
+together the words of a description or name which involve embedded prepositional phrases, sentences, etc.,
+when these relations are (i) recognized in the language being annotated (i.e., the analyses below are for
+French, German, and Spanish, not English) and (ii) deemed not to be grammaticalized to the extent that the original role
+of the function words has been lost.</p>
 
 <pre><code class="language-sdparse">Le Japon
 det(Japon-2, Le-1)
@@ -108,18 +162,14 @@ det(Japon-2, Le-1)
 
 <pre><code class="language-sdparse">Ludwig van Beethoven
 case(Beethoven, van)
+nmod(Ludwig, Beethoven)
 </code></pre>
 
 <pre><code class="language-sdparse">Miguel de Cervantes y Saavedra
 conj(Cervantes, Saavedra)
 cc(Saavedra, y)
 case(Cervantes, de)
-</code></pre>
-
-<pre><code class="language-sdparse">The king of Sweden
-det(king-2, The-1)
-nmod(king-2, Sweden-4)
-case(Sweden-4, of-3)
+nmod(Miguel, Cervantes)
 </code></pre>
 
 <pre><code class="language-sdparse">Río de la Plata
@@ -128,15 +178,55 @@ det(Plata-4, la-3)
 nmod(Río-1, Plata-4)
 </code></pre>
 
+<p>The above analyses of <em>Ludwig van Beethoven</em> and <em>Miguel de Cervantes y Saavedra</em> assume that <em>van</em> resp. <em>de</em> are prepositions.
+This is true in the languages of the names’ origin, but it can be expected to change when the name is used in foreign text 
+or when sufficient grammaticalization has taken place. For example,
+when names like this are annotated in English, the appropriate analysis is as a <code>flat</code> name:</p>
+
+<pre><code class="language-sdparse">Ludwig van Beethoven was a famous German composer .
+flat(Ludwig, van)
+flat(Ludwig, Beethoven)
+det(composer, a)
+amod(composer, famous)
+amod(composer, German)
+cop(composer, was)
+nsubj(composer, Ludwig)
+punct(composer, .)
+</code></pre>
+
+<pre><code class="language-sdparse">Río de la Plata
+flat(Río-1, de-2)
+flat(Río-1, la-3)
+flat(Río-1, Plata-4)
+</code></pre>
+
+<pre><code class="language-sdparse">Al Arabiya is a Saudi-owned news organization
+flat(Al-1, Arabiya-2)
+nsubj(organization-7, Al-1)
+</code></pre>
+
+<p>And in Modern German or French, these prepositions have generally just become a fossilized part of a family name 
+and regularly appear without the given name. Again, here, analysis as <code>flat</code> seems correct:</p>
+
+<pre><code class="language-sdparse">Von Hohenlohe gewann das Rennen . \n Von Hohenlohe won the race .
+flat(Von-1, Hohenlohe-2)
+nsubj(gewann-3, Von-1)
+</code></pre>
+
 <p>In the case of proper entities named after people, e.g. <em>Leland Stanford Jr. University</em>, the <code>flat</code> relation 
 should only be used inside the person name, with the rest of the construction analyzed compositionally using 
 normal syntactic relations:</p>
 
 <pre><code class="language-sdparse">Leland Stanford Jr. University
-compound(University-4, Leland-1)
-flat(Stanford-2, Leland-1)
-flat(Jr.-3, Leland-1)
+compound(Leland-1, University-4)
+flat(Leland-1, Stanford-2)
+flat(Leland-1, Jr.-3)
 </code></pre>
+
+<h3 id="some-further-notes-on-relations-for-names">Some further notes on relations for names</h3>
+
+<p><em>This paragraph briefly records some of the arguments that have been made in the past on relations for name structure. It is an issue over which there has historically been variation and about which there is some continuing debate.</em> Examples like 
+<em>French actor Gaspard Ulliel:</em> Some treebanks have used <code>nmod</code> for titles and honorifics like <em>Mr.</em> or <em>French actor</em>. Most people think this is inappropriate, since an <code>nmod</code> dependent should be a full phrase, which will typically take its own case as a modifier in a cased language. In contrast, these titles seem to be part of the same phrase as the name that follows them; they show case agreement concord in a cased language. Some grammatical traditions, descending from Latin, call <em>French actor</em> in such cases a “fixed (or close) apposition” and take the name as the head. UD has restricted the <code>appos</code> relation to following appositives (corresponding to “loose (or wide) apposition” in the Latin tradition). The relation <code>appos</code> is only used when you have two full nominals, typically joined loosely, and often separated by a punctuation mark like a comma. So <code>appos</code> is not correct for these cases. Sometimes the relation <code>compound</code> has been used, but this does not seem right. It implies headedness, and titles do not usually behave like compounds: in German, they are not joined to the following words, as compounds are normally joined in German, and they appear at the beginning of names in both German and Hebrew, even though German compounds are head last and Hebrew compounds are head first. So <code>compound</code> does not seem appropriate either. Some UDv1 treebanks used <code>flat</code> for honorifics like <em>Mr.</em>, although some felt that was wrong and <code>flat</code> should be restricted to joining the proper nouns of multi-word names. In UDv2, <code>flat</code> was removed and replaced by <code>flat</code>, which allowed a broader notion of a chunk of unheaded material. In the UDv2 guidelines, cases of both titles and honorifics are joined to names with <code>flat</code>.</p>
 
 <h2 id="dates-and-complex-numerals">Dates and Complex Numerals</h2>
 
@@ -184,6 +274,11 @@ flat(gjiko, zen)
 
 <!-- "in other languages" links -->
 <hr/>
+
+flat in other languages:
+
+[<a href="../../u/dep/flat.html">u</a>]
+
 
 
 

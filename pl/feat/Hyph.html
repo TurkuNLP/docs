@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-pl">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/pl/feat">pl/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_pl-feat/Hyph.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-pl">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/pl/feat">pl/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pl-feat/Hyph.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -65,30 +82,41 @@ for <code>Hyph</code>.</p>
 <p>This feature is language-specific.
 It occurs with 1 different values: <code>Yes</code>.</p>
 
-<p>39 tokens (0%) have a non-empty value of <code>Hyph</code>.
-34 types (0%) occur at least once with a non-empty value of <code>Hyph</code>.
-33 lemmas (0%) occur at least once with a non-empty value of <code>Hyph</code>.
-The feature is used with 1 part-of-speech tags: <a href="">pl-pos/ADJ</a> (39; 0% instances).</p>
+<p>34 tokens (0%) have a non-empty value of <code>Hyph</code>.
+31 types (0%) occur at least once with a non-empty value of <code>Hyph</code>.
+30 lemmas (0%) occur at least once with a non-empty value of <code>Hyph</code>.
+The feature is used with 1 part-of-speech tags: <a href="">pl-pos/ADJ</a> (34; 0% instances).</p>
 
 <h3 id="adj"><code>ADJ</code></h3>
 
-<p>39 <a href="">pl-pos/ADJ</a> tokens (1% of all <code>ADJ</code> tokens) have a non-empty value of <code>Hyph</code>.</p>
+<p>34 <a href="">pl-pos/ADJ</a> tokens (0% of all <code>ADJ</code> tokens) have a non-empty value of <code>Hyph</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Hyph</code> co-occurred: <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (39; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (39; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (39; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (39; 100%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (39; 100%).</p>
+<p>The most frequent other feature values with which <code>ADJ</code> and <code>Hyph</code> co-occurred: <tt><a href="Case.html">Case</a>=EMPTY</tt> (34; 100%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (34; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (34; 100%), <tt><a href="Aspect.html">Aspect</a>=EMPTY</tt> (34; 100%), <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (34; 100%), <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (34; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (34; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (34; 100%), <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (34; 100%).</p>
 
 <p><code>ADJ</code> tokens may have the following values of <code>Hyph</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (39; 100% of non-empty <code>Hyph</code>): <em>biało, polsko, Liberalno, południowo, Chrześcijańsko, Ekonomiczno, Ginekologiczno, Ludowo, Miejsko, Przemysłowo</em></li>
+  <li><code>Yes</code> (34; 100% of non-empty <code>Hyph</code>): <em>biało, Liberalno, polsko, Chrześcijańsko, Ekonomiczno, Ginekologiczno, Ludowo, Miejsko, Przemysłowo, Ratowniczo</em></li>
 </ul>
 
-<p><code>Hyph</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (33) occur only with one value of <code>Hyph</code>.</p>
+<p><code>Hyph</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (30) occur only with one value of <code>Hyph</code>.</p>
 
 
 
 
 <!-- "in other languages" links -->
 <hr/>
+
+Hyph in other languages:
+
+[<a href="../../cs/feat/Hyph.html">cs</a>]
+
+[<a href="../../et/feat/Hyph.html">et</a>]
+
+[<a href="../../pl/feat/Hyph.html">pl</a>]
+
+[<a href="../../pt/feat/Hyph.html">pt</a>]
+
 
 
 

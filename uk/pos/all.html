@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-uk">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-uk">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -66,7 +83,7 @@
     </tr>
     <tr>
       <td><a>INTJ</a></td>
-      <td><a>CONJ</a></td>
+      <td><a>CCONJ</a></td>
       <td><a>X</a></td>
     </tr>
     <tr>
@@ -165,7 +182,7 @@ negated.</p>
 <!--Here both groups are `ADJ`. The nominal forms are used in predication,-->
 <!--the standard forms both in predication and to modify nouns.-->
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_uk-pos/ADJ.md" target="#">edit ADJ</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-pos/ADJ.md" target="#">edit ADJ</a></p>
 
 <p><a id="al-uk-pos/ADP" class="al-dest"></a></p>
 <h2><code>ADP</code>: adposition</h2>
@@ -185,7 +202,7 @@ negated.</p>
   <li><em>протягом </em> “during”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_uk-pos/ADP.md" target="#">edit ADP</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-pos/ADP.md" target="#">edit ADP</a></p>
 
 <p><a id="al-uk-pos/ADV" class="al-dest"></a></p>
 <h2><code>ADV</code>: adverb</h2>
@@ -217,7 +234,7 @@ part-of-speech tag but they are differentiated by additional features.</p>
   <li>negative adverbs: <em>ніде, ніколи </em> “nowhere, never”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_uk-pos/ADV.md" target="#">edit ADV</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-pos/ADV.md" target="#">edit ADV</a></p>
 
 <p><a id="al-uk-pos/AUX" class="al-dest"></a></p>
 <h2><code>AUX</code>: auxiliary verb</h2>
@@ -226,10 +243,10 @@ part-of-speech tag but they are differentiated by additional features.</p>
 
 <p>The only auxiliary verb in Ukrainian is <em>бути</em> “to be”. It accompanies the lexical verb of a verb phrase and expresses grammatical distinctions not carried by the lexical verb.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_uk-pos/AUX_.md" target="#">edit AUX</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-pos/AUX_.md" target="#">edit AUX</a></p>
 
-<p><a id="al-uk-pos/CONJ" class="al-dest"></a></p>
-<h2><code>CONJ</code>: coordinating conjunction</h2>
+<p><a id="al-uk-pos/CCONJ" class="al-dest"></a></p>
+<h2><code>CCONJ</code>: coordinating conjunction</h2>
 
 <h3 id="definition">Definition</h3>
 
@@ -245,7 +262,7 @@ part-of-speech tag but they are differentiated by additional features.</p>
   <li><em>але </em> “but”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_uk-pos/CONJ.md" target="#">edit CONJ</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-pos/CCONJ.md" target="#">edit CCONJ</a></p>
 
 <p><a id="al-uk-pos/DET" class="al-dest"></a></p>
 <h2><code>DET</code>: determiner</h2>
@@ -286,7 +303,7 @@ determiner may indicate whether the noun is referring to a definite or indefinit
   <li><a href="http://en.wikipedia.org/wiki/Determiner">Wikipedia</a></li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_uk-pos/DET.md" target="#">edit DET</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-pos/DET.md" target="#">edit DET</a></p>
 
 <p><a id="al-uk-pos/INTJ" class="al-dest"></a></p>
 <h2><code>INTJ</code>: interjection</h2>
@@ -307,7 +324,7 @@ determiner may indicate whether the noun is referring to a definite or indefinit
   <li><em>браво </em> “bravo”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_uk-pos/INTJ.md" target="#">edit INTJ</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-pos/INTJ.md" target="#">edit INTJ</a></p>
 
 <p><a id="al-uk-pos/NOUN" class="al-dest"></a></p>
 <h2><code>NOUN</code>: noun</h2>
@@ -337,7 +354,7 @@ number-case inflectional paradigm.</p>
   <li><em>плавання</em> “swimming”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_uk-pos/NOUN.md" target="#">edit NOUN</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-pos/NOUN.md" target="#">edit NOUN</a></p>
 
 <p><a id="al-uk-pos/NUM" class="al-dest"></a></p>
 <h2><code>NUM</code>: numeral</h2>
@@ -382,14 +399,14 @@ For instance, in phrases like <em><b>тисячі</b> людей взяли уч
 In numeric expressions, e.g. <em>132 <b>тисячі</b> доларів </em> (“132 <b>thousand</b> dollars”), it is a cardinal numeral.</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_uk-pos/NUM.md" target="#">edit NUM</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-pos/NUM.md" target="#">edit NUM</a></p>
 
 <p><a id="al-uk-pos/PART" class="al-dest"></a></p>
 <h2><code>PART</code>: particle</h2>
 
 <h3 id="definition">Definition</h3>
 
-<p>Particles are function words that must be associated with another word or phrase to impart meaning and that do not satisfy definitions of other universal parts of speech (e.g. <a href="ADP">adpositions</a>, <a href="CONJ">coordinating conjunctions</a>, or <a href="SCONJ">subordinating conjunctions</a>).  Particles may encode grammatical categories such as negation, mood etc. Ukrainian particles are not inflected.</p>
+<p>Particles are function words that must be associated with another word or phrase to impart meaning and that do not satisfy definitions of other universal parts of speech (e.g. <a href="ADP">adpositions</a>, <a href="CCONJ">coordinating conjunctions</a>, or <a href="SCONJ">subordinating conjunctions</a>).  Particles may encode grammatical categories such as negation, mood etc. Ukrainian particles are not inflected.</p>
 
 <p>Note that response words such as <em>так </em> “yes”, <em>ні </em> “no”, etc. are considered particles in grammars of Ukrainian but they are tagged as interjections under the UD standard. Also note that <em>ні </em> can be used in two ways, one would be translated as English “no” and the other as “nor”. Only the former should become interjection, while the latter will stay a conjunction.</p>
 
@@ -401,7 +418,7 @@ In numeric expressions, e.g. <em>132 <b>тисячі</b> доларів </em> (
   <li><em>аж </em> “only, as late as, even, up to”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_uk-pos/PART.md" target="#">edit PART</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-pos/PART.md" target="#">edit PART</a></p>
 
 <p><a id="al-uk-pos/PRON" class="al-dest"></a></p>
 <h2><code>PRON</code>: pronoun</h2>
@@ -435,7 +452,7 @@ substitute for <a href="ADJ">adjectives</a>. Such words are not tagged <code>PRO
   <li><a href="http://en.wikipedia.org/wiki/Pronoun">Wikipedia</a></li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_uk-pos/PRON.md" target="#">edit PRON</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-pos/PRON.md" target="#">edit PRON</a></p>
 
 <p><a id="al-uk-pos/PROPN" class="al-dest"></a></p>
 <h2><code>PROPN</code>: proper noun</h2>
@@ -446,7 +463,7 @@ substitute for <a href="ADJ">adjectives</a>. Such words are not tagged <code>PRO
 
 <p>Single-word named entities should be tagged <code>PROPN</code> even if they originate from a common noun <em>(Заєць, Бук) </em> or an adjective <em>(Довгополий, Масна). </em> Even if they were originally adjectives and inflect according to adjectival paradigms, they behave syntactically as nouns. For instance, <em>Масна </em> (the feminine version of surname <em>Масний </em>) is originally feminine form of the adjective <em>масний </em> “fatty” but as an anthroponimic name, it is a noun. It denotes a concrete person (rather than a property of somebody/something) and its gender is limited to feminine and masculine (while adjectives have forms in all three genders).</p>
 
-<p>Personal names are typically treated as a sequence of proper nouns (one or more given names and one or more surnames). If the name contains prepositions, conjunctions or particles (foreign names), these are tagged as <code>ADP</code>, <code>CONJ</code> and <code>DET</code>, respectively.</p>
+<p>Personal names are typically treated as a sequence of proper nouns (one or more given names and one or more surnames). If the name contains prepositions, conjunctions or particles (foreign names), these are tagged as <code>ADP</code>, <code>CCONJ</code> and <code>DET</code>, respectively.</p>
 
 <p>Ukrainian (and other Slavic) multi-word named entities have internal syntactic structure, which is preserved in the annotation. The headword is always noun and there may be other nouns involved. They will be tagged either <code>PROPN</code> or <code>NOUN</code> and possible ambiguities must be resolved individually. Modifying adjectives are never tagged <code>PROPN</code>. Even if an adjective is the first word of a multi-word name, and thus it starts with an uppercase letter, it is still tagged <code>ADJ</code>. Similarly, function words in named entities retain their normal tags. These rules are less strict for foreign named entities where the original part of speech is hidden for a Ukrainian speaker.</p>
 
@@ -457,7 +474,7 @@ substitute for <a href="ADJ">adjectives</a>. Such words are not tagged <code>PRO
   <li><em>Організація</em><code>NOUN</code> <em>об’єднаних</em><code>ADJ</code> <em>націй</em><code>NOUN</code> “United Nations Organization” consists of three words, none of which is proper noun. However, the acronym <em><b>ООН</b> </em> “UN” is a single-token name and is tagged <code>PROPN</code>.</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_uk-pos/PROPN.md" target="#">edit PROPN</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-pos/PROPN.md" target="#">edit PROPN</a></p>
 
 <p><a id="al-uk-pos/PUNCT" class="al-dest"></a></p>
 <h2><code>PUNCT</code>: punctuation</h2>
@@ -476,7 +493,7 @@ substitute for <a href="ADJ">adjectives</a>. Such words are not tagged <code>PRO
   <li>Parentheses: <em><b>()</b></em></li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_uk-pos/PUNCT.md" target="#">edit PUNCT</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-pos/PUNCT.md" target="#">edit PUNCT</a></p>
 
 <p><a id="al-uk-pos/SCONJ" class="al-dest"></a></p>
 <h2><code>SCONJ</code>: subordinating conjunction</h2>
@@ -485,7 +502,7 @@ substitute for <a href="ADJ">adjectives</a>. Such words are not tagged <code>PRO
 
 <p>A subordinating conjunction is a conjunction that links constructions by making one of them a constituent of the other. The subordinating conjunction typically marks the incorporated constituent which has the status of a (subordinate) clause.</p>
 
-<p>For <em>coordinating conjunctions,</em> see <a href="">CONJ</a>.</p>
+<p>For <em>coordinating conjunctions,</em> see <a href="">CCONJ</a>.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -504,7 +521,7 @@ substitute for <a href="ADJ">adjectives</a>. Such words are not tagged <code>PRO
   <li><a href="http://en.wikipedia.org/wiki/Conjunction_(grammar)">Wikipedia</a></li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_uk-pos/SCONJ.md" target="#">edit SCONJ</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-pos/SCONJ.md" target="#">edit SCONJ</a></p>
 
 <p><a id="al-uk-pos/SYM" class="al-dest"></a></p>
 <h2><code>SYM</code>: symbol</h2>
@@ -534,7 +551,7 @@ Similarly, abbreviations for single words are not symbols but are assigned the p
   <li><em>john.doe@universal.org, http://universaldependencies.org/, 1-800-COMPANY</em></li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_uk-pos/SYM.md" target="#">edit SYM</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-pos/SYM.md" target="#">edit SYM</a></p>
 
 <p><a id="al-uk-pos/VERB" class="al-dest"></a></p>
 <h2><code>VERB</code>: verb</h2>
@@ -577,7 +594,7 @@ See below for border cases.</p>
 - Passive adjectival participle is used to construct passive voice: <em>несений, несена, несене, несені</em>  “carried” (passive participle in different genders and numbers). It is also used separately as an adjective: <em>ношений, драний</em>  “carried, torn/ragged”. Their meaning is almost identical but the usage slightly varies. Both groups can be used in nominal predication with <a href="uk-dep/cop">copula</a>. Only true participles (verbs) can be used to form the passive voice (but it may be sometimes difficult to distinguish from copula constructions, see <a href="">AUX</a>). On the other hand, the participial adjectives inflect for case and thus can modify nouns.
 - Active participle (it is considered ungrammatical but still used occasionally, which is why it is encoded): <em>несучий, несуча, несуче, несучі</em>  “carrying” (present adjectival participle in different genders and numbers).</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_uk-pos/VERB.md" target="#">edit VERB</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-pos/VERB.md" target="#">edit VERB</a></p>
 
 <p><a id="al-uk-pos/X" class="al-dest"></a></p>
 <h2><code>X</code>: other</h2>
@@ -598,7 +615,7 @@ part-of-speech. For example, <em>кілт </em> “kilt” is an ordinary <a hr
   <li><em>А він тільки <b>xfgh pdl jklw</b> </em> “And he just <b>xfgh pdl jklw</b>”</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_uk-pos/X.md" target="#">edit X</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-pos/X.md" target="#">edit X</a></p>
 
 
 

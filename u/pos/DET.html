@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-u">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/u/pos">u/pos</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-pos/DET.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-u">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/u/pos">u/pos</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-pos/DET.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -54,6 +71,17 @@ indefinite element of a class, to a closer or more distant element, to
 an element belonging to a specified person or thing, to a particular
 number or quantity, etc.</p>
 
+<p>Determiners under this definition include both <em>articles</em>
+and <em>pro-adjectives (pronominal adjectives)</em>, which is a slightly broader
+sense than what is usually regarded as determiners in English.
+In particular, there is no general requirement that a nominal can be
+modified by at most one determiner, although some languages may show
+a strong tendency towards such a constraint.
+(For example, an English nominal usually allows only one <code>DET</code> modifier,
+but there are occasional cases of <em>addeterminers</em>, which appear outside
+the usual determiner, such as [en] <em>all</em> in <em><b>all</b> the children survived</em>.
+In such cases, both <em>all</em> and <em>the</em> are given the POS <code>DET</code>.)</p>
+
 <p>Note that the <code>DET</code> tag includes (pronominal) <em>quantifiers</em> (words
 like <em>many, few, several),</em> which are included among determiners in
 some languages but may belong to numerals in others. However,
@@ -61,31 +89,51 @@ some languages but may belong to numerals in others. However,
 tagged <code>DET</code> even though some authors would include them in
 quantifiers. Cardinal numbers have their own tag <a href="">NUM</a>.</p>
 
-<p>Also note that the notion of determiners is unknown in grammars of
+<p>Also note that the notion of determiners is unknown in traditional grammar of
 some languages (e.g. Czech); words equivalent to English determiners
 may be traditionally classified as <a href="PRON">pronouns</a> and/or
 <a href="NUM">numerals</a> in these languages. In order to annotate the same
 thing the same way across languages, the words satisfying our definition
 of determiners should be tagged <code>DET</code> in these languages as well.</p>
 
-<p>For instance, [en] <em>this</em> is either pronoun <em>(I saw <b>this</b>
-yesterday.)</em> or determiner <em>(I saw <b>this</b> car yesterday.)</em> Its
-Czech translation, [cs] <em>tohle</em>, is traditionally called pronoun in
-Czech grammar, regardless of context. To make the annotation parallel
-across languages, it should be now tagged <a href="">PRON</a> in <em><b>Tohle</b>
-jsem viděl včera.</em> and <code>DET</code> in <em><b>Tohle</b> auto jsem viděl včera.</em></p>
+<p>It is not always crystal clear where pronouns end and determiners start.
+Unlike in UD v1 it is no longer required that they are told apart solely on
+the base of the context. The words can be pre-classified in the dictionary
+as either <code>PRON</code> or <code>DET</code>, based on their <em>typical</em> syntactic distribution
+(and morphology, when applicable).
+Language-specific documentation should list all determiners (it is a closed class)
+and point out ambiguities, if any.</p>
 
-<p>Usually a nominal allows only one <code>DET</code> modifier, but there are occasional cases of <em>addeterminers</em>, which appear outside the usual determiner, such as [en] <em>all</em> in <em><b>all</b> the children survived</em>.  In such cases, both <em>all</em> and <em>the</em> are given the POS <code>DET</code>.</p>
+<p>See also <a href="../overview/morphology.html#pronominal-words">general principles on pronominal words</a>
+for more tips on how to define determiners.
+In particular:</p>
+
+<ul>
+  <li>Articles <em>(the, a, an)</em> are always tagged <code>DET</code>; their <a href="/u/feat/PronType.html">PronType</a> is <code>Art</code>.</li>
+  <li>Pronominal numerals (quantifiers) are tagged <code>DET</code>; besides <code>PronType</code>, they also use the <a href="/u/feat/NumType.html">NumType</a> feature.</li>
+  <li>Words that behave similar to adjectives are <code>DET</code>. Similar behavior means:
+    <ul>
+      <li>They are more likely to be used attributively (modifying a noun phrase) than substantively (replacing a noun phrase). They may occur alone, though.
+If they do, it is either because of ellipsis, or because the hypothetical modified noun is something unspecified and general, as in <em>All [visitors] must pay.</em></li>
+      <li>Their inflection (if applicable) is similar to that of adjectives, and distinct from nouns.
+They agree with the nouns they modify.
+Especially the ability to inflect for gender is typical for adjectives and determiners.
+(Gender of nouns is determined lexically and determiners may be required by the grammar to agree with their nouns in gender; therefore they need to inflect for gender.)</li>
+    </ul>
+  </li>
+  <li>Possessives vary across languages. In some languages the above tests put them in the <code>DET</code> category.
+In others, they are more like a normal personal pronoun in a specific case (often the genitive), or a personal pronoun with an adposition; they are tagged <code>PRON</code>.</li>
+</ul>
 
 <h3 id="examples">Examples</h3>
 
 <ul>
   <li>articles (a closed class indicating definiteness, specificity or givenness): <em>a, an, the</em></li>
-  <li>possessive determiners: <em>my, your, his, her, its, our, their</em></li>
+  <li>possessive determiners: [cs] <em>můj, tvůj, jeho, její, náš, váš, jejich</em></li>
   <li>demonstrative determiners: <em>this</em> as in <em>I saw <b>this</b> car yesterday.</em></li>
   <li>interrogative determiners: <em>which</em> as in <em>“<b>Which</b> car do you like?”</em></li>
   <li>relative determiners: <em>which</em> as in <em>“I wonder <b>which</b> car you like.”</em></li>
-  <li>quantity/quantifier determiners: indefinite <em>any</em>, universal: <em>all</em>, and negative <em>no</em> as in <em>“We have <b>no</b> cars available.”</em></li>
+  <li>quantity determiners (quantifiers): indefinite <em>any</em>, universal: <em>all</em>, and negative <em>no</em> as in <em>“We have <b>no</b> cars available.”</em></li>
 </ul>
 
 <h3 id="references">References</h3>
@@ -108,9 +156,25 @@ jsem viděl včera.</em> and <code>DET</code> in <em><b>Tohle</b> auto jsem vid�
 
 DET in other languages:
 
+[<a href="../../am/pos/DET.html">am</a>]
+
+[<a href="../../ar/pos/DET.html">ar</a>]
+
 [<a href="../../bg/pos/DET.html">bg</a>]
 
+[<a href="../../bxr/pos/DET.html">bxr</a>]
+
+[<a href="../../ca/pos/DET.html">ca</a>]
+
+[<a href="../../ckb/pos/DET.html">ckb</a>]
+
+[<a href="../../cop/pos/DET.html">cop</a>]
+
 [<a href="../../cs/pos/DET.html">cs</a>]
+
+[<a href="../../cu/pos/DET.html">cu</a>]
+
+[<a href="../../da/pos/DET.html">da</a>]
 
 [<a href="../../de/pos/DET.html">de</a>]
 
@@ -120,29 +184,99 @@ DET in other languages:
 
 [<a href="../../es/pos/DET.html">es</a>]
 
+[<a href="../../et/pos/DET.html">et</a>]
+
 [<a href="../../eu/pos/DET.html">eu</a>]
 
 [<a href="../../fa/pos/DET.html">fa</a>]
 
 [<a href="../../fi/pos/DET.html">fi</a>]
 
+[<a href="../../fo/pos/DET.html">fo</a>]
+
 [<a href="../../fr/pos/DET.html">fr</a>]
 
 [<a href="../../ga/pos/DET.html">ga</a>]
 
+[<a href="../../gl/pos/DET.html">gl</a>]
+
+[<a href="../../got/pos/DET.html">got</a>]
+
+[<a href="../../grc/pos/DET.html">grc</a>]
+
 [<a href="../../he/pos/DET.html">he</a>]
 
+[<a href="../../hi/pos/DET.html">hi</a>]
+
+[<a href="../../hr/pos/DET.html">hr</a>]
+
 [<a href="../../hu/pos/DET.html">hu</a>]
+
+[<a href="../../id/pos/DET.html">id</a>]
 
 [<a href="../../it/pos/DET.html">it</a>]
 
 [<a href="../../ja/pos/DET.html">ja</a>]
 
+[<a href="../../kk/pos/DET.html">kk</a>]
+
+[<a href="../../kmr/pos/DET.html">kmr</a>]
+
 [<a href="../../ko/pos/DET.html">ko</a>]
+
+[<a href="../../la/pos/DET.html">la</a>]
+
+[<a href="../../lv/pos/DET.html">lv</a>]
+
+[<a href="../../mr/pos/DET.html">mr</a>]
+
+[<a href="../../nl/pos/DET.html">nl</a>]
+
+[<a href="../../no/pos/DET.html">no</a>]
+
+[<a href="../../pl/pos/DET.html">pl</a>]
+
+[<a href="../../pt/pos/DET.html">pt</a>]
+
+[<a href="../../ro/pos/DET.html">ro</a>]
+
+[<a href="../../ru/pos/DET.html">ru</a>]
+
+[<a href="../../sa/pos/DET.html">sa</a>]
+
+[<a href="../../sk/pos/DET.html">sk</a>]
+
+[<a href="../../sla/pos/DET.html">sla</a>]
+
+[<a href="../../sl/pos/DET.html">sl</a>]
+
+[<a href="../../so/pos/DET.html">so</a>]
+
+[<a href="../../sr/pos/DET.html">sr</a>]
 
 [<a href="../../sv/pos/DET.html">sv</a>]
 
+[<a href="../../swl/pos/DET.html">swl</a>]
+
+[<a href="../../ta/pos/DET.html">ta</a>]
+
+[<a href="../../tr/pos/DET.html">tr</a>]
+
+[<a href="../../ug/pos/DET.html">ug</a>]
+
+[<a href="../../uk/pos/DET.html">uk</a>]
+
 [<a href="../../u/pos/DET.html">u</a>]
+
+[<a href="../../urj/pos/DET.html">urj</a>]
+
+[<a href="../../ur/pos/DET.html">ur</a>]
+
+[<a href="../../vi/pos/DET.html">vi</a>]
+
+[<a href="../../yue/pos/DET.html">yue</a>]
+
+[<a href="../../zh/pos/DET.html">zh</a>]
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-fa">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/fa/feat">fa/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_fa-feat/Degree.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-fa">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/fa/feat">fa/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fa-feat/Degree.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -65,38 +82,38 @@ for <code>Degree</code>.</p>
 <p>This feature is universal.
 It occurs with 3 different values: <code>Cmp</code>, <code>Pos</code>, <code>Sup</code>.</p>
 
-<p>13433 tokens (9%) have a non-empty value of <code>Degree</code>.
-3022 types (20%) occur at least once with a non-empty value of <code>Degree</code>.
-1938 lemmas (26%) occur at least once with a non-empty value of <code>Degree</code>.
-The feature is used with 1 part-of-speech tags: <a href="">fa-pos/ADJ</a> (13433; 9% instances).</p>
+<p>11932 tokens (9%) have a non-empty value of <code>Degree</code>.
+2810 types (20%) occur at least once with a non-empty value of <code>Degree</code>.
+1759 lemmas (25%) occur at least once with a non-empty value of <code>Degree</code>.
+The feature is used with 1 part-of-speech tags: <a href="">fa-pos/ADJ</a> (11932; 9% instances).</p>
 
 <h3 id="adj"><code>ADJ</code></h3>
 
-<p>13433 <a href="">fa-pos/ADJ</a> tokens (98% of all <code>ADJ</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>11932 <a href="">fa-pos/ADJ</a> tokens (98% of all <code>ADJ</code> tokens) have a non-empty value of <code>Degree</code>.</p>
 
 <p><code>ADJ</code> tokens may have the following values of <code>Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (452; 3% of non-empty <code>Degree</code>): بیشتر، بیش، کمتر، بیشتری، بهتر، بالاتر، برتر، بزرگتر، فراتر، نزدیکتر</li>
-  <li><code>Pos</code> (12602; 94% of non-empty <code>Degree</code>): اسلامی، دیگر، سیاسی، دوم، گذشته، فرهنگی، جدید، چند، ملی، پیدا</li>
-  <li><code>Sup</code> (379; 3% of non-empty <code>Degree</code>): نخستین، بهترین، اولین، آخرین، بزرگترین، دومین، مهمترین، بیشترین، سومین، بالاترین</li>
-  <li><code>EMPTY</code> (241): آمده، ساخته، یادشده، بسته، توقیف‌شده، ناخواسته، انجام‌شده، عقب‌افتاده، کاسته، کشته</li>
+  <li><code>Cmp</code> (411; 3% of non-empty <code>Degree</code>): بیشتر، بیش، کمتر، بیشتری، بهتر، بالاتر، بزرگتر، برتر، فراتر، اعم</li>
+  <li><code>Pos</code> (11184; 94% of non-empty <code>Degree</code>): اسلامی، دیگر، سیاسی، دوم، جدید، فرهنگی، ملی، چند، پیدا، اجتماعی</li>
+  <li><code>Sup</code> (337; 3% of non-empty <code>Degree</code>): نخستین، اولین، بهترین، آخرین، بزرگترین، دومین، مهمترین، بیشترین، سومین، بالاترین</li>
+  <li><code>EMPTY</code> (217): آمده، ساخته، بسته، یادشده، توقیف‌شده، انجام‌شده، عقب‌افتاده، ناخواسته، کاسته، اعلام‌شده</li>
 </ul>
 
-<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 95% lemmas (1841) occur only with one value of <code>Degree</code>.</p>
+<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 95% lemmas (1674) occur only with one value of <code>Degree</code>.</p>
 
 <h2 id="relations-with-agreement-in-degree">Relations with Agreement in <code>Degree</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>Degree</code>:
-<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (697; 97%),
-<tt>ADJ –[<a href="../dep/ccomp.html">ccomp</a>]–&gt; ADJ</tt> (71; 95%),
-<tt>ADJ –[<a href="../dep/amod.html">amod</a>]–&gt; ADJ</tt> (47; 92%),
-<tt>ADJ –[<a href="../dep/advcl.html">advcl</a>]–&gt; ADJ</tt> (30; 88%),
-<tt>ADJ –[<a href="../dep/advmod.html">advmod</a>]–&gt; ADJ</tt> (13; 81%),
-<tt>ADJ –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; ADJ</tt> (5; 100%),
-<tt>ADJ –[<a href="../dep/dobj.html">dobj</a>]–&gt; ADJ</tt> (2; 100%),
+<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (612; 97%),
+<tt>ADJ –[<a href="../dep/ccomp.html">ccomp</a>]–&gt; ADJ</tt> (66; 94%),
+<tt>ADJ –[<a href="../dep/amod.html">amod</a>]–&gt; ADJ</tt> (42; 93%),
+<tt>ADJ –[<a href="../dep/advcl.html">advcl</a>]–&gt; ADJ</tt> (25; 86%),
+<tt>ADJ –[<a href="../dep/advmod.html">advmod</a>]–&gt; ADJ</tt> (12; 80%),
+<tt>ADJ –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; ADJ</tt> (4; 100%),
+<tt>ADJ –[<a href="../dep/fixed.html">fixed</a>]–&gt; ADJ</tt> (3; 100%),
 <tt>ADJ –[<a href="../dep/appos.html">appos</a>]–&gt; ADJ</tt> (2; 100%),
-<tt>ADJ –[<a href="../dep/mwe.html">mwe</a>]–&gt; ADJ</tt> (2; 100%),
+<tt>ADJ –[<a href="../dep/obj.html">obj</a>]–&gt; ADJ</tt> (2; 100%),
 <tt>ADJ –[<a href="../dep/cc:preconj.html">cc:preconj</a>]–&gt; ADJ</tt> (1; 100%).</p>
 
 
@@ -107,9 +124,25 @@ The feature is used with 1 part-of-speech tags: <a href="">fa-pos/ADJ</a> (13433
 
 Degree in other languages:
 
+[<a href="../../am/feat/Degree.html">am</a>]
+
+[<a href="../../ar/feat/Degree.html">ar</a>]
+
 [<a href="../../bg/feat/Degree.html">bg</a>]
 
+[<a href="../../bxr/feat/Degree.html">bxr</a>]
+
+[<a href="../../ca/feat/Degree.html">ca</a>]
+
+[<a href="../../ckb/feat/Degree.html">ckb</a>]
+
+[<a href="../../cop/feat/Degree.html">cop</a>]
+
 [<a href="../../cs/feat/Degree.html">cs</a>]
+
+[<a href="../../cu/feat/Degree.html">cu</a>]
+
+[<a href="../../da/feat/Degree.html">da</a>]
 
 [<a href="../../de/feat/Degree.html">de</a>]
 
@@ -119,29 +152,99 @@ Degree in other languages:
 
 [<a href="../../es/feat/Degree.html">es</a>]
 
+[<a href="../../et/feat/Degree.html">et</a>]
+
 [<a href="../../eu/feat/Degree.html">eu</a>]
 
 [<a href="../../fa/feat/Degree.html">fa</a>]
 
 [<a href="../../fi/feat/Degree.html">fi</a>]
 
+[<a href="../../fo/feat/Degree.html">fo</a>]
+
 [<a href="../../fr/feat/Degree.html">fr</a>]
 
 [<a href="../../ga/feat/Degree.html">ga</a>]
 
+[<a href="../../gl/feat/Degree.html">gl</a>]
+
+[<a href="../../got/feat/Degree.html">got</a>]
+
+[<a href="../../grc/feat/Degree.html">grc</a>]
+
 [<a href="../../he/feat/Degree.html">he</a>]
 
+[<a href="../../hi/feat/Degree.html">hi</a>]
+
+[<a href="../../hr/feat/Degree.html">hr</a>]
+
 [<a href="../../hu/feat/Degree.html">hu</a>]
+
+[<a href="../../id/feat/Degree.html">id</a>]
 
 [<a href="../../it/feat/Degree.html">it</a>]
 
 [<a href="../../ja/feat/Degree.html">ja</a>]
 
+[<a href="../../kk/feat/Degree.html">kk</a>]
+
+[<a href="../../kmr/feat/Degree.html">kmr</a>]
+
 [<a href="../../ko/feat/Degree.html">ko</a>]
+
+[<a href="../../la/feat/Degree.html">la</a>]
+
+[<a href="../../lv/feat/Degree.html">lv</a>]
+
+[<a href="../../mr/feat/Degree.html">mr</a>]
+
+[<a href="../../nl/feat/Degree.html">nl</a>]
+
+[<a href="../../no/feat/Degree.html">no</a>]
+
+[<a href="../../pl/feat/Degree.html">pl</a>]
+
+[<a href="../../pt/feat/Degree.html">pt</a>]
+
+[<a href="../../ro/feat/Degree.html">ro</a>]
+
+[<a href="../../ru/feat/Degree.html">ru</a>]
+
+[<a href="../../sa/feat/Degree.html">sa</a>]
+
+[<a href="../../sk/feat/Degree.html">sk</a>]
+
+[<a href="../../sla/feat/Degree.html">sla</a>]
+
+[<a href="../../sl/feat/Degree.html">sl</a>]
+
+[<a href="../../so/feat/Degree.html">so</a>]
+
+[<a href="../../sr/feat/Degree.html">sr</a>]
 
 [<a href="../../sv/feat/Degree.html">sv</a>]
 
+[<a href="../../swl/feat/Degree.html">swl</a>]
+
+[<a href="../../ta/feat/Degree.html">ta</a>]
+
+[<a href="../../tr/feat/Degree.html">tr</a>]
+
 [<a href="../../u/feat/Degree.html">u</a>]
+
+[<a href="../../ug/feat/Degree.html">ug</a>]
+
+[<a href="../../uk/feat/Degree.html">uk</a>]
+
+[<a href="../../ur/feat/Degree.html">ur</a>]
+
+[<a href="../../urj/feat/Degree.html">urj</a>]
+
+[<a href="../../vi/feat/Degree.html">vi</a>]
+
+[<a href="../../yue/feat/Degree.html">yue</a>]
+
+[<a href="../../zh/feat/Degree.html">zh</a>]
 
 
 

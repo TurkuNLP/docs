@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-bg">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/bg/feat">bg/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_bg-feat/Voice.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-bg">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/bg/feat">bg/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-feat/Voice.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -104,23 +121,23 @@ In Bulgarian there are two ways of forming passive:</p>
 <p>This feature is universal.
 It occurs with 2 different values: <code>Act</code>, <code>Pass</code>.</p>
 
-<p>22474 tokens (14%) have a non-empty value of <code>Voice</code>.
-7763 types (29%) occur at least once with a non-empty value of <code>Voice</code>.
-2927 lemmas (20%) occur at least once with a non-empty value of <code>Voice</code>.
-The feature is used with 3 part-of-speech tags: <a href="">bg-pos/VERB</a> (19096; 12% instances), <a href="">bg-pos/AUX</a> (1906; 1% instances), <a href="">bg-pos/ADJ</a> (1472; 1% instances).</p>
+<p>20392 tokens (15%) have a non-empty value of <code>Voice</code>.
+7247 types (29%) occur at least once with a non-empty value of <code>Voice</code>.
+2795 lemmas (20%) occur at least once with a non-empty value of <code>Voice</code>.
+The feature is used with 3 part-of-speech tags: <a href="">bg-pos/VERB</a> (15241; 11% instances), <a href="">bg-pos/AUX</a> (3816; 3% instances), <a href="">bg-pos/ADJ</a> (1335; 1% instances).</p>
 
 <h3 id="verb"><code>VERB</code></h3>
 
-<p>19096 <a href="">bg-pos/VERB</a> tokens (98% of all <code>VERB</code> tokens) have a non-empty value of <code>Voice</code>.</p>
+<p>15241 <a href="">bg-pos/VERB</a> tokens (98% of all <code>VERB</code> tokens) have a non-empty value of <code>Voice</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Voice</code> co-occurred: <tt><a href="Mood.html">Mood</a>=Ind</tt> (16458; 86%), <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (16331; 86%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (16331; 86%), <tt><a href="Person.html">Person</a>=3</tt> (13697; 72%), <tt><a href="Number.html">Number</a>=Sing</tt> (13454; 70%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (11733; 61%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (11042; 58%).</p>
+<p>The most frequent other feature values with which <code>VERB</code> and <code>Voice</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (13578; 89%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (12832; 84%), <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (12817; 84%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (12817; 84%), <tt><a href="Number.html">Number</a>=Sing</tt> (10661; 70%), <tt><a href="Person.html">Person</a>=3</tt> (10623; 70%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (8879; 58%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (8026; 53%).</p>
 
 <p><code>VERB</code> tokens may have the following values of <code>Voice</code>:</p>
 
 <ul>
-  <li><code>Act</code> (18025; 94% of non-empty <code>Voice</code>): <em>е, са, има, няма, може, трябва, беше, каза, могат, съобщи</em></li>
-  <li><code>Pass</code> (1071; 6% of non-empty <code>Voice</code>): <em>направено, избран, изправени, обвинен, открити, показани, представена, приета, избрана, изнесени</em></li>
-  <li><code>EMPTY</code> (456): <em>би, е, каза, виж, кажи, вземи, опитай, Излез, Прочети, вж.</em></li>
+  <li><code>Act</code> (14262; 94% of non-empty <code>Voice</code>): <em>има, може, няма, трябва, е, каза, могат, съобщи, заяви, стана</em></li>
+  <li><code>Pass</code> (979; 6% of non-empty <code>Voice</code>): <em>направено, избран, изправени, обвинен, представена, изпратени, настанени, определен, открити, показани</em></li>
+  <li><code>EMPTY</code> (251): <em>би, виж, опитай, Кажи, Прочети, вж., вземи, дай, ела, иди</em></li>
 </ul>
 
 <table>
@@ -144,29 +161,29 @@ The feature is used with 3 part-of-speech tags: <a href="">bg-pos/VERB</a> (1909
 
 <h3 id="aux"><code>AUX</code></h3>
 
-<p>1906 <a href="">bg-pos/AUX</a> tokens (94% of all <code>AUX</code> tokens) have a non-empty value of <code>Voice</code>.</p>
+<p>3816 <a href="">bg-pos/AUX</a> tokens (48% of all <code>AUX</code> tokens) have a non-empty value of <code>Voice</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Voice</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (1787; 94%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (1787; 94%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (1658; 87%), <tt><a href="Person.html">Person</a>=3</tt> (1610; 84%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (1384; 73%), <tt><a href="Number.html">Number</a>=Sing</tt> (1277; 67%).</p>
+<p>The most frequent other feature values with which <code>AUX</code> and <code>Voice</code> co-occurred: <tt><a href="Mood.html">Mood</a>=Ind</tt> (3816; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (3605; 94%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (3486; 91%), <tt><a href="Person.html">Person</a>=3</tt> (3283; 86%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (3029; 79%), <tt><a href="Number.html">Number</a>=Sing</tt> (2711; 71%).</p>
 
 <p><code>AUX</code> tokens may have the following values of <code>Voice</code>:</p>
 
 <ul>
-  <li><code>Act</code> (1906; 100% of non-empty <code>Voice</code>): <em>е, са, бе, бъде, бяха, бъдат, беше, съм, бил, сме</em></li>
-  <li><code>EMPTY</code> (125): <em>би, бих, биха, е, са, бихте, бихме, бъдат, съм, беше</em></li>
+  <li><code>Act</code> (3816; 100% of non-empty <code>Voice</code>): <em>е, са, бе, бъде, беше, бяха, съм, бъдат, сме, бил</em></li>
+  <li><code>EMPTY</code> (4086): <em>да, ще, би, бих, биха, е, бихте, бихме, бъдат, са</em></li>
 </ul>
 
 <h3 id="adj"><code>ADJ</code></h3>
 
-<p>1472 <a href="">bg-pos/ADJ</a> tokens (11% of all <code>ADJ</code> tokens) have a non-empty value of <code>Voice</code>.</p>
+<p>1335 <a href="">bg-pos/ADJ</a> tokens (11% of all <code>ADJ</code> tokens) have a non-empty value of <code>Voice</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Voice</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (1472; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (1113; 76%), <tt><a href="Aspect.html">Aspect</a>=Perf</tt> (1047; 71%), <tt><a href="Number.html">Number</a>=Sing</tt> (839; 57%), <tt><a href="Definite.html">Definite</a>=Ind</tt> (808; 55%).</p>
+<p>The most frequent other feature values with which <code>ADJ</code> and <code>Voice</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (1335; 100%), <tt><a href="Degree.html">Degree</a>=Pos</tt> (1080; 81%), <tt><a href="Aspect.html">Aspect</a>=Perf</tt> (946; 71%), <tt><a href="Number.html">Number</a>=Sing</tt> (764; 57%), <tt><a href="Definite.html">Definite</a>=Ind</tt> (729; 55%).</p>
 
 <p><code>ADJ</code> tokens may have the following values of <code>Voice</code>:</p>
 
 <ul>
-  <li><code>Act</code> (519; 35% of non-empty <code>Voice</code>): <em>миналата, следващата, останалите, миналия, управляващите, пострадали, следващите, следващия, водещи, загиналите</em></li>
-  <li><code>Pass</code> (953; 65% of non-empty <code>Voice</code>): <em>въоръжените, свързани, определени, цитиран, определен, обединена, организираната, запознати, задържаните, приета</em></li>
-  <li><code>EMPTY</code> (12117): <em>други, народното, българската, нова, другите, нови, европейската, последните, 2001, друг</em></li>
+  <li><code>Act</code> (468; 35% of non-empty <code>Voice</code>): <em>миналата, следващата, останалите, миналия, управляващите, пострадали, следващите, следващия, водещи, загиналите</em></li>
+  <li><code>Pass</code> (867; 65% of non-empty <code>Voice</code>): <em>въоръжените, свързани, определени, цитиран, обединена, определен, организираната, задържаните, запознати, уморен</em></li>
+  <li><code>EMPTY</code> (10879): <em>народното, други, българската, другите, нова, нови, последните, 2001, друг, европейската</em></li>
 </ul>
 
 <table>
@@ -175,30 +192,25 @@ The feature is used with 3 part-of-speech tags: <a href="">bg-pos/VERB</a> (1909
   <tr><td><tt><a href="Definite.html">Definite</a>=Def|<a href="Degree.html">Degree</a>=Pos|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing|<a href="Tense.html">Tense</a>=Pres</tt></td><td><em>следващата</em></td><td></td></tr>
   <tr><td><tt><a href="Definite.html">Definite</a>=Def|<a href="Degree.html">Degree</a>=Pos|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing|<a href="Tense.html">Tense</a>=Pres</tt></td><td><em>следващото</em></td><td></td></tr>
   <tr><td><tt><a href="Definite.html">Definite</a>=Def|<a href="Degree.html">Degree</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Tense.html">Tense</a>=Pres</tt></td><td><em>следващите</em></td><td></td></tr>
-  <tr><td><tt><a href="Definite.html">Definite</a>=Def|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing|<a href="Tense.html">Tense</a>=Pres</tt></td><td><em>следващия, Следващият</em></td><td></td></tr>
-  <tr><td><tt><a href="Definite.html">Definite</a>=Def|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing|<a href="Tense.html">Tense</a>=Pres</tt></td><td><em>следващата</em></td><td></td></tr>
-  <tr><td><tt><a href="Definite.html">Definite</a>=Def|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing|<a href="Tense.html">Tense</a>=Pres</tt></td><td><em>следващото</em></td><td></td></tr>
-  <tr><td><tt><a href="Definite.html">Definite</a>=Def|<a href="Number.html">Number</a>=Plur|<a href="Tense.html">Tense</a>=Pres</tt></td><td><em>следващите</em></td><td></td></tr>
-  <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td></td><td><em>следван</em></td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Degree.html">Degree</a>=Pos|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td></td><td><em>следван</em></td></tr>
   <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td></td><td><em>следвана</em></td></tr>
   <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Number.html">Number</a>=Plur</tt></td><td></td><td><em>следвани</em></td></tr>
 </table>
 
-<p><code>Voice</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 98% lemmas (657) occur only with one value of <code>Voice</code>.</p>
+<p><code>Voice</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 98% lemmas (622) occur only with one value of <code>Voice</code>.</p>
 
 <h2 id="relations-with-agreement-in-voice">Relations with Agreement in <code>Voice</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>Voice</code>:
-<tt>VERB –[<a href="../dep/ccomp.html">ccomp</a>]–&gt; VERB</tt> (2038; 90%),
-<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (1552; 92%),
-<tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (1145; 89%),
-<tt>VERB –[<a href="../dep/aux.html">aux</a>]–&gt; AUX</tt> (757; 50%),
-<tt>VERB –[<a href="../dep/xcomp.html">xcomp</a>]–&gt; VERB</tt> (432; 95%),
-<tt>VERB –[<a href="../dep/csubj.html">csubj</a>]–&gt; VERB</tt> (199; 93%),
-<tt>VERB –[<a href="../dep/dobj.html">dobj</a>]–&gt; VERB</tt> (191; 95%),
-<tt>VERB –[<a href="../dep/nmod.html">nmod</a>]–&gt; VERB</tt> (66; 81%),
-<tt>VERB –[<a href="../dep/csubjpass.html">csubjpass</a>]–&gt; VERB</tt> (43; 72%),
-<tt>VERB –[<a href="../dep/cop.html">cop</a>]–&gt; VERB</tt> (4; 100%).</p>
+<tt>VERB –[<a href="../dep/ccomp.html">ccomp</a>]–&gt; VERB</tt> (1497; 91%),
+<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (1325; 92%),
+<tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (1051; 88%),
+<tt>VERB –[<a href="../dep/xcomp.html">xcomp</a>]–&gt; VERB</tt> (607; 94%),
+<tt>VERB –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; VERB</tt> (297; 85%),
+<tt>VERB –[<a href="../dep/csubj.html">csubj</a>]–&gt; VERB</tt> (144; 91%),
+<tt>VERB –[<a href="../dep/csubj:pass.html">csubj:pass</a>]–&gt; VERB</tt> (43; 72%),
+<tt>VERB –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; VERB</tt> (2; 100%),
+<tt>VERB –[<a href="../dep/nsubj:pass.html">nsubj:pass</a>]–&gt; VERB</tt> (1; 100%).</p>
 
 
 
@@ -208,9 +220,25 @@ The feature is used with 3 part-of-speech tags: <a href="">bg-pos/VERB</a> (1909
 
 Voice in other languages:
 
+[<a href="../../am/feat/Voice.html">am</a>]
+
+[<a href="../../ar/feat/Voice.html">ar</a>]
+
 [<a href="../../bg/feat/Voice.html">bg</a>]
 
+[<a href="../../bxr/feat/Voice.html">bxr</a>]
+
+[<a href="../../ca/feat/Voice.html">ca</a>]
+
+[<a href="../../ckb/feat/Voice.html">ckb</a>]
+
+[<a href="../../cop/feat/Voice.html">cop</a>]
+
 [<a href="../../cs/feat/Voice.html">cs</a>]
+
+[<a href="../../cu/feat/Voice.html">cu</a>]
+
+[<a href="../../da/feat/Voice.html">da</a>]
 
 [<a href="../../de/feat/Voice.html">de</a>]
 
@@ -220,29 +248,97 @@ Voice in other languages:
 
 [<a href="../../es/feat/Voice.html">es</a>]
 
+[<a href="../../et/feat/Voice.html">et</a>]
+
 [<a href="../../eu/feat/Voice.html">eu</a>]
 
 [<a href="../../fa/feat/Voice.html">fa</a>]
 
 [<a href="../../fi/feat/Voice.html">fi</a>]
 
+[<a href="../../fo/feat/Voice.html">fo</a>]
+
 [<a href="../../fr/feat/Voice.html">fr</a>]
 
 [<a href="../../ga/feat/Voice.html">ga</a>]
 
+[<a href="../../gl/feat/Voice.html">gl</a>]
+
+[<a href="../../got/feat/Voice.html">got</a>]
+
+[<a href="../../grc/feat/Voice.html">grc</a>]
+
 [<a href="../../he/feat/Voice.html">he</a>]
 
+[<a href="../../hi/feat/Voice.html">hi</a>]
+
+[<a href="../../hr/feat/Voice.html">hr</a>]
+
 [<a href="../../hu/feat/Voice.html">hu</a>]
+
+[<a href="../../id/feat/Voice.html">id</a>]
 
 [<a href="../../it/feat/Voice.html">it</a>]
 
 [<a href="../../ja/feat/Voice.html">ja</a>]
 
+[<a href="../../kk/feat/Voice.html">kk</a>]
+
+[<a href="../../kmr/feat/Voice.html">kmr</a>]
+
 [<a href="../../ko/feat/Voice.html">ko</a>]
+
+[<a href="../../la/feat/Voice.html">la</a>]
+
+[<a href="../../lv/feat/Voice.html">lv</a>]
+
+[<a href="../../mr/feat/Voice.html">mr</a>]
+
+[<a href="../../nl/feat/Voice.html">nl</a>]
+
+[<a href="../../no/feat/Voice.html">no</a>]
+
+[<a href="../../pl/feat/Voice.html">pl</a>]
+
+[<a href="../../pt/feat/Voice.html">pt</a>]
+
+[<a href="../../ro/feat/Voice.html">ro</a>]
+
+[<a href="../../ru/feat/Voice.html">ru</a>]
+
+[<a href="../../sa/feat/Voice.html">sa</a>]
+
+[<a href="../../sk/feat/Voice.html">sk</a>]
+
+[<a href="../../sla/feat/Voice.html">sla</a>]
+
+[<a href="../../so/feat/Voice.html">so</a>]
+
+[<a href="../../sr/feat/Voice.html">sr</a>]
 
 [<a href="../../sv/feat/Voice.html">sv</a>]
 
+[<a href="../../swl/feat/Voice.html">swl</a>]
+
+[<a href="../../ta/feat/Voice.html">ta</a>]
+
+[<a href="../../tr/feat/Voice.html">tr</a>]
+
 [<a href="../../u/feat/Voice.html">u</a>]
+
+[<a href="../../ug/feat/Voice.html">ug</a>]
+
+[<a href="../../uk/feat/Voice.html">uk</a>]
+
+[<a href="../../ur/feat/Voice.html">ur</a>]
+
+[<a href="../../urj/feat/Voice.html">urj</a>]
+
+[<a href="../../vi/feat/Voice.html">vi</a>]
+
+[<a href="../../yue/feat/Voice.html">yue</a>]
+
+[<a href="../../zh/feat/Voice.html">zh</a>]
 
 
 

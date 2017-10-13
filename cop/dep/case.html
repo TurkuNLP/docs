@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-cop">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/cop/dep">cop/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_cop-dep/case.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cop">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/cop/dep">cop/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cop-dep/case.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -45,8 +62,17 @@
 
           <h2><code>case</code>: case marking</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>case</code>.</p>
+<p>Used for all prepositions, including the marker of accusative case ⲛ and all other prepositions, which are understood as ‘oblique’ cases. Nouns govern their prepositions as in all other Universal Dependency guidelines, and not the other way around.</p>
+
+<pre><code class="language-sdparse">ⲡ/DET ⲣⲏ/NOUN ϩⲛ/ADP ⲧ/DET ⲡⲉ/NOUN \n the sun in the sky
+
+det(ⲣⲏ, ⲡ)
+nmod(ⲣⲏ, ⲡⲉ)
+det(ⲡⲉ, ⲧ)
+case(ⲡⲉ, ϩⲛ) 
+</code></pre>
+
+<p>The hermeneutic particle ⲛϭⲓ, roughly ‘namely’, is also considered a case marker, assigning nominative case (it is only compatible with subject appositions, never objects or obliques, cf. Grossman 2014); see <code>dislocated</code> for more guidelines on ⲛϭⲓ.</p>
 
 
 <!-- "automatic stats" -->
@@ -63,12 +89,12 @@ for <code>case</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>771 nodes (15%) are attached to their parents as <code>case</code>.</p>
+<p>1238 nodes (15%) are attached to their parents as <code>case</code>.</p>
 
-<p>771 instances of <code>case</code> (100%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.50583657587549.</p>
+<p>1233 instances of <code>case</code> (100%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.49596122778675.</p>
 
-<p>The following 15 pairs of parts of speech are connected with <code>case</code>: <a href="">cop-pos/NOUN</a>-<a href="">cop-pos/ADP</a> (454; 59% instances), <a href="">cop-pos/PRON</a>-<a href="">cop-pos/ADP</a> (204; 26% instances), <a href="">cop-pos/DET</a>-<a href="">cop-pos/ADP</a> (32; 4% instances), <a href="">cop-pos/PROPN</a>-<a href="">cop-pos/ADP</a> (32; 4% instances), <a href="">cop-pos/NOUN</a>-<a href="">cop-pos/PART</a> (12; 2% instances), <a href="">cop-pos/NOUN</a>-<a href="">cop-pos/ADV</a> (11; 1% instances), <a href="">cop-pos/VERB</a>-<a href="">cop-pos/ADP</a> (8; 1% instances), <a href="">cop-pos/PROPN</a>-<a href="">cop-pos/PART</a> (6; 1% instances), <a href="">cop-pos/NUM</a>-<a href="">cop-pos/ADP</a> (3; 0% instances), <a href="">cop-pos/PRON</a>-<a href="">cop-pos/ADV</a> (3; 0% instances), <a href="">cop-pos/DET</a>-<a href="">cop-pos/PART</a> (2; 0% instances), <a href="">cop-pos/DET</a>-<a href="">cop-pos/ADV</a> (1; 0% instances), <a href="">cop-pos/NOUN</a>-<a href="">cop-pos/VERB</a> (1; 0% instances), <a href="">cop-pos/NUM</a>-<a href="">cop-pos/PART</a> (1; 0% instances), <a href="">cop-pos/PROPN</a>-<a href="">cop-pos/ADV</a> (1; 0% instances).</p>
+<p>The following 18 pairs of parts of speech are connected with <code>case</code>: <a href="">cop-pos/NOUN</a>-<a href="">cop-pos/ADP</a> (689; 56% instances), <a href="">cop-pos/PRON</a>-<a href="">cop-pos/ADP</a> (362; 29% instances), <a href="">cop-pos/PROPN</a>-<a href="">cop-pos/ADP</a> (49; 4% instances), <a href="">cop-pos/DET</a>-<a href="">cop-pos/ADP</a> (46; 4% instances), <a href="">cop-pos/NOUN</a>-<a href="">cop-pos/PART</a> (29; 2% instances), <a href="">cop-pos/VERB</a>-<a href="">cop-pos/ADP</a> (14; 1% instances), <a href="">cop-pos/NOUN</a>-<a href="">cop-pos/ADV</a> (12; 1% instances), <a href="">cop-pos/NUM</a>-<a href="">cop-pos/ADP</a> (11; 1% instances), <a href="">cop-pos/PROPN</a>-<a href="">cop-pos/PART</a> (8; 1% instances), <a href="">cop-pos/DET</a>-<a href="">cop-pos/PART</a> (5; 0% instances), <a href="">cop-pos/PRON</a>-<a href="">cop-pos/ADV</a> (3; 0% instances), <a href="">cop-pos/DET</a>-<a href="">cop-pos/ADV</a> (2; 0% instances), <a href="">cop-pos/NUM</a>-<a href="">cop-pos/PART</a> (2; 0% instances), <a href="">cop-pos/PROPN</a>-<a href="">cop-pos/ADV</a> (2; 0% instances), <a href="">cop-pos/ADV</a>-<a href="">cop-pos/ADP</a> (1; 0% instances), <a href="">cop-pos/DET</a>-<a href="">cop-pos/CCONJ</a> (1; 0% instances), <a href="">cop-pos/NOUN</a>-<a href="">cop-pos/PROPN</a> (1; 0% instances), <a href="">cop-pos/NOUN</a>-<a href="">cop-pos/SCONJ</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 5	bgColor:blue
 # visual-style 5	fgColor:white
@@ -76,12 +102,12 @@ Average distance between parent and child is 1.50583657587549.</p>
 # visual-style 7	fgColor:white
 # visual-style 7 5 case	color:blue
 1	ϣⲛ	ϣⲛ	VERB	V	_	0	root	_	_
-2	ϩⲧⲏ	ϩⲏⲧ	NOUN	N	_	1	dobj	_	_
+2	ϩⲧⲏ	ϩⲏⲧ	NOUN	N	_	1	obj	_	_
 3	ⲕ	ⲛⲧⲟⲕ	PRON	PPERO	_	2	det	_	_
 4	ϭⲉ	ϭⲉ	PART	PTC	_	1	advmod	_	_
 5	ϩⲁ	ϩⲁ	ADP	PREP	_	7	case	_	_
 6	ⲡⲉⲕ	ⲡⲉⲕ	DET	PPOS	_	7	det	_	_
-7	ⲗⲁⲟⲥ	ⲗⲁⲟⲥ	NOUN	N	_	1	nmod	_	_
+7	ⲗⲁⲟⲥ	ⲗⲁⲟⲥ	NOUN	N	_	1	obl	_	_
 8	ⲡ	ⲡ	DET	ART	_	9	det	_	_
 9	ϩⲁⲣϣϩⲏⲧ	ϩⲁⲣϣϩⲏⲧ	NOUN	N	_	1	vocative	_	_
 10	ⲉⲧⲉ	ⲉⲧⲉⲣⲉ	SCONJ	CREL	_	11	mark	_	_
@@ -100,38 +126,43 @@ Average distance between parent and child is 1.50583657587549.</p>
 1	ⲛ	ⲛⲧⲉ	AUX	ACONJ	_	3	aux	_	_
 2	ⲅ	ⲛⲧⲟⲕ	PRON	PPERS	_	3	nsubj	_	_
 3	ⲥⲟⲧ	ⲥⲱⲧ	VERB	V	_	0	root	_	_
-4	ⲟⲩ	ⲛⲧⲟⲟⲩ	PRON	PPERO	_	3	dobj	_	_
+4	ⲟⲩ	ⲛⲧⲟⲟⲩ	PRON	PPERO	_	3	obj	_	_
 5	ⲉⲃⲟⲗ	ⲉⲃⲟⲗ	ADV	ADV	_	8	case	_	_
-6	ϩⲛ	ϩⲛ	ADP	PREP	_	5	mwe	_	_
+6	ϩⲛ	ϩⲛ	ADP	PREP	_	5	fixed	_	_
 7	ⲧ	ⲡ	DET	ART	_	8	det	_	_
-8	ϭⲓϫ	ϭⲓϫ	NOUN	N	_	3	nmod	_	_
+8	ϭⲓϫ	ϭⲓϫ	NOUN	N	_	3	obl	_	_
 9	ⲛ	ⲛ	ADP	PREP	_	10	case	_	_
 10	ⲛ	ⲡ	DET	ART	_	8	nmod	_	_
 11	ⲉⲧ	ⲉⲧⲉⲣⲉ	SCONJ	CREL	_	12	mark	_	_
 12	ⲑⲗⲓⲃⲉ	ⲑⲗⲓⲃⲉ	VERB	V	_	10	acl	_	_
 13	ⲙⲙⲟ	ⲛ	ADP	PREP	_	14	case	_	_
-14	ⲟⲩ	ⲛⲧⲟⲟⲩ	PRON	PPERO	_	12	dobj	_	_
+14	ⲟⲩ	ⲛⲧⲟⲟⲩ	PRON	PPERO	_	12	obj	_	_
 15	·	·	PUNCT	PUNCT	_	3	punct	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 6	bgColor:blue
+<pre><code class="language-conllu"># visual-style 6	bgColor:blue
 # visual-style 6	fgColor:white
-# visual-style 6 5 case	color:blue
-1	ⲁⲗⲗⲁ	ⲁⲗⲗⲁ	CONJ	CONJ	_	4	cc	_	_
-2	ⲉ	ⲉⲣⲉ	PART	CFOC	_	4	mark	_	_
-3	ⲕ	ⲛⲧⲟⲕ	PRON	PPERS	_	4	nsubj	_	_
-4	ϯ	ϯ	VERB	V	_	0	root	_	_
-5	ⲟⲩⲃⲉ	ⲟⲩⲃⲉ	ADP	PREP	_	6	case	_	_
-6	ⲓⲏⲥⲟⲩⲥ	ⲓⲏⲥⲟⲩⲥ	PROPN	NPROP	_	4	nmod	_	_
-7	ⲉⲧ	ⲉⲧⲉⲣⲉ	SCONJ	CREL	_	8	mark	_	_
-8	ⲟⲩⲏϩ	ⲟⲩⲱϩ	VERB	VSTAT	_	6	acl	_	_
-9	ϩⲛ	ϩⲛ	ADP	PREP	_	11	case	_	_
-10	ⲛⲉ	ⲡ	DET	ART	_	11	det	_	_
-11	ⲭⲣⲉⲓⲥⲧⲓⲁⲛⲟⲥ	ⲭⲣⲉⲓⲥⲧⲓⲁⲛⲟⲥ	NOUN	N	_	8	nmod	_	_
-12	.	.	PUNCT	PUNCT	_	4	punct	_	_
+# visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 7 6 case	color:blue
+1	ⲧ	ⲡ	DET	ART	_	2	det	_	_
+2	ⲁⲣⲭⲏ	ⲁⲣⲭⲏ	NOUN	N	_	0	root	_	_
+3	ⲙ	ⲛ	ADP	PREP	_	5	case	_	_
+4	ⲡ	ⲡ	DET	ART	_	5	det	_	_
+5	ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ	ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ	NOUN	N	_	2	nmod	_	_
+6	ⲛ	ⲛ	ADP	PREP	_	7	case	_	_
+7	ⲓⲏⲥⲟⲩⲥ	ⲓⲏⲥⲟⲩⲥ	PROPN	NPROP	_	5	nmod	_	_
+8	ⲡⲉ	ⲡ	DET	ART	_	9	det	_	_
+9	ⲭⲣⲓⲥⲧⲟⲥ	ⲭⲣⲓⲥⲧⲟⲥ	NOUN	N	_	7	appos	_	_
+10	[	[	PUNCT	PUNCT	_	2	punct	_	_
+11	ⲡ	ⲡ	DET	ART	_	12	det	_	_
+12	ϣⲏⲣⲉ	ϣⲏⲣⲉ	NOUN	N	_	7	appos	_	_
+13	ⲙ	ⲛ	ADP	PREP	_	15	case	_	_
+14	ⲡ	ⲡ	DET	ART	_	15	det	_	_
+15	ⲛⲟⲩⲧⲉ	ⲛⲟⲩⲧⲉ	NOUN	N	_	12	nmod	_	_
+16	]	]	PUNCT	PUNCT	_	2	punct	_	_
+17	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 </code></pre>
 
@@ -143,9 +174,25 @@ Average distance between parent and child is 1.50583657587549.</p>
 
 case in other languages:
 
+[<a href="../../am/dep/case.html">am</a>]
+
+[<a href="../../ar/dep/case.html">ar</a>]
+
 [<a href="../../bg/dep/case.html">bg</a>]
 
+[<a href="../../bxr/dep/case.html">bxr</a>]
+
+[<a href="../../ca/dep/case.html">ca</a>]
+
+[<a href="../../ckb/dep/case.html">ckb</a>]
+
+[<a href="../../cop/dep/case.html">cop</a>]
+
 [<a href="../../cs/dep/case.html">cs</a>]
+
+[<a href="../../cu/dep/case.html">cu</a>]
+
+[<a href="../../da/dep/case.html">da</a>]
 
 [<a href="../../de/dep/case.html">de</a>]
 
@@ -155,29 +202,99 @@ case in other languages:
 
 [<a href="../../es/dep/case.html">es</a>]
 
+[<a href="../../et/dep/case.html">et</a>]
+
 [<a href="../../eu/dep/case.html">eu</a>]
 
 [<a href="../../fa/dep/case.html">fa</a>]
 
 [<a href="../../fi/dep/case.html">fi</a>]
 
+[<a href="../../fo/dep/case.html">fo</a>]
+
 [<a href="../../fr/dep/case.html">fr</a>]
 
 [<a href="../../ga/dep/case.html">ga</a>]
 
+[<a href="../../gl/dep/case.html">gl</a>]
+
+[<a href="../../got/dep/case.html">got</a>]
+
+[<a href="../../grc/dep/case.html">grc</a>]
+
 [<a href="../../he/dep/case.html">he</a>]
 
+[<a href="../../hi/dep/case.html">hi</a>]
+
+[<a href="../../hr/dep/case.html">hr</a>]
+
 [<a href="../../hu/dep/case.html">hu</a>]
+
+[<a href="../../id/dep/case.html">id</a>]
 
 [<a href="../../it/dep/case.html">it</a>]
 
 [<a href="../../ja/dep/case.html">ja</a>]
 
+[<a href="../../kk/dep/case.html">kk</a>]
+
+[<a href="../../kmr/dep/case.html">kmr</a>]
+
 [<a href="../../ko/dep/case.html">ko</a>]
+
+[<a href="../../la/dep/case.html">la</a>]
+
+[<a href="../../lv/dep/case.html">lv</a>]
+
+[<a href="../../mr/dep/case.html">mr</a>]
+
+[<a href="../../nl/dep/case.html">nl</a>]
+
+[<a href="../../no/dep/case.html">no</a>]
+
+[<a href="../../pl/dep/case.html">pl</a>]
+
+[<a href="../../pt/dep/case.html">pt</a>]
+
+[<a href="../../ro/dep/case.html">ro</a>]
+
+[<a href="../../ru/dep/case.html">ru</a>]
+
+[<a href="../../sa/dep/case.html">sa</a>]
+
+[<a href="../../sk/dep/case.html">sk</a>]
+
+[<a href="../../sla/dep/case.html">sla</a>]
+
+[<a href="../../sl/dep/case.html">sl</a>]
+
+[<a href="../../so/dep/case.html">so</a>]
+
+[<a href="../../sr/dep/case.html">sr</a>]
 
 [<a href="../../sv/dep/case.html">sv</a>]
 
+[<a href="../../swl/dep/case.html">swl</a>]
+
+[<a href="../../ta/dep/case.html">ta</a>]
+
+[<a href="../../tr/dep/case.html">tr</a>]
+
 [<a href="../../u/dep/case.html">u</a>]
+
+[<a href="../../ug/dep/case.html">ug</a>]
+
+[<a href="../../uk/dep/case.html">uk</a>]
+
+[<a href="../../ur/dep/case.html">ur</a>]
+
+[<a href="../../urj/dep/case.html">urj</a>]
+
+[<a href="../../vi/dep/case.html">vi</a>]
+
+[<a href="../../yue/dep/case.html">yue</a>]
+
+[<a href="../../zh/dep/case.html">zh</a>]
 
 
 

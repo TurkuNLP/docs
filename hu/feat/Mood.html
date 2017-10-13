@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-hu">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/hu/feat">hu/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_hu-feat/Mood.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-hu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/hu/feat">hu/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hu-feat/Mood.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -65,65 +82,74 @@
 It occurs with 4 different values: <code>Cnd</code>, <code>Imp</code>, <code>Ind</code>, <code>Pot</code>.
 Some words have combined values of the feature; 2 combinations have been observed: <code>Cnd|Pot</code>, <code>Imp|Pot</code>.</p>
 
-<p>3524 tokens (8%) have a non-empty value of <code>Mood</code>.
-2034 types (15%) occur at least once with a non-empty value of <code>Mood</code>.
-1118 lemmas (13%) occur at least once with a non-empty value of <code>Mood</code>.
-The feature is used with 2 part-of-speech tags: <a href="">hu-pos/VERB</a> (3486; 8% instances), <a href="">hu-pos/AUX</a> (38; 0% instances).</p>
+<p>2622 tokens (8%) have a non-empty value of <code>Mood</code>.
+1611 types (15%) occur at least once with a non-empty value of <code>Mood</code>.
+915 lemmas (13%) occur at least once with a non-empty value of <code>Mood</code>.
+The feature is used with 2 part-of-speech tags: <a href="">hu-pos/VERB</a> (2471; 8% instances), <a href="">hu-pos/AUX</a> (151; 0% instances).</p>
 
 <h3 id="verb"><code>VERB</code></h3>
 
-<p>3486 <a href="">hu-pos/VERB</a> tokens (91% of all <code>VERB</code> tokens) have a non-empty value of <code>Mood</code>.</p>
+<p>2471 <a href="">hu-pos/VERB</a> tokens (90% of all <code>VERB</code> tokens) have a non-empty value of <code>Mood</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Mood</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (3485; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (3428; 98%), <tt><a href="Person.html">Person</a>=3</tt> (3283; 94%), <tt><a href="Number.html">Number</a>=Sing</tt> (2560; 73%), <tt><a href="Definite.html">Definite</a>=Ind</tt> (2183; 63%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (1800; 52%).</p>
+<p>The most frequent other feature values with which <code>VERB</code> and <code>Mood</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (2470; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (2425; 98%), <tt><a href="Person.html">Person</a>=3</tt> (2335; 94%), <tt><a href="Number.html">Number</a>=Sing</tt> (1791; 72%), <tt><a href="Definite.html">Definite</a>=Ind</tt> (1496; 61%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (1392; 56%).</p>
 
 <p><code>VERB</code> tokens may have the following values of <code>Mood</code>:</p>
 
 <ul>
-  <li><code>Cnd</code> (130; 4% of non-empty <code>Mood</code>): <em>kellene, lenne, szeretné, szeretne, szeretnék, volna, emelnék, lennének, adná, alakítanák</em></li>
-  <li><code>Cnd,Pot</code> (10; 0% of non-empty <code>Mood</code>): <em>lehetne, adhatnák, elfoglalhatná, fordulhatna, kérdezhetné, megtehetne, számíthatna, Érthetné, ítélhetnék</em></li>
-  <li><code>Imp</code> (150; 4% of non-empty <code>Mood</code>): <em>legyen, kerüljön, menjen, gyűjtsenek, hagyják, kerüljenek, legyenek, osszák, segítsenek, tervezze</em></li>
-  <li><code>Imp,Pot</code> (10; 0% of non-empty <code>Mood</code>): <em>dönthessenek, elindulhasson, emelhesse, lehessen, megkaphassák, megmenthesse, okozhasson, parkolhassanak, állíthassa, énekelhessenek</em></li>
-  <li><code>Ind</code> (2970; 85% of non-empty <code>Mood</code>): <em>volt, kell, van, mondta, lesz, elmondta, vannak, jelentette, került, nincs</em></li>
-  <li><code>Pot</code> (216; 6% of non-empty <code>Mood</code>): <em>lehet, kerülhet, növelheti, dolgozik, férhet, helyettesítheti, kerülhetnek, láthattunk, reménykedhet, reménykedhetnek</em></li>
-  <li><code>EMPTY</code> (341): <em>tudni, tartani, folytatni, látni, számítani, ellátni, hívni, kérni, lemondani, menni</em></li>
+  <li><code>Cnd</code> (91; 4% of non-empty <code>Mood</code>): <em>kellene, szeretné, lenne, emelnék, volna, adná, alakítanák, aláterveznék, beavatkoznának, cimborálna</em></li>
+  <li><code>Cnd,Pot</code> (9; 0% of non-empty <code>Mood</code>): <em>lehetne, adhatnák, fordulhatna, kérdezhetné, megtehetne, számíthatna, Érthetné, ítélhetnék</em></li>
+  <li><code>Imp</code> (120; 5% of non-empty <code>Mood</code>): <em>kerüljön, legyen, menjen, kerüljenek, osszák, segítsenek, tervezze, Repülj, Tégy, Vegyük</em></li>
+  <li><code>Imp,Pot</code> (8; 0% of non-empty <code>Mood</code>): <em>dönthessenek, elindulhasson, lehessen, megkaphassák, megmenthesse, parkolhassanak, állíthassa, énekelhessenek</em></li>
+  <li><code>Ind</code> (2078; 84% of non-empty <code>Mood</code>): <em>kell, van, volt, mondta, elmondta, nincs, jelentette, kellett, vannak, kerül</em></li>
+  <li><code>Pot</code> (165; 7% of non-empty <code>Mood</code>): <em>lehet, kerülhet, növelheti, dolgozik, férhet, helyettesítheti, kerülhetnek, láthattunk, reménykedhetnek, számíthat</em></li>
+  <li><code>EMPTY</code> (263): <em>tudni, folytatni, tartani, számítani, lemondani, látni, tárgyalni, venni, adni, beszélni</em></li>
 </ul>
 
 <table>
   <tr><th>Paradigm <i>lesz</i></th><th><tt>Cnd,Pot</tt></th><th><tt>Imp,Pot</tt></th><th><tt>Ind</tt></th><th><tt>Imp</tt></th><th><tt>Cnd</tt></th><th><tt>Pot</tt></th></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Past</tt></td><td></td><td></td><td><em>lettem</em></td><td></td><td></td><td></td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td></td><td><em>leszek</em></td><td><em>legyek</em></td><td></td><td></td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Past</tt></td><td></td><td></td><td><em>lett</em></td><td></td><td></td><td></td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres</tt></td><td><em>lehetne</em></td><td><em>lehessen</em></td><td><em>lesz</em></td><td><em>legyen</em></td><td><em>lenne</em></td><td><em>lehet</em></td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td></td><td><em>leszünk</em></td><td></td><td></td><td></td></tr>
-  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td></td><td><em>lesznek</em></td><td><em>legyenek</em></td><td><em>lennének</em></td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Tense.html">Tense</a>=Past</tt></td><td></td><td></td><td><em>lett</em></td><td></td><td></td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Tense.html">Tense</a>=Pres</tt></td><td><em>lehetne</em></td><td><em>lehessen</em></td><td><em>lesz</em></td><td><em>legyen</em></td><td><em>lenne</em></td><td><em>lehet</em></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td></td><td></td><td></td><td><em>lennének</em></td><td></td></tr>
 </table>
 
 <h3 id="aux"><code>AUX</code></h3>
 
-<p>38 <a href="">hu-pos/AUX</a> tokens (100% of all <code>AUX</code> tokens) have a non-empty value of <code>Mood</code>.</p>
+<p>151 <a href="">hu-pos/AUX</a> tokens (99% of all <code>AUX</code> tokens) have a non-empty value of <code>Mood</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Mood</code> co-occurred: <tt><a href="Tense.html">Tense</a>=Pres</tt> (38; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (38; 100%), <tt><a href="Person.html">Person</a>=3</tt> (38; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (31; 82%), <tt><a href="Definite.html">Definite</a>=Ind</tt> (30; 79%), <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (29; 76%).</p>
+<p>The most frequent other feature values with which <code>AUX</code> and <code>Mood</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (151; 100%), <tt><a href="Person.html">Person</a>=3</tt> (145; 96%), <tt><a href="Definite.html">Definite</a>=Ind</tt> (143; 95%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (134; 89%), <tt><a href="Number.html">Number</a>=Sing</tt> (128; 85%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (77; 51%).</p>
 
 <p><code>AUX</code> tokens may have the following values of <code>Mood</code>:</p>
 
 <ul>
-  <li><code>Cnd</code> (19; 50% of non-empty <code>Mood</code>): <em>volna</em></li>
-  <li><code>Ind</code> (19; 50% of non-empty <code>Mood</code>): <em>fog, fogja, fognak, fogják</em></li>
+  <li><code>Cnd</code> (19; 13% of non-empty <code>Mood</code>): <em>lenne, volna, lennének</em></li>
+  <li><code>Imp</code> (9; 6% of non-empty <code>Mood</code>): <em>legyen, legyenek</em></li>
+  <li><code>Ind</code> (116; 77% of non-empty <code>Mood</code>): <em>volt, lesz, voltak, lett, fog, fogja, lehetett, fognak, fogják, vagyok</em></li>
+  <li><code>Pot</code> (7; 5% of non-empty <code>Mood</code>): <em>lehet</em></li>
+  <li><code>EMPTY</code> (2): <em>elszenvedni, lenni</em></li>
 </ul>
+
+<table>
+  <tr><th>Paradigm <i>lesz</i></th><th><tt>Ind</tt></th><th><tt>Imp</tt></th><th><tt>Cnd</tt></th><th><tt>Pot</tt></th></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Past</tt></td><td><em>lettem</em></td><td></td><td></td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Past</tt></td><td><em>lett</em></td><td></td><td></td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres</tt></td><td><em>lesz</em></td><td><em>legyen</em></td><td><em>lenne</em></td><td><em>lehet</em></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Pres</tt></td><td><em>leszünk</em></td><td></td><td></td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres</tt></td><td><em>lesznek</em></td><td><em>legyenek</em></td><td><em>lennének</em></td><td></td></tr>
+</table>
 
 <h2 id="relations-with-agreement-in-mood">Relations with Agreement in <code>Mood</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>Mood</code>:
-<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (510; 86%),
-<tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (184; 74%),
-<tt>VERB –[<a href="../dep/ccomp:obj.html">ccomp:obj</a>]–&gt; VERB</tt> (117; 70%),
-<tt>VERB –[<a href="../dep/ccomp:obl.html">ccomp:obl</a>]–&gt; VERB</tt> (57; 52%),
-<tt>VERB –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; VERB</tt> (38; 83%),
-<tt>VERB –[<a href="../dep/csubj.html">csubj</a>]–&gt; VERB</tt> (38; 69%),
-<tt>VERB –[<a href="../dep/ccomp.html">ccomp</a>]–&gt; VERB</tt> (36; 64%),
-<tt>VERB –[<a href="../dep/acl.html">acl</a>]–&gt; VERB</tt> (21; 81%),
-<tt>VERB –[<a href="../dep/ccomp.html">ccomp</a>]–&gt; AUX</tt> (3; 100%),
-<tt>AUX –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (3; 75%).</p>
+<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (338; 83%),
+<tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (132; 72%),
+<tt>VERB –[<a href="../dep/ccomp:obj.html">ccomp:obj</a>]–&gt; VERB</tt> (99; 70%),
+<tt>VERB –[<a href="../dep/ccomp:obl.html">ccomp:obl</a>]–&gt; VERB</tt> (45; 51%),
+<tt>VERB –[<a href="../dep/csubj.html">csubj</a>]–&gt; VERB</tt> (27; 64%),
+<tt>VERB –[<a href="../dep/ccomp.html">ccomp</a>]–&gt; VERB</tt> (25; 57%),
+<tt>VERB –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; VERB</tt> (22; 85%),
+<tt>VERB –[<a href="../dep/acl.html">acl</a>]–&gt; VERB</tt> (14; 82%),
+<tt>AUX –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (3; 100%),
+<tt>VERB –[<a href="../dep/ccomp.html">ccomp</a>]–&gt; AUX</tt> (3; 100%).</p>
 
 
 
@@ -133,9 +159,25 @@ The feature is used with 2 part-of-speech tags: <a href="">hu-pos/VERB</a> (3486
 
 Mood in other languages:
 
+[<a href="../../am/feat/Mood.html">am</a>]
+
+[<a href="../../ar/feat/Mood.html">ar</a>]
+
 [<a href="../../bg/feat/Mood.html">bg</a>]
 
+[<a href="../../bxr/feat/Mood.html">bxr</a>]
+
+[<a href="../../ca/feat/Mood.html">ca</a>]
+
+[<a href="../../ckb/feat/Mood.html">ckb</a>]
+
+[<a href="../../cop/feat/Mood.html">cop</a>]
+
 [<a href="../../cs/feat/Mood.html">cs</a>]
+
+[<a href="../../cu/feat/Mood.html">cu</a>]
+
+[<a href="../../da/feat/Mood.html">da</a>]
 
 [<a href="../../de/feat/Mood.html">de</a>]
 
@@ -145,29 +187,99 @@ Mood in other languages:
 
 [<a href="../../es/feat/Mood.html">es</a>]
 
+[<a href="../../et/feat/Mood.html">et</a>]
+
 [<a href="../../eu/feat/Mood.html">eu</a>]
 
 [<a href="../../fa/feat/Mood.html">fa</a>]
 
 [<a href="../../fi/feat/Mood.html">fi</a>]
 
+[<a href="../../fo/feat/Mood.html">fo</a>]
+
 [<a href="../../fr/feat/Mood.html">fr</a>]
 
 [<a href="../../ga/feat/Mood.html">ga</a>]
 
+[<a href="../../gl/feat/Mood.html">gl</a>]
+
+[<a href="../../got/feat/Mood.html">got</a>]
+
+[<a href="../../grc/feat/Mood.html">grc</a>]
+
 [<a href="../../he/feat/Mood.html">he</a>]
 
+[<a href="../../hi/feat/Mood.html">hi</a>]
+
+[<a href="../../hr/feat/Mood.html">hr</a>]
+
 [<a href="../../hu/feat/Mood.html">hu</a>]
+
+[<a href="../../id/feat/Mood.html">id</a>]
 
 [<a href="../../it/feat/Mood.html">it</a>]
 
 [<a href="../../ja/feat/Mood.html">ja</a>]
 
+[<a href="../../kk/feat/Mood.html">kk</a>]
+
+[<a href="../../kmr/feat/Mood.html">kmr</a>]
+
 [<a href="../../ko/feat/Mood.html">ko</a>]
+
+[<a href="../../la/feat/Mood.html">la</a>]
+
+[<a href="../../lv/feat/Mood.html">lv</a>]
+
+[<a href="../../mr/feat/Mood.html">mr</a>]
+
+[<a href="../../nl/feat/Mood.html">nl</a>]
+
+[<a href="../../no/feat/Mood.html">no</a>]
+
+[<a href="../../pl/feat/Mood.html">pl</a>]
+
+[<a href="../../pt/feat/Mood.html">pt</a>]
+
+[<a href="../../ro/feat/Mood.html">ro</a>]
+
+[<a href="../../ru/feat/Mood.html">ru</a>]
+
+[<a href="../../sa/feat/Mood.html">sa</a>]
+
+[<a href="../../sk/feat/Mood.html">sk</a>]
+
+[<a href="../../sla/feat/Mood.html">sla</a>]
+
+[<a href="../../sl/feat/Mood.html">sl</a>]
+
+[<a href="../../so/feat/Mood.html">so</a>]
+
+[<a href="../../sr/feat/Mood.html">sr</a>]
 
 [<a href="../../sv/feat/Mood.html">sv</a>]
 
+[<a href="../../swl/feat/Mood.html">swl</a>]
+
+[<a href="../../ta/feat/Mood.html">ta</a>]
+
+[<a href="../../tr/feat/Mood.html">tr</a>]
+
 [<a href="../../u/feat/Mood.html">u</a>]
+
+[<a href="../../ug/feat/Mood.html">ug</a>]
+
+[<a href="../../uk/feat/Mood.html">uk</a>]
+
+[<a href="../../ur/feat/Mood.html">ur</a>]
+
+[<a href="../../urj/feat/Mood.html">urj</a>]
+
+[<a href="../../vi/feat/Mood.html">vi</a>]
+
+[<a href="../../yue/feat/Mood.html">yue</a>]
+
+[<a href="../../zh/feat/Mood.html">zh</a>]
 
 
 

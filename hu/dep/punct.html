@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-hu">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/hu/dep">hu/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_hu-dep/punct.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-hu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/hu/dep">hu/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hu-dep/punct.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,12 +80,12 @@ for <code>punct</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>5801 nodes (14%) are attached to their parents as <code>punct</code>.</p>
+<p>4322 nodes (14%) are attached to their parents as <code>punct</code>.</p>
 
-<p>5021 instances of <code>punct</code> (87%) are left-to-right (parent precedes child).
-Average distance between parent and child is 7.00362006550595.</p>
+<p>2980 instances of <code>punct</code> (69%) are left-to-right (parent precedes child).
+Average distance between parent and child is 7.26099028227672.</p>
 
-<p>The following 13 pairs of parts of speech are connected with <code>punct</code>: <a href="">hu-pos/VERB</a>-<a href="">hu-pos/PUNCT</a> (3614; 62% instances), <a href="">hu-pos/NOUN</a>-<a href="">hu-pos/PUNCT</a> (1090; 19% instances), <a href="">hu-pos/ADJ</a>-<a href="">hu-pos/PUNCT</a> (547; 9% instances), <a href="">hu-pos/PROPN</a>-<a href="">hu-pos/PUNCT</a> (301; 5% instances), <a href="">hu-pos/ADV</a>-<a href="">hu-pos/PUNCT</a> (94; 2% instances), <a href="">hu-pos/PRON</a>-<a href="">hu-pos/PUNCT</a> (86; 1% instances), <a href="">hu-pos/NUM</a>-<a href="">hu-pos/PUNCT</a> (35; 1% instances), <a href="">hu-pos/CONJ</a>-<a href="">hu-pos/PUNCT</a> (8; 0% instances), <a href="">hu-pos/DET</a>-<a href="">hu-pos/PUNCT</a> (7; 0% instances), <a href="">hu-pos/INTJ</a>-<a href="">hu-pos/PUNCT</a> (6; 0% instances), <a href="">hu-pos/AUX</a>-<a href="">hu-pos/PUNCT</a> (5; 0% instances), <a href="">hu-pos/PUNCT</a>-<a href="">hu-pos/PUNCT</a> (4; 0% instances), <a href="">hu-pos/X</a>-<a href="">hu-pos/PUNCT</a> (4; 0% instances).</p>
+<p>The following 13 pairs of parts of speech are connected with <code>punct</code>: <a href="">hu-pos/VERB</a>-<a href="">hu-pos/PUNCT</a> (2680; 62% instances), <a href="">hu-pos/NOUN</a>-<a href="">hu-pos/PUNCT</a> (847; 20% instances), <a href="">hu-pos/ADJ</a>-<a href="">hu-pos/PUNCT</a> (387; 9% instances), <a href="">hu-pos/PROPN</a>-<a href="">hu-pos/PUNCT</a> (210; 5% instances), <a href="">hu-pos/PRON</a>-<a href="">hu-pos/PUNCT</a> (75; 2% instances), <a href="">hu-pos/ADV</a>-<a href="">hu-pos/PUNCT</a> (60; 1% instances), <a href="">hu-pos/NUM</a>-<a href="">hu-pos/PUNCT</a> (33; 1% instances), <a href="">hu-pos/CCONJ</a>-<a href="">hu-pos/PUNCT</a> (7; 0% instances), <a href="">hu-pos/DET</a>-<a href="">hu-pos/PUNCT</a> (6; 0% instances), <a href="">hu-pos/INTJ</a>-<a href="">hu-pos/PUNCT</a> (5; 0% instances), <a href="">hu-pos/AUX</a>-<a href="">hu-pos/PUNCT</a> (4; 0% instances), <a href="">hu-pos/PUNCT</a>-<a href="">hu-pos/PUNCT</a> (4; 0% instances), <a href="">hu-pos/X</a>-<a href="">hu-pos/PUNCT</a> (4; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 11	bgColor:blue
 # visual-style 11	fgColor:white
@@ -80,11 +97,11 @@ Average distance between parent and child is 7.00362006550595.</p>
 3	hat	hat	NUM	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|NumType=Card|Person[psor]=None	4	nummod	_	_
 4	hónapos	hónapos	ADJ	_	Case=Nom|Degree=Pos|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	5	amod:att	_	_
 5	időszak	időszak	NOUN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	10	nsubj	_	_
-6	azonban	azonban	CONJ	_	_	10	cc	_	_
+6	azonban	azonban	CCONJ	_	_	10	cc	_	_
 7	a	a	DET	_	Definite=Def|PronType=Art	8	det	_	_
 8	hét	hét	NOUN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	9	nmod:att	_	_
 9	elején	eleje	NOUN	_	Case=Sup|Number=Sing|Number[psed]=None|Number[psor]=Sing|Person[psor]=3	10	nmod:obl	_	_
-10	lejárt	le+jár	VERB	_	Definite=Ind|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+10	lejárt	le+jár	VERB	_	Definite=Ind|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
 11	.	.	PUNCT	_	_	10	punct	_	_
 
 </code></pre>
@@ -97,26 +114,26 @@ Average distance between parent and child is 7.00362006550595.</p>
 1	A	a	DET	_	Definite=Def|PronType=Art	2	det	_	_
 2	rendezvény	rendezvény	NOUN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	3	nmod:att	_	_
 3	szónoka	szónok	NOUN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=Sing|Person[psor]=3	7	nsubj	_	_
-4	Tamás	Tamás	PROPN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	5	name	_	_
-5	Gáspár	Gáspár	PROPN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	6	name	_	_
+4	Tamás	Tamás	PROPN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	6	flat:name	_	_
+5	Gáspár	Gáspár	PROPN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	4	flat:name	_	_
 6	Miklós	Miklós	PROPN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	7	appos	_	_
 7	filozófus	filozófus	NOUN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	0	root	_	_
-8	lesz	lesz	VERB	_	Definite=Ind|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+8	lesz	lesz	AUX	_	Definite=Ind|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	SpaceAfter=No
 9	.	.	PUNCT	_	_	7	punct	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu"># visual-style 6	bgColor:blue
 # visual-style 6	fgColor:white
-# visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 4 6 punct	color:blue
-1	Ettől	ez	DET	_	Case=Abl|Number=Sing|Number[psed]=None|Number[psor]=None|Person=3|Person[psor]=None|PronType=Dem	3	det	_	_
-2	a	a	DET	_	Definite=Def|PronType=Art	3	det	_	_
-3	győzelemtől	győzelem	NOUN	_	Case=Abl|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	4	nmod:obl	_	_
-4	magabiztos	magabiztos	ADJ	_	Case=Nom|Degree=Pos|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	0	root	_	_
-5	lettem	lesz	VERB	_	Definite=Ind|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
-6	.	.	PUNCT	_	_	4	punct	_	_
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 6 punct	color:blue
+1	Testületi	testületi	ADJ	_	Case=Nom|Degree=Pos|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	2	amod:att	_	_
+2	döntés	döntés	NOUN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	5	nsubj	_	_
+3	leghamarabb	hamar	ADV	_	_	5	advmod:mode	_	_
+4	januárban	január	NOUN	_	Case=Ine|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	5	nmod:obl	_	_
+5	várható	várható	ADJ	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None|VerbForm=PartPres	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	_	_	5	punct	_	_
 
 </code></pre>
 
@@ -128,9 +145,25 @@ Average distance between parent and child is 7.00362006550595.</p>
 
 punct in other languages:
 
+[<a href="../../am/dep/punct.html">am</a>]
+
+[<a href="../../ar/dep/punct.html">ar</a>]
+
 [<a href="../../bg/dep/punct.html">bg</a>]
 
+[<a href="../../bxr/dep/punct.html">bxr</a>]
+
+[<a href="../../ca/dep/punct.html">ca</a>]
+
+[<a href="../../ckb/dep/punct.html">ckb</a>]
+
+[<a href="../../cop/dep/punct.html">cop</a>]
+
 [<a href="../../cs/dep/punct.html">cs</a>]
+
+[<a href="../../cu/dep/punct.html">cu</a>]
+
+[<a href="../../da/dep/punct.html">da</a>]
 
 [<a href="../../de/dep/punct.html">de</a>]
 
@@ -140,29 +173,99 @@ punct in other languages:
 
 [<a href="../../es/dep/punct.html">es</a>]
 
+[<a href="../../et/dep/punct.html">et</a>]
+
 [<a href="../../eu/dep/punct.html">eu</a>]
 
 [<a href="../../fa/dep/punct.html">fa</a>]
 
 [<a href="../../fi/dep/punct.html">fi</a>]
 
+[<a href="../../fo/dep/punct.html">fo</a>]
+
 [<a href="../../fr/dep/punct.html">fr</a>]
 
 [<a href="../../ga/dep/punct.html">ga</a>]
 
+[<a href="../../gl/dep/punct.html">gl</a>]
+
+[<a href="../../got/dep/punct.html">got</a>]
+
+[<a href="../../grc/dep/punct.html">grc</a>]
+
 [<a href="../../he/dep/punct.html">he</a>]
 
+[<a href="../../hi/dep/punct.html">hi</a>]
+
+[<a href="../../hr/dep/punct.html">hr</a>]
+
 [<a href="../../hu/dep/punct.html">hu</a>]
+
+[<a href="../../id/dep/punct.html">id</a>]
 
 [<a href="../../it/dep/punct.html">it</a>]
 
 [<a href="../../ja/dep/punct.html">ja</a>]
 
+[<a href="../../kk/dep/punct.html">kk</a>]
+
+[<a href="../../kmr/dep/punct.html">kmr</a>]
+
 [<a href="../../ko/dep/punct.html">ko</a>]
+
+[<a href="../../la/dep/punct.html">la</a>]
+
+[<a href="../../lv/dep/punct.html">lv</a>]
+
+[<a href="../../mr/dep/punct.html">mr</a>]
+
+[<a href="../../nl/dep/punct.html">nl</a>]
+
+[<a href="../../no/dep/punct.html">no</a>]
+
+[<a href="../../pl/dep/punct.html">pl</a>]
+
+[<a href="../../pt/dep/punct.html">pt</a>]
+
+[<a href="../../ro/dep/punct.html">ro</a>]
+
+[<a href="../../ru/dep/punct.html">ru</a>]
+
+[<a href="../../sa/dep/punct.html">sa</a>]
+
+[<a href="../../sk/dep/punct.html">sk</a>]
+
+[<a href="../../sla/dep/punct.html">sla</a>]
+
+[<a href="../../sl/dep/punct.html">sl</a>]
+
+[<a href="../../so/dep/punct.html">so</a>]
+
+[<a href="../../sr/dep/punct.html">sr</a>]
 
 [<a href="../../sv/dep/punct.html">sv</a>]
 
+[<a href="../../swl/dep/punct.html">swl</a>]
+
+[<a href="../../ta/dep/punct.html">ta</a>]
+
+[<a href="../../tr/dep/punct.html">tr</a>]
+
 [<a href="../../u/dep/punct.html">u</a>]
+
+[<a href="../../ug/dep/punct.html">ug</a>]
+
+[<a href="../../uk/dep/punct.html">uk</a>]
+
+[<a href="../../ur/dep/punct.html">ur</a>]
+
+[<a href="../../urj/dep/punct.html">urj</a>]
+
+[<a href="../../vi/dep/punct.html">vi</a>]
+
+[<a href="../../yue/dep/punct.html">yue</a>]
+
+[<a href="../../zh/dep/punct.html">zh</a>]
 
 
 

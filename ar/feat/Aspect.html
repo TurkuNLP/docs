@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ar">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ar/feat">ar/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ar-feat/Aspect.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ar">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ar/feat">ar/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ar-feat/Aspect.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -65,78 +82,136 @@ for <code>Aspect</code>.</p>
 <p>This feature is universal.
 It occurs with 2 different values: <code>Imp</code>, <code>Perf</code>.</p>
 
-<p>21530 tokens (8%) have a non-empty value of <code>Aspect</code>.
-3974 types (15%) occur at least once with a non-empty value of <code>Aspect</code>.
-1546 lemmas (9%) occur at least once with a non-empty value of <code>Aspect</code>.
-The feature is used with 2 part-of-speech tags: <a href="">ar-pos/VERB</a> (21491; 8% instances), <a href="">ar-pos/AUX</a> (39; 0% instances).</p>
+<p>19305 tokens (8%) have a non-empty value of <code>Aspect</code>.
+3724 types (15%) occur at least once with a non-empty value of <code>Aspect</code>.
+1480 lemmas (9%) occur at least once with a non-empty value of <code>Aspect</code>.
+The feature is used with 2 part-of-speech tags: <a href="">ar-pos/VERB</a> (18700; 7% instances), <a href="">ar-pos/AUX</a> (605; 0% instances).</p>
 
 <h3 id="verb"><code>VERB</code></h3>
 
-<p>21491 <a href="">ar-pos/VERB</a> tokens (100% of all <code>VERB</code> tokens) have a non-empty value of <code>Aspect</code>.</p>
+<p>18700 <a href="">ar-pos/VERB</a> tokens (100% of all <code>VERB</code> tokens) have a non-empty value of <code>Aspect</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Aspect</code> co-occurred: <tt><a href="Person.html">Person</a>=3</tt> (21260; 99%), <tt><a href="Voice.html">Voice</a>=Act</tt> (20272; 94%), <tt><a href="Number.html">Number</a>=Sing</tt> (20126; 94%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (13516; 63%), <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (11442; 53%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (11442; 53%).</p>
+<p>The most frequent other feature values with which <code>VERB</code> and <code>Aspect</code> co-occurred: <tt><a href="Person.html">Person</a>=3</tt> (18489; 99%), <tt><a href="Voice.html">Voice</a>=Act</tt> (17671; 94%), <tt><a href="Number.html">Number</a>=Sing</tt> (17503; 94%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (11786; 63%), <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (9908; 53%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (9908; 53%).</p>
 
 <p><code>VERB</code> tokens may have the following values of <code>Aspect</code>:</p>
 
 <ul>
-  <li><code>Imp</code> (10049; 47% of non-empty <code>Aspect</code>): يتم، يكون، يمكن، تكون، تصل، يجب، يصل، يقول، يذكر، تقوم</li>
-  <li><code>Perf</code> (11442; 53% of non-empty <code>Aspect</code>): قال، كان، كانت، أضاف، تم، أكد، أشار، أوضح، أعلن، قالت</li>
-  <li><code>EMPTY</code> (52): حاول، د، دعوا، حث، ابحث، احرص، اخدموا، افتحوا، اكسون، انتبه</li>
+  <li><code>Imp</code> (8792; 47% of non-empty <code>Aspect</code>): يتم، يمكن، يكون، تصل، تكون، يجب، يصل، يقول، يذكر، تقوم</li>
+  <li><code>Perf</code> (9908; 53% of non-empty <code>Aspect</code>): قال، كان، أضاف، كانت، أكد، تم، أشار، أوضح، أعلن، قالت</li>
+  <li><code>EMPTY</code> (50): حاول، د، دعوا، حث، ابحث، احرص، اخدموا، افتحوا، اكسون، انتبه</li>
 </ul>
 
 <table>
-  <tr><th>Paradigm <i>كَان</i></th><th><tt>Imp</tt></th><th><tt>Perf</tt></th></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td>أكون</td><td></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=2|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td>تكون</td><td></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td>يكون</td><td></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=2|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td>تكونون</td><td></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Mood.html">Mood</a>=Jus|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td>اكن</td><td></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Mood.html">Mood</a>=Jus|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td>يكن</td><td></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Mood.html">Mood</a>=Jus|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td>يكونوا</td><td></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Mood.html">Mood</a>=Sub|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td>اكون</td><td></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Mood.html">Mood</a>=Sub|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td>يكون</td><td></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Mood.html">Mood</a>=Sub|<a href="Number.html">Number</a>=Dual|<a href="Person.html">Person</a>=3|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td>يكونا</td><td></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Mood.html">Mood</a>=Sub|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td>نكون</td><td></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Mood.html">Mood</a>=Sub|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td>يكونوا</td><td></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1</tt></td><td></td><td>كنت</td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=2</tt></td><td></td><td>كنت</td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3</tt></td><td></td><td>كان</td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Dual|<a href="Person.html">Person</a>=3</tt></td><td></td><td>كانا</td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1</tt></td><td></td><td>كنا</td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3</tt></td><td></td><td>كانوا</td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td>تكون</td><td></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Mood.html">Mood</a>=Jus|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td>تكن</td><td></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Mood.html">Mood</a>=Sub|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td>تكون, تكـــون</td><td></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3</tt></td><td></td><td>كانت</td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Dual|<a href="Person.html">Person</a>=3</tt></td><td></td><td>كانتا</td></tr>
+  <tr><th>Paradigm <i>قَال</i></th><th><tt>Imp</tt></th><th><tt>Perf</tt></th></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td>يقول</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Pass</tt></td><td>يقال</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td>نقول</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td>يقولون</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Mood.html">Mood</a>=Sub|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td>أقول</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Mood.html">Mood</a>=Sub|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td>يقول</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td>قلت</td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td>قال</td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Voice.html">Voice</a>=Pass</tt></td><td></td><td>قيل</td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Dual|<a href="Person.html">Person</a>=3|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td>قالا</td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td>قالوا</td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td>تقول</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td>قالت</td></tr>
 </table>
 
 <h3 id="aux"><code>AUX</code></h3>
 
-<p>39 <a href="">ar-pos/AUX</a> tokens (100% of all <code>AUX</code> tokens) have a non-empty value of <code>Aspect</code>.</p>
+<p>605 <a href="">ar-pos/AUX</a> tokens (100% of all <code>AUX</code> tokens) have a non-empty value of <code>Aspect</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Aspect</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (39; 100%), <tt><a href="Person.html">Person</a>=3</tt> (39; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (39; 100%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (35; 90%).</p>
+<p>The most frequent other feature values with which <code>AUX</code> and <code>Aspect</code> co-occurred: <tt><a href="Person.html">Person</a>=3</tt> (596; 99%), <tt><a href="Number.html">Number</a>=Sing</tt> (582; 96%), <tt><a href="Voice.html">Voice</a>=Act</tt> (559; 92%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (379; 63%), <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (346; 57%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (346; 57%).</p>
 
 <p><code>AUX</code> tokens may have the following values of <code>Aspect</code>:</p>
 
 <ul>
-  <li><code>Imp</code> (1; 3% of non-empty <code>Aspect</code>): تعد</li>
-  <li><code>Perf</code> (38; 97% of non-empty <code>Aspect</code>): ليس، ليست، ألا</li>
+  <li><code>Imp</code> (259; 43% of non-empty <code>Aspect</code>): يكون، تكون، تعد، يعتبر، يكن، يعد، تزال، تعتبر، تكن، تظل</li>
+  <li><code>Perf</code> (346; 57% of non-empty <code>Aspect</code>): كان، ليس، كانت، ليست، قال، زالت، كانوا، اصبح، زال، زالوا</li>
+  <li><code>EMPTY</code> (2): كن</li>
 </ul>
+
+<table>
+  <tr><th>Paradigm <i>كَان</i></th><th><tt>Imp</tt></th><th><tt>Perf</tt></th></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=2|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td>تكون</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td>يكون</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=2|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td>تكونون</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Mood.html">Mood</a>=Jus|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td>يكن</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Mood.html">Mood</a>=Sub|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td>اكون</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Mood.html">Mood</a>=Sub|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td>يكون</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Mood.html">Mood</a>=Sub|<a href="Number.html">Number</a>=Dual|<a href="Person.html">Person</a>=3|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td>يكونا</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Mood.html">Mood</a>=Sub|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td>نكون</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1</tt></td><td></td><td>كنت</td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3</tt></td><td></td><td>كان</td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3</tt></td><td></td><td>كانوا</td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td>تكون</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Mood.html">Mood</a>=Jus|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td>تكن</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Mood.html">Mood</a>=Sub|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td>تكون</td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3</tt></td><td></td><td>كانت</td></tr>
+</table>
 
 <h2 id="relations-with-agreement-in-aspect">Relations with Agreement in <code>Aspect</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>Aspect</code>:
-<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (2052; 82%),
-<tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (698; 63%),
-<tt>VERB –[<a href="../dep/csubj.html">csubj</a>]–&gt; VERB</tt> (220; 73%),
-<tt>VERB –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; VERB</tt> (172; 73%),
-<tt>VERB –[<a href="../dep/acl.html">acl</a>]–&gt; VERB</tt> (18; 62%),
-<tt>VERB –[<a href="../dep/appos.html">appos</a>]–&gt; VERB</tt> (8; 89%),
-<tt>VERB –[<a href="../dep/advmod.html">advmod</a>]–&gt; VERB</tt> (2; 100%),
+<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (1820; 82%),
+<tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (610; 63%),
+<tt>VERB –[<a href="../dep/csubj.html">csubj</a>]–&gt; VERB</tt> (199; 72%),
+<tt>VERB –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; VERB</tt> (146; 73%),
+<tt>VERB –[<a href="../dep/acl.html">acl</a>]–&gt; VERB</tt> (16; 67%),
+<tt>VERB –[<a href="../dep/appos.html">appos</a>]–&gt; VERB</tt> (6; 86%),
+<tt>VERB –[<a href="../dep/orphan.html">orphan</a>]–&gt; VERB</tt> (2; 100%),
 <tt>VERB –[<a href="../dep/mark.html">mark</a>]–&gt; VERB</tt> (2; 67%),
-<tt>VERB –[<a href="../dep/csubjpass.html">csubjpass</a>]–&gt; VERB</tt> (1; 100%),
-<tt>VERB –[<a href="../dep/advmod:emph.html">advmod:emph</a>]–&gt; VERB</tt> (1; 100%).</p>
+<tt>VERB –[<a href="../dep/csubj:pass.html">csubj:pass</a>]–&gt; VERB</tt> (1; 100%),
+<tt>VERB –[<a href="../dep/advmod.html">advmod</a>]–&gt; VERB</tt> (1; 100%).</p>
+
+<hr />
+
+<h2 id="treebank-statistics-udarabic-nyuad">Treebank Statistics (UD_Arabic-NYUAD)</h2>
+
+<p>This feature is universal.
+It occurs with 2 different values: <code>Imp</code>, <code>Perf</code>.</p>
+
+<p>54545 tokens (7%) have a non-empty value of <code>Aspect</code>.
+1 types (0) occur at least once with a non-empty value of <code>Aspect</code>.
+8 lemmas (0%) occur at least once with a non-empty value of <code>Aspect</code>.
+The feature is used with 2 part-of-speech tags: <a href="">ar-pos/VERB</a> (54462; 7% instances), <a href="">ar-pos/ADP</a> (83; 0% instances).</p>
+
+<h3 id="verb-1"><code>VERB</code></h3>
+
+<p>54462 <a href="">ar-pos/VERB</a> tokens (99% of all <code>VERB</code> tokens) have a non-empty value of <code>Aspect</code>.</p>
+
+<p>The most frequent other feature values with which <code>VERB</code> and <code>Aspect</code> co-occurred: <tt><a href="Person.html">Person</a>=3</tt> (51277; 94%), <tt><a href="Voice.html">Voice</a>=Act</tt> (50774; 93%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (49504; 91%), <tt><a href="Number.html">Number</a>=Sing</tt> (48937; 90%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (36374; 67%).</p>
+
+<p><code>VERB</code> tokens may have the following values of <code>Aspect</code>:</p>
+
+<ul>
+  <li><code>Imp</code> (25587; 47% of non-empty <code>Aspect</code>): _</li>
+  <li><code>Perf</code> (28875; 53% of non-empty <code>Aspect</code>): _</li>
+  <li><code>EMPTY</code> (753): _</li>
+</ul>
+
+<h3 id="adp"><code>ADP</code></h3>
+
+<p>83 <a href="">ar-pos/ADP</a> tokens (0% of all <code>ADP</code> tokens) have a non-empty value of <code>Aspect</code>.</p>
+
+<p>The most frequent other feature values with which <code>ADP</code> and <code>Aspect</code> co-occurred: <tt><a href="AdpType.html">AdpType</a>=Prep</tt> (83; 100%).</p>
+
+<p><code>ADP</code> tokens may have the following values of <code>Aspect</code>:</p>
+
+<ul>
+  <li><code>Imp</code> (40; 48% of non-empty <code>Aspect</code>): _</li>
+  <li><code>Perf</code> (43; 52% of non-empty <code>Aspect</code>): _</li>
+  <li><code>EMPTY</code> (91611): _</li>
+</ul>
+
+<h2 id="relations-with-agreement-in-aspect-1">Relations with Agreement in <code>Aspect</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code>Aspect</code>:
+<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (4783; 81%),
+<tt>VERB –[<a href="../dep/ccomp.html">ccomp</a>]–&gt; VERB</tt> (2512; 56%),
+<tt>VERB –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; VERB</tt> (1085; 71%),
+<tt>VERB –[<a href="../dep/csubj.html">csubj</a>]–&gt; VERB</tt> (578; 88%).</p>
 
 
 
@@ -146,9 +221,25 @@ The feature is used with 2 part-of-speech tags: <a href="">ar-pos/VERB</a> (2149
 
 Aspect in other languages:
 
+[<a href="../../am/feat/Aspect.html">am</a>]
+
+[<a href="../../ar/feat/Aspect.html">ar</a>]
+
 [<a href="../../bg/feat/Aspect.html">bg</a>]
 
+[<a href="../../bxr/feat/Aspect.html">bxr</a>]
+
+[<a href="../../ca/feat/Aspect.html">ca</a>]
+
+[<a href="../../ckb/feat/Aspect.html">ckb</a>]
+
+[<a href="../../cop/feat/Aspect.html">cop</a>]
+
 [<a href="../../cs/feat/Aspect.html">cs</a>]
+
+[<a href="../../cu/feat/Aspect.html">cu</a>]
+
+[<a href="../../da/feat/Aspect.html">da</a>]
 
 [<a href="../../de/feat/Aspect.html">de</a>]
 
@@ -158,29 +249,95 @@ Aspect in other languages:
 
 [<a href="../../es/feat/Aspect.html">es</a>]
 
+[<a href="../../et/feat/Aspect.html">et</a>]
+
 [<a href="../../eu/feat/Aspect.html">eu</a>]
 
 [<a href="../../fa/feat/Aspect.html">fa</a>]
 
-[<a href="../../fi/feat/Aspect.html">fi</a>]
+[<a href="../../fo/feat/Aspect.html">fo</a>]
 
 [<a href="../../fr/feat/Aspect.html">fr</a>]
 
 [<a href="../../ga/feat/Aspect.html">ga</a>]
 
+[<a href="../../gl/feat/Aspect.html">gl</a>]
+
+[<a href="../../got/feat/Aspect.html">got</a>]
+
+[<a href="../../grc/feat/Aspect.html">grc</a>]
+
 [<a href="../../he/feat/Aspect.html">he</a>]
 
+[<a href="../../hi/feat/Aspect.html">hi</a>]
+
+[<a href="../../hr/feat/Aspect.html">hr</a>]
+
 [<a href="../../hu/feat/Aspect.html">hu</a>]
+
+[<a href="../../id/feat/Aspect.html">id</a>]
 
 [<a href="../../it/feat/Aspect.html">it</a>]
 
 [<a href="../../ja/feat/Aspect.html">ja</a>]
 
+[<a href="../../kk/feat/Aspect.html">kk</a>]
+
+[<a href="../../kmr/feat/Aspect.html">kmr</a>]
+
 [<a href="../../ko/feat/Aspect.html">ko</a>]
 
-[<a href="../../sv/feat/Aspect.html">sv</a>]
+[<a href="../../la/feat/Aspect.html">la</a>]
+
+[<a href="../../lv/feat/Aspect.html">lv</a>]
+
+[<a href="../../mr/feat/Aspect.html">mr</a>]
+
+[<a href="../../nl/feat/Aspect.html">nl</a>]
+
+[<a href="../../no/feat/Aspect.html">no</a>]
+
+[<a href="../../pl/feat/Aspect.html">pl</a>]
+
+[<a href="../../pt/feat/Aspect.html">pt</a>]
+
+[<a href="../../ro/feat/Aspect.html">ro</a>]
+
+[<a href="../../ru/feat/Aspect.html">ru</a>]
+
+[<a href="../../sa/feat/Aspect.html">sa</a>]
+
+[<a href="../../sk/feat/Aspect.html">sk</a>]
+
+[<a href="../../sla/feat/Aspect.html">sla</a>]
+
+[<a href="../../sl/feat/Aspect.html">sl</a>]
+
+[<a href="../../so/feat/Aspect.html">so</a>]
+
+[<a href="../../sr/feat/Aspect.html">sr</a>]
+
+[<a href="../../swl/feat/Aspect.html">swl</a>]
+
+[<a href="../../ta/feat/Aspect.html">ta</a>]
+
+[<a href="../../tr/feat/Aspect.html">tr</a>]
 
 [<a href="../../u/feat/Aspect.html">u</a>]
+
+[<a href="../../ug/feat/Aspect.html">ug</a>]
+
+[<a href="../../uk/feat/Aspect.html">uk</a>]
+
+[<a href="../../ur/feat/Aspect.html">ur</a>]
+
+[<a href="../../urj/feat/Aspect.html">urj</a>]
+
+[<a href="../../vi/feat/Aspect.html">vi</a>]
+
+[<a href="../../yue/feat/Aspect.html">yue</a>]
+
+[<a href="../../zh/feat/Aspect.html">zh</a>]
 
 
 

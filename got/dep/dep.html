@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-got">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/got/dep">got/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_got-dep/dep.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-got">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/got/dep">got/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_got-dep/dep.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -70,54 +87,54 @@ Average distance between parent and child is 2.</p>
 
 <p>The following 3 pairs of parts of speech are connected with <code>dep</code>: <a href="">got-pos/VERB</a>-<a href="">got-pos/ADV</a> (1; 33% instances), <a href="">got-pos/VERB</a>-<a href="">got-pos/NOUN</a> (1; 33% instances), <a href="">got-pos/VERB</a>-<a href="">got-pos/PRON</a> (1; 33% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 3 6 dep	color:blue
-1	þata	sa	ADJ	Pd	Case=Acc|Gender=Neut|Number=Sing	2	nmod	_	_
-2	anþar	anþar	ADJ	A-	Case=Acc|Degree=Pos|Gender=Neut|Number=Sing|Strength=Strong	3	dobj	_	_
-3	gabidjaiþ	ga-bidjan	VERB	V-	Mood=Opt|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-4	jah	jah	CONJ	C-	_	5	cc	_	_
-5	bi	bi	ADP	R-	_	6	case	_	_
-6	unsis	weis	PRON	Pp	Case=Dat|Gender=Masc|Number=Plur|Person=1|PronType=Prs	3	dep	_	_
-7	broþrjus	broþar	NOUN	Nb	Case=Voc|Gender=Masc|Number=Plur	3	vocative	_	_
-8	ei	ei	SCONJ	G-	_	11	mark	_	_
-9	waurd	waurd	NOUN	Nb	Case=Nom|Gender=Neut|Number=Sing	11	nsubj	_	_
-10	fraujins	frauja	NOUN	Nb	Case=Gen|Gender=Masc|Number=Sing	9	nmod	_	_
-11	þragjai	þragjan	VERB	V-	Mood=Opt|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	advcl	_	_
-12	jah	jah	CONJ	C-	_	11	cc	_	_
-13	mikiljaidau	mikiljan	VERB	V-	Mood=Opt|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	11	conj	_	_
-14	swaswe	swaswe	ADV	Df	_	13	advmod	_	_
-15	jah	jah	ADV	Df	_	16	advmod	_	_
-16	at	at	ADP	R-	_	17	case	_	_
-17	izwis	jūs	PRON	Pp	Case=Dat|Gender=Masc|Number=Plur|Person=2|PronType=Prs	14	nmod	_	_
-18	jah	jah	CONJ	C-	_	8	cc	_	_
-19	ei	ei	SCONJ	G-	_	20	mark	_	_
-20	uslausjaindau	us-lausjan	VERB	V-	Mood=Opt|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Pass	8	conj	_	_
-21	af	af	ADP	R-	_	25	case	_	_
-22	gastojanaim	ga-stojan	VERB	V-	Aspect=Perf|Case=Dat|Number=Plur|Strength=Strong|Tense=Past|VerbForm=Part|Voice=Pass	25	acl	_	_
-23	jah	jah	CONJ	C-	_	22	cc	_	_
-24	ubilaim	ubils	ADJ	A-	Case=Dat|Degree=Pos|Number=Plur|Strength=Strong	22	conj	_	_
-25	mannam	manna#2	NOUN	Nb	Case=Dat|Gender=Masc|Number=Plur	20	iobj	_	_
-
-</code></pre>
-
 <pre><code class="language-conllu"># visual-style 1	bgColor:blue
 # visual-style 1	fgColor:white
 # visual-style 2	bgColor:blue
 # visual-style 2	fgColor:white
 # visual-style 2 1 dep	color:blue
-1	ƕe	ƕe	ADV	Du	PronType=Int	2	dep	_	_
-2	galeikom	gáleikon	VERB	V-	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-3	þiudangardja	þiudangardi	NOUN	Nb	Case=Acc|Gender=Fem|Number=Sing	2	dobj	_	_
-4	gudis	guþ	NOUN	Nb	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	_
-5	aiþþau	aiþþau	CONJ	C-	_	2	cc	_	_
-6	in	in	ADP	R-	_	8	case	_	_
-7	ƕileikai	ƕileiks	ADJ	A-	Case=Dat|Degree=Pos|Gender=Fem|Number=Sing|Strength=Strong	8	amod	_	_
-8	gajukon	gajuko	NOUN	Nb	Case=Dat|Gender=Fem|Number=Sing	9	iobj	_	_
-9	gabairam	ga-bairan	VERB	V-	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
-10	þo	sa	ADJ	Pd	Case=Acc|Gender=Neut|Number=Plur	9	dobj	_	_
+1	ƕe	ƕe	ADV	Du	PronType=Int	2	dep	_	ref=MARK_4.30
+2	galeikom	gáleikon	VERB	V-	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	ref=MARK_4.30
+3	þiudangardja	þiudangardi	NOUN	Nb	Case=Acc|Gender=Fem|Number=Sing	2	obj:dir	_	ref=MARK_4.30
+4	gudis	guþ	NOUN	Nb	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	ref=MARK_4.30
+5	aiþþau	aiþþau	CCONJ	C-	_	2	cc	_	ref=MARK_4.30
+6	in	in	ADP	R-	_	8	case	_	ref=MARK_4.30
+7	ƕileikai	ƕileiks	ADJ	A-	Case=Dat|Degree=Pos|Gender=Fem|Number=Sing|Strength=Strong	8	amod	_	ref=MARK_4.30
+8	gajukon	gajuko	NOUN	Nb	Case=Dat|Gender=Fem|Number=Sing	9	obl	_	ref=MARK_4.30
+9	gabairam	ga-bairan	VERB	V-	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	ref=MARK_4.30
+10	þo	sa	ADJ	Pd	Case=Acc|Gender=Neut|Number=Plur	9	obj:dir	_	ref=MARK_4.30
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 6 dep	color:blue
+1	þata	sa	DET	Pd	Case=Acc|Gender=Neut|Number=Sing	2	det	_	ref=2THESS_3.1
+2	anþar	anþar	ADJ	A-	Case=Acc|Degree=Pos|Gender=Neut|Number=Sing|Strength=Strong	3	obj:dir	_	ref=2THESS_3.1
+3	gabidjaiþ	ga-bidjan	VERB	V-	Mood=Opt|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	ref=2THESS_3.1
+4	jah	jah	CCONJ	C-	_	5	cc	_	ref=2THESS_3.1
+5	bi	bi	ADP	R-	_	6	case	_	ref=2THESS_3.1
+6	unsis	weis	PRON	Pp	Case=Dat|Gender=Masc|Number=Plur|Person=1|PronType=Prs	3	dep	_	ref=2THESS_3.1
+7	broþrjus	broþar	NOUN	Nb	Case=Voc|Gender=Masc|Number=Plur	3	vocative	_	ref=2THESS_3.1
+8	ei	ei	SCONJ	G-	_	11	mark	_	ref=2THESS_3.1
+9	waurd	waurd	NOUN	Nb	Case=Nom|Gender=Neut|Number=Sing	11	nsubj	_	ref=2THESS_3.1
+10	fraujins	frauja	NOUN	Nb	Case=Gen|Gender=Masc|Number=Sing	9	nmod	_	ref=2THESS_3.1
+11	þragjai	þragjan	VERB	V-	Mood=Opt|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	advcl	_	ref=2THESS_3.1
+12	jah	jah	CCONJ	C-	_	11	cc	_	ref=2THESS_3.1
+13	mikiljaidau	mikiljan	VERB	V-	Mood=Opt|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	11	conj	_	ref=2THESS_3.1
+14	swaswe	swaswe	ADV	Df	_	13	advmod	_	ref=2THESS_3.1
+15	jah	jah	ADV	Df	_	16	advmod	_	ref=2THESS_3.1
+16	at	at	ADP	R-	_	17	case	_	ref=2THESS_3.1
+17	izwis	jūs	PRON	Pp	Case=Dat|Gender=Masc|Number=Plur|Person=2|PronType=Prs	14	obl	_	ref=2THESS_3.1
+18	jah	jah	CCONJ	C-	_	8	cc	_	ref=2THESS_3.2
+19	ei	ei	SCONJ	G-	_	20	mark	_	ref=2THESS_3.2
+20	uslausjaindau	us-lausjan	VERB	V-	Mood=Opt|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Pass	8	conj	_	ref=2THESS_3.2
+21	af	af	ADP	R-	_	25	case	_	ref=2THESS_3.2
+22	gastojanaim	ga-stojan	VERB	V-	Aspect=Perf|Case=Dat|Number=Plur|Strength=Strong|Tense=Past|VerbForm=Part|Voice=Pass	25	acl	_	ref=2THESS_3.2
+23	jah	jah	CCONJ	C-	_	22	cc	_	ref=2THESS_3.2
+24	ubilaim	ubils	ADJ	A-	Case=Dat|Degree=Pos|Number=Plur|Strength=Strong	22	conj	_	ref=2THESS_3.2
+25	mannam	manna#2	NOUN	Nb	Case=Dat|Gender=Masc|Number=Plur	20	obl	_	ref=2THESS_3.2
 
 </code></pre>
 
@@ -126,15 +143,15 @@ Average distance between parent and child is 2.</p>
 # visual-style 4	bgColor:blue
 # visual-style 4	fgColor:white
 # visual-style 4 6 dep	color:blue
-1	und	und	ADP	R-	_	2	case	_	_
-2	hita	hi-	ADJ	Pd	Case=Acc|Gender=Neut|Number=Sing	4	nmod	_	_
-3	ni	ni	ADV	Df	_	4	neg	_	_
-4	beduþ	bidjan	VERB	V-	Mood=Ind|Number=Plur|Person=2|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
-5	ni	ni	ADV	Df	_	6	neg	_	_
-6	waihtais	waihts	NOUN	Nb	Case=Gen|Gender=Fem|Number=Sing	4	dep	_	_
-7	in	in	ADP	R-	_	8	case	_	_
-8	namin	namo	NOUN	Nb	Case=Dat|Gender=Neut|Number=Sing	4	nmod	_	_
-9	meinamma	meins	PRON	Ps	Case=Dat|Gender=Neut|Number=Sing|Person=1|Poss=Yes|PronType=Prs	8	nmod	_	_
+1	und	und	ADP	R-	_	2	case	_	ref=JOHN_16.24
+2	hita	hi-	ADJ	Pd	Case=Acc|Gender=Neut|Number=Sing	4	obl	_	ref=JOHN_16.24
+3	ni	ni	ADV	Df	Polarity=Neg	4	advmod	_	ref=JOHN_16.24
+4	beduþ	bidjan	VERB	V-	Mood=Ind|Number=Plur|Person=2|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	ref=JOHN_16.24
+5	ni	ni	ADV	Df	Polarity=Neg	6	advmod	_	ref=JOHN_16.24
+6	waihtais	waihts	NOUN	Nb	Case=Gen|Gender=Fem|Number=Sing	4	dep	_	ref=JOHN_16.24
+7	in	in	ADP	R-	_	8	case	_	ref=JOHN_16.24
+8	namin	namo	NOUN	Nb	Case=Dat|Gender=Neut|Number=Sing	4	obl	_	ref=JOHN_16.24
+9	meinamma	meins	ADJ	Ps	Case=Dat|Gender=Neut|Number=Sing|Person=1|Poss=Yes	8	nmod	_	ref=JOHN_16.24
 
 </code></pre>
 
@@ -146,9 +163,25 @@ Average distance between parent and child is 2.</p>
 
 dep in other languages:
 
+[<a href="../../am/dep/dep.html">am</a>]
+
+[<a href="../../ar/dep/dep.html">ar</a>]
+
 [<a href="../../bg/dep/dep.html">bg</a>]
 
+[<a href="../../bxr/dep/dep.html">bxr</a>]
+
+[<a href="../../ca/dep/dep.html">ca</a>]
+
+[<a href="../../ckb/dep/dep.html">ckb</a>]
+
+[<a href="../../cop/dep/dep.html">cop</a>]
+
 [<a href="../../cs/dep/dep.html">cs</a>]
+
+[<a href="../../cu/dep/dep.html">cu</a>]
+
+[<a href="../../da/dep/dep.html">da</a>]
 
 [<a href="../../de/dep/dep.html">de</a>]
 
@@ -158,29 +191,99 @@ dep in other languages:
 
 [<a href="../../es/dep/dep.html">es</a>]
 
+[<a href="../../et/dep/dep.html">et</a>]
+
 [<a href="../../eu/dep/dep.html">eu</a>]
 
 [<a href="../../fa/dep/dep.html">fa</a>]
 
 [<a href="../../fi/dep/dep.html">fi</a>]
 
+[<a href="../../fo/dep/dep.html">fo</a>]
+
 [<a href="../../fr/dep/dep.html">fr</a>]
 
 [<a href="../../ga/dep/dep.html">ga</a>]
 
+[<a href="../../gl/dep/dep.html">gl</a>]
+
+[<a href="../../got/dep/dep.html">got</a>]
+
+[<a href="../../grc/dep/dep.html">grc</a>]
+
 [<a href="../../he/dep/dep.html">he</a>]
 
+[<a href="../../hi/dep/dep.html">hi</a>]
+
+[<a href="../../hr/dep/dep.html">hr</a>]
+
 [<a href="../../hu/dep/dep.html">hu</a>]
+
+[<a href="../../id/dep/dep.html">id</a>]
 
 [<a href="../../it/dep/dep.html">it</a>]
 
 [<a href="../../ja/dep/dep.html">ja</a>]
 
+[<a href="../../kk/dep/dep.html">kk</a>]
+
+[<a href="../../kmr/dep/dep.html">kmr</a>]
+
 [<a href="../../ko/dep/dep.html">ko</a>]
+
+[<a href="../../la/dep/dep.html">la</a>]
+
+[<a href="../../lv/dep/dep.html">lv</a>]
+
+[<a href="../../mr/dep/dep.html">mr</a>]
+
+[<a href="../../nl/dep/dep.html">nl</a>]
+
+[<a href="../../no/dep/dep.html">no</a>]
+
+[<a href="../../pl/dep/dep.html">pl</a>]
+
+[<a href="../../pt/dep/dep.html">pt</a>]
+
+[<a href="../../ro/dep/dep.html">ro</a>]
+
+[<a href="../../ru/dep/dep.html">ru</a>]
+
+[<a href="../../sa/dep/dep.html">sa</a>]
+
+[<a href="../../sk/dep/dep.html">sk</a>]
+
+[<a href="../../sla/dep/dep.html">sla</a>]
+
+[<a href="../../sl/dep/dep.html">sl</a>]
+
+[<a href="../../so/dep/dep.html">so</a>]
+
+[<a href="../../sr/dep/dep.html">sr</a>]
 
 [<a href="../../sv/dep/dep.html">sv</a>]
 
+[<a href="../../swl/dep/dep.html">swl</a>]
+
+[<a href="../../ta/dep/dep.html">ta</a>]
+
+[<a href="../../tr/dep/dep.html">tr</a>]
+
 [<a href="../../u/dep/dep.html">u</a>]
+
+[<a href="../../ug/dep/dep.html">ug</a>]
+
+[<a href="../../uk/dep/dep.html">uk</a>]
+
+[<a href="../../ur/dep/dep.html">ur</a>]
+
+[<a href="../../urj/dep/dep.html">urj</a>]
+
+[<a href="../../vi/dep/dep.html">vi</a>]
+
+[<a href="../../yue/dep/dep.html">yue</a>]
+
+[<a href="../../zh/dep/dep.html">zh</a>]
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-sa">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/sa/feat">sa/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_sa-feat/VerbForm.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sa">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/sa/feat">sa/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sa-feat/VerbForm.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -103,7 +120,7 @@ The feature is used with 5 part-of-speech tags: <a href="">sa-pos/VERB</a> (239;
 
 <p>13 <a href="">sa-pos/NOUN</a> tokens (3% of all <code>NOUN</code> tokens) have a non-empty value of <code>VerbForm</code>.</p>
 
-<p>The most frequent other feature values with which <code>NOUN</code> and <code>VerbForm</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (9; 69%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (7; 54%), <tt><a href="Case.html">Case</a>=Nom</tt> (7; 54%).</p>
+<p>The most frequent other feature values with which <code>NOUN</code> and <code>VerbForm</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (9; 69%), <tt><a href="Case.html">Case</a>=Nom</tt> (7; 54%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (7; 54%).</p>
 
 <p><code>NOUN</code> tokens may have the following values of <code>VerbForm</code>:</p>
 
@@ -119,7 +136,7 @@ The feature is used with 5 part-of-speech tags: <a href="">sa-pos/VERB</a> (239;
 
 <p>6 <a href="">sa-pos/X</a> tokens (30% of all <code>X</code> tokens) have a non-empty value of <code>VerbForm</code>.</p>
 
-<p>The most frequent other feature values with which <code>X</code> and <code>VerbForm</code> co-occurred: <tt><a href="Person.html">Person</a>=EMPTY</tt> (6; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (6; 100%), <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (6; 100%), <tt><a href="Case.html">Case</a>=Nom</tt> (5; 83%).</p>
+<p>The most frequent other feature values with which <code>X</code> and <code>VerbForm</code> co-occurred: <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (6; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (6; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (6; 100%), <tt><a href="Case.html">Case</a>=Nom</tt> (5; 83%).</p>
 
 <p><code>X</code> tokens may have the following values of <code>VerbForm</code>:</p>
 
@@ -129,29 +146,29 @@ The feature is used with 5 part-of-speech tags: <a href="">sa-pos/VERB</a> (239;
   <li><code>EMPTY</code> (14): आप्नोति, आह, कृतघ्नः, तौ, भवति, रक्षापुरुषान्, रथानाम्, राजानम्, वदति, विद्वान्</li>
 </ul>
 
+<h3 id="aux"><code>AUX</code></h3>
+
+<p>1 <a href="">sa-pos/AUX</a> tokens (100% of all <code>AUX</code> tokens) have a non-empty value of <code>VerbForm</code>.</p>
+
+<p>The most frequent other feature values with which <code>AUX</code> and <code>VerbForm</code> co-occurred: <tt><a href="Person.html">Person</a>=3</tt> (1; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (1; 100%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (1; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (1; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (1; 100%).</p>
+
+<p><code>AUX</code> tokens may have the following values of <code>VerbForm</code>:</p>
+
+<ul>
+  <li><code>Fin</code> (1; 100% of non-empty <code>VerbForm</code>): अस्ति</li>
+</ul>
+
 <h3 id="adj"><code>ADJ</code></h3>
 
 <p>1 <a href="">sa-pos/ADJ</a> tokens (2% of all <code>ADJ</code> tokens) have a non-empty value of <code>VerbForm</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>VerbForm</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (1; 100%), <tt><a href="Case.html">Case</a>=Nom</tt> (1; 100%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (1; 100%).</p>
+<p>The most frequent other feature values with which <code>ADJ</code> and <code>VerbForm</code> co-occurred: <tt><a href="Gender.html">Gender</a>=Masc</tt> (1; 100%), <tt><a href="Case.html">Case</a>=Nom</tt> (1; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (1; 100%).</p>
 
 <p><code>ADJ</code> tokens may have the following values of <code>VerbForm</code>:</p>
 
 <ul>
   <li><code>Part</code> (1; 100% of non-empty <code>VerbForm</code>): वर्धमानो</li>
   <li><code>EMPTY</code> (46): महान्, गम्भीर, सकल, अगामीनि, अतिरस्कृतः, अप्राप्तकालं, असम्भाव्याम्, आद्यः, उचित, उत्पन्नौ</li>
-</ul>
-
-<h3 id="aux"><code>AUX</code></h3>
-
-<p>1 <a href="">sa-pos/AUX</a> tokens (100% of all <code>AUX</code> tokens) have a non-empty value of <code>VerbForm</code>.</p>
-
-<p>The most frequent other feature values with which <code>AUX</code> and <code>VerbForm</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (1; 100%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (1; 100%), <tt><a href="Person.html">Person</a>=3</tt> (1; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (1; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (1; 100%).</p>
-
-<p><code>AUX</code> tokens may have the following values of <code>VerbForm</code>:</p>
-
-<ul>
-  <li><code>Fin</code> (1; 100% of non-empty <code>VerbForm</code>): अस्ति</li>
 </ul>
 
 <h2 id="relations-with-agreement-in-verbform">Relations with Agreement in <code>VerbForm</code></h2>
@@ -169,9 +186,25 @@ The feature is used with 5 part-of-speech tags: <a href="">sa-pos/VERB</a> (239;
 
 VerbForm in other languages:
 
+[<a href="../../am/feat/VerbForm.html">am</a>]
+
+[<a href="../../ar/feat/VerbForm.html">ar</a>]
+
 [<a href="../../bg/feat/VerbForm.html">bg</a>]
 
+[<a href="../../bxr/feat/VerbForm.html">bxr</a>]
+
+[<a href="../../ca/feat/VerbForm.html">ca</a>]
+
+[<a href="../../ckb/feat/VerbForm.html">ckb</a>]
+
+[<a href="../../cop/feat/VerbForm.html">cop</a>]
+
 [<a href="../../cs/feat/VerbForm.html">cs</a>]
+
+[<a href="../../cu/feat/VerbForm.html">cu</a>]
+
+[<a href="../../da/feat/VerbForm.html">da</a>]
 
 [<a href="../../de/feat/VerbForm.html">de</a>]
 
@@ -181,29 +214,99 @@ VerbForm in other languages:
 
 [<a href="../../es/feat/VerbForm.html">es</a>]
 
+[<a href="../../et/feat/VerbForm.html">et</a>]
+
 [<a href="../../eu/feat/VerbForm.html">eu</a>]
 
 [<a href="../../fa/feat/VerbForm.html">fa</a>]
 
 [<a href="../../fi/feat/VerbForm.html">fi</a>]
 
+[<a href="../../fo/feat/VerbForm.html">fo</a>]
+
 [<a href="../../fr/feat/VerbForm.html">fr</a>]
 
 [<a href="../../ga/feat/VerbForm.html">ga</a>]
 
+[<a href="../../gl/feat/VerbForm.html">gl</a>]
+
+[<a href="../../got/feat/VerbForm.html">got</a>]
+
+[<a href="../../grc/feat/VerbForm.html">grc</a>]
+
 [<a href="../../he/feat/VerbForm.html">he</a>]
 
+[<a href="../../hi/feat/VerbForm.html">hi</a>]
+
+[<a href="../../hr/feat/VerbForm.html">hr</a>]
+
 [<a href="../../hu/feat/VerbForm.html">hu</a>]
+
+[<a href="../../id/feat/VerbForm.html">id</a>]
 
 [<a href="../../it/feat/VerbForm.html">it</a>]
 
 [<a href="../../ja/feat/VerbForm.html">ja</a>]
 
+[<a href="../../kk/feat/VerbForm.html">kk</a>]
+
+[<a href="../../kmr/feat/VerbForm.html">kmr</a>]
+
 [<a href="../../ko/feat/VerbForm.html">ko</a>]
+
+[<a href="../../la/feat/VerbForm.html">la</a>]
+
+[<a href="../../lv/feat/VerbForm.html">lv</a>]
+
+[<a href="../../mr/feat/VerbForm.html">mr</a>]
+
+[<a href="../../nl/feat/VerbForm.html">nl</a>]
+
+[<a href="../../no/feat/VerbForm.html">no</a>]
+
+[<a href="../../pl/feat/VerbForm.html">pl</a>]
+
+[<a href="../../pt/feat/VerbForm.html">pt</a>]
+
+[<a href="../../ro/feat/VerbForm.html">ro</a>]
+
+[<a href="../../ru/feat/VerbForm.html">ru</a>]
+
+[<a href="../../sa/feat/VerbForm.html">sa</a>]
+
+[<a href="../../sk/feat/VerbForm.html">sk</a>]
+
+[<a href="../../sla/feat/VerbForm.html">sla</a>]
+
+[<a href="../../sl/feat/VerbForm.html">sl</a>]
+
+[<a href="../../so/feat/VerbForm.html">so</a>]
+
+[<a href="../../sr/feat/VerbForm.html">sr</a>]
 
 [<a href="../../sv/feat/VerbForm.html">sv</a>]
 
+[<a href="../../swl/feat/VerbForm.html">swl</a>]
+
+[<a href="../../ta/feat/VerbForm.html">ta</a>]
+
+[<a href="../../tr/feat/VerbForm.html">tr</a>]
+
 [<a href="../../u/feat/VerbForm.html">u</a>]
+
+[<a href="../../ug/feat/VerbForm.html">ug</a>]
+
+[<a href="../../uk/feat/VerbForm.html">uk</a>]
+
+[<a href="../../ur/feat/VerbForm.html">ur</a>]
+
+[<a href="../../urj/feat/VerbForm.html">urj</a>]
+
+[<a href="../../vi/feat/VerbForm.html">vi</a>]
+
+[<a href="../../yue/feat/VerbForm.html">yue</a>]
+
+[<a href="../../zh/feat/VerbForm.html">zh</a>]
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-yue">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/yue/dep">yue/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_yue-dep/expl.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-yue">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/yue/dep">yue/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_yue-dep/expl.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -45,8 +62,54 @@
 
           <h2><code>expl</code>: expletive</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>expl</code>.</p>
+<p>In Cantonese, expletive (1) and pleonastic (2) uses of the pronoun 佢 / <em>keoi5</em> (3SG) are labelled as <code>expl</code> dependents of the head of a clause. In expletive uses, the pronoun does not refer to an actual person or object but it is required in the sentence otherwise it would become ungrammatical. In the pleonastic case, the pronoun is used immediately after a noun and refers back to it in a redundant way.</p>
+
+<pre><code class="language-conllu"># visual-style 1 3 expl	color:blue
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+1	喊	_	VERB	_	_	0	root	_	cry
+2	飽	_	ADJ	_	_	1	compound:vv	_	full
+3	佢	_	PRON	_	_	1	expl	_	yesterday
+4	啦	_	PART	_	_	1	discourse:sp	_	SP
+
+1	"Go	_	_	_	_	0	_	_	_
+2	ahead	_	_	_	_	0	_	_	_
+3	and	_	_	_	_	0	_	_	_
+4	cry	_	_	_	_	0	_	_	_
+5	it	_	_	_	_	0	_	_	_
+6	all	_	_	_	_	0	_	_	_
+7	out."	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 1 5 expl	color:blue
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+1	抌	_	VERB	_	_	0	root	_	discard
+2	晒	_	PART	_	_	1	compound:quant	_	all
+3	啲	_	NOUN	_	_	4	det	_	CL:plural
+4	嘢	_	NOUN	_	_	1	obj	_	stuff
+5	佢	_	PRON	_	_	1	expl	_	3SG
+6	啦	_	PART	_	_	1	discourse:sp	_	SP
+
+1	"Just	_	_	_	_	0	_	_	_
+2	throw	_	_	_	_	0	_	_	_
+3	all	_	_	_	_	0	_	_	_
+4	the	_	_	_	_	0	_	_	_
+5	stuff	_	_	_	_	0	_	_	_
+6	away!"	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<h3 id="references">References</h3>
+
+<ul>
+  <li>Matthews, Stephen and Virginia Yip. 2011. Cantonese: A Comprehensive Grammar, 2nd ed. Routledge.</li>
+</ul>
 
 
 <!-- "automatic stats" -->
@@ -61,9 +124,25 @@ for <code>expl</code>.</p>
 
 expl in other languages:
 
+[<a href="../../am/dep/expl.html">am</a>]
+
+[<a href="../../ar/dep/expl.html">ar</a>]
+
 [<a href="../../bg/dep/expl.html">bg</a>]
 
+[<a href="../../bxr/dep/expl.html">bxr</a>]
+
+[<a href="../../ca/dep/expl.html">ca</a>]
+
+[<a href="../../ckb/dep/expl.html">ckb</a>]
+
+[<a href="../../cop/dep/expl.html">cop</a>]
+
 [<a href="../../cs/dep/expl.html">cs</a>]
+
+[<a href="../../cu/dep/expl.html">cu</a>]
+
+[<a href="../../da/dep/expl.html">da</a>]
 
 [<a href="../../de/dep/expl.html">de</a>]
 
@@ -73,29 +152,97 @@ expl in other languages:
 
 [<a href="../../es/dep/expl.html">es</a>]
 
+[<a href="../../et/dep/expl.html">et</a>]
+
 [<a href="../../eu/dep/expl.html">eu</a>]
 
 [<a href="../../fa/dep/expl.html">fa</a>]
 
 [<a href="../../fi/dep/expl.html">fi</a>]
 
+[<a href="../../fo/dep/expl.html">fo</a>]
+
 [<a href="../../fr/dep/expl.html">fr</a>]
 
-[<a href="../../ga/dep/expl.html">ga</a>]
+[<a href="../../gl/dep/expl.html">gl</a>]
+
+[<a href="../../got/dep/expl.html">got</a>]
+
+[<a href="../../grc/dep/expl.html">grc</a>]
 
 [<a href="../../he/dep/expl.html">he</a>]
 
+[<a href="../../hi/dep/expl.html">hi</a>]
+
+[<a href="../../hr/dep/expl.html">hr</a>]
+
 [<a href="../../hu/dep/expl.html">hu</a>]
+
+[<a href="../../id/dep/expl.html">id</a>]
 
 [<a href="../../it/dep/expl.html">it</a>]
 
 [<a href="../../ja/dep/expl.html">ja</a>]
 
+[<a href="../../kk/dep/expl.html">kk</a>]
+
+[<a href="../../kmr/dep/expl.html">kmr</a>]
+
 [<a href="../../ko/dep/expl.html">ko</a>]
+
+[<a href="../../la/dep/expl.html">la</a>]
+
+[<a href="../../lv/dep/expl.html">lv</a>]
+
+[<a href="../../mr/dep/expl.html">mr</a>]
+
+[<a href="../../nl/dep/expl.html">nl</a>]
+
+[<a href="../../no/dep/expl.html">no</a>]
+
+[<a href="../../pl/dep/expl.html">pl</a>]
+
+[<a href="../../pt/dep/expl.html">pt</a>]
+
+[<a href="../../ro/dep/expl.html">ro</a>]
+
+[<a href="../../ru/dep/expl.html">ru</a>]
+
+[<a href="../../sa/dep/expl.html">sa</a>]
+
+[<a href="../../sk/dep/expl.html">sk</a>]
+
+[<a href="../../sla/dep/expl.html">sla</a>]
+
+[<a href="../../sl/dep/expl.html">sl</a>]
+
+[<a href="../../so/dep/expl.html">so</a>]
+
+[<a href="../../sr/dep/expl.html">sr</a>]
 
 [<a href="../../sv/dep/expl.html">sv</a>]
 
+[<a href="../../swl/dep/expl.html">swl</a>]
+
+[<a href="../../ta/dep/expl.html">ta</a>]
+
+[<a href="../../tr/dep/expl.html">tr</a>]
+
 [<a href="../../u/dep/expl.html">u</a>]
+
+[<a href="../../ug/dep/expl.html">ug</a>]
+
+[<a href="../../uk/dep/expl.html">uk</a>]
+
+[<a href="../../ur/dep/expl.html">ur</a>]
+
+[<a href="../../urj/dep/expl.html">urj</a>]
+
+[<a href="../../vi/dep/expl.html">vi</a>]
+
+[<a href="../../yue/dep/expl.html">yue</a>]
+
+[<a href="../../zh/dep/expl.html">zh</a>]
 
 
 

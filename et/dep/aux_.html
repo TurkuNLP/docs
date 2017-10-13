@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-et">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/et/dep">et/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_et-dep/aux_.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-et">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/et/dep">et/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_et-dep/aux_.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,67 +80,63 @@
 
 <p>This relation is universal.</p>
 
-<p>4041 nodes (2%) are attached to their parents as <code>aux</code>.</p>
+<p>840 nodes (2%) are attached to their parents as <code>aux</code>.</p>
 
-<p>3895 instances of <code>aux</code> (96%) are right-to-left (child precedes parent).
-Average distance between parent and child is 2.60529571888146.</p>
+<p>801 instances of <code>aux</code> (95%) are right-to-left (child precedes parent).
+Average distance between parent and child is 2.12738095238095.</p>
 
-<p>The following 3 pairs of parts of speech are connected with <code>aux</code>: <a href="">et-pos/VERB</a>-<a href="">et-pos/AUX</a> (4038; 100% instances), <a href="">et-pos/NOUN</a>-<a href="">et-pos/AUX</a> (2; 0% instances), <a href="">et-pos/ADJ</a>-<a href="">et-pos/AUX</a> (1; 0% instances).</p>
+<p>The following 7 pairs of parts of speech are connected with <code>aux</code>: <a href="">et-pos/VERB</a>-<a href="">et-pos/AUX</a> (797; 95% instances), <a href="">et-pos/ADJ</a>-<a href="">et-pos/AUX</a> (23; 3% instances), <a href="">et-pos/NOUN</a>-<a href="">et-pos/AUX</a> (7; 1% instances), <a href="">et-pos/PRON</a>-<a href="">et-pos/AUX</a> (6; 1% instances), <a href="">et-pos/ADV</a>-<a href="">et-pos/AUX</a> (4; 0% instances), <a href="">et-pos/PROPN</a>-<a href="">et-pos/AUX</a> (2; 0% instances), <a href="">et-pos/AUX</a>-<a href="">et-pos/AUX</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 2 aux	color:blue
+1	Muidugi	muidugi	ADV	D	_	4	advmod	_	_
+2	poleks	olema	AUX	V	Mood=Cnd|Polarity=Neg|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	keegi	keegi	PRON	P	Case=Nom|Number=Sing|PronType=Ind	4	nsubj	_	_
+4	osanud	oskama	VERB	V	Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	teda	tema	PRON	P	Case=Par|Number=Sing|Person=3|PronType=Prs	7	obj	_	_
+6	sealt	sealt	ADV	D	_	7	advmod	_	_
+7	otsida	otsima	VERB	V	VerbForm=Inf	4	xcomp	_	SpaceAfter=No
+8	.	.	PUNCT	Z	_	4	punct	_	_
+
+</code></pre>
 
 <pre><code class="language-conllu"># visual-style 4	bgColor:blue
 # visual-style 4	fgColor:white
-# visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 6 4 aux	color:blue
-1	Vana	vana	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	2	amod	_	_
-2	mehe	mees	NOUN	S	Case=Gen|Number=Sing	3	nmod	_	_
-3	pea	pea	NOUN	S	Case=Nom|Number=Sing	6	nsubj	_	_
-4	oli	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	aux	_	_
-5	rinnale	rind	NOUN	S	Case=All|Number=Sing	6	nmod	_	_
-6	langenud	langema	VERB	V	Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
-7	,	,	PUNCT	Z	_	6	punct	_	_
-8	ta	tema	PRON	P	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
-9	magas	magama	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	conj	_	_
-10	.	.	PUNCT	Z	_	6	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 12	bgColor:blue
-# visual-style 12	fgColor:white
 # visual-style 7	bgColor:blue
 # visual-style 7	fgColor:white
-# visual-style 7 12 aux	color:blue
-1	Referentshinna	referents_hind	NOUN	S	Case=Gen|Number=Sing	2	nmod	_	_
-2	kehtestamine	kehtestamine	NOUN	S	Case=Nom|Number=Sing	3	nsubj	_	_
-3	annab	andma	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-4	võimaluse	võimalus	NOUN	S	Case=Gen|Number=Sing	3	dobj	_	_
-5	kompenseerida	kompenseerima	VERB	V	VerbForm=Inf	4	acl	_	_
-6	uusi	uus	ADJ	A	Case=Par|Degree=Pos|Number=Plur	7	amod	_	_
-7	originaalravimeid	originaal_ravim	NOUN	S	Case=Par|Number=Plur	5	dobj	_	_
-8	,	,	PUNCT	Z	_	12	punct	_	_
-9	millele	mis	PRON	P	Case=All|Number=Plur|PronType=Int,Rel	12	nmod	_	_
-10	asendajat	asendaja	NOUN	S	Case=Par|Number=Sing	12	nsubj	_	_
-11	ei	ei	AUX	V	Mood=Ind|Negative=Neg|VerbForm=Fin	12	neg	_	_
-12	ole	olema	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux	_	_
-13	.	.	PUNCT	Z	_	3	punct	_	_
+# visual-style 7 4 aux	color:blue
+1	"	"	PUNCT	Z	_	7	punct	_	SpaceAfter=No
+2	Detsembrikuu	detsembri_kuu	NOUN	S	Case=Gen|Number=Sing	3	nmod	_	_
+3	mängudegraafik	mängu+de_graafik	NOUN	S	Case=Nom|Number=Sing	7	nsubj:cop	_	_
+4	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux	_	_
+5	olnud	olema	AUX	V	Tense=Past|VerbForm=Part|Voice=Act	7	cop	_	_
+6	väga	väga	ADV	D	_	7	advmod	_	_
+7	tihe	tihe	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	Z	_	7	punct	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 6 3 aux	color:blue
-1	Lennart	Lennart	PROPN	S	Case=Nom|Number=Sing	6	nsubj:cop	_	_
-2	omakorda	oma_korda	ADV	D	_	6	advmod	_	_
-3	on	ole	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
-4	alati	alati	ADV	D	_	6	advmod	_	_
-5	olnud	ole	VERB	V	Tense=Past|VerbForm=Part|Voice=Act	6	cop	_	_
-6	tugevam	tuge=vam	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	0	root	_	_
-7	poliitilise	poliitiline	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	8	amod	_	_
-8	ämblikuvõrgu	ämbliku_võrk	NOUN	S	Case=Gen|Number=Sing	9	nmod	_	_
-9	punumises	punu=mine	NOUN	S	Case=Ine|Number=Sing	6	nmod	_	_
-10	.	.	PUNCT	Z	_	6	punct	_	_
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 7 4 aux	color:blue
+1	"	"	PUNCT	Z	_	7	punct	_	SpaceAfter=No
+2	Terve	terve	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	3	amod	_	_
+3	igaviku	igavik	NOUN	S	Case=Gen|Number=Sing	7	obl	_	_
+4	olen	olema	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux	_	_
+5	ma	mina	PRON	P	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	nsubj:cop	_	_
+6	olnud	olema	AUX	V	Tense=Past|VerbForm=Part|Voice=Act	7	cop	_	_
+7	teel	tee	NOUN	S	Case=Ade|Number=Sing	0	root	_	SpaceAfter=No
+8	!	!	PUNCT	Z	_	7	punct	_	SpaceAfter=No
+9	"	"	PUNCT	Z	_	7	punct	_	_
+10	karjus	karjuma	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	parataxis	_	_
+11	sir	sir	NOUN	S	Case=Nom|Number=Sing	12	nmod	_	_
+12	Parcival	Parcival	PROPN	S	Case=Nom|Number=Sing	10	nsubj	_	SpaceAfter=No
+13	.	.	PUNCT	Z	_	7	punct	_	_
 
 </code></pre>
 
@@ -135,9 +148,25 @@ Average distance between parent and child is 2.60529571888146.</p>
 
 aux in other languages:
 
+[<a href="../../am/dep/aux.html">am</a>]
+
+[<a href="../../ar/dep/aux.html">ar</a>]
+
 [<a href="../../bg/dep/aux.html">bg</a>]
 
+[<a href="../../bxr/dep/aux.html">bxr</a>]
+
+[<a href="../../ca/dep/aux.html">ca</a>]
+
+[<a href="../../ckb/dep/aux.html">ckb</a>]
+
+[<a href="../../cop/dep/aux.html">cop</a>]
+
 [<a href="../../cs/dep/aux.html">cs</a>]
+
+[<a href="../../cu/dep/aux.html">cu</a>]
+
+[<a href="../../da/dep/aux.html">da</a>]
 
 [<a href="../../de/dep/aux.html">de</a>]
 
@@ -147,29 +176,97 @@ aux in other languages:
 
 [<a href="../../es/dep/aux.html">es</a>]
 
+[<a href="../../et/dep/aux.html">et</a>]
+
 [<a href="../../eu/dep/aux.html">eu</a>]
 
 [<a href="../../fa/dep/aux.html">fa</a>]
 
 [<a href="../../fi/dep/aux.html">fi</a>]
 
+[<a href="../../fo/dep/aux.html">fo</a>]
+
 [<a href="../../fr/dep/aux.html">fr</a>]
 
-[<a href="../../ga/dep/aux.html">ga</a>]
+[<a href="../../gl/dep/aux.html">gl</a>]
+
+[<a href="../../got/dep/aux.html">got</a>]
+
+[<a href="../../grc/dep/aux.html">grc</a>]
 
 [<a href="../../he/dep/aux.html">he</a>]
 
+[<a href="../../hi/dep/aux.html">hi</a>]
+
+[<a href="../../hr/dep/aux.html">hr</a>]
+
 [<a href="../../hu/dep/aux.html">hu</a>]
+
+[<a href="../../id/dep/aux.html">id</a>]
 
 [<a href="../../it/dep/aux.html">it</a>]
 
 [<a href="../../ja/dep/aux.html">ja</a>]
 
+[<a href="../../kk/dep/aux.html">kk</a>]
+
+[<a href="../../kmr/dep/aux.html">kmr</a>]
+
 [<a href="../../ko/dep/aux.html">ko</a>]
+
+[<a href="../../la/dep/aux.html">la</a>]
+
+[<a href="../../lv/dep/aux.html">lv</a>]
+
+[<a href="../../mr/dep/aux.html">mr</a>]
+
+[<a href="../../nl/dep/aux.html">nl</a>]
+
+[<a href="../../no/dep/aux.html">no</a>]
+
+[<a href="../../pl/dep/aux.html">pl</a>]
+
+[<a href="../../pt/dep/aux.html">pt</a>]
+
+[<a href="../../ro/dep/aux.html">ro</a>]
+
+[<a href="../../ru/dep/aux.html">ru</a>]
+
+[<a href="../../sa/dep/aux.html">sa</a>]
+
+[<a href="../../sk/dep/aux.html">sk</a>]
+
+[<a href="../../sla/dep/aux.html">sla</a>]
+
+[<a href="../../sl/dep/aux.html">sl</a>]
+
+[<a href="../../so/dep/aux.html">so</a>]
+
+[<a href="../../sr/dep/aux.html">sr</a>]
 
 [<a href="../../sv/dep/aux.html">sv</a>]
 
+[<a href="../../swl/dep/aux.html">swl</a>]
+
+[<a href="../../ta/dep/aux.html">ta</a>]
+
+[<a href="../../tr/dep/aux.html">tr</a>]
+
 [<a href="../../u/dep/aux.html">u</a>]
+
+[<a href="../../ug/dep/aux.html">ug</a>]
+
+[<a href="../../uk/dep/aux.html">uk</a>]
+
+[<a href="../../ur/dep/aux.html">ur</a>]
+
+[<a href="../../urj/dep/aux.html">urj</a>]
+
+[<a href="../../vi/dep/aux.html">vi</a>]
+
+[<a href="../../yue/dep/aux.html">yue</a>]
+
+[<a href="../../zh/dep/aux.html">zh</a>]
 
 
 

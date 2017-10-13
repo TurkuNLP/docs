@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="css/hint.css"/>
     <script type="text/javascript" src="lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-">home</a></span>
 
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/format.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/format.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -45,7 +62,7 @@
 
           <h1 id="conll-u-format">CoNLL-U Format</h1>
 
-<p>We use a revised version of <a href="http://ilk.uvt.nl/conll/#dataformat">the CoNLL-X format</a> called CoNLL-U. 
+<p>We use a revised version of <a href="http://anthology.aclweb.org/W/W06/W06-2920.pdf">the CoNLL-X format</a> called CoNLL-U. 
 Annotations are encoded in plain text files (UTF-8, using only the LF character as line break) with three types of lines:</p>
 
 <ol>
@@ -80,6 +97,8 @@ In addition, we have modified the usage of the ID, FORM, LEMMA, XPOSTAG, FEATS a
   <li>Underscore (_) is used to denote unspecified values in all fields except ID. Note that no format-level distinction is made for the rare cases where the FORM or LEMMA is the literal underscore – processing in such cases is application-dependent. Further, in UD treebanks the UPOSTAG, HEAD, and DEPREL columns are not allowed to be left unspecified.</li>
 </ul>
 
+<p>See the <a href="tools.html">tools page</a> for a list of tools that work with the CoNLL-U format. There is also a simple JavaScript-based <a href="conllu_viewer.html">CoNLL-U file viewer</a>.</p>
+
 <h1 id="words-tokens-and-empty-nodes">Words, Tokens and Empty Nodes</h1>
 
 <p>To accommodate the representation of both words and (multiword) tokens (see <a href="u/overview/tokenization.html">Tokenization and word segmentation</a>), 
@@ -87,7 +106,7 @@ we adopt an extension of the original CoNLL-X token indexing scheme, where words
 while (multiword) tokens are indexed with integer ranges like 1-2 or 3-5. 
 Lines representing such tokens are inserted before the first word in the range.
 These ranges must be nonempty and must not overlap.
-They have a FORM value – the string that occurs in the sentence – but have an underscore in all the remaining fields
+They have a FORM value – the string that occurs in the sentence – but have an underscore in all the remaining fields except MISC
 (because the token represents multiple words, each with its own lemma, part-of-speech tag, syntactic head, and so on). 
 This is illustrated in the following annotation snippet,
 showing only the first three fields for the Spanish sentence <em>vámonos al mar</em> (let’s go to the sea):</p>
@@ -117,36 +136,19 @@ showing only the first three fields for the Spanish sentence <em>vámonos al mar
 5      mar       mar		
 </code></pre>
 
-<!--To facilitate the use of CoNLL-U treebanks, we provide a script that extracts either the annotated _word_ sequence (with
-the original integer IDs) or the raw _token_ sequence with a heuristic mapping of morphological and syntactic annotation and plain integer indexing (like [the traditional CoNLL-X format](http://ilk.uvt.nl/conll/#dataformat)). Moreover, to 
-facilitate parser evaluation for languages with nondeterministic word segmentation, we also provide a mapping to a format
-where tokens are indexed with integers and words (if needed) with decimals. We refer to this scheme as _token indexing,_
-in contrast to the _word indexing_ scheme used as the offical treebank representation. Our running example looks as follows with token indexing:
-
-    1      vámonos   _
-    1.1    vamos     ir
-    1.2    nos       nosotros
-    2      al        _
-    2.1    a         a
-    2.2    el        el
-    3      mar       mar		
--->
 <p>To accommodate the use of empty nodes for the analysis of ellipsis in the enhanced dependency representation, we adopt
-a further extension of the indexing scheme from v2. Immediately after a word with index <em>i</em>, it is possible to insert
-one or more empty nodes indexed <em>i</em>.1, <em>i</em>.2, etc. Here is an example showing the use of an empty node in the analysis
-of the sentence <em>Sue likes coffee and Bill tea</em>:</p>
+a further extension of the indexing scheme from v2. It is possible to insert one or more empty nodes indexed <em>i</em>.1, <em>i</em>.2, etc. immediately after a word with index <em>i</em> (where <em>i</em> = 0 for sentence-initial empty nodes). Note that the the numbers after the decimal point must form a sequence starting at 1, i.e. it is not allowed to skip <em>i</em>.1 and use <em>i</em>.2. Here is an example showing the use of an empty node in the analysis of the sentence <em>Sue likes coffee and Bill tea</em>:</p>
 
 <pre><code>1      Sue       Sue
 2      likes     like
 3      coffee    coffee
 4      and       and
-5      Bill      a
+5      Bill      Bill
 5.1    likes     like
 6      tea       tea
 </code></pre>
 
-<p>Empty nodes must have a non-empty DEPS field, because they are part of the enhanced dependency graph, but all other 
-fields (except the ID field) may contain underscores. Optionally, they can have a word form and lemma as in the example above.</p>
+<p>Empty nodes must have non-empty ID and DEPS fields and empty fields (i.e. underscores) for HEAD and DEPREL, because they are only part of the enhanced dependency graph. All other fields may contain either underscores or values: for example, they can optionally have a word form and lemma as in the example above.</p>
 
 <h1 id="morphological-annotation">Morphological Annotation</h1>
 
@@ -178,6 +180,9 @@ As in the case of morphology, syntactic annotation is only provided for words, a
 tokens that are not words have an underscore in both the HEAD and DEPREL fields.</p>
 
 <!--However, the script that extracts the token sequence optionally provides a heuristic mapping of the morphological and syntactic annotation to non-word tokens. For example, given the following annotation of the English sentence _I haven't a clue_:
+
+WARNING: The multi-word token "haven't" may clash with usual low-level tokenization of English, see issue #322.
+Before uncommenting this part, we may want to use an example from another language.
 
     1     I         I      PRON    PRP   Case=Nom|Number=Sing|Person=1     2   nsubj
     2-3   haven't   _      _       _     _                                 _   _
@@ -222,47 +227,128 @@ without special escaping. If the MISC field is not used, it should contain an un
 
 <h2 id="untokenized-text">Untokenized Text</h2>
 
-<p>To facilitate reconstruction of original (pre-tokenization) text, the information on original word segmentation should be kept if available. Every token after which there was no space in the original text should contain <code>SpaceAfter=No</code> in its MISC field. Note that this feature applies to the token level, not to the word level. Syntactic words that are just part of surface tokens will be ignored during detokenization and thus do not need the feature. In the example below, the line indexed 1 does not contain the <code>SpaceAfter</code> feature even though there was no space between <em>He</em> and <em>‘s</em> in the underlying sentence. However, if there was no space between <em>He’s</em> and the third token, the 1-2 line would have <code>SpaceAfter=No</code>.</p>
+<p>To facilitate reconstruction of original (pre-tokenization) text, the information on original word segmentation should be kept if available. If it is not available, UD treebanks since release 2.0 must approximate it using detokenization heuristics (see also the sentence-level attribute <code>text</code> below).</p>
 
-<pre><code>1-2   He's      _         _       _       _                                 _   _       _   _
-1     He        he        PRON    PRP     Case=Nom|Number=Sing|Person=3     2   nsubj   _   _
-2     is        be        VERB    VBZ     Number=Sing|Person=3|Tense=Pres   6   cop     _   _
-3     in        in        ADP     IN      _                                 6   case    _   _
-4     the       the       DET     DT      Definite=Def|PronType=Art         6   det     _   _
-5     United    unite     VERB    VBD     Tense=Past|VerbForm=Part          6   amod    _   _
-6     Kingdom   kingdom   NOUN    NN      Number=Sing                       0   root    _   _
-7     (         (         PUNCT   -LRB-   _                                 8   punct   _   SpaceAfter=No
-8     UK        UK        PROPN   NNP     Number=Sing                       6   appos   _   SpaceAfter=No
-9     )         )         PUNCT   -RRB-   _                                 8   punct   _   SpaceAfter=No
-10    .         .         PUNCT   .       _                                 6   punct   _   _
+<p>Every token after which there was no space in the original text should contain <code>SpaceAfter=No</code> in its MISC field. Note that this feature applies to the token level, not to the word level. Syntactic words that are just part of surface tokens will be ignored during detokenization and thus do not need the feature. In the example below, the line indexed 3 does not contain the <code>SpaceAfter</code> feature even though there was no space between <em>für</em> and <em>das</em> in the underlying sentence. However, if there were no space between <em>fürs</em> and the following token, the 3-4 line would have <code>SpaceAfter=No</code>.</p>
+
+<!--WARNING: The multi-word tokens "he's, haven't" etc. may clash with usual low-level tokenization of English, see issue #322.
+Let's use an example from another language instead.
+
+    1-2   He's      _         _       _       _                                 _   _       _   _
+    1     He        he        PRON    PRP     Case=Nom|Number=Sing|Person=3     2   nsubj   _   _
+    2     is        be        VERB    VBZ     Number=Sing|Person=3|Tense=Pres   6   cop     _   _
+    3     in        in        ADP     IN      _                                 6   case    _   _
+    4     the       the       DET     DT      Definite=Def|PronType=Art         6   det     _   _
+    5     United    unite     VERB    VBD     Tense=Past|VerbForm=Part          6   amod    _   _
+    6     Kingdom   kingdom   NOUN    NN      Number=Sing                       0   root    _   _
+    7     (         (         PUNCT   -LRB-   _                                 8   punct   _   SpaceAfter=No
+    8     UK        UK        PROPN   NNP     Number=Sing                       6   appos   _   SpaceAfter=No
+    9     )         )         PUNCT   -RRB-   _                                 8   punct   _   SpaceAfter=No
+    10    .         .         PUNCT   .       _                                 6   punct   _   _
+-->
+
+<p>Note that columns 5 to 9 are collapsed in the following example.</p>
+
+<pre><code># text = Er arbeitet fürs FBI (deutsch etwa: „Bundesamt für Ermittlung“).
+# text_en = He works for the FBI (German approx: “Bundesamt für Ermittlung”).
+1     Er           er           PRON    …   _
+2     arbeitet     arbeiten     VERB    …   _
+3-4   fürs         _            _       …   _
+3     für          für          ADP     …   _
+4     das          der          DET     …   _
+5     FBI          FBI          PROPN   …   _
+6     (            (            PUNCT   …   SpaceAfter=No
+7     deutsch      deutsch      ADV     …   _
+8     etwa         etwa         ADV     …   SpaceAfter=No
+9     :            :            PUNCT   …   _
+10    „            „            PUNCT   …   SpaceAfter=No
+11    Bundesamt    Bundesamt    NOUN    …   _
+12    für          für          ADP     …   _
+13    Ermittlung   Ermittlung   NOUN    …   SpaceAfter=No
+14    “            “            PUNCT   …   SpaceAfter=No
+15    )            )            PUNCT   …   SpaceAfter=No
+16    .            .            PUNCT   …   _
 </code></pre>
+
+<h2 id="other-miscellaneous-attributes">Other Miscellaneous Attributes</h2>
+
+<p>Besides <code>SpaceAfter=No</code>, there are some other token- or word-level attributes that may be useful in multiple treebanks.
+These are not required; but if this sort of information is available, it is desirable that it is encoded the same way in
+all treebanks.</p>
+
+<ul>
+  <li><code>Translit</code> … transliteration or transcription of the word form to another writing system. Typically this attribute is used in languages that do not write using the Latin script, and the attribute provides some standard romanization.</li>
+  <li><code>LTranslit</code> … analogy of <code>Translit</code> for lemmas.</li>
+  <li><code>Gloss</code> … approximate translation of the word form or the lemma to another language (typically English). If the translation consists of multiple words, they are connected using a hyphen.</li>
+</ul>
 
 <h1 id="sentence-boundaries-and-comments">Sentence Boundaries and Comments</h1>
 
 <p>There must be exactly one blank line <em>after</em> every sentence, including the last sentence in the file.
 Empty sentences are not allowed.</p>
 
-<p>Lines starting with the <code>#</code> character and preceding a sentence are considered as carrying metadata relevant to the following sentence. These lines are an integral part of the format as they give the ability to embed metadata together with the sentences. Consequently, any tools compatible with the CoNLL-U format should carry these lines over into their output (unless specifically designed to process them in some way). The contents of the comments and metadata is basically unrestricted and will vary depending on the application, but from v2 every sentence must have a unique sentence id, formatted as in the examples below. In sentence ids, the slash character (“/”) is reserved for specialized downstream use and should be avoided in UD treebanks. Comments used to specify the unannotated sentence as a single string should also be formatted as below. Comment and metadata lines inside sentences (i.e., between the token lines) are disallowed.</p>
+<p>Lines starting with the <code>#</code> character and preceding a sentence are considered as carrying comments or metadata relevant to the following sentence. These lines are an integral part of the format as they give the ability to embed metadata together with the sentences. Consequently, any tools compatible with the CoNLL-U format should carry these lines over into their output (unless specifically designed to process them in some way). Comment and metadata lines inside sentences (i.e., between the token lines) are disallowed.</p>
+
+<p>The contents of the comments and metadata is basically unrestricted and will vary depending on the application, but from v2 the following two comments are compulsory for every sentence (and there must be just one comment of each kind per sentence):</p>
+
+<ul>
+  <li>A treebank-wide unique sentence id (<code>sent_id</code>), formatted as in the examples below. In sentence ids, the slash character (“/”) is reserved for specialized downstream use and should be avoided in UD treebanks. (The specialized use deals with multiple annotations of one sentence within one file, or with parallel data within one file. See <a href="https://github.com/UniversalDependencies/docs/issues/321">Issue 321</a> for more details. UD releases include some parallel treebanks but these are distributed separately by languages, hence sentence ids with slashes are not used.)</li>
+  <li>Comments used to specify the unannotated sentence as a single string (<code>text</code>) should also be formatted as below. If the original text is not available, the providers of the UD treebanks must approximate the <code>text</code> attribute using detokenization heuristics.</li>
+</ul>
+
+<p>Example:</p>
 
 <pre><code># sent_id = 1
 # text = They buy and sell books. 
-1    They     they    PRON    PRP    Case=Nom|Number=Plur               2    nsubj    2:nsubj|4:nsubj
-2    buy      buy     VERB    VBP    Number=Plur|Person=3|Tense=Pres    0    root     0:root
-3    and      and     CONJ    CC     _                                  4    cc       4:cc
-4    sell     sell    VERB    VBP    Number=Plur|Person=3|Tense=Pres    2    conj     0:root|2:conj
-5    books    book    NOUN    NNS    Number=Plur                        2    obj      2:obj|4:obj
-6    .        .       PUNCT   .      _                                  2    punct    2:punct
+1   They     they    PRON    PRP    Case=Nom|Number=Plur               2   nsubj   2:nsubj|4:nsubj   _
+2   buy      buy     VERB    VBP    Number=Plur|Person=3|Tense=Pres    0   root    0:root            _
+3   and      and     CONJ    CC     _                                  4   cc      4:cc              _
+4   sell     sell    VERB    VBP    Number=Plur|Person=3|Tense=Pres    2   conj    0:root|2:conj     _
+5   books    book    NOUN    NNS    Number=Plur                        2   obj     2:obj|4:obj       SpaceAfter=No
+6   .        .       PUNCT   .      _                                  2   punct   2:punct           _
 
 # sent_id = 2
-# text = I haven't a clue.
-1     I         I      PRON    PRP   Case=Nom|Number=Sing|Person=1     2   nsubj   _   _
-2-3   haven't   _      _       _     _                                 _   _       _   _
-2     have      have   VERB    VBP    Number=Sing|Person=1|Tense=Pres  0   root    _   _
-3     not       not    PART    RB    Polarity=Neg                      2   advmod     _   _
-4     a         a      DET     DT    Definite=Ind|PronType=Art         4   det     _   _
-5     clue      clue   NOUN    NN    Number=Sing                       2   oobj    _   SpaceAfter=No
-6     .         .      PUNCT   .     _                                 2   punct   _   _
+# text = I have no clue.
+1   I       I       PRON    PRP   Case=Nom|Number=Sing|Person=1     2   nsubj   _   _
+2   have    have    VERB    VBP   Number=Sing|Person=1|Tense=Pres   0   root    _   _
+3   no      no      DET     DT    PronType=Neg                      4   det     _   _
+4   clue    clue    NOUN    NN    Number=Sing                       2   obj     _   SpaceAfter=No
+5   .       .       PUNCT   .     _                                 2   punct   _   _
 </code></pre>
+
+<h1 id="paragraph-and-document-boundaries">Paragraph and Document Boundaries</h1>
+
+<p>In addition, we define sentence-level and token-level comments (attributes) that mark paragraph and document boundaries.
+This kind of information is optional and sometimes it is not available (original text is lost, sentences have been shuffled etc.)
+but if it is available, it should be encoded in a unified way. Document and paragraph boundaries can be useful for various
+applications, including but not limited to sentence segmentation.</p>
+
+<p>Note that while document boundaries always occur between sentences, paragraph boundaries may under certain circumstances occur
+in the middle of a sentence (bulleted list items, verse etc.) Document and/or paragraph boundaries are encoded as follows:</p>
+
+<ul>
+  <li>The first sentence of a new document contains a comment that says <code># newdoc</code>, which can be optionally followed by a document id (<code>newdoc id = wsj2012-01-05</code>). It is not necessary that the first sentence of a CoNLL-U file has the <code>newdoc</code> comment (e.g. if the document is split between development and test data).</li>
+  <li>When a paragraph starts at sentence boundary, the first sentence of the paragraph contains a comment that says <code># newpar</code>, which can be optionally followed by a paragraph id (<code>newpar id = wsj2012-01-05-p1</code>).</li>
+  <li>When a new paragraph starts between two tokens of a sentence, the first token of the new paragraph contains the attribute <code>NewPar=Yes</code> in the MISC column. If it is a multi-word token, the attribute will appear in the line of the multi-word token, not in the line of its first syntactic word.</li>
+</ul>
+
+<p>Note that the annotation defined in this section is observed by the <a href="https://github.com/UniversalDependencies/tools/blob/master/conllu_to_text.pl">conllu_to_text.pl</a> script from the tools repository.</p>
+
+<p>Example:</p>
+
+<pre><code># newdoc id = mf920901-001
+# newpar id = mf920901-001-p1
+# sent_id = mf920901-001-p1s1A
+# text = Slovenská ústava: pro i proti
+# text_en = Slovak constitution: pros and cons
+1   Slovenská   slovenský   ADJ     AAFS1----1A---- Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos 2 amod _ _
+2   ústava      ústava      NOUN    NNFS1-----A---- Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos 0 root _ SpaceAfter=No
+3   :           :           PUNCT   Z:------------- _          2       punct   _       _
+4   pro         pro         ADP     RR--4---------- Case=Acc   2       appos   _       LId=pro-1
+5   i           i           CCONJ   J^------------- _          6       cc      _       LId=i-1
+6   proti       proti       ADP     RR--3---------- Case=Dat   4       conj    _       LId=proti-1
+</code></pre>
+
 
 
       </div>

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-fi">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-fi">home</a></span>
 
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_fi-overview/syntax.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-overview/syntax.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -69,7 +86,7 @@ following UD dependency relations are not applied in UD Finnish:</p>
 <p>Finnish existential clauses do not contain an expletive there, nor do
 passive clauses have a subject. What is considered the passive subject
 in e.g. English is the direct object in Finnish, and thus the
-corresponding type, <a href=""><code>dobj</code></a> is used instead, or in the case of a
+corresponding type, <a href=""><code>obj</code></a> is used instead, or in the case of a
 clause acting as the direct object, it is marked as a clausal
 complement (<a href=""><code>ccomp</code></a>). Finally, indirect objects do not occur in
 Finnish, as regardless of word order, the corresponding argument is
@@ -251,7 +268,7 @@ to (nearly) corresponding UD Finnish labels. (See also <a href="https://github.c
 </table>
 
 <p>The TDT dependency type <code>rel</code> is not mapped to any single UD type.
-Instead we use any normal dependency relation to catch the syntactic function of the relativizer (for example <code>nsubj</code> or <code>dobj</code>).</p>
+Instead we use any normal dependency relation to catch the syntactic function of the relativizer (for example <code>nsubj</code> or <code>obj</code>).</p>
 
 <p>Additionally, the following dependency relations cannot be directly
 created by mapping existing TDT annotations and may thus not occur in

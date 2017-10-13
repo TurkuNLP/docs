@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-bg">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/bg/dep">bg/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_bg-dep/csubj.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-bg">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/bg/dep">bg/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-dep/csubj.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -81,14 +98,15 @@ csubj(Coming-it-is, REFL.meet-each-other)
 
 <h2 id="treebank-statistics-udbulgarian">Treebank Statistics (UD_Bulgarian)</h2>
 
-<p>This relation is universal.</p>
+<p>This relation is universal.
+There are 1 language-specific subtypes of <code>csubj</code>: <a href="">csubj:pass</a>.</p>
 
-<p>415 nodes (0%) are attached to their parents as <code>csubj</code>.</p>
+<p>328 nodes (0%) are attached to their parents as <code>csubj</code>.</p>
 
-<p>344 instances of <code>csubj</code> (83%) are left-to-right (parent precedes child).
-Average distance between parent and child is 5.75903614457831.</p>
+<p>259 instances of <code>csubj</code> (79%) are left-to-right (parent precedes child).
+Average distance between parent and child is 5.85060975609756.</p>
 
-<p>The following 18 pairs of parts of speech are connected with <code>csubj</code>: <a href="">bg-pos/VERB</a>-<a href="">bg-pos/VERB</a> (215; 52% instances), <a href="">bg-pos/ADV</a>-<a href="">bg-pos/VERB</a> (110; 27% instances), <a href="">bg-pos/NOUN</a>-<a href="">bg-pos/VERB</a> (43; 10% instances), <a href="">bg-pos/ADJ</a>-<a href="">bg-pos/VERB</a> (13; 3% instances), <a href="">bg-pos/VERB</a>-<a href="">bg-pos/ADJ</a> (8; 2% instances), <a href="">bg-pos/VERB</a>-<a href="">bg-pos/NOUN</a> (7; 2% instances), <a href="">bg-pos/VERB</a>-<a href="">bg-pos/ADV</a> (4; 1% instances), <a href="">bg-pos/ADJ</a>-<a href="">bg-pos/ADJ</a> (3; 1% instances), <a href="">bg-pos/PRON</a>-<a href="">bg-pos/VERB</a> (3; 1% instances), <a href="">bg-pos/ADJ</a>-<a href="">bg-pos/ADV</a> (1; 0% instances), <a href="">bg-pos/ADJ</a>-<a href="">bg-pos/NOUN</a> (1; 0% instances), <a href="">bg-pos/ADV</a>-<a href="">bg-pos/ADJ</a> (1; 0% instances), <a href="">bg-pos/ADV</a>-<a href="">bg-pos/ADV</a> (1; 0% instances), <a href="">bg-pos/ADV</a>-<a href="">bg-pos/NOUN</a> (1; 0% instances), <a href="">bg-pos/ADV</a>-<a href="">bg-pos/PRON</a> (1; 0% instances), <a href="">bg-pos/DET</a>-<a href="">bg-pos/VERB</a> (1; 0% instances), <a href="">bg-pos/NOUN</a>-<a href="">bg-pos/ADJ</a> (1; 0% instances), <a href="">bg-pos/NOUN</a>-<a href="">bg-pos/NOUN</a> (1; 0% instances).</p>
+<p>The following 19 pairs of parts of speech are connected with <code>csubj</code>: <a href="">bg-pos/VERB</a>-<a href="">bg-pos/VERB</a> (158; 48% instances), <a href="">bg-pos/ADV</a>-<a href="">bg-pos/VERB</a> (110; 34% instances), <a href="">bg-pos/NOUN</a>-<a href="">bg-pos/VERB</a> (20; 6% instances), <a href="">bg-pos/VERB</a>-<a href="">bg-pos/NOUN</a> (12; 4% instances), <a href="">bg-pos/VERB</a>-<a href="">bg-pos/ADJ</a> (8; 2% instances), <a href="">bg-pos/ADV</a>-<a href="">bg-pos/ADJ</a> (3; 1% instances), <a href="">bg-pos/NOUN</a>-<a href="">bg-pos/NOUN</a> (3; 1% instances), <a href="">bg-pos/VERB</a>-<a href="">bg-pos/ADV</a> (3; 1% instances), <a href="">bg-pos/ADJ</a>-<a href="">bg-pos/ADJ</a> (1; 0% instances), <a href="">bg-pos/ADV</a>-<a href="">bg-pos/ADV</a> (1; 0% instances), <a href="">bg-pos/ADV</a>-<a href="">bg-pos/DET</a> (1; 0% instances), <a href="">bg-pos/ADV</a>-<a href="">bg-pos/NOUN</a> (1; 0% instances), <a href="">bg-pos/ADV</a>-<a href="">bg-pos/NUM</a> (1; 0% instances), <a href="">bg-pos/ADV</a>-<a href="">bg-pos/PRON</a> (1; 0% instances), <a href="">bg-pos/DET</a>-<a href="">bg-pos/VERB</a> (1; 0% instances), <a href="">bg-pos/NOUN</a>-<a href="">bg-pos/ADJ</a> (1; 0% instances), <a href="">bg-pos/PRON</a>-<a href="">bg-pos/VERB</a> (1; 0% instances), <a href="">bg-pos/VERB</a>-<a href="">bg-pos/NUM</a> (1; 0% instances), <a href="">bg-pos/VERB</a>-<a href="">bg-pos/PROPN</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 6	bgColor:blue
 # visual-style 6	fgColor:white
@@ -99,8 +117,8 @@ Average distance between parent and child is 5.75903614457831.</p>
 2	заека	заек	NOUN	Ncmsh	Definite=Def|Gender=Masc|Number=Sing	4	iobj	_	_
 3	му	аз	PRON	Ppetds3m	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	expl	_	_
 4	омръзна	омръзне-ми	VERB	Vnpif-o3s	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
-5	да	да	PART	Tx	_	6	aux	_	_
-6	студува	студувам	VERB	Vpiif-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	csubj	_	_
+5	да	да	AUX	Tx	_	6	aux	_	_
+6	студува	студувам	VERB	Vpiif-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	csubj	_	SpaceAfter=No
 7	.	.	PUNCT	punct	_	4	punct	_	_
 
 </code></pre>
@@ -110,35 +128,38 @@ Average distance between parent and child is 5.75903614457831.</p>
 # visual-style 4	bgColor:blue
 # visual-style 4	fgColor:white
 # visual-style 4 7 csubj	color:blue
-1	Не	не	INTJ	Tn	_	4	neg	_	_
-2	е	съм	VERB	Vxitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
-3	много	много	ADV	Md-pi	Definite=Ind|Number=Plur|NumType=Card	4	advmod	_	_
+1	Не	не	PART	Tn	Polarity=Neg	4	advmod	_	_
+2	е	съм	AUX	Vxitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	много	много	ADV	Md-pi	Definite=Ind|Degree=Pos|Number=Plur|NumType=Card	4	advmod	_	_
 4	трудно	трудно	ADV	Dm	Degree=Pos	0	root	_	_
-5	да	да	PART	Tx	_	7	aux	_	_
+5	да	да	AUX	Tx	_	7	aux	_	_
 6	се	се	PRON	Ppxta	Case=Acc|PronType=Prs|Reflex=Yes	7	expl	_	_
 7	създаде	създам	VERB	Vpptf-r3s	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	csubj	_	_
 8	такъв	такъв	DET	Pda--s-m	Gender=Masc|Number=Sing|PronType=Dem	9	det	_	_
-9	модел	модел	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	7	nsubjpass	_	_
+9	модел	модел	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	7	nsubj:pass	_	_
 10	за	за	ADP	R	_	11	case	_	_
-11	България	българия	PROPN	Npfsi	Definite=Ind|Gender=Fem|Number=Sing	9	nmod	_	_
+11	България	българия	PROPN	Npfsi	Definite=Ind|Gender=Fem|Number=Sing	9	nmod	_	SpaceAfter=No
 12	.	.	PUNCT	punct	_	4	punct	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 8	bgColor:blue
-# visual-style 8	fgColor:white
-# visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 2 8 csubj	color:blue
-1	Първото	пръв	ADJ	Monsd	Definite=Def|Gender=Neut|Number=Sing|NumType=Ord	2	amod	_	_
-2	впечатление	впечатление	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	0	root	_	_
-3	е	съм	VERB	Vxitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
-4	,	,	PUNCT	punct	_	8	punct	_	_
-5	че	че	SCONJ	Cs	_	8	mark	_	_
-6	земята	земя	NOUN	Ncfsd	Definite=Def|Gender=Fem|Number=Sing	8	nsubj	_	_
-7	се	се	PRON	Ppxta	Case=Acc|PronType=Prs|Reflex=Yes	8	expl	_	_
-8	разтресла	разтреса-(се)	VERB	Vpptcao-sfi	Aspect=Perf|Definite=Ind|Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	2	csubj	_	_
-9	.	.	PUNCT	punct	_	2	punct	_	_
+<pre><code class="language-conllu"># visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 1 5 csubj	color:blue
+1	Срамота	срамота	NOUN	Ncfsi	Definite=Ind|Gender=Fem|Number=Sing	0	root	_	_
+2	е	съм	AUX	Vxitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	да	да	AUX	Tx	_	5	aux	_	_
+4	се	се	PRON	Ppxta	Case=Acc|PronType=Prs|Reflex=Yes	5	expl	_	_
+5	появявате	появявам-се	VERB	Vpiif-r2p	Aspect=Imp|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	1	csubj	_	_
+6	в	в	ADP	R	_	9	case	_	_
+7	небрежен	небрежен	ADJ	Amsi	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	9	amod	_	_
+8	външен	външен	ADJ	Amsi	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	9	amod	_	_
+9	вид	вид	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	5	obl	_	_
+10	пред	пред	ADP	R	_	11	case	_	_
+11	началника	началник	NOUN	Ncmsh	Definite=Def|Gender=Masc|Number=Sing	5	obl	_	SpaceAfter=No
+12	.	.	PUNCT	punct	_	1	punct	_	_
 
 </code></pre>
 
@@ -150,9 +171,25 @@ Average distance between parent and child is 5.75903614457831.</p>
 
 csubj in other languages:
 
+[<a href="../../am/dep/csubj.html">am</a>]
+
+[<a href="../../ar/dep/csubj.html">ar</a>]
+
 [<a href="../../bg/dep/csubj.html">bg</a>]
 
+[<a href="../../bxr/dep/csubj.html">bxr</a>]
+
+[<a href="../../ca/dep/csubj.html">ca</a>]
+
+[<a href="../../ckb/dep/csubj.html">ckb</a>]
+
+[<a href="../../cop/dep/csubj.html">cop</a>]
+
 [<a href="../../cs/dep/csubj.html">cs</a>]
+
+[<a href="../../cu/dep/csubj.html">cu</a>]
+
+[<a href="../../da/dep/csubj.html">da</a>]
 
 [<a href="../../de/dep/csubj.html">de</a>]
 
@@ -162,29 +199,99 @@ csubj in other languages:
 
 [<a href="../../es/dep/csubj.html">es</a>]
 
+[<a href="../../et/dep/csubj.html">et</a>]
+
 [<a href="../../eu/dep/csubj.html">eu</a>]
 
 [<a href="../../fa/dep/csubj.html">fa</a>]
 
 [<a href="../../fi/dep/csubj.html">fi</a>]
 
+[<a href="../../fo/dep/csubj.html">fo</a>]
+
 [<a href="../../fr/dep/csubj.html">fr</a>]
 
 [<a href="../../ga/dep/csubj.html">ga</a>]
 
+[<a href="../../gl/dep/csubj.html">gl</a>]
+
+[<a href="../../got/dep/csubj.html">got</a>]
+
+[<a href="../../grc/dep/csubj.html">grc</a>]
+
 [<a href="../../he/dep/csubj.html">he</a>]
 
+[<a href="../../hi/dep/csubj.html">hi</a>]
+
+[<a href="../../hr/dep/csubj.html">hr</a>]
+
 [<a href="../../hu/dep/csubj.html">hu</a>]
+
+[<a href="../../id/dep/csubj.html">id</a>]
 
 [<a href="../../it/dep/csubj.html">it</a>]
 
 [<a href="../../ja/dep/csubj.html">ja</a>]
 
+[<a href="../../kk/dep/csubj.html">kk</a>]
+
+[<a href="../../kmr/dep/csubj.html">kmr</a>]
+
 [<a href="../../ko/dep/csubj.html">ko</a>]
+
+[<a href="../../la/dep/csubj.html">la</a>]
+
+[<a href="../../lv/dep/csubj.html">lv</a>]
+
+[<a href="../../mr/dep/csubj.html">mr</a>]
+
+[<a href="../../nl/dep/csubj.html">nl</a>]
+
+[<a href="../../no/dep/csubj.html">no</a>]
+
+[<a href="../../pl/dep/csubj.html">pl</a>]
+
+[<a href="../../pt/dep/csubj.html">pt</a>]
+
+[<a href="../../ro/dep/csubj.html">ro</a>]
+
+[<a href="../../ru/dep/csubj.html">ru</a>]
+
+[<a href="../../sa/dep/csubj.html">sa</a>]
+
+[<a href="../../sk/dep/csubj.html">sk</a>]
+
+[<a href="../../sla/dep/csubj.html">sla</a>]
+
+[<a href="../../sl/dep/csubj.html">sl</a>]
+
+[<a href="../../so/dep/csubj.html">so</a>]
+
+[<a href="../../sr/dep/csubj.html">sr</a>]
 
 [<a href="../../sv/dep/csubj.html">sv</a>]
 
+[<a href="../../swl/dep/csubj.html">swl</a>]
+
+[<a href="../../ta/dep/csubj.html">ta</a>]
+
+[<a href="../../tr/dep/csubj.html">tr</a>]
+
 [<a href="../../u/dep/csubj.html">u</a>]
+
+[<a href="../../ug/dep/csubj.html">ug</a>]
+
+[<a href="../../uk/dep/csubj.html">uk</a>]
+
+[<a href="../../ur/dep/csubj.html">ur</a>]
+
+[<a href="../../urj/dep/csubj.html">urj</a>]
+
+[<a href="../../vi/dep/csubj.html">vi</a>]
+
+[<a href="../../yue/dep/csubj.html">yue</a>]
+
+[<a href="../../zh/dep/csubj.html">zh</a>]
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ru">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ru">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -45,211 +62,266 @@
 
           <h1 id="dependencies">Dependencies</h1>
 
-<p>Note: <i>nmod</i>, <i>neg</i>, and <i>punct</i> appear
-in two places.</p>
-
-<table class="typeindex">
-  <tr>
-    <td>
-
-      <table class="category">
-	<tr><td colspan="3"><strong>Core dependents of clausal predicates</strong></td></tr>
-	<tr>
-	  <td><i>Nominal dep</i></td>
-	  <td><i>Predicate dep</i></td>
-	</tr>
-	<tr>
-	  <td><a>nsubj</a></td>
-	  <td><a>csubj</a></td>
-	</tr>
-	<tr>
-	  <td><a>nsubjpass</a></td>
-	  <td><a>csubjpass</a></td>
-	</tr>
-	<tr>
-	  <td><a>dobj</a></td>
-	  <td><a>ccomp</a></td>
-	  <td><a>xcomp</a></td>
-	</tr>
-	<tr>
-	  <td><a>iobj</a></td>
-	</tr>
-      </table>
-
-    </td>
-    <td>
-
-      <table class="category">
-	<tr><td colspan="3"><strong>Non-core dependents of clausal predicates</strong></td></tr>
-	<tr>
-	  <td><i>Nominal dep</i></td>
-	  <td><i>Predicate dep</i></td>
-	  <td><i>Modifier word</i></td>
-	</tr>
-	<tr>
-	  <td><a>nmod</a></td>
-	  <td><a>advcl</a></td>
-	  <td><a>advmod</a></td>
-	</tr>
-	<tr>
-	  <td>&nbsp;</td>
-	  <td>&nbsp;</td>
-	  <td><a>neg</a></td>
-	</tr>
-	<tr>
-	  <td>&nbsp;</td>
-	  <td>&nbsp;</td>
-	  <td>&nbsp;</td>
-	</tr>
-      </table>
-
-    </td>
-    <td>
-
-      <table class="category">
-	<tr><td colspan="3"><strong>Special clausal dependents</strong></td></tr>
-	<tr>
-	  <td><i>Nominal dep</i></td>
-	  <td><i>Auxiliary</i></td>
-	  <td><i>Other</i></td>
-	</tr>
-	<tr>
-	  <td><a>vocative</a></td>
-	  <td><a>aux</a></td>
-	  <td><a>mark</a></td>
-	</tr>
-	<tr>
-	  <td><a>discourse</a></td>
-	  <td><a>auxpass</a></td>
-	  <td><a>punct</a></td>
-	</tr>
-	<tr>
-	  <td><a>expl</a></td>
-	  <td><a>cop</a></td>
-	</tr>
-	<tr>
-	  <td>&nbsp;</td>
-	  <td>&nbsp;</td>
-	</tr>
-      </table>
-
-    </td>
+<table class="typeindex" border="1">
+  <tr style="background-color:cornflowerblue">
+      <td>	
+	<table class="category">
+	  <tr><td><strong></strong></td></tr>
+	</table>
+      </td>
+      <td>	
+	<table class="category">
+	  <tr><td><strong>Nominals</strong></td></tr>
+	</table>
+      </td>
+      <td>	
+	<table class="category">
+	  <tr><td><strong>Clauses</strong></td></tr>
+	</table>
+      </td>
+      <td>	
+	<table class="category">
+	  <tr><td><strong>Modifier words</strong></td></tr>
+	</table>
+      </td>
+      <td>	
+	<table class="category">
+	  <tr><td><strong>Function Words</strong></td></tr>
+	</table>
+      </td>
   </tr>
   <tr>
-    <td>
-
-      <table class="category">
-	<tr><td colspan="3"><strong>Noun dependents</strong></td></tr>
+      <td style="background-color:darkseagreen">
+	<table class="category">
+	  <tr><td><strong>Core arguments</strong></td></tr>
+	</table>
+      </td>
+      <td>
+	<table class="category">
+	  <tr>
+	    <td><a>nsubj</a></td>
+	  </tr>
+	  <tr>
+	    <td><a>nsubj:pass</a></td>
+	  </tr>
+	  <tr>
+	    <td><a>obj</a></td>
+	  </tr>
+	  <tr>
+	    <td><a>iobj</a></td>
+	  </tr>
+        </table>
+      </td>
+      <td>
+	<table class="category">
+	  <tr>
+	    <td><a>csubj</a></td>
+	  </tr>
+	  <tr>
+	    <td><a>csubj:pass</a></td>
+	  </tr>
+	  <tr>
+	    <td><a>ccomp</a></td>
+	  </tr>
+	  <tr>
+	    <td><a>xcomp</a></td>
+	  </tr>
+        </table>
+      </td>
+	  <td></td><td></td>
+  </tr>
+  <tr>
+      <td style="background-color:darkseagreen">
+	<table class="category">
+	  <tr><td><strong>Non-core dependents</strong></td></tr>
+	</table>
+      </td>
+      <td>
+	<table class="category">
+	  <tr>
+	    <td><a>obl</a></td>
+	  </tr>
+	  <tr>
+	    <td><a>obl:agent</a></td>
+	  </tr>
+	  <tr>
+	    <td><a>vocative</a></td>
+	  </tr>
+	  <tr>
+	    <td><a>expl</a></td>
+	  </tr>
+	  <tr>
+	    <td><a>dislocated</a></td>
+	  </tr>
+        </table>
+      </td>
+      <td>
+	<table class="category">
+	  <tr>
+	    <td><a>advcl</a></td>
+	  </tr>
+        </table>
+      </td>
+      <td>
+	<table class="category">
+	  <tr>
+	    <td><a>advmod</a></td>
+	  </tr>
+	  <tr>
+	    <td><a>discourse</a></td>
+	  </tr>
+        </table>
+      </td>
+      <td>
+	<table class="category">
+	  <tr>
+	    <td><a>aux</a></td>
+	  </tr>
+	  <tr>
+	    <td><a>aux:pass</a></td>
+	  </tr>
+	  <tr>
+	    <td><a>cop</a></td>
+	  </tr>
+	  <tr>
+	    <td><a>mark</a></td>
+	  </tr>
+        </table>
+      </td>
+  </tr>
+  <tr>
+      <td style="background-color:darkseagreen">
+	<table class="category">
+	  <tr><td><strong>Nominal dependents</strong></td></tr>
+	</table>
+      </td>
+      <td>
+	<table class="category">
+	  <tr>
+	    <td><a>nmod</a></td>
+	  </tr>
+	  <tr>
+	    <td><a>appos</a></td>
+	  </tr>
+	  <tr>
+	    <td><a>nummod</a></td>
+	  </tr>
+	  <tr>
+	    <td><a>nummod:gov</a></td>
+	  </tr>
+        </table>
+      </td>
+      <td>
+	<table class="category">
+	  <tr>
+	    <td><a>acl</a></td>
+	  </tr>
+	  <tr>
+	    <td><a>acl:relcl</a></td>
+	  </tr>
+        </table>
+      </td>
+      <td>
+	<table class="category">
+	  <tr>
+	    <td><a>amod</a></td>
+	  </tr>
+        </table>
+      </td>
+      <td>
+	<table class="category">
+	  <tr>
+	    <td><a>det</a></td>
+	  </tr>
+	  <tr>
+	    <td><a>case</a></td>
+	  </tr>
+        </table>
+      </td>
+  </tr>
+  <tr style="background-color:cornflowerblue">	
+      <td>	
+	<table class="category">
+	  <tr><td><strong>Coordination</strong></td></tr>
+	</table>
+      </td>
+      <td>	
+	<table class="category">
+	  <tr><td><strong>MWE</strong></td></tr>
+	</table>
+      </td>
+      <td>	
+	<table class="category">
+	  <tr><td><strong>Loose</strong></td></tr>
+	</table>
+      </td>
+      <td>	
+	<table class="category">
+	  <tr><td><strong>Special</strong></td></tr>
+	</table>
+      </td>
+      <td>	
+	<table class="category">
+	  <tr><td><strong>Other</strong></td></tr>
+	</table>
+      </td>
+  </tr>
+  <tr>
+      <td>
+        <table class="category">
+	  <tr>
+	    <td><a>conj</a></td>
+	  </tr>
+	  <tr>
+	    <td><a>cc</a></td>
+	  </tr>
+        </table>
+      </td>
+      <td>
+        <table class="category">
 	<tr>
-	  <td><i>Nominal dep</i></td>
-	  <td><i>Predicate dep</i></td>
-	  <td><i>Modifier word</i></td>
+	  <td><a>fixed</a></td>
 	</tr>
 	<tr>
-	  <td><a>nmod</a></td>
-	  <td><a>acl</a></td>
-	  <td><a>amod</a></td>
+	  <td><a>flat</a></td>
 	</tr>
-	<tr>
-	  <td><a>appos</a></td>
-	  <td>&nbsp;</td>
-	  <td><a>det</a></td>
-	</tr>
-	<tr>
-	  <td>&nbsp;</td>
-	  <td>&nbsp;</td>
-	  <td>↳<a>det:numgov</a></td>
-	</tr>
-	<tr>
-	  <td>&nbsp;</td>
-	  <td>&nbsp;</td>
-	  <td>↳<a>det:nummod</a></td>
-	</tr>
-	<tr>
-	  <td>&nbsp;</td>
-	  <td>&nbsp;</td>
-	  <td><a>nummod</a></td>
-	</tr>
-	<tr>
-	  <td>&nbsp;</td>
-	  <td>&nbsp;</td>
-	  <td>↳<a>nummod:gov</a></td>
-	</tr>
-	<tr>
-	  <td>&nbsp;</td>
-	  <td>&nbsp;</td>
-	  <td><a>neg</a></td>
-	</tr>
-      </table>
-
-    </td>
-    <td>
-
-      <table class="category">
-	<tr><td colspan="3"><strong>Compounding and unanalyzed</strong></td></tr>
 	<tr>
 	  <td><a>compound</a></td>
-	  <td><a>mwe</a></td>
+	</tr>
+      </table>
+    </td>
+    <td>
+      <table class="category">
+	<tr>
+	  <td><a>list</a></td>
+	</tr>
+	<tr>
+	  <td><a>parataxis</a></td>
+	</tr>
+      </table>
+    </td>
+    <td>
+      <table class="category">
+	<tr>
+	  <td><a>orphan</a></td>
+	</tr>
+	<tr>
 	  <td><a>goeswith</a></td>
 	</tr>
 	<tr>
-	  <td><a>name</a></td>
-	  <td><a>foreign</a></td>
-	  <td></td>
+	  <td><a>reparandum</a></td>
 	</tr>
       </table>
-
     </td>
     <td>
-
       <table class="category">
-	<tr><td colspan="3"><strong>Coordination</strong></td></tr>
 	<tr>
-	  <td><a>conj</a></td>
-	  <td><a>cc</a></td>
 	  <td><a>punct</a></td>
-	</tr>
-      </table>
-
-    </td>
-  </tr>
-  <tr>
-    <td>
-
-      <table class="category">
-	<tr><td colspan="3"><strong>Case-marking, prepositions, possessive</strong></td></tr>
-	<tr>
-	  <td><a>case</a></td>
-	</tr>
-      </table>
-
-    </td>
-    <td>
-
-      <table class="category">
-	<tr><td colspan="3"><strong>Loose joining relations</strong></td></tr>
-	<tr>
-	  <td><a>list</a></td>
-	  <td><a>parataxis</a></td>
-	  <td><a>remnant</a></td>
-	</tr>
-	<tr>
-	  <td><strike>dislocated</strike></td>
-	  <td></td><td><a>reparandum</a></td>
-	</tr>
-      </table>
-
-    </td>
-    <td>
-
-      <table class="category">
-	<tr><td colspan="3"><strong>Other</strong></td></tr>
-	<tr>
-	  <td><i>Sentence head</i></td>
-	  <td colspan="2"><i>Unspecified dependency</i></td>
 	</tr>
 	<tr>
 	  <td><a>root</a></td>
+	</tr>
+	<tr>
 	  <td><a>dep</a></td>
 	</tr>
       </table>
@@ -288,15 +360,34 @@ acl(жену, обнаженной)
 acl(wife, naked)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/acl.md" target="#">edit acl</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/acl.md" target="#">edit acl</a></p>
 
 <p><a id="al-ru-dep/acl:relcl" class="al-dest"></a></p>
-<h2><code>acl:relcl</code>: acl:relcl</h2>
+<h2><code>acl:relcl</code>: relative clause modifier</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>acl:relcl</code>.</p>
+<p>The <code>acl:relcl</code> relation is used for relative clauses modifying
+a nominal. The relation points from the head of the nominal to the
+head of the relative clause.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/acl-relcl.md" target="#">edit acl:relcl</a></p>
+<pre><code class="language-sdparse">Я увидела мужчину , который любит тебя \n I saw the man who loves you
+acl:relcl(мужчину, любит)
+acl:relcl(man, loves)
+nsubj(любит, который)
+nsubj(loves, who)
+obj(любит, тебя)
+obj(loves, you)
+</code></pre>
+
+<pre><code class="language-sdparse">Я увидел мужчину , которого ты любишь  \n I saw the man who you love
+acl:relcl(мужчину, любишь)
+acl:relcl(man, love)
+nsubj(любишь, ты)
+nsubj(love, you)
+obj(любишь, которого)
+obj(love, who)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/acl-relcl.md" target="#">edit acl:relcl</a></p>
 
 <p><a id="al-ru-dep/advcl" class="al-dest"></a></p>
 <h2><code>advcl</code>: adverbial clause modifier</h2>
@@ -315,7 +406,7 @@ advcl(спешил, прийти)
 advcl(rushed, come)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/advcl.md" target="#">edit advcl</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/advcl.md" target="#">edit advcl</a></p>
 
 <p><a id="al-ru-dep/advmod" class="al-dest"></a></p>
 <h2><code>advmod</code>: adverbial modifier</h2>
@@ -337,7 +428,7 @@ advmod(часто, менее)
 advmod(often, less)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/advmod.md" target="#">edit advmod</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/advmod.md" target="#">edit advmod</a></p>
 
 <p><a id="al-ru-dep/amod" class="al-dest"></a></p>
 <h2><code>amod</code>: adjectival modifier</h2>
@@ -355,21 +446,19 @@ amod(impression, First)
 nsubj(хорошим, впечатление)
 nsubj(positive, impression)
 </code></pre>
+<p>Some pronominal modifiers are also considered as <code>amod</code>
+Exception: if the modifying adjectival word is article-equivalent (i.e. tagged <a href="">ru-pos/DET</a>), the relation is <a href="">det</a> instead of <code>amod</code>.</p>
 
-<p>Exception: if the modifying adjectival word is pronominal (i.e. tagged <a href="">ru-pos/DET</a>), the relation is <a href="">det</a> instead of <code>amod</code>.</p>
-
-<pre><code class="language-sdparse">все эти ваши новые группы \n all these your new groups
+<pre><code class="language-sdparse">эти ваши новые группы \n these your new groups
 amod(группы, новые)
 amod(groups, new)
-det(группы, ваши)
-det(groups, your)
+amod(группы, ваши)
+amod(groups, your)
 det(группы, эти)
 det(groups, these)
-det(группы, все)
-det(groups, all)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/amod.md" target="#">edit amod</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/amod.md" target="#">edit amod</a></p>
 
 <p><a id="al-ru-dep/appos" class="al-dest"></a></p>
 <h2><code>appos</code>: appositional modifier</h2>
@@ -417,7 +506,7 @@ appos(тел, 8(495)-000-11-22-7)
 appos(e-mail, petrov@mail.ru)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/appos.md" target="#">edit appos</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/appos.md" target="#">edit appos</a></p>
 
 <p><a id="al-ru-dep/aux" class="al-dest"></a></p>
 <h2><code>aux</code>: auxiliary</h2>
@@ -443,29 +532,29 @@ aux(пропустил, бы-8)
 aux(have-missed, would)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/aux_.md" target="#">edit aux</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/aux_.md" target="#">edit aux</a></p>
 
-<p><a id="al-ru-dep/auxpass" class="al-dest"></a></p>
-<h2><code>auxpass</code>: passive auxiliary</h2>
+<p><a id="al-ru-dep/aux:pass" class="al-dest"></a></p>
+<h2><code>aux:pass</code>: passive auxiliary</h2>
 
 <p>A passive auxiliary of a clause is a form of the <a href="cs-pos/AUX">auxiliary verb</a> <em>быть</em> “to be” used to construct the periphrastic passive voice (in the past or future tense, in the infinitive, imperative or conditional mood).</p>
 
 <pre><code class="language-sdparse">Кеннеди был убит . \n Kennedy was killed .
-auxpass(убит, был)
-auxpass(killed, was)
+aux:pass(убит, был)
+aux:pass(killed, was)
 </code></pre>
 
 <pre><code class="language-sdparse">Кеннеди будет убит . \n Kennedy will-be killed .
-auxpass(убит, будет)
-auxpass(killed, will-be)
+aux:pass(убит, будет)
+aux:pass(killed, will-be)
 </code></pre>
 
 <pre><code class="language-sdparse">Кеннеди не знал , что ему суждено быть убитым . \n Kennedy did-not-anticipate that his fate is to-be killed .
-auxpass(убитым, быть)
-auxpass(killed, to-be)
+aux:pass(убитым, быть)
+aux:pass(killed, to-be)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/auxpass.md" target="#">edit auxpass</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/aux-pass.md" target="#">edit aux:pass</a></p>
 
 <p><a id="al-ru-dep/case" class="al-dest"></a></p>
 <h2><code>case</code>: case marking</h2>
@@ -484,7 +573,7 @@ case(событии.Loc, o)
 case(the-event, about)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/case.md" target="#">edit case</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/case.md" target="#">edit case</a></p>
 
 <p><a id="al-ru-dep/cc" class="al-dest"></a></p>
 <h2><code>cc</code>: coordinating conjunction</h2>
@@ -529,15 +618,23 @@ punct(apples, ,-17)
 punct(apples, ,-19)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/cc.md" target="#">edit cc</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/cc.md" target="#">edit cc</a></p>
 
 <p><a id="al-ru-dep/cc:preconj" class="al-dest"></a></p>
 <h2><code>cc:preconj</code>: cc:preconj</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>cc:preconj</code>.</p>
+<p>NOTE: This relation is not in use in UD 2.0+. The universal relation <em>cc</em> is used instead since all cc’s are now attached to the next conjunct to the right.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/cc-preconj.md" target="#">edit cc:preconj</a></p>
+<p>A preconjunct is the relation between the head of an NP and a word
+that appears at the beginning bracketing a conjunction (and puts
+emphasis on it), such as <em>either</em>, <em>both</em>, <em>neither</em>, <em>and</em>, <em>but</em>).</p>
+
+<pre><code class="language-sdparse">Но никто не знал ответ . \n But no-one knew the answer .
+cc:preconj(никто, Но)
+cc:preconj(no-one, But)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/cc-preconj.md" target="#">edit cc:preconj</a></p>
 
 <p><a id="al-ru-dep/ccomp" class="al-dest"></a></p>
 <h2><code>ccomp</code>: clausal complement</h2>
@@ -571,7 +668,7 @@ sentence to mean that the general will not be leaving, in the second
 sentence it is clear that the subject of <strong>writing</strong> can only be <strong>we</strong>. This is
 what distinguishes <code>ccomp</code> and <code>xcomp</code>.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/ccomp.md" target="#">edit ccomp</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/ccomp.md" target="#">edit ccomp</a></p>
 
 <p><a id="al-ru-dep/compound" class="al-dest"></a></p>
 <h2><code>compound</code>: compound</h2>
@@ -595,7 +692,7 @@ compound(тысяч, пять)
 compound(thousand, five)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/compound.md" target="#">edit compound</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/compound.md" target="#">edit compound</a></p>
 
 <p><a id="al-ru-dep/conj" class="al-dest"></a></p>
 <h2><code>conj</code>: conjunct</h2>
@@ -643,7 +740,7 @@ cc(came, and)
 
 <p>See <a href="u-dep/conj">universal/conj</a> for more details on various coordination-related issues.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/conj.md" target="#">edit conj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/conj.md" target="#">edit conj</a></p>
 
 <p><a id="al-ru-dep/cop" class="al-dest"></a></p>
 <h2><code>cop</code>: copula</h2>
@@ -662,7 +759,7 @@ cop(человеком, был)
 cop(man, was)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/cop.md" target="#">edit cop</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/cop.md" target="#">edit cop</a></p>
 
 <p><a id="al-ru-dep/csubj" class="al-dest"></a></p>
 <h2><code>csubj</code>: clausal subject</h2>
@@ -678,19 +775,19 @@ csubj(трудно, Забыть)
 csubj(it-is-hard, To-forget)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/csubj.md" target="#">edit csubj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/csubj.md" target="#">edit csubj</a></p>
 
-<p><a id="al-ru-dep/csubjpass" class="al-dest"></a></p>
-<h2><code>csubjpass</code>: clausal passive subject</h2>
+<p><a id="al-ru-dep/csubj:pass" class="al-dest"></a></p>
+<h2><code>csubj:pass</code>: clausal passive subject</h2>
 
 <p>A clausal passive subject is a clausal syntactic subject of a passive clause.</p>
 
 <pre><code class="language-sdparse">Мне было сказано , чтобы я все хорошо взвесил . \n To-me it-has-been told , that I it-all very-well weighed-up .
-csubjpass(сказано, взвесил)
-csubjpass(told, weighed-up)
+csubj:pass(сказано, взвесил)
+csubj:pass(told, weighed-up)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/csubjpass.md" target="#">edit csubjpass</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/csubj-pass.md" target="#">edit csubj:pass</a></p>
 
 <p><a id="al-ru-dep/dep" class="al-dest"></a></p>
 <h2><code>dep</code>: unspecified dependency</h2>
@@ -706,7 +803,7 @@ dep(понятно, чему)
 dep(clear, what)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/dep.md" target="#">edit dep</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/dep.md" target="#">edit dep</a></p>
 
 <p><a id="al-ru-dep/det" class="al-dest"></a></p>
 <h2><code>det</code>: determiner</h2>
@@ -720,86 +817,41 @@ det(человек, Тот)
 det(man, The)
 </code></pre>
 
-<pre><code class="language-sdparse">Это моя ошибка . \n This-is my mistake .
-det(ошибка, моя)
-det(mistake, my)
+<pre><code class="language-sdparse">Он такой человек . \n He is this-kind-of man .
+det(человек, такой)
+det(man, this-kind-of)
 </code></pre>
 
-<pre><code class="language-sdparse">Какая книга тебе нравится больше всего ? \n Which book to-you is-nice most of-all ?
-det(книга, Какая)
-det(book, Which)
-</code></pre>
-
-<p>NB: The relation of the pronominal quantifiers сколько, столько to their head is a subtype of the <code>det</code> relation:
-either <a href="">ru-dep/det:numgov</a> or <a href="">ru-dep/det:nummod</a>.</p>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/det.md" target="#">edit det</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/det.md" target="#">edit det</a></p>
 
 <p><a id="al-ru-dep/discourse" class="al-dest"></a></p>
 <h2><code>discourse</code>: discourse element</h2>
 
-<p>At present we use the <code>discourse</code> relation for what is labeled <code>AuxO</code> in the Prague Dependency Treebank:
-redundant or emotional items, redundant coreferential pronoun.</p>
+<p>At present we use the <code>discourse</code> relation for redundant or emotional items, redundant coreferential pronoun.</p>
 
-<pre><code class="language-sdparse">čemu že se to zpronevěřily \n what that themselves it they-betrayed
-discourse(zpronevěřily, to)
-discourse(they-betrayed, it)
+<pre><code class="language-sdparse">Ты же обещал ! \n You still promised !
+discourse(обещал, же)
 </code></pre>
-<p>(meaning “… what they betrayed”)</p>
+<p>(meaning “… but you promised”)</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/discourse.md" target="#">edit discourse</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/discourse.md" target="#">edit discourse</a></p>
 
 <p><a id="al-ru-dep/dislocated" class="al-dest"></a></p>
 <h2><code>dislocated</code>: dislocated elements</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>dislocated</code>.</p>
+<p>NOTE: The relation <em>dislocated</em> is not in use in Russian UD 2.0+</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/dislocated.md" target="#">edit dislocated</a></p>
+<p>The <code>dislocated</code> relation is used for fronted or postposed elements
+that do not fulfill the usual core grammatical relations of a
+sentence. Dislocated elements are attached to the same governor as the dependent that they double for.</p>
 
-<p><a id="al-ru-dep/dobj" class="al-dest"></a></p>
-<h2><code>dobj</code>: direct object</h2>
-
-<p>The direct object of a verb is the noun phrase that denotes the entity acted upon.
-Most often the direct object is in the <a href="cs-feat/Case">accusative case</a> but
-there are verbs that require their objects be in other cases (except for
-nominative and vocative).</p>
-
-<p>Accusative example:</p>
-
-<pre><code class="language-sdparse">Я купил машину . \n I have-bought car .
-dobj(купил, машину)
-dobj(have-bought, car)
+<pre><code class="language-sdparse">Это наша комната, моя и Дашина
+dislocated(комната, моя)
+cc(моя, и)
+conj(моя, Дашина)
 </code></pre>
 
-<p>Genitive example:</p>
-
-<pre><code class="language-sdparse">Я не боюсь этого . \n I-am not afraid of this .
-dobj(боюсь, этого)
-dobj(afraid, this)
-</code></pre>
-
-<p>Dative example:</p>
-
-<pre><code class="language-sdparse">Но это не соответствует действительности . \n But this not corresponds to-reality .
-dobj(соответствует, действительности)
-dobj(corresponds, to-reality)
-</code></pre>
-
-<p>Instrumental example:</p>
-
-<pre><code class="language-sdparse">Президент руководит страной . \n The President rules the country .
-dobj(руководит, страной)
-dobj(rules, country)
-</code></pre>
-
-<p>In general, if there is just one object, it should be labeled <code>dobj</code>,
-regardless of the morphological case or semantic role that it bears. If there are two or more
-objects, one of them should be <code>dobj</code> and the others should be
-<a href="">iobj</a>. In such cases it is necessary to decide what is the most
-directly affected object <em>(patient).</em> The one exception is when there is a clausal complement. Then the clausal complement is regarded as a “clausal direct object” and an object nominal will be an iobj.</p>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/dobj.md" target="#">edit dobj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/dislocated.md" target="#">edit dislocated</a></p>
 
 <p><a id="al-ru-dep/expl" class="al-dest"></a></p>
 <h2><code>expl</code>: expletive: reflexive pronoun with an inherently reflexive verb</h2>
@@ -813,25 +865,65 @@ nsubj(звонит, мама)
 nsubj(calls, my-mother)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/expl.md" target="#">edit expl</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/expl.md" target="#">edit expl</a></p>
 
-<p><a id="al-ru-dep/foreign" class="al-dest"></a></p>
-<h2><code>foreign</code>: foreign words</h2>
+<p><a id="al-ru-dep/fixed" class="al-dest"></a></p>
+<h2><code>fixed</code>: fixed multiword expression</h2>
 
-<p>We use <code>foreign</code> to label sequences of foreign words. These are given
-a linear analysis: the head is the first token in the foreign phrase.</p>
+<p>The fixed relation is one of the three relations (compound, fixed, flat) for special kinds of multiword expressions. It is used for fixed grammaticized expressions that behave like function words or short adverbials. The first word is always taken as the head, with all subsequent words as direct dependents.In Russian it is used for multi-word prepositions.</p>
 
-<p><code>foreign</code> does not apply to loanwords or to foreign <a href="name">names</a>. 
-It applies to quoted foreign text incorporated in a sentence/discourse
-of the host language (unless we want to and know how to annotate the
-internal structure according to the syntax of the foreign language).</p>
-
-<pre><code class="language-sdparse">Он придет , когда полетят свиньи ( When pigs fly ) .
-foreign(When, pigs)
-foreign(When, fly)
+<pre><code class="language-sdparse">В отличие от тебя , мне нечего стыдиться . \n In contrast to you , I-have nothing to-be-ashamed .
+fixed(В, отличие)
+fixed(В, от)
+case(тебя, В)
+fixed(In, contrast)
+fixed(In, to)
+case(you, In)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/foreign.md" target="#">edit foreign</a></p>
+<p>Multi-word prepositions usually form a contiguous span of the sentence. In exceptional cases however, they can be interrupted
+by emphasizers and other words:</p>
+
+<pre><code class="language-sdparse">в сравнении , например , с долгом \n in comparison , for-example , to loans
+fixed(в, сравнении)
+fixed(в, с)
+case(долгом, в)
+advmod:emph(долгом, например)
+fixed(in, comparison)
+fixed(in, to)
+case(loans, in)
+advmod:emph(loans, for-example)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/fixed.md" target="#">edit fixed</a></p>
+
+<p><a id="al-ru-dep/flat" class="al-dest"></a></p>
+<h2><code>flat</code>: flat</h2>
+
+<p><code>flat</code> is one of the relations for compounding in UD.
+In Russian it is used to join the first name of a person with the patronymic and the last name.</p>
+
+<p>The leftmost name is always the head and the other name(s) are attached to it.</p>
+
+<p>The relation is not used to attach adjectives to nouns within multi-word names of places, organizations etc.</p>
+
+<pre><code class="language-sdparse">Президент Владимир Владимирович Путин вчера посетил Минеральные Воды . \n President Vladimir Vladimirovich Putin yesterday visited Mineralnye Vody .
+flat(Владимир, Владимирович)
+flat(Vladimir, Vladimirovich)
+flat(Владимир, Путин)
+flat(Vladimir, Putin)
+nmod(Владимир, Президент)
+nmod(Vladimir, President)
+amod(Воды, Минеральные)
+amod(Vody, Mineralnye)
+</code></pre>
+
+<pre><code class="language-sdparse">Нью - Йорк \n New York
+flat(Нью, Йорк)
+flat(New, York)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/flat.md" target="#">edit flat</a></p>
 
 <p><a id="al-ru-dep/goeswith" class="al-dest"></a></p>
 <h2><code>goeswith</code>: goes with</h2>
@@ -844,13 +936,13 @@ The head is in some sense the “main” part, often the second part.</p>
 goeswith(тдышаться, о)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/goeswith.md" target="#">edit goeswith</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/goeswith.md" target="#">edit goeswith</a></p>
 
 <p><a id="al-ru-dep/iobj" class="al-dest"></a></p>
 <h2><code>iobj</code>: indirect object</h2>
 
 <p>The indirect object of a verb is any nominal phrase that is a core
-argument of the verb but is not its subject or <a href="dobj">direct object</a>.
+argument of the verb but is not its subject or <a href="obj">direct object</a>.
 The prototypical example is the recipient of ditransitive verbs of
 exchange:</p>
 
@@ -865,25 +957,25 @@ The morphological <a href="">ru-feat/Case</a> of the objects is dictated by verb
 <p>In the following Russian example, the verb takes two arguments. One of them is direct object (patient), the other is indirect (addressee). It is parallel to how the English translation would be annotated (where there is no morphological case marking) and also to verbs of giving (cf. a similar sentence, <em>he gave my daughter a class of maths</em>).</p>
 
 <pre><code class="language-sdparse">Он преподает моей дочери математику . \n He teaches my daughter.Dat maths.Acc .
-dobj(преподает, математику)
+obj(преподает, математику)
 iobj(преподает, дочери)
-dobj(teaches, maths.Acc)
+obj(teaches, maths.Acc)
 iobj(teaches, daughter.Dat)
 </code></pre>
 
 <p>In general, if there is just one object, it should be labeled
-<a href="">dobj</a>, regardless of the morphological case or semantic role.
+<a href="">obj</a>, regardless of the morphological case or semantic role.
 For example, <em>преподавать</em> “to teach” can take either the subject matter or the recipient as the only object,
-and in both cases it would be analyzed as the <a href="">dobj</a>:</p>
+and in both cases it would be analyzed as the <a href="">obj</a>:</p>
 
 <pre><code class="language-sdparse">Он преподает математику . \n He teaches maths .
-dobj(преподает, математику)
-dobj(teaches, maths)
+obj(преподает, математику)
+obj(teaches, maths)
 </code></pre>
 
 <pre><code class="language-sdparse">Он преподает студентам . \n He teaches students .
-dobj(преподает, студентам)
-dobj(teaches, students)
+obj(преподает, студентам)
+obj(teaches, students)
 </code></pre>
 
 <p>The one exception is when there is a clausal complement.
@@ -899,14 +991,14 @@ ccomp(told, they-needed)
 
 <pre><code class="language-sdparse">Она рассказала студентам свой план . \n She told students her plan .
 iobj(рассказала, студентам)
-dobj(рассказала, план)
+obj(рассказала, план)
 iobj(told, students)
-dobj(told, plan)
+obj(told, plan)
 </code></pre>
 
-<p>If there are two or more objects, one of them should be <a href="">dobj</a> and the others should be <code>iobj</code>. In such cases it is necessary to decide what is the most directly affected object <em>(patient)</em>, and the Accusative <a href="">ru-feat/Case</a> has priority over the Dative, Instrumental, and Genitive cases.</p>
+<p>If there are two or more objects, one of them should be <a href="">obj</a> and the others should be <code>iobj</code>. In such cases it is necessary to decide what is the most directly affected object <em>(patient)</em>, and the Accusative <a href="">ru-feat/Case</a> has priority over the Dative, Instrumental, and Genitive cases.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/iobj.md" target="#">edit iobj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/iobj.md" target="#">edit iobj</a></p>
 
 <p><a id="al-ru-dep/list" class="al-dest"></a></p>
 <h2><code>list</code>: list</h2>
@@ -929,7 +1021,7 @@ appos(тел.:-3, 555-9814-4)
 appos(e-mail:-5, jones@mail.ru-6)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/list.md" target="#">edit list</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/list.md" target="#">edit list</a></p>
 
 <p><a id="al-ru-dep/mark" class="al-dest"></a></p>
 <h2><code>mark</code>: marker</h2>
@@ -944,9 +1036,9 @@ mark(speak, that)
 
 <pre><code class="language-sdparse">Мы отправим товар , как только на наш счет поступят деньги . \n We will-dispatch goods , as soon-as at our account arrive money .
 mark(поступят, как)
-mwe(как, только)
+fixed(как, только)
 mark(arrive, as)
-mwe(as, soon-as)
+fixed(as, soon-as)
 </code></pre>
 
 <p>Note that the subordinating conjunction should not be confused with relative pronouns and adverbs.
@@ -958,63 +1050,7 @@ advmod(поступят, когда)
 advmod(arrive, when)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/mark.md" target="#">edit mark</a></p>
-
-<p><a id="al-ru-dep/mwe" class="al-dest"></a></p>
-<h2><code>mwe</code>: multi-word expression</h2>
-
-<p>The multi-word expression (modifier) relation is one of the
-relations for compounding and it is intended for function words.
-In Russian it is used for multi-word prepositions.
-The leftmost word is the head and all the other words are attached as its <code>mwe</code> modifiers.</p>
-
-<pre><code class="language-sdparse">В отличие от тебя , мне нечего стыдиться . \n In contrast to you , I-have nothing to-be-ashamed .
-mwe(В, отличие)
-mwe(В, от)
-case(тебя, В)
-mwe(In, contrast)
-mwe(In, to)
-case(you, In)
-</code></pre>
-
-<p>Multi-word prepositions usually form a contiguous span of the sentence. In exceptional cases however, they can be interrupted
-by emphasizers and other words:</p>
-
-<pre><code class="language-sdparse">в сравнении , например , с долгом \n in comparison , for-example , to loans
-mwe(в, сравнении)
-mwe(в, с)
-case(долгом, в)
-advmod:emph(долгом, например)
-mwe(in, comparison)
-mwe(in, to)
-case(loans, in)
-advmod:emph(loans, for-example)
-</code></pre>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/mwe.md" target="#">edit mwe</a></p>
-
-<p><a id="al-ru-dep/name" class="al-dest"></a></p>
-<h2><code>name</code>: name</h2>
-
-<p><code>name</code> is one of the relations for compounding in UD.
-In Russian it is used to join the first name of a person with the patronymic and the last name.</p>
-
-<p>The leftmost name is always the head and the other name(s) are attached to it.</p>
-
-<p>The relation is not used to attach adjectives to nouns within multi-word names of places, organizations etc.</p>
-
-<pre><code class="language-sdparse">Президент Владимир Владимирович Путин вчера посетил Минеральные Воды . \n President Vladimir Vladimirovich Putin yesterday visited Mineralnye Vody .
-name(Владимир, Владимирович)
-name(Vladimir, Vladimirovich)
-name(Владимир, Путин)
-name(Vladimir, Putin)
-nmod(Владимир, Президент)
-nmod(Vladimir, President)
-amod(Воды, Минеральные)
-amod(Vody, Mineralnye)
-</code></pre>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/name.md" target="#">edit name</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/mark.md" target="#">edit mark</a></p>
 
 <p><a id="al-ru-dep/neg" class="al-dest"></a></p>
 <h2><code>neg</code>: negation modifier</h2>
@@ -1043,14 +1079,13 @@ det(дураком, никаким)
 det(fool, no)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/neg.md" target="#">edit neg</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/neg.md" target="#">edit neg</a></p>
 
 <p><a id="al-ru-dep/nmod" class="al-dest"></a></p>
 <h2><code>nmod</code>: nominal modifier</h2>
 
-<p>The <code>nmod</code> relation is used for nominal modifiers. They depend either
-on another noun (group “noun dependents”) or on a predicate (group
-“non-core dependents of clausal predicates”).</p>
+<p>The <code>nmod</code> relation is used for nominal modifiers. They depend 
+on another noun (group “noun dependents”).</p>
 
 <p><code>nmod</code> is a <a href="cs-pos/NOUN">noun</a> (or noun phrase) functioning as a
 non-core (oblique) argument or adjunct.
@@ -1072,23 +1107,16 @@ amod(card, student's)
 </code></pre>
 
 <pre><code class="language-sdparse">его карта \n his card
-det(карта, его)
-det(card, his)
-</code></pre>
-
-<p><code>nmod</code> is also used for temporal nominal modifiers:</p>
-
-<pre><code class="language-sdparse">Последний раз мы разговаривали зимой . \n Last time we talked in-winter .
-nmod(разговаривали, зимой)
-nmod(talked, in-winter)
+amod(карта, его)
+amod(card, his)
 </code></pre>
 
 <h2 id="agreeing-attribute-of-a-noun">Agreeing attribute of a noun</h2>
 
 <p><code>nmod</code> noun phrases attached to nouns are usually in the genitive <a href="">ru-feat/Case</a> and follow the modified noun.
 However, there is also a different kind of <code>nmod</code> that precedes the modified noun and agrees with it in case and number.
-A typical example is a title attached to a name of a person. The relation is similar to the <a href="">name</a> relation
-that links the first and the last name, but it is not labeled <code>name</code> because the title is not part of the name:</p>
+A typical example is a title attached to a name of a person. The relation is similar to the <a href="">flat</a> relation
+that links the first and the last name, but it is not labeled <code>flat</code> because the title is not part of the name:</p>
 
 <pre><code class="language-sdparse">российский президент Владимир Владимирович Путин \n Russian president Vladimir Vladimirovich Putin
 amod(президент, российский)
@@ -1115,15 +1143,7 @@ appos(Владимир, президент)
 appos(Vladimir, president)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/nmod.md" target="#">edit nmod</a></p>
-
-<p><a id="al-ru-dep/nmod:agent" class="al-dest"></a></p>
-<h2><code>nmod:agent</code>: nmod:agent</h2>
-
-<p>This document is a placeholder for the language-specific documentation
-for <code>nmod:agent</code>.</p>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/nmod-agent.md" target="#">edit nmod:agent</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/nmod.md" target="#">edit nmod</a></p>
 
 <p><a id="al-ru-dep/nsubj" class="al-dest"></a></p>
 <h2><code>nsubj</code>: nominal subject</h2>
@@ -1142,27 +1162,27 @@ nsubj(красный, Автомобиль)
 nsubj(is-red, Car)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/nsubj.md" target="#">edit nsubj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/nsubj.md" target="#">edit nsubj</a></p>
 
-<p><a id="al-ru-dep/nsubjpass" class="al-dest"></a></p>
-<h2><code>nsubjpass</code>: passive nominal subject</h2>
+<p><a id="al-ru-dep/nsubj:pass" class="al-dest"></a></p>
+<h2><code>nsubj:pass</code>: passive nominal subject</h2>
 
 <p>A passive nominal subject is a noun phrase which is the syntactic
 subject of a passive clause.</p>
 
 <pre><code class="language-sdparse">Шварценберг был побеждён Земаном . \n Schwarzenberg was defeated by-Zeman .
-nsubjpass(побеждён, Шварценберг)
-nsubjpass(defeated, Schwarzenberg)
+nsubj:pass(побеждён, Шварценберг)
+nsubj:pass(defeated, Schwarzenberg)
 </code></pre>
 
 <p>Reflexive passive (the meaning is “This will be solved tomorrow.”)</p>
 
 <pre><code class="language-sdparse">Это решится завтра . \n This will-be-solved tomorrow .
-nsubjpass(решится, Это)
-nsubjpass(will-be-solved, This)
+nsubj:pass(решится, Это)
+nsubj:pass(will-be-solved, This)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/nsubjpass.md" target="#">edit nsubjpass</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/nsubj-pass.md" target="#">edit nsubj:pass</a></p>
 
 <p><a id="al-ru-dep/nummod" class="al-dest"></a></p>
 <h2><code>nummod</code>: numeric modifier</h2>
@@ -1405,15 +1425,7 @@ case(Tverskaya, in)
 nummod(Tverskaya, 12-11)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/nummod.md" target="#">edit nummod</a></p>
-
-<p><a id="al-ru-dep/nummod:entity" class="al-dest"></a></p>
-<h2><code>nummod:entity</code>: nummod:entity</h2>
-
-<p>This document is a placeholder for the language-specific documentation
-for <code>nummod:entity</code>.</p>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/nummod-entity.md" target="#">edit nummod:entity</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/nummod.md" target="#">edit nummod</a></p>
 
 <p><a id="al-ru-dep/nummod:gov" class="al-dest"></a></p>
 <h2><code>nummod:gov</code>: numeric modifier governing the case of the noun</h2>
@@ -1429,18 +1441,110 @@ the information about case conditions.</p>
 <pre><code class="language-sdparse">Пять мужчин играло в карты . \n Five men played cards .
 nummod:gov(мужчин, Пять)
 nsubj(играло, мужчин)
-dobj(играло, карты)
+obj(играло, карты)
 case(карты, в)
 punct(играло, .-6)
 nummod:gov(men, Five)
 nsubj(played, men)
-dobj(played, cards)
+obj(played, cards)
 punct(played, .-12)
 </code></pre>
 
 <p>See <a href="">nummod</a> for a broader discussion of the various situations with quantifiers.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/nummod-gov.md" target="#">edit nummod:gov</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/nummod-gov.md" target="#">edit nummod:gov</a></p>
+
+<p><a id="al-ru-dep/obj" class="al-dest"></a></p>
+<h2><code>obj</code>: object</h2>
+
+<p>The object of a verb is the the second most core argument of a verb after the subject. 
+Most often it is a direct object is in the <a href="ru-feat/Case">accusative case</a>, a noun phrase that denotes the entity acted upon.
+However, in Russian there are many verbs that require their objects be in other cases (except for
+nominative and vocative).</p>
+
+<p>Accusative example:</p>
+
+<pre><code class="language-sdparse">Я купил машину . \n I have-bought car .
+obj(купил, машину)
+obj(have-bought, car)
+</code></pre>
+
+<p>Genitive example:</p>
+
+<pre><code class="language-sdparse">Я не боюсь этого . \n I-am not afraid of this .
+obj(боюсь, этого)
+obj(afraid, this)
+</code></pre>
+
+<p>Dative example:</p>
+
+<pre><code class="language-sdparse">Но это не соответствует действительности . \n But this not corresponds to-reality .
+obj(соответствует, действительности)
+obj(corresponds, to-reality)
+</code></pre>
+
+<p>Instrumental example:</p>
+
+<pre><code class="language-sdparse">Президент руководит страной . \n The President rules the country .
+obj(руководит, страной)
+obj(rules, country)
+</code></pre>
+
+<p>In general, if there is only one object, it should be labeled <code>obj</code>,
+regardless of the morphological case or semantic role that it bears. If there are two or more
+objects, one of them should be <code>obj</code> and the others should be
+<a href="">iobj</a>. In such cases it is necessary to decide what is the most
+directly affected object <em>(patient).</em> The one exception is when there is a clausal complement: 
+then the clausal complement is regarded as a “clausal object” and an object nominal will be an iobj.</p>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/obj.md" target="#">edit obj</a></p>
+
+<p><a id="al-ru-dep/obl" class="al-dest"></a></p>
+<h2><code>obl</code>: oblique modifier</h2>
+
+<p>The <code>obl</code> relation is used for non-core nominal dependents of clausal
+predicates.</p>
+
+<pre><code class="language-sdparse">Последний раз мы разговаривали зимой . \n Last time we talked in-winter .
+obl(разговаривали, зимой)
+obl(talked, in-winter)
+</code></pre>
+
+<p>One subtype of <code>obl</code> is introduced in Russian: <a href="">obl:agent</a> for agents of passive verbs.</p>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/obl.md" target="#">edit obl</a></p>
+
+<p><a id="al-ru-dep/obl:agent" class="al-dest"></a></p>
+<h2><code>obl:agent</code>: agent oblique nominal </h2>
+
+<p>The relation <code>obl:agent</code> is used for agents of passive verbs</p>
+
+<pre><code class="language-sdparse">Решение было принято моим отцом \n Decision was made by my father 
+obl:agent(принято, отцом)
+obl:agent(made, father)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/obl-agent.md" target="#">edit obl:agent</a></p>
+
+<p><a id="al-ru-dep/orphan" class="al-dest"></a></p>
+<h2><code>orphan</code>: orphan in ellipsis</h2>
+
+<p>The <code>orphan</code> relation is used in cases of head ellipsis where simple promotion would result in unnatural 
+and misleading dependency relation. The typical case is predicate ellipsis where one of the core arguments 
+have to be promoted to clausal head.</p>
+
+<pre><code class="language-sdparse">Павел заказал говядину , а Мария свинину . \n Pavel  ordered beef and Maria pork .
+nsubj(заказал, Павел)
+nsubj(ordered, Pavel)
+obj(заказал, говядину)
+obj(ordered, beef)
+conj(Павел, Мария)
+conj(Pavel, Maria)
+orphan(говядину, свинину)
+orphan(beef, pork)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/orphan.md" target="#">edit orphan</a></p>
 
 <p><a id="al-ru-dep/parataxis" class="al-dest"></a></p>
 <h2><code>parataxis</code>: parataxis</h2>
@@ -1501,7 +1605,7 @@ There does not seem to be a better relation to use.</p>
 parataxis(Вашингтон, CNN)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/parataxis.md" target="#">edit parataxis</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/parataxis.md" target="#">edit parataxis</a></p>
 
 <p><a id="al-ru-dep/punct" class="al-dest"></a></p>
 <h2><code>punct</code>: punctuation</h2>
@@ -1525,8 +1629,8 @@ Instead, we use the following principles:</p>
 </ol>
 
 <pre><code class="language-sdparse">Мы покупаем яблоки , груши , апельсины и бананы . \n We buy apples , pears , oranges and bananas .
-dobj(покупаем, яблоки)
-dobj(buy, apples)
+obj(покупаем, яблоки)
+obj(buy, apples)
 conj(яблоки, груши)
 conj(яблоки, апельсины)
 conj(яблоки, бананы)
@@ -1561,27 +1665,7 @@ punct(означает, .-8)
 punct(means, .-17)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/punct.md" target="#">edit punct</a></p>
-
-<p><a id="al-ru-dep/remnant" class="al-dest"></a></p>
-<h2><code>remnant</code>: remnant in ellipsis</h2>
-
-<p>The <code>remnant</code> relation is used to provide a satisfactory treatment of certain instances of
-ellipsis (in the case of gapping and stripping, where a predicational or verbal
-head gets elided).</p>
-
-<pre><code class="language-sdparse">Павел заказал говядину , а Мария свинину . \n Pavel  ordered beef and Maria pork .
-nsubj(заказал, Павел)
-nsubj(ordered, Pavel)
-dobj(заказал, говядину)
-dobj(ordered, beef)
-remnant(Павел, Мария)
-remnant(Pavel, Maria)
-remnant(говядину, свинину)
-remnant(beef, pork)
-</code></pre>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/remnant.md" target="#">edit remnant</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/punct.md" target="#">edit punct</a></p>
 
 <p><a id="al-ru-dep/reparandum" class="al-dest"></a></p>
 <h2><code>reparandum</code>: overridden disfluency</h2>
@@ -1594,7 +1678,7 @@ reparandum(налево, напра-)
 reparandum(to-the-left, to-the-righ-)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/reparandum.md" target="#">edit reparandum</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/reparandum.md" target="#">edit reparandum</a></p>
 
 <p><a id="al-ru-dep/root" class="al-dest"></a></p>
 <h2><code>root</code>: root</h2>
@@ -1622,8 +1706,8 @@ the head (root) position and the other orphans are attached to it.</p>
 <pre><code class="language-sdparse">ROOT И что он на это ? \n ROOT And what he to it ?
 root(ROOT-1, И)
 root(ROOT-9, And)
-dobj(И, что)
-dobj(And, what)
+obj(И, что)
+obj(And, what)
 nmod(И, это)
 nmod(And, it)
 case(это, на)
@@ -1634,7 +1718,7 @@ punct(И, ?-7)
 punct(And, ?-15)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/root.md" target="#">edit root</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/root.md" target="#">edit root</a></p>
 
 <p><a id="al-ru-dep/vocative" class="al-dest"></a></p>
 <h2><code>vocative</code>: vocative</h2>
@@ -1648,7 +1732,7 @@ vocative(дурак, Мужчина)
 vocative(a-fool, Sir)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/vocative.md" target="#">edit vocative</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/vocative.md" target="#">edit vocative</a></p>
 
 <p><a id="al-ru-dep/xcomp" class="al-dest"></a></p>
 <h2><code>xcomp</code>: open clausal complement</h2>
@@ -1702,7 +1786,7 @@ xcomp(обещал, писать)
 xcomp(have-promised, to-write)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_ru-dep/xcomp.md" target="#">edit xcomp</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/xcomp.md" target="#">edit xcomp</a></p>
 
 
 

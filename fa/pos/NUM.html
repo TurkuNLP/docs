@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-fa">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/fa/pos">fa/pos</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_fa-pos/NUM.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-fa">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/fa/pos">fa/pos</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fa-pos/NUM.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -61,84 +78,84 @@ for <code>NUM</code>.</p>
 
 <h2 id="treebank-statistics-udpersian">Treebank Statistics (UD_Persian)</h2>
 
-<p>There are 289 <code>NUM</code> lemmas (3%), 397 <code>NUM</code> types (2%) and 3409 <code>NUM</code> tokens (2%).
-Out of 15 observed tags, the rank of <code>NUM</code> is: 4 in number of lemmas, 5 in number of types and 11 in number of tokens.</p>
+<p>There are 255 <code>NUM</code> lemmas (3%), 366 <code>NUM</code> types (2%) and 3024 <code>NUM</code> tokens (2%).
+Out of 15 observed tags, the rank of <code>NUM</code> is: 4 in number of lemmas, 5 in number of types and 12 in number of tokens.</p>
 
-<p>The 10 most frequent <code>NUM</code> lemmas: یک، دو، _، هزار، سه، میلیون، ۲، چهار، ۵، ۳</p>
+<p>The 10 most frequent <code>NUM</code> lemmas: یک، دو، _، هزار، سه، میلیون، ۲، چهار، ۵، ده</p>
 
 <p>The 10 most frequent <code>NUM</code> types:  یک، دو، یکی، هزار، سه، میلیون، ۲، چهار، ۵، ۳</p>
 
-<p>The 10 most frequent ambiguous lemmas: یک (<a href="">NUM</a> 1011, <a href="">PRON</a> 12, <a href="">NOUN</a> 1), دو (<a href="">NUM</a> 333, <a href="">NOUN</a> 3), _ (<a href="">NOUN</a> 4861, <a href="">VERB</a> 1473, <a href="">ADJ</a> 1371, <a href="">ADV</a> 194, <a href="">NUM</a> 152, <a href="">X</a> 92, <a href="">PUNCT</a> 90, <a href="">PRON</a> 35, <a href="">ADP</a> 32, <a href="">INTJ</a> 19, <a href="">AUX</a> 13, <a href="">SCONJ</a> 12, <a href="">CONJ</a> 5, <a href="">DET</a> 4), سه (<a href="">NUM</a> 121, <a href="">NOUN</a> 2), میلیون (<a href="">NUM</a> 74, <a href="">NOUN</a> 1), چهار (<a href="">NUM</a> 46, <a href="">NOUN</a> 2), ده (<a href="">NUM</a> 36, <a href="">NOUN</a> 5, <a href="">VERB</a> 1), میلیارد (<a href="">NUM</a> 29, <a href="">NOUN</a> 20), ۲۰ (<a href="">NUM</a> 27, <a href="">NOUN</a> 1), ۷ (<a href="">NUM</a> 24, <a href="">NOUN</a> 1)</p>
+<p>The 10 most frequent ambiguous lemmas: یک (<a href="">NUM</a> 929, <a href="">PRON</a> 10), دو (<a href="">NUM</a> 293, <a href="">NOUN</a> 3), _ (<a href="">NOUN</a> 4853, <a href="">VERB</a> 1384, <a href="">ADJ</a> 1367, <a href="">ADV</a> 194, <a href="">NUM</a> 152, <a href="">AUX</a> 98, <a href="">X</a> 92, <a href="">PUNCT</a> 90, <a href="">PRON</a> 35, <a href="">ADP</a> 32, <a href="">INTJ</a> 18, <a href="">SCONJ</a> 12, <a href="">CCONJ</a> 5, <a href="">DET</a> 4), سه (<a href="">NUM</a> 108, <a href="">NOUN</a> 2), چهار (<a href="">NUM</a> 36, <a href="">NOUN</a> 2), ده (<a href="">NUM</a> 34, <a href="">NOUN</a> 4, <a href="">VERB</a> 1), صد (<a href="">NUM</a> 21, <a href="">NOUN</a> 4), میلیارد (<a href="">NUM</a> 21, <a href="">NOUN</a> 20), ۲۰ (<a href="">NUM</a> 20, <a href="">NOUN</a> 1), ۷ (<a href="">NUM</a> 20, <a href="">NOUN</a> 1)</p>
 
-<p>The 10 most frequent ambiguous types:  یک (<a href="">NUM</a> 839, <a href="">PRON</a> 12), دو (<a href="">NUM</a> 333, <a href="">NOUN</a> 3), یکی (<a href="">NUM</a> 172, <a href="">NOUN</a> 1), سه (<a href="">NUM</a> 121, <a href="">NOUN</a> 2), چهار (<a href="">NUM</a> 46, <a href="">NOUN</a> 2), ده (<a href="">NUM</a> 30, <a href="">NOUN</a> 4, <a href="">VERB</a> 1), میلیارد (<a href="">NUM</a> 29, <a href="">NOUN</a> 20), ۲۰ (<a href="">NUM</a> 27, <a href="">NOUN</a> 1), ۷ (<a href="">NUM</a> 24, <a href="">NOUN</a> 1), هشت (<a href="">NUM</a> 22, <a href="">NOUN</a> 3)</p>
+<p>The 10 most frequent ambiguous types:  یک (<a href="">NUM</a> 770, <a href="">PRON</a> 10), دو (<a href="">NUM</a> 293, <a href="">NOUN</a> 3), سه (<a href="">NUM</a> 108, <a href="">NOUN</a> 2), چهار (<a href="">NUM</a> 36, <a href="">NOUN</a> 2), ده (<a href="">NUM</a> 28, <a href="">NOUN</a> 4, <a href="">VERB</a> 1), میلیارد (<a href="">NUM</a> 21, <a href="">NOUN</a> 20), ۲۰ (<a href="">NUM</a> 20, <a href="">NOUN</a> 1), ۷ (<a href="">NUM</a> 20, <a href="">NOUN</a> 1), هشت (<a href="">NUM</a> 19, <a href="">NOUN</a> 3), چهل (<a href="">NUM</a> 19, <a href="">NOUN</a> 1)</p>
 
 <ul>
   <li>یک
     <ul>
-      <li><a href="">NUM</a> 839: اگر این بحران‌سازی کار <b>یک</b> اقلیت کوچک است چرا اکثریت در مقابل آن ساکت ند ؟</li>
-      <li><a href="">PRON</a> 12: تا جایی که برخی از اشعار فیتز جرالد در واقع ترجمه هیچ <b>یک</b> از رباعیات خیام نیست .</li>
+      <li><a href="">NUM</a> 770: اگر این بحران‌سازی کار <b>یک</b> اقلیت کوچک است چرا اکثریت در مقابل آن ساکت ند ؟</li>
+      <li><a href="">PRON</a> 10: تا جایی که برخی از اشعار فیتز جرالد در واقع ترجمه هیچ <b>یک</b> از رباعیات خیام نیست .</li>
     </ul>
   </li>
   <li>دو
     <ul>
-      <li><a href="">NUM</a> 333: تیم ایران از این مسابقه‌ها <b>دو</b> مدال نقره و یک برنز کسب کرده بود .</li>
+      <li><a href="">NUM</a> 293: تیم ایران از این مسابقه‌ها <b>دو</b> مدال نقره و یک برنز کسب کرده بود .</li>
       <li><a href="">NOUN</a> 3: احمد به <b>دو</b> می‌دود .</li>
-    </ul>
-  </li>
-  <li>یکی
-    <ul>
-      <li><a href="">NUM</a> 172: زلزله شدیدی <b>یکی</b> از نقاط دورافتاده اندونزی را تکان داد .</li>
-      <li><a href="">NOUN</a> 1: او اکنون به خاطر مهارت خود در زبان توانسته است شغلی در <b>یکی</b> از شرکت‌های پدر ش پیدا کند .</li>
     </ul>
   </li>
   <li>سه
     <ul>
-      <li><a href="">NUM</a> 121: اما اگر هر <b>سه</b> تیم ببازند وضع جدول همچنان باقی خواهد ماند .</li>
+      <li><a href="">NUM</a> 108: اما اگر هر <b>سه</b> تیم ببازند وضع جدول همچنان باقی خواهد ماند .</li>
       <li><a href="">NOUN</a> 2: عرض کنم که در ابتدا از طرف گروه اجتماعی شبکه <b>سه</b> ساخت برنامه‌ای با موضوع معضلات اجتماعی سفارش شد .</li>
     </ul>
   </li>
   <li>چهار
     <ul>
-      <li><a href="">NUM</a> 46: به امام حسین ) ع ( گفته بود رهبری آن <b>چهار</b> نفر دیگر بر عهده تو ست .</li>
+      <li><a href="">NUM</a> 36: به خاطر موهای نیما رئی‌س <b>چهار</b> روز کار عقب افتاد .</li>
       <li><a href="">NOUN</a> 2: ده‌تومانی را می‌دهد و <b>چهار</b> گز می‌گیرد .</li>
     </ul>
   </li>
   <li>ده
     <ul>
-      <li><a href="">NUM</a> 30: همان طور که من الان ، آدم <b>ده</b> سال پیش نیستم ؛ دگرگون شده‌ام .</li>
+      <li><a href="">NUM</a> 28: همان طور که من الان ، آدم <b>ده</b> سال پیش نیستم ؛ دگرگون شده‌ام .</li>
       <li><a href="">NOUN</a> 4: باژ که زادگاه فردوسی معرفی شده ، در ناحیهٔ طابران یکی از این هزار <b>ده</b> است .</li>
       <li><a href="">VERB</a> 1: ۵ - دل خود را در پوششی از رؤفت و محبت و لطف به رعیت قرار <b>ده</b> و برای آن‌ها مبادا به صورت درنده‌ای زیانبخش باشی که خوردن و از بین بردن آن‌ها غنیمت شمری زیرا ایشان دو گروه ند ، یا برادر دینی تو هستند و یا بمانند تو انسانی می‌باشند .</li>
     </ul>
   </li>
   <li>میلیارد
     <ul>
-      <li><a href="">NUM</a> 29: مازاد تراز حساب جاری ایران در سال گذشته به ۴ / ۷ <b>میلیارد</b> دلار بالغ شد .</li>
+      <li><a href="">NUM</a> 21: مازاد تراز حساب جاری ایران در سال گذشته به ۴ / ۷ <b>میلیارد</b> دلار بالغ شد .</li>
       <li><a href="">NOUN</a> 20: نیز در مجموع دارای ۷۶۲ / ۳ <b>میلیارد</b> دلار ذخیره ارزی هستند .</li>
     </ul>
   </li>
   <li>۲۰
     <ul>
-      <li><a href="">NUM</a> 27: اکثریتی ۸۰ درصدی خواستار اصلاحات و اقلیتی <b>۲۰</b> درصدی خواستار ادامه وضع موجود ند .</li>
+      <li><a href="">NUM</a> 20: اکثریتی ۸۰ درصدی خواستار اصلاحات و اقلیتی <b>۲۰</b> درصدی خواستار ادامه وضع موجود ند .</li>
       <li><a href="">NOUN</a> 1: این روزنامه می‌نویسد ، هر یکصد گرم موز ۱۰۲ کالری یعنی <b>۲۰</b> کالری بیشتر از یک استکان ماست انرژی به بدن می‌دهد و در عوض موز می‌تواند بسیاری از مشکلات گوارشی را مانند نفخ معده درمان کند .</li>
     </ul>
   </li>
   <li>۷
     <ul>
-      <li><a href="">NUM</a> 24: مازاد تراز حساب جاری ایران در سال گذشته به ۴ / <b>۷</b> میلیارد دلار بالغ شد .</li>
+      <li><a href="">NUM</a> 20: مازاد تراز حساب جاری ایران در سال گذشته به ۴ / <b>۷</b> میلیارد دلار بالغ شد .</li>
       <li><a href="">NOUN</a> 1: به گزارش اینترنت از لندن ، پژوهشگران یکی از بیمارستانهای منچستر می‌گویند : مواد حساسیت‌زای موجود در الیاف مصنوعی حدود <b>۷</b> تا ۸ برابر مواد حساسیت‌زای پر است .</li>
     </ul>
   </li>
   <li>هشت
     <ul>
-      <li><a href="">NUM</a> 22: مزرعه‌ای که در عقیق بود و درآمد آن سالی <b>هشت</b> هزار دینار بود .</li>
+      <li><a href="">NUM</a> 19: مزرعه‌ای که در عقیق بود و درآمد آن سالی <b>هشت</b> هزار دینار بود .</li>
       <li><a href="">NOUN</a> 3: دست نه را پاک می‌کند و می‌نویسد : « <b>هشت</b> ساعت به افطار مانده » .</li>
+    </ul>
+  </li>
+  <li>چهل
+    <ul>
+      <li><a href="">NUM</a> 19: سی <b>چهل</b> سال پیش ، در مقدمه سیاست اقتصاد عصر صفوی نوشته بودم : …</li>
+      <li><a href="">NOUN</a> 1: در سال ۱۹۶۸ نتایج تحقیقی نشان داد که <b>چهل</b> درصد پاسخ‌دهندگان به‌دلخواه تلویزیون را روشن کردند و به تماشای برنامه مذهبی نشستند ، و بیش از نیمی از آن‌ها اظهار داشتند که در زمان پخش برنامه مذهبی به آن توجه داشتند .</li>
     </ul>
   </li>
 </ul>
 
 <h2 id="morphology">Morphology</h2>
 
-<p>The form / lemma ratio of <code>NUM</code> is 1.373702 (the average of all parts of speech is 1.914149).</p>
+<p>The form / lemma ratio of <code>NUM</code> is 1.435294 (the average of all parts of speech is 1.968250).</p>
 
 <p>The 1st highest number of forms (122) was observed with the lemma “_”: ربع, سی‌ام, صدها, صفر, نود, پانزده, یازده, یه, ۰۳, ۱۰۲۸, ۱۱۹, ۱۳۳۹, ۱۳۴۱, ۱۳۵۹, ۱۳۷۶, ۱۳۷۸, ۱۴۲۱, ۱۵۰, ۱۵۰۰, ۱۵۰۷, ۱۷, ۱۷۰, ۱۷۳, ۱۷۷, ۱۷۷۰, ۱۸۰, ۱۸۳۸, ۱۸۹۱, ۱۹۳۲, ۱۹۳۶, ۱۹۳۸, ۱۹۴۶, ۱۹۵۰, ۱۹۵۴, ۱۹۵۵, ۱۹۶۸, ۱۹۶۹, ۱۹۷۹, ۱۹۸۳, ۱۹۹۴, ۱۹۹۵, ۱۹۹۷, ۲۰۰۳, ۲۰۰۵, ۲۰۱, ۲۰۱۵, ۲۱۱, ۲۱۲, ۲۱۷, ۲۱۸, ۲۲۰, ۲۲۹۵, ۲۵۴, ۲۵۶, ۲۶۰, ۲۶۰۰, ۲۸, ۲۸۰, ۲۸۶, ۳۱, ۳۴, ۳۴۷۲, ۳۷۰۰, ۳۸, ۴۲, ۴۲۱, ۴۲۳, ۴۳, ۴۵, ۴۵۰, ۴۵۲, ۴۷, ۵۲۱, ۵۲۳, ۵۳۱, ۵۵۰, ۵۵۰۰, ۵۵۱, ۵۵۷, ۵۶, ۵۶۰, ۵۶۸, ۵۷۱, ۵۸, ۵۸۱, ۵۹۴, ۵۹۶, ۶۰۰۰, ۶۰۱, ۶۱۳۱, ۶۳۱, ۶۶, ۶۷, ۶۷۸, ۶۸, ۶۸۶, ۶۸۸۲, ۷۰۰۵, ۷۱۱, ۷۲, ۷۳۳, ۷۶۲, ۷۶۷, ۷۸, ۸۰, ۸۰۰, ۸۰۴۶, ۸۲۰۱, ۸۳, ۸۳۳, ۸۷, ۸۸, ۸۸۱, ۹۰۰, ۹۰۵, ۹۲, ۹۲۳, ۹۴, ۹۴۰, ۹۵۱, ۹۹۰, ۹۹۱.</p>
 
@@ -146,33 +163,33 @@ Out of 15 observed tags, the rank of <code>NUM</code> is: 4 in number of lemmas,
 
 <p>The 3rd highest number of forms (2) was observed with the lemma “ده”: ده, دهها.</p>
 
-<p><code>NUM</code> occurs with 1 features: <a href="">fa-feat/NumType</a> (3409; 100% instances)</p>
+<p><code>NUM</code> occurs with 1 features: <a href="">fa-feat/NumType</a> (3024; 100% instances)</p>
 
 <p><code>NUM</code> occurs with 1 feature-value pairs: <code>NumType=Card</code></p>
 
 <p><code>NUM</code> occurs with 1 feature combinations.
-The most frequent feature combination is <code>NumType=Card</code> (3409 tokens).
+The most frequent feature combination is <code>NumType=Card</code> (3024 tokens).
 Examples: یک، دو، یکی، هزار، سه، میلیون، ۲، چهار، ۵، ۳</p>
 
 <h2 id="relations">Relations</h2>
 
-<p><code>NUM</code> nodes are attached to their parents using 19 different relations: <a href="">fa-dep/nummod</a> (2770; 81% instances), <a href="">fa-dep/compound</a> (197; 6% instances), <a href="">fa-dep/conj</a> (191; 6% instances), <a href="">fa-dep/nmod</a> (89; 3% instances), <a href="">fa-dep/nsubj</a> (76; 2% instances), <a href="">fa-dep/nmod:poss</a> (19; 1% instances), <a href="">fa-dep/root</a> (16; 0% instances), <a href="">fa-dep/dobj</a> (9; 0% instances), <a href="">fa-dep/amod</a> (8; 0% instances), <a href="">fa-dep/appos</a> (7; 0% instances), <a href="">fa-dep/ccomp</a> (7; 0% instances), <a href="">fa-dep/name</a> (5; 0% instances), <a href="">fa-dep/mwe</a> (4; 0% instances), <a href="">fa-dep/acl:relcl</a> (3; 0% instances), <a href="">fa-dep/xcomp</a> (3; 0% instances), <a href="">fa-dep/advcl</a> (2; 0% instances), <a href="">fa-dep/advmod</a> (1; 0% instances), <a href="">fa-dep/det</a> (1; 0% instances), <a href="">fa-dep/nsubjpass</a> (1; 0% instances)</p>
+<p><code>NUM</code> nodes are attached to their parents using 20 different relations: <a href="">fa-dep/nummod</a> (2459; 81% instances), <a href="">fa-dep/compound</a> (170; 6% instances), <a href="">fa-dep/conj</a> (164; 5% instances), <a href="">fa-dep/nsubj</a> (72; 2% instances), <a href="">fa-dep/nmod</a> (62; 2% instances), <a href="">fa-dep/obl</a> (20; 1% instances), <a href="">fa-dep/nmod:poss</a> (17; 1% instances), <a href="">fa-dep/root</a> (12; 0% instances), <a href="">fa-dep/obj</a> (9; 0% instances), <a href="">fa-dep/amod</a> (8; 0% instances), <a href="">fa-dep/appos</a> (7; 0% instances), <a href="">fa-dep/ccomp</a> (6; 0% instances), <a href="">fa-dep/flat</a> (5; 0% instances), <a href="">fa-dep/fixed</a> (4; 0% instances), <a href="">fa-dep/xcomp</a> (3; 0% instances), <a href="">fa-dep/acl:relcl</a> (2; 0% instances), <a href="">fa-dep/advcl</a> (1; 0% instances), <a href="">fa-dep/advmod</a> (1; 0% instances), <a href="">fa-dep/det</a> (1; 0% instances), <a href="">fa-dep/nsubj:pass</a> (1; 0% instances)</p>
 
-<p>Parents of <code>NUM</code> nodes belong to 10 different parts of speech: <a href="">NOUN</a> (2699; 79% instances), <a href="">NUM</a> (395; 12% instances), <a href="">ADJ</a> (137; 4% instances), <a href="">VERB</a> (119; 3% instances), <a href="">ADP</a> (24; 1% instances), <a href="">ROOT</a> (16; 0% instances), <a href="">PRON</a> (12; 0% instances), <a href="">ADV</a> (5; 0% instances), <a href="">DET</a> (1; 0% instances), <a href="">X</a> (1; 0% instances)</p>
+<p>Parents of <code>NUM</code> nodes belong to 10 different parts of speech: <a href="">NOUN</a> (2406; 80% instances), <a href="">NUM</a> (341; 11% instances), <a href="">ADJ</a> (117; 4% instances), <a href="">VERB</a> (108; 4% instances), <a href="">ADP</a> (22; 1% instances), <a href="">PRON</a> (12; 0% instances), <a href="">ROOT</a> (12; 0% instances), <a href="">ADV</a> (4; 0% instances), <a href="">DET</a> (1; 0% instances), <a href="">X</a> (1; 0% instances)</p>
 
-<p>2704 (79%) <code>NUM</code> nodes are leaves.</p>
+<p>2262 (75%) <code>NUM</code> nodes are leaves.</p>
 
-<p>436 (13%) <code>NUM</code> nodes have one child.</p>
+<p>617 (20%) <code>NUM</code> nodes have one child.</p>
 
-<p>191 (6%) <code>NUM</code> nodes have two children.</p>
+<p>117 (4%) <code>NUM</code> nodes have two children.</p>
 
-<p>78 (2%) <code>NUM</code> nodes have three or more children.</p>
+<p>28 (1%) <code>NUM</code> nodes have three or more children.</p>
 
-<p>The highest child degree of a <code>NUM</code> node is 9.</p>
+<p>The highest child degree of a <code>NUM</code> node is 7.</p>
 
-<p>Children of <code>NUM</code> nodes are attached using 19 different relations: <a href="">fa-dep/nummod</a> (216; 19% instances), <a href="">fa-dep/conj</a> (192; 17% instances), <a href="">fa-dep/nmod</a> (153; 14% instances), <a href="">fa-dep/advmod</a> (117; 10% instances), <a href="">fa-dep/punct</a> (117; 10% instances), <a href="">fa-dep/cc</a> (108; 10% instances), <a href="">fa-dep/case</a> (94; 8% instances), <a href="">fa-dep/cop</a> (29; 3% instances), <a href="">fa-dep/nsubj</a> (27; 2% instances), <a href="">fa-dep/det</a> (24; 2% instances), <a href="">fa-dep/ccomp</a> (9; 1% instances), <a href="">fa-dep/mark</a> (9; 1% instances), <a href="">fa-dep/amod</a> (6; 1% instances), <a href="">fa-dep/compound</a> (5; 0% instances), <a href="">fa-dep/mwe</a> (5; 0% instances), <a href="">fa-dep/nmod:poss</a> (5; 0% instances), <a href="">fa-dep/name</a> (2; 0% instances), <a href="">fa-dep/acl:relcl</a> (1; 0% instances), <a href="">fa-dep/advcl</a> (1; 0% instances)</p>
+<p>Children of <code>NUM</code> nodes are attached using 19 different relations: <a href="">fa-dep/nummod</a> (186; 19% instances), <a href="">fa-dep/conj</a> (170; 17% instances), <a href="">fa-dep/nmod</a> (138; 14% instances), <a href="">fa-dep/advmod</a> (106; 11% instances), <a href="">fa-dep/punct</a> (105; 11% instances), <a href="">fa-dep/cc</a> (86; 9% instances), <a href="">fa-dep/case</a> (85; 9% instances), <a href="">fa-dep/cop</a> (23; 2% instances), <a href="">fa-dep/det</a> (22; 2% instances), <a href="">fa-dep/nsubj</a> (21; 2% instances), <a href="">fa-dep/mark</a> (7; 1% instances), <a href="">fa-dep/amod</a> (6; 1% instances), <a href="">fa-dep/fixed</a> (6; 1% instances), <a href="">fa-dep/ccomp</a> (5; 1% instances), <a href="">fa-dep/compound</a> (5; 1% instances), <a href="">fa-dep/nmod:poss</a> (5; 1% instances), <a href="">fa-dep/flat</a> (2; 0% instances), <a href="">fa-dep/acl:relcl</a> (1; 0% instances), <a href="">fa-dep/advcl</a> (1; 0% instances)</p>
 
-<p>Children of <code>NUM</code> nodes belong to 12 different parts of speech: <a href="">NUM</a> (395; 35% instances), <a href="">NOUN</a> (238; 21% instances), <a href="">PUNCT</a> (116; 10% instances), <a href="">CONJ</a> (108; 10% instances), <a href="">ADP</a> (90; 8% instances), <a href="">ADJ</a> (71; 6% instances), <a href="">VERB</a> (35; 3% instances), <a href="">DET</a> (22; 2% instances), <a href="">SCONJ</a> (14; 1% instances), <a href="">ADV</a> (12; 1% instances), <a href="">PRON</a> (11; 1% instances), <a href="">PART</a> (8; 1% instances)</p>
+<p>Children of <code>NUM</code> nodes belong to 13 different parts of speech: <a href="">NUM</a> (341; 35% instances), <a href="">NOUN</a> (214; 22% instances), <a href="">PUNCT</a> (104; 11% instances), <a href="">CCONJ</a> (86; 9% instances), <a href="">ADP</a> (81; 8% instances), <a href="">ADJ</a> (66; 7% instances), <a href="">AUX</a> (23; 2% instances), <a href="">DET</a> (21; 2% instances), <a href="">SCONJ</a> (11; 1% instances), <a href="">PRON</a> (10; 1% instances), <a href="">ADV</a> (9; 1% instances), <a href="">PART</a> (8; 1% instances), <a href="">VERB</a> (6; 1% instances)</p>
 
 
 
@@ -182,9 +199,25 @@ Examples: یک، دو، یکی، هزار، سه، میلیون، ۲، چهار�
 
 NUM in other languages:
 
+[<a href="../../am/pos/NUM.html">am</a>]
+
+[<a href="../../ar/pos/NUM.html">ar</a>]
+
 [<a href="../../bg/pos/NUM.html">bg</a>]
 
+[<a href="../../bxr/pos/NUM.html">bxr</a>]
+
+[<a href="../../ca/pos/NUM.html">ca</a>]
+
+[<a href="../../ckb/pos/NUM.html">ckb</a>]
+
+[<a href="../../cop/pos/NUM.html">cop</a>]
+
 [<a href="../../cs/pos/NUM.html">cs</a>]
+
+[<a href="../../cu/pos/NUM.html">cu</a>]
+
+[<a href="../../da/pos/NUM.html">da</a>]
 
 [<a href="../../de/pos/NUM.html">de</a>]
 
@@ -194,29 +227,99 @@ NUM in other languages:
 
 [<a href="../../es/pos/NUM.html">es</a>]
 
+[<a href="../../et/pos/NUM.html">et</a>]
+
 [<a href="../../eu/pos/NUM.html">eu</a>]
 
 [<a href="../../fa/pos/NUM.html">fa</a>]
 
 [<a href="../../fi/pos/NUM.html">fi</a>]
 
+[<a href="../../fo/pos/NUM.html">fo</a>]
+
 [<a href="../../fr/pos/NUM.html">fr</a>]
 
 [<a href="../../ga/pos/NUM.html">ga</a>]
 
+[<a href="../../gl/pos/NUM.html">gl</a>]
+
+[<a href="../../got/pos/NUM.html">got</a>]
+
+[<a href="../../grc/pos/NUM.html">grc</a>]
+
 [<a href="../../he/pos/NUM.html">he</a>]
 
+[<a href="../../hi/pos/NUM.html">hi</a>]
+
+[<a href="../../hr/pos/NUM.html">hr</a>]
+
 [<a href="../../hu/pos/NUM.html">hu</a>]
+
+[<a href="../../id/pos/NUM.html">id</a>]
 
 [<a href="../../it/pos/NUM.html">it</a>]
 
 [<a href="../../ja/pos/NUM.html">ja</a>]
 
+[<a href="../../kk/pos/NUM.html">kk</a>]
+
+[<a href="../../kmr/pos/NUM.html">kmr</a>]
+
 [<a href="../../ko/pos/NUM.html">ko</a>]
+
+[<a href="../../la/pos/NUM.html">la</a>]
+
+[<a href="../../lv/pos/NUM.html">lv</a>]
+
+[<a href="../../mr/pos/NUM.html">mr</a>]
+
+[<a href="../../nl/pos/NUM.html">nl</a>]
+
+[<a href="../../no/pos/NUM.html">no</a>]
+
+[<a href="../../pl/pos/NUM.html">pl</a>]
+
+[<a href="../../pt/pos/NUM.html">pt</a>]
+
+[<a href="../../ro/pos/NUM.html">ro</a>]
+
+[<a href="../../ru/pos/NUM.html">ru</a>]
+
+[<a href="../../sa/pos/NUM.html">sa</a>]
+
+[<a href="../../sk/pos/NUM.html">sk</a>]
+
+[<a href="../../sla/pos/NUM.html">sla</a>]
+
+[<a href="../../sl/pos/NUM.html">sl</a>]
+
+[<a href="../../so/pos/NUM.html">so</a>]
+
+[<a href="../../sr/pos/NUM.html">sr</a>]
 
 [<a href="../../sv/pos/NUM.html">sv</a>]
 
+[<a href="../../swl/pos/NUM.html">swl</a>]
+
+[<a href="../../ta/pos/NUM.html">ta</a>]
+
+[<a href="../../tr/pos/NUM.html">tr</a>]
+
+[<a href="../../ug/pos/NUM.html">ug</a>]
+
+[<a href="../../uk/pos/NUM.html">uk</a>]
+
 [<a href="../../u/pos/NUM.html">u</a>]
+
+[<a href="../../urj/pos/NUM.html">urj</a>]
+
+[<a href="../../ur/pos/NUM.html">ur</a>]
+
+[<a href="../../vi/pos/NUM.html">vi</a>]
+
+[<a href="../../yue/pos/NUM.html">yue</a>]
+
+[<a href="../../zh/pos/NUM.html">zh</a>]
 
 
 

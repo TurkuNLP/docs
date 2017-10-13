@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-et">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/et/dep">et/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_et-dep/list.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-et">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/et/dep">et/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_et-dep/list.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -56,102 +73,30 @@ for <code>list</code>.</p>
 
 
 
-
-<hr />
-
-<h2 id="treebank-statistics-udestonian">Treebank Statistics (UD_Estonian)</h2>
-
-<p>This relation is universal.</p>
-
-<p>58 nodes (0%) are attached to their parents as <code>list</code>.</p>
-
-<p>30 instances of <code>list</code> (52%) are left-to-right (parent precedes child).
-Average distance between parent and child is 3.10344827586207.</p>
-
-<p>The following 14 pairs of parts of speech are connected with <code>list</code>: <a href="">et-pos/PROPN</a>-<a href="">et-pos/PROPN</a> (20; 34% instances), <a href="">et-pos/VERB</a>-<a href="">et-pos/NOUN</a> (9; 16% instances), <a href="">et-pos/VERB</a>-<a href="">et-pos/ADJ</a> (5; 9% instances), <a href="">et-pos/X</a>-<a href="">et-pos/X</a> (5; 9% instances), <a href="">et-pos/NOUN</a>-<a href="">et-pos/NOUN</a> (4; 7% instances), <a href="">et-pos/ADJ</a>-<a href="">et-pos/ADJ</a> (3; 5% instances), <a href="">et-pos/PROPN</a>-<a href="">et-pos/NOUN</a> (3; 5% instances), <a href="">et-pos/ADJ</a>-<a href="">et-pos/NOUN</a> (2; 3% instances), <a href="">et-pos/VERB</a>-<a href="">et-pos/NUM</a> (2; 3% instances), <a href="">et-pos/ADJ</a>-<a href="">et-pos/ADV</a> (1; 2% instances), <a href="">et-pos/NOUN</a>-<a href="">et-pos/ADJ</a> (1; 2% instances), <a href="">et-pos/NOUN</a>-<a href="">et-pos/NUM</a> (1; 2% instances), <a href="">et-pos/SYM</a>-<a href="">et-pos/NOUN</a> (1; 2% instances), <a href="">et-pos/VERB</a>-<a href="">et-pos/ADV</a> (1; 2% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 22	bgColor:blue
-# visual-style 22	fgColor:white
-# visual-style 20	bgColor:blue
-# visual-style 20	fgColor:white
-# visual-style 20 22 list	color:blue
-1	Oletatakse	oletama	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
-2	,	,	PUNCT	Z	_	11	punct	_	_
-3	et	et	SCONJ	J	_	11	mark	_	_
-4	suurema	suurem	ADJ	A	Case=Gen|Degree=Cmp|Number=Sing	6	amod	_	_
-5	etnilise	etniline	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	6	amod	_	_
-6	heterogeensuse	heterogeensus	NOUN	S	Case=Gen|Number=Sing	11	nmod	_	_
-7	korral	korral	ADP	K	AdpType=Post	6	case	_	_
-8	on	olema	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
-9	inimesed	inimene	NOUN	S	Case=Nom|Number=Plur	11	nsubj:cop	_	_
-10	vähem	vähem	ADV	D	_	11	advmod	_	_
-11	huvitatud	huvitatud	ADJ	A	Degree=Pos|Tense=Past|VerbForm=Part|Voice=Pass	1	ccomp	_	_
-12	ümberjaotusest	ümber_jaotus	NOUN	S	Case=Ela|Number=Sing	11	nmod	_	_
-13	ja	ja	CONJ	J	_	11	cc	_	_
-14	sissetulekute	sisse_tulek	NOUN	S	Case=Gen|Number=Plur	15	nmod	_	_
-15	ebavõrdsus	eba_võrdsus	NOUN	S	Case=Nom|Number=Sing	18	nsubj:cop	_	_
-16	on	olema	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	18	cop	_	_
-17	seega	seega	ADV	D	_	18	advmod	_	_
-18	suurem	suurem	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	11	conj	_	_
-19	(	(	PUNCT	Z	_	20	punct	_	_
-20	Clarke	Clarke	PROPN	S	Case=Nom|Number=Sing	18	parataxis	_	_
-21	,	,	PUNCT	Z	_	20	punct	_	_
-22	Xu	Xu	PROPN	S	Case=Nom|Number=Sing	20	list	_	_
-23	ja	ja	CONJ	J	_	20	cc	_	_
-24	Zou	Zou	PROPN	S	Case=Nom|Number=Sing	20	foreign	_	_
-25	,	,	PUNCT	Z	_	20	punct	_	_
-26	2003	2003	NUM	N	Case=Nom|Number=Sing|NumForm=Digit|NumType=Card	24	nummod	_	_
-27	)	)	PUNCT	Z	_	20	punct	_	_
-28	.	.	PUNCT	Z	_	1	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 5 1 list	color:blue
-1	a	a	NOUN	Y	Abbr=Yes	5	list	_	_
-2	)	)	PUNCT	Z	_	5	punct	_	_
-3	mulle	mina	PRON	P	Case=All|Number=Sing|Person=1|PronType=Prs	5	nmod	_	_
-4	ei	ei	AUX	V	Mood=Ind|Negative=Neg|VerbForm=Fin	5	neg	_	_
-5	meeldi	meeldima	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-6	teha	tegema	VERB	V	VerbForm=Inf	5	csubj	_	_
-7	seda	see	PRON	P	Case=Par|Number=Sing|PronType=Dem	6	dobj	_	_
-8	,	,	PUNCT	Z	_	11	punct	_	_
-9	mida	mis	PRON	P	Case=Par|Number=Sing|PronType=Int,Rel	11	dobj	_	_
-10	kõik	kõik	PRON	P	Case=Nom|Number=Plur|PronType=Tot	11	nsubj	_	_
-11	teevad	tegema	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	acl:relcl	_	_
-12	;	;	PUNCT	Z	_	5	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 4 1 list	color:blue
-1	1.	1.	ADJ	N	Case=Par|Number=Plur|NumForm=Digit|NumType=Ord	4	list	_	_
-2	Kas	kas	ADV	D	_	4	advmod	_	_
-3	ülikoole	üli_kool	NOUN	S	Case=Par|Number=Plur	4	nsubj	_	_
-4	on	olema	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-5	liiga	liiga	ADV	D	_	6	advmod	_	_
-6	palju	palju	ADV	D	_	4	advmod	_	_
-7	?	?	PUNCT	Z	_	4	punct	_	_
-
-</code></pre>
-
-
-
-
 <!-- "in other languages" links -->
 <hr/>
 
 list in other languages:
 
+[<a href="../../am/dep/list.html">am</a>]
+
+[<a href="../../ar/dep/list.html">ar</a>]
+
 [<a href="../../bg/dep/list.html">bg</a>]
 
+[<a href="../../bxr/dep/list.html">bxr</a>]
+
+[<a href="../../ca/dep/list.html">ca</a>]
+
+[<a href="../../ckb/dep/list.html">ckb</a>]
+
+[<a href="../../cop/dep/list.html">cop</a>]
+
 [<a href="../../cs/dep/list.html">cs</a>]
+
+[<a href="../../cu/dep/list.html">cu</a>]
+
+[<a href="../../da/dep/list.html">da</a>]
 
 [<a href="../../de/dep/list.html">de</a>]
 
@@ -161,29 +106,99 @@ list in other languages:
 
 [<a href="../../es/dep/list.html">es</a>]
 
+[<a href="../../et/dep/list.html">et</a>]
+
 [<a href="../../eu/dep/list.html">eu</a>]
 
 [<a href="../../fa/dep/list.html">fa</a>]
 
 [<a href="../../fi/dep/list.html">fi</a>]
 
+[<a href="../../fo/dep/list.html">fo</a>]
+
 [<a href="../../fr/dep/list.html">fr</a>]
 
 [<a href="../../ga/dep/list.html">ga</a>]
 
+[<a href="../../gl/dep/list.html">gl</a>]
+
+[<a href="../../got/dep/list.html">got</a>]
+
+[<a href="../../grc/dep/list.html">grc</a>]
+
 [<a href="../../he/dep/list.html">he</a>]
 
+[<a href="../../hi/dep/list.html">hi</a>]
+
+[<a href="../../hr/dep/list.html">hr</a>]
+
 [<a href="../../hu/dep/list.html">hu</a>]
+
+[<a href="../../id/dep/list.html">id</a>]
 
 [<a href="../../it/dep/list.html">it</a>]
 
 [<a href="../../ja/dep/list.html">ja</a>]
 
+[<a href="../../kk/dep/list.html">kk</a>]
+
+[<a href="../../kmr/dep/list.html">kmr</a>]
+
 [<a href="../../ko/dep/list.html">ko</a>]
+
+[<a href="../../la/dep/list.html">la</a>]
+
+[<a href="../../lv/dep/list.html">lv</a>]
+
+[<a href="../../mr/dep/list.html">mr</a>]
+
+[<a href="../../nl/dep/list.html">nl</a>]
+
+[<a href="../../no/dep/list.html">no</a>]
+
+[<a href="../../pl/dep/list.html">pl</a>]
+
+[<a href="../../pt/dep/list.html">pt</a>]
+
+[<a href="../../ro/dep/list.html">ro</a>]
+
+[<a href="../../ru/dep/list.html">ru</a>]
+
+[<a href="../../sa/dep/list.html">sa</a>]
+
+[<a href="../../sk/dep/list.html">sk</a>]
+
+[<a href="../../sla/dep/list.html">sla</a>]
+
+[<a href="../../sl/dep/list.html">sl</a>]
+
+[<a href="../../so/dep/list.html">so</a>]
+
+[<a href="../../sr/dep/list.html">sr</a>]
 
 [<a href="../../sv/dep/list.html">sv</a>]
 
+[<a href="../../swl/dep/list.html">swl</a>]
+
+[<a href="../../ta/dep/list.html">ta</a>]
+
+[<a href="../../tr/dep/list.html">tr</a>]
+
 [<a href="../../u/dep/list.html">u</a>]
+
+[<a href="../../ug/dep/list.html">ug</a>]
+
+[<a href="../../uk/dep/list.html">uk</a>]
+
+[<a href="../../ur/dep/list.html">ur</a>]
+
+[<a href="../../urj/dep/list.html">urj</a>]
+
+[<a href="../../vi/dep/list.html">vi</a>]
+
+[<a href="../../yue/dep/list.html">yue</a>]
+
+[<a href="../../zh/dep/list.html">zh</a>]
 
 
 

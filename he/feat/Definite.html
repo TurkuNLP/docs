@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-he">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/he/feat">he/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_he-feat/Definite.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-he">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/he/feat">he/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_he-feat/Definite.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -62,78 +79,94 @@ for <code>Definite</code>.</p>
 
 <h2 id="treebank-statistics-udhebrew">Treebank Statistics (UD_Hebrew)</h2>
 
-<p>This feature is universal.
-It occurs with 1 different values: <code>Red</code>.</p>
+<p>This feature is universal but the values <code>Cons</code> are language-specific.
+It occurs with 2 different values: <code>Cons</code>, <code>Def</code>.</p>
 
-<p>10855 tokens (7%) have a non-empty value of <code>Definite</code>.
-2234 types (12%) occur at least once with a non-empty value of <code>Definite</code>.
-1 lemmas (0) occur at least once with a non-empty value of <code>Definite</code>.
-The feature is used with 5 part-of-speech tags: <a href="">he-pos/NOUN</a> (9343; 6% instances), <a href="">he-pos/DET</a> (893; 1% instances), <a href="">he-pos/NUM</a> (429; 0% instances), <a href="">he-pos/ADJ</a> (106; 0% instances), <a href="">he-pos/VERB</a> (84; 0% instances).</p>
+<p>12323 tokens (8%) have a non-empty value of <code>Definite</code>.
+2903 types (17%) occur at least once with a non-empty value of <code>Definite</code>.
+1976 lemmas (21%) occur at least once with a non-empty value of <code>Definite</code>.
+The feature is used with 5 part-of-speech tags: <a href="">he-pos/NOUN</a> (10918; 7% instances), <a href="">he-pos/DET</a> (839; 1% instances), <a href="">he-pos/NUM</a> (395; 0% instances), <a href="">he-pos/ADJ</a> (93; 0% instances), <a href="">he-pos/VERB</a> (78; 0% instances).</p>
 
 <h3 id="noun"><code>NOUN</code></h3>
 
-<p>9343 <a href="">he-pos/NOUN</a> tokens (24% of all <code>NOUN</code> tokens) have a non-empty value of <code>Definite</code>.</p>
+<p>10918 <a href="">he-pos/NOUN</a> tokens (31% of all <code>NOUN</code> tokens) have a non-empty value of <code>Definite</code>.</p>
 
-<p>The most frequent other feature values with which <code>NOUN</code> and <code>Definite</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (6708; 72%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (5931; 63%).</p>
+<p>The most frequent other feature values with which <code>NOUN</code> and <code>Definite</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (7948; 73%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (6694; 61%).</p>
 
 <p><code>NOUN</code> tokens may have the following values of <code>Definite</code>:</p>
 
 <ul>
-  <li><code>Red</code> (9343; 100% of non-empty <code>Definite</code>): בית, משרד, יום, תל, שר, פי, ידי, ראש, חברת, בתי</li>
-  <li><code>EMPTY</code> (28906): משטרה, %, משפט, ממשלה, ארץ, חברה, שנים, פועל, שנה, ש”ח</li>
+  <li><code>Cons</code> (8560; 78% of non-empty <code>Definite</code>): בית, משרד, יום, פי, שר, תל, ידי, חברת, ראש, בני</li>
+  <li><code>Def</code> (2358; 22% of non-empty <code>Definite</code>): דבר_, יד_, שם_, בית_, חבר_, תפקיד_, פנים_, חיים_, מוות_, דרך_</li>
+  <li><code>EMPTY</code> (24264): משטרה, %, ממשלה, ארץ, שנים, חברה, שנה, עבודה, שבוע, אדם</li>
 </ul>
+
+<table>
+  <tr><th>Paradigm <i>בית</i></th><th><tt>Def</tt></th><th><tt>Cons</tt></th></tr>
+  <tr><td><tt><a href="HebSource.html">HebSource</a>=ConvUncertainHead|<a href="Number.html">Number</a>=Sing</tt></td><td></td><td>בית</td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing</tt></td><td>בית_</td><td>בית</td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Plur</tt></td><td>בית_</td><td>בתי</td></tr>
+</table>
 
 <h3 id="det"><code>DET</code></h3>
 
-<p>893 <a href="">he-pos/DET</a> tokens (5% of all <code>DET</code> tokens) have a non-empty value of <code>Definite</code>.</p>
+<p>839 <a href="">he-pos/DET</a> tokens (5% of all <code>DET</code> tokens) have a non-empty value of <code>Definite</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>Definite</code> co-occurred: <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (893; 100%).</p>
+<p>The most frequent other feature values with which <code>DET</code> and <code>Definite</code> co-occurred: <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (839; 100%).</p>
 
 <p><code>DET</code> tokens may have the following values of <code>Definite</code>:</p>
 
 <ul>
-  <li><code>Red</code> (893; 100% of non-empty <code>Definite</code>): כל, כמה, הרבה, רוב, שום, מספר, אף, מרבית, מחצית, מעט</li>
-  <li><code>EMPTY</code> (16531): ה, ה_</li>
+  <li><code>Cons</code> (839; 100% of non-empty <code>Definite</code>): כל, כמה, רוב, מספר, הרבה, שום, אף, מרבית, מחצית, מעט</li>
+  <li><code>EMPTY</code> (15192): ה, ה_</li>
 </ul>
+
+<p><code>Definite</code> seems to be <strong>lexical feature</strong> of <code>DET</code>. 100% lemmas (19) occur only with one value of <code>Definite</code>.</p>
 
 <h3 id="num"><code>NUM</code></h3>
 
-<p>429 <a href="">he-pos/NUM</a> tokens (13% of all <code>NUM</code> tokens) have a non-empty value of <code>Definite</code>.</p>
+<p>395 <a href="">he-pos/NUM</a> tokens (13% of all <code>NUM</code> tokens) have a non-empty value of <code>Definite</code>.</p>
 
-<p>The most frequent other feature values with which <code>NUM</code> and <code>Definite</code> co-occurred: <tt><a href="Number.html">Number</a>=Plur</tt> (319; 74%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (246; 57%).</p>
+<p>The most frequent other feature values with which <code>NUM</code> and <code>Definite</code> co-occurred: <tt><a href="Number.html">Number</a>=Plur</tt> (294; 74%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (233; 59%).</p>
 
 <p><code>NUM</code> tokens may have the following values of <code>Definite</code>:</p>
 
 <ul>
-  <li><code>Red</code> (429; 100% of non-empty <code>Definite</code>): שני, שתי, אחד, אלפי, מאות, עשרות, שלוש, שלושת, אחת, מיליוני</li>
-  <li><code>EMPTY</code> (2880): אחד, אחת, 1, 0, מיליון, אלף, 2, שלושה, 3, שני</li>
+  <li><code>Cons</code> (395; 100% of non-empty <code>Definite</code>): שני, שתי, אחד, אלפי, מאות, עשרות, שלושת, שלוש, אחת, מיליוני</li>
+  <li><code>EMPTY</code> (2627): אחד, 1, 0, אחת, מיליון, 2, אלף, שלושה, 3, 4</li>
 </ul>
+
+<p><code>Definite</code> seems to be <strong>lexical feature</strong> of <code>NUM</code>. 100% lemmas (21) occur only with one value of <code>Definite</code>.</p>
 
 <h3 id="adj"><code>ADJ</code></h3>
 
-<p>106 <a href="">he-pos/ADJ</a> tokens (1% of all <code>ADJ</code> tokens) have a non-empty value of <code>Definite</code>.</p>
+<p>93 <a href="">he-pos/ADJ</a> tokens (1% of all <code>ADJ</code> tokens) have a non-empty value of <code>Definite</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Definite</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (71; 67%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (66; 62%).</p>
+<p>The most frequent other feature values with which <code>ADJ</code> and <code>Definite</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (62; 67%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (59; 63%).</p>
 
 <p><code>ADJ</code> tokens may have the following values of <code>Definite</code>:</p>
 
 <ul>
-  <li><code>Red</code> (106; 100% of non-empty <code>Definite</code>): חסר, רב, חסרת, יתר, חסרות, חסרי, גדול, דמוי, משולל, רבת</li>
-  <li><code>EMPTY</code> (7926): אחרים, ראשון, לאומי, גדול, חדש, אחר, ראשונה, רבים, טוב, ישראלי</li>
+  <li><code>Cons</code> (93; 100% of non-empty <code>Definite</code>): חסר, רב, יתר, חסרות, חסרת, גדול, דמוי, חסרי, משולל, דל</li>
+  <li><code>EMPTY</code> (7263): אחרים, ראשון, לאומי, חדש, גדול, אחר, רבים, אמריקאי, אחרונים, חדשים</li>
 </ul>
+
+<p><code>Definite</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (38) occur only with one value of <code>Definite</code>.</p>
 
 <h3 id="verb"><code>VERB</code></h3>
 
-<p>84 <a href="">he-pos/VERB</a> tokens (1% of all <code>VERB</code> tokens) have a non-empty value of <code>Definite</code>.</p>
+<p>78 <a href="">he-pos/VERB</a> tokens (1% of all <code>VERB</code> tokens) have a non-empty value of <code>Definite</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Definite</code> co-occurred: <tt><a href="Person.html">Person</a>=1,2,3</tt> (84; 100%), <tt><a href="VerbType.html">VerbType</a>=EMPTY</tt> (84; 100%), <tt><a href="Negative.html">Negative</a>=EMPTY</tt> (84; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (84; 100%), <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (84; 100%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (61; 73%), <tt><a href="Number.html">Number</a>=Sing</tt> (44; 52%).</p>
+<p>The most frequent other feature values with which <code>VERB</code> and <code>Definite</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (78; 100%), <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (78; 100%), <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (78; 100%), <tt><a href="VerbType.html">VerbType</a>=EMPTY</tt> (78; 100%), <tt><a href="Person.html">Person</a>=1,2,3</tt> (78; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (70; 90%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (57; 73%), <tt><a href="Number.html">Number</a>=Sing</tt> (40; 51%).</p>
 
 <p><code>VERB</code> tokens may have the following values of <code>Definite</code>:</p>
 
 <ul>
-  <li><code>Red</code> (84; 100% of non-empty <code>Definite</code>): ממלא, מחזיקות, אוזלת, מצופה, נותן, רווי, יוצאת, לובשי, מיידי, מכבי</li>
-  <li><code>EMPTY</code> (15836): היה, יש, היו, הוא, היא, אין, היתה, אמר, אינו, יהיה</li>
+  <li><code>Cons</code> (78; 100% of non-empty <code>Definite</code>): ממלא, מחזיקות, אוזלת, מצופה, נותן, רווי, לובשי, מיידי, מכבי, מנחילי</li>
+  <li><code>EMPTY</code> (14607): היה, יש, היו, היא, הוא, אין, אמר, היתה, אינו, יהיה</li>
 </ul>
+
+<p><code>Definite</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 100% lemmas (50) occur only with one value of <code>Definite</code>.</p>
 
 
 
@@ -143,9 +176,23 @@ The feature is used with 5 part-of-speech tags: <a href="">he-pos/NOUN</a> (9343
 
 Definite in other languages:
 
+[<a href="../../am/feat/Definite.html">am</a>]
+
+[<a href="../../ar/feat/Definite.html">ar</a>]
+
 [<a href="../../bg/feat/Definite.html">bg</a>]
 
-[<a href="../../cs/feat/Definite.html">cs</a>]
+[<a href="../../bxr/feat/Definite.html">bxr</a>]
+
+[<a href="../../ca/feat/Definite.html">ca</a>]
+
+[<a href="../../ckb/feat/Definite.html">ckb</a>]
+
+[<a href="../../cop/feat/Definite.html">cop</a>]
+
+[<a href="../../cu/feat/Definite.html">cu</a>]
+
+[<a href="../../da/feat/Definite.html">da</a>]
 
 [<a href="../../de/feat/Definite.html">de</a>]
 
@@ -155,27 +202,95 @@ Definite in other languages:
 
 [<a href="../../es/feat/Definite.html">es</a>]
 
+[<a href="../../et/feat/Definite.html">et</a>]
+
 [<a href="../../eu/feat/Definite.html">eu</a>]
 
 [<a href="../../fa/feat/Definite.html">fa</a>]
+
+[<a href="../../fo/feat/Definite.html">fo</a>]
 
 [<a href="../../fr/feat/Definite.html">fr</a>]
 
 [<a href="../../ga/feat/Definite.html">ga</a>]
 
+[<a href="../../gl/feat/Definite.html">gl</a>]
+
+[<a href="../../got/feat/Definite.html">got</a>]
+
+[<a href="../../grc/feat/Definite.html">grc</a>]
+
 [<a href="../../he/feat/Definite.html">he</a>]
 
+[<a href="../../hi/feat/Definite.html">hi</a>]
+
+[<a href="../../hr/feat/Definite.html">hr</a>]
+
 [<a href="../../hu/feat/Definite.html">hu</a>]
+
+[<a href="../../id/feat/Definite.html">id</a>]
 
 [<a href="../../it/feat/Definite.html">it</a>]
 
 [<a href="../../ja/feat/Definite.html">ja</a>]
 
+[<a href="../../kk/feat/Definite.html">kk</a>]
+
+[<a href="../../kmr/feat/Definite.html">kmr</a>]
+
 [<a href="../../ko/feat/Definite.html">ko</a>]
+
+[<a href="../../la/feat/Definite.html">la</a>]
+
+[<a href="../../lv/feat/Definite.html">lv</a>]
+
+[<a href="../../mr/feat/Definite.html">mr</a>]
+
+[<a href="../../nl/feat/Definite.html">nl</a>]
+
+[<a href="../../no/feat/Definite.html">no</a>]
+
+[<a href="../../pl/feat/Definite.html">pl</a>]
+
+[<a href="../../pt/feat/Definite.html">pt</a>]
+
+[<a href="../../ro/feat/Definite.html">ro</a>]
+
+[<a href="../../sa/feat/Definite.html">sa</a>]
+
+[<a href="../../sk/feat/Definite.html">sk</a>]
+
+[<a href="../../sla/feat/Definite.html">sla</a>]
+
+[<a href="../../sl/feat/Definite.html">sl</a>]
+
+[<a href="../../so/feat/Definite.html">so</a>]
+
+[<a href="../../sr/feat/Definite.html">sr</a>]
 
 [<a href="../../sv/feat/Definite.html">sv</a>]
 
+[<a href="../../swl/feat/Definite.html">swl</a>]
+
+[<a href="../../ta/feat/Definite.html">ta</a>]
+
+[<a href="../../tr/feat/Definite.html">tr</a>]
+
 [<a href="../../u/feat/Definite.html">u</a>]
+
+[<a href="../../ug/feat/Definite.html">ug</a>]
+
+[<a href="../../uk/feat/Definite.html">uk</a>]
+
+[<a href="../../ur/feat/Definite.html">ur</a>]
+
+[<a href="../../urj/feat/Definite.html">urj</a>]
+
+[<a href="../../vi/feat/Definite.html">vi</a>]
+
+[<a href="../../yue/feat/Definite.html">yue</a>]
+
+[<a href="../../zh/feat/Definite.html">zh</a>]
 
 
 

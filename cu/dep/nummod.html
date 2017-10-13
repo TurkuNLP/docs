@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-cu">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/cu/dep">cu/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_cu-dep/nummod.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/cu/dep">cu/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cu-dep/nummod.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,50 +80,45 @@ for <code>nummod</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>262 nodes (0%) are attached to their parents as <code>nummod</code>.</p>
+<p>229 nodes (0%) are attached to their parents as <code>nummod</code>.</p>
 
-<p>170 instances of <code>nummod</code> (65%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.51908396946565.</p>
+<p>147 instances of <code>nummod</code> (64%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.57205240174672.</p>
 
-<p>The following 5 pairs of parts of speech are connected with <code>nummod</code>: <a href="">cu-pos/NOUN</a>-<a href="">cu-pos/NUM</a> (176; 67% instances), <a href="">cu-pos/NUM</a>-<a href="">cu-pos/NUM</a> (74; 28% instances), <a href="">cu-pos/ADJ</a>-<a href="">cu-pos/NUM</a> (7; 3% instances), <a href="">cu-pos/PRON</a>-<a href="">cu-pos/NUM</a> (4; 2% instances), <a href="">cu-pos/VERB</a>-<a href="">cu-pos/NUM</a> (1; 0% instances).</p>
+<p>The following 5 pairs of parts of speech are connected with <code>nummod</code>: <a href="">cu-pos/NOUN</a>-<a href="">cu-pos/NUM</a> (152; 66% instances), <a href="">cu-pos/NUM</a>-<a href="">cu-pos/NUM</a> (68; 30% instances), <a href="">cu-pos/ADJ</a>-<a href="">cu-pos/NUM</a> (7; 3% instances), <a href="">cu-pos/PRON</a>-<a href="">cu-pos/NUM</a> (1; 0% instances), <a href="">cu-pos/VERB</a>-<a href="">cu-pos/NUM</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 9	bgColor:blue
 # visual-style 9	fgColor:white
 # visual-style 8	bgColor:blue
 # visual-style 8	fgColor:white
 # visual-style 8 9 nummod	color:blue
-1	и	и	CONJ	C-	_	10	cc	_	_
-2	аще	аще	SCONJ	G-	_	4	mark	_	_
-3	къто	къто	PRON	Px	Case=Nom|Number=Sing	4	nsubj	_	_
-4	поиметъ	поѩти	VERB	V-	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	advcl	_	_
-5	тѧ	тꙑ	PRON	Pp	Case=Acc|Number=Sing|Person=2|PronType=Prs	4	dobj	_	_
-6	по	по	ADP	R-	_	7	case	_	_
-7	силѣ	сила	NOUN	Nb	Case=Dat|Gender=Fem|Number=Sing	4	nmod	_	_
-8	попьрище	попьрище	NOUN	Nb	Case=Acc|Gender=Neut|Number=Sing	4	remnant	_	_
-9	едино	ѥдинъ	NUM	Ma	Case=Acc|Gender=Neut|Number=Sing	8	nummod	_	_
-10	ꙇди	ити	VERB	V-	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-11	съ	съ	ADP	R-	_	12	case	_	_
-12	нимь	и	PRON	Pp	Case=Ins|Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	iobj	_	_
-13	дьвѣ	дъва	NUM	Ma	Case=Acc|Gender=Neut|Number=Dual	10	nmod	_	_
+1	и	и	CCONJ	C-	_	10	cc	_	ref=MATT_5.41
+2	аще	аще	SCONJ	G-	_	4	mark	_	ref=MATT_5.41
+3	къто	къто	ADJ	Px	Case=Nom|Number=Sing	4	nsubj	_	ref=MATT_5.41
+4	поиметъ	поѩти	VERB	V-	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	advcl	_	ref=MATT_5.41
+5	тѧ	тꙑ	PRON	Pp	Case=Acc|Number=Sing|Person=2|PronType=Prs	4	obj:dir	_	ref=MATT_5.41
+6	по	по	ADP	R-	_	7	case	_	ref=MATT_5.41
+7	силѣ	сила	NOUN	Nb	Case=Dat|Gender=Fem|Number=Sing	4	obl	_	ref=MATT_5.41
+8	попьрище	попьрище	NOUN	Nb	Case=Acc|Gender=Neut|Number=Sing	4	xcomp	_	ref=MATT_5.41
+9	едино	ѥдинъ	NUM	Ma	Case=Acc|Gender=Neut|Number=Sing	8	nummod	_	ref=MATT_5.41
+10	ꙇди	ити	VERB	V-	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	ref=MATT_5.41
+11	съ	съ	ADP	R-	_	12	case	_	ref=MATT_5.41
+12	нимь	и	PRON	Pp	Case=Ins|Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	obl	_	ref=MATT_5.41
+13	дьвѣ	дъва	NUM	Ma	Case=Acc|Gender=Neut|Number=Dual	10	obl	_	ref=MATT_5.41
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 11	bgColor:blue
-# visual-style 11	fgColor:white
-# visual-style 9	bgColor:blue
-# visual-style 9	fgColor:white
-# visual-style 9 11 nummod	color:blue
-1	сь	сь	ADJ	Pd	Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	_
-2	бо	бо	ADV	Df	_	3	discourse	_	_
-3	хотѣаше	хотѣти	VERB	V-	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
-4	прѣдати	прѣдати	VERB	V-	Tense=Pres|VerbForm=Inf|Voice=Act	3	xcomp	_	_
-5	и	и	PRON	Pp	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	dobj	_	_
-6	единъ	ѥдинъ	NUM	Ma	Case=Nom|Gender=Masc|Number=Sing	7	xcomp	_	_
-7	сꙑ	бꙑти	VERB	V-	Case=Nom|Gender=Masc|Number=Sing|Strength=Strong|Tense=Pres|VerbForm=Part|Voice=Act	3	advcl	_	_
-8	отъ	отъ	ADP	R-	_	9	case	_	_
-9	обою	оба	NUM	Ma	Case=Gen|Gender=Masc|Number=Dual	6	nmod	_	_
-10	на	на	ADP	R-	_	11	case	_	_
-11	десеⷮ҇	десѧть	NUM	Ma	Case=Loc|Gender=Fem,Masc|Number=Sing	9	nummod	_	_
+<pre><code class="language-conllu"># visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 6 nummod	color:blue
+1	бѣ	бꙑти	VERB	V-	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	ref=MARK_5.42
+2	бо	бо	ADV	Df	_	1	discourse	_	ref=MARK_5.42
+3	лѣтома	лѣто	NOUN	Nb	Case=Ins|Gender=Neut|Number=Dual	1	xcomp	_	ref=MARK_5.42
+4	дъвѣма	дъва	NUM	Ma	Case=Ins|Number=Dual	3	nummod	_	ref=MARK_5.42
+5	на	на	ADP	R-	_	6	case	_	ref=MARK_5.42
+6	десѧте	десѧть	NUM	Ma	Case=Loc|Gender=Fem,Masc|Number=Sing	4	nummod	_	ref=MARK_5.42
 
 </code></pre>
 
@@ -115,15 +127,15 @@ Average distance between parent and child is 1.51908396946565.</p>
 # visual-style 1	bgColor:blue
 # visual-style 1	fgColor:white
 # visual-style 1 2 nummod	color:blue
-1	Сиѩ	сь	ADJ	Pd	Case=Acc|Gender=Masc|Number=Plur	5	dobj	_	_
-2	оба	оба	NUM	Ma	Case=Acc|Gender=Masc|Number=Dual	1	nummod	_	_
-3	на	на	ADP	R-	_	4	case	_	_
-4	десѧте	десѧть	NUM	Ma	Case=Loc|Gender=Fem,Masc|Number=Sing	2	nummod	_	_
-5	посъла	посълати	VERB	V-	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
-6	и҃съ	исоусъ	PROPN	Ne	Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	_
-7	заповѣдавъ	заповѣдати	VERB	V-	Case=Nom|Gender=Masc|Number=Sing|Strength=Strong|Tense=Past|VerbForm=Part|Voice=Act	5	advcl	_	_
-8	имъ	и	PRON	Pp	Case=Dat|Gender=Masc|Number=Plur|Person=3|PronType=Prs	7	iobj	_	_
-9	г҃лѧ	глаголати	VERB	V-	Case=Nom|Gender=Masc|Number=Sing|Strength=Strong|Tense=Pres|VerbForm=Part|Voice=Act	5	advcl	_	_
+1	Сиѩ	сь	ADJ	Pd	Case=Acc|Gender=Masc|Number=Plur	5	obj:dir	_	ref=MATT_10.5
+2	оба	оба	NUM	Ma	Case=Acc|Gender=Masc|Number=Dual	1	nummod	_	ref=MATT_10.5
+3	на	на	ADP	R-	_	4	case	_	ref=MATT_10.5
+4	десѧте	десѧть	NUM	Ma	Case=Loc|Gender=Fem,Masc|Number=Sing	2	nummod	_	ref=MATT_10.5
+5	посъла	посълати	VERB	V-	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	ref=MATT_10.5
+6	и҃съ	исоусъ	PROPN	Ne	Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	ref=MATT_10.5
+7	заповѣдавъ	заповѣдати	VERB	V-	Case=Nom|Gender=Masc|Number=Sing|Strength=Strong|Tense=Past|VerbForm=Part|Voice=Act	5	advcl	_	ref=MATT_10.5
+8	имъ	и	PRON	Pp	Case=Dat|Gender=Masc|Number=Plur|Person=3|PronType=Prs	7	iobj	_	ref=MATT_10.5
+9	г҃лѧ	глаголати	VERB	V-	Case=Nom|Gender=Masc|Number=Sing|Strength=Strong|Tense=Pres|VerbForm=Part|Voice=Act	5	advcl	_	ref=MATT_10.5
 
 </code></pre>
 
@@ -135,9 +147,25 @@ Average distance between parent and child is 1.51908396946565.</p>
 
 nummod in other languages:
 
+[<a href="../../am/dep/nummod.html">am</a>]
+
+[<a href="../../ar/dep/nummod.html">ar</a>]
+
 [<a href="../../bg/dep/nummod.html">bg</a>]
 
+[<a href="../../bxr/dep/nummod.html">bxr</a>]
+
+[<a href="../../ca/dep/nummod.html">ca</a>]
+
+[<a href="../../ckb/dep/nummod.html">ckb</a>]
+
+[<a href="../../cop/dep/nummod.html">cop</a>]
+
 [<a href="../../cs/dep/nummod.html">cs</a>]
+
+[<a href="../../cu/dep/nummod.html">cu</a>]
+
+[<a href="../../da/dep/nummod.html">da</a>]
 
 [<a href="../../de/dep/nummod.html">de</a>]
 
@@ -147,29 +175,99 @@ nummod in other languages:
 
 [<a href="../../es/dep/nummod.html">es</a>]
 
+[<a href="../../et/dep/nummod.html">et</a>]
+
 [<a href="../../eu/dep/nummod.html">eu</a>]
 
 [<a href="../../fa/dep/nummod.html">fa</a>]
 
 [<a href="../../fi/dep/nummod.html">fi</a>]
 
+[<a href="../../fo/dep/nummod.html">fo</a>]
+
 [<a href="../../fr/dep/nummod.html">fr</a>]
 
 [<a href="../../ga/dep/nummod.html">ga</a>]
 
+[<a href="../../gl/dep/nummod.html">gl</a>]
+
+[<a href="../../got/dep/nummod.html">got</a>]
+
+[<a href="../../grc/dep/nummod.html">grc</a>]
+
 [<a href="../../he/dep/nummod.html">he</a>]
 
+[<a href="../../hi/dep/nummod.html">hi</a>]
+
+[<a href="../../hr/dep/nummod.html">hr</a>]
+
 [<a href="../../hu/dep/nummod.html">hu</a>]
+
+[<a href="../../id/dep/nummod.html">id</a>]
 
 [<a href="../../it/dep/nummod.html">it</a>]
 
 [<a href="../../ja/dep/nummod.html">ja</a>]
 
+[<a href="../../kk/dep/nummod.html">kk</a>]
+
+[<a href="../../kmr/dep/nummod.html">kmr</a>]
+
 [<a href="../../ko/dep/nummod.html">ko</a>]
+
+[<a href="../../la/dep/nummod.html">la</a>]
+
+[<a href="../../lv/dep/nummod.html">lv</a>]
+
+[<a href="../../mr/dep/nummod.html">mr</a>]
+
+[<a href="../../nl/dep/nummod.html">nl</a>]
+
+[<a href="../../no/dep/nummod.html">no</a>]
+
+[<a href="../../pl/dep/nummod.html">pl</a>]
+
+[<a href="../../pt/dep/nummod.html">pt</a>]
+
+[<a href="../../ro/dep/nummod.html">ro</a>]
+
+[<a href="../../ru/dep/nummod.html">ru</a>]
+
+[<a href="../../sa/dep/nummod.html">sa</a>]
+
+[<a href="../../sk/dep/nummod.html">sk</a>]
+
+[<a href="../../sla/dep/nummod.html">sla</a>]
+
+[<a href="../../sl/dep/nummod.html">sl</a>]
+
+[<a href="../../so/dep/nummod.html">so</a>]
+
+[<a href="../../sr/dep/nummod.html">sr</a>]
 
 [<a href="../../sv/dep/nummod.html">sv</a>]
 
+[<a href="../../swl/dep/nummod.html">swl</a>]
+
+[<a href="../../ta/dep/nummod.html">ta</a>]
+
+[<a href="../../tr/dep/nummod.html">tr</a>]
+
 [<a href="../../u/dep/nummod.html">u</a>]
+
+[<a href="../../ug/dep/nummod.html">ug</a>]
+
+[<a href="../../uk/dep/nummod.html">uk</a>]
+
+[<a href="../../ur/dep/nummod.html">ur</a>]
+
+[<a href="../../urj/dep/nummod.html">urj</a>]
+
+[<a href="../../vi/dep/nummod.html">vi</a>]
+
+[<a href="../../yue/dep/nummod.html">yue</a>]
+
+[<a href="../../zh/dep/nummod.html">zh</a>]
 
 
 

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-cs">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/cs/feat">cs/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-feat/AdpType.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cs">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/cs/feat">cs/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-feat/AdpType.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -47,10 +64,19 @@
 
 <h2><code>AdpType</code>: adposition type</h2>
 
+<table class="typeindex" border="1">
+<tr>
+  <td style="background-color:cornflowerblue;color:white"><strong>Values:</strong> </td>
+  <td><a href="#Comprep">Comprep</a></td>
+  <td><a href="#Prep">Prep</a></td>
+  <td><a href="#Voc">Voc</a></td>
+</tr>
+</table>
+
 <p>Czech has neither postpositions nor circumpositions but there are several forms of <a href="cs-pos/ADP">prepositions</a>
 that this feature distinguishes.</p>
 
-<h3 id="prep-normal-preposition"><code>Prep</code>: (normal) preposition</h3>
+<h3 id="a-nameprepprepa-normal-preposition"><a name="Prep"><code>Prep</code></a>: (normal) preposition</h3>
 
 <h4 id="examples">Examples</h4>
 
@@ -58,7 +84,7 @@ that this feature distinguishes.</p>
   <li><em><b>v</b></em> “in”, <em><b>na</b></em> “on”, <em><b>o</b></em> “about”, <em><b>z</b></em> “of”, <em><b>s</b></em> “with”, <em><b>do</b></em> “into”, <em><b>k</b></em> “to”, <em><b>pro</b></em> “for”, <em><b>za</b></em> “behind”, <em><b>po</b></em> “after”</li>
 </ul>
 
-<h3 id="voc-vocalized-preposition"><code>Voc</code>: vocalized preposition</h3>
+<h3 id="a-namevocvoca-vocalized-preposition"><a name="Voc"><code>Voc</code></a>: vocalized preposition</h3>
 
 <p>Some Czech prepositions are non-syllabic and their form
 has to be changed in some contexts to facilitate pronunciation.
@@ -74,7 +100,7 @@ the second line shows corresponding base forms.</p>
   <li><em>v, s, z, k, od, bez, k, skrz, před, nad</em></li>
 </ul>
 
-<h3 id="comprep-dependent-part-of-compound-preposition"><code>Comprep</code>: dependent part of compound preposition</h3>
+<h3 id="a-namecomprepcomprepa-dependent-part-of-compound-preposition"><a name="Comprep"><code>Comprep</code></a>: dependent part of compound preposition</h3>
 
 <p>This value marks dependent first part of a compound preposition. This word cannot occur alone.
 Not all compound prepositions contain words marked <code>Comprep</code>.
@@ -105,21 +131,21 @@ a preposition).</p>
 <p>This feature is language-specific.
 It occurs with 3 different values: <code>Comprep</code>, <code>Prep</code>, <code>Voc</code>.</p>
 
-<p>145943 tokens (10%) have a non-empty value of <code>AdpType</code>.
-227 types (0%) occur at least once with a non-empty value of <code>AdpType</code>.
-117 lemmas (0%) occur at least once with a non-empty value of <code>AdpType</code>.
-The feature is used with 1 part-of-speech tags: <a href="">cs-pos/ADP</a> (145943; 10% instances).</p>
+<p>129366 tokens (10%) have a non-empty value of <code>AdpType</code>.
+221 types (0%) occur at least once with a non-empty value of <code>AdpType</code>.
+114 lemmas (0%) occur at least once with a non-empty value of <code>AdpType</code>.
+The feature is used with 1 part-of-speech tags: <a href="">cs-pos/ADP</a> (129366; 10% instances).</p>
 
 <h3 id="adp"><code>ADP</code></h3>
 
-<p>145943 <a href="">cs-pos/ADP</a> tokens (100% of all <code>ADP</code> tokens) have a non-empty value of <code>AdpType</code>.</p>
+<p>129366 <a href="">cs-pos/ADP</a> tokens (100% of all <code>ADP</code> tokens) have a non-empty value of <code>AdpType</code>.</p>
 
 <p><code>ADP</code> tokens may have the following values of <code>AdpType</code>:</p>
 
 <ul>
-  <li><code>Comprep</code> (286; 0% of non-empty <code>AdpType</code>): <em>vzhledem, nehledě, narozdíl</em></li>
-  <li><code>Prep</code> (134515; 92% of non-empty <code>AdpType</code>): <em>v, na, o, z, s, do, k, pro, za, po</em></li>
-  <li><code>Voc</code> (11142; 8% of non-empty <code>AdpType</code>): <em>ve, se, ze, ke, ode, beze, ku, skrze, přede, nade</em></li>
+  <li><code>Comprep</code> (243; 0% of non-empty <code>AdpType</code>): <em>vzhledem, nehledě, narozdíl</em></li>
+  <li><code>Prep</code> (119237; 92% of non-empty <code>AdpType</code>): <em>v, na, o, z, s, do, k, pro, za, po</em></li>
+  <li><code>Voc</code> (9886; 8% of non-empty <code>AdpType</code>): <em>ve, se, ze, ke, ode, beze, ku, skrze, přede, nade</em></li>
 </ul>
 
 <table>
@@ -128,15 +154,15 @@ The feature is used with 1 part-of-speech tags: <a href="">cs-pos/ADP</a> (14594
   <tr><td><tt><a href="Case.html">Case</a>=Loc</tt></td><td><em>v</em></td><td><em>ve</em></td></tr>
 </table>
 
-<p><code>AdpType</code> seems to be <strong>lexical feature</strong> of <code>ADP</code>. 91% lemmas (106) occur only with one value of <code>AdpType</code>.</p>
+<p><code>AdpType</code> seems to be <strong>lexical feature</strong> of <code>ADP</code>. 90% lemmas (103) occur only with one value of <code>AdpType</code>.</p>
 
 <h2 id="relations-with-agreement-in-adptype">Relations with Agreement in <code>AdpType</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>AdpType</code>:
-<tt>ADP –[<a href="../dep/mwe.html">mwe</a>]–&gt; ADP</tt> (585; 53%),
-<tt>ADP –[<a href="../dep/conj.html">conj</a>]–&gt; ADP</tt> (10; 100%),
+<tt>ADP –[<a href="../dep/fixed.html">fixed</a>]–&gt; ADP</tt> (517; 54%),
+<tt>ADP –[<a href="../dep/conj.html">conj</a>]–&gt; ADP</tt> (8; 100%),
 <tt>ADP –[<a href="../dep/case.html">case</a>]–&gt; ADP</tt> (1; 100%),
-<tt>ADP –[<a href="../dep/foreign.html">foreign</a>]–&gt; ADP</tt> (1; 100%).</p>
+<tt>ADP –[<a href="../dep/flat:foreign.html">flat:foreign</a>]–&gt; ADP</tt> (1; 100%).</p>
 
 <hr />
 
@@ -145,21 +171,21 @@ The feature is used with 1 part-of-speech tags: <a href="">cs-pos/ADP</a> (14594
 <p>This feature is language-specific.
 It occurs with 3 different values: <code>Comprep</code>, <code>Prep</code>, <code>Voc</code>.</p>
 
-<p>48391 tokens (10%) have a non-empty value of <code>AdpType</code>.
-126 types (0%) occur at least once with a non-empty value of <code>AdpType</code>.
-72 lemmas (0%) occur at least once with a non-empty value of <code>AdpType</code>.
-The feature is used with 1 part-of-speech tags: <a href="">cs-pos/ADP</a> (48391; 10% instances).</p>
+<p>47360 tokens (10%) have a non-empty value of <code>AdpType</code>.
+124 types (0%) occur at least once with a non-empty value of <code>AdpType</code>.
+70 lemmas (0%) occur at least once with a non-empty value of <code>AdpType</code>.
+The feature is used with 1 part-of-speech tags: <a href="">cs-pos/ADP</a> (47360; 10% instances).</p>
 
 <h3 id="adp-1"><code>ADP</code></h3>
 
-<p>48391 <a href="">cs-pos/ADP</a> tokens (100% of all <code>ADP</code> tokens) have a non-empty value of <code>AdpType</code>.</p>
+<p>47360 <a href="">cs-pos/ADP</a> tokens (100% of all <code>ADP</code> tokens) have a non-empty value of <code>AdpType</code>.</p>
 
 <p><code>ADP</code> tokens may have the following values of <code>AdpType</code>:</p>
 
 <ul>
   <li><code>Comprep</code> (111; 0% of non-empty <code>AdpType</code>): <em>vzhledem, nehledě</em></li>
-  <li><code>Prep</code> (44447; 92% of non-empty <code>AdpType</code>): <em>v, na, s, z, o, k, pro, do, za, při</em></li>
-  <li><code>Voc</code> (3833; 8% of non-empty <code>AdpType</code>): <em>ve, ze, se, ke, beze, ode, přede, ku, skrze, nade</em></li>
+  <li><code>Prep</code> (43523; 92% of non-empty <code>AdpType</code>): <em>v, na, s, z, o, k, pro, do, za, při</em></li>
+  <li><code>Voc</code> (3726; 8% of non-empty <code>AdpType</code>): <em>ve, ze, se, ke, beze, ode, přede, ku, skrze, nade</em></li>
 </ul>
 
 <table>
@@ -171,7 +197,7 @@ The feature is used with 1 part-of-speech tags: <a href="">cs-pos/ADP</a> (48391
 <h2 id="relations-with-agreement-in-adptype-1">Relations with Agreement in <code>AdpType</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>AdpType</code>:
-<tt>ADP –[<a href="../dep/mwe.html">mwe</a>]–&gt; ADP</tt> (266; 54%),
+<tt>ADP –[<a href="../dep/fixed.html">fixed</a>]–&gt; ADP</tt> (260; 53%),
 <tt>ADP –[<a href="../dep/conj.html">conj</a>]–&gt; ADP</tt> (3; 100%).</p>
 
 <hr />
@@ -181,21 +207,21 @@ The feature is used with 1 part-of-speech tags: <a href="">cs-pos/ADP</a> (48391
 <p>This feature is language-specific.
 It occurs with 3 different values: <code>Comprep</code>, <code>Prep</code>, <code>Voc</code>.</p>
 
-<p>3942 tokens (11%) have a non-empty value of <code>AdpType</code>.
-58 types (1%) occur at least once with a non-empty value of <code>AdpType</code>.
-32 lemmas (1%) occur at least once with a non-empty value of <code>AdpType</code>.
-The feature is used with 1 part-of-speech tags: <a href="">cs-pos/ADP</a> (3942; 11% instances).</p>
+<p>2812 tokens (10%) have a non-empty value of <code>AdpType</code>.
+54 types (1%) occur at least once with a non-empty value of <code>AdpType</code>.
+31 lemmas (1%) occur at least once with a non-empty value of <code>AdpType</code>.
+The feature is used with 1 part-of-speech tags: <a href="">cs-pos/ADP</a> (2812; 10% instances).</p>
 
 <h3 id="adp-2"><code>ADP</code></h3>
 
-<p>3942 <a href="">cs-pos/ADP</a> tokens (100% of all <code>ADP</code> tokens) have a non-empty value of <code>AdpType</code>.</p>
+<p>2812 <a href="">cs-pos/ADP</a> tokens (100% of all <code>ADP</code> tokens) have a non-empty value of <code>AdpType</code>.</p>
 
 <p><code>ADP</code> tokens may have the following values of <code>AdpType</code>:</p>
 
 <ul>
-  <li><code>Comprep</code> (4; 0% of non-empty <code>AdpType</code>): <em>vzhledem</em></li>
-  <li><code>Prep</code> (3593; 91% of non-empty <code>AdpType</code>): <em>v, podle, na, o, k, s, do, za, z, pro</em></li>
-  <li><code>Voc</code> (345; 9% of non-empty <code>AdpType</code>): <em>ve, ke, se, ze, ode, beze, přede</em></li>
+  <li><code>Comprep</code> (3; 0% of non-empty <code>AdpType</code>): <em>vzhledem</em></li>
+  <li><code>Prep</code> (2555; 91% of non-empty <code>AdpType</code>): <em>v, na, o, podle, k, s, do, z, za, pro</em></li>
+  <li><code>Voc</code> (254; 9% of non-empty <code>AdpType</code>): <em>ve, ke, se, ze, ode, beze, přede</em></li>
 </ul>
 
 <table>
@@ -207,13 +233,46 @@ The feature is used with 1 part-of-speech tags: <a href="">cs-pos/ADP</a> (3942;
 <h2 id="relations-with-agreement-in-adptype-2">Relations with Agreement in <code>AdpType</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>AdpType</code>:
-<tt>ADP –[<a href="../dep/mwe.html">mwe</a>]–&gt; ADP</tt> (59; 89%).</p>
+<tt>ADP –[<a href="../dep/fixed.html">fixed</a>]–&gt; ADP</tt> (33; 87%).</p>
 
 
 
 
 <!-- "in other languages" links -->
 <hr/>
+
+AdpType in other languages:
+
+[<a href="../../ar/feat/AdpType.html">ar</a>]
+
+[<a href="../../ca/feat/AdpType.html">ca</a>]
+
+[<a href="../../cs/feat/AdpType.html">cs</a>]
+
+[<a href="../../da/feat/AdpType.html">da</a>]
+
+[<a href="../../es/feat/AdpType.html">es</a>]
+
+[<a href="../../et/feat/AdpType.html">et</a>]
+
+[<a href="../../fi/feat/AdpType.html">fi</a>]
+
+[<a href="../../grc/feat/AdpType.html">grc</a>]
+
+[<a href="../../hi/feat/AdpType.html">hi</a>]
+
+[<a href="../../la/feat/AdpType.html">la</a>]
+
+[<a href="../../nl/feat/AdpType.html">nl</a>]
+
+[<a href="../../pl/feat/AdpType.html">pl</a>]
+
+[<a href="../../pt/feat/AdpType.html">pt</a>]
+
+[<a href="../../ro/feat/AdpType.html">ro</a>]
+
+[<a href="../../ta/feat/AdpType.html">ta</a>]
+
 
 
 

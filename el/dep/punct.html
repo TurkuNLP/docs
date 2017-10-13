@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-el">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/el/dep">el/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/punct.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-el">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/el/dep">el/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/punct.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -152,57 +169,47 @@ Tokens with the relation [u-dep/punct]() always attach to content words (except 
 
 <p>This relation is universal.</p>
 
-<p>5979 nodes (10%) are attached to their parents as <code>punct</code>.</p>
+<p>5226 nodes (10%) are attached to their parents as <code>punct</code>.</p>
 
-<p>4119 instances of <code>punct</code> (69%) are left-to-right (parent precedes child).
-Average distance between parent and child is 10.0264258237163.</p>
+<p>3004 instances of <code>punct</code> (57%) are left-to-right (parent precedes child).
+Average distance between parent and child is 9.50057405281286.</p>
 
-<p>The following 10 pairs of parts of speech are connected with <code>punct</code>: <a href="">el-pos/VERB</a>-<a href="">el-pos/PUNCT</a> (3411; 57% instances), <a href="">el-pos/NOUN</a>-<a href="">el-pos/PUNCT</a> (1583; 26% instances), <a href="">el-pos/ADJ</a>-<a href="">el-pos/PUNCT</a> (369; 6% instances), <a href="">el-pos/ADV</a>-<a href="">el-pos/PUNCT</a> (248; 4% instances), <a href="">el-pos/CONJ</a>-<a href="">el-pos/PUNCT</a> (225; 4% instances), <a href="">el-pos/NUM</a>-<a href="">el-pos/PUNCT</a> (64; 1% instances), <a href="">el-pos/PRON</a>-<a href="">el-pos/PUNCT</a> (50; 1% instances), <a href="">el-pos/ADP</a>-<a href="">el-pos/PUNCT</a> (27; 0% instances), <a href="">el-pos/DET</a>-<a href="">el-pos/PUNCT</a> (1; 0% instances), <a href="">el-pos/NOUN</a>-<a href="">el-pos/NOUN</a> (1; 0% instances).</p>
+<p>The following 12 pairs of parts of speech are connected with <code>punct</code>: <a href="">el-pos/VERB</a>-<a href="">el-pos/PUNCT</a> (3102; 59% instances), <a href="">el-pos/NOUN</a>-<a href="">el-pos/PUNCT</a> (1123; 21% instances), <a href="">el-pos/ADJ</a>-<a href="">el-pos/PUNCT</a> (257; 5% instances), <a href="">el-pos/ADV</a>-<a href="">el-pos/PUNCT</a> (250; 5% instances), <a href="">el-pos/PROPN</a>-<a href="">el-pos/PUNCT</a> (186; 4% instances), <a href="">el-pos/X</a>-<a href="">el-pos/PUNCT</a> (146; 3% instances), <a href="">el-pos/NUM</a>-<a href="">el-pos/PUNCT</a> (51; 1% instances), <a href="">el-pos/PRON</a>-<a href="">el-pos/PUNCT</a> (47; 1% instances), <a href="">el-pos/CCONJ</a>-<a href="">el-pos/PUNCT</a> (41; 1% instances), <a href="">el-pos/ADP</a>-<a href="">el-pos/PUNCT</a> (19; 0% instances), <a href="">el-pos/PART</a>-<a href="">el-pos/PUNCT</a> (3; 0% instances), <a href="">el-pos/SYM</a>-<a href="">el-pos/PUNCT</a> (1; 0% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 8	bgColor:blue
-# visual-style 8	fgColor:white
-# visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 4 8 punct	color:blue
-1	Πολλοί	πολύς	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Plur	4	nsubj	_	_
-2	από	από	ADP	ADP	_	3	case	_	_
-3	αυτούς	αυτός	PRON	PRON	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Dem	1	det	_	_
-4	κινδυνεύουν	κινδυνεύω	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|Voice=Act	0	root	_	_
-5	να	να	PART	PART	_	7	aux	_	_
-6	μείνουν	μένω	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Voice=Act	7	cop	_	_
-7	άστεγοι	άστεγος	ADJ	ADJ	Case=Nom|Gender=Masc|Number=Plur	4	ccomp	_	_
-8	"	"	PUNCT	PUNCT	_	4	punct	_	_
-9	.	.	PUNCT	PUNCT	_	4	punct	_	_
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 3 punct	color:blue
+1	Τι	τι	PRON	PRON	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Int	2	obj	_	_
+2	πράξαμε	πράττω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	;	;	PUNCT	PUNCT	_	2	punct	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 3 4 punct	color:blue
-1	Ενδεικτικές	ενδεικτικός	ADJ	ADJ	Case=Nom|Gender=Fem|Number=Plur	3	amod	_	_
-2	χιλιομετρικές	χιλιομετρικός	ADJ	ADJ	Case=Nom|Gender=Fem|Number=Plur	3	amod	_	_
-3	αποστάσεις	απόσταση	NOUN	NOUN	Case=Nom|Gender=Fem|Number=Plur	0	root	_	_
-4	:	:	PUNCT	PUNCT	_	3	punct	_	_
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 1 punct	color:blue
+1	(	(	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No
+2	ΡΤ	ΡΤ	NOUN	NOUN	Abbr=Yes	0	root	_	SpaceAfter=No
+3	)	)	PUNCT	PUNCT	_	2	punct	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 10	bgColor:blue
-# visual-style 10	fgColor:white
-# visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 3 10 punct	color:blue
-1	Είναι	είμαι	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Pass	3	cop	_	_
-2	ασφαλώς	ασφαλώς	ADV	ADV	_	3	advmod	_	_
-3	σαφές	σαφής	ADJ	ADJ	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
-4	ότι	ότι	CONJ	CONJ	_	7	mark	_	_
-5	το	ο	DET	DET	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	6	det	_	_
-6	προεδρείο	προεδρείο	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Sing	7	nsubj	_	_
-7	κατέχει	κατέχω	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Act	3	csubj	_	_
-8	ηγετικό	ηγετικός	ADJ	ADJ	Case=Acc|Gender=Masc|Number=Sing	9	amod	_	_
-9	ρόλο	ρόλος	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Sing	7	dobj	_	_
-10	.	.	PUNCT	PUNCT	_	3	punct	_	_
+<pre><code class="language-conllu"># visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 6 7 punct	color:blue
+1	Τα	ο	DET	DET	Case=Nom|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	3	det	_	_
+2	πρώτα	πρώτα	NUM	NUM	Case=Nom|Gender=Neut|Number=Plur|NumType=Ord	3	nummod	_	_
+3	αποτελέσματα	αποτέλεσμα	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Plur	6	nsubj	_	_
+4	είναι	είμαι	AUX	AUX	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	6	cop	_	_
+5	ήδη	ήδη	ADV	ADV	_	6	advmod	_	_
+6	ορατά	ορατός	ADJ	ADJ	Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
 </code></pre>
 
@@ -214,9 +221,25 @@ Average distance between parent and child is 10.0264258237163.</p>
 
 punct in other languages:
 
+[<a href="../../am/dep/punct.html">am</a>]
+
+[<a href="../../ar/dep/punct.html">ar</a>]
+
 [<a href="../../bg/dep/punct.html">bg</a>]
 
+[<a href="../../bxr/dep/punct.html">bxr</a>]
+
+[<a href="../../ca/dep/punct.html">ca</a>]
+
+[<a href="../../ckb/dep/punct.html">ckb</a>]
+
+[<a href="../../cop/dep/punct.html">cop</a>]
+
 [<a href="../../cs/dep/punct.html">cs</a>]
+
+[<a href="../../cu/dep/punct.html">cu</a>]
+
+[<a href="../../da/dep/punct.html">da</a>]
 
 [<a href="../../de/dep/punct.html">de</a>]
 
@@ -226,29 +249,99 @@ punct in other languages:
 
 [<a href="../../es/dep/punct.html">es</a>]
 
+[<a href="../../et/dep/punct.html">et</a>]
+
 [<a href="../../eu/dep/punct.html">eu</a>]
 
 [<a href="../../fa/dep/punct.html">fa</a>]
 
 [<a href="../../fi/dep/punct.html">fi</a>]
 
+[<a href="../../fo/dep/punct.html">fo</a>]
+
 [<a href="../../fr/dep/punct.html">fr</a>]
 
 [<a href="../../ga/dep/punct.html">ga</a>]
 
+[<a href="../../gl/dep/punct.html">gl</a>]
+
+[<a href="../../got/dep/punct.html">got</a>]
+
+[<a href="../../grc/dep/punct.html">grc</a>]
+
 [<a href="../../he/dep/punct.html">he</a>]
 
+[<a href="../../hi/dep/punct.html">hi</a>]
+
+[<a href="../../hr/dep/punct.html">hr</a>]
+
 [<a href="../../hu/dep/punct.html">hu</a>]
+
+[<a href="../../id/dep/punct.html">id</a>]
 
 [<a href="../../it/dep/punct.html">it</a>]
 
 [<a href="../../ja/dep/punct.html">ja</a>]
 
+[<a href="../../kk/dep/punct.html">kk</a>]
+
+[<a href="../../kmr/dep/punct.html">kmr</a>]
+
 [<a href="../../ko/dep/punct.html">ko</a>]
+
+[<a href="../../la/dep/punct.html">la</a>]
+
+[<a href="../../lv/dep/punct.html">lv</a>]
+
+[<a href="../../mr/dep/punct.html">mr</a>]
+
+[<a href="../../nl/dep/punct.html">nl</a>]
+
+[<a href="../../no/dep/punct.html">no</a>]
+
+[<a href="../../pl/dep/punct.html">pl</a>]
+
+[<a href="../../pt/dep/punct.html">pt</a>]
+
+[<a href="../../ro/dep/punct.html">ro</a>]
+
+[<a href="../../ru/dep/punct.html">ru</a>]
+
+[<a href="../../sa/dep/punct.html">sa</a>]
+
+[<a href="../../sk/dep/punct.html">sk</a>]
+
+[<a href="../../sla/dep/punct.html">sla</a>]
+
+[<a href="../../sl/dep/punct.html">sl</a>]
+
+[<a href="../../so/dep/punct.html">so</a>]
+
+[<a href="../../sr/dep/punct.html">sr</a>]
 
 [<a href="../../sv/dep/punct.html">sv</a>]
 
+[<a href="../../swl/dep/punct.html">swl</a>]
+
+[<a href="../../ta/dep/punct.html">ta</a>]
+
+[<a href="../../tr/dep/punct.html">tr</a>]
+
 [<a href="../../u/dep/punct.html">u</a>]
+
+[<a href="../../ug/dep/punct.html">ug</a>]
+
+[<a href="../../uk/dep/punct.html">uk</a>]
+
+[<a href="../../ur/dep/punct.html">ur</a>]
+
+[<a href="../../urj/dep/punct.html">urj</a>]
+
+[<a href="../../vi/dep/punct.html">vi</a>]
+
+[<a href="../../yue/dep/punct.html">yue</a>]
+
+[<a href="../../zh/dep/punct.html">zh</a>]
 
 
 

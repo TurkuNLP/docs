@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ro">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ro/dep">ro/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ro-dep/compound.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ro">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ro/dep">ro/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ro-dep/compound.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -66,29 +83,46 @@ compound(mii, patru)
 
 <p>This relation is universal.</p>
 
-<p>74 nodes (0%) are attached to their parents as <code>compound</code>.</p>
+<p>57 nodes (0%) are attached to their parents as <code>compound</code>.</p>
 
-<p>71 instances of <code>compound</code> (96%) are left-to-right (parent precedes child).
-Average distance between parent and child is 1.39189189189189.</p>
+<p>54 instances of <code>compound</code> (95%) are left-to-right (parent precedes child).
+Average distance between parent and child is 1.47368421052632.</p>
 
-<p>The following 12 pairs of parts of speech are connected with <code>compound</code>: <a href="">ro-pos/NUM</a>-<a href="">ro-pos/NUM</a> (38; 51% instances), <a href="">ro-pos/NUM</a>-<a href="">ro-pos/CONJ</a> (9; 12% instances), <a href="">ro-pos/DET</a>-<a href="">ro-pos/NUM</a> (8; 11% instances), <a href="">ro-pos/NUM</a>-<a href="">ro-pos/PUNCT</a> (5; 7% instances), <a href="">ro-pos/NUM</a>-<a href="">ro-pos/ADP</a> (4; 5% instances), <a href="">ro-pos/PUNCT</a>-<a href="">ro-pos/NUM</a> (4; 5% instances), <a href="">ro-pos/ADP</a>-<a href="">ro-pos/NOUN</a> (1; 1% instances), <a href="">ro-pos/ADV</a>-<a href="">ro-pos/NUM</a> (1; 1% instances), <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/ADP</a> (1; 1% instances), <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/SYM</a> (1; 1% instances), <a href="">ro-pos/NUM</a>-<a href="">ro-pos/DET</a> (1; 1% instances), <a href="">ro-pos/SYM</a>-<a href="">ro-pos/NOUN</a> (1; 1% instances).</p>
+<p>The following 6 pairs of parts of speech are connected with <code>compound</code>: <a href="">ro-pos/NUM</a>-<a href="">ro-pos/NUM</a> (35; 61% instances), <a href="">ro-pos/DET</a>-<a href="">ro-pos/NUM</a> (8; 14% instances), <a href="">ro-pos/NUM</a>-<a href="">ro-pos/CCONJ</a> (8; 14% instances), <a href="">ro-pos/NUM</a>-<a href="">ro-pos/ADP</a> (4; 7% instances), <a href="">ro-pos/ADV</a>-<a href="">ro-pos/NUM</a> (1; 2% instances), <a href="">ro-pos/NUM</a>-<a href="">ro-pos/DET</a> (1; 2% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 10	bgColor:blue
-# visual-style 10	fgColor:white
-# visual-style 9	bgColor:blue
+<pre><code class="language-conllu"># visual-style 9	bgColor:blue
 # visual-style 9	fgColor:white
-# visual-style 9 10 compound	color:blue
-1	Consiliul	consiliu	NOUN	Ncmsry	Case=Acc,Nom|Definite=Def|Gender=Masc|Number=Sing	5	nsubj	_	_
-2	de	de	ADP	Spsa	AdpType=Prep|Case=Acc	3	case	_	_
-3	Administrație	administrație	NOUN	Ncfsrn	Case=Acc,Nom|Definite=Ind|Gender=Fem|Number=Sing	1	nmod	_	_
-4	a	avea	AUX	Va--3s	Number=Sing|Person=3	5	aux	_	_
-5	acordat	acorda	VERB	Vmp--sm	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
-6	o	un	DET	Tifsr	Case=Acc,Nom|Gender=Fem|Number=Sing|PronType=Ind	7	det	_	_
-7	despăgubire	despăgubire	NOUN	Ncfsrn	Case=Acc,Nom|Definite=Ind|Gender=Fem|Number=Sing	5	dobj	_	_
-8	de	de	ADP	Spsa	AdpType=Prep|Case=Acc	9	case	_	_
-9	4	4	NUM	Mc-p-d	Number=Plur|NumForm=Digit|NumType=Card	7	nummod	_	_
-10	milioane	milion	NUM	Mcfprln	Case=Acc,Nom|Definite=Ind|Gender=Fem|Number=Plur|NumForm=Word|NumType=Card	9	compound	_	_
-11	.	.	PUNCT	PERIOD	_	5	punct	_	_
+# visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 7 9 compound	color:blue
+1	Scoase	scoate	VERB	Vmis3s	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+2	din	din	ADP	Spsa	AdpType=Prep|Case=Acc	3	case	_	_
+3	buzunar	buzunar	NOUN	Ncms-n	Definite=Ind|Gender=Masc|Number=Sing	1	obl	_	_
+4	o	un	DET	Tifsr	Case=Acc,Nom|Gender=Fem|Number=Sing|PronType=Ind	5	det	_	_
+5	monedă	monedă	NOUN	Ncfsrn	Case=Acc,Nom|Definite=Ind|Gender=Fem|Number=Sing	1	obj	_	_
+6	de	de	ADP	Spsa	AdpType=Prep|Case=Acc	11	case	_	_
+7	douăzeci	douăzeci	NUM	Mc-p-l	Number=Plur|NumForm=Word|NumType=Card	11	nummod	_	_
+8	și	și	CCONJ	Crssp	Polarity=Pos	7	compound	_	_
+9	cinci	cinci	NUM	Mc-p-l	Number=Plur|NumForm=Word|NumType=Card	7	compound	_	_
+10	de	de	ADP	Spsa	AdpType=Prep|Case=Acc	7	case	_	_
+11	cenți	cent	NOUN	Ncmp-n	Definite=Ind|Gender=Masc|Number=Plur	5	nmod	_	SpaceAfter=No
+12	.	.	PUNCT	PERIOD	_	1	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 3 compound	color:blue
+1	Camera	cameră	NOUN	Ncfsry	Case=Acc,Nom|Definite=Def|Gender=Fem|Number=Sing	0	root	_	_
+2	o	un	DET	Tifsr	Case=Acc,Nom|Gender=Fem|Number=Sing|PronType=Ind	1	nummod	_	_
+3	sută	sută	NUM	Mcfsrln	Case=Acc,Nom|Definite=Ind|Gender=Fem|Number=Sing|NumForm=Word|NumType=Card	2	compound	_	_
+4	unu	unu	NUM	Mcmsrl	Case=Acc,Nom|Gender=Masc|Number=Sing|NumForm=Word|NumType=Card	2	compound	_	SpaceAfter=No
+5	,	,	PUNCT	COMMA	_	6	punct	_	_
+6	zise	zice	VERB	Vmis3s	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	parataxis	_	_
+7	ofițerul	ofițer	NOUN	Ncmsry	Case=Acc,Nom|Definite=Def|Gender=Masc|Number=Sing	6	nsubj	_	SpaceAfter=No
+8	.	.	PUNCT	PERIOD	_	1	punct	_	_
 
 </code></pre>
 
@@ -99,31 +133,16 @@ Average distance between parent and child is 1.39189189189189.</p>
 # visual-style 7 8 compound	color:blue
 1	Scoase	scoate	VERB	Vmis3s	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 2	din	din	ADP	Spsa	AdpType=Prep|Case=Acc	3	case	_	_
-3	buzunar	buzunar	NOUN	Ncms-n	Definite=Ind|Gender=Masc|Number=Sing	1	nmod	_	_
+3	buzunar	buzunar	NOUN	Ncms-n	Definite=Ind|Gender=Masc|Number=Sing	1	obl	_	_
 4	o	un	DET	Tifsr	Case=Acc,Nom|Gender=Fem|Number=Sing|PronType=Ind	5	det	_	_
-5	monedă	monedă	NOUN	Ncfsrn	Case=Acc,Nom|Definite=Ind|Gender=Fem|Number=Sing	1	dobj	_	_
+5	monedă	monedă	NOUN	Ncfsrn	Case=Acc,Nom|Definite=Ind|Gender=Fem|Number=Sing	1	obj	_	_
 6	de	de	ADP	Spsa	AdpType=Prep|Case=Acc	11	case	_	_
 7	douăzeci	douăzeci	NUM	Mc-p-l	Number=Plur|NumForm=Word|NumType=Card	11	nummod	_	_
-8	și	și	CONJ	Crssp	Negative=Pos	7	compound	_	_
+8	și	și	CCONJ	Crssp	Polarity=Pos	7	compound	_	_
 9	cinci	cinci	NUM	Mc-p-l	Number=Plur|NumForm=Word|NumType=Card	7	compound	_	_
 10	de	de	ADP	Spsa	AdpType=Prep|Case=Acc	7	case	_	_
-11	cenți	cent	NOUN	Ncmp-n	Definite=Ind|Gender=Masc|Number=Plur	5	nmod	_	_
+11	cenți	cent	NOUN	Ncmp-n	Definite=Ind|Gender=Masc|Number=Plur	5	nmod	_	SpaceAfter=No
 12	.	.	PUNCT	PERIOD	_	1	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 4 5 compound	color:blue
-1	Da'	dar	CONJ	Ccsspy	Negative=Pos|Variant=Short	3	cc	_	_
-2	nu	nu	PART	Qz	Negative=Neg	3	neg	_	_
-3	Camera	cameră	NOUN	Ncfsry	Case=Acc,Nom|Definite=Def|Gender=Fem|Number=Sing	0	root	_	_
-4	o	un	DET	Tifsr	Case=Acc,Nom|Gender=Fem|Number=Sing|PronType=Ind	3	nummod	_	_
-5	sută	sută	NUM	Mcfsrln	Case=Acc,Nom|Definite=Ind|Gender=Fem|Number=Sing|NumForm=Word|NumType=Card	4	compound	_	_
-6	unu	unu	NUM	Mcmsrl	Case=Acc,Nom|Gender=Masc|Number=Sing|NumForm=Word|NumType=Card	4	compound	_	_
-7	!	!	PUNCT	EXCL	_	3	punct	_	_
 
 </code></pre>
 
@@ -135,9 +154,25 @@ Average distance between parent and child is 1.39189189189189.</p>
 
 compound in other languages:
 
+[<a href="../../am/dep/compound.html">am</a>]
+
+[<a href="../../ar/dep/compound.html">ar</a>]
+
 [<a href="../../bg/dep/compound.html">bg</a>]
 
+[<a href="../../bxr/dep/compound.html">bxr</a>]
+
+[<a href="../../ca/dep/compound.html">ca</a>]
+
+[<a href="../../ckb/dep/compound.html">ckb</a>]
+
+[<a href="../../cop/dep/compound.html">cop</a>]
+
 [<a href="../../cs/dep/compound.html">cs</a>]
+
+[<a href="../../cu/dep/compound.html">cu</a>]
+
+[<a href="../../da/dep/compound.html">da</a>]
 
 [<a href="../../de/dep/compound.html">de</a>]
 
@@ -147,29 +182,99 @@ compound in other languages:
 
 [<a href="../../es/dep/compound.html">es</a>]
 
+[<a href="../../et/dep/compound.html">et</a>]
+
 [<a href="../../eu/dep/compound.html">eu</a>]
 
 [<a href="../../fa/dep/compound.html">fa</a>]
 
 [<a href="../../fi/dep/compound.html">fi</a>]
 
+[<a href="../../fo/dep/compound.html">fo</a>]
+
 [<a href="../../fr/dep/compound.html">fr</a>]
 
 [<a href="../../ga/dep/compound.html">ga</a>]
 
+[<a href="../../gl/dep/compound.html">gl</a>]
+
+[<a href="../../got/dep/compound.html">got</a>]
+
+[<a href="../../grc/dep/compound.html">grc</a>]
+
 [<a href="../../he/dep/compound.html">he</a>]
 
+[<a href="../../hi/dep/compound.html">hi</a>]
+
+[<a href="../../hr/dep/compound.html">hr</a>]
+
 [<a href="../../hu/dep/compound.html">hu</a>]
+
+[<a href="../../id/dep/compound.html">id</a>]
 
 [<a href="../../it/dep/compound.html">it</a>]
 
 [<a href="../../ja/dep/compound.html">ja</a>]
 
+[<a href="../../kk/dep/compound.html">kk</a>]
+
+[<a href="../../kmr/dep/compound.html">kmr</a>]
+
 [<a href="../../ko/dep/compound.html">ko</a>]
+
+[<a href="../../la/dep/compound.html">la</a>]
+
+[<a href="../../lv/dep/compound.html">lv</a>]
+
+[<a href="../../mr/dep/compound.html">mr</a>]
+
+[<a href="../../nl/dep/compound.html">nl</a>]
+
+[<a href="../../no/dep/compound.html">no</a>]
+
+[<a href="../../pl/dep/compound.html">pl</a>]
+
+[<a href="../../pt/dep/compound.html">pt</a>]
+
+[<a href="../../ro/dep/compound.html">ro</a>]
+
+[<a href="../../ru/dep/compound.html">ru</a>]
+
+[<a href="../../sa/dep/compound.html">sa</a>]
+
+[<a href="../../sk/dep/compound.html">sk</a>]
+
+[<a href="../../sla/dep/compound.html">sla</a>]
+
+[<a href="../../sl/dep/compound.html">sl</a>]
+
+[<a href="../../so/dep/compound.html">so</a>]
+
+[<a href="../../sr/dep/compound.html">sr</a>]
 
 [<a href="../../sv/dep/compound.html">sv</a>]
 
+[<a href="../../swl/dep/compound.html">swl</a>]
+
+[<a href="../../ta/dep/compound.html">ta</a>]
+
+[<a href="../../tr/dep/compound.html">tr</a>]
+
 [<a href="../../u/dep/compound.html">u</a>]
+
+[<a href="../../ug/dep/compound.html">ug</a>]
+
+[<a href="../../uk/dep/compound.html">uk</a>]
+
+[<a href="../../ur/dep/compound.html">ur</a>]
+
+[<a href="../../urj/dep/compound.html">urj</a>]
+
+[<a href="../../vi/dep/compound.html">vi</a>]
+
+[<a href="../../yue/dep/compound.html">yue</a>]
+
+[<a href="../../zh/dep/compound.html">zh</a>]
 
 
 

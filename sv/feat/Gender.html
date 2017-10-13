@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-sv">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/sv/feat">sv/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_sv-feat/Gender.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sv">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/sv/feat">sv/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-feat/Gender.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -99,51 +116,50 @@ nouns.</p>
 <p>This feature is universal.
 It occurs with 4 different values: <code>Com</code>, <code>Fem</code>, <code>Masc</code>, <code>Neut</code>.</p>
 
-<p>33614 tokens (35%) have a non-empty value of <code>Gender</code>.
-10234 types (68%) occur at least once with a non-empty value of <code>Gender</code>.
-6850 lemmas (67%) occur at least once with a non-empty value of <code>Gender</code>.
-The feature is used with 6 part-of-speech tags: <a href="">sv-pos/NOUN</a> (22566; 23% instances), <a href="">sv-pos/DET</a> (4082; 4% instances), <a href="">sv-pos/PRON</a> (3706; 4% instances), <a href="">sv-pos/ADJ</a> (3141; 3% instances), <a href="">sv-pos/NUM</a> (92; 0% instances), <a href="">sv-pos/VERB</a> (27; 0% instances).</p>
+<p>26710 tokens (35%) have a non-empty value of <code>Gender</code>.
+8725 types (67%) occur at least once with a non-empty value of <code>Gender</code>.
+5915 lemmas (67%) occur at least once with a non-empty value of <code>Gender</code>.
+The feature is used with 6 part-of-speech tags: <a href="">sv-pos/NOUN</a> (17916; 23% instances), <a href="">sv-pos/DET</a> (3266; 4% instances), <a href="">sv-pos/PRON</a> (2913; 4% instances), <a href="">sv-pos/ADJ</a> (2512; 3% instances), <a href="">sv-pos/NUM</a> (80; 0% instances), <a href="">sv-pos/VERB</a> (23; 0% instances).</p>
 
 <h3 id="noun"><code>NOUN</code></h3>
 
-<p>22566 <a href="">sv-pos/NOUN</a> tokens (98% of all <code>NOUN</code> tokens) have a non-empty value of <code>Gender</code>.</p>
+<p>17916 <a href="">sv-pos/NOUN</a> tokens (98% of all <code>NOUN</code> tokens) have a non-empty value of <code>Gender</code>.</p>
 
-<p>The most frequent other feature values with which <code>NOUN</code> and <code>Gender</code> co-occurred: <tt><a href="Case.html">Case</a>=Nom</tt> (21444; 95%), <tt><a href="Number.html">Number</a>=Sing</tt> (15358; 68%), <tt><a href="Definite.html">Definite</a>=Ind</tt> (14738; 65%).</p>
+<p>The most frequent other feature values with which <code>NOUN</code> and <code>Gender</code> co-occurred: <tt><a href="Case.html">Case</a>=Nom</tt> (16998; 95%), <tt><a href="Number.html">Number</a>=Sing</tt> (12297; 69%), <tt><a href="Definite.html">Definite</a>=Ind</tt> (11705; 65%).</p>
 
 <p><code>NOUN</code> tokens may have the following values of <code>Gender</code>:</p>
 
 <ul>
-  <li><code>Com</code> (15734; 70% of non-empty <code>Gender</code>): <em>del, procent, människor, tid, familjen, kvinnor, man, dag, miljoner, fråga</em></li>
+  <li><code>Com</code> (12589; 70% of non-empty <code>Gender</code>): <em>del, procent, människor, familjen, man, tid, kvinnor, dag, kvinnan, fråga</em></li>
   <li><code>Fem</code> (1; 0% of non-empty <code>Gender</code>): <em>nuptiam</em></li>
   <li><code>Masc</code> (1; 0% of non-empty <code>Gender</code>): <em>consensus</em></li>
-  <li><code>Neut</code> (6830; 30% of non-empty <code>Gender</code>): <em>år, barn, äktenskapet, barnen, sätt, samhället, arbete, fall, äktenskap, barnet</em></li>
-  <li><code>EMPTY</code> (419): <em>kr, %, dr, s., kap., proc, KPI, milj, mån, sid</em></li>
+  <li><code>Neut</code> (5325; 30% of non-empty <code>Gender</code>): <em>år, barn, äktenskapet, barnen, samhället, arbete, sätt, äktenskap, fall, exempel</em></li>
+  <li><code>EMPTY</code> (375): <em>kr, %, s., dr, kap., proc, KPI, mån, kl, milj</em></li>
 </ul>
 
 <table>
   <tr><th>Paradigm <i>äktenskap</i></th><th><tt>Neut</tt></th><th><tt>Com</tt></th></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Definite.html">Definite</a>=Def|<a href="Number.html">Number</a>=Sing</tt></td><td><em>äktenskapets</em></td><td><em>äktenskapens</em></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Definite.html">Definite</a>=Ind|<a href="Number.html">Number</a>=Sing</tt></td><td></td><td><em>äktenskaps</em></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Definite.html">Definite</a>=Ind|<a href="Number.html">Number</a>=Plur</tt></td><td></td><td><em>äktenskaps</em></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Definite.html">Definite</a>=Def|<a href="Number.html">Number</a>=Sing</tt></td><td><em>äktenskapet</em></td><td><em>äktenskapen</em></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Definite.html">Definite</a>=Ind|<a href="Number.html">Number</a>=Sing</tt></td><td><em>äktenskap</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Definite.html">Definite</a>=Ind|<a href="Number.html">Number</a>=Plur</tt></td><td><em>äktenskap</em></td><td></td></tr>
 </table>
 
-<p><code>Gender</code> seems to be <strong>lexical feature</strong> of <code>NOUN</code>. 99% lemmas (5836) occur only with one value of <code>Gender</code>.</p>
+<p><code>Gender</code> seems to be <strong>lexical feature</strong> of <code>NOUN</code>. 99% lemmas (5044) occur only with one value of <code>Gender</code>.</p>
 
 <h3 id="det"><code>DET</code></h3>
 
-<p>4082 <a href="">sv-pos/DET</a> tokens (72% of all <code>DET</code> tokens) have a non-empty value of <code>Gender</code>.</p>
+<p>3266 <a href="">sv-pos/DET</a> tokens (72% of all <code>DET</code> tokens) have a non-empty value of <code>Gender</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>Gender</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (4082; 100%), <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (3717; 91%), <tt><a href="PronType.html">PronType</a>=Art</tt> (3222; 79%), <tt><a href="Definite.html">Definite</a>=Ind</tt> (2324; 57%).</p>
+<p>The most frequent other feature values with which <code>DET</code> and <code>Gender</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (3266; 100%), <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (2957; 91%), <tt><a href="PronType.html">PronType</a>=Art</tt> (2559; 78%), <tt><a href="Definite.html">Definite</a>=Ind</tt> (1842; 56%).</p>
 
 <p><code>DET</code> tokens may have the following values of <code>Gender</code>:</p>
 
 <ul>
-  <li><code>Com</code> (2814; 69% of non-empty <code>Gender</code>): <em>en, den, sin, denna, någon, vår, ingen, vilken, din, var</em></li>
-  <li><code>Neut</code> (1268; 31% of non-empty <code>Gender</code>): <em>ett, det, detta, sitt, något, vårt, allt, ditt, inget, vilket</em></li>
-  <li><code>EMPTY</code> (1574): <em>de, alla, varje, dessa, samma, sina, deras, några, våra, vilka</em></li>
+  <li><code>Com</code> (2240; 69% of non-empty <code>Gender</code>): <em>en, den, sin, denna, någon, vår, ingen, din, vilken, var</em></li>
+  <li><code>Neut</code> (1026; 31% of non-empty <code>Gender</code>): <em>ett, det, detta, sitt, något, vårt, allt, ditt, inget, vilket</em></li>
+  <li><code>EMPTY</code> (1249): <em>de, alla, varje, dessa, samma, sina, deras, några, våra, vilka</em></li>
 </ul>
 
 <table>
@@ -154,17 +170,17 @@ The feature is used with 6 part-of-speech tags: <a href="">sv-pos/NOUN</a> (2256
 
 <h3 id="pron"><code>PRON</code></h3>
 
-<p>3706 <a href="">sv-pos/PRON</a> tokens (62% of all <code>PRON</code> tokens) have a non-empty value of <code>Gender</code>.</p>
+<p>2913 <a href="">sv-pos/PRON</a> tokens (63% of all <code>PRON</code> tokens) have a non-empty value of <code>Gender</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>Gender</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (3288; 89%), <tt><a href="Definite.html">Definite</a>=Def</tt> (2577; 70%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (2510; 68%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (2026; 55%).</p>
+<p>The most frequent other feature values with which <code>PRON</code> and <code>Gender</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (2585; 89%), <tt><a href="Definite.html">Definite</a>=Def</tt> (2066; 71%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (2001; 69%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (1553; 53%).</p>
 
 <p><code>PRON</code> tokens may have the following values of <code>Gender</code>:</p>
 
 <ul>
-  <li><code>Com</code> (2100; 57% of non-empty <code>Gender</code>): <em>man, vi, den, du, han, jag, oss, hon, en, dig</em></li>
+  <li><code>Com</code> (1677; 58% of non-empty <code>Gender</code>): <em>man, vi, du, den, han, oss, jag, dig, hon, en</em></li>
   <li><code>Masc</code> (2; 0% of non-empty <code>Gender</code>): <em>denne</em></li>
-  <li><code>Neut</code> (1604; 43% of non-empty <code>Gender</code>): <em>det, detta, vad, något, allt, vilket, mycket, annat, detsamma, ett</em></li>
-  <li><code>EMPTY</code> (2262): <em>som, de, sig, dem, andra, många, alla, varandra, dessa, vilka</em></li>
+  <li><code>Neut</code> (1234; 42% of non-empty <code>Gender</code>): <em>det, detta, vad, något, vilket, allt, mycket, annat, ett, ingenting</em></li>
+  <li><code>EMPTY</code> (1732): <em>som, de, sig, dem, andra, många, varandra, alla, vilka, dessa</em></li>
 </ul>
 
 <table>
@@ -175,37 +191,38 @@ The feature is used with 6 part-of-speech tags: <a href="">sv-pos/NOUN</a> (2256
 
 <h3 id="adj"><code>ADJ</code></h3>
 
-<p>3141 <a href="">sv-pos/ADJ</a> tokens (37% of all <code>ADJ</code> tokens) have a non-empty value of <code>Gender</code>.</p>
+<p>2512 <a href="">sv-pos/ADJ</a> tokens (38% of all <code>ADJ</code> tokens) have a non-empty value of <code>Gender</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Gender</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (3136; 100%), <tt><a href="Case.html">Case</a>=Nom</tt> (3130; 100%), <tt><a href="Definite.html">Definite</a>=Ind</tt> (3030; 96%), <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (2578; 82%), <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (2578; 82%), <tt><a href="Degree.html">Degree</a>=Pos</tt> (2573; 82%).</p>
+<p>The most frequent other feature values with which <code>ADJ</code> and <code>Gender</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (2508; 100%), <tt><a href="Case.html">Case</a>=Nom</tt> (2504; 100%), <tt><a href="Definite.html">Definite</a>=Ind</tt> (2422; 96%), <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (2068; 82%), <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (2068; 82%), <tt><a href="Degree.html">Degree</a>=Pos</tt> (2065; 82%).</p>
 
 <p><code>ADJ</code> tokens may have the following values of <code>Gender</code>:</p>
 
 <ul>
-  <li><code>Com</code> (1978; 63% of non-empty <code>Gender</code>): <em>stor, annan, själv, sådan, viss, egen, ny, hög, kristen, social</em></li>
-  <li><code>Masc</code> (46; 1% of non-empty <code>Gender</code>): <em>enskilde, andre, sjuke, ene, enskildes, lille, skattskyldige, unge, amerikanske, andres</em></li>
-  <li><code>Neut</code> (1117; 36% of non-empty <code>Gender</code>): <em>annat, svårt, nytt, möjligt, sådant, viktigt, eget, socialt, stort, övrigt</em></li>
-  <li><code>EMPTY</code> (5357): <em>olika, andra, nya, många, stora, större, första, vissa, hela, flera</em></li>
+  <li><code>Com</code> (1581; 63% of non-empty <code>Gender</code>): <em>stor, annan, själv, egen, viss, sådan, ny, kristen, social, hög</em></li>
+  <li><code>Masc</code> (35; 1% of non-empty <code>Gender</code>): <em>enskilde, andre, ene, enskildes, skattskyldige, unge, amerikanske, andres, arbetslöse, engelske</em></li>
+  <li><code>Neut</code> (896; 36% of non-empty <code>Gender</code>): <em>annat, svårt, nytt, möjligt, sådant, socialt, viktigt, eget, klart, taget</em></li>
+  <li><code>EMPTY</code> (4163): <em>olika, andra, nya, många, stora, större, första, hela, vissa, flera</em></li>
 </ul>
 
 <table>
-  <tr><th>Paradigm <i>stor</i></th><th><tt>Masc</tt></th><th><tt>Neut</tt></th><th><tt>Com</tt></th></tr>
-  <tr><td><tt><a href="Definite.html">Definite</a>=Def|<a href="Degree.html">Degree</a>=Sup</tt></td><td><em>störste</em></td><td></td><td></td></tr>
-  <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Degree.html">Degree</a>=Pos</tt></td><td></td><td><em>stort</em></td><td><em>stor</em></td></tr>
+  <tr><th>Paradigm <i>annan</i></th><th><tt>Masc</tt></th><th><tt>Neut</tt></th><th><tt>Com</tt></th></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Definite.html">Definite</a>=Def</tt></td><td><em>andres</em></td><td></td><td></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Definite.html">Definite</a>=Def</tt></td><td><em>andre</em></td><td></td><td></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Definite.html">Definite</a>=Ind</tt></td><td></td><td><em>annat</em></td><td><em>annan</em></td></tr>
 </table>
 
 <h3 id="num"><code>NUM</code></h3>
 
-<p>92 <a href="">sv-pos/NUM</a> tokens (5% of all <code>NUM</code> tokens) have a non-empty value of <code>Gender</code>.</p>
+<p>80 <a href="">sv-pos/NUM</a> tokens (6% of all <code>NUM</code> tokens) have a non-empty value of <code>Gender</code>.</p>
 
-<p>The most frequent other feature values with which <code>NUM</code> and <code>Gender</code> co-occurred: <tt><a href="Case.html">Case</a>=Nom</tt> (92; 100%), <tt><a href="NumType.html">NumType</a>=Card</tt> (92; 100%).</p>
+<p>The most frequent other feature values with which <code>NUM</code> and <code>Gender</code> co-occurred: <tt><a href="Case.html">Case</a>=Nom</tt> (80; 100%), <tt><a href="NumType.html">NumType</a>=Card</tt> (80; 100%).</p>
 
 <p><code>NUM</code> tokens may have the following values of <code>Gender</code>:</p>
 
 <ul>
-  <li><code>Com</code> (60; 65% of non-empty <code>Gender</code>): <em>en</em></li>
-  <li><code>Neut</code> (32; 35% of non-empty <code>Gender</code>): <em>ett</em></li>
-  <li><code>EMPTY</code> (1649): <em>två, tre, 1, 20, 2, 1970, 3, 10, 1971, 7</em></li>
+  <li><code>Com</code> (54; 68% of non-empty <code>Gender</code>): <em>en</em></li>
+  <li><code>Neut</code> (26; 33% of non-empty <code>Gender</code>): <em>ett</em></li>
+  <li><code>EMPTY</code> (1304): <em>två, tre, 1, 2, 20, 1970, 3, fyra, 10, 100</em></li>
 </ul>
 
 <table>
@@ -215,33 +232,33 @@ The feature is used with 6 part-of-speech tags: <a href="">sv-pos/NOUN</a> (2256
 
 <h3 id="verb"><code>VERB</code></h3>
 
-<p>27 <a href="">sv-pos/VERB</a> tokens (0% of all <code>VERB</code> tokens) have a non-empty value of <code>Gender</code>.</p>
+<p>23 <a href="">sv-pos/VERB</a> tokens (0% of all <code>VERB</code> tokens) have a non-empty value of <code>Gender</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Gender</code> co-occurred: <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (27; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (27; 100%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (27; 100%), <tt><a href="Tense.html">Tense</a>=Past</tt> (27; 100%).</p>
+<p>The most frequent other feature values with which <code>VERB</code> and <code>Gender</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (23; 100%), <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (23; 100%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (23; 100%), <tt><a href="Tense.html">Tense</a>=Past</tt> (23; 100%).</p>
 
 <p><code>VERB</code> tokens may have the following values of <code>Gender</code>:</p>
 
 <ul>
-  <li><code>Com</code> (21; 78% of non-empty <code>Gender</code>): <em>vald, vänd, hörselskadad, accepterad, förstärkt, förändrad, ifylld, komplicerad, likställd, lämnad</em></li>
-  <li><code>Neut</code> (6; 22% of non-empty <code>Gender</code>): <em>förbjudet, opåverkat, reglerat, sysselsatt, tillgodosett, upplagt</em></li>
-  <li><code>EMPTY</code> (11559): <em>är, har, finns, vara, blir, få, får, var, ha, gäller</em></li>
+  <li><code>Com</code> (18; 78% of non-empty <code>Gender</code>): <em>vald, vänd, hörselskadad, accepterad, ifylld, komplicerad, likställd, matroniserad, omsatt, tvättad</em></li>
+  <li><code>Neut</code> (5; 22% of non-empty <code>Gender</code>): <em>förbjudet, opåverkat, sysselsatt, tillgodosett, upplagt</em></li>
+  <li><code>EMPTY</code> (7795): <em>har, finns, blir, är, få, får, ha, gäller, ger, kommer</em></li>
 </ul>
 
-<p><code>Gender</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 100% lemmas (22) occur only with one value of <code>Gender</code>.</p>
+<p><code>Gender</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 100% lemmas (18) occur only with one value of <code>Gender</code>.</p>
 
 <h2 id="relations-with-agreement-in-gender">Relations with Agreement in <code>Gender</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>Gender</code>:
-<tt>NOUN –[<a href="../dep/det.html">det</a>]–&gt; DET</tt> (3460; 76%),
-<tt>NOUN –[<a href="../dep/nmod.html">nmod</a>]–&gt; NOUN</tt> (1690; 53%),
-<tt>NOUN –[<a href="../dep/conj.html">conj</a>]–&gt; NOUN</tt> (1389; 67%),
-<tt>NOUN –[<a href="../dep/nmod:poss.html">nmod:poss</a>]–&gt; NOUN</tt> (552; 60%),
-<tt>NOUN –[<a href="../dep/nmod:poss.html">nmod:poss</a>]–&gt; DET</tt> (339; 51%),
-<tt>NOUN –[<a href="../dep/appos.html">appos</a>]–&gt; NOUN</tt> (183; 64%),
-<tt>NOUN –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; NOUN</tt> (151; 56%),
-<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (125; 79%),
-<tt>ADJ –[<a href="../dep/expl.html">expl</a>]–&gt; PRON</tt> (112; 93%),
-<tt>ADJ –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; PRON</tt> (93; 52%).</p>
+<tt>NOUN –[<a href="../dep/det.html">det</a>]–&gt; DET</tt> (2752; 76%),
+<tt>NOUN –[<a href="../dep/nmod.html">nmod</a>]–&gt; NOUN</tt> (1241; 53%),
+<tt>NOUN –[<a href="../dep/conj.html">conj</a>]–&gt; NOUN</tt> (1149; 67%),
+<tt>NOUN –[<a href="../dep/nmod:poss.html">nmod:poss</a>]–&gt; NOUN</tt> (444; 61%),
+<tt>NOUN –[<a href="../dep/nmod:poss.html">nmod:poss</a>]–&gt; DET</tt> (284; 52%),
+<tt>NOUN –[<a href="../dep/appos.html">appos</a>]–&gt; NOUN</tt> (142; 62%),
+<tt>NOUN –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; NOUN</tt> (116; 55%),
+<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (104; 79%),
+<tt>ADJ –[<a href="../dep/expl.html">expl</a>]–&gt; PRON</tt> (84; 92%),
+<tt>ADJ –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; PRON</tt> (73; 54%).</p>
 
 
 
@@ -251,9 +268,25 @@ The feature is used with 6 part-of-speech tags: <a href="">sv-pos/NOUN</a> (2256
 
 Gender in other languages:
 
+[<a href="../../am/feat/Gender.html">am</a>]
+
+[<a href="../../ar/feat/Gender.html">ar</a>]
+
 [<a href="../../bg/feat/Gender.html">bg</a>]
 
+[<a href="../../bxr/feat/Gender.html">bxr</a>]
+
+[<a href="../../ca/feat/Gender.html">ca</a>]
+
+[<a href="../../ckb/feat/Gender.html">ckb</a>]
+
+[<a href="../../cop/feat/Gender.html">cop</a>]
+
 [<a href="../../cs/feat/Gender.html">cs</a>]
+
+[<a href="../../cu/feat/Gender.html">cu</a>]
+
+[<a href="../../da/feat/Gender.html">da</a>]
 
 [<a href="../../de/feat/Gender.html">de</a>]
 
@@ -263,27 +296,95 @@ Gender in other languages:
 
 [<a href="../../es/feat/Gender.html">es</a>]
 
+[<a href="../../et/feat/Gender.html">et</a>]
+
 [<a href="../../eu/feat/Gender.html">eu</a>]
 
 [<a href="../../fa/feat/Gender.html">fa</a>]
+
+[<a href="../../fo/feat/Gender.html">fo</a>]
 
 [<a href="../../fr/feat/Gender.html">fr</a>]
 
 [<a href="../../ga/feat/Gender.html">ga</a>]
 
+[<a href="../../gl/feat/Gender.html">gl</a>]
+
+[<a href="../../got/feat/Gender.html">got</a>]
+
+[<a href="../../grc/feat/Gender.html">grc</a>]
+
 [<a href="../../he/feat/Gender.html">he</a>]
 
+[<a href="../../hi/feat/Gender.html">hi</a>]
+
+[<a href="../../hr/feat/Gender.html">hr</a>]
+
 [<a href="../../hu/feat/Gender.html">hu</a>]
+
+[<a href="../../id/feat/Gender.html">id</a>]
 
 [<a href="../../it/feat/Gender.html">it</a>]
 
 [<a href="../../ja/feat/Gender.html">ja</a>]
 
+[<a href="../../kk/feat/Gender.html">kk</a>]
+
+[<a href="../../kmr/feat/Gender.html">kmr</a>]
+
 [<a href="../../ko/feat/Gender.html">ko</a>]
+
+[<a href="../../la/feat/Gender.html">la</a>]
+
+[<a href="../../lv/feat/Gender.html">lv</a>]
+
+[<a href="../../mr/feat/Gender.html">mr</a>]
+
+[<a href="../../nl/feat/Gender.html">nl</a>]
+
+[<a href="../../no/feat/Gender.html">no</a>]
+
+[<a href="../../pl/feat/Gender.html">pl</a>]
+
+[<a href="../../pt/feat/Gender.html">pt</a>]
+
+[<a href="../../ro/feat/Gender.html">ro</a>]
+
+[<a href="../../ru/feat/Gender.html">ru</a>]
+
+[<a href="../../sa/feat/Gender.html">sa</a>]
+
+[<a href="../../sk/feat/Gender.html">sk</a>]
+
+[<a href="../../sla/feat/Gender.html">sla</a>]
+
+[<a href="../../sl/feat/Gender.html">sl</a>]
+
+[<a href="../../so/feat/Gender.html">so</a>]
+
+[<a href="../../sr/feat/Gender.html">sr</a>]
 
 [<a href="../../sv/feat/Gender.html">sv</a>]
 
+[<a href="../../swl/feat/Gender.html">swl</a>]
+
+[<a href="../../ta/feat/Gender.html">ta</a>]
+
+[<a href="../../tr/feat/Gender.html">tr</a>]
+
 [<a href="../../u/feat/Gender.html">u</a>]
+
+[<a href="../../ug/feat/Gender.html">ug</a>]
+
+[<a href="../../uk/feat/Gender.html">uk</a>]
+
+[<a href="../../ur/feat/Gender.html">ur</a>]
+
+[<a href="../../vi/feat/Gender.html">vi</a>]
+
+[<a href="../../yue/feat/Gender.html">yue</a>]
+
+[<a href="../../zh/feat/Gender.html">zh</a>]
 
 
 

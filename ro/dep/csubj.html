@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ro">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ro/dep">ro/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ro-dep/csubj.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ro">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ro/dep">ro/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ro-dep/csubj.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -68,57 +85,47 @@ csubj(omenesc, greși)
 
 <h2 id="treebank-statistics-udromanian">Treebank Statistics (UD_Romanian)</h2>
 
-<p>This relation is universal.</p>
+<p>This relation is universal.
+There are 1 language-specific subtypes of <code>csubj</code>: <a href="">csubj:pass</a>.</p>
 
-<p>772 nodes (0%) are attached to their parents as <code>csubj</code>.</p>
+<p>754 nodes (0%) are attached to their parents as <code>csubj</code>.</p>
 
-<p>713 instances of <code>csubj</code> (92%) are left-to-right (parent precedes child).
-Average distance between parent and child is 3.63082901554404.</p>
+<p>688 instances of <code>csubj</code> (91%) are left-to-right (parent precedes child).
+Average distance between parent and child is 3.57559681697613.</p>
 
-<p>The following 21 pairs of parts of speech are connected with <code>csubj</code>: <a href="">ro-pos/VERB</a>-<a href="">ro-pos/VERB</a> (471; 61% instances), <a href="">ro-pos/ADV</a>-<a href="">ro-pos/VERB</a> (117; 15% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/ADJ</a> (66; 9% instances), <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/VERB</a> (44; 6% instances), <a href="">ro-pos/ADJ</a>-<a href="">ro-pos/VERB</a> (20; 3% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/NOUN</a> (12; 2% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/ADV</a> (9; 1% instances), <a href="">ro-pos/ADP</a>-<a href="">ro-pos/VERB</a> (6; 1% instances), <a href="">ro-pos/ADV</a>-<a href="">ro-pos/ADV</a> (6; 1% instances), <a href="">ro-pos/PRON</a>-<a href="">ro-pos/VERB</a> (4; 1% instances), <a href="">ro-pos/ADV</a>-<a href="">ro-pos/NOUN</a> (3; 0% instances), <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/NOUN</a> (3; 0% instances), <a href="">ro-pos/ADV</a>-<a href="">ro-pos/ADJ</a> (2; 0% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/AUX</a> (2; 0% instances), <a href="">ro-pos/ADP</a>-<a href="">ro-pos/NOUN</a> (1; 0% instances), <a href="">ro-pos/ADV</a>-<a href="">ro-pos/SCONJ</a> (1; 0% instances), <a href="">ro-pos/AUX</a>-<a href="">ro-pos/VERB</a> (1; 0% instances), <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/ADJ</a> (1; 0% instances), <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/ADV</a> (1; 0% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/NUM</a> (1; 0% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/PRON</a> (1; 0% instances).</p>
+<p>The following 19 pairs of parts of speech are connected with <code>csubj</code>: <a href="">ro-pos/VERB</a>-<a href="">ro-pos/VERB</a> (459; 61% instances), <a href="">ro-pos/ADV</a>-<a href="">ro-pos/VERB</a> (112; 15% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/ADJ</a> (68; 9% instances), <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/VERB</a> (47; 6% instances), <a href="">ro-pos/ADJ</a>-<a href="">ro-pos/VERB</a> (19; 3% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/ADV</a> (11; 1% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/NOUN</a> (11; 1% instances), <a href="">ro-pos/ADP</a>-<a href="">ro-pos/VERB</a> (6; 1% instances), <a href="">ro-pos/ADV</a>-<a href="">ro-pos/ADV</a> (5; 1% instances), <a href="">ro-pos/ADV</a>-<a href="">ro-pos/NOUN</a> (3; 0% instances), <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/NOUN</a> (3; 0% instances), <a href="">ro-pos/ADV</a>-<a href="">ro-pos/ADJ</a> (2; 0% instances), <a href="">ro-pos/PRON</a>-<a href="">ro-pos/VERB</a> (2; 0% instances), <a href="">ro-pos/ADP</a>-<a href="">ro-pos/NOUN</a> (1; 0% instances), <a href="">ro-pos/ADV</a>-<a href="">ro-pos/SCONJ</a> (1; 0% instances), <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/ADJ</a> (1; 0% instances), <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/ADV</a> (1; 0% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/NUM</a> (1; 0% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/PRON</a> (1; 0% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 13	bgColor:blue
-# visual-style 13	fgColor:white
-# visual-style 13 5 csubj	color:blue
-1	și	și	CONJ	Crssp	Negative=Pos	13	cc	_	_
-2	care	care	PRON	Pw3--r	Case=Acc,Nom|Person=3|PronType=Int,Rel	5	nsubj	_	_
-3	din	din	ADP	Spsa	AdpType=Prep|Case=Acc	4	case	_	_
-4	ei	el	PRON	Pp3mpr--------s	Case=Acc,Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs|Strength=Strong	2	nmod	_	_
-5	compune	compune	VERB	Vmip3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	csubj	_	_
-6	o	un	DET	Tifsr	Case=Acc,Nom|Gender=Fem|Number=Sing|PronType=Ind	7	det	_	_
-7	poezie	poezie	NOUN	Ncfsrn	Case=Acc,Nom|Definite=Ind|Gender=Fem|Number=Sing	5	dobj	_	_
-8	mai	mai	ADV	Rp	_	9	advmod	_	_
-9	bună	bun	ADJ	Afpfsrn	Case=Acc,Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	7	amod	_	_
-10	,	,	PUNCT	COMMA	_	5	punct	_	_
-11	s-	sine	PRON	Px3--a--y-----w	Case=Acc|Person=3|PronType=Prs|Reflex=Yes|Strength=Weak|Variant=Short	13	expl:pv	_	_
-12	a	avea	AUX	Va--3s	Number=Sing|Person=3	13	aux	_	_
-13	procopsit	procopsi	VERB	Vmp--sm	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
-14	.	.	PUNCT	PERIOD	_	13	punct	_	_
+<pre><code class="language-conllu"># visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 7 csubj	color:blue
+1	P-	pe	ADP	Spsay	AdpType=Prep|Case=Acc|Variant=Short	2	case	_	SpaceAfter=No
+2	ăsta	acesta	PRON	Pd3msr	Case=Acc,Nom|Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	obj	_	_
+3	ar	avea	AUX	Va--3	Person=3	4	aux	_	_
+4	trebui	trebui	VERB	Vmnp	Tense=Pres|VerbForm=Inf	0	root	_	_
+5	să	să	PART	Qs	Mood=Sub	7	mark	_	SpaceAfter=No
+6	-l	el	PRON	Pp3msa--y-----w	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Strength=Weak|Variant=Short	7	expl	_	_
+7	luați	lua	VERB	Vmip2p	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	4	csubj	_	SpaceAfter=No
+8	,	,	PUNCT	COMMA	_	11	punct	_	_
+9	nu	nu	PART	Qz	Polarity=Neg	11	advmod	_	_
+10	pe	pe	ADP	Spsa	AdpType=Prep|Case=Acc	11	case	_	_
+11	mine	eu	PRON	Pp1-sa--------s	Case=Acc|Number=Sing|Person=1|PronType=Prs|Strength=Strong	2	conj	_	SpaceAfter=No
+12	!	!	PUNCT	EXCL	_	4	punct	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 13	bgColor:blue
-# visual-style 13	fgColor:white
-# visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
-# visual-style 7 13 csubj	color:blue
-1	Poate	poate	ADV	Rgp	Degree=Pos	0	root	_	_
-2	că	că	SCONJ	Csssp	Negative=Pos	4	mark	_	_
-3	era	fi	VERB	Vmii3s	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	cop	_	_
-4	fata	fată	NOUN	Ncfsry	Case=Acc,Nom|Definite=Def|Gender=Fem|Number=Sing	1	csubj	_	_
-5	,	,	PUNCT	COMMA	_	1	punct	_	_
-6	dar	dar	CONJ	Ccssp	Negative=Pos	1	cc	_	_
-7	poate	poate	ADV	Rgp	Degree=Pos	1	conj	_	_
-8	că	că	SCONJ	Csssp	Negative=Pos	13	mark	_	_
-9	,	,	PUNCT	COMMA	_	10	punct	_	_
-10	totuși	totuși	ADV	Rgp	Degree=Pos	13	advmod	_	_
-11	,	,	PUNCT	COMMA	_	10	punct	_	_
-12	îl	el	PRON	Pp3msa--------w	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Strength=Weak	13	dobj	_	_
-13	urmărise	urmări	VERB	Vmil3s	Mood=Ind|Number=Sing|Person=3|Tense=Pqp|VerbForm=Fin	7	csubj	_	_
-14	cineva	cineva	PRON	Pi3-sr	Case=Acc,Nom|Number=Sing|Person=3|PronType=Ind	13	nsubj	_	_
-15	.	.	PUNCT	PERIOD	_	1	punct	_	_
+<pre><code class="language-conllu"># visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 5 csubj	color:blue
+1	Nu	nu	PART	Qz	Polarity=Neg	3	advmod	_	_
+2	era	fi	AUX	Vmii3s	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	cop	_	_
+3	bine	bine	ADV	Rgp	Degree=Pos	0	root	_	_
+4	să	să	PART	Qs	Mood=Sub	5	mark	_	_
+5	refuzi	refuza	VERB	Vmip2s	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	3	csubj	_	SpaceAfter=No
+6	.	.	PUNCT	PERIOD	_	3	punct	_	_
 
 </code></pre>
 
@@ -129,9 +136,9 @@ Average distance between parent and child is 3.63082901554404.</p>
 # visual-style 2 5 csubj	color:blue
 1	Filosoful	filosof	NOUN	Ncmsry	Case=Acc,Nom|Definite=Def|Gender=Masc|Number=Sing	5	nsubj	_	_
 2	trebuie	trebui	VERB	Vmip3	Mood=Ind|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	să	să	PART	Qs	Mood=Sub	4	mark	_	_
-4	fie	fi	VERB	Vmsp3	Mood=Sub|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
-5	modest	modest	ADJ	Afpms-n	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	2	csubj	_	_
+3	să	să	PART	Qs	Mood=Sub	5	mark	_	_
+4	fie	fi	AUX	Vmsp3	Mood=Sub|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+5	modest	modest	ADJ	Afpms-n	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	2	csubj	_	SpaceAfter=No
 6	.	.	PUNCT	PERIOD	_	2	punct	_	_
 
 </code></pre>
@@ -144,9 +151,25 @@ Average distance between parent and child is 3.63082901554404.</p>
 
 csubj in other languages:
 
+[<a href="../../am/dep/csubj.html">am</a>]
+
+[<a href="../../ar/dep/csubj.html">ar</a>]
+
 [<a href="../../bg/dep/csubj.html">bg</a>]
 
+[<a href="../../bxr/dep/csubj.html">bxr</a>]
+
+[<a href="../../ca/dep/csubj.html">ca</a>]
+
+[<a href="../../ckb/dep/csubj.html">ckb</a>]
+
+[<a href="../../cop/dep/csubj.html">cop</a>]
+
 [<a href="../../cs/dep/csubj.html">cs</a>]
+
+[<a href="../../cu/dep/csubj.html">cu</a>]
+
+[<a href="../../da/dep/csubj.html">da</a>]
 
 [<a href="../../de/dep/csubj.html">de</a>]
 
@@ -156,29 +179,99 @@ csubj in other languages:
 
 [<a href="../../es/dep/csubj.html">es</a>]
 
+[<a href="../../et/dep/csubj.html">et</a>]
+
 [<a href="../../eu/dep/csubj.html">eu</a>]
 
 [<a href="../../fa/dep/csubj.html">fa</a>]
 
 [<a href="../../fi/dep/csubj.html">fi</a>]
 
+[<a href="../../fo/dep/csubj.html">fo</a>]
+
 [<a href="../../fr/dep/csubj.html">fr</a>]
 
 [<a href="../../ga/dep/csubj.html">ga</a>]
 
+[<a href="../../gl/dep/csubj.html">gl</a>]
+
+[<a href="../../got/dep/csubj.html">got</a>]
+
+[<a href="../../grc/dep/csubj.html">grc</a>]
+
 [<a href="../../he/dep/csubj.html">he</a>]
 
+[<a href="../../hi/dep/csubj.html">hi</a>]
+
+[<a href="../../hr/dep/csubj.html">hr</a>]
+
 [<a href="../../hu/dep/csubj.html">hu</a>]
+
+[<a href="../../id/dep/csubj.html">id</a>]
 
 [<a href="../../it/dep/csubj.html">it</a>]
 
 [<a href="../../ja/dep/csubj.html">ja</a>]
 
+[<a href="../../kk/dep/csubj.html">kk</a>]
+
+[<a href="../../kmr/dep/csubj.html">kmr</a>]
+
 [<a href="../../ko/dep/csubj.html">ko</a>]
+
+[<a href="../../la/dep/csubj.html">la</a>]
+
+[<a href="../../lv/dep/csubj.html">lv</a>]
+
+[<a href="../../mr/dep/csubj.html">mr</a>]
+
+[<a href="../../nl/dep/csubj.html">nl</a>]
+
+[<a href="../../no/dep/csubj.html">no</a>]
+
+[<a href="../../pl/dep/csubj.html">pl</a>]
+
+[<a href="../../pt/dep/csubj.html">pt</a>]
+
+[<a href="../../ro/dep/csubj.html">ro</a>]
+
+[<a href="../../ru/dep/csubj.html">ru</a>]
+
+[<a href="../../sa/dep/csubj.html">sa</a>]
+
+[<a href="../../sk/dep/csubj.html">sk</a>]
+
+[<a href="../../sla/dep/csubj.html">sla</a>]
+
+[<a href="../../sl/dep/csubj.html">sl</a>]
+
+[<a href="../../so/dep/csubj.html">so</a>]
+
+[<a href="../../sr/dep/csubj.html">sr</a>]
 
 [<a href="../../sv/dep/csubj.html">sv</a>]
 
+[<a href="../../swl/dep/csubj.html">swl</a>]
+
+[<a href="../../ta/dep/csubj.html">ta</a>]
+
+[<a href="../../tr/dep/csubj.html">tr</a>]
+
 [<a href="../../u/dep/csubj.html">u</a>]
+
+[<a href="../../ug/dep/csubj.html">ug</a>]
+
+[<a href="../../uk/dep/csubj.html">uk</a>]
+
+[<a href="../../ur/dep/csubj.html">ur</a>]
+
+[<a href="../../urj/dep/csubj.html">urj</a>]
+
+[<a href="../../vi/dep/csubj.html">vi</a>]
+
+[<a href="../../yue/dep/csubj.html">yue</a>]
+
+[<a href="../../zh/dep/csubj.html">zh</a>]
 
 
 

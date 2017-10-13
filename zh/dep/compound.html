@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-zh">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/zh/dep">zh/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_zh-dep/compound.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-zh">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/zh/dep">zh/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_zh-dep/compound.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -45,8 +62,76 @@
 
           <h2><code>compound</code>: compound</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>compound</code>.</p>
+<p>The <code>compound</code> relation is used primarily for noun-noun compounds (for verb and verb-object compounds, see <a href="">compound:dir</a>, <a href="">compound:ext</a>, <a href="">compound:vo</a>, and <a href="">compound:vv</a>). This applies to any nominal preceding and modifying another nominal unless the relationship between the two is a possessive one (see <a href="">nmod</a>). The latter nominal is typically the head of the compound.</p>
+
+<pre><code class="language-conllu"># visual-style 2 1 compound	color:blue
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+1	中文	_	NOUN	_	_	2	compound	_	Chinese-language
+2	試卷	_	NOUN	_	_	0	root	_	exam-paper
+
+1	"Chinese	_	_	_	_	0	_	_	_
+2	language	_	_	_	_	0	_	_	_
+3	exam	_	_	_	_	0	_	_	_
+4	paper"	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<p>Names preceding titles or relationship roles are also treated as noun compounds, as well as names of companies or institutions with internal combinations of proper nouns with regular nouns.</p>
+
+<pre><code class="language-conllu"># visual-style 2 1 compound	color:blue
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+1	馬	_	PROPN	_	_	2	compound	_	Ma
+2	先生	_	NOUN	_	_	0	root	_	Mr.
+
+1	"Mr.	_	_	_	_	0	_	_	_
+2	Ma"	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 3 1 compound	color:blue
+# visual-style 3 2 compound	color:blue
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+1	威威	_	PROPN	_	_	3	compound	_	Weiwei
+2	職業	_	NOUN	_	_	3	compound	_	employment
+3	介紹所	_	NOUN	_	_	0	root	_	agency
+
+1	"Weiwei	_	_	_	_	0	_	_	_
+2	Employment	_	_	_	_	0	_	_	_
+3	Agency"	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<p>Internal compounding should always be parsed first. For example, in (3) the last two nouns 職業 介紹所 <em>employment agency</em> form a compound first before compounding with the proper noun 威威 <em>Weiwei</em>; but in (4), 警察 招募 <em>police recruitment</em> form a compound first before compounding further with 廣告 <em>advertisement</em>.</p>
+
+<pre><code class="language-conllu"># visual-style 2 1 compound	color:blue
+# visual-style 3 2 compound	color:blue
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+1	警察	_	NOUN	_	_	2	compound	_	police
+2	招募	_	NOUN	_	_	3	compound	_	recruitment
+3	廣告	_	NOUN	_	_	0	root	_	advertisement
+
+1	"police	_	_	_	_	0	_	_	_
+2	recruitment	_	_	_	_	0	_	_	_
+3	ad"	_	_	_	_	0	_	_	_
+
+</code></pre>
+
 
 
 <!-- "automatic stats" -->
@@ -61,9 +146,25 @@ for <code>compound</code>.</p>
 
 compound in other languages:
 
+[<a href="../../am/dep/compound.html">am</a>]
+
+[<a href="../../ar/dep/compound.html">ar</a>]
+
 [<a href="../../bg/dep/compound.html">bg</a>]
 
+[<a href="../../bxr/dep/compound.html">bxr</a>]
+
+[<a href="../../ca/dep/compound.html">ca</a>]
+
+[<a href="../../ckb/dep/compound.html">ckb</a>]
+
+[<a href="../../cop/dep/compound.html">cop</a>]
+
 [<a href="../../cs/dep/compound.html">cs</a>]
+
+[<a href="../../cu/dep/compound.html">cu</a>]
+
+[<a href="../../da/dep/compound.html">da</a>]
 
 [<a href="../../de/dep/compound.html">de</a>]
 
@@ -73,29 +174,99 @@ compound in other languages:
 
 [<a href="../../es/dep/compound.html">es</a>]
 
+[<a href="../../et/dep/compound.html">et</a>]
+
 [<a href="../../eu/dep/compound.html">eu</a>]
 
 [<a href="../../fa/dep/compound.html">fa</a>]
 
 [<a href="../../fi/dep/compound.html">fi</a>]
 
+[<a href="../../fo/dep/compound.html">fo</a>]
+
 [<a href="../../fr/dep/compound.html">fr</a>]
 
 [<a href="../../ga/dep/compound.html">ga</a>]
 
+[<a href="../../gl/dep/compound.html">gl</a>]
+
+[<a href="../../got/dep/compound.html">got</a>]
+
+[<a href="../../grc/dep/compound.html">grc</a>]
+
 [<a href="../../he/dep/compound.html">he</a>]
 
+[<a href="../../hi/dep/compound.html">hi</a>]
+
+[<a href="../../hr/dep/compound.html">hr</a>]
+
 [<a href="../../hu/dep/compound.html">hu</a>]
+
+[<a href="../../id/dep/compound.html">id</a>]
 
 [<a href="../../it/dep/compound.html">it</a>]
 
 [<a href="../../ja/dep/compound.html">ja</a>]
 
+[<a href="../../kk/dep/compound.html">kk</a>]
+
+[<a href="../../kmr/dep/compound.html">kmr</a>]
+
 [<a href="../../ko/dep/compound.html">ko</a>]
+
+[<a href="../../la/dep/compound.html">la</a>]
+
+[<a href="../../lv/dep/compound.html">lv</a>]
+
+[<a href="../../mr/dep/compound.html">mr</a>]
+
+[<a href="../../nl/dep/compound.html">nl</a>]
+
+[<a href="../../no/dep/compound.html">no</a>]
+
+[<a href="../../pl/dep/compound.html">pl</a>]
+
+[<a href="../../pt/dep/compound.html">pt</a>]
+
+[<a href="../../ro/dep/compound.html">ro</a>]
+
+[<a href="../../ru/dep/compound.html">ru</a>]
+
+[<a href="../../sa/dep/compound.html">sa</a>]
+
+[<a href="../../sk/dep/compound.html">sk</a>]
+
+[<a href="../../sla/dep/compound.html">sla</a>]
+
+[<a href="../../sl/dep/compound.html">sl</a>]
+
+[<a href="../../so/dep/compound.html">so</a>]
+
+[<a href="../../sr/dep/compound.html">sr</a>]
 
 [<a href="../../sv/dep/compound.html">sv</a>]
 
+[<a href="../../swl/dep/compound.html">swl</a>]
+
+[<a href="../../ta/dep/compound.html">ta</a>]
+
+[<a href="../../tr/dep/compound.html">tr</a>]
+
 [<a href="../../u/dep/compound.html">u</a>]
+
+[<a href="../../ug/dep/compound.html">ug</a>]
+
+[<a href="../../uk/dep/compound.html">uk</a>]
+
+[<a href="../../ur/dep/compound.html">ur</a>]
+
+[<a href="../../urj/dep/compound.html">urj</a>]
+
+[<a href="../../vi/dep/compound.html">vi</a>]
+
+[<a href="../../yue/dep/compound.html">yue</a>]
+
+[<a href="../../zh/dep/compound.html">zh</a>]
 
 
 

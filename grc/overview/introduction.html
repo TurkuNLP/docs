@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-grc">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-grc">home</a></span>
 
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_grc-overview/introduction.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_grc-overview/introduction.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -45,7 +62,9 @@
 
           <h1 id="introduction">Introduction</h1>
 
-<p>Ancient Greek is here defined as the Greek language from the first attested texts to 1453.</p>
+<p>Ancient Greek is here defined as the Greek language from the first attested texts to 1453. There are two treebanks with Ancient Greek data.</p>
+
+<h2 id="the-ancient-greek-dependency-treebank-udancientgreek">The Ancient Greek Dependency Treebank (UD_Ancient_Greek)</h2>
 
 <p>The Ancient Greek UD treebank is based on the
 <a href="https://github.com/PerseusDL/treebank_data">Ancient Greek Dependency Treebank 2.0</a> (AGDT),
@@ -55,6 +74,11 @@ The treebank consists of literary texts of different genres.</p>
 <p>The morphological and syntactic annotation of the Ancient Greek UD treebank is created through
 a conversion of the <a href="https://github.com/PerseusDL/treebank_data/tree/master/v2.0/nonArethusaCompliant">AGDT 2.0</a> data. The conversion has been made by Giuseppe G. A. Celano.</p>
 
+<h2 id="the-proiel-treebank-of-ancient-greek-udancientgreek-proiel">The PROIEL Treebank of Ancient Greek (UD_Ancient_Greek-PROIEL)</h2>
+
+<p>This UD treebank is a conversion of the PROIEL treebank of Ancient Greek, release <a href="https://github.com/proiel/proiel-treebank/releases/tag/20170214">20170214</a>, currently maintained at the University of Oslo. The treebank consists of the New Testament plus approximately half of Herodotus’ Histories. The original annotation guidelines are available at <a href="http://folk.uio.no/daghaug/syntactic_guidelines.pdf">http://folk.uio.no/daghaug/syntactic_guidelines.pdf</a></p>
+
+<p>The treebank was converted to UD by Dag Haug. The conversion code is released as part of the <a href="https://github.com/proiel/proiel-cli">PROIEL command-line interface</a>.</p>
 
 
       </div>

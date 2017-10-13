@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-u">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/u/feat">u/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-feat/Voice.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-u">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/u/feat">u/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-feat/Voice.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -47,6 +64,20 @@
 
 <h2><code>Voice</code>: voice</h2>
 
+<table class="typeindex" border="1">
+<tr>
+  <td style="background-color:cornflowerblue;color:white"><strong>Values:</strong> </td>
+  <td><a href="#Act">Act</a></td>
+  <td><a href="#Antip">Antip</a></td>
+  <td><a href="#Cau">Cau</a></td>
+  <td><a href="#Dir">Dir</a></td>
+  <td><a href="#Inv">Inv</a></td>
+  <td><a href="#Mid">Mid</a></td>
+  <td><a href="#Pass">Pass</a></td>
+  <td><a href="#Rcp">Rcp</a></td>
+</tr>
+</table>
+
 <p>Voice is typically a feature of <a href="u-pos/VERB">verbs</a>.
 It may also occur with other parts of speech
 (<a href="u-pos/NOUN">nouns</a>, <a href="u-pos/ADJ">adjectives</a>, <a href="u-pos/ADV">adverbs</a>),
@@ -57,7 +88,7 @@ are classified as verbs or as the other category.</p>
 distinction. In other languages, other shades of verb meaning are
 categorized as voice.</p>
 
-<h3 id="act-active-voice"><code>Act</code>: active voice</h3>
+<h3 id="a-nameactacta-active-voice"><a name="Act"><code>Act</code></a>: active voice</h3>
 
 <p>The subject of the verb is the doer of the action (agent), the object
 is affected by the action (patient).</p>
@@ -70,7 +101,11 @@ is affected by the action (patient).</p>
 tense or conditional mood; here it forms the past tense.)</li>
 </ul>
 
-<h3 id="pass-passive-voice"><code>Pass</code>: passive voice</h3>
+<h3 id="a-namemidmida-middle-voice"><a name="Mid"><code>Mid</code></a>: middle voice</h3>
+
+<p>Between active and passive, needed e.g. in Ancient Greek or Sanskrit.</p>
+
+<h3 id="a-namepasspassa-passive-voice"><a name="Pass"><code>Pass</code></a>: passive voice</h3>
 
 <p>The subject of the verb is affected by the action (patient). The doer
 (agent) is either unexpressed or it appears as an object of the verb.</p>
@@ -83,7 +118,22 @@ the enemy” (the passive participle <em>napadeni</em> is used to form
 passive in all tenses; here it forms the present passive.)</li>
 </ul>
 
-<h3 id="rcp-reciprocal-voice"><code>Rcp</code>: reciprocal voice</h3>
+<h3 id="a-nameantipantipa-antipassive-voice"><a name="Antip"><code>Antip</code></a>: antipassive voice</h3>
+
+<p>In ergative-absolutive languages, an ergative subject is demoted to an absolutive subject.</p>
+
+<h3 id="a-namedirdira-direct-voice"><a name="Dir"><code>Dir</code></a>: direct voice</h3>
+
+<p>Used in direct-inverse voice systems, e.g. in North American languages.
+Direct means that the argument that is higher in salience hierarchy is the subject.
+Example hierarchy: human 1st person – 2nd – 3rd – non-human animate – inanimate.</p>
+
+<h3 id="a-nameinvinva-inverse-voice"><a name="Inv"><code>Inv</code></a>: inverse voice</h3>
+
+<p>Used in direct-inverse voice systems, e.g. in North American languages.
+Inverse voice marking means that the argument lower in the hierarchy functions as subject.</p>
+
+<h3 id="a-namercprcpa-reciprocal-voice"><a name="Rcp"><code>Rcp</code></a>: reciprocal voice</h3>
 
 <h4 id="examples-2">Examples</h4>
 
@@ -91,7 +141,7 @@ passive in all tenses; here it forms the present passive.)</li>
   <li>[tr] <em><b>karıştı</b></em>, <em><b>tutuştular</b></em></li>
 </ul>
 
-<h3 id="cau-causative-voice"><code>Cau</code>: causative voice</h3>
+<h3 id="a-namecaucaua-causative-voice"><a name="Cau"><code>Cau</code></a>: causative voice</h3>
 
 <p><a href="https://wiki.ufal.ms.mff.cuni.cz/_media/user:zeman:treebanks:ttbankkl.pdf">Documentation</a>
 of the METU Sabanci treebank classifies causative as voice (page 26).
@@ -116,9 +166,25 @@ also the causative case of nouns.</p>
 
 Voice in other languages:
 
+[<a href="../../am/feat/Voice.html">am</a>]
+
+[<a href="../../ar/feat/Voice.html">ar</a>]
+
 [<a href="../../bg/feat/Voice.html">bg</a>]
 
+[<a href="../../bxr/feat/Voice.html">bxr</a>]
+
+[<a href="../../ca/feat/Voice.html">ca</a>]
+
+[<a href="../../ckb/feat/Voice.html">ckb</a>]
+
+[<a href="../../cop/feat/Voice.html">cop</a>]
+
 [<a href="../../cs/feat/Voice.html">cs</a>]
+
+[<a href="../../cu/feat/Voice.html">cu</a>]
+
+[<a href="../../da/feat/Voice.html">da</a>]
 
 [<a href="../../de/feat/Voice.html">de</a>]
 
@@ -128,29 +194,97 @@ Voice in other languages:
 
 [<a href="../../es/feat/Voice.html">es</a>]
 
+[<a href="../../et/feat/Voice.html">et</a>]
+
 [<a href="../../eu/feat/Voice.html">eu</a>]
 
 [<a href="../../fa/feat/Voice.html">fa</a>]
 
 [<a href="../../fi/feat/Voice.html">fi</a>]
 
+[<a href="../../fo/feat/Voice.html">fo</a>]
+
 [<a href="../../fr/feat/Voice.html">fr</a>]
 
 [<a href="../../ga/feat/Voice.html">ga</a>]
 
+[<a href="../../gl/feat/Voice.html">gl</a>]
+
+[<a href="../../got/feat/Voice.html">got</a>]
+
+[<a href="../../grc/feat/Voice.html">grc</a>]
+
 [<a href="../../he/feat/Voice.html">he</a>]
 
+[<a href="../../hi/feat/Voice.html">hi</a>]
+
+[<a href="../../hr/feat/Voice.html">hr</a>]
+
 [<a href="../../hu/feat/Voice.html">hu</a>]
+
+[<a href="../../id/feat/Voice.html">id</a>]
 
 [<a href="../../it/feat/Voice.html">it</a>]
 
 [<a href="../../ja/feat/Voice.html">ja</a>]
 
+[<a href="../../kk/feat/Voice.html">kk</a>]
+
+[<a href="../../kmr/feat/Voice.html">kmr</a>]
+
 [<a href="../../ko/feat/Voice.html">ko</a>]
+
+[<a href="../../la/feat/Voice.html">la</a>]
+
+[<a href="../../lv/feat/Voice.html">lv</a>]
+
+[<a href="../../mr/feat/Voice.html">mr</a>]
+
+[<a href="../../nl/feat/Voice.html">nl</a>]
+
+[<a href="../../no/feat/Voice.html">no</a>]
+
+[<a href="../../pl/feat/Voice.html">pl</a>]
+
+[<a href="../../pt/feat/Voice.html">pt</a>]
+
+[<a href="../../ro/feat/Voice.html">ro</a>]
+
+[<a href="../../ru/feat/Voice.html">ru</a>]
+
+[<a href="../../sa/feat/Voice.html">sa</a>]
+
+[<a href="../../sk/feat/Voice.html">sk</a>]
+
+[<a href="../../sla/feat/Voice.html">sla</a>]
+
+[<a href="../../so/feat/Voice.html">so</a>]
+
+[<a href="../../sr/feat/Voice.html">sr</a>]
 
 [<a href="../../sv/feat/Voice.html">sv</a>]
 
+[<a href="../../swl/feat/Voice.html">swl</a>]
+
+[<a href="../../ta/feat/Voice.html">ta</a>]
+
+[<a href="../../tr/feat/Voice.html">tr</a>]
+
 [<a href="../../u/feat/Voice.html">u</a>]
+
+[<a href="../../ug/feat/Voice.html">ug</a>]
+
+[<a href="../../uk/feat/Voice.html">uk</a>]
+
+[<a href="../../ur/feat/Voice.html">ur</a>]
+
+[<a href="../../urj/feat/Voice.html">urj</a>]
+
+[<a href="../../vi/feat/Voice.html">vi</a>]
+
+[<a href="../../yue/feat/Voice.html">yue</a>]
+
+[<a href="../../zh/feat/Voice.html">zh</a>]
 
 
 

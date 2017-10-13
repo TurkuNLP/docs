@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-cs">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cs">home</a></span>
 
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-overview/format.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-overview/format.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -91,7 +108,7 @@ occur at most once per node.</p>
 4   bezchybně   bezchybně   ADV    Dg-------1A----  Degree=Pos|Negative=Pos 3       advmod  _       SpaceAfter=No|LDeriv=bezchybný
 5   ,           ,           PUNCT  Z:-------------  _       3       punct   _       _
 6   snižují     snižovat    VERB   VB-P---3P-AA---  Aspect=Imp|Mood=Ind|Negative=Pos|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act 0       root    _       _
-7   rychlost    rychlost    NOUN   NNFS4-----A----  Case=Acc|Gender=Fem|Negative=Pos|Number=Sing    6       dobj    _  LDeriv=rychlý
+7   rychlost    rychlost    NOUN   NNFS4-----A----  Case=Acc|Gender=Fem|Negative=Pos|Number=Sing    6       obj    _  LDeriv=rychlý
 8   přenosu     přenos      NOUN   NNIS2-----A----  Animacy=Inan|Case=Gen|Gender=Masc|Negative=Pos|Number=Sing      7       nmod    _  _
 9   tak         tak         ADV    Db-------------  _       10      advmod  _       LId=tak-3
 10  dlouho      dlouho      ADV    Dg-------1A----  Degree=Pos|Negative=Pos 6       advmod  _       SpaceAfter=No|LGloss=(o_čase;_př._dlouhá_doba)

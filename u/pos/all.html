@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-u">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-u">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -70,7 +87,7 @@ use the <a href="../feat/index.html">universal features</a>.</p>
     </tr>
     <tr>
       <td><a href="">INTJ</a></td>
-      <td><a href="">CONJ</a></td>
+      <td><a href="">CCONJ</a></td>
       <td><a href="">X</a></td>
     </tr>
     <tr>
@@ -144,7 +161,7 @@ may be classified as either <a href="">VERB</a> or <code>ADJ</code>.</p>
   <li><a href="http://en.wikipedia.org/wiki/Adjective">Wikipedia</a></li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-pos/ADJ.md" target="#">edit ADJ</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-pos/ADJ.md" target="#">edit ADJ</a></p>
 
 <p><a id="al-u-pos/ADP" class="al-dest"></a></p>
 <h2><code>ADP</code>: adposition</h2>
@@ -183,7 +200,7 @@ are still tagged <code>ADP</code> and not <a href="">PART</a>.</p>
   <li><a href="http://en.wikipedia.org/wiki/Preposition_and_postposition">Wikipedia</a></li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-pos/ADP.md" target="#">edit ADP</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-pos/ADP.md" target="#">edit ADP</a></p>
 
 <p><a id="al-u-pos/ADV" class="al-dest"></a></p>
 <h2><code>ADV</code>: adverb</h2>
@@ -239,26 +256,28 @@ either <a href="">VERB</a> or <code>ADV</code>.</p>
   <li><a href="http://en.wikipedia.org/wiki/Adverb">Wikipedia</a></li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-pos/ADV.md" target="#">edit ADV</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-pos/ADV.md" target="#">edit ADV</a></p>
 
 <p><a id="al-u-pos/AUX" class="al-dest"></a></p>
-<h2><code>AUX</code>: auxiliary verb</h2>
+<h2><code>AUX</code>: auxiliary</h2>
 
 <h3 id="definition">Definition</h3>
 
-<p>An auxiliary verb is a verb that accompanies the lexical verb of a
+<p>An auxiliary is a function word that accompanies the lexical verb of a
 verb phrase and expresses grammatical distinctions not carried by the
-lexical verb, such as person, number, tense, mood, aspect, and voice.</p>
+lexical verb, such as person, number, tense, mood, aspect, voice or evidentiality.
+It is often a verb (which may have non-auxiliary uses as well) but many languages 
+have nonverbal TAME markers and these should also be tagged <code>AUX</code>. The class <code>AUX</code>
+also include copulas (in the narrow sense of pure linking words for nonverbal predication).</p>
 
 <p><em>Modal verbs</em> may count as auxiliaries in some languages (English). In
 other languages their behavior is not too different from the <a href="VERB">main
-verbs</a> and they are thus tagged <code>VERB</code>. <em>Copulas</em> also stay with
-main verbs.</p>
+verbs</a> and they are thus tagged <code>VERB</code>.</p>
 
-<p>Note that not all languages have grammaticalized auxiliary verbs, and
+<p>Note that not all languages have grammaticalized auxiliaries, and
 even where they exist the dividing line between full verbs and
-auxiliary verbs can be expected to vary between languages. Exactly
-which verbs are counted as <code>AUX</code> should be part of the
+auxiliaries can be expected to vary between languages. Exactly
+which words are counted as <code>AUX</code> should be part of the
 language-specific documentation.</p>
 
 <h3 id="examples">Examples</h3>
@@ -267,6 +286,7 @@ language-specific documentation.</p>
   <li>Tense auxiliaries: <em><b>has</b> (done), <b>is</b> (doing), <b>will</b> (do)</em></li>
   <li>Passive auxiliaries: <em><b>was</b> (done), <b>got</b> (done)</em></li>
   <li>Modal auxiliaries: <em><b>should</b> (do), <b>must</b> (do)</em></li>
+  <li>Verbal copulas: <em>He <b>is</b> a teacher.</em></li>
 </ul>
 
 <h3 id="references">References</h3>
@@ -276,10 +296,10 @@ language-specific documentation.</p>
   <li><a href="http://en.wikipedia.org/wiki/Auxiliary_verb">Wikipedia</a></li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-pos/AUX_.md" target="#">edit AUX</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-pos/AUX_.md" target="#">edit AUX</a></p>
 
-<p><a id="al-u-pos/CONJ" class="al-dest"></a></p>
-<h2><code>CONJ</code>: coordinating conjunction</h2>
+<p><a id="al-u-pos/CCONJ" class="al-dest"></a></p>
+<h2><code>CCONJ</code>: coordinating conjunction</h2>
 
 <h3 id="definition">Definition</h3>
 
@@ -304,7 +324,7 @@ expresses a semantic relationship between them.</p>
   <li><a href="http://en.wikipedia.org/wiki/Conjunction_(grammar)">Wikipedia</a></li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-pos/CONJ.md" target="#">edit CONJ</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-pos/CCONJ.md" target="#">edit CCONJ</a></p>
 
 <p><a id="al-u-pos/DET" class="al-dest"></a></p>
 <h2><code>DET</code>: determiner</h2>
@@ -318,6 +338,17 @@ indefinite element of a class, to a closer or more distant element, to
 an element belonging to a specified person or thing, to a particular
 number or quantity, etc.</p>
 
+<p>Determiners under this definition include both <em>articles</em>
+and <em>pro-adjectives (pronominal adjectives)</em>, which is a slightly broader
+sense than what is usually regarded as determiners in English.
+In particular, there is no general requirement that a nominal can be
+modified by at most one determiner, although some languages may show
+a strong tendency towards such a constraint.
+(For example, an English nominal usually allows only one <code>DET</code> modifier,
+but there are occasional cases of <em>addeterminers</em>, which appear outside
+the usual determiner, such as [en] <em>all</em> in <em><b>all</b> the children survived</em>.
+In such cases, both <em>all</em> and <em>the</em> are given the POS <code>DET</code>.)</p>
+
 <p>Note that the <code>DET</code> tag includes (pronominal) <em>quantifiers</em> (words
 like <em>many, few, several),</em> which are included among determiners in
 some languages but may belong to numerals in others. However,
@@ -325,31 +356,51 @@ some languages but may belong to numerals in others. However,
 tagged <code>DET</code> even though some authors would include them in
 quantifiers. Cardinal numbers have their own tag <a href="">NUM</a>.</p>
 
-<p>Also note that the notion of determiners is unknown in grammars of
+<p>Also note that the notion of determiners is unknown in traditional grammar of
 some languages (e.g. Czech); words equivalent to English determiners
 may be traditionally classified as <a href="PRON">pronouns</a> and/or
 <a href="NUM">numerals</a> in these languages. In order to annotate the same
 thing the same way across languages, the words satisfying our definition
 of determiners should be tagged <code>DET</code> in these languages as well.</p>
 
-<p>For instance, [en] <em>this</em> is either pronoun <em>(I saw <b>this</b>
-yesterday.)</em> or determiner <em>(I saw <b>this</b> car yesterday.)</em> Its
-Czech translation, [cs] <em>tohle</em>, is traditionally called pronoun in
-Czech grammar, regardless of context. To make the annotation parallel
-across languages, it should be now tagged <a href="">PRON</a> in <em><b>Tohle</b>
-jsem viděl včera.</em> and <code>DET</code> in <em><b>Tohle</b> auto jsem viděl včera.</em></p>
+<p>It is not always crystal clear where pronouns end and determiners start.
+Unlike in UD v1 it is no longer required that they are told apart solely on
+the base of the context. The words can be pre-classified in the dictionary
+as either <code>PRON</code> or <code>DET</code>, based on their <em>typical</em> syntactic distribution
+(and morphology, when applicable).
+Language-specific documentation should list all determiners (it is a closed class)
+and point out ambiguities, if any.</p>
 
-<p>Usually a nominal allows only one <code>DET</code> modifier, but there are occasional cases of <em>addeterminers</em>, which appear outside the usual determiner, such as [en] <em>all</em> in <em><b>all</b> the children survived</em>.  In such cases, both <em>all</em> and <em>the</em> are given the POS <code>DET</code>.</p>
+<p>See also <a href="../overview/morphology.html#pronominal-words">general principles on pronominal words</a>
+for more tips on how to define determiners.
+In particular:</p>
+
+<ul>
+  <li>Articles <em>(the, a, an)</em> are always tagged <code>DET</code>; their <a href="/u/feat/PronType.html">PronType</a> is <code>Art</code>.</li>
+  <li>Pronominal numerals (quantifiers) are tagged <code>DET</code>; besides <code>PronType</code>, they also use the <a href="/u/feat/NumType.html">NumType</a> feature.</li>
+  <li>Words that behave similar to adjectives are <code>DET</code>. Similar behavior means:
+    <ul>
+      <li>They are more likely to be used attributively (modifying a noun phrase) than substantively (replacing a noun phrase). They may occur alone, though.
+If they do, it is either because of ellipsis, or because the hypothetical modified noun is something unspecified and general, as in <em>All [visitors] must pay.</em></li>
+      <li>Their inflection (if applicable) is similar to that of adjectives, and distinct from nouns.
+They agree with the nouns they modify.
+Especially the ability to inflect for gender is typical for adjectives and determiners.
+(Gender of nouns is determined lexically and determiners may be required by the grammar to agree with their nouns in gender; therefore they need to inflect for gender.)</li>
+    </ul>
+  </li>
+  <li>Possessives vary across languages. In some languages the above tests put them in the <code>DET</code> category.
+In others, they are more like a normal personal pronoun in a specific case (often the genitive), or a personal pronoun with an adposition; they are tagged <code>PRON</code>.</li>
+</ul>
 
 <h3 id="examples">Examples</h3>
 
 <ul>
   <li>articles (a closed class indicating definiteness, specificity or givenness): <em>a, an, the</em></li>
-  <li>possessive determiners: <em>my, your, his, her, its, our, their</em></li>
+  <li>possessive determiners: [cs] <em>můj, tvůj, jeho, její, náš, váš, jejich</em></li>
   <li>demonstrative determiners: <em>this</em> as in <em>I saw <b>this</b> car yesterday.</em></li>
   <li>interrogative determiners: <em>which</em> as in <em>“<b>Which</b> car do you like?”</em></li>
   <li>relative determiners: <em>which</em> as in <em>“I wonder <b>which</b> car you like.”</em></li>
-  <li>quantity/quantifier determiners: indefinite <em>any</em>, universal: <em>all</em>, and negative <em>no</em> as in <em>“We have <b>no</b> cars available.”</em></li>
+  <li>quantity determiners (quantifiers): indefinite <em>any</em>, universal: <em>all</em>, and negative <em>no</em> as in <em>“We have <b>no</b> cars available.”</em></li>
 </ul>
 
 <h3 id="references">References</h3>
@@ -359,7 +410,7 @@ jsem viděl včera.</em> and <code>DET</code> in <em><b>Tohle</b> auto jsem vid�
   <li><a href="http://en.wikipedia.org/wiki/Determiner">Wikipedia</a></li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-pos/DET.md" target="#">edit DET</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-pos/DET.md" target="#">edit DET</a></p>
 
 <p><a id="al-u-pos/INTJ" class="al-dest"></a></p>
 <h2><code>INTJ</code>: interjection</h2>
@@ -395,7 +446,7 @@ such as <em>yes</em>, <em>no</em>, <em>uhuh</em>, etc.</p>
   <li><a href="http://en.wikipedia.org/wiki/Interjection">Wikipedia</a></li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-pos/INTJ.md" target="#">edit INTJ</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-pos/INTJ.md" target="#">edit INTJ</a></p>
 
 <p><a id="al-u-pos/NOUN" class="al-dest"></a></p>
 <h2><code>NOUN</code>: noun</h2>
@@ -429,7 +480,7 @@ and context, they may be classified as either <a href="">VERB</a> or <code>NOUN<
   <li><a href="http://en.wikipedia.org/wiki/Noun">Wikipedia</a></li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-pos/NOUN.md" target="#">edit NOUN</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-pos/NOUN.md" target="#">edit NOUN</a></p>
 
 <p><a id="al-u-pos/NUM" class="al-dest"></a></p>
 <h2><code>NUM</code>: numeral</h2>
@@ -469,7 +520,7 @@ are <a href="ADJ">adjectives</a> <em>(first, second, third)</em> or <a href="ADV
   <li><a href="http://en.wikipedia.org/wiki/Numeral_%28linguistics%29">Wikipedia: Numeral</a></li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-pos/NUM.md" target="#">edit NUM</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-pos/NUM.md" target="#">edit NUM</a></p>
 
 <p><a id="al-u-pos/PART" class="al-dest"></a></p>
 <h2><code>PART</code>: particle</h2>
@@ -479,7 +530,7 @@ are <a href="ADJ">adjectives</a> <em>(first, second, third)</em> or <a href="ADV
 <p>Particles are function words that must be associated with another word
 or phrase to impart meaning and that do not satisfy definitions of
 other universal parts of speech (e.g. <a href="ADP">adpositions</a>,
-<a href="CONJ">coordinating conjunctions</a>, <a href="SCONJ">subordinating conjunctions</a>
+<a href="CCONJ">coordinating conjunctions</a>, <a href="SCONJ">subordinating conjunctions</a>
 or <a href="AUX">auxiliary verbs</a>).  Particles may encode grammatical
 categories such as negation, mood, tense etc.  Particles are normally
 not inflected, although exceptions may occur.</p>
@@ -495,6 +546,10 @@ particles in Japanese automatically qualify for the <code>PART</code> tag.  Some
 of them do, e.g. the question particle か / <em>ka.</em> Others (e.g. に /
 <em>ni,</em> の / <em>no</em>) are parallel to adpositions in other languages and
 should thus be tagged <a href="">ADP</a>.</p>
+
+<p>In general, the <code>PART</code> tag should be used restrictively and only when
+no other tag is possible. The the language-specific documentation
+should list the words classified as <code>PART</code> in the given language.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -513,7 +568,7 @@ should thus be tagged <a href="">ADP</a>.</p>
   <li><a href="http://en.wikipedia.org/wiki/Grammatical_particle">Wikipedia</a></li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-pos/PART.md" target="#">edit PART</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-pos/PART.md" target="#">edit PART</a></p>
 
 <p><a id="al-u-pos/PRON" class="al-dest"></a></p>
 <h2><code>PRON</code>: pronoun</h2>
@@ -530,24 +585,33 @@ substitute for <a href="ADJ">adjectives</a>. Such words are not tagged <code>PRO
 under our universal scheme. They are tagged as <a href="DET">determiners</a> in
 order to annotate the same thing the same way across languages.</p>
 
-<p>For instance, [en] <em>this</em> is either pronoun <em>(I saw <b>this</b>
-yesterday.)</em> or determiner <em>(I saw <b>this</b> car yesterday.)</em> Its
-Czech translation, [cs] <em>tohle</em>, is traditionally called pronoun in
-Czech grammar, regardless of context (the notion of determiners does
-not exist in Czech grammar). To make the annotation parallel across
-languages, it should be now tagged <code>PRON</code> in <em><b>Tohle</b> jsem viděl
-včera.</em> and <code>DET</code> in <em><b>Tohle</b> auto jsem viděl včera.</em></p>
+<p>It is not always crystal clear where pronouns end and determiners start.
+Unlike in UD v1 it is no longer required that they are told apart solely on
+the base of the context. The words can be pre-classified in the dictionary
+as either <code>PRON</code> or <code>DET</code>, based on their <em>typical</em> syntactic distribution
+(and morphology, when applicable).
+Language-specific documentation should list all pronouns (it is a closed class)
+and point out ambiguities, if any.</p>
+
+<p>See also <a href="../overview/morphology.html#pronominal-words">general principles on pronominal words</a>
+for more tips on how to define pronouns.
+In particular:</p>
+
+<ul>
+  <li>Non-possessive personal, reflexive or reciprocal pronouns are always tagged <code>PRON</code>.</li>
+  <li>Possessives vary across languages. In some languages the above tests put them in the <code>DET</code> category.
+In others, they are more like a normal personal pronoun in a specific case (often the genitive), or a personal pronoun with an adposition; they are tagged <code>PRON</code>.</li>
+</ul>
 
 <h3 id="examples">Examples</h3>
 
 <ul>
   <li>personal pronouns: <em>I, you, he, she, it, we, they</em></li>
   <li>reflexive pronouns: <em>myself, yourself, himself, herself, itself, ourselves, yourselves, theirselves</em></li>
-  <li>demonstrative pronouns: <em>this</em> as in <em>I saw <b>this</b> yesterday.</em></li>
   <li>interrogative pronouns: <em>who, what</em> as in <em><b>What</b> do you think?</em></li>
   <li>relative pronouns: <em>who, what</em> as in <em>I wonder <b>what</b> you think.</em> (Note, however, that some relative clause introducing words, such as [en] <em>that</em> are better analyzed as subordinating conjunctions (otherwise known as “complementizers” in the literature), and so are tagged as <a href="">SCONJ</a>.)</li>
   <li>indefinite pronouns: <em>somebody, something, anybody, anything</em></li>
-  <li>totality pronouns: <em>everybody, everything</em></li>
+  <li>total pronouns: <em>everybody, everything</em></li>
   <li>negative pronouns: <em>nobody, nothing</em></li>
 </ul>
 
@@ -558,7 +622,7 @@ včera.</em> and <code>DET</code> in <em><b>Tohle</b> auto jsem viděl včera.</
   <li><a href="http://en.wikipedia.org/wiki/Pronoun">Wikipedia</a></li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-pos/PRON.md" target="#">edit PRON</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-pos/PRON.md" target="#">edit PRON</a></p>
 
 <p><a id="al-u-pos/PROPN" class="al-dest"></a></p>
 <h2><code>PROPN</code>: proper noun</h2>
@@ -602,7 +666,7 @@ However, if the token consists entirely of digits (like <em>7</em> in <em>Window
   <li><a href="http://en.wikipedia.org/wiki/Proper_noun">Wikipedia</a></li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-pos/PROPN.md" target="#">edit PROPN</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-pos/PROPN.md" target="#">edit PROPN</a></p>
 
 <p><a id="al-u-pos/PUNCT" class="al-dest"></a></p>
 <h2><code>PUNCT</code>: punctuation</h2>
@@ -629,7 +693,7 @@ used in many languages to delimit linguistic units in printed text.</p>
   <li><a href="http://en.wikipedia.org/wiki/Punctuation">Wikipedia</a></li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-pos/PUNCT.md" target="#">edit PUNCT</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-pos/PUNCT.md" target="#">edit PUNCT</a></p>
 
 <p><a id="al-u-pos/SCONJ" class="al-dest"></a></p>
 <h2><code>SCONJ</code>: subordinating conjunction</h2>
@@ -649,7 +713,7 @@ status of a (subordinate) clause.</p>
   <li>Relativizers, like [he] <em>še</em>. (Note that these words, which simply introduce a relative caluse, and normally don’t inflect, need to be distinguished from relative or resumptive pronouns, which have a nominal function within the relative clause and which we analyze as <a href="">PRON</a>.)</li>
 </ul>
 
-<p>For <em>coordinating conjunctions,</em> see <a href="">CONJ</a>.</p>
+<p>For <em>coordinating conjunctions,</em> see <a href="">CCONJ</a>.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -666,7 +730,7 @@ status of a (subordinate) clause.</p>
   <li><a href="http://en.wikipedia.org/wiki/Conjunction_(grammar)">Wikipedia</a></li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-pos/SCONJ.md" target="#">edit SCONJ</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-pos/SCONJ.md" target="#">edit SCONJ</a></p>
 
 <p><a id="al-u-pos/SYM" class="al-dest"></a></p>
 <h2><code>SYM</code>: symbol</h2>
@@ -703,7 +767,7 @@ they are punctuation.</p>
   <li><em>john.doe@universal.org, http://universaldependencies.org/, 1-800-COMPANY</em></li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-pos/SYM.md" target="#">edit SYM</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-pos/SYM.md" target="#">edit SYM</a></p>
 
 <p><a id="al-u-pos/VERB" class="al-dest"></a></p>
 <h2><code>VERB</code>: verb</h2>
@@ -717,8 +781,9 @@ may occur in the clause. Verbs are often associated with grammatical
 categories like tense, mood, aspect and voice, which can either be
 expressed inflectionally or using auxilliary verbs or particles.</p>
 
-<p>Note that the <code>VERB</code> tag covers main verbs <em>(content verbs)</em> and
-<em>copulas</em> but it does not cover <em>auxiliary verbs,</em> for which there is
+<p>Note that the <code>VERB</code> tag covers main verbs <em>(content verbs)</em>
+but it does not cover <em>auxiliary verbs</em> and verbal <em>copulas</em>
+(in the narrow sense), for which there is
 the <a href="">AUX</a> tag. <em>Modal verbs</em> may be considered <code>VERB</code> or <code>AUX</code>,
 depending on their behavior in the given language. Language-specific
 documentation should specify which verbs are tagged <code>AUX</code> in which
@@ -732,7 +797,7 @@ may be classified as either <code>VERB</code> or <a href="">ADJ</a>.</p>
 share properties and usage of nouns and verbs. Depending on language
 and context, they may be classified as either <code>VERB</code> or <a href="">NOUN</a>.</p>
 
-<p>Note that there are verb forms such as <em>transgressives</em> or <em>adverbial
+<p>Note that there are verb forms such as <em>converbs (transgressives)</em> or <em>adverbial
 participles</em> that share properties and usage of adverbs and
 verbs. Depending on language and context, they may be classified as
 either <code>VERB</code> or <a href="">ADV</a>.</p>
@@ -752,7 +817,7 @@ either <code>VERB</code> or <a href="">ADV</a>.</p>
   <li><a href="http://en.wikipedia.org/wiki/Verb">Wikipedia</a></li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-pos/VERB.md" target="#">edit VERB</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-pos/VERB.md" target="#">edit VERB</a></p>
 
 <p><a id="al-u-pos/X" class="al-dest"></a></p>
 <h2><code>X</code>: other</h2>
@@ -760,11 +825,11 @@ either <code>VERB</code> or <a href="">ADV</a>.</p>
 <h3 id="definition">Definition</h3>
 
 <p>The tag <code>X</code> is used for words that for some reason cannot be assigned
-a real part-of-speech category.</p>
+a real part-of-speech category. It should be used very restrictively.</p>
 
 <p>A special usage of <code>X</code> is for cases of code-switching where it is not
 possible (or meaningful) to analyze the intervening language
-grammatically (and where the dependency relation <em>foreign</em> is
+grammatically (and where the dependency relation <a href="flat">flat:foreign</a> is
 typically used in the syntactic analysis).  This usage does not extend
 to ordinary loan words which should be assigned a normal
 part-of-speech. For example, in <em>he put on a large sombrero</em>,
@@ -776,7 +841,7 @@ part-of-speech. For example, in <em>he put on a large sombrero</em>,
   <li><em>And then he just <b>xfgh pdl jklw</b></em></li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-pos/X.md" target="#">edit X</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-pos/X.md" target="#">edit X</a></p>
 
 
 

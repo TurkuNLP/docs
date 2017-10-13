@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-es">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-es">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -97,7 +114,7 @@
         </tr>
         <tr>
           <td></td>
-          <td><a>Negative</a></td>
+          <td><a>Polarity</a></td>
         </tr>
       </table>
     </td>
@@ -119,12 +136,12 @@
   <li><a href="">Foreign</a>: Foreign</li>
   <li><a href="">Gender</a>: gender</li>
   <li><a href="">Mood</a>: mood</li>
-  <li><a href="">Negative</a>: whether the word can be or is negated</li>
   <li><a href="">NumForm</a>: NumForm</li>
   <li><a href="">NumType</a>: numeral type</li>
   <li><a href="">Number</a>: number</li>
   <li><a href="">Number[psor]</a>: Number[psor]</li>
   <li><a href="">Person</a>: person</li>
+  <li><a href="">Polarity</a>: whether the word can be or is negated</li>
   <li><a href="">Polite</a>: Polite</li>
   <li><a href="">Poss</a>: possessive</li>
   <li><a href="">PrepCase</a>: PrepCase</li>

@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-yue">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/yue/pos">yue/pos</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_yue-pos/NUM.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-yue">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/yue/pos">yue/pos</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_yue-pos/NUM.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -45,8 +62,18 @@
 
           <h2><code>NUM</code>: numeral</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>NUM</code>.</p>
+<h3 id="definition">Definition</h3>
+
+<p>A numeral is a word, functioning most typically as a determiner, a pronoun or an adjective, that expresses a number and a relation to the number, such as quantity, sequence, frequency or fraction.</p>
+
+<p>Cardinal numerals are covered by <code>NUM</code> regardless of syntactic function and regardless of whether they are expressed as words (五 / <em>ng5</em> “five”) or digits (5). By contrast, ordinal numerals (such as 第一 / <em>dai6jat1</em> “first”) are always tagged <a><code>ADJ</code></a>.</p>
+
+<h3 id="examples">Examples</h3>
+
+<ul>
+  <li>1, 2, 3, 4, 5, 100, 10,358, 5.23, 3/4</li>
+  <li>一 / <em>jat1</em> “one”, 二 / <em>ji6</em> “two”, 三 / <em>saam1</em> “three”, 一百 / <em>jat1baak3</em> “one hundred”, 五十六 / <em>ng5sap6luk6</em> “fifty-six”, 一萬三百五十八 / <em>jat1maan6saam1baak3ng5sap6baat3</em> “ten thousand three hundred and fifty-eight”, 四分之三 / <em>sei3fan6zi1saam1</em> “three-quarters”</li>
+</ul>
 
 
 <!-- "automatic stats" -->
@@ -61,9 +88,25 @@ for <code>NUM</code>.</p>
 
 NUM in other languages:
 
+[<a href="../../am/pos/NUM.html">am</a>]
+
+[<a href="../../ar/pos/NUM.html">ar</a>]
+
 [<a href="../../bg/pos/NUM.html">bg</a>]
 
+[<a href="../../bxr/pos/NUM.html">bxr</a>]
+
+[<a href="../../ca/pos/NUM.html">ca</a>]
+
+[<a href="../../ckb/pos/NUM.html">ckb</a>]
+
+[<a href="../../cop/pos/NUM.html">cop</a>]
+
 [<a href="../../cs/pos/NUM.html">cs</a>]
+
+[<a href="../../cu/pos/NUM.html">cu</a>]
+
+[<a href="../../da/pos/NUM.html">da</a>]
 
 [<a href="../../de/pos/NUM.html">de</a>]
 
@@ -73,29 +116,99 @@ NUM in other languages:
 
 [<a href="../../es/pos/NUM.html">es</a>]
 
+[<a href="../../et/pos/NUM.html">et</a>]
+
 [<a href="../../eu/pos/NUM.html">eu</a>]
 
 [<a href="../../fa/pos/NUM.html">fa</a>]
 
 [<a href="../../fi/pos/NUM.html">fi</a>]
 
+[<a href="../../fo/pos/NUM.html">fo</a>]
+
 [<a href="../../fr/pos/NUM.html">fr</a>]
 
 [<a href="../../ga/pos/NUM.html">ga</a>]
 
+[<a href="../../gl/pos/NUM.html">gl</a>]
+
+[<a href="../../got/pos/NUM.html">got</a>]
+
+[<a href="../../grc/pos/NUM.html">grc</a>]
+
 [<a href="../../he/pos/NUM.html">he</a>]
 
+[<a href="../../hi/pos/NUM.html">hi</a>]
+
+[<a href="../../hr/pos/NUM.html">hr</a>]
+
 [<a href="../../hu/pos/NUM.html">hu</a>]
+
+[<a href="../../id/pos/NUM.html">id</a>]
 
 [<a href="../../it/pos/NUM.html">it</a>]
 
 [<a href="../../ja/pos/NUM.html">ja</a>]
 
+[<a href="../../kk/pos/NUM.html">kk</a>]
+
+[<a href="../../kmr/pos/NUM.html">kmr</a>]
+
 [<a href="../../ko/pos/NUM.html">ko</a>]
+
+[<a href="../../la/pos/NUM.html">la</a>]
+
+[<a href="../../lv/pos/NUM.html">lv</a>]
+
+[<a href="../../mr/pos/NUM.html">mr</a>]
+
+[<a href="../../nl/pos/NUM.html">nl</a>]
+
+[<a href="../../no/pos/NUM.html">no</a>]
+
+[<a href="../../pl/pos/NUM.html">pl</a>]
+
+[<a href="../../pt/pos/NUM.html">pt</a>]
+
+[<a href="../../ro/pos/NUM.html">ro</a>]
+
+[<a href="../../ru/pos/NUM.html">ru</a>]
+
+[<a href="../../sa/pos/NUM.html">sa</a>]
+
+[<a href="../../sk/pos/NUM.html">sk</a>]
+
+[<a href="../../sla/pos/NUM.html">sla</a>]
+
+[<a href="../../sl/pos/NUM.html">sl</a>]
+
+[<a href="../../so/pos/NUM.html">so</a>]
+
+[<a href="../../sr/pos/NUM.html">sr</a>]
 
 [<a href="../../sv/pos/NUM.html">sv</a>]
 
+[<a href="../../swl/pos/NUM.html">swl</a>]
+
+[<a href="../../ta/pos/NUM.html">ta</a>]
+
+[<a href="../../tr/pos/NUM.html">tr</a>]
+
+[<a href="../../ug/pos/NUM.html">ug</a>]
+
+[<a href="../../uk/pos/NUM.html">uk</a>]
+
 [<a href="../../u/pos/NUM.html">u</a>]
+
+[<a href="../../urj/pos/NUM.html">urj</a>]
+
+[<a href="../../ur/pos/NUM.html">ur</a>]
+
+[<a href="../../vi/pos/NUM.html">vi</a>]
+
+[<a href="../../yue/pos/NUM.html">yue</a>]
+
+[<a href="../../zh/pos/NUM.html">zh</a>]
 
 
 

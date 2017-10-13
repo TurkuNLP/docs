@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-u">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/u/feat">u/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-feat/Mood.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-u">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/u/feat">u/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-feat/Mood.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -47,10 +64,28 @@
 
 <h2><code>Mood</code>: mood</h2>
 
+<table class="typeindex" border="1">
+<tr>
+  <td style="background-color:cornflowerblue;color:white"><strong>Values:</strong> </td>
+  <td><a href="#Adm">Adm</a></td>
+  <td><a href="#Cnd">Cnd</a></td>
+  <td><a href="#Des">Des</a></td>
+  <td><a href="#Imp">Imp</a></td>
+  <td><a href="#Ind">Ind</a></td>
+  <td><a href="#Jus">Jus</a></td>
+  <td><a href="#Nec">Nec</a></td>
+  <td><a href="#Opt">Opt</a></td>
+  <td><a href="#Pot">Pot</a></td>
+  <td><a href="#Prp">Prp</a></td>
+  <td><a href="#Qot">Qot</a></td>
+  <td><a href="#Sub">Sub</a></td>
+</tr>
+</table>
+
 <p>Mood is a feature that expresses modality and subclassifies finite
 verb forms.</p>
 
-<h3 id="ind-indicative"><code>Ind</code>: indicative</h3>
+<h3 id="a-nameindinda-indicative"><a name="Ind"><code>Ind</code></a>: indicative</h3>
 
 <p>The indicative can be considered the default mood. A verb in
 indicative merely states that something happens, has happened or will
@@ -67,7 +102,7 @@ the university.”</li>
   <li>[tr] <em>eve <b>gitti</b></em> “she went home”</li>
 </ul>
 
-<h3 id="imp-imperative"><code>Imp</code>: imperative</h3>
+<h3 id="a-nameimpimpa-imperative"><a name="Imp"><code>Imp</code></a>: imperative</h3>
 
 <p>The speaker uses imperative to order or ask the addressee to do the
 action of the verb.</p>
@@ -82,7 +117,7 @@ action of the verb.</p>
   <li>[tr] <em>eve <b>gitsin</b></em> “[let him] go home!” (3rd person imperative)</li>
 </ul>
 
-<h3 id="cnd-conditional"><code>Cnd</code>: conditional</h3>
+<h3 id="a-namecndcnda-conditional"><a name="Cnd"><code>Cnd</code></a>: conditional</h3>
 
 <p>The conditional mood is used to express actions that would have taken
 place under some circumstances but they actually did not / do not
@@ -106,7 +141,7 @@ indicative.)</li>
   <li>[tr] <em>eve <b>gidecekdiyse</b></em> “if she was going to go home”</li>
 </ul>
 
-<h3 id="pot-potential"><code>Pot</code>: potential</h3>
+<h3 id="a-namepotpota-potential"><a name="Pot"><code>Pot</code></a>: potential</h3>
 
 <p>The action of the verb is possible but not certain.
 This mood corresponds to the modal verbs <em>can, might, be able to</em>.
@@ -119,7 +154,7 @@ Used e.g. in Finnish.</p>
   <li>[tr] <em>eve <b>gidemeyebilir</b></em> “she may not be able to go home”</li>
 </ul>
 
-<h3 id="sub-subjunctive--conjunctive"><code>Sub</code>: subjunctive / conjunctive</h3>
+<h3 id="a-namesubsuba-subjunctive--conjunctive"><a name="Sub"><code>Sub</code></a>: subjunctive / conjunctive</h3>
 
 <p>The subjunctive mood is used under certain circumstances in
 subordinate clauses, typically for actions that are subjective or
@@ -133,17 +168,21 @@ conditional meaning.</p>
 want that you it do</i><tt>.Sub</tt></li>
 </ul>
 
-<h3 id="jus-jussive"><code>Jus</code>: jussive</h3>
+<h3 id="a-namejusjusa-jussive"><a name="Jus"><code>Jus</code></a>: jussive</h3>
 
 <p>The jussive mood expresses the desire that the action happens; it is thus close to both imperative and optative.
 Unlike in desiderative, it is the speaker, not the subject who wishes that it happens.
 Used e.g. in Arabic.</p>
 
-<h3 id="qot-quotative"><code>Qot</code>: quotative</h3>
+<h3 id="a-nameprpprpa-purposive"><a name="Prp"><code>Prp</code></a>: purposive</h3>
+
+<p>Means “in order to”, occurs in Amazonian languages.</p>
+
+<h3 id="a-nameqotqota-quotative"><a name="Qot"><code>Qot</code></a>: quotative</h3>
 
 <p>The quotative mood is used e.g. in Estonian to denote direct speech.</p>
 
-<h3 id="opt-optative"><code>Opt</code>: optative</h3>
+<h3 id="a-nameoptopta-optative"><a name="Opt"><code>Opt</code></a>: optative</h3>
 
 <p>Expresses exclamations like “May you have a long life!” or “If only I were rich!”
 In Turkish it also expresses suggestions.</p>
@@ -154,12 +193,12 @@ In Turkish it also expresses suggestions.</p>
   <li>[tr] <em>eve <b>gidelim</b></em> ‘let’s go home’</li>
 </ul>
 
-<h3 id="des-desiderative"><code>Des</code>: desiderative</h3>
+<h3 id="a-namedesdesa-desiderative"><a name="Des"><code>Des</code></a>: desiderative</h3>
 
 <p>The desiderative mood corresponds to the modal verb “want to”: “He
 <b>wants to come</b>.” Used e.g. in Turkish.</p>
 
-<h3 id="nec-necessitative"><code>Nec</code>: necessitative</h3>
+<h3 id="a-namenecneca-necessitative"><a name="Nec"><code>Nec</code></a>: necessitative</h3>
 
 <p>The necessitative mood expresses necessity and corresponds to the modal verbs “must, should,
 have to”: “He <b>must</b><b> come</b>.”</p>
@@ -170,6 +209,12 @@ have to”: “He <b>must</b><b> come</b>.”</p>
   <li>[tr] <em>eve <b>gitmeli</b></em> ‘she should go home’</li>
   <li>[tr] <em>eve <b>gitmeliydi</b></em> ‘she should have gone home’</li>
 </ul>
+
+<h3 id="a-nameadmadma-admirative"><a name="Adm"><code>Adm</code></a>: admirative</h3>
+
+<p>Expresses surprise, irony or doubt. Occurs in Albanian, other Balkan languages,
+and in Caddo (Native American from Oklahoma).</p>
+
 
 
 <!-- "automatic stats" -->
@@ -183,9 +228,25 @@ have to”: “He <b>must</b><b> come</b>.”</p>
 
 Mood in other languages:
 
+[<a href="../../am/feat/Mood.html">am</a>]
+
+[<a href="../../ar/feat/Mood.html">ar</a>]
+
 [<a href="../../bg/feat/Mood.html">bg</a>]
 
+[<a href="../../bxr/feat/Mood.html">bxr</a>]
+
+[<a href="../../ca/feat/Mood.html">ca</a>]
+
+[<a href="../../ckb/feat/Mood.html">ckb</a>]
+
+[<a href="../../cop/feat/Mood.html">cop</a>]
+
 [<a href="../../cs/feat/Mood.html">cs</a>]
+
+[<a href="../../cu/feat/Mood.html">cu</a>]
+
+[<a href="../../da/feat/Mood.html">da</a>]
 
 [<a href="../../de/feat/Mood.html">de</a>]
 
@@ -195,29 +256,99 @@ Mood in other languages:
 
 [<a href="../../es/feat/Mood.html">es</a>]
 
+[<a href="../../et/feat/Mood.html">et</a>]
+
 [<a href="../../eu/feat/Mood.html">eu</a>]
 
 [<a href="../../fa/feat/Mood.html">fa</a>]
 
 [<a href="../../fi/feat/Mood.html">fi</a>]
 
+[<a href="../../fo/feat/Mood.html">fo</a>]
+
 [<a href="../../fr/feat/Mood.html">fr</a>]
 
 [<a href="../../ga/feat/Mood.html">ga</a>]
 
+[<a href="../../gl/feat/Mood.html">gl</a>]
+
+[<a href="../../got/feat/Mood.html">got</a>]
+
+[<a href="../../grc/feat/Mood.html">grc</a>]
+
 [<a href="../../he/feat/Mood.html">he</a>]
 
+[<a href="../../hi/feat/Mood.html">hi</a>]
+
+[<a href="../../hr/feat/Mood.html">hr</a>]
+
 [<a href="../../hu/feat/Mood.html">hu</a>]
+
+[<a href="../../id/feat/Mood.html">id</a>]
 
 [<a href="../../it/feat/Mood.html">it</a>]
 
 [<a href="../../ja/feat/Mood.html">ja</a>]
 
+[<a href="../../kk/feat/Mood.html">kk</a>]
+
+[<a href="../../kmr/feat/Mood.html">kmr</a>]
+
 [<a href="../../ko/feat/Mood.html">ko</a>]
+
+[<a href="../../la/feat/Mood.html">la</a>]
+
+[<a href="../../lv/feat/Mood.html">lv</a>]
+
+[<a href="../../mr/feat/Mood.html">mr</a>]
+
+[<a href="../../nl/feat/Mood.html">nl</a>]
+
+[<a href="../../no/feat/Mood.html">no</a>]
+
+[<a href="../../pl/feat/Mood.html">pl</a>]
+
+[<a href="../../pt/feat/Mood.html">pt</a>]
+
+[<a href="../../ro/feat/Mood.html">ro</a>]
+
+[<a href="../../ru/feat/Mood.html">ru</a>]
+
+[<a href="../../sa/feat/Mood.html">sa</a>]
+
+[<a href="../../sk/feat/Mood.html">sk</a>]
+
+[<a href="../../sla/feat/Mood.html">sla</a>]
+
+[<a href="../../sl/feat/Mood.html">sl</a>]
+
+[<a href="../../so/feat/Mood.html">so</a>]
+
+[<a href="../../sr/feat/Mood.html">sr</a>]
 
 [<a href="../../sv/feat/Mood.html">sv</a>]
 
+[<a href="../../swl/feat/Mood.html">swl</a>]
+
+[<a href="../../ta/feat/Mood.html">ta</a>]
+
+[<a href="../../tr/feat/Mood.html">tr</a>]
+
 [<a href="../../u/feat/Mood.html">u</a>]
+
+[<a href="../../ug/feat/Mood.html">ug</a>]
+
+[<a href="../../uk/feat/Mood.html">uk</a>]
+
+[<a href="../../ur/feat/Mood.html">ur</a>]
+
+[<a href="../../urj/feat/Mood.html">urj</a>]
+
+[<a href="../../vi/feat/Mood.html">vi</a>]
+
+[<a href="../../yue/feat/Mood.html">yue</a>]
+
+[<a href="../../zh/feat/Mood.html">zh</a>]
 
 
 

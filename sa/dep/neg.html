@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-sa">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/sa/dep">sa/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_sa-dep/neg.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sa">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/sa/dep">sa/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sa-dep/neg.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -56,81 +73,30 @@ for <code>neg</code>.</p>
 
 
 
-
-<hr />
-
-<h2 id="treebank-statistics-udsanskrit">Treebank Statistics (UD_Sanskrit)</h2>
-
-<p>This relation is universal.</p>
-
-<p>24 nodes (2%) are attached to their parents as <code>neg</code>.</p>
-
-<p>23 instances of <code>neg</code> (96%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.375.</p>
-
-<p>The following 6 pairs of parts of speech are connected with <code>neg</code>: <a href="">sa-pos/VERB</a>-<a href="">sa-pos/PART</a> (9; 38% instances), <a href="">sa-pos/NOUN</a>-<a href="">sa-pos/PART</a> (6; 25% instances), <a href="">sa-pos/X</a>-<a href="">sa-pos/PART</a> (4; 17% instances), <a href="">sa-pos/ADV</a>-<a href="">sa-pos/PART</a> (3; 13% instances), <a href="">sa-pos/VERB</a>-<a href="">sa-pos/ADV</a> (1; 4% instances), <a href="">sa-pos/X</a>-<a href="">sa-pos/ADV</a> (1; 4% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 6 5 neg	color:blue
-1	परिवर्तिनि	परिवर्तिन्	ADJ	_	Case=Loc|Gender=Masc|Number=Sing	2	advmod	_	Translit=parivartini|LTranslit=parivartin
-2	संसारे	संसर	NOUN	_	Case=Loc|Gender=Masc|Number=Sing	6	nmod	_	Translit=saṁsāre|LTranslit=saṁsara
-3	मृतम्	मृत	NOUN	_	Case=Acc|Gender=Masc|Number=Sing|VerbForm=Ger	6	dobj	_	Translit=mr̥tam|LTranslit=mr̥ta
-4	को	क	PRON	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Int	6	nsubj	_	Translit=ko|LTranslit=ka
-5	न	न	PART	_	_	6	neg	_	Translit=na|LTranslit=na
-6	जायते	जन्	VERB	_	Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	0	root	_	Translit=jāyate|LTranslit=jan
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 8	bgColor:blue
-# visual-style 8	fgColor:white
-# visual-style 9	bgColor:blue
-# visual-style 9	fgColor:white
-# visual-style 9 8 neg	color:blue
-1	तत्	तद्	ADV	_	Case=Nom	10	advmod	_	Translit=tat|LTranslit=tad
-2	एतान्	एतद्	PRON	_	Case=Abl|Gender=Masc|Number=Plur|PronType=Dem	3	dobj	_	Translit=etān|LTranslit=etad
-3	पश्यतः	पश्यत्	VERB	_	Case=Gen|Gender=Masc|Number=Sing|VerbForm=Ger	10	advcl	_	Translit=paśyataḥ|LTranslit=paśyat
-4	मे	अहम्	PRON	_	Case=Gen|Number=Sing|Person=1|PronType=Prs	10	nmod	_	Translit=me|LTranslit=aham
-5	महत्	महत्	ADJ	_	Case=Acc|Gender=Neut|Number=Sing	7	amod	_	Translit=mahat|LTranslit=mahat
-6	अपि	अपि	ADV	_	_	10	advmod	_	Translit=api|LTranslit=api
-7	राज्यम्	राज्य	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	10	nsubj	_	Translit=rājyam|LTranslit=rājya
-8	न	न	PART	_	_	9	neg	_	Translit=na|LTranslit=na
-9	सौख्यम्	सौख्य	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	10	dobj	_	Translit=saukhyam|LTranslit=saukhya
-10	आवहति	आ-वह्	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=āvahati|LTranslit=ā-vah_1|LId=आ-वह्-१
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
-# visual-style 7 6 neg	color:blue
-1	कः	क	DET	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Int	2	det	_	Translit=kaḥ|LTranslit=ka
-2	अर्थः	अर्थ	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	4	nsubj	_	Translit=arthaḥ|LTranslit=artha
-3	पुत्रेण	पुत्र	NOUN	_	Case=Ins|Gender=Masc|Number=Sing	4	nmod	_	Translit=putreṇa|LTranslit=putra
-4	जातेन	जात	VERB	_	Case=Ins|Gender=Masc|Number=Sing|VerbForm=Ger	0	root	_	Translit=jātena|LTranslit=jāta
-5	यः	यद्	PRON	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Rel	7	nsubj	_	Translit=yaḥ|LTranslit=yad
-6	न	न	PART	_	_	7	neg	_	Translit=na|LTranslit=na
-7	विद्वान्	विद्वस्	X	_	Case=Nom|Gender=Masc|Number=Sing	4	nmod	_	Translit=vidvān|LTranslit=vidvas
-8	न	न	PART	_	_	7	neg	_	Translit=na|LTranslit=na
-9	भक्तिमान्	भक्तिमत्	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	7	conj	_	Translit=bhaktimān|LTranslit=bhaktimat
-10	अस्ति	अस्	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	Translit=asti|LTranslit=as_1|LId=अस्-१
-
-</code></pre>
-
-
-
-
 <!-- "in other languages" links -->
 <hr/>
 
 neg in other languages:
 
+[<a href="../../am/dep/neg.html">am</a>]
+
+[<a href="../../ar/dep/neg.html">ar</a>]
+
 [<a href="../../bg/dep/neg.html">bg</a>]
 
+[<a href="../../bxr/dep/neg.html">bxr</a>]
+
+[<a href="../../ca/dep/neg.html">ca</a>]
+
+[<a href="../../ckb/dep/neg.html">ckb</a>]
+
+[<a href="../../cop/dep/neg.html">cop</a>]
+
 [<a href="../../cs/dep/neg.html">cs</a>]
+
+[<a href="../../cu/dep/neg.html">cu</a>]
+
+[<a href="../../da/dep/neg.html">da</a>]
 
 [<a href="../../de/dep/neg.html">de</a>]
 
@@ -140,29 +106,97 @@ neg in other languages:
 
 [<a href="../../es/dep/neg.html">es</a>]
 
+[<a href="../../et/dep/neg.html">et</a>]
+
 [<a href="../../eu/dep/neg.html">eu</a>]
 
 [<a href="../../fa/dep/neg.html">fa</a>]
 
 [<a href="../../fi/dep/neg.html">fi</a>]
 
+[<a href="../../fo/dep/neg.html">fo</a>]
+
 [<a href="../../fr/dep/neg.html">fr</a>]
 
 [<a href="../../ga/dep/neg.html">ga</a>]
 
+[<a href="../../gl/dep/neg.html">gl</a>]
+
+[<a href="../../got/dep/neg.html">got</a>]
+
+[<a href="../../grc/dep/neg.html">grc</a>]
+
 [<a href="../../he/dep/neg.html">he</a>]
 
+[<a href="../../hi/dep/neg.html">hi</a>]
+
+[<a href="../../hr/dep/neg.html">hr</a>]
+
 [<a href="../../hu/dep/neg.html">hu</a>]
+
+[<a href="../../id/dep/neg.html">id</a>]
 
 [<a href="../../it/dep/neg.html">it</a>]
 
 [<a href="../../ja/dep/neg.html">ja</a>]
 
+[<a href="../../kk/dep/neg.html">kk</a>]
+
+[<a href="../../kmr/dep/neg.html">kmr</a>]
+
 [<a href="../../ko/dep/neg.html">ko</a>]
+
+[<a href="../../la/dep/neg.html">la</a>]
+
+[<a href="../../lv/dep/neg.html">lv</a>]
+
+[<a href="../../mr/dep/neg.html">mr</a>]
+
+[<a href="../../nl/dep/neg.html">nl</a>]
+
+[<a href="../../no/dep/neg.html">no</a>]
+
+[<a href="../../pl/dep/neg.html">pl</a>]
+
+[<a href="../../pt/dep/neg.html">pt</a>]
+
+[<a href="../../ro/dep/neg.html">ro</a>]
+
+[<a href="../../ru/dep/neg.html">ru</a>]
+
+[<a href="../../sa/dep/neg.html">sa</a>]
+
+[<a href="../../sk/dep/neg.html">sk</a>]
+
+[<a href="../../sla/dep/neg.html">sla</a>]
+
+[<a href="../../sl/dep/neg.html">sl</a>]
+
+[<a href="../../so/dep/neg.html">so</a>]
+
+[<a href="../../sr/dep/neg.html">sr</a>]
 
 [<a href="../../sv/dep/neg.html">sv</a>]
 
-[<a href="../../u/dep/neg.html">u</a>]
+[<a href="../../swl/dep/neg.html">swl</a>]
+
+[<a href="../../ta/dep/neg.html">ta</a>]
+
+[<a href="../../tr/dep/neg.html">tr</a>]
+
+[<a href="../../ug/dep/neg.html">ug</a>]
+
+[<a href="../../uk/dep/neg.html">uk</a>]
+
+[<a href="../../ur/dep/neg.html">ur</a>]
+
+[<a href="../../urj/dep/neg.html">urj</a>]
+
+[<a href="../../vi/dep/neg.html">vi</a>]
+
+[<a href="../../yue/dep/neg.html">yue</a>]
+
+[<a href="../../zh/dep/neg.html">zh</a>]
 
 
 

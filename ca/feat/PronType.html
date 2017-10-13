@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ca">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ca/feat">ca/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ca-feat/PronType.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ca">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ca/feat">ca/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ca-feat/PronType.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -65,27 +82,27 @@ for <code>PronType</code>.</p>
 <p>This feature is universal.
 It occurs with 7 different values: <code>Art</code>, <code>Dem</code>, <code>Ind</code>, <code>Int</code>, <code>Prs</code>, <code>Rel</code>, <code>Tot</code>.</p>
 
-<p>104076 tokens (19%) have a non-empty value of <code>PronType</code>.
-252 types (1%) occur at least once with a non-empty value of <code>PronType</code>.
-106 lemmas (0%) occur at least once with a non-empty value of <code>PronType</code>.
-The feature is used with 2 part-of-speech tags: <a href="">ca-pos/DET</a> (87305; 16% instances), <a href="">ca-pos/PRON</a> (16771; 3% instances).</p>
+<p>79641 tokens (17%) have a non-empty value of <code>PronType</code>.
+238 types (1%) occur at least once with a non-empty value of <code>PronType</code>.
+101 lemmas (0%) occur at least once with a non-empty value of <code>PronType</code>.
+The feature is used with 2 part-of-speech tags: <a href="">ca-pos/DET</a> (64629; 14% instances), <a href="">ca-pos/PRON</a> (15012; 3% instances).</p>
 
 <h3 id="det"><code>DET</code></h3>
 
-<p>87305 <a href="">ca-pos/DET</a> tokens (100% of all <code>DET</code> tokens) have a non-empty value of <code>PronType</code>.</p>
+<p>64629 <a href="">ca-pos/DET</a> tokens (100% of all <code>DET</code> tokens) have a non-empty value of <code>PronType</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>PronType</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (68822; 79%), <tt><a href="Definite.html">Definite</a>=Def</tt> (68257; 78%).</p>
+<p>The most frequent other feature values with which <code>DET</code> and <code>PronType</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (51464; 80%), <tt><a href="Definite.html">Definite</a>=Def</tt> (43526; 67%).</p>
 
 <p><code>DET</code> tokens may have the following values of <code>PronType</code>:</p>
 
 <ul>
-  <li><code>Art</code> (68509; 78% of non-empty <code>PronType</code>): <em>el, la, l’, els, les, un, meva, una, los, las</em></li>
-  <li><code>Dem</code> (3352; 4% of non-empty <code>PronType</code>): <em>aquest, aquesta, aquests, aquestes, aquell, aquells, aquella, aquelles, tal, tals</em></li>
-  <li><code>Ind</code> (12136; 14% of non-empty <code>PronType</code>): <em>un, una, altres, tots, mateix, tot, cap, cada, uns, diferents</em></li>
-  <li><code>Int</code> (62; 0% of non-empty <code>PronType</code>): <em>quina, quin, quines, quins, quants</em></li>
-  <li><code>Prs</code> (3140; 4% of non-empty <code>PronType</code>): <em>seva, seu, seus, seves, nostra, nostre, nostres, meu, meus, su</em></li>
-  <li><code>Rel</code> (56; 0% of non-empty <code>PronType</code>): <em>qual, Que</em></li>
-  <li><code>Tot</code> (50; 0% of non-empty <code>PronType</code>): <em>tot</em></li>
+  <li><code>Art</code> (47825; 74% of non-empty <code>PronType</code>): <em>la, el, l’, les, els, un, meva, una, los, las</em></li>
+  <li><code>Dem</code> (2981; 5% of non-empty <code>PronType</code>): <em>aquest, aquesta, aquests, aquestes, aquell, aquells, aquella, aquelles, tal, tals</em></li>
+  <li><code>Ind</code> (10860; 17% of non-empty <code>PronType</code>): <em>un, una, altres, tots, mateix, tot, cap, cada, uns, diferents</em></li>
+  <li><code>Int</code> (54; 0% of non-empty <code>PronType</code>): <em>quina, quin, quines, quins, quants</em></li>
+  <li><code>Prs</code> (2815; 4% of non-empty <code>PronType</code>): <em>seva, seu, seus, seves, nostra, nostre, nostres, meu, meus, su</em></li>
+  <li><code>Rel</code> (52; 0% of non-empty <code>PronType</code>): <em>qual, Que</em></li>
+  <li><code>Tot</code> (42; 0% of non-empty <code>PronType</code>): <em>tot</em></li>
 </ul>
 
 <table>
@@ -96,27 +113,32 @@ The feature is used with 2 part-of-speech tags: <a href="">ca-pos/DET</a> (87305
   <tr><td><tt><a href="Definite.html">Definite</a>=Def|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td></td><td><em>la, L'</em></td></tr>
   <tr><td><tt><a href="Definite.html">Definite</a>=Def|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur</tt></td><td></td><td><em>les</em></td></tr>
   <tr><td><tt><a href="Definite.html">Definite</a>=Def|<a href="Number.html">Number</a>=Sing</tt></td><td></td><td><em>l'</em></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td></td><td><em>el</em></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur</tt></td><td></td><td><em>els</em></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td></td><td><em>la</em></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur</tt></td><td></td><td><em>les</em></td></tr>
   <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Poss.html">Poss</a>=Yes</tt></td><td><em>les</em></td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing</tt></td><td></td><td><em>l'</em></td></tr>
 </table>
 
-<p><code>PronType</code> seems to be <strong>lexical feature</strong> of <code>DET</code>. 91% lemmas (72) occur only with one value of <code>PronType</code>.</p>
+<p><code>PronType</code> seems to be <strong>lexical feature</strong> of <code>DET</code>. 91% lemmas (68) occur only with one value of <code>PronType</code>.</p>
 
 <h3 id="pron"><code>PRON</code></h3>
 
-<p>16771 <a href="">ca-pos/PRON</a> tokens (72% of all <code>PRON</code> tokens) have a non-empty value of <code>PronType</code>.</p>
+<p>15012 <a href="">ca-pos/PRON</a> tokens (72% of all <code>PRON</code> tokens) have a non-empty value of <code>PronType</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>PronType</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (13524; 81%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (12009; 72%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (10437; 62%).</p>
+<p>The most frequent other feature values with which <code>PRON</code> and <code>PronType</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (12102; 81%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (10726; 71%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (9298; 62%).</p>
 
 <p><code>PRON</code> tokens may have the following values of <code>PronType</code>:</p>
 
 <ul>
-  <li><code>Dem</code> (643; 4% of non-empty <code>PronType</code>): <em>això, aquest, aquesta, tal, allò, aquests, aquestes, aquells, aquell, aquelles</em></li>
-  <li><code>Ind</code> (1941; 12% of non-empty <code>PronType</code>): <em>un, una, altres, uns, alguns, res, tots, altra, altre, ningú</em></li>
-  <li><code>Int</code> (285; 2% of non-empty <code>PronType</code>): <em>com, què, qui, on, quan, quina, quin, quines, quins, quant</em></li>
-  <li><code>Prs</code> (4762; 28% of non-empty <code>PronType</code>): <em>hi, li, ho, els, el, l’, ens, ell, la, n’</em></li>
-  <li><code>Rel</code> (8760; 52% of non-empty <code>PronType</code>): <em>que, on, què, qui, qual, quals, quan, com</em></li>
-  <li><code>Tot</code> (380; 2% of non-empty <code>PronType</code>): <em>tot</em></li>
-  <li><code>EMPTY</code> (6598): <em>es, s’, -se, se, ens, ‘s, em, m’, -s, -me</em></li>
+  <li><code>Dem</code> (582; 4% of non-empty <code>PronType</code>): <em>això, aquest, aquesta, tal, allò, aquests, aquells, aquestes, aquell, aquelles</em></li>
+  <li><code>Ind</code> (1736; 12% of non-empty <code>PronType</code>): <em>un, altres, una, uns, alguns, res, altra, tots, ningú, altre</em></li>
+  <li><code>Int</code> (244; 2% of non-empty <code>PronType</code>): <em>com, què, qui, on, quina, quan, quin, quines, quins, quant</em></li>
+  <li><code>Prs</code> (4286; 29% of non-empty <code>PronType</code>): <em>hi, li, ho, els, la, el, l’, ens, ell, lo</em></li>
+  <li><code>Rel</code> (7825; 52% of non-empty <code>PronType</code>): <em>que, on, què, qui, qual, quals, quan, com</em></li>
+  <li><code>Tot</code> (339; 2% of non-empty <code>PronType</code>): <em>tot</em></li>
+  <li><code>EMPTY</code> (5883): <em>es, s’, se, ens, em, m’, me, s, nos, hi</em></li>
 </ul>
 
 <table>
@@ -128,9 +150,9 @@ The feature is used with 2 part-of-speech tags: <a href="">ca-pos/DET</a> (87305
 <h2 id="relations-with-agreement-in-prontype">Relations with Agreement in <code>PronType</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>PronType</code>:
-<tt>DET –[<a href="../dep/conj.html">conj</a>]–&gt; DET</tt> (15; 100%),
-<tt>PRON –[<a href="../dep/conj.html">conj</a>]–&gt; PRON</tt> (12; 86%),
-<tt>DET –[<a href="../dep/mwe.html">mwe</a>]–&gt; DET</tt> (3; 100%),
+<tt>DET –[<a href="../dep/conj.html">conj</a>]–&gt; DET</tt> (11; 100%),
+<tt>PRON –[<a href="../dep/conj.html">conj</a>]–&gt; PRON</tt> (8; 80%),
+<tt>PRON –[<a href="../dep/appos.html">appos</a>]–&gt; PRON</tt> (2; 67%),
 <tt>PRON –[<a href="../dep/advcl.html">advcl</a>]–&gt; PRON</tt> (1; 100%).</p>
 
 
@@ -141,9 +163,25 @@ The feature is used with 2 part-of-speech tags: <a href="">ca-pos/DET</a> (87305
 
 PronType in other languages:
 
+[<a href="../../am/feat/PronType.html">am</a>]
+
+[<a href="../../ar/feat/PronType.html">ar</a>]
+
 [<a href="../../bg/feat/PronType.html">bg</a>]
 
+[<a href="../../bxr/feat/PronType.html">bxr</a>]
+
+[<a href="../../ca/feat/PronType.html">ca</a>]
+
+[<a href="../../ckb/feat/PronType.html">ckb</a>]
+
+[<a href="../../cop/feat/PronType.html">cop</a>]
+
 [<a href="../../cs/feat/PronType.html">cs</a>]
+
+[<a href="../../cu/feat/PronType.html">cu</a>]
+
+[<a href="../../da/feat/PronType.html">da</a>]
 
 [<a href="../../de/feat/PronType.html">de</a>]
 
@@ -153,29 +191,99 @@ PronType in other languages:
 
 [<a href="../../es/feat/PronType.html">es</a>]
 
+[<a href="../../et/feat/PronType.html">et</a>]
+
 [<a href="../../eu/feat/PronType.html">eu</a>]
 
 [<a href="../../fa/feat/PronType.html">fa</a>]
 
 [<a href="../../fi/feat/PronType.html">fi</a>]
 
+[<a href="../../fo/feat/PronType.html">fo</a>]
+
 [<a href="../../fr/feat/PronType.html">fr</a>]
 
 [<a href="../../ga/feat/PronType.html">ga</a>]
 
+[<a href="../../gl/feat/PronType.html">gl</a>]
+
+[<a href="../../got/feat/PronType.html">got</a>]
+
+[<a href="../../grc/feat/PronType.html">grc</a>]
+
 [<a href="../../he/feat/PronType.html">he</a>]
 
+[<a href="../../hi/feat/PronType.html">hi</a>]
+
+[<a href="../../hr/feat/PronType.html">hr</a>]
+
 [<a href="../../hu/feat/PronType.html">hu</a>]
+
+[<a href="../../id/feat/PronType.html">id</a>]
 
 [<a href="../../it/feat/PronType.html">it</a>]
 
 [<a href="../../ja/feat/PronType.html">ja</a>]
 
+[<a href="../../kk/feat/PronType.html">kk</a>]
+
+[<a href="../../kmr/feat/PronType.html">kmr</a>]
+
 [<a href="../../ko/feat/PronType.html">ko</a>]
+
+[<a href="../../la/feat/PronType.html">la</a>]
+
+[<a href="../../lv/feat/PronType.html">lv</a>]
+
+[<a href="../../mr/feat/PronType.html">mr</a>]
+
+[<a href="../../nl/feat/PronType.html">nl</a>]
+
+[<a href="../../no/feat/PronType.html">no</a>]
+
+[<a href="../../pl/feat/PronType.html">pl</a>]
+
+[<a href="../../pt/feat/PronType.html">pt</a>]
+
+[<a href="../../ro/feat/PronType.html">ro</a>]
+
+[<a href="../../ru/feat/PronType.html">ru</a>]
+
+[<a href="../../sa/feat/PronType.html">sa</a>]
+
+[<a href="../../sk/feat/PronType.html">sk</a>]
+
+[<a href="../../sla/feat/PronType.html">sla</a>]
+
+[<a href="../../sl/feat/PronType.html">sl</a>]
+
+[<a href="../../so/feat/PronType.html">so</a>]
+
+[<a href="../../sr/feat/PronType.html">sr</a>]
 
 [<a href="../../sv/feat/PronType.html">sv</a>]
 
+[<a href="../../swl/feat/PronType.html">swl</a>]
+
+[<a href="../../ta/feat/PronType.html">ta</a>]
+
+[<a href="../../tr/feat/PronType.html">tr</a>]
+
 [<a href="../../u/feat/PronType.html">u</a>]
+
+[<a href="../../ug/feat/PronType.html">ug</a>]
+
+[<a href="../../uk/feat/PronType.html">uk</a>]
+
+[<a href="../../ur/feat/PronType.html">ur</a>]
+
+[<a href="../../urj/feat/PronType.html">urj</a>]
+
+[<a href="../../vi/feat/PronType.html">vi</a>]
+
+[<a href="../../yue/feat/PronType.html">yue</a>]
+
+[<a href="../../zh/feat/PronType.html">zh</a>]
 
 
 

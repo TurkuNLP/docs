@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-et">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/et/dep">et/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_et-dep/punct.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-et">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/et/dep">et/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_et-dep/punct.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,44 +80,44 @@ for <code>punct</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>39564 nodes (17%) are attached to their parents as <code>punct</code>.</p>
+<p>6282 nodes (18%) are attached to their parents as <code>punct</code>.</p>
 
-<p>27390 instances of <code>punct</code> (69%) are left-to-right (parent precedes child).
-Average distance between parent and child is 6.23523910625821.</p>
+<p>3988 instances of <code>punct</code> (63%) are left-to-right (parent precedes child).
+Average distance between parent and child is 5.6007640878701.</p>
 
-<p>The following 15 pairs of parts of speech are connected with <code>punct</code>: <a href="">et-pos/VERB</a>-<a href="">et-pos/PUNCT</a> (27671; 70% instances), <a href="">et-pos/NOUN</a>-<a href="">et-pos/PUNCT</a> (5774; 15% instances), <a href="">et-pos/ADJ</a>-<a href="">et-pos/PUNCT</a> (2795; 7% instances), <a href="">et-pos/PROPN</a>-<a href="">et-pos/PUNCT</a> (1348; 3% instances), <a href="">et-pos/ADV</a>-<a href="">et-pos/PUNCT</a> (732; 2% instances), <a href="">et-pos/PRON</a>-<a href="">et-pos/PUNCT</a> (484; 1% instances), <a href="">et-pos/NUM</a>-<a href="">et-pos/PUNCT</a> (440; 1% instances), <a href="">et-pos/INTJ</a>-<a href="">et-pos/PUNCT</a> (125; 0% instances), <a href="">et-pos/ADP</a>-<a href="">et-pos/PUNCT</a> (103; 0% instances), <a href="">et-pos/X</a>-<a href="">et-pos/PUNCT</a> (31; 0% instances), <a href="">et-pos/AUX</a>-<a href="">et-pos/PUNCT</a> (21; 0% instances), <a href="">et-pos/SYM</a>-<a href="">et-pos/PUNCT</a> (17; 0% instances), <a href="">et-pos/CONJ</a>-<a href="">et-pos/PUNCT</a> (15; 0% instances), <a href="">et-pos/SCONJ</a>-<a href="">et-pos/PUNCT</a> (6; 0% instances), <a href="">et-pos/PUNCT</a>-<a href="">et-pos/PUNCT</a> (2; 0% instances).</p>
+<p>The following 11 pairs of parts of speech are connected with <code>punct</code>: <a href="">et-pos/VERB</a>-<a href="">et-pos/PUNCT</a> (4619; 74% instances), <a href="">et-pos/NOUN</a>-<a href="">et-pos/PUNCT</a> (679; 11% instances), <a href="">et-pos/ADJ</a>-<a href="">et-pos/PUNCT</a> (373; 6% instances), <a href="">et-pos/ADV</a>-<a href="">et-pos/PUNCT</a> (176; 3% instances), <a href="">et-pos/PROPN</a>-<a href="">et-pos/PUNCT</a> (162; 3% instances), <a href="">et-pos/PRON</a>-<a href="">et-pos/PUNCT</a> (131; 2% instances), <a href="">et-pos/NUM</a>-<a href="">et-pos/PUNCT</a> (69; 1% instances), <a href="">et-pos/AUX</a>-<a href="">et-pos/PUNCT</a> (53; 1% instances), <a href="">et-pos/ADP</a>-<a href="">et-pos/PUNCT</a> (10; 0% instances), <a href="">et-pos/INTJ</a>-<a href="">et-pos/PUNCT</a> (9; 0% instances), <a href="">et-pos/X</a>-<a href="">et-pos/PUNCT</a> (1; 0% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 9	bgColor:blue
-# visual-style 9	fgColor:white
-# visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 3 9 punct	color:blue
-1	Tema	tema	PRON	P	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	nmod	_	_
-2	ees	ees	ADP	K	AdpType=Post	1	case	_	_
-3	seisis	seisma	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
-4	kääbus	kääbus	NOUN	S	Case=Nom|Number=Sing	3	nsubj	_	_
-5	,	,	PUNCT	Z	_	8	punct	_	_
-6	seljas	selg	NOUN	S	Case=Ine|Number=Sing	8	nmod	_	_
-7	tilluke	tilluke	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	8	amod	_	_
-8	raudrüü	raud_rüü	NOUN	S	Case=Nom|Number=Sing	3	advcl	_	_
-9	.	.	PUNCT	Z	_	3	punct	_	_
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 8 4 punct	color:blue
+1	Indrikson	Indrikson	PROPN	S	Case=Nom|Number=Sing	2	nsubj	_	_
+2	teadis	teadma	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ju	ju	ADV	D	_	2	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Z	_	8	punct	_	_
+5	millist	milline	DET	P	Case=Par|Number=Sing|PronType=Rel	6	det	_	_
+6	palka	palk	NOUN	S	Case=Par|Number=Sing	8	obj	_	_
+7	näitlejad	näitleja	NOUN	S	Case=Nom|Number=Plur	8	nsubj	_	_
+8	saavad	saama	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	ccomp	_	SpaceAfter=No
+9	.	.	PUNCT	Z	_	2	punct	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 8	bgColor:blue
+<pre><code class="language-conllu"># visual-style 8	bgColor:blue
 # visual-style 8	fgColor:white
-# visual-style 8 5 punct	color:blue
-1	Tema	tema	PRON	P	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	nmod	_	_
-2	ees	ees	ADP	K	AdpType=Post	1	case	_	_
-3	seisis	seisma	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
-4	kääbus	kääbus	NOUN	S	Case=Nom|Number=Sing	3	nsubj	_	_
-5	,	,	PUNCT	Z	_	8	punct	_	_
-6	seljas	selg	NOUN	S	Case=Ine|Number=Sing	8	nmod	_	_
-7	tilluke	tilluke	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	8	amod	_	_
-8	raudrüü	raud_rüü	NOUN	S	Case=Nom|Number=Sing	3	advcl	_	_
-9	.	.	PUNCT	Z	_	3	punct	_	_
+# visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 7 8 punct	color:blue
+1	Kas	kas	ADV	D	_	7	advmod	_	_
+2	jälle	jälle	ADV	D	_	7	advmod	_	_
+3	üks	üks	DET	P	Case=Nom|Number=Sing|PronType=Ind	7	det	_	_
+4	uus	uus	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	7	amod	_	_
+5	ja	ja	CCONJ	J	_	6	cc	_	_
+6	tundmatu	tundmatu	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	conj	_	_
+7	põlvkond	põlvkond	NOUN	S	Case=Nom|Number=Sing	0	root	_	_
+8	...	...	PUNCT	Z	_	7	punct	_	SpaceAfter=No
+9	?	?	PUNCT	Z	_	7	punct	_	_
 
 </code></pre>
 
@@ -109,17 +126,17 @@ Average distance between parent and child is 6.23523910625821.</p>
 # visual-style 5	bgColor:blue
 # visual-style 5	fgColor:white
 # visual-style 5 2 punct	color:blue
-1	Noormees	noor_mees	NOUN	S	Case=Nom|Number=Sing	5	vocative	_	_
+1	Noormees	noor_mees	NOUN	S	Case=Nom|Number=Sing	5	vocative	_	SpaceAfter=No
 2	,	,	PUNCT	Z	_	5	punct	_	_
 3	te	sina	PRON	P	Case=Nom|Number=Plur|Person=2|PronType=Prs	5	nsubj:cop	_	_
-4	olete	olema	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	olete	olema	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
 5	tugev	tugev	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
-6	ja	ja	CONJ	J	_	5	cc	_	_
-7	julge	julge	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	conj	_	_
-8	,	,	PUNCT	Z	_	5	punct	_	_
+6	ja	ja	CCONJ	J	_	7	cc	_	_
+7	julge	julge	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	conj	_	SpaceAfter=No
+8	,	,	PUNCT	Z	_	9	punct	_	_
 9	tapke	tapma	VERB	V	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	conj	_	_
-10	ta	tema	PRON	P	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	dobj	_	_
-11	ära	ära	ADV	D	_	9	compound:prt	_	_
+10	ta	tema	PRON	P	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	obj	_	_
+11	ära	ära	ADV	D	_	9	compound:prt	_	SpaceAfter=No
 12	!	!	PUNCT	Z	_	5	punct	_	_
 
 </code></pre>
@@ -132,9 +149,25 @@ Average distance between parent and child is 6.23523910625821.</p>
 
 punct in other languages:
 
+[<a href="../../am/dep/punct.html">am</a>]
+
+[<a href="../../ar/dep/punct.html">ar</a>]
+
 [<a href="../../bg/dep/punct.html">bg</a>]
 
+[<a href="../../bxr/dep/punct.html">bxr</a>]
+
+[<a href="../../ca/dep/punct.html">ca</a>]
+
+[<a href="../../ckb/dep/punct.html">ckb</a>]
+
+[<a href="../../cop/dep/punct.html">cop</a>]
+
 [<a href="../../cs/dep/punct.html">cs</a>]
+
+[<a href="../../cu/dep/punct.html">cu</a>]
+
+[<a href="../../da/dep/punct.html">da</a>]
 
 [<a href="../../de/dep/punct.html">de</a>]
 
@@ -144,29 +177,99 @@ punct in other languages:
 
 [<a href="../../es/dep/punct.html">es</a>]
 
+[<a href="../../et/dep/punct.html">et</a>]
+
 [<a href="../../eu/dep/punct.html">eu</a>]
 
 [<a href="../../fa/dep/punct.html">fa</a>]
 
 [<a href="../../fi/dep/punct.html">fi</a>]
 
+[<a href="../../fo/dep/punct.html">fo</a>]
+
 [<a href="../../fr/dep/punct.html">fr</a>]
 
 [<a href="../../ga/dep/punct.html">ga</a>]
 
+[<a href="../../gl/dep/punct.html">gl</a>]
+
+[<a href="../../got/dep/punct.html">got</a>]
+
+[<a href="../../grc/dep/punct.html">grc</a>]
+
 [<a href="../../he/dep/punct.html">he</a>]
 
+[<a href="../../hi/dep/punct.html">hi</a>]
+
+[<a href="../../hr/dep/punct.html">hr</a>]
+
 [<a href="../../hu/dep/punct.html">hu</a>]
+
+[<a href="../../id/dep/punct.html">id</a>]
 
 [<a href="../../it/dep/punct.html">it</a>]
 
 [<a href="../../ja/dep/punct.html">ja</a>]
 
+[<a href="../../kk/dep/punct.html">kk</a>]
+
+[<a href="../../kmr/dep/punct.html">kmr</a>]
+
 [<a href="../../ko/dep/punct.html">ko</a>]
+
+[<a href="../../la/dep/punct.html">la</a>]
+
+[<a href="../../lv/dep/punct.html">lv</a>]
+
+[<a href="../../mr/dep/punct.html">mr</a>]
+
+[<a href="../../nl/dep/punct.html">nl</a>]
+
+[<a href="../../no/dep/punct.html">no</a>]
+
+[<a href="../../pl/dep/punct.html">pl</a>]
+
+[<a href="../../pt/dep/punct.html">pt</a>]
+
+[<a href="../../ro/dep/punct.html">ro</a>]
+
+[<a href="../../ru/dep/punct.html">ru</a>]
+
+[<a href="../../sa/dep/punct.html">sa</a>]
+
+[<a href="../../sk/dep/punct.html">sk</a>]
+
+[<a href="../../sla/dep/punct.html">sla</a>]
+
+[<a href="../../sl/dep/punct.html">sl</a>]
+
+[<a href="../../so/dep/punct.html">so</a>]
+
+[<a href="../../sr/dep/punct.html">sr</a>]
 
 [<a href="../../sv/dep/punct.html">sv</a>]
 
+[<a href="../../swl/dep/punct.html">swl</a>]
+
+[<a href="../../ta/dep/punct.html">ta</a>]
+
+[<a href="../../tr/dep/punct.html">tr</a>]
+
 [<a href="../../u/dep/punct.html">u</a>]
+
+[<a href="../../ug/dep/punct.html">ug</a>]
+
+[<a href="../../uk/dep/punct.html">uk</a>]
+
+[<a href="../../ur/dep/punct.html">ur</a>]
+
+[<a href="../../urj/dep/punct.html">urj</a>]
+
+[<a href="../../vi/dep/punct.html">vi</a>]
+
+[<a href="../../yue/dep/punct.html">yue</a>]
+
+[<a href="../../zh/dep/punct.html">zh</a>]
 
 
 

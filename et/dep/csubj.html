@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-et">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/et/dep">et/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_et-dep/csubj.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-et">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/et/dep">et/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_et-dep/csubj.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -71,19 +88,19 @@ punct(meeldib-2, .-4)
 <p>This relation is universal.
 There are 1 language-specific subtypes of <code>csubj</code>: <a href="">csubj:cop</a>.</p>
 
-<p>646 nodes (0%) are attached to their parents as <code>csubj</code>.</p>
+<p>71 nodes (0%) are attached to their parents as <code>csubj</code>.</p>
 
-<p>621 instances of <code>csubj</code> (96%) are left-to-right (parent precedes child).
-Average distance between parent and child is 3.77089783281734.</p>
+<p>66 instances of <code>csubj</code> (93%) are left-to-right (parent precedes child).
+Average distance between parent and child is 4.</p>
 
-<p>The following 10 pairs of parts of speech are connected with <code>csubj</code>: <a href="">et-pos/VERB</a>-<a href="">et-pos/VERB</a> (565; 87% instances), <a href="">et-pos/ADJ</a>-<a href="">et-pos/VERB</a> (55; 9% instances), <a href="">et-pos/VERB</a>-<a href="">et-pos/ADJ</a> (9; 1% instances), <a href="">et-pos/VERB</a>-<a href="">et-pos/NOUN</a> (6; 1% instances), <a href="">et-pos/ADJ</a>-<a href="">et-pos/ADJ</a> (5; 1% instances), <a href="">et-pos/ADJ</a>-<a href="">et-pos/PRON</a> (2; 0% instances), <a href="">et-pos/ADJ</a>-<a href="">et-pos/NUM</a> (1; 0% instances), <a href="">et-pos/ADV</a>-<a href="">et-pos/VERB</a> (1; 0% instances), <a href="">et-pos/AUX</a>-<a href="">et-pos/VERB</a> (1; 0% instances), <a href="">et-pos/VERB</a>-<a href="">et-pos/NUM</a> (1; 0% instances).</p>
+<p>The following 5 pairs of parts of speech are connected with <code>csubj</code>: <a href="">et-pos/VERB</a>-<a href="">et-pos/VERB</a> (62; 87% instances), <a href="">et-pos/ADJ</a>-<a href="">et-pos/VERB</a> (4; 6% instances), <a href="">et-pos/VERB</a>-<a href="">et-pos/NOUN</a> (3; 4% instances), <a href="">et-pos/ADJ</a>-<a href="">et-pos/PRON</a> (1; 1% instances), <a href="">et-pos/VERB</a>-<a href="">et-pos/ADJ</a> (1; 1% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 10	bgColor:blue
 # visual-style 10	fgColor:white
 # visual-style 1	bgColor:blue
 # visual-style 1	fgColor:white
 # visual-style 1 10 csubj	color:blue
-1	Tundus	tunduma	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+1	Tundus	tunduma	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
 2	,	,	PUNCT	Z	_	10	punct	_	_
 3	et	et	SCONJ	J	_	10	mark	_	_
 4	pisikesed	pisike	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	5	amod	_	_
@@ -92,46 +109,46 @@ Average distance between parent and child is 3.77089783281734.</p>
 7	vahel	vahel	ADP	K	AdpType=Post	6	case	_	_
 8	on	olema	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	aux	_	_
 9	paigale	paigale	ADV	D	_	10	compound:prt	_	_
-10	tardunud	tarduma	VERB	V	Tense=Past|VerbForm=Part|Voice=Act	1	csubj	_	_
+10	tardunud	tarduma	VERB	V	Tense=Past|VerbForm=Part|Voice=Act	1	csubj	_	SpaceAfter=No
 11	.	.	PUNCT	Z	_	1	punct	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
+<pre><code class="language-conllu"># visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
 # visual-style 3	bgColor:blue
 # visual-style 3	fgColor:white
-# visual-style 3 7 csubj	color:blue
-1	"	"	PUNCT	Z	_	3	punct	_	_
-2	Veelgi	veelgi	ADV	D	_	3	advmod	_	_
-3	normaalsem	normaalsem	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	0	root	_	_
-4	on	olema	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
-5	,	,	PUNCT	Z	_	7	punct	_	_
-6	et	et	SCONJ	J	_	7	mark	_	_
-7	tekkis	tekkima	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	csubj	_	_
-8	360	360	NUM	N	Case=Nom|Number=Sing|NumForm=Digit|NumType=Card	10	nummod	_	_
-9	uut	uus	ADJ	A	Case=Par|Degree=Pos|Number=Sing	10	amod	_	_
-10	töökohta	töö_koht	NOUN	S	Case=Par|Number=Sing	7	nsubj	_	_
-11	.	.	PUNCT	Z	_	3	punct	_	_
+# visual-style 3 8 csubj	color:blue
+1	On	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+2	ju	ju	ADV	D	_	3	advmod	_	_
+3	loomulik	loomulik	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Z	_	8	punct	_	_
+5	et	et	SCONJ	J	_	8	mark	_	_
+6	laulutaati	laulu_taat	NOUN	S	Case=Par|Number=Sing	8	obj	_	_
+7	meeles	meel	NOUN	S	Case=Ine|Number=Sing	8	obl	_	_
+8	peetakse	pidama	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	3	csubj	_	SpaceAfter=No
+9	.	.	PUNCT	Z	_	3	punct	_	SpaceAfter=No
+10	"	"	PUNCT	Z	_	3	punct	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 6	bgColor:blue
-# visual-style 6	fgColor:white
-# visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 2 6 csubj	color:blue
-1	Peagi	peagi	ADV	D	_	2	advmod	_	_
-2	selgus	selguma	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
-3	,	,	PUNCT	Z	_	6	punct	_	_
-4	et	et	SCONJ	J	_	6	mark	_	_
-5	nii	nii	ADV	D	_	6	advmod	_	_
-6	lihtne	lihtne	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	csubj	_	_
-7	see	see	PRON	P	Case=Nom|Number=Sing|PronType=Dem	8	det	_	_
-8	asi	asi	NOUN	S	Case=Nom|Number=Sing	6	nsubj:cop	_	_
-9	ka	ka	ADV	D	_	6	advmod	_	_
-10	pole	olema	VERB	V	Mood=Ind|Negative=Neg|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
-11	.	.	PUNCT	Z	_	2	punct	_	_
+<pre><code class="language-conllu"># visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 1 8 csubj	color:blue
+1	Selgus	selguma	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Z	_	8	punct	_	_
+3	et	et	SCONJ	J	_	8	mark	_	_
+4	see	see	PRON	P	Case=Nom|Number=Sing|PronType=Dem	5	det	_	_
+5	plika	plika	NOUN	S	Case=Nom|Number=Sing	8	nsubj:cop	_	_
+6	polnud	olema	AUX	V	Mood=Ind|Polarity=Neg|Tense=Past|VerbForm=Fin|Voice=Act	8	cop	_	_
+7	mingi	mingi	DET	P	Case=Nom|Number=Sing|PronType=Ind	8	det	_	_
+8	armuke	armuke	NOUN	S	Case=Nom|Number=Sing	1	csubj	_	SpaceAfter=No
+9	,	,	PUNCT	Z	_	11	punct	_	_
+10	vaid	vaid	CCONJ	J	_	11	cc	_	_
+11	hüsteerik	hüsteerik	NOUN	S	Case=Nom|Number=Sing	8	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Z	_	1	punct	_	_
 
 </code></pre>
 
@@ -143,9 +160,25 @@ Average distance between parent and child is 3.77089783281734.</p>
 
 csubj in other languages:
 
+[<a href="../../am/dep/csubj.html">am</a>]
+
+[<a href="../../ar/dep/csubj.html">ar</a>]
+
 [<a href="../../bg/dep/csubj.html">bg</a>]
 
+[<a href="../../bxr/dep/csubj.html">bxr</a>]
+
+[<a href="../../ca/dep/csubj.html">ca</a>]
+
+[<a href="../../ckb/dep/csubj.html">ckb</a>]
+
+[<a href="../../cop/dep/csubj.html">cop</a>]
+
 [<a href="../../cs/dep/csubj.html">cs</a>]
+
+[<a href="../../cu/dep/csubj.html">cu</a>]
+
+[<a href="../../da/dep/csubj.html">da</a>]
 
 [<a href="../../de/dep/csubj.html">de</a>]
 
@@ -155,29 +188,99 @@ csubj in other languages:
 
 [<a href="../../es/dep/csubj.html">es</a>]
 
+[<a href="../../et/dep/csubj.html">et</a>]
+
 [<a href="../../eu/dep/csubj.html">eu</a>]
 
 [<a href="../../fa/dep/csubj.html">fa</a>]
 
 [<a href="../../fi/dep/csubj.html">fi</a>]
 
+[<a href="../../fo/dep/csubj.html">fo</a>]
+
 [<a href="../../fr/dep/csubj.html">fr</a>]
 
 [<a href="../../ga/dep/csubj.html">ga</a>]
 
+[<a href="../../gl/dep/csubj.html">gl</a>]
+
+[<a href="../../got/dep/csubj.html">got</a>]
+
+[<a href="../../grc/dep/csubj.html">grc</a>]
+
 [<a href="../../he/dep/csubj.html">he</a>]
 
+[<a href="../../hi/dep/csubj.html">hi</a>]
+
+[<a href="../../hr/dep/csubj.html">hr</a>]
+
 [<a href="../../hu/dep/csubj.html">hu</a>]
+
+[<a href="../../id/dep/csubj.html">id</a>]
 
 [<a href="../../it/dep/csubj.html">it</a>]
 
 [<a href="../../ja/dep/csubj.html">ja</a>]
 
+[<a href="../../kk/dep/csubj.html">kk</a>]
+
+[<a href="../../kmr/dep/csubj.html">kmr</a>]
+
 [<a href="../../ko/dep/csubj.html">ko</a>]
+
+[<a href="../../la/dep/csubj.html">la</a>]
+
+[<a href="../../lv/dep/csubj.html">lv</a>]
+
+[<a href="../../mr/dep/csubj.html">mr</a>]
+
+[<a href="../../nl/dep/csubj.html">nl</a>]
+
+[<a href="../../no/dep/csubj.html">no</a>]
+
+[<a href="../../pl/dep/csubj.html">pl</a>]
+
+[<a href="../../pt/dep/csubj.html">pt</a>]
+
+[<a href="../../ro/dep/csubj.html">ro</a>]
+
+[<a href="../../ru/dep/csubj.html">ru</a>]
+
+[<a href="../../sa/dep/csubj.html">sa</a>]
+
+[<a href="../../sk/dep/csubj.html">sk</a>]
+
+[<a href="../../sla/dep/csubj.html">sla</a>]
+
+[<a href="../../sl/dep/csubj.html">sl</a>]
+
+[<a href="../../so/dep/csubj.html">so</a>]
+
+[<a href="../../sr/dep/csubj.html">sr</a>]
 
 [<a href="../../sv/dep/csubj.html">sv</a>]
 
+[<a href="../../swl/dep/csubj.html">swl</a>]
+
+[<a href="../../ta/dep/csubj.html">ta</a>]
+
+[<a href="../../tr/dep/csubj.html">tr</a>]
+
 [<a href="../../u/dep/csubj.html">u</a>]
+
+[<a href="../../ug/dep/csubj.html">ug</a>]
+
+[<a href="../../uk/dep/csubj.html">uk</a>]
+
+[<a href="../../ur/dep/csubj.html">ur</a>]
+
+[<a href="../../urj/dep/csubj.html">urj</a>]
+
+[<a href="../../vi/dep/csubj.html">vi</a>]
+
+[<a href="../../yue/dep/csubj.html">yue</a>]
+
+[<a href="../../zh/dep/csubj.html">zh</a>]
 
 
 

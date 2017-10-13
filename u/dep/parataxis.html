@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-u">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/u/dep">u/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_u-dep/parataxis.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-u">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/u/dep">u/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-dep/parataxis.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -57,6 +74,8 @@ parataxis(Let, annoyed)
 
 <pre><code class="language-sdparse">The guy , John said , left early in the morning
 parataxis(left, said)
+punct(said, ,-3)
+punct(said, ,-6)
 </code></pre>
 
 <h2 id="an-inventory-of-constructions-to-which-parataxis-has-been-applied">An inventory of constructions to which parataxis has been applied</h2>
@@ -75,6 +94,7 @@ dependents of the first one, to maximize similarity to the analysis used for con
 
 <pre><code class="language-sdparse">Bearded dragons are sight hunters , they need to see the food to move .
 parataxis(hunters, need)
+punct(need, ,)
 </code></pre>
 
 <p>This relation may happen with units that are smaller than sentences:</p>
@@ -91,6 +111,8 @@ det(CIA, the)
 
 <pre><code class="language-sdparse">The guy , John said , left early in the morning
 parataxis(left, said)
+punct(said, ,-3)
+punct(said, ,-6)
 </code></pre>
 
 <p>there are paraphrases that convey essentially the same meaning but
@@ -113,18 +135,27 @@ ccomp(said, left)
 
 <pre><code class="language-sdparse">John said : “ The guy left early in the morning . ”
 parataxis(said, left)
+punct(left, :)
+punct(left, “)
+punct(left, ”)
 </code></pre>
 
 <pre><code class="language-sdparse">“ The guy left early in the morning ” , John said .
 parataxis(left, said)
+punct(said, ,)
+punct(left, “)
+punct(left, ”)
 </code></pre>
 
 <pre><code class="language-sdparse">The guy left early in the morning , John said .
 parataxis(left, said)
+punct(said, ,)
 </code></pre>
 
 <pre><code class="language-sdparse">The guy , he said , left early in the morning .
 parataxis(left, said)
+punct(said, ,-3)
+punct(said, ,-6)
 </code></pre>
 
 <p>An argument for this analysis is that in the cases analyzed as embedding, the entire clause
@@ -139,6 +170,9 @@ There does not seem to be a better relation to use.</p>
 
 <pre><code class="language-sdparse">Washington ( CNN ) :
 parataxis(Washington, CNN)
+punct(CNN, ()
+punct(CNN, ))
+punct(CNN, :)
 </code></pre>
 
 <h3 id="interjected-clauses">Interjected clauses</h3>
@@ -147,6 +181,8 @@ parataxis(Washington, CNN)
 
 <pre><code class="language-sdparse">Calafia has great fries ( they are to die for ! )
 parataxis(has, are)
+punct(are, ()
+punct(are, ))
 </code></pre>
 
 <pre><code class="language-sdparse">Just to let you all know Matt has confirmed the booking for 3rd Dec is OK .
@@ -162,6 +198,7 @@ because the first half feels like a whole clause interjection, not like the main
 
 <pre><code class="language-sdparse">It 's not me , is it ?
 parataxis(me, is)
+punct(is, ,)
 </code></pre>
 
 
@@ -177,9 +214,25 @@ parataxis(me, is)
 
 parataxis in other languages:
 
+[<a href="../../am/dep/parataxis.html">am</a>]
+
+[<a href="../../ar/dep/parataxis.html">ar</a>]
+
 [<a href="../../bg/dep/parataxis.html">bg</a>]
 
+[<a href="../../bxr/dep/parataxis.html">bxr</a>]
+
+[<a href="../../ca/dep/parataxis.html">ca</a>]
+
+[<a href="../../ckb/dep/parataxis.html">ckb</a>]
+
+[<a href="../../cop/dep/parataxis.html">cop</a>]
+
 [<a href="../../cs/dep/parataxis.html">cs</a>]
+
+[<a href="../../cu/dep/parataxis.html">cu</a>]
+
+[<a href="../../da/dep/parataxis.html">da</a>]
 
 [<a href="../../de/dep/parataxis.html">de</a>]
 
@@ -189,29 +242,99 @@ parataxis in other languages:
 
 [<a href="../../es/dep/parataxis.html">es</a>]
 
+[<a href="../../et/dep/parataxis.html">et</a>]
+
 [<a href="../../eu/dep/parataxis.html">eu</a>]
 
 [<a href="../../fa/dep/parataxis.html">fa</a>]
 
 [<a href="../../fi/dep/parataxis.html">fi</a>]
 
+[<a href="../../fo/dep/parataxis.html">fo</a>]
+
 [<a href="../../fr/dep/parataxis.html">fr</a>]
 
 [<a href="../../ga/dep/parataxis.html">ga</a>]
 
+[<a href="../../gl/dep/parataxis.html">gl</a>]
+
+[<a href="../../got/dep/parataxis.html">got</a>]
+
+[<a href="../../grc/dep/parataxis.html">grc</a>]
+
 [<a href="../../he/dep/parataxis.html">he</a>]
 
+[<a href="../../hi/dep/parataxis.html">hi</a>]
+
+[<a href="../../hr/dep/parataxis.html">hr</a>]
+
 [<a href="../../hu/dep/parataxis.html">hu</a>]
+
+[<a href="../../id/dep/parataxis.html">id</a>]
 
 [<a href="../../it/dep/parataxis.html">it</a>]
 
 [<a href="../../ja/dep/parataxis.html">ja</a>]
 
+[<a href="../../kk/dep/parataxis.html">kk</a>]
+
+[<a href="../../kmr/dep/parataxis.html">kmr</a>]
+
 [<a href="../../ko/dep/parataxis.html">ko</a>]
+
+[<a href="../../la/dep/parataxis.html">la</a>]
+
+[<a href="../../lv/dep/parataxis.html">lv</a>]
+
+[<a href="../../mr/dep/parataxis.html">mr</a>]
+
+[<a href="../../nl/dep/parataxis.html">nl</a>]
+
+[<a href="../../no/dep/parataxis.html">no</a>]
+
+[<a href="../../pl/dep/parataxis.html">pl</a>]
+
+[<a href="../../pt/dep/parataxis.html">pt</a>]
+
+[<a href="../../ro/dep/parataxis.html">ro</a>]
+
+[<a href="../../ru/dep/parataxis.html">ru</a>]
+
+[<a href="../../sa/dep/parataxis.html">sa</a>]
+
+[<a href="../../sk/dep/parataxis.html">sk</a>]
+
+[<a href="../../sla/dep/parataxis.html">sla</a>]
+
+[<a href="../../sl/dep/parataxis.html">sl</a>]
+
+[<a href="../../so/dep/parataxis.html">so</a>]
+
+[<a href="../../sr/dep/parataxis.html">sr</a>]
 
 [<a href="../../sv/dep/parataxis.html">sv</a>]
 
+[<a href="../../swl/dep/parataxis.html">swl</a>]
+
+[<a href="../../ta/dep/parataxis.html">ta</a>]
+
+[<a href="../../tr/dep/parataxis.html">tr</a>]
+
 [<a href="../../u/dep/parataxis.html">u</a>]
+
+[<a href="../../ug/dep/parataxis.html">ug</a>]
+
+[<a href="../../uk/dep/parataxis.html">uk</a>]
+
+[<a href="../../ur/dep/parataxis.html">ur</a>]
+
+[<a href="../../urj/dep/parataxis.html">urj</a>]
+
+[<a href="../../vi/dep/parataxis.html">vi</a>]
+
+[<a href="../../yue/dep/parataxis.html">yue</a>]
+
+[<a href="../../zh/dep/parataxis.html">zh</a>]
 
 
 

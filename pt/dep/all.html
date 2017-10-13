@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-pt">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-pt">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -67,7 +84,7 @@ in two places.</p>
 	  <td><a>csubjpass</a></td>
 	</tr>
 	<tr>
-	  <td><a>dobj</a></td>
+	  <td><a>obj</a></td>
 	  <td><a>ccomp</a></td>
 	  <td><a>xcomp</a></td>
 	</tr>
@@ -160,11 +177,11 @@ in two places.</p>
 	<tr><td colspan="3"><strong>Compounding and unanalyzed</strong></td></tr>
 	<tr>
 	  <td><a>compound</a></td>
-	  <td><a>mwe</a></td>
+	  <td><a>fixed</a></td>
 	  <td><a>goeswith</a></td>
 	</tr>
 	<tr>
-	  <td><a>name</a></td>
+	  <td><a>flat</a></td>
 	  <td><a>foreign</a></td>
 	</tr>
       </table>
@@ -201,7 +218,7 @@ in two places.</p>
 	<tr>
 	  <td><a>list</a></td>
 	  <td><a>parataxis</a></td>
-	  <td><a>remnant</a></td>
+	  <td><a>orphan</a></td>
 	</tr>
 	<tr>
 	  <td><a>dislocated</a></td>
@@ -256,7 +273,7 @@ acl(time, rebaixado)
 acl(orgão, ligado)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/acl.md" target="#">edit acl</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/acl.md" target="#">edit acl</a></p>
 
 <p><a id="al-pt-dep/acl:inf" class="al-dest"></a></p>
 <h2><code>acl:inf</code>: acl:inf</h2>
@@ -272,7 +289,7 @@ acl(orgão, ligado)
 acl:inf(nada,perder)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/acl-inf.md" target="#">edit acl:inf</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/acl-inf.md" target="#">edit acl:inf</a></p>
 
 <p><a id="al-pt-dep/acl:part" class="al-dest"></a></p>
 <h2><code>acl:part</code>: acl:part</h2>
@@ -280,7 +297,7 @@ acl:inf(nada,perder)
 <p>This document is a placeholder for the language-specific documentation
 for <code>acl:part</code>.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/acl-part.md" target="#">edit acl:part</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/acl-part.md" target="#">edit acl:part</a></p>
 
 <p><a id="al-pt-dep/acl:relcl" class="al-dest"></a></p>
 <h2><code>acl:relcl</code>: acl:relcl</h2>
@@ -293,7 +310,7 @@ head of the relative clause. Relative clauses are finite.</p>
 acl:relcl(seca, atingiu)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/acl-relcl.md" target="#">edit acl:relcl</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/acl-relcl.md" target="#">edit acl:relcl</a></p>
 
 <p><a id="al-pt-dep/advcl" class="al-dest"></a></p>
 <h2><code>advcl</code>: adverbial clause modifier</h2>
@@ -323,7 +340,7 @@ valoriavam”) is “superiores”, as the verb to be (“fossem”) holds a
 <code>cop</code> relation and therefore it is not the head (the main predicate)
 of the clause.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/advcl.md" target="#">edit advcl</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/advcl.md" target="#">edit advcl</a></p>
 
 <p><a id="al-pt-dep/advmod" class="al-dest"></a></p>
 <h2><code>advmod</code>: adverbial modifier</h2>
@@ -354,7 +371,7 @@ advmod(barulho, talvez)
 (“talvez”) and the head of the main clause (“barulho”, since it is a
 copular clause).</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/advmod.md" target="#">edit advmod</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/advmod.md" target="#">edit advmod</a></p>
 
 <p><a id="al-pt-dep/amod" class="al-dest"></a></p>
 <h2><code>amod</code>: adjectival modifier</h2>
@@ -384,7 +401,7 @@ multi word expressions and therefore “de Adolescente” and “da Fazenda”
 are part of the mwe token in the current version of Portuguese corpus,
 so they do not hold the <code>amod</code> relation.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/amod.md" target="#">edit amod</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/amod.md" target="#">edit amod</a></p>
 
 <p><a id="al-pt-dep/appos" class="al-dest"></a></p>
 <h2><code>appos</code>: appositional modifier</h2>
@@ -438,7 +455,7 @@ appos(Fone, 555-9814)
 appos(Email, jones@abc.edf)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/appos.md" target="#">edit appos</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/appos.md" target="#">edit appos</a></p>
 
 <p><a id="al-pt-dep/aux" class="al-dest"></a></p>
 <h2><code>aux</code>: auxiliary</h2>
@@ -460,10 +477,10 @@ aux(dizer, pode)
 </code></pre>
 
 <pre><code class="language-sdparse">Acabou assinando com o Interscope
-aux(assinando, acabou)
+aux(assinando, Acabou)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/aux_.md" target="#">edit aux</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/aux_.md" target="#">edit aux</a></p>
 
 <p><a id="al-pt-dep/auxpass" class="al-dest"></a></p>
 <h2><code>auxpass</code>: passive auxiliary</h2>
@@ -483,7 +500,7 @@ auxpass(chamado, é)
 auxpass(chegado, é)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/auxpass.md" target="#">edit auxpass</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/auxpass.md" target="#">edit auxpass</a></p>
 
 <p><a id="al-pt-dep/case" class="al-dest"></a></p>
 <h2><code>case</code>: case marking</h2>
@@ -508,14 +525,14 @@ case(quadrilha, de)
 det(quadrilha, a)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/case.md" target="#">edit case</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/case.md" target="#">edit case</a></p>
 
 <p><a id="al-pt-dep/cc" class="al-dest"></a></p>
 <h2><code>cc</code>: coordinating conjunction</h2>
 
 <p>For more on coordination, see the <a href="">conj</a> relation.
 A <code>cc</code> is the relation between the first conjunct and
-the <a href="../pos/CONJ">coordinating conjunction</a> delimiting another conjunct.
+the <a href="../pos/CCONJ">coordinating conjunction</a> delimiting another conjunct.
 (Note: different dependency grammars have different treatments of coordination.
 We take the first conjunct as the head of the coordination.)</p>
 
@@ -551,7 +568,7 @@ conj(pobre, acolhedor)
 cc(pobre, e)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/cc.md" target="#">edit cc</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/cc.md" target="#">edit cc</a></p>
 
 <p><a id="al-pt-dep/ccomp" class="al-dest"></a></p>
 <h2><code>ccomp</code>: clausal complement</h2>
@@ -608,7 +625,7 @@ now analyze them as <a href="">acl</a>. Hence, <code>ccomp</code> does not appea
 nominals.  This makes sense, since nominals normally do not take core
 arguments.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/ccomp.md" target="#">edit ccomp</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/ccomp.md" target="#">edit ccomp</a></p>
 
 <p><a id="al-pt-dep/compound" class="al-dest"></a></p>
 <h2><code>compound</code>: compound</h2>
@@ -642,11 +659,11 @@ compound(milhões, 150)
 <p>The two other compounding relations are:</p>
 
 <ul>
-  <li><a href="">mwe</a> for fixed grammaticized expressions with function words</li>
-  <li><a href="">name</a> for proper nouns constituted of multiple nominal elements</li>
+  <li><a href="">fixed</a> for fixed grammaticized expressions with function words</li>
+  <li><a href="">flat</a> for proper nouns constituted of multiple nominal elements</li>
 </ul>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/compound.md" target="#">edit compound</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/compound.md" target="#">edit compound</a></p>
 
 <p><a id="al-pt-dep/conj" class="al-dest"></a></p>
 <h2><code>conj</code>: conjunct</h2>
@@ -775,7 +792,7 @@ conj(A, B)
 ~~~
 -->
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/conj.md" target="#">edit conj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/conj.md" target="#">edit conj</a></p>
 
 <p><a id="al-pt-dep/cop" class="al-dest"></a></p>
 <h2><code>cop</code>: copula</h2>
@@ -872,7 +889,7 @@ advmod(engraçado, muito)
 punct(engraçado, .)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/cop.md" target="#">edit cop</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/cop.md" target="#">edit cop</a></p>
 
 <p><a id="al-pt-dep/csubj" class="al-dest"></a></p>
 <h2><code>csubj</code>: clausal subject</h2>
@@ -897,7 +914,7 @@ csubj(equívoco, reduzir)
 csubj(necessário, alertar)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/csubj.md" target="#">edit csubj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/csubj.md" target="#">edit csubj</a></p>
 
 <p><a id="al-pt-dep/csubjpass" class="al-dest"></a></p>
 <h2><code>csubjpass</code>: clausal passive subject</h2>
@@ -910,7 +927,7 @@ of the clause). In the example below, <em>que ele mentiu</em> is the subject.</p
 csubjpass(suspeito, mentiu)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/csubjpass.md" target="#">edit csubjpass</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/csubjpass.md" target="#">edit csubjpass</a></p>
 
 <p><a id="al-pt-dep/dep" class="al-dest"></a></p>
 <h2><code>dep</code>: unspecified dependency</h2>
@@ -927,7 +944,7 @@ dep(Fica, sinalizado)
 
 <p>In this example <code>dep</code> is used due the ambiguity of <em>sinalizado</em>  between adjective and verb participle.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/dep.md" target="#">edit dep</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/dep.md" target="#">edit dep</a></p>
 
 <p><a id="al-pt-dep/det" class="al-dest"></a></p>
 <h2><code>det</code>: determiner</h2>
@@ -949,7 +966,7 @@ det(história, essa)
 det(suspeitos, outros)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/det.md" target="#">edit det</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/det.md" target="#">edit det</a></p>
 
 <p><a id="al-pt-dep/det:poss" class="al-dest"></a></p>
 <h2><code>det:poss</code>: det:poss</h2>
@@ -957,7 +974,7 @@ det(suspeitos, outros)
 <p>This document is a placeholder for the language-specific documentation
 for <code>det:poss</code>.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/det-poss.md" target="#">edit det:poss</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/det-poss.md" target="#">edit det:poss</a></p>
 
 <p><a id="al-pt-dep/discourse" class="al-dest"></a></p>
 <h2><code>discourse</code>: discourse element</h2>
@@ -977,7 +994,7 @@ discourse(Não-2, não-6)
 cc(Não-2, e)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/discourse.md" target="#">edit discourse</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/discourse.md" target="#">edit discourse</a></p>
 
 <p><a id="al-pt-dep/dislocated" class="al-dest"></a></p>
 <h2><code>dislocated</code>: dislocated elements</h2>
@@ -1000,7 +1017,7 @@ dislocated(motivado, artistas)
 dislocated(ficou, esse)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/dislocated.md" target="#">edit dislocated</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/dislocated.md" target="#">edit dislocated</a></p>
 
 <p><a id="al-pt-dep/dobj" class="al-dest"></a></p>
 <h2><code>dobj</code>: direct object</h2>
@@ -1024,9 +1041,9 @@ dobj(begegnen, jemandem)
 ~~~
 -->
 
-<p>In general, if there is just one object, it should be labeled <code>dobj</code>,
+<p>In general, if there is just one object, it should be labeled <code>obj</code>,
 regardless of the morphological case or semantic role that it bears. If there are two or more
-objects, one of them should be <code>dobj</code> and the others should be
+objects, one of them should be <code>obj</code> and the others should be
 <a href="">iobj</a>. In such cases it is necessary to decide what is the most
 directly affected object <em>(patient).</em> The one exception is when there is a clausal complement. 
 Then the clausal complement is regarded as a “clausal direct object” and an object nominal will be an iobj. 
@@ -1046,7 +1063,7 @@ nsubj(faltou, inteligência)
 iobj(faltou, lhes)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/dobj.md" target="#">edit dobj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/obj.md" target="#">edit dobj</a></p>
 
 <p><a id="al-pt-dep/expl" class="al-dest"></a></p>
 <h2><code>expl</code>: expletive</h2>
@@ -1077,165 +1094,20 @@ advcl(maior, haja)
 nsubj(maior, período)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/expl.md" target="#">edit expl</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/expl.md" target="#">edit expl</a></p>
 
-<p><a id="al-pt-dep/foreign" class="al-dest"></a></p>
-<h2><code>foreign</code>: foreign words</h2>
-
-<p>We use <code>foreign</code> to label sequences of foreign words. These are given
-a linear analysis: the head is the first token in the foreign phrase.</p>
-
-<p><code>foreign</code> does not apply to loanwords or to foreign <a href="name">names</a>. 
-It applies to quoted foreign text incorporated in a sentence/discourse
-of the host language (unless we want to and know how to annotate the
-internal structure according to the syntax of the foreign language).</p>
-
-<pre><code class="language-sdparse">Eu acho que c' est la vie
-nsubj(acho-2, Eu-1)
-ccomp(acho-2, c'-4)
-mark(c'-4, que-3)
-foreign(c'-4, est-5)
-foreign(c'-4, la-6)
-foreign(c'-4, vie-7)
-</code></pre>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/foreign.md" target="#">edit foreign</a></p>
-
-<p><a id="al-pt-dep/goeswith" class="al-dest"></a></p>
-<h2><code>goeswith</code>: goes with</h2>
-
-<p>This relation links two parts of a word that are separated in text
-that is not well edited.
-The head is in some sense the “main” part, often the second part.</p>
-
-<pre><code class="language-sdparse">Computa dor é um aparelho .
-goeswith(Computa, dor)
-</code></pre>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/goeswith.md" target="#">edit goeswith</a></p>
-
-<p><a id="al-pt-dep/iobj" class="al-dest"></a></p>
-<h2><code>iobj</code>: indirect object</h2>
-
-<p>The indirect object of a verb is any nominal phrase that is a core
-argument of the verb but is not its subject or <a href="dobj">direct object</a>.
-The prototypical example is the recipient of ditransitive verbs of
-exchange:</p>
-
-<pre><code class="language-sdparse">Ela me deu um aumento
-iobj(deu, me)
-</code></pre>
-
-<p>In general, if there is just one object, it should be labeled
-<a href="">dobj</a>, regardless of the morphological case or semantic role. For example, in Portuguese, <em>ensinar</em> can take either the subject matter or the recipient as the only object, and in both cases it would be analyzed ad the <a href="">dobj</a>:</p>
-
-<pre><code class="language-sdparse">Ela ensina lógica
-dobj(ensina, lógica)
-</code></pre>
-
-<pre><code class="language-sdparse">Ela ensina os alunos do primeiro ano
-dobj(ensina, alunos)
-</code></pre>
-
-<pre><code class="language-sdparse">Ela ensina lógica a os alunos do primeiro ano
-dobj(ensina, lógica)
-iobj(ensina, alunos)
-</code></pre>
-
-<p>This is consistent with the analysis of Huddleston and Pullum (2002) “The Cambridge Grammar of the English Language”,
-chapter 4 section 4 (p. 251).  As they note, it is no different to the same semantic role being sometimes the subject
-and sometimes the object in intransitive/transitive alternations. The one exception is when there is a clausal complement.
-Then the clausal complement is regarded as a “clausal direct object” and an object nominal will be an iobj, parallel to
-the simple ditransitive case:</p>
-
-<pre><code class="language-sdparse">Ela disse a os estudante que eles precisam estudar esta noite
-iobj(disse, estudantes)
-ccomp(told, precisam)
-</code></pre>
-
-<pre><code class="language-sdparse">Ela disse o plano a os estudantes
-iobj(disse, estudantes)
-dobj(disse, plano)
-</code></pre>
-
-<p>If there are two or
-more objects, one of them should be <a href="">dobj</a> and the others should be
-<code>iobj</code>. In such cases it is necessary to decide what is the
-most directly affected object <em>(patient).</em> In Portuguese, usually <code>iobj</code> comes with a preposition (<em>a, de, em</em>) or in olibque case (<em>me, se, lhe</em>).</p>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/iobj.md" target="#">edit iobj</a></p>
-
-<p><a id="al-pt-dep/list" class="al-dest"></a></p>
-<h2><code>list</code>: list</h2>
-
-<p>The <code>list</code> relation is used for chains of comparable items. In lists
-with more than two items, all items of the list should modify the
-first one. Informal and web text often contains passages which are
-meant to be interpreted as lists but are parsed as single
-sentences. Email signatures often contain these structures, in the
-form of contact information: the different contact information items
-are labeled as <code>list</code>; the key-value pair relations are labeled
-as <a href="">appos</a>.</p>
-
-<pre><code class="language-sdparse">Steve Jones Phone: 555-9814 Email: jones@abc.edf
-name(Steve-1, Jones-2)
-list(Steve-1, Phone:-3)
-list(Steve-1, Email:-5)
-appos(Phone:-3, 555-9814-4)
-appos(Email:-5, jones@abc.edf-6)
-</code></pre>
-
-<p>Another place where <code>list</code> has been used is for a sequence of
-attributes or descriptive terms used as the title line of a review
-(such as product or restaurant reviews, etc.:</p>
-
-<pre><code class="language-sdparse">Long Lines , Silly Rules , Rude Staff , Ok Food
-list(Lines, Rules)
-list(Lines, Staff)
-list(Lines, Food)
-</code></pre>
-
-<p>However, <code>list</code> should not be over-used. If a construction can be
-easily analyzed using the grammatical relations of standard sentences,
-such as when there is overt coordination, then it should be analyzed
-with these more standard relations, even if it is laid out as a list
-typographically.</p>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/list.md" target="#">edit list</a></p>
-
-<p><a id="al-pt-dep/mark" class="al-dest"></a></p>
-<h2><code>mark</code>: marker</h2>
-
-<p>A marker is the word introducing a finite clause subordinate to
-another clause. For a <a href="ccomp">complement clause</a>, this is words like  <em>que</em>
-or <em>se.</em> For an <a href="advcl">adverbial clause</a>, the marker is typically a
-<a href="../pos/SCONJ">subordinating conjunction</a> like <em>enquanto</em> or <em>embora.</em> The mark is a dependent of the
-subordinate clause head. In a relative clause, it is a normally uninflected word, which simply introduces a relative clause, such as <em>que</em>. In this last use, one needs to distinguish between relative clause markers, which are <code>mark</code> from relative pronouns, which fill a regular verbal argument or modifier grammatical relation.</p>
-
-<pre><code class="language-sdparse">Era de facto por ali que começava a surgir perigo
-mark(surgir, que)
-</code></pre>
-
-<p>Note that this relation holds between the marker and the head of the subordinate clause, which can be a non verbal element.</p>
-
-<pre><code class="language-sdparse">Sugere ainda que seja elaborada uma circular
-mark(elaborada, que)
-</code></pre>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/mark.md" target="#">edit mark</a></p>
-
-<p><a id="al-pt-dep/mwe" class="al-dest"></a></p>
-<h2><code>mwe</code>: multi-word expression</h2>
+<p><a id="al-pt-dep/fixed" class="al-dest"></a></p>
+<h2><code>fixed</code>: multi-word expression</h2>
 
 <p>The multi-word expression (modifier) relation is one of the three
-relations (<a href="">compound</a>, <code>mwe</code>, <a href="">name</a>) for compounding.
+relations (<a href="">compound</a>, <code>fixed</code>, <a href="">flat</a>) for compounding.
 It is used for certain fixed grammaticized expressions that behave
 like function words or short adverbials.</p>
 
-<p>The scope of <code>mwe</code> annotation corresponds roughly to the <em>fixed
+<p>The scope of <code>fixed</code> annotation corresponds roughly to the <em>fixed
 expressions</em> category of
 <a href="http://lingo.stanford.edu/pubs/WP-2001-03.pdf">Sag et al.</a>, but
-excludes any relations in scope of <a href="">name</a> or <a href="">compound</a>.
+excludes any relations in scope of <a href="">flat</a> or <a href="">compound</a>.
 Additionally, limited morphosyntactic variation may be allowed
 for MWEs in exceptional cases.</p>
 
@@ -1255,27 +1127,27 @@ det(candidatos, todos)
 
 <p>Multiword expressions are annotated in a flat, head-initial structure,
 in which all words in the expression modify the first one using the
-<code>mwe</code> label.</p>
+<code>fixed</code> label.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/mwe.md" target="#">edit mwe</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/fixed.md" target="#">edit fixed</a></p>
 
-<p><a id="al-pt-dep/name" class="al-dest"></a></p>
-<h2><code>name</code>: name</h2>
+<p><a id="al-pt-dep/flat" class="al-dest"></a></p>
+<h2><code>flat</code>: name</h2>
 
-<p><code>name</code> is one of the three relations for compounding in UD (together
-with <a href="">compound</a> and <a href="">mwe</a>).
+<p><code>flat</code> is one of the three relations for compounding in UD (together
+with <a href="">compound</a> and <a href="">fixed</a>).
 It is used for proper nouns constituted of multiple nominal
-elements. For example, <code>name</code> would be used between the words of
+elements. For example, <code>flat</code> would be used between the words of
 <em>Hillary Clinton, Rio de Janeiro,</em> or <em>Dom Pedro I</em> but not to
 replace the usual relations in a phrasal or clausal name like <em>O rei da Suécia</em> or the novels <em>O senhor dos anéis</em>.
-Words joined by <code>name</code> should all be part of a minimal noun phrase;
+Words joined by <code>flat</code> should all be part of a minimal noun phrase;
 otherwise regular syntactic relations should be used.  This is
 basically similar to the treatment of noun compounds with
 <a href="">compound</a>, except that in many cases parts of the name may be
 another nominal element such as an adjective <em>(Páginas Amarelas).</em></p>
 
 <p>In general, names are annotated in a flat, head-initial structure, in
-which all words in the name modify the first one using the <code>name</code>
+which all words in the name modify the first one using the <code>flat</code>
 label.</p>
 
 <pre><code class="language-sdparse">Dom Pedro I
@@ -1314,14 +1186,159 @@ case(Janeiro, de)
 nmod(Rio, Janeiro)
 </code></pre>
 
-<p>In the case of proper entities named after people, e.g. <em>Fundação Getúlio Vargas</em>, the <code>name</code> relation should only be used inside the person name, with the rest of the construction analyzed compositionally using normal syntactic relations:</p>
+<p>In the case of proper entities named after people, e.g. <em>Fundação Getúlio Vargas</em>, the <code>flat</code> relation should only be used inside the person name, with the rest of the construction analyzed compositionally using normal syntactic relations:</p>
 
 <pre><code class="language-sdparse">Fundação Getúlio Vargas
 compound(Fundação, Getúlio)
 name(Getúlio, Vargas)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/name.md" target="#">edit name</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/flat.md" target="#">edit flat</a></p>
+
+<p><a id="al-pt-dep/foreign" class="al-dest"></a></p>
+<h2><code>foreign</code>: foreign words</h2>
+
+<p>We use <code>foreign</code> to label sequences of foreign words. These are given
+a linear analysis: the head is the first token in the foreign phrase.</p>
+
+<p><code>foreign</code> does not apply to loanwords or to foreign <a href="flat">names</a>. 
+It applies to quoted foreign text incorporated in a sentence/discourse
+of the host language (unless we want to and know how to annotate the
+internal structure according to the syntax of the foreign language).</p>
+
+<pre><code class="language-sdparse">Eu acho que c' est la vie
+nsubj(acho-2, Eu-1)
+ccomp(acho-2, c'-4)
+mark(c'-4, que-3)
+foreign(c'-4, est-5)
+foreign(c'-4, la-6)
+foreign(c'-4, vie-7)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/foreign.md" target="#">edit foreign</a></p>
+
+<p><a id="al-pt-dep/goeswith" class="al-dest"></a></p>
+<h2><code>goeswith</code>: goes with</h2>
+
+<p>This relation links two parts of a word that are separated in text
+that is not well edited.
+The head is in some sense the “main” part, often the second part.</p>
+
+<pre><code class="language-sdparse">Computa dor é um aparelho .
+goeswith(Computa, dor)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/goeswith.md" target="#">edit goeswith</a></p>
+
+<p><a id="al-pt-dep/iobj" class="al-dest"></a></p>
+<h2><code>iobj</code>: indirect object</h2>
+
+<p>The indirect object of a verb is any nominal phrase that is a core
+argument of the verb but is not its subject or <a href="obj">direct object</a>.
+The prototypical example is the recipient of ditransitive verbs of
+exchange:</p>
+
+<pre><code class="language-sdparse">Ela me deu um aumento
+iobj(deu, me)
+</code></pre>
+
+<p>In general, if there is just one object, it should be labeled
+<a href="">obj</a>, regardless of the morphological case or semantic role. For example, in Portuguese, <em>ensinar</em> can take either the subject matter or the recipient as the only object, and in both cases it would be analyzed ad the <a href="">obj</a>:</p>
+
+<pre><code class="language-sdparse">Ela ensina lógica
+dobj(ensina, lógica)
+</code></pre>
+
+<pre><code class="language-sdparse">Ela ensina os alunos do primeiro ano
+dobj(ensina, alunos)
+</code></pre>
+
+<pre><code class="language-sdparse">Ela ensina lógica a os alunos do primeiro ano
+dobj(ensina, lógica)
+iobj(ensina, alunos)
+</code></pre>
+
+<p>This is consistent with the analysis of Huddleston and Pullum (2002) “The Cambridge Grammar of the English Language”,
+chapter 4 section 4 (p. 251).  As they note, it is no different to the same semantic role being sometimes the subject
+and sometimes the object in intransitive/transitive alternations. The one exception is when there is a clausal complement.
+Then the clausal complement is regarded as a “clausal direct object” and an object nominal will be an iobj, parallel to
+the simple ditransitive case:</p>
+
+<pre><code class="language-sdparse">Ela disse a os estudante que eles precisam estudar esta noite
+iobj(disse, estudantes)
+ccomp(told, precisam)
+</code></pre>
+
+<pre><code class="language-sdparse">Ela disse o plano a os estudantes
+iobj(disse, estudantes)
+dobj(disse, plano)
+</code></pre>
+
+<p>If there are two or
+more objects, one of them should be <a href="">obj</a> and the others should be
+<code>iobj</code>. In such cases it is necessary to decide what is the
+most directly affected object <em>(patient).</em> In Portuguese, usually <code>iobj</code> comes with a preposition (<em>a, de, em</em>) or in olibque case (<em>me, se, lhe</em>).</p>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/iobj.md" target="#">edit iobj</a></p>
+
+<p><a id="al-pt-dep/list" class="al-dest"></a></p>
+<h2><code>list</code>: list</h2>
+
+<p>The <code>list</code> relation is used for chains of comparable items. In lists
+with more than two items, all items of the list should modify the
+first one. Informal and web text often contains passages which are
+meant to be interpreted as lists but are parsed as single
+sentences. Email signatures often contain these structures, in the
+form of contact information: the different contact information items
+are labeled as <code>list</code>; the key-value pair relations are labeled
+as <a href="">appos</a>.</p>
+
+<pre><code class="language-sdparse">Steve Jones Phone: 555-9814 Email: jones@abc.edf
+name(Steve-1, Jones-2)
+list(Steve-1, Phone:-3)
+list(Steve-1, Email:-5)
+appos(Phone:-3, 555-9814-4)
+appos(Email:-5, jones@abc.edf-6)
+</code></pre>
+
+<p>Another place where <code>list</code> has been used is for a sequence of
+attributes or descriptive terms used as the title line of a review
+(such as product or restaurant reviews, etc.:</p>
+
+<pre><code class="language-sdparse">Long Lines , Silly Rules , Rude Staff , Ok Food
+list(Lines, Rules)
+list(Lines, Staff)
+list(Lines, Food)
+</code></pre>
+
+<p>However, <code>list</code> should not be over-used. If a construction can be
+easily analyzed using the grammatical relations of standard sentences,
+such as when there is overt coordination, then it should be analyzed
+with these more standard relations, even if it is laid out as a list
+typographically.</p>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/list.md" target="#">edit list</a></p>
+
+<p><a id="al-pt-dep/mark" class="al-dest"></a></p>
+<h2><code>mark</code>: marker</h2>
+
+<p>A marker is the word introducing a finite clause subordinate to
+another clause. For a <a href="ccomp">complement clause</a>, this is words like  <em>que</em>
+or <em>se.</em> For an <a href="advcl">adverbial clause</a>, the marker is typically a
+<a href="../pos/SCONJ">subordinating conjunction</a> like <em>enquanto</em> or <em>embora.</em> The mark is a dependent of the
+subordinate clause head. In a relative clause, it is a normally uninflected word, which simply introduces a relative clause, such as <em>que</em>. In this last use, one needs to distinguish between relative clause markers, which are <code>mark</code> from relative pronouns, which fill a regular verbal argument or modifier grammatical relation.</p>
+
+<pre><code class="language-sdparse">Era de facto por ali que começava a surgir perigo
+mark(surgir, que)
+</code></pre>
+
+<p>Note that this relation holds between the marker and the head of the subordinate clause, which can be a non verbal element.</p>
+
+<pre><code class="language-sdparse">Sugere ainda que seja elaborada uma circular
+mark(elaborada, que)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/mark.md" target="#">edit mark</a></p>
 
 <p><a id="al-pt-dep/neg" class="al-dest"></a></p>
 <h2><code>neg</code>: negation modifier</h2>
@@ -1337,7 +1354,7 @@ predicates”).</p>
 neg(carrega, não)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/neg.md" target="#">edit neg</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/neg.md" target="#">edit neg</a></p>
 
 <p><a id="al-pt-dep/nmod" class="al-dest"></a></p>
 <h2><code>nmod</code>: nominal modifier</h2>
@@ -1361,7 +1378,7 @@ nmod(PT, governo)
 nmod(chega, Portugal)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/nmod.md" target="#">edit nmod</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/nmod.md" target="#">edit nmod</a></p>
 
 <p><a id="al-pt-dep/nsubj" class="al-dest"></a></p>
 <h2><code>nsubj</code>: nominal subject</h2>
@@ -1373,7 +1390,7 @@ the do-er, or the proto-agent of the clause.
 the proto-agent argument due to valence changing operations.) This nominal may be headed by a noun, 
 or it may be a pronoun or relative pronoun, or in ellipsis contexts, other things such as an adjective.</p>
 
-<pre><code class="language-sdparse">Euller fez mais duas jogadas .
+<pre><code class="language-sdparse">Euler fez mais duas jogadas .
 nsubj(fez, Euler)
 </code></pre>
 
@@ -1406,7 +1423,7 @@ conj(Grupo, TAP)
 conj(Grupo, Marconi)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/nsubj.md" target="#">edit nsubj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/nsubj.md" target="#">edit nsubj</a></p>
 
 <p><a id="al-pt-dep/nsubjpass" class="al-dest"></a></p>
 <h2><code>nsubjpass</code>: passive nominal subject</h2>
@@ -1418,7 +1435,7 @@ subject of a passive clause (or more generally, any voice where the proto-agent 
 nsubjpass(encontradas, Peças)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/nsubjpass.md" target="#">edit nsubjpass</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/nsubjpass.md" target="#">edit nsubjpass</a></p>
 
 <p><a id="al-pt-dep/nummod" class="al-dest"></a></p>
 <h2><code>nummod</code>: numeric modifier</h2>
@@ -1446,7 +1463,123 @@ relation to the quantified noun is not <code>nummod</code> but <a href="">det</a
 det(servidores, muitos)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/nummod.md" target="#">edit nummod</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/nummod.md" target="#">edit nummod</a></p>
+
+<p><a id="al-pt-dep/orphan" class="al-dest"></a></p>
+<h2><code>orphan</code>: remnant in ellipsis</h2>
+
+<p>The <code>orphan</code> relation is used to provide a satisfactory treatment of
+ellipsis (in the case of gapping and stripping, where a predicational
+or verbal head gets elided). This is something that was lacking in
+earlier versions of SD and provides a basis for being able to
+reconstruct dependencies in the enhanced representation of UD.  In
+particular, the goal was to achieve this <em>without</em> having to postulate
+empty nodes in the basic representation.</p>
+
+<p>To develop motivation, consider first a sentence without ellipsis:</p>
+
+<pre><code class="language-sdparse">Maria foi para Paris e Miriam foi para Praga
+nsubj(foi-2, Maria-1)
+root(root-0, foi-2)
+nmod(foi-2, Paris-4)
+case(Paris-4, para-3)
+cc(foi-2, e-5)
+nsubj(foi-7, Miriam-6)
+conj(foi-2, foi-7)
+case(Praga-9, para-8)
+nmod(foi-7, Praga-9)
+</code></pre>
+
+<p>The question is then how to treat the sentence “Maria foi para Paris e
+Miriam para Praga”</p>
+
+<pre><code class="language-sdparse">Maria foi para Paris e Miriam para Praga
+nsubj(foi-2, Maria-1)
+root(root-0, foi-2)
+nmod(foi-2, Paris-4)
+case(Paris-4, para-3)
+cc(foi-2, e-5)
+case(Praga-8, para-7)
+</code></pre>
+
+<p>One option would be to pretend that there is an empty verb and to have
+the final elements be dependents of it: <em>Maria foi para Paris e Miriam
+∅ para Praga</em>. This analysis has some appeal but also has some
+problems and at any rate stops the basic dependency graph from being
+simply a tree of dependencies over the words of a sentence. A second
+option is to simply promote the final elements and to have them as
+dependents of the main verb of the sentence (<em>foi-2</em>) or of
+<em>root-0</em>. But then (in general) one loses the ability to successfully
+reconstruct the correct predicate-argument structure of the sentence
+from the basic dependency representation.</p>
+
+<p>Therefore, UD adopts an analysis that notes that in ellipsis a
+<code>orphan</code> corresponds to a <em>correlate</em> in a preceding clause. The
+<code>orphan</code> relation connects each remnant to its correlate in the basic
+dependency representation. This is then a sufficient representation to
+reconstruct the predicate-argument structure in the enhanced
+representation. So, for this example, we have:</p>
+
+<pre><code class="language-sdparse">Maria foi para Paris e Miriam para Praga
+nsubj(foi-2, Maria-1)
+root(root-0, foi-2)
+nmod(foi-2, Paris-4)
+case(Paris-4, para-3)
+cc(foi-2, e-5)
+case(Praga-8, para-7)
+remnant(Maria-1, Miriam-6)
+remnant(Paris-4, Praga-8)
+</code></pre>
+
+<p>Even in the more complex example below, the <code>orphan</code>
+relations enable us to correctly retrieve the subjects and objects in
+the clauses with an elided verb.</p>
+
+<pre><code class="language-sdparse">João ganhou bronze , Maria prata , e Sandy ouro
+nsubj(ganhou-2, João-1)
+dobj(ganhou-2, bronze-3)
+remnant(João-1, Maria-5)
+remnant(Maria-5, Sandy-9)
+remnant(bronze-3, prata-6)
+remnant(prata-6, ouro-10)
+</code></pre>
+
+<p>Note in particular that (unlike for <a href="">conj</a>), <code>orphan</code> uses a chaining analysis where each subsequent remnant depends on the immediately preceding remnant/correlate. The reason for this is that otherwise in a sentence with 2 or more chained ellipses the dependency structure would no longer track which remnants go together. It would become impossible to determine whether <em>Maria ganhou prata</em> and <em>Sandy ouro</em>, or <em>Maria ganhou ouro</em> e <em>Sandy prata</em>.</p>
+
+<p>It is also possible that the incomplete part precedes the complete one in the sentence [de]:</p>
+
+<pre><code class="language-sdparse">78 % para Bush e 4 % para o discurso do Clinton
+remnant(%-7, %-2)
+remnant(Clinton, Bush)
+</code></pre>
+
+<p>The <code>orphan</code> relation is used when no predicational material is
+present. In contrast, in right-node-raising (RNR) and VP-ellipsis
+constructions in which some kind of predicational or verbal material
+is still present, the <code>orphan</code> relation is not used. In RNR, the
+verbs are coordinated and the object is a <a href="">obj</a> of the first verb:</p>
+
+<pre><code class="language-sdparse">João comprou e comeu uma maçã
+nsubj(comprou-2, João-1)
+cc(comprou-2, e-3)
+conj(comprou-2, comeu-4)
+det(maçã-6, uma-5)
+dobj(comprou-2, maçã-6)
+</code></pre>
+
+<p>In VP-ellipsis, we keep the auxiliary as the head, as shown below:</p>
+
+<pre><code class="language-sdparse">João vai ganhar ouro e Maria vai também
+nsubj(ganhar-3, João-1)
+aux(ganhar-3, vai-2)
+dobj(ganhar-3, ouro-4)
+cc(ganhar-3, e-5)
+conj(ganhar-3, vai-7)
+nsubj(vai-7, Maria-6)
+advmod(vai-7, também-8)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/orphan.md" target="#">edit orphan</a></p>
 
 <p><a id="al-pt-dep/parataxis" class="al-dest"></a></p>
 <h2><code>parataxis</code>: parataxis</h2>
@@ -1580,7 +1713,7 @@ it?</em> or <em>haven’t you?</em>.</p>
 parataxis(mim, é)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/parataxis.md" target="#">edit parataxis</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/parataxis.md" target="#">edit parataxis</a></p>
 
 <p><a id="al-pt-dep/punct" class="al-dest"></a></p>
 <h2><code>punct</code>: punctuation</h2>
@@ -1627,123 +1760,7 @@ punct(leia, ))
 punct(afirmou, .)
 </div>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/punct.md" target="#">edit punct</a></p>
-
-<p><a id="al-pt-dep/remnant" class="al-dest"></a></p>
-<h2><code>remnant</code>: remnant in ellipsis</h2>
-
-<p>The <code>remnant</code> relation is used to provide a satisfactory treatment of
-ellipsis (in the case of gapping and stripping, where a predicational
-or verbal head gets elided). This is something that was lacking in
-earlier versions of SD and provides a basis for being able to
-reconstruct dependencies in the enhanced representation of UD.  In
-particular, the goal was to achieve this <em>without</em> having to postulate
-empty nodes in the basic representation.</p>
-
-<p>To develop motivation, consider first a sentence without ellipsis:</p>
-
-<pre><code class="language-sdparse">Maria foi para Paris e Miriam foi para Praga
-nsubj(foi-2, Maria-1)
-root(root-0, foi-2)
-nmod(foi-2, Paris-4)
-case(Paris-4, para-3)
-cc(foi-2, e-5)
-nsubj(foi-7, Miriam-6)
-conj(foi-2, foi-7)
-case(Praga-9, para-8)
-nmod(foi-7, Praga-9)
-</code></pre>
-
-<p>The question is then how to treat the sentence “Maria foi para Paris e
-Miriam para Praga”</p>
-
-<pre><code class="language-sdparse">Maria foi para Paris e Miriam para Praga
-nsubj(foi-2, Maria-1)
-root(root-0, foi-2)
-nmod(foi-2, Paris-4)
-case(Paris-4, para-3)
-cc(foi-2, e-5)
-case(Praga-8, para-7)
-</code></pre>
-
-<p>One option would be to pretend that there is an empty verb and to have
-the final elements be dependents of it: <em>Maria foi para Paris e Miriam
-∅ para Praga</em>. This analysis has some appeal but also has some
-problems and at any rate stops the basic dependency graph from being
-simply a tree of dependencies over the words of a sentence. A second
-option is to simply promote the final elements and to have them as
-dependents of the main verb of the sentence (<em>foi-2</em>) or of
-<em>root-0</em>. But then (in general) one loses the ability to successfully
-reconstruct the correct predicate-argument structure of the sentence
-from the basic dependency representation.</p>
-
-<p>Therefore, UD adopts an analysis that notes that in ellipsis a
-<code>remnant</code> corresponds to a <em>correlate</em> in a preceding clause. The
-<code>remnant</code> relation connects each remnant to its correlate in the basic
-dependency representation. This is then a sufficient representation to
-reconstruct the predicate-argument structure in the enhanced
-representation. So, for this example, we have:</p>
-
-<pre><code class="language-sdparse">Maria foi para Paris e Miriam para Praga
-nsubj(foi-2, Maria-1)
-root(root-0, foi-2)
-nmod(foi-2, Paris-4)
-case(Paris-4, para-3)
-cc(foi-2, e-5)
-case(Praga-8, para-7)
-remnant(Maria-1, Miriam-6)
-remnant(Paris-4, Praga-8)
-</code></pre>
-
-<p>Even in the more complex example below, the <code>remnant</code>
-relations enable us to correctly retrieve the subjects and objects in
-the clauses with an elided verb.</p>
-
-<pre><code class="language-sdparse">João ganhou bronze , Maria prata , e Sandy ouro
-nsubj(ganhou-2, João-1)
-dobj(ganhou-2, bronze-3)
-remnant(João-1, Maria-5)
-remnant(Maria-5, Sandy-9)
-remnant(bronze-3, prata-6)
-remnant(prata-6, ouro-10)
-</code></pre>
-
-<p>Note in particular that (unlike for <a href="">conj</a>), <code>remnant</code> uses a chaining analysis where each subsequent remnant depends on the immediately preceding remnant/correlate. The reason for this is that otherwise in a sentence with 2 or more chained ellipses the dependency structure would no longer track which remnants go together. It would become impossible to determine whether <em>Maria ganhou prata</em> and <em>Sandy ouro</em>, or <em>Maria ganhou ouro</em> e <em>Sandy prata</em>.</p>
-
-<p>It is also possible that the incomplete part precedes the complete one in the sentence [de]:</p>
-
-<pre><code class="language-sdparse">78 % para Bush e 4 % para o discurso do Clinton
-remnant(%-7, %-2)
-remnant(Clinton, Bush)
-</code></pre>
-
-<p>The <code>remnant</code> relation is used when no predicational material is
-present. In contrast, in right-node-raising (RNR) and VP-ellipsis
-constructions in which some kind of predicational or verbal material
-is still present, the <code>remnant</code> relation is not used. In RNR, the
-verbs are coordinated and the object is a <a href="">dobj</a> of the first verb:</p>
-
-<pre><code class="language-sdparse">João comprou e comeu uma maçã
-nsubj(comprou-2, João-1)
-cc(comprou-2, e-3)
-conj(comprou-2, comeu-4)
-det(maçã-6, uma-5)
-dobj(comprou-2, maçã-6)
-</code></pre>
-
-<p>In VP-ellipsis, we keep the auxiliary as the head, as shown below:</p>
-
-<pre><code class="language-sdparse">João vai ganhar ouro e Maria vai também
-nsubj(ganhar-3, João-1)
-aux(ganhar-3, vai-2)
-dobj(ganhar-3, ouro-4)
-cc(ganhar-3, e-5)
-conj(ganhar-3, vai-7)
-nsubj(vai-7, Maria-6)
-advmod(vai-7, também-8)
-</code></pre>
-
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/remnant.md" target="#">edit remnant</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/punct.md" target="#">edit punct</a></p>
 
 <p><a id="al-pt-dep/reparandum" class="al-dest"></a></p>
 <h2><code>reparandum</code>: overridden disfluency</h2>
@@ -1760,7 +1777,7 @@ case(esquerda, para-5)
 det(esquerda, a-6)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/reparandum.md" target="#">edit reparandum</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/reparandum.md" target="#">edit reparandum</a></p>
 
 <p><a id="al-pt-dep/root" class="al-dest"></a></p>
 <h2><code>root</code>: root</h2>
@@ -1785,7 +1802,7 @@ case(governo, em)
 nmod(PT, governo)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/root.md" target="#">edit root</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/root.md" target="#">edit root</a></p>
 
 <p><a id="al-pt-dep/vocative" class="al-dest"></a></p>
 <h2><code>vocative</code>: vocative</h2>
@@ -1805,7 +1822,7 @@ vocative(fale, Senhor)
 vocative(favorito, Oliveira)
 </code></pre>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/vocative.md" target="#">edit vocative</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/vocative.md" target="#">edit vocative</a></p>
 
 <p><a id="al-pt-dep/xcomp" class="al-dest"></a></p>
 <h2><code>xcomp</code>: open clausal complement</h2>
@@ -1914,7 +1931,7 @@ interpretation of <em>declarou.</em></p>
 <p>The result is that in <em>Ela entrou na sala triste,</em> <em>triste</em> will
 depend on <em>Ela</em> and the relation will be <a href="">acl</a> instead of <code>xcomp</code>.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/xcomp.md" target="#">edit xcomp</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/xcomp.md" target="#">edit xcomp</a></p>
 
 <p><a id="al-pt-dep/xcomp:adj" class="al-dest"></a></p>
 <h2><code>xcomp:adj</code>: xcomp:adj</h2>
@@ -1922,7 +1939,7 @@ depend on <em>Ela</em> and the relation will be <a href="">acl</a> instead of <c
 <p>This document is a placeholder for the language-specific documentation
 for <code>xcomp:adj</code>.</p>
 
-<p><a href="https://github.com/turkunlp/docs/edit/pages-source/_pt-dep/xcomp-adj.md" target="#">edit xcomp:adj</a></p>
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/xcomp-adj.md" target="#">edit xcomp:adj</a></p>
 
 
 

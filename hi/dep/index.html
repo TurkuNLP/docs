@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-hi">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-hi">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -67,7 +84,7 @@ in two places.</p>
 	  <td><a>csubjpass</a></td>
 	</tr>
 	<tr>
-	  <td><a>dobj</a></td>
+	  <td><a>obj</a></td>
 	  <td><a>ccomp</a></td>
 	  <td><a>xcomp</a></td>
 	</tr>
@@ -160,11 +177,11 @@ in two places.</p>
 	<tr><td colspan="3"><strong>Compounding and unanalyzed</strong></td></tr>
 	<tr>
 	  <td><a>compound</a></td>
-	  <td><a>mwe</a></td>
+	  <td><a>fixed</a></td>
 	  <td><a>goeswith</a></td>
 	</tr>
 	<tr>
-	  <td><a>name</a></td>
+	  <td><a>flat</a></td>
 	  <td><a>foreign</a></td>
 	</tr>
       </table>
@@ -201,7 +218,7 @@ in two places.</p>
 	<tr>
 	  <td><a>list</a></td>
 	  <td><a>parataxis</a></td>
-	  <td><a>remnant</a></td>
+	  <td><a>orphan</a></td>
 	</tr>
 	<tr>
 	  <td><a>dislocated</a></td>
@@ -255,21 +272,21 @@ in two places.</p>
   <li><a href="">dislocated</a>: dislocated elements</li>
   <li><a href="">dobj</a>: direct object</li>
   <li><a href="">expl</a>: expletive</li>
+  <li><a href="">fixed</a>: multi-word expression</li>
+  <li><a href="">flat</a>: name</li>
   <li><a href="">foreign</a>: foreign words</li>
   <li><a href="">goeswith</a>: goes with</li>
   <li><a href="">iobj</a>: indirect object</li>
   <li><a href="">list</a>: list</li>
   <li><a href="">mark</a>: marker</li>
-  <li><a href="">mwe</a>: multi-word expression</li>
-  <li><a href="">name</a>: name</li>
   <li><a href="">neg</a>: negation modifier</li>
   <li><a href="">nmod</a>: nominal modifier</li>
   <li><a href="">nsubj</a>: nominal subject</li>
   <li><a href="">nsubjpass</a>: passive nominal subject</li>
   <li><a href="">nummod</a>: numeric modifier</li>
+  <li><a href="">orphan</a>: remnant in ellipsis</li>
   <li><a href="">parataxis</a>: parataxis</li>
   <li><a href="">punct</a>: punctuation</li>
-  <li><a href="">remnant</a>: remnant in ellipsis</li>
   <li><a href="">reparandum</a>: overridden disfluency</li>
   <li><a href="">root</a>: root</li>
   <li><a href="">vocative</a>: vocative</li>

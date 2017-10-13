@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-de">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/de/feat">de/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_de-feat/Polite.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-de">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/de/feat">de/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_de-feat/Polite.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,36 +80,36 @@ for <code>Polite</code>.</p>
 <h2 id="treebank-statistics-udgerman">Treebank Statistics (UD_German)</h2>
 
 <p>This feature is language-specific.
-It occurs with 2 different values: <code>Inf</code>, <code>Pol</code>.</p>
+It occurs with 2 different values: <code>Form</code>, <code>Infm</code>.</p>
 
-<p>465 tokens (0%) have a non-empty value of <code>Polite</code>.
-15 types (0%) occur at least once with a non-empty value of <code>Polite</code>.
+<p>438 tokens (0%) have a non-empty value of <code>Polite</code>.
+13 types (0%) occur at least once with a non-empty value of <code>Polite</code>.
 5 lemmas (0%) occur at least once with a non-empty value of <code>Polite</code>.
-The feature is used with 2 part-of-speech tags: <a href="">de-pos/PRON</a> (463; 0% instances), <a href="">de-pos/DET</a> (2; 0% instances).</p>
+The feature is used with 2 part-of-speech tags: <a href="">de-pos/PRON</a> (436; 0% instances), <a href="">de-pos/DET</a> (2; 0% instances).</p>
 
 <h3 id="pron"><code>PRON</code></h3>
 
-<p>463 <a href="">de-pos/PRON</a> tokens (3% of all <code>PRON</code> tokens) have a non-empty value of <code>Polite</code>.</p>
+<p>436 <a href="">de-pos/PRON</a> tokens (3% of all <code>PRON</code> tokens) have a non-empty value of <code>Polite</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>Polite</code> co-occurred: <tt><a href="Person.html">Person</a>=2</tt> (463; 100%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (463; 100%), <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (462; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (459; 99%), <tt><a href="Case.html">Case</a>=Nom</tt> (406; 88%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (384; 83%).</p>
+<p>The most frequent other feature values with which <code>PRON</code> and <code>Polite</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (436; 100%), <tt><a href="Person.html">Person</a>=2</tt> (436; 100%), <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (435; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (434; 100%), <tt><a href="Case.html">Case</a>=Nom</tt> (389; 89%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (366; 84%).</p>
 
 <p><code>PRON</code> tokens may have the following values of <code>Polite</code>:</p>
 
 <ul>
-  <li><code>Inf</code> (81; 17% of non-empty <code>Polite</code>): <em>ihr, du, euch, Dir, dich, euren, eurer, Deinen</em></li>
-  <li><code>Pol</code> (382; 83% of non-empty <code>Polite</code>): <em>Sie, Ihnen</em></li>
+  <li><code>Form</code> (366; 84% of non-empty <code>Polite</code>): <em>Sie, Ihnen</em></li>
+  <li><code>Infm</code> (70; 16% of non-empty <code>Polite</code>): <em>ihr, du, euch, Dir, Deinen, dich</em></li>
 </ul>
 
 <h3 id="det"><code>DET</code></h3>
 
 <p>2 <a href="">de-pos/DET</a> tokens (0% of all <code>DET</code> tokens) have a non-empty value of <code>Polite</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>Polite</code> co-occurred: <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (2; 100%), <tt><a href="Case.html">Case</a>=Acc</tt> (2; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (2; 100%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (2; 100%).</p>
+<p>The most frequent other feature values with which <code>DET</code> and <code>Polite</code> co-occurred: <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (2; 100%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (2; 100%), <tt><a href="Case.html">Case</a>=Acc</tt> (2; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (2; 100%).</p>
 
 <p><code>DET</code> tokens may have the following values of <code>Polite</code>:</p>
 
 <ul>
-  <li><code>Inf</code> (2; 100% of non-empty <code>Polite</code>): <em>deinen, eure</em></li>
+  <li><code>Infm</code> (2; 100% of non-empty <code>Polite</code>): <em>deinen, eure</em></li>
 </ul>
 
 
@@ -100,6 +117,27 @@ The feature is used with 2 part-of-speech tags: <a href="">de-pos/PRON</a> (463;
 
 <!-- "in other languages" links -->
 <hr/>
+
+Polite in other languages:
+
+[<a href="../../ca/feat/Polite.html">ca</a>]
+
+[<a href="../../da/feat/Polite.html">da</a>]
+
+[<a href="../../de/feat/Polite.html">de</a>]
+
+[<a href="../../es/feat/Polite.html">es</a>]
+
+[<a href="../../eu/feat/Polite.html">eu</a>]
+
+[<a href="../../hi/feat/Polite.html">hi</a>]
+
+[<a href="../../sa/feat/Polite.html">sa</a>]
+
+[<a href="../../ta/feat/Polite.html">ta</a>]
+
+[<a href="../../u/feat/Polite.html">u</a>]
+
 
 
 

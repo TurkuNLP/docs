@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-da">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/da/feat">da/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_da-feat/Voice.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-da">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/da/feat">da/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_da-feat/Voice.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -65,58 +82,58 @@ for <code>Voice</code>.</p>
 <p>This feature is universal.
 It occurs with 2 different values: <code>Act</code>, <code>Pass</code>.</p>
 
-<p>13018 tokens (13%) have a non-empty value of <code>Voice</code>.
-2241 types (13%) occur at least once with a non-empty value of <code>Voice</code>.
-1219 lemmas (9%) occur at least once with a non-empty value of <code>Voice</code>.
-The feature is used with 2 part-of-speech tags: <a href="">da-pos/VERB</a> (8289; 8% instances), <a href="">da-pos/AUX</a> (4729; 5% instances).</p>
+<p>11677 tokens (13%) have a non-empty value of <code>Voice</code>.
+2081 types (13%) occur at least once with a non-empty value of <code>Voice</code>.
+1137 lemmas (9%) occur at least once with a non-empty value of <code>Voice</code>.
+The feature is used with 2 part-of-speech tags: <a href="">da-pos/VERB</a> (7429; 8% instances), <a href="">da-pos/AUX</a> (4248; 5% instances).</p>
 
 <h3 id="verb"><code>VERB</code></h3>
 
-<p>8289 <a href="">da-pos/VERB</a> tokens (77% of all <code>VERB</code> tokens) have a non-empty value of <code>Voice</code>.</p>
+<p>7429 <a href="">da-pos/VERB</a> tokens (77% of all <code>VERB</code> tokens) have a non-empty value of <code>Voice</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Voice</code> co-occurred: <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (8289; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (8289; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (5615; 68%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (5615; 68%).</p>
+<p>The most frequent other feature values with which <code>VERB</code> and <code>Voice</code> co-occurred: <tt><a href="Number.html">Number</a>=EMPTY</tt> (7429; 100%), <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (7429; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (5028; 68%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (5028; 68%).</p>
 
 <p><code>VERB</code> tokens may have the following values of <code>Voice</code>:</p>
 
 <ul>
-  <li><code>Act</code> (7805; 94% of non-empty <code>Voice</code>): <em>er, har, siger, var, få, får, fik, sagde, kommer, gå</em></li>
-  <li><code>Pass</code> (484; 6% of non-empty <code>Voice</code>): <em>bruges, tages, ventes, gøres, nævnes, sælges, udsendes, ses, kaldes, sættes</em></li>
-  <li><code>EMPTY</code> (2422): <em>fået, været, set, haft, gjort, gået, kommet, lad, sagt, kommende</em></li>
+  <li><code>Act</code> (6993; 94% of non-empty <code>Voice</code>): <em>er, har, siger, få, var, får, sagde, fik, kommer, se</em></li>
+  <li><code>Pass</code> (436; 6% of non-empty <code>Voice</code>): <em>bruges, ventes, tages, gøres, nævnes, sælges, kaldes, ses, sættes, udsendes</em></li>
+  <li><code>EMPTY</code> (2178): <em>fået, været, gjort, set, haft, gået, kommet, sagt, lad, taget</em></li>
 </ul>
 
 <table>
-  <tr><th>Paradigm <i>have</i></th><th><tt>Act</tt></th><th><tt>Pass</tt></th></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td><em>havde</em></td><td></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td><em>har</em></td><td><em>haves</em></td></tr>
-  <tr><td><tt><a href="VerbForm.html">VerbForm</a>=Inf</tt></td><td><em>have, ha'</em></td><td></td></tr>
+  <tr><th>Paradigm <i>få</i></th><th><tt>Act</tt></th><th><tt>Pass</tt></th></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td><em>fik</em></td><td></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td><em>får</em></td><td><em>fås</em></td></tr>
+  <tr><td><tt><a href="VerbForm.html">VerbForm</a>=Inf</tt></td><td><em>få</em></td><td><em>fås</em></td></tr>
 </table>
 
 <h3 id="aux"><code>AUX</code></h3>
 
-<p>4729 <a href="">da-pos/AUX</a> tokens (96% of all <code>AUX</code> tokens) have a non-empty value of <code>Voice</code>.</p>
+<p>4248 <a href="">da-pos/AUX</a> tokens (96% of all <code>AUX</code> tokens) have a non-empty value of <code>Voice</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Voice</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (4395; 93%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (4395; 93%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (3311; 70%).</p>
+<p>The most frequent other feature values with which <code>AUX</code> and <code>Voice</code> co-occurred: <tt><a href="Mood.html">Mood</a>=Ind</tt> (3952; 93%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (3952; 93%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (3011; 71%).</p>
 
 <p><code>AUX</code> tokens may have the following values of <code>Voice</code>:</p>
 
 <ul>
-  <li><code>Act</code> (4729; 100% of non-empty <code>Voice</code>): <em>er, har, kan, var, skal, vil, blev, være, kunne, havde</em></li>
-  <li><code>EMPTY</code> (188): <em>været, blevet, kunnet, måttet, turdet, Bliv, villet, værende</em></li>
+  <li><code>Act</code> (4248; 100% of non-empty <code>Voice</code>): <em>er, har, kan, var, skal, vil, blev, være, kunne, havde</em></li>
+  <li><code>EMPTY</code> (167): <em>været, blevet, kunnet, måttet, turdet, Bliv, villet, værende</em></li>
 </ul>
 
 <h2 id="relations-with-agreement-in-voice">Relations with Agreement in <code>Voice</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>Voice</code>:
-<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (722; 79%),
-<tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (369; 70%),
-<tt>VERB –[<a href="../dep/dobj.html">dobj</a>]–&gt; VERB</tt> (362; 82%),
-<tt>VERB –[<a href="../dep/ccomp.html">ccomp</a>]–&gt; VERB</tt> (355; 65%),
-<tt>VERB –[<a href="../dep/advmod.html">advmod</a>]–&gt; VERB</tt> (297; 71%),
-<tt>VERB –[<a href="../dep/acl:relcl.html">acl:relcl</a>]–&gt; VERB</tt> (41; 73%),
-<tt>VERB –[<a href="../dep/mark.html">mark</a>]–&gt; VERB</tt> (16; 64%),
+<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (701; 77%),
+<tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (331; 71%),
+<tt>VERB –[<a href="../dep/obj.html">obj</a>]–&gt; VERB</tt> (319; 81%),
+<tt>VERB –[<a href="../dep/ccomp.html">ccomp</a>]–&gt; VERB</tt> (307; 65%),
+<tt>VERB –[<a href="../dep/advmod.html">advmod</a>]–&gt; VERB</tt> (265; 71%),
+<tt>VERB –[<a href="../dep/acl:relcl.html">acl:relcl</a>]–&gt; VERB</tt> (39; 78%),
+<tt>VERB –[<a href="../dep/dep.html">dep</a>]–&gt; VERB</tt> (16; 76%),
+<tt>VERB –[<a href="../dep/mark.html">mark</a>]–&gt; VERB</tt> (13; 59%),
 <tt>AUX –[<a href="../dep/xcomp.html">xcomp</a>]–&gt; VERB</tt> (7; 88%),
-<tt>VERB –[<a href="../dep/nmod:loc.html">nmod:loc</a>]–&gt; VERB</tt> (1; 100%),
-<tt>VERB –[<a href="../dep/reparandum.html">reparandum</a>]–&gt; VERB</tt> (1; 100%).</p>
+<tt>VERB –[<a href="../dep/obl:loc.html">obl:loc</a>]–&gt; VERB</tt> (1; 100%).</p>
 
 
 
@@ -126,9 +143,25 @@ The feature is used with 2 part-of-speech tags: <a href="">da-pos/VERB</a> (8289
 
 Voice in other languages:
 
+[<a href="../../am/feat/Voice.html">am</a>]
+
+[<a href="../../ar/feat/Voice.html">ar</a>]
+
 [<a href="../../bg/feat/Voice.html">bg</a>]
 
+[<a href="../../bxr/feat/Voice.html">bxr</a>]
+
+[<a href="../../ca/feat/Voice.html">ca</a>]
+
+[<a href="../../ckb/feat/Voice.html">ckb</a>]
+
+[<a href="../../cop/feat/Voice.html">cop</a>]
+
 [<a href="../../cs/feat/Voice.html">cs</a>]
+
+[<a href="../../cu/feat/Voice.html">cu</a>]
+
+[<a href="../../da/feat/Voice.html">da</a>]
 
 [<a href="../../de/feat/Voice.html">de</a>]
 
@@ -138,29 +171,97 @@ Voice in other languages:
 
 [<a href="../../es/feat/Voice.html">es</a>]
 
+[<a href="../../et/feat/Voice.html">et</a>]
+
 [<a href="../../eu/feat/Voice.html">eu</a>]
 
 [<a href="../../fa/feat/Voice.html">fa</a>]
 
 [<a href="../../fi/feat/Voice.html">fi</a>]
 
+[<a href="../../fo/feat/Voice.html">fo</a>]
+
 [<a href="../../fr/feat/Voice.html">fr</a>]
 
 [<a href="../../ga/feat/Voice.html">ga</a>]
 
+[<a href="../../gl/feat/Voice.html">gl</a>]
+
+[<a href="../../got/feat/Voice.html">got</a>]
+
+[<a href="../../grc/feat/Voice.html">grc</a>]
+
 [<a href="../../he/feat/Voice.html">he</a>]
 
+[<a href="../../hi/feat/Voice.html">hi</a>]
+
+[<a href="../../hr/feat/Voice.html">hr</a>]
+
 [<a href="../../hu/feat/Voice.html">hu</a>]
+
+[<a href="../../id/feat/Voice.html">id</a>]
 
 [<a href="../../it/feat/Voice.html">it</a>]
 
 [<a href="../../ja/feat/Voice.html">ja</a>]
 
+[<a href="../../kk/feat/Voice.html">kk</a>]
+
+[<a href="../../kmr/feat/Voice.html">kmr</a>]
+
 [<a href="../../ko/feat/Voice.html">ko</a>]
+
+[<a href="../../la/feat/Voice.html">la</a>]
+
+[<a href="../../lv/feat/Voice.html">lv</a>]
+
+[<a href="../../mr/feat/Voice.html">mr</a>]
+
+[<a href="../../nl/feat/Voice.html">nl</a>]
+
+[<a href="../../no/feat/Voice.html">no</a>]
+
+[<a href="../../pl/feat/Voice.html">pl</a>]
+
+[<a href="../../pt/feat/Voice.html">pt</a>]
+
+[<a href="../../ro/feat/Voice.html">ro</a>]
+
+[<a href="../../ru/feat/Voice.html">ru</a>]
+
+[<a href="../../sa/feat/Voice.html">sa</a>]
+
+[<a href="../../sk/feat/Voice.html">sk</a>]
+
+[<a href="../../sla/feat/Voice.html">sla</a>]
+
+[<a href="../../so/feat/Voice.html">so</a>]
+
+[<a href="../../sr/feat/Voice.html">sr</a>]
 
 [<a href="../../sv/feat/Voice.html">sv</a>]
 
+[<a href="../../swl/feat/Voice.html">swl</a>]
+
+[<a href="../../ta/feat/Voice.html">ta</a>]
+
+[<a href="../../tr/feat/Voice.html">tr</a>]
+
 [<a href="../../u/feat/Voice.html">u</a>]
+
+[<a href="../../ug/feat/Voice.html">ug</a>]
+
+[<a href="../../uk/feat/Voice.html">uk</a>]
+
+[<a href="../../ur/feat/Voice.html">ur</a>]
+
+[<a href="../../urj/feat/Voice.html">urj</a>]
+
+[<a href="../../vi/feat/Voice.html">vi</a>]
+
+[<a href="../../yue/feat/Voice.html">yue</a>]
+
+[<a href="../../zh/feat/Voice.html">zh</a>]
 
 
 

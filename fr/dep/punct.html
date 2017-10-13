@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-fr">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/fr/dep">fr/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_fr-dep/punct.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-fr">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/fr/dep">fr/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fr-dep/punct.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -56,6 +73,10 @@ punct(pleut, ,)
 punct(mouillé, .)
 </code></pre>
 
+<p>Since the FrenchSpoken corpus is an oral corpus, there are no punctuation signs (apart from hyphens in certain words or constructions).</p>
+
+<p>N.B.: In FrenchSpoken some constructions containing hyphens are annotated with the <a href="">goeswith</a> relation. See the <a href="http://universaldependencies.org/fr/overview/tokenization.html">tokenization</a> page.</p>
+
 
 <!-- "automatic stats" -->
 
@@ -71,24 +92,24 @@ punct(mouillé, .)
 
 <p>This relation is universal.</p>
 
-<p>44365 nodes (11%) are attached to their parents as <code>punct</code>.</p>
+<p>43138 nodes (11%) are attached to their parents as <code>punct</code>.</p>
 
-<p>35746 instances of <code>punct</code> (81%) are left-to-right (parent precedes child).
-Average distance between parent and child is 9.63299898568692.</p>
+<p>30812 instances of <code>punct</code> (71%) are left-to-right (parent precedes child).
+Average distance between parent and child is 9.07791274514349.</p>
 
-<p>The following 20 pairs of parts of speech are connected with <code>punct</code>: <a href="">fr-pos/VERB</a>-<a href="">fr-pos/PUNCT</a> (22155; 50% instances), <a href="">fr-pos/NOUN</a>-<a href="">fr-pos/PUNCT</a> (12674; 29% instances), <a href="">fr-pos/PROPN</a>-<a href="">fr-pos/PUNCT</a> (4815; 11% instances), <a href="">fr-pos/ADJ</a>-<a href="">fr-pos/PUNCT</a> (2257; 5% instances), <a href="">fr-pos/NUM</a>-<a href="">fr-pos/PUNCT</a> (1081; 2% instances), <a href="">fr-pos/PRON</a>-<a href="">fr-pos/PUNCT</a> (423; 1% instances), <a href="">fr-pos/X</a>-<a href="">fr-pos/PUNCT</a> (291; 1% instances), <a href="">fr-pos/ADV</a>-<a href="">fr-pos/PUNCT</a> (271; 1% instances), <a href="">fr-pos/SYM</a>-<a href="">fr-pos/PUNCT</a> (160; 0% instances), <a href="">fr-pos/CONJ</a>-<a href="">fr-pos/PUNCT</a> (74; 0% instances), <a href="">fr-pos/ADP</a>-<a href="">fr-pos/PUNCT</a> (53; 0% instances), <a href="">fr-pos/INTJ</a>-<a href="">fr-pos/PUNCT</a> (42; 0% instances), <a href="">fr-pos/PUNCT</a>-<a href="">fr-pos/PUNCT</a> (28; 0% instances), <a href="">fr-pos/DET</a>-<a href="">fr-pos/PUNCT</a> (17; 0% instances), <a href="">fr-pos/PART</a>-<a href="">fr-pos/PUNCT</a> (7; 0% instances), <a href="">fr-pos/X</a>-<a href="">fr-pos/SYM</a> (6; 0% instances), <a href="">fr-pos/NOUN</a>-<a href="">fr-pos/SYM</a> (5; 0% instances), <a href="">fr-pos/SCONJ</a>-<a href="">fr-pos/PUNCT</a> (3; 0% instances), <a href="">fr-pos/AUX</a>-<a href="">fr-pos/PUNCT</a> (2; 0% instances), <a href="">fr-pos/PROPN</a>-<a href="">fr-pos/SYM</a> (1; 0% instances).</p>
+<p>The following 22 pairs of parts of speech are connected with <code>punct</code>: <a href="">fr-pos/VERB</a>-<a href="">fr-pos/PUNCT</a> (21533; 50% instances), <a href="">fr-pos/NOUN</a>-<a href="">fr-pos/PUNCT</a> (12435; 29% instances), <a href="">fr-pos/PROPN</a>-<a href="">fr-pos/PUNCT</a> (4642; 11% instances), <a href="">fr-pos/ADJ</a>-<a href="">fr-pos/PUNCT</a> (2123; 5% instances), <a href="">fr-pos/NUM</a>-<a href="">fr-pos/PUNCT</a> (1042; 2% instances), <a href="">fr-pos/PRON</a>-<a href="">fr-pos/PUNCT</a> (407; 1% instances), <a href="">fr-pos/X</a>-<a href="">fr-pos/PUNCT</a> (327; 1% instances), <a href="">fr-pos/ADV</a>-<a href="">fr-pos/PUNCT</a> (244; 1% instances), <a href="">fr-pos/SYM</a>-<a href="">fr-pos/PUNCT</a> (153; 0% instances), <a href="">fr-pos/CCONJ</a>-<a href="">fr-pos/PUNCT</a> (75; 0% instances), <a href="">fr-pos/ADP</a>-<a href="">fr-pos/PUNCT</a> (45; 0% instances), <a href="">fr-pos/INTJ</a>-<a href="">fr-pos/PUNCT</a> (39; 0% instances), <a href="">fr-pos/PUNCT</a>-<a href="">fr-pos/PUNCT</a> (28; 0% instances), <a href="">fr-pos/DET</a>-<a href="">fr-pos/PUNCT</a> (16; 0% instances), <a href="">fr-pos/PART</a>-<a href="">fr-pos/PUNCT</a> (7; 0% instances), <a href="">fr-pos/SCONJ</a>-<a href="">fr-pos/PUNCT</a> (7; 0% instances), <a href="">fr-pos/NOUN</a>-<a href="">fr-pos/SYM</a> (4; 0% instances), <a href="">fr-pos/AUX</a>-<a href="">fr-pos/PUNCT</a> (3; 0% instances), <a href="">fr-pos/X</a>-<a href="">fr-pos/SYM</a> (3; 0% instances), <a href="">fr-pos/NUM</a>-<a href="">fr-pos/SYM</a> (2; 0% instances), <a href="">fr-pos/PROPN</a>-<a href="">fr-pos/SYM</a> (2; 0% instances), <a href="">fr-pos/SYM</a>-<a href="">fr-pos/SYM</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 9	bgColor:blue
 # visual-style 9	fgColor:white
 # visual-style 3	bgColor:blue
 # visual-style 3	fgColor:white
 # visual-style 3 9 punct	color:blue
-1	Mais	mais	CONJ	_	_	3	cc	_	_
+1	Mais	mais	CCONJ	_	_	3	cc	_	_
 2	comment	comment	ADV	_	_	3	advmod	_	_
 3	faire	faire	VERB	_	VerbForm=Inf	0	root	_	_
 4	dans	dans	ADP	_	_	6	case	_	_
 5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	contexte	contexte	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_
+6	contexte	contexte	NOUN	_	Gender=Masc|Number=Sing	3	obl	_	_
 7	structurellement	structurellement	ADV	_	_	8	advmod	_	_
 8	raciste	raciste	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_
 9	?	?	PUNCT	_	_	3	punct	_	_
@@ -100,17 +121,17 @@ Average distance between parent and child is 9.63299898568692.</p>
 # visual-style 9	bgColor:blue
 # visual-style 9	fgColor:white
 # visual-style 9 12 punct	color:blue
-1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	9	nsubj	_	_
-2	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	9	nsubj	_	SpaceAfter=No
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
 3	véritablement	véritablement	ADV	_	_	9	advmod	_	_
 4	pour	pour	ADP	_	_	7	case	_	_
 5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 6	futur	futur	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_
-7	baptisé	baptiser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	nmod	_	_
+7	baptisé	baptiser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	obl	_	_
 8	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	changement	changement	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_
 10	de	de	ADP	_	_	11	case	_	_
-11	cap	cap	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_
+11	cap	cap	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	SpaceAfter=No
 12	.	.	PUNCT	_	_	9	punct	_	_
 
 </code></pre>
@@ -120,7 +141,7 @@ Average distance between parent and child is 9.63299898568692.</p>
 # visual-style 1	bgColor:blue
 # visual-style 1	fgColor:white
 # visual-style 1 2 punct	color:blue
-1	Aviator	Aviator	PROPN	_	_	0	root	_	_
+1	Aviator	Aviator	PROPN	_	_	0	root	_	SpaceAfter=No
 2	,	,	PUNCT	_	_	1	punct	_	_
 3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
 4	film	film	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_
@@ -128,8 +149,127 @@ Average distance between parent and child is 9.63299898568692.</p>
 6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 7	vie	vie	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_
 8	de	de	ADP	_	_	9	case	_	_
-9	Hughes	Hughes	PROPN	_	_	7	nmod	_	_
+9	Hughes	Hughes	PROPN	_	_	7	nmod	_	SpaceAfter=No
 10	.	.	PUNCT	_	_	1	punct	_	_
+
+</code></pre>
+
+<hr />
+
+<h2 id="treebank-statistics-udfrench-partut">Treebank Statistics (UD_French-ParTUT)</h2>
+
+<p>This relation is universal.</p>
+
+<p>1657 nodes (9%) are attached to their parents as <code>punct</code>.</p>
+
+<p>1337 instances of <code>punct</code> (81%) are left-to-right (parent precedes child).
+Average distance between parent and child is 10.4954737477369.</p>
+
+<p>The following 14 pairs of parts of speech are connected with <code>punct</code>: <a href="">fr-pos/VERB</a>-<a href="">fr-pos/PUNCT</a> (783; 47% instances), <a href="">fr-pos/NOUN</a>-<a href="">fr-pos/PUNCT</a> (507; 31% instances), <a href="">fr-pos/NUM</a>-<a href="">fr-pos/PUNCT</a> (142; 9% instances), <a href="">fr-pos/ADJ</a>-<a href="">fr-pos/PUNCT</a> (99; 6% instances), <a href="">fr-pos/PROPN</a>-<a href="">fr-pos/PUNCT</a> (47; 3% instances), <a href="">fr-pos/PRON</a>-<a href="">fr-pos/PUNCT</a> (38; 2% instances), <a href="">fr-pos/ADV</a>-<a href="">fr-pos/PUNCT</a> (26; 2% instances), <a href="">fr-pos/ADP</a>-<a href="">fr-pos/PUNCT</a> (5; 0% instances), <a href="">fr-pos/AUX</a>-<a href="">fr-pos/PUNCT</a> (4; 0% instances), <a href="">fr-pos/X</a>-<a href="">fr-pos/PUNCT</a> (2; 0% instances), <a href="">fr-pos/CCONJ</a>-<a href="">fr-pos/PUNCT</a> (1; 0% instances), <a href="">fr-pos/DET</a>-<a href="">fr-pos/PUNCT</a> (1; 0% instances), <a href="">fr-pos/PUNCT</a>-<a href="">fr-pos/PUNCT</a> (1; 0% instances), <a href="">fr-pos/SYM</a>-<a href="">fr-pos/PUNCT</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 1 8 punct	color:blue
+1	créer	créer	VERB	V	VerbForm=Inf	0	root	_	_
+2	et	et	CCONJ	CC	_	3	cc	_	_
+3	reproduire	reproduire	VERB	V	VerbForm=Inf	1	conj	_	_
+4	des	un	DET	RI	Definite=Ind|Gender=Fem|Number=Plur|PronType=Dem	5	det	_	_
+5	oeuvres	oeuvre	NOUN	S	Gender=Fem|Number=Plur	1	obj	_	_
+6	dites	dire	VERB	V	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	5	acl	_	_
+7	derivées	dérivé	ADJ	A	Gender=Fem|Number=Plur	6	xcomp	_	SpaceAfter=No
+8	;	;	PUNCT	FC	_	1	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 4 punct	color:blue
+1	1	1	NUM	N	NumType=Card	3	nummod	_	SpaceAfter=No
+2	)	)	PUNCT	FF	_	1	punct	_	_
+3	Définitions	définition	NOUN	S	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	FS	_	3	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 1 2 punct	color:blue
+1	1	1	NUM	N	NumType=Card	3	nummod	_	SpaceAfter=No
+2	)	)	PUNCT	FF	_	1	punct	_	_
+3	Définitions	définition	NOUN	S	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	FS	_	3	punct	_	_
+
+</code></pre>
+
+<hr />
+
+<h2 id="treebank-statistics-udfrench-sequoia">Treebank Statistics (UD_French-Sequoia)</h2>
+
+<p>This relation is universal.</p>
+
+<p>6780 nodes (11%) are attached to their parents as <code>punct</code>.</p>
+
+<p>4648 instances of <code>punct</code> (69%) are left-to-right (parent precedes child).
+Average distance between parent and child is 9.92890855457227.</p>
+
+<p>The following 12 pairs of parts of speech are connected with <code>punct</code>: <a href="">fr-pos/VERB</a>-<a href="">fr-pos/PUNCT</a> (3462; 51% instances), <a href="">fr-pos/NOUN</a>-<a href="">fr-pos/PUNCT</a> (2170; 32% instances), <a href="">fr-pos/PROPN</a>-<a href="">fr-pos/PUNCT</a> (603; 9% instances), <a href="">fr-pos/ADJ</a>-<a href="">fr-pos/PUNCT</a> (410; 6% instances), <a href="">fr-pos/PRON</a>-<a href="">fr-pos/PUNCT</a> (40; 1% instances), <a href="">fr-pos/CCONJ</a>-<a href="">fr-pos/PUNCT</a> (31; 0% instances), <a href="">fr-pos/X</a>-<a href="">fr-pos/PUNCT</a> (24; 0% instances), <a href="">fr-pos/NUM</a>-<a href="">fr-pos/PUNCT</a> (21; 0% instances), <a href="">fr-pos/ADV</a>-<a href="">fr-pos/PUNCT</a> (12; 0% instances), <a href="">fr-pos/ADP</a>-<a href="">fr-pos/PUNCT</a> (4; 0% instances), <a href="">fr-pos/PUNCT</a>-<a href="">fr-pos/PUNCT</a> (2; 0% instances), <a href="">fr-pos/DET</a>-<a href="">fr-pos/PUNCT</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 6 punct	color:blue
+1	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	_
+2	Hosneld	Hosneld	PROPN	_	_	1	flat:name	_	_
+3	avait	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+4	44	44	NUM	_	NumType=Card	5	nummod	_	_
+5	ans	an	NOUN	_	Gender=Masc|Number=Plur	3	obj	_	SpaceAfter=No
+6	.	.	PUNCT	_	_	3	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 15	bgColor:blue
+# visual-style 15	fgColor:white
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 1 15 punct	color:blue
+1	Ouverture	ouverture	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_
+2	tous	tout	ADJ	_	Gender=Masc|Number=Plur	4	amod	_	_
+3	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	4	det	_	_
+4	jours	jour	NOUN	_	Gender=Masc|Number=Plur	1	nmod	_	_
+5	sauf	sauf	ADP	_	_	7	case	_	_
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	lundi	lundi	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_
+8	de	de	ADP	_	_	10	case	_	_
+9	14	14	NUM	_	NumType=Card	10	nummod	_	SpaceAfter=No
+10	h	h	NOUN	_	_	1	nmod	_	SpaceAfter=No
+11	30	30	NUM	_	NumType=Card	10	nummod	_	_
+12	à	à	ADP	_	_	14	case	_	_
+13	18	18	NUM	_	NumType=Card	14	nummod	_	SpaceAfter=No
+14	h	h	NOUN	_	_	1	nmod	_	SpaceAfter=No
+15	.	.	PUNCT	_	_	1	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 1 punct	color:blue
+1	"	"	PUNCT	_	_	2	punct	_	SpaceAfter=No
+2	Verdun	Verdun	PROPN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	_	_
+4	ville	ville	NOUN	_	Gender=Fem|Number=Sing	2	appos	_	_
+5	de	de	ADP	_	_	6	case	_	_
+6	lumière	lumière	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_
+7	!	!	PUNCT	_	_	2	punct	_	SpaceAfter=No
+8	"	"	PUNCT	_	_	2	punct	_	_
 
 </code></pre>
 
@@ -141,9 +281,25 @@ Average distance between parent and child is 9.63299898568692.</p>
 
 punct in other languages:
 
+[<a href="../../am/dep/punct.html">am</a>]
+
+[<a href="../../ar/dep/punct.html">ar</a>]
+
 [<a href="../../bg/dep/punct.html">bg</a>]
 
+[<a href="../../bxr/dep/punct.html">bxr</a>]
+
+[<a href="../../ca/dep/punct.html">ca</a>]
+
+[<a href="../../ckb/dep/punct.html">ckb</a>]
+
+[<a href="../../cop/dep/punct.html">cop</a>]
+
 [<a href="../../cs/dep/punct.html">cs</a>]
+
+[<a href="../../cu/dep/punct.html">cu</a>]
+
+[<a href="../../da/dep/punct.html">da</a>]
 
 [<a href="../../de/dep/punct.html">de</a>]
 
@@ -153,29 +309,99 @@ punct in other languages:
 
 [<a href="../../es/dep/punct.html">es</a>]
 
+[<a href="../../et/dep/punct.html">et</a>]
+
 [<a href="../../eu/dep/punct.html">eu</a>]
 
 [<a href="../../fa/dep/punct.html">fa</a>]
 
 [<a href="../../fi/dep/punct.html">fi</a>]
 
+[<a href="../../fo/dep/punct.html">fo</a>]
+
 [<a href="../../fr/dep/punct.html">fr</a>]
 
 [<a href="../../ga/dep/punct.html">ga</a>]
 
+[<a href="../../gl/dep/punct.html">gl</a>]
+
+[<a href="../../got/dep/punct.html">got</a>]
+
+[<a href="../../grc/dep/punct.html">grc</a>]
+
 [<a href="../../he/dep/punct.html">he</a>]
 
+[<a href="../../hi/dep/punct.html">hi</a>]
+
+[<a href="../../hr/dep/punct.html">hr</a>]
+
 [<a href="../../hu/dep/punct.html">hu</a>]
+
+[<a href="../../id/dep/punct.html">id</a>]
 
 [<a href="../../it/dep/punct.html">it</a>]
 
 [<a href="../../ja/dep/punct.html">ja</a>]
 
+[<a href="../../kk/dep/punct.html">kk</a>]
+
+[<a href="../../kmr/dep/punct.html">kmr</a>]
+
 [<a href="../../ko/dep/punct.html">ko</a>]
+
+[<a href="../../la/dep/punct.html">la</a>]
+
+[<a href="../../lv/dep/punct.html">lv</a>]
+
+[<a href="../../mr/dep/punct.html">mr</a>]
+
+[<a href="../../nl/dep/punct.html">nl</a>]
+
+[<a href="../../no/dep/punct.html">no</a>]
+
+[<a href="../../pl/dep/punct.html">pl</a>]
+
+[<a href="../../pt/dep/punct.html">pt</a>]
+
+[<a href="../../ro/dep/punct.html">ro</a>]
+
+[<a href="../../ru/dep/punct.html">ru</a>]
+
+[<a href="../../sa/dep/punct.html">sa</a>]
+
+[<a href="../../sk/dep/punct.html">sk</a>]
+
+[<a href="../../sla/dep/punct.html">sla</a>]
+
+[<a href="../../sl/dep/punct.html">sl</a>]
+
+[<a href="../../so/dep/punct.html">so</a>]
+
+[<a href="../../sr/dep/punct.html">sr</a>]
 
 [<a href="../../sv/dep/punct.html">sv</a>]
 
+[<a href="../../swl/dep/punct.html">swl</a>]
+
+[<a href="../../ta/dep/punct.html">ta</a>]
+
+[<a href="../../tr/dep/punct.html">tr</a>]
+
 [<a href="../../u/dep/punct.html">u</a>]
+
+[<a href="../../ug/dep/punct.html">ug</a>]
+
+[<a href="../../uk/dep/punct.html">uk</a>]
+
+[<a href="../../ur/dep/punct.html">ur</a>]
+
+[<a href="../../urj/dep/punct.html">urj</a>]
+
+[<a href="../../vi/dep/punct.html">vi</a>]
+
+[<a href="../../yue/dep/punct.html">yue</a>]
+
+[<a href="../../zh/dep/punct.html">zh</a>]
 
 
 

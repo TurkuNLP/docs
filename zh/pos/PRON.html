@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-zh">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/zh/pos">zh/pos</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_zh-pos/PRON.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-zh">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/zh/pos">zh/pos</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_zh-pos/PRON.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -45,8 +62,58 @@
 
           <h2><code>PRON</code>: pronoun</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>PRON</code>.</p>
+<h3 id="definition">Definition</h3>
+
+<p>Pronouns are words that substitute for nouns or noun phrases, whose meaning is recoverable from the linguistic or extralinguistic context. Some pronouns – in particular certain demonstrative, total, indefinite, and interrogatives pronouns – may also function as determiners (<a><code>DET</code></a>) and are tagged as such when functioning as a modifier of a noun.</p>
+
+<h3 id="examples">Examples</h3>
+
+<ul>
+  <li>Personal pronouns
+    <ul>
+      <li>我 / <em>wǒ</em> “I”, 你 / <em>nǐ</em> “you (m.)”, 妳 / <em>nǐ</em> “you (f.)”, 您 / <em>nín</em> “you (polite)”, 他 / <em>tā</em> “he”, 她 / <em>tā</em> “she”, 它 / <em>tā</em> “it”, 之 / <em>zhī</em> “it”, 我們 / <em>wǒmen</em> “we”, 你們 / <em>nǐmen</em> “you (m.pl.)”, 妳們 / <em>nǐmen</em> “you (f.pl.)”, 您們 / <em>nínmen</em> “you (pl. polite)”, 他們 / <em>tāmen</em> “they (m.)”, 她們 / <em>tāmen</em> “they (f.)”, 它們 / <em>tāmen</em> “they (non-human)”, 人家 / <em>rénjiā</em> “others, other (people); he/she/it/they”</li>
+    </ul>
+  </li>
+  <li>Reciprocal and reflexive pronouns
+    <ul>
+      <li>彼此 / <em>bǐcǐ</em> “each other”, 自身 / <em>zìshēn</em> “self”, 己身 / <em>jǐshēn</em> “self”, 自己 / <em>zìjǐ</em> “self”, 我自己 / <em>wǒzìjǐ</em> “myself”, 你自己 / <em>nǐzìjǐ</em> “yourself”, 她們自己 / <em>tāmenzìjǐ</em> “themselves (f.)”, etc</li>
+    </ul>
+  </li>
+  <li>Demonstrative pronouns
+    <ul>
+      <li>這 / <em>zhè</em> “this”, 這些 / <em>zhèxiē</em> “these”, 此 / <em>cǐ</em> “this”, 那 / <em>nà</em> “that”, 那些 / <em>nàxiē</em> “those”</li>
+    </ul>
+  </li>
+  <li>Total pronouns
+    <ul>
+      <li>全部 / <em>quánbù</em> “all”, 一切 / <em>yīqiè</em> “everything”, 所有 / <em>suǒyǒu</em> “all”, 大家 / <em>dàjiā</em> “everybody”, 大伙兒 / _dàhuǒr “everybody”</li>
+    </ul>
+  </li>
+  <li>Indefinite pronouns
+    <ul>
+      <li>任何 / <em>rènhé</em> “any”, 有的 / <em>yǒude</em> “some”, 有些 / <em>yǒuxiē</em> “some”, 很多 / <em>duō</em> “many”, 很少 / <em>shǎo</em> “few”, 許多 / <em>xǔduō</em> “many”, 若干 / <em>ruògān</em> “few”, 大部分 / <em>dàbùfèn</em> “the majority”, / 大量 <em>dàliàng</em> “a large quantity”, 不少 / <em>bùshǎo</em> “not few”, 多數 / <em>duōshù</em> “most”, 另外 / <em>lìngwài</em> “other(s)” (also ADV), 其他 / <em>qítā</em> “other(s)”</li>
+    </ul>
+  </li>
+  <li>Locational pronouns
+    <ul>
+      <li>這裡 / <em>zhèlǐ</em> “here”, 那裡 / <em>nàlǐ</em> “there”</li>
+    </ul>
+  </li>
+  <li>Manner pronouns
+    <ul>
+      <li>這樣(子) / <em>zhèyàng(zi)</em> “thus, this way, like this” (also ADV), 那樣(子) / <em>nàyàng(zi)</em> “that way, like that”</li>
+    </ul>
+  </li>
+  <li>Interrogative pronouns
+  - 誰 / <em>shéi</em> “who”, 什麼 / <em>shénme</em> “what”, 多少 / <em>duōshǎo</em> “how many”, 哪裡 / nǎlǐ “where”, 哪樣 ／ <em>nǎyàng</em> “which kind/type/way”, 何樣 / <em>héyàng</em> “what kind/type/way”, 怎樣 / <em>zěnyàng</em> “how” (also ADV)</li>
+  <li>Other
+    <ul>
+      <li>X + 方: 對方 / <em>duìfāng</em> “the other party”, 雙方 / <em>shuāngfāng</em> “both parties”, 己方 / <em>jǐfāng</em> “one’s own side/party”, 一方 / <em>yīfāng</em> “one party”, 三方 / <em>sānfāng</em> “all three parties”, etc.</li>
+      <li>X + 者: 前者 / <em>qiánzhě</em> “the former”, 後者 / <em>hòuzhě</em> “the latter”, 二者 / <em>èrzhě</em> “the two”, 三者 / <em>sānzhě</em> “the three”, etc.</li>
+      <li>其餘 / <em>qíyú</em> “the rest”</li>
+    </ul>
+  </li>
+</ul>
 
 
 <!-- "automatic stats" -->
@@ -61,53 +128,53 @@ for <code>PRON</code>.</p>
 
 <h2 id="treebank-statistics-udchinese">Treebank Statistics (UD_Chinese)</h2>
 
-<p>There are 1 <code>PRON</code> lemmas (7%), 49 <code>PRON</code> types (0%) and 1776 <code>PRON</code> tokens (1%).
-Out of 15 observed tags, the rank of <code>PRON</code> is: 10 in number of lemmas, 11 in number of types and 10 in number of tokens.</p>
+<p>There are 43 <code>PRON</code> lemmas (0%), 48 <code>PRON</code> types (0%) and 1608 <code>PRON</code> tokens (1%).
+Out of 15 observed tags, the rank of <code>PRON</code> is: 12 in number of lemmas, 12 in number of types and 11 in number of tokens.</p>
 
-<p>The 10 most frequent <code>PRON</code> lemmas: _</p>
+<p>The 10 most frequent <code>PRON</code> lemmas: 他、 其、 她、 此、 它、 自己、 這、 我、 之、 你</p>
 
 <p>The 10 most frequent <code>PRON</code> types:  他、 其、 她、 此、 他們、 自己、 它、 這、 我、 它們</p>
 
-<p>The 10 most frequent ambiguous lemmas: _ (<a href="">NOUN</a> 34043, <a href="">VERB</a> 20468, <a href="">PUNCT</a> 17047, <a href="">PART</a> 13172, <a href="">PROPN</a> 10741, <a href="">NUM</a> 6659, <a href="">ADV</a> 5749, <a href="">ADP</a> 5424, <a href="">ADJ</a> 3032, <a href="">PRON</a> 1776, <a href="">CONJ</a> 1740, <a href="">DET</a> 1297, <a href="">X</a> 1209, <a href="">AUX</a> 889, <a href="">SYM</a> 37)</p>
+<p>The 10 most frequent ambiguous lemmas: 此 (<a href="">PRON</a> 120, <a href="">DET</a> 57, <a href="">ADP</a> 1), 這 (<a href="">DET</a> 284, <a href="">PRON</a> 71), 之 (<a href="">PART</a> 233, <a href="">PRON</a> 22, <a href="">X</a> 1), 你 (<a href="">PRON</a> 18, <a href="">NOUN</a> 1), 這樣 (<a href="">PRON</a> 16, <a href="">ADV</a> 4), 這裡 (<a href="">PRON</a> 14, <a href="">NOUN</a> 2), 本身 (<a href="">PRON</a> 8, <a href="">NOUN</a> 2), 本人 (<a href="">PRON</a> 7, <a href="">NOUN</a> 3), 個人 (<a href="">NOUN</a> 6, <a href="">PRON</a> 4, <a href="">ADJ</a> 4), 自身 (<a href="">PRON</a> 4, <a href="">NOUN</a> 1)</p>
 
-<p>The 10 most frequent ambiguous types:  此 (<a href="">PRON</a> 129, <a href="">DET</a> 65, <a href="">ADP</a> 1), 這 (<a href="">DET</a> 316, <a href="">PRON</a> 77), 之 (<a href="">PART</a> 247, <a href="">PRON</a> 23, <a href="">X</a> 1), 你 (<a href="">PRON</a> 19, <a href="">NOUN</a> 1), 這樣 (<a href="">PRON</a> 19, <a href="">ADV</a> 4), 這裡 (<a href="">PRON</a> 17, <a href="">NOUN</a> 2), 本身 (<a href="">PRON</a> 8, <a href="">NOUN</a> 2), 本人 (<a href="">PRON</a> 7, <a href="">NOUN</a> 3), 個人 (<a href="">NOUN</a> 7, <a href="">PRON</a> 6, <a href="">ADJ</a> 4), 自身 (<a href="">PRON</a> 4, <a href="">NOUN</a> 1)</p>
+<p>The 10 most frequent ambiguous types:  此 (<a href="">PRON</a> 120, <a href="">DET</a> 57, <a href="">ADP</a> 1), 這 (<a href="">DET</a> 284, <a href="">PRON</a> 71), 之 (<a href="">PART</a> 233, <a href="">PRON</a> 22, <a href="">X</a> 1), 你 (<a href="">PRON</a> 18, <a href="">NOUN</a> 1), 這樣 (<a href="">PRON</a> 16, <a href="">ADV</a> 4), 這裡 (<a href="">PRON</a> 14, <a href="">NOUN</a> 2), 本身 (<a href="">PRON</a> 8, <a href="">NOUN</a> 2), 本人 (<a href="">PRON</a> 7, <a href="">NOUN</a> 3), 個人 (<a href="">NOUN</a> 6, <a href="">PRON</a> 4, <a href="">ADJ</a> 4), 自身 (<a href="">PRON</a> 4, <a href="">NOUN</a> 1)</p>
 
 <ul>
   <li>此
     <ul>
-      <li><a href="">PRON</a> 129: 隨後 愛斯基摩 人 和 維京 人 相繼 定居 於 <b>此</b> .</li>
-      <li><a href="">DET</a> 65: <b>此</b> 氣旋 季 之 風暴 通常 都 會 於 4 月 至 12 月 期間 形成 .</li>
+      <li><a href="">PRON</a> 120: 隨後 愛斯基摩 人 和 維京 人 相繼 定居 於 <b>此</b> .</li>
+      <li><a href="">DET</a> 57: <b>此</b> 氣旋 季 之 風暴 通常 都 會 於 4 月 至 12 月 期間 形成 .</li>
       <li><a href="">ADP</a> 1: 天文 台 在 下午 表示 由於 北冕 遠離 香港 , 因 <b>此</b> 考慮 在 傍晚 改發 三 號 熱帶 氣旋 警告 信號 .</li>
     </ul>
   </li>
   <li>這
     <ul>
-      <li><a href="">DET</a> 316: 雖則 日 語 存在 「 二 段 音階 」 的 變化 , 但 只 憑 <b>這</b> 二 音 變化 , 也 沒有 協音 的 可能 .</li>
-      <li><a href="">PRON</a> 77: <b>這</b> 是 紅軍 開戰 以來 最 接近 華沙 的 時刻 , 可是 形勢 即 將 逆轉 .</li>
+      <li><a href="">DET</a> 284: 雖則 日 語 存在 「 二 段 音階 」 的 變化 , 但 只 憑 <b>這</b> 二 音 變化 , 也 沒有 協音 的 可能 .</li>
+      <li><a href="">PRON</a> 71: <b>這</b> 是 紅軍 開戰 以來 最 接近 華沙 的 時刻 , 可是 形勢 即 將 逆轉 .</li>
     </ul>
   </li>
   <li>之
     <ul>
-      <li><a href="">PART</a> 247: 化外 <b>之</b> 地 , 文明 地區 以外 的 地方 , 即 沒有 開化 的 地方 .</li>
-      <li><a href="">PRON</a> 23: 公元 前 7 世紀 , 古 希臘 社會 進 一 步 發展 , 古 希臘 藝術 也 隨 <b>之</b> 進步 .</li>
+      <li><a href="">PART</a> 233: 化外 <b>之</b> 地 , 文明 地區 以外 的 地方 , 即 沒有 開化 的 地方 .</li>
+      <li><a href="">PRON</a> 22: 公元 前 7 世紀 , 古 希臘 社會 進 一 步 發展 , 古 希臘 藝術 也 隨 <b>之</b> 進步 .</li>
       <li><a href="">X</a> 1: 由於 蕭 孟能 未能 於 勝訴 時 對 李 敖 提出 附帶 之 民事 賠償 , 自 此 , 蕭 孟能 委託 李 敖 管理 並 清償 債務 <b>之</b> 市值 超過 兩千萬 之 家產 如數 歸 於 李 敖 所 有 .</li>
     </ul>
   </li>
   <li>你
     <ul>
-      <li><a href="">PRON</a> 19: <b>你</b> 可以 應用 這 種 邏輯 系統 作 為 模糊 集合 論 的 理論 基礎 .</li>
+      <li><a href="">PRON</a> 18: 小風 陷入 了 沒有 信心 的 窘境 , 阿一 說 : 「 那 也是 <b>你</b> 的 一 部份 呀 , 所以 , 我 願意 接受 」</li>
       <li><a href="">NOUN</a> 1: 哈公 , 香港 作家 、 電影 編導 、 傳媒 工作 者 , 原名 許 國 、 許 子賓 , 潮汕 人 , 一 說 是 閩南 泉州 人 ( 潮州 話 和 泉州 話 都 屬 於 閩南 語系 , 和 泉州 話 有 很多 完全 相同 , 比如 「 <b>你</b> 」 、 「 魚 」 、 「 舉 」 、 「 話 」 、 「 同 」 等 字音 ) .</li>
     </ul>
   </li>
   <li>這樣
     <ul>
-      <li><a href="">PRON</a> 19: 此外 , 本人 十分 善長 遊戲 , 因 此 作品 中 常 見到 <b>這樣</b> 的 題材 .</li>
+      <li><a href="">PRON</a> 16: 此外 , 本人 十分 善長 遊戲 , 因 此 作品 中 常 見到 <b>這樣</b> 的 題材 .</li>
       <li><a href="">ADV</a> 4: <b>這樣</b> , 就 可 根據 詞語 的 詞性 和 詞語 的 組合 規律 ( 如 語法 關係 ) 等 來 斷句 .</li>
     </ul>
   </li>
   <li>這裡
     <ul>
-      <li><a href="">PRON</a> 17: 因為 <b>這裡</b> 是 兩 條 河川 ( 士別 川 、 劍淵 川 ) 匯合 至 天鹽 川 的 地方 .</li>
+      <li><a href="">PRON</a> 14: 兩 者 在 物理 學 來 說 採用 的 是 完全 相同 的 原理 , 所以 在 <b>這裡</b> 放 在 一起 .</li>
       <li><a href="">NOUN</a> 2: <b>這裡</b> 生長 與 破壞 形成 了 一 種 平衡 .</li>
     </ul>
   </li>
@@ -125,8 +192,8 @@ Out of 15 observed tags, the rank of <code>PRON</code> is: 10 in number of lemma
   </li>
   <li>個人
     <ul>
-      <li><a href="">NOUN</a> 7: 專利 是 刺激 <b>個人</b> 創造 力 的 制度 .</li>
-      <li><a href="">PRON</a> 6: 總體 上 我 的 觀點 是 , 吃飯 也好 、 飲食 也好 、 穿戴 也好 , 各 有 所 愛 , 百花齊放 , 都是 他 <b>個人</b> 的 事情 .</li>
+      <li><a href="">NOUN</a> 6: 專利 是 刺激 <b>個人</b> 創造 力 的 制度 .</li>
+      <li><a href="">PRON</a> 4: 總體 上 我 的 觀點 是 , 吃飯 也好 、 飲食 也好 、 穿戴 也好 , 各 有 所 愛 , 百花齊放 , 都是 他 <b>個人</b> 的 事情 .</li>
       <li><a href="">ADJ</a> 4: 周 成建 是 中國 的 著名 浙 商 及 企業 家 , 2009 年 以 <b>個人</b> 資產 達 136億 元 人民 幣 上榜 福布斯 中國 富豪 榜 .</li>
     </ul>
   </li>
@@ -140,37 +207,41 @@ Out of 15 observed tags, the rank of <code>PRON</code> is: 10 in number of lemma
 
 <h2 id="morphology">Morphology</h2>
 
-<p>The form / lemma ratio of <code>PRON</code> is 49.000000 (the average of all parts of speech is 1499.200000).</p>
+<p>The form / lemma ratio of <code>PRON</code> is 1.116279 (the average of all parts of speech is 1.000284).</p>
 
-<p>The 1st highest number of forms (49) was observed with the lemma “_”: 之, 什麼, 他, 他倆, 他們, 何, 何方, 你, 個人, 其, 各自, 哪, 哪裡, 大家, 她, 她倆, 她們, 如何, 妳, 它, 它們, 對方, 彼此, 您, 我, 我們, 本人, 本地, 本身, 此, 熟, 牠, 牠們, 甚麼, 祂, 自家, 自己, 自我, 自身, 誰, 這, 這些, 這兒, 這樣, 這裡, 那, 那樣, 那裏, 那裡.</p>
+<p>The 1st highest number of forms (2) was observed with the lemma “他”: 他, 他們.</p>
 
-<p><code>PRON</code> occurs with 2 features: <a href="">zh-feat/Person</a> (1330; 75% instances), <a href="">zh-feat/Number</a> (214; 12% instances)</p>
+<p>The 2nd highest number of forms (2) was observed with the lemma “她”: 她, 她們.</p>
+
+<p>The 3rd highest number of forms (2) was observed with the lemma “它”: 它, 它們.</p>
+
+<p><code>PRON</code> occurs with 2 features: <a href="">zh-feat/Person</a> (1195; 74% instances), <a href="">zh-feat/Number</a> (193; 12% instances)</p>
 
 <p><code>PRON</code> occurs with 4 feature-value pairs: <code>Number=Plur</code>, <code>Person=1</code>, <code>Person=2</code>, <code>Person=3</code></p>
 
 <p><code>PRON</code> occurs with 6 feature combinations.
-The most frequent feature combination is <code>Person=3</code> (1059 tokens).
-Examples: 他、 其、 她、 它、 他們、 它們、 牠們、 她們、 牠、 祂</p>
+The most frequent feature combination is <code>Person=3</code> (947 tokens).
+Examples: 他、 其、 她、 它、 他們、 它們、 牠們、 她們、 祂、 他倆</p>
 
 <h2 id="relations">Relations</h2>
 
-<p><code>PRON</code> nodes are attached to their parents using 13 different relations: <a href="">zh-dep/nsubj</a> (866; 49% instances), <a href="">zh-dep/nmod</a> (439; 25% instances), <a href="">zh-dep/det</a> (269; 15% instances), <a href="">zh-dep/dobj</a> (125; 7% instances), <a href="">zh-dep/nsubjpass</a> (27; 2% instances), <a href="">zh-dep/appos</a> (25; 1% instances), <a href="">zh-dep/advmod</a> (8; 0% instances), <a href="">zh-dep/iobj</a> (8; 0% instances), <a href="">zh-dep/case:suff</a> (2; 0% instances), <a href="">zh-dep/conj</a> (2; 0% instances), <a href="">zh-dep/root</a> (2; 0% instances), <a href="">zh-dep/xcomp</a> (2; 0% instances), <a href="">zh-dep/csubj</a> (1; 0% instances)</p>
+<p><code>PRON</code> nodes are attached to their parents using 14 different relations: <a href="">zh-dep/nsubj</a> (772; 48% instances), <a href="">zh-dep/nmod</a> (259; 16% instances), <a href="">zh-dep/det</a> (243; 15% instances), <a href="">zh-dep/obl</a> (147; 9% instances), <a href="">zh-dep/obj</a> (119; 7% instances), <a href="">zh-dep/appos</a> (25; 2% instances), <a href="">zh-dep/nsubj:pass</a> (22; 1% instances), <a href="">zh-dep/advmod</a> (7; 0% instances), <a href="">zh-dep/iobj</a> (7; 0% instances), <a href="">zh-dep/case:suff</a> (2; 0% instances), <a href="">zh-dep/xcomp</a> (2; 0% instances), <a href="">zh-dep/conj</a> (1; 0% instances), <a href="">zh-dep/csubj</a> (1; 0% instances), <a href="">zh-dep/root</a> (1; 0% instances)</p>
 
-<p>Parents of <code>PRON</code> nodes belong to 11 different parts of speech: <a href="">VERB</a> (1045; 59% instances), <a href="">NOUN</a> (589; 33% instances), <a href="">PART</a> (58; 3% instances), <a href="">ADJ</a> (47; 3% instances), <a href="">PROPN</a> (13; 1% instances), <a href="">NUM</a> (12; 1% instances), <a href="">ADP</a> (4; 0% instances), <a href="">PRON</a> (3; 0% instances), <a href="">ROOT</a> (2; 0% instances), <a href="">X</a> (2; 0% instances), <a href="">ADV</a> (1; 0% instances)</p>
+<p>Parents of <code>PRON</code> nodes belong to 11 different parts of speech: <a href="">VERB</a> (943; 59% instances), <a href="">NOUN</a> (536; 33% instances), <a href="">PART</a> (54; 3% instances), <a href="">ADJ</a> (44; 3% instances), <a href="">PROPN</a> (12; 1% instances), <a href="">NUM</a> (11; 1% instances), <a href="">ADP</a> (3; 0% instances), <a href="">PRON</a> (2; 0% instances), <a href="">ADV</a> (1; 0% instances), <a href="">ROOT</a> (1; 0% instances), <a href="">X</a> (1; 0% instances)</p>
 
-<p>1319 (74%) <code>PRON</code> nodes are leaves.</p>
+<p>1187 (74%) <code>PRON</code> nodes are leaves.</p>
 
-<p>430 (24%) <code>PRON</code> nodes have one child.</p>
+<p>401 (25%) <code>PRON</code> nodes have one child.</p>
 
-<p>17 (1%) <code>PRON</code> nodes have two children.</p>
+<p>16 (1%) <code>PRON</code> nodes have two children.</p>
 
-<p>10 (1%) <code>PRON</code> nodes have three or more children.</p>
+<p>4 (0%) <code>PRON</code> nodes have three or more children.</p>
 
 <p>The highest child degree of a <code>PRON</code> node is 12.</p>
 
-<p>Children of <code>PRON</code> nodes are attached using 17 different relations: <a href="">zh-dep/case:dec</a> (256; 51% instances), <a href="">zh-dep/case</a> (175; 35% instances), <a href="">zh-dep/cc</a> (12; 2% instances), <a href="">zh-dep/conj</a> (12; 2% instances), <a href="">zh-dep/acl</a> (11; 2% instances), <a href="">zh-dep/punct</a> (10; 2% instances), <a href="">zh-dep/nmod</a> (8; 2% instances), <a href="">zh-dep/appos</a> (5; 1% instances), <a href="">zh-dep/dep</a> (4; 1% instances), <a href="">zh-dep/amod</a> (3; 1% instances), <a href="">zh-dep/dislocated</a> (3; 1% instances), <a href="">zh-dep/acl:relcl</a> (2; 0% instances), <a href="">zh-dep/ccomp</a> (1; 0% instances), <a href="">zh-dep/cop</a> (1; 0% instances), <a href="">zh-dep/csubj</a> (1; 0% instances), <a href="">zh-dep/discourse</a> (1; 0% instances), <a href="">zh-dep/mark</a> (1; 0% instances)</p>
+<p>Children of <code>PRON</code> nodes are attached using 17 different relations: <a href="">zh-dep/case:dec</a> (232; 51% instances), <a href="">zh-dep/case</a> (164; 36% instances), <a href="">zh-dep/acl</a> (11; 2% instances), <a href="">zh-dep/conj</a> (11; 2% instances), <a href="">zh-dep/punct</a> (8; 2% instances), <a href="">zh-dep/nmod</a> (7; 2% instances), <a href="">zh-dep/appos</a> (5; 1% instances), <a href="">zh-dep/amod</a> (3; 1% instances), <a href="">zh-dep/dep</a> (3; 1% instances), <a href="">zh-dep/acl:relcl</a> (2; 0% instances), <a href="">zh-dep/dislocated</a> (2; 0% instances), <a href="">zh-dep/cc</a> (1; 0% instances), <a href="">zh-dep/ccomp</a> (1; 0% instances), <a href="">zh-dep/cop</a> (1; 0% instances), <a href="">zh-dep/csubj</a> (1; 0% instances), <a href="">zh-dep/discourse</a> (1; 0% instances), <a href="">zh-dep/mark</a> (1; 0% instances)</p>
 
-<p>Children of <code>PRON</code> nodes belong to 11 different parts of speech: <a href="">PART</a> (258; 51% instances), <a href="">ADP</a> (184; 36% instances), <a href="">NOUN</a> (18; 4% instances), <a href="">CONJ</a> (12; 2% instances), <a href="">PUNCT</a> (10; 2% instances), <a href="">VERB</a> (10; 2% instances), <a href="">PROPN</a> (5; 1% instances), <a href="">ADJ</a> (4; 1% instances), <a href="">PRON</a> (3; 1% instances), <a href="">ADV</a> (1; 0% instances), <a href="">X</a> (1; 0% instances)</p>
+<p>Children of <code>PRON</code> nodes belong to 12 different parts of speech: <a href="">PART</a> (233; 51% instances), <a href="">ADP</a> (173; 38% instances), <a href="">NOUN</a> (17; 4% instances), <a href="">PUNCT</a> (8; 2% instances), <a href="">VERB</a> (8; 2% instances), <a href="">PROPN</a> (5; 1% instances), <a href="">ADJ</a> (4; 1% instances), <a href="">PRON</a> (2; 0% instances), <a href="">ADV</a> (1; 0% instances), <a href="">AUX</a> (1; 0% instances), <a href="">CCONJ</a> (1; 0% instances), <a href="">X</a> (1; 0% instances)</p>
 
 
 
@@ -180,9 +251,25 @@ Examples: 他、 其、 她、 它、 他們、 它們、 牠們、 她們、 �
 
 PRON in other languages:
 
+[<a href="../../am/pos/PRON.html">am</a>]
+
+[<a href="../../ar/pos/PRON.html">ar</a>]
+
 [<a href="../../bg/pos/PRON.html">bg</a>]
 
+[<a href="../../bxr/pos/PRON.html">bxr</a>]
+
+[<a href="../../ca/pos/PRON.html">ca</a>]
+
+[<a href="../../ckb/pos/PRON.html">ckb</a>]
+
+[<a href="../../cop/pos/PRON.html">cop</a>]
+
 [<a href="../../cs/pos/PRON.html">cs</a>]
+
+[<a href="../../cu/pos/PRON.html">cu</a>]
+
+[<a href="../../da/pos/PRON.html">da</a>]
 
 [<a href="../../de/pos/PRON.html">de</a>]
 
@@ -192,29 +279,99 @@ PRON in other languages:
 
 [<a href="../../es/pos/PRON.html">es</a>]
 
+[<a href="../../et/pos/PRON.html">et</a>]
+
 [<a href="../../eu/pos/PRON.html">eu</a>]
 
 [<a href="../../fa/pos/PRON.html">fa</a>]
 
 [<a href="../../fi/pos/PRON.html">fi</a>]
 
+[<a href="../../fo/pos/PRON.html">fo</a>]
+
 [<a href="../../fr/pos/PRON.html">fr</a>]
 
 [<a href="../../ga/pos/PRON.html">ga</a>]
 
+[<a href="../../gl/pos/PRON.html">gl</a>]
+
+[<a href="../../got/pos/PRON.html">got</a>]
+
+[<a href="../../grc/pos/PRON.html">grc</a>]
+
 [<a href="../../he/pos/PRON.html">he</a>]
 
+[<a href="../../hi/pos/PRON.html">hi</a>]
+
+[<a href="../../hr/pos/PRON.html">hr</a>]
+
 [<a href="../../hu/pos/PRON.html">hu</a>]
+
+[<a href="../../id/pos/PRON.html">id</a>]
 
 [<a href="../../it/pos/PRON.html">it</a>]
 
 [<a href="../../ja/pos/PRON.html">ja</a>]
 
+[<a href="../../kk/pos/PRON.html">kk</a>]
+
+[<a href="../../kmr/pos/PRON.html">kmr</a>]
+
 [<a href="../../ko/pos/PRON.html">ko</a>]
+
+[<a href="../../la/pos/PRON.html">la</a>]
+
+[<a href="../../lv/pos/PRON.html">lv</a>]
+
+[<a href="../../mr/pos/PRON.html">mr</a>]
+
+[<a href="../../nl/pos/PRON.html">nl</a>]
+
+[<a href="../../no/pos/PRON.html">no</a>]
+
+[<a href="../../pl/pos/PRON.html">pl</a>]
+
+[<a href="../../pt/pos/PRON.html">pt</a>]
+
+[<a href="../../ro/pos/PRON.html">ro</a>]
+
+[<a href="../../ru/pos/PRON.html">ru</a>]
+
+[<a href="../../sa/pos/PRON.html">sa</a>]
+
+[<a href="../../sk/pos/PRON.html">sk</a>]
+
+[<a href="../../sla/pos/PRON.html">sla</a>]
+
+[<a href="../../sl/pos/PRON.html">sl</a>]
+
+[<a href="../../so/pos/PRON.html">so</a>]
+
+[<a href="../../sr/pos/PRON.html">sr</a>]
 
 [<a href="../../sv/pos/PRON.html">sv</a>]
 
+[<a href="../../swl/pos/PRON.html">swl</a>]
+
+[<a href="../../ta/pos/PRON.html">ta</a>]
+
+[<a href="../../tr/pos/PRON.html">tr</a>]
+
+[<a href="../../ug/pos/PRON.html">ug</a>]
+
+[<a href="../../uk/pos/PRON.html">uk</a>]
+
 [<a href="../../u/pos/PRON.html">u</a>]
+
+[<a href="../../urj/pos/PRON.html">urj</a>]
+
+[<a href="../../ur/pos/PRON.html">ur</a>]
+
+[<a href="../../vi/pos/PRON.html">vi</a>]
+
+[<a href="../../yue/pos/PRON.html">yue</a>]
+
+[<a href="../../zh/pos/PRON.html">zh</a>]
 
 
 

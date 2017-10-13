@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-cs">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/cs/feat">cs/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-feat/Poss.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cs">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/cs/feat">cs/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-feat/Poss.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -47,6 +64,13 @@
 
 <h2><code>Poss</code>: possessive</h2>
 
+<table class="typeindex" border="1">
+<tr>
+  <td style="background-color:cornflowerblue;color:white"><strong>Values:</strong> </td>
+  <td><a href="#Yes">Yes</a></td>
+</tr>
+</table>
+
 <p>Boolean feature of pronouns, determiners or adjectives.  It tells
 whether the word is possessive.</p>
 
@@ -55,7 +79,7 @@ pronoun types, this feature is intentionally separate from
 <a href="">PronType</a>, as it is orthogonal to pronominal types. Several of the
 pronominal types can be optionally possessive, and adjectives can too.</p>
 
-<h3 id="yes-it-is-possessive"><code>Yes</code>: it is possessive</h3>
+<h3 id="a-nameyesyesa-it-is-possessive"><a name="Yes"><code>Yes</code></a>: it is possessive</h3>
 
 <p>Note that there is no <code>No</code> value. If the word is not possessive, the
 <code>Poss</code> feature will just not be mentioned in the <code>FEAT</code> column. (Which
@@ -64,9 +88,9 @@ means that empty value has the <code>No</code> meaning.)</p>
 <h4 id="examples">Examples</h4>
 
 <ul>
-  <li>possessive personal pronouns/determiners: <em>můj, tvůj, jeho, její, náš, váš, jejich </em> “my, your, his, her, our, your, their”</li>
-  <li>possessive reflexive pronoun/determiner: <em>svůj </em> “one’s own”</li>
-  <li>possessive relative pronoun/determiner: <em>jehož </em> “whose”</li>
+  <li>possessive personal determiners: <em>můj, tvůj, jeho, její, náš, váš, jejich </em> “my, your, his, her, our, your, their”</li>
+  <li>possessive reflexive determiner: <em>svůj </em> “one’s own”</li>
+  <li>possessive relative determiner: <em>jehož </em> “whose”</li>
   <li>possessive adjectives: <em>otcův </em> “father’s”, <em>matčin </em> “mother’s”</li>
 </ul>
 
@@ -85,59 +109,48 @@ means that empty value has the <code>No</code> meaning.)</p>
 <p>This feature is universal.
 It occurs with 1 different values: <code>Yes</code>.</p>
 
-<p>17007 tokens (1%) have a non-empty value of <code>Poss</code>.
-1968 types (2%) occur at least once with a non-empty value of <code>Poss</code>.
-1143 lemmas (2%) occur at least once with a non-empty value of <code>Poss</code>.
-The feature is used with 3 part-of-speech tags: <a href="">cs-pos/DET</a> (14046; 1% instances), <a href="">cs-pos/ADJ</a> (2707; 0% instances), <a href="">cs-pos/PRON</a> (254; 0% instances).</p>
+<p>15077 tokens (1%) have a non-empty value of <code>Poss</code>.
+1791 types (1%) occur at least once with a non-empty value of <code>Poss</code>.
+1045 lemmas (2%) occur at least once with a non-empty value of <code>Poss</code>.
+The feature is used with 2 part-of-speech tags: <a href="">cs-pos/DET</a> (12656; 1% instances), <a href="">cs-pos/ADJ</a> (2421; 0% instances).</p>
 
 <h3 id="det"><code>DET</code></h3>
 
-<p>14046 <a href="">cs-pos/DET</a> tokens (50% of all <code>DET</code> tokens) have a non-empty value of <code>Poss</code>.</p>
+<p>12656 <a href="">cs-pos/DET</a> tokens (26% of all <code>DET</code> tokens) have a non-empty value of <code>Poss</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>Poss</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (13398; 95%), <tt><a href="Gender[psor].html">Gender[psor]</a>=EMPTY</tt> (9714; 69%), <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (9278; 66%).</p>
+<p>The most frequent other feature values with which <code>DET</code> and <code>Poss</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (12058; 95%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (11807; 93%).</p>
 
 <p><code>DET</code> tokens may have the following values of <code>Poss</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (14046; 100% of non-empty <code>Poss</code>): <em>jeho, jejich, své, její, svou, svého, svých, svůj, naše, svým</em></li>
-  <li><code>EMPTY</code> (13773): <em>této, tento, tohoto, tato, těchto, tyto, několik, tomto, tuto, některých</em></li>
+  <li><code>Yes</code> (12656; 100% of non-empty <code>Poss</code>): <em>jeho, jejich, své, její, svou, svého, svých, svůj, naše, svým</em></li>
+  <li><code>EMPTY</code> (36114): <em>to, které, který, která, tím, kteří, tom, této, tomu, tento</em></li>
 </ul>
+
+<p><code>Poss</code> seems to be <strong>lexical feature</strong> of <code>DET</code>. 100% lemmas (12) occur only with one value of <code>Poss</code>.</p>
 
 <h3 id="adj"><code>ADJ</code></h3>
 
-<p>2707 <a href="">cs-pos/ADJ</a> tokens (1% of all <code>ADJ</code> tokens) have a non-empty value of <code>Poss</code>.</p>
+<p>2421 <a href="">cs-pos/ADJ</a> tokens (1% of all <code>ADJ</code> tokens) have a non-empty value of <code>Poss</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Poss</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (2707; 100%), <tt><a href="Negative.html">Negative</a>=EMPTY</tt> (2707; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (2189; 81%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (1602; 59%).</p>
+<p>The most frequent other feature values with which <code>ADJ</code> and <code>Poss</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (2421; 100%), <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (2421; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (1964; 81%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (1429; 59%).</p>
 
 <p><code>ADJ</code> tokens may have the following values of <code>Poss</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (2707; 100% of non-empty <code>Poss</code>): <em>Karlovy, Karlových, Nobelovy, Milíčova, Masarykově, Karlova, Karlově, prezidentův, Benešových, Nobelovu</em></li>
-  <li><code>EMPTY</code> (178104): <em>první, další, české, nové, druhé, poslední, státní, dalších, možné, vlastní</em></li>
+  <li><code>Yes</code> (2421; 100% of non-empty <code>Poss</code>): <em>Karlovy, Karlových, Nobelovy, Milíčova, Karlova, prezidentův, Karlově, Masarykově, Nobelovu, Schrödingerova</em></li>
+  <li><code>EMPTY</code> (166377): <em>první, další, české, druhé, nové, státní, poslední, dalších, vlastní, možné</em></li>
 </ul>
 
-<p><code>Poss</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (1132) occur only with one value of <code>Poss</code>.</p>
-
-<h3 id="pron"><code>PRON</code></h3>
-
-<p>254 <a href="">cs-pos/PRON</a> tokens (0% of all <code>PRON</code> tokens) have a non-empty value of <code>Poss</code>.</p>
-
-<p>The most frequent other feature values with which <code>PRON</code> and <code>Poss</code> co-occurred: <tt><a href="Variant.html">Variant</a>=EMPTY</tt> (254; 100%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (244; 96%), <tt><a href="Number.html">Number</a>=Sing</tt> (150; 59%), <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (139; 55%).</p>
-
-<p><code>PRON</code> tokens may have the following values of <code>Poss</code>:</p>
-
-<ul>
-  <li><code>Yes</code> (254; 100% of non-empty <code>Poss</code>): <em>své, svých, jeho, svého, svém, jejich, naši, její, mého, naší</em></li>
-  <li><code>EMPTY</code> (72165): <em>se, to, si, které, který, která, co, tím, kteří, tom</em></li>
-</ul>
+<p><code>Poss</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (1033) occur only with one value of <code>Poss</code>.</p>
 
 <h2 id="relations-with-agreement-in-poss">Relations with Agreement in <code>Poss</code></h2>
 
 <p>The 10 most frequent relations where parent and child node agree in <code>Poss</code>:
-<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (36; 75%),
-<tt>PRON –[<a href="../dep/conj.html">conj</a>]–&gt; PRON</tt> (14; 100%),
-<tt>DET –[<a href="../dep/conj.html">conj</a>]–&gt; PRON</tt> (12; 100%),
-<tt>PRON –[<a href="../dep/dep.html">dep</a>]–&gt; PRON</tt> (2; 67%).</p>
+<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (31; 74%),
+<tt>DET –[<a href="../dep/conj.html">conj</a>]–&gt; DET</tt> (24; 100%),
+<tt>DET –[<a href="../dep/dep.html">dep</a>]–&gt; DET</tt> (2; 100%),
+<tt>ADJ –[<a href="../dep/flat.html">flat</a>]–&gt; ADJ</tt> (1; 100%).</p>
 
 <hr />
 
@@ -146,51 +159,38 @@ The feature is used with 3 part-of-speech tags: <a href="">cs-pos/DET</a> (14046
 <p>This feature is universal.
 It occurs with 1 different values: <code>Yes</code>.</p>
 
-<p>6000 tokens (1%) have a non-empty value of <code>Poss</code>.
-561 types (1%) occur at least once with a non-empty value of <code>Poss</code>.
+<p>5918 tokens (1%) have a non-empty value of <code>Poss</code>.
+563 types (1%) occur at least once with a non-empty value of <code>Poss</code>.
 310 lemmas (1%) occur at least once with a non-empty value of <code>Poss</code>.
-The feature is used with 3 part-of-speech tags: <a href="">cs-pos/DET</a> (5279; 1% instances), <a href="">cs-pos/ADJ</a> (649; 0% instances), <a href="">cs-pos/PRON</a> (72; 0% instances).</p>
+The feature is used with 2 part-of-speech tags: <a href="">cs-pos/DET</a> (5273; 1% instances), <a href="">cs-pos/ADJ</a> (645; 0% instances).</p>
 
 <h3 id="det-1"><code>DET</code></h3>
 
-<p>5279 <a href="">cs-pos/DET</a> tokens (48% of all <code>DET</code> tokens) have a non-empty value of <code>Poss</code>.</p>
+<p>5273 <a href="">cs-pos/DET</a> tokens (28% of all <code>DET</code> tokens) have a non-empty value of <code>Poss</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>Poss</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (4940; 94%), <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (3886; 74%), <tt><a href="Gender[psor].html">Gender[psor]</a>=EMPTY</tt> (3720; 70%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (2642; 50%).</p>
+<p>The most frequent other feature values with which <code>DET</code> and <code>Poss</code> co-occurred: <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (5016; 95%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (4912; 93%).</p>
 
 <p><code>DET</code> tokens may have the following values of <code>Poss</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (5279; 100% of non-empty <code>Poss</code>): <em>jejich, jeho, své, její, naší, svou, naše, našeho, svých, našich</em></li>
-  <li><code>EMPTY</code> (5809): <em>této, těchto, tyto, tento, tohoto, tato, tomto, některých, tuto, několik</em></li>
+  <li><code>Yes</code> (5273; 100% of non-empty <code>Poss</code>): <em>jejich, jeho, své, její, naší, svou, naše, našeho, svých, našich</em></li>
+  <li><code>EMPTY</code> (13768): <em>to, které, který, která, tím, této, těchto, tyto, tom, toho</em></li>
 </ul>
 
 <h3 id="adj-1"><code>ADJ</code></h3>
 
-<p>649 <a href="">cs-pos/ADJ</a> tokens (1% of all <code>ADJ</code> tokens) have a non-empty value of <code>Poss</code>.</p>
+<p>645 <a href="">cs-pos/ADJ</a> tokens (1% of all <code>ADJ</code> tokens) have a non-empty value of <code>Poss</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Poss</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (649; 100%), <tt><a href="Negative.html">Negative</a>=EMPTY</tt> (649; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (510; 79%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (373; 57%).</p>
+<p>The most frequent other feature values with which <code>ADJ</code> and <code>Poss</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (645; 100%), <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (645; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (506; 78%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (370; 57%).</p>
 
 <p><code>ADJ</code> tokens may have the following values of <code>Poss</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (649; 100% of non-empty <code>Poss</code>): <em>Karlovy, Erbenových, Erbenovy, Fučíkova, Mohorovičićovy, Bohrův, Fučíkovy, Erbenova, Erbenově, Fučíkův</em></li>
-  <li><code>EMPTY</code> (69879): <em>další, pracovní, první, jednotlivých, základní, nové, možno, socialistické, různých, každý</em></li>
+  <li><code>Yes</code> (645; 100% of non-empty <code>Poss</code>): <em>Karlovy, Erbenových, Erbenovy, Fučíkova, Mohorovičićovy, Bohrův, Fučíkovy, Erbenova, Erbenově, Fučíkův</em></li>
+  <li><code>EMPTY</code> (72533): <em>další, pracovní, první, jednotlivých, základní, nové, možno, socialistické, různých, dalších</em></li>
 </ul>
 
-<p><code>Poss</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (304) occur only with one value of <code>Poss</code>.</p>
-
-<h3 id="pron-1"><code>PRON</code></h3>
-
-<p>72 <a href="">cs-pos/PRON</a> tokens (0% of all <code>PRON</code> tokens) have a non-empty value of <code>Poss</code>.</p>
-
-<p>The most frequent other feature values with which <code>PRON</code> and <code>Poss</code> co-occurred: <tt><a href="Variant.html">Variant</a>=EMPTY</tt> (72; 100%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (63; 88%), <tt><a href="Number.html">Number</a>=Sing</tt> (46; 64%), <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (45; 63%).</p>
-
-<p><code>PRON</code> tokens may have the following values of <code>Poss</code>:</p>
-
-<ul>
-  <li><code>Yes</code> (72; 100% of non-empty <code>Poss</code>): <em>své, naše, jeho, naší, jehož, jejichž, její, jejíž, moje, naši</em></li>
-  <li><code>EMPTY</code> (24317): <em>se, to, které, si, který, která, tím, co, všech, všechny</em></li>
-</ul>
+<p><code>Poss</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (302) occur only with one value of <code>Poss</code>.</p>
 
 <h2 id="relations-with-agreement-in-poss-1">Relations with Agreement in <code>Poss</code></h2>
 
@@ -204,35 +204,35 @@ The feature is used with 3 part-of-speech tags: <a href="">cs-pos/DET</a> (5279;
 <p>This feature is universal.
 It occurs with 1 different values: <code>Yes</code>.</p>
 
-<p>241 tokens (1%) have a non-empty value of <code>Poss</code>.
-20 types (0%) occur at least once with a non-empty value of <code>Poss</code>.
+<p>163 tokens (1%) have a non-empty value of <code>Poss</code>.
+17 types (0%) occur at least once with a non-empty value of <code>Poss</code>.
 4 lemmas (0%) occur at least once with a non-empty value of <code>Poss</code>.
-The feature is used with 2 part-of-speech tags: <a href="">cs-pos/DET</a> (240; 1% instances), <a href="">cs-pos/ADJ</a> (1; 0% instances).</p>
+The feature is used with 2 part-of-speech tags: <a href="">cs-pos/DET</a> (162; 1% instances), <a href="">cs-pos/ADJ</a> (1; 0% instances).</p>
 
 <h3 id="det-2"><code>DET</code></h3>
 
-<p>240 <a href="">cs-pos/DET</a> tokens (40% of all <code>DET</code> tokens) have a non-empty value of <code>Poss</code>.</p>
+<p>162 <a href="">cs-pos/DET</a> tokens (40% of all <code>DET</code> tokens) have a non-empty value of <code>Poss</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>Poss</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (219; 91%), <tt><a href="Person.html">Person</a>=3</tt> (216; 90%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (189; 79%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (187; 78%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (180; 75%), <tt><a href="Gender[psor].html">Gender[psor]</a>=EMPTY</tt> (129; 54%).</p>
+<p>The most frequent other feature values with which <code>DET</code> and <code>Poss</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (147; 91%), <tt><a href="Person.html">Person</a>=3</tt> (144; 89%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (130; 80%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (127; 78%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (122; 75%), <tt><a href="Gender[psor].html">Gender[psor]</a>=EMPTY</tt> (94; 58%).</p>
 
 <p><code>DET</code> tokens may have the following values of <code>Poss</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (240; 100% of non-empty <code>Poss</code>): <em>jejich, jeho, její, jejichž, své, jejího, jehož, jejím, svého, svých</em></li>
-  <li><code>EMPTY</code> (355): <em>této, tohoto, těchto, tyto, tato, tento, tomto, tuto, toto, tímto</em></li>
+  <li><code>Yes</code> (162; 100% of non-empty <code>Poss</code>): <em>jejich, jeho, její, jejichž, své, jehož, jejího, svého, jejím, svých</em></li>
+  <li><code>EMPTY</code> (243): <em>této, těchto, tyto, tohoto, tento, tato, tomto, tuto, toto, takové</em></li>
 </ul>
 
 <h3 id="adj-2"><code>ADJ</code></h3>
 
 <p>1 <a href="">cs-pos/ADJ</a> tokens (0% of all <code>ADJ</code> tokens) have a non-empty value of <code>Poss</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Poss</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (1; 100%), <tt><a href="Case.html">Case</a>=Nom</tt> (1; 100%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (1; 100%), <tt><a href="Negative.html">Negative</a>=EMPTY</tt> (1; 100%), <tt><a href="Number.html">Number</a>=Plur</tt> (1; 100%), <tt><a href="Animacy.html">Animacy</a>=Anim</tt> (1; 100%).</p>
+<p>The most frequent other feature values with which <code>ADJ</code> and <code>Poss</code> co-occurred: <tt><a href="Case.html">Case</a>=Nom</tt> (1; 100%), <tt><a href="Animacy.html">Animacy</a>=Anim</tt> (1; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (1; 100%), <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (1; 100%), <tt><a href="Number.html">Number</a>=Plur</tt> (1; 100%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (1; 100%).</p>
 
 <p><code>ADJ</code> tokens may have the following values of <code>Poss</code>:</p>
 
 <ul>
   <li><code>Yes</code> (1; 100% of non-empty <code>Poss</code>): <em>vlastníkovi</em></li>
-  <li><code>EMPTY</code> (6538): <em>účetní, účetních, účetního, konsolidované, konsolidující, finanční, účetním, povinny, výroční, právní</em></li>
+  <li><code>EMPTY</code> (4654): <em>účetní, účetních, účetního, konsolidované, finanční, účetním, konsolidující, povinny, obchodního, ostatní</em></li>
 </ul>
 
 
@@ -243,9 +243,25 @@ The feature is used with 2 part-of-speech tags: <a href="">cs-pos/DET</a> (240; 
 
 Poss in other languages:
 
+[<a href="../../am/feat/Poss.html">am</a>]
+
+[<a href="../../ar/feat/Poss.html">ar</a>]
+
 [<a href="../../bg/feat/Poss.html">bg</a>]
 
+[<a href="../../bxr/feat/Poss.html">bxr</a>]
+
+[<a href="../../ca/feat/Poss.html">ca</a>]
+
+[<a href="../../ckb/feat/Poss.html">ckb</a>]
+
+[<a href="../../cop/feat/Poss.html">cop</a>]
+
 [<a href="../../cs/feat/Poss.html">cs</a>]
+
+[<a href="../../cu/feat/Poss.html">cu</a>]
+
+[<a href="../../da/feat/Poss.html">da</a>]
 
 [<a href="../../de/feat/Poss.html">de</a>]
 
@@ -255,29 +271,99 @@ Poss in other languages:
 
 [<a href="../../es/feat/Poss.html">es</a>]
 
+[<a href="../../et/feat/Poss.html">et</a>]
+
 [<a href="../../eu/feat/Poss.html">eu</a>]
 
 [<a href="../../fa/feat/Poss.html">fa</a>]
 
 [<a href="../../fi/feat/Poss.html">fi</a>]
 
+[<a href="../../fo/feat/Poss.html">fo</a>]
+
 [<a href="../../fr/feat/Poss.html">fr</a>]
 
 [<a href="../../ga/feat/Poss.html">ga</a>]
 
+[<a href="../../gl/feat/Poss.html">gl</a>]
+
+[<a href="../../got/feat/Poss.html">got</a>]
+
+[<a href="../../grc/feat/Poss.html">grc</a>]
+
 [<a href="../../he/feat/Poss.html">he</a>]
 
+[<a href="../../hi/feat/Poss.html">hi</a>]
+
+[<a href="../../hr/feat/Poss.html">hr</a>]
+
 [<a href="../../hu/feat/Poss.html">hu</a>]
+
+[<a href="../../id/feat/Poss.html">id</a>]
 
 [<a href="../../it/feat/Poss.html">it</a>]
 
 [<a href="../../ja/feat/Poss.html">ja</a>]
 
+[<a href="../../kk/feat/Poss.html">kk</a>]
+
+[<a href="../../kmr/feat/Poss.html">kmr</a>]
+
 [<a href="../../ko/feat/Poss.html">ko</a>]
+
+[<a href="../../la/feat/Poss.html">la</a>]
+
+[<a href="../../lv/feat/Poss.html">lv</a>]
+
+[<a href="../../mr/feat/Poss.html">mr</a>]
+
+[<a href="../../nl/feat/Poss.html">nl</a>]
+
+[<a href="../../no/feat/Poss.html">no</a>]
+
+[<a href="../../pl/feat/Poss.html">pl</a>]
+
+[<a href="../../pt/feat/Poss.html">pt</a>]
+
+[<a href="../../ro/feat/Poss.html">ro</a>]
+
+[<a href="../../ru/feat/Poss.html">ru</a>]
+
+[<a href="../../sa/feat/Poss.html">sa</a>]
+
+[<a href="../../sk/feat/Poss.html">sk</a>]
+
+[<a href="../../sla/feat/Poss.html">sla</a>]
+
+[<a href="../../sl/feat/Poss.html">sl</a>]
+
+[<a href="../../so/feat/Poss.html">so</a>]
+
+[<a href="../../sr/feat/Poss.html">sr</a>]
 
 [<a href="../../sv/feat/Poss.html">sv</a>]
 
+[<a href="../../swl/feat/Poss.html">swl</a>]
+
+[<a href="../../ta/feat/Poss.html">ta</a>]
+
+[<a href="../../tr/feat/Poss.html">tr</a>]
+
 [<a href="../../u/feat/Poss.html">u</a>]
+
+[<a href="../../ug/feat/Poss.html">ug</a>]
+
+[<a href="../../uk/feat/Poss.html">uk</a>]
+
+[<a href="../../ur/feat/Poss.html">ur</a>]
+
+[<a href="../../urj/feat/Poss.html">urj</a>]
+
+[<a href="../../vi/feat/Poss.html">vi</a>]
+
+[<a href="../../yue/feat/Poss.html">yue</a>]
+
+[<a href="../../zh/feat/Poss.html">zh</a>]
 
 
 

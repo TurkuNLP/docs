@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-el">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/el/dep">el/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_el-dep/compound.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-el">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/el/dep">el/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/compound.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -81,8 +98,8 @@ nummod(ευρώ, εκατομμύρια)
 <p>The two other compounding relations are:</p>
 
 <ul>
-  <li><a href="">mwe</a> for fixed grammaticized expressions with function words</li>
-  <li><a href="">name</a> for proper nouns constituted of multiple nominal elements</li>
+  <li><a href="">fixed</a> for fixed grammaticized expressions with function words</li>
+  <li><a href="">flat</a> for proper nouns constituted of multiple nominal elements</li>
 </ul>
 
 
@@ -100,24 +117,82 @@ nummod(ευρώ, εκατομμύρια)
 
 <p>This relation is universal.</p>
 
-<p>7 nodes (0%) are attached to their parents as <code>compound</code>.</p>
+<p>70 nodes (0%) are attached to their parents as <code>compound</code>.</p>
 
-<p>6 instances of <code>compound</code> (86%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.28571428571429.</p>
+<p>69 instances of <code>compound</code> (99%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.22857142857143.</p>
 
-<p>The following 1 pairs of parts of speech are connected with <code>compound</code>: <a href="">el-pos/NUM</a>-<a href="">el-pos/NUM</a> (7; 100% instances).</p>
+<p>The following 5 pairs of parts of speech are connected with <code>compound</code>: <a href="">el-pos/X</a>-<a href="">el-pos/NOUN</a> (57; 81% instances), <a href="">el-pos/NUM</a>-<a href="">el-pos/NUM</a> (6; 9% instances), <a href="">el-pos/PROPN</a>-<a href="">el-pos/NOUN</a> (5; 7% instances), <a href="">el-pos/NOUN</a>-<a href="">el-pos/NOUN</a> (1; 1% instances), <a href="">el-pos/X</a>-<a href="">el-pos/X</a> (1; 1% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 9	bgColor:blue
+# visual-style 9	fgColor:white
+# visual-style 11	bgColor:blue
+# visual-style 11	fgColor:white
+# visual-style 11 9 compound	color:blue
+1	Ούτε	ούτε	CCONJ	CCONJ	_	4	cc	_	_
+2	εγώ	εγώ	PRON	PRON	Case=Nom|Gender=Masc|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+3	δεν	δεν	PART	PART	_	4	advmod	_	_
+4	έλαβα	λαμβάνω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	τέτοιο	τέτοιος	PRON	PRON	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Dem	6	det	_	_
+6	αντίτυπο	αντίτυπο	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	4	obj	_	_
+7	από	από	ADP	ADP	_	11	case	_	_
+8	τον	ο	DET	DET	Case=Acc|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+9	κ.	κ.	NOUN	NOUN	Abbr=Yes	11	compound	_	_
+10	van	van	X	X	Foreign=Yes	11	nmod	_	_
+11	Buitenen	Buitenen	X	X	Foreign=Yes	4	obl	_	SpaceAfter=No
+12	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+</code></pre>
 
 <pre><code class="language-conllu"># visual-style 5	bgColor:blue
 # visual-style 5	fgColor:white
 # visual-style 2	bgColor:blue
 # visual-style 2	fgColor:white
 # visual-style 2 5 compound	color:blue
-1	Διότι	διότι	CONJ	CONJ	_	2	mark	_	_
+1	Διότι	διότι	SCONJ	SCONJ	_	2	mark	_	_
 2	ένα	ένας	NUM	NUM	Case=Nom|Gender=Neut|Number=Sing|NumType=Card	0	root	_	_
 3	από	από	ADP	ADP	_	5	case	_	_
 4	τα	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	5	det	_	_
-5	δύο	δύο	NUM	NUM	Case=Acc|Gender=Neut|Number=Plur|NumType=Card	2	compound	_	_
+5	δύο	δύο	NUM	NUM	Case=Acc|Gender=Neut|Number=Plur|NumType=Card	2	compound	_	SpaceAfter=No
 6	:	:	PUNCT	PUNCT	_	2	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 14	bgColor:blue
+# visual-style 14	fgColor:white
+# visual-style 15	bgColor:blue
+# visual-style 15	fgColor:white
+# visual-style 15 14 compound	color:blue
+1	Κύριε	κύριος	NOUN	NOUN	Case=Voc|Gender=Masc|Number=Sing	2	nmod	_	_
+2	Πρόεδρε	πρόεδρος	NOUN	NOUN	Case=Voc|Gender=Masc|Number=Sing	6	vocative	_	SpaceAfter=No
+3	,	,	PUNCT	PUNCT	_	2	punct	_	_
+4	καταρχάς	καταρχάς	ADV	ADV	_	6	advmod	_	_
+5	θα	θα	PART	PART	_	6	aux	_	_
+6	ήθελα	θέλω	VERB	VERB	Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	να	να	PART	PART	_	8	aux	_	_
+8	συγχαρώ	συγχαίρω	VERB	VERB	Aspect=Perf|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	6	ccomp	_	_
+9	τους	ο	DET	DET	Case=Acc|Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
+10	τρεις	τρεις	NUM	NUM	Case=Acc|Gender=Masc|Number=Plur|NumType=Card	11	nummod	_	_
+11	εισηγητές	εισηγητής	NOUN	NOUN	Case=Acc|Gender=Masc|Number=Plur	8	obj	_	_
+12	-	-	PUNCT	PUNCT	_	15	punct	_	_
+13	τον	ο	DET	DET	Case=Acc|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+14	κ.	κ.	NOUN	NOUN	Abbr=Yes	15	compound	_	_
+15	Χατζηδάκη	Χατζηδάκης	PROPN	PROPN	Case=Acc|Gender=Masc|Number=Sing	11	appos	_	SpaceAfter=No
+16	,	,	PUNCT	PUNCT	_	20	punct	_	_
+17	τον	ο	DET	DET	Case=Acc|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+18	κ.	κ.	NOUN	NOUN	Abbr=Yes	20	compound	_	_
+19	van	van	X	X	Foreign=Yes	20	nmod	_	_
+20	Dam	Dam	X	X	Foreign=Yes	15	conj	_	_
+21	και	και	CCONJ	CCONJ	_	24	cc	_	_
+22	τον	ο	DET	DET	Case=Acc|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
+23	κ.	κ.	NOUN	NOUN	Abbr=Yes	24	compound	_	_
+24	Grosch	Grosch	X	X	Foreign=Yes	15	conj	_	_
+25	-	-	PUNCT	PUNCT	_	15	punct	_	_
+26	για	για	ADP	ADP	_	28	case	_	_
+27	το	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	28	det	_	_
+28	έργο	έργο	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	8	obl	_	_
+29	τους	μου	PRON	PRON	Case=Gen|Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	28	nmod	_	SpaceAfter=No
+30	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
 </code></pre>
 
@@ -129,9 +204,25 @@ Average distance between parent and child is 1.28571428571429.</p>
 
 compound in other languages:
 
+[<a href="../../am/dep/compound.html">am</a>]
+
+[<a href="../../ar/dep/compound.html">ar</a>]
+
 [<a href="../../bg/dep/compound.html">bg</a>]
 
+[<a href="../../bxr/dep/compound.html">bxr</a>]
+
+[<a href="../../ca/dep/compound.html">ca</a>]
+
+[<a href="../../ckb/dep/compound.html">ckb</a>]
+
+[<a href="../../cop/dep/compound.html">cop</a>]
+
 [<a href="../../cs/dep/compound.html">cs</a>]
+
+[<a href="../../cu/dep/compound.html">cu</a>]
+
+[<a href="../../da/dep/compound.html">da</a>]
 
 [<a href="../../de/dep/compound.html">de</a>]
 
@@ -141,29 +232,99 @@ compound in other languages:
 
 [<a href="../../es/dep/compound.html">es</a>]
 
+[<a href="../../et/dep/compound.html">et</a>]
+
 [<a href="../../eu/dep/compound.html">eu</a>]
 
 [<a href="../../fa/dep/compound.html">fa</a>]
 
 [<a href="../../fi/dep/compound.html">fi</a>]
 
+[<a href="../../fo/dep/compound.html">fo</a>]
+
 [<a href="../../fr/dep/compound.html">fr</a>]
 
 [<a href="../../ga/dep/compound.html">ga</a>]
 
+[<a href="../../gl/dep/compound.html">gl</a>]
+
+[<a href="../../got/dep/compound.html">got</a>]
+
+[<a href="../../grc/dep/compound.html">grc</a>]
+
 [<a href="../../he/dep/compound.html">he</a>]
 
+[<a href="../../hi/dep/compound.html">hi</a>]
+
+[<a href="../../hr/dep/compound.html">hr</a>]
+
 [<a href="../../hu/dep/compound.html">hu</a>]
+
+[<a href="../../id/dep/compound.html">id</a>]
 
 [<a href="../../it/dep/compound.html">it</a>]
 
 [<a href="../../ja/dep/compound.html">ja</a>]
 
+[<a href="../../kk/dep/compound.html">kk</a>]
+
+[<a href="../../kmr/dep/compound.html">kmr</a>]
+
 [<a href="../../ko/dep/compound.html">ko</a>]
+
+[<a href="../../la/dep/compound.html">la</a>]
+
+[<a href="../../lv/dep/compound.html">lv</a>]
+
+[<a href="../../mr/dep/compound.html">mr</a>]
+
+[<a href="../../nl/dep/compound.html">nl</a>]
+
+[<a href="../../no/dep/compound.html">no</a>]
+
+[<a href="../../pl/dep/compound.html">pl</a>]
+
+[<a href="../../pt/dep/compound.html">pt</a>]
+
+[<a href="../../ro/dep/compound.html">ro</a>]
+
+[<a href="../../ru/dep/compound.html">ru</a>]
+
+[<a href="../../sa/dep/compound.html">sa</a>]
+
+[<a href="../../sk/dep/compound.html">sk</a>]
+
+[<a href="../../sla/dep/compound.html">sla</a>]
+
+[<a href="../../sl/dep/compound.html">sl</a>]
+
+[<a href="../../so/dep/compound.html">so</a>]
+
+[<a href="../../sr/dep/compound.html">sr</a>]
 
 [<a href="../../sv/dep/compound.html">sv</a>]
 
+[<a href="../../swl/dep/compound.html">swl</a>]
+
+[<a href="../../ta/dep/compound.html">ta</a>]
+
+[<a href="../../tr/dep/compound.html">tr</a>]
+
 [<a href="../../u/dep/compound.html">u</a>]
+
+[<a href="../../ug/dep/compound.html">ug</a>]
+
+[<a href="../../uk/dep/compound.html">uk</a>]
+
+[<a href="../../ur/dep/compound.html">ur</a>]
+
+[<a href="../../urj/dep/compound.html">urj</a>]
+
+[<a href="../../vi/dep/compound.html">vi</a>]
+
+[<a href="../../yue/dep/compound.html">yue</a>]
+
+[<a href="../../zh/dep/compound.html">zh</a>]
 
 
 

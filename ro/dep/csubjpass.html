@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ro">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ro/dep">ro/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ro-dep/csubjpass.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ro">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ro/dep">ro/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ro-dep/csubjpass.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -59,103 +76,30 @@ csubjpass(pedepsit, încălcat)
 
 
 
-
-<hr />
-
-<h2 id="treebank-statistics-udromanian">Treebank Statistics (UD_Romanian)</h2>
-
-<p>This relation is universal.</p>
-
-<p>56 nodes (0%) are attached to their parents as <code>csubjpass</code>.</p>
-
-<p>55 instances of <code>csubjpass</code> (98%) are left-to-right (parent precedes child).
-Average distance between parent and child is 5.80357142857143.</p>
-
-<p>The following 6 pairs of parts of speech are connected with <code>csubjpass</code>: <a href="">ro-pos/VERB</a>-<a href="">ro-pos/VERB</a> (49; 88% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/NOUN</a> (3; 5% instances), <a href="">ro-pos/ADJ</a>-<a href="">ro-pos/VERB</a> (1; 2% instances), <a href="">ro-pos/ADV</a>-<a href="">ro-pos/VERB</a> (1; 2% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/ADJ</a> (1; 2% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/ADV</a> (1; 2% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
-# visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 4 7 csubjpass	color:blue
-1	Primele	prim	NUM	Mofprly	Case=Acc,Nom|Definite=Def|Gender=Fem|Number=Plur|NumForm=Word|NumType=Ord	2	nummod	_	_
-2	întâlniri	întâlnire	NOUN	Ncfp-n	Definite=Ind|Gender=Fem|Number=Plur	7	nsubj	_	_
-3	se	sine	PRON	Px3--a--------w	Case=Acc|Person=3|PronType=Prs|Reflex=Yes|Strength=Weak	4	expl:pass	_	_
-4	așteaptă	aștepta	VERB	Vmip3	Mood=Ind|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	să	să	PART	Qs	Mood=Sub	7	mark	_	_
-6	se	sine	PRON	Px3--a--------w	Case=Acc|Person=3|PronType=Prs|Reflex=Yes|Strength=Weak	7	expl:pv	_	_
-7	desfășoare	desfășura	VERB	Vmsp3	Mood=Sub|Person=3|Tense=Pres|VerbForm=Fin	4	csubjpass	_	_
-8	marți	marți	ADV	Rgp	Degree=Pos	7	advmod	_	_
-9	.	.	PUNCT	PERIOD	_	4	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
-# visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 2 7 csubjpass	color:blue
-1	Se	sine	PRON	Px3--a--------w	Case=Acc|Person=3|PronType=Prs|Reflex=Yes|Strength=Weak	2	expl:pass	_	_
-2	consideră	considera	VERB	Vmis3s	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-3	că	că	SCONJ	Csssp	Negative=Pos	7	mark	_	_
-4	aceste	acest	DET	Dd3fpr---e	Case=Acc,Nom|Gender=Fem|Number=Plur|Person=3|Position=Prenom|PronType=Dem	5	amod	_	_
-5	modificări	modificare	NOUN	Ncfp-n	Definite=Ind|Gender=Fem|Number=Plur	7	nsubj	_	_
-6	sunt	fi	VERB	Vmip3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
-7	consecința	consecință	NOUN	Ncfsry	Case=Acc,Nom|Definite=Def|Gender=Fem|Number=Sing	2	csubjpass	_	_
-8	unei	un	DET	Tifso	Case=Dat,Gen|Gender=Fem|Number=Sing|PronType=Ind	9	det	_	_
-9	reduceri	reducere	NOUN	Ncfson	Case=Dat,Gen|Definite=Ind|Gender=Fem|Number=Sing	7	nmod	_	_
-10	a	al	DET	Tsfs	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	11	det	_	_
-11	creșterii	creștere	NOUN	Ncfsoy	Case=Dat,Gen|Definite=Def|Gender=Fem|Number=Sing	9	nmod	_	_
-12	ponderale	ponderal	ADJ	Afpfson	Case=Dat,Gen|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	11	amod	_	_
-13	materne	matern	ADJ	Afpfson	Case=Dat,Gen|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	11	amod	_	_
-14	.	.	PUNCT	PERIOD	_	2	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 18	bgColor:blue
-# visual-style 18	fgColor:white
-# visual-style 16	bgColor:blue
-# visual-style 16	fgColor:white
-# visual-style 16 18 csubjpass	color:blue
-1	Și	și	CONJ	Crssp	Negative=Pos	10	cc	_	_
-2	cum	cum	ADV	Rw	PronType=Int,Rel	7	advmod	_	_
-3	războiul	război	NOUN	Ncmsry	Case=Acc,Nom|Definite=Def|Gender=Masc|Number=Sing	7	nsubj	_	_
-4	de-	de	ADP	Spsay	AdpType=Prep|Case=Acc|Variant=Short	5	case	_	_
-5	abia	abia	ADV	Rgp	Degree=Pos	7	advmod	_	_
-6	se	sine	PRON	Px3--a--------w	Case=Acc|Person=3|PronType=Prs|Reflex=Yes|Strength=Weak	7	expl:pv	_	_
-7	terminase	termina	VERB	Vmil3s	Mood=Ind|Number=Sing|Person=3|Tense=Pqp|VerbForm=Fin	10	advcl	_	_
-8	,	,	PUNCT	COMMA	_	7	punct	_	_
-9	am	avea	AUX	Va--1	Person=1	10	aux	_	_
-10	socotit	socoti	VERB	Vmp--sm	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
-11	că	că	SCONJ	Csssp	Negative=Pos	16	mark	_	_
-12	n-	nu	PART	Qz-y	Negative=Neg|Variant=Short	16	neg	_	_
-13	ar	avea	AUX	Va--3	Person=3	16	aux	_	_
-14	fi	fi	VERB	Vmnp	Tense=Pres|VerbForm=Inf	16	cop	_	_
-15	tocmai	tocmai	ADV	Rgp	Degree=Pos	16	advmod	_	_
-16	nepotrivit	nepotrivit	ADJ	Afpms-n	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	10	ccomp	_	_
-17	să	să	PART	Qs	Mood=Sub	18	mark	_	_
-18	povestesc	povesti	VERB	Vmip3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	csubjpass	_	_
-19	"	"	PUNCT	DBLQ	_	20	punct	_	_
-20	Întoarcerea	întoarcere	NOUN	Ncfsry	Case=Acc,Nom|Definite=Def|Gender=Fem|Number=Sing	18	dobj	_	_
-21	tatii	tată	NOUN	Ncmsoy	Case=Dat,Gen|Definite=Def|Gender=Masc|Number=Sing	20	nmod	_	_
-22	din	din	ADP	Spsa	AdpType=Prep|Case=Acc	23	case	_	_
-23	războiu	războiu	NOUN	Ncmsrn	Case=Acc,Nom|Definite=Ind|Gender=Masc|Number=Sing	21	nmod	_	_
-24	"	"	PUNCT	DBLQ	_	20	punct	_	_
-25	.	.	PUNCT	PERIOD	_	10	punct	_	_
-
-</code></pre>
-
-
-
-
 <!-- "in other languages" links -->
 <hr/>
 
 csubjpass in other languages:
 
+[<a href="../../am/dep/csubjpass.html">am</a>]
+
+[<a href="../../ar/dep/csubjpass.html">ar</a>]
+
 [<a href="../../bg/dep/csubjpass.html">bg</a>]
 
+[<a href="../../bxr/dep/csubjpass.html">bxr</a>]
+
+[<a href="../../ca/dep/csubjpass.html">ca</a>]
+
+[<a href="../../ckb/dep/csubjpass.html">ckb</a>]
+
+[<a href="../../cop/dep/csubjpass.html">cop</a>]
+
 [<a href="../../cs/dep/csubjpass.html">cs</a>]
+
+[<a href="../../cu/dep/csubjpass.html">cu</a>]
+
+[<a href="../../da/dep/csubjpass.html">da</a>]
 
 [<a href="../../de/dep/csubjpass.html">de</a>]
 
@@ -165,27 +109,89 @@ csubjpass in other languages:
 
 [<a href="../../es/dep/csubjpass.html">es</a>]
 
+[<a href="../../et/dep/csubjpass.html">et</a>]
+
 [<a href="../../eu/dep/csubjpass.html">eu</a>]
 
 [<a href="../../fa/dep/csubjpass.html">fa</a>]
 
 [<a href="../../fr/dep/csubjpass.html">fr</a>]
 
-[<a href="../../ga/dep/csubjpass.html">ga</a>]
+[<a href="../../gl/dep/csubjpass.html">gl</a>]
+
+[<a href="../../got/dep/csubjpass.html">got</a>]
+
+[<a href="../../grc/dep/csubjpass.html">grc</a>]
 
 [<a href="../../he/dep/csubjpass.html">he</a>]
 
+[<a href="../../hi/dep/csubjpass.html">hi</a>]
+
+[<a href="../../hr/dep/csubjpass.html">hr</a>]
+
 [<a href="../../hu/dep/csubjpass.html">hu</a>]
+
+[<a href="../../id/dep/csubjpass.html">id</a>]
 
 [<a href="../../it/dep/csubjpass.html">it</a>]
 
 [<a href="../../ja/dep/csubjpass.html">ja</a>]
 
+[<a href="../../kmr/dep/csubjpass.html">kmr</a>]
+
 [<a href="../../ko/dep/csubjpass.html">ko</a>]
+
+[<a href="../../la/dep/csubjpass.html">la</a>]
+
+[<a href="../../lv/dep/csubjpass.html">lv</a>]
+
+[<a href="../../mr/dep/csubjpass.html">mr</a>]
+
+[<a href="../../nl/dep/csubjpass.html">nl</a>]
+
+[<a href="../../no/dep/csubjpass.html">no</a>]
+
+[<a href="../../pl/dep/csubjpass.html">pl</a>]
+
+[<a href="../../pt/dep/csubjpass.html">pt</a>]
+
+[<a href="../../ro/dep/csubjpass.html">ro</a>]
+
+[<a href="../../ru/dep/csubjpass.html">ru</a>]
+
+[<a href="../../sa/dep/csubjpass.html">sa</a>]
+
+[<a href="../../sk/dep/csubjpass.html">sk</a>]
+
+[<a href="../../sla/dep/csubjpass.html">sla</a>]
+
+[<a href="../../sl/dep/csubjpass.html">sl</a>]
+
+[<a href="../../so/dep/csubjpass.html">so</a>]
+
+[<a href="../../sr/dep/csubjpass.html">sr</a>]
 
 [<a href="../../sv/dep/csubjpass.html">sv</a>]
 
-[<a href="../../u/dep/csubjpass.html">u</a>]
+[<a href="../../swl/dep/csubjpass.html">swl</a>]
+
+[<a href="../../ta/dep/csubjpass.html">ta</a>]
+
+[<a href="../../tr/dep/csubjpass.html">tr</a>]
+
+[<a href="../../ug/dep/csubjpass.html">ug</a>]
+
+[<a href="../../uk/dep/csubjpass.html">uk</a>]
+
+[<a href="../../ur/dep/csubjpass.html">ur</a>]
+
+[<a href="../../urj/dep/csubjpass.html">urj</a>]
+
+[<a href="../../vi/dep/csubjpass.html">vi</a>]
+
+[<a href="../../yue/dep/csubjpass.html">yue</a>]
+
+[<a href="../../zh/dep/csubjpass.html">zh</a>]
 
 
 

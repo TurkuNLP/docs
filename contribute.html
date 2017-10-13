@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="css/hint.css"/>
     <script type="text/javascript" src="lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-">home</a></span>
 
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/contribute.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/contribute.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -45,13 +62,30 @@
 
           <h1 id="how-to-contribute-to-ud">How to contribute to UD</h1>
 
-<p>If you want to add a new language/treebank, please read the <a href="language_metadata.html">instructions</a> for adding a new language and encoding its metadata.</p>
+<ul>
+  <li>
+    <p>If you want to use UD treebanks, download them from LINDAT/CLARIN to make sure you get the latest official version.</p>
+  </li>
+  <li>
+    <p>If you want to give feedback on UD guidelines or treebanks, use the <a href="https://github.com/universaldependencies/docs/issues">issue tracker</a> or send email to the UD list.</p>
+  </li>
+  <li>
+    <p>If you want to start a treebank, please read the <a href="new_language.html">instructions</a> 
+for adding a new language/treebank and then get in touch with us.</p>
+  </li>
+  <li>
+    <p>If you want to contribute to a release, please follow the steps in the <a href="release_checklist.html">release checklist</a>.</p>
 
-<p>If you want to make a release of an existing treebank, please follow the steps in the <a href="release_checklist.html">release checklist</a> and
-make sure your data shows as validating in the <a href="validation.html">format validation runs</a>.
-Check the <a href="svalidation.html">content validation</a> for any suspicious patterns in the data;
-there are direct links to our treebank search that you can use to browse the suspicious data points.
-Check that the <a href="contributors.html">list of contributors</a> is correct; this is gathered from the <a href="language_metadata.html">metadata</a> in the READMEs. General instructions for contributing to the online documentation can be found <a href="contributing.html">here</a>.</p>
+    <ul>
+      <li>Specific to release 2.0: if you want your treebank included in the CoNLL 2017 shared task, <a href="http://universaldependencies.org/conll17/inclusion-rules.html">read this</a> and <a href="http://universaldependencies.org/conll17/internal-timeline.html">this</a>.</li>
+    </ul>
+  </li>
+  <li>
+    <p>If you want to contribute to language-specific documentation, see the last section of the <a href="release_checklist.html#language-specific-guidelines">release checklist</a>.</p>
+  </li>
+</ul>
+
+<p>Please consider subscribing to the <a href="http://stp.lingfil.uu.se/mailman/listinfo/ud">UD mailing list</a>, <strong>especially if you are going to contribute data.</strong> Important announcements for the data providers are circulated through this list.</p>
 
 
       </div>

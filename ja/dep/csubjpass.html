@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ja">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ja/dep">ja/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ja-dep/csubjpass.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ja">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ja/dep">ja/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ja-dep/csubjpass.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -71,45 +88,30 @@ punct(悔やま, 。)
 
 <p>This relation is universal.</p>
 
-<p>6 nodes (0%) are attached to their parents as <code>csubjpass</code>.</p>
+<p>4 nodes (0%) are attached to their parents as <code>csubjpass</code>.</p>
 
-<p>6 instances of <code>csubjpass</code> (100%) are right-to-left (child precedes parent).
-Average distance between parent and child is 9.83333333333333.</p>
+<p>4 instances of <code>csubjpass</code> (100%) are right-to-left (child precedes parent).
+Average distance between parent and child is 11.75.</p>
 
-<p>The following 2 pairs of parts of speech are connected with <code>csubjpass</code>: <a href="">ja-pos/VERB</a>-<a href="">ja-pos/VERB</a> (5; 83% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/NOUN</a> (1; 17% instances).</p>
+<p>The following 2 pairs of parts of speech are connected with <code>csubjpass</code>: <a href="">ja-pos/VERB</a>-<a href="">ja-pos/VERB</a> (3; 75% instances), <a href="">ja-pos/NOUN</a>-<a href="">ja-pos/NOUN</a> (1; 25% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 5	bgColor:blue
-# visual-style 5	fgColor:white
-# visual-style 12	bgColor:blue
-# visual-style 12	fgColor:white
-# visual-style 12 5 csubjpass	color:blue
-1	_	_	PROPN	PROPN	_	3	nmod	_	Offset=0-2
-2	_	_	ADP	ADP	_	1	case	_	Offset=2-3
-3	_	_	NOUN	NOUN	_	5	iobj	_	Offset=3-5
-4	_	_	ADP	ADP	_	3	case	_	Offset=5-6
-5	_	当たる	VERB	VERB	_	12	csubjpass	_	Offset=6-9
-6	_	_	SCONJ	SCONJ	_	5	mark	_	Offset=9-10
-7	_	_	ADP	ADP	_	5	case	_	Offset=10-11
-8	_	_	PUNCT	PUNCT	_	5	punct	_	Offset=11-12
-9	_	_	NOUN	NOUN	_	10	compound	_	Offset=12-13
-10	_	_	NOUN	NOUN	_	12	iobj	_	Offset=13-15
-11	_	_	ADP	ADP	_	10	case	_	Offset=15-16
-12	_	言う	VERB	VERB	_	24	advcl	_	Offset=16-18
-13	_	れる	AUX	AUX	_	12	auxpass	_	Offset=18-19
-14	_	_	PUNCT	PUNCT	_	18	punct	_	Offset=19-20
-15	_	めでたい	ADJ	ADJ	_	16	amod	_	Offset=20-23
-16	_	_	NOUN	NOUN	_	18	nsubj	_	Offset=23-24
-17	_	_	ADP	ADP	_	16	case	_	Offset=24-25
-18	_	_	NOUN	NOUN	_	23	iobj	_	Offset=25-26
-19	_	くらい	PART	PART	_	18	case	_	Offset=26-29
-20	_	なり-断定	AUX	AUX	_	18	cop	_	Offset=29-31
-21	_	_	PUNCT	PUNCT	_	18	punct	_	Offset=31-32
-22	_	_	ADP	ADP	_	18	case	_	Offset=32-33
-23	_	言う	VERB	VERB	_	24	acl	_	Offset=33-35
-24	_	_	NOUN	NOUN	_	0	root	_	Offset=35-38
-25	_	だ	AUX	AUX	_	24	cop	_	Offset=38-39
-26	_	有る	AUX	AUX	_	24	aux	_	Offset=39-41
-27	_	_	PUNCT	PUNCT	_	24	punct	_	Offset=41-42
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 7 3 csubjpass	color:blue
+1	_	_	NOUN	NOUN	_	3	dobj	_	Offset=0-3
+2	_	_	ADP	ADP	_	1	case	_	Offset=3-4
+3	_	_	VERB	VERB	_	7	csubjpass	_	Offset=4-6
+4	_	為る	AUX	AUX	_	3	aux	_	Offset=6-8
+5	_	_	SCONJ	SCONJ	_	3	mark	_	Offset=8-9
+6	_	_	ADP	ADP	_	3	case	_	Offset=9-10
+7	_	買う	VERB	VERB	_	0	root	_	Offset=10-12
+8	_	れる	AUX	AUX	_	7	auxpass	_	Offset=12-13
+9	_	_	AUX	AUX	_	7	aux	_	Offset=13-14
+10	_	_	SCONJ	SCONJ	_	7	mark	_	Offset=14-15
+11	_	_	AUX	AUX	_	7	cop	_	Offset=15-16
+12	_	_	PUNCT	PUNCT	_	7	punct	_	Offset=16-17
 
 </code></pre>
 
@@ -165,9 +167,25 @@ Average distance between parent and child is 9.83333333333333.</p>
 
 csubjpass in other languages:
 
+[<a href="../../am/dep/csubjpass.html">am</a>]
+
+[<a href="../../ar/dep/csubjpass.html">ar</a>]
+
 [<a href="../../bg/dep/csubjpass.html">bg</a>]
 
+[<a href="../../bxr/dep/csubjpass.html">bxr</a>]
+
+[<a href="../../ca/dep/csubjpass.html">ca</a>]
+
+[<a href="../../ckb/dep/csubjpass.html">ckb</a>]
+
+[<a href="../../cop/dep/csubjpass.html">cop</a>]
+
 [<a href="../../cs/dep/csubjpass.html">cs</a>]
+
+[<a href="../../cu/dep/csubjpass.html">cu</a>]
+
+[<a href="../../da/dep/csubjpass.html">da</a>]
 
 [<a href="../../de/dep/csubjpass.html">de</a>]
 
@@ -177,27 +195,89 @@ csubjpass in other languages:
 
 [<a href="../../es/dep/csubjpass.html">es</a>]
 
+[<a href="../../et/dep/csubjpass.html">et</a>]
+
 [<a href="../../eu/dep/csubjpass.html">eu</a>]
 
 [<a href="../../fa/dep/csubjpass.html">fa</a>]
 
 [<a href="../../fr/dep/csubjpass.html">fr</a>]
 
-[<a href="../../ga/dep/csubjpass.html">ga</a>]
+[<a href="../../gl/dep/csubjpass.html">gl</a>]
+
+[<a href="../../got/dep/csubjpass.html">got</a>]
+
+[<a href="../../grc/dep/csubjpass.html">grc</a>]
 
 [<a href="../../he/dep/csubjpass.html">he</a>]
 
+[<a href="../../hi/dep/csubjpass.html">hi</a>]
+
+[<a href="../../hr/dep/csubjpass.html">hr</a>]
+
 [<a href="../../hu/dep/csubjpass.html">hu</a>]
+
+[<a href="../../id/dep/csubjpass.html">id</a>]
 
 [<a href="../../it/dep/csubjpass.html">it</a>]
 
 [<a href="../../ja/dep/csubjpass.html">ja</a>]
 
+[<a href="../../kmr/dep/csubjpass.html">kmr</a>]
+
 [<a href="../../ko/dep/csubjpass.html">ko</a>]
+
+[<a href="../../la/dep/csubjpass.html">la</a>]
+
+[<a href="../../lv/dep/csubjpass.html">lv</a>]
+
+[<a href="../../mr/dep/csubjpass.html">mr</a>]
+
+[<a href="../../nl/dep/csubjpass.html">nl</a>]
+
+[<a href="../../no/dep/csubjpass.html">no</a>]
+
+[<a href="../../pl/dep/csubjpass.html">pl</a>]
+
+[<a href="../../pt/dep/csubjpass.html">pt</a>]
+
+[<a href="../../ro/dep/csubjpass.html">ro</a>]
+
+[<a href="../../ru/dep/csubjpass.html">ru</a>]
+
+[<a href="../../sa/dep/csubjpass.html">sa</a>]
+
+[<a href="../../sk/dep/csubjpass.html">sk</a>]
+
+[<a href="../../sla/dep/csubjpass.html">sla</a>]
+
+[<a href="../../sl/dep/csubjpass.html">sl</a>]
+
+[<a href="../../so/dep/csubjpass.html">so</a>]
+
+[<a href="../../sr/dep/csubjpass.html">sr</a>]
 
 [<a href="../../sv/dep/csubjpass.html">sv</a>]
 
-[<a href="../../u/dep/csubjpass.html">u</a>]
+[<a href="../../swl/dep/csubjpass.html">swl</a>]
+
+[<a href="../../ta/dep/csubjpass.html">ta</a>]
+
+[<a href="../../tr/dep/csubjpass.html">tr</a>]
+
+[<a href="../../ug/dep/csubjpass.html">ug</a>]
+
+[<a href="../../uk/dep/csubjpass.html">uk</a>]
+
+[<a href="../../ur/dep/csubjpass.html">ur</a>]
+
+[<a href="../../urj/dep/csubjpass.html">urj</a>]
+
+[<a href="../../vi/dep/csubjpass.html">vi</a>]
+
+[<a href="../../yue/dep/csubjpass.html">yue</a>]
+
+[<a href="../../zh/dep/csubjpass.html">zh</a>]
 
 
 

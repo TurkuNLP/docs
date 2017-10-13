@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-bg">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/bg/dep">bg/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_bg-dep/parataxis.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-bg">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/bg/dep">bg/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-dep/parataxis.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,63 +80,63 @@ for <code>parataxis</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>2 nodes (0%) are attached to their parents as <code>parataxis</code>.</p>
+<p>584 nodes (0%) are attached to their parents as <code>parataxis</code>.</p>
 
-<p>2 instances of <code>parataxis</code> (100%) are left-to-right (parent precedes child).
-Average distance between parent and child is 4.</p>
+<p>568 instances of <code>parataxis</code> (97%) are right-to-left (child precedes parent).
+Average distance between parent and child is 8.06506849315068.</p>
 
-<p>The following 2 pairs of parts of speech are connected with <code>parataxis</code>: <a href="">bg-pos/ADJ</a>-<a href="">bg-pos/VERB</a> (1; 50% instances), <a href="">bg-pos/NOUN</a>-<a href="">bg-pos/VERB</a> (1; 50% instances).</p>
+<p>The following 13 pairs of parts of speech are connected with <code>parataxis</code>: <a href="">bg-pos/VERB</a>-<a href="">bg-pos/VERB</a> (350; 60% instances), <a href="">bg-pos/VERB</a>-<a href="">bg-pos/PUNCT</a> (154; 26% instances), <a href="">bg-pos/VERB</a>-<a href="">bg-pos/NOUN</a> (42; 7% instances), <a href="">bg-pos/VERB</a>-<a href="">bg-pos/ADJ</a> (16; 3% instances), <a href="">bg-pos/VERB</a>-<a href="">bg-pos/ADV</a> (6; 1% instances), <a href="">bg-pos/NOUN</a>-<a href="">bg-pos/VERB</a> (4; 1% instances), <a href="">bg-pos/VERB</a>-<a href="">bg-pos/PRON</a> (4; 1% instances), <a href="">bg-pos/VERB</a>-<a href="">bg-pos/INTJ</a> (2; 0% instances), <a href="">bg-pos/VERB</a>-<a href="">bg-pos/NUM</a> (2; 0% instances), <a href="">bg-pos/ADJ</a>-<a href="">bg-pos/VERB</a> (1; 0% instances), <a href="">bg-pos/VERB</a>-<a href="">bg-pos/PART</a> (1; 0% instances), <a href="">bg-pos/VERB</a>-<a href="">bg-pos/PROPN</a> (1; 0% instances), <a href="">bg-pos/VERB</a>-<a href="">bg-pos/X</a> (1; 0% instances).</p>
 
-<pre><code class="language-conllu"># visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
+<pre><code class="language-conllu"># visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
 # visual-style 2	bgColor:blue
 # visual-style 2	fgColor:white
-# visual-style 2 7 parataxis	color:blue
-1	Този	този	DET	Pde-os-m	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
-2	гражданин	гражданин	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	20	nsubj	_	_
-3	на	на	ADP	R	_	4	case	_	_
-4	планетата	планета	NOUN	Ncfsd	Definite=Def|Gender=Fem|Number=Sing	2	nmod	_	_
-5	Земя	земя	PROPN	Npfsi	Definite=Ind|Gender=Fem|Number=Sing	4	nmod	_	_
-6	-	-	PUNCT	punct	_	7	punct	_	_
-7	огледайте	огледам-(се)	VERB	Vpptz--2p	Aspect=Perf|Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	2	parataxis	_	_
-8	го	аз	PRON	Ppetas3m	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	dobj	_	_
-9	добре	добре	ADV	Dm	Degree=Pos	7	advmod	_	_
-10	и	и	CONJ	Cp	_	7	cc	_	_
-11	го	аз	PRON	Ppetas3m	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	dobj	_	_
-12	запомнете	запомня	VERB	Vpptz--2p	Aspect=Perf|Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	7	conj	_	_
-13	,	,	PUNCT	punct	_	7	punct	_	_
-14	-	-	PUNCT	punct	_	7	punct	_	_
-15	този	този	DET	Pde-os-m	Gender=Masc|Number=Sing|PronType=Dem	16	det	_	_
-16	гражданин	гражданин	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	2	nmod	_	_
-17	на	на	ADP	R	_	18	case	_	_
-18	планетата	планета	NOUN	Ncfsd	Definite=Def|Gender=Fem|Number=Sing	16	nmod	_	_
-19	е	съм	AUX	Vxitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	20	aux	_	_
-20	решил	реша	VERB	Vpptcao-smi	Aspect=Perf|Definite=Ind|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
-21	да	да	PART	Tx	_	23	aux	_	_
-22	се	се	PRON	Ppxta	Case=Acc|PronType=Prs|Reflex=Yes	23	expl	_	_
-23	самоубие	самоубия-се	VERB	Vppif-r3s	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	20	ccomp	_	_
-24	.	.	PUNCT	punct	_	20	punct	_	_
+# visual-style 2 6 parataxis	color:blue
+1	Виното	вино	NOUN	Ncnsd	Definite=Def|Gender=Neut|Number=Sing	2	nsubj	_	_
+2	рекло	река	VERB	Vpptcao-sni	Aspect=Perf|Definite=Ind|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+3	:	:	PUNCT	punct	_	6	punct	_	_
+4	мене	аз	PRON	Ppelas1	Case=Acc|Number=Sing|Person=1|PronType=Prs	6	obj	_	_
+5	ме	аз	PRON	Ppetas1	Case=Acc|Number=Sing|Person=1|PronType=Prs	6	expl	_	_
+6	мъчат	мъча-(се)	VERB	Vpitf-r3p	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+7	,	,	PUNCT	punct	_	8	punct	_	_
+8	ама	ама	CCONJ	Cc	_	11	cc	_	_
+9	и	и	CCONJ	Cp	_	11	cc	_	_
+10	аз	аз	PRON	Ppe-os1	Case=Nom|Number=Sing|Person=1|PronType=Prs	11	nsubj	_	_
+11	мъча	мъча-(се)	VERB	Vpitf-r1s	Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	6	conj	_	SpaceAfter=No
+12	.	.	PUNCT	punct	_	2	punct	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 10	bgColor:blue
-# visual-style 10	fgColor:white
-# visual-style 7	bgColor:blue
-# visual-style 7	fgColor:white
-# visual-style 7 10 parataxis	color:blue
-1	Не	не	INTJ	Tn	_	7	discourse	_	_
-2	,	,	PUNCT	punct	_	1	punct	_	_
-3	моята	мой	DET	Psol-s1fd	Definite=Def|Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	det	_	_
-4	хитрост	хитрост	NOUN	Ncfsi	Definite=Ind|Gender=Fem|Number=Sing	7	nsubj	_	_
-5	е	съм	VERB	Vxitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
-6	още	още	ADV	Dq	_	7	advmod	_	_
-7	по-голяма	голям	ADJ	Afsi	Definite=Ind|Degree=Cmp|Gender=Fem|Number=Sing	0	root	_	_
-8	:	:	PUNCT	punct	_	10	punct	_	_
-9	аз	аз	PRON	Ppe-os1	Case=Nom|Number=Sing|Person=1|PronType=Prs	10	nsubj	_	_
-10	пиша	пиша	VERB	Vpitf-r1s	Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	7	parataxis	_	_
-11	само	само	ADV	Dd	_	12	advmod	_	_
-12	добрите	добър	ADJ	A-pd	Definite=Def|Degree=Pos|Number=Plur	10	dobj	_	_
-13	.	.	PUNCT	punct	_	7	punct	_	_
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 1 parataxis	color:blue
+1	,	,	PUNCT	punct	_	2	parataxis	_	_
+2	уточни	уточня	VERB	Vpptf-o3s	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	първата	пръв	ADJ	Mofsd	Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|NumType=Ord	5	amod	_	_
+4	US	us	ADJ	A	Degree=Pos	5	amod	_	_
+5	дама	дама	NOUN	Ncfsi	Definite=Ind|Gender=Fem|Number=Sing	2	nsubj	_	SpaceAfter=No
+6	.	.	PUNCT	punct	_	2	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 9	bgColor:blue
+# visual-style 9	fgColor:white
+# visual-style 9 3 parataxis	color:blue
+1	Това	този	PRON	Pde-os-n	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	3	nsubj	_	_
+2	е	съм	AUX	Vxitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	игра	игра	NOUN	Ncfsi	Definite=Ind|Gender=Fem|Number=Sing	9	parataxis	_	_
+4	на	на	ADP	R	_	5	case	_	_
+5	котка	котка	NOUN	Ncfsi	Definite=Ind|Gender=Fem|Number=Sing	3	nmod	_	_
+6	и	и	CCONJ	Cp	_	7	cc	_	_
+7	мишка	мишка	NOUN	Ncfsi	Definite=Ind|Gender=Fem|Number=Sing	5	conj	_	SpaceAfter=No
+8	,	,	PUNCT	punct	_	3	punct	_	_
+9	твърди	твърдя	VERB	Vpitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+10	Божилова	божилова	PROPN	Hfsi	Definite=Ind|Gender=Fem|Number=Sing	9	nsubj	_	SpaceAfter=No
+11	.	.	PUNCT	punct	_	9	punct	_	_
 
 </code></pre>
 
@@ -131,9 +148,25 @@ Average distance between parent and child is 4.</p>
 
 parataxis in other languages:
 
+[<a href="../../am/dep/parataxis.html">am</a>]
+
+[<a href="../../ar/dep/parataxis.html">ar</a>]
+
 [<a href="../../bg/dep/parataxis.html">bg</a>]
 
+[<a href="../../bxr/dep/parataxis.html">bxr</a>]
+
+[<a href="../../ca/dep/parataxis.html">ca</a>]
+
+[<a href="../../ckb/dep/parataxis.html">ckb</a>]
+
+[<a href="../../cop/dep/parataxis.html">cop</a>]
+
 [<a href="../../cs/dep/parataxis.html">cs</a>]
+
+[<a href="../../cu/dep/parataxis.html">cu</a>]
+
+[<a href="../../da/dep/parataxis.html">da</a>]
 
 [<a href="../../de/dep/parataxis.html">de</a>]
 
@@ -143,29 +176,99 @@ parataxis in other languages:
 
 [<a href="../../es/dep/parataxis.html">es</a>]
 
+[<a href="../../et/dep/parataxis.html">et</a>]
+
 [<a href="../../eu/dep/parataxis.html">eu</a>]
 
 [<a href="../../fa/dep/parataxis.html">fa</a>]
 
 [<a href="../../fi/dep/parataxis.html">fi</a>]
 
+[<a href="../../fo/dep/parataxis.html">fo</a>]
+
 [<a href="../../fr/dep/parataxis.html">fr</a>]
 
 [<a href="../../ga/dep/parataxis.html">ga</a>]
 
+[<a href="../../gl/dep/parataxis.html">gl</a>]
+
+[<a href="../../got/dep/parataxis.html">got</a>]
+
+[<a href="../../grc/dep/parataxis.html">grc</a>]
+
 [<a href="../../he/dep/parataxis.html">he</a>]
 
+[<a href="../../hi/dep/parataxis.html">hi</a>]
+
+[<a href="../../hr/dep/parataxis.html">hr</a>]
+
 [<a href="../../hu/dep/parataxis.html">hu</a>]
+
+[<a href="../../id/dep/parataxis.html">id</a>]
 
 [<a href="../../it/dep/parataxis.html">it</a>]
 
 [<a href="../../ja/dep/parataxis.html">ja</a>]
 
+[<a href="../../kk/dep/parataxis.html">kk</a>]
+
+[<a href="../../kmr/dep/parataxis.html">kmr</a>]
+
 [<a href="../../ko/dep/parataxis.html">ko</a>]
+
+[<a href="../../la/dep/parataxis.html">la</a>]
+
+[<a href="../../lv/dep/parataxis.html">lv</a>]
+
+[<a href="../../mr/dep/parataxis.html">mr</a>]
+
+[<a href="../../nl/dep/parataxis.html">nl</a>]
+
+[<a href="../../no/dep/parataxis.html">no</a>]
+
+[<a href="../../pl/dep/parataxis.html">pl</a>]
+
+[<a href="../../pt/dep/parataxis.html">pt</a>]
+
+[<a href="../../ro/dep/parataxis.html">ro</a>]
+
+[<a href="../../ru/dep/parataxis.html">ru</a>]
+
+[<a href="../../sa/dep/parataxis.html">sa</a>]
+
+[<a href="../../sk/dep/parataxis.html">sk</a>]
+
+[<a href="../../sla/dep/parataxis.html">sla</a>]
+
+[<a href="../../sl/dep/parataxis.html">sl</a>]
+
+[<a href="../../so/dep/parataxis.html">so</a>]
+
+[<a href="../../sr/dep/parataxis.html">sr</a>]
 
 [<a href="../../sv/dep/parataxis.html">sv</a>]
 
+[<a href="../../swl/dep/parataxis.html">swl</a>]
+
+[<a href="../../ta/dep/parataxis.html">ta</a>]
+
+[<a href="../../tr/dep/parataxis.html">tr</a>]
+
 [<a href="../../u/dep/parataxis.html">u</a>]
+
+[<a href="../../ug/dep/parataxis.html">ug</a>]
+
+[<a href="../../uk/dep/parataxis.html">uk</a>]
+
+[<a href="../../ur/dep/parataxis.html">ur</a>]
+
+[<a href="../../urj/dep/parataxis.html">urj</a>]
+
+[<a href="../../vi/dep/parataxis.html">vi</a>]
+
+[<a href="../../yue/dep/parataxis.html">yue</a>]
+
+[<a href="../../zh/dep/parataxis.html">zh</a>]
 
 
 

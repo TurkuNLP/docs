@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-cs">home</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cs">home</a></span>
 
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_cs-overview/specific-syntax.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-overview/specific-syntax.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -61,11 +78,11 @@ different <a href="cs-feat/Case">cases</a> and these forms differ from the norma
 <p>The clitic forms <em>se, si</em> are very frequent and serve various purposes.
 Their default function is to represent object that is identical to the subject of the same
 verb. The test is that they could be substituted by a normal personal pronoun.
-Such instances are attached to the verb as <a href="">cs-dep/dobj</a> or <a href="">cs-dep/iobj</a>.</p>
+Such instances are attached to the verb as <a href="">cs-dep/obj</a> or <a href="">cs-dep/iobj</a>.</p>
 
 <ul>
   <li><em>Jan <b>se</b> bude bránit.</em> “Jan will defend himself.”
-(<code>dobj</code>; substitution is grammatical:
+(<code>obj</code>; substitution is grammatical:
 <em>Jan <b>ho</b> bude bránit.</em> “Jan will defend him.”)</li>
   <li><em>Barbora <b>si</b> přidělí osobního strážce.</em> “Barbora will assign herself a bodyguard.”
 (<code>iobj</code>; substitution is grammatical:
@@ -73,8 +90,8 @@ Such instances are attached to the verb as <a href="">cs-dep/dobj</a> or <a href
 </ul>
 
 <pre><code class="language-sdparse">Jan se bude bránit . \n Jan himself will defend .
-dobj(bránit, se)
-dobj(defend, himself)
+obj(bránit, se)
+obj(defend, himself)
 </code></pre>
 
 <pre><code class="language-sdparse">Barbora si přidělí strážce . \n Barbora herself will-assign bodyguard .
@@ -83,7 +100,7 @@ iobj(will-assign, herself)
 </code></pre>
 
 <p>The Czech reflexive pronoun is also used in reciprocal actions where other languages use
-a special reciprocal pronoun. These instances are still attached as <code>dobj</code> or <code>iobj</code>,
+a special reciprocal pronoun. These instances are still attached as <code>obj</code> or <code>iobj</code>,
 respectively:</p>
 
 <ul>
@@ -92,36 +109,36 @@ respectively:</p>
 </ul>
 
 <pre><code class="language-sdparse">Jan a Marie se políbili . \n Jan and Marie each-other kissed .
-dobj(políbili, se)
-dobj(kissed, each-other)
+obj(políbili, se)
+obj(kissed, each-other)
 </code></pre>
 
 <p>If the reflexive pronoun can be substituted by another nominal but it is not a core argument
-(object) of the verb, it will be attached as <a href="">cs-dep/nmod</a>.</p>
+(object) of the verb, it will be attached as <a href="">cs-dep/obl</a>.</p>
 
 <pre><code class="language-sdparse">Zuzana si opřela kolo o zeď . \n Zuzana for-herself propped bike against wall .
-nmod(opřela, si)
-nmod(propped, for-herself)
+obl(opřela, si)
+obl(propped, for-herself)
 </code></pre>
 
 <p>The reflexive pronoun can be used to form a passive construction.
 This is called reflexive passive; there is also the “normal” passive built with the passive
 participle and the auxiliary verb <em>být</em> “to be”.
-Reflexive pronoun that forms a reflexive passive is attached as <a href="">cs-dep/auxpass:reflex</a>.</p>
+Reflexive pronoun that forms a reflexive passive is attached as <a href="">cs-dep/expl:pass</a>.</p>
 
 <pre><code class="language-sdparse">To se řekne snadno . \n It is said easily .
-auxpass:reflex(řekne, se)
-auxpass:reflex(said, is)
+expl:pass(řekne, se)
+expl:pass(said, is)
 </code></pre>
 
 <p>There are inherently reflexive verbs, i.e. the verb always occurs with a reflexive
 prounoun, and the pronoun cannot be replaced by a non-reflexive pronoun or any other nominal.</p>
 
-<p>With these verbs, the reflexive pronoun is attached as <a href="">cs-dep/expl</a>.</p>
+<p>With these verbs, the reflexive pronoun is attached as <a href="">cs-dep/expl:pv</a>.</p>
 
 <pre><code class="language-sdparse">Martin se bojí zvířat . \n Martin REFLEX fears animals .
-expl(bojí, se)
-expl(fears, REFLEX)
+expl:pv(bojí, se)
+expl:pv(fears, REFLEX)
 </code></pre>
 
 <p>If a reflexive verb (inherently or not) has been turned to a verbal noun, the reflexive
@@ -232,8 +249,8 @@ We lean towards minimizing the postulation of unobserved structure and opt to tr
 <pre><code class="language-sdparse">více závisí na stavu linky než na rychlosti přístroje \n more depends on state of-line than on speed of-device
 advmod(závisí, více)
 advmod(depends, more)
-dobj(závisí, stavu)
-dobj(depends, state)
+obj(závisí, stavu)
+obj(depends, state)
 case(stavu, na-3)
 case(state, on-13)
 nmod(stavu, linky)
@@ -244,8 +261,8 @@ case(rychlosti, na-7)
 case(speed, on-17)
 case(rychlosti, než)
 case(speed, than)
-nmod(rychlosti, přístroje)
-nmod(speed, of-device)
+obl(rychlosti, přístroje)
+obl(speed, of-device)
 </code></pre>
 
 <h3 id="comparatives-quantity">Comparatives (quantity)</h3>
@@ -290,8 +307,8 @@ when the comparative complement is reduced to just a nominal:</p>
 <pre><code class="language-sdparse">Petr má více peněz než Pavel . \n Petr has more money than Pavel .
 nsubj(má, Petr-1)
 nsubj(has, Petr-9)
-dobj(má, peněz)
-dobj(has, money)
+obj(má, peněz)
+obj(has, money)
 det:numgov(peněz, více)
 det:numgov(money, more)
 nmod(více, Pavel-6)
@@ -317,7 +334,7 @@ and the quantity it is compared to:</p>
   <li><em>Ceny domů se za posledních deset let více než zdvojnásobily.</em> “Home prices have more than doubled in the past decade.”</li>
 </ul>
 
-<p>In these cases we consider <em>více než</em> to be a multi-word expression because the two words are inseparable.
+<p>In these cases we consider <em>více než</em> to be a fixed multi-word expression because the two words are inseparable.
 One cannot say <em>*více procent než 90</em> (the word <em>procent</em> can be pulled to the front but then it will skip the whole MWE,
 as in <em>těch procent nebylo více než 90</em> lit. <em>the percent were-not more than 90.</em>)</p>
 
@@ -328,8 +345,8 @@ cop(pravděpodobné, je)
 cop(likely, is)
 advmod(pravděpodobné, více)
 advmod(likely, more)
-mwe(více, než)
-mwe(more, than)
+fixed(více, než)
+fixed(more, than)
 punct(pravděpodobné, .-6)
 punct(likely, .-13)
 </code></pre>
@@ -368,8 +385,8 @@ are not present in the surface sentence form.</p>
 a determiner, then one orphan is selected as the main dependent and it gets promoted:</p>
 
 <pre><code class="language-sdparse">Zatímco mně zbylo pět malých zelených jablíček , Petra měla tři velká červená . \n While to-me remained five small green apples , Petra had three big red .
-dobj(měla, červená)
-dobj(had, red)
+obj(měla, červená)
+obj(had, red)
 nummod(červená, tři)
 nummod(red, three)
 amod(červená, velká)
@@ -386,23 +403,25 @@ first occurrence of the verb is retained on the surface, while the other copies 
 and only their dependents remain:
 <em>Pavel si objednal hovězí a Markéta [si objednala] vepřové.</em>
 “Pavel ordered beef and Markéta [ordered] pork.”
-Universal Dependencies annnotate such cases using the <a href="">cs-dep/remnant</a> relation,
+Universal Dependencies annnotate such cases using the <a href="">cs-dep/orphan</a> relation,
 which enables reconstruction of the functions of the arguments,
 without inserting an empty node for the missing verb:</p>
 
 <pre><code class="language-sdparse">Pavel si objednal hovězí a Markéta vepřové . \n Pavel himself ordered beef and Markéta pork .
 nsubj(objednal, Pavel-1)
 nsubj(ordered, Pavel-10)
-dobj(objednal, hovězí)
-dobj(ordered, beef)
-remnant(Pavel-1, Markéta-6)
-remnant(Pavel-10, Markéta-15)
-remnant(hovězí, vepřové)
-remnant(beef, pork)
+obj(objednal, hovězí)
+obj(ordered, beef)
+conj(objednal, Markéta-6)
+conj(ordered, Markéta-15)
+orphan(Markéta-6, vepřové)
+orphan(Markéta-15, pork)
+cc(Markéta-6, a)
+cc(Markéta-15, and)
 </code></pre>
 
 <p>Sometimes a verb is missing but there is no coordination and no overt copy of the verb,
-hence we cannot use the <code>remnant</code> analysis.
+hence we cannot use the <code>orphan</code> analysis.
 In particular, there are sentence-like segments that lack the main verb:
 <em>A co na to [říká] MF?</em>
 “And what [does] MF [say] to it?”</p>
@@ -415,18 +434,18 @@ the leftmost dependent is promoted to
 the head (root) position and the other orphans are attached to it.</p>
 
 <pre><code class="language-sdparse">ROOT A co na to MF ? \n ROOT And what to it MF ?
-root(ROOT-1, A)
-root(ROOT-9, And)
-dobj(A, co)
-dobj(And, what)
-nmod(A, to-5)
-nmod(And, it)
+root(ROOT-1, MF-6)
+root(ROOT-9, MF-14)
+orphan(MF-6, co)
+orphan(MF-14, what)
+orphan(MF-6, to-5)
+orphan(MF-14, it)
 case(to-5, na)
 case(it, to-12)
-nsubj(A, MF-6)
-nsubj(And, MF-14)
-punct(A, ?-7)
-punct(And, ?-15)
+cc(MF-6, A)
+cc(MF-14, And)
+punct(MF-6, ?-7)
+punct(MF-14, ?-15)
 </code></pre>
 
 

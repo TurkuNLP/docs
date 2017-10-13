@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-ta">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/ta/feat">ta/feat</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_ta-feat/Animacy.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ta">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ta/feat">ta/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ta-feat/Animacy.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -74,7 +91,7 @@ The feature is used with 5 part-of-speech tags: <a href="">ta-pos/NOUN</a> (237;
 
 <p>237 <a href="">ta-pos/NOUN</a> tokens (9% of all <code>NOUN</code> tokens) have a non-empty value of <code>Animacy</code>.</p>
 
-<p>The most frequent other feature values with which <code>NOUN</code> and <code>Animacy</code> co-occurred: <tt><a href="Person.html">Person</a>=3</tt> (237; 100%), <tt><a href="Gender.html">Gender</a>=Com</tt> (237; 100%), <tt><a href="Number.html">Number</a>=Plur</tt> (236; 100%), <tt><a href="Case.html">Case</a>=Nom</tt> (181; 76%).</p>
+<p>The most frequent other feature values with which <code>NOUN</code> and <code>Animacy</code> co-occurred: <tt><a href="Gender.html">Gender</a>=Com</tt> (237; 100%), <tt><a href="Person.html">Person</a>=3</tt> (237; 100%), <tt><a href="Number.html">Number</a>=Plur</tt> (236; 100%), <tt><a href="Case.html">Case</a>=Nom</tt> (181; 76%).</p>
 
 <p><code>NOUN</code> tokens may have the following values of <code>Animacy</code>:</p>
 
@@ -87,15 +104,15 @@ The feature is used with 5 part-of-speech tags: <a href="">ta-pos/NOUN</a> (237;
 
 <h3 id="pron"><code>PRON</code></h3>
 
-<p>101 <a href="">ta-pos/PRON</a> tokens (41% of all <code>PRON</code> tokens) have a non-empty value of <code>Animacy</code>.</p>
+<p>101 <a href="">ta-pos/PRON</a> tokens (43% of all <code>PRON</code> tokens) have a non-empty value of <code>Animacy</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>Animacy</code> co-occurred: <tt><a href="Polite.html">Polite</a>=EMPTY</tt> (101; 100%), <tt><a href="Gender.html">Gender</a>=Com</tt> (101; 100%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (91; 90%), <tt><a href="Person.html">Person</a>=3</tt> (64; 63%), <tt><a href="Number.html">Number</a>=Plur</tt> (56; 55%).</p>
+<p>The most frequent other feature values with which <code>PRON</code> and <code>Animacy</code> co-occurred: <tt><a href="Gender.html">Gender</a>=Com</tt> (101; 100%), <tt><a href="Polite.html">Polite</a>=EMPTY</tt> (101; 100%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (91; 90%), <tt><a href="Person.html">Person</a>=3</tt> (64; 63%), <tt><a href="Number.html">Number</a>=Plur</tt> (56; 55%).</p>
 
 <p><code>PRON</code> tokens may have the following values of <code>Animacy</code>:</p>
 
 <ul>
   <li><code>Anim</code> (101; 100% of non-empty <code>Animacy</code>): அனைவரும், அவர்கள், தனது, நான், அவர்களை, அவர்களுக்கு, அவர்களது, எனது, நாம், யாரும்</li>
-  <li><code>EMPTY</code> (147): அவர், இது, அது, அதை, அவரது, இதை, அதில், அவருக்கு, இதன், அதற்க்</li>
+  <li><code>EMPTY</code> (135): அவர், இது, அது, அதை, அவரது, இதை, அதில், அவருக்கு, இதன், அதற்க்</li>
 </ul>
 
 <p><code>Animacy</code> seems to be <strong>lexical feature</strong> of <code>PRON</code>. 100% lemmas (16) occur only with one value of <code>Animacy</code>.</p>
@@ -104,20 +121,20 @@ The feature is used with 5 part-of-speech tags: <a href="">ta-pos/NOUN</a> (237;
 
 <p>41 <a href="">ta-pos/AUX</a> tokens (7% of all <code>AUX</code> tokens) have a non-empty value of <code>Animacy</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Animacy</code> co-occurred: <tt><a href="Negative.html">Negative</a>=Pos</tt> (41; 100%), <tt><a href="Polite.html">Polite</a>=EMPTY</tt> (41; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (41; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (41; 100%), <tt><a href="Gender.html">Gender</a>=Com</tt> (41; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (40; 98%), <tt><a href="Number.html">Number</a>=Plur</tt> (33; 80%), <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (30; 73%), <tt><a href="Person.html">Person</a>=3</tt> (25; 61%).</p>
+<p>The most frequent other feature values with which <code>AUX</code> and <code>Animacy</code> co-occurred: <tt><a href="Polite.html">Polite</a>=EMPTY</tt> (41; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (41; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (41; 100%), <tt><a href="Gender.html">Gender</a>=Com</tt> (41; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (41; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (40; 98%), <tt><a href="Number.html">Number</a>=Plur</tt> (33; 80%), <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (30; 73%), <tt><a href="Person.html">Person</a>=3</tt> (25; 61%).</p>
 
 <p><code>AUX</code> tokens may have the following values of <code>Animacy</code>:</p>
 
 <ul>
   <li><code>Anim</code> (41; 100% of non-empty <code>Animacy</code>): உள்ளனர், உள்ளோம், உள்ளேன், கொள்கிறேன், மாட்டேன், வருகின்றனர், ஆவர், இருக்கிறேன், இருக்கிறோம், படுகின்றனர்</li>
-  <li><code>EMPTY</code> (586): உள்ளது, பட்ட், வேண்டும், உள்ளார், இல்லை, பட்டது, பட்டு, உள்ளன, இருந்தது, ப்படும்</li>
+  <li><code>EMPTY</code> (587): உள்ளது, பட்ட், வேண்டும், உள்ளார், இல்லை, பட்டது, பட்டு, உள்ளன, இருந்தது, ப்படும்</li>
 </ul>
 
 <h3 id="propn"><code>PROPN</code></h3>
 
 <p>29 <a href="">ta-pos/PROPN</a> tokens (2% of all <code>PROPN</code> tokens) have a non-empty value of <code>Animacy</code>.</p>
 
-<p>The most frequent other feature values with which <code>PROPN</code> and <code>Animacy</code> co-occurred: <tt><a href="Polite.html">Polite</a>=EMPTY</tt> (29; 100%), <tt><a href="Number.html">Number</a>=Plur</tt> (29; 100%), <tt><a href="Gender.html">Gender</a>=Com</tt> (29; 100%), <tt><a href="Person.html">Person</a>=3</tt> (29; 100%).</p>
+<p>The most frequent other feature values with which <code>PROPN</code> and <code>Animacy</code> co-occurred: <tt><a href="Polite.html">Polite</a>=EMPTY</tt> (29; 100%), <tt><a href="Person.html">Person</a>=3</tt> (29; 100%), <tt><a href="Gender.html">Gender</a>=Com</tt> (29; 100%), <tt><a href="Number.html">Number</a>=Plur</tt> (29; 100%).</p>
 
 <p><code>PROPN</code> tokens may have the following values of <code>Animacy</code>:</p>
 
@@ -130,13 +147,13 @@ The feature is used with 5 part-of-speech tags: <a href="">ta-pos/NOUN</a> (237;
 
 <p>12 <a href="">ta-pos/VERB</a> tokens (1% of all <code>VERB</code> tokens) have a non-empty value of <code>Animacy</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Animacy</code> co-occurred: <tt><a href="Gender.html">Gender</a>=Com</tt> (12; 100%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (12; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (12; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (12; 100%), <tt><a href="Negative.html">Negative</a>=Pos</tt> (12; 100%), <tt><a href="Polite.html">Polite</a>=EMPTY</tt> (12; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (11; 92%), <tt><a href="Number.html">Number</a>=Plur</tt> (7; 58%), <tt><a href="Person.html">Person</a>=1</tt> (7; 58%).</p>
+<p>The most frequent other feature values with which <code>VERB</code> and <code>Animacy</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (12; 100%), <tt><a href="Gender.html">Gender</a>=Com</tt> (12; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (12; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (12; 100%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (12; 100%), <tt><a href="Polite.html">Polite</a>=EMPTY</tt> (12; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (11; 92%), <tt><a href="Number.html">Number</a>=Plur</tt> (7; 58%), <tt><a href="Person.html">Person</a>=1</tt> (7; 58%).</p>
 
 <p><code>VERB</code> tokens may have the following values of <code>Animacy</code>:</p>
 
 <ul>
   <li><code>Anim</code> (12; 100% of non-empty <code>Animacy</code>): காயமடைந்தனர், அஞ்சுகிறீர்கள், இருங்கள், உள்ளேன், எதிர்க்கிறோம், கருதுகிறேன், கேட்டுக்கொள்கிறேன், செய்கிறோம், புறக்கணிக்கிறேன், மேற்கொண்டேன்</li>
-  <li><code>EMPTY</code> (1159): தெரிவித்தார், தெரிவித்த், என்றார், செய்து, தெரிவிக்கப், செய்யப், உள்ளது, கூறினார், கொண்டு, கலந்து</li>
+  <li><code>EMPTY</code> (1158): தெரிவித்தார், தெரிவித்த், என்றார், செய்து, தெரிவிக்கப், செய்யப், உள்ளது, கூறினார், கொண்டு, கலந்து</li>
 </ul>
 
 <p><code>Animacy</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 100% lemmas (10) occur only with one value of <code>Animacy</code>.</p>
@@ -145,10 +162,11 @@ The feature is used with 5 part-of-speech tags: <a href="">ta-pos/NOUN</a> (237;
 
 <p>The 10 most frequent relations where parent and child node agree in <code>Animacy</code>:
 <tt>NOUN –[<a href="../dep/conj.html">conj</a>]–&gt; NOUN</tt> (10; 83%),
-<tt>PRON –[<a href="../dep/nmod.html">nmod</a>]–&gt; NOUN</tt> (5; 71%),
-<tt>PRON –[<a href="../dep/nmod.html">nmod</a>]–&gt; PRON</tt> (1; 100%),
+<tt>PRON –[<a href="../dep/nmod.html">nmod</a>]–&gt; NOUN</tt> (5; 83%),
+<tt>PROPN –[<a href="../dep/nmod.html">nmod</a>]–&gt; PRON</tt> (1; 100%),
+<tt>NOUN –[<a href="../dep/obl.html">obl</a>]–&gt; PROPN</tt> (1; 100%),
 <tt>PRON –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; NOUN</tt> (1; 100%),
-<tt>PROPN –[<a href="../dep/nmod.html">nmod</a>]–&gt; PRON</tt> (1; 100%).</p>
+<tt>PRON –[<a href="../dep/nmod.html">nmod</a>]–&gt; PRON</tt> (1; 100%).</p>
 
 
 
@@ -158,9 +176,25 @@ The feature is used with 5 part-of-speech tags: <a href="">ta-pos/NOUN</a> (237;
 
 Animacy in other languages:
 
+[<a href="../../am/feat/Animacy.html">am</a>]
+
+[<a href="../../ar/feat/Animacy.html">ar</a>]
+
 [<a href="../../bg/feat/Animacy.html">bg</a>]
 
+[<a href="../../bxr/feat/Animacy.html">bxr</a>]
+
+[<a href="../../ca/feat/Animacy.html">ca</a>]
+
+[<a href="../../ckb/feat/Animacy.html">ckb</a>]
+
+[<a href="../../cop/feat/Animacy.html">cop</a>]
+
 [<a href="../../cs/feat/Animacy.html">cs</a>]
+
+[<a href="../../cu/feat/Animacy.html">cu</a>]
+
+[<a href="../../da/feat/Animacy.html">da</a>]
 
 [<a href="../../de/feat/Animacy.html">de</a>]
 
@@ -170,27 +204,93 @@ Animacy in other languages:
 
 [<a href="../../es/feat/Animacy.html">es</a>]
 
+[<a href="../../et/feat/Animacy.html">et</a>]
+
 [<a href="../../eu/feat/Animacy.html">eu</a>]
 
 [<a href="../../fa/feat/Animacy.html">fa</a>]
+
+[<a href="../../fo/feat/Animacy.html">fo</a>]
 
 [<a href="../../fr/feat/Animacy.html">fr</a>]
 
 [<a href="../../ga/feat/Animacy.html">ga</a>]
 
+[<a href="../../gl/feat/Animacy.html">gl</a>]
+
+[<a href="../../got/feat/Animacy.html">got</a>]
+
+[<a href="../../grc/feat/Animacy.html">grc</a>]
+
 [<a href="../../he/feat/Animacy.html">he</a>]
 
+[<a href="../../hi/feat/Animacy.html">hi</a>]
+
+[<a href="../../hr/feat/Animacy.html">hr</a>]
+
 [<a href="../../hu/feat/Animacy.html">hu</a>]
+
+[<a href="../../id/feat/Animacy.html">id</a>]
 
 [<a href="../../it/feat/Animacy.html">it</a>]
 
 [<a href="../../ja/feat/Animacy.html">ja</a>]
 
+[<a href="../../kk/feat/Animacy.html">kk</a>]
+
+[<a href="../../kmr/feat/Animacy.html">kmr</a>]
+
 [<a href="../../ko/feat/Animacy.html">ko</a>]
 
-[<a href="../../sv/feat/Animacy.html">sv</a>]
+[<a href="../../la/feat/Animacy.html">la</a>]
+
+[<a href="../../lv/feat/Animacy.html">lv</a>]
+
+[<a href="../../mr/feat/Animacy.html">mr</a>]
+
+[<a href="../../nl/feat/Animacy.html">nl</a>]
+
+[<a href="../../no/feat/Animacy.html">no</a>]
+
+[<a href="../../pl/feat/Animacy.html">pl</a>]
+
+[<a href="../../pt/feat/Animacy.html">pt</a>]
+
+[<a href="../../ro/feat/Animacy.html">ro</a>]
+
+[<a href="../../ru/feat/Animacy.html">ru</a>]
+
+[<a href="../../sa/feat/Animacy.html">sa</a>]
+
+[<a href="../../sk/feat/Animacy.html">sk</a>]
+
+[<a href="../../sla/feat/Animacy.html">sla</a>]
+
+[<a href="../../sl/feat/Animacy.html">sl</a>]
+
+[<a href="../../so/feat/Animacy.html">so</a>]
+
+[<a href="../../sr/feat/Animacy.html">sr</a>]
+
+[<a href="../../swl/feat/Animacy.html">swl</a>]
+
+[<a href="../../ta/feat/Animacy.html">ta</a>]
+
+[<a href="../../tr/feat/Animacy.html">tr</a>]
 
 [<a href="../../u/feat/Animacy.html">u</a>]
+
+[<a href="../../ug/feat/Animacy.html">ug</a>]
+
+[<a href="../../uk/feat/Animacy.html">uk</a>]
+
+[<a href="../../ur/feat/Animacy.html">ur</a>]
+
+[<a href="../../vi/feat/Animacy.html">vi</a>]
+
+[<a href="../../yue/feat/Animacy.html">yue</a>]
+
+[<a href="../../zh/feat/Animacy.html">zh</a>]
 
 
 

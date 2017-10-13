@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,18 +34,21 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-yue">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/yue/pos">yue/pos</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_yue-pos/PART.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-yue">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/yue/pos">yue/pos</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_yue-pos/PART.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
 
       
-      <div class="v1warning">
-	This page still pertains to UD version 1.
+      <div class="v2complete">
+	This page pertains to UD version 2.
       </div>
       
       
@@ -45,8 +62,71 @@
 
           <h2><code>PART</code>: particle</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>PART</code>.</p>
+<h3 id="definition">Definition</h3>
+
+<p>Particles are function words that must be associated with another word, phrase, or clause to impart meaning and that do not satisfy definitions of other universal parts of speech (such as <code>ADP</code>, <code>AUX</code>, <code>CCONJ</code>, or <code>SCONJ</code>).</p>
+
+<p>In Cantonese, particles include the genitive/associative/relativizer/nominalizer marker 嘅 / <em>ge3</em>; 得 / <em>dak1</em> and 到 / <em>dou3</em> in V-得/到 extent/descriptive constructions (see <a><code>compound:ext</code></a>); the manner adverbializer 噉 / <em>gam2</em>; the “et cetera” marker 等(等) / <em>dang2(dang2)</em>; sentence-final particles; the quantifiers 埋 / <em>maai4</em> and 晒 / <em>saai3</em>; the adversative 親 / <em>can1</em>; and so on.</p>
+
+<h3 id="examples">Examples</h3>
+
+<ul>
+  <li>Genitive 的
+    <ul>
+      <li>狗 <b>嘅</b> 尾巴 ／ <em>gau2 <b>ge3</b> mei4baa1</em> “a dog’s tail”</li>
+    </ul>
+  </li>
+  <li>Associative 的
+    <ul>
+      <li>開心 <b>嘅</b> 小朋友 / <em>hoi1sam1 <b>ge3</b> sai3lou6zai2</em> “happy children”</li>
+    </ul>
+  </li>
+  <li>Relativizer 的
+    <ul>
+      <li>跴 單車 <b>嘅</b> 人 ／ <em>yaai2 daan1ce1 <b>ge1</b> jan4</em> “people who bike”</li>
+    </ul>
+  </li>
+  <li>Nominalizer 的
+    <ul>
+      <li>食 唔 晒 <b>嘅</b> 唔 准 走 ／ <em>sik3 m5 saai3 <b>ge3</b> m4 zeon2 zau2</em> “those who don’t finish eating aren’t allowed to go”</li>
+    </ul>
+  </li>
+  <li>Extent/descriptive 得到
+    <ul>
+      <li>佢 跑 <b>得</b> 好 快 ／<em>keoi5 pao2 <b>dak1</b> hou2 faai3</em> “He runs very fast.”</li>
+      <li>佢 跑 <b>到</b> 出 晒 汗 ／<em>keoi5 pao2 <b>dou3</b> ceot1 saai3 hon6</em> “He ran himself soaked in sweat.”</li>
+    </ul>
+  </li>
+  <li>Adverbializer 地
+    <ul>
+      <li>佢 慢慢 <b>噉</b> 跑 ／ <em>keoi5 maan6maan6*2 <b>gam2</b> pao2</em> “He’s running slowly.”</li>
+    </ul>
+  </li>
+  <li>Etc. marker
+    <ul>
+      <li>呢度 有 梨，橙，<b>等等</b> ／ <em>ni1dou6 jau5 lei2, caang2, <b>dang2dang2</b></em> “There are pears, oranges, etc. here.”</li>
+    </ul>
+  </li>
+  <li>Sentence-final particles
+    <ul>
+      <li>你 想 去 <b>呀</b> ？ ／ <em>nei5 soeng2 heoi3 <b>aa4</b></em> “Do you want to go?”</li>
+      <li>我哋 一齊 去 <b>喇</b> ／ <em>ngo5dei6 jat1cai4 heoi3 <b>laa1</b></em> “Let’s go together.”</li>
+      <li>佢 一 個 人 <b>啫</b> ／ <em>keoi5 jat1 go3 jan4 <b>ze1</b></em> “It’s just him, one person.”</li>
+      <li>佢哋 一定 嚟 <b>嘅</b> ／ <em>keoi5dei6 jat1ding6 lei4 <b>ge3</b></em> “They will definitely come.”</li>
+    </ul>
+  </li>
+  <li>Quantifiers
+    <ul>
+      <li>畀 <b>埋</b> 我 / <em>bei2 <b>maai4</b> ngo5</em> “Give me that as well.”</li>
+      <li>佢哋 走 <b>晒</b> / <em>keoi5dei6 zau2 <b>saai3</b></em> “They all left.”</li>
+    </ul>
+  </li>
+  <li>Adversative 親
+    <ul>
+      <li>佢 跌 <b>親</b> / <em>keoi5 dit3 <b>can1</b></em> “He fell.”</li>
+    </ul>
+  </li>
+</ul>
 
 
 <!-- "automatic stats" -->
@@ -61,9 +141,25 @@ for <code>PART</code>.</p>
 
 PART in other languages:
 
+[<a href="../../am/pos/PART.html">am</a>]
+
+[<a href="../../ar/pos/PART.html">ar</a>]
+
 [<a href="../../bg/pos/PART.html">bg</a>]
 
+[<a href="../../bxr/pos/PART.html">bxr</a>]
+
+[<a href="../../ca/pos/PART.html">ca</a>]
+
+[<a href="../../ckb/pos/PART.html">ckb</a>]
+
+[<a href="../../cop/pos/PART.html">cop</a>]
+
 [<a href="../../cs/pos/PART.html">cs</a>]
+
+[<a href="../../cu/pos/PART.html">cu</a>]
+
+[<a href="../../da/pos/PART.html">da</a>]
 
 [<a href="../../de/pos/PART.html">de</a>]
 
@@ -73,29 +169,99 @@ PART in other languages:
 
 [<a href="../../es/pos/PART.html">es</a>]
 
+[<a href="../../et/pos/PART.html">et</a>]
+
 [<a href="../../eu/pos/PART.html">eu</a>]
 
 [<a href="../../fa/pos/PART.html">fa</a>]
 
 [<a href="../../fi/pos/PART.html">fi</a>]
 
+[<a href="../../fo/pos/PART.html">fo</a>]
+
 [<a href="../../fr/pos/PART.html">fr</a>]
 
 [<a href="../../ga/pos/PART.html">ga</a>]
 
+[<a href="../../gl/pos/PART.html">gl</a>]
+
+[<a href="../../got/pos/PART.html">got</a>]
+
+[<a href="../../grc/pos/PART.html">grc</a>]
+
 [<a href="../../he/pos/PART.html">he</a>]
 
+[<a href="../../hi/pos/PART.html">hi</a>]
+
+[<a href="../../hr/pos/PART.html">hr</a>]
+
 [<a href="../../hu/pos/PART.html">hu</a>]
+
+[<a href="../../id/pos/PART.html">id</a>]
 
 [<a href="../../it/pos/PART.html">it</a>]
 
 [<a href="../../ja/pos/PART.html">ja</a>]
 
+[<a href="../../kk/pos/PART.html">kk</a>]
+
+[<a href="../../kmr/pos/PART.html">kmr</a>]
+
 [<a href="../../ko/pos/PART.html">ko</a>]
+
+[<a href="../../la/pos/PART.html">la</a>]
+
+[<a href="../../lv/pos/PART.html">lv</a>]
+
+[<a href="../../mr/pos/PART.html">mr</a>]
+
+[<a href="../../nl/pos/PART.html">nl</a>]
+
+[<a href="../../no/pos/PART.html">no</a>]
+
+[<a href="../../pl/pos/PART.html">pl</a>]
+
+[<a href="../../pt/pos/PART.html">pt</a>]
+
+[<a href="../../ro/pos/PART.html">ro</a>]
+
+[<a href="../../ru/pos/PART.html">ru</a>]
+
+[<a href="../../sa/pos/PART.html">sa</a>]
+
+[<a href="../../sk/pos/PART.html">sk</a>]
+
+[<a href="../../sla/pos/PART.html">sla</a>]
+
+[<a href="../../sl/pos/PART.html">sl</a>]
+
+[<a href="../../so/pos/PART.html">so</a>]
+
+[<a href="../../sr/pos/PART.html">sr</a>]
 
 [<a href="../../sv/pos/PART.html">sv</a>]
 
+[<a href="../../swl/pos/PART.html">swl</a>]
+
+[<a href="../../ta/pos/PART.html">ta</a>]
+
+[<a href="../../tr/pos/PART.html">tr</a>]
+
+[<a href="../../ug/pos/PART.html">ug</a>]
+
+[<a href="../../uk/pos/PART.html">uk</a>]
+
 [<a href="../../u/pos/PART.html">u</a>]
+
+[<a href="../../urj/pos/PART.html">urj</a>]
+
+[<a href="../../ur/pos/PART.html">ur</a>]
+
+[<a href="../../vi/pos/PART.html">vi</a>]
+
+[<a href="../../yue/pos/PART.html">yue</a>]
+
+[<a href="../../zh/pos/PART.html">zh</a>]
 
 
 

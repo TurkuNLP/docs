@@ -11,7 +11,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
-    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(event) {anchors.add();});</script>
+    <!-- Set up this custom Google search at https://cse.google.com/cse/business/settings?cx=001145188882102106025:dl1mehhcgbo -->
+    <script>
+      (function() {
+        var cx = '001145188882102106025:dl1mehhcgbo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,11 +34,14 @@
     <div id="main" class="center">
 
       <div id="hp-header">
-	
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/#language-hu">home</a></span>
-          <span class="header-text"><a href="http://turkunlp.github.io/docs/hu/dep">hu/dep</a></span>
-          <span class="header-text"><a href="https://github.com/turkunlp/docs/edit/pages-source/_hu-dep/root.md" target="#">edit page</a></span>
+        <table width="100%"><tr><td width="50%">
+          <span class="header-text"><a href="http://universaldependencies.org/#language-hu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/hu/dep">hu/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hu-dep/root.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+        </td><td>
+          <gcse:search></gcse:search>
+        </td></tr></table>
       </div>
 
       <hr/>
@@ -63,12 +80,12 @@ for <code>root</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>1800 nodes (4%) are attached to their parents as <code>root</code>.</p>
+<p>1351 nodes (4%) are attached to their parents as <code>root</code>.</p>
 
-<p>1800 instances of <code>root</code> (100%) are left-to-right (parent precedes child).
-Average distance between parent and child is 8.40833333333333.</p>
+<p>1351 instances of <code>root</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 8.56698741672835.</p>
 
-<p>The following 9 pairs of parts of speech are connected with <code>root</code>: <a href="">hu-pos/ROOT</a>-<a href="">hu-pos/VERB</a> (1463; 81% instances), <a href="">hu-pos/ROOT</a>-<a href="">hu-pos/ADJ</a> (146; 8% instances), <a href="">hu-pos/ROOT</a>-<a href="">hu-pos/NOUN</a> (131; 7% instances), <a href="">hu-pos/ROOT</a>-<a href="">hu-pos/PRON</a> (23; 1% instances), <a href="">hu-pos/ROOT</a>-<a href="">hu-pos/ADV</a> (18; 1% instances), <a href="">hu-pos/ROOT</a>-<a href="">hu-pos/PROPN</a> (11; 1% instances), <a href="">hu-pos/ROOT</a>-<a href="">hu-pos/DET</a> (3; 0% instances), <a href="">hu-pos/ROOT</a>-<a href="">hu-pos/NUM</a> (3; 0% instances), <a href="">hu-pos/ROOT</a>-<a href="">hu-pos/INTJ</a> (2; 0% instances).</p>
+<p>The following 9 pairs of parts of speech are connected with <code>root</code>: <a href="">hu-pos/ROOT</a>-<a href="">hu-pos/VERB</a> (1091; 81% instances), <a href="">hu-pos/ROOT</a>-<a href="">hu-pos/NOUN</a> (109; 8% instances), <a href="">hu-pos/ROOT</a>-<a href="">hu-pos/ADJ</a> (108; 8% instances), <a href="">hu-pos/ROOT</a>-<a href="">hu-pos/PRON</a> (19; 1% instances), <a href="">hu-pos/ROOT</a>-<a href="">hu-pos/PROPN</a> (9; 1% instances), <a href="">hu-pos/ROOT</a>-<a href="">hu-pos/ADV</a> (8; 1% instances), <a href="">hu-pos/ROOT</a>-<a href="">hu-pos/NUM</a> (3; 0% instances), <a href="">hu-pos/ROOT</a>-<a href="">hu-pos/DET</a> (2; 0% instances), <a href="">hu-pos/ROOT</a>-<a href="">hu-pos/INTJ</a> (2; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 10	bgColor:blue
 # visual-style 10	fgColor:white
@@ -80,26 +97,12 @@ Average distance between parent and child is 8.40833333333333.</p>
 3	hat	hat	NUM	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|NumType=Card|Person[psor]=None	4	nummod	_	_
 4	hónapos	hónapos	ADJ	_	Case=Nom|Degree=Pos|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	5	amod:att	_	_
 5	időszak	időszak	NOUN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	10	nsubj	_	_
-6	azonban	azonban	CONJ	_	_	10	cc	_	_
+6	azonban	azonban	CCONJ	_	_	10	cc	_	_
 7	a	a	DET	_	Definite=Def|PronType=Art	8	det	_	_
 8	hét	hét	NOUN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	9	nmod:att	_	_
 9	elején	eleje	NOUN	_	Case=Sup|Number=Sing|Number[psed]=None|Number[psor]=Sing|Person[psor]=3	10	nmod:obl	_	_
-10	lejárt	le+jár	VERB	_	Definite=Ind|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+10	lejárt	le+jár	VERB	_	Definite=Ind|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
 11	.	.	PUNCT	_	_	10	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 0	bgColor:blue
-# visual-style 0	fgColor:white
-# visual-style 0 4 root	color:blue
-1	Ettől	ez	DET	_	Case=Abl|Number=Sing|Number[psed]=None|Number[psor]=None|Person=3|Person[psor]=None|PronType=Dem	3	det	_	_
-2	a	a	DET	_	Definite=Def|PronType=Art	3	det	_	_
-3	győzelemtől	győzelem	NOUN	_	Case=Abl|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	4	nmod:obl	_	_
-4	magabiztos	magabiztos	ADJ	_	Case=Nom|Degree=Pos|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	0	root	_	_
-5	lettem	lesz	VERB	_	Definite=Ind|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
-6	.	.	PUNCT	_	_	4	punct	_	_
 
 </code></pre>
 
@@ -111,12 +114,26 @@ Average distance between parent and child is 8.40833333333333.</p>
 1	A	a	DET	_	Definite=Def|PronType=Art	2	det	_	_
 2	rendezvény	rendezvény	NOUN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	3	nmod:att	_	_
 3	szónoka	szónok	NOUN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=Sing|Person[psor]=3	7	nsubj	_	_
-4	Tamás	Tamás	PROPN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	5	name	_	_
-5	Gáspár	Gáspár	PROPN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	6	name	_	_
+4	Tamás	Tamás	PROPN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	6	flat:name	_	_
+5	Gáspár	Gáspár	PROPN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	4	flat:name	_	_
 6	Miklós	Miklós	PROPN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	7	appos	_	_
 7	filozófus	filozófus	NOUN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	0	root	_	_
-8	lesz	lesz	VERB	_	Definite=Ind|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+8	lesz	lesz	AUX	_	Definite=Ind|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	SpaceAfter=No
 9	.	.	PUNCT	_	_	7	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 0	bgColor:blue
+# visual-style 0	fgColor:white
+# visual-style 0 5 root	color:blue
+1	Testületi	testületi	ADJ	_	Case=Nom|Degree=Pos|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	2	amod:att	_	_
+2	döntés	döntés	NOUN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	5	nsubj	_	_
+3	leghamarabb	hamar	ADV	_	_	5	advmod:mode	_	_
+4	januárban	január	NOUN	_	Case=Ine|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	5	nmod:obl	_	_
+5	várható	várható	ADJ	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None|VerbForm=PartPres	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	_	_	5	punct	_	_
 
 </code></pre>
 
@@ -128,9 +145,25 @@ Average distance between parent and child is 8.40833333333333.</p>
 
 root in other languages:
 
+[<a href="../../am/dep/root.html">am</a>]
+
+[<a href="../../ar/dep/root.html">ar</a>]
+
 [<a href="../../bg/dep/root.html">bg</a>]
 
+[<a href="../../bxr/dep/root.html">bxr</a>]
+
+[<a href="../../ca/dep/root.html">ca</a>]
+
+[<a href="../../ckb/dep/root.html">ckb</a>]
+
+[<a href="../../cop/dep/root.html">cop</a>]
+
 [<a href="../../cs/dep/root.html">cs</a>]
+
+[<a href="../../cu/dep/root.html">cu</a>]
+
+[<a href="../../da/dep/root.html">da</a>]
 
 [<a href="../../de/dep/root.html">de</a>]
 
@@ -140,29 +173,99 @@ root in other languages:
 
 [<a href="../../es/dep/root.html">es</a>]
 
+[<a href="../../et/dep/root.html">et</a>]
+
 [<a href="../../eu/dep/root.html">eu</a>]
 
 [<a href="../../fa/dep/root.html">fa</a>]
 
 [<a href="../../fi/dep/root.html">fi</a>]
 
+[<a href="../../fo/dep/root.html">fo</a>]
+
 [<a href="../../fr/dep/root.html">fr</a>]
 
 [<a href="../../ga/dep/root.html">ga</a>]
 
+[<a href="../../gl/dep/root.html">gl</a>]
+
+[<a href="../../got/dep/root.html">got</a>]
+
+[<a href="../../grc/dep/root.html">grc</a>]
+
 [<a href="../../he/dep/root.html">he</a>]
 
+[<a href="../../hi/dep/root.html">hi</a>]
+
+[<a href="../../hr/dep/root.html">hr</a>]
+
 [<a href="../../hu/dep/root.html">hu</a>]
+
+[<a href="../../id/dep/root.html">id</a>]
 
 [<a href="../../it/dep/root.html">it</a>]
 
 [<a href="../../ja/dep/root.html">ja</a>]
 
+[<a href="../../kk/dep/root.html">kk</a>]
+
+[<a href="../../kmr/dep/root.html">kmr</a>]
+
 [<a href="../../ko/dep/root.html">ko</a>]
+
+[<a href="../../la/dep/root.html">la</a>]
+
+[<a href="../../lv/dep/root.html">lv</a>]
+
+[<a href="../../mr/dep/root.html">mr</a>]
+
+[<a href="../../nl/dep/root.html">nl</a>]
+
+[<a href="../../no/dep/root.html">no</a>]
+
+[<a href="../../pl/dep/root.html">pl</a>]
+
+[<a href="../../pt/dep/root.html">pt</a>]
+
+[<a href="../../ro/dep/root.html">ro</a>]
+
+[<a href="../../ru/dep/root.html">ru</a>]
+
+[<a href="../../sa/dep/root.html">sa</a>]
+
+[<a href="../../sk/dep/root.html">sk</a>]
+
+[<a href="../../sla/dep/root.html">sla</a>]
+
+[<a href="../../sl/dep/root.html">sl</a>]
+
+[<a href="../../so/dep/root.html">so</a>]
+
+[<a href="../../sr/dep/root.html">sr</a>]
 
 [<a href="../../sv/dep/root.html">sv</a>]
 
+[<a href="../../swl/dep/root.html">swl</a>]
+
+[<a href="../../ta/dep/root.html">ta</a>]
+
+[<a href="../../tr/dep/root.html">tr</a>]
+
 [<a href="../../u/dep/root.html">u</a>]
+
+[<a href="../../ug/dep/root.html">ug</a>]
+
+[<a href="../../uk/dep/root.html">uk</a>]
+
+[<a href="../../ur/dep/root.html">ur</a>]
+
+[<a href="../../urj/dep/root.html">urj</a>]
+
+[<a href="../../vi/dep/root.html">vi</a>]
+
+[<a href="../../yue/dep/root.html">yue</a>]
+
+[<a href="../../zh/dep/root.html">zh</a>]
 
 
 
