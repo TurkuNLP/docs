@@ -79,8 +79,9 @@ For more details, see <a href="tokenization.html">tokenization</a>.</li>
 <h2 id="morphology">Morphology</h2>
 
 <ul>
-  <li>There are four main (de)verbal forms, distinguished by the UPOS tag and the value of the <a href="">VerbForm</a> feature:
+  <li>There are five main (de)verbal forms, distinguished by the UPOS tag and the value of the <a href="">VerbForm</a> feature:
     <ul>
+      <li>Infinitive <code>Inf</code>, tagged <a href="">VERB</a> or <a href="">AUX</a>.</li>
       <li>Finite verb <code>Fin</code>, tagged <a href="">VERB</a> or <a href="">AUX</a>.</li>
       <li>Participle <code>Part</code>, tagged <a href="">VERB</a> or <a href="">AUX</a> (the so-called l-participle) or <a href="">ADJ</a> (all other participle types).</li>
       <li>Converb <code>Conv</code>, tagged <a href="">VERB</a> or <a href="">AUX</a>.</li>
@@ -96,11 +97,19 @@ Feminine and neuter nominals do not distinguish animacy grammatically.
     </ul>
   </li>
   <li>The two main values of the <a href="">Number</a> feature are <code>Sing</code> and <code>Plur</code>. The following parts of speech inflect for number:
-<a href="">NOUN</a>, <a href="">PROPN</a>, <a href="">PRON</a>, <a href="">ADJ</a>, <a href="">DET</a>, marginally <a href="">NUM</a>, <a href="">VERB</a>, <a href="">AUX</a> (finite and converbs).
+<a href="">NOUN</a>, <a href="">PROPN</a>, <a href="">PRON</a>, <a href="">ADJ</a>, <a href="">DET</a>, <a href="">VERB</a>, <a href="">AUX</a> (finite, participles and converbs), marginally <a href="">NUM</a>.
     <ul>
       <li>Remnants of the <code>Dual</code> number occur only in the instrumental <a href="">Case</a> of a few nouns and all the agreeing parts of speech.</li>
       <li>Selected nouns are plurale tantum (<code>Ptan</code>) or singulare tantum (<code>Coll</code>). These two values are lexical and cannot be used with
 the agreeing adjectives, determiners or verbs. They also never occur with pronouns.</li>
+    </ul>
+  </li>
+  <li><a href="">Case</a> has 7 possible values: <code>Nom</code>, <code>Gen</code>, <code>Dat</code>, <code>Acc</code>, <code>Voc</code>, <code>Loc</code>, <code>Ins</code>.
+It occurs with the nominal words, i.e., <a href="">NOUN</a>, <a href="">PROPN</a>, <a href="">PRON</a>, <a href="">ADJ</a>, <a href="">DET</a>, <a href="">NUM</a>.
+It can occur with participles but only with those tagged as <code>ADJ</code>. It never occurs with verbs.
+    <ul>
+      <li>The <code>Case</code> feature also occurs with prepositions (<a href="">ADP</a>). Here it is a lexical feature. Prepositions do not inflect for case
+but they subcategorize for the case of their noun phrase.</li>
     </ul>
   </li>
 </ul>
