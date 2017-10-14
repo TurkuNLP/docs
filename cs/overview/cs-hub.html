@@ -94,6 +94,11 @@ and many of these words should probably belong to another category in UD; howeve
       <li>Verbal noun <code>Vnoun</code>, tagged <a href="">NOUN</a>.</li>
     </ul>
   </li>
+</ul>
+
+<h3 id="nominal-features">Nominal Features</h3>
+
+<ul>
   <li>Nominal words (<a href="">NOUN</a>, <a href="">PROPN</a> and <a href="">PRON</a>) have an inherent <a href="">Gender</a> feature with one of three values: <code>Masc</code>, <code>Fem</code> or <code>Neut</code>.
 In some cases the masculine gender is further subclassified by the <a href="">Animacy</a> values <code>Anim</code> and <code>Inan</code>.
 Feminine and neuter nominals do not distinguish animacy grammatically.
@@ -118,6 +123,11 @@ It can occur with participles but only with those tagged as <code>ADJ</code>. It
 but they subcategorize for the case of their noun phrase.</li>
     </ul>
   </li>
+</ul>
+
+<h3 id="degree-and-polarity">Degree and Polarity</h3>
+
+<ul>
   <li><a href="">Degree</a> applies to adjectives (<a href="">ADJ</a>) and adverbs (<a href="">ADV</a>) and has one of three possible values: <code>Pos</code>, <code>Cmp</code>, <code>Sup</code>.</li>
   <li><a href="">Polarity</a> has two values, <code>Pos</code> and <code>Neg</code>, and applies primarily to verbs (<a href="">VERB</a>, <a href="">AUX</a>), adjectives (<a href="">ADJ</a>) and adverbs (<a href="">ADV</a>)
 that can be negated using the bound morpheme <em>ne-</em>.
@@ -128,6 +138,11 @@ that can be negated using the bound morpheme <em>ne-</em>.
 The <code>PronType=Neg</code> feature is used there instead.</li>
     </ul>
   </li>
+</ul>
+
+<h3 id="verbal-features">Verbal Features</h3>
+
+<ul>
   <li>Verbs have a lexical <a href="">Aspect</a>, either imperfective (<code>Imp</code>) or perfective (<code>Perf</code>). A few verbs are biaspectual and they lack the <code>Aspect</code>
 feature. Some imperfective verbs could be further classified as iteratives but they are not marked as such (although UD provides <code>Aspect=Iter</code>).
     <ul>
@@ -154,6 +169,11 @@ The passive participle does not have the <code>Tense</code> feature.</li>
   </li>
   <li>There are two values of the <a href="">Voice</a> feature: <code>Act</code> and <code>Pass</code>. Only the passive participle has <code>Voice=Pass</code>. All other verb forms have
 <code>Voice=Act</code>.</li>
+</ul>
+
+<h3 id="pronouns-determiners-quantifiers">Pronouns, Determiners, Quantifiers</h3>
+
+<ul>
   <li><a href="">PronType</a> is used with pronouns (<a href="">PRON</a>), determiners (<a href="">DET</a>) and adverbs (<a href="">ADV</a>).</li>
   <li><a href="">NumType</a> is used with numerals (<a href="">NUM</a>), adjectives (<a href="">ADJ</a>), determiners (<a href="">DET</a>) and adverbs (<a href="">ADV</a>).</li>
   <li>The <a href="">Poss</a> feature marks possessive personal determiners (e.g. <em>můj</em> “my”),
@@ -173,6 +193,11 @@ Person is not marked on other types of pronouns and on nouns, although they can 
 They appear with certain possessive adjectives and determiners and encode the lexical gender/number of the possessor.
 The extra layer is needed to distinguish these lexical features from the inflectional gender and number
 that mark agreement with the modified (possessed) noun.</li>
+</ul>
+
+<h3 id="other-features">Other Features</h3>
+
+<ul>
   <li>Besides the layered features listed above, there are several other language-specific features:
     <ul>
       <li><a href="">NumForm</a></li>
