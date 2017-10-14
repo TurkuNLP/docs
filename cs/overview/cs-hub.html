@@ -60,7 +60,7 @@
 	  </div>
 	</noscript>
 
-          <h1 id="ud-for-czech-span-classflagspanimg-classflag-srcflagssvgczsvg-span">UD for Czech <span class="flagspan"><img class="flag" src="flags/svg/CZ.svg" /></span></h1>
+          <h1 id="ud-for-czech-span-classflagspanimg-classflag-srcflagssvgczsvg-span">UD for Czech <span class="flagspan"><img class="flag" src="../../flags/svg/CZ.svg" /></span></h1>
 
 <h2 id="tokenization-and-word-segmentation">Tokenization and Word Segmentation</h2>
 
@@ -74,6 +74,35 @@ rules) is one token.</li>
   <li>There are several closed classes of contractions that are treated as multi-word tokens and segmented to individual syntactic words.
 The most prominent type is a subordinating conjunction fused with a conditional auxiliary: <em>kdybych = když + bych</em> “if I”.
 For more details, see <a href="tokenization.html">tokenization</a>.</li>
+</ul>
+
+<h2 id="morphology">Morphology</h2>
+
+<ul>
+  <li>There are four main (de)verbal forms, distinguished by the UPOS tag and the value of the <a href="">VerbForm</a> feature:
+    <ul>
+      <li>Finite verb <code>Fin</code>, tagged <a href="">VERB</a> or <a href="">AUX</a>.</li>
+      <li>Participle <code>Part</code>, tagged <a href="">VERB</a> or <a href="">AUX</a> (the so-called l-participle) or <a href="">ADJ</a> (all other participle types).</li>
+      <li>Converb <code>Conv</code>, tagged <a href="">VERB</a> or <a href="">AUX</a>.</li>
+      <li>Verbal noun <code>Vnoun</code>, tagged <a href="">NOUN</a>.</li>
+    </ul>
+  </li>
+  <li>Nominal words (<a href="">NOUN</a>, <a href="">PROPN</a> and <a href="">PRON</a>) have an inherent <a href="">Gender</a> feature with one of three values: <code>Masc</code>, <code>Fem</code> or <code>Neut</code>.
+In some cases the masculine gender is further subclassified by the <a href="">Animacy</a> values <code>Anim</code> and <code>Inan</code>.
+Feminine and neuter nominals do not distinguish animacy grammatically.
+    <ul>
+      <li>The following parts of speech inflect for <code>Gender</code> and <code>Animacy</code> because they must agree with nouns: <a href="">ADJ</a>, <a href="">DET</a>, <a href="">NUM</a>,
+<a href="">VERB</a>, <a href="">AUX</a>. For verbs (including auxiliaries), only participles and converbs inflect for gender. Finite verbs don’t.</li>
+    </ul>
+  </li>
+  <li>The two main values of the <a href="">Number</a> feature are <code>Sing</code> and <code>Plur</code>. The following parts of speech inflect for number:
+<a href="">NOUN</a>, <a href="">PROPN</a>, <a href="">PRON</a>, <a href="">ADJ</a>, <a href="">DET</a>, marginally <a href="">NUM</a>, <a href="">VERB</a>, <a href="">AUX</a> (finite and converbs).
+    <ul>
+      <li>Remnants of the <code>Dual</code> number occur only in the instrumental <a href="">Case</a> of a few nouns and all the agreeing parts of speech.</li>
+      <li>Selected nouns are plurale tantum (<code>Ptan</code>) or singulare tantum (<code>Coll</code>). These two values are lexical and cannot be used with
+the agreeing adjectives, determiners or verbs. They also never occur with pronouns.</li>
+    </ul>
+  </li>
 </ul>
 
 
