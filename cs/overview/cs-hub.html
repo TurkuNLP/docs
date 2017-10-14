@@ -118,6 +118,31 @@ that can be negated using the bound morpheme <em>ne-</em>.
     <ul>
       <li>Occasionally <em>ne</em> occurs as an independent negation particle (<a href="">PART</a>) and is marked with <code>Polarity=Neg</code>.</li>
       <li>Negating nouns is usually limited to those derived from verbs <em>(neúspěch, nedůvěra, nevydávání)</em> but in principle every noun can be negated.</li>
+      <li>The <code>Polarity</code> feature is not used with pronouns and determiners, although there is a subset of negative pronouns and determiners.
+The <code>PronType=Neg</code> feature is used there instead.</li>
+    </ul>
+  </li>
+  <li>Verbs have a lexical <a href="">Aspect</a>, either imperfective (<code>Imp</code>) or perfective (<code>Perf</code>). A few verbs are biaspectual and they lack the <code>Aspect</code>
+feature. Some imperfective verbs could be further classified as iteratives but they are not marked as such (although UD provides <code>Aspect=Iter</code>).
+    <ul>
+      <li>The <code>Aspect</code> feature should be also used with the corresponding derived nouns and adjectives (participles), if they have the
+<code>VerbForm</code> feature.</li>
+    </ul>
+  </li>
+  <li>Finite verbs always have one of three values of <a href="">Mood</a>: <code>Ind</code>, <code>Imp</code> or <code>Cnd</code>. The conditional mood is only used with conditional
+auxiliaries <em>(bych, bys, by, bychom, byste)</em>. The l-participle of the main verb, that is needed to form a periphrastic conditional,
+is not marked with this feature.</li>
+  <li>Verbs in the indicative mood always have one of three values of <a href="">Tense</a>: <code>Past</code>, <code>Pres</code> or <code>Fut</code>.
+Note that <code>Tense=Pres</code> is also used with forms of perfective verbs, which are formally present, but semantically future.
+Hence both <em>jdu domů</em> “I am going home” and <em>přijdu domů</em> “I will come home” end up marked as <code>Tense=Pres</code>.
+On the other hand, a few imperfective verbs can form a genuine future form using prefixes, and they are marked <code>Tense=Fut</code>:
+<em>půjdu domů</em> “I will go home”.
+    <ul>
+      <li>Imperative and conditional forms do not have the <code>Tense</code> feature (note that past and present conditionals are distinguished
+analytically).</li>
+      <li>The <code>Tense</code> feature is also used to distinguish present and past converbs (<em>dělaje</em> “while doing” vs. <em>udělav</em> “having done”),
+and present and past participles (<em>dělající</em> “doing” vs. <em>udělavší</em> “having done”).
+The l-participle (tagged <code>VERB</code> or <code>AUX</code>) also has <code>Tense=Past</code> because its primary function is to form the past tense.</li>
     </ul>
   </li>
 </ul>
