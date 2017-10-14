@@ -142,9 +142,33 @@ On the other hand, a few imperfective verbs can form a genuine future form using
 analytically).</li>
       <li>The <code>Tense</code> feature is also used to distinguish present and past converbs (<em>dělaje</em> “while doing” vs. <em>udělav</em> “having done”),
 and present and past participles (<em>dělající</em> “doing” vs. <em>udělavší</em> “having done”).
-The l-participle (tagged <code>VERB</code> or <code>AUX</code>) also has <code>Tense=Past</code> because its primary function is to form the past tense.</li>
+The l-participle (tagged <code>VERB</code> or <code>AUX</code>) also has <code>Tense=Past</code> because its primary function is to form the past tense.
+The passive participle does not have the <code>Tense</code> feature.</li>
     </ul>
   </li>
+  <li>
+    <p>There are two values of the <a href="">Voice</a> feature: <code>Act</code> and <code>Pass</code>. Only the passive participle has <code>Voice=Pass</code>. All other verb forms have
+<code>Voice=Act</code>.</p>
+  </li>
+  <li><a href="">PronType</a> is used with pronouns (<a href="">PRON</a>), determiners (<a href="">DET</a>) and adverbs (<a href="">ADV</a>).</li>
+  <li><a href="">NumType</a> is used with numerals (<a href="">NUM</a>), adjectives (<a href="">ADJ</a>), determiners (<a href="">DET</a>) and adverbs (<a href="">ADV</a>).</li>
+  <li>The <a href="">Poss</a> feature marks possessive personal determiners (e.g. <em>můj</em> “my”),
+possessive interrogative, indefinite or negative determiners (e.g. <em>čí</em> “whose”),
+possessive relative determiners (e.g. <em>jehož</em> “whose”)
+and possessive adjectives (e.g. <em>otcův</em> “father’s”).</li>
+  <li>The <a href="">Reflex</a> feature marks reflexive pronouns <em>(se, si)</em> and determiners <em>(svůj)</em>.
+In Czech it is always used together with <code>PronType=Prs</code>.</li>
+  <li><a href="">Person</a> is a lexical feature of personal pronouns (<a href="">PRON</a>) and has three values, <code>1</code>, <code>2</code> and <code>3</code>.
+With personal possessive determiners (<a href="">DET</a>), the feature actually encodes the person of the possessor.
+Person is not marked on other types of pronouns and on nouns, although they can be almost always interpreted as the 3rd person.
+    <ul>
+      <li>As a cross-reference to subject, person is also marked on finite verbs (<a href="">VERB</a>, <a href="">AUX</a>).</li>
+    </ul>
+  </li>
+  <li>There are two <a href="../../u/overview/feat-layers.html">layered features</a>, <a href="">Gender[psor]</a> and <a href="">Number[psor]</a>.
+They appear with certain possessive adjectives and determiners and encode the lexical gender/number of the possessor.
+The extra layer is needed to distinguish these lexical features from the inflectional gender and number
+that mark agreement with the modified (possessed) noun.</li>
 </ul>
 
 
