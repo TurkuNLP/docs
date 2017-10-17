@@ -64,8 +64,6 @@
 
 <h2 id="tokenization-and-word-segmentation">Tokenization and Word Segmentation</h2>
 
-<p><code>Describe the general rules for delimiting words (for example, based on whitespace and punctuation) and exceptions to these rules. Specify whether words with spaces and/or multiword tokens occur.</code></p>
-
 <ul>
   <li>Words are generally delimited by whitespace or punctuation. Exceptions:
     <ul>
@@ -76,18 +74,37 @@
   <li>Multiword tokens are not used in Swedish.</li>
 </ul>
 
+<hr />
+<p><strong>Instruction</strong>: Describe the general rules for delimiting words (for example, based on whitespace and punctuation) and exceptions to these rules. Specify whether words with spaces and/or multiword tokens occur. Include links to further language-specific documentation if available.
+—</p>
+
 <h2 id="morphology">Morphology</h2>
 
-<p>This is an overview only. For more detailed discussion and examples, see the list of <a href="../pos/index.html">Swedish POS tags</a>
-and <a href="../feat/index.html">Swedish features</a>.</p>
-
-<h3 id="part-of-speech-tags">Part-of-Speech Tags</h3>
-
-<!-- Specify any unused tags. Explain what words are tagged as PART. Describe how the AUX-VERB and DET-PRON distinctions are drawn, and specify whether there are (de)verbal forms tagged as ADJ or NOUN. -->
+<h3 id="tags">Tags</h3>
 
 <ul>
-  <li>**Unused</li>
+  <li>Swedish uses all 17 universal tags.</li>
+  <li>The only word tagged PART is the infinitive marker <em>att</em>.</li>
+  <li>Auxiliary verbs in Swedish are of four types:
+    <ul>
+      <li>The copula <em>vara</em> (be).</li>
+      <li>The temporal auxiliary <em>ha</em> (have), which combines with the supine form of the main verb to form perfect tenses.</li>
+      <li>The passive auxiliar <em>bli</em> (get), which combines with the past participle of the main verb to form passives.</li>
+      <li>Modal and aspectual verbs that combine with the bare infinitive of the main verb, such as <em>måste</em> (must) and <em>kunde</em> (could).</li>
+    </ul>
+  </li>
+  <li>The tag DET is used for articles and pronominal words used with a determiner function, including possessives. The tag PRON is reserved for pronouns occurring as the head of a noun phrase.</li>
+  <li>Participles (both present and past) are mainly used adjectivally in Swedish and are consistently tagged ADJ, not VERB. The only exception is that past participles used to form periphrastic passives are tagged VERB.</li>
 </ul>
+
+<p>For more information, see the list of <a href="../pos/index.html">Swedish POS tags</a>.</p>
+
+<hr />
+<p><strong>Instruction</strong>: Specify any unused tags. Explain what words are tagged as PART. Describe how the AUX-VERB and DET-PRON distinctions are drawn, and specify whether there are (de)verbal forms tagged as ADJ or NOUN. Include links to language-specific tag definitions if any.
+—
+### Features</p>
+
+<p>For more information, see the list of <a href="../feat/index.html">Swedish features</a>.</p>
 
 <h2 id="syntax">Syntax</h2>
 
