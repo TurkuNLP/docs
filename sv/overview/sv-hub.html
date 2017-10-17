@@ -69,40 +69,27 @@
 <h2 id="tokenization-and-word-segmentation">Tokenization and Word Segmentation</h2>
 
 <table>
+  <thead>
+    <tr>
+      <th>Writing System</th>
+      <th>Mixed Tokens</th>
+      <th>Multiword Tokens</th>
+    </tr>
+  </thead>
   <tbody>
     <tr>
-      <td>Whitespace between tokens/words</td>
-      <td>Yes</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Whitespace within tokens/words</td>
-      <td>Yes</td>
-      <td>Numerical expressions: 2 000</td>
+      <td>Whitespace token</td>
+      <td>Space: 2 000</td>
+      <td>None</td>
     </tr>
     <tr>
       <td> </td>
+      <td>Punct: 11:00</td>
       <td> </td>
-      <td>Abbreviations: t ex</td>
-    </tr>
-    <tr>
-      <td>Punctuation within words:</td>
-      <td>Yes</td>
-      <td>Numerical expressions: 1.1.1970, 11.00</td>
     </tr>
     <tr>
       <td> </td>
-      <td> </td>
-      <td>Abbreviations: t.ex.</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>Hyphenated words: TV-apparat</td>
-    </tr>
-    <tr>
-      <td>Multiword tokens</td>
-      <td>No</td>
+      <td>Symbol: 2+3</td>
       <td> </td>
     </tr>
   </tbody>
