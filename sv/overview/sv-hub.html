@@ -68,32 +68,12 @@
 
 <h2 id="tokenization-and-word-segmentation">Tokenization and Word Segmentation</h2>
 
-<table>
-  <thead>
-    <tr>
-      <th>Writing System</th>
-      <th>Mixed Tokens</th>
-      <th>Multiword Tokens</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Whitespace token</td>
-      <td>Space: 2 000</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td>Punct: 11:00</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td>Symbol: 2+3</td>
-      <td> </td>
-    </tr>
-  </tbody>
-</table>
+<ul>
+  <li><strong>Whitespace tokenization</strong>: Yes</li>
+  <li><strong>Words with spaces</strong>: Yes, numerical expressions (<em>2 000</em>) and abbreviations (<em>t ex</em>)</li>
+  <li><strong>Words with punctuation</strong>: Yes, numerical expressions (<em>1.1.1970</em>) and abbreviations (<em>t.ex.</em>)</li>
+  <li><strong>Multiword tokens</strong>: No</li>
+</ul>
 
 <h2 id="morphology">Morphology</h2>
 
