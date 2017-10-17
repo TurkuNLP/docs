@@ -60,29 +60,20 @@
 	  </div>
 	</noscript>
 
-          <!-- Inspired by an old proposal for language-specific documentation here: http://universaldependencies.org/v2/minimaldoc.html
-     If we agree on a scheme like this, the old proposal should be updated and made visible in the “How to Contribute” section;
-     right now it is probably not linked from anywhere. -->
-
-<h1 id="ud-for-swedish-span-classflagspanimg-classflag-srcflagssvgsesvg-span">UD for Swedish <span class="flagspan"><img class="flag" src="../../flags/svg/SE.svg" /></span></h1>
+          <h1 id="ud-for-swedish-span-classflagspanimg-classflag-srcflagssvgsesvg-span">UD for Swedish <span class="flagspan"><img class="flag" src="../../flags/svg/SE.svg" /></span></h1>
 
 <h2 id="tokenization-and-word-segmentation">Tokenization and Word Segmentation</h2>
 
+<!-- Describe the general rules for delimiting words (for example, based on whitespace and punctuation) and exceptions to these rules. Specify whether words with spaces and/or multiword tokens occur. -->
+
 <ul>
-  <li><strong>Whitespace tokenization</strong>: Yes</li>
-  <li><strong>Words with spaces</strong>: Yes
+  <li>Words are generally delimited by whitespace or punctuation. Exceptions:
     <ul>
-      <li>Numerical expressions: <em>2 000</em></li>
-      <li>Abbreviations: <em>t ex</em> (for example)</li>
+      <li>Numerical expressions (including dates) are treated as single words even if they contain punctuation or whitespace: <em>1.1.1970</em>, <em>11:00</em>, <em>2 000</em>.</li>
+      <li>Abbreviations are treated as single words even if they contain punctuation or whitespace: <em>t.ex.</em>, <em>bl a</em>.</li>
     </ul>
   </li>
-  <li><strong>Words with punctuation</strong>: Yes
-    <ul>
-      <li>Numerical expressions: <em>1.1.1970</em></li>
-      <li>Abbreviations: <em>t.ex.</em></li>
-    </ul>
-  </li>
-  <li><strong>Multiword tokens</strong>: No</li>
+  <li>Multiword tokens are not used in Swedish.</li>
 </ul>
 
 <h2 id="morphology">Morphology</h2>
@@ -91,7 +82,7 @@
 and <a href="../feat/index.html">Swedish features</a>.</p>
 
 <ul>
-  <li></li>
+  <li>**Unused</li>
 </ul>
 
 <h2 id="syntax">Syntax</h2>
