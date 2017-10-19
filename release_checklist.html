@@ -70,7 +70,7 @@
   <li><a href="#executive-summary">Executive summary</a></li>
   <li><a href="#repository-and-files">Repository and files</a>
     <ul>
-      <li><a href="#language-metadata">Language metadata</a></li>
+      <li><a href="#treebank-metadata">Treebank metadata</a></li>
       <li><a href="#repository-branches">Repository branches</a></li>
     </ul>
   </li>
@@ -86,7 +86,7 @@
 <h1 id="executive-summary">Executive summary</h1>
 
 <ul>
-  <li>Make sure <a href="#repository-and-files">your repository has the right files</a>, <a href="#language-metadata">correct metadata</a> in the README, and data being prepared for the next release <a href="#repository-branches">lives on the <code>dev</code> branch</a>.</li>
+  <li>Make sure <a href="#repository-and-files">your repository has the right files</a>, <a href="#treebank-metadata">correct metadata</a> in the README, and data being prepared for the next release <a href="#repository-branches">lives on the <code>dev</code> branch</a>.</li>
   <li>Make sure your data and repository pass the <a href="#data-format-and-repository">format validation</a>: <a href="http://universaldependencies.org/validation.html">direct link</a> to the format validator output.</li>
   <li>Make sure your data does not show major deviations in the <a href="#syntax">content validation</a>: <a href="http://universaldependencies.org/svalidation.html">direct link</a> to the content validator output.</li>
 </ul>
@@ -120,11 +120,12 @@
 <p>The <code>README</code> file should minimally contain the following information:</p>
 
 <ol>
+  <li>A machine-readable section with treebank metadata. This is described below.</li>
   <li>A description of the treebank and its origin (creation method, data sources, etc.)</li>
   <li>A description of how the data was split into training, development and test sets</li>
   <li>Basic statistics about number of sentences, tokens, etc.</li>
   <li>Acknowledgments and references that should be cited when using the treebank</li>
-  <li>A machine-readable section with language metadata. This is described below.</li>
+  <li>A Changelog section for treebanks that appear in more than one UD releases.</li>
 </ol>
 
 <p>Note that the basic statistics can be produced using the script <code>conllu-stats.py</code>available from the <code>tools</code> repository and run as follows:</p>
@@ -142,20 +143,21 @@ Changelog
     * Corrected tokenization in sentences 123 and 456
 </pre>
 
-<h2 id="language-metadata">Language metadata</h2>
+<h2 id="treebank-metadata">Treebank metadata</h2>
 
-<p><strong>TODO: Actually, the metadata differ per treebank, not just per language.</strong></p>
+<p>The table on the front page is automatically generated from special lines (metadata)
+in the <code>README.txt</code> or <code>README.md</code> file for every treebank. The metadata are used for various
+other automated tasks as well, for example the list of contributors to every UD release is
+collected from the READMEs.</p>
 
-<p>The table on the front page is automatically generated from special lines in the <code>README.txt</code> or <code>README.md</code> file for every language.
-The README file contains metadata used to generate the overview table on the UD main page: data source, license, genres etc.
-The metadata describe individual treebanks and there are often multiple treebanks per language.
+<p>The metadata describe individual treebanks and there are often multiple treebanks per language.
 If we want to work on UD documentation for a new language without having actual data, we still
 must create a Github repository for the future treebank, and fill in the metadata so that the
 language appears on the front page. The names of the contributors to the documentation should
 be listed among the treebank contributors, otherwise they will not be included in the overall
 UD list of contributors.</p>
 
-<p>Here is an example of the language metadata block from the <a href="https://github.com/UniversalDependencies/UD_Czech/blob/master/README.txt">Czech README file</a></p>
+<p>Here is an example of the treebank metadata block from the <a href="https://github.com/UniversalDependencies/UD_Czech/blob/master/README.txt">Czech README file</a></p>
 
 <pre><code>=== Machine-readable metadata (DO NOT REMOVE!) ================================
 Data available since: UD v1.0
