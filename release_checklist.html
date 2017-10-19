@@ -224,6 +224,13 @@ immediately following the metadata should be copied. (The software actually just
 if there are two consecutive empty lines, an empty paragraph will be counted.)</li>
 </ul>
 
+<p>If you want to see what web content will be generated from your README file, run the
+<code>generate_treebank_hub.pl</code> script from the tools repository on your treebank folder,
+e.g.</p>
+
+<pre><code>generate_treebank_hub.pl UD_Czech &gt; for_web.md
+</code></pre>
+
 <h2 id="repository-branches">Repository branches</h2>
 
 <p>While the official UD release is always through Lindat, many users of UD source their data from the GitHub language repositories. Therefore, the <code>master</code> branch of every language should contain the last, officially released version of the data for the given language. The development in between releases should happen on the <code>dev</code> branch of the repository.
