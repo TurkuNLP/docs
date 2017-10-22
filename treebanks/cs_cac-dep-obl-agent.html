@@ -3,7 +3,7 @@
 <html lang="en-GB" xml:lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <title>Statistics of Voice in UD_Czech-CLTT</title>
+    <title>Statistics of obl:agent in UD_Czech-CAC</title>
     <link rel="root" href=""/> <!-- for JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../css/jquery-ui-redmond.css"/>
@@ -37,7 +37,7 @@
         <table width="100%"><tr><td width="50%">
           <span class="header-text"><a href="http://universaldependencies.org/#language-">home</a></span>
 
-          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/treebanks/cs_cltt-feat-Voice.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/treebanks/cs_cac-dep-obl-agent.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
         </td><td>
           <gcse:search></gcse:search>
@@ -60,71 +60,65 @@
 	  </div>
 	</noscript>
 
-          <h2 id="treebank-statistics-udczech-cltt-features-voice">Treebank Statistics: UD_Czech-CLTT: Features: <code>Voice</code></h2>
+          <h2 id="treebank-statistics-udczech-cac-relations-oblagent">Treebank Statistics: UD_Czech-CAC: Relations: <code>obl:agent</code></h2>
 
-<p>This feature is universal.
-It occurs with 2 different values: <code>Act</code>, <code>Pass</code>.</p>
+<p>This relation is a language-specific subtype of <tt><a href="cs_cac-dep-obl.html">obl</a></tt>.
+There are also 1 other language-specific subtypes of <code>obl</code>: <tt><a href="cs_cac-dep-obl-arg.html">obl:arg</a></tt>.</p>
 
-<p>2587 tokens (7%) have a non-empty value of <code>Voice</code>.
-642 types (14%) occur at least once with a non-empty value of <code>Voice</code>.
-389 lemmas (15%) occur at least once with a non-empty value of <code>Voice</code>.
-The feature is used with 3 part-of-speech tags: <tt><a href="cs_cltt-pos-VERB.html">VERB</a></tt> (1542; 4% instances), <tt><a href="cs_cltt-pos-ADJ.html">ADJ</a></tt> (548; 2% instances), <tt><a href="cs_cltt-pos-AUX.html">AUX</a></tt> (497; 1% instances).</p>
+<p>240 nodes (0%) are attached to their parents as <code>obl:agent</code>.</p>
 
-<h3 id="verb"><code>VERB</code></h3>
+<p>178 instances of <code>obl:agent</code> (74%) are left-to-right (parent precedes child).
+Average distance between parent and child is 2.0625.</p>
 
-<p>1542 <tt><a href="cs_cltt-pos-VERB.html">VERB</a></tt> tokens (83% of all <code>VERB</code> tokens) have a non-empty value of <code>Voice</code>.</p>
+<p>The following 10 pairs of parts of speech are connected with <code>obl:agent</code>: <tt><a href="cs_cac-pos-ADJ.html">ADJ</a></tt>-<tt><a href="cs_cac-pos-NOUN.html">NOUN</a></tt> (170; 71% instances), <tt><a href="cs_cac-pos-VERB.html">VERB</a></tt>-<tt><a href="cs_cac-pos-NOUN.html">NOUN</a></tt> (47; 20% instances), <tt><a href="cs_cac-pos-ADJ.html">ADJ</a></tt>-<tt><a href="cs_cac-pos-PROPN.html">PROPN</a></tt> (6; 3% instances), <tt><a href="cs_cac-pos-VERB.html">VERB</a></tt>-<tt><a href="cs_cac-pos-PRON.html">PRON</a></tt> (5; 2% instances), <tt><a href="cs_cac-pos-ADJ.html">ADJ</a></tt>-<tt><a href="cs_cac-pos-PRON.html">PRON</a></tt> (4; 2% instances), <tt><a href="cs_cac-pos-ADJ.html">ADJ</a></tt>-<tt><a href="cs_cac-pos-ADJ.html">ADJ</a></tt> (2; 1% instances), <tt><a href="cs_cac-pos-ADJ.html">ADJ</a></tt>-<tt><a href="cs_cac-pos-DET.html">DET</a></tt> (2; 1% instances), <tt><a href="cs_cac-pos-VERB.html">VERB</a></tt>-<tt><a href="cs_cac-pos-DET.html">DET</a></tt> (2; 1% instances), <tt><a href="cs_cac-pos-VERB.html">VERB</a></tt>-<tt><a href="cs_cac-pos-ADJ.html">ADJ</a></tt> (1; 0% instances), <tt><a href="cs_cac-pos-VERB.html">VERB</a></tt>-<tt><a href="cs_cac-pos-ADP.html">ADP</a></tt> (1; 0% instances).</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Voice</code> co-occurred: <tt><a href="cs_cltt-feat-Tense.html">Tense</a></tt><tt>=Pres</tt> (1426; 92%), <tt><a href="cs_cltt-feat-Mood.html">Mood</a></tt><tt>=Ind</tt> (1426; 92%), <tt><a href="cs_cltt-feat-Person.html">Person</a></tt><tt>=3</tt> (1426; 92%), <tt><a href="cs_cltt-feat-VerbForm.html">VerbForm</a></tt><tt>=Fin</tt> (1426; 92%), <tt><a href="cs_cltt-feat-Polarity.html">Polarity</a></tt><tt>=Pos</tt> (1328; 86%), <tt><a href="cs_cltt-feat-Number.html">Number</a></tt><tt>=Sing</tt> (1010; 65%).</p>
+<pre><code class="language-conllu"># visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 6 obl:agent	color:blue
+1	Motor	motor	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing|Polarity=Pos	4	nsubj:pass	_	_
+2	praní	praní	NOUN	NNNS2-----A----	Case=Gen|Gender=Neut|Number=Sing|Polarity=Pos	1	nmod	_	LDeriv=prát
+3	je	být	AUX	VB-S---3P-AA---	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux:pass	_	_
+4	ovládán	ovládaný	ADJ	VsYS---XX-AP---	Aspect=Imp|Gender=Masc|Number=Sing|Polarity=Pos|Variant=Short|VerbForm=Part|Voice=Pass	0	root	_	_
+5	polohovým	polohový	ADJ	AAIS7----1A----	Animacy=Inan|Case=Ins|Degree=Pos|Gender=Masc|Number=Sing|Polarity=Pos	6	amod	_	_
+6	spínačem	spínač	NOUN	NNIS7-----A----	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing|Polarity=Pos	4	obl:agent	_	SpaceAfter=No
+7	.	.	PUNCT	Z:-------------	_	4	punct	_	_
 
-<p><code>VERB</code> tokens may have the following values of <code>Voice</code>:</p>
+</code></pre>
 
-<ul>
-  <li><code>Act</code> (1542; 100% of non-empty <code>Voice</code>): <em>obsahuje, rozumí, může, uvede, mohou, použijí, stanoví, musí, účtuje, lze</em></li>
-  <li><code>EMPTY</code> (315): <em>vést, použít, mít, účtovat, odpisovat, uvést, sestavit, zajistit, provést, určit</em></li>
-</ul>
+<pre><code class="language-conllu"># visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 7 8 obl:agent	color:blue
+1	V	v	ADP	RR--6----------	AdpType=Prep|Case=Loc	2	case	_	LId=v-1
+2	odstavci	odstavec	NOUN	NNIS6-----A----	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing|Polarity=Pos	7	obl	_	_
+3	#	&amp;cother;	NUM	C=-------------	NumForm=Digit|NumType=Card	2	nummod	_	_
+4	se	se	PRON	P7-X4----------	Case=Acc|PronType=Prs|Reflex=Yes|Variant=Short	7	expl:pass	_	LGloss=(zvr._zájmeno/částice)
+5	druhá	druhý	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Polarity=Pos	6	amod	_	LId=druhý-1|LGloss=(jiný)
+6	věta	věta	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Number=Sing|Polarity=Pos	7	nsubj:pass	_	_
+7	nahrazuje	nahrazovat	VERB	VB-S---3P-AA---	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+8	větou	věta	NOUN	NNFS7-----A----	Case=Ins|Gender=Fem|Number=Sing|Polarity=Pos	7	obl:agent	_	SpaceAfter=No
+9	.	.	PUNCT	Z:-------------	_	7	punct	_	_
 
-<p><code>Voice</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 100% lemmas (244) occur only with one value of <code>Voice</code>.</p>
+</code></pre>
 
-<h3 id="adj"><code>ADJ</code></h3>
+<pre><code class="language-conllu"># visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 7 obl:agent	color:blue
+1	Lexikální	lexikální	ADJ	AAIP1----1A----	Animacy=Inan|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|Polarity=Pos	2	amod	_	_
+2	úkoly	úkol	NOUN	NNIP1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur|Polarity=Pos	5	nsubj:pass	_	_
+3	byly	být	AUX	VpTP---XR-AA---	Animacy=Inan|Gender=Fem,Masc|Number=Plur|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	5	aux:pass	_	_
+4	naopak	naopak	ADV	Db-------------	_	5	cc	_	_
+5	posíleny	posílený	ADJ	VsTP---XX-AP---	Animacy=Inan|Gender=Fem,Masc|Number=Plur|Polarity=Pos|Variant=Short|VerbForm=Part|Voice=Pass	0	root	_	_
+6	*	*	SYM	Xx-------------	Abbr=Yes	7	nmod	_	_
+7	Macháčkovou	Macháčková	PROPN	NNFS7-----A----	Case=Ins|Gender=Fem|NameType=Sur|Number=Sing|Polarity=Pos	5	obl:agent	_	SpaceAfter=No
+8	.	.	PUNCT	Z:-------------	_	5	punct	_	_
 
-<p>548 <tt><a href="cs_cltt-pos-ADJ.html">ADJ</a></tt> tokens (8% of all <code>ADJ</code> tokens) have a non-empty value of <code>Voice</code>.</p>
-
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Voice</code> co-occurred: <tt><a href="cs_cltt-feat-Degree.html">Degree</a></tt><tt>=EMPTY</tt> (548; 100%), <tt><a href="cs_cltt-feat-Polarity.html">Polarity</a></tt><tt>=Pos</tt> (545; 99%), <tt><a href="cs_cltt-feat-Animacy.html">Animacy</a></tt><tt>=EMPTY</tt> (325; 59%), <tt><a href="cs_cltt-feat-Number.html">Number</a></tt><tt>=Sing</tt> (282; 51%).</p>
-
-<p><code>ADJ</code> tokens may have the following values of <code>Voice</code>:</p>
-
-<ul>
-  <li><code>Act</code> (288; 53% of non-empty <code>Voice</code>): <em>konsolidující, zanikající, následujícího, související, předcházejícímu, týkající, přejímající, předcházející, souvisejících, řídících</em></li>
-  <li><code>Pass</code> (260; 47% of non-empty <code>Voice</code>): <em>stanoveno, sestavena, zahrnuty, obchodovány, uvedeny, zavedena, oprávněn, uvedena, vykázány, účtovány</em></li>
-  <li><code>EMPTY</code> (6233): <em>účetní, účetních, účetního, konsolidované, finanční, účetním, povinny, výroční, právní, jiných</em></li>
-</ul>
-
-<p><code>Voice</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (145) occur only with one value of <code>Voice</code>.</p>
-
-<h3 id="aux"><code>AUX</code></h3>
-
-<p>497 <tt><a href="cs_cltt-pos-AUX.html">AUX</a></tt> tokens (87% of all <code>AUX</code> tokens) have a non-empty value of <code>Voice</code>.</p>
-
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Voice</code> co-occurred: <tt><a href="cs_cltt-feat-Gender.html">Gender</a></tt><tt>=EMPTY</tt> (438; 88%), <tt><a href="cs_cltt-feat-Person.html">Person</a></tt><tt>=3</tt> (438; 88%), <tt><a href="cs_cltt-feat-Mood.html">Mood</a></tt><tt>=Ind</tt> (438; 88%), <tt><a href="cs_cltt-feat-VerbForm.html">VerbForm</a></tt><tt>=Fin</tt> (438; 88%), <tt><a href="cs_cltt-feat-Polarity.html">Polarity</a></tt><tt>=Pos</tt> (436; 88%), <tt><a href="cs_cltt-feat-Tense.html">Tense</a></tt><tt>=Pres</tt> (417; 84%), <tt><a href="cs_cltt-feat-Number.html">Number</a></tt><tt>=Sing</tt> (265; 53%).</p>
-
-<p><code>AUX</code> tokens may have the following values of <code>Voice</code>:</p>
-
-<ul>
-  <li><code>Act</code> (497; 100% of non-empty <code>Voice</code>): <em>je, jsou, nejsou, není, byly, bude, byl, bylo, budou, nebyly</em></li>
-  <li><code>EMPTY</code> (73): <em>být, by</em></li>
-</ul>
-
-<h2 id="relations-with-agreement-in-voice">Relations with Agreement in <code>Voice</code></h2>
-
-<p>The 10 most frequent relations where parent and child node agree in <code>Voice</code>:
-<tt>VERB –[<tt><a href="cs_cltt-dep-conj.html">conj</a></tt>]–&gt; VERB</tt> (191; 97%),
-<tt>VERB –[<tt><a href="cs_cltt-dep-advcl.html">advcl</a></tt>]–&gt; VERB</tt> (66; 96%),
-<tt>VERB –[<tt><a href="cs_cltt-dep-parataxis.html">parataxis</a></tt>]–&gt; VERB</tt> (28; 100%),
-<tt>VERB –[<tt><a href="cs_cltt-dep-ccomp.html">ccomp</a></tt>]–&gt; VERB</tt> (8; 67%),
-<tt>VERB –[<tt><a href="cs_cltt-dep-dep.html">dep</a></tt>]–&gt; VERB</tt> (1; 100%),
-<tt>VERB –[<tt><a href="cs_cltt-dep-appos.html">appos</a></tt>]–&gt; VERB</tt> (1; 100%),
-<tt>AUX –[<tt><a href="cs_cltt-dep-conj.html">conj</a></tt>]–&gt; VERB</tt> (1; 100%),
-<tt>VERB –[<tt><a href="cs_cltt-dep-csubj-pass.html">csubj:pass</a></tt>]–&gt; VERB</tt> (1; 100%).</p>
+</code></pre>
 
 
 
