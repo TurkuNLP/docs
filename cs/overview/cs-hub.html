@@ -82,6 +82,8 @@ For more details, see <a href="tokenization.html">tokenization</a>.</li>
 
 <h2 id="morphology">Morphology</h2>
 
+<h3 id="tags">Tags</h3>
+
 <p>This is an overview only. For more detailed discussion and examples, see the list of <a href="../pos/index.html">Czech POS tags</a>
 and <a href="../feat/index.html">Czech features</a>.</p>
 
@@ -89,6 +91,31 @@ and <a href="../feat/index.html">Czech features</a>.</p>
   <li>Czech uses all 17 universal POS categories, including particles (<a href="">PART</a>).
 At present, more than 70 word types are tagged <a href="">PART</a>. This is a legacy of an existing Czech morphological analyzer
 and many of these words should probably belong to another category in UD; however, the exact list has yet to be worked out.</li>
+  <li>The pronoun (<a href="">PRON</a>) vs. determiner (<a href="">DET</a>) distinction is based on word lists because the traditional grammar does not define determiners.
+In general, words that inflect for gender, to be able to agree with a modified noun, are tagged <a href="">DET</a>, even if they
+act independently in a given sentence; that includes possessives.
+Pronominal quantifiers (which the traditional grammar includes in numerals) are <a href="">DET</a> as well.</li>
+  <li>Czech has just one auxiliary verb (<a href="">AUX</a>), <em>být</em> (“to be”), but lemmas <em>bývat</em> and <em>bývávat</em> are also possible.
+They are in fact just variants of <em>být</em>, but they are separate lemmas because
+the morphological process that relates them to <em>být</em> is considered derivational.
+The auxiliary verb is used in several types of constructions:
+    <ul>
+      <li>The copula with non-verbal predicates.</li>
+      <li>Periphrastic future tense (future form of <em>být</em> + infinitive of the main verb).</li>
+      <li>Periphrastic past tense (present form of <em>být</em> + l-participle of the main verb; the auxiliary is omitted with 3rd-person subjects).</li>
+      <li>Periphrastic conditional (conditional form of <em>být</em> + l-participle of the main verb).</li>
+      <li>Periphrastic passive (any form of <em>být</em>, including periphrastic forms, + passive participle of the main verb).</li>
+    </ul>
+  </li>
+  <li>In other words, <em>být, bývat</em> and <em>bývávat</em> are the only lemmas that occur with the <a href="">AUX</a> tag.
+They may still occur also as normal <a href="">VERB</a> if they are used in purely existential sentences
+(i.e. such that don’t even indicate location because if they do, then <em>být</em> is treated as copula).
+    <ul>
+      <li>Note that this may be changed in future. Existential sentences could be treated as elliptical versions of locational sentences;
+then the verb would be the root, but it could still be tagged as <code>AUX</code> and the <code>AUX</code>-<code>VERB</code> distinction could be anchored in the lexicon.</li>
+    </ul>
+  </li>
+  <li>Verbs with modal meaning are not considered auxiliary in Czech.</li>
   <li>There are five main (de)verbal forms, distinguished by the UPOS tag and the value of the <a href="">VerbForm</a> feature:
     <ul>
       <li>Infinitive <code>Inf</code>, tagged <a href="">VERB</a> or <a href="">AUX</a>.</li>
@@ -178,9 +205,6 @@ The passive participle does not have the <code>Tense</code> feature.</li>
 <h3 id="pronouns-determiners-quantifiers">Pronouns, Determiners, Quantifiers</h3>
 
 <ul>
-  <li>The pronoun-determiner distinction is based on word lists (because the traditional grammar does not define determiners).
-In general, words that inflect for gender, to be able to agree with a modified noun, are tagged <a href="">DET</a>, even if they
-act independently in a given sentence. Pronominal quantifiers (which the traditional grammar includes in numerals) are <a href="">DET</a> as well.</li>
   <li><a href="">PronType</a> is used with pronouns (<a href="">PRON</a>), determiners (<a href="">DET</a>) and adverbs (<a href="">ADV</a>).</li>
   <li><a href="">NumType</a> is used with numerals (<a href="">NUM</a>), adjectives (<a href="">ADJ</a>), determiners (<a href="">DET</a>) and adverbs (<a href="">ADV</a>).</li>
   <li>The <a href="">Poss</a> feature marks possessive personal determiners (e.g. <em>můj</em> “my”),
@@ -225,25 +249,6 @@ that mark agreement with the modified (possessed) noun.</li>
 
 <p>This is an overview only. For more detailed discussion and examples, see the list of <a href="../dep/index.html">Czech relations</a>,
 as well as Czech-specific examples scattered across the documentation of constructions.</p>
-
-<h3 id="auxiliary-verbs-and-copula">Auxiliary Verbs and Copula</h3>
-
-<ul>
-  <li>Czech uses the verb <em>být</em> (“to be”) as a copula with non-verbal predicates.
-Lemmas <em>bývat</em> and <em>bývávat</em> may also appear as copulas. They are in fact just variants of <em>být</em>, but they are separate lemmas because
-the morphological process that relates them to <em>být</em> is considered derivational.</li>
-  <li>The verb <em>být</em> is also the only auxiliary verb whose forms are used to construct periphrastic tenses (future, past),
-moods (conditional) and voices (passive).</li>
-  <li>In other words, <em>být, bývat</em> and <em>bývávat</em> are the only lemmas that occur with the <a href="">AUX</a> tag.
-They may still occur also as normal <a href="">VERB</a> if they are used in purely existential sentences
-(i.e. such that don’t even indicate location because if they do, then <em>být</em> is treated as copula).
-    <ul>
-      <li>Note that this may be changed in future. Existential sentences could be treated as elliptical versions of locational sentences;
-then the verb would be the root, but it could still be tagged as <code>AUX</code> and the <code>AUX</code>-<code>VERB</code> distinction could be anchored in the lexicon.</li>
-    </ul>
-  </li>
-  <li>Verbs with modal meaning are not considered auxiliary in Czech.</li>
-</ul>
 
 <h3 id="core-arguments-oblique-arguments-and-adjuncts">Core Arguments, Oblique Arguments and Adjuncts</h3>
 
@@ -302,17 +307,36 @@ between the verb and the clitic as <a href="">expl:pv</a>, not <code>compound</c
   </li>
 </ul>
 
+<h3 id="non-verbal-clauses">Non-verbal Clauses</h3>
+
+<ul>
+  <li>The copula verb <em>být</em> (be) is used in equational, attributional, locative, possessive and benefactory nonverbal clauses.
+Purely existential clauses (without indicating location) use <em>být</em> as well but it is treated as the head of the clause and tagged <a href="">VERB</a>.</li>
+</ul>
+
 <h3 id="relations-overview">Relations Overview</h3>
 
 <ul>
-  <li>The following relation subtypes are used in Czech: <a href="">nsubj:pass</a>, <a href="">csubj:pass</a>, <a href="">obl:agent</a>, <a href="">obl:arg</a>,
-<a href="">expl:pass</a>, <a href="">expl:pv</a>, <a href="">aux:pass</a>,
-<a href="">advmod:emph</a>, <a href="">det:numgov</a>, <a href="">det:nummod</a>, <a href="">nummod:gov</a>,
-<a href="">flat:foreign</a>.</li>
+  <li>The following relation subtypes are used in Czech:
+    <ul>
+      <li><a href="">nsubj:pass</a> for nominal subjects of passive verbs</li>
+      <li><a href="">csubj:pass</a> for clausal subjects of passive verbs</li>
+      <li><a href="">obl:agent</a> for agents of passive verbs</li>
+      <li><a href="">obl:arg</a> for prepositional objects</li>
+      <li><a href="">expl:pv</a> for reflexive clitics of inherently reflexive verbs</li>
+      <li><a href="">expl:pass</a> for reflexive clitics in reflexive passives</li>
+      <li><a href="">aux:pass</a> for passive auxiliaries</li>
+      <li><a href="">nummod:gov</a> for cardinal numbers that are attached as children of the counted noun but govern its case</li>
+      <li><a href="">det:numgov</a> for pronominal quantifiers that are attached as children of the quantified noun but govern its case</li>
+      <li><a href="">det:nummod</a> for pronominal quantifiers in cases in which they do not govern the case of the quantified noun</li>
+      <li><a href="">advmod:emph</a> for adverbs or particles that modify noun phrases and emphasize or negate them</li>
+      <li><a href="">flat:foreign</a> for non-first words in quoted foreign phrases</li>
+    </ul>
+  </li>
   <li>The following main types are not used alone and must be subtyped:
-<a href="">expl</a>.</li>
+<a href="">expl</a></li>
   <li>The following relation types are not used in Czech at all:
-<a href="">clf</a>, <a href="">dislocated</a>.</li>
+<a href="">clf</a>, <a href="">dislocated</a></li>
 </ul>
 
 <h2 id="treebanks">Treebanks</h2>
