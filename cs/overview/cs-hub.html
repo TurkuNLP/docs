@@ -35,9 +35,9 @@
 
       <div id="hp-header">
         <table width="100%"><tr><td width="50%">
-          <span class="header-text"><a href="http://universaldependencies.org/#language-cs">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-template">home</a></span>
 
-          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-overview/cs-hub.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_template-overview/template-hub-cs-example.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
         </td><td>
           <gcse:search></gcse:search>
@@ -79,6 +79,11 @@ rules) is one token.</li>
 The most prominent type is a subordinating conjunction fused with a conditional auxiliary: <em>kdybych = když + bych</em> “if I”.
 For more details, see <a href="tokenization.html">tokenization</a>.</li>
 </ul>
+
+<hr />
+<p><strong>Instruction</strong>: Describe the general rules for delimiting words (for example, based on whitespace and punctuation) and exceptions to these rules. Specify whether words with spaces and/or multiword tokens occur. Include links to further language-specific documentation if available.</p>
+
+<hr />
 
 <h2 id="morphology">Morphology</h2>
 
@@ -126,6 +131,11 @@ then the verb would be the root, but it could still be tagged as <code>AUX</code
     </ul>
   </li>
 </ul>
+
+<hr />
+<p><strong>Instruction</strong>: Specify any unused tags. Explain what words are tagged as PART. Describe how the AUX-VERB and DET-PRON distinctions are drawn, and specify whether there are (de)verbal forms tagged as ADJ, ADV or NOUN. Include links to language-specific tag definitions if any.</p>
+
+<hr />
 
 <h3 id="nominal-features">Nominal Features</h3>
 
@@ -245,6 +255,11 @@ that mark agreement with the modified (possessed) noun.</li>
   <li>The following universal features are not used in Czech: <a href="">Definite</a>, <a href="">Evident</a>, <a href="">Polite</a>.</li>
 </ul>
 
+<hr />
+<p><strong>Instruction</strong>: Describe inherent and inflectional features for major word classes (at least NOUN and VERB). Describe other noteworthy features. Include links to language-specific feature definitions if any.</p>
+
+<hr />
+
 <h2 id="syntax">Syntax</h2>
 
 <p>This is an overview only. For more detailed discussion and examples, see the list of <a href="../dep/index.html">Czech relations</a>,
@@ -339,6 +354,11 @@ Purely existential clauses (without indicating location) use <em>být</em> as we
 <a href="">clf</a>, <a href="">dislocated</a></li>
 </ul>
 
+<hr />
+<p><strong>Instruction</strong>: Give criteria for identifying core arguments (subjects and objects), and describe the range of copula constructions in nonverbal clauses. List all subtype relations used. Include links to language-specific relations definitions if any.</p>
+
+<hr />
+
 <h2 id="treebanks">Treebanks</h2>
 
 <p>There are <a href="../../treebanks/cs-comparison.html">five</a> Czech UD treebanks:</p>
@@ -350,6 +370,13 @@ Purely existential clauses (without indicating location) use <em>být</em> as we
   <li><a href="../../treebanks/cs_fictree-index.html">Czech-FicTree</a></li>
   <li><a href="../../treebanks/cs_pud-index.html">Czech-PUD</a></li>
 </ul>
+
+<hr />
+<p><strong>Instruction</strong>: Treebank-specific pages are generated automatically from the README file in the treebank repository and
+from the data in the latest release. Link to the respective <code>*-index.html</code> page in the <code>treebanks</code> folder, using the language code
+and the treebank code in the file name.</p>
+
+<hr />
 
 
       </div>
@@ -454,7 +481,7 @@ Purely existential clauses (without indicating location) use <em>být</em> as we
         setupTimeago();
 
         // mark current collection (filled in by Jekyll)
-        Collections.listing['_current'] = 'cs-overview';
+        Collections.listing['_current'] = 'template-overview';
 
 	// perform all embedding and support functions
 	Annodoc.activate(Config.bratCollData, Collections.listing);

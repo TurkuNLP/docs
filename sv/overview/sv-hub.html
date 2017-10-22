@@ -35,9 +35,9 @@
 
       <div id="hp-header">
         <table width="100%"><tr><td width="50%">
-          <span class="header-text"><a href="http://universaldependencies.org/#language-sv">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-template">home</a></span>
 
-          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-overview/sv-hub.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_template-overview/template-hub-sv-example.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
         </td><td>
           <gcse:search></gcse:search>
@@ -166,19 +166,20 @@
 
 <h2 id="treebanks">Treebanks</h2>
 
-<p>There are three Swedish UD treebanks:</p>
+<p>There are <a href="../../treebanks/sv-comparison.html">three</a> Swedish UD treebanks:</p>
 
 <ul>
-  <li>Swedish</li>
-  <li>Swedish-LinES</li>
-  <li>Swedish-PUD</li>
+  <li><a href="../../treebanks/sv-index.html">Swedish</a></li>
+  <li><a href="../../treebanks/sv_lines-index.html">Swedish-LinES</a></li>
+  <li><a href="../../treebanks/sv_pud-index.html">Swedish-PUD</a></li>
 </ul>
 
 <hr />
-<p><strong>Where do we link to for the treebanks?</strong></p>
+<p><strong>Instruction</strong>: Treebank-specific pages are generated automatically from the README file in the treebank repository and
+from the data in the latest release. Link to the respective <code>*-index.html</code> page in the <code>treebanks</code> folder, using the language code
+and the treebank code in the file name.</p>
 
 <hr />
-
 
 
       </div>
@@ -283,7 +284,7 @@
         setupTimeago();
 
         // mark current collection (filled in by Jekyll)
-        Collections.listing['_current'] = 'sv-overview';
+        Collections.listing['_current'] = 'template-overview';
 
 	// perform all embedding and support functions
 	Annodoc.activate(Config.bratCollData, Collections.listing);
