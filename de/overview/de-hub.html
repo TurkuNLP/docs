@@ -97,11 +97,12 @@ act independently in a given sentence; that includes possessives.</li>
       <li>The verbs <em>sein, haben</em> and <em>werden</em> can also occur as normal verbs (<a href="">VERB</a>), meaning “be, have, become”.</li>
     </ul>
   </li>
-  <li>There are three main (de)verbal forms, distinguished by the UPOS tag and the value of the <a href="">VerbForm</a> feature:
+  <li>There are four main (de)verbal forms, distinguished by the UPOS tag and the value of the <a href="">VerbForm</a> feature:
     <ul>
       <li>Infinitive <code>Inf</code>, tagged <a href="">VERB</a> or <a href="">AUX</a>.</li>
       <li>Finite verb <code>Fin</code>, tagged <a href="">VERB</a> or <a href="">AUX</a>.</li>
       <li>Participle <code>Part</code>, tagged <a href="">VERB</a> or <a href="">AUX</a>.</li>
+      <li>Verbal noun <code>Vnoun</code>, tagged <a href="">NOUN</a>, looks like a capitalized infinitive but has an article and may inflect.</li>
     </ul>
   </li>
 </ul>
@@ -116,7 +117,7 @@ act independently in a given sentence; that includes possessives.</li>
     </ul>
   </li>
   <li>The two main values of the <a href="">Number</a> feature are <code>Sing</code> and <code>Plur</code>. The following parts of speech inflect for number:
-<a href="">NOUN</a>, <a href="">PROPN</a>, <a href="">PRON</a>, <a href="">ADJ</a>, <a href="">DET</a>, <a href="">VERB</a>, <a href="">AUX</a> (finite, participles and converbs).</li>
+<a href="">NOUN</a>, <a href="">PROPN</a>, <a href="">PRON</a>, <a href="">ADJ</a>, <a href="">DET</a>, <a href="">VERB</a>, <a href="">AUX</a> (finite and participles).</li>
   <li><a href="">Case</a> has 4 possible values: <code>Nom</code>, <code>Gen</code>, <code>Dat</code>, <code>Acc</code>.
 It occurs with the nominal words, i.e., <a href="">NOUN</a>, <a href="">PROPN</a>, <a href="">PRON</a>, <a href="">ADJ</a>, <a href="">DET</a>.
 However, case forms of nouns are extremely ambiguous and most of the time the case is distinguished only by the form of the article.</li>
@@ -147,13 +148,12 @@ However, case forms of nouns are extremely ambiguous and most of the time the ca
 
 <ul>
   <li><a href="">PronType</a> is used with pronouns (<a href="">PRON</a>), determiners (<a href="">DET</a>) and adverbs (<a href="">ADV</a>).</li>
-  <li><a href="">NumType</a> is used with numerals (<a href="">NUM</a>), adjectives (<a href="">ADJ</a>), determiners (<a href="">DET</a>) and adverbs (<a href="">ADV</a>).</li>
-  <li>The <a href="">Poss</a> feature marks possessive personal determiners (e.g. <em>můj</em> “my”),
-possessive interrogative, indefinite or negative determiners (e.g. <em>čí</em> “whose”),
-possessive relative determiners (e.g. <em>jehož</em> “whose”)
-and possessive adjectives (e.g. <em>otcův</em> “father’s”).</li>
-  <li>The <a href="">Reflex</a> feature marks reflexive pronouns <em>(se, si)</em> and determiners <em>(svůj)</em>.
-In German it is always used together with <code>PronType=Prs</code>.</li>
+  <li><a href="">NumType</a> is used with numerals (<a href="">NUM</a>), adjectives (<a href="">ADJ</a>) and determiners (<a href="">DET</a>).</li>
+  <li>The <a href="">Poss</a> feature marks possessive personal determiners (e.g. <em>mein</em> “my”),
+possessive interrogative or relative determiners (e.g. <em>wessen</em> “whose”).</li>
+  <li>The <a href="">Reflex</a> feature is always used together with <code>PronType=Prs</code> and it marks reflexive pronouns <em>(mich, dich, sich, uns, euch).</em>
+Note that their forms in the first and second person are ambiguous with irreflexive accusative forms, and the <code>Reflex</code> feature
+must be decided by context.</li>
   <li><a href="">Person</a> is a lexical feature of personal pronouns (<a href="">PRON</a>) and has three values, <code>1</code>, <code>2</code> and <code>3</code>.
 With personal possessive determiners (<a href="">DET</a>), the feature actually encodes the person of the possessor.
 Person is not marked on other types of pronouns and on nouns, although they can be almost always interpreted as the 3rd person.
@@ -161,8 +161,16 @@ Person is not marked on other types of pronouns and on nouns, although they can 
       <li>As a cross-reference to subject, person is also marked on finite verbs (<a href="">VERB</a>, <a href="">AUX</a>).</li>
     </ul>
   </li>
+  <li>The <a href="">Polite</a> feature distinguishes informal second-person pronouns (<em>du, ihr,</em> <code>Polite=Infm</code>)
+from the formal <em>Sie</em> (<code>Polite=Form</code>).
+The formal pronoun is phonologically equivalent in all its case forms to the third-person plural <em>sie</em>
+but it is distinguished in orthography by the capital letter <em>S.</em>
+We tag it as second person (because that is its meaning) and we do not tag its number (because it is used both
+for singular and plural addressees) despite the fact that it combines with third-person plural verbs.
+The parser must learn that <code>Person=2|Polite=Form</code> subject attaches to <code>Number=Plur|Person=3</code> verbs,
+while <code>Number=Sing|Person=2|Polite=Infm</code> subject attaches to <code>Number=Sing|Person=2</code> verbs.</li>
   <li>There are two <a href="../../u/overview/feat-layers.html">layered features</a>, <a href="">Gender[psor]</a> and <a href="">Number[psor]</a>.
-They appear with certain possessive adjectives and determiners and encode the lexical gender/number of the possessor.
+They appear with certain possessive determiners and encode the lexical gender/number of the possessor.
 The extra layer is needed to distinguish these lexical features from the inflectional gender and number
 that mark agreement with the modified (possessed) noun.</li>
 </ul>
@@ -172,46 +180,34 @@ that mark agreement with the modified (possessed) noun.</li>
 <ul>
   <li>Besides the layered features listed above, there are several other language-specific features:
     <ul>
-      <li><a href="">NumForm</a></li>
-      <li><a href="">NumValue</a></li>
-      <li><a href="">NameType</a></li>
-      <li><a href="">AdpType</a></li>
-      <li><a href="">ConjType</a></li>
-      <li><a href="">Hyph</a></li>
-      <li><a href="">Style</a></li>
-      <li><a href="">PrepCase</a></li>
-      <li><a href="">Variant</a> … distinguishes short and long forms of adjectives, a Slavic-wide phenomenon</li>
+      <li><a href="">Typo</a></li>
     </ul>
   </li>
-  <li>The following universal features are not used in German: <a href="">Definite</a>, <a href="">Evident</a>, <a href="">Polite</a>.</li>
+  <li>The following universal features are not used in German: <a href="">Animacy</a>, <a href="">Evident</a>.</li>
 </ul>
 
 <h2 id="syntax">Syntax</h2>
-
-<p>This is an overview only. For more detailed discussion and examples, see the list of <a href="../dep/index.html">German relations</a>,
-as well as German-specific examples scattered across the documentation of constructions.</p>
 
 <h3 id="core-arguments-oblique-arguments-and-adjuncts">Core Arguments, Oblique Arguments and Adjuncts</h3>
 
 <ul>
   <li>Nominal subject (<a href="">nsubj</a>) is a noun phrase in the nominative case, without preposition.
     <ul>
-      <li>If the noun phrase is quantified, it may be in the genitive, which is required by the quantifier.
-If this is the case, then the quantifier is attached using a special relation, either <a href="">nummod:gov</a> or <a href="">det:numgov</a>.</li>
-      <li>An infinitive verb may serve as the subject and is labeled as clausal subject, <a href="">csubj</a>.
-On the other hand, verbal nouns as subjects are just <code>nsubj</code>.</li>
       <li>A finite subordinate clause may serve as the subject and is labeled <code>csubj</code>.</li>
+      <li>If an infinitive verb is to serve as the subject, it becomes a verbal noun
+(it gets the neuter singular nominative article and it is capitalized in writing),
+thus it is labeled <code>nsubj</code>.</li>
     </ul>
   </li>
-  <li>Objects defined in the German grammar may be bare noun phrases in accusative, dative, genitive or instrumental,
-or prepositional phrases in accusative, dative, genitive, locative or instrumental.
+  <li>Objects defined in the German grammar may be bare noun phrases in accusative, dative or genitive,
+or prepositional phrases in accusative, dative or genitive.
 For the purpose of UD the objects are divided to core objects, labeled <a href="">obj</a> or <a href="">iobj</a>,
 and oblique objects, labeled <a href="">obl:arg</a>.
     <ul>
-      <li>Bare accusative, dative, genitive and instrumental objects are considered core.</li>
+      <li>Bare accusative, dative and genitive objects are considered core.</li>
       <li>All prepositional objects are considered oblique.</li>
       <li>Accusative objects of some verbs alternate with finite clausal complements, which are labeled <a href="">ccomp</a>.</li>
-      <li>If a verb subcategorizes for the infinitive (e.g. modal verbs or verbs of control), the infinitival complement is labeled <a href="">xcomp</a>.</li>
+      <li>If a verb subcategorizes for the infinitive (e.g. phasal verbs or verbs of control), the infinitival complement is labeled <a href="">xcomp</a>.</li>
       <li>If a verb subcategorizes for two core objects, one of them accusative (or <code>ccomp</code>) and the other non-accusative,
 then the non-accusative object is labeled <a href="">iobj</a>.
 Core nominal objects in other situations are labeled just <a href="">obj</a>.</li>
@@ -220,24 +216,19 @@ Core nominal objects in other situations are labeled just <a href="">obj</a>.</l
   <li>Adjuncts (or, following the German grammar, adverbial modifiers realized as noun phrases) are usually
 prepositional phrases, but they can be bare noun phrases as well. They are labeled <a href="">obl</a>:
     <ul>
-      <li>Temporal modifiers realized as accusative noun phrases: <em>přijedu příští sobotu</em> “I will come next Saturday.”</li>
-      <li>Dative noun phrases with benefactive or possessive role (i.e. if the verb does not subcategorize for a single dative object
-and if it is not a verb of giving (or similar), where the dative could be interpreted as the recipient.
-Example: <em>uvařila mu oběd</em> “she cooked (for) him a lunch.”</li>
-      <li>Instrumental noun phrases expressing the way or means with which something was done.
-Example: <em>zbil psa klackem</em> “he beat up the dog with a stick.”</li>
+      <li>Temporal modifiers realized as accusative noun phrases: <em>ich arbeite jeden Tag</em> “I work every day.”</li>
       <li>All prepositional phrases that are not prepositional objects (i.e., their role and form is not defined lexically by the predicate)
 are adjuncts.</li>
     </ul>
   </li>
-  <li>Extra attention has to be paid to clitic forms of reflexive pronouns <em>se</em> (accusative) and <em>si</em> (dative). They can function as:
+  <li>Extra attention has to be paid to the reflexive pronoun <em>sich</em>. It can function as:
     <ul>
-      <li>Core objects (<a href="">obj</a> or <a href="">iobj</a>): <em>spatřil se/sebe v zrcadle</em> “he sighted himself in the mirror,” <em>ublížila si/sobě</em> “she hurt herself.”</li>
-      <li>Reciprocal core objects (<code>obj</code> or <code>iobj</code>): <em>líbali se</em> “they were kissing each other,”
-<em>vykali si</em> “they used the polite form of address for each other.”</li>
-      <li>Reflexive passive (<a href="">expl:pass</a>): <em>oběd se vaří</em> “the lunch is being cooked,” lit. “the lunch cooks itself.”</li>
-      <li>Inherently reflexive verb, cannot exist without the reflexive clitic. In accord with the current UD guidelines, we label the relation
-between the verb and the clitic as <a href="">expl:pv</a>, not <code>compound</code>. Example: <em>smála se</em> “she laughed,” <em>zvykla si</em> “she got used to it.”</li>
+      <li>Core object (<a href="">obj</a> or <a href="">iobj</a>): <em>er sah sich im Spiegel</em> “he sighted himself in the mirror.”</li>
+      <li>Reciprocal core objects (<code>obj</code> or <code>iobj</code>): <em>sie küssten sich</em> “they were kissing each other.”</li>
+      <li>Inherently reflexive verb, cannot exist without the reflexive clitic, and the clitic cannot be substituted by an irreflexive pronoun
+or a noun phrase.
+In accord with the current UD guidelines, we label the relation
+between the verb and the clitic as <a href="">expl:pv</a>, not <code>compound</code>. Example: <em>wir müssen uns beeilen</em> “we must hurry.”</li>
     </ul>
   </li>
   <li>In passive clauses (both reflexive and periphrastic passive), the subject is labeled with <a href="">nsubj:pass</a> or <a href="">csubj:pass</a>, respectively.
@@ -251,8 +242,11 @@ between the verb and the clitic as <a href="">expl:pv</a>, not <code>compound</c
 <h3 id="non-verbal-clauses">Non-verbal Clauses</h3>
 
 <ul>
-  <li>The copula verb <em>být</em> (be) is used in equational, attributional, locative, possessive and benefactory nonverbal clauses.
-Purely existential clauses (without indicating location) use <em>být</em> as well but it is treated as the head of the clause and tagged <a href="">VERB</a>.</li>
+  <li>The copula verb <em>sein</em> (be) is used in equational, attributional, locative, possessive and benefactory nonverbal clauses.
+    <ul>
+      <li>Existential clauses use a different verb, <em>geben</em> (give) with an accusative object: <em>es gibt Essen</em> “there is food.”</li>
+    </ul>
+  </li>
 </ul>
 
 <h3 id="relations-overview">Relations Overview</h3>
@@ -265,13 +259,10 @@ Purely existential clauses (without indicating location) use <em>být</em> as we
       <li><a href="">obl:agent</a> for agents of passive verbs</li>
       <li><a href="">obl:arg</a> for prepositional objects</li>
       <li><a href="">expl:pv</a> for reflexive clitics of inherently reflexive verbs</li>
-      <li><a href="">expl:pass</a> for reflexive clitics in reflexive passives</li>
       <li><a href="">aux:pass</a> for passive auxiliaries</li>
-      <li><a href="">nummod:gov</a> for cardinal numbers that are attached as children of the counted noun but govern its case</li>
-      <li><a href="">det:numgov</a> for pronominal quantifiers that are attached as children of the quantified noun but govern its case</li>
-      <li><a href="">det:nummod</a> for pronominal quantifiers in cases in which they do not govern the case of the quantified noun</li>
-      <li><a href="">advmod:emph</a> for adverbs or particles that modify noun phrases and emphasize or negate them</li>
-      <li><a href="">flat:foreign</a> for non-first words in quoted foreign phrases</li>
+      <li><a href="">compound:prt</a> for separable verb prefixes</li>
+      <li><a href="">det:poss</a> for possessive determiners</li>
+      <li><a href="">nmod:poss</a> for possessive modifier phrases</li>
     </ul>
   </li>
   <li>The following main types are not used alone and must be subtyped:
@@ -282,14 +273,11 @@ Purely existential clauses (without indicating location) use <em>být</em> as we
 
 <h2 id="treebanks">Treebanks</h2>
 
-<p>There are <a href="../../treebanks/cs-comparison.html">five</a> German UD treebanks:</p>
+<p>There are <a href="../../treebanks/de-comparison.html">two</a> German UD treebanks:</p>
 
 <ul>
-  <li><a href="../../treebanks/cs-index.html">German</a></li>
-  <li><a href="../../treebanks/cs_cac-index.html">German-CAC</a></li>
-  <li><a href="../../treebanks/cs_cltt-index.html">German-CLTT</a></li>
-  <li><a href="../../treebanks/cs_fictree-index.html">German-FicTree</a></li>
-  <li><a href="../../treebanks/cs_pud-index.html">German-PUD</a></li>
+  <li><a href="../../treebanks/de-index.html">German</a></li>
+  <li><a href="../../treebanks/de_pud-index.html">German-PUD</a></li>
 </ul>
 
 
