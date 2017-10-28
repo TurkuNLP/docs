@@ -112,7 +112,7 @@ act independently in a given sentence; that includes possessives.</li>
 <ul>
   <li>Nominal words (<a href="">NOUN</a>, <a href="">PROPN</a> and <a href="">PRON</a>) have an inherent <a href="">Gender</a> feature with one of three values: <code>Masc</code>, <code>Fem</code> or <code>Neut</code>.
     <ul>
-      <li>The following parts of speech inflect for <code>Gender</code> and <code>Animacy</code> because they must agree with nouns: <a href="">ADJ</a>, <a href="">DET</a>,
+      <li>The following parts of speech inflect for <code>Gender</code> because they must agree with nouns: <a href="">ADJ</a>, <a href="">DET</a>,
 <a href="">VERB</a>, <a href="">AUX</a>. For verbs (including auxiliaries), only participles can inflect for gender. Finite verbs don’t.</li>
     </ul>
   </li>
@@ -142,6 +142,8 @@ However, case forms of nouns are extremely ambiguous and most of the time the ca
       <li>The <code>Tense</code> feature is also used to distinguish present and past participles (<em>kommend</em> “coming” vs. <em>gekommen</em> “come”).</li>
     </ul>
   </li>
+  <li>The features <a href="">Aspect</a> and <a href="">Voice</a> are not used in German because
+both the perfect aspect and the passive voice are expressed periphrastically.</li>
 </ul>
 
 <h3 id="pronouns-determiners-quantifiers">Pronouns, Determiners, Quantifiers</h3>
@@ -231,7 +233,7 @@ In accord with the current UD guidelines, we label the relation
 between the verb and the clitic as <a href="">expl:pv</a>, not <code>compound</code>. Example: <em>wir müssen uns beeilen</em> “we must hurry.”</li>
     </ul>
   </li>
-  <li>In passive clauses (both reflexive and periphrastic passive), the subject is labeled with <a href="">nsubj:pass</a> or <a href="">csubj:pass</a>, respectively.
+  <li>In passive clauses, the subject is labeled with <a href="">nsubj:pass</a> or <a href="">csubj:pass</a>, respectively.
     <ul>
       <li>The auxiliary verb in periphrastic passive is labeled <a href="">aux:pass</a>.</li>
       <li>If the demoted agent is present, it has the form of a bare instrumental phrase and its relation is labeled <a href="">obl:agent</a>.</li>
