@@ -176,28 +176,17 @@ Person is not marked on other types of pronouns and on nouns, although they can 
       <li>As a cross-reference to subject, person is also marked on finite verbs (<a href="">VERB</a>, <a href="">AUX</a>).</li>
     </ul>
   </li>
-  <li>The <a href="">Polite</a> feature distinguishes informal second-person pronouns (<em>du, ihr,</em> <code>Polite=Infm</code>)
-from the formal <em>Sie</em> (<code>Polite=Form</code>).
-The formal pronoun is phonologically equivalent in all its case forms to the third-person plural <em>sie</em>
-but it is distinguished in orthography by the capital letter <em>S.</em>
-We tag it as second person (because that is its meaning) and we do not tag its number (because it is used both
-for singular and plural addressees) despite the fact that it combines with third-person plural verbs.
-The parser must learn that <code>Person=2|Polite=Form</code> subject attaches to <code>Number=Plur|Person=3</code> verbs,
-while <code>Number=Sing|Person=2|Polite=Infm</code> subject attaches to <code>Number=Sing|Person=2</code> verbs.</li>
-  <li>There are two <a href="../../u/overview/feat-layers.html">layered features</a>, <a href="">Gender[psor]</a> and <a href="">Number[psor]</a>.
-They appear with certain possessive determiners and encode the lexical gender/number of the possessor.
-The extra layer is needed to distinguish these lexical features from the inflectional gender and number
-that mark agreement with the modified (possessed) noun.</li>
+  <li>The <a href="">Polite</a> feature distinguishes informal second-person pronouns (<em>tú, vosotros,</em> <code>Polite=Infm</code>)
+from the formal <em>usted, ustedes</em> (<code>Polite=Form</code>).</li>
+  <li>There is one <a href="../../u/overview/feat-layers.html">layered feature</a>, <a href="">Number[psor]</a>.
+It appears with possessive determiners and encodes the lexical number of the possessor.
+The extra layer is needed to distinguish this lexical feature from the inflectional number
+that marks agreement with the modified (possessed) noun.</li>
 </ul>
 
 <h3 id="other-features">Other Features</h3>
 
 <ul>
-  <li>Besides the layered features listed above, there are several other language-specific features:
-    <ul>
-      <li><a href="">Typo</a></li>
-    </ul>
-  </li>
   <li>The following universal features are not used in Spanish: <a href="">Animacy</a>, <a href="">Evident</a>.</li>
 </ul>
 
@@ -206,50 +195,27 @@ that mark agreement with the modified (possessed) noun.</li>
 <h3 id="core-arguments-oblique-arguments-and-adjuncts">Core Arguments, Oblique Arguments and Adjuncts</h3>
 
 <ul>
-  <li>Nominal subject (<a href="">nsubj</a>) is a noun phrase in the nominative case, without preposition.
+  <li>Nominal subject (<a href="">nsubj</a>) is a bare noun phrase without preposition.
+If it is a personal pronoun, it must be in the nominative form
+(note however that Spanish is a pro-drop language, where pronominal subjects can be omitted).</li>
+  <li>Direct nominal object (<a href="">obj</a>) is either a bare noun phrase (for inanimate objects)
+or a prepositional phrase with the preposition <em>a</em> (for animate objects)
+or a personal pronoun in the accusative form.</li>
+  <li>Extra attention has to be paid to the reflexive pronoun <em>se</em>. It can function as:
     <ul>
-      <li>A finite subordinate clause may serve as the subject and is labeled <code>csubj</code>.</li>
-      <li>If an infinitive verb is to serve as the subject, it becomes a verbal noun
-(it gets the neuter singular nominative article and it is capitalized in writing),
-thus it is labeled <code>nsubj</code>.</li>
-    </ul>
-  </li>
-  <li>Objects defined in the Spanish grammar may be bare noun phrases in accusative, dative or genitive,
-or prepositional phrases in accusative, dative or genitive.
-For the purpose of UD the objects are divided to core objects, labeled <a href="">obj</a> or <a href="">iobj</a>,
-and oblique objects, labeled <a href="">obl:arg</a>.
-    <ul>
-      <li>Bare accusative, dative and genitive objects are considered core.</li>
-      <li>All prepositional objects are considered oblique.</li>
-      <li>Accusative objects of some verbs alternate with finite clausal complements, which are labeled <a href="">ccomp</a>.</li>
-      <li>If a verb subcategorizes for the infinitive (e.g. phasal verbs or verbs of control), the infinitival complement is labeled <a href="">xcomp</a>.</li>
-      <li>If a verb subcategorizes for two core objects, one of them accusative (or <code>ccomp</code>) and the other non-accusative,
-then the non-accusative object is labeled <a href="">iobj</a>.
-Core nominal objects in other situations are labeled just <a href="">obj</a>.</li>
-    </ul>
-  </li>
-  <li>Adjuncts (or, following the Spanish grammar, adverbial modifiers realized as noun phrases) are usually
-prepositional phrases, but they can be bare noun phrases as well. They are labeled <a href="">obl</a>:
-    <ul>
-      <li>Temporal modifiers realized as accusative noun phrases: <em>ich arbeite jeden Tag</em> “I work every day.”</li>
-      <li>All prepositional phrases that are not prepositional objects (i.e., their role and form is not defined lexically by the predicate)
-are adjuncts.</li>
-    </ul>
-  </li>
-  <li>Extra attention has to be paid to the reflexive pronoun <em>sich</em>. It can function as:
-    <ul>
-      <li>Core object (<a href="">obj</a> or <a href="">iobj</a>): <em>er sah sich im Spiegel</em> “he sighted himself in the mirror.”</li>
-      <li>Reciprocal core objects (<code>obj</code> or <code>iobj</code>): <em>sie küssten sich</em> “they were kissing each other.”</li>
+      <li>Core object (<a href="">obj</a> or <a href="">iobj</a>): <em>él se vio en el espejo</em> “he sighted himself in the mirror.”</li>
+      <li>Reciprocal core objects (<code>obj</code> or <code>iobj</code>): <em>se besaron</em> “they kissed each other.”</li>
+      <li>Reflexive passive (<a href="">expl:pass</a>): <em>se celebran los cien años del club</em> “hundred years of the club are celebrated” (lit.  “celebrate themselves”); <em>se dice que la escribió en París</em> “it is said that he wrote it in Paris.”</li>
       <li>Inherently reflexive verb, cannot exist without the reflexive clitic, and the clitic cannot be substituted by an irreflexive pronoun
-or a noun phrase.
+or a noun phrase. In many cases, an irreflexive counterpart of the verb actually exists but its meaning is different because it
+denotes a different action performed by the agent.
 In accord with the current UD guidelines, we label the relation
-between the verb and the clitic as <a href="">expl:pv</a>, not <code>compound</code>. Example: <em>wir müssen uns beeilen</em> “we must hurry.”</li>
+between the verb and the clitic as <a href="">expl:pv</a>, not <code>compound</code>. Example: <em>se trataba de un negocio nuevo</em> “the matter is a new contract.”</li>
     </ul>
   </li>
   <li>In passive clauses, the subject is labeled with <a href="">nsubj:pass</a> or <a href="">csubj:pass</a>, respectively.
     <ul>
       <li>The auxiliary verb in periphrastic passive is labeled <a href="">aux:pass</a>.</li>
-      <li>If the demoted agent is present, it has the form of a bare instrumental phrase and its relation is labeled <a href="">obl:agent</a>.</li>
     </ul>
   </li>
 </ul>
@@ -257,9 +223,10 @@ between the verb and the clitic as <a href="">expl:pv</a>, not <code>compound</c
 <h3 id="non-verbal-clauses">Non-verbal Clauses</h3>
 
 <ul>
-  <li>The copula verb <em>sein</em> (be) is used in equational, attributional, locative, possessive and benefactory nonverbal clauses.
+  <li>The copula verbs <em>ser</em> and <em>estar</em> (be) are used in equational, attributional, locative, possessive and benefactory nonverbal clauses.
     <ul>
-      <li>Existential clauses use a different verb, <em>geben</em> (give) with an accusative object: <em>es gibt Essen</em> “there is food.”</li>
+      <li>Existential clauses use a different verb, <em>hay</em> (be), and the entity whose existence is asserted is its object:
+<em>hay algo para comer</em> “there is something to eat.”</li>
     </ul>
   </li>
 </ul>
@@ -269,30 +236,24 @@ between the verb and the clitic as <a href="">expl:pv</a>, not <code>compound</c
 <ul>
   <li>The following relation subtypes are used in Spanish:
     <ul>
+      <li><a href="">acl:relcl</a> for relative clauses</li>
       <li><a href="">nsubj:pass</a> for nominal subjects of passive verbs</li>
       <li><a href="">csubj:pass</a> for clausal subjects of passive verbs</li>
-      <li><a href="">obl:agent</a> for agents of passive verbs</li>
-      <li><a href="">obl:arg</a> for prepositional objects</li>
-      <li><a href="">expl:pv</a> for reflexive clitics of inherently reflexive verbs</li>
       <li><a href="">aux:pass</a> for passive auxiliaries</li>
-      <li><a href="">compound:prt</a> for separable verb prefixes</li>
-      <li><a href="">det:poss</a> for possessive determiners</li>
-      <li><a href="">nmod:poss</a> for possessive modifier phrases</li>
     </ul>
   </li>
-  <li>The following main types are not used alone and must be subtyped:
-<a href="">expl</a></li>
   <li>The following relation types are not used in Spanish at all:
 <a href="">clf</a>, <a href="">dislocated</a></li>
 </ul>
 
 <h2 id="treebanks">Treebanks</h2>
 
-<p>There are <a href="../../treebanks/de-comparison.html">two</a> Spanish UD treebanks:</p>
+<p>There are <a href="../../treebanks/es-comparison.html">three</a> Spanish UD treebanks:</p>
 
 <ul>
-  <li><a href="../../treebanks/de-index.html">Spanish</a></li>
-  <li><a href="../../treebanks/de_pud-index.html">Spanish-PUD</a></li>
+  <li><a href="../../treebanks/es-index.html">Spanish</a></li>
+  <li><a href="../../treebanks/es_ancora-index.html">Spanish-AnCora</a></li>
+  <li><a href="../../treebanks/es_pud-index.html">Spanish-PUD</a></li>
 </ul>
 
 
