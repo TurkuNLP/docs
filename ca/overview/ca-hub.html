@@ -79,7 +79,7 @@ with the exception of abbreviations such as <em>etc.</em> “etc.” which are k
 Example: <em>al = a + el</em> “to the”, <em>del = de + el</em> “of the”.</li>
       <li>Certain verb forms (infinitives, imperatives, present participles) are writen together with
 object clitic pronouns, while with other verb forms the clitics are written as separate words.
-Examples: <em>convertirse = convertir + se</em> “to become” (lit. “to convert itself”), <em>hacerlo</em> “to do it”.</li>
+Examples: <em>convertir-se = convertir + se</em> “to become” (lit. “to convert itself”), <em>fer-ho</em> “to do it”.</li>
     </ul>
   </li>
 </ul>
@@ -95,17 +95,17 @@ Examples: <em>convertirse = convertir + se</em> “to become” (lit. “to conv
   <li>Catalan auxiliary verbs (<a href="">AUX</a>) are:
     <ul>
       <li><em>ser</em> and <em>estar</em> “to be”, used as copulas</li>
-      <li><em>ser</em> “to be” for the passive (<em>la sentencia fue publicada</em> “the sentence was published”)</li>
-      <li><em>estar</em> “to be” for the progressive (<em>mis hijos están estudiando inglés</em> “my children are studying English”)</li>
-      <li><em>haber</em> “to be” for the perfect tenses (<em>ha venido hoy</em> “he came today”)</li>
+      <li><em>ser</em> “to be” for the passive (<em>la guia va ser presentada</em> “the guide will be presented”)</li>
+      <li><em>estar</em> “to be” for the progressive (<em>la globalització està causant els canvis</em> “globalization is causing changes”)</li>
+      <li><em>haver</em> “to be” for the perfect tenses (<em>¿Què ha passat?</em> “What happened?”)</li>
     </ul>
   </li>
   <li>There are four main (de)verbal forms, distinguished by the UPOS tag and the value of the <a href="">VerbForm</a> feature:
     <ul>
       <li>Infinitive <code>Inf</code>, tagged <a href="">VERB</a> or <a href="">AUX</a>, e.g. <em>estudiar</em> “to study”.</li>
-      <li>Finite verb <code>Fin</code>, tagged <a href="">VERB</a> or <a href="">AUX</a>, e.g. <em>estudio</em> “I study”.</li>
-      <li>Participle <code>Part</code>, tagged <a href="">VERB</a> or <a href="">AUX</a>, e.g. <em>estudiado</em> “studied”.</li>
-      <li>Gerund <code>Ger</code> (Catalan <em>gerundio</em>) or present participle, e.g. <em>estudiando</em> “studying”.</li>
+      <li>Finite verb <code>Fin</code>, tagged <a href="">VERB</a> or <a href="">AUX</a>, e.g. <em>estudiarem</em> “we will study”.</li>
+      <li>Participle <code>Part</code>, tagged <a href="">VERB</a> or <a href="">AUX</a>, e.g. <em>estudiat</em> “studied”.</li>
+      <li>Gerund <code>Ger</code> (Catalan <em>gerundio</em>) or present participle, e.g. <em>estudiant</em> “studying”.</li>
     </ul>
   </li>
 </ul>
@@ -116,15 +116,14 @@ Examples: <em>convertirse = convertir + se</em> “to become” (lit. “to conv
   <li>Nominal words (<a href="">NOUN</a>, <a href="">PROPN</a> and <a href="">PRON</a>) have an inherent <a href="">Gender</a> feature with one of two values: <code>Masc</code> or <code>Fem</code>.
     <ul>
       <li>The following parts of speech inflect for <code>Gender</code> because they must agree with nouns: <a href="">ADJ</a>, <a href="">DET</a>.
-Only a subset of adjectives can inflect for gender, with the suffix <em>-o</em> indicating the masculine
-and <em>-a</em> the feminine. A large group of adjectives (e.g. <em>grande</em> “big” or <em>feliz</em> “happy”)
+Only a subset of adjectives can inflect for gender. A large group of adjectives (e.g. <em>firal</em> “fair” or <em>gran</em> “big”)
 have just one form regardless of the gender of the modified noun. These adjectives have the
 gender feature empty.</li>
     </ul>
   </li>
   <li>The two values of the <a href="">Number</a> feature are <code>Sing</code> and <code>Plur</code>. The following parts of speech inflect for number:
 <a href="">NOUN</a>, <a href="">PROPN</a>, <a href="">PRON</a>, <a href="">ADJ</a>, <a href="">DET</a>, <a href="">VERB</a>, <a href="">AUX</a> (finite and participles).</li>
-  <li><a href="">Case</a> has 4 possible values: <code>Nom</code>, <code>Dat</code>, <code>Acc</code>, <code>Com</code>.
+  <li><a href="">Case</a> has three possible values: <code>Nom</code>, <code>Dat</code>, <code>Acc</code>.
 It occurs only with personal pronouns (<a href="">PRON</a>).
 The “case” (i.e., role w.r.t. predicates or other phrases) of other nominals is expressed using prepositions, not morphologically.</li>
   <li><a href="">Definite</a> has 2 values: <code>Ind</code>, <code>Def</code>. It is used to distinguish the indefinite and definite articles (<a href="">DET</a>).</li>
@@ -163,10 +162,9 @@ And it is not needed for the perfect tenses because they are constructed periphr
 <ul>
   <li><a href="">PronType</a> is used with pronouns (<a href="">PRON</a>) and determiners (<a href="">DET</a>).</li>
   <li><a href="">NumType</a> is used with numerals (<a href="">NUM</a>), adjectives (<a href="">ADJ</a>) and determiners (<a href="">DET</a>).</li>
-  <li>The <a href="">Poss</a> feature marks possessive personal determiners (e.g. <em>mi</em> “my”),
-possessive personal pronouns (e.g. <em>mío</em> “mine”), and
-possessive interrogative or relative determiners (e.g. <em>cuyo</em> “whose”).</li>
-  <li>The <a href="">Reflex</a> feature is always used together with <code>PronType=Prs</code> and it marks reflexive pronouns <em>(me, te, se, nos, os).</em>
+  <li>The <a href="">Poss</a> feature marks possessive personal determiners (e.g. <em>meu</em> “my”),
+possessive personal pronouns (e.g. <em>meva</em> “mine”).</li>
+  <li>The <a href="">Reflex</a> feature is always used together with <code>PronType=Prs</code> and it marks reflexive pronouns.
 Note that their forms in the first and second person are ambiguous with irreflexive accusative forms, and the <code>Reflex</code> feature
 must be decided by context.</li>
   <li><a href="">Person</a> is a lexical feature of personal pronouns (<a href="">PRON</a>) and has three values, <code>1</code>, <code>2</code> and <code>3</code>.
@@ -176,8 +174,8 @@ Person is not marked on other types of pronouns and on nouns, although they can 
       <li>As a cross-reference to subject, person is also marked on finite verbs (<a href="">VERB</a>, <a href="">AUX</a>).</li>
     </ul>
   </li>
-  <li>The <a href="">Polite</a> feature distinguishes informal second-person pronouns (<em>tú, vosotros,</em> <code>Polite=Infm</code>)
-from the formal <em>usted, ustedes</em> (<code>Polite=Form</code>).</li>
+  <li>The <a href="">Polite</a> feature distinguishes informal second-person pronouns (<em>tu, vosaltres,</em> <code>Polite=Infm</code>)
+from the formal <em>vostè, vostès</em> (<code>Polite=Form</code>).</li>
   <li>There is one <a href="../../u/overview/feat-layers.html">layered feature</a>, <a href="">Number[psor]</a>.
 It appears with possessive determiners and encodes the lexical number of the possessor.
 The extra layer is needed to distinguish this lexical feature from the inflectional number
@@ -201,16 +199,17 @@ If it is a personal pronoun, it must be in the nominative form
   <li>Direct nominal object (<a href="">obj</a>) is either a bare noun phrase (for inanimate objects)
 or a prepositional phrase with the preposition <em>a</em> (for animate objects)
 or a personal pronoun in the accusative form.</li>
-  <li>Extra attention has to be paid to the reflexive pronoun <em>se</em>. It can function as:
+  <li>Extra attention has to be paid to the reflexive pronoun <em>es</em>. It can function as:
     <ul>
-      <li>Core object (<a href="">obj</a> or <a href="">iobj</a>): <em>él se vio en el espejo</em> “he sighted himself in the mirror.”</li>
-      <li>Reciprocal core objects (<code>obj</code> or <code>iobj</code>): <em>se besaron</em> “they kissed each other.”</li>
-      <li>Reflexive passive (<a href="">expl:pass</a>): <em>se celebran los cien años del club</em> “hundred years of the club are celebrated” (lit.  “celebrate themselves”); <em>se dice que la escribió en París</em> “it is said that he wrote it in Paris.”</li>
+      <li>Core object (<a href="">obj</a> or <a href="">iobj</a>): <em>es va veure al mirall</em> “he sighted himself in the mirror.”</li>
+      <li>Reciprocal core objects (<code>obj</code> or <code>iobj</code>): <em>es van besar</em> “they kissed each other.”</li>
+      <li>Reflexive passive (<a href="">expl:pass</a>): <em>s’ha ofert una atenció psicològica a les persones afectades</em> “psychological attention has been offered to the people affected” (lit.  “offered itself”).</li>
       <li>Inherently reflexive verb, cannot exist without the reflexive clitic, and the clitic cannot be substituted by an irreflexive pronoun
 or a noun phrase. In many cases, an irreflexive counterpart of the verb actually exists but its meaning is different because it
 denotes a different action performed by the agent.
 In accord with the current UD guidelines, we label the relation
-between the verb and the clitic as <a href="">expl:pv</a>, not <code>compound</code>. Example: <em>se trataba de un negocio nuevo</em> “the matter is a new contract.”</li>
+between the verb and the clitic as <a href="">expl:pv</a>, not <code>compound</code>. Example: <em>es tracta d’una immigració</em> “the matter is immigration;”
+<em>s’havia de riure</em> “he had to laugh.”</li>
     </ul>
   </li>
   <li>In passive clauses, the subject is labeled with <a href="">nsubj:pass</a> or <a href="">csubj:pass</a>, respectively.
@@ -223,12 +222,7 @@ between the verb and the clitic as <a href="">expl:pv</a>, not <code>compound</c
 <h3 id="non-verbal-clauses">Non-verbal Clauses</h3>
 
 <ul>
-  <li>The copula verbs <em>ser</em> and <em>estar</em> (be) are used in equational, attributional, locative, possessive and benefactory nonverbal clauses.
-    <ul>
-      <li>Existential clauses use a different verb, <em>hay</em> (be), and the entity whose existence is asserted is its object:
-<em>hay algo para comer</em> “there is something to eat.”</li>
-    </ul>
-  </li>
+  <li>The copula verbs <em>ser</em> and <em>estar</em> (be) are used in equational, attributional, locative, possessive and benefactory nonverbal clauses.</li>
 </ul>
 
 <h3 id="relations-overview">Relations Overview</h3>
@@ -248,13 +242,13 @@ between the verb and the clitic as <a href="">expl:pv</a>, not <code>compound</c
 
 <h2 id="treebanks">Treebanks</h2>
 
-<p>There are <a href="../../treebanks/es-comparison.html">three</a> Catalan UD treebanks:</p>
+<p>There is one Catalan UD treebank:</p>
 
 <ul>
-  <li><a href="../../treebanks/es-index.html">Catalan</a></li>
-  <li><a href="../../treebanks/es_ancora-index.html">Catalan-AnCora</a></li>
-  <li><a href="../../treebanks/es_pud-index.html">Catalan-PUD</a></li>
+  <li><a href="../../treebanks/ca-index.html">Catalan</a></li>
 </ul>
+
+<p><a href="../../treebanks/es-ca-comparison.html">Spanish-Catalan comparison</a></p>
 
 
       </div>
