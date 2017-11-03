@@ -3,7 +3,7 @@
 <html lang="en-GB" xml:lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <title>Features</title>
+    <title>Number</title>
     <link rel="root" href=""/> <!-- for JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../../css/jquery-ui-redmond.css"/>
@@ -36,8 +36,8 @@
       <div id="hp-header">
         <table width="100%"><tr><td width="50%">
           <span class="header-text"><a href="http://universaldependencies.org/#language-hy">home</a></span>
-
-
+          <span class="header-text"><a href="http://universaldependencies.org/hy/feat">hy/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hy-feat/Number.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
         </td><td>
           <gcse:search></gcse:search>
@@ -60,122 +60,8 @@
 	  </div>
 	</noscript>
 
-          <h1 id="features">Features</h1>
+          <style>h3 {display:block;background-color:#dfeffc}</style>
 
-<table class="typeindex">
-  <tr>
-    <td>
-      <table class="category">
-        <tr><td><strong>Lexical features</strong></td></tr>
-        <tr>
-          <td><a>PronType</a></td>
-        </tr>
-        <tr>
-          <td><a>NumType</a></td>
-        </tr>
-        <tr>
-          <td><a>Poss</a></td>
-        </tr>
-        <tr>
-          <td><a>Reflex</a></td>
-        </tr>
-      </table>
-    </td>
-    <td>
-      <table class="category">
-        <tr><td colspan="3"><strong>Inflectional features</strong></td></tr>
-        <tr>
-          <td><i>Nominal</i></td>
-          <td><i>Verbal</i></td>
-        </tr>
-        <tr>
-          <td><a>Gender</a></td>
-          <td><a>VerbForm</a></td>
-        </tr>
-        <tr>
-          <td><a>Animacy</a></td>
-          <td><a>Mood</a></td>
-        </tr>
-        <tr>
-          <td><a>Number</a></td>
-          <td><a>Tense</a></td>
-        </tr>
-        <tr>
-          <td><a>Case</a></td>
-          <td><a>Aspect</a></td>
-        </tr>
-        <tr>
-          <td><a>Definite</a></td>
-          <td><a>Voice</a></td>
-        </tr>
-        <tr>
-          <td><a>Degree</a></td>
-          <td><a>Person</a></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td><a>Polarity</a></td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-
-<hr />
-
-<p><a id="al-hy-feat/Degree" class="al-dest"></a></p>
-<h2><code>Degree</code>: degree of comparison</h2>
-
-<p>Degree of comparison is inflectional feature of some <a href="hy-pos/ADJ">adjectives</a> and <a href="hy-pos/ADV">adverbs</a>.</p>
-
-<p>The second degree of adjective or adverb is modified through adverb <em>ավելի</em> “more” e.g. <em>ավելի գեղեցիկ</em> “more beautiful”; <em>ավելի արագ</em> “more quickly”. We only annotate this adverb with the second degree feature.</p>
-
-<p>Note that the third degree of adverbs in Armenian is constructed with the feature of <a href="hy-feat/Definite">Definite</a>.</p>
-
-<h3 id="pos-positive-first-degree"><code>Pos</code>: positive, first degree</h3>
-
-<p>This is the base form that merely states a quality of something, without comparing it to qualities of others. Note that although this
-degree is traditionally called “positive”, negative properties can be compared, too.</p>
-
-<h4 id="examples">Examples</h4>
-
-<ul>
-  <li><em><b>խելացի</b> մարդ </em> “<b>clever</b> man”</li>
-  <li><em><b>լավ</b> երաժիշտ </em> “<b>good</b> musician”</li>
-  <li><em><b>նոր</b> նմուշ </em> “<b>new</b> exemplar”</li>
-  <li><em>նա <b>արագ</b> է քայլում </em> “he walks <b>quickly</b>”</li>
-</ul>
-
-<h3 id="cmp-comparative-second-degree"><code>Cmp</code>: comparative, second degree</h3>
-
-<p>The quality of one object is compared to the same quality of another object.</p>
-
-<h4 id="examples-1">Examples</h4>
-
-<ul>
-  <li><em><b>ավելի խելացի</b> մարդ </em> “<b>cleverer</b> man”</li>
-  <li><em>այս մարդն ինձնից <b>(ավելի) խելացի</b> է </em> “the man is cleverer <b>cleverer</b> than me”</li>
-  <li><em><b>ավելի լավ</b> երաժիշտ </em> “<b>better</b> musician”</li>
-  <li><em><b>ավելի նոր</b> նմուշ </em> “<b>newer</b> exemplar”</li>
-  <li><em>նա <b>ավելի արագ</b> է քայլում </em> “he walks <b>more quickly</b>”</li>
-</ul>
-
-<h3 id="sup-superlative-third-degree"><code>Sup</code>: superlative, third degree</h3>
-
-<p>The quality of one object is compared to the same quality of all other objects within a set.</p>
-
-<h4 id="examples-2">Examples</h4>
-
-<ul>
-  <li><em>նա մեր խմբի <b>ամենախելացի</b> մարդն է </em> “he is the <b>cleverest</b> man in our group”</li>
-  <li><em>նա մեր խմբի <b>լավագույն</b> երաժիշտն է </em> “he is the <b>best</b> musician in our group”</li>
-  <li><em>սա <b>ամենանորագույն</b> նմուշն է </em> “this is the <b>very newest</b> exemplar”</li>
-  <li><em>նա <b>ամենաարագն</b> է քայլում </em> “he walks <b>the most quickly</b>”</li>
-</ul>
-
-<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hy-feat/Degree.md" target="#">edit Degree</a></p>
-
-<p><a id="al-hy-feat/Number" class="al-dest"></a></p>
 <h2><code>Number</code>: number</h2>
 
 <p>In Armenian, <code>Number</code> is a feature of <a href="hy-pos/NOUN">nouns</a> and other parts of speech that mark agreement with nouns, i.e. personal <a href="hy-pos/PRON">pronouns</a>, and <a href="hy-pos/VERB">verbs</a>.</p>
@@ -271,7 +157,140 @@ degree is traditionally called “positive”, negative properties can be compar
 
 <p>The EANC tagset grammaticaly does not distinguish <code>Coll</code> from <code>Sing</code>. Therefore, there is a lexical subcategory <em>“collective noun”</em> for <code>Coll</code>.</p>
 
-<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hy-feat/Number.md" target="#">edit Number</a></p>
+
+<!-- "automatic stats" -->
+
+
+
+
+
+<!-- "in other languages" links -->
+<hr/>
+
+Number in other languages:
+
+[<a href="../../am/feat/Number.html">am</a>]
+
+[<a href="../../ar/feat/Number.html">ar</a>]
+
+[<a href="../../bg/feat/Number.html">bg</a>]
+
+[<a href="../../bxr/feat/Number.html">bxr</a>]
+
+[<a href="../../ca/feat/Number.html">ca</a>]
+
+[<a href="../../ckb/feat/Number.html">ckb</a>]
+
+[<a href="../../cop/feat/Number.html">cop</a>]
+
+[<a href="../../cs/feat/Number.html">cs</a>]
+
+[<a href="../../cu/feat/Number.html">cu</a>]
+
+[<a href="../../da/feat/Number.html">da</a>]
+
+[<a href="../../de/feat/Number.html">de</a>]
+
+[<a href="../../el/feat/Number.html">el</a>]
+
+[<a href="../../en/feat/Number.html">en</a>]
+
+[<a href="../../es/feat/Number.html">es</a>]
+
+[<a href="../../et/feat/Number.html">et</a>]
+
+[<a href="../../eu/feat/Number.html">eu</a>]
+
+[<a href="../../fa/feat/Number.html">fa</a>]
+
+[<a href="../../fi/feat/Number.html">fi</a>]
+
+[<a href="../../fo/feat/Number.html">fo</a>]
+
+[<a href="../../fr/feat/Number.html">fr</a>]
+
+[<a href="../../ga/feat/Number.html">ga</a>]
+
+[<a href="../../gl/feat/Number.html">gl</a>]
+
+[<a href="../../got/feat/Number.html">got</a>]
+
+[<a href="../../grc/feat/Number.html">grc</a>]
+
+[<a href="../../he/feat/Number.html">he</a>]
+
+[<a href="../../hi/feat/Number.html">hi</a>]
+
+[<a href="../../hr/feat/Number.html">hr</a>]
+
+[<a href="../../hu/feat/Number.html">hu</a>]
+
+[<a href="../../id/feat/Number.html">id</a>]
+
+[<a href="../../it/feat/Number.html">it</a>]
+
+[<a href="../../ja/feat/Number.html">ja</a>]
+
+[<a href="../../kk/feat/Number.html">kk</a>]
+
+[<a href="../../kmr/feat/Number.html">kmr</a>]
+
+[<a href="../../ko/feat/Number.html">ko</a>]
+
+[<a href="../../la/feat/Number.html">la</a>]
+
+[<a href="../../lv/feat/Number.html">lv</a>]
+
+[<a href="../../mr/feat/Number.html">mr</a>]
+
+[<a href="../../nl/feat/Number.html">nl</a>]
+
+[<a href="../../no/feat/Number.html">no</a>]
+
+[<a href="../../pl/feat/Number.html">pl</a>]
+
+[<a href="../../pt/feat/Number.html">pt</a>]
+
+[<a href="../../ro/feat/Number.html">ro</a>]
+
+[<a href="../../ru/feat/Number.html">ru</a>]
+
+[<a href="../../sa/feat/Number.html">sa</a>]
+
+[<a href="../../sk/feat/Number.html">sk</a>]
+
+[<a href="../../sla/feat/Number.html">sla</a>]
+
+[<a href="../../sl/feat/Number.html">sl</a>]
+
+[<a href="../../so/feat/Number.html">so</a>]
+
+[<a href="../../sr/feat/Number.html">sr</a>]
+
+[<a href="../../sv/feat/Number.html">sv</a>]
+
+[<a href="../../swl/feat/Number.html">swl</a>]
+
+[<a href="../../ta/feat/Number.html">ta</a>]
+
+[<a href="../../tr/feat/Number.html">tr</a>]
+
+[<a href="../../u/feat/Number.html">u</a>]
+
+[<a href="../../ug/feat/Number.html">ug</a>]
+
+[<a href="../../uk/feat/Number.html">uk</a>]
+
+[<a href="../../ur/feat/Number.html">ur</a>]
+
+[<a href="../../urj/feat/Number.html">urj</a>]
+
+[<a href="../../vi/feat/Number.html">vi</a>]
+
+[<a href="../../yue/feat/Number.html">yue</a>]
+
+[<a href="../../zh/feat/Number.html">zh</a>]
+
 
 
 
@@ -383,7 +402,7 @@ degree is traditionally called “positive”, negative properties can be compar
         setupTimeago();
 
         // mark current collection (filled in by Jekyll)
-        Collections.listing['_current'] = 'hy-overview';
+        Collections.listing['_current'] = 'hy-feat';
 
 	// perform all embedding and support functions
 	Annodoc.activate(Config.bratCollData, Collections.listing);

@@ -3,7 +3,7 @@
 <html lang="en-GB" xml:lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <title>obj:agent</title>
+    <title>csubj:pass</title>
     <link rel="root" href=""/> <!-- for JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../../css/jquery-ui-redmond.css"/>
@@ -37,7 +37,7 @@
         <table width="100%"><tr><td width="50%">
           <span class="header-text"><a href="http://universaldependencies.org/#language-fr">home</a></span>
           <span class="header-text"><a href="http://universaldependencies.org/fr/dep">fr/dep</a></span>
-          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fr-dep/obj-agent.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fr-dep/csubj-pass.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
         </td><td>
           <gcse:search></gcse:search>
@@ -60,32 +60,69 @@
 	  </div>
 	</noscript>
 
-          <h2><code>obj:agent</code>: agentive object</h2>
+          <h2><code>csubj:pass</code>: clausal passive subject</h2>
 
-<p>In FrenchSpoken, in a causative construction the <code>obj:agent</code> relation attaches the infinitive verb to his agent, when the latter is the syntactical object of the sentence (this initial agent has been demoted and became the object of the causative contruction).
-For example, in the following sentence, “ses petits” is the tue agent of the verb “sauter” (<em>Ses petits ont sauté dans la mare</em>). 
-This nominal phrase can be pronominalized as follows: <em>La cane les a fait sauter dans la mare.</em> The use of the pronoun <em>les</em> clearly shows that “ses petits” is the syntactical object of the sentence.</p>
+<p>A clausal passive subject is a clausal syntactic subject of a passive clause.
+It is not a very common construction in French. In the example below, <em>qu’il avait triché</em> is the clausal subject.</p>
 
-<pre><code class="language-sdparse">La cane a fait sauter ses petits dans la mare. \n The duck made its ducklings jump into the pond.
-aux:caus(sauter,fait)
-nsubj:caus(sauter,cane)
-obj:agent(sauter,petits)
+<pre><code class="language-sdparse">Qu'il avait triché était cru par tout le monde . \n That he cheated was believed by everyone .
+csubj:pass(cru, triché)
 </code></pre>
 
-<pre><code class="language-sdparse">Mon père a une femme de ménage. Il la fait venir le mercredi. \n My father has a cleaning lady. He makes her come on wednesdays.
-aux:caus(venir,fait)
-nsubj:caus(venir,Il)
-obj:agent(venir,la)
-</code></pre>
-
-<p>The infinitive verb governs the syntactical subject of the sentence (i.e. the causer) with a <a href="">nsubj:caus</a> relation and the causative verb with an <a href="">aux:caus</a> relation.</p>
-
-<p>N.B.: For more details about the analysis of causatives see <a href="http://universaldependencies.org/fr/overview/specific-syntax.html#causative">this page</a>.</p>
+<p>Currently FrenchSpoken does not use the <code>csubj:pass</code> relation.</p>
 
 
 <!-- "automatic stats" -->
 
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udfrench-sequoia">Treebank Statistics (UD_French-Sequoia)</h2>
+
+<p>This relation is a language-specific subtype of <a href="">csubj</a>.</p>
+
+<p>1 nodes (0%) are attached to their parents as <code>csubj:pass</code>.</p>
+
+<p>1 instances of <code>csubj:pass</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 7.</p>
+
+<p>The following 1 pairs of parts of speech are connected with <code>csubj:pass</code>: <a href="">fr-pos/VERB</a>-<a href="">fr-pos/NOUN</a> (1; 100% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 19	bgColor:blue
+# visual-style 19	fgColor:white
+# visual-style 12	bgColor:blue
+# visual-style 12	fgColor:white
+# visual-style 12 19 csubj:pass	color:blue
+1	Ceux-ci	celui-ci	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	3	nsubj:pass	_	_
+2	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	3	aux:pass	_	_
+3	réalisés	réaliser	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+4	par	par	ADP	_	_	6	case	_	_
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	promoteur	promoteur	NOUN	_	Gender=Masc|Number=Sing	3	obl	_	_
+7	qui	qui	PRON	_	PronType=Rel	10	nsubj	_	_
+8	s'	le/lui	PRON	_	Person=3|Reflex=Yes	10	expl	_	SpaceAfter=No
+9	y	y	PRON	_	Person=3	10	iobj	_	_
+10	engage	engager	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl:relcl	_	_
+11	étant	être	AUX	_	Tense=Pres|VerbForm=Part	12	aux:pass	_	_
+12	précisé	préciser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	1	acl	_	_
+13	que	que	SCONJ	_	_	19	mark	_	_
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+15	voirie	voirie	NOUN	_	Gender=Fem|Number=Sing	19	nsubj	_	_
+16	restera	rester	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	19	cop	_	_
+17	en	en	ADP	_	_	19	case	_	_
+18	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	19	det	_	SpaceAfter=No
+19	état	état	NOUN	_	Gender=Masc|Number=Sing	12	csubj:pass	_	_
+20	pour	pour	ADP	_	_	22	case	_	_
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
+22	moment	moment	NOUN	_	Gender=Masc|Number=Sing	19	obl	_	SpaceAfter=No
+23	.	.	PUNCT	_	_	3	punct	_	_
+
+</code></pre>
 
 
 

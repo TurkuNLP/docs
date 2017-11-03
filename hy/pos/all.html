@@ -131,9 +131,9 @@
 
 <p>Note that participles are word forms that may share properties and usage of adjectives and verbs. Depending on context, they may be classified as either <a href="">VERB</a> or <code>ADJ</code>.</p>
 
-<p>In Armenian the Adjectives inflect for <a href="">Degree</a>. Degree can also be specified by a set of <a href="hy-pos/ADV">adverbs</a>.</p>
+<p>In Armenian adjectives inflect for <a href="">Degree</a>. Degree can also be specified by <a href="hy-pos/ADV">adverb</a> <em>ավելի</em>.</p>
 
-<p>Note that some adjectives and most adverbs in Armenian don’t have a Degree feature.</p>
+<p>Note that some adjectives and most adverbs in Armenian don’t have a degree feature.</p>
 
 <p>All adjectives and some of the adverbs may function as a noun without additional derivation, in these cases, we keep the POS tag of the original word, but assign nominal features to the word.</p>
 
@@ -147,7 +147,7 @@
   <li><em>առաջին, երկրորդ, երրորդ</em> “first, second, third”</li>
   <li><em>խմելու, գրելու</em> “(for) drinking, (for) writing”</li>
   <li><em>կառուցված/կառուցվող/կառուցվելիք շենք</em> “a built house, a house, that is being built, a house that will be built” (resultative, subject, destinative passive participial adjective)</li>
-  <li><em>հնչող/հնչած/հնչելիք զանգ</em> “a ringing call, a call that ringed, a call that will ring” (resultative, subject, destinative participial adjective)</li>
+  <li><em>հնչած/հնչող/հնչելիք զանգ</em> “a ringing call, a call that ringed, a call that will ring” (resultative, subject, destinative participial adjective)</li>
 </ul>
 
 <h3 id="border-cases">Border cases</h3>
@@ -155,6 +155,38 @@
 <p>Resultative, subject, destinative participles lie on the border between verbs and adjectives. Core participial forms are tagged <a href="">VERB</a> (used in predication). As participial adjectives they are tagged <code>ADJ</code> and thus modify nouns.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hy-pos/ADJ.md" target="#">edit ADJ</a></p>
+
+<p><a id="al-hy-pos/ADV" class="al-dest"></a></p>
+<h2><code>ADV</code>: adverb</h2>
+
+<h3 id="definition">Definition</h3>
+
+<p>Adverbs are words that typically modify <a href="VERB">verbs</a> for such categories as time, place, direction or manner. They may also modify
+<a href="ADJ">adjectives</a> and other adverbs, as in <em><b>հավանաբար</b> սխալ </em> “provably wrong” or <em><b>շատ</b> հազվադեպ </em> “very rarely”.</p>
+
+<p>There is a closed subclass of <em>pronominal adverbs</em> that refer to circumstances in context, rather than naming them directly; similarly
+to pronouns, these can be categorized as interrogative, relative, demonstrative etc. Pronominal adverbs also get the <code>ADV</code> part-of-speech tag but they are differentiated by additional features.</p>
+
+<p>Note that verb forms such as <em>transgressives</em> (also called <em>adverbial participles</em>, e.g. <em>տեսա <b>գրելիս</b> </em> “I saw him writing” or <em><b>կարդալիս</b> քնեց </em> “when reading he slept”) share properties and usage of adverbs and verbs. Depending on context, they may be classified as either <a href="">VERB</a> or <code>ADV</code>.</p>
+
+<p>Note that in Armenian some adverbs inflect for <a href="">Degree</a>. Second degree specified by adverb <em><b>ավելի</b></em> “more” e.g. <em><b>ավելի</b> արագ </em> “more quickly”. The third degree of adverbs in Armenian is constructed with the feature of <a href="">Definite</a>.</p>
+
+<h3 id="examples">Examples</h3>
+
+<ul>
+  <li><em>շատ </em> “very”</li>
+  <li><em>լավ </em> “well”</li>
+  <li><em>հստակորեն </em> “exactly”</li>
+  <li><em>վաղը </em> “tomorrow”</li>
+  <li><em>վեր, վար </em> “up, down”</li>
+  <li>interrogative adverbs: <em>որտեղ, ուր, երբ, ինչպես, ինչու </em> “where, where to, when, how, why”</li>
+  <li>demonstrative adverbs: <em>այստեղ, այնտեղ, այժմ, հետո, այսպես </em> “here, there, now, then, so”</li>
+  <li>indefinite adverbs: <em>երբևիցե, փոքրիշատե  </em> “some time, more or less”</li>
+  <li>total adverbs: <em>ամենուր, մշտապես </em> “everywhere, always”</li>
+  <li>negative adverbs: <em>երբեք </em> “never”</li>
+</ul>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hy-pos/ADV.md" target="#">edit ADV</a></p>
 
 <p><a id="al-hy-pos/INTJ" class="al-dest"></a></p>
 <h2><code>INTJ</code>: interjection</h2>
@@ -182,6 +214,34 @@ cannot serve to judge the part of speech from the English perspective.)</p>
 </ul>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hy-pos/INTJ.md" target="#">edit INTJ</a></p>
+
+<p><a id="al-hy-pos/NOUN" class="al-dest"></a></p>
+<h2><code>NOUN</code>: noun</h2>
+
+<h3 id="definition">Definition</h3>
+
+<p>Nouns are a part of speech typically denoting a person, place, thing, animal or idea.</p>
+
+<p>The <code>NOUN</code> tag is intended for common nouns only. See <a href="">PROPN</a> for proper nouns and <a href="">PRON</a> for pronouns.</p>
+
+<p>Armenian nouns have lexical features <a href="">Animacy</a> and <a href="">Materiality</a>. Furthermore, the nouns inflect for <a href="">Number</a>, <a href="">Case</a> and <a href="">Definite</a>.</p>
+
+<p>Note that <em>infinitives</em> in Armenian share properties and usage of nouns and verbs. Depending on context, they may be classified as either <a href="">VERB</a> or <code>NOUN</code> (e.g. <em>վազել</em>  “to run” and <em>վազել(ը)</em>  “running”). They have full case and reduced number inflectional paradigms.</p>
+
+<h3 id="examples">Examples</h3>
+
+<ul>
+  <li><em>աղջիկ</em>  “girl”</li>
+  <li><em>կատու</em>  “cat”</li>
+  <li><em>ծառ</em>  “tree”</li>
+  <li><em>օդ</em>  “air”</li>
+  <li><em>գեղեցկություն</em>  “beauty”</li>
+  <li><em>լող</em>  “swimming”</li>
+  <li><em>վազք</em>  “run”</li>
+  <li><em>վազելը</em>  “running”</li>
+</ul>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hy-pos/NOUN.md" target="#">edit NOUN</a></p>
 
 <p><a id="al-hy-pos/PART" class="al-dest"></a></p>
 <h2><code>PART</code>: particle</h2>
