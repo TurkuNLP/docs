@@ -335,9 +335,9 @@
 <p><a id="al-ru-dep/acl" class="al-dest"></a></p>
 <h2><code>acl</code>: clausal modifier of noun</h2>
 
-<p><code>acl</code> stands for finite and non-finite clauses that modify a nominal.  The <code>acl</code> relation 
+<p><code class="language-plaintext highlighter-rouge">acl</code> stands for finite and non-finite clauses that modify a nominal.  The <code class="language-plaintext highlighter-rouge">acl</code> relation 
 contrasts with the <a href="">advcl</a> relation, which is used for adverbial clauses
-that modify a predicate. The head of the <code>acl</code> relation is the noun
+that modify a predicate. The head of the <code class="language-plaintext highlighter-rouge">acl</code> relation is the noun
 that is modified, and the dependent is the head of the clause that
 modifies the noun.</p>
 
@@ -365,7 +365,7 @@ acl(wife, naked)
 <p><a id="al-ru-dep/acl:relcl" class="al-dest"></a></p>
 <h2><code>acl:relcl</code>: relative clause modifier</h2>
 
-<p>The <code>acl:relcl</code> relation is used for relative clauses modifying
+<p>The <code class="language-plaintext highlighter-rouge">acl:relcl</code> relation is used for relative clauses modifying
 a nominal. The relation points from the head of the nominal to the
 head of the relative clause.</p>
 
@@ -414,7 +414,7 @@ advcl(rushed, come)
 <p>An adverbial modifier of a word is a (non-clausal) <a href="ru-pos/ADV">adverb</a>
 or adverbial phrase that serves to modify the meaning of the word.</p>
 
-<p>We differentiate adverbials realized as adverbs (<code>advmod</code>) and
+<p>We differentiate adverbials realized as adverbs (<code class="language-plaintext highlighter-rouge">advmod</code>) and
 adverbials realized by noun phrases or adpositional phrases
 (<a href="">nmod</a>).</p>
 
@@ -446,8 +446,8 @@ amod(impression, First)
 nsubj(хорошим, впечатление)
 nsubj(positive, impression)
 </code></pre>
-<p>Some pronominal modifiers are also considered as <code>amod</code>
-Exception: if the modifying adjectival word is article-equivalent (i.e. tagged <a href="">ru-pos/DET</a>), the relation is <a href="">det</a> instead of <code>amod</code>.</p>
+<p>Some pronominal modifiers are also considered as <code class="language-plaintext highlighter-rouge">amod</code>
+Exception: if the modifying adjectival word is article-equivalent (i.e. tagged <a href="">ru-pos/DET</a>), the relation is <a href="">det</a> instead of <code class="language-plaintext highlighter-rouge">amod</code>.</p>
 
 <pre><code class="language-sdparse">эти ваши новые группы \n these your new groups
 amod(группы, новые)
@@ -479,7 +479,7 @@ appos(Party, PSP)
 
 <p>There is a slight deviation from the <a href="u-dep/appos">universal</a> standard in case of more than one appositive nominal.
 Instead of attaching them all to the first noun, all the appositive modifiers are put together in coordination,
-then attached as <code>appos</code> to the modified noun.
+then attached as <code class="language-plaintext highlighter-rouge">appos</code> to the modified noun.
 This is done regardless whether the appositives are joined by a coordinating conjunction or just a comma.</p>
 
 <pre><code class="language-sdparse">Пришел Михаил , мой брат и кузен Давида . \n Came Mikhail , my brother and cousin of-David .
@@ -496,7 +496,7 @@ conj(брат, кузен)
 conj(brother, cousin)
 </code></pre>
 
-<p><code>appos</code> is also used to link key-value pairs in addresses, signatures, etc. (see also the <a href="">list</a> label):</p>
+<p><code class="language-plaintext highlighter-rouge">appos</code> is also used to link key-value pairs in addresses, signatures, etc. (see also the <a href="">list</a> label):</p>
 
 <pre><code class="language-sdparse">Иван Петров , тел . : 8(495)-000-11-22 , e-mail : petrov@mail.ru
 name(Иван, Петров)
@@ -515,9 +515,9 @@ appos(e-mail, petrov@mail.ru)
 used to construct the periphrastic future tense or conditional.</p>
 
 <p>Exception: Auxiliary verb used to construct the passive
-<a href="ru-feat/Voice">voice</a> is not labeled <code>aux</code> but <a href="">auxpass</a>.</p>
+<a href="ru-feat/Voice">voice</a> is not labeled <code class="language-plaintext highlighter-rouge">aux</code> but <a href="">auxpass</a>.</p>
 
-<p>Note that besides <code>aux</code> and <code>auxpass</code>, the verb <em>быть</em> may also act as a <a href="cop">copula</a>
+<p>Note that besides <code class="language-plaintext highlighter-rouge">aux</code> and <code class="language-plaintext highlighter-rouge">auxpass</code>, the verb <em>быть</em> may also act as a <a href="cop">copula</a>
 and as the main verb.</p>
 
 <pre><code class="language-sdparse">Завтра я буду выступать в университете . \n Tomorrow I will give-a-talk at the-university .
@@ -560,7 +560,7 @@ aux:pass(killed, to-be)
 <h2><code>case</code>: case marking</h2>
 
 <p>Russian uses a combination of oblique morphological cases and prepositions to express semantic case.
-Prepositions in UD are treated as dependents of the noun they attach to. The relation between the noun and the preposition is labeled <code>case</code>.</p>
+Prepositions in UD are treated as dependents of the noun they attach to. The relation between the noun and the preposition is labeled <code class="language-plaintext highlighter-rouge">case</code>.</p>
 
 <pre><code class="language-sdparse">В пятницу.Acc по дороге.Dat к деревне.Dat мы разговаривали o событии.Loc . \n On Friday during the-journey to the-village we talked about the-event .
 case(пятницу.Acc, В)
@@ -579,7 +579,7 @@ case(the-event, about)
 <h2><code>cc</code>: coordinating conjunction</h2>
 
 <p>For more on coordination, see the <a href="">conj</a> relation.
-A <code>cc</code> is the relation between the first conjunct and
+A <code class="language-plaintext highlighter-rouge">cc</code> is the relation between the first conjunct and
 the <a href="ru-pos/CONJ">coordinating conjunction</a> delimiting another conjunct.
 (Note: different dependency grammars have different treatments of coordination.
 We take the first conjunct as the head of the coordination.)</p>
@@ -590,7 +590,7 @@ cc(old, and)
 </code></pre>
 
 <p>A coordinating conjunction may also appear at the beginning of a
-sentence. This is also called a <code>cc</code>, and it depends on the root
+sentence. This is also called a <code class="language-plaintext highlighter-rouge">cc</code>, and it depends on the root
 predicate of the sentence.
 (In fact there is a coordination that spans multiple sentences.
 We cannot attach a word to the first conjunct because it is in another sentence.
@@ -666,14 +666,14 @@ xcomp(started, to-write)
 <p>The key difference here is that, while it is possible to interpret the first
 sentence to mean that the general will not be leaving, in the second
 sentence it is clear that the subject of <strong>writing</strong> can only be <strong>we</strong>. This is
-what distinguishes <code>ccomp</code> and <code>xcomp</code>.</p>
+what distinguishes <code class="language-plaintext highlighter-rouge">ccomp</code> and <code class="language-plaintext highlighter-rouge">xcomp</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/ccomp.md" target="#">edit ccomp</a></p>
 
 <p><a id="al-ru-dep/compound" class="al-dest"></a></p>
 <h2><code>compound</code>: compound</h2>
 
-<p><code>compound</code> is one of the relations in UD for compounding.
+<p><code class="language-plaintext highlighter-rouge">compound</code> is one of the relations in UD for compounding.
 The rightmost numeral is the head, the other numerals are attached as its modifiers.</p>
 
 <pre><code class="language-sdparse">Это будет стоить максимум 5 тысяч рублей . \n It will cost at-most 5 thousand rubles .
@@ -701,7 +701,7 @@ compound(thousand, five)
 coordinating conjunction, such as <em>and, or,</em> or a comma or other punctuation.
 We treat coordination asymmetrically in what is known as the Stanford style:
 The head of the relation is the first
-conjunct and all the other conjuncts depend on it via the <code>conj</code> relation.</p>
+conjunct and all the other conjuncts depend on it via the <code class="language-plaintext highlighter-rouge">conj</code> relation.</p>
 
 <pre><code class="language-sdparse">Он старый и мудрый мужчина . \n He-is old and wise man .
 conj(старый, мудрый)
@@ -748,7 +748,7 @@ cc(came, and)
 <p>A copula is the relation between the nominal predicate and
 the copular verb <em><b>быть</b></em> “to be” (or its variants <em>бывал, был</em>).
 The verb <em>становиться</em> “to become”, despite being counted among copular verbs by some authors,
-is not analyzed as <code>cop</code>.</p>
+is not analyzed as <code class="language-plaintext highlighter-rouge">cop</code>.</p>
 
 <p>We normally take a copula as a dependent of its complement (the nominal predicate).
 The nominal predicate is usually a <a href="cs-pos/NOUN">noun</a>, an <a href="cs-pos/ADJ">adjective</a>
@@ -792,7 +792,7 @@ csubj:pass(told, weighed-up)
 <p><a id="al-ru-dep/dep" class="al-dest"></a></p>
 <h2><code>dep</code>: unspecified dependency</h2>
 
-<p>A dependency is labeled as <code>dep</code> when a system is unable to
+<p>A dependency is labeled as <code class="language-plaintext highlighter-rouge">dep</code> when a system is unable to
 determine a more precise dependency relation between two words.  This
 may be because of a weird grammatical construction, a limitation in
 software, a parser error, or
@@ -808,7 +808,7 @@ dep(clear, what)
 <p><a id="al-ru-dep/det" class="al-dest"></a></p>
 <h2><code>det</code>: determiner</h2>
 
-<p>The relation determiner (<code>det</code>) holds between a nominal head and its <a href="ru-pos/DET">determiner</a>.
+<p>The relation determiner (<code class="language-plaintext highlighter-rouge">det</code>) holds between a nominal head and its <a href="ru-pos/DET">determiner</a>.
 This relation is used for pronominal adjectival modifiers of noun phrases.
 Non-pronominal adjectives are tagged <a href="">ru-pos/ADJ</a> and the relation is labeled <a href="">amod</a>.</p>
 
@@ -827,7 +827,7 @@ det(man, this-kind-of)
 <p><a id="al-ru-dep/discourse" class="al-dest"></a></p>
 <h2><code>discourse</code>: discourse element</h2>
 
-<p>At present we use the <code>discourse</code> relation for redundant or emotional items, redundant coreferential pronoun.</p>
+<p>At present we use the <code class="language-plaintext highlighter-rouge">discourse</code> relation for redundant or emotional items, redundant coreferential pronoun.</p>
 
 <pre><code class="language-sdparse">Ты же обещал ! \n You still promised !
 discourse(обещал, же)
@@ -841,7 +841,7 @@ discourse(обещал, же)
 
 <p>NOTE: The relation <em>dislocated</em> is not in use in Russian UD 2.0+</p>
 
-<p>The <code>dislocated</code> relation is used for fronted or postposed elements
+<p>The <code class="language-plaintext highlighter-rouge">dislocated</code> relation is used for fronted or postposed elements
 that do not fulfill the usual core grammatical relations of a
 sentence. Dislocated elements are attached to the same governor as the dependent that they double for.</p>
 
@@ -900,7 +900,7 @@ advmod:emph(loans, for-example)
 <p><a id="al-ru-dep/flat" class="al-dest"></a></p>
 <h2><code>flat</code>: flat</h2>
 
-<p><code>flat</code> is one of the relations for compounding in UD.
+<p><code class="language-plaintext highlighter-rouge">flat</code> is one of the relations for compounding in UD.
 In Russian it is used to join the first name of a person with the patronymic and the last name.</p>
 
 <p>The leftmost name is always the head and the other name(s) are attached to it.</p>
@@ -996,20 +996,20 @@ iobj(told, students)
 obj(told, plan)
 </code></pre>
 
-<p>If there are two or more objects, one of them should be <a href="">obj</a> and the others should be <code>iobj</code>. In such cases it is necessary to decide what is the most directly affected object <em>(patient)</em>, and the Accusative <a href="">ru-feat/Case</a> has priority over the Dative, Instrumental, and Genitive cases.</p>
+<p>If there are two or more objects, one of them should be <a href="">obj</a> and the others should be <code class="language-plaintext highlighter-rouge">iobj</code>. In such cases it is necessary to decide what is the most directly affected object <em>(patient)</em>, and the Accusative <a href="">ru-feat/Case</a> has priority over the Dative, Instrumental, and Genitive cases.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/iobj.md" target="#">edit iobj</a></p>
 
 <p><a id="al-ru-dep/list" class="al-dest"></a></p>
 <h2><code>list</code>: list</h2>
 
-<p>The <code>list</code> relation is used for chains of comparable items.
+<p>The <code class="language-plaintext highlighter-rouge">list</code> relation is used for chains of comparable items.
 In lists with more than two items, all items of the list should modify the first one.
 Informal and web text often contains passages which are meant to be interpreted as lists but are parsed as single sentences.
 Email signatures often contain these structures, in the form of contact information:
-the different contact information items are labeled as <code>list</code>; the key-value pair relations are labeled as <a href="">appos</a>.</p>
+the different contact information items are labeled as <code class="language-plaintext highlighter-rouge">list</code>; the key-value pair relations are labeled as <a href="">appos</a>.</p>
 
-<p>However, <code>list</code> should not be over-used. If a construction can be easily analyzed
+<p>However, <code class="language-plaintext highlighter-rouge">list</code> should not be over-used. If a construction can be easily analyzed
 using the grammatical relations of standard sentences, such as when there is overt coordination,
 then it should be analyzed with these more standard relations, even if it is laid out as a list typographically.</p>
 
@@ -1043,7 +1043,7 @@ fixed(as, soon-as)
 
 <p>Note that the subordinating conjunction should not be confused with relative pronouns and adverbs.
 These fill a valency slot in the frame of the subordinate predicate,
-and are labeled according to their role in the frame, they are not <code>mark</code>:</p>
+and are labeled according to their role in the frame, they are not <code class="language-plaintext highlighter-rouge">mark</code>:</p>
 
 <pre><code class="language-sdparse">Я бы хотел узнать , когда нам поступят деньги на счет . \n I would like to-know , when us arrive money at account .
 advmod(поступят, когда)
@@ -1072,7 +1072,7 @@ neg(двуногий, не)
 neg(bipedal, not)
 </code></pre>
 
-<p>Note that the negative determiners (pronouns) are attached as <a href="">det</a>, not <code>neg</code>:</p>
+<p>Note that the negative determiners (pronouns) are attached as <a href="">det</a>, not <code class="language-plaintext highlighter-rouge">neg</code>:</p>
 
 <pre><code class="language-sdparse">Премьер не был никаким дураком . \n The-Prime-Minister not was no fool .
 det(дураком, никаким)
@@ -1084,15 +1084,15 @@ det(fool, no)
 <p><a id="al-ru-dep/nmod" class="al-dest"></a></p>
 <h2><code>nmod</code>: nominal modifier</h2>
 
-<p>The <code>nmod</code> relation is used for nominal modifiers. They depend 
+<p>The <code class="language-plaintext highlighter-rouge">nmod</code> relation is used for nominal modifiers. They depend 
 on another noun (group “noun dependents”).</p>
 
-<p><code>nmod</code> is a <a href="cs-pos/NOUN">noun</a> (or noun phrase) functioning as a
+<p><code class="language-plaintext highlighter-rouge">nmod</code> is a <a href="cs-pos/NOUN">noun</a> (or noun phrase) functioning as a
 non-core (oblique) argument or adjunct.
 This means that it functionally corresponds to an adverbial when it attaches to a verb, adjective or other adverb.
 But when attaching to a noun, it usually corresponds to a non-agreeing attribute in genitive.</p>
 
-<p>In Russian the <code>nmod</code> relation covers only those possessives that are expressed using the genitive.
+<p>In Russian the <code class="language-plaintext highlighter-rouge">nmod</code> relation covers only those possessives that are expressed using the genitive.
 If a possessive adjective is used, the relation is labeled <a href="">amod</a>.
 If a possessive determiner (pronoun) is used, the relation is labeled <a href="">det</a>.</p>
 
@@ -1113,10 +1113,10 @@ amod(card, his)
 
 <h2 id="agreeing-attribute-of-a-noun">Agreeing attribute of a noun</h2>
 
-<p><code>nmod</code> noun phrases attached to nouns are usually in the genitive <a href="">ru-feat/Case</a> and follow the modified noun.
-However, there is also a different kind of <code>nmod</code> that precedes the modified noun and agrees with it in case and number.
+<p><code class="language-plaintext highlighter-rouge">nmod</code> noun phrases attached to nouns are usually in the genitive <a href="">ru-feat/Case</a> and follow the modified noun.
+However, there is also a different kind of <code class="language-plaintext highlighter-rouge">nmod</code> that precedes the modified noun and agrees with it in case and number.
 A typical example is a title attached to a name of a person. The relation is similar to the <a href="">flat</a> relation
-that links the first and the last name, but it is not labeled <code>flat</code> because the title is not part of the name:</p>
+that links the first and the last name, but it is not labeled <code class="language-plaintext highlighter-rouge">flat</code> because the title is not part of the name:</p>
 
 <pre><code class="language-sdparse">российский президент Владимир Владимирович Путин \n Russian president Vladimir Vladimirovich Putin
 amod(президент, российский)
@@ -1150,7 +1150,7 @@ appos(Vladimir, president)
 
 <p>A nominal subject is a NP which is the syntactic subject of a clause; in Russian, the phrase is in the Nominative <a href="">Case</a>.
 (See <a href="">csubj</a> for when the subject is clausal. See <a href="">nsubjpass</a> and <a href="">csubjpass</a> for when the subject is not the proto-agent argument due to valence changing operations.)
-The governor of the <code>nsubj</code> relation might not always be a verb: when the verb is a copular verb, the root of the clause is the complement of the copular verb, which can be an adjective or noun.</p>
+The governor of the <code class="language-plaintext highlighter-rouge">nsubj</code> relation might not always be a verb: when the verb is a copular verb, the root of the clause is the complement of the copular verb, which can be an adjective or noun.</p>
 
 <pre><code class="language-sdparse">Ленинградскую симфонию написал Шостакович . \n Leningrad Symphony wrote Shostakovich .
 nsubj(написал, Шостакович)
@@ -1230,7 +1230,7 @@ Examples:</p>
   <li><em><b>Одно</b> чудовище спало, <b>два</b> чудовища играли в карты с <b>тремя</b> привидениями.</em> “One.Neut monster slept, two.Neut monsters played cards with three ghosts.”</li>
 </ul>
 
-<p>In the examples above, the dependencies of the numeral <em>один</em> “one” and the numeral <em>три</em> “three” (in the Instrumental case) are labeled as <code>nummod</code>:</p>
+<p>In the examples above, the dependencies of the numeral <em>один</em> “one” and the numeral <em>три</em> “three” (in the Instrumental case) are labeled as <code class="language-plaintext highlighter-rouge">nummod</code>:</p>
 
 <pre><code class="language-sdparse">Одно чудовище спало , два чудовища играли в карты с тремя привидениями . \n One monster slept , two monsters played cards with three ghosts .
 nummod(чудовище, Одно)
@@ -1271,9 +1271,8 @@ inflected form, as in the other cases where it agrees with the noun.</p>
   <li><em><b>Столько</b> мужчин, играющих в карты, я никогда не видел.</em> “I have never seen so many men playing cards.”</li>
 </ul>
 
-<p>Examples:
-~~~ sdparse
-Три мужчины играли в карты . \n Three men played cards .
+<p>Examples:</p>
+<pre><code class="language-sdparse">Три мужчины играли в карты . \n Three men played cards .
 nummod:gov(мужчины, Три)
 nsubj(играли, мужчины)
 dobj(играли, карты)
@@ -1283,7 +1282,7 @@ nummod:gov(men, Three)
 nsubj(played, men)
 dobj(played, cards)
 punct(played, .-12)
-~~~</p>
+</code></pre>
 
 <pre><code class="language-sdparse">Пять мужчин играло в карты . \n Five men played cards .
 nummod:gov(мужчин, Пять)
@@ -1414,7 +1413,7 @@ punct(31-16, st)
 
 <h2 id="numbered-objects">Numbered objects</h2>
 
-<p>House number in address is attached as <code>nummod</code> to the name of the street:</p>
+<p>House number in address is attached as <code class="language-plaintext highlighter-rouge">nummod</code> to the name of the street:</p>
 
 <pre><code class="language-sdparse">в доме на Тверской 12 \n in the-building in Tverskaya 12
 nmod(доме, Тверской-4)
@@ -1430,12 +1429,12 @@ nummod(Tverskaya, 12-11)
 <p><a id="al-ru-dep/nummod:gov" class="al-dest"></a></p>
 <h2><code>nummod:gov</code>: numeric modifier governing the case of the noun</h2>
 
-<p><code>nummod:gov</code> differs from <a href="">nummod</a>
+<p><code class="language-plaintext highlighter-rouge">nummod:gov</code> differs from <a href="">nummod</a>
 in that the numeral requires the counted noun to be in its genitive form.
 The whole phrase (numeral + noun) is treated as a singular neuter noun phrase
 and it can fill roles where nominative, accusative or vocative noun phrases are expected.</p>
 
-<p>In UD the numeral is annotated as dependent of the noun and the <code>nummod:gov</code> label is used to preserve
+<p>In UD the numeral is annotated as dependent of the noun and the <code class="language-plaintext highlighter-rouge">nummod:gov</code> label is used to preserve
 the information about case conditions.</p>
 
 <pre><code class="language-sdparse">Пять мужчин играло в карты . \n Five men played cards .
@@ -1490,9 +1489,9 @@ obj(руководит, страной)
 obj(rules, country)
 </code></pre>
 
-<p>In general, if there is only one object, it should be labeled <code>obj</code>,
+<p>In general, if there is only one object, it should be labeled <code class="language-plaintext highlighter-rouge">obj</code>,
 regardless of the morphological case or semantic role that it bears. If there are two or more
-objects, one of them should be <code>obj</code> and the others should be
+objects, one of them should be <code class="language-plaintext highlighter-rouge">obj</code> and the others should be
 <a href="">iobj</a>. In such cases it is necessary to decide what is the most
 directly affected object <em>(patient).</em> The one exception is when there is a clausal complement: 
 then the clausal complement is regarded as a “clausal object” and an object nominal will be an iobj.</p>
@@ -1502,7 +1501,7 @@ then the clausal complement is regarded as a “clausal object” and an object 
 <p><a id="al-ru-dep/obl" class="al-dest"></a></p>
 <h2><code>obl</code>: oblique modifier</h2>
 
-<p>The <code>obl</code> relation is used for non-core nominal dependents of clausal
+<p>The <code class="language-plaintext highlighter-rouge">obl</code> relation is used for non-core nominal dependents of clausal
 predicates.</p>
 
 <pre><code class="language-sdparse">Последний раз мы разговаривали зимой . \n Last time we talked in-winter .
@@ -1510,14 +1509,14 @@ obl(разговаривали, зимой)
 obl(talked, in-winter)
 </code></pre>
 
-<p>One subtype of <code>obl</code> is introduced in Russian: <a href="">obl:agent</a> for agents of passive verbs.</p>
+<p>One subtype of <code class="language-plaintext highlighter-rouge">obl</code> is introduced in Russian: <a href="">obl:agent</a> for agents of passive verbs.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/obl.md" target="#">edit obl</a></p>
 
 <p><a id="al-ru-dep/obl:agent" class="al-dest"></a></p>
 <h2><code>obl:agent</code>: agent oblique nominal </h2>
 
-<p>The relation <code>obl:agent</code> is used for agents of passive verbs</p>
+<p>The relation <code class="language-plaintext highlighter-rouge">obl:agent</code> is used for agents of passive verbs</p>
 
 <pre><code class="language-sdparse">Решение было принято моим отцом \n Decision was made by my father 
 obl:agent(принято, отцом)
@@ -1529,7 +1528,7 @@ obl:agent(made, father)
 <p><a id="al-ru-dep/orphan" class="al-dest"></a></p>
 <h2><code>orphan</code>: orphan in ellipsis</h2>
 
-<p>The <code>orphan</code> relation is used in cases of head ellipsis where simple promotion would result in unnatural 
+<p>The <code class="language-plaintext highlighter-rouge">orphan</code> relation is used in cases of head ellipsis where simple promotion would result in unnatural 
 and misleading dependency relation. The typical case is predicate ellipsis where one of the core arguments 
 have to be promoted to clausal head.</p>
 
@@ -1598,7 +1597,7 @@ while this is not possible with medial or final placement of the speech verb
 
 <h3 id="news-article-bylines">News article bylines</h3>
 
-<p>The <code>parataxis</code> relation should be used to connect the parts of a news article byline.
+<p>The <code class="language-plaintext highlighter-rouge">parataxis</code> relation should be used to connect the parts of a news article byline.
 There does not seem to be a better relation to use.</p>
 
 <pre><code class="language-sdparse">Вашингтон ( CNN ) :
@@ -1617,8 +1616,8 @@ punct(Иди, !-3)
 punct(Go, !-7)
 </code></pre>
 
-<p>Tokens with the relation <code>punct</code> always attach to content words (except in cases of ellipsis) and can never have dependents.
-Since <code>punct</code> is not a normal dependency relation, the usual criteria for determining the head word do not apply. 
+<p>Tokens with the relation <code class="language-plaintext highlighter-rouge">punct</code> always attach to content words (except in cases of ellipsis) and can never have dependents.
+Since <code class="language-plaintext highlighter-rouge">punct</code> is not a normal dependency relation, the usual criteria for determining the head word do not apply. 
 Instead, we use the following principles:</p>
 
 <ol>
@@ -1670,7 +1669,7 @@ punct(means, .-17)
 <p><a id="al-ru-dep/reparandum" class="al-dest"></a></p>
 <h2><code>reparandum</code>: overridden disfluency</h2>
 
-<p>We use <code>reparandum</code> to indicate disfluencies overridden in a speech
+<p>We use <code class="language-plaintext highlighter-rouge">reparandum</code> to indicate disfluencies overridden in a speech
 repair. The disfluency is the dependent of the repair.</p>
 
 <pre><code class="language-sdparse">Идите напра- налево . \n Go to-the-righ- to-the-left .
@@ -1683,8 +1682,8 @@ reparandum(to-the-left, to-the-righ-)
 <p><a id="al-ru-dep/root" class="al-dest"></a></p>
 <h2><code>root</code>: root</h2>
 
-<p>The <code>root</code> grammatical relation points to the root of the sentence. A
-fake node <code>ROOT</code> is used as the governor. The <code>ROOT</code> node is indexed
+<p>The <code class="language-plaintext highlighter-rouge">root</code> grammatical relation points to the root of the sentence. A
+fake node <code class="language-plaintext highlighter-rouge">ROOT</code> is used as the governor. The <code class="language-plaintext highlighter-rouge">ROOT</code> node is indexed
 with 0, since the indexing of real words in the sentence starts at 1.</p>
 
 <pre><code class="language-sdparse">ROOT Люблю индийскую еду . \n ROOT I-love Indian food .
@@ -1692,7 +1691,7 @@ root(ROOT-1, Люблю)
 root(ROOT-7, I-love)
 </code></pre>
 
-<p>There is just one node with the <code>root</code> dependency relation in every
+<p>There is just one node with the <code class="language-plaintext highlighter-rouge">root</code> dependency relation in every
 tree. If the main predicate is not present (due to
 <a href="http://universaldependencies.org/cs/overview/specific-syntax.html#ellipsis">ellipsis</a>)
 and there are
@@ -1723,7 +1722,7 @@ punct(And, ?-15)
 <p><a id="al-ru-dep/vocative" class="al-dest"></a></p>
 <h2><code>vocative</code>: vocative</h2>
 
-<p>The <code>vocative</code> relation is used to mark dialogue participant addressed in text.
+<p>The <code class="language-plaintext highlighter-rouge">vocative</code> relation is used to mark dialogue participant addressed in text.
 The relation links the addressee’s name to its host sentence.
 In Russian, the addressee’s name can also appear in the vocative <a href="">Case</a> form.</p>
 
@@ -1737,14 +1736,14 @@ vocative(a-fool, Sir)
 <p><a id="al-ru-dep/xcomp" class="al-dest"></a></p>
 <h2><code>xcomp</code>: open clausal complement</h2>
 
-<p>An open clausal complement (<code>xcomp</code>) of a verb or an adjective is a
+<p>An open clausal complement (<code class="language-plaintext highlighter-rouge">xcomp</code>) of a verb or an adjective is a
 predicative or clausal complement without its own subject. The
 reference of the subject is necessarily determined by an argument
 external to the xcomp (normally by the subject of the next higher
 clause). This is often referred to as <em>obligatory control</em>. 
 These complements are always non-finite, and they are
 complements (arguments of the higher verb or adjective) rather than
-adjuncts/modifiers, such as a purpose clause. The name <code>xcomp</code> is
+adjuncts/modifiers, such as a purpose clause. The name <code class="language-plaintext highlighter-rouge">xcomp</code> is
 borrowed from Lexical-Functional Grammar.</p>
 
 <pre><code class="language-sdparse">Хочешь плавать ? \n Do-you-want to-swim ?
@@ -1758,7 +1757,7 @@ xcomp(started, to-work)
 </code></pre>
 
 <p>Note that the above condition “without its own subject” does not mean that a 
-clause is an <code>xcomp</code> just because its subject is not <em>overt.</em>
+clause is an <code class="language-plaintext highlighter-rouge">xcomp</code> just because its subject is not <em>overt.</em>
 The subject must be necessarily inherited from a fixed position in the higher clause.
 That is, there should be no available interpretation where the subject of the lower clause may be distinct
 from the specified role of the upper clause.
@@ -1774,7 +1773,7 @@ ccomp(ordered, to-dig)
 yet it is inherently present (and often deducible from the form of the verb)
 and it does not depend on arguments from a higher clause.
 Thus in neither of the following two Russian examples is there any overt subject,
-yet only the second example contains an <code>xcomp</code>.</p>
+yet only the second example contains an <code class="language-plaintext highlighter-rouge">xcomp</code>.</p>
 
 <pre><code class="language-sdparse">Пишу , потому что я это обещал . \n I-write , because that I-have it promised .
 advcl(Пишу, обещал)

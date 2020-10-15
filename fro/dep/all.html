@@ -326,52 +326,7 @@
 <p><a id="al-fro-dep/" class="al-dest"></a></p>
 <h2><code></code>: </h2>
 
-<p>A numeric modifier of a noun, or <code>nummod</code>, is any number phrase that serves to modify the meaning of the noun with a quantity.</p>
-
-<pre><code class="language-conllu"># visual-style 4 3 nummod	color:blue
-# visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-1	Einsi	_	ADV	ADVgen	_	2	advmod	_	_
-2	chevauchierent	_	VERB	VERcjg	_	0	root	_	_
-3	.viii.	_	DET	DETcar	_	4	nummod	_	_
-4	jorz	_	NOUN	NOMcom	_	2	obl	_	_
-
-</code></pre>
-
-<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fro-dep/nummod.md" target="#">edit </a></p>
-
-<p><a id="al-fro-dep/" class="al-dest"></a></p>
-<h2><code></code>: </h2>
-
-<p>A <code>cc</code> is the relation between a conjunct and a preceding coordinating conjunction.</p>
-
-<pre><code class="language-conllu"># visual-style 11 8 cc color:blue
-# visual-style 11	bgColor:blue
-# visual-style 11	fgColor:white
-# visual-style 8	bgColor:blue
-# visual-style 8	fgColor:white
-1	et	_	CCONJ	CONcoo	_	3	cc:nc	_	_
-2	einsi	_	ADV	ADVgen	_	3	advmod	_	_
-3	firent	_	VERB	VERcjg	_	0	root	_	_
-4	il	_	PRON	PROper	_	3	nsubj	_	_
-5	par	_	ADP	PRE	_	7	case	_	_
-6	l'	_	DET	DETdef	_	7	det	_	_
-7	anemi	_	NOUN	NOMcom	_	3	obl	_	_
-8	et	_	CCONJ	CONcoo	_	11	cc	_	_
-9	par	_	ADP	PRE	_	11	case	_	_
-10	son	_	DET	DETpos	_	11	det	_	_
-11	amonestement	_	NOUN	NOMcom	_	7	conj	_	_
-
-</code></pre>
-
-<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fro-dep/cc.md" target="#">edit </a></p>
-
-<p><a id="al-fro-dep/" class="al-dest"></a></p>
-<h2><code></code>: </h2>
-
-<p>An adverbial modifier (<code>advmod</code>) of a word is a (non-clausal) adverb or adverbial phrase that serves to modify a predicate or a modifier word.</p>
+<p>An adverbial modifier (<code class="language-plaintext highlighter-rouge">advmod</code>) of a word is a (non-clausal) adverb or adverbial phrase that serves to modify a predicate or a modifier word.</p>
 
 <pre><code class="language-conllu"># visual-style 3 1 advmod	color:blue
 # visual-style 3	bgColor:blue
@@ -400,7 +355,7 @@
 
 </code></pre>
 
-<p><code>advmod</code> relations are modifiers of predicates and modifiers of other modifier words like adjectives or adverbs too.</p>
+<p><code class="language-plaintext highlighter-rouge">advmod</code> relations are modifiers of predicates and modifiers of other modifier words like adjectives or adverbs too.</p>
 
 <pre><code class="language-conllu"># visual-style 7 6 advmod	color:blue
 # visual-style 3	bgColor:blue
@@ -424,10 +379,55 @@
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fro-dep/advmod.md" target="#">edit </a></p>
 
+<p><a id="al-fro-dep/" class="al-dest"></a></p>
+<h2><code></code>: </h2>
+
+<p>A <code class="language-plaintext highlighter-rouge">cc</code> is the relation between a conjunct and a preceding coordinating conjunction.</p>
+
+<pre><code class="language-conllu"># visual-style 11 8 cc color:blue
+# visual-style 11	bgColor:blue
+# visual-style 11	fgColor:white
+# visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+1	et	_	CCONJ	CONcoo	_	3	cc:nc	_	_
+2	einsi	_	ADV	ADVgen	_	3	advmod	_	_
+3	firent	_	VERB	VERcjg	_	0	root	_	_
+4	il	_	PRON	PROper	_	3	nsubj	_	_
+5	par	_	ADP	PRE	_	7	case	_	_
+6	l'	_	DET	DETdef	_	7	det	_	_
+7	anemi	_	NOUN	NOMcom	_	3	obl	_	_
+8	et	_	CCONJ	CONcoo	_	11	cc	_	_
+9	par	_	ADP	PRE	_	11	case	_	_
+10	son	_	DET	DETpos	_	11	det	_	_
+11	amonestement	_	NOUN	NOMcom	_	7	conj	_	_
+
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fro-dep/cc.md" target="#">edit </a></p>
+
+<p><a id="al-fro-dep/" class="al-dest"></a></p>
+<h2><code></code>: </h2>
+
+<p>A numeric modifier of a noun, or <code class="language-plaintext highlighter-rouge">nummod</code>, is any number phrase that serves to modify the meaning of the noun with a quantity.</p>
+
+<pre><code class="language-conllu"># visual-style 4 3 nummod	color:blue
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+1	Einsi	_	ADV	ADVgen	_	2	advmod	_	_
+2	chevauchierent	_	VERB	VERcjg	_	0	root	_	_
+3	.viii.	_	DET	DETcar	_	4	nummod	_	_
+4	jorz	_	NOUN	NOMcom	_	2	obl	_	_
+
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fro-dep/nummod.md" target="#">edit </a></p>
+
 <p><a id="al-fro-dep/acl" class="al-dest"></a></p>
 <h2><code>acl</code>: clausal modifier of noun</h2>
 
-<p><code>acl</code> stands for finite and non-finite clauses that modify a nominal.</p>
+<p><code class="language-plaintext highlighter-rouge">acl</code> stands for finite and non-finite clauses that modify a nominal.</p>
 
 <p>It is the case for some kind of secondary predication, or attributive structure.</p>
 
@@ -466,7 +466,7 @@
 
 </code></pre>
 
-<p>Old French uses a language-particular subtype <code>acl:relcl</code> for the traditional class of relative clauses.</p>
+<p>Old French uses a language-particular subtype <code class="language-plaintext highlighter-rouge">acl:relcl</code> for the traditional class of relative clauses.</p>
 
 <pre><code class="language-conllu"># visual-style 3 6 acl:relcl	color:blue
 # visual-style 6	bgColor:blue
@@ -510,7 +510,7 @@
 <p><a id="al-fro-dep/advcl" class="al-dest"></a></p>
 <h2><code>advcl</code>: adverbial clause modifier</h2>
 
-<p>An adverbial clause modifier (<code>advcl</code>) is a clause which modifies a verb or other predicate (adjective, etc.), as a modifier not as a core complement. This includes things such as a temporal clause, consequence, conditional clause, purpose clause, etc. The dependent must be clausal and the dependent is the main predicate of the clause.</p>
+<p>An adverbial clause modifier (<code class="language-plaintext highlighter-rouge">advcl</code>) is a clause which modifies a verb or other predicate (adjective, etc.), as a modifier not as a core complement. This includes things such as a temporal clause, consequence, conditional clause, purpose clause, etc. The dependent must be clausal and the dependent is the main predicate of the clause.</p>
 
 <pre><code class="language-conllu"># visual-style 7 5 advcl	color:blue
 # visual-style 5	bgColor:blue
@@ -566,7 +566,7 @@
 <p><a id="al-fro-dep/amod" class="al-dest"></a></p>
 <h2><code>amod</code>: adjectival modifier</h2>
 
-<p>An adjectival modifier of a noun, <code>amod</code>, is any adjectival phrase that serves to modify the meaning of the noun.</p>
+<p>An adjectival modifier of a noun, <code class="language-plaintext highlighter-rouge">amod</code>, is any adjectival phrase that serves to modify the meaning of the noun.</p>
 
 <pre><code class="language-conllu"># visual-style 6 7 amod	color:blue
 # visual-style 6	bgColor:blue
@@ -601,7 +601,7 @@
 <p><a id="al-fro-dep/appos" class="al-dest"></a></p>
 <h2><code>appos</code>: appositional modifier</h2>
 
-<p>An <code>appos</code> (appositional modifier) of a noun is a nominal following the first noun that serves to define, modify, name, or describe that noun.</p>
+<p>An <code class="language-plaintext highlighter-rouge">appos</code> (appositional modifier) of a noun is a nominal following the first noun that serves to define, modify, name, or describe that noun.</p>
 
 <pre><code class="language-conllu"># visual-style 2 4 appos	color:blue
 # visual-style 4	bgColor:blue
@@ -618,7 +618,7 @@
 
 </code></pre>
 
-<p>Titles/honorifics are analyzed using the <code>flat</code>, if a title is before a proper name :</p>
+<p>Titles/honorifics are analyzed using the <code class="language-plaintext highlighter-rouge">flat</code>, if a title is before a proper name :</p>
 
 <pre><code class="language-conllu"># visual-style 3 4 flat	color:blue
 # visual-style 4	bgColor:blue
@@ -635,7 +635,7 @@
 
 </code></pre>
 
-<p>Titles/honorifics are considered <code>appos</code>, if the title is a modifier of a proper name.</p>
+<p>Titles/honorifics are considered <code class="language-plaintext highlighter-rouge">appos</code>, if the title is a modifier of a proper name.</p>
 
 <pre><code class="language-conllu"># visual-style 6 7 flat	color:blue
 # visual-style 6	bgColor:blue
@@ -670,7 +670,7 @@
 <p><a id="al-fro-dep/aux" class="al-dest"></a></p>
 <h2><code>aux</code>: auxiliary</h2>
 
-<p>An <code>aux</code> (auxiliary) of a clause is a function word associated with a verbal predicate that expresses categories such as tense, mood, aspect, voice or evidentiality.</p>
+<p>An <code class="language-plaintext highlighter-rouge">aux</code> (auxiliary) of a clause is a function word associated with a verbal predicate that expresses categories such as tense, mood, aspect, voice or evidentiality.</p>
 
 <pre><code class="language-conllu"># visual-style 4 3 aux	color:blue
 # visual-style 3	bgColor:blue
@@ -725,7 +725,7 @@ These semi-auxiliaries include voloir, devoir, povoir, savoir, soloir.</p>
 <p><a id="al-fro-dep/cc:nc" class="al-dest"></a></p>
 <h2><code>cc:nc</code>: coordinated conjunct : non coordonant</h2>
 
-<p>The <code>cc:nc</code> relation concerns coordinating conjunctions that do not actually have a coordinating job.</p>
+<p>The <code class="language-plaintext highlighter-rouge">cc:nc</code> relation concerns coordinating conjunctions that do not actually have a coordinating job.</p>
 
 <p>It is often the case at the beginning of the sentence, and for the first element of a polysyndeton.</p>
 
@@ -749,7 +749,7 @@ These semi-auxiliaries include voloir, devoir, povoir, savoir, soloir.</p>
 <p><a id="al-fro-dep/ccomp" class="al-dest"></a></p>
 <h2><code>ccomp</code>: clausal complement</h2>
 
-<p><code>ccomp</code>, is a clausal complement of a verb or adjective, and is a dependent clause which is a core argument. That is, it functions like an object of the verb, or adjective. Such clausal complements may be finite or nonfinite.</p>
+<p><code class="language-plaintext highlighter-rouge">ccomp</code>, is a clausal complement of a verb or adjective, and is a dependent clause which is a core argument. That is, it functions like an object of the verb, or adjective. Such clausal complements may be finite or nonfinite.</p>
 
 <pre><code class="language-conllu"># visual-style 3 6 ccomp	color:blue
 # visual-style 6 13 ccomp	color:blue
@@ -787,14 +787,14 @@ These semi-auxiliaries include voloir, devoir, povoir, savoir, soloir.</p>
 
 </code></pre>
 
-<p>However, if the clausal complement has no subject, the appropriate relation is <code>xcomp</code>.</p>
+<p>However, if the clausal complement has no subject, the appropriate relation is <code class="language-plaintext highlighter-rouge">xcomp</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fro-dep/ccomp.md" target="#">edit ccomp</a></p>
 
 <p><a id="al-fro-dep/conj" class="al-dest"></a></p>
 <h2><code>conj</code>: conjunct</h2>
 
-<p>A <code>conj</code> is the relation between two elements connected by a coordinating conjunction.
+<p>A <code class="language-plaintext highlighter-rouge">conj</code> is the relation between two elements connected by a coordinating conjunction.
 The head of the relation is the first conjunct and all the other conjuncts depend on it via the conj relation.</p>
 
 <pre><code class="language-conllu"># visual-style 5 7 conj	color:blue
@@ -818,7 +818,7 @@ The head of the relation is the first conjunct and all the other conjuncts depen
 <h2><code>cop</code>: copula</h2>
 
 <p>This document is a stub for the language-specific documentation
-for <code>cop</code>.</p>
+for <code class="language-plaintext highlighter-rouge">cop</code>.</p>
 
 <pre><code class="language-conllu"># visual-style 2 1 det	color:blue
 # visual-style 1	bgColor:blue
@@ -840,7 +840,7 @@ for <code>cop</code>.</p>
 <p><a id="al-fro-dep/csubj" class="al-dest"></a></p>
 <h2><code>csubj</code>: clausal subject</h2>
 
-<p>A clausal subject (<code>csubj</code>) is a clausal syntactic subject of a clause, i.e., the subject is itself a clause. 
+<p>A clausal subject (<code class="language-plaintext highlighter-rouge">csubj</code>) is a clausal syntactic subject of a clause, i.e., the subject is itself a clause. 
 The governor of this relation might not always be a verb: when the verb is a copular verb, the root of the clause is the complement of the copular verb. The dependent is the main lexical verb or other predicate of the subject clause.</p>
 
 <pre><code class="language-conllu"># visual-style 10 7 csubj	color:blue
@@ -866,7 +866,7 @@ The governor of this relation might not always be a verb: when the verb is a cop
 <p><a id="al-fro-dep/det" class="al-dest"></a></p>
 <h2><code>det</code>: determiner</h2>
 
-<p>The relation determiner (<code>det</code>) holds between a nominal head and its determiner.</p>
+<p>The relation determiner (<code class="language-plaintext highlighter-rouge">det</code>) holds between a nominal head and its determiner.</p>
 
 <pre><code class="language-conllu"># visual-style 3 2 det	color:blue
 # visual-style 2	bgColor:blue
@@ -894,7 +894,7 @@ The governor of this relation might not always be a verb: when the verb is a cop
 
 </code></pre>
 
-<p>In case of complex determiner, there are two <code>det</code> relations.</p>
+<p>In case of complex determiner, there are two <code class="language-plaintext highlighter-rouge">det</code> relations.</p>
 
 <pre><code class="language-conllu"># visual-style 3 2 det	color:blue
 # visual-style 3 1 det	color:blue
@@ -917,7 +917,7 @@ The governor of this relation might not always be a verb: when the verb is a cop
 <p><a id="al-fro-dep/dislocated" class="al-dest"></a></p>
 <h2><code>dislocated</code>: dislocated elements</h2>
 
-<p>The <code>dislocated</code> relation is used for fronted or postposed elements. 
+<p>The <code class="language-plaintext highlighter-rouge">dislocated</code> relation is used for fronted or postposed elements. 
 The dislocated elements are attached to the same governor as the dependent that they double for.</p>
 
 <pre><code class="language-conllu"># visual-style 7 2 dislocated	color:blue
@@ -958,7 +958,7 @@ The dislocated elements are attached to the same governor as the dependent that 
 <p><a id="al-fro-dep/expl" class="al-dest"></a></p>
 <h2><code>expl</code>: expletive</h2>
 
-<p><code>expl</code> are nominals that appear in an argument position of a predicate but which do not themselves satisfy any of the semantic roles of the predicate. The main predicate of the clause (the verb or predicate adjective or noun) is the governor.</p>
+<p><code class="language-plaintext highlighter-rouge">expl</code> are nominals that appear in an argument position of a predicate but which do not themselves satisfy any of the semantic roles of the predicate. The main predicate of the clause (the verb or predicate adjective or noun) is the governor.</p>
 
 <pre><code class="language-conllu"># visual-style 7 5 expl	color:blue
 # visual-style 5	bgColor:blue
@@ -997,7 +997,7 @@ The dislocated elements are attached to the same governor as the dependent that 
 <p><a id="al-fro-dep/iobj" class="al-dest"></a></p>
 <h2><code>iobj</code>: indirect object</h2>
 
-<p>The indirect object (<code>iobj</code>) of a verb is any nominal phrase that is a core argument of the verb but is not its subject or direct object.</p>
+<p>The indirect object (<code class="language-plaintext highlighter-rouge">iobj</code>) of a verb is any nominal phrase that is a core argument of the verb but is not its subject or direct object.</p>
 
 <pre><code class="language-conllu"># visual-style 5 4 iobj	color:blue
 # visual-style 4	bgColor:blue
@@ -1014,7 +1014,7 @@ The dislocated elements are attached to the same governor as the dependent that 
 
 </code></pre>
 
-<p>For nominal dependents of verbs, adjectives, and adverbs, it gets analyzed with the <code>obl</code> relation:</p>
+<p>For nominal dependents of verbs, adjectives, and adverbs, it gets analyzed with the <code class="language-plaintext highlighter-rouge">obl</code> relation:</p>
 
 <pre><code class="language-conllu"># visual-style 2 4 obl	color:blue
 # visual-style 4	bgColor:blue
@@ -1033,7 +1033,7 @@ The dislocated elements are attached to the same governor as the dependent that 
 <p><a id="al-fro-dep/mark" class="al-dest"></a></p>
 <h2><code>mark</code>: marker</h2>
 
-<p>A marker, <code>mark</code>, is the word introducing a finite clause subordinate to another clause,  the mark is a dependent of the subordinate clause head.</p>
+<p>A marker, <code class="language-plaintext highlighter-rouge">mark</code>, is the word introducing a finite clause subordinate to another clause,  the mark is a dependent of the subordinate clause head.</p>
 
 <pre><code class="language-conllu"># visual-style 7 4 mark	color:blue
 # visual-style 4	bgColor:blue
@@ -1050,7 +1050,7 @@ The dislocated elements are attached to the same governor as the dependent that 
 
 </code></pre>
 
-<p>If the word introducing a non finite clause is a preposition, this word is <code>mark</code>, and not <code>case</code>.</p>
+<p>If the word introducing a non finite clause is a preposition, this word is <code class="language-plaintext highlighter-rouge">mark</code>, and not <code class="language-plaintext highlighter-rouge">case</code>.</p>
 
 <pre><code class="language-conllu"># visual-style 7 4 mark	color:blue
 # visual-style 4	bgColor:blue
@@ -1069,7 +1069,7 @@ The dislocated elements are attached to the same governor as the dependent that 
 <p><a id="al-fro-dep/nmod" class="al-dest"></a></p>
 <h2><code>nmod</code>: nominal modifier</h2>
 
-<p>The <code>nmod</code> relation is used for nominal dependents of another noun or noun phrase and functionally corresponds to an attribute, or genitive complement.
+<p>The <code class="language-plaintext highlighter-rouge">nmod</code> relation is used for nominal dependents of another noun or noun phrase and functionally corresponds to an attribute, or genitive complement.
 Nominal dependents of verbs, adjectives, and adverbs are covered by the <a href="">obl</a> relation.</p>
 
 <pre><code class="language-conllu"># visual-style 9 11 nmod	color:blue
@@ -1115,8 +1115,8 @@ Nominal dependents of verbs, adjectives, and adverbs are covered by the <a href=
 <p><a id="al-fro-dep/nsubj" class="al-dest"></a></p>
 <h2><code>nsubj</code>: nominal subject</h2>
 
-<p>A nominal subject (<code>nsubj</code>) is a nominal phrase which is the syntactic subject of a clause. (See <a href="">csubj</a> for when the subject is clausal.)
-When there is an empty argument in a grammatical subject position (expletive), it is labeled as <code>expl</code>.</p>
+<p>A nominal subject (<code class="language-plaintext highlighter-rouge">nsubj</code>) is a nominal phrase which is the syntactic subject of a clause. (See <a href="">csubj</a> for when the subject is clausal.)
+When there is an empty argument in a grammatical subject position (expletive), it is labeled as <code class="language-plaintext highlighter-rouge">expl</code>.</p>
 
 <pre><code class="language-conllu"># visual-style 7 6 nsubj	color:blue
 # visual-style 6	bgColor:blue
@@ -1148,7 +1148,7 @@ When there is an empty argument in a grammatical subject position (expletive), i
 
 </code></pre>
 
-<p>Note that in Old French, <code>nsubj</code> is not always expressed.</p>
+<p>Note that in Old French, <code class="language-plaintext highlighter-rouge">nsubj</code> is not always expressed.</p>
 
 <pre><code class="language-conllu">1	Mais	_	CCONJ	CONcoo	_	2	cc:nc	_	_
 2	prendés	_	VERB	VERcjg	_	0	root	_	_
@@ -1169,7 +1169,7 @@ When there is an empty argument in a grammatical subject position (expletive), i
 <p><a id="al-fro-dep/obj" class="al-dest"></a></p>
 <h2><code>obj</code>: object</h2>
 
-<p>The object (<code>obj</code>) of a verb is the second most core argument of a verb before or after the subject. This argument is nominal (noun or pronoun).
+<p>The object (<code class="language-plaintext highlighter-rouge">obj</code>) of a verb is the second most core argument of a verb before or after the subject. This argument is nominal (noun or pronoun).
 (See <a href="">ccomp</a> for when the object is clausal.)</p>
 
 <pre><code class="language-conllu"># visual-style 4 2 obj	color:blue
@@ -1226,7 +1226,7 @@ When there is an empty argument in a grammatical subject position (expletive), i
 <p><a id="al-fro-dep/obl" class="al-dest"></a></p>
 <h2><code>obl</code>: oblique nominal</h2>
 
-<p>The <code>obl</code> relation is used for a nominal dependent (noun, pronoun, noun phrase) of a verb (or main predicate). 
+<p>The <code class="language-plaintext highlighter-rouge">obl</code> relation is used for a nominal dependent (noun, pronoun, noun phrase) of a verb (or main predicate). 
 This concerns different cases of prepositional groups, and more generally, it corresponds to an adverbial attaching to a verb, adjective or other adverb.</p>
 
 <pre><code class="language-conllu"># visual-style 1 5 obl	color:blue
@@ -1287,7 +1287,7 @@ This concerns different cases of prepositional groups, and more generally, it co
 <p><a id="al-fro-dep/orphan" class="al-dest"></a></p>
 <h2><code>orphan</code>: remnant in ellipsis</h2>
 
-<p>The <code>orphan</code> relation is used in cases of head ellipsis where simple promotion would result in unnatural and misleading dependency relation. The typical case is predicate ellipsis where one of the core arguments have to be promoted to clausal head.</p>
+<p>The <code class="language-plaintext highlighter-rouge">orphan</code> relation is used in cases of head ellipsis where simple promotion would result in unnatural and misleading dependency relation. The typical case is predicate ellipsis where one of the core arguments have to be promoted to clausal head.</p>
 
 <pre><code class="language-conllu"># visual-style 15 16 orphan	color:blue
 # visual-style 16	bgColor:blue
@@ -1320,7 +1320,7 @@ This concerns different cases of prepositional groups, and more generally, it co
 <p><a id="al-fro-dep/vocative" class="al-dest"></a></p>
 <h2><code>vocative</code>: vocative</h2>
 
-<p>The <code>vocative</code> relation is used to mark a dialogue participant addressed.</p>
+<p>The <code class="language-plaintext highlighter-rouge">vocative</code> relation is used to mark a dialogue participant addressed.</p>
 
 <pre><code class="language-conllu"># visual-style 12 1 vocative	color:blue
 # visual-style 1	bgColor:blue
@@ -1349,7 +1349,7 @@ This concerns different cases of prepositional groups, and more generally, it co
 <p><a id="al-fro-dep/xcomp" class="al-dest"></a></p>
 <h2><code>xcomp</code>: open clausal complement</h2>
 
-<p>An open clausal complement (<code>xcomp</code>) of a verb or an adjective is a predicative or clausal complement without its own subject. The reference of the subject is necessarily determined by an argument external to the xcomp</p>
+<p>An open clausal complement (<code class="language-plaintext highlighter-rouge">xcomp</code>) of a verb or an adjective is a predicative or clausal complement without its own subject. The reference of the subject is necessarily determined by an argument external to the xcomp</p>
 
 <pre><code class="language-conllu"># visual-style 3 4 xcomp	color:blue
 # visual-style 4	bgColor:blue

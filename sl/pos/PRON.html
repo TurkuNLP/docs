@@ -66,7 +66,7 @@
 
 <p>Within the universal scheme, pronouns are words that substitute for <a href="NOUN">nouns</a> or noun phrases and whose meaning is recoverable from the linguistic or extralinguistic context. Pronouns under this definition function like nouns, which means that the term cannot be extended to words that substitute for adjectives or other POS categories, as is usually the case in Slovenian grammar. Instead, attributive pronouns are tagged as <a href="DET">determiners</a>.</p>
 
-<p>For instance, <em><b>to</b></em> “this” is traditionally called pronoun in Slovenian grammar, regardless of its syntactic context. To make the annotation parallel across languages, it is now tagged <code>PRON</code> in <em><b>To</b> sem že slišal.</em> “I have heard this before.” and as <code>DET</code> in <em><b>To</b> besedilo je nerazumljivo.</em> “This text is incomprehensible.”</p>
+<p>For instance, <em><b>to</b></em> “this” is traditionally called pronoun in Slovenian grammar, regardless of its syntactic context. To make the annotation parallel across languages, it is now tagged <code class="language-plaintext highlighter-rouge">PRON</code> in <em><b>To</b> sem že slišal.</em> “I have heard this before.” and as <code class="language-plaintext highlighter-rouge">DET</code> in <em><b>To</b> besedilo je nerazumljivo.</em> “This text is incomprehensible.”</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -84,7 +84,7 @@
 
 <h4 id="conversion-from-jos">Conversion from JOS</h4>
 
-<p>All pronouns are converted to <code>PRON</code>, except for pronouns that function as attributes to nouns (through Attr dependency relation), which are converted to <code>DET</code>.</p>
+<p>All pronouns are converted to <code class="language-plaintext highlighter-rouge">PRON</code>, except for pronouns that function as attributes to nouns (through Attr dependency relation), which are converted to <code class="language-plaintext highlighter-rouge">DET</code>.</p>
 
 
 <!-- "automatic stats" -->
@@ -97,14 +97,14 @@
 
 <hr />
 
-<h2 id="treebank-statistics-udslovenian">Treebank Statistics (UD_Slovenian)</h2>
+<h2 id="treebank-statistics-ud_slovenian">Treebank Statistics (UD_Slovenian)</h2>
 
-<p>There are 31 <code>PRON</code> lemmas (0%), 120 <code>PRON</code> types (0%) and 4808 <code>PRON</code> tokens (4%).
-Out of 16 observed tags, the rank of <code>PRON</code> is: 11 in number of lemmas, 9 in number of types and 9 in number of tokens.</p>
+<p>There are 31 <code class="language-plaintext highlighter-rouge">PRON</code> lemmas (0%), 120 <code class="language-plaintext highlighter-rouge">PRON</code> types (0%) and 4808 <code class="language-plaintext highlighter-rouge">PRON</code> tokens (4%).
+Out of 16 observed tags, the rank of <code class="language-plaintext highlighter-rouge">PRON</code> is: 11 in number of lemmas, 9 in number of types and 9 in number of tokens.</p>
 
-<p>The 10 most frequent <code>PRON</code> lemmas: <em>se, on, jaz, ti, kaj, kar, kdo, nič, nekaj, zame</em></p>
+<p>The 10 most frequent <code class="language-plaintext highlighter-rouge">PRON</code> lemmas: <em>se, on, jaz, ti, kaj, kar, kdo, nič, nekaj, zame</em></p>
 
-<p>The 10 most frequent <code>PRON</code> types:  <em>se, ga, jih, si, jo, mu, mi, kaj, kar, ji</em></p>
+<p>The 10 most frequent <code class="language-plaintext highlighter-rouge">PRON</code> types:  <em>se, ga, jih, si, jo, mu, mi, kaj, kar, ji</em></p>
 
 <p>The 10 most frequent ambiguous lemmas: <em>on</em> (<a href="">PRON</a> 1401, <a href="">X</a> 1), <em>jaz</em> (<a href="">PRON</a> 442, <a href="">NOUN</a> 2), <em>kaj</em> (<a href="">PRON</a> 129, <a href="">ADV</a> 18), <em>kar</em> (<a href="">PRON</a> 129, <a href="">ADV</a> 94), <em>nič</em> (<a href="">PRON</a> 63, <a href="">ADV</a> 16), <em>nekaj</em> (<a href="">DET</a> 171, <a href="">PRON</a> 60)</p>
 
@@ -176,7 +176,7 @@ Out of 16 observed tags, the rank of <code>PRON</code> is: 11 in number of lemma
 
 <h2 id="morphology">Morphology</h2>
 
-<p>The form / lemma ratio of <code>PRON</code> is 3.870968 (the average of all parts of speech is 1.870691).</p>
+<p>The form / lemma ratio of <code class="language-plaintext highlighter-rouge">PRON</code> is 3.870968 (the average of all parts of speech is 1.870691).</p>
 
 <p>The 1st highest number of forms (24) was observed with the lemma “on”: <em>ga, je, ji, jih, jim, jima, jo, ju, mu, nje, njega, njej, njem, njemu, njih, njiju, njim, njima, njimi, njo, on, ona, onadva, oni</em>.</p>
 
@@ -184,44 +184,44 @@ Out of 16 observed tags, the rank of <code>PRON</code> is: 11 in number of lemma
 
 <p>The 3rd highest number of forms (11) was observed with the lemma “ti”: <em>tabo, te, tebe, tebi, ti, vaju, vam, vama, vami, vas, vi</em>.</p>
 
-<p><code>PRON</code> occurs with 7 features: <a href="">sl-feat/PronType</a> (4808; 100% instances), <a href="">sl-feat/Variant</a> (3526; 73% instances), <a href="">sl-feat/Case</a> (2950; 61% instances), <a href="">sl-feat/Number</a> (2628; 55% instances), <a href="">sl-feat/Reflex</a> (2180; 45% instances), <a href="">sl-feat/Person</a> (2093; 44% instances), <a href="">sl-feat/Gender</a> (2031; 42% instances)</p>
+<p><code class="language-plaintext highlighter-rouge">PRON</code> occurs with 7 features: <a href="">sl-feat/PronType</a> (4808; 100% instances), <a href="">sl-feat/Variant</a> (3526; 73% instances), <a href="">sl-feat/Case</a> (2950; 61% instances), <a href="">sl-feat/Number</a> (2628; 55% instances), <a href="">sl-feat/Reflex</a> (2180; 45% instances), <a href="">sl-feat/Person</a> (2093; 44% instances), <a href="">sl-feat/Gender</a> (2031; 42% instances)</p>
 
-<p><code>PRON</code> occurs with 24 feature-value pairs: <code>Case=Acc</code>, <code>Case=Dat</code>, <code>Case=Gen</code>, <code>Case=Ins</code>, <code>Case=Loc</code>, <code>Case=Nom</code>, <code>Gender=Fem</code>, <code>Gender=Masc</code>, <code>Gender=Neut</code>, <code>Number=Dual</code>, <code>Number=Plur</code>, <code>Number=Sing</code>, <code>Person=1</code>, <code>Person=2</code>, <code>Person=3</code>, <code>PronType=Ind</code>, <code>PronType=Int</code>, <code>PronType=Neg</code>, <code>PronType=Prs</code>, <code>PronType=Rel</code>, <code>PronType=Tot</code>, <code>Reflex=Yes</code>, <code>Variant=Bound</code>, <code>Variant=Short</code></p>
+<p><code class="language-plaintext highlighter-rouge">PRON</code> occurs with 24 feature-value pairs: <code class="language-plaintext highlighter-rouge">Case=Acc</code>, <code class="language-plaintext highlighter-rouge">Case=Dat</code>, <code class="language-plaintext highlighter-rouge">Case=Gen</code>, <code class="language-plaintext highlighter-rouge">Case=Ins</code>, <code class="language-plaintext highlighter-rouge">Case=Loc</code>, <code class="language-plaintext highlighter-rouge">Case=Nom</code>, <code class="language-plaintext highlighter-rouge">Gender=Fem</code>, <code class="language-plaintext highlighter-rouge">Gender=Masc</code>, <code class="language-plaintext highlighter-rouge">Gender=Neut</code>, <code class="language-plaintext highlighter-rouge">Number=Dual</code>, <code class="language-plaintext highlighter-rouge">Number=Plur</code>, <code class="language-plaintext highlighter-rouge">Number=Sing</code>, <code class="language-plaintext highlighter-rouge">Person=1</code>, <code class="language-plaintext highlighter-rouge">Person=2</code>, <code class="language-plaintext highlighter-rouge">Person=3</code>, <code class="language-plaintext highlighter-rouge">PronType=Ind</code>, <code class="language-plaintext highlighter-rouge">PronType=Int</code>, <code class="language-plaintext highlighter-rouge">PronType=Neg</code>, <code class="language-plaintext highlighter-rouge">PronType=Prs</code>, <code class="language-plaintext highlighter-rouge">PronType=Rel</code>, <code class="language-plaintext highlighter-rouge">PronType=Tot</code>, <code class="language-plaintext highlighter-rouge">Reflex=Yes</code>, <code class="language-plaintext highlighter-rouge">Variant=Bound</code>, <code class="language-plaintext highlighter-rouge">Variant=Short</code></p>
 
-<p><code>PRON</code> occurs with 148 feature combinations.
-The most frequent feature combination is <code>PronType=Prs|Reflex=Yes|Variant=Short</code> (1858 tokens).
+<p><code class="language-plaintext highlighter-rouge">PRON</code> occurs with 148 feature combinations.
+The most frequent feature combination is <code class="language-plaintext highlighter-rouge">PronType=Prs|Reflex=Yes|Variant=Short</code> (1858 tokens).
 Examples: <em>se</em></p>
 
 <h2 id="relations">Relations</h2>
 
-<p><code>PRON</code> nodes are attached to their parents using 14 different relations: <a href="">sl-dep/expl</a> (2069; 43% instances), <a href="">sl-dep/obj</a> (1530; 32% instances), <a href="">sl-dep/obl</a> (412; 9% instances), <a href="">sl-dep/nsubj</a> (348; 7% instances), <a href="">sl-dep/iobj</a> (276; 6% instances), <a href="">sl-dep/nmod</a> (131; 3% instances), <a href="">sl-dep/conj</a> (21; 0% instances), <a href="">sl-dep/root</a> (8; 0% instances), <a href="">sl-dep/ccomp</a> (4; 0% instances), <a href="">sl-dep/xcomp</a> (4; 0% instances), <a href="">sl-dep/fixed</a> (2; 0% instances), <a href="">sl-dep/acl</a> (1; 0% instances), <a href="">sl-dep/advcl</a> (1; 0% instances), <a href="">sl-dep/parataxis</a> (1; 0% instances)</p>
+<p><code class="language-plaintext highlighter-rouge">PRON</code> nodes are attached to their parents using 14 different relations: <a href="">sl-dep/expl</a> (2069; 43% instances), <a href="">sl-dep/obj</a> (1530; 32% instances), <a href="">sl-dep/obl</a> (412; 9% instances), <a href="">sl-dep/nsubj</a> (348; 7% instances), <a href="">sl-dep/iobj</a> (276; 6% instances), <a href="">sl-dep/nmod</a> (131; 3% instances), <a href="">sl-dep/conj</a> (21; 0% instances), <a href="">sl-dep/root</a> (8; 0% instances), <a href="">sl-dep/ccomp</a> (4; 0% instances), <a href="">sl-dep/xcomp</a> (4; 0% instances), <a href="">sl-dep/fixed</a> (2; 0% instances), <a href="">sl-dep/acl</a> (1; 0% instances), <a href="">sl-dep/advcl</a> (1; 0% instances), <a href="">sl-dep/parataxis</a> (1; 0% instances)</p>
 
-<p>Parents of <code>PRON</code> nodes belong to 9 different parts of speech: <a href="">VERB</a> (4471; 93% instances), <a href="">ADJ</a> (172; 4% instances), <a href="">NOUN</a> (121; 3% instances), <a href="">DET</a> (11; 0% instances), <a href="">ROOT</a> (8; 0% instances), <a href="">ADV</a> (7; 0% instances), <a href="">PROPN</a> (7; 0% instances), <a href="">PRON</a> (6; 0% instances), <a href="">NUM</a> (5; 0% instances)</p>
+<p>Parents of <code class="language-plaintext highlighter-rouge">PRON</code> nodes belong to 9 different parts of speech: <a href="">VERB</a> (4471; 93% instances), <a href="">ADJ</a> (172; 4% instances), <a href="">NOUN</a> (121; 3% instances), <a href="">DET</a> (11; 0% instances), <a href="">ROOT</a> (8; 0% instances), <a href="">ADV</a> (7; 0% instances), <a href="">PROPN</a> (7; 0% instances), <a href="">PRON</a> (6; 0% instances), <a href="">NUM</a> (5; 0% instances)</p>
 
-<p>4241 (88%) <code>PRON</code> nodes are leaves.</p>
+<p>4241 (88%) <code class="language-plaintext highlighter-rouge">PRON</code> nodes are leaves.</p>
 
-<p>494 (10%) <code>PRON</code> nodes have one child.</p>
+<p>494 (10%) <code class="language-plaintext highlighter-rouge">PRON</code> nodes have one child.</p>
 
-<p>50 (1%) <code>PRON</code> nodes have two children.</p>
+<p>50 (1%) <code class="language-plaintext highlighter-rouge">PRON</code> nodes have two children.</p>
 
-<p>23 (0%) <code>PRON</code> nodes have three or more children.</p>
+<p>23 (0%) <code class="language-plaintext highlighter-rouge">PRON</code> nodes have three or more children.</p>
 
-<p>The highest child degree of a <code>PRON</code> node is 7.</p>
+<p>The highest child degree of a <code class="language-plaintext highlighter-rouge">PRON</code> node is 7.</p>
 
-<p>Children of <code>PRON</code> nodes are attached using 19 different relations: <a href="">sl-dep/case</a> (442; 63% instances), <a href="">sl-dep/amod</a> (49; 7% instances), <a href="">sl-dep/nmod</a> (35; 5% instances), <a href="">sl-dep/conj</a> (29; 4% instances), <a href="">sl-dep/acl</a> (24; 3% instances), <a href="">sl-dep/cc</a> (21; 3% instances), <a href="">sl-dep/advmod</a> (17; 2% instances), <a href="">sl-dep/cop</a> (17; 2% instances), <a href="">sl-dep/punct</a> (17; 2% instances), <a href="">sl-dep/obl</a> (15; 2% instances), <a href="">sl-dep/nsubj</a> (12; 2% instances), <a href="">sl-dep/mark</a> (5; 1% instances), <a href="">sl-dep/fixed</a> (4; 1% instances), <a href="">sl-dep/aux</a> (3; 0% instances), <a href="">sl-dep/cc:preconj</a> (2; 0% instances), <a href="">sl-dep/parataxis</a> (2; 0% instances), <a href="">sl-dep/advcl</a> (1; 0% instances), <a href="">sl-dep/appos</a> (1; 0% instances), <a href="">sl-dep/csubj</a> (1; 0% instances)</p>
+<p>Children of <code class="language-plaintext highlighter-rouge">PRON</code> nodes are attached using 19 different relations: <a href="">sl-dep/case</a> (442; 63% instances), <a href="">sl-dep/amod</a> (49; 7% instances), <a href="">sl-dep/nmod</a> (35; 5% instances), <a href="">sl-dep/conj</a> (29; 4% instances), <a href="">sl-dep/acl</a> (24; 3% instances), <a href="">sl-dep/cc</a> (21; 3% instances), <a href="">sl-dep/advmod</a> (17; 2% instances), <a href="">sl-dep/cop</a> (17; 2% instances), <a href="">sl-dep/punct</a> (17; 2% instances), <a href="">sl-dep/obl</a> (15; 2% instances), <a href="">sl-dep/nsubj</a> (12; 2% instances), <a href="">sl-dep/mark</a> (5; 1% instances), <a href="">sl-dep/fixed</a> (4; 1% instances), <a href="">sl-dep/aux</a> (3; 0% instances), <a href="">sl-dep/cc:preconj</a> (2; 0% instances), <a href="">sl-dep/parataxis</a> (2; 0% instances), <a href="">sl-dep/advcl</a> (1; 0% instances), <a href="">sl-dep/appos</a> (1; 0% instances), <a href="">sl-dep/csubj</a> (1; 0% instances)</p>
 
-<p>Children of <code>PRON</code> nodes belong to 15 different parts of speech: <a href="">ADP</a> (437; 63% instances), <a href="">ADJ</a> (63; 9% instances), <a href="">NOUN</a> (52; 7% instances), <a href="">DET</a> (26; 4% instances), <a href="">CCONJ</a> (23; 3% instances), <a href="">AUX</a> (20; 3% instances), <a href="">VERB</a> (20; 3% instances), <a href="">PUNCT</a> (17; 2% instances), <a href="">ADV</a> (10; 1% instances), <a href="">SCONJ</a> (10; 1% instances), <a href="">PART</a> (8; 1% instances), <a href="">PRON</a> (6; 1% instances), <a href="">PROPN</a> (3; 0% instances), <a href="">NUM</a> (1; 0% instances), <a href="">X</a> (1; 0% instances)</p>
+<p>Children of <code class="language-plaintext highlighter-rouge">PRON</code> nodes belong to 15 different parts of speech: <a href="">ADP</a> (437; 63% instances), <a href="">ADJ</a> (63; 9% instances), <a href="">NOUN</a> (52; 7% instances), <a href="">DET</a> (26; 4% instances), <a href="">CCONJ</a> (23; 3% instances), <a href="">AUX</a> (20; 3% instances), <a href="">VERB</a> (20; 3% instances), <a href="">PUNCT</a> (17; 2% instances), <a href="">ADV</a> (10; 1% instances), <a href="">SCONJ</a> (10; 1% instances), <a href="">PART</a> (8; 1% instances), <a href="">PRON</a> (6; 1% instances), <a href="">PROPN</a> (3; 0% instances), <a href="">NUM</a> (1; 0% instances), <a href="">X</a> (1; 0% instances)</p>
 
 <hr />
 
-<h2 id="treebank-statistics-udslovenian-sst">Treebank Statistics (UD_Slovenian-SST)</h2>
+<h2 id="treebank-statistics-ud_slovenian-sst">Treebank Statistics (UD_Slovenian-SST)</h2>
 
-<p>There are 17 <code>PRON</code> lemmas (1%), 71 <code>PRON</code> types (2%) and 1096 <code>PRON</code> tokens (6%).
-Out of 16 observed tags, the rank of <code>PRON</code> is: 13 in number of lemmas, 9 in number of types and 9 in number of tokens.</p>
+<p>There are 17 <code class="language-plaintext highlighter-rouge">PRON</code> lemmas (1%), 71 <code class="language-plaintext highlighter-rouge">PRON</code> types (2%) and 1096 <code class="language-plaintext highlighter-rouge">PRON</code> tokens (6%).
+Out of 16 observed tags, the rank of <code class="language-plaintext highlighter-rouge">PRON</code> is: 13 in number of lemmas, 9 in number of types and 9 in number of tokens.</p>
 
-<p>The 10 most frequent <code>PRON</code> lemmas: <em>se, jaz, on, kaj, ti, kar, kdo, nekdo, zame, nihče</em></p>
+<p>The 10 most frequent <code class="language-plaintext highlighter-rouge">PRON</code> lemmas: <em>se, jaz, on, kaj, ti, kar, kdo, nekdo, zame, nihče</em></p>
 
-<p>The 10 most frequent <code>PRON</code> types:  <em>se, kaj, jaz, mi, ti, jih, ga, si, kar, jo</em></p>
+<p>The 10 most frequent <code class="language-plaintext highlighter-rouge">PRON</code> types:  <em>se, kaj, jaz, mi, ti, jih, ga, si, kar, jo</em></p>
 
 <p>The 10 most frequent ambiguous lemmas: <em>kaj</em> (<a href="">PRON</a> 143, <a href="">ADV</a> 26), <em>ti</em> (<a href="">PRON</a> 132, <a href="">X</a> 1, <a href="">INTJ</a> 1), <em>kar</em> (<a href="">ADV</a> 48, <a href="">PRON</a> 26)</p>
 
@@ -296,7 +296,7 @@ Out of 16 observed tags, the rank of <code>PRON</code> is: 13 in number of lemma
 
 <h2 id="morphology-1">Morphology</h2>
 
-<p>The form / lemma ratio of <code>PRON</code> is 4.176471 (the average of all parts of speech is 1.494596).</p>
+<p>The form / lemma ratio of <code class="language-plaintext highlighter-rouge">PRON</code> is 4.176471 (the average of all parts of speech is 1.494596).</p>
 
 <p>The 1st highest number of forms (20) was observed with the lemma “on”: <em>ga, je, ji, jih, jim, jo, mu, nje, njega, njej, njemu, njih, njim, njimi, njo, on, ona, onadva, one, oni</em>.</p>
 
@@ -304,33 +304,33 @@ Out of 16 observed tags, the rank of <code>PRON</code> is: 13 in number of lemma
 
 <p>The 3rd highest number of forms (10) was observed with the lemma “ti”: <em>tabo, te, tebe, tebi, ti, vaju, vam, vami, vas, vi</em>.</p>
 
-<p><code>PRON</code> occurs with 6 features: <a href="">sl-feat/PronType</a> (1096; 100% instances), <a href="">sl-feat/Case</a> (833; 76% instances), <a href="">sl-feat/Number</a> (789; 72% instances), <a href="">sl-feat/Person</a> (582; 53% instances), <a href="">sl-feat/Variant</a> (530; 48% instances), <a href="">sl-feat/Gender</a> (470; 43% instances)</p>
+<p><code class="language-plaintext highlighter-rouge">PRON</code> occurs with 6 features: <a href="">sl-feat/PronType</a> (1096; 100% instances), <a href="">sl-feat/Case</a> (833; 76% instances), <a href="">sl-feat/Number</a> (789; 72% instances), <a href="">sl-feat/Person</a> (582; 53% instances), <a href="">sl-feat/Variant</a> (530; 48% instances), <a href="">sl-feat/Gender</a> (470; 43% instances)</p>
 
-<p><code>PRON</code> occurs with 22 feature-value pairs: <code>Case=Acc</code>, <code>Case=Dat</code>, <code>Case=Gen</code>, <code>Case=Ins</code>, <code>Case=Loc</code>, <code>Case=Nom</code>, <code>Gender=Fem</code>, <code>Gender=Masc</code>, <code>Gender=Neut</code>, <code>Number=Dual</code>, <code>Number=Plur</code>, <code>Number=Sing</code>, <code>Person=1</code>, <code>Person=2</code>, <code>Person=3</code>, <code>PronType=Ind</code>, <code>PronType=Int</code>, <code>PronType=Neg</code>, <code>PronType=Prs</code>, <code>PronType=Rel</code>, <code>Variant=Bound</code>, <code>Variant=Short</code></p>
+<p><code class="language-plaintext highlighter-rouge">PRON</code> occurs with 22 feature-value pairs: <code class="language-plaintext highlighter-rouge">Case=Acc</code>, <code class="language-plaintext highlighter-rouge">Case=Dat</code>, <code class="language-plaintext highlighter-rouge">Case=Gen</code>, <code class="language-plaintext highlighter-rouge">Case=Ins</code>, <code class="language-plaintext highlighter-rouge">Case=Loc</code>, <code class="language-plaintext highlighter-rouge">Case=Nom</code>, <code class="language-plaintext highlighter-rouge">Gender=Fem</code>, <code class="language-plaintext highlighter-rouge">Gender=Masc</code>, <code class="language-plaintext highlighter-rouge">Gender=Neut</code>, <code class="language-plaintext highlighter-rouge">Number=Dual</code>, <code class="language-plaintext highlighter-rouge">Number=Plur</code>, <code class="language-plaintext highlighter-rouge">Number=Sing</code>, <code class="language-plaintext highlighter-rouge">Person=1</code>, <code class="language-plaintext highlighter-rouge">Person=2</code>, <code class="language-plaintext highlighter-rouge">Person=3</code>, <code class="language-plaintext highlighter-rouge">PronType=Ind</code>, <code class="language-plaintext highlighter-rouge">PronType=Int</code>, <code class="language-plaintext highlighter-rouge">PronType=Neg</code>, <code class="language-plaintext highlighter-rouge">PronType=Prs</code>, <code class="language-plaintext highlighter-rouge">PronType=Rel</code>, <code class="language-plaintext highlighter-rouge">Variant=Bound</code>, <code class="language-plaintext highlighter-rouge">Variant=Short</code></p>
 
-<p><code>PRON</code> occurs with 91 feature combinations.
-The most frequent feature combination is <code>PronType=Prs|Variant=Short</code> (263 tokens).
+<p><code class="language-plaintext highlighter-rouge">PRON</code> occurs with 91 feature combinations.
+The most frequent feature combination is <code class="language-plaintext highlighter-rouge">PronType=Prs|Variant=Short</code> (263 tokens).
 Examples: <em>se</em></p>
 
 <h2 id="relations-1">Relations</h2>
 
-<p><code>PRON</code> nodes are attached to their parents using 22 different relations: <a href="">sl-dep/obj</a> (287; 26% instances), <a href="">sl-dep/nsubj</a> (281; 26% instances), <a href="">sl-dep/expl</a> (279; 25% instances), <a href="">sl-dep/obl</a> (57; 5% instances), <a href="">sl-dep/iobj</a> (55; 5% instances), <a href="">sl-dep/root</a> (44; 4% instances), <a href="">sl-dep/nmod</a> (17; 2% instances), <a href="">sl-dep/reparandum</a> (17; 2% instances), <a href="">sl-dep/parataxis</a> (10; 1% instances), <a href="">sl-dep/cc</a> (8; 1% instances), <a href="">sl-dep/conj:extend</a> (8; 1% instances), <a href="">sl-dep/discourse</a> (8; 1% instances), <a href="">sl-dep/conj</a> (6; 1% instances), <a href="">sl-dep/acl</a> (4; 0% instances), <a href="">sl-dep/orphan</a> (4; 0% instances), <a href="">sl-dep/fixed</a> (3; 0% instances), <a href="">sl-dep/ccomp</a> (2; 0% instances), <a href="">sl-dep/dislocated</a> (2; 0% instances), <a href="">sl-dep/advcl</a> (1; 0% instances), <a href="">sl-dep/advmod</a> (1; 0% instances), <a href="">sl-dep/appos</a> (1; 0% instances), <a href="">sl-dep/vocative</a> (1; 0% instances)</p>
+<p><code class="language-plaintext highlighter-rouge">PRON</code> nodes are attached to their parents using 22 different relations: <a href="">sl-dep/obj</a> (287; 26% instances), <a href="">sl-dep/nsubj</a> (281; 26% instances), <a href="">sl-dep/expl</a> (279; 25% instances), <a href="">sl-dep/obl</a> (57; 5% instances), <a href="">sl-dep/iobj</a> (55; 5% instances), <a href="">sl-dep/root</a> (44; 4% instances), <a href="">sl-dep/nmod</a> (17; 2% instances), <a href="">sl-dep/reparandum</a> (17; 2% instances), <a href="">sl-dep/parataxis</a> (10; 1% instances), <a href="">sl-dep/cc</a> (8; 1% instances), <a href="">sl-dep/conj:extend</a> (8; 1% instances), <a href="">sl-dep/discourse</a> (8; 1% instances), <a href="">sl-dep/conj</a> (6; 1% instances), <a href="">sl-dep/acl</a> (4; 0% instances), <a href="">sl-dep/orphan</a> (4; 0% instances), <a href="">sl-dep/fixed</a> (3; 0% instances), <a href="">sl-dep/ccomp</a> (2; 0% instances), <a href="">sl-dep/dislocated</a> (2; 0% instances), <a href="">sl-dep/advcl</a> (1; 0% instances), <a href="">sl-dep/advmod</a> (1; 0% instances), <a href="">sl-dep/appos</a> (1; 0% instances), <a href="">sl-dep/vocative</a> (1; 0% instances)</p>
 
-<p>Parents of <code>PRON</code> nodes belong to 12 different parts of speech: <a href="">VERB</a> (918; 84% instances), <a href="">ROOT</a> (44; 4% instances), <a href="">NOUN</a> (36; 3% instances), <a href="">ADJ</a> (30; 3% instances), <a href="">PRON</a> (14; 1% instances), <a href="">DET</a> (12; 1% instances), <a href="">X</a> (11; 1% instances), <a href="">PART</a> (9; 1% instances), <a href="">ADV</a> (8; 1% instances), <a href="">AUX</a> (8; 1% instances), <a href="">PROPN</a> (5; 0% instances), <a href="">NUM</a> (1; 0% instances)</p>
+<p>Parents of <code class="language-plaintext highlighter-rouge">PRON</code> nodes belong to 12 different parts of speech: <a href="">VERB</a> (918; 84% instances), <a href="">ROOT</a> (44; 4% instances), <a href="">NOUN</a> (36; 3% instances), <a href="">ADJ</a> (30; 3% instances), <a href="">PRON</a> (14; 1% instances), <a href="">DET</a> (12; 1% instances), <a href="">X</a> (11; 1% instances), <a href="">PART</a> (9; 1% instances), <a href="">ADV</a> (8; 1% instances), <a href="">AUX</a> (8; 1% instances), <a href="">PROPN</a> (5; 0% instances), <a href="">NUM</a> (1; 0% instances)</p>
 
-<p>913 (83%) <code>PRON</code> nodes are leaves.</p>
+<p>913 (83%) <code class="language-plaintext highlighter-rouge">PRON</code> nodes are leaves.</p>
 
-<p>113 (10%) <code>PRON</code> nodes have one child.</p>
+<p>113 (10%) <code class="language-plaintext highlighter-rouge">PRON</code> nodes have one child.</p>
 
-<p>31 (3%) <code>PRON</code> nodes have two children.</p>
+<p>31 (3%) <code class="language-plaintext highlighter-rouge">PRON</code> nodes have two children.</p>
 
-<p>39 (4%) <code>PRON</code> nodes have three or more children.</p>
+<p>39 (4%) <code class="language-plaintext highlighter-rouge">PRON</code> nodes have three or more children.</p>
 
-<p>The highest child degree of a <code>PRON</code> node is 8.</p>
+<p>The highest child degree of a <code class="language-plaintext highlighter-rouge">PRON</code> node is 8.</p>
 
-<p>Children of <code>PRON</code> nodes are attached using 27 different relations: <a href="">sl-dep/case</a> (80; 24% instances), <a href="">sl-dep/advmod</a> (57; 17% instances), <a href="">sl-dep/punct</a> (29; 9% instances), <a href="">sl-dep/reparandum</a> (20; 6% instances), <a href="">sl-dep/cc</a> (19; 6% instances), <a href="">sl-dep/nmod</a> (14; 4% instances), <a href="">sl-dep/nsubj</a> (14; 4% instances), <a href="">sl-dep/cop</a> (12; 4% instances), <a href="">sl-dep/discourse</a> (12; 4% instances), <a href="">sl-dep/parataxis</a> (12; 4% instances), <a href="">sl-dep/fixed</a> (9; 3% instances), <a href="">sl-dep/advcl</a> (7; 2% instances), <a href="">sl-dep/conj</a> (7; 2% instances), <a href="">sl-dep/discourse:filler</a> (6; 2% instances), <a href="">sl-dep/orphan</a> (6; 2% instances), <a href="">sl-dep/obj</a> (5; 2% instances), <a href="">sl-dep/acl</a> (3; 1% instances), <a href="">sl-dep/appos</a> (3; 1% instances), <a href="">sl-dep/amod</a> (2; 1% instances), <a href="">sl-dep/det</a> (2; 1% instances), <a href="">sl-dep/parataxis:discourse</a> (2; 1% instances), <a href="">sl-dep/parataxis:restart</a> (2; 1% instances), <a href="">sl-dep/vocative</a> (2; 1% instances), <a href="">sl-dep/cc:preconj</a> (1; 0% instances), <a href="">sl-dep/dislocated</a> (1; 0% instances), <a href="">sl-dep/nummod</a> (1; 0% instances), <a href="">sl-dep/obl</a> (1; 0% instances)</p>
+<p>Children of <code class="language-plaintext highlighter-rouge">PRON</code> nodes are attached using 27 different relations: <a href="">sl-dep/case</a> (80; 24% instances), <a href="">sl-dep/advmod</a> (57; 17% instances), <a href="">sl-dep/punct</a> (29; 9% instances), <a href="">sl-dep/reparandum</a> (20; 6% instances), <a href="">sl-dep/cc</a> (19; 6% instances), <a href="">sl-dep/nmod</a> (14; 4% instances), <a href="">sl-dep/nsubj</a> (14; 4% instances), <a href="">sl-dep/cop</a> (12; 4% instances), <a href="">sl-dep/discourse</a> (12; 4% instances), <a href="">sl-dep/parataxis</a> (12; 4% instances), <a href="">sl-dep/fixed</a> (9; 3% instances), <a href="">sl-dep/advcl</a> (7; 2% instances), <a href="">sl-dep/conj</a> (7; 2% instances), <a href="">sl-dep/discourse:filler</a> (6; 2% instances), <a href="">sl-dep/orphan</a> (6; 2% instances), <a href="">sl-dep/obj</a> (5; 2% instances), <a href="">sl-dep/acl</a> (3; 1% instances), <a href="">sl-dep/appos</a> (3; 1% instances), <a href="">sl-dep/amod</a> (2; 1% instances), <a href="">sl-dep/det</a> (2; 1% instances), <a href="">sl-dep/parataxis:discourse</a> (2; 1% instances), <a href="">sl-dep/parataxis:restart</a> (2; 1% instances), <a href="">sl-dep/vocative</a> (2; 1% instances), <a href="">sl-dep/cc:preconj</a> (1; 0% instances), <a href="">sl-dep/dislocated</a> (1; 0% instances), <a href="">sl-dep/nummod</a> (1; 0% instances), <a href="">sl-dep/obl</a> (1; 0% instances)</p>
 
-<p>Children of <code>PRON</code> nodes belong to 16 different parts of speech: <a href="">ADP</a> (76; 23% instances), <a href="">CCONJ</a> (34; 10% instances), <a href="">ADV</a> (32; 10% instances), <a href="">VERB</a> (28; 9% instances), <a href="">PART</a> (26; 8% instances), <a href="">X</a> (22; 7% instances), <a href="">PUNCT</a> (19; 6% instances), <a href="">NOUN</a> (18; 5% instances), <a href="">DET</a> (16; 5% instances), <a href="">PRON</a> (14; 4% instances), <a href="">AUX</a> (12; 4% instances), <a href="">SCONJ</a> (8; 2% instances), <a href="">ADJ</a> (7; 2% instances), <a href="">INTJ</a> (7; 2% instances), <a href="">PROPN</a> (7; 2% instances), <a href="">NUM</a> (3; 1% instances)</p>
+<p>Children of <code class="language-plaintext highlighter-rouge">PRON</code> nodes belong to 16 different parts of speech: <a href="">ADP</a> (76; 23% instances), <a href="">CCONJ</a> (34; 10% instances), <a href="">ADV</a> (32; 10% instances), <a href="">VERB</a> (28; 9% instances), <a href="">PART</a> (26; 8% instances), <a href="">X</a> (22; 7% instances), <a href="">PUNCT</a> (19; 6% instances), <a href="">NOUN</a> (18; 5% instances), <a href="">DET</a> (16; 5% instances), <a href="">PRON</a> (14; 4% instances), <a href="">AUX</a> (12; 4% instances), <a href="">SCONJ</a> (8; 2% instances), <a href="">ADJ</a> (7; 2% instances), <a href="">INTJ</a> (7; 2% instances), <a href="">PROPN</a> (7; 2% instances), <a href="">NUM</a> (3; 1% instances)</p>
 
 
 

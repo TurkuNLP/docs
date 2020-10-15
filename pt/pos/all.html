@@ -252,7 +252,7 @@ expresses a semantic relationship between them.</p>
 <h3 id="definition">Definition</h3>
 <p>Determiners are words that modify nouns or noun phrases and express the reference of the noun phrase in context. That is, a determiner may indicate whether the noun is referring to a definite or indefinite element of a class, to a closer or more distant element, to an element belonging to a specified person or thing, to a particular number or quantity, etc.</p>
 
-<p>In Portuguese corpora, numerals are not tagged as <code>DET</code>. In a noun phrase such as “os cinco mortos” (the five dead [people]), only “os” is tagged as <code>DET</code>.</p>
+<p>In Portuguese corpora, numerals are not tagged as <code class="language-plaintext highlighter-rouge">DET</code>. In a noun phrase such as “os cinco mortos” (the five dead [people]), only “os” is tagged as <code class="language-plaintext highlighter-rouge">DET</code>.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -308,7 +308,7 @@ such as <em>taí</em>, <em>não</em>, etc.</p>
 
 <p>Nouns are a part of speech typically denoting a person, place, thing, animal or idea.</p>
 
-<p>The <code>NOUN</code> tag is intended for common nouns only. See <a href="">PROPN</a> for proper nouns and <a href="">PRON</a> for pronouns.</p>
+<p>The <code class="language-plaintext highlighter-rouge">NOUN</code> tag is intended for common nouns only. See <a href="">PROPN</a> for proper nouns and <a href="">PRON</a> for pronouns.</p>
 
 <p>Portuguese nouns have the features <a href="">Gender</a> and <a href="">Number</a>.</p>
 
@@ -333,14 +333,14 @@ such as <em>taí</em>, <em>não</em>, etc.</p>
 adjective or pronoun, that expresses a number and a relation to the
 number, such as quantity, sequence, frequency or fraction.</p>
 
-<p>Note that cardinal numerals are covered by <code>NUM</code> whether they are used
+<p>Note that cardinal numerals are covered by <code class="language-plaintext highlighter-rouge">NUM</code> whether they are used
 as determiners or not (as in <em>Windows <b>Sete</b></em>) and whether they
 are expressed as words <em>(quatro)</em>, digits <em>(4)</em> or Roman numerals
 <em>(IV)</em>. Other words functioning as determiners (including quantifiers
 such as <em>muito</em> and <em>pouco</em>) are tagged <a href="">DET</a>.</p>
 
 <p>Note that there are words that may be traditionally called numerals in
-some languages (e.g. Czech and Portuguese) but which are not tagged <code>NUM</code>. 
+some languages (e.g. Czech and Portuguese) but which are not tagged <code class="language-plaintext highlighter-rouge">NUM</code>. 
 Such non-cardinal numerals belong to other parts of speech in the universal
 tagging scheme, based mainly on syntactic criteria. 
 These are <a href="ADJ">adjectives</a> <em>(primeiro, segundo, terceiro)</em> (ordinal numerals) 
@@ -359,11 +359,11 @@ or <a href="ADV">adverbs</a> (<em>mais_uma_vez</em> “once more”; <em>pela_pr
 <p><a id="al-pt-pos/PART" class="al-dest"></a></p>
 <h2><code>PART</code>: particle</h2>
 
-<p>In Portuguese, <code>PART</code> is used to tag prefixes that form complex words, but not compounds.  In <code>ex-presidente, anti-capitalista, vice-diretor, pós-graduação</code>, the morphemes <code>ex-, anti-, vice-, pós-</code> should be tagged as <code>PART</code>. Note that when one uses one of those prefixes alone (in a sentence as <code>Minha pós não acaba nunca. (My post-grad never ends.)</code>) “pós” still stands for “pós-graduação”. This is different from compound words, such as <code>norte-americano, meio-campo, porta-voz</code>, in which there is no particle and one cannot use only the prefix to recall the entire sense of the compound. Weekday names, such as <code>segunda-feira</code>, are analysed as compound words, even if the first part is used for the whole e.g. <code>Essa quarta, sem falta (This Wednesday, without failing.)</code>. Words such as <code>fim-de-semana, a partir de, de novo</code> are <code>MWE</code>s and their elements should not be tagged as <code>PART</code>.</p>
+<p>In Portuguese, <code class="language-plaintext highlighter-rouge">PART</code> is used to tag prefixes that form complex words, but not compounds.  In <code class="language-plaintext highlighter-rouge">ex-presidente, anti-capitalista, vice-diretor, pós-graduação</code>, the morphemes <code class="language-plaintext highlighter-rouge">ex-, anti-, vice-, pós-</code> should be tagged as <code class="language-plaintext highlighter-rouge">PART</code>. Note that when one uses one of those prefixes alone (in a sentence as <code class="language-plaintext highlighter-rouge">Minha pós não acaba nunca. (My post-grad never ends.)</code>) “pós” still stands for “pós-graduação”. This is different from compound words, such as <code class="language-plaintext highlighter-rouge">norte-americano, meio-campo, porta-voz</code>, in which there is no particle and one cannot use only the prefix to recall the entire sense of the compound. Weekday names, such as <code class="language-plaintext highlighter-rouge">segunda-feira</code>, are analysed as compound words, even if the first part is used for the whole e.g. <code class="language-plaintext highlighter-rouge">Essa quarta, sem falta (This Wednesday, without failing.)</code>. Words such as <code class="language-plaintext highlighter-rouge">fim-de-semana, a partir de, de novo</code> are <code class="language-plaintext highlighter-rouge">MWE</code>s and their elements should not be tagged as <code class="language-plaintext highlighter-rouge">PART</code>.</p>
 
-<p>This means that  prefixed words should be split in the tokenization step. Note that hyphenation is still a big issue here, since many of those complex words formed by particles would not necessarily  be split by a hyphen. Hyphenation is discussed in the new Regulation of Portuguese Orthography (2009) and some specific cases are explictly ruled: vice- and ex- always come with hyphen. But not all cases are specified and many dictionaries (and old corpora) carry both forms  <code>anti-capitalista</code> and <code>anticapitalista</code>.</p>
+<p>This means that  prefixed words should be split in the tokenization step. Note that hyphenation is still a big issue here, since many of those complex words formed by particles would not necessarily  be split by a hyphen. Hyphenation is discussed in the new Regulation of Portuguese Orthography (2009) and some specific cases are explictly ruled: vice- and ex- always come with hyphen. But not all cases are specified and many dictionaries (and old corpora) carry both forms  <code class="language-plaintext highlighter-rouge">anti-capitalista</code> and <code class="language-plaintext highlighter-rouge">anticapitalista</code>.</p>
 
-<p><code>Part</code> is also used for negative particles, as <code>não, nem</code> in predicative contexts. Note that negative adverbs, as <code>nunca, jamais</code> are still tagged as <code>ADV</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">Part</code> is also used for negative particles, as <code class="language-plaintext highlighter-rouge">não, nem</code> in predicative contexts. Note that negative adverbs, as <code class="language-plaintext highlighter-rouge">nunca, jamais</code> are still tagged as <code class="language-plaintext highlighter-rouge">ADV</code>.</p>
 
 <p>Examples:</p>
 
@@ -410,7 +410,7 @@ or <a href="ADV">adverbs</a> (<em>mais_uma_vez</em> “once more”; <em>pela_pr
 <p>A proper noun is a noun (or nominal content word) that is the name (or
 part of the name) of a specific individual, place, or object.</p>
 
-<p>Note that <code>PROPN</code> is only used for the subclass of nouns that are used
+<p>Note that <code class="language-plaintext highlighter-rouge">PROPN</code> is only used for the subclass of nouns that are used
 as names and that often exhibit special syntactic properties. When other
 phrases or sentences are used as names, the component words retain
 their original tags. For example, in <em>Cat on a Hot Tin Roof</em>, <em>Cat</em> is
@@ -418,8 +418,8 @@ their original tags. For example, in <em>Cat on a Hot Tin Roof</em>, <em>Cat</em
 However, for now, the Portuguese corpora are not very consistently annotated, as many proper nouns (that are  mwes)
 are not split.</p>
 
-<p>Acronyms of proper nouns, such as <em>EUA</em> and <em>NATO</em>, should be tagged <code>PROPN</code>.
-Even if they contain numbers (as in various product names), they are tagged <code>PROPN</code> and not <a href="">SYM</a>:
+<p>Acronyms of proper nouns, such as <em>EUA</em> and <em>NATO</em>, should be tagged <code class="language-plaintext highlighter-rouge">PROPN</code>.
+Even if they contain numbers (as in various product names), they are tagged <code class="language-plaintext highlighter-rouge">PROPN</code> and not <a href="">SYM</a>:
 <em>130XE</em>, <em>DC10</em>, <em>DC-10</em>.
 However, if the token consists entirely of digits (like <em>7</em> in <em>Windows 7</em>), it is tagged <a href="">NUM</a>.</p>
 
@@ -516,7 +516,7 @@ involves all currency symbols, e.g. <em>$ 75</em> is identical to
 
 <p>Strings that consists entirely of alphanumeric characters are not
 symbols but they may be <a href="PROPN">proper nouns</a>: <em>130XE</em>, <em>DC10</em>; others
-may be tagged <code>PROPN</code> (rather than <code>SYM</code>) even if they contain special
+may be tagged <code class="language-plaintext highlighter-rouge">PROPN</code> (rather than <code class="language-plaintext highlighter-rouge">SYM</code>) even if they contain special
 characters: <em>DC-10</em>. Similarly, abbreviations for single words are not
 symbols but are assigned the part of speech of the full form. For
 example, <em>Sr.</em> (senhor), <em>kg</em> (kilograma), <em>km</em> (quilômetro), <em>Dr</em>
@@ -550,7 +550,7 @@ may occur in the clause. Verbs are often associated with grammatical
 categories like tense, mood, aspect and voice, which can either be
 expressed inflectionally or using auxilliary verbs or particles.</p>
 
-<p>Note that the <code>VERB</code> tag covers main verbs <em>(content verbs)</em> and
+<p>Note that the <code class="language-plaintext highlighter-rouge">VERB</code> tag covers main verbs <em>(content verbs)</em> and
 <em>copulas</em> but it does not cover <em>auxiliary verbs</em>, for which there is
 the <a href="">AUX</a> tag. Auxiliares are verbs that are used in verb phrases expressing 
 only grammatical function (as tense or mood) and do not have semantic content. 
@@ -567,9 +567,9 @@ where “parece” and “estar” would be tagged as auxiliaries.</p>
 
 <p>Note that <em>participles</em> are word forms that may share properties and
 usage of adjectives and verbs. Depending on language and context, they
-may be classified as either <code>VERB</code> or <a href="">ADJ</a>, e.g. “nomeado/appointed”.</p>
+may be classified as either <code class="language-plaintext highlighter-rouge">VERB</code> or <a href="">ADJ</a>, e.g. “nomeado/appointed”.</p>
 
-<p><em>Gerunds</em> (“comendo/eating”) and <em>infinitives</em> (“nomear/appoint”) are classified as <code>VERB</code>.</p>
+<p><em>Gerunds</em> (“comendo/eating”) and <em>infinitives</em> (“nomear/appoint”) are classified as <code class="language-plaintext highlighter-rouge">VERB</code>.</p>
 
 <!-- Note that there are verb forms such as _transgressives_ or _adverbial
 participles_ that share properties and usage of adverbs and
@@ -584,10 +584,12 @@ either `VERB` or [ADV](). -->
   <li><em>correndo, comendo</em></li>
 </ul>
 
-<p>!–
-### References
-- Câmara Jr (1979, p. 163-170) for traditional Portuguese grammar
-- Wachowitz, T. C. AUXILIARY AND ASPECTUALIZER VERBS: SOME SYNTACTIC AND SEMANTIC DISTINCTIONS, 2007, for a perspective more aligned with English grammar</p>
+<p>!–</p>
+<h3 id="references">References</h3>
+<ul>
+  <li>Câmara Jr (1979, p. 163-170) for traditional Portuguese grammar</li>
+  <li>Wachowitz, T. C. AUXILIARY AND ASPECTUALIZER VERBS: SOME SYNTACTIC AND SEMANTIC DISTINCTIONS, 2007, for a perspective more aligned with English grammar</li>
+</ul>
 
 <!--
 - [Loos, Eugene E., et al. 2003. Glossary of linguistic terms: What is a verb?](http://www-01.sil.org/linguistics/GlossaryOfLinguisticTerms/WhatIsAVerbLinguistics.htm)

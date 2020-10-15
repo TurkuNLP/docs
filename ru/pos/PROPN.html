@@ -68,7 +68,7 @@
 of a specific individual, place, or object.
 Russian proper nouns are always written starting with an uppercase letter.</p>
 
-<p>Single-word named entities should be tagged <code>PROPN</code> though they originate
+<p>Single-word named entities should be tagged <code class="language-plaintext highlighter-rouge">PROPN</code> though they originate
 from a common noun <em>(Грязь) </em>(village) or an adjective <em>(Белая) </em>(river).
 Even if they were originally adjectives and inflect according to adjectival
 paradigms, they behave syntactically as nouns. For instance, <em>Белая </em>
@@ -79,20 +79,20 @@ and its feminine gender is fixed (while adjectives have forms in all three
 genders).</p>
 
 <p>Note that adjectives derived from geographical names <em>(русский, английский </em> “Russian, English”)
-are written in lowercase and are not tagged <code>PROPN</code>.</p>
+are written in lowercase and are not tagged <code class="language-plaintext highlighter-rouge">PROPN</code>.</p>
 
 <p>Personal names are typically treated as a sequence of proper nouns
 (one or more given names and one or more surnames).
-If the name contains prepositions, conjunctions or articles (foreign names), these are tagged as <code>ADP</code>, <code>CCONJ</code> and <code>DET</code>,
+If the name contains prepositions, conjunctions or articles (foreign names), these are tagged as <code class="language-plaintext highlighter-rouge">ADP</code>, <code class="language-plaintext highlighter-rouge">CCONJ</code> and <code class="language-plaintext highlighter-rouge">DET</code>,
 respectively.</p>
 
 <p>Russian (and other Slavic) multi-word named entities have internal syntactic
 structure, which is preserved in the annotation. The headword is always noun
-and there may be other nouns involved. They will be tagged either <code>PROPN</code> or
-<code>NOUN</code> and possible ambiguities must be resolved individually.
-Modifying adjectives are never tagged <code>PROPN</code>. Even if an adjective is the
+and there may be other nouns involved. They will be tagged either <code class="language-plaintext highlighter-rouge">PROPN</code> or
+<code class="language-plaintext highlighter-rouge">NOUN</code> and possible ambiguities must be resolved individually.
+Modifying adjectives are never tagged <code class="language-plaintext highlighter-rouge">PROPN</code>. Even if an adjective is the
 first word of a multi-word name, and thus it starts with an uppercase letter,
-it is still tagged <code>ADJ</code>.
+it is still tagged <code class="language-plaintext highlighter-rouge">ADJ</code>.
 Similarly, function words in named entities retain their normal tags.
 These rules are less strict for foreign named entities where the original
 part of speech is hidden for a Russian speaker.</p>
@@ -100,12 +100,12 @@ part of speech is hidden for a Russian speaker.</p>
 <h3 id="examples">Examples</h3>
 
 <ul>
-  <li><em>Белая</em>.<code>ADJ</code> <em>река</em>.<code>NOUN</code> “White River”. Even though the two words
+  <li><em>Белая</em>.<code class="language-plaintext highlighter-rouge">ADJ</code> <em>река</em>.<code class="language-plaintext highlighter-rouge">NOUN</code> “White River”. Even though the two words
 together are a name of a particular river, <em>река</em> is a common noun and is
 tagged as such.</li>
-  <li><em>Организация</em>.<code>NOUN</code> <em>Объединенных</em>.<code>ADJ</code> <em>Наций</em>.<code>NOUN</code> “United Nations Organization”
+  <li><em>Организация</em>.<code class="language-plaintext highlighter-rouge">NOUN</code> <em>Объединенных</em>.<code class="language-plaintext highlighter-rouge">ADJ</code> <em>Наций</em>.<code class="language-plaintext highlighter-rouge">NOUN</code> “United Nations Organization”
 consists of three words, none of which is proper noun. However, the acronym
-<em><b>ООН</b> </em> “UNO” is a single-token name and is tagged <code>PROPN</code>.</li>
+<em><b>ООН</b> </em> “UNO” is a single-token name and is tagged <code class="language-plaintext highlighter-rouge">PROPN</code>.</li>
 </ul>
 
 
@@ -120,14 +120,14 @@ consists of three words, none of which is proper noun. However, the acronym
 
 <hr />
 
-<h2 id="treebank-statistics-udrussian">Treebank Statistics (UD_Russian)</h2>
+<h2 id="treebank-statistics-ud_russian">Treebank Statistics (UD_Russian)</h2>
 
-<p>There are 4402 <code>PROPN</code> lemmas (25%), 4881 <code>PROPN</code> types (17%) and 6294 <code>PROPN</code> tokens (7%).
-Out of 16 observed tags, the rank of <code>PROPN</code> is: 2 in number of lemmas, 3 in number of types and 6 in number of tokens.</p>
+<p>There are 4402 <code class="language-plaintext highlighter-rouge">PROPN</code> lemmas (25%), 4881 <code class="language-plaintext highlighter-rouge">PROPN</code> types (17%) and 6294 <code class="language-plaintext highlighter-rouge">PROPN</code> tokens (7%).
+Out of 16 observed tags, the rank of <code class="language-plaintext highlighter-rouge">PROPN</code> is: 2 in number of lemmas, 3 in number of types and 6 in number of tokens.</p>
 
-<p>The 10 most frequent <code>PROPN</code> lemmas: <em>РОССИЯ, США, СССР, ФРАНЦИЯ, УКРАИНА, МОСКВА, ГЕРМАНИЯ, АЛЕКСАНДР, ВЛАДИМИР, ИСПАНИЯ</em></p>
+<p>The 10 most frequent <code class="language-plaintext highlighter-rouge">PROPN</code> lemmas: <em>РОССИЯ, США, СССР, ФРАНЦИЯ, УКРАИНА, МОСКВА, ГЕРМАНИЯ, АЛЕКСАНДР, ВЛАДИМИР, ИСПАНИЯ</em></p>
 
-<p>The 10 most frequent <code>PROPN</code> types:  <em>России, США, СССР, Украины, Франции, Германии, де, Европы, Испании, РФ</em></p>
+<p>The 10 most frequent <code class="language-plaintext highlighter-rouge">PROPN</code> types:  <em>России, США, СССР, Украины, Франции, Германии, де, Европы, Испании, РФ</em></p>
 
 <p>The 10 most frequent ambiguous lemmas: <em>ДЕ</em> (<a href="">PROPN</a> 19, <a href="">ADV</a> 9, <a href="">PART</a> 2), <em>ПЕТЕРБУРГ</em> (<a href="">PROPN</a> 11, <a href="">ADV</a> 1), <em>ТОМ</em> (<a href="">PROPN</a> 8, <a href="">NOUN</a> 7), <em>ДОН</em> (<a href="">PROPN</a> 7, <a href="">NOUN</a> 2), <em>АВГУСТ</em> (<a href="">NOUN</a> 37, <a href="">PROPN</a> 6), <em>МАРИЯ</em> (<a href="">PROPN</a> 6, <a href="">ADV</a> 1), <em>СУ</em> (<a href="">PROPN</a> 5, <a href="">ADV</a> 1), <em>ЛИ</em> (<a href="">PART</a> 6, <a href="">PROPN</a> 4), <em>ЦК</em> (<a href="">NOUN</a> 4, <a href="">PROPN</a> 4), <em>XX</em> (<a href="">ADJ</a> 8, <a href="">PROPN</a> 3)</p>
 
@@ -185,9 +185,9 @@ Out of 16 observed tags, the rank of <code>PROPN</code> is: 2 in number of lemma
   </li>
   <li><em>Сити</em>
     <ul>
-      <li><a href="">PROPN</a> 3: <em>Получив предложения от нескольких английских клубов , в том числе <code>Бристоль &lt;b&gt;Сити&lt;/b&gt; &amp;#39;&amp;#39; ,</code> Манчестер <b>Сити</b> '' и `` Ипсвич Таун '' , Уорк выбрал последний , хотя был на просмотре и в Манчестере .</em></li>
+      <li><a href="">PROPN</a> 3: <em>Получив предложения от нескольких английских клубов , в том числе <code class="language-plaintext highlighter-rouge">Бристоль &lt;b&gt;Сити&lt;/b&gt; &amp;#39;&amp;#39; ,</code> Манчестер <b>Сити</b> '' и `` Ипсвич Таун '' , Уорк выбрал последний , хотя был на просмотре и в Манчестере .</em></li>
       <li><a href="">ADV</a> 3: <em>Он прогоняет Титана , но его выдаёт неправильное произношение названия города ( Метро́ - <b>Сити</b> вместо Ме́тро - <b>Сити</b> ) , и схватка заканчивается тем , что Хэлл лишается способностей .</em></li>
-      <li><a href="">NOUN</a> 1: <em>В основной состав <code>ирисок &amp;#39;&amp;#39; Макфадден пробивался достаточно редко , почему в январе 2008 года и сменил клуб , перейдя в</code> Бирмингем <b>Сити</b> '' .</em></li>
+      <li><a href="">NOUN</a> 1: <em>В основной состав <code class="language-plaintext highlighter-rouge">ирисок &amp;#39;&amp;#39; Макфадден пробивался достаточно редко , почему в январе 2008 года и сменил клуб , перейдя в</code> Бирмингем <b>Сити</b> '' .</em></li>
     </ul>
   </li>
   <li><em>ди</em>
@@ -200,7 +200,7 @@ Out of 16 observed tags, the rank of <code>PROPN</code> is: 2 in number of lemma
 
 <h2 id="morphology">Morphology</h2>
 
-<p>The form / lemma ratio of <code>PROPN</code> is 1.108814 (the average of all parts of speech is 1.576680).</p>
+<p>The form / lemma ratio of <code class="language-plaintext highlighter-rouge">PROPN</code> is 1.108814 (the average of all parts of speech is 1.576680).</p>
 
 <p>The 1st highest number of forms (5) was observed with the lemma “ВЛАДИМИР”: <em>Влади́мир, Владимир, Владимира, Владимиром, Владимиру</em>.</p>
 
@@ -208,44 +208,44 @@ Out of 16 observed tags, the rank of <code>PROPN</code> is: 2 in number of lemma
 
 <p>The 3rd highest number of forms (5) was observed with the lemma “МОСКВА”: <em>Москва, Москве, Москвой, Москву, Москвы</em>.</p>
 
-<p><code>PROPN</code> occurs with 4 features: <a href="">ru-feat/Animacy</a> (6294; 100% instances), <a href="">ru-feat/Case</a> (6294; 100% instances), <a href="">ru-feat/Gender</a> (6294; 100% instances), <a href="">ru-feat/Number</a> (6294; 100% instances)</p>
+<p><code class="language-plaintext highlighter-rouge">PROPN</code> occurs with 4 features: <a href="">ru-feat/Animacy</a> (6294; 100% instances), <a href="">ru-feat/Case</a> (6294; 100% instances), <a href="">ru-feat/Gender</a> (6294; 100% instances), <a href="">ru-feat/Number</a> (6294; 100% instances)</p>
 
-<p><code>PROPN</code> occurs with 13 feature-value pairs: <code>Animacy=Anim</code>, <code>Animacy=Inan</code>, <code>Case=Acc</code>, <code>Case=Dat</code>, <code>Case=Gen</code>, <code>Case=Ins</code>, <code>Case=Loc</code>, <code>Case=Nom</code>, <code>Gender=Fem</code>, <code>Gender=Masc</code>, <code>Gender=Neut</code>, <code>Number=Plur</code>, <code>Number=Sing</code></p>
+<p><code class="language-plaintext highlighter-rouge">PROPN</code> occurs with 13 feature-value pairs: <code class="language-plaintext highlighter-rouge">Animacy=Anim</code>, <code class="language-plaintext highlighter-rouge">Animacy=Inan</code>, <code class="language-plaintext highlighter-rouge">Case=Acc</code>, <code class="language-plaintext highlighter-rouge">Case=Dat</code>, <code class="language-plaintext highlighter-rouge">Case=Gen</code>, <code class="language-plaintext highlighter-rouge">Case=Ins</code>, <code class="language-plaintext highlighter-rouge">Case=Loc</code>, <code class="language-plaintext highlighter-rouge">Case=Nom</code>, <code class="language-plaintext highlighter-rouge">Gender=Fem</code>, <code class="language-plaintext highlighter-rouge">Gender=Masc</code>, <code class="language-plaintext highlighter-rouge">Gender=Neut</code>, <code class="language-plaintext highlighter-rouge">Number=Plur</code>, <code class="language-plaintext highlighter-rouge">Number=Sing</code></p>
 
-<p><code>PROPN</code> occurs with 50 feature combinations.
-The most frequent feature combination is <code>Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing</code> (1446 tokens).
+<p><code class="language-plaintext highlighter-rouge">PROPN</code> occurs with 50 feature combinations.
+The most frequent feature combination is <code class="language-plaintext highlighter-rouge">Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing</code> (1446 tokens).
 Examples: <em>Владимир, де, Александр, Карл, Джон, Михаил, Иван, Сергей, Алексей, Андрей</em></p>
 
 <h2 id="relations">Relations</h2>
 
-<p><code>PROPN</code> nodes are attached to their parents using 26 different relations: <a href="">ru-dep/nmod</a> (1672; 27% instances), <a href="">ru-dep/appos</a> (1214; 19% instances), <a href="">ru-dep/flat</a> (869; 14% instances), <a href="">ru-dep/nsubj</a> (828; 13% instances), <a href="">ru-dep/conj</a> (582; 9% instances), <a href="">ru-dep/obl</a> (481; 8% instances), <a href="">ru-dep/goeswith</a> (145; 2% instances), <a href="">ru-dep/list</a> (121; 2% instances), <a href="">ru-dep/obj</a> (105; 2% instances), <a href="">ru-dep/iobj</a> (98; 2% instances), <a href="">ru-dep/nsubj:pass</a> (58; 1% instances), <a href="">ru-dep/root</a> (47; 1% instances), <a href="">ru-dep/parataxis</a> (17; 0% instances), <a href="">ru-dep/advmod</a> (14; 0% instances), <a href="">ru-dep/amod</a> (13; 0% instances), <a href="">ru-dep/fixed</a> (8; 0% instances), <a href="">ru-dep/orphan</a> (5; 0% instances), <a href="">ru-dep/case</a> (3; 0% instances), <a href="">ru-dep/dep</a> (3; 0% instances), <a href="">ru-dep/acl:relcl</a> (2; 0% instances), <a href="">ru-dep/ccomp</a> (2; 0% instances), <a href="">ru-dep/obl:agent</a> (2; 0% instances), <a href="">ru-dep/vocative</a> (2; 0% instances), <a href="">ru-dep/advcl</a> (1; 0% instances), <a href="">ru-dep/nummod</a> (1; 0% instances), <a href="">ru-dep/punct</a> (1; 0% instances)</p>
+<p><code class="language-plaintext highlighter-rouge">PROPN</code> nodes are attached to their parents using 26 different relations: <a href="">ru-dep/nmod</a> (1672; 27% instances), <a href="">ru-dep/appos</a> (1214; 19% instances), <a href="">ru-dep/flat</a> (869; 14% instances), <a href="">ru-dep/nsubj</a> (828; 13% instances), <a href="">ru-dep/conj</a> (582; 9% instances), <a href="">ru-dep/obl</a> (481; 8% instances), <a href="">ru-dep/goeswith</a> (145; 2% instances), <a href="">ru-dep/list</a> (121; 2% instances), <a href="">ru-dep/obj</a> (105; 2% instances), <a href="">ru-dep/iobj</a> (98; 2% instances), <a href="">ru-dep/nsubj:pass</a> (58; 1% instances), <a href="">ru-dep/root</a> (47; 1% instances), <a href="">ru-dep/parataxis</a> (17; 0% instances), <a href="">ru-dep/advmod</a> (14; 0% instances), <a href="">ru-dep/amod</a> (13; 0% instances), <a href="">ru-dep/fixed</a> (8; 0% instances), <a href="">ru-dep/orphan</a> (5; 0% instances), <a href="">ru-dep/case</a> (3; 0% instances), <a href="">ru-dep/dep</a> (3; 0% instances), <a href="">ru-dep/acl:relcl</a> (2; 0% instances), <a href="">ru-dep/ccomp</a> (2; 0% instances), <a href="">ru-dep/obl:agent</a> (2; 0% instances), <a href="">ru-dep/vocative</a> (2; 0% instances), <a href="">ru-dep/advcl</a> (1; 0% instances), <a href="">ru-dep/nummod</a> (1; 0% instances), <a href="">ru-dep/punct</a> (1; 0% instances)</p>
 
-<p>Parents of <code>PROPN</code> nodes belong to 14 different parts of speech: <a href="">NOUN</a> (2850; 45% instances), <a href="">PROPN</a> (1713; 27% instances), <a href="">VERB</a> (1344; 21% instances), <a href="">ADV</a> (207; 3% instances), <a href="">ADJ</a> (56; 1% instances), <a href="">ROOT</a> (47; 1% instances), <a href="">ADP</a> (28; 0% instances), <a href="">DET</a> (27; 0% instances), <a href="">NUM</a> (12; 0% instances), <a href="">PUNCT</a> (4; 0% instances), <a href="">PRON</a> (2; 0% instances), <a href="">SYM</a> (2; 0% instances), <a href="">CCONJ</a> (1; 0% instances), <a href="">PART</a> (1; 0% instances)</p>
+<p>Parents of <code class="language-plaintext highlighter-rouge">PROPN</code> nodes belong to 14 different parts of speech: <a href="">NOUN</a> (2850; 45% instances), <a href="">PROPN</a> (1713; 27% instances), <a href="">VERB</a> (1344; 21% instances), <a href="">ADV</a> (207; 3% instances), <a href="">ADJ</a> (56; 1% instances), <a href="">ROOT</a> (47; 1% instances), <a href="">ADP</a> (28; 0% instances), <a href="">DET</a> (27; 0% instances), <a href="">NUM</a> (12; 0% instances), <a href="">PUNCT</a> (4; 0% instances), <a href="">PRON</a> (2; 0% instances), <a href="">SYM</a> (2; 0% instances), <a href="">CCONJ</a> (1; 0% instances), <a href="">PART</a> (1; 0% instances)</p>
 
-<p>2954 (47%) <code>PROPN</code> nodes are leaves.</p>
+<p>2954 (47%) <code class="language-plaintext highlighter-rouge">PROPN</code> nodes are leaves.</p>
 
-<p>1940 (31%) <code>PROPN</code> nodes have one child.</p>
+<p>1940 (31%) <code class="language-plaintext highlighter-rouge">PROPN</code> nodes have one child.</p>
 
-<p>804 (13%) <code>PROPN</code> nodes have two children.</p>
+<p>804 (13%) <code class="language-plaintext highlighter-rouge">PROPN</code> nodes have two children.</p>
 
-<p>596 (9%) <code>PROPN</code> nodes have three or more children.</p>
+<p>596 (9%) <code class="language-plaintext highlighter-rouge">PROPN</code> nodes have three or more children.</p>
 
-<p>The highest child degree of a <code>PROPN</code> node is 19.</p>
+<p>The highest child degree of a <code class="language-plaintext highlighter-rouge">PROPN</code> node is 19.</p>
 
-<p>Children of <code>PROPN</code> nodes are attached using 27 different relations: <a href="">ru-dep/punct</a> (1711; 29% instances), <a href="">ru-dep/case</a> (891; 15% instances), <a href="">ru-dep/flat</a> (864; 15% instances), <a href="">ru-dep/conj</a> (626; 11% instances), <a href="">ru-dep/amod</a> (322; 5% instances), <a href="">ru-dep/goeswith</a> (318; 5% instances), <a href="">ru-dep/nmod</a> (289; 5% instances), <a href="">ru-dep/cc</a> (247; 4% instances), <a href="">ru-dep/appos</a> (236; 4% instances), <a href="">ru-dep/list</a> (162; 3% instances), <a href="">ru-dep/acl:relcl</a> (56; 1% instances), <a href="">ru-dep/acl</a> (45; 1% instances), <a href="">ru-dep/nsubj</a> (38; 1% instances), <a href="">ru-dep/nummod</a> (33; 1% instances), <a href="">ru-dep/det</a> (30; 1% instances), <a href="">ru-dep/parataxis</a> (27; 0% instances), <a href="">ru-dep/advmod</a> (17; 0% instances), <a href="">ru-dep/discourse</a> (13; 0% instances), <a href="">ru-dep/orphan</a> (8; 0% instances), <a href="">ru-dep/advcl</a> (4; 0% instances), <a href="">ru-dep/cc:preconj</a> (4; 0% instances), <a href="">ru-dep/cop</a> (4; 0% instances), <a href="">ru-dep/iobj</a> (2; 0% instances), <a href="">ru-dep/nummod:gov</a> (2; 0% instances), <a href="">ru-dep/ccomp</a> (1; 0% instances), <a href="">ru-dep/fixed</a> (1; 0% instances), <a href="">ru-dep/obl</a> (1; 0% instances)</p>
+<p>Children of <code class="language-plaintext highlighter-rouge">PROPN</code> nodes are attached using 27 different relations: <a href="">ru-dep/punct</a> (1711; 29% instances), <a href="">ru-dep/case</a> (891; 15% instances), <a href="">ru-dep/flat</a> (864; 15% instances), <a href="">ru-dep/conj</a> (626; 11% instances), <a href="">ru-dep/amod</a> (322; 5% instances), <a href="">ru-dep/goeswith</a> (318; 5% instances), <a href="">ru-dep/nmod</a> (289; 5% instances), <a href="">ru-dep/cc</a> (247; 4% instances), <a href="">ru-dep/appos</a> (236; 4% instances), <a href="">ru-dep/list</a> (162; 3% instances), <a href="">ru-dep/acl:relcl</a> (56; 1% instances), <a href="">ru-dep/acl</a> (45; 1% instances), <a href="">ru-dep/nsubj</a> (38; 1% instances), <a href="">ru-dep/nummod</a> (33; 1% instances), <a href="">ru-dep/det</a> (30; 1% instances), <a href="">ru-dep/parataxis</a> (27; 0% instances), <a href="">ru-dep/advmod</a> (17; 0% instances), <a href="">ru-dep/discourse</a> (13; 0% instances), <a href="">ru-dep/orphan</a> (8; 0% instances), <a href="">ru-dep/advcl</a> (4; 0% instances), <a href="">ru-dep/cc:preconj</a> (4; 0% instances), <a href="">ru-dep/cop</a> (4; 0% instances), <a href="">ru-dep/iobj</a> (2; 0% instances), <a href="">ru-dep/nummod:gov</a> (2; 0% instances), <a href="">ru-dep/ccomp</a> (1; 0% instances), <a href="">ru-dep/fixed</a> (1; 0% instances), <a href="">ru-dep/obl</a> (1; 0% instances)</p>
 
-<p>Children of <code>PROPN</code> nodes belong to 15 different parts of speech: <a href="">PUNCT</a> (1860; 31% instances), <a href="">PROPN</a> (1713; 29% instances), <a href="">ADP</a> (915; 15% instances), <a href="">NOUN</a> (400; 7% instances), <a href="">ADJ</a> (377; 6% instances), <a href="">CCONJ</a> (252; 4% instances), <a href="">ADV</a> (187; 3% instances), <a href="">VERB</a> (118; 2% instances), <a href="">NUM</a> (57; 1% instances), <a href="">DET</a> (36; 1% instances), <a href="">PART</a> (13; 0% instances), <a href="">SYM</a> (13; 0% instances), <a href="">PRON</a> (6; 0% instances), <a href="">AUX</a> (4; 0% instances), <a href="">X</a> (1; 0% instances)</p>
+<p>Children of <code class="language-plaintext highlighter-rouge">PROPN</code> nodes belong to 15 different parts of speech: <a href="">PUNCT</a> (1860; 31% instances), <a href="">PROPN</a> (1713; 29% instances), <a href="">ADP</a> (915; 15% instances), <a href="">NOUN</a> (400; 7% instances), <a href="">ADJ</a> (377; 6% instances), <a href="">CCONJ</a> (252; 4% instances), <a href="">ADV</a> (187; 3% instances), <a href="">VERB</a> (118; 2% instances), <a href="">NUM</a> (57; 1% instances), <a href="">DET</a> (36; 1% instances), <a href="">PART</a> (13; 0% instances), <a href="">SYM</a> (13; 0% instances), <a href="">PRON</a> (6; 0% instances), <a href="">AUX</a> (4; 0% instances), <a href="">X</a> (1; 0% instances)</p>
 
 <hr />
 
-<h2 id="treebank-statistics-udrussian-syntagrus">Treebank Statistics (UD_Russian-SynTagRus)</h2>
+<h2 id="treebank-statistics-ud_russian-syntagrus">Treebank Statistics (UD_Russian-SynTagRus)</h2>
 
-<p>There are 8178 <code>PROPN</code> lemmas (19%), 11321 <code>PROPN</code> types (10%) and 36250 <code>PROPN</code> tokens (4%).
-Out of 18 observed tags, the rank of <code>PROPN</code> is: 3 in number of lemmas, 4 in number of types and 8 in number of tokens.</p>
+<p>There are 8178 <code class="language-plaintext highlighter-rouge">PROPN</code> lemmas (19%), 11321 <code class="language-plaintext highlighter-rouge">PROPN</code> types (10%) and 36250 <code class="language-plaintext highlighter-rouge">PROPN</code> tokens (4%).
+Out of 18 observed tags, the rank of <code class="language-plaintext highlighter-rouge">PROPN</code> is: 3 in number of lemmas, 4 in number of types and 8 in number of tokens.</p>
 
-<p>The 10 most frequent <code>PROPN</code> lemmas: <em>россия, москва, сша, путин, ссср, европа, владимир, земля, сергей, медведев</em></p>
+<p>The 10 most frequent <code class="language-plaintext highlighter-rouge">PROPN</code> lemmas: <em>россия, москва, сша, путин, ссср, европа, владимир, земля, сергей, медведев</em></p>
 
-<p>The 10 most frequent <code>PROPN</code> types:  <em>России, США, СССР, Россия, Путин, Москве, В., Владимир, РФ, Путина</em></p>
+<p>The 10 most frequent <code class="language-plaintext highlighter-rouge">PROPN</code> types:  <em>России, США, СССР, Россия, Путин, Москве, В., Владимир, РФ, Путина</em></p>
 
 <p>The 10 most frequent ambiguous lemmas: <em>россия</em> (<a href="">PROPN</a> 1630, <a href="">NOUN</a> 52), <em>москва</em> (<a href="">PROPN</a> 477, <a href="">NOUN</a> 15), <em>сша</em> (<a href="">PROPN</a> 440, <a href="">NOUN</a> 6), <em>путин</em> (<a href="">PROPN</a> 425, <a href="">NOUN</a> 26), <em>ссср</em> (<a href="">PROPN</a> 272, <a href="">NOUN</a> 3), <em>европа</em> (<a href="">PROPN</a> 253, <a href="">NOUN</a> 6), <em>владимир</em> (<a href="">PROPN</a> 245, <a href="">NOUN</a> 34), <em>земля</em> (<a href="">NOUN</a> 294, <a href="">PROPN</a> 219), <em>сергей</em> (<a href="">PROPN</a> 211, <a href="">NOUN</a> 37), <em>медведев</em> (<a href="">PROPN</a> 204, <a href="">NOUN</a> 8)</p>
 
@@ -316,7 +316,7 @@ Out of 18 observed tags, the rank of <code>PROPN</code> is: 3 in number of lemma
 
 <h2 id="morphology-1">Morphology</h2>
 
-<p>The form / lemma ratio of <code>PROPN</code> is 1.384324 (the average of all parts of speech is 2.644632).</p>
+<p>The form / lemma ratio of <code class="language-plaintext highlighter-rouge">PROPN</code> is 1.384324 (the average of all parts of speech is 2.644632).</p>
 
 <p>The 1st highest number of forms (10) was observed with the lemma “совет”: <em>СОВЕТ, СОВЕТА, Совет, Совета, Советам, Совете, Советов, Советом, Совету, Советы</em>.</p>
 
@@ -324,33 +324,33 @@ Out of 18 observed tags, the rank of <code>PROPN</code> is: 3 in number of lemma
 
 <p>The 3rd highest number of forms (8) was observed with the lemma “аль-каида”: <em>Аль-Каеда, Аль-Каеды, Аль-Каида, Аль-Каиды, Аль-Кайеда, Аль-Кайеде, Аль-Кайеду, Аль-Кайеды</em>.</p>
 
-<p><code>PROPN</code> occurs with 5 features: <a href="">ru-feat/Animacy</a> (34148; 94% instances), <a href="">ru-feat/Number</a> (34144; 94% instances), <a href="">ru-feat/Case</a> (34136; 94% instances), <a href="">ru-feat/Gender</a> (33696; 93% instances), <a href="">ru-feat/Foreign</a> (2024; 6% instances)</p>
+<p><code class="language-plaintext highlighter-rouge">PROPN</code> occurs with 5 features: <a href="">ru-feat/Animacy</a> (34148; 94% instances), <a href="">ru-feat/Number</a> (34144; 94% instances), <a href="">ru-feat/Case</a> (34136; 94% instances), <a href="">ru-feat/Gender</a> (33696; 93% instances), <a href="">ru-feat/Foreign</a> (2024; 6% instances)</p>
 
-<p><code>PROPN</code> occurs with 16 feature-value pairs: <code>Animacy=Anim</code>, <code>Animacy=Inan</code>, <code>Case=Acc</code>, <code>Case=Dat</code>, <code>Case=Gen</code>, <code>Case=Ins</code>, <code>Case=Loc</code>, <code>Case=Nom</code>, <code>Case=Par</code>, <code>Case=Voc</code>, <code>Foreign=Yes</code>, <code>Gender=Fem</code>, <code>Gender=Masc</code>, <code>Gender=Neut</code>, <code>Number=Plur</code>, <code>Number=Sing</code></p>
+<p><code class="language-plaintext highlighter-rouge">PROPN</code> occurs with 16 feature-value pairs: <code class="language-plaintext highlighter-rouge">Animacy=Anim</code>, <code class="language-plaintext highlighter-rouge">Animacy=Inan</code>, <code class="language-plaintext highlighter-rouge">Case=Acc</code>, <code class="language-plaintext highlighter-rouge">Case=Dat</code>, <code class="language-plaintext highlighter-rouge">Case=Gen</code>, <code class="language-plaintext highlighter-rouge">Case=Ins</code>, <code class="language-plaintext highlighter-rouge">Case=Loc</code>, <code class="language-plaintext highlighter-rouge">Case=Nom</code>, <code class="language-plaintext highlighter-rouge">Case=Par</code>, <code class="language-plaintext highlighter-rouge">Case=Voc</code>, <code class="language-plaintext highlighter-rouge">Foreign=Yes</code>, <code class="language-plaintext highlighter-rouge">Gender=Fem</code>, <code class="language-plaintext highlighter-rouge">Gender=Masc</code>, <code class="language-plaintext highlighter-rouge">Gender=Neut</code>, <code class="language-plaintext highlighter-rouge">Number=Plur</code>, <code class="language-plaintext highlighter-rouge">Number=Sing</code></p>
 
-<p><code>PROPN</code> occurs with 82 feature combinations.
-The most frequent feature combination is <code>Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing</code> (7811 tokens).
+<p><code class="language-plaintext highlighter-rouge">PROPN</code> occurs with 82 feature combinations.
+The most frequent feature combination is <code class="language-plaintext highlighter-rouge">Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing</code> (7811 tokens).
 Examples: <em>Путин, Владимир, Сергей, Александр, Медведев, Галилей, Алексей, В., Дмитрий, Монахов</em></p>
 
 <h2 id="relations-1">Relations</h2>
 
-<p><code>PROPN</code> nodes are attached to their parents using 27 different relations: <a href="">ru-dep/nmod</a> (11103; 31% instances), <a href="">ru-dep/appos</a> (5117; 14% instances), <a href="">ru-dep/flat:name</a> (4750; 13% instances), <a href="">ru-dep/nsubj</a> (4404; 12% instances), <a href="">ru-dep/obl</a> (3841; 11% instances), <a href="">ru-dep/conj</a> (2481; 7% instances), <a href="">ru-dep/flat:foreign</a> (1636; 5% instances), <a href="">ru-dep/obj</a> (836; 2% instances), <a href="">ru-dep/parataxis</a> (713; 2% instances), <a href="">ru-dep/root</a> (369; 1% instances), <a href="">ru-dep/obl:agent</a> (243; 1% instances), <a href="">ru-dep/orphan</a> (163; 0% instances), <a href="">ru-dep/advmod</a> (158; 0% instances), <a href="">ru-dep/nsubj:pass</a> (93; 0% instances), <a href="">ru-dep/flat</a> (83; 0% instances), <a href="">ru-dep/compound</a> (71; 0% instances), <a href="">ru-dep/iobj</a> (68; 0% instances), <a href="">ru-dep/advcl</a> (61; 0% instances), <a href="">ru-dep/dep</a> (24; 0% instances), <a href="">ru-dep/acl:relcl</a> (10; 0% instances), <a href="">ru-dep/fixed</a> (7; 0% instances), <a href="">ru-dep/acl</a> (6; 0% instances), <a href="">ru-dep/nummod:entity</a> (4; 0% instances), <a href="">ru-dep/vocative</a> (3; 0% instances), <a href="">ru-dep/amod</a> (2; 0% instances), <a href="">ru-dep/ccomp</a> (2; 0% instances), <a href="">ru-dep/xcomp</a> (2; 0% instances)</p>
+<p><code class="language-plaintext highlighter-rouge">PROPN</code> nodes are attached to their parents using 27 different relations: <a href="">ru-dep/nmod</a> (11103; 31% instances), <a href="">ru-dep/appos</a> (5117; 14% instances), <a href="">ru-dep/flat:name</a> (4750; 13% instances), <a href="">ru-dep/nsubj</a> (4404; 12% instances), <a href="">ru-dep/obl</a> (3841; 11% instances), <a href="">ru-dep/conj</a> (2481; 7% instances), <a href="">ru-dep/flat:foreign</a> (1636; 5% instances), <a href="">ru-dep/obj</a> (836; 2% instances), <a href="">ru-dep/parataxis</a> (713; 2% instances), <a href="">ru-dep/root</a> (369; 1% instances), <a href="">ru-dep/obl:agent</a> (243; 1% instances), <a href="">ru-dep/orphan</a> (163; 0% instances), <a href="">ru-dep/advmod</a> (158; 0% instances), <a href="">ru-dep/nsubj:pass</a> (93; 0% instances), <a href="">ru-dep/flat</a> (83; 0% instances), <a href="">ru-dep/compound</a> (71; 0% instances), <a href="">ru-dep/iobj</a> (68; 0% instances), <a href="">ru-dep/advcl</a> (61; 0% instances), <a href="">ru-dep/dep</a> (24; 0% instances), <a href="">ru-dep/acl:relcl</a> (10; 0% instances), <a href="">ru-dep/fixed</a> (7; 0% instances), <a href="">ru-dep/acl</a> (6; 0% instances), <a href="">ru-dep/nummod:entity</a> (4; 0% instances), <a href="">ru-dep/vocative</a> (3; 0% instances), <a href="">ru-dep/amod</a> (2; 0% instances), <a href="">ru-dep/ccomp</a> (2; 0% instances), <a href="">ru-dep/xcomp</a> (2; 0% instances)</p>
 
-<p>Parents of <code>PROPN</code> nodes belong to 18 different parts of speech: <a href="">NOUN</a> (16140; 45% instances), <a href="">VERB</a> (9244; 26% instances), <a href="">PROPN</a> (9008; 25% instances), <a href="">ADJ</a> (627; 2% instances), <a href="">ROOT</a> (369; 1% instances), <a href="">ADV</a> (261; 1% instances), <a href="">PRON</a> (137; 0% instances), <a href="">PART</a> (93; 0% instances), <a href="">X</a> (87; 0% instances), <a href="">NUM</a> (82; 0% instances), <a href="">DET</a> (70; 0% instances), <a href="">ADP</a> (42; 0% instances), <a href="">PUNCT</a> (39; 0% instances), <a href="">_</a> (31; 0% instances), <a href="">CCONJ</a> (12; 0% instances), <a href="">SCONJ</a> (5; 0% instances), <a href="">AUX</a> (2; 0% instances), <a href="">INTJ</a> (1; 0% instances)</p>
+<p>Parents of <code class="language-plaintext highlighter-rouge">PROPN</code> nodes belong to 18 different parts of speech: <a href="">NOUN</a> (16140; 45% instances), <a href="">VERB</a> (9244; 26% instances), <a href="">PROPN</a> (9008; 25% instances), <a href="">ADJ</a> (627; 2% instances), <a href="">ROOT</a> (369; 1% instances), <a href="">ADV</a> (261; 1% instances), <a href="">PRON</a> (137; 0% instances), <a href="">PART</a> (93; 0% instances), <a href="">X</a> (87; 0% instances), <a href="">NUM</a> (82; 0% instances), <a href="">DET</a> (70; 0% instances), <a href="">ADP</a> (42; 0% instances), <a href="">PUNCT</a> (39; 0% instances), <a href="">_</a> (31; 0% instances), <a href="">CCONJ</a> (12; 0% instances), <a href="">SCONJ</a> (5; 0% instances), <a href="">AUX</a> (2; 0% instances), <a href="">INTJ</a> (1; 0% instances)</p>
 
-<p>8854 (24%) <code>PROPN</code> nodes are leaves.</p>
+<p>8854 (24%) <code class="language-plaintext highlighter-rouge">PROPN</code> nodes are leaves.</p>
 
-<p>16032 (44%) <code>PROPN</code> nodes have one child.</p>
+<p>16032 (44%) <code class="language-plaintext highlighter-rouge">PROPN</code> nodes have one child.</p>
 
-<p>7477 (21%) <code>PROPN</code> nodes have two children.</p>
+<p>7477 (21%) <code class="language-plaintext highlighter-rouge">PROPN</code> nodes have two children.</p>
 
-<p>3887 (11%) <code>PROPN</code> nodes have three or more children.</p>
+<p>3887 (11%) <code class="language-plaintext highlighter-rouge">PROPN</code> nodes have three or more children.</p>
 
-<p>The highest child degree of a <code>PROPN</code> node is 19.</p>
+<p>The highest child degree of a <code class="language-plaintext highlighter-rouge">PROPN</code> node is 19.</p>
 
-<p>Children of <code>PROPN</code> nodes are attached using 34 different relations: <a href="">ru-dep/punct</a> (19115; 43% instances), <a href="">ru-dep/case</a> (6903; 15% instances), <a href="">ru-dep/flat:name</a> (4589; 10% instances), <a href="">ru-dep/conj</a> (2885; 6% instances), <a href="">ru-dep/amod</a> (2471; 6% instances), <a href="">ru-dep/nmod</a> (2447; 5% instances), <a href="">ru-dep/cc</a> (1669; 4% instances), <a href="">ru-dep/appos</a> (851; 2% instances), <a href="">ru-dep/flat:foreign</a> (822; 2% instances), <a href="">ru-dep/advmod</a> (787; 2% instances), <a href="">ru-dep/parataxis</a> (559; 1% instances), <a href="">ru-dep/acl:relcl</a> (374; 1% instances), <a href="">ru-dep/nsubj</a> (364; 1% instances), <a href="">ru-dep/nummod</a> (359; 1% instances), <a href="">ru-dep/cop</a> (194; 0% instances), <a href="">ru-dep/flat</a> (82; 0% instances), <a href="">ru-dep/acl</a> (28; 0% instances), <a href="">ru-dep/advcl</a> (28; 0% instances), <a href="">ru-dep/mark</a> (26; 0% instances), <a href="">ru-dep/discourse</a> (21; 0% instances), <a href="">ru-dep/nummod:gov</a> (21; 0% instances), <a href="">ru-dep/obl</a> (21; 0% instances), <a href="">ru-dep/_</a> (16; 0% instances), <a href="">ru-dep/fixed</a> (14; 0% instances), <a href="">ru-dep/orphan</a> (13; 0% instances), <a href="">ru-dep/nummod:entity</a> (11; 0% instances), <a href="">ru-dep/compound</a> (10; 0% instances), <a href="">ru-dep/iobj</a> (5; 0% instances), <a href="">ru-dep/obl:agent</a> (3; 0% instances), <a href="">ru-dep/aux</a> (2; 0% instances), <a href="">ru-dep/dep</a> (1; 0% instances), <a href="">ru-dep/obj</a> (1; 0% instances), <a href="">ru-dep/root</a> (1; 0% instances), <a href="">ru-dep/xcomp</a> (1; 0% instances)</p>
+<p>Children of <code class="language-plaintext highlighter-rouge">PROPN</code> nodes are attached using 34 different relations: <a href="">ru-dep/punct</a> (19115; 43% instances), <a href="">ru-dep/case</a> (6903; 15% instances), <a href="">ru-dep/flat:name</a> (4589; 10% instances), <a href="">ru-dep/conj</a> (2885; 6% instances), <a href="">ru-dep/amod</a> (2471; 6% instances), <a href="">ru-dep/nmod</a> (2447; 5% instances), <a href="">ru-dep/cc</a> (1669; 4% instances), <a href="">ru-dep/appos</a> (851; 2% instances), <a href="">ru-dep/flat:foreign</a> (822; 2% instances), <a href="">ru-dep/advmod</a> (787; 2% instances), <a href="">ru-dep/parataxis</a> (559; 1% instances), <a href="">ru-dep/acl:relcl</a> (374; 1% instances), <a href="">ru-dep/nsubj</a> (364; 1% instances), <a href="">ru-dep/nummod</a> (359; 1% instances), <a href="">ru-dep/cop</a> (194; 0% instances), <a href="">ru-dep/flat</a> (82; 0% instances), <a href="">ru-dep/acl</a> (28; 0% instances), <a href="">ru-dep/advcl</a> (28; 0% instances), <a href="">ru-dep/mark</a> (26; 0% instances), <a href="">ru-dep/discourse</a> (21; 0% instances), <a href="">ru-dep/nummod:gov</a> (21; 0% instances), <a href="">ru-dep/obl</a> (21; 0% instances), <a href="">ru-dep/_</a> (16; 0% instances), <a href="">ru-dep/fixed</a> (14; 0% instances), <a href="">ru-dep/orphan</a> (13; 0% instances), <a href="">ru-dep/nummod:entity</a> (11; 0% instances), <a href="">ru-dep/compound</a> (10; 0% instances), <a href="">ru-dep/iobj</a> (5; 0% instances), <a href="">ru-dep/obl:agent</a> (3; 0% instances), <a href="">ru-dep/aux</a> (2; 0% instances), <a href="">ru-dep/dep</a> (1; 0% instances), <a href="">ru-dep/obj</a> (1; 0% instances), <a href="">ru-dep/root</a> (1; 0% instances), <a href="">ru-dep/xcomp</a> (1; 0% instances)</p>
 
-<p>Children of <code>PROPN</code> nodes belong to 18 different parts of speech: <a href="">PUNCT</a> (19115; 43% instances), <a href="">PROPN</a> (9021; 20% instances), <a href="">ADP</a> (6937; 16% instances), <a href="">NOUN</a> (2935; 7% instances), <a href="">ADJ</a> (2027; 5% instances), <a href="">CCONJ</a> (1467; 3% instances), <a href="">VERB</a> (1002; 2% instances), <a href="">PART</a> (543; 1% instances), <a href="">NUM</a> (411; 1% instances), <a href="">ADV</a> (344; 1% instances), <a href="">DET</a> (261; 1% instances), <a href="">SCONJ</a> (233; 1% instances), <a href="">PRON</a> (168; 0% instances), <a href="">X</a> (133; 0% instances), <a href="">AUX</a> (73; 0% instances), <a href="">_</a> (16; 0% instances), <a href="">SYM</a> (6; 0% instances), <a href="">INTJ</a> (2; 0% instances)</p>
+<p>Children of <code class="language-plaintext highlighter-rouge">PROPN</code> nodes belong to 18 different parts of speech: <a href="">PUNCT</a> (19115; 43% instances), <a href="">PROPN</a> (9021; 20% instances), <a href="">ADP</a> (6937; 16% instances), <a href="">NOUN</a> (2935; 7% instances), <a href="">ADJ</a> (2027; 5% instances), <a href="">CCONJ</a> (1467; 3% instances), <a href="">VERB</a> (1002; 2% instances), <a href="">PART</a> (543; 1% instances), <a href="">NUM</a> (411; 1% instances), <a href="">ADV</a> (344; 1% instances), <a href="">DET</a> (261; 1% instances), <a href="">SCONJ</a> (233; 1% instances), <a href="">PRON</a> (168; 0% instances), <a href="">X</a> (133; 0% instances), <a href="">AUX</a> (73; 0% instances), <a href="">_</a> (16; 0% instances), <a href="">SYM</a> (6; 0% instances), <a href="">INTJ</a> (2; 0% instances)</p>
 
 
 

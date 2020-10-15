@@ -252,7 +252,7 @@ in two places.</p>
 
 <p>An adjectival modifier of a noun is any adjectival phrase that serves to modify the meaning of the noun.</p>
 
-<p>Exception: if the modifying adjectival word is pronominal (i.e. tagged <a href="">uk-pos/DET</a>), the relation is <a href="">det</a> instead of <code>amod</code>.</p>
+<p>Exception: if the modifying adjectival word is pronominal (i.e. tagged <a href="">uk-pos/DET</a>), the relation is <a href="">det</a> instead of <code class="language-plaintext highlighter-rouge">amod</code>.</p>
 
 <pre><code class="language-sdparse">Ніна їсть зелене яблуко . \n Nina is-eating (a) green apple .
 amod(яблуко, зелене)
@@ -290,7 +290,7 @@ nsubj(first, racer)
 <p><a id="al-uk-dep/nsubj" class="al-dest"></a></p>
 <h2><code>nsubj</code>: nominal subject</h2>
 
-<p>A nominal subject is a nominal phrase which is the syntactic subject of a clause; in Ukrainian, the phrase is in the nominative <a href="">uk-feat/Case</a>. (See <a href="">csubj</a> for when the subject is clausal. See <a href="">nsubj:pass</a> and <a href="">csubj:pass</a> for when the subject is not the proto-agent argument due to valence changing operations.) The governor of the <code>nsubj</code> relation might not always be a verb: when the verb is a copular verb, the root of the clause is the complement of the copular verb, which can be an adjective or noun. Copular verbs in the present tense are in most cases omitted in Ukrainian.</p>
+<p>A nominal subject is a nominal phrase which is the syntactic subject of a clause; in Ukrainian, the phrase is in the nominative <a href="">uk-feat/Case</a>. (See <a href="">csubj</a> for when the subject is clausal. See <a href="">nsubj:pass</a> and <a href="">csubj:pass</a> for when the subject is not the proto-agent argument due to valence changing operations.) The governor of the <code class="language-plaintext highlighter-rouge">nsubj</code> relation might not always be a verb: when the verb is a copular verb, the root of the clause is the complement of the copular verb, which can be an adjective or noun. Copular verbs in the present tense are in most cases omitted in Ukrainian.</p>
 
 <pre><code class="language-sdparse">Заповіт написав Тарас Шевченко . \n The Will was written by Taras Shevchenko .
 nsubj(написав, Шевченко)
@@ -307,8 +307,8 @@ nsubj(red, Car)
 <p><a id="al-uk-dep/root" class="al-dest"></a></p>
 <h2><code>root</code>: root</h2>
 
-<p>The <code>root</code> grammatical relation points to the root of the sentence. A
-fake node <code>ROOT</code> is used as the governor. The <code>ROOT</code> node is indexed
+<p>The <code class="language-plaintext highlighter-rouge">root</code> grammatical relation points to the root of the sentence. A
+fake node <code class="language-plaintext highlighter-rouge">ROOT</code> is used as the governor. The <code class="language-plaintext highlighter-rouge">ROOT</code> node is indexed
 with 0, since the indexing of real words in the sentence starts at 1.</p>
 
 <pre><code class="language-sdparse">ROOT Макаревич любить макарони . \n ROOT Makarevych loves pasta .
@@ -316,7 +316,7 @@ root(ROOT-1, любить)
 root(ROOT-7, loves)
 </code></pre>
 
-<p>There is just one node with the <code>root</code> dependency relation in every
+<p>There is just one node with the <code class="language-plaintext highlighter-rouge">root</code> dependency relation in every
 tree. If the main predicate is not present (due to
 <a href="http://universaldependencies.org/uk/overview/specific-syntax.html#ellipsis">ellipsis</a>)
 and there are
@@ -343,7 +343,7 @@ punct(And, ?-10)
 <p><a id="al-uk-dep/vocative" class="al-dest"></a></p>
 <h2><code>vocative</code>: vocative</h2>
 
-<p>The <code>vocative</code> relation is used to mark dialogue participant addressed in text.
+<p>The <code class="language-plaintext highlighter-rouge">vocative</code> relation is used to mark dialogue participant addressed in text.
 The relation links the addressee’s name to its host sentence.
 In Ukrainian, the addressee’s name must also appear in the vocative <a href="">uk-feat/Case</a> form.</p>
 

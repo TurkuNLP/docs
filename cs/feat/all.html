@@ -160,7 +160,7 @@ not covered by the POS tags.</p>
 <p>Boolean feature. Is this an abbreviation? Note that the abbreviated
 word typically belongs to a part of speech other than <a href="">cs-pos/X</a>.</p>
 
-<h3 id="a-nameyesyesa-it-is-abbreviation"><a name="Yes"><code>Yes</code></a>: it is abbreviation</h3>
+<h3 id="yes-it-is-abbreviation"><a name="Yes"><code class="language-plaintext highlighter-rouge">Yes</code></a>: it is abbreviation</h3>
 
 <h4 id="examples">Examples</h4>
 
@@ -197,7 +197,7 @@ word typically belongs to a part of speech other than <a href="">cs-pos/X</a>.</
 <p>Czech has neither postpositions nor circumpositions but there are several forms of <a href="cs-pos/ADP">prepositions</a>
 that this feature distinguishes.</p>
 
-<h3 id="a-nameprepprepa-normal-preposition"><a name="Prep"><code>Prep</code></a>: (normal) preposition</h3>
+<h3 id="prep-normal-preposition"><a name="Prep"><code class="language-plaintext highlighter-rouge">Prep</code></a>: (normal) preposition</h3>
 
 <h4 id="examples">Examples</h4>
 
@@ -205,7 +205,7 @@ that this feature distinguishes.</p>
   <li><em><b>v</b></em> “in”, <em><b>na</b></em> “on”, <em><b>o</b></em> “about”, <em><b>z</b></em> “of”, <em><b>s</b></em> “with”, <em><b>do</b></em> “into”, <em><b>k</b></em> “to”, <em><b>pro</b></em> “for”, <em><b>za</b></em> “behind”, <em><b>po</b></em> “after”</li>
 </ul>
 
-<h3 id="a-namevocvoca-vocalized-preposition"><a name="Voc"><code>Voc</code></a>: vocalized preposition</h3>
+<h3 id="voc-vocalized-preposition"><a name="Voc"><code class="language-plaintext highlighter-rouge">Voc</code></a>: vocalized preposition</h3>
 
 <p>Some Czech prepositions are non-syllabic and their form
 has to be changed in some contexts to facilitate pronunciation.
@@ -221,10 +221,10 @@ the second line shows corresponding base forms.</p>
   <li><em>v, s, z, k, od, bez, k, skrz, před, nad</em></li>
 </ul>
 
-<h3 id="a-namecomprepcomprepa-dependent-part-of-compound-preposition"><a name="Comprep"><code>Comprep</code></a>: dependent part of compound preposition</h3>
+<h3 id="comprep-dependent-part-of-compound-preposition"><a name="Comprep"><code class="language-plaintext highlighter-rouge">Comprep</code></a>: dependent part of compound preposition</h3>
 
 <p>This value marks dependent first part of a compound preposition. This word cannot occur alone.
-Not all compound prepositions contain words marked <code>Comprep</code>.
+Not all compound prepositions contain words marked <code class="language-plaintext highlighter-rouge">Comprep</code>.
 Many compound prepositions consist of two normal prepositions and a noun
 (an example is <em>na rozdíl od</em> “in contrast to”).
 Sometimes there are just two words, the second one is normal preposition and the first one
@@ -260,7 +260,7 @@ masculine gender, which is why the PDT tagset does not have
 animacy as separate feature and instead defines four genders:
 masculine animate, masculine inanimate, feminine and neuter.</p>
 
-<h3 id="a-nameanimanima-animate"><a name="Anim"><code>Anim</code></a>: animate</h3>
+<h3 id="anim-animate"><a name="Anim"><code class="language-plaintext highlighter-rouge">Anim</code></a>: animate</h3>
 
 <p>Human beings, animals, fictional characters, names of professions
 etc. are all animate. Even nouns that are normally inanimate can be
@@ -274,7 +274,7 @@ the cars may become and be inflected as animates.</p>
   <li><em>člověk </em> “man”, <em>ministr </em> “minister”, <em>prezident </em> “president”, <em>předseda </em> “chairman”, <em>ředitel </em> “director”</li>
 </ul>
 
-<h3 id="a-nameinaninana-inanimate"><a name="Inan"><code>Inan</code></a>: inanimate</h3>
+<h3 id="inan-inanimate"><a name="Inan"><code class="language-plaintext highlighter-rouge">Inan</code></a>: inanimate</h3>
 
 <p>Nouns that are not animate are inanimate.</p>
 
@@ -305,7 +305,7 @@ While many imperfective verbs have morphologically related perfective counterpar
 it is not a regular system
 and the two verbs are represented by different lemmas.</p>
 
-<h3 id="a-nameimpimpa-imperfect-aspect"><a name="Imp"><code>Imp</code></a>: imperfect aspect</h3>
+<h3 id="imp-imperfect-aspect"><a name="Imp"><code class="language-plaintext highlighter-rouge">Imp</code></a>: imperfect aspect</h3>
 
 <p>The action took / takes / will take some time span and there is no
 information whether and when it was / will be completed.</p>
@@ -317,7 +317,7 @@ information whether and when it was / will be completed.</p>
 baking a bread”</li>
 </ul>
 
-<h3 id="a-nameperfperfa-perfect-aspect"><a name="Perf"><code>Perf</code></a>: perfect aspect</h3>
+<h3 id="perf-perfect-aspect"><a name="Perf"><code class="language-plaintext highlighter-rouge">Perf</code></a>: perfect aspect</h3>
 
 <p>The action has been / will have been completed. Since there is
 emphasis on one point on the time scale (the point of completion),
@@ -337,8 +337,8 @@ baked a bread”</li>
 <h3 id="prague-dependency-treebank">Prague Dependency Treebank</h3>
 
 <p>The PDT tagset does not encode aspect. However, verb lemmas in PDT contain their own features
-that encode the aspect: <code>_:T</code> = <code>Imp</code> and <code>_:W</code> = <code>Perf</code>. These lemma features were removed
-during conversion, and the <code>Aspect</code> feature was introduced instead.</p>
+that encode the aspect: <code class="language-plaintext highlighter-rouge">_:T</code> = <code class="language-plaintext highlighter-rouge">Imp</code> and <code class="language-plaintext highlighter-rouge">_:W</code> = <code class="language-plaintext highlighter-rouge">Perf</code>. These lemma features were removed
+during conversion, and the <code class="language-plaintext highlighter-rouge">Aspect</code> feature was introduced instead.</p>
 
 <p>Unfortunately the morphological lexicon underlying the PDT annotation is incomplete and numerous
 verbs lack the aspect information. Without this imperfection there would be only a tiny group
@@ -375,7 +375,7 @@ while in fixed-word-order languages these functions would be
 distinguished merely by the positions of the nouns in the sentence.</p>
 
 <p>Czech morphology distinguishes seven cases:
-<code>Nom</code>, <code>Gen</code>, <code>Dat</code>, <code>Acc</code>, <code>Voc</code>, <code>Loc</code> and <code>Ins</code>
+<code class="language-plaintext highlighter-rouge">Nom</code>, <code class="language-plaintext highlighter-rouge">Gen</code>, <code class="language-plaintext highlighter-rouge">Dat</code>, <code class="language-plaintext highlighter-rouge">Acc</code>, <code class="language-plaintext highlighter-rouge">Voc</code>, <code class="language-plaintext highlighter-rouge">Loc</code> and <code class="language-plaintext highlighter-rouge">Ins</code>
 (this ordering is fixed in the grammar and the cases are also referred to by numbers 1–7).</p>
 
 <h4 id="examples">Examples</h4>
@@ -395,12 +395,12 @@ adpositions and other words will determine that the noun phrase must
 be in a particular grammatical case to fill a particular valency slot
 (semantic role).</p>
 
-<h3 id="a-namenomnoma-nominative"><a name="Nom"><code>Nom</code></a>: nominative</h3>
+<h3 id="nom-nominative"><a name="Nom"><code class="language-plaintext highlighter-rouge">Nom</code></a>: nominative</h3>
 
 <p>The base form of the noun, also used as citation form (lemma).
 This is the word form used for subjects of clauses.</p>
 
-<h3 id="a-namegengena-genitive"><a name="Gen"><code>Gen</code></a>: genitive</h3>
+<h3 id="gen-genitive"><a name="Gen"><code class="language-plaintext highlighter-rouge">Gen</code></a>: genitive</h3>
 
 <p>Prototypical meaning of genitive is that the noun phrase somehow
 belongs to its governor; it would often be translated by the English
@@ -431,7 +431,7 @@ preposition <em>bez </em> always requires its argument to be in genitive.</p>
 capital <b>of the Czech Republic</b>.”</li>
 </ul>
 
-<h3 id="a-namedatdata-dative"><a name="Dat"><code>Dat</code></a>: dative</h3>
+<h3 id="dat-dative"><a name="Dat"><code class="language-plaintext highlighter-rouge">Dat</code></a>: dative</h3>
 
 <p>This is the word form often used for indirect objects of verbs.</p>
 
@@ -443,12 +443,12 @@ capital <b>of the Czech Republic</b>.”</li>
 <em>dárek </em> “present” is accusative.)</li>
 </ul>
 
-<h3 id="a-nameaccacca-accusative"><a name="Acc"><code>Acc</code></a>: accusative</h3>
+<h3 id="acc-accusative"><a name="Acc"><code class="language-plaintext highlighter-rouge">Acc</code></a>: accusative</h3>
 
 <p>Perhaps the second most widely spread morphological case.
 This is the word form most frequently used for direct objects of verbs.</p>
 
-<h3 id="a-namevocvoca-vocative"><a name="Voc"><code>Voc</code></a>: vocative</h3>
+<h3 id="voc-vocative"><a name="Voc"><code class="language-plaintext highlighter-rouge">Voc</code></a>: vocative</h3>
 
 <p>The vocative case is a special form of noun used to address
 someone. Thus it predominantly appears with animate nouns (see the
@@ -462,7 +462,7 @@ restriction and inanimate things can be addressed as well.</p>
 <b>Filip</b>?”</li>
 </ul>
 
-<h3 id="a-namelocloca-locative"><a name="Loc"><code>Loc</code></a>: locative</h3>
+<h3 id="loc-locative"><a name="Loc"><code class="language-plaintext highlighter-rouge">Loc</code></a>: locative</h3>
 
 <p>The locative case often expresses location in space or time, which
 gave it its name. As elsewhere, non-locational meanings also exist and
@@ -482,7 +482,7 @@ I was in <b>Sweden</b>.”</li>
 <b>morphology</b>.” (Non-locational non-temporal example)</li>
 </ul>
 
-<h3 id="a-nameinsinsa-instrumental"><a name="Ins"><code>Ins</code></a>: instrumental</h3>
+<h3 id="ins-instrumental"><a name="Ins"><code class="language-plaintext highlighter-rouge">Ins</code></a>: instrumental</h3>
 
 <p>The role from which the name of the instrumental case is derived is
 that the noun is used as instrument to do something (as in <em>psát
@@ -514,14 +514,14 @@ approved <b>by the government</b>.” (Passive example)</li>
 </table>
 
 <p>This feature further subclassifies the parts of speech <a href="">cs-pos/CCONJ</a> and <a href="">cs-pos/SCONJ</a>;
-in Czech, it is used only with <code>CCONJ</code>. The main distinction between coordinating and
+in Czech, it is used only with <code class="language-plaintext highlighter-rouge">CCONJ</code>. The main distinction between coordinating and
 subordinating conjunctions is done already at the part-of-speech level.</p>
 
-<h3 id="oper-mathematical-operator"><code>Oper</code>: mathematical operator</h3>
+<h3 id="oper-mathematical-operator"><code class="language-plaintext highlighter-rouge">Oper</code>: mathematical operator</h3>
 
 <p>Note that operators can be expressed either using <a href="cs-pos/SYM">symbols</a> or using words.
 The words are considered special kind of coordinating conjunctions and they are marked using
-<code>ConjType=Oper</code>.</p>
+<code class="language-plaintext highlighter-rouge">ConjType=Oper</code>.</p>
 
 <h4 id="examples">Examples</h4>
 
@@ -546,7 +546,7 @@ The words are considered special kind of coordinating conjunctions and they are 
 <p>Degree of comparison is inflectional feature of some
 <a href="cs-pos/ADJ">adjectives</a> and <a href="cs-pos/ADV">adverbs</a>.</p>
 
-<h3 id="a-nameposposa-positive-first-degree"><a name="Pos"><code>Pos</code></a>: positive, first degree</h3>
+<h3 id="pos-positive-first-degree"><a name="Pos"><code class="language-plaintext highlighter-rouge">Pos</code></a>: positive, first degree</h3>
 
 <p>This is the base form that merely states a quality of something,
 without comparing it to qualities of others. Note that although this
@@ -559,7 +559,7 @@ compared, too.</p>
   <li><em><b>mladý</b> muž </em> “<b>young</b> man”</li>
 </ul>
 
-<h3 id="a-namecmpcmpa-comparative-second-degree"><a name="Cmp"><code>Cmp</code></a>: comparative, second degree</h3>
+<h3 id="cmp-comparative-second-degree"><a name="Cmp"><code class="language-plaintext highlighter-rouge">Cmp</code></a>: comparative, second degree</h3>
 
 <p>The quality of one object is compared to the same quality of another
 object.</p>
@@ -570,7 +570,7 @@ object.</p>
   <li><em>ten muž je <b>mladší</b> než já </em> “the man is <b>younger</b> than me”</li>
 </ul>
 
-<h3 id="a-namesupsupa-superlative-third-degree"><a name="Sup"><code>Sup</code></a>: superlative, third degree</h3>
+<h3 id="sup-superlative-third-degree"><a name="Sup"><code class="language-plaintext highlighter-rouge">Sup</code></a>: superlative, third degree</h3>
 
 <p>The quality of one object is compared to the same quality of all other
 objects within a set.</p>
@@ -601,7 +601,7 @@ text, e.g. inside direct speech, titles of books etc.</p>
 of foreign words. Thus this feature may occur with any POS tag. If the original part of speech is
 not known, the feature will accompany the <a href="">cs-pos/X</a> tag.</p>
 
-<h3 id="a-nameyesyesa-it-is-foreign"><a name="Yes"><code>Yes</code></a>: it is foreign</h3>
+<h3 id="yes-it-is-foreign"><a name="Yes"><code class="language-plaintext highlighter-rouge">Yes</code></a>: it is foreign</h3>
 
 <h4 id="examples">Examples</h4>
 
@@ -639,7 +639,7 @@ nouns. There are three values of gender: masculine, feminine, and neuter.</p>
 
 <p>See also the related feature of <a href="">Animacy</a>.</p>
 
-<h3 id="a-namemascmasca-masculine-gender"><a name="Masc"><code>Masc</code></a>: masculine gender</h3>
+<h3 id="masc-masculine-gender"><a name="Masc"><code class="language-plaintext highlighter-rouge">Masc</code></a>: masculine gender</h3>
 
 <p>Nouns denoting male persons are masculine. Other nouns may be also
 grammatically masculine, without any relation to sex.</p>
@@ -655,7 +655,7 @@ grammatically masculine, without any relation to sex.</p>
   <li><em><b>soudce</b> </em> “judge”</li>
 </ul>
 
-<h3 id="a-namefemfema-feminine-gender"><a name="Fem"><code>Fem</code></a>: feminine gender</h3>
+<h3 id="fem-feminine-gender"><a name="Fem"><code class="language-plaintext highlighter-rouge">Fem</code></a>: feminine gender</h3>
 
 <p>Nouns denoting female persons are feminine. Other nouns may be also
 grammatically feminine, without any relation to sex.</p>
@@ -669,7 +669,7 @@ grammatically feminine, without any relation to sex.</p>
   <li><em><b>kost</b> </em> “bone”</li>
 </ul>
 
-<h3 id="a-nameneutneuta-neuter-gender"><a name="Neut"><code>Neut</code></a>: neuter gender</h3>
+<h3 id="neut-neuter-gender"><a name="Neut"><code class="language-plaintext highlighter-rouge">Neut</code></a>: neuter gender</h3>
 
 <p>This third gender is for nouns that are neither
 masculine nor feminine (grammatically).
@@ -701,7 +701,7 @@ are usually neuter.</p>
 
 <p>Possessive adjectives and pronouns may have two different genders: that of the
 possessed object (gender agreement with modified noun) and that of
-the possessor (lexical feature, inherent gender). The <code>Gender[psor]</code>
+the possessor (lexical feature, inherent gender). The <code class="language-plaintext highlighter-rouge">Gender[psor]</code>
 feature captures the possessor’s gender.</p>
 
 <p>In the Czech examples below, the masculine gender implies using
@@ -709,24 +709,24 @@ one of the suffixes <em>-ův, -ova, -ovo,</em>
 and the feminine gender implies using
 one of <em>-in, -ina, -ino.</em></p>
 
-<h3 id="a-namemascmasca-masculine-possessor"><a name="Masc"><code>Masc</code></a>: masculine possessor</h3>
+<h3 id="masc-masculine-possessor"><a name="Masc"><code class="language-plaintext highlighter-rouge">Masc</code></a>: masculine possessor</h3>
 
 <h4 id="examples">Examples</h4>
 
 <ul>
-  <li><em><b>otcův syn</b></em> “father’s son” <code>Gender[psor]=Masc|Gender=Masc</code></li>
-  <li><em><b>otcova dcera</b></em> “father’s daughter” <code>Gender[psor]=Masc|Gender=Fem</code></li>
-  <li><em><b>otcovo dítě</b></em> “father’s child” <code>Gender[psor]=Masc|Gender=Neut</code></li>
+  <li><em><b>otcův syn</b></em> “father’s son” <code class="language-plaintext highlighter-rouge">Gender[psor]=Masc|Gender=Masc</code></li>
+  <li><em><b>otcova dcera</b></em> “father’s daughter” <code class="language-plaintext highlighter-rouge">Gender[psor]=Masc|Gender=Fem</code></li>
+  <li><em><b>otcovo dítě</b></em> “father’s child” <code class="language-plaintext highlighter-rouge">Gender[psor]=Masc|Gender=Neut</code></li>
 </ul>
 
-<h3 id="a-namefemfema-feminine-possessor"><a name="Fem"><code>Fem</code></a>: feminine possessor</h3>
+<h3 id="fem-feminine-possessor"><a name="Fem"><code class="language-plaintext highlighter-rouge">Fem</code></a>: feminine possessor</h3>
 
 <h4 id="examples-1">Examples</h4>
 
 <ul>
-  <li><em><b>matčin syn</b></em> “mother’s son” <code>Gender[psor]=Fem|Gender=Masc</code></li>
-  <li><em><b>matčina dcera</b></em> “mother’s daughter” <code>Gender[psor]=Fem|Gender=Fem</code></li>
-  <li><em><b>matčino dítě</b></em> “mother’s child” <code>Gender[psor]=Fem|Gender=Neut</code></li>
+  <li><em><b>matčin syn</b></em> “mother’s son” <code class="language-plaintext highlighter-rouge">Gender[psor]=Fem|Gender=Masc</code></li>
+  <li><em><b>matčina dcera</b></em> “mother’s daughter” <code class="language-plaintext highlighter-rouge">Gender[psor]=Fem|Gender=Fem</code></li>
+  <li><em><b>matčino dítě</b></em> “mother’s child” <code class="language-plaintext highlighter-rouge">Gender[psor]=Fem|Gender=Neut</code></li>
 </ul>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-feat/Gender-psor.md" target="#">edit Gender[psor]</a></p>
@@ -748,7 +748,7 @@ tokenization. The last part, <em>slovenský, </em> is an independent adjective 
 paradigm. However, the first part, <em>česko, </em> is a form that does not occur elsewhere than in
 compounds (the independent form would be <em>český</em>).</p>
 
-<h3 id="a-nameyesyesa-it-is-part-of-hyphenated-compound"><a name="Yes"><code>Yes</code></a>: it is part of hyphenated compound</h3>
+<h3 id="yes-it-is-part-of-hyphenated-compound"><a name="Yes"><code class="language-plaintext highlighter-rouge">Yes</code></a>: it is part of hyphenated compound</h3>
 
 <h4 id="examples">Examples</h4>
 
@@ -773,7 +773,7 @@ compounds (the independent form would be <em>český</em>).</p>
 <p>Mood is a feature that expresses modality and subclassifies finite
 verb forms.</p>
 
-<h3 id="a-nameindinda-indicative"><a name="Ind"><code>Ind</code></a>: indicative</h3>
+<h3 id="ind-indicative"><a name="Ind"><code class="language-plaintext highlighter-rouge">Ind</code></a>: indicative</h3>
 
 <p>The indicative can be considered the default mood. A verb in
 indicative merely states that something happens, has happened or will
@@ -785,7 +785,7 @@ happen, without adding any attitude of the speaker.</p>
   <li><em><b>Studuješ</b> na univerzitě. </em> “<b>You study</b> at the university.”</li>
 </ul>
 
-<h3 id="a-nameimpimpa-imperative"><a name="Imp"><code>Imp</code></a>: imperative</h3>
+<h3 id="imp-imperative"><a name="Imp"><code class="language-plaintext highlighter-rouge">Imp</code></a>: imperative</h3>
 
 <p>The speaker uses imperative to order or ask the addressee to do the
 action of the verb.</p>
@@ -799,7 +799,7 @@ first person plural and second person plural.</p>
   <li><em><b>Studuj</b> na univerzitě! </em> “<b>Study</b> at the university!”</li>
 </ul>
 
-<h3 id="a-namecndcnda-conditional"><a name="Cnd"><code>Cnd</code></a>: conditional</h3>
+<h3 id="cnd-conditional"><a name="Cnd"><code class="language-plaintext highlighter-rouge">Cnd</code></a>: conditional</h3>
 
 <p>The conditional mood is used to express actions that would have taken
 place under some circumstances but they actually did not / do not
@@ -843,7 +843,7 @@ university.”</li>
 <p>Classification of named entities (token-based, no nesting of entities etc.)
 The feature applies mainly to the <a href="">cs-pos/PROPN</a> tag;
 in multi-word foreign names, <a href="cs-pos/ADJ">adjectives</a> may also have this feature
-(they preserve the <code>ADJ</code> tag but at the same time they would not exist in Czech
+(they preserve the <code class="language-plaintext highlighter-rouge">ADJ</code> tag but at the same time they would not exist in Czech
 otherwise than in the named entity).</p>
 
 <h3 id="conversion-from-the-prague-dependency-treebank">Conversion from the Prague Dependency Treebank</h3>
@@ -851,7 +851,7 @@ otherwise than in the named entity).</p>
 <p>Lemmas in PDT contain features
 that also encode types of named entities. When converting the PDT annotation
 to UD, these lemma features are removed and the feature
-<code>NameType</code> is added to the universal features to preserve the type.</p>
+<code class="language-plaintext highlighter-rouge">NameType</code> is added to the universal features to preserve the type.</p>
 
 <p>The following table lists the name types together with the most frequent examples.
 See <a href="http://ufal.mff.cuni.cz/techrep/tr27.pdf#page=8">http://ufal.mff.cuni.cz/techrep/tr27.pdf</a>,
@@ -867,7 +867,7 @@ page 8, section 2.1 (Lemma structure) for more details.</p>
 <tr><td><tt>_;m</tt></td><td>other proper name: names of mines, stadiums, guerilla bases etc.</td><td><em>US, PVP, Prix, Rapaport, Tour</em></td><td>“US, PVP, Prix, Rapaport, Tour”</td></tr>
 </table>
 
-<h3 id="a-namegeogeoa-geographical-name"><a name="Geo"><code>Geo</code></a>: geographical name</h3>
+<h3 id="geo-geographical-name"><a name="Geo"><code class="language-plaintext highlighter-rouge">Geo</code></a>: geographical name</h3>
 
 <p>Names of cities, countries, rivers, mountains etc.</p>
 
@@ -877,11 +877,11 @@ page 8, section 2.1 (Lemma structure) for more details.</p>
   <li><em><b>Praha</b> </em> “Prague”, <em><b>Kostelec</b> nad Černými lesy, <b>Německo</b> </em> “Germany”</li>
 </ul>
 
-<h3 id="a-nameprsprsa-name-of-person"><a name="Prs"><code>Prs</code></a>: name of person</h3>
+<h3 id="prs-name-of-person"><a name="Prs"><code class="language-plaintext highlighter-rouge">Prs</code></a>: name of person</h3>
 
 <p>This value is used if it is not known whether it is a given or a family name, but it is known that it is a personal name.</p>
 
-<h3 id="a-namegivgiva-given-name-of-person"><a name="Giv"><code>Giv</code></a>: given name of person</h3>
+<h3 id="giv-given-name-of-person"><a name="Giv"><code class="language-plaintext highlighter-rouge">Giv</code></a>: given name of person</h3>
 
 <p>Given name (not family name). This is usually the first name in European and American names. In Chinese names, the last two syllables (of three) are usually the given name.</p>
 
@@ -891,7 +891,7 @@ page 8, section 2.1 (Lemma structure) for more details.</p>
   <li><em><b>Jan</b>, <b>Jiří</b>, <b>Václav</b></em></li>
 </ul>
 
-<h3 id="a-namesursura-surname--family-name-of-person"><a name="Sur"><code>Sur</code></a>: surname / family name of person</h3>
+<h3 id="sur-surname--family-name-of-person"><a name="Sur"><code class="language-plaintext highlighter-rouge">Sur</code></a>: surname / family name of person</h3>
 
 <p>Family name (surname). This is usually the last name in European and American names. In Chinese names, the first syllable (of three) is usually the surname.</p>
 
@@ -901,7 +901,7 @@ page 8, section 2.1 (Lemma structure) for more details.</p>
   <li><em><b>Klaus</b>, <b>Havel</b>, <b>Němec</b></em></li>
 </ul>
 
-<h3 id="a-namenatnata-nationality"><a name="Nat"><code>Nat</code></a>: nationality</h3>
+<h3 id="nat-nationality"><a name="Nat"><code class="language-plaintext highlighter-rouge">Nat</code></a>: nationality</h3>
 
 <p>Name denoting a member of a particular nation, or inhabitant of a particular territory.
 This does not include derived adjectives,
@@ -915,11 +915,11 @@ but <em>český </em> “Czech” and <em>čeština </em> “Czech [language]�
   <li><em><b>Čech</b> </em> “Czech”, <em><b>Němec</b> </em> “German”, <em><b>Pražan</b> </em> “Praguer”</li>
 </ul>
 
-<h3 id="a-namecomcoma-company-organization"><a name="Com"><code>Com</code></a>: company, organization</h3>
+<h3 id="com-company-organization"><a name="Com"><code class="language-plaintext highlighter-rouge">Com</code></a>: company, organization</h3>
 
-<h3 id="a-nameproproa-product"><a name="Pro"><code>Pro</code></a>: product</h3>
+<h3 id="pro-product"><a name="Pro"><code class="language-plaintext highlighter-rouge">Pro</code></a>: product</h3>
 
-<h3 id="a-nameothotha-other"><a name="Oth"><code>Oth</code></a>: other</h3>
+<h3 id="oth-other"><a name="Oth"><code class="language-plaintext highlighter-rouge">Oth</code></a>: other</h3>
 
 <p>Names of stadiums, guerilla bases, events etc.</p>
 
@@ -940,7 +940,7 @@ but <em>český </em> “Czech” and <em>čeština </em> “Czech [language]�
 <p>Feature of cardinal and ordinal numbers. Is the number expressed by
 digits or as a word?</p>
 
-<h3 id="a-namewordworda-number-expressed-as-word"><a name="Word"><code>Word</code></a>: number expressed as word</h3>
+<h3 id="word-number-expressed-as-word"><a name="Word"><code class="language-plaintext highlighter-rouge">Word</code></a>: number expressed as word</h3>
 
 <h4 id="examples">Examples</h4>
 
@@ -948,7 +948,7 @@ digits or as a word?</p>
   <li><em>jeden</em> “one”, <em>dva</em> “two”, <em>tři</em> “three”</li>
 </ul>
 
-<h3 id="a-namedigitdigita-number-expressed-using-digits"><a name="Digit"><code>Digit</code></a>: number expressed using digits</h3>
+<h3 id="digit-number-expressed-using-digits"><a name="Digit"><code class="language-plaintext highlighter-rouge">Digit</code></a>: number expressed using digits</h3>
 
 <h4 id="examples-1">Examples</h4>
 
@@ -956,7 +956,7 @@ digits or as a word?</p>
   <li><em>1, 2, 3</em></li>
 </ul>
 
-<h3 id="a-nameromanromana-roman-numeral"><a name="Roman"><code>Roman</code></a>: roman numeral</h3>
+<h3 id="roman-roman-numeral"><a name="Roman"><code class="language-plaintext highlighter-rouge">Roman</code></a>: roman numeral</h3>
 
 <h4 id="examples-2">Examples</h4>
 
@@ -991,7 +991,7 @@ value of <a href="">PronType</a>.</p>
 
 <p>From the syntactic point of view, some numtypes behave like adjectives
 and some behave like adverbs. We tag them <a href="">cs-pos/ADJ</a> and
-<a href="">cs-pos/ADV</a> respectively. Thus the <code>NumType</code> feature applies to
+<a href="">cs-pos/ADV</a> respectively. Thus the <code class="language-plaintext highlighter-rouge">NumType</code> feature applies to
 several different parts of speech:</p>
 
 <ul>
@@ -1001,7 +1001,7 @@ several different parts of speech:</p>
   <li><a href="">cs-pos/ADV</a>: adverbial (e.g. ordinal and multiplicative) numerals</li>
 </ul>
 
-<h3 id="a-namecardcarda-cardinal-number-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><a name="Card"><code>Card</code></a>: cardinal number or corresponding interrogative / relative / indefinite / demonstrative word</h3>
+<h3 id="card-cardinal-number-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><a name="Card"><code class="language-plaintext highlighter-rouge">Card</code></a>: cardinal number or corresponding interrogative / relative / indefinite / demonstrative word</h3>
 
 <h4 id="examples">Examples</h4>
 
@@ -1015,7 +1015,7 @@ five, ten; they are morphologically, syntactically and stylistically
 distinct from the default forms <em>čtyři, pět, deset</em>)</li>
 </ul>
 
-<h3 id="a-nameordorda-ordinal-number-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><a name="Ord"><code>Ord</code></a>: ordinal number or corresponding interrogative / relative / indefinite / demonstrative word</h3>
+<h3 id="ord-ordinal-number-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><a name="Ord"><code class="language-plaintext highlighter-rouge">Ord</code></a>: ordinal number or corresponding interrogative / relative / indefinite / demonstrative word</h3>
 
 <p>This is a subtype of adjective or adverb.</p>
 
@@ -1037,7 +1037,7 @@ distinct from the default forms <em>čtyři, pět, deset</em>)</li>
   <li><em>potolikáté </em> “it has been so many times”</li>
 </ul>
 
-<h3 id="a-namemultmulta-multiplicative-numeral-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><a name="Mult"><code>Mult</code></a>: multiplicative numeral or corresponding interrogative / relative / indefinite / demonstrative word</h3>
+<h3 id="mult-multiplicative-numeral-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><a name="Mult"><code class="language-plaintext highlighter-rouge">Mult</code></a>: multiplicative numeral or corresponding interrogative / relative / indefinite / demonstrative word</h3>
 
 <p>This is subtype of adjective or adverb.</p>
 
@@ -1052,7 +1052,7 @@ morphologically and syntactically adjectives)</li>
   <li><em>tolikrát </em> “so many times”</li>
 </ul>
 
-<h3 id="a-namefracfraca-fraction"><a name="Frac"><code>Frac</code></a>: fraction</h3>
+<h3 id="frac-fraction"><a name="Frac"><code class="language-plaintext highlighter-rouge">Frac</code></a>: fraction</h3>
 
 <p>This is a subtype of cardinal numbers.
 It may denote a fraction or just the denominator of the
@@ -1064,7 +1064,7 @@ fraction.</p>
   <li><em>půl / polovina </em> “half”; <em>třetina </em> “one third”; <em>čtvrt / čtvrtina </em> “quarter”</li>
 </ul>
 
-<h3 id="a-namesetssetsa-number-of-sets-of-things-collective-numeral"><a name="Sets"><code>Sets</code></a>: number of sets of things; collective numeral</h3>
+<h3 id="sets-number-of-sets-of-things-collective-numeral"><a name="Sets"><code class="language-plaintext highlighter-rouge">Sets</code></a>: number of sets of things; collective numeral</h3>
 
 <p>Morphologically distinct class of numerals used to count sets of
 things, or nouns that are pluralia tantum.</p>
@@ -1106,19 +1106,19 @@ together behaves as neuter singular (this is important for subject-verb agreemen
 <p>Specific behavior of low-value numerals is the reason why there is a separate feature
 to mark these numerals.</p>
 
-<h3 id="a-name11a-numeric-value-1"><a name="1"><code>1</code></a>: numeric value 1</h3>
+<h3 id="1-numeric-value-1"><a name="1"><code class="language-plaintext highlighter-rouge">1</code></a>: numeric value 1</h3>
 
 <ul>
   <li><em>jeden, jedna, jedno</em> “one”</li>
 </ul>
 
-<h3 id="a-name22a-numeric-value-2"><a name="2"><code>2</code></a>: numeric value 2</h3>
+<h3 id="2-numeric-value-2"><a name="2"><code class="language-plaintext highlighter-rouge">2</code></a>: numeric value 2</h3>
 
 <ul>
   <li><em>dva, dvě</em> “two”</li>
 </ul>
 
-<h3 id="a-name33a-numeric-value-3-or-4"><a name="3"><code>3</code></a>: numeric value 3 or 4</h3>
+<h3 id="3-numeric-value-3-or-4"><a name="3"><code class="language-plaintext highlighter-rouge">3</code></a>: numeric value 3 or 4</h3>
 
 <ul>
   <li><em>tři</em> “three”, <em>čtyři</em> “four”</li>
@@ -1140,11 +1140,11 @@ to mark these numerals.</p>
 </tr>
 </table>
 
-<p><code>Number</code> is an inflectional feature of <a href="cs-pos/NOUN">nouns</a> and
+<p><code class="language-plaintext highlighter-rouge">Number</code> is an inflectional feature of <a href="cs-pos/NOUN">nouns</a> and
 other parts of speech (<a href="cs-pos/ADJ">adjectives</a>,
 <a href="cs-pos/VERB">verbs</a>) that mark agreement with nouns.</p>
 
-<h3 id="a-namesingsinga-singular-number"><a name="Sing"><code>Sing</code></a>: singular number</h3>
+<h3 id="sing-singular-number"><a name="Sing"><code class="language-plaintext highlighter-rouge">Sing</code></a>: singular number</h3>
 
 <p>A singular noun denotes one person, animal or thing.</p>
 
@@ -1156,7 +1156,7 @@ other parts of speech (<a href="cs-pos/ADJ">adjectives</a>,
   <li><em><b>malé kuře přišlo</b> </em> “a small chicken came”</li>
 </ul>
 
-<h3 id="a-nameplurplura-plural-number"><a name="Plur"><code>Plur</code></a>: plural number</h3>
+<h3 id="plur-plural-number"><a name="Plur"><code class="language-plaintext highlighter-rouge">Plur</code></a>: plural number</h3>
 
 <p>A plural noun denotes several persons, animals or things.</p>
 
@@ -1168,7 +1168,7 @@ other parts of speech (<a href="cs-pos/ADJ">adjectives</a>,
   <li><em><b>malá kuřata přišla</b> </em> “small chickens came”</li>
 </ul>
 
-<h3 id="a-namedualduala-dual-number"><a name="Dual"><code>Dual</code></a>: dual number</h3>
+<h3 id="dual-dual-number"><a name="Dual"><code class="language-plaintext highlighter-rouge">Dual</code></a>: dual number</h3>
 
 <p>A dual noun denotes two objects.
 The dual number has almost vanished from Czech with the exception
@@ -1192,15 +1192,15 @@ Dual is used for the former and plural for the latter:</p>
   <li><em>tři sta </em> “three hundred”</li>
 </ul>
 
-<h3 id="a-nameptanptana-plurale-tantum"><a name="Ptan"><code>Ptan</code></a>: plurale tantum</h3>
+<h3 id="ptan-plurale-tantum"><a name="Ptan"><code class="language-plaintext highlighter-rouge">Ptan</code></a>: plurale tantum</h3>
 
 <p>Some nouns appear only in the plural form even though they denote one
 thing (semantic singular); some tagsets mark this distinction.
-Grammatically they behave like plurals, so <code>Plur</code> is obviously the
+Grammatically they behave like plurals, so <code class="language-plaintext highlighter-rouge">Plur</code> is obviously the
 back-off value here; however, the
 non-existence of singular form sometimes means that the gender is
 unknown. In Czech, special type of numerals is used when counting
-nouns that are plurale tantum (<a href="">NumType</a><code>=Sets</code>).</p>
+nouns that are plurale tantum (<a href="">NumType</a><code class="language-plaintext highlighter-rouge">=Sets</code>).</p>
 
 <h4 id="examples-3">Examples</h4>
 
@@ -1208,7 +1208,7 @@ nouns that are plurale tantum (<a href="">NumType</a><code>=Sets</code>).</p>
   <li><em><b>nůžky, kalhoty</b> </em> “scissors, pants”</li>
 </ul>
 
-<h3 id="a-namecollcolla-collective--mass--singulare-tantum"><a name="Coll"><code>Coll</code></a>: collective / mass / singulare tantum</h3>
+<h3 id="coll-collective--mass--singulare-tantum"><a name="Coll"><code class="language-plaintext highlighter-rouge">Coll</code></a>: collective / mass / singulare tantum</h3>
 
 <p>Collective or mass or singulare tantum is a special case of
 singular. It applies to words that use grammatical singular to
@@ -1227,7 +1227,7 @@ semantically plausible. Sometimes, the plural form exists and means
 
 <h3 id="prague-dependency-treebank">Prague Dependency Treebank</h3>
 
-<p>The PDT tagset does not distinguish <code>Ptan</code> from <code>Plur</code> and <code>Coll</code> from <code>Sing</code>,
+<p>The PDT tagset does not distinguish <code class="language-plaintext highlighter-rouge">Ptan</code> from <code class="language-plaintext highlighter-rouge">Plur</code> and <code class="language-plaintext highlighter-rouge">Coll</code> from <code class="language-plaintext highlighter-rouge">Sing</code>,
 therefore this distinction is not being made in the converted data.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-feat/Number.md" target="#">edit Number</a></p>
@@ -1245,24 +1245,24 @@ therefore this distinction is not being made in the converted data.</p>
 
 <p>Possessives may have two different numbers: that of the possessed object (number
 agreement with modified noun) and that of the possessor. The
-<code>Number[psor]</code> feature captures the possessor’s number.</p>
+<code class="language-plaintext highlighter-rouge">Number[psor]</code> feature captures the possessor’s number.</p>
 
-<h3 id="a-namesingsinga-singular-possessor"><a name="Sing"><code>Sing</code></a>: singular possessor</h3>
+<h3 id="sing-singular-possessor"><a name="Sing"><code class="language-plaintext highlighter-rouge">Sing</code></a>: singular possessor</h3>
 
 <h4 id="examples">Examples</h4>
 
 <ul>
-  <li><em><b>můj</b> pes</em> “my dog” <code>Number[psor]=Sing|Number=Sing</code></li>
-  <li><em><b>mí</b> psi</em> “my dogs” <code>Number[psor]=Sing|Number=Plur</code></li>
+  <li><em><b>můj</b> pes</em> “my dog” <code class="language-plaintext highlighter-rouge">Number[psor]=Sing|Number=Sing</code></li>
+  <li><em><b>mí</b> psi</em> “my dogs” <code class="language-plaintext highlighter-rouge">Number[psor]=Sing|Number=Plur</code></li>
 </ul>
 
-<h3 id="a-nameplurplura-plural-possessor"><a name="Plur"><code>Plur</code></a>: plural possessor</h3>
+<h3 id="plur-plural-possessor"><a name="Plur"><code class="language-plaintext highlighter-rouge">Plur</code></a>: plural possessor</h3>
 
 <h4 id="examples-1">Examples</h4>
 
 <ul>
-  <li><em><b>náš</b> pes</em> “our dog” <code>Number[psor]=Plur|Number=Sing</code></li>
-  <li><em><b>naši</b> psi</em> “our dogs” <code>Number[psor]=Plur|Number=Plur</code></li>
+  <li><em><b>náš</b> pes</em> “our dog” <code class="language-plaintext highlighter-rouge">Number[psor]=Plur|Number=Sing</code></li>
+  <li><em><b>naši</b> psi</em> “our dogs” <code class="language-plaintext highlighter-rouge">Number[psor]=Plur|Number=Plur</code></li>
 </ul>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-feat/Number-psor.md" target="#">edit Number[psor]</a></p>
@@ -1285,7 +1285,7 @@ fact an agreement feature that marks the person of the verb’s subject. Person
 marked on verbs makes it unnecessary to always add a personal pronoun
 as subject and thus subjects are sometimes dropped (Czech is a pro-drop language).</p>
 
-<h3 id="a-name11a-first-person"><a name="1"><code>1</code></a>: first person</h3>
+<h3 id="1-first-person"><a name="1"><code class="language-plaintext highlighter-rouge">1</code></a>: first person</h3>
 
 <p>In singular, the first person refers just to the speaker / author. In
 plural, it must include the speaker and one or more additional
@@ -1298,7 +1298,7 @@ persons.</p>
   <li><em><b>děláme</b> </em> “<b>we</b> do”</li>
 </ul>
 
-<h3 id="a-name22a-second-person"><a name="2"><code>2</code></a>: second person</h3>
+<h3 id="2-second-person"><a name="2"><code class="language-plaintext highlighter-rouge">2</code></a>: second person</h3>
 
 <p>In singular, the second person refers to the addressee of the
 utterance / text. In plural, it may mean several addressees and
@@ -1307,11 +1307,11 @@ optionally some third persons too.</p>
 <h4 id="examples-1">Examples</h4>
 
 <ul>
-  <li><em><b>děláš</b> </em> “<b>you</b>.<code>Sing</code> do”</li>
-  <li><em><b>děláte</b> </em> “<b>you</b>.<code>Plur</code> do”</li>
+  <li><em><b>děláš</b> </em> “<b>you</b>.<code class="language-plaintext highlighter-rouge">Sing</code> do”</li>
+  <li><em><b>děláte</b> </em> “<b>you</b>.<code class="language-plaintext highlighter-rouge">Plur</code> do”</li>
 </ul>
 
-<h3 id="a-name33a-third-person"><a name="3"><code>3</code></a>: third person</h3>
+<h3 id="3-third-person"><a name="3"><code class="language-plaintext highlighter-rouge">3</code></a>: third person</h3>
 
 <p>The third person refers to one or more persons that are neither
 speakers nor addressees.</p>
@@ -1344,17 +1344,17 @@ the feature of polarity.</p>
 <p>It applies to <a href="cs-pos/VERB">verbs</a>,
 <a href="cs-pos/ADJ">adjectives</a>, sometimes also <a href="cs-pos/ADV">adverbs</a> and
 even <a href="cs-pos/NOUN">nouns</a>.
-(Most nouns have just <code>Polarity=Pos</code>;
-deverbative nouns can have also <code>Polarity=Neg</code>.
+(Most nouns have just <code class="language-plaintext highlighter-rouge">Polarity=Pos</code>;
+deverbative nouns can have also <code class="language-plaintext highlighter-rouge">Polarity=Neg</code>.
 Occasionally, other nouns can be negated to denote the complement of the original noun:
 <em>plavec</em> “swimmer” vs. <em>neplavec</em> “non-swimmer”.)</p>
 
-<p>Note that <code>Polarity=Neg</code> is not the same thing as
-<a href="">PronType</a><code>=Neg</code>. For pronouns and other pronominal parts of speech
+<p>Note that <code class="language-plaintext highlighter-rouge">Polarity=Neg</code> is not the same thing as
+<a href="">PronType</a><code class="language-plaintext highlighter-rouge">=Neg</code>. For pronouns and other pronominal parts of speech
 there is no such binary opposition as for verbs and adjectives. (There
 is no such thing as “affirmative pronoun”.)</p>
 
-<h3 id="a-nameposposa-positive-affirmative"><a name="Pos"><code>Pos</code></a>: positive, affirmative</h3>
+<h3 id="pos-positive-affirmative"><a name="Pos"><code class="language-plaintext highlighter-rouge">Pos</code></a>: positive, affirmative</h3>
 
 <h4 id="examples">Examples</h4>
 
@@ -1365,7 +1365,7 @@ is no such thing as “affirmative pronoun”.)</p>
   <li><em><b>přijetí</b> </em> “acceptance”</li>
 </ul>
 
-<h3 id="a-namenegnega-negative"><a name="Neg"><code>Neg</code></a>: negative</h3>
+<h3 id="neg-negative"><a name="Neg"><code class="language-plaintext highlighter-rouge">Neg</code></a>: negative</h3>
 
 <h4 id="examples-1">Examples</h4>
 
@@ -1396,11 +1396,11 @@ pronoun types, this feature is intentionally separate from
 <a href="">PronType</a>, as it is orthogonal to pronominal types. Several of the
 pronominal types can be optionally possessive, and adjectives can too.</p>
 
-<h3 id="a-nameyesyesa-it-is-possessive"><a name="Yes"><code>Yes</code></a>: it is possessive</h3>
+<h3 id="yes-it-is-possessive"><a name="Yes"><code class="language-plaintext highlighter-rouge">Yes</code></a>: it is possessive</h3>
 
-<p>Note that there is no <code>No</code> value. If the word is not possessive, the
-<code>Poss</code> feature will just not be mentioned in the <code>FEAT</code> column. (Which
-means that empty value has the <code>No</code> meaning.)</p>
+<p>Note that there is no <code class="language-plaintext highlighter-rouge">No</code> value. If the word is not possessive, the
+<code class="language-plaintext highlighter-rouge">Poss</code> feature will just not be mentioned in the <code class="language-plaintext highlighter-rouge">FEAT</code> column. (Which
+means that empty value has the <code class="language-plaintext highlighter-rouge">No</code> meaning.)</p>
 
 <h4 id="examples">Examples</h4>
 
@@ -1431,24 +1431,24 @@ prepositions or not.</p>
 <p>Default empty value means that the word form is neutral w.r.t.
 prepositions.</p>
 
-<h3 id="a-namenprnpra-non-prepositional-case"><a name="Npr"><code>Npr</code></a>: non-prepositional case</h3>
+<h3 id="npr-non-prepositional-case"><a name="Npr"><code class="language-plaintext highlighter-rouge">Npr</code></a>: non-prepositional case</h3>
 
 <p>This word form must not be used after a preposition.</p>
 
 <h4 id="examples">Examples</h4>
 
 <ul>
-  <li><em><b>jeho</b>, <b>jemu</b>, <b>jím</b></em> “him” (<code>Gen,Acc</code>, <code>Dat</code>, <code>Ins</code>)</li>
+  <li><em><b>jeho</b>, <b>jemu</b>, <b>jím</b></em> “him” (<code class="language-plaintext highlighter-rouge">Gen,Acc</code>, <code class="language-plaintext highlighter-rouge">Dat</code>, <code class="language-plaintext highlighter-rouge">Ins</code>)</li>
 </ul>
 
-<h3 id="a-namepreprea-prepositional-case"><a name="Pre"><code>Pre</code></a>: prepositional case</h3>
+<h3 id="pre-prepositional-case"><a name="Pre"><code class="language-plaintext highlighter-rouge">Pre</code></a>: prepositional case</h3>
 
 <p>This word form must be used after a preposition.</p>
 
 <h4 id="examples-1">Examples</h4>
 
 <ul>
-  <li><em><b>něho</b>, <b>němu</b>, <b>něm</b>, <b>ním</b></em> “him” (<code>Gen,Acc</code>, <code>Dat</code>, <code>Loc</code>, <code>Ins</code>)</li>
+  <li><em><b>něho</b>, <b>němu</b>, <b>něm</b>, <b>ním</b></em> “him” (<code class="language-plaintext highlighter-rouge">Gen,Acc</code>, <code class="language-plaintext highlighter-rouge">Dat</code>, <code class="language-plaintext highlighter-rouge">Loc</code>, <code class="language-plaintext highlighter-rouge">Ins</code>)</li>
 </ul>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-feat/PrepCase.md" target="#">edit PrepCase</a></p>
@@ -1474,10 +1474,10 @@ prepositions.</p>
 <a href="cs-pos/DET">determiners</a>, pronominal <a href="cs-pos/NUM">numerals</a>
 (quantifiers) and pronominal <a href="cs-pos/ADV">adverbs</a>.</p>
 
-<h3 id="a-nameprsprsa-personal-or-possessive-personal-pronoun-or-determiner"><a name="Prs"><code>Prs</code></a>: personal or possessive personal pronoun or determiner</h3>
+<h3 id="prs-personal-or-possessive-personal-pronoun-or-determiner"><a name="Prs"><code class="language-plaintext highlighter-rouge">Prs</code></a>: personal or possessive personal pronoun or determiner</h3>
 
 <p>See also the <a href="">Poss</a> feature that distinguishes normal personal
-pronouns from possessives. Note that <code>Prs</code> also includes reflexive
+pronouns from possessives. Note that <code class="language-plaintext highlighter-rouge">Prs</code> also includes reflexive
 personal/possessive pronouns (e.g. <em>se / svůj;</em> see the
 <a href="">Reflex</a> feature).</p>
 
@@ -1488,7 +1488,7 @@ personal/possessive pronouns (e.g. <em>se / svůj;</em> see the
   <li><em>můj, tvůj, jeho, její, náš, váš, jejich, svůj </em> “my, your, his/its, her, our, your, their, one’s own”</li>
 </ul>
 
-<h3 id="a-nameintinta-interrogative-pronoun-determiner-numeral-or-adverb"><a name="Int"><code>Int</code></a>: interrogative pronoun, determiner, numeral or adverb</h3>
+<h3 id="int-interrogative-pronoun-determiner-numeral-or-adverb"><a name="Int"><code class="language-plaintext highlighter-rouge">Int</code></a>: interrogative pronoun, determiner, numeral or adverb</h3>
 
 <p>Note that possessive interrogative determiners (<em>whose</em>) can be
 distinguished by the <a href="">Poss</a> feature.</p>
@@ -1511,7 +1511,7 @@ distinguished by the <a href="">Poss</a> feature.</p>
   <li><em>proč </em> “why”</li>
 </ul>
 
-<h3 id="a-namerelrela-relative-pronoun-determiner-numeral-or-adverb"><a name="Rel"><code>Rel</code></a>: relative pronoun, determiner, numeral or adverb</h3>
+<h3 id="rel-relative-pronoun-determiner-numeral-or-adverb"><a name="Rel"><code class="language-plaintext highlighter-rouge">Rel</code></a>: relative pronoun, determiner, numeral or adverb</h3>
 
 <p>Note that this class heavily overlaps with
 interrogatives, yet there are pronouns that are only relative.</p>
@@ -1523,7 +1523,7 @@ interrogatives, yet there are pronouns that are only relative.</p>
   <li><em>jehož </em> “whose” (possessive relative pronoun)</li>
 </ul>
 
-<h3 id="a-namedemdema-demonstrative-pronoun-determiner-numeral-or-adverb"><a name="Dem"><code>Dem</code></a>: demonstrative pronoun, determiner, numeral or adverb</h3>
+<h3 id="dem-demonstrative-pronoun-determiner-numeral-or-adverb"><a name="Dem"><code class="language-plaintext highlighter-rouge">Dem</code></a>: demonstrative pronoun, determiner, numeral or adverb</h3>
 
 <p>These are to some extent parallel to interrogatives.</p>
 
@@ -1544,7 +1544,7 @@ interrogatives, yet there are pronouns that are only relative.</p>
   <li><em>tak </em> “so”</li>
 </ul>
 
-<h3 id="a-nameempempa-emphatic-determiner"><a name="Emp"><code>Emp</code></a>: emphatic determiner</h3>
+<h3 id="emp-emphatic-determiner"><a name="Emp"><code class="language-plaintext highlighter-rouge">Emp</code></a>: emphatic determiner</h3>
 
 <p>Emphatic pro-adjectives (determiners) emphasize the nominal they depend on.
 There are similarities with reflexive and demonstrative pronouns / determiners.</p>
@@ -1555,7 +1555,7 @@ There are similarities with reflexive and demonstrative pronouns / determiners.<
   <li><em>sám</em> as in <em><b>Sám</b> prezident se přišel podívat.</em> “President <b>himself</b> came to see it.”</li>
 </ul>
 
-<h3 id="a-nametottota-total-collective-pronoun-determiner-or-adverb"><a name="Tot"><code>Tot</code></a>: total (collective) pronoun, determiner or adverb</h3>
+<h3 id="tot-total-collective-pronoun-determiner-or-adverb"><a name="Tot"><code class="language-plaintext highlighter-rouge">Tot</code></a>: total (collective) pronoun, determiner or adverb</h3>
 
 <h4 id="examples-5">Examples</h4>
 
@@ -1566,7 +1566,7 @@ There are similarities with reflexive and demonstrative pronouns / determiners.<
   <li><em>vždy </em> “always”</li>
 </ul>
 
-<h3 id="a-namenegnega-negative-pronoun-determiner-or-adverb"><a name="Neg"><code>Neg</code></a>: negative pronoun, determiner or adverb</h3>
+<h3 id="neg-negative-pronoun-determiner-or-adverb"><a name="Neg"><code class="language-plaintext highlighter-rouge">Neg</code></a>: negative pronoun, determiner or adverb</h3>
 
 <h4 id="examples-6">Examples</h4>
 
@@ -1582,7 +1582,7 @@ There are similarities with reflexive and demonstrative pronouns / determiners.<
   <li><em>nijak </em> “no way” (lit. “no-how”)</li>
 </ul>
 
-<h3 id="a-nameindinda-indefinite-pronoun-determiner-numeral-or-adverb"><a name="Ind"><code>Ind</code></a>: indefinite pronoun, determiner, numeral or adverb</h3>
+<h3 id="ind-indefinite-pronoun-determiner-numeral-or-adverb"><a name="Ind"><code class="language-plaintext highlighter-rouge">Ind</code></a>: indefinite pronoun, determiner, numeral or adverb</h3>
 
 <h4 id="examples-7">Examples</h4>
 
@@ -1643,11 +1643,11 @@ The pronoun does not alter the meaning in any way, but without it the sentence w
   <li><em>Jan prodal jeho auto. </em> “Jan sold his [someone else’s] car.”</li>
 </ul>
 
-<h3 id="a-nameyesyesa-it-is-possessive"><a name="Yes"><code>Yes</code></a>: it is possessive</h3>
+<h3 id="yes-it-is-possessive"><a name="Yes"><code class="language-plaintext highlighter-rouge">Yes</code></a>: it is possessive</h3>
 
-<p>Note that there is no <code>No</code> value. If the word is not reflexive, the
-<code>Reflex</code> feature will just not be mentioned in the <code>FEAT</code>
-column. (Which means that empty value has the <code>No</code> meaning.)</p>
+<p>Note that there is no <code class="language-plaintext highlighter-rouge">No</code> value. If the word is not reflexive, the
+<code class="language-plaintext highlighter-rouge">Reflex</code> feature will just not be mentioned in the <code class="language-plaintext highlighter-rouge">FEAT</code>
+column. (Which means that empty value has the <code class="language-plaintext highlighter-rouge">No</code> meaning.)</p>
 
 <h4 id="examples">Examples</h4>
 
@@ -1679,7 +1679,7 @@ may be a lexical feature (some words-lemmas are archaic, some are
 colloquial) or a morphological feature (inflectional patterns may
 systematically change between dialects or styles).</p>
 
-<h3 id="a-namearcharcha-archaic-obsolete"><a name="Arch"><code>Arch</code></a>: archaic, obsolete</h3>
+<h3 id="arch-archaic-obsolete"><a name="Arch"><code class="language-plaintext highlighter-rouge">Arch</code></a>: archaic, obsolete</h3>
 
 <h4 id="examples">Examples</h4>
 
@@ -1687,14 +1687,14 @@ systematically change between dialects or styles).</p>
   <li><em>biblí, bukův, dubův, činějí</em></li>
 </ul>
 
-<h3 id="a-namerarerarea-rare"><a name="Rare"><code>Rare</code></a>: rare</h3>
+<h3 id="rare-rare"><a name="Rare"><code class="language-plaintext highlighter-rouge">Rare</code></a>: rare</h3>
 
 <ul>
   <li><em><b>causa</b></em> (rare spelling)</li>
   <li><em>kauza</em> (neutral spelling)</li>
 </ul>
 
-<h3 id="a-namecollcolla-colloquial"><a name="Coll"><code>Coll</code></a>: colloquial</h3>
+<h3 id="coll-colloquial"><a name="Coll"><code class="language-plaintext highlighter-rouge">Coll</code></a>: colloquial</h3>
 
 <h4 id="examples-1">Examples</h4>
 
@@ -1703,19 +1703,19 @@ systematically change between dialects or styles).</p>
   <li>colloquial paradigm of hard adjectives: <em><b>mladej</b>, <b>mladýho</b>, <b>mladýmu</b>, <b>mladým</b>, <b>mladým</b>, <b>mladý</b>, <b>mladejch</b>, <b>mladejm</b>, <b>mladý</b>, <b>mladejma</b></em> “young”</li>
 </ul>
 
-<h3 id="a-namevrncvrnca-vernacular"><a name="Vrnc"><code>Vrnc</code></a>: vernacular</h3>
+<h3 id="vrnc-vernacular"><a name="Vrnc"><code class="language-plaintext highlighter-rouge">Vrnc</code></a>: vernacular</h3>
 
 <ul>
   <li><em>kotáry, žehnáčky, husličky, nesúdí</em></li>
 </ul>
 
-<h3 id="a-nameslngslnga-slang"><a name="Slng"><code>Slng</code></a>: slang</h3>
+<h3 id="slng-slang"><a name="Slng"><code class="language-plaintext highlighter-rouge">Slng</code></a>: slang</h3>
 
 <ul>
   <li><em>kšeft, záklaďák, čtvrtkařka, štafl</em></li>
 </ul>
 
-<h3 id="a-nameexprexpra-expressive-emotional"><a name="Expr"><code>Expr</code></a>: expressive, emotional</h3>
+<h3 id="expr-expressive-emotional"><a name="Expr"><code class="language-plaintext highlighter-rouge">Expr</code></a>: expressive, emotional</h3>
 
 <p>Typical examples of expressive words in the Czech data are diminutives:</p>
 
@@ -1723,7 +1723,7 @@ systematically change between dialects or styles).</p>
   <li><em>jezírko, okénko, semínko, hovínko, miminko</em></li>
 </ul>
 
-<h3 id="a-namevulgvulga-vulgar"><a name="Vulg"><code>Vulg</code></a>: vulgar</h3>
+<h3 id="vulg-vulgar"><a name="Vulg"><code class="language-plaintext highlighter-rouge">Vulg</code></a>: vulgar</h3>
 
 <ul>
   <li><em>parchant, suchoprd, bordel, nablito</em></li>
@@ -1747,7 +1747,7 @@ systematically change between dialects or styles).</p>
 takes / will take place, in relation to the current moment or to
 another action in the utterance.</p>
 
-<h3 id="a-namepastpasta-past-tense"><a name="Past"><code>Past</code></a>: past tense</h3>
+<h3 id="past-past-tense"><a name="Past"><code class="language-plaintext highlighter-rouge">Past</code></a>: past tense</h3>
 
 <p>The past tense denotes actions that happened before the current
 moment. Past tense in Czech consists of the past participle
@@ -1755,8 +1755,8 @@ moment. Past tense in Czech consists of the past participle
 which is accompanied by a present auxiliary verb in the first and second persons,
 and stands alone in the third person.</p>
 
-<p>The auxiliary (if any) is in its present form, so it will have <code>Tense=Pres</code>.
-The participle has <code>Tense=Past</code>, even though it can also be used to form present conditional.</p>
+<p>The auxiliary (if any) is in its present form, so it will have <code class="language-plaintext highlighter-rouge">Tense=Pres</code>.
+The participle has <code class="language-plaintext highlighter-rouge">Tense=Past</code>, even though it can also be used to form present conditional.</p>
 
 <h4 id="examples">Examples</h4>
 
@@ -1766,13 +1766,13 @@ The participle has <code>Tense=Past</code>, even though it can also be used to f
   <li><em><b>Šel</b> domů. </em> “He has <b>gone</b> home.”</li>
 </ul>
 
-<h3 id="a-nameprespresa-present-tense"><a name="Pres"><code>Pres</code></a>: present tense</h3>
+<h3 id="pres-present-tense"><a name="Pres"><code class="language-plaintext highlighter-rouge">Pres</code></a>: present tense</h3>
 
 <p>The present tense denotes actions that are happening right now or that
 usually happen.</p>
 
 <p>Note that morphologically present forms of perfective verbs have actually a future meaning
-but they will still be marked <code>Tense=Pres</code>.</p>
+but they will still be marked <code class="language-plaintext highlighter-rouge">Tense=Pres</code>.</p>
 
 <h4 id="examples-1">Examples</h4>
 
@@ -1782,20 +1782,20 @@ but they will still be marked <code>Tense=Pres</code>.</p>
   <li><em><b>Jdu</b> domů. </em> “I <b>go / am going</b> home.” (<em>Jít </em> is an imperfective verb.)</li>
 </ul>
 
-<h3 id="a-namefutfuta-future-tense"><a name="Fut"><code>Fut</code></a>: future tense</h3>
+<h3 id="fut-future-tense"><a name="Fut"><code class="language-plaintext highlighter-rouge">Fut</code></a>: future tense</h3>
 
 <p>The future tense denotes actions that will happen after the current
 moment. Future tense in Czech is formed in one of three ways, depending of the verb:</p>
 
 <ul>
-  <li>Present forms of perfective verbs have future meaning. These forms are tagged <code>Tense=Pres</code>, not <code>Tense=Fut</code> (see above).</li>
+  <li>Present forms of perfective verbs have future meaning. These forms are tagged <code class="language-plaintext highlighter-rouge">Tense=Pres</code>, not <code class="language-plaintext highlighter-rouge">Tense=Fut</code> (see above).</li>
   <li>The verb <em>být </em> “to be” has a set of distinct future forms. They combine a future stem <em>bud </em> with present suffixes.
 A small set of verbs (mostly motion verbs) have also future forms. These are formed as the present form (present stem and suffix)
 with the prefix <em>po-</em>.
-Although these forms are morphologically very close to the present forms, they are tagged <code>Tense=Fut</code>
+Although these forms are morphologically very close to the present forms, they are tagged <code class="language-plaintext highlighter-rouge">Tense=Fut</code>
 because the same lemma has also present forms and the feature must distinguish the two.</li>
   <li>The remaining imperfective verbs have periphrastic future forms, consiting of the future form of the auxiliary <em>být, </em>
-and the infinitive of the content verb. Only the auxiliary will have <code>Tense=Fut</code>, while there will be no tense information
+and the infinitive of the content verb. Only the auxiliary will have <code class="language-plaintext highlighter-rouge">Tense=Fut</code>, while there will be no tense information
 at the infinitive.</li>
 </ul>
 
@@ -1820,14 +1820,14 @@ at the infinitive.</li>
 </table>
 
 <p>Sometimes there are multiple word forms for the same lemma and set of features.
-The <code>Variant</code> feature helps distinguish alternate forms.</p>
+The <code class="language-plaintext highlighter-rouge">Variant</code> feature helps distinguish alternate forms.</p>
 
 <p>In Czech there are two groups of words where double forms are regular and worth capturing:
 short forms of <a href="cs-pos/ADJ">adjectives</a> and short (clitic) forms of personal <a href="cs-pos/PRON">pronouns</a>.
-This feature only marks the non-standard short forms, hence there is only one value, <code>Short</code>.
-For the long standard forms the <code>Variant</code> feature remains unspecified.</p>
+This feature only marks the non-standard short forms, hence there is only one value, <code class="language-plaintext highlighter-rouge">Short</code>.
+For the long standard forms the <code class="language-plaintext highlighter-rouge">Variant</code> feature remains unspecified.</p>
 
-<h3 id="a-nameshortshorta-short-form-of-adjectives"><a name="Short"><code>Short</code></a>: short form of adjectives</h3>
+<h3 id="short-short-form-of-adjectives"><a name="Short"><code class="language-plaintext highlighter-rouge">Short</code></a>: short form of adjectives</h3>
 
 <p>The short form is called <em>nominal form of adjective (jmenný tvar přídavného jména),</em>
 as opposed to the long form, which is <em>pronominal</em> because it originated as
@@ -1847,7 +1847,7 @@ do not have them: <em><b>třeba</b>, <b>rád</b>.</em></p>
   <li>Long equivalents: <em>možné, schopný, nutné, známý, spokojený, povinný, ochotný, jistý, vědomý, přítomný, rovný, patrné, hotový, spjatý, vinný</em></li>
 </ul>
 
-<h3 id="short-short-clitic-form-of-personal-pronouns"><code>Short</code>: short (clitic) form of personal pronouns</h3>
+<h3 id="short-short-clitic-form-of-personal-pronouns"><code class="language-plaintext highlighter-rouge">Short</code>: short (clitic) form of personal pronouns</h3>
 
 <p>Some personal pronouns in dative and accusative <a href="">Case</a> have double forms.
 The normal (long) form is more independent in terms of positions it can take in word order.
@@ -1877,11 +1877,11 @@ They are separate words (unlike in some other languages) but in the word order t
 
 <p>Even though the name of the feature seems to suggest that it is used
 exclusively with <a href="cs-pos/VERB">verbs</a>, it is not the case.
-The <code>Part</code> value can be used also with <a href="cs-pos/ADJ">adjectives</a>.
+The <code class="language-plaintext highlighter-rouge">Part</code> value can be used also with <a href="cs-pos/ADJ">adjectives</a>.
 It distinguishes participles from other verb forms,
 and participial adjectives from other adjectives.</p>
 
-<h3 id="a-namefinfina-finite-verb"><a name="Fin"><code>Fin</code></a>: finite verb</h3>
+<h3 id="fin-finite-verb"><a name="Fin"><code class="language-plaintext highlighter-rouge">Fin</code></a>: finite verb</h3>
 
 <p>Rule of thumb: if it has non-empty <a href="">Mood</a>, it is finite.
 In Czech this applies to indicative and imperative forms,
@@ -1898,7 +1898,7 @@ and to the special conditional forms of the <a href="cs-pos/AUX">auxiliary verb<
   <li><em>buď, buďme, buďte</em>  “be” (imperative in different persons and numbers)</li>
 </ul>
 
-<h3 id="a-nameinfinfa-infinitive"><a name="Inf"><code>Inf</code></a>: infinitive</h3>
+<h3 id="inf-infinitive"><a name="Inf"><code class="language-plaintext highlighter-rouge">Inf</code></a>: infinitive</h3>
 
 <p>Infinitive is the citation form of verbs.
 It is also used with the auxiliary <em>být </em> to form periphrastic future tense,
@@ -1911,7 +1911,7 @@ and it appears as the argument of modal and other verbs.</p>
   <li><em>být</em>  “to be”</li>
 </ul>
 
-<h3 id="a-namepartparta-participle"><a name="Part"><code>Part</code></a>: participle</h3>
+<h3 id="part-participle"><a name="Part"><code class="language-plaintext highlighter-rouge">Part</code></a>: participle</h3>
 
 <p>Participle is a non-finite verb form that shares properties of verbs
 and adjectives. Czech has two types of participles:</p>
@@ -1933,7 +1933,7 @@ is used to form the passive voice (in any tense or mood).</li>
   <li><em>byl, byla, bylo, byli, byly</em>  “was/been” (past participle in different genders and numbers)</li>
 </ul>
 
-<h3 id="a-nameconvconva-converb-transgressive"><a name="Conv"><code>Conv</code></a>: converb, transgressive</h3>
+<h3 id="conv-converb-transgressive"><a name="Conv"><code class="language-plaintext highlighter-rouge">Conv</code></a>: converb, transgressive</h3>
 
 <p>The converb, also called transgressive, adverbial participle or gerund, is a non-finite
 verb form that shares properties of verbs and adverbs.</p>
@@ -1971,12 +1971,12 @@ prepared</b> the dinner, she called her family to the table”</li>
 <p>Voice is a feature of verbs that helps map the traditional syntactic functions,
 such as subject and object, to semantic roles, such as agent and patient.</p>
 
-<h3 id="a-nameactacta-active-voice"><a name="Act"><code>Act</code></a>: active voice</h3>
+<h3 id="act-active-voice"><a name="Act"><code class="language-plaintext highlighter-rouge">Act</code></a>: active voice</h3>
 
 <p>The subject of the verb is the doer of the action (agent), the object
 is affected by the action (patient).</p>
 
-<p>All finite verb forms and the active/past participles are tagged <code>Voice=Act</code>.</p>
+<p>All finite verb forms and the active/past participles are tagged <code class="language-plaintext highlighter-rouge">Voice=Act</code>.</p>
 
 <h4 id="examples">Examples</h4>
 
@@ -1986,12 +1986,12 @@ is affected by the action (patient).</p>
 tense or conditional mood; here it forms the past tense.)</li>
 </ul>
 
-<h3 id="a-namepasspassa-passive-voice"><a name="Pass"><code>Pass</code></a>: passive voice</h3>
+<h3 id="pass-passive-voice"><a name="Pass"><code class="language-plaintext highlighter-rouge">Pass</code></a>: passive voice</h3>
 
 <p>The subject of the verb is affected by the action (patient). The doer
 (agent) is either unexpressed or it appears as an object of the verb.</p>
 
-<p>Only the passive participle is tagged <code>Voice=Pass</code>.</p>
+<p>Only the passive participle is tagged <code class="language-plaintext highlighter-rouge">Voice=Pass</code>.</p>
 
 <h4 id="examples-1">Examples</h4>
 

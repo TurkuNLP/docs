@@ -67,13 +67,13 @@
 <p>A numeral is a word, functioning most typically as a determiner, adjective or pronoun, that expresses a number and a relation to the
 number, such as quantity, sequence, frequency or fraction.</p>
 
-<p>Note that cardinal numerals are covered by <code>NUM</code> whether they are used as determiners or not (as in <em>Windows <b>7</b></em>) and whether they are expressed as words <em>(чотири)</em>, digits <em>(4)</em> or Roman numerals <em>(IV)</em>.</p>
+<p>Note that cardinal numerals are covered by <code class="language-plaintext highlighter-rouge">NUM</code> whether they are used as determiners or not (as in <em>Windows <b>7</b></em>) and whether they are expressed as words <em>(чотири)</em>, digits <em>(4)</em> or Roman numerals <em>(IV)</em>.</p>
 
 <p>Ukrainian grammar distinguishes several subclasses of <em>pronominal numerals (quantifiers):</em>
 interrogative and relative <em>(скільки </em> “how many”);
 demonstrative <em>(стільки </em> “this many”);
 indefinite <em>(кілька, багато, мало </em> “several, many, few”).
-These words behave similarly to (most) cardinal numbers, e.g. they require that the counted noun phrase be in genitive and have different forms depending on the case (with the exception of <em>мало </em> “little, few”. They are not similar to adjectives (unlike their English counterparts). However, in accord with the UD standard, they should be tagged <a href="">DET</a>, not <code>NUM</code>.</p>
+These words behave similarly to (most) cardinal numbers, e.g. they require that the counted noun phrase be in genitive and have different forms depending on the case (with the exception of <em>мало </em> “little, few”. They are not similar to adjectives (unlike their English counterparts). However, in accord with the UD standard, they should be tagged <a href="">DET</a>, not <code class="language-plaintext highlighter-rouge">NUM</code>.</p>
 
 <p>In addition, several types of (non-pronominal) numerals, such as ordinal numerals and multiplicative numerals, are tagged <a href="">ADJ</a> or <a href="">ADV</a>, based on their syntactic and morphological behavior.</p>
 
@@ -96,7 +96,7 @@ These words behave similarly to (most) cardinal numbers, e.g. they require that 
   <li><em>двічі, тричі </em> “twice, three times”: multiplicative numerals. They are tagged <a href="">ADV</a>, and the <a href="">uk-feat/NumType</a> feature reveals their semantic relation to numbers.</li>
   <li><em>двійня, дует, трійня, тріо, квартет </em> “pair, triplet, foursome”: n-tuples <em>(n-tice) </em> are not considered numerals in the Ukrainian grammar. They are tagged <a href="">NOUN</a>.</li>
   <li><em>одиниця, двійка, трійка, четвірка, п’ятірка </em> “number one, number two, number three, number four, number five”: names of numbers, or of objects identified by the number (e.g. of a bus route). They are not considered numerals and they are tagged <a href="">NOUN</a>.</li>
-  <li><em>тисяча, мільйон, мільярд, трильйон </em> “thousand, million, billion, trillion”: words for large quantities are ambiguous between cardinal numerals (tagged <code>NUM</code>) and nouns.
+  <li><em>тисяча, мільйон, мільярд, трильйон </em> “thousand, million, billion, trillion”: words for large quantities are ambiguous between cardinal numerals (tagged <code class="language-plaintext highlighter-rouge">NUM</code>) and nouns.
 If they inflect as nouns, they are tagged <a href="">NOUN</a>; but the borderline is fuzzy.
 For instance, in phrases like <em><b>тисячі</b> людей взяли участь в демонстації </em> (“<b>thousands</b> of people demonstrated in the streets”),   <em>тисячі </em> is a noun.
 In numeric expressions, e.g. <em>132 <b>тисячі</b> доларів </em> (“132 <b>thousand</b> dollars”), it is a cardinal numeral.</li>
@@ -113,14 +113,14 @@ In numeric expressions, e.g. <em>132 <b>тисячі</b> доларів </em> (
 
 <hr />
 
-<h2 id="treebank-statistics-udukrainian">Treebank Statistics (UD_Ukrainian)</h2>
+<h2 id="treebank-statistics-ud_ukrainian">Treebank Statistics (UD_Ukrainian)</h2>
 
-<p>There are 53 <code>NUM</code> lemmas (1%), 66 <code>NUM</code> types (1%) and 119 <code>NUM</code> tokens (1%).
-Out of 17 observed tags, the rank of <code>NUM</code> is: 6 in number of lemmas, 8 in number of types and 14 in number of tokens.</p>
+<p>There are 53 <code class="language-plaintext highlighter-rouge">NUM</code> lemmas (1%), 66 <code class="language-plaintext highlighter-rouge">NUM</code> types (1%) and 119 <code class="language-plaintext highlighter-rouge">NUM</code> tokens (1%).
+Out of 17 observed tags, the rank of <code class="language-plaintext highlighter-rouge">NUM</code> is: 6 in number of lemmas, 8 in number of types and 14 in number of tokens.</p>
 
-<p>The 10 most frequent <code>NUM</code> lemmas: <em>два, один, три, п’ять, двадцять, троє, 2, 3, 4, 5</em></p>
+<p>The 10 most frequent <code class="language-plaintext highlighter-rouge">NUM</code> lemmas: <em>два, один, три, п’ять, двадцять, троє, 2, 3, 4, 5</em></p>
 
-<p>The 10 most frequent <code>NUM</code> types:  <em>три, два, один, двох, дві, п’яти, двадцять, 2, 3, 4</em></p>
+<p>The 10 most frequent <code class="language-plaintext highlighter-rouge">NUM</code> types:  <em>три, два, один, двох, дві, п’яти, двадцять, 2, 3, 4</em></p>
 
 <p>The 10 most frequent ambiguous lemmas: <em>один</em> (<a href="">DET</a> 29, <a href="">NUM</a> 13, <a href="">PRON</a> 1)</p>
 
@@ -161,7 +161,7 @@ Out of 17 observed tags, the rank of <code>NUM</code> is: 6 in number of lemmas,
 
 <h2 id="morphology">Morphology</h2>
 
-<p>The form / lemma ratio of <code>NUM</code> is 1.245283 (the average of all parts of speech is 1.380843).</p>
+<p>The form / lemma ratio of <code class="language-plaintext highlighter-rouge">NUM</code> is 1.245283 (the average of all parts of speech is 1.380843).</p>
 
 <p>The 1st highest number of forms (6) was observed with the lemma “один”: <em>один, одним, одно, одного, одної, одну</em>.</p>
 
@@ -169,33 +169,33 @@ Out of 17 observed tags, the rank of <code>NUM</code> is: 6 in number of lemmas,
 
 <p>The 3rd highest number of forms (4) was observed with the lemma “троє”: <em>троє, трьом, трьома, трьох</em>.</p>
 
-<p><code>NUM</code> occurs with 5 features: <a href="">uk-feat/NumType</a> (119; 100% instances), <a href="">uk-feat/Case</a> (87; 73% instances), <a href="">uk-feat/Number</a> (50; 42% instances), <a href="">uk-feat/Gender</a> (37; 31% instances), <a href="">uk-feat/Animacy</a> (6; 5% instances)</p>
+<p><code class="language-plaintext highlighter-rouge">NUM</code> occurs with 5 features: <a href="">uk-feat/NumType</a> (119; 100% instances), <a href="">uk-feat/Case</a> (87; 73% instances), <a href="">uk-feat/Number</a> (50; 42% instances), <a href="">uk-feat/Gender</a> (37; 31% instances), <a href="">uk-feat/Animacy</a> (6; 5% instances)</p>
 
-<p><code>NUM</code> occurs with 12 feature-value pairs: <code>Animacy=Inan</code>, <code>Case=Acc</code>, <code>Case=Dat</code>, <code>Case=Gen</code>, <code>Case=Ins</code>, <code>Case=Loc</code>, <code>Case=Nom</code>, <code>Gender=Fem</code>, <code>Gender=Masc</code>, <code>Gender=Neut</code>, <code>NumType=Card</code>, <code>Number=Plur</code></p>
+<p><code class="language-plaintext highlighter-rouge">NUM</code> occurs with 12 feature-value pairs: <code class="language-plaintext highlighter-rouge">Animacy=Inan</code>, <code class="language-plaintext highlighter-rouge">Case=Acc</code>, <code class="language-plaintext highlighter-rouge">Case=Dat</code>, <code class="language-plaintext highlighter-rouge">Case=Gen</code>, <code class="language-plaintext highlighter-rouge">Case=Ins</code>, <code class="language-plaintext highlighter-rouge">Case=Loc</code>, <code class="language-plaintext highlighter-rouge">Case=Nom</code>, <code class="language-plaintext highlighter-rouge">Gender=Fem</code>, <code class="language-plaintext highlighter-rouge">Gender=Masc</code>, <code class="language-plaintext highlighter-rouge">Gender=Neut</code>, <code class="language-plaintext highlighter-rouge">NumType=Card</code>, <code class="language-plaintext highlighter-rouge">Number=Plur</code></p>
 
-<p><code>NUM</code> occurs with 16 feature combinations.
-The most frequent feature combination is <code>NumType=Card</code> (32 tokens).
+<p><code class="language-plaintext highlighter-rouge">NUM</code> occurs with 16 feature combinations.
+The most frequent feature combination is <code class="language-plaintext highlighter-rouge">NumType=Card</code> (32 tokens).
 Examples: <em>три, два, один, двох, дві, 2, 3, 4, 5, п’яти</em></p>
 
 <h2 id="relations">Relations</h2>
 
-<p><code>NUM</code> nodes are attached to their parents using 10 different relations: <a href="">uk-dep/nummod</a> (62; 52% instances), <a href="">uk-dep/nummod:gov</a> (35; 29% instances), <a href="">uk-dep/conj</a> (5; 4% instances), <a href="">uk-dep/root</a> (5; 4% instances), <a href="">uk-dep/nmod</a> (3; 3% instances), <a href="">uk-dep/obl</a> (3; 3% instances), <a href="">uk-dep/det:nummod</a> (2; 2% instances), <a href="">uk-dep/flat</a> (2; 2% instances), <a href="">uk-dep/appos</a> (1; 1% instances), <a href="">uk-dep/parataxis</a> (1; 1% instances)</p>
+<p><code class="language-plaintext highlighter-rouge">NUM</code> nodes are attached to their parents using 10 different relations: <a href="">uk-dep/nummod</a> (62; 52% instances), <a href="">uk-dep/nummod:gov</a> (35; 29% instances), <a href="">uk-dep/conj</a> (5; 4% instances), <a href="">uk-dep/root</a> (5; 4% instances), <a href="">uk-dep/nmod</a> (3; 3% instances), <a href="">uk-dep/obl</a> (3; 3% instances), <a href="">uk-dep/det:nummod</a> (2; 2% instances), <a href="">uk-dep/flat</a> (2; 2% instances), <a href="">uk-dep/appos</a> (1; 1% instances), <a href="">uk-dep/parataxis</a> (1; 1% instances)</p>
 
-<p>Parents of <code>NUM</code> nodes belong to 7 different parts of speech: <a href="">NOUN</a> (99; 83% instances), <a href="">NUM</a> (5; 4% instances), <a href="">ROOT</a> (5; 4% instances), <a href="">PROPN</a> (4; 3% instances), <a href="">VERB</a> (4; 3% instances), <a href="">ADV</a> (1; 1% instances), <a href="">PRON</a> (1; 1% instances)</p>
+<p>Parents of <code class="language-plaintext highlighter-rouge">NUM</code> nodes belong to 7 different parts of speech: <a href="">NOUN</a> (99; 83% instances), <a href="">NUM</a> (5; 4% instances), <a href="">ROOT</a> (5; 4% instances), <a href="">PROPN</a> (4; 3% instances), <a href="">VERB</a> (4; 3% instances), <a href="">ADV</a> (1; 1% instances), <a href="">PRON</a> (1; 1% instances)</p>
 
-<p>89 (75%) <code>NUM</code> nodes are leaves.</p>
+<p>89 (75%) <code class="language-plaintext highlighter-rouge">NUM</code> nodes are leaves.</p>
 
-<p>20 (17%) <code>NUM</code> nodes have one child.</p>
+<p>20 (17%) <code class="language-plaintext highlighter-rouge">NUM</code> nodes have one child.</p>
 
-<p>1 (1%) <code>NUM</code> nodes have two children.</p>
+<p>1 (1%) <code class="language-plaintext highlighter-rouge">NUM</code> nodes have two children.</p>
 
-<p>9 (8%) <code>NUM</code> nodes have three or more children.</p>
+<p>9 (8%) <code class="language-plaintext highlighter-rouge">NUM</code> nodes have three or more children.</p>
 
-<p>The highest child degree of a <code>NUM</code> node is 4.</p>
+<p>The highest child degree of a <code class="language-plaintext highlighter-rouge">NUM</code> node is 4.</p>
 
-<p>Children of <code>NUM</code> nodes are attached using 13 different relations: <a href="">uk-dep/punct</a> (23; 45% instances), <a href="">uk-dep/case</a> (5; 10% instances), <a href="">uk-dep/advmod</a> (4; 8% instances), <a href="">uk-dep/conj</a> (3; 6% instances), <a href="">uk-dep/flat</a> (3; 6% instances), <a href="">uk-dep/nmod</a> (3; 6% instances), <a href="">uk-dep/appos</a> (2; 4% instances), <a href="">uk-dep/obl</a> (2; 4% instances), <a href="">uk-dep/parataxis</a> (2; 4% instances), <a href="">uk-dep/amod</a> (1; 2% instances), <a href="">uk-dep/cc</a> (1; 2% instances), <a href="">uk-dep/cop</a> (1; 2% instances), <a href="">uk-dep/discourse</a> (1; 2% instances)</p>
+<p>Children of <code class="language-plaintext highlighter-rouge">NUM</code> nodes are attached using 13 different relations: <a href="">uk-dep/punct</a> (23; 45% instances), <a href="">uk-dep/case</a> (5; 10% instances), <a href="">uk-dep/advmod</a> (4; 8% instances), <a href="">uk-dep/conj</a> (3; 6% instances), <a href="">uk-dep/flat</a> (3; 6% instances), <a href="">uk-dep/nmod</a> (3; 6% instances), <a href="">uk-dep/appos</a> (2; 4% instances), <a href="">uk-dep/obl</a> (2; 4% instances), <a href="">uk-dep/parataxis</a> (2; 4% instances), <a href="">uk-dep/amod</a> (1; 2% instances), <a href="">uk-dep/cc</a> (1; 2% instances), <a href="">uk-dep/cop</a> (1; 2% instances), <a href="">uk-dep/discourse</a> (1; 2% instances)</p>
 
-<p>Children of <code>NUM</code> nodes belong to 10 different parts of speech: <a href="">PUNCT</a> (23; 45% instances), <a href="">NOUN</a> (7; 14% instances), <a href="">ADP</a> (5; 10% instances), <a href="">NUM</a> (5; 10% instances), <a href="">ADV</a> (4; 8% instances), <a href="">ADJ</a> (2; 4% instances), <a href="">PROPN</a> (2; 4% instances), <a href="">AUX</a> (1; 2% instances), <a href="">CCONJ</a> (1; 2% instances), <a href="">PART</a> (1; 2% instances)</p>
+<p>Children of <code class="language-plaintext highlighter-rouge">NUM</code> nodes belong to 10 different parts of speech: <a href="">PUNCT</a> (23; 45% instances), <a href="">NOUN</a> (7; 14% instances), <a href="">ADP</a> (5; 10% instances), <a href="">NUM</a> (5; 10% instances), <a href="">ADV</a> (4; 8% instances), <a href="">ADJ</a> (2; 4% instances), <a href="">PROPN</a> (2; 4% instances), <a href="">AUX</a> (1; 2% instances), <a href="">CCONJ</a> (1; 2% instances), <a href="">PART</a> (1; 2% instances)</p>
 
 
 

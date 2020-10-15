@@ -68,7 +68,7 @@
 takes / will take place, in relation to the current moment or to
 another action in the utterance.</p>
 
-<h3 id="past-past-tense"><code>Past</code>: past tense</h3>
+<h3 id="past-past-tense"><code class="language-plaintext highlighter-rouge">Past</code>: past tense</h3>
 
 <p>The past tense denotes actions that happened before the current
 moment. Past tense in Czech consists of the past participle
@@ -76,8 +76,8 @@ moment. Past tense in Czech consists of the past participle
 which is accompanied by a present auxiliary verb in the first and second persons,
 and stands alone in the third person.</p>
 
-<p>The auxiliary (if any) is in its present form, so it will have <code>Tense=Pres</code>.
-The participle has <code>Tense=Past</code>, even though it can also be used to form present conditional.</p>
+<p>The auxiliary (if any) is in its present form, so it will have <code class="language-plaintext highlighter-rouge">Tense=Pres</code>.
+The participle has <code class="language-plaintext highlighter-rouge">Tense=Past</code>, even though it can also be used to form present conditional.</p>
 
 <h4 id="examples">Examples</h4>
 
@@ -87,13 +87,13 @@ The participle has <code>Tense=Past</code>, even though it can also be used to f
   <li><em>Он <b>ушёл</b> домой. </em> “He has <b>gone</b> home.”</li>
 </ul>
 
-<h3 id="pres-present-tense"><code>Pres</code>: present tense</h3>
+<h3 id="pres-present-tense"><code class="language-plaintext highlighter-rouge">Pres</code>: present tense</h3>
 
 <p>The present tense denotes actions that are happening right now or that
 usually happen.</p>
 
 <p>Note that morphologically present forms of perfective verbs have actually a future meaning
-but they will still be marked <code>Tense=Pres</code>.</p>
+but they will still be marked <code class="language-plaintext highlighter-rouge">Tense=Pres</code>.</p>
 
 <h4 id="examples-1">Examples</h4>
 
@@ -103,20 +103,20 @@ but they will still be marked <code>Tense=Pres</code>.</p>
   <li><em><b>Иду</b> домой. </em> “I <b>go / am going</b> home.” (<em>Jít </em> is an imperfective verb.)</li>
 </ul>
 
-<h3 id="fut-future-tense"><code>Fut</code>: future tense</h3>
+<h3 id="fut-future-tense"><code class="language-plaintext highlighter-rouge">Fut</code>: future tense</h3>
 
 <p>The future tense denotes actions that will happen after the current
 moment. Future tense in Russian is formed in one of three ways, depending of the verb:</p>
 
 <ul>
-  <li>Present forms of perfective verbs have future meaning. These forms are tagged <code>Tense=Pres</code>, not <code>Tense=Fut</code> (see above).</li>
+  <li>Present forms of perfective verbs have future meaning. These forms are tagged <code class="language-plaintext highlighter-rouge">Tense=Pres</code>, not <code class="language-plaintext highlighter-rouge">Tense=Fut</code> (see above).</li>
   <li>The verb <em>быть </em> “to be” has a set of distinct future forms. They combine a future stem <em>буд </em> with present suffixes.
 A small set of verbs (mostly motion verbs) have also future forms. These are formed as the present form (present stem and suffix)
 with the prefix <em>по-</em>.
-Although these forms are morphologically very close to the present forms, they are tagged <code>Tense=Fut</code>
+Although these forms are morphologically very close to the present forms, they are tagged <code class="language-plaintext highlighter-rouge">Tense=Fut</code>
 because the same lemma has also present forms and the feature must distinguish the two.</li>
   <li>The remaining imperfective verbs have periphrastic future forms, consiting of the future form of the auxiliary <em>быть, </em>
-and the infinitive of the content verb. Only the auxiliary will have <code>Tense=Fut</code>, while there will be no tense information
+and the infinitive of the content verb. Only the auxiliary will have <code class="language-plaintext highlighter-rouge">Tense=Fut</code>, while there will be no tense information
 at the infinitive.</li>
 </ul>
 
@@ -138,29 +138,29 @@ at the infinitive.</li>
 
 <hr />
 
-<h2 id="treebank-statistics-udrussian">Treebank Statistics (UD_Russian)</h2>
+<h2 id="treebank-statistics-ud_russian">Treebank Statistics (UD_Russian)</h2>
 
 <p>This feature is universal.
-It occurs with 3 different values: <code>Fut</code>, <code>Past</code>, <code>Pres</code>.</p>
+It occurs with 3 different values: <code class="language-plaintext highlighter-rouge">Fut</code>, <code class="language-plaintext highlighter-rouge">Past</code>, <code class="language-plaintext highlighter-rouge">Pres</code>.</p>
 
-<p>7129 tokens (8%) have a non-empty value of <code>Tense</code>.
-3666 types (13%) occur at least once with a non-empty value of <code>Tense</code>.
-1709 lemmas (10%) occur at least once with a non-empty value of <code>Tense</code>.
+<p>7129 tokens (8%) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.
+3666 types (13%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.
+1709 lemmas (10%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.
 The feature is used with 2 part-of-speech tags: <a href="">ru-pos/VERB</a> (6219; 7% instances), <a href="">ru-pos/AUX</a> (910; 1% instances).</p>
 
-<h3 id="verb"><code>VERB</code></h3>
+<h3 id="verb"><code class="language-plaintext highlighter-rouge">VERB</code></h3>
 
-<p>6219 <a href="">ru-pos/VERB</a> tokens (85% of all <code>VERB</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>6219 <a href="">ru-pos/VERB</a> tokens (85% of all <code class="language-plaintext highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Tense</code> co-occurred: <tt><a href="Variant.html">Variant</a>=EMPTY</tt> (5399; 87%), <tt><a href="Number.html">Number</a>=Sing</tt> (4537; 73%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (4485; 72%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (4406; 71%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (4406; 71%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (4389; 71%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (4389; 71%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (3223; 52%), <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (3165; 51%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">VERB</code> and <code class="language-plaintext highlighter-rouge">Tense</code> co-occurred: <tt><a href="Variant.html">Variant</a>=EMPTY</tt> (5399; 87%), <tt><a href="Number.html">Number</a>=Sing</tt> (4537; 73%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (4485; 72%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (4406; 71%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (4406; 71%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (4389; 71%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (4389; 71%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (3223; 52%), <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (3165; 51%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>Tense</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Tense</code>:</p>
 
 <ul>
-  <li><code>Fut</code> (74; 1% of non-empty <code>Tense</code>): <em>сможет, будет, поможет, начнутся, рассмотрим, смогут, Наложим, Покажем, Предположим, Сорвем</em></li>
-  <li><code>Past</code> (4104; 66% of non-empty <code>Tense</code>): <em>получил, родился, было, начал, работал, окончил, был, род., участвовал, были</em></li>
-  <li><code>Pres</code> (2041; 33% of non-empty <code>Tense</code>): <em>составляет, может, находится, входит, имеет, есть, занимает, могут, нет, состоит</em></li>
-  <li><code>EMPTY</code> (1084): <em>можно, быть, включая, начиная, заниматься, использовать, сделать, надо, найти, работать</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Fut</code> (74; 1% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>сможет, будет, поможет, начнутся, рассмотрим, смогут, Наложим, Покажем, Предположим, Сорвем</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Past</code> (4104; 66% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>получил, родился, было, начал, работал, окончил, был, род., участвовал, были</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pres</code> (2041; 33% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>составляет, может, находится, входит, имеет, есть, занимает, могут, нет, состоит</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (1084): <em>можно, быть, включая, начиная, заниматься, использовать, сделать, надо, найти, работать</em></li>
 </ul>
 
 <table>
@@ -173,19 +173,19 @@ The feature is used with 2 part-of-speech tags: <a href="">ru-pos/VERB</a> (6219
   <tr><td><tt><a href="Number.html">Number</a>=Plur</tt></td><td></td><td></td><td><em>были</em></td></tr>
 </table>
 
-<h3 id="aux"><code>AUX</code></h3>
+<h3 id="aux"><code class="language-plaintext highlighter-rouge">AUX</code></h3>
 
-<p>910 <a href="">ru-pos/AUX</a> tokens (91% of all <code>AUX</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>910 <a href="">ru-pos/AUX</a> tokens (91% of all <code class="language-plaintext highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Tense</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (890; 98%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (890; 98%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (789; 87%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (755; 83%), <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (750; 82%), <tt><a href="Number.html">Number</a>=Sing</tt> (739; 81%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">AUX</code> and <code class="language-plaintext highlighter-rouge">Tense</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (890; 98%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (890; 98%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (789; 87%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (755; 83%), <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (750; 82%), <tt><a href="Number.html">Number</a>=Sing</tt> (739; 81%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>Tense</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">AUX</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Tense</code>:</p>
 
 <ul>
-  <li><code>Fut</code> (34; 4% of non-empty <code>Tense</code>): <em>будет, будут, станет, станут, покажется</em></li>
-  <li><code>Past</code> (754; 83% of non-empty <code>Tense</code>): <em>был, было, были, была, стал, стала, стало, стали, являлся, являлась</em></li>
-  <li><code>Pres</code> (122; 13% of non-empty <code>Tense</code>): <em>является, являются, считается, оказывается, остаётся, считает, Don, Has, est, re</em></li>
-  <li><code>EMPTY</code> (93): <em>это, быть, будучи, стать, став, считать, оставаясь, –, Be, Stay</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Fut</code> (34; 4% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>будет, будут, станет, станут, покажется</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Past</code> (754; 83% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>был, было, были, была, стал, стала, стало, стали, являлся, являлась</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pres</code> (122; 13% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>является, являются, считается, оказывается, остаётся, считает, Don, Has, est, re</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (93): <em>это, быть, будучи, стать, став, считать, оставаясь, –, Be, Stay</em></li>
 </ul>
 
 <table>
@@ -201,9 +201,9 @@ The feature is used with 2 part-of-speech tags: <a href="">ru-pos/VERB</a> (6219
   <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td></td><td></td><td><em>были</em></td></tr>
 </table>
 
-<h2 id="relations-with-agreement-in-tense">Relations with Agreement in <code>Tense</code></h2>
+<h2 id="relations-with-agreement-in-tense">Relations with Agreement in <code class="language-plaintext highlighter-rouge">Tense</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Tense</code>:
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">Tense</code>:
 <tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (633; 92%),
 <tt>VERB –[<a href="../dep/aux:pass.html">aux:pass</a>]–&gt; AUX</tt> (431; 95%),
 <tt>VERB –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; VERB</tt> (195; 76%),
@@ -217,29 +217,29 @@ The feature is used with 2 part-of-speech tags: <a href="">ru-pos/VERB</a> (6219
 
 <hr />
 
-<h2 id="treebank-statistics-udrussian-syntagrus">Treebank Statistics (UD_Russian-SynTagRus)</h2>
+<h2 id="treebank-statistics-ud_russian-syntagrus">Treebank Statistics (UD_Russian-SynTagRus)</h2>
 
 <p>This feature is universal.
-It occurs with 3 different values: <code>Fut</code>, <code>Past</code>, <code>Pres</code>.</p>
+It occurs with 3 different values: <code class="language-plaintext highlighter-rouge">Fut</code>, <code class="language-plaintext highlighter-rouge">Past</code>, <code class="language-plaintext highlighter-rouge">Pres</code>.</p>
 
-<p>95820 tokens (10%) have a non-empty value of <code>Tense</code>.
-27095 types (25%) occur at least once with a non-empty value of <code>Tense</code>.
-5407 lemmas (14%) occur at least once with a non-empty value of <code>Tense</code>.
+<p>95820 tokens (10%) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.
+27095 types (25%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.
+5407 lemmas (14%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.
 The feature is used with 2 part-of-speech tags: <a href="">ru-pos/VERB</a> (89227; 9% instances), <a href="">ru-pos/AUX</a> (6593; 1% instances).</p>
 
-<h3 id="verb-1"><code>VERB</code></h3>
+<h3 id="verb-1"><code class="language-plaintext highlighter-rouge">VERB</code></h3>
 
-<p>89227 <a href="">ru-pos/VERB</a> tokens (81% of all <code>VERB</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>89227 <a href="">ru-pos/VERB</a> tokens (81% of all <code class="language-plaintext highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Tense</code> co-occurred: <tt><a href="Case.html">Case</a>=EMPTY</tt> (77658; 87%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (69379; 78%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (69379; 78%), <tt><a href="Voice.html">Voice</a>=Act</tt> (58120; 65%), <tt><a href="Number.html">Number</a>=Sing</tt> (56361; 63%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (55667; 62%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (54063; 61%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (52179; 58%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">VERB</code> and <code class="language-plaintext highlighter-rouge">Tense</code> co-occurred: <tt><a href="Case.html">Case</a>=EMPTY</tt> (77658; 87%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (69379; 78%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (69379; 78%), <tt><a href="Voice.html">Voice</a>=Act</tt> (58120; 65%), <tt><a href="Number.html">Number</a>=Sing</tt> (56361; 63%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (55667; 62%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (54063; 61%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (52179; 58%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>Tense</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Tense</code>:</p>
 
 <ul>
-  <li><code>Fut</code> (5180; 6% of non-empty <code>Tense</code>): <em>скажем, станет, придется, сможет, удастся, смогут, окажется, позволит, пойдет, станут</em></li>
-  <li><code>Past</code> (46910; 53% of non-empty <code>Tense</code>): <em>было, стал, сказал, стало, стали, мог, заявил, могли, удалось, стала</em></li>
-  <li><code>Pres</code> (37137; 42% of non-empty <code>Tense</code>): <em>может, есть, нет, могут, является, говорит, стоит, идет, имеет, происходит</em></li>
-  <li><code>EMPTY</code> (21514): <em>быть, сделать, сказать, делать, говорить, работать, получить, стать, иметь, понять</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Fut</code> (5180; 6% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>скажем, станет, придется, сможет, удастся, смогут, окажется, позволит, пойдет, станут</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Past</code> (46910; 53% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>было, стал, сказал, стало, стали, мог, заявил, могли, удалось, стала</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pres</code> (37137; 42% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>может, есть, нет, могут, является, говорит, стоит, идет, имеет, происходит</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (21514): <em>быть, сделать, сказать, делать, говорить, работать, получить, стать, иметь, понять</em></li>
 </ul>
 
 <table>
@@ -269,18 +269,18 @@ The feature is used with 2 part-of-speech tags: <a href="">ru-pos/VERB</a> (8922
   <tr><td><tt><a href="Aspect.html">Aspect</a>=Perf|<a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td></td><td></td><td><em>смогли</em></td></tr>
 </table>
 
-<h3 id="aux-1"><code>AUX</code></h3>
+<h3 id="aux-1"><code class="language-plaintext highlighter-rouge">AUX</code></h3>
 
-<p>6593 <a href="">ru-pos/AUX</a> tokens (91% of all <code>AUX</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>6593 <a href="">ru-pos/AUX</a> tokens (91% of all <code class="language-plaintext highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Tense</code> co-occurred: <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (6593; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (6593; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (6547; 99%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (6547; 99%), <tt><a href="Number.html">Number</a>=Sing</tt> (4865; 74%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (4732; 72%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">AUX</code> and <code class="language-plaintext highlighter-rouge">Tense</code> co-occurred: <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (6593; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (6593; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (6547; 99%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (6547; 99%), <tt><a href="Number.html">Number</a>=Sing</tt> (4865; 74%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (4732; 72%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>Tense</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">AUX</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Tense</code>:</p>
 
 <ul>
-  <li><code>Past</code> (4691; 71% of non-empty <code>Tense</code>): <em>было, был, были, была, бывшие, бывший, бывшем</em></li>
-  <li><code>Pres</code> (1902; 29% of non-empty <code>Tense</code>): <em>будет, будут, есть, будем, буду, будучи, будете, будешь, суть</em></li>
-  <li><code>EMPTY</code> (673): <em>быть, будь, будьте</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Past</code> (4691; 71% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>было, был, были, была, бывшие, бывший, бывшем</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pres</code> (1902; 29% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>будет, будут, есть, будем, буду, будучи, будете, будешь, суть</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (673): <em>быть, будь, будьте</em></li>
 </ul>
 
 <table>
@@ -301,9 +301,9 @@ The feature is used with 2 part-of-speech tags: <a href="">ru-pos/VERB</a> (8922
   <tr><td><tt><a href="VerbForm.html">VerbForm</a>=Conv</tt></td><td><em>будучи</em></td><td></td></tr>
 </table>
 
-<h2 id="relations-with-agreement-in-tense-1">Relations with Agreement in <code>Tense</code></h2>
+<h2 id="relations-with-agreement-in-tense-1">Relations with Agreement in <code class="language-plaintext highlighter-rouge">Tense</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Tense</code>:
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">Tense</code>:
 <tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (9525; 85%),
 <tt>VERB –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; VERB</tt> (1812; 51%),
 <tt>VERB –[<a href="../dep/aux:pass.html">aux:pass</a>]–&gt; AUX</tt> (1641; 71%),

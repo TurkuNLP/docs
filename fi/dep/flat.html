@@ -62,11 +62,11 @@
 
           <h2><code>flat</code>: name</h2>
 
-<p>Proper names constituted of more than one word are annotated using the dependency type <code>flat</code>. The first (leftmost) word is the head, and the other words are direct dependents of the head.</p>
+<p>Proper names constituted of more than one word are annotated using the dependency type <code class="language-plaintext highlighter-rouge">flat</code>. The first (leftmost) word is the head, and the other words are direct dependents of the head.</p>
 
-<p>The <code>flat</code> dependency relation is used in cases where the multi-word name does not have an obvious internal syntactic structure, as is the case with for instance names of people (<em>Matti Virtanen</em>) or cities (<em>New York</em>).</p>
+<p>The <code class="language-plaintext highlighter-rouge">flat</code> dependency relation is used in cases where the multi-word name does not have an obvious internal syntactic structure, as is the case with for instance names of people (<em>Matti Virtanen</em>) or cities (<em>New York</em>).</p>
 
-<p>If a name has an obvious internal structure, as is often the case in names of books and movies for instance, this structure is marked instead, and the <code>flat</code> relation is marked as a secondary relation (DEPS field) spanning over the whole name phrase (from first token to the last).</p>
+<p>If a name has an obvious internal structure, as is often the case in names of books and movies for instance, this structure is marked instead, and the <code class="language-plaintext highlighter-rouge">flat</code> relation is marked as a secondary relation (DEPS field) spanning over the whole name phrase (from first token to the last).</p>
 
 <!-- fname:name.pdf -->
 <pre><code class="language-sdparse">Jumalat juhlivat öisin on Donna Tarttin esikoisteos . \n Gods celebrate by_night is Donna Tartt's first_work .
@@ -92,17 +92,17 @@ nmod:poss(esikoisteos-7, Donna-5)
 
 <hr />
 
-<h2 id="treebank-statistics-udfinnish">Treebank Statistics (UD_Finnish)</h2>
+<h2 id="treebank-statistics-ud_finnish">Treebank Statistics (UD_Finnish)</h2>
 
 <p>This relation is universal.
-There are 2 language-specific subtypes of <code>flat</code>: <a href="">flat:foreign</a>, <a href="">flat:name</a>.</p>
+There are 2 language-specific subtypes of <code class="language-plaintext highlighter-rouge">flat</code>: <a href="">flat:foreign</a>, <a href="">flat:name</a>.</p>
 
-<p>783 nodes (0%) are attached to their parents as <code>flat</code>.</p>
+<p>783 nodes (0%) are attached to their parents as <code class="language-plaintext highlighter-rouge">flat</code>.</p>
 
-<p>783 instances of <code>flat</code> (100%) are left-to-right (parent precedes child).
+<p>783 instances of <code class="language-plaintext highlighter-rouge">flat</code> (100%) are left-to-right (parent precedes child).
 Average distance between parent and child is 1.75989782886335.</p>
 
-<p>The following 14 pairs of parts of speech are connected with <code>flat</code>: <a href="">fi-pos/ADJ</a>-<a href="">fi-pos/NOUN</a> (223; 28% instances), <a href="">fi-pos/NUM</a>-<a href="">fi-pos/NOUN</a> (193; 25% instances), <a href="">fi-pos/ADJ</a>-<a href="">fi-pos/NUM</a> (175; 22% instances), <a href="">fi-pos/NUM</a>-<a href="">fi-pos/NUM</a> (99; 13% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/NUM</a> (34; 4% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/NOUN</a> (21; 3% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/ADJ</a> (15; 2% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/NOUN</a> (8; 1% instances), <a href="">fi-pos/NUM</a>-<a href="">fi-pos/ADJ</a> (4; 1% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/NUM</a> (4; 1% instances), <a href="">fi-pos/ADJ</a>-<a href="">fi-pos/ADJ</a> (2; 0% instances), <a href="">fi-pos/NUM</a>-<a href="">fi-pos/PUNCT</a> (2; 0% instances), <a href="">fi-pos/PUNCT</a>-<a href="">fi-pos/NOUN</a> (2; 0% instances), <a href="">fi-pos/PUNCT</a>-<a href="">fi-pos/NUM</a> (1; 0% instances).</p>
+<p>The following 14 pairs of parts of speech are connected with <code class="language-plaintext highlighter-rouge">flat</code>: <a href="">fi-pos/ADJ</a>-<a href="">fi-pos/NOUN</a> (223; 28% instances), <a href="">fi-pos/NUM</a>-<a href="">fi-pos/NOUN</a> (193; 25% instances), <a href="">fi-pos/ADJ</a>-<a href="">fi-pos/NUM</a> (175; 22% instances), <a href="">fi-pos/NUM</a>-<a href="">fi-pos/NUM</a> (99; 13% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/NUM</a> (34; 4% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/NOUN</a> (21; 3% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/ADJ</a> (15; 2% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/NOUN</a> (8; 1% instances), <a href="">fi-pos/NUM</a>-<a href="">fi-pos/ADJ</a> (4; 1% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/NUM</a> (4; 1% instances), <a href="">fi-pos/ADJ</a>-<a href="">fi-pos/ADJ</a> (2; 0% instances), <a href="">fi-pos/NUM</a>-<a href="">fi-pos/PUNCT</a> (2; 0% instances), <a href="">fi-pos/PUNCT</a>-<a href="">fi-pos/NOUN</a> (2; 0% instances), <a href="">fi-pos/PUNCT</a>-<a href="">fi-pos/NUM</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 6	bgColor:blue
 # visual-style 6	fgColor:white
@@ -152,16 +152,16 @@ Average distance between parent and child is 1.75989782886335.</p>
 
 <hr />
 
-<h2 id="treebank-statistics-udfinnish-ftb">Treebank Statistics (UD_Finnish-FTB)</h2>
+<h2 id="treebank-statistics-ud_finnish-ftb">Treebank Statistics (UD_Finnish-FTB)</h2>
 
 <p>This relation is universal.</p>
 
-<p>743 nodes (1%) are attached to their parents as <code>flat</code>.</p>
+<p>743 nodes (1%) are attached to their parents as <code class="language-plaintext highlighter-rouge">flat</code>.</p>
 
-<p>743 instances of <code>flat</code> (100%) are left-to-right (parent precedes child).
+<p>743 instances of <code class="language-plaintext highlighter-rouge">flat</code> (100%) are left-to-right (parent precedes child).
 Average distance between parent and child is 1.06056527590848.</p>
 
-<p>The following 7 pairs of parts of speech are connected with <code>flat</code>: <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/PROPN</a> (702; 94% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/NOUN</a> (19; 3% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/NUM</a> (9; 1% instances), <a href="">fi-pos/X</a>-<a href="">fi-pos/X</a> (6; 1% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/ADJ</a> (3; 0% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/X</a> (2; 0% instances), <a href="">fi-pos/X</a>-<a href="">fi-pos/PROPN</a> (2; 0% instances).</p>
+<p>The following 7 pairs of parts of speech are connected with <code class="language-plaintext highlighter-rouge">flat</code>: <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/PROPN</a> (702; 94% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/NOUN</a> (19; 3% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/NUM</a> (9; 1% instances), <a href="">fi-pos/X</a>-<a href="">fi-pos/X</a> (6; 1% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/ADJ</a> (3; 0% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/X</a> (2; 0% instances), <a href="">fi-pos/X</a>-<a href="">fi-pos/PROPN</a> (2; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 2	bgColor:blue
 # visual-style 2	fgColor:white

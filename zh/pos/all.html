@@ -135,7 +135,7 @@
   <li>這 隻 鳥 是 <b>雌</b> 的 / <em>zhè zhī niǎo shì <b>cí</b> de</em> “This bird is female.”</li>
 </ul>
 
-<p>Note that ordinal numerals such as 第一 / <em>dìyī</em> “first” and 第三 / <em>dìsān</em> “third” are to be treated as adjectives and tagged <code>ADJ</code> per UD specifications, even though they are traditionally classified as numerals in Chinese.</p>
+<p>Note that ordinal numerals such as 第一 / <em>dìyī</em> “first” and 第三 / <em>dìsān</em> “third” are to be treated as adjectives and tagged <code class="language-plaintext highlighter-rouge">ADJ</code> per UD specifications, even though they are traditionally classified as numerals in Chinese.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -164,7 +164,7 @@
 
 <h3 id="definition">Definition</h3>
 
-<p>The Chinese <code>ADP</code> covers three categories of function words analyzed as adpositions: (1) “coverbs”/prepositions, (2) valence markers, and (3) “localizers”/postpositions.</p>
+<p>The Chinese <code class="language-plaintext highlighter-rouge">ADP</code> covers three categories of function words analyzed as adpositions: (1) “coverbs”/prepositions, (2) valence markers, and (3) “localizers”/postpositions.</p>
 
 <p>Chinese coverbs introduce an extra participant/argument to the event/main verb in a clause (but note that many coverbs may also function as main verbs).</p>
 
@@ -172,14 +172,14 @@
   <li>他 <b>對</b> 我 做 了 很 殘忍 的 事情 ／ <em>tā <b>duì</b> wǒ zuò le hěn cánrěn de shìqíng</em> “He did some cruel things to me.”</li>
 </ul>
 
-<p>Valence markers such as the “disposal” 把 / <em>bǎ</em> and the “long passive” 被 / <em>bèi</em> (when followed by an agent noun) are also tagged <code>ADP</code> (however, the “short passive” 被 / <em>bèi</em> when not followed by a noun should be tagged <a><code>AUX</code></a>).</p>
+<p>Valence markers such as the “disposal” 把 / <em>bǎ</em> and the “long passive” 被 / <em>bèi</em> (when followed by an agent noun) are also tagged <code class="language-plaintext highlighter-rouge">ADP</code> (however, the “short passive” 被 / <em>bèi</em> when not followed by a noun should be tagged <a><code class="language-plaintext highlighter-rouge">AUX</code></a>).</p>
 
 <ul>
   <li>你 <b>把</b> 它 吃 掉 吧 / <em>nǐ <b>bǎ</b> tā chī diào ba</em> “You should eat it up.”</li>
   <li>我 <b>被</b> 他 打 了 一 頓 / <em>wǒ <b>bèi</b> tā dǎle yī dùn</em> “I was given a beating by him.”</li>
 </ul>
 
-<p>Localizers (also known as 方位詞 / <em>fāngwèicí</em>), typically indicate spatial information in relation to the noun preceding it. Some localizers have also grammaticalized into clausal markers indicating temporal information. Localizers with the clausal function are still tagged as <code>ADP</code> (but are labeled with the dependency relation <a><code>mark</code></a>).</p>
+<p>Localizers (also known as 方位詞 / <em>fāngwèicí</em>), typically indicate spatial information in relation to the noun preceding it. Some localizers have also grammaticalized into clausal markers indicating temporal information. Localizers with the clausal function are still tagged as <code class="language-plaintext highlighter-rouge">ADP</code> (but are labeled with the dependency relation <a><code class="language-plaintext highlighter-rouge">mark</code></a>).</p>
 
 <ul>
   <li>我 把 梨子 放 在 桌子 <b>上</b> / <em>wǒ bǎ lízi fàng zài zhuōzi <b>shàng</b></em> “I’m putting the pears on the table.”</li>
@@ -235,14 +235,14 @@
   <li><b>連</b> 他 都 不 去 了 / <em><b>lián</b> tā dōu bù qù le</em> “<b>Even</b> he’s not going.”</li>
 </ul>
 
-<p>There is a closed subclass of pronominal adverbs that refer to circumstances in context, rather than naming them directly; similarly to pronouns, these can be categorized as interrogative, demonstrative, etc. These should be treated as adverbs when modifying a predicate, but otherwise some of them can function as a nominal in the syntax, in which case they should be tagged <a><code>PRON</code></a>.</p>
+<p>There is a closed subclass of pronominal adverbs that refer to circumstances in context, rather than naming them directly; similarly to pronouns, these can be categorized as interrogative, demonstrative, etc. These should be treated as adverbs when modifying a predicate, but otherwise some of them can function as a nominal in the syntax, in which case they should be tagged <a><code class="language-plaintext highlighter-rouge">PRON</code></a>.</p>
 
 <ul>
   <li>你 <b>為什麼</b> 不 來 / <em>nǐ <b>wèishéme</b> bù lái</em> “<b>Why</b> aren’t you coming?”</li>
   <li>我 <b>這樣</b> 做 的 / <em>wǒ shì <b>zhèyàng</b> zuò de</em> “I do it <b>like this</b>.”</li>
 </ul>
 
-<p>Note that although some adverbs express temporal information, many common time expressions (e.g., 今天 / <em>jīntiān</em> ‘today’, 去年 / <em>qùnián</em> “last year”, 晚上 / <em>wǎnshàng</em> “night”) are actually nouns and should be tagged <a><code>NOUN</code></a>.</p>
+<p>Note that although some adverbs express temporal information, many common time expressions (e.g., 今天 / <em>jīntiān</em> ‘today’, 去年 / <em>qùnián</em> “last year”, 晚上 / <em>wǎnshàng</em> “night”) are actually nouns and should be tagged <a><code class="language-plaintext highlighter-rouge">NOUN</code></a>.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -341,7 +341,7 @@
   <li>“and”
     <ul>
       <li>與 / <em>yǔ</em>, 和 / <em>hé</em>, 跟 / <em>gēn</em>, 同 / <em>tóng</em>, 以及 / <em>yǐjí</em>, 并 / <em>bìng</em>, 并且 / <em>bìngqiě</em>, 而 / <em>ér</em>, 而且 / <em>érqiě</em>, 且 / <em>qiě</em></li>
-      <li>Note that 與, 和, 跟, 同 may also function as prepositions (<code>ADP</code>)</li>
+      <li>Note that 與, 和, 跟, 同 may also function as prepositions (<code class="language-plaintext highlighter-rouge">ADP</code>)</li>
     </ul>
   </li>
   <li>“or”
@@ -365,7 +365,7 @@
 
 <p>Determiners are words that modify nouns or noun phrases and express the reference of the noun phrase in context.</p>
 
-<p>Note that Chinese does not traditionally define determiners as a separate word class, but categorizes them as pronouns and/or adjectives. For this reason, in the UD framework some words in Chinese may function as determiners and be tagged <code>DET</code> in one syntactic context (i.e., when modifying a noun), and as pronouns (tagged <a><code>PRON</code></a>) when behaving as a nominal or the head of a nominal phrase.</p>
+<p>Note that Chinese does not traditionally define determiners as a separate word class, but categorizes them as pronouns and/or adjectives. For this reason, in the UD framework some words in Chinese may function as determiners and be tagged <code class="language-plaintext highlighter-rouge">DET</code> in one syntactic context (i.e., when modifying a noun), and as pronouns (tagged <a><code class="language-plaintext highlighter-rouge">PRON</code></a>) when behaving as a nominal or the head of a nominal phrase.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -429,9 +429,9 @@
 
 <p>Nouns are a part of speech typically denoting a person, place, thing, animal, or idea.</p>
 
-<p>The NOUN tag is intended for common nouns only. See <a><code>PROPN</code></a> for proper nouns and <a><code>PRON</code></a> for pronouns.</p>
+<p>The NOUN tag is intended for common nouns only. See <a><code class="language-plaintext highlighter-rouge">PROPN</code></a> for proper nouns and <a><code class="language-plaintext highlighter-rouge">PRON</code></a> for pronouns.</p>
 
-<p>As a special case, classifiers (量詞 / <em>liàngcí</em>) are also tagged <code>NOUN</code> per UD guidelines. Their classifier status may be preserved in the feature column (FEATS) as <code>NounType=CLf</code>.</p>
+<p>As a special case, classifiers (量詞 / <em>liàngcí</em>) are also tagged <code class="language-plaintext highlighter-rouge">NOUN</code> per UD guidelines. Their classifier status may be preserved in the feature column (FEATS) as <code class="language-plaintext highlighter-rouge">NounType=CLf</code>.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -457,7 +457,7 @@
 
 <p>A numeral is a word, functioning most typically as a determiner, a pronoun or an adjective, that expresses a number and a relation to the number, such as quantity, sequence, frequency or fraction.</p>
 
-<p>Cardinal numerals are covered by <code>NUM</code> regardless of syntactic function and regardless of whether they are expressed as words (五 / <em>wǔ</em> “five”) or digits (5). By contrast, ordinal numerals are always tagged <a><code>ADJ</code></a>.</p>
+<p>Cardinal numerals are covered by <code class="language-plaintext highlighter-rouge">NUM</code> regardless of syntactic function and regardless of whether they are expressed as words (五 / <em>wǔ</em> “five”) or digits (5). By contrast, ordinal numerals are always tagged <a><code class="language-plaintext highlighter-rouge">ADJ</code></a>.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -473,9 +473,9 @@
 
 <h3 id="definition">Definition</h3>
 
-<p>Particles are function words that must be associated with another word, phrase, or clause to impart meaning and that do not satisfy definitions of other universal parts of speech (such as <code>ADP</code>, <code>AUX</code>, <code>CCONJ</code>, or <code>SCONJ</code>).</p>
+<p>Particles are function words that must be associated with another word, phrase, or clause to impart meaning and that do not satisfy definitions of other universal parts of speech (such as <code class="language-plaintext highlighter-rouge">ADP</code>, <code class="language-plaintext highlighter-rouge">AUX</code>, <code class="language-plaintext highlighter-rouge">CCONJ</code>, or <code class="language-plaintext highlighter-rouge">SCONJ</code>).</p>
 
-<p>In Chinese, particles include the genitive/associative/relativizer/nominalizer marker 的 / <em>de</em>; 得 / <em>de</em> in V-得 extent/descriptive constructions (see <a><code>compound:ext</code></a>); the manner adverbializer 地 / <em>de</em>; the “et cetera” markers 等(等) / <em>děng(děng)</em>; sentence-final particles (句末助詞 / <em>jùmuò zhùcí</em>); and the object relativizer 所 / <em>suǒ</em>.</p>
+<p>In Chinese, particles include the genitive/associative/relativizer/nominalizer marker 的 / <em>de</em>; 得 / <em>de</em> in V-得 extent/descriptive constructions (see <a><code class="language-plaintext highlighter-rouge">compound:ext</code></a>); the manner adverbializer 地 / <em>de</em>; the “et cetera” markers 等(等) / <em>děng(děng)</em>; sentence-final particles (句末助詞 / <em>jùmuò zhùcí</em>); and the object relativizer 所 / <em>suǒ</em>.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -534,7 +534,7 @@
 
 <h3 id="definition">Definition</h3>
 
-<p>Pronouns are words that substitute for nouns or noun phrases, whose meaning is recoverable from the linguistic or extralinguistic context. Some pronouns – in particular certain demonstrative, total, indefinite, and interrogatives pronouns – may also function as determiners (<a><code>DET</code></a>) and are tagged as such when functioning as a modifier of a noun.</p>
+<p>Pronouns are words that substitute for nouns or noun phrases, whose meaning is recoverable from the linguistic or extralinguistic context. Some pronouns – in particular certain demonstrative, total, indefinite, and interrogatives pronouns – may also function as determiners (<a><code class="language-plaintext highlighter-rouge">DET</code></a>) and are tagged as such when functioning as a modifier of a noun.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -611,7 +611,7 @@
 
 <p>Punctuation marks are character groups used to delimit linguistic units in printed text.</p>
 
-<p>Punctuation is not taken to include logograms such as <em>$</em>, <em>%</em>, and <em>§</em>, which are instead tagged as <a><code>SYM</code></a>.</p>
+<p>Punctuation is not taken to include logograms such as <em>$</em>, <em>%</em>, and <em>§</em>, which are instead tagged as <a><code class="language-plaintext highlighter-rouge">SYM</code></a>.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -633,7 +633,7 @@
 
 <p>Subordinating conjunctions in Chinese include all markers of subordinate clauses, including conditional clauses, purpose clauses, etc.</p>
 
-<p>In paired clauses where both clauses are marked by a conjunctive word and the first is subordinate to the second, we treat the conjunctive word in the first clause as <code>SCONJ</code>, whereas the one in the second, main clause as an adverb (<a><code>ADV</code></a>) (e.g., 雖然/SCONJ… 可是/ADV… / <em>suīrán… kěshì…</em> “Although… however…”).</p>
+<p>In paired clauses where both clauses are marked by a conjunctive word and the first is subordinate to the second, we treat the conjunctive word in the first clause as <code class="language-plaintext highlighter-rouge">SCONJ</code>, whereas the one in the second, main clause as an adverb (<a><code class="language-plaintext highlighter-rouge">ADV</code></a>) (e.g., 雖然/SCONJ… 可是/ADV… / <em>suīrán… kěshì…</em> “Although… however…”).</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -703,9 +703,9 @@
 
 <h3 id="definition">Definition</h3>
 
-<p>The tag <code>X</code> is used for words that for some reason cannot be assigned a real part-of-speech category. It should be used very restrictively.</p>
+<p>The tag <code class="language-plaintext highlighter-rouge">X</code> is used for words that for some reason cannot be assigned a real part-of-speech category. It should be used very restrictively.</p>
 
-<p>A special usage of <code>X</code> is for cases of code-switching where it is not possible (or meaningful) to analyze the intervening language grammatically (and where the dependency relation <em>foreign</em> is typically used in the syntactic analysis). This usage does not extend to ordinary loan words which should be assigned a normal part-of-speech.</p>
+<p>A special usage of <code class="language-plaintext highlighter-rouge">X</code> is for cases of code-switching where it is not possible (or meaningful) to analyze the intervening language grammatically (and where the dependency relation <em>foreign</em> is typically used in the syntactic analysis). This usage does not extend to ordinary loan words which should be assigned a normal part-of-speech.</p>
 
 <h3 id="example">Example</h3>
 

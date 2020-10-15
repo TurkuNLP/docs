@@ -68,7 +68,7 @@
 adjective or pronoun, that expresses a number and a relation to the
 number, such as quantity, sequence, frequency or fraction.</p>
 
-<p>Note that cardinal numerals are covered by <code>NUM</code> whether they are used
+<p>Note that cardinal numerals are covered by <code class="language-plaintext highlighter-rouge">NUM</code> whether they are used
 as determiners or not (as in <em>Windows <b>7</b></em>) and whether they
 are expressed as words <em>(четыре)</em>, digits <em>(4)</em> or Roman numerals
 <em>(IV)</em>.</p>
@@ -108,12 +108,12 @@ their syntactic and morphological behavior.</p>
 
 <h3 id="border-cases">Border cases</h3>
 <ul>
-  <li><em>тысяча, миллион, миллиард, триллион </em> “thousand, million, billion, trillion”: words for large quantities are ambiguous between cardinal numerals (tagged <code>NUM</code>) and nouns.
+  <li><em>тысяча, миллион, миллиард, триллион </em> “thousand, million, billion, trillion”: words for large quantities are ambiguous between cardinal numerals (tagged <code class="language-plaintext highlighter-rouge">NUM</code>) and nouns.
 If they inflect as nouns, they are tagged <a href="">NOUN</a>; but the borderline is fuzzy.
 For instance, in phrases like <em><b>тысячи</b> людей вышли на улицы</em> (“<b>thousands</b> of people went on the streets”),
 <em>тысячи </em> is a noun.
 In numeric expressions, e.g. <em>110 <b>тысяч</b> долларов </em> (“110 <b>thousand</b> dollars”), it is a cardinal numeral.</li>
-  <li><em>много, мало, немного, немало, несколько, достаточно </em> “many, few, not many, a lot, several, enough”: pronominal quantifiers are ambiguous between cardinal numerals (tagged <code>NUM</code> when they refer to imprecise quantities) and adverbs (tagged <a href="">ADV</a> when they refer to degree/intensity). As a rule, the latter have verbs, adjectives, and adverbs as their head (e.g. <em>я был несколько груб</em> “I was a bit rude”). Note that the words <em>более, больше, менее, меньше</em> “more than, less than” are considered comparative forms of the numerals <em>много</em> and <em>мало</em> when they are used in constructions with cardinal numerals, e.g. <em>более пяти студентов</em> “more than five students” (see <a href="http://universaldependencies.org/ru/overview/specific-syntax.html#more-than">specific-syntax</a>).</li>
+  <li><em>много, мало, немного, немало, несколько, достаточно </em> “many, few, not many, a lot, several, enough”: pronominal quantifiers are ambiguous between cardinal numerals (tagged <code class="language-plaintext highlighter-rouge">NUM</code> when they refer to imprecise quantities) and adverbs (tagged <a href="">ADV</a> when they refer to degree/intensity). As a rule, the latter have verbs, adjectives, and adverbs as their head (e.g. <em>я был несколько груб</em> “I was a bit rude”). Note that the words <em>более, больше, менее, меньше</em> “more than, less than” are considered comparative forms of the numerals <em>много</em> and <em>мало</em> when they are used in constructions with cardinal numerals, e.g. <em>более пяти студентов</em> “more than five students” (see <a href="http://universaldependencies.org/ru/overview/specific-syntax.html#more-than">specific-syntax</a>).</li>
 </ul>
 
 
@@ -127,14 +127,14 @@ In numeric expressions, e.g. <em>110 <b>тысяч</b> долларов </em> (
 
 <hr />
 
-<h2 id="treebank-statistics-udrussian">Treebank Statistics (UD_Russian)</h2>
+<h2 id="treebank-statistics-ud_russian">Treebank Statistics (UD_Russian)</h2>
 
-<p>There are 640 <code>NUM</code> lemmas (4%), 681 <code>NUM</code> types (2%) and 1822 <code>NUM</code> tokens (2%).
-Out of 16 observed tags, the rank of <code>NUM</code> is: 6 in number of lemmas, 6 in number of types and 9 in number of tokens.</p>
+<p>There are 640 <code class="language-plaintext highlighter-rouge">NUM</code> lemmas (4%), 681 <code class="language-plaintext highlighter-rouge">NUM</code> types (2%) and 1822 <code class="language-plaintext highlighter-rouge">NUM</code> tokens (2%).
+Out of 16 observed tags, the rank of <code class="language-plaintext highlighter-rouge">NUM</code> is: 6 in number of lemmas, 6 in number of types and 9 in number of tokens.</p>
 
-<p>The 10 most frequent <code>NUM</code> lemmas: <em>ОДИН, ДВА, НЕСКОЛЬКО, ТРИ, 2, 1, 10, ЧЕТЫРЕ, 4, 3</em></p>
+<p>The 10 most frequent <code class="language-plaintext highlighter-rouge">NUM</code> lemmas: <em>ОДИН, ДВА, НЕСКОЛЬКО, ТРИ, 2, 1, 10, ЧЕТЫРЕ, 4, 3</em></p>
 
-<p>The 10 most frequent <code>NUM</code> types:  <em>2, два, один, несколько, 1, 10, двух, 4, три, 5</em></p>
+<p>The 10 most frequent <code class="language-plaintext highlighter-rouge">NUM</code> types:  <em>2, два, один, несколько, 1, 10, двух, 4, три, 5</em></p>
 
 <p>The 10 most frequent ambiguous lemmas: <em>НЕСКОЛЬКО</em> (<a href="">NUM</a> 62, <a href="">ADV</a> 5), <em>ТРИ</em> (<a href="">NUM</a> 52, <a href="">ADV</a> 1), <em>2</em> (<a href="">NUM</a> 50, <a href="">ADV</a> 21, <a href="">ADJ</a> 7), <em>1</em> (<a href="">NUM</a> 39, <a href="">ADJ</a> 27, <a href="">ADV</a> 17), <em>10</em> (<a href="">NUM</a> 37, <a href="">ADJ</a> 12, <a href="">ADV</a> 8), <em>4</em> (<a href="">NUM</a> 30, <a href="">ADV</a> 12, <a href="">ADJ</a> 10), <em>3</em> (<a href="">NUM</a> 27, <a href="">ADV</a> 11, <a href="">ADJ</a> 6), <em>5</em> (<a href="">NUM</a> 27, <a href="">ADJ</a> 6, <a href="">ADV</a> 4), <em>МНОГО</em> (<a href="">NUM</a> 24, <a href="">ADV</a> 9), <em>20</em> (<a href="">NUM</a> 22, <a href="">ADV</a> 9, <a href="">ADJ</a> 7)</p>
 
@@ -213,7 +213,7 @@ Out of 16 observed tags, the rank of <code>NUM</code> is: 6 in number of lemmas,
 
 <h2 id="morphology">Morphology</h2>
 
-<p>The form / lemma ratio of <code>NUM</code> is 1.064062 (the average of all parts of speech is 1.576680).</p>
+<p>The form / lemma ratio of <code class="language-plaintext highlighter-rouge">NUM</code> is 1.064062 (the average of all parts of speech is 1.576680).</p>
 
 <p>The 1st highest number of forms (9) was observed with the lemma “ОДИН”: <em>один, одна, одним, одно, одного, одной, одном, одному, одну</em>.</p>
 
@@ -221,44 +221,44 @@ Out of 16 observed tags, the rank of <code>NUM</code> is: 6 in number of lemmas,
 
 <p>The 3rd highest number of forms (5) was observed with the lemma “ОБА”: <em>оба, обе, обеим, обеих, обоих</em>.</p>
 
-<p><code>NUM</code> occurs with 6 features: <a href="">ru-feat/NumType</a> (1822; 100% instances), <a href="">ru-feat/Case</a> (1821; 100% instances), <a href="">ru-feat/Animacy</a> (906; 50% instances), <a href="">ru-feat/Gender</a> (537; 29% instances), <a href="">ru-feat/Number</a> (283; 16% instances), <a href="">ru-feat/Degree</a> (1; 0% instances)</p>
+<p><code class="language-plaintext highlighter-rouge">NUM</code> occurs with 6 features: <a href="">ru-feat/NumType</a> (1822; 100% instances), <a href="">ru-feat/Case</a> (1821; 100% instances), <a href="">ru-feat/Animacy</a> (906; 50% instances), <a href="">ru-feat/Gender</a> (537; 29% instances), <a href="">ru-feat/Number</a> (283; 16% instances), <a href="">ru-feat/Degree</a> (1; 0% instances)</p>
 
-<p><code>NUM</code> occurs with 15 feature-value pairs: <code>Animacy=Anim</code>, <code>Animacy=Inan</code>, <code>Case=Acc</code>, <code>Case=Dat</code>, <code>Case=Gen</code>, <code>Case=Ins</code>, <code>Case=Loc</code>, <code>Case=Nom</code>, <code>Degree=Cmp</code>, <code>Gender=Fem</code>, <code>Gender=Masc</code>, <code>Gender=Neut</code>, <code>NumType=Card</code>, <code>Number=Plur</code>, <code>Number=Sing</code></p>
+<p><code class="language-plaintext highlighter-rouge">NUM</code> occurs with 15 feature-value pairs: <code class="language-plaintext highlighter-rouge">Animacy=Anim</code>, <code class="language-plaintext highlighter-rouge">Animacy=Inan</code>, <code class="language-plaintext highlighter-rouge">Case=Acc</code>, <code class="language-plaintext highlighter-rouge">Case=Dat</code>, <code class="language-plaintext highlighter-rouge">Case=Gen</code>, <code class="language-plaintext highlighter-rouge">Case=Ins</code>, <code class="language-plaintext highlighter-rouge">Case=Loc</code>, <code class="language-plaintext highlighter-rouge">Case=Nom</code>, <code class="language-plaintext highlighter-rouge">Degree=Cmp</code>, <code class="language-plaintext highlighter-rouge">Gender=Fem</code>, <code class="language-plaintext highlighter-rouge">Gender=Masc</code>, <code class="language-plaintext highlighter-rouge">Gender=Neut</code>, <code class="language-plaintext highlighter-rouge">NumType=Card</code>, <code class="language-plaintext highlighter-rouge">Number=Plur</code>, <code class="language-plaintext highlighter-rouge">Number=Sing</code></p>
 
-<p><code>NUM</code> occurs with 80 feature combinations.
-The most frequent feature combination is <code>Case=Nom|NumType=Card</code> (424 tokens).
+<p><code class="language-plaintext highlighter-rouge">NUM</code> occurs with 80 feature combinations.
+The most frequent feature combination is <code class="language-plaintext highlighter-rouge">Case=Nom|NumType=Card</code> (424 tokens).
 Examples: <em>0, 5, 10, 16, 12, 15, 20, 11, 13, 7</em></p>
 
 <h2 id="relations">Relations</h2>
 
-<p><code>NUM</code> nodes are attached to their parents using 20 different relations: <a href="">ru-dep/nummod:gov</a> (763; 42% instances), <a href="">ru-dep/nummod</a> (576; 32% instances), <a href="">ru-dep/root</a> (71; 4% instances), <a href="">ru-dep/conj</a> (63; 3% instances), <a href="">ru-dep/list</a> (60; 3% instances), <a href="">ru-dep/appos</a> (56; 3% instances), <a href="">ru-dep/compound</a> (47; 3% instances), <a href="">ru-dep/nmod</a> (43; 2% instances), <a href="">ru-dep/obl</a> (36; 2% instances), <a href="">ru-dep/amod</a> (21; 1% instances), <a href="">ru-dep/nsubj</a> (20; 1% instances), <a href="">ru-dep/goeswith</a> (19; 1% instances), <a href="">ru-dep/obj</a> (15; 1% instances), <a href="">ru-dep/parataxis</a> (14; 1% instances), <a href="">ru-dep/advmod</a> (6; 0% instances), <a href="">ru-dep/iobj</a> (4; 0% instances), <a href="">ru-dep/nsubj:pass</a> (3; 0% instances), <a href="">ru-dep/acl</a> (2; 0% instances), <a href="">ru-dep/orphan</a> (2; 0% instances), <a href="">ru-dep/ccomp</a> (1; 0% instances)</p>
+<p><code class="language-plaintext highlighter-rouge">NUM</code> nodes are attached to their parents using 20 different relations: <a href="">ru-dep/nummod:gov</a> (763; 42% instances), <a href="">ru-dep/nummod</a> (576; 32% instances), <a href="">ru-dep/root</a> (71; 4% instances), <a href="">ru-dep/conj</a> (63; 3% instances), <a href="">ru-dep/list</a> (60; 3% instances), <a href="">ru-dep/appos</a> (56; 3% instances), <a href="">ru-dep/compound</a> (47; 3% instances), <a href="">ru-dep/nmod</a> (43; 2% instances), <a href="">ru-dep/obl</a> (36; 2% instances), <a href="">ru-dep/amod</a> (21; 1% instances), <a href="">ru-dep/nsubj</a> (20; 1% instances), <a href="">ru-dep/goeswith</a> (19; 1% instances), <a href="">ru-dep/obj</a> (15; 1% instances), <a href="">ru-dep/parataxis</a> (14; 1% instances), <a href="">ru-dep/advmod</a> (6; 0% instances), <a href="">ru-dep/iobj</a> (4; 0% instances), <a href="">ru-dep/nsubj:pass</a> (3; 0% instances), <a href="">ru-dep/acl</a> (2; 0% instances), <a href="">ru-dep/orphan</a> (2; 0% instances), <a href="">ru-dep/ccomp</a> (1; 0% instances)</p>
 
-<p>Parents of <code>NUM</code> nodes belong to 11 different parts of speech: <a href="">NOUN</a> (1394; 77% instances), <a href="">VERB</a> (93; 5% instances), <a href="">NUM</a> (80; 4% instances), <a href="">SYM</a> (72; 4% instances), <a href="">ROOT</a> (71; 4% instances), <a href="">PROPN</a> (57; 3% instances), <a href="">ADJ</a> (26; 1% instances), <a href="">ADV</a> (19; 1% instances), <a href="">ADP</a> (5; 0% instances), <a href="">PUNCT</a> (3; 0% instances), <a href="">PRON</a> (2; 0% instances)</p>
+<p>Parents of <code class="language-plaintext highlighter-rouge">NUM</code> nodes belong to 11 different parts of speech: <a href="">NOUN</a> (1394; 77% instances), <a href="">VERB</a> (93; 5% instances), <a href="">NUM</a> (80; 4% instances), <a href="">SYM</a> (72; 4% instances), <a href="">ROOT</a> (71; 4% instances), <a href="">PROPN</a> (57; 3% instances), <a href="">ADJ</a> (26; 1% instances), <a href="">ADV</a> (19; 1% instances), <a href="">ADP</a> (5; 0% instances), <a href="">PUNCT</a> (3; 0% instances), <a href="">PRON</a> (2; 0% instances)</p>
 
-<p>1405 (77%) <code>NUM</code> nodes are leaves.</p>
+<p>1405 (77%) <code class="language-plaintext highlighter-rouge">NUM</code> nodes are leaves.</p>
 
-<p>229 (13%) <code>NUM</code> nodes have one child.</p>
+<p>229 (13%) <code class="language-plaintext highlighter-rouge">NUM</code> nodes have one child.</p>
 
-<p>71 (4%) <code>NUM</code> nodes have two children.</p>
+<p>71 (4%) <code class="language-plaintext highlighter-rouge">NUM</code> nodes have two children.</p>
 
-<p>117 (6%) <code>NUM</code> nodes have three or more children.</p>
+<p>117 (6%) <code class="language-plaintext highlighter-rouge">NUM</code> nodes have three or more children.</p>
 
-<p>The highest child degree of a <code>NUM</code> node is 7.</p>
+<p>The highest child degree of a <code class="language-plaintext highlighter-rouge">NUM</code> node is 7.</p>
 
-<p>Children of <code>NUM</code> nodes are attached using 22 different relations: <a href="">ru-dep/punct</a> (300; 37% instances), <a href="">ru-dep/nmod</a> (135; 17% instances), <a href="">ru-dep/nsubj</a> (71; 9% instances), <a href="">ru-dep/case</a> (58; 7% instances), <a href="">ru-dep/advmod</a> (57; 7% instances), <a href="">ru-dep/conj</a> (53; 7% instances), <a href="">ru-dep/cc</a> (28; 3% instances), <a href="">ru-dep/discourse</a> (25; 3% instances), <a href="">ru-dep/cop</a> (23; 3% instances), <a href="">ru-dep/appos</a> (11; 1% instances), <a href="">ru-dep/goeswith</a> (9; 1% instances), <a href="">ru-dep/list</a> (8; 1% instances), <a href="">ru-dep/parataxis</a> (8; 1% instances), <a href="">ru-dep/nummod</a> (7; 1% instances), <a href="">ru-dep/amod</a> (4; 0% instances), <a href="">ru-dep/orphan</a> (4; 0% instances), <a href="">ru-dep/nummod:gov</a> (3; 0% instances), <a href="">ru-dep/advcl</a> (2; 0% instances), <a href="">ru-dep/compound</a> (2; 0% instances), <a href="">ru-dep/det</a> (1; 0% instances), <a href="">ru-dep/iobj</a> (1; 0% instances), <a href="">ru-dep/obj</a> (1; 0% instances)</p>
+<p>Children of <code class="language-plaintext highlighter-rouge">NUM</code> nodes are attached using 22 different relations: <a href="">ru-dep/punct</a> (300; 37% instances), <a href="">ru-dep/nmod</a> (135; 17% instances), <a href="">ru-dep/nsubj</a> (71; 9% instances), <a href="">ru-dep/case</a> (58; 7% instances), <a href="">ru-dep/advmod</a> (57; 7% instances), <a href="">ru-dep/conj</a> (53; 7% instances), <a href="">ru-dep/cc</a> (28; 3% instances), <a href="">ru-dep/discourse</a> (25; 3% instances), <a href="">ru-dep/cop</a> (23; 3% instances), <a href="">ru-dep/appos</a> (11; 1% instances), <a href="">ru-dep/goeswith</a> (9; 1% instances), <a href="">ru-dep/list</a> (8; 1% instances), <a href="">ru-dep/parataxis</a> (8; 1% instances), <a href="">ru-dep/nummod</a> (7; 1% instances), <a href="">ru-dep/amod</a> (4; 0% instances), <a href="">ru-dep/orphan</a> (4; 0% instances), <a href="">ru-dep/nummod:gov</a> (3; 0% instances), <a href="">ru-dep/advcl</a> (2; 0% instances), <a href="">ru-dep/compound</a> (2; 0% instances), <a href="">ru-dep/det</a> (1; 0% instances), <a href="">ru-dep/iobj</a> (1; 0% instances), <a href="">ru-dep/obj</a> (1; 0% instances)</p>
 
-<p>Children of <code>NUM</code> nodes belong to 14 different parts of speech: <a href="">PUNCT</a> (295; 36% instances), <a href="">NOUN</a> (189; 23% instances), <a href="">NUM</a> (80; 10% instances), <a href="">ADP</a> (62; 8% instances), <a href="">ADV</a> (57; 7% instances), <a href="">CCONJ</a> (26; 3% instances), <a href="">PART</a> (24; 3% instances), <a href="">AUX</a> (23; 3% instances), <a href="">PROPN</a> (12; 1% instances), <a href="">PRON</a> (11; 1% instances), <a href="">SYM</a> (11; 1% instances), <a href="">ADJ</a> (9; 1% instances), <a href="">VERB</a> (7; 1% instances), <a href="">DET</a> (5; 1% instances)</p>
+<p>Children of <code class="language-plaintext highlighter-rouge">NUM</code> nodes belong to 14 different parts of speech: <a href="">PUNCT</a> (295; 36% instances), <a href="">NOUN</a> (189; 23% instances), <a href="">NUM</a> (80; 10% instances), <a href="">ADP</a> (62; 8% instances), <a href="">ADV</a> (57; 7% instances), <a href="">CCONJ</a> (26; 3% instances), <a href="">PART</a> (24; 3% instances), <a href="">AUX</a> (23; 3% instances), <a href="">PROPN</a> (12; 1% instances), <a href="">PRON</a> (11; 1% instances), <a href="">SYM</a> (11; 1% instances), <a href="">ADJ</a> (9; 1% instances), <a href="">VERB</a> (7; 1% instances), <a href="">DET</a> (5; 1% instances)</p>
 
 <hr />
 
-<h2 id="treebank-statistics-udrussian-syntagrus">Treebank Statistics (UD_Russian-SynTagRus)</h2>
+<h2 id="treebank-statistics-ud_russian-syntagrus">Treebank Statistics (UD_Russian-SynTagRus)</h2>
 
-<p>There are 1173 <code>NUM</code> lemmas (3%), 1259 <code>NUM</code> types (1%) and 14724 <code>NUM</code> tokens (1%).
-Out of 18 observed tags, the rank of <code>NUM</code> is: 6 in number of lemmas, 6 in number of types and 13 in number of tokens.</p>
+<p>There are 1173 <code class="language-plaintext highlighter-rouge">NUM</code> lemmas (3%), 1259 <code class="language-plaintext highlighter-rouge">NUM</code> types (1%) and 14724 <code class="language-plaintext highlighter-rouge">NUM</code> tokens (1%).
+Out of 18 observed tags, the rank of <code class="language-plaintext highlighter-rouge">NUM</code> is: 6 in number of lemmas, 6 in number of types and 13 in number of tokens.</p>
 
-<p>The 10 most frequent <code>NUM</code> lemmas: <em>один, два, несколько, три, 10, 20, четыре, 15, много, пять</em></p>
+<p>The 10 most frequent <code class="language-plaintext highlighter-rouge">NUM</code> lemmas: <em>один, два, несколько, три, 10, 20, четыре, 15, много, пять</em></p>
 
-<p>The 10 most frequent <code>NUM</code> types:  <em>один, несколько, два, три, одной, 10, двух, 20, больше, две</em></p>
+<p>The 10 most frequent <code class="language-plaintext highlighter-rouge">NUM</code> types:  <em>один, несколько, два, три, одной, 10, двух, 20, больше, две</em></p>
 
 <p>The 10 most frequent ambiguous lemmas: <em>один</em> (<a href="">NUM</a> 1775, <a href="">ADJ</a> 584, <a href="">NOUN</a> 2), <em>несколько</em> (<a href="">NUM</a> 684, <a href="">ADV</a> 85), <em>много</em> (<a href="">ADV</a> 418, <a href="">NUM</a> 214), <em>мало</em> (<a href="">ADV</a> 201, <a href="">NUM</a> 158), <em>пол</em> (<a href="">NUM</a> 76, <a href="">NOUN</a> 61, <a href="">PROPN</a> 18), <em>2005</em> (<a href="">NUM</a> 52, <a href="">NOUN</a> 1), <em>i</em> (<a href="">NUM</a> 22, <a href="">PROPN</a> 6, <a href="">X</a> 3), <em>2012</em> (<a href="">NUM</a> 20, <a href="">NOUN</a> 1), <em>x</em> (<a href="">NUM</a> 6, <a href="">PUNCT</a> 2, <a href="">PROPN</a> 1), <em>v</em> (<a href="">NUM</a> 5, <a href="">PROPN</a> 1)</p>
 
@@ -331,7 +331,7 @@ Out of 18 observed tags, the rank of <code>NUM</code> is: 6 in number of lemmas,
 
 <h2 id="morphology-1">Morphology</h2>
 
-<p>The form / lemma ratio of <code>NUM</code> is 1.073316 (the average of all parts of speech is 2.644632).</p>
+<p>The form / lemma ratio of <code class="language-plaintext highlighter-rouge">NUM</code> is 1.073316 (the average of all parts of speech is 2.644632).</p>
 
 <p>The 1st highest number of forms (11) was observed with the lemma “один”: <em>один, одна, одни, одним, одними, одно, одного, одной, одном, одному, одну</em>.</p>
 
@@ -339,33 +339,33 @@ Out of 18 observed tags, the rank of <code>NUM</code> is: 6 in number of lemmas,
 
 <p>The 3rd highest number of forms (6) was observed with the lemma “три”: <em>трем, тремя, трех, три, трём, трёх</em>.</p>
 
-<p><code>NUM</code> occurs with 3 features: <a href="">ru-feat/Case</a> (5576; 38% instances), <a href="">ru-feat/Gender</a> (2671; 18% instances), <a href="">ru-feat/Animacy</a> (1314; 9% instances)</p>
+<p><code class="language-plaintext highlighter-rouge">NUM</code> occurs with 3 features: <a href="">ru-feat/Case</a> (5576; 38% instances), <a href="">ru-feat/Gender</a> (2671; 18% instances), <a href="">ru-feat/Animacy</a> (1314; 9% instances)</p>
 
-<p><code>NUM</code> occurs with 11 feature-value pairs: <code>Animacy=Anim</code>, <code>Animacy=Inan</code>, <code>Case=Acc</code>, <code>Case=Dat</code>, <code>Case=Gen</code>, <code>Case=Ins</code>, <code>Case=Loc</code>, <code>Case=Nom</code>, <code>Gender=Fem</code>, <code>Gender=Masc</code>, <code>Gender=Neut</code></p>
+<p><code class="language-plaintext highlighter-rouge">NUM</code> occurs with 11 feature-value pairs: <code class="language-plaintext highlighter-rouge">Animacy=Anim</code>, <code class="language-plaintext highlighter-rouge">Animacy=Inan</code>, <code class="language-plaintext highlighter-rouge">Case=Acc</code>, <code class="language-plaintext highlighter-rouge">Case=Dat</code>, <code class="language-plaintext highlighter-rouge">Case=Gen</code>, <code class="language-plaintext highlighter-rouge">Case=Ins</code>, <code class="language-plaintext highlighter-rouge">Case=Loc</code>, <code class="language-plaintext highlighter-rouge">Case=Nom</code>, <code class="language-plaintext highlighter-rouge">Gender=Fem</code>, <code class="language-plaintext highlighter-rouge">Gender=Masc</code>, <code class="language-plaintext highlighter-rouge">Gender=Neut</code></p>
 
-<p><code>NUM</code> occurs with 31 feature combinations.
-The most frequent feature combination is <code>_</code> (9148 tokens).
+<p><code class="language-plaintext highlighter-rouge">NUM</code> occurs with 31 feature combinations.
+The most frequent feature combination is <code class="language-plaintext highlighter-rouge">_</code> (9148 tokens).
 Examples: <em>10, 20, больше, 1, 15, 2, 5, 30, меньше, 3</em></p>
 
 <h2 id="relations-1">Relations</h2>
 
-<p><code>NUM</code> nodes are attached to their parents using 14 different relations: <a href="">ru-dep/nummod</a> (10224; 69% instances), <a href="">ru-dep/nummod:gov</a> (3347; 23% instances), <a href="">ru-dep/nsubj</a> (378; 3% instances), <a href="">ru-dep/conj</a> (298; 2% instances), <a href="">ru-dep/root</a> (230; 2% instances), <a href="">ru-dep/advmod</a> (121; 1% instances), <a href="">ru-dep/orphan</a> (62; 0% instances), <a href="">ru-dep/nsubj:pass</a> (24; 0% instances), <a href="">ru-dep/advcl</a> (11; 0% instances), <a href="">ru-dep/parataxis</a> (11; 0% instances), <a href="">ru-dep/dep</a> (9; 0% instances), <a href="">ru-dep/acl:relcl</a> (5; 0% instances), <a href="">ru-dep/xcomp</a> (3; 0% instances), <a href="">ru-dep/acl</a> (1; 0% instances)</p>
+<p><code class="language-plaintext highlighter-rouge">NUM</code> nodes are attached to their parents using 14 different relations: <a href="">ru-dep/nummod</a> (10224; 69% instances), <a href="">ru-dep/nummod:gov</a> (3347; 23% instances), <a href="">ru-dep/nsubj</a> (378; 3% instances), <a href="">ru-dep/conj</a> (298; 2% instances), <a href="">ru-dep/root</a> (230; 2% instances), <a href="">ru-dep/advmod</a> (121; 1% instances), <a href="">ru-dep/orphan</a> (62; 0% instances), <a href="">ru-dep/nsubj:pass</a> (24; 0% instances), <a href="">ru-dep/advcl</a> (11; 0% instances), <a href="">ru-dep/parataxis</a> (11; 0% instances), <a href="">ru-dep/dep</a> (9; 0% instances), <a href="">ru-dep/acl:relcl</a> (5; 0% instances), <a href="">ru-dep/xcomp</a> (3; 0% instances), <a href="">ru-dep/acl</a> (1; 0% instances)</p>
 
-<p>Parents of <code>NUM</code> nodes belong to 18 different parts of speech: <a href="">NOUN</a> (11078; 75% instances), <a href="">VERB</a> (1445; 10% instances), <a href="">NUM</a> (1119; 8% instances), <a href="">PROPN</a> (413; 3% instances), <a href="">ROOT</a> (230; 2% instances), <a href="">ADJ</a> (212; 1% instances), <a href="">PRON</a> (72; 0% instances), <a href="">ADV</a> (47; 0% instances), <a href="">_</a> (36; 0% instances), <a href="">ADP</a> (24; 0% instances), <a href="">PUNCT</a> (17; 0% instances), <a href="">PART</a> (9; 0% instances), <a href="">CCONJ</a> (6; 0% instances), <a href="">SCONJ</a> (6; 0% instances), <a href="">DET</a> (5; 0% instances), <a href="">X</a> (3; 0% instances), <a href="">AUX</a> (1; 0% instances), <a href="">SYM</a> (1; 0% instances)</p>
+<p>Parents of <code class="language-plaintext highlighter-rouge">NUM</code> nodes belong to 18 different parts of speech: <a href="">NOUN</a> (11078; 75% instances), <a href="">VERB</a> (1445; 10% instances), <a href="">NUM</a> (1119; 8% instances), <a href="">PROPN</a> (413; 3% instances), <a href="">ROOT</a> (230; 2% instances), <a href="">ADJ</a> (212; 1% instances), <a href="">PRON</a> (72; 0% instances), <a href="">ADV</a> (47; 0% instances), <a href="">_</a> (36; 0% instances), <a href="">ADP</a> (24; 0% instances), <a href="">PUNCT</a> (17; 0% instances), <a href="">PART</a> (9; 0% instances), <a href="">CCONJ</a> (6; 0% instances), <a href="">SCONJ</a> (6; 0% instances), <a href="">DET</a> (5; 0% instances), <a href="">X</a> (3; 0% instances), <a href="">AUX</a> (1; 0% instances), <a href="">SYM</a> (1; 0% instances)</p>
 
-<p>9587 (65%) <code>NUM</code> nodes are leaves.</p>
+<p>9587 (65%) <code class="language-plaintext highlighter-rouge">NUM</code> nodes are leaves.</p>
 
-<p>2753 (19%) <code>NUM</code> nodes have one child.</p>
+<p>2753 (19%) <code class="language-plaintext highlighter-rouge">NUM</code> nodes have one child.</p>
 
-<p>1709 (12%) <code>NUM</code> nodes have two children.</p>
+<p>1709 (12%) <code class="language-plaintext highlighter-rouge">NUM</code> nodes have two children.</p>
 
-<p>675 (5%) <code>NUM</code> nodes have three or more children.</p>
+<p>675 (5%) <code class="language-plaintext highlighter-rouge">NUM</code> nodes have three or more children.</p>
 
-<p>The highest child degree of a <code>NUM</code> node is 13.</p>
+<p>The highest child degree of a <code class="language-plaintext highlighter-rouge">NUM</code> node is 13.</p>
 
-<p>Children of <code>NUM</code> nodes are attached using 30 different relations: <a href="">ru-dep/punct</a> (2494; 29% instances), <a href="">ru-dep/nmod</a> (1728; 20% instances), <a href="">ru-dep/advmod</a> (1147; 13% instances), <a href="">ru-dep/case</a> (789; 9% instances), <a href="">ru-dep/nummod</a> (742; 9% instances), <a href="">ru-dep/amod</a> (312; 4% instances), <a href="">ru-dep/conj</a> (268; 3% instances), <a href="">ru-dep/cc</a> (210; 2% instances), <a href="">ru-dep/nsubj</a> (198; 2% instances), <a href="">ru-dep/parataxis</a> (171; 2% instances), <a href="">ru-dep/nummod:gov</a> (125; 1% instances), <a href="">ru-dep/orphan</a> (80; 1% instances), <a href="">ru-dep/cop</a> (76; 1% instances), <a href="">ru-dep/_</a> (52; 1% instances), <a href="">ru-dep/appos</a> (43; 1% instances), <a href="">ru-dep/mark</a> (29; 0% instances), <a href="">ru-dep/obl</a> (24; 0% instances), <a href="">ru-dep/acl:relcl</a> (19; 0% instances), <a href="">ru-dep/advcl</a> (13; 0% instances), <a href="">ru-dep/flat:foreign</a> (8; 0% instances), <a href="">ru-dep/fixed</a> (5; 0% instances), <a href="">ru-dep/root</a> (5; 0% instances), <a href="">ru-dep/acl</a> (4; 0% instances), <a href="">ru-dep/compound</a> (3; 0% instances), <a href="">ru-dep/xcomp</a> (2; 0% instances), <a href="">ru-dep/discourse</a> (1; 0% instances), <a href="">ru-dep/iobj</a> (1; 0% instances), <a href="">ru-dep/nsubj:pass</a> (1; 0% instances), <a href="">ru-dep/obj</a> (1; 0% instances), <a href="">ru-dep/obl:agent</a> (1; 0% instances)</p>
+<p>Children of <code class="language-plaintext highlighter-rouge">NUM</code> nodes are attached using 30 different relations: <a href="">ru-dep/punct</a> (2494; 29% instances), <a href="">ru-dep/nmod</a> (1728; 20% instances), <a href="">ru-dep/advmod</a> (1147; 13% instances), <a href="">ru-dep/case</a> (789; 9% instances), <a href="">ru-dep/nummod</a> (742; 9% instances), <a href="">ru-dep/amod</a> (312; 4% instances), <a href="">ru-dep/conj</a> (268; 3% instances), <a href="">ru-dep/cc</a> (210; 2% instances), <a href="">ru-dep/nsubj</a> (198; 2% instances), <a href="">ru-dep/parataxis</a> (171; 2% instances), <a href="">ru-dep/nummod:gov</a> (125; 1% instances), <a href="">ru-dep/orphan</a> (80; 1% instances), <a href="">ru-dep/cop</a> (76; 1% instances), <a href="">ru-dep/_</a> (52; 1% instances), <a href="">ru-dep/appos</a> (43; 1% instances), <a href="">ru-dep/mark</a> (29; 0% instances), <a href="">ru-dep/obl</a> (24; 0% instances), <a href="">ru-dep/acl:relcl</a> (19; 0% instances), <a href="">ru-dep/advcl</a> (13; 0% instances), <a href="">ru-dep/flat:foreign</a> (8; 0% instances), <a href="">ru-dep/fixed</a> (5; 0% instances), <a href="">ru-dep/root</a> (5; 0% instances), <a href="">ru-dep/acl</a> (4; 0% instances), <a href="">ru-dep/compound</a> (3; 0% instances), <a href="">ru-dep/xcomp</a> (2; 0% instances), <a href="">ru-dep/discourse</a> (1; 0% instances), <a href="">ru-dep/iobj</a> (1; 0% instances), <a href="">ru-dep/nsubj:pass</a> (1; 0% instances), <a href="">ru-dep/obj</a> (1; 0% instances), <a href="">ru-dep/obl:agent</a> (1; 0% instances)</p>
 
-<p>Children of <code>NUM</code> nodes belong to 17 different parts of speech: <a href="">PUNCT</a> (2494; 29% instances), <a href="">NOUN</a> (1960; 23% instances), <a href="">NUM</a> (1012; 12% instances), <a href="">ADP</a> (788; 9% instances), <a href="">ADV</a> (646; 8% instances), <a href="">PART</a> (469; 5% instances), <a href="">ADJ</a> (300; 4% instances), <a href="">VERB</a> (223; 3% instances), <a href="">CCONJ</a> (193; 2% instances), <a href="">PRON</a> (152; 2% instances), <a href="">DET</a> (99; 1% instances), <a href="">PROPN</a> (84; 1% instances), <a href="">SCONJ</a> (69; 1% instances), <a href="">_</a> (52; 1% instances), <a href="">AUX</a> (8; 0% instances), <a href="">SYM</a> (2; 0% instances), <a href="">X</a> (1; 0% instances)</p>
+<p>Children of <code class="language-plaintext highlighter-rouge">NUM</code> nodes belong to 17 different parts of speech: <a href="">PUNCT</a> (2494; 29% instances), <a href="">NOUN</a> (1960; 23% instances), <a href="">NUM</a> (1012; 12% instances), <a href="">ADP</a> (788; 9% instances), <a href="">ADV</a> (646; 8% instances), <a href="">PART</a> (469; 5% instances), <a href="">ADJ</a> (300; 4% instances), <a href="">VERB</a> (223; 3% instances), <a href="">CCONJ</a> (193; 2% instances), <a href="">PRON</a> (152; 2% instances), <a href="">DET</a> (99; 1% instances), <a href="">PROPN</a> (84; 1% instances), <a href="">SCONJ</a> (69; 1% instances), <a href="">_</a> (52; 1% instances), <a href="">AUX</a> (8; 0% instances), <a href="">SYM</a> (2; 0% instances), <a href="">X</a> (1; 0% instances)</p>
 
 
 

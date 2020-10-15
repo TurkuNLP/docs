@@ -64,25 +64,25 @@
 
 <p>This relation captures expletive nominals. These are nominals that appear in an argument position of a predicate but which do not themselves satisfy any of the semantic roles of the predicate. The main predicate of the clause (the verb or predicate adjective or noun) is the governor.</p>
 
-<p>For Norwegian, the expletive element is expressed using the neuter pronoun <em>det</em> “it” and the <code>expl</code> relation is used for both expletive subjects and objects.</p>
+<p>For Norwegian, the expletive element is expressed using the neuter pronoun <em>det</em> “it” and the <code class="language-plaintext highlighter-rouge">expl</code> relation is used for both expletive subjects and objects.</p>
 
-<h5 id="presentational-construction">Presentational construction</h5>
-<p>In Norwegian expletives occur in the presentational construction, which involves an expletive subject, an active verb and an indefinite subject (<em>en debatt</em> “a debate” in the example below).</p>
+<p>#####Presentational construction
+In Norwegian expletives occur in the presentational construction, which involves an expletive subject, an active verb and an indefinite subject (<em>en debatt</em> “a debate” in the example below).</p>
 
 <pre><code class="language-sdparse">Det eksisterer allerede en debatt \n There already exists a debate
 expl(eksisterer-2,Det-1)
 nsubj(eksisterer-2,debatt-5)
 </code></pre>
 
-<h5 id="impersonal-passive">Impersonal passive</h5>
-<p>Norwegian employs the impersonal passive construction, where there is an expletive subject and the underlying subject is unexpressed.</p>
+<p>#####Impersonal passive
+Norwegian employs the impersonal passive construction, where there is an expletive subject and the underlying subject is unexpressed.</p>
 
 <pre><code class="language-sdparse">Senere har det blitt fremsatt flere forslag \n Later has there been proposed several suggestions
 expl(fremsatt,det)
 </code></pre>
 
-<h5 id="clause-anticipating-constructions">Clause-anticipating constructions</h5>
-<p>These constructions contain a finite or non-finite clause which semantically may be regarded as the subject, but where the subject position is occupied by an expletive.</p>
+<p>#####Clause-anticipating constructions
+These constructions contain a finite or non-finite clause which semantically may be regarded as the subject, but where the subject position is occupied by an expletive.</p>
 
 <pre><code class="language-sdparse">Det er ønskelig at utvalget arbeider i dialog \n It is desirable that the committee works in dialogue
 expl(ønskelig-3,Det-1)
@@ -100,16 +100,16 @@ expl(finner-2,det-3)
 ccomp(finner-2,handlet-7)
 </code></pre>
 
-<h5 id="clefts">Clefts</h5>
-<p>Clefts are quite  common in Norwegian. They contain an expletive subject, a form of <em>være</em> “to be” and a relative clause. Note that in clefts we do not adopt a copula analysis of the verb <em>være</em> “er”.</p>
+<p>#####Clefts
+Clefts are quite  common in Norwegian. They contain an expletive subject, a form of <em>være</em> “to be” and a relative clause. Note that in clefts we do not adopt a copula analysis of the verb <em>være</em> “er”.</p>
 
 <pre><code class="language-sdparse">Det er forholdsvis få arter som har klart å tilpasse seg \n There are quite few species that have managed to adapt 
 expl(er-2,Det-1)
 acl:relcl(arter-5,klart-8)
 </code></pre>
 
-<h5 id="references">References</h5>
-<p>Kari Kinn, Per Erik Solberg and Pål Kristian Eriksen. <a href="http://www.nb.no/sbfil/dok/20140314_guidelines_ndt_english.pdf">NDT Guidelines for Morphological Annotation</a>”. National Library Tech Report.</p>
+<p>#####References
+Kari Kinn, Per Erik Solberg and Pål Kristian Eriksen. <a href="http://www.nb.no/sbfil/dok/20140314_guidelines_ndt_english.pdf">NDT Guidelines for Morphological Annotation</a>”. National Library Tech Report.</p>
 
 <p>~~~</p>
 
@@ -125,16 +125,16 @@ acl:relcl(arter-5,klart-8)
 
 <hr />
 
-<h2 id="treebank-statistics-udnorwegian-bokmaal">Treebank Statistics (UD_Norwegian-Bokmaal)</h2>
+<h2 id="treebank-statistics-ud_norwegian-bokmaal">Treebank Statistics (UD_Norwegian-Bokmaal)</h2>
 
 <p>This relation is universal.</p>
 
-<p>2919 nodes (1%) are attached to their parents as <code>expl</code>.</p>
+<p>2919 nodes (1%) are attached to their parents as <code class="language-plaintext highlighter-rouge">expl</code>.</p>
 
-<p>2391 instances of <code>expl</code> (82%) are right-to-left (child precedes parent).
+<p>2391 instances of <code class="language-plaintext highlighter-rouge">expl</code> (82%) are right-to-left (child precedes parent).
 Average distance between parent and child is 1.9564919492977.</p>
 
-<p>The following 12 pairs of parts of speech are connected with <code>expl</code>: <a href="">no-pos/VERB</a>-<a href="">no-pos/PRON</a> (1675; 57% instances), <a href="">no-pos/ADJ</a>-<a href="">no-pos/PRON</a> (552; 19% instances), <a href="">no-pos/NOUN</a>-<a href="">no-pos/PRON</a> (459; 16% instances), <a href="">no-pos/PRON</a>-<a href="">no-pos/PRON</a> (83; 3% instances), <a href="">no-pos/ADV</a>-<a href="">no-pos/PRON</a> (73; 3% instances), <a href="">no-pos/PROPN</a>-<a href="">no-pos/PRON</a> (53; 2% instances), <a href="">no-pos/DET</a>-<a href="">no-pos/PRON</a> (8; 0% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/ADV</a> (7; 0% instances), <a href="">no-pos/NUM</a>-<a href="">no-pos/PRON</a> (4; 0% instances), <a href="">no-pos/ADP</a>-<a href="">no-pos/PRON</a> (3; 0% instances), <a href="">no-pos/CCONJ</a>-<a href="">no-pos/PRON</a> (1; 0% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/DET</a> (1; 0% instances).</p>
+<p>The following 12 pairs of parts of speech are connected with <code class="language-plaintext highlighter-rouge">expl</code>: <a href="">no-pos/VERB</a>-<a href="">no-pos/PRON</a> (1675; 57% instances), <a href="">no-pos/ADJ</a>-<a href="">no-pos/PRON</a> (552; 19% instances), <a href="">no-pos/NOUN</a>-<a href="">no-pos/PRON</a> (459; 16% instances), <a href="">no-pos/PRON</a>-<a href="">no-pos/PRON</a> (83; 3% instances), <a href="">no-pos/ADV</a>-<a href="">no-pos/PRON</a> (73; 3% instances), <a href="">no-pos/PROPN</a>-<a href="">no-pos/PRON</a> (53; 2% instances), <a href="">no-pos/DET</a>-<a href="">no-pos/PRON</a> (8; 0% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/ADV</a> (7; 0% instances), <a href="">no-pos/NUM</a>-<a href="">no-pos/PRON</a> (4; 0% instances), <a href="">no-pos/ADP</a>-<a href="">no-pos/PRON</a> (3; 0% instances), <a href="">no-pos/CCONJ</a>-<a href="">no-pos/PRON</a> (1; 0% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/DET</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 2	bgColor:blue
 # visual-style 2	fgColor:white
@@ -187,16 +187,16 @@ Average distance between parent and child is 1.9564919492977.</p>
 
 <hr />
 
-<h2 id="treebank-statistics-udnorwegian-nynorsk">Treebank Statistics (UD_Norwegian-Nynorsk)</h2>
+<h2 id="treebank-statistics-ud_norwegian-nynorsk">Treebank Statistics (UD_Norwegian-Nynorsk)</h2>
 
 <p>This relation is universal.</p>
 
-<p>3197 nodes (1%) are attached to their parents as <code>expl</code>.</p>
+<p>3197 nodes (1%) are attached to their parents as <code class="language-plaintext highlighter-rouge">expl</code>.</p>
 
-<p>2606 instances of <code>expl</code> (82%) are right-to-left (child precedes parent).
+<p>2606 instances of <code class="language-plaintext highlighter-rouge">expl</code> (82%) are right-to-left (child precedes parent).
 Average distance between parent and child is 1.9715358148264.</p>
 
-<p>The following 14 pairs of parts of speech are connected with <code>expl</code>: <a href="">no-pos/VERB</a>-<a href="">no-pos/PRON</a> (1655; 52% instances), <a href="">no-pos/ADJ</a>-<a href="">no-pos/PRON</a> (841; 26% instances), <a href="">no-pos/NOUN</a>-<a href="">no-pos/PRON</a> (491; 15% instances), <a href="">no-pos/ADV</a>-<a href="">no-pos/PRON</a> (88; 3% instances), <a href="">no-pos/PRON</a>-<a href="">no-pos/PRON</a> (69; 2% instances), <a href="">no-pos/PROPN</a>-<a href="">no-pos/PRON</a> (25; 1% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/ADV</a> (9; 0% instances), <a href="">no-pos/DET</a>-<a href="">no-pos/PRON</a> (7; 0% instances), <a href="">no-pos/NUM</a>-<a href="">no-pos/PRON</a> (5; 0% instances), <a href="">no-pos/ADP</a>-<a href="">no-pos/PRON</a> (2; 0% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/NOUN</a> (2; 0% instances), <a href="">no-pos/ADJ</a>-<a href="">no-pos/ADV</a> (1; 0% instances), <a href="">no-pos/NOUN</a>-<a href="">no-pos/PROPN</a> (1; 0% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/DET</a> (1; 0% instances).</p>
+<p>The following 14 pairs of parts of speech are connected with <code class="language-plaintext highlighter-rouge">expl</code>: <a href="">no-pos/VERB</a>-<a href="">no-pos/PRON</a> (1655; 52% instances), <a href="">no-pos/ADJ</a>-<a href="">no-pos/PRON</a> (841; 26% instances), <a href="">no-pos/NOUN</a>-<a href="">no-pos/PRON</a> (491; 15% instances), <a href="">no-pos/ADV</a>-<a href="">no-pos/PRON</a> (88; 3% instances), <a href="">no-pos/PRON</a>-<a href="">no-pos/PRON</a> (69; 2% instances), <a href="">no-pos/PROPN</a>-<a href="">no-pos/PRON</a> (25; 1% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/ADV</a> (9; 0% instances), <a href="">no-pos/DET</a>-<a href="">no-pos/PRON</a> (7; 0% instances), <a href="">no-pos/NUM</a>-<a href="">no-pos/PRON</a> (5; 0% instances), <a href="">no-pos/ADP</a>-<a href="">no-pos/PRON</a> (2; 0% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/NOUN</a> (2; 0% instances), <a href="">no-pos/ADJ</a>-<a href="">no-pos/ADV</a> (1; 0% instances), <a href="">no-pos/NOUN</a>-<a href="">no-pos/PROPN</a> (1; 0% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/DET</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 13	bgColor:blue
 # visual-style 13	fgColor:white

@@ -121,7 +121,7 @@
 
 <h3 id="definition">Definition</h3>
 
-<p><code>ADJ</code> pos tags is used for adjectives. These are morphologically nominals that
+<p><code class="language-plaintext highlighter-rouge">ADJ</code> pos tags is used for adjectives. These are morphologically nominals that
 typically have comparative derivations as well. They modify nominals and
 typically agree with the modified nominals in some of the morphological
 features. Adjectives are typically relatively well established in grammars and
@@ -130,12 +130,12 @@ easy to spot.</p>
 <p>Less standard cases:</p>
 
 <ul>
-  <li>Pro-adjectives are tagged as <code>ADJ</code>.</li>
-  <li>Ordinal numerals are tagged as <code>ADJ</code>.</li>
-  <li>Participles when lexicalised are tagged as <code>ADJ</code>.</li>
+  <li>Pro-adjectives are tagged as <code class="language-plaintext highlighter-rouge">ADJ</code>.</li>
+  <li>Ordinal numerals are tagged as <code class="language-plaintext highlighter-rouge">ADJ</code>.</li>
+  <li>Participles when lexicalised are tagged as <code class="language-plaintext highlighter-rouge">ADJ</code>.</li>
 </ul>
 
-<p>Telling <code>DET</code> apart from <code>ADJ</code>…</p>
+<p>Telling <code class="language-plaintext highlighter-rouge">DET</code> apart from <code class="language-plaintext highlighter-rouge">ADJ</code>…</p>
 
 <h4 id="examples">Examples</h4>
 
@@ -204,11 +204,11 @@ easy to spot.</p>
 
 <h3 id="definition">Definition</h3>
 
-<p><code>ADP</code> is used for adpositions, i.e., prepositions and postpositions (many
+<p><code class="language-plaintext highlighter-rouge">ADP</code> is used for adpositions, i.e., prepositions and postpositions (many
 Uralic languages won’t make strict distinctions). Adpositions have nominal
 complements that can be identified by the cases, or the complement may be
-encoded by a possessive suffix on the adposition itself. <code>ADP</code> can be separated
-from <code>ADV</code> by lack of complement or if the complement is verb or a clause.</p>
+encoded by a possessive suffix on the adposition itself. <code class="language-plaintext highlighter-rouge">ADP</code> can be separated
+from <code class="language-plaintext highlighter-rouge">ADV</code> by lack of complement or if the complement is verb or a clause.</p>
 
 <p>Adpositions are often derived from defective or historic nominal paradigms, the
 tagging should follow modern diachronic analysis instead of etymological.</p>
@@ -344,7 +344,7 @@ Uralic grammars. Most languages have selected a closed sub-set of verbs. For
 example verbs that have infinitive complements, verbs for syntactic tense
 constructions, verbs used in possessive structures, etc.</p>
 
-<p>Negation verbs are not currently marked as <code>AUX</code>, even when they carry the main
+<p>Negation verbs are not currently marked as <code class="language-plaintext highlighter-rouge">AUX</code>, even when they carry the main
 verb’s inflectional features (only in Finnish of current tree-banks).</p>
 
 <h4 id="examples">Examples</h4>
@@ -374,9 +374,9 @@ sa.
 12      .       .       PUNCT   Punct   _       6       punct   _       _
 </code></pre>
 
-<p>~~~ conllu
-# sentence-text: Grande finalen pitää olla grande, eikä pienestä lurituksesta tule muuta kuin kiukkuiseksi.
-1       Grande  Grande  X       Foreign Foreign=Foreign 5       nsubj:cop       _       _
+<p>~~~ conllu</p>
+<h1 id="sentence-text-grande-finalen-pitää-olla-grande-eikä-pienestä-lurituksesta-tule-muuta-kuin-kiukkuiseksi">sentence-text: Grande finalen pitää olla grande, eikä pienestä lurituksesta tule muuta kuin kiukkuiseksi.</h1>
+<p>1       Grande  Grande  X       Foreign Foreign=Foreign 5       nsubj:cop       _       _
 2       finalen finale  X       Foreign Foreign=Foreign 1       foreign _       _
 3       pitää   pitää   AUX     V       Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act 5       aux
      _       _
@@ -422,9 +422,9 @@ way to analyse this in Uralic Dependencies.</p>
   <li>[fi] <em>eikä</em> “and not”, <em>enkä</em> “and I do not”</li>
 </ul>
 
-<p>~̃~~ conllu
-# sentence-text: Jäällä kävely avaa aina hauskoja ja erikoisia näkökulmia kaupunkiin.
-1       Jäällä  jää     NOUN    N       Case=Ade|Number=Sing    2       nmod    _       _
+<p>~̃~~ conllu</p>
+<h1 id="sentence-text-jäällä-kävely-avaa-aina-hauskoja-ja-erikoisia-näkökulmia-kaupunkiin">sentence-text: Jäällä kävely avaa aina hauskoja ja erikoisia näkökulmia kaupunkiin.</h1>
+<p>1       Jäällä  jää     NOUN    N       Case=Ade|Number=Sing    2       nmod    _       _
 2       kävely  kävely  NOUN    N       Case=Nom|Number=Sing    3       nsubj   _       _
 3       avaa    avata   VERB    V       Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act 0       root
     _       _
@@ -536,8 +536,8 @@ of speech.</p>
 <h3 id="description">Description</h3>
 
 <p>Nouns are a part of speech typically denoting a person, place, thing, animal or
-idea.  The <code>NOUN</code> tag is intended for common nouns only. See <code>PROPN</code> for proper
-nouns and <code>PRON</code> for pronouns.  Nouns are as described in Universal rules.
+idea.  The <code class="language-plaintext highlighter-rouge">NOUN</code> tag is intended for common nouns only. See <code class="language-plaintext highlighter-rouge">PROPN</code> for proper
+nouns and <code class="language-plaintext highlighter-rouge">PRON</code> for pronouns.  Nouns are as described in Universal rules.
 Uralic nouns can be recognised from typically the case, number and etc.
 inflection. Some noun forms lexicalise to Adverbs or adpositions. Nouns do not
 typically have so strong tendency of comparative derivations like
@@ -549,9 +549,9 @@ adjectives do.</p>
   <li>[fi] <em>talo</em> “house”, <em>tyttö</em> “girl”</li>
 </ul>
 
-<p>~~~ conllu
-# sentence-text: Oma jääkaappini oli aivan tyhjä ja koska kauppareissu tällä jalalla ei houkuttanut sitten alkuunkaan, turvauduin ystäväni apuun.
-1       Oma     oma     ADJ     A       Case=Nom|Degree=Pos|Number=Sing 2       amod    _       _
+<p>~~~ conllu</p>
+<h1 id="sentence-text-oma-jääkaappini-oli-aivan-tyhjä-ja-koska-kauppareissu-tällä-jalalla-ei-houkuttanut-sitten-alkuunkaan-turvauduin-ystäväni-apuun">sentence-text: Oma jääkaappini oli aivan tyhjä ja koska kauppareissu tällä jalalla ei houkuttanut sitten alkuunkaan, turvauduin ystäväni apuun.</h1>
+<p>1       Oma     oma     ADJ     A       Case=Nom|Degree=Pos|Number=Sing 2       amod    _       _
 2       jääkaappini     jää#kaappi      NOUN    N       Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1   5
        nsubj:cop       _       _
 3       oli     olla    VERB    V       Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act 5       cop
@@ -586,7 +586,7 @@ adjectives do.</p>
 pronoun, that expresses a number and a relation to the number, such as
 quantity, sequence, frequency or fraction.</p>
 
-<p>Ordinal numerals are classified as adjectives <code>ADJ</code> if they act like adjectives
+<p>Ordinal numerals are classified as adjectives <code class="language-plaintext highlighter-rouge">ADJ</code> if they act like adjectives
 in syntax.</p>
 
 <h4 id="examples">Examples</h4>
@@ -651,8 +651,8 @@ phrase to impart meaning and that do not satisfy definitions of other universal
 parts of speech (e.g. adpositions, coordinating conjunctions, subordinating
 conjunctions or auxiliary verbs).  Particles should be used scarcely in uralic
 dependencies. What is called particle in lot of Uralic literature is typically
-adverb <code>ADV</code>, interjection <code>INTJ</code> or adposition <code>ADP</code> in universal dependencies,
-also <code>CCONJ</code> and <code>SCONJ</code> in limited amounts.</p>
+adverb <code class="language-plaintext highlighter-rouge">ADV</code>, interjection <code class="language-plaintext highlighter-rouge">INTJ</code> or adposition <code class="language-plaintext highlighter-rouge">ADP</code> in universal dependencies,
+also <code class="language-plaintext highlighter-rouge">CCONJ</code> and <code class="language-plaintext highlighter-rouge">SCONJ</code> in limited amounts.</p>
 
 <p>Enclitic discourse particles are not analysed in the current versions of Uralic
 dependency schemes.</p>
@@ -768,7 +768,7 @@ forth.</p>
 <h3 id="description">Description</h3>
 <p>A proper noun is a noun (or nominal content word) that is the name (or part of
 the name) of a specific individual, place, or object. Acronyms made of a
-proper noun or proper nouns should also be tagged <code>PROPN</code>.</p>
+proper noun or proper nouns should also be tagged <code class="language-plaintext highlighter-rouge">PROPN</code>.</p>
 
 <h4 id="examples">Examples</h4>
 
@@ -853,9 +853,9 @@ share mostly the same limited set of punctuation marks.</p>
   <li>[fi] <em>…</em></li>
 </ul>
 
-<p>~̃~~ conllu
-# sentence-text: Vähän samanlainen tunne kuin silloin, kun ystävämme vei meidät kerran ylöstuomiokirkon torniin.
-1       Vähän   vähän   ADV     Adv     _       2       advmod  _       _
+<p>~̃~~ conllu</p>
+<h1 id="sentence-text-vähän-samanlainen-tunne-kuin-silloin-kun-ystävämme-vei-meidät-kerran-ylöstuomiokirkon-torniin">sentence-text: Vähän samanlainen tunne kuin silloin, kun ystävämme vei meidät kerran ylöstuomiokirkon torniin.</h1>
+<p>1       Vähän   vähän   ADV     Adv     _       2       advmod  _       _
 2       samanlainen     samanlainen     ADJ     A       Case=Nom|Degree=Pos|Number=Sing 3       amod    _       _
 3       tunne   tunne   NOUN    N       Case=Nom|Number=Sing    0       root    _       _
 4       kuin    kuin    SCONJ   C       _       5       mark    _       _
@@ -883,7 +883,7 @@ share mostly the same limited set of punctuation marks.</p>
 
 <p>A subordinating conjunction is a conjunction that links constructions by making
 one of them a constituent of the other. What some grammars call adverbial
-conjunctions are also tagged <code>SCONJ</code> in Uralic dependencies.</p>
+conjunctions are also tagged <code class="language-plaintext highlighter-rouge">SCONJ</code> in Uralic dependencies.</p>
 
 <p>Like with co-ordinating conjunctions, there is no common best practice for
 annotating Uralic conjunction enclitics.</p>
@@ -895,7 +895,7 @@ annotating Uralic conjunction enclitics.</p>
   <li>[fi] <em>parempi <b>kuin</b></em> “better <b>than</b>”</li>
 </ul>
 
-<pre><code># sentence-text: Vähän samanlainen tunne kuin silloin, kun ystävämme vei meidät kerran ylöstuomiokirkon torniin.
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># sentence-text: Vähän samanlainen tunne kuin silloin, kun ystävämme vei meidät kerran ylöstuomiokirkon torniin.
 1       Vähän   vähän   ADV     Adv     _       2       advmod  _       _
 2       samanlainen     samanlainen     ADJ     A       Case=Nom|Degree=Pos|Number=Sing 3       amod    _       _
 3       tunne   tunne   NOUN    N       Case=Nom|Number=Sing    0       root    _       _
@@ -913,7 +913,7 @@ annotating Uralic conjunction enclitics.</p>
 13      tuomiokirkon    tuomio#kirkko   NOUN    N       Case=Gen|Number=Sing    14      nmod:poss       _       _
 14      torniin torni   NOUN    N       Case=Ill|Number=Sing    9       nmod    _       SpaceAfter=No
 15      .       .       PUNCT   Punct   _       3       punct   _       _
-</code></pre>
+</code></pre></div></div>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_urj-pos/SCONJ.md" target="#">edit SCONJ</a></p>
 
@@ -964,9 +964,9 @@ fter=No
        _
 </code></pre>
 
-<p>~̃~~ conllu
-# sentence-text: Tässä mallissa on sama 6,1 -litrainen Hemi -moottori kuin SRT
--8:ssa, mutta väri on erikoinen “Detonator Yellow” ja siinä on mustat teippaukset.
+<p>~̃~~ conllu</p>
+<h1 id="sentence-text-tässä-mallissa-on-sama-61--litrainen-hemi--moottori-kuin-srt">sentence-text: Tässä mallissa on sama 6,1 -litrainen Hemi -moottori kuin SRT</h1>
+<p>-8:ssa, mutta väri on erikoinen “Detonator Yellow” ja siinä on mustat teippaukset.
 1       Tässä   tämä    PRON    Pron    Case=Ine|Number=Sing|PronType=Dem
        2       det     _       _
 2       mallissa        malli   NOUN    N       Case=Ine|Number=Sing    3
@@ -1051,12 +1051,12 @@ be a derived new word or a form of a verb.</p>
 
 <h3 id="description">Description</h3>
 
-<p>The tag <code>X</code> is used for words that for some reason cannot be assigned a real
+<p>The tag <code class="language-plaintext highlighter-rouge">X</code> is used for words that for some reason cannot be assigned a real
 part-of-speech category. X is typically used for foreign language material or 
 other un-processable data.</p>
 
 <p>It is foreseeable that in many Uralic language data code-switching is more
-common, the other language parts should be tagged <code>X</code> throughout?</p>
+common, the other language parts should be tagged <code class="language-plaintext highlighter-rouge">X</code> throughout?</p>
 
 <h4 id="examples">Examples</h4>
 

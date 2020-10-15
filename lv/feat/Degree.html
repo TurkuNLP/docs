@@ -64,21 +64,21 @@
 
 <h2><code>Degree</code>: degree of comparison</h2>
 
-<p>Latvian features degree for adjectives (<a href=""><code>ADJ</code></a>), some participles (<a href=""><code>VERB</code></a> with <a href="VerbForm"><code>VerbForm=Part</code></a>) and some adverbs (<a href=""><code>ADV</code></a>). Ordinal numerals usually have first degree (<em>pirmais</em> “the first”), however in informal language ordinal numeral forms with higher degrees can be formed (<em>pirmākais</em>, <em>vispirmākais</em>). Such informal cases are not correctly represented in this treebank.</p>
+<p>Latvian features degree for adjectives (<a href=""><code class="language-plaintext highlighter-rouge">ADJ</code></a>), some participles (<a href=""><code class="language-plaintext highlighter-rouge">VERB</code></a> with <a href="VerbForm"><code class="language-plaintext highlighter-rouge">VerbForm=Part</code></a>) and some adverbs (<a href=""><code class="language-plaintext highlighter-rouge">ADV</code></a>). Ordinal numerals usually have first degree (<em>pirmais</em> “the first”), however in informal language ordinal numeral forms with higher degrees can be formed (<em>pirmākais</em>, <em>vispirmākais</em>). Such informal cases are not correctly represented in this treebank.</p>
 
 <p>Valus used:</p>
 
 <ul>
-  <li><code>Pos</code> (positive, first degree)</li>
-  <li><code>Cmp</code> (comparative, second degree)</li>
-  <li><code>Sup</code> (superlative, third degree)</li>
+  <li><code class="language-plaintext highlighter-rouge">Pos</code> (positive, first degree)</li>
+  <li><code class="language-plaintext highlighter-rouge">Cmp</code> (comparative, second degree)</li>
+  <li><code class="language-plaintext highlighter-rouge">Sup</code> (superlative, third degree)</li>
 </ul>
 
 <p>Values not present in Latvian:</p>
 
 <ul>
-  <li><code>Equ</code> (equative)</li>
-  <li><code>Abs</code> (absolute superlative)</li>
+  <li><code class="language-plaintext highlighter-rouge">Equ</code> (equative)</li>
+  <li><code class="language-plaintext highlighter-rouge">Abs</code> (absolute superlative)</li>
 </ul>
 
 
@@ -91,29 +91,29 @@
 
 <hr />
 
-<h2 id="treebank-statistics-udlatvian">Treebank Statistics (UD_Latvian)</h2>
+<h2 id="treebank-statistics-ud_latvian">Treebank Statistics (UD_Latvian)</h2>
 
 <p>This feature is universal.
-It occurs with 3 different values: <code>Cmp</code>, <code>Pos</code>, <code>Sup</code>.</p>
+It occurs with 3 different values: <code class="language-plaintext highlighter-rouge">Cmp</code>, <code class="language-plaintext highlighter-rouge">Pos</code>, <code class="language-plaintext highlighter-rouge">Sup</code>.</p>
 
-<p>3918 tokens (9%) have a non-empty value of <code>Degree</code>.
-2681 types (22%) occur at least once with a non-empty value of <code>Degree</code>.
-1559 lemmas (22%) occur at least once with a non-empty value of <code>Degree</code>.
+<p>3918 tokens (9%) have a non-empty value of <code class="language-plaintext highlighter-rouge">Degree</code>.
+2681 types (22%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Degree</code>.
+1559 lemmas (22%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Degree</code>.
 The feature is used with 3 part-of-speech tags: <a href="">lv-pos/ADJ</a> (2243; 5% instances), <a href="">lv-pos/VERB</a> (1382; 3% instances), <a href="">lv-pos/ADV</a> (293; 1% instances).</p>
 
-<h3 id="adj"><code>ADJ</code></h3>
+<h3 id="adj"><code class="language-plaintext highlighter-rouge">ADJ</code></h3>
 
-<p>2243 <a href="">lv-pos/ADJ</a> tokens (87% of all <code>ADJ</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>2243 <a href="">lv-pos/ADJ</a> tokens (87% of all <code class="language-plaintext highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Degree</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Degree</code> co-occurred: <tt><a href="NumType.html">NumType</a>=EMPTY</tt> (2173; 97%), <tt><a href="Number.html">Number</a>=Sing</tt> (1520; 68%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (1177; 52%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">ADJ</code> and <code class="language-plaintext highlighter-rouge">Degree</code> co-occurred: <tt><a href="NumType.html">NumType</a>=EMPTY</tt> (2173; 97%), <tt><a href="Number.html">Number</a>=Sing</tt> (1520; 68%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (1177; 52%).</p>
 
-<p><code>ADJ</code> tokens may have the following values of <code>Degree</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">ADJ</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (178; 8% of non-empty <code>Degree</code>): <em>augstākās, lielāku, lielākā, lielākajiem, lielāko, mazāka, mazāks, lielāka, lielākie, tuvākajā</em></li>
-  <li><code>Pos</code> (2047; 91% of non-empty <code>Degree</code>): <em>pedagoģisko, nacionālās, iespējams, jaunu, liela, liels, nepieciešams, lielu, lielā, otrās</em></li>
-  <li><code>Sup</code> (18; 1% of non-empty <code>Degree</code>): <em>vislabākais, visticamākais, Visizteiktākais, Vispareizākais, visaugstākajām, visaugstākā, viscēlākajam, visdažādākajiem, visdziļāko, visefektīvākais</em></li>
-  <li><code>EMPTY</code> (326): <em>2012., 1., 2., 3., 2010., 2011., 2007., 4., 2013., 7.</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Cmp</code> (178; 8% of non-empty <code class="language-plaintext highlighter-rouge">Degree</code>): <em>augstākās, lielāku, lielākā, lielākajiem, lielāko, mazāka, mazāks, lielāka, lielākie, tuvākajā</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pos</code> (2047; 91% of non-empty <code class="language-plaintext highlighter-rouge">Degree</code>): <em>pedagoģisko, nacionālās, iespējams, jaunu, liela, liels, nepieciešams, lielu, lielā, otrās</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Sup</code> (18; 1% of non-empty <code class="language-plaintext highlighter-rouge">Degree</code>): <em>vislabākais, visticamākais, Visizteiktākais, Vispareizākais, visaugstākajām, visaugstākā, viscēlākajam, visdažādākajiem, visdziļāko, visefektīvākais</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (326): <em>2012., 1., 2., 3., 2010., 2011., 2007., 4., 2013., 7.</em></li>
 </ul>
 
 <table>
@@ -128,37 +128,37 @@ The feature is used with 3 part-of-speech tags: <a href="">lv-pos/ADJ</a> (2243;
   <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Number.html">Number</a>=Plur</tt></td><td><em>labi</em></td><td><em>labāki</em></td><td></td></tr>
 </table>
 
-<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 93% lemmas (740) occur only with one value of <code>Degree</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">Degree</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">ADJ</code>. 93% lemmas (740) occur only with one value of <code class="language-plaintext highlighter-rouge">Degree</code>.</p>
 
-<h3 id="verb"><code>VERB</code></h3>
+<h3 id="verb"><code class="language-plaintext highlighter-rouge">VERB</code></h3>
 
-<p>1382 <a href="">lv-pos/VERB</a> tokens (19% of all <code>VERB</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>1382 <a href="">lv-pos/VERB</a> tokens (19% of all <code class="language-plaintext highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Degree</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Degree</code> co-occurred: <tt><a href="Evident.html">Evident</a>=EMPTY</tt> (1382; 100%), <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (1382; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (1382; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (1382; 100%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (1382; 100%), <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (1283; 93%), <tt><a href="Aspect.html">Aspect</a>=Perf</tt> (1176; 85%), <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (1176; 85%), <tt><a href="Tense.html">Tense</a>=Past</tt> (1176; 85%), <tt><a href="Definite.html">Definite</a>=Ind</tt> (1075; 78%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">VERB</code> and <code class="language-plaintext highlighter-rouge">Degree</code> co-occurred: <tt><a href="Evident.html">Evident</a>=EMPTY</tt> (1382; 100%), <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (1382; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (1382; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (1382; 100%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (1382; 100%), <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (1283; 93%), <tt><a href="Aspect.html">Aspect</a>=Perf</tt> (1176; 85%), <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (1176; 85%), <tt><a href="Tense.html">Tense</a>=Past</tt> (1176; 85%), <tt><a href="Definite.html">Definite</a>=Ind</tt> (1075; 78%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>Degree</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (1; 0% of non-empty <code>Degree</code>): <em>saasinātāku</em></li>
-  <li><code>Pos</code> (1381; 100% of non-empty <code>Degree</code>): <em>bijis, saistīts, cēlusies, kļuvusi, rakstīts, bijusi, izlietojusi, pagājušā, ziņots, dibināts</em></li>
-  <li><code>EMPTY</code> (5817): <em>ir, bija, nav, var, būs, nebija, varētu, būtu, esmu, tiek</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Cmp</code> (1; 0% of non-empty <code class="language-plaintext highlighter-rouge">Degree</code>): <em>saasinātāku</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pos</code> (1381; 100% of non-empty <code class="language-plaintext highlighter-rouge">Degree</code>): <em>bijis, saistīts, cēlusies, kļuvusi, rakstīts, bijusi, izlietojusi, pagājušā, ziņots, dibināts</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (5817): <em>ir, bija, nav, var, būs, nebija, varētu, būtu, esmu, tiek</em></li>
 </ul>
 
-<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 100% lemmas (644) occur only with one value of <code>Degree</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">Degree</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">VERB</code>. 100% lemmas (644) occur only with one value of <code class="language-plaintext highlighter-rouge">Degree</code>.</p>
 
-<h3 id="adv"><code>ADV</code></h3>
+<h3 id="adv"><code class="language-plaintext highlighter-rouge">ADV</code></h3>
 
-<p>293 <a href="">lv-pos/ADV</a> tokens (11% of all <code>ADV</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>293 <a href="">lv-pos/ADV</a> tokens (11% of all <code class="language-plaintext highlighter-rouge">ADV</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Degree</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADV</code> and <code>Degree</code> co-occurred: <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (293; 100%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">ADV</code> and <code class="language-plaintext highlighter-rouge">Degree</code> co-occurred: <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (293; 100%).</p>
 
-<p><code>ADV</code> tokens may have the following values of <code>Degree</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">ADV</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (110; 38% of non-empty <code>Degree</code>): <em>vairāk, labāk, vēlāk, vieglāk, ātrāk, grūtāk, mazāk, svarīgāk, tālāk, agrāk</em></li>
-  <li><code>Pos</code> (174; 59% of non-empty <code>Degree</code>): <em>daudz, labi, ilgi, brīvi, svarīgi, viegli, ātri, īsti, bieži, dziļi</em></li>
-  <li><code>Sup</code> (9; 3% of non-empty <code>Degree</code>): <em>visvairāk, VISLABĀK, Vissarežģītāk, Visļaunāk, visbiežāk, vissīvāk</em></li>
-  <li><code>EMPTY</code> (2332): <em>kā, jau, vēl, tad, kad, tā, tik, kur, ļoti, tagad</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Cmp</code> (110; 38% of non-empty <code class="language-plaintext highlighter-rouge">Degree</code>): <em>vairāk, labāk, vēlāk, vieglāk, ātrāk, grūtāk, mazāk, svarīgāk, tālāk, agrāk</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pos</code> (174; 59% of non-empty <code class="language-plaintext highlighter-rouge">Degree</code>): <em>daudz, labi, ilgi, brīvi, svarīgi, viegli, ātri, īsti, bieži, dziļi</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Sup</code> (9; 3% of non-empty <code class="language-plaintext highlighter-rouge">Degree</code>): <em>visvairāk, VISLABĀK, Vissarežģītāk, Visļaunāk, visbiežāk, vissīvāk</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (2332): <em>kā, jau, vēl, tad, kad, tā, tik, kur, ļoti, tagad</em></li>
 </ul>
 
 <table>
@@ -166,9 +166,9 @@ The feature is used with 3 part-of-speech tags: <a href="">lv-pos/ADJ</a> (2243;
   <tr><td><tt></tt></td><td><em>daudz</em></td><td><em>vairāk</em></td><td><em>visvairāk</em></td></tr>
 </table>
 
-<h2 id="relations-with-agreement-in-degree">Relations with Agreement in <code>Degree</code></h2>
+<h2 id="relations-with-agreement-in-degree">Relations with Agreement in <code class="language-plaintext highlighter-rouge">Degree</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Degree</code>:
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">Degree</code>:
 <tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (111; 99%),
 <tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (26; 53%),
 <tt>ADV –[<a href="../dep/conj.html">conj</a>]–&gt; ADV</tt> (18; 78%),

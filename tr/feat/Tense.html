@@ -70,13 +70,13 @@
 Complex tenses for actions that happened before, during, and after a past event can also be specified by suffixation.
 The actions that happen before/after/during a future event is expressed using an auxiliary.</p>
 
-<p>The verbs expressing actions that happened before a reference in the past are marked with value <code>Pqp</code>.
-For events that happen during the past reference, we use <code>Tense=Past</code> with proper progressive (<code>Prog</code>) or habitual (not in current UD specification) <code>Aspect</code>.</p>
+<p>The verbs expressing actions that happened before a reference in the past are marked with value <code class="language-plaintext highlighter-rouge">Pqp</code>.
+For events that happen during the past reference, we use <code class="language-plaintext highlighter-rouge">Tense=Past</code> with proper progressive (<code class="language-plaintext highlighter-rouge">Prog</code>) or habitual (not in current UD specification) <code class="language-plaintext highlighter-rouge">Aspect</code>.</p>
 
-<h3 id="past-paste-tense"><code>Past</code>: paste tense</h3>
+<h3 id="past-paste-tense"><code class="language-plaintext highlighter-rouge">Past</code>: paste tense</h3>
 
 <p>Turkish past tense is realized with <em>-DI</em> or <em>-mIş</em> suffixes on verbal predicates, and  with <em>-(y)DI</em> and <em>-(y)mIş</em> suffixes on nominal predicates.
-The difference between the <em>-DI</em> and <em>-mIş</em> forms are related to <code>Mood</code> rather than <code>Tense</code>. Both morphemes refer to a (completed) past event.</p>
+The difference between the <em>-DI</em> and <em>-mIş</em> forms are related to <code class="language-plaintext highlighter-rouge">Mood</code> rather than <code class="language-plaintext highlighter-rouge">Tense</code>. Both morphemes refer to a (completed) past event.</p>
 
 <p>These suffixes also combine with others to refer to time relative to a past event, which will be discussed below.</p>
 
@@ -91,10 +91,10 @@ The difference between the <em>-DI</em> and <em>-mIş</em> forms are related to 
   <li><em>hastaymış</em> ‘she was sick’ (evidential)</li>
 </ul>
 
-<h3 id="fut-future-tense"><code>Fut</code>: future tense</h3>
+<h3 id="fut-future-tense"><code class="language-plaintext highlighter-rouge">Fut</code>: future tense</h3>
 
 <p>Turkish future tense is expressed with suffix <em>-(y)AcAk</em>. 
-Copular predicates cannot directly take future <code>Tense</code> morphemes.
+Copular predicates cannot directly take future <code class="language-plaintext highlighter-rouge">Tense</code> morphemes.
 Future tense in nominal phrases are expressed using auxiliary <em>ol-</em>.</p>
 
 <h4 id="examples-1">Examples</h4>
@@ -103,7 +103,7 @@ Future tense in nominal phrases are expressed using auxiliary <em>ol-</em>.</p>
   <li><em>eve gidecek</em> ‘she will go home’</li>
 </ul>
 
-<h3 id="pres-present-tense"><code>Pres</code>: present tense</h3>
+<h3 id="pres-present-tense"><code class="language-plaintext highlighter-rouge">Pres</code>: present tense</h3>
 
 <p>The present tense in Turkish is realized by lack of past or future morphemes.</p>
 
@@ -115,14 +115,14 @@ Future tense in nominal phrases are expressed using auxiliary <em>ol-</em>.</p>
   <li><em>eve gider</em> ‘she goes home’</li>
 </ul>
 
-<p>The differences between these forms are <code>Aspect</code> and <code>Mood</code> differences.</p>
+<p>The differences between these forms are <code class="language-plaintext highlighter-rouge">Aspect</code> and <code class="language-plaintext highlighter-rouge">Mood</code> differences.</p>
 
-<h3 id="pqp-pluperfect"><code>Pqp</code>: pluperfect</h3>
+<h3 id="pqp-pluperfect"><code class="language-plaintext highlighter-rouge">Pqp</code>: pluperfect</h3>
 
 <p>This denotes an action that happened before a reference time in the past.
 In Turkish, this is realized by combination of <em>-DI</em>/<em>-mIş</em> and <em>-(y)DI</em>/<em>-(y)mIş</em> (only three combinations exemplified below possible).
 As in future tense, nominal predicates require the auxiliary <em>ol-</em> for this tense (<em>hasta olmuştu</em> ‘she had been sick’).
-Hence, we only mark verbal predicates with double past indicators as <code>Pqp</code>.</p>
+Hence, we only mark verbal predicates with double past indicators as <code class="language-plaintext highlighter-rouge">Pqp</code>.</p>
 
 <h4 id="examples-3">Examples</h4>
 
@@ -142,32 +142,32 @@ Hence, we only mark verbal predicates with double past indicators as <code>Pqp</
 
 <hr />
 
-<h2 id="treebank-statistics-udturkish">Treebank Statistics (UD_Turkish)</h2>
+<h2 id="treebank-statistics-ud_turkish">Treebank Statistics (UD_Turkish)</h2>
 
-<p>This feature is universal but the values <code>Aor</code>, <code>AorPast</code>, <code>FutPast</code> are language-specific.
-It occurs with 7 different values: <code>Aor</code>, <code>AorPast</code>, <code>Fut</code>, <code>FutPast</code>, <code>Past</code>, <code>Pqp</code>, <code>Pres</code>.</p>
+<p>This feature is universal but the values <code class="language-plaintext highlighter-rouge">Aor</code>, <code class="language-plaintext highlighter-rouge">AorPast</code>, <code class="language-plaintext highlighter-rouge">FutPast</code> are language-specific.
+It occurs with 7 different values: <code class="language-plaintext highlighter-rouge">Aor</code>, <code class="language-plaintext highlighter-rouge">AorPast</code>, <code class="language-plaintext highlighter-rouge">Fut</code>, <code class="language-plaintext highlighter-rouge">FutPast</code>, <code class="language-plaintext highlighter-rouge">Past</code>, <code class="language-plaintext highlighter-rouge">Pqp</code>, <code class="language-plaintext highlighter-rouge">Pres</code>.</p>
 
-<p>9924 tokens (21%) have a non-empty value of <code>Tense</code>.
-5602 types (37%) occur at least once with a non-empty value of <code>Tense</code>.
-782 lemmas (14%) occur at least once with a non-empty value of <code>Tense</code>.
+<p>9924 tokens (21%) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.
+5602 types (37%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.
+782 lemmas (14%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.
 The feature is used with 3 part-of-speech tags: <a href="">tr-pos/VERB</a> (9113; 19% instances), <a href="">tr-pos/AUX</a> (809; 2% instances), <a href="">tr-pos/ADP</a> (2; 0% instances).</p>
 
-<h3 id="verb"><code>VERB</code></h3>
+<h3 id="verb"><code class="language-plaintext highlighter-rouge">VERB</code></h3>
 
-<p>9113 <a href="">tr-pos/VERB</a> tokens (100% of all <code>VERB</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>9113 <a href="">tr-pos/VERB</a> tokens (100% of all <code class="language-plaintext highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Tense</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (8104; 89%), <tt><a href="Polite.html">Polite</a>=EMPTY</tt> (7977; 88%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (7883; 87%), <tt><a href="Person[psor].html">Person[psor]</a>=EMPTY</tt> (7736; 85%), <tt><a href="Number[psor].html">Number[psor]</a>=EMPTY</tt> (7736; 85%), <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (7675; 84%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (7346; 81%), <tt><a href="Aspect.html">Aspect</a>=Perf</tt> (7004; 77%), <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (5224; 57%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">VERB</code> and <code class="language-plaintext highlighter-rouge">Tense</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (8104; 89%), <tt><a href="Polite.html">Polite</a>=EMPTY</tt> (7977; 88%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (7883; 87%), <tt><a href="Person[psor].html">Person[psor]</a>=EMPTY</tt> (7736; 85%), <tt><a href="Number[psor].html">Number[psor]</a>=EMPTY</tt> (7736; 85%), <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (7675; 84%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (7346; 81%), <tt><a href="Aspect.html">Aspect</a>=Perf</tt> (7004; 77%), <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (5224; 57%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>Tense</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Tense</code>:</p>
 
 <ul>
-  <li><code>Aor</code> (834; 9% of non-empty <code>Tense</code>): <em>olur, olmaz, olabilir, ister, eder, yeter, ?, alır, benzer, gelir</em></li>
-  <li><code>AorPast</code> (131; 1% of non-empty <code>Tense</code>): <em>olurdu, derdi, ederdi, otururdu, verirdi, yapardı, başlardı, bilirdi, bulunmazdım, dururdu</em></li>
-  <li><code>Fut</code> (474; 5% of non-empty <code>Tense</code>): <em>olacak, yapılacak, verecek, gelecek, yapacağız, olacaktır, olmayacak, alacak, anlatacağım, bitecek</em></li>
-  <li><code>FutPast</code> (30; 0% of non-empty <code>Tense</code>): <em>olacaktı, Feshedeceklermiş, anlatacaktım, anlatacaktın, anlatmayacaktım, bekleyecektim, bitmeyecekmiş, bulabileceklerdi, diyecektik, diyecektim</em></li>
-  <li><code>Past</code> (3399; 37% of non-empty <code>Tense</code>): <em>dedi, dedim, olduğunu, oldu, olduğu, söyledi, etti, geldi, baktı, verdi</em></li>
-  <li><code>Pqp</code> (213; 2% of non-empty <code>Tense</code>): <em>başlamıştı, demişti, etmişti, çıkmıştı, dönmüştü, gelmişti, geçmişti, düşünmemiştim, heyecanlanmıştı, kalkmıştı</em></li>
-  <li><code>Pres</code> (4032; 44% of non-empty <code>Tense</code>): <em>olan, değil, gelen, var, demek, diyor, eden, olması, oluyor, olsa</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Aor</code> (834; 9% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>olur, olmaz, olabilir, ister, eder, yeter, ?, alır, benzer, gelir</em></li>
+  <li><code class="language-plaintext highlighter-rouge">AorPast</code> (131; 1% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>olurdu, derdi, ederdi, otururdu, verirdi, yapardı, başlardı, bilirdi, bulunmazdım, dururdu</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Fut</code> (474; 5% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>olacak, yapılacak, verecek, gelecek, yapacağız, olacaktır, olmayacak, alacak, anlatacağım, bitecek</em></li>
+  <li><code class="language-plaintext highlighter-rouge">FutPast</code> (30; 0% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>olacaktı, Feshedeceklermiş, anlatacaktım, anlatacaktın, anlatmayacaktım, bekleyecektim, bitmeyecekmiş, bulabileceklerdi, diyecektik, diyecektim</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Past</code> (3399; 37% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>dedi, dedim, olduğunu, oldu, olduğu, söyledi, etti, geldi, baktı, verdi</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pqp</code> (213; 2% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>başlamıştı, demişti, etmişti, çıkmıştı, dönmüştü, gelmişti, geçmişti, düşünmemiştim, heyecanlanmıştı, kalkmıştı</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pres</code> (4032; 44% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>olan, değil, gelen, var, demek, diyor, eden, olması, oluyor, olsa</em></li>
 </ul>
 
 <table>
@@ -290,17 +290,17 @@ The feature is used with 3 part-of-speech tags: <a href="">tr-pos/VERB</a> (9113
   <tr><td><tt><a href="Aspect.html">Aspect</a>=Rapid|<a href="Mood.html">Mood</a>=Ind|<a href="Polarity.html">Polarity</a>=Pos|<a href="VerbForm.html">VerbForm</a>=Conv</tt></td><td><em>oluverip</em></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 </table>
 
-<h3 id="aux"><code>AUX</code></h3>
+<h3 id="aux"><code class="language-plaintext highlighter-rouge">AUX</code></h3>
 
-<p>809 <a href="">tr-pos/AUX</a> tokens (100% of all <code>AUX</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>809 <a href="">tr-pos/AUX</a> tokens (100% of all <code class="language-plaintext highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Tense</code> co-occurred: <tt><a href="Aspect.html">Aspect</a>=Perf</tt> (809; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (711; 88%), <tt><a href="Person.html">Person</a>=3</tt> (625; 77%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (573; 71%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">AUX</code> and <code class="language-plaintext highlighter-rouge">Tense</code> co-occurred: <tt><a href="Aspect.html">Aspect</a>=Perf</tt> (809; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (711; 88%), <tt><a href="Person.html">Person</a>=3</tt> (625; 77%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (573; 71%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>Tense</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">AUX</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Tense</code>:</p>
 
 <ul>
-  <li><code>Past</code> (287; 35% of non-empty <code>Tense</code>): <em>ydi, dı, ydı, tu, ydu, tı, di, ti, ydim, du</em></li>
-  <li><code>Pres</code> (522; 65% of non-empty <code>Tense</code>): <em>dır, mı, dir, mi, mu, dur, sa, tir, im, musun</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Past</code> (287; 35% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>ydi, dı, ydı, tu, ydu, tı, di, ti, ydim, du</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pres</code> (522; 65% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>dır, mı, dir, mi, mu, dur, sa, tir, im, musun</em></li>
 </ul>
 
 <table>
@@ -324,20 +324,20 @@ The feature is used with 3 part-of-speech tags: <a href="">tr-pos/VERB</a> (9113
   <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="VerbForm.html">VerbForm</a>=Conv</tt></td><td><em>ken, yken, irerken</em></td><td></td></tr>
 </table>
 
-<h3 id="adp"><code>ADP</code></h3>
+<h3 id="adp"><code class="language-plaintext highlighter-rouge">ADP</code></h3>
 
-<p>2 <a href="">tr-pos/ADP</a> tokens (0% of all <code>ADP</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>2 <a href="">tr-pos/ADP</a> tokens (0% of all <code class="language-plaintext highlighter-rouge">ADP</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.</p>
 
-<p><code>ADP</code> tokens may have the following values of <code>Tense</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">ADP</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Tense</code>:</p>
 
 <ul>
-  <li><code>Past</code> (2; 100% of non-empty <code>Tense</code>): <em>idi</em></li>
-  <li><code>EMPTY</code> (1882): <em>ki, için, gibi, diye, kadar, li, lı, olarak, sonra, önce</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Past</code> (2; 100% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>idi</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (1882): <em>ki, için, gibi, diye, kadar, li, lı, olarak, sonra, önce</em></li>
 </ul>
 
-<h2 id="relations-with-agreement-in-tense">Relations with Agreement in <code>Tense</code></h2>
+<h2 id="relations-with-agreement-in-tense">Relations with Agreement in <code class="language-plaintext highlighter-rouge">Tense</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Tense</code>:
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">Tense</code>:
 <tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (480; 63%),
 <tt>VERB –[<a href="../dep/aux:q.html">aux:q</a>]–&gt; AUX</tt> (46; 51%),
 <tt>VERB –[<a href="../dep/compound.html">compound</a>]–&gt; VERB</tt> (32; 60%),

@@ -126,7 +126,7 @@ properties or attributes. They may also function as predicates, as in</p>
 
 <p><em>Ця машина є зелена. </em> “The car is green.”</p>
 
-<p>The <code>ADJ</code> tag is intended for ordinary adjectives only. See <a href="">DET</a>
+<p>The <code class="language-plaintext highlighter-rouge">ADJ</code> tag is intended for ordinary adjectives only. See <a href="">DET</a>
 for determiners and <a href="">NUM</a> for cardinal numerals.</p>
 
 <p>In accord with the UD approach,
@@ -192,7 +192,7 @@ negated.</p>
 <p>Ukrainian has only prepositions but no postpositions or circumpositions. They occur before a complement noun phrase (noun, pronoun) and they form a single structure with the complement to express its grammatical and semantic relation to another unit within a clause.</p>
 
 <p>Some prepositions take the form of fixed multiword expressions, e.g. <em>на відміну від </em> “in contrast to”, <em>у зв’язку з </em>
-“in connection with”. The component words are then still tagged according to their basic use (<em>на </em> is <code>ADP</code>, <em>відміну </em> is <a href="">NOUN</a>, etc.) and their status as multiword expressions are accounted for in the syntactic annotation.</p>
+“in connection with”. The component words are then still tagged according to their basic use (<em>на </em> is <code class="language-plaintext highlighter-rouge">ADP</code>, <em>відміну </em> is <a href="">NOUN</a>, etc.) and their status as multiword expressions are accounted for in the syntactic annotation.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -213,7 +213,7 @@ negated.</p>
 <a href="ADJ">adjectives</a> and other adverbs, as in <em><b>дуже</b> важливо </em> “very significantly” or <em><b>явно</b> неправильний </em> “provably wrong”.</p>
 
 <p>There is a closed subclass of <em>pronominal adverbs</em> that refer to circumstances in context, rather than naming them directly; similarly
-to pronouns, these can be categorized as interrogative, relative, demonstrative etc. Pronominal adverbs also get the <code>ADV</code>
+to pronouns, these can be categorized as interrogative, relative, demonstrative etc. Pronominal adverbs also get the <code class="language-plaintext highlighter-rouge">ADV</code>
 part-of-speech tag but they are differentiated by additional features.</p>
 
 <!--In accord with the UD approach, adverbial ordinal numerals _(вперше, вдруге)&nbsp;_ are tagged `ADV`, although the traditional grammar classifies them as adverbs. The same holds for multiplicative numerals _(двічі, семикратно).&nbsp;_ -->
@@ -272,7 +272,7 @@ part-of-speech tag but they are differentiated by additional features.</p>
 <p>Determiners are words that modify <a href="NOUN">nouns</a> or noun phrases and express the reference of the noun phrase in context. That is, a
 determiner may indicate whether the noun is referring to a definite or indefinite element of a class, to a closer or more distant element, to an element belonging to a specified person or thing, to a particular number or quantity, etc.</p>
 
-<p>An important point to note is that the traditional grammar of Ukrainian does not define determiners as a separate word class. Ukrainian does not have articles. Most determiners are traditionally called pronouns; that is, an UD-conformant annotation of Ukrainian must distinguish between substantive pronouns (UD tag <a href="">PRON</a>) and attributive pronouns (UD tag <code>DET</code>).</p>
+<p>An important point to note is that the traditional grammar of Ukrainian does not define determiners as a separate word class. Ukrainian does not have articles. Most determiners are traditionally called pronouns; that is, an UD-conformant annotation of Ukrainian must distinguish between substantive pronouns (UD tag <a href="">PRON</a>) and attributive pronouns (UD tag <code class="language-plaintext highlighter-rouge">DET</code>).</p>
 
 <!--Also note that the `DET` tag includes (pronominal) _quantifiers_ (words like _багато, мало&nbsp;_ “many, few”), which the traditional grammar classifies as a special subclass of numerals. However, _cardinal numerals_ in the narrow sense _(один, сім, сто)_ are not-->
 <!--tagged `DET` even though some authors would include them in quantifiers. Cardinal numbers have their own tag [NUM]().-->
@@ -331,7 +331,7 @@ determiner may indicate whether the noun is referring to a definite or indefinit
 
 <h3 id="definition">Definition</h3>
 
-<p>The <code>NOUN</code> tag is intended for common nouns only. See <a href="">PROPN</a> for
+<p>The <code class="language-plaintext highlighter-rouge">NOUN</code> tag is intended for common nouns only. See <a href="">PROPN</a> for
 proper nouns and <a href="">PRON</a> for pronouns.</p>
 
 <p>Ukrainian nouns have the lexical feature <a href="">uk-feat/Gender</a>.
@@ -340,7 +340,7 @@ Furthermore, the nouns inflect for <a href="">uk-feat/Number</a> and <a href="">
 <p>A verbal noun can be derived productively from almost every verb
 (e.g. <em>читати</em> “to read” → <em>читання</em> “reading”).
 While in other languages a corresponding form may be called gerund and tagged <a href="">VERB</a>,
-in Ukrainian it is tagged <code>NOUN</code>. It has always the neuter gender and the full
+in Ukrainian it is tagged <code class="language-plaintext highlighter-rouge">NOUN</code>. It has always the neuter gender and the full
 number-case inflectional paradigm.</p>
 
 <h3 id="examples">Examples</h3>
@@ -364,13 +364,13 @@ number-case inflectional paradigm.</p>
 <p>A numeral is a word, functioning most typically as a determiner, adjective or pronoun, that expresses a number and a relation to the
 number, such as quantity, sequence, frequency or fraction.</p>
 
-<p>Note that cardinal numerals are covered by <code>NUM</code> whether they are used as determiners or not (as in <em>Windows <b>7</b></em>) and whether they are expressed as words <em>(чотири)</em>, digits <em>(4)</em> or Roman numerals <em>(IV)</em>.</p>
+<p>Note that cardinal numerals are covered by <code class="language-plaintext highlighter-rouge">NUM</code> whether they are used as determiners or not (as in <em>Windows <b>7</b></em>) and whether they are expressed as words <em>(чотири)</em>, digits <em>(4)</em> or Roman numerals <em>(IV)</em>.</p>
 
 <p>Ukrainian grammar distinguishes several subclasses of <em>pronominal numerals (quantifiers):</em>
 interrogative and relative <em>(скільки </em> “how many”);
 demonstrative <em>(стільки </em> “this many”);
 indefinite <em>(кілька, багато, мало </em> “several, many, few”).
-These words behave similarly to (most) cardinal numbers, e.g. they require that the counted noun phrase be in genitive and have different forms depending on the case (with the exception of <em>мало </em> “little, few”. They are not similar to adjectives (unlike their English counterparts). However, in accord with the UD standard, they should be tagged <a href="">DET</a>, not <code>NUM</code>.</p>
+These words behave similarly to (most) cardinal numbers, e.g. they require that the counted noun phrase be in genitive and have different forms depending on the case (with the exception of <em>мало </em> “little, few”. They are not similar to adjectives (unlike their English counterparts). However, in accord with the UD standard, they should be tagged <a href="">DET</a>, not <code class="language-plaintext highlighter-rouge">NUM</code>.</p>
 
 <p>In addition, several types of (non-pronominal) numerals, such as ordinal numerals and multiplicative numerals, are tagged <a href="">ADJ</a> or <a href="">ADV</a>, based on their syntactic and morphological behavior.</p>
 
@@ -393,7 +393,7 @@ These words behave similarly to (most) cardinal numbers, e.g. they require that 
   <li><em>двічі, тричі </em> “twice, three times”: multiplicative numerals. They are tagged <a href="">ADV</a>, and the <a href="">uk-feat/NumType</a> feature reveals their semantic relation to numbers.</li>
   <li><em>двійня, дует, трійня, тріо, квартет </em> “pair, triplet, foursome”: n-tuples <em>(n-tice) </em> are not considered numerals in the Ukrainian grammar. They are tagged <a href="">NOUN</a>.</li>
   <li><em>одиниця, двійка, трійка, четвірка, п’ятірка </em> “number one, number two, number three, number four, number five”: names of numbers, or of objects identified by the number (e.g. of a bus route). They are not considered numerals and they are tagged <a href="">NOUN</a>.</li>
-  <li><em>тисяча, мільйон, мільярд, трильйон </em> “thousand, million, billion, trillion”: words for large quantities are ambiguous between cardinal numerals (tagged <code>NUM</code>) and nouns.
+  <li><em>тисяча, мільйон, мільярд, трильйон </em> “thousand, million, billion, trillion”: words for large quantities are ambiguous between cardinal numerals (tagged <code class="language-plaintext highlighter-rouge">NUM</code>) and nouns.
 If they inflect as nouns, they are tagged <a href="">NOUN</a>; but the borderline is fuzzy.
 For instance, in phrases like <em><b>тисячі</b> людей взяли участь в демонстації </em> (“<b>thousands</b> of people demonstrated in the streets”),   <em>тисячі </em> is a noun.
 In numeric expressions, e.g. <em>132 <b>тисячі</b> доларів </em> (“132 <b>thousand</b> dollars”), it is a cardinal numeral.</li>
@@ -428,9 +428,9 @@ In numeric expressions, e.g. <em>132 <b>тисячі</b> доларів </em> (
 <p>Pronouns are words that substitute for <a href="NOUN">nouns</a> or noun phrases, whose meaning is recoverable from the linguistic or extralinguistic context.</p>
 
 <p>Pronouns under this definition function like nouns. Note that Ukrainian grammar traditionally extends the term <em>pronoun</em> to words that
-substitute for <a href="ADJ">adjectives</a>. Such words are not tagged <code>PRON</code> under our universal scheme. They are tagged as <a href="DET">determiners</a> in order to annotate the same thing same way across languages.</p>
+substitute for <a href="ADJ">adjectives</a>. Such words are not tagged <code class="language-plaintext highlighter-rouge">PRON</code> under our universal scheme. They are tagged as <a href="DET">determiners</a> in order to annotate the same thing same way across languages.</p>
 
-<p>For instance, <em>tohle </em> “this” is traditionally called pronoun in Czech grammar, regardless of context (the notion of determiners does not exist in Ukrainian grammar). To make the annotation parallel across languages, it is now tagged <code>PRON</code> in <em><b>Це</b> я бачила вчора. </em> “I saw <b>this</b> yesterday.” and <code>DET</code> in <em><b>Це</b> дерево я бачила вчора.</em> _ “I saw <b>this</b> tree yesterday.”</p>
+<p>For instance, <em>tohle </em> “this” is traditionally called pronoun in Czech grammar, regardless of context (the notion of determiners does not exist in Ukrainian grammar). To make the annotation parallel across languages, it is now tagged <code class="language-plaintext highlighter-rouge">PRON</code> in <em><b>Це</b> я бачила вчора. </em> “I saw <b>this</b> yesterday.” and <code class="language-plaintext highlighter-rouge">DET</code> in <em><b>Це</b> дерево я бачила вчора.</em> _ “I saw <b>this</b> tree yesterday.”</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -461,17 +461,17 @@ substitute for <a href="ADJ">adjectives</a>. Such words are not tagged <code>PRO
 
 <p>A proper noun is a noun that is the name of a specific individual, place, or object. Ukrainian proper nouns are always written starting with an uppercase letter. Note that names of days of week, names of months, names of languages, and adjectives derived from geographical names are not written capitalized (unlike in English) and are not considered proper nouns.</p>
 
-<p>Single-word named entities should be tagged <code>PROPN</code> even if they originate from a common noun <em>(Заєць, Бук) </em> or an adjective <em>(Довгополий, Масна). </em> Even if they were originally adjectives and inflect according to adjectival paradigms, they behave syntactically as nouns. For instance, <em>Масна </em> (the feminine version of surname <em>Масний </em>) is originally feminine form of the adjective <em>масний </em> “fatty” but as an anthroponimic name, it is a noun. It denotes a concrete person (rather than a property of somebody/something) and its gender is limited to feminine and masculine (while adjectives have forms in all three genders).</p>
+<p>Single-word named entities should be tagged <code class="language-plaintext highlighter-rouge">PROPN</code> even if they originate from a common noun <em>(Заєць, Бук) </em> or an adjective <em>(Довгополий, Масна). </em> Even if they were originally adjectives and inflect according to adjectival paradigms, they behave syntactically as nouns. For instance, <em>Масна </em> (the feminine version of surname <em>Масний </em>) is originally feminine form of the adjective <em>масний </em> “fatty” but as an anthroponimic name, it is a noun. It denotes a concrete person (rather than a property of somebody/something) and its gender is limited to feminine and masculine (while adjectives have forms in all three genders).</p>
 
-<p>Personal names are typically treated as a sequence of proper nouns (one or more given names and one or more surnames). If the name contains prepositions, conjunctions or particles (foreign names), these are tagged as <code>ADP</code>, <code>CCONJ</code> and <code>DET</code>, respectively.</p>
+<p>Personal names are typically treated as a sequence of proper nouns (one or more given names and one or more surnames). If the name contains prepositions, conjunctions or particles (foreign names), these are tagged as <code class="language-plaintext highlighter-rouge">ADP</code>, <code class="language-plaintext highlighter-rouge">CCONJ</code> and <code class="language-plaintext highlighter-rouge">DET</code>, respectively.</p>
 
-<p>Ukrainian (and other Slavic) multi-word named entities have internal syntactic structure, which is preserved in the annotation. The headword is always noun and there may be other nouns involved. They will be tagged either <code>PROPN</code> or <code>NOUN</code> and possible ambiguities must be resolved individually. Modifying adjectives are never tagged <code>PROPN</code>. Even if an adjective is the first word of a multi-word name, and thus it starts with an uppercase letter, it is still tagged <code>ADJ</code>. Similarly, function words in named entities retain their normal tags. These rules are less strict for foreign named entities where the original part of speech is hidden for a Ukrainian speaker.</p>
+<p>Ukrainian (and other Slavic) multi-word named entities have internal syntactic structure, which is preserved in the annotation. The headword is always noun and there may be other nouns involved. They will be tagged either <code class="language-plaintext highlighter-rouge">PROPN</code> or <code class="language-plaintext highlighter-rouge">NOUN</code> and possible ambiguities must be resolved individually. Modifying adjectives are never tagged <code class="language-plaintext highlighter-rouge">PROPN</code>. Even if an adjective is the first word of a multi-word name, and thus it starts with an uppercase letter, it is still tagged <code class="language-plaintext highlighter-rouge">ADJ</code>. Similarly, function words in named entities retain their normal tags. These rules are less strict for foreign named entities where the original part of speech is hidden for a Ukrainian speaker.</p>
 
 <h3 id="examples">Examples</h3>
 
 <ul>
-  <li><em><b>Франкфурт</b></em><code>PROPN</code> <em>на</em><code>ADP</code> <em><b>Майні</b></em><code>PROPN</code> is a city. <em>Франкфурт </em> is the head and the <em>на Майні </em> part refers to the river flowing through the city, to distinguish it from other Frankfurts.</li>
-  <li><em>Організація</em><code>NOUN</code> <em>об’єднаних</em><code>ADJ</code> <em>націй</em><code>NOUN</code> “United Nations Organization” consists of three words, none of which is proper noun. However, the acronym <em><b>ООН</b> </em> “UN” is a single-token name and is tagged <code>PROPN</code>.</li>
+  <li><em><b>Франкфурт</b></em><code class="language-plaintext highlighter-rouge">PROPN</code> <em>на</em><code class="language-plaintext highlighter-rouge">ADP</code> <em><b>Майні</b></em><code class="language-plaintext highlighter-rouge">PROPN</code> is a city. <em>Франкфурт </em> is the head and the <em>на Майні </em> part refers to the river flowing through the city, to distinguish it from other Frankfurts.</li>
+  <li><em>Організація</em><code class="language-plaintext highlighter-rouge">NOUN</code> <em>об’єднаних</em><code class="language-plaintext highlighter-rouge">ADJ</code> <em>націй</em><code class="language-plaintext highlighter-rouge">NOUN</code> “United Nations Organization” consists of three words, none of which is proper noun. However, the acronym <em><b>ООН</b> </em> “UN” is a single-token name and is tagged <code class="language-plaintext highlighter-rouge">PROPN</code>.</li>
 </ul>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-pos/PROPN.md" target="#">edit PROPN</a></p>
@@ -537,7 +537,7 @@ punctuation is that they can be substituted by normal words.  This involves all 
 
 <p>Another group of symbols is emoticons and emoji.</p>
 
-<p>Strings that consists entirely of alphanumeric characters are not symbols but they may be <a href="PROPN">proper nouns</a>: <em>130XE</em>, <em>DC10</em>; others may be tagged <code>PROPN</code> (rather than <code>SYM</code>) even if they contain special characters: <em>DC-10</em>.
+<p>Strings that consists entirely of alphanumeric characters are not symbols but they may be <a href="PROPN">proper nouns</a>: <em>130XE</em>, <em>DC10</em>; others may be tagged <code class="language-plaintext highlighter-rouge">PROPN</code> (rather than <code class="language-plaintext highlighter-rouge">SYM</code>) even if they contain special characters: <em>DC-10</em>.
 Similarly, abbreviations for single words are not symbols but are assigned the part of speech of the full form. For example, <em>п.</em> (пан or пані), <em>кг</em> (кілограм), <em>км</em> (кілометр), <em>проф.</em> (професор) should be tagged <a href="NOUN">nouns</a>. Acronyms for proper names such as <em>OSN</em> and <em>NATO</em> should be tagged as <a href="PROPN">proper nouns</a>.</p>
 
 <p>Characters used as bullets in itemized lists <em>(•, ‣)</em> are not symbols, they are punctuation.</p>
@@ -561,7 +561,7 @@ Similarly, abbreviations for single words are not symbols but are assigned the p
 <p>A verb is a member of the syntactic class of words that typically signal events and actions, can constitute a minimal predicate in a
 clause, and govern the number and types of other constituents which may occur in the clause.</p>
 
-<p>Note that the <code>VERB</code> tag covers main verbs <em>(content verbs)</em> and <em>modal verbs</em> but it does not cover <em>auxiliary verbs,</em> for which there is the <a href="">AUX</a> tag. (Ukrainian modal verbs are not considered auxiliary.) See the description of <code>AUX</code> for more information on the borderline between <code>VERB</code> and <code>AUX</code>.</p>
+<p>Note that the <code class="language-plaintext highlighter-rouge">VERB</code> tag covers main verbs <em>(content verbs)</em> and <em>modal verbs</em> but it does not cover <em>auxiliary verbs,</em> for which there is the <a href="">AUX</a> tag. (Ukrainian modal verbs are not considered auxiliary.) See the description of <code class="language-plaintext highlighter-rouge">AUX</code> for more information on the borderline between <code class="language-plaintext highlighter-rouge">VERB</code> and <code class="language-plaintext highlighter-rouge">AUX</code>.</p>
 
 <p>Ukrainian verbs can take the following morphological forms:</p>
 
@@ -575,7 +575,7 @@ clause, and govern the number and types of other constituents which may occur in
 <p>There are participial forms that are tagged as adjectives (<a href="">ADJ</a>) rather than verbs.
 See below for border cases.</p>
 
-<p>A verbal noun can be derived productively from almost every verb (e.g. <em>робити</em>  “to do” → <em>робіння</em>  “doing”). While in other languages a corresponding form may be called gerund and tagged <code>VERB</code>, in Ukrainian it is tagged <a href="">NOUN</a>. It has always the neuter <a href="">uk-feat/Gender</a> and it inflects for <a href="">uk-feat/Number</a> and <a href="">uk-feat/Case</a>.</p>
+<p>A verbal noun can be derived productively from almost every verb (e.g. <em>робити</em>  “to do” → <em>робіння</em>  “doing”). While in other languages a corresponding form may be called gerund and tagged <code class="language-plaintext highlighter-rouge">VERB</code>, in Ukrainian it is tagged <a href="">NOUN</a>. It has always the neuter <a href="">uk-feat/Gender</a> and it inflects for <a href="">uk-feat/Number</a> and <a href="">uk-feat/Case</a>.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -590,9 +590,11 @@ See below for border cases.</p>
 
 <h3 id="border-cases">Border cases</h3>
 
-<p>Passive and active adjectival participles are non-finite verb forms that share properties of verbs and adjectives.
-- Passive adjectival participle is used to construct passive voice: <em>несений, несена, несене, несені</em>  “carried” (passive participle in different genders and numbers). It is also used separately as an adjective: <em>ношений, драний</em>  “carried, torn/ragged”. Their meaning is almost identical but the usage slightly varies. Both groups can be used in nominal predication with <a href="uk-dep/cop">copula</a>. Only true participles (verbs) can be used to form the passive voice (but it may be sometimes difficult to distinguish from copula constructions, see <a href="">AUX</a>). On the other hand, the participial adjectives inflect for case and thus can modify nouns.
-- Active participle (it is considered ungrammatical but still used occasionally, which is why it is encoded): <em>несучий, несуча, несуче, несучі</em>  “carrying” (present adjectival participle in different genders and numbers).</p>
+<p>Passive and active adjectival participles are non-finite verb forms that share properties of verbs and adjectives.</p>
+<ul>
+  <li>Passive adjectival participle is used to construct passive voice: <em>несений, несена, несене, несені</em>  “carried” (passive participle in different genders and numbers). It is also used separately as an adjective: <em>ношений, драний</em>  “carried, torn/ragged”. Their meaning is almost identical but the usage slightly varies. Both groups can be used in nominal predication with <a href="uk-dep/cop">copula</a>. Only true participles (verbs) can be used to form the passive voice (but it may be sometimes difficult to distinguish from copula constructions, see <a href="">AUX</a>). On the other hand, the participial adjectives inflect for case and thus can modify nouns.</li>
+  <li>Active participle (it is considered ungrammatical but still used occasionally, which is why it is encoded): <em>несучий, несуча, несуче, несучі</em>  “carrying” (present adjectival participle in different genders and numbers).</li>
+</ul>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_uk-pos/VERB.md" target="#">edit VERB</a></p>
 
@@ -601,12 +603,12 @@ See below for border cases.</p>
 
 <h3 id="definition">Definition</h3>
 
-<p>The tag <code>X</code> is used for words that for some reason cannot be assigned a real part-of-speech category.</p>
+<p>The tag <code class="language-plaintext highlighter-rouge">X</code> is used for words that for some reason cannot be assigned a real part-of-speech category.</p>
 
-<p>A special usage of <code>X</code> is for cases of code-switching where it is not possible (or meaningful) to analyze the intervening language
+<p>A special usage of <code class="language-plaintext highlighter-rouge">X</code> is for cases of code-switching where it is not possible (or meaningful) to analyze the intervening language
 grammatically (and where the dependency relation <em>foreign</em> is typically used in the syntactic analysis).</p>
 
-<p>Even if foreign words are tagged <code>X</code>, this usage does not extend to ordinary loan words which should be assigned a normal
+<p>Even if foreign words are tagged <code class="language-plaintext highlighter-rouge">X</code>, this usage does not extend to ordinary loan words which should be assigned a normal
 part-of-speech. For example, <em>кілт </em> “kilt” is an ordinary <a href="">NOUN</a>.</p>
 
 <h3 id="examples">Examples</h3>

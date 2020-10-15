@@ -250,7 +250,7 @@ in two places.</p>
 <p><a id="al-urj-dep/acl:relcl" class="al-dest"></a></p>
 <h2><code>acl:relcl</code>: relative clause modifier</h2>
 
-<p>A <em>relative clause modifier</em> (<code>acl:relcl</code>) marks relative clauses. The
+<p>A <em>relative clause modifier</em> (<code class="language-plaintext highlighter-rouge">acl:relcl</code>) marks relative clauses. The
 governor is the phrase or clause modified. Usually, it is a noun, but in Uralic
 it can also be a verb, when the dependent refers to the entire action described. 
 The dependent is the main predicate of the relative clause.</p>
@@ -287,33 +287,33 @@ acl:relcl(see-5, suutnud-11)
 aux(suutnud-11, pole-10)
 </code></pre>
 
-<h2 id="diffs">Diffs</h2>
+<p>##Diffs</p>
 
-<h3 id="turku-dependency-treebank">Turku Dependency Treebank</h3>
+<p>###Turku Dependency Treebank</p>
 
 <p>The governor can also be a verb, when the dependent refers to the entire action described in the main sentence.</p>
 
-<h3 id="finntreebank">FinnTreeBank</h3>
+<p>###FinnTreeBank</p>
 
-<p>FI_FTB applies the universal relation <a href="http://universaldependencies.org/u/dep/all.html#al-u-dep/acl"><code>acl</code></a> instead
-of the language-specific relation <code>acl:relcl</code>.</p>
+<p>FI_FTB applies the universal relation <a href="http://universaldependencies.org/u/dep/all.html#al-u-dep/acl"><code class="language-plaintext highlighter-rouge">acl</code></a> instead
+of the language-specific relation <code class="language-plaintext highlighter-rouge">acl:relcl</code>.</p>
 
 <h3 id="estonian-treebank">Estonian Treebank</h3>
 
 <h3 id="szeged-treebank">Szeged Treebank</h3>
 
-<p><code>acl:relcl</code> does not appear in the Szeged treebank.</p>
+<p><code class="language-plaintext highlighter-rouge">acl:relcl</code> does not appear in the Szeged treebank.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_urj-dep/acl-relcl.md" target="#">edit acl:relcl</a></p>
 
 <p><a id="al-urj-dep/advcl" class="al-dest"></a></p>
 <h2><code>advcl</code>: adverbial clause modifier</h2>
 
-<p><em>Adverbial clause modifiers</em> (<code>advcl</code>) are subordinate clauses that
+<p><em>Adverbial clause modifiers</em> (<code class="language-plaintext highlighter-rouge">advcl</code>) are subordinate clauses that
 are not complements. Also non-complement infinitival or temporal clauses
 (<em>lauseenvastike</em>, see for instance 
 (see ISK <a href="http://scripta.kotus.fi/visk/sisallys.php?p=876">§876</a>) and non-complement participles modifying verbs are
-marked as <code>advcl</code>. If there is a subordinating conjunction present, it
+marked as <code class="language-plaintext highlighter-rouge">advcl</code>. If there is a subordinating conjunction present, it
 is marked with the dependency type <a href="">mark</a>.</p>
 
 <!--est: An adverbial clause modifier is a clause which modifies a verb or other predicate (adjective, etc.), as a modifier not as a core complement. This includes things such as a temporal clause, consequence, conditional clause, purpose clause, etc. Also comparative constructions are annotated using dependency relation advcl.-->
@@ -346,9 +346,9 @@ case(hänen-3, luokseen-4)
 punct(juoksin-2, .-5)
 </code></pre>
 
-<p>The dependency type <code>advcl</code> is used also in comparative
+<p>The dependency type <code class="language-plaintext highlighter-rouge">advcl</code> is used also in comparative
 constructions, most often involving adjectives in the comparative
-form. The head of the <code>advcl</code> dependency is the comparative
+form. The head of the <code class="language-plaintext highlighter-rouge">advcl</code> dependency is the comparative
 wordform, and the dependent is the compared element.</p>
 
 <p>The annotation of comparative and superlative structures is described in
@@ -394,7 +394,7 @@ punct(saabusin-8, .-9)
 <h2><code>amod</code>: adjectival modifier</h2>
 
 <p>Nouns may take adjectival modifiers, which are marked with the
-dependency type <code>amod</code>. It is also possible for an adjective to take
+dependency type <code class="language-plaintext highlighter-rouge">amod</code>. It is also possible for an adjective to take
 another adjective as a modifier. (These adjectival modifiers are
 generally expressed with <em>-ly</em> adverbs in English.)</p>
 
@@ -427,7 +427,7 @@ amod(kivi-3, suuri-2)
 <h2 id="open-questions">Open questions</h2>
 
 <ul>
-  <li>Should ordinal numerals also receive <code>amod</code> ?</li>
+  <li>Should ordinal numerals also receive <code class="language-plaintext highlighter-rouge">amod</code> ?</li>
 </ul>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_urj-dep/amod.md" target="#">edit amod</a></p>
@@ -435,7 +435,7 @@ amod(kivi-3, suuri-2)
 <p><a id="al-urj-dep/punct" class="al-dest"></a></p>
 <h2><code>punct</code>: punctuation</h2>
 
-<p>The dependency type <code>punct</code> is used to mark punctuation. The dependent is the punctuation symbol, and the governor is the element which the punctuation symbol delimits. For instance, with coordination, the first coordinated element is the head of all <code>punct</code> dependencies in the coordination, and with subordinate clauses, the head of the subordinate clause is the governor of the <code>punct</code>.</p>
+<p>The dependency type <code class="language-plaintext highlighter-rouge">punct</code> is used to mark punctuation. The dependent is the punctuation symbol, and the governor is the element which the punctuation symbol delimits. For instance, with coordination, the first coordinated element is the head of all <code class="language-plaintext highlighter-rouge">punct</code> dependencies in the coordination, and with subordinate clauses, the head of the subordinate clause is the governor of the <code class="language-plaintext highlighter-rouge">punct</code>.</p>
 
 <!-- fname:punct_coord.pdf -->
 <pre><code class="language-sdparse">kerrostaloja , rivitaloja ja omakotitaloja \n blockhouses , rowhouses and one_family_houses
@@ -480,7 +480,7 @@ nsubj(palasi-7, hän-6)
 
 <!-- TODO: HUNGARIAN -->
 
-<h3 id="diffs">Diffs</h3>
+<p>###Diffs</p>
 
 <p>By the current release of FI_FTB (FinnTreeBank), the manual annotation of
 punctuation marks has not been completed. Instead the automatic
@@ -492,7 +492,7 @@ available (usually the previous one).</p>
 <p><a id="al-urj-dep/vocative" class="al-dest"></a></p>
 <h2><code>vocative</code>: vocative modifier</h2>
 
-<p>The dependency type <code>vocative</code> is used for <em>vocatives</em>, that is,
+<p>The dependency type <code class="language-plaintext highlighter-rouge">vocative</code> is used for <em>vocatives</em>, that is,
 expressions where someone is being addressed. The governor of the
 dependency is the main predicate of the clause where the addressing
 occurs.</p>

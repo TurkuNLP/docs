@@ -66,7 +66,7 @@
 
 <p>Auxiliary dependencies should not form a chain.</p>
 
-<p>Search expression: <code>_ &lt;aux|&lt;aux:pass|&lt;cop (_ &lt;aux|&lt;aux:pass|&lt;cop _)</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">_ &lt;aux|&lt;aux:pass|&lt;cop (_ &lt;aux|&lt;aux:pass|&lt;cop _)</code></p>
 
 <p>Correct example:</p>
 
@@ -664,7 +664,7 @@ aux(left, have)
 
 <p>Flat relations should be left-headed, not right.</p>
 
-<p>Search expression: <code>_ &lt;flat@R _</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">_ &lt;flat@R _</code></p>
 
 <p>Correct example:</p>
 
@@ -792,7 +792,7 @@ flat(Gustaf, Carl)
 
 <p>Fixed expressions should be left-headed, not right.</p>
 
-<p>Search expression: <code>_ &lt;fixed@R _</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">_ &lt;fixed@R _</code></p>
 
 <p>Correct example:</p>
 
@@ -1048,7 +1048,7 @@ fixed(of, because)
 
 <p>Fixed dependencies should not be chained. All dependents should be attached directly to the first one.</p>
 
-<p>Search expression: <code>_ &lt;fixed (_ &lt;fixed _)</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">_ &lt;fixed (_ &lt;fixed _)</code></p>
 
 <p><a href="http://universaldependencies.org/u/dep/fixed.html">Link to documentation</a></p>
 
@@ -1248,7 +1248,7 @@ fixed(of, because)
 
 <p>Coordination dependencies should be left-headed, not right.</p>
 
-<p>Search expression: <code>_ &lt;conj@R _</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">_ &lt;conj@R _</code></p>
 
 <p>Correct example:</p>
 
@@ -2084,7 +2084,7 @@ conj(honest, big)
 
 <p>Apposition dependencies should be left-headed, not right.</p>
 
-<p>Search expression: <code>_ &lt;appos@R _</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">_ &lt;appos@R _</code></p>
 
 <p>Correct example:</p>
 
@@ -3104,7 +3104,7 @@ appos(brother, Sam)
 
 <p>Verbal copulas should be tagged AUX, not VERB. Pronouns can also serve as copulas. Punctuation (dashes) and nouns are not copulas.</p>
 
-<p>Search expression: <code>(!(AUX|PRON)) &lt;cop _</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">(!(AUX|PRON)) &lt;cop _</code></p>
 
 <p><a href="http://universaldependencies.org/docs/u/dep/cop.html">Link to documentation</a></p>
 
@@ -4044,7 +4044,7 @@ appos(brother, Sam)
 
 <p>Pronouns must not be attached using the mark relation. Relative pronouns must not be confused with subordinating conjunctions, even if the word is ambiguous.</p>
 
-<p>Search expression: <code>(PRON|DET) &lt;mark _</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">(PRON|DET) &lt;mark _</code></p>
 
 <p>Correct example:</p>
 
@@ -4401,7 +4401,7 @@ Hits table not produced since the query does not start with the simple token spe
 
 <p>The det relation is primarily intended for determiners, i.e. words tagged DET. Pronouns are tolerated at least until the borderline between the two classes is better investigated and defined.</p>
 
-<p>Search expression: <code>(!DET&amp;!PRON) &lt;det _</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">(!DET&amp;!PRON) &lt;det _</code></p>
 
 <p><a href="http://universaldependencies.org/docs/u/dep/det.html">Link to documentation</a></p>
 
@@ -4762,7 +4762,7 @@ Hits table not produced since the query does not start with the simple token spe
 
 <p>Only nodes tagged PUNCT can be attached using the punct relation.</p>
 
-<p>Search expression: <code>!PUNCT &lt;punct _</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">!PUNCT &lt;punct _</code></p>
 
 <p><a href="http://universaldependencies.org/u/dep/punct.html">Link to documentation</a></p>
 
@@ -5039,7 +5039,7 @@ Hits table not produced since the query does not start with the simple token spe
 
 <p>Nodes tagged PUNCT can only be attached using the punct relation (and exceptionally, if it is the only node in the sentence, also root).</p>
 
-<p>Search expression: <code>PUNCT (&lt;!punct&amp;&lt;!root) _</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">PUNCT (&lt;!punct&amp;&lt;!root) _</code></p>
 
 <p><a href="http://universaldependencies.org/u/dep/punct.html">Link to documentation</a></p>
 
@@ -5400,7 +5400,7 @@ Hits table not produced since the query does not start with the simple token spe
 
 <p>All pronouns and determiners should be further categorized using the PronType feature. Other POS may or may not have this feature.</p>
 
-<p>Search expression: <code>(PRON|DET)&amp;!PronType</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">(PRON|DET)&amp;!PronType</code></p>
 
 <p><a href="http://universaldependencies.org/docs/u/feat/PronType.html">Link to documentation</a></p>
 
@@ -5859,7 +5859,7 @@ Hits table not produced since the query does not start with the simple token spe
 
 <p>All numerals should be further categorized using the NumType feature. Other POS may or may not have this feature.</p>
 
-<p>Search expression: <code>NUM&amp;!NumType</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">NUM&amp;!NumType</code></p>
 
 <p><a href="http://universaldependencies.org/docs/u/feat/NumType.html">Link to documentation</a></p>
 
@@ -6213,7 +6213,7 @@ Hits table not produced since the query does not start with the simple token spe
 
 <p>All verbs should be further categorized using the VerbForm feature. Other POS may or may not have this feature. (Note that AUX may include non-verbs, thus we cannot generally extend this test to auxiliaries.)</p>
 
-<p>Search expression: <code>(VERB)&amp;!VerbForm</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">(VERB)&amp;!VerbForm</code></p>
 
 <p><a href="http://universaldependencies.org/docs/u/feat/VerbForm.html">Link to documentation</a></p>
 
@@ -6630,7 +6630,7 @@ Hits table not produced since the query does not start with the simple token spe
 
 <p>Only non-finite VerbForms are expected to appear with non-verb parts of speech (NOUN, ADJ, ADV).</p>
 
-<p>Search expression: <code>(VerbForm=Fin)&amp;!(VERB|AUX)</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">(VerbForm=Fin)&amp;!(VERB|AUX)</code></p>
 
 <p><a href="http://universaldependencies.org/docs/u/feat/VerbForm.html">Link to documentation</a></p>
 
@@ -6725,7 +6725,7 @@ Hits table not produced since the query does not start with the simple token spe
 
 <p>All finite verb forms should be further categorized using the Mood feature.</p>
 
-<p>Search expression: <code>(VerbForm=Fin)&amp;!Mood</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">(VerbForm=Fin)&amp;!Mood</code></p>
 
 <p><a href="http://universaldependencies.org/docs/u/feat/Mood.html">Link to documentation</a></p>
 
@@ -6827,7 +6827,7 @@ Hits table not produced since the query does not start with the simple token spe
 
 <p>The Degree feature is normally associated with (a subset of) adjectives and adverbs. Other tags than ADJ and ADV are probably wrong.</p>
 
-<p>Search expression: <code>Degree&amp;!ADJ&amp;!ADV</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">Degree&amp;!ADJ&amp;!ADV</code></p>
 
 <p><a href="http://universaldependencies.org/u/feat/Degree.html">Link to documentation</a></p>
 
@@ -6957,7 +6957,7 @@ Hits table not produced since the query does not start with the simple token spe
 
 <p><b>DEBUGGING TEST. NONZERO HITS DOES NOT MEAN THE DATA IS INVALID.</b> No predicate can have more than one subject. Note that subordinate clauses do not head copulas for this reason.</p>
 
-<p>Search expression: <code>_ &gt;nsubj|&gt;csubj|&gt;nsubj:pass|&gt;csubj:pass _ &gt;nsubj|&gt;csubj|&gt;nsubj:pass|&gt;csubj:pass _</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">_ &gt;nsubj|&gt;csubj|&gt;nsubj:pass|&gt;csubj:pass _ &gt;nsubj|&gt;csubj|&gt;nsubj:pass|&gt;csubj:pass _</code></p>
 
 <p><a href="http://universaldependencies.org/u/dep/nsubj.html">Link to documentation</a></p>
 
@@ -8657,7 +8657,7 @@ Hits table not produced since the query does not start with the simple token spe
 
 <p><b>DEBUGGING TEST. NONZERO HITS DOES NOT MEAN THE DATA IS INVALID.</b> No predicate can have more than one direct object. Ccomp counts as direct object. (To certain extent xcomp does too, but dobj can co-occur with xcomp in cases of secondary predication, thus this test does not look at xcomp.)</p>
 
-<p>Search expression: <code>_ &gt;obj|&gt;ccomp _ &gt;obj|&gt;ccomp _</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">_ &gt;obj|&gt;ccomp _ &gt;obj|&gt;ccomp _</code></p>
 
 <p><a href="http://universaldependencies.org/u/dep/obj.html">Link to documentation</a></p>
 
@@ -10525,7 +10525,7 @@ Hits table not produced since the query does not start with the simple token spe
 
 <p><b>DEBUGGING TEST. NONZERO HITS DOES NOT MEAN THE DATA IS INVALID.</b> A word marked as a NOUN should not be a case dependency.</p>
 
-<p>Search expression: <code>NOUN &lt;case _</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">NOUN &lt;case _</code></p>
 
 <p><a href="http://universaldependencies.org/docs/u/dep/case.html">Link to documentation</a></p>
 
@@ -11015,7 +11015,7 @@ Hits table not produced since the query does not start with the simple token spe
 
 <p><b>DEBUGGING TEST. NONZERO HITS DOES NOT MEAN THE DATA IS INVALID.</b> By default adposition is a leaf node attached to a nominal as case. Exceptions where adpositions are not leaves involve technical relations such as mwe and conj.</p>
 
-<p>Search expression: <code>ADP &gt;!conj&amp;&gt;!cc&amp;&gt;!punct&amp;&gt;!fixed _</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">ADP &gt;!conj&amp;&gt;!cc&amp;&gt;!punct&amp;&gt;!fixed _</code></p>
 
 <p><a href="http://universaldependencies.org/docs/u/dep/case.html">Link to documentation</a></p>
 
@@ -11593,7 +11593,7 @@ Hits table not produced since the query does not start with the simple token spe
 
 <p><b>DEBUGGING TEST. NONZERO HITS DOES NOT MEAN THE DATA IS INVALID.</b> Apposition dependencies should not be chained. Multiple appositions should all be attached to the head, or they should be coordinated (with the first apposition as the head). Legitimate exceptions do occur, however, in the rare case when an apposition has an apposition of its own, which does not apply to head of the first apposition.</p>
 
-<p>Search expression: <code>_ &lt;appos (_ &lt;appos _)</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">_ &lt;appos (_ &lt;appos _)</code></p>
 
 <p>Correct example:</p>
 
@@ -12855,7 +12855,7 @@ appos(brother, cousin)
 
 <p><b>DEBUGGING TEST. NONZERO HITS DOES NOT MEAN THE DATA IS INVALID.</b> Advmod is intended only for adverbs. Modifiers that are called adverbial in some traditional grammars, but are in fact prepositional or noun phrases, should be attached as nmod.</p>
 
-<p>Search expression: <code>(!ADV) &lt;advmod _</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">(!ADV) &lt;advmod _</code></p>
 
 <p><a href="http://universaldependencies.org/docs/u/dep/advmod.html">Link to documentation</a></p>
 
@@ -13475,7 +13475,7 @@ Hits table not produced since the query does not start with the simple token spe
 
 <p><b>DEBUGGING TEST. NONZERO HITS DOES NOT MEAN THE DATA IS INVALID.</b> The heads of an adverbial modifier should normally not be nominal (noun, proper noun, numeral, or pronoun). Exceptions occur in nominal clauses, where a nominal is the main predicate and can therefore take clause adverbials. Example: This is probably an exception.</p>
 
-<p>Search expression: <code>_ &lt;advmod (NOUN|PROPN|NUM|PRON)</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">_ &lt;advmod (NOUN|PROPN|NUM|PRON)</code></p>
 
 <p><a href="http://universaldependencies.org/docs/u/dep/advmod.html">Link to documentation</a></p>
 
@@ -15959,7 +15959,7 @@ Hits table not produced since the query does not start with the simple token spe
 
 <p><b>DEBUGGING TEST. NONZERO HITS DOES NOT MEAN THE DATA IS INVALID.</b> Clausal modifiers of nouns should depend on NOUN/PROPN only; those in the following table depend on other parts of speech.</p>
 
-<p>Search expression: <code>!NOUN&amp;!PROPN&amp;!PRON&amp;!DET &gt;acl _</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">!NOUN&amp;!PROPN&amp;!PRON&amp;!DET &gt;acl _</code></p>
 
 <p><a href="http://universaldependencies.org/u/dep/acl.html">Link to documentation</a></p>
 
@@ -17612,7 +17612,7 @@ Hits table not produced since the query does not start with the simple token spe
 
 <p><b>DEBUGGING TEST. NONZERO HITS DOES NOT MEAN THE DATA IS INVALID.</b> If a word is marked as a numeral (POS), then it should be marked as being a nummod, compound or nmod dependency. Exceptions occur when the numeral is promoted to a higher function through ellipis. Example: Take five!</p>
 
-<p>Search expression: <code>NUM (&lt;!nummod&amp;&lt;!nmod&amp;&lt;!compound) _</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">NUM (&lt;!nummod&amp;&lt;!nmod&amp;&lt;!compound) _</code></p>
 
 <p><a href="http://universaldependencies.org/docs/u/pos/NUM.html">Link to documentation</a></p>
 
@@ -18512,7 +18512,7 @@ Hits table not produced since the query does not start with the simple token spe
 
 <p><b>DEBUGGING TEST. NONZERO HITS DOES NOT MEAN THE DATA IS INVALID.</b> If a word is marked as a numeric modifier, it should be marked as a numeral (POS).</p>
 
-<p>Search expression: <code>!NUM &lt;nummod _</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">!NUM &lt;nummod _</code></p>
 
 <p><a href="http://universaldependencies.org/docs/u/dep/nummod.html">Link to documentation</a></p>
 
@@ -19676,7 +19676,7 @@ Hits table not produced since the query does not start with the simple token spe
 
 <p><b>DEBUGGING TEST. NONZERO HITS DOES NOT MEAN THE DATA IS INVALID.</b> If a word is marked as the auxiliary POS, it should be marked as either aux or aux:pass dependency.</p>
 
-<p>Search expression: <code>AUX (&lt;!aux&amp;&lt;!aux:pass) _</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">AUX (&lt;!aux&amp;&lt;!aux:pass) _</code></p>
 
 <p><a href="http://universaldependencies.org/docs/u/pos/AUX_.html">Link to documentation</a></p>
 
@@ -20496,7 +20496,7 @@ Hits table not produced since the query does not start with the simple token spe
 
 <p><b>DEBUGGING TEST. NONZERO HITS DOES NOT MEAN THE DATA IS INVALID.</b> If a word is marked as a (passive) auxiliary dependency, it should be marked as the auxiliary POS.</p>
 
-<p>Search expression: <code>!AUX (&lt;aux|&lt;aux:pass) _</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">!AUX (&lt;aux|&lt;aux:pass) _</code></p>
 
 <p><a href="http://universaldependencies.org/docs/u/dep/aux_.html">Link to documentation</a></p>
 
@@ -22284,7 +22284,7 @@ Hits table not produced since the query does not start with the simple token spe
 
 <p><b>DEBUGGING TEST. NONZERO HITS DOES NOT MEAN THE DATA IS INVALID.</b> The relation cc is for coordinating conjunctions, hence the most expected POS tag is CCONJ. Symbols such as + may occasionally replace conjunctions, and in some languages some adverbs may take this syntactic function too. However, most other tags are suspicious at least.</p>
 
-<p>Search expression: <code>(!CCONJ&amp;!SYM&amp;!ADV) &lt;cc _</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">(!CCONJ&amp;!SYM&amp;!ADV) &lt;cc _</code></p>
 
 <p><a href="http://universaldependencies.org/docs/u/dep/cc.html">Link to documentation</a></p>
 
@@ -22792,7 +22792,7 @@ Hits table not produced since the query does not start with the simple token spe
 
 <p><b>DEBUGGING TEST. NONZERO HITS DOES NOT MEAN THE DATA IS INVALID.</b> Coordinating conjunction should be attached to the first conjunct and it should not have its own dependents.</p>
 
-<p>Search expression: <code>_ &lt; (_ &lt;cc _)</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">_ &lt; (_ &lt;cc _)</code></p>
 
 <p><a href="http://universaldependencies.org/docs/u/dep/cc.html">Link to documentation</a></p>
 
@@ -24912,7 +24912,7 @@ Hits table not produced since the query does not start with the simple token spe
 
 <p><b>DEBUGGING TEST. NONZERO HITS DOES NOT MEAN THE DATA IS INVALID.</b> The parts of speech of words marked as being expletive dependencies.</p>
 
-<p>Search expression: <code>_ &lt;expl _</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">_ &lt;expl _</code></p>
 
 <p><a href="http://universaldependencies.org/u/dep/expl.html">Link to documentation</a></p>
 
@@ -25604,7 +25604,7 @@ Hits table not produced since the query does not start with the simple token spe
 
 <p><b>DEBUGGING TEST. NONZERO HITS DOES NOT MEAN THE DATA IS INVALID.</b> The dependents of a word marked as being an expletive dependency. This should be empty.</p>
 
-<p>Search expression: <code>_ &lt; (_ &lt;expl _)</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">_ &lt; (_ &lt;expl _)</code></p>
 
 <p><a href="http://universaldependencies.org/u/dep/expl.html">Link to documentation</a></p>
 
@@ -25981,7 +25981,7 @@ Hits table not produced since the query does not start with the simple token spe
 
 <p><b>DEBUGGING TEST. NONZERO HITS DOES NOT MEAN THE DATA IS INVALID.</b> Parts of speech of words which have an expletive dependency.</p>
 
-<p>Search expression: <code>_ &gt;expl _</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">_ &gt;expl _</code></p>
 
 <p><a href="http://universaldependencies.org/u/dep/expl.html">Link to documentation</a></p>
 
@@ -26737,7 +26737,7 @@ Hits table not produced since the query does not start with the simple token spe
 
 <p><b>DEBUGGING TEST. NONZERO HITS DOES NOT MEAN THE DATA IS INVALID.</b> Parts of speech of words which have an open clausal complement dependency.</p>
 
-<p>Search expression: <code>_ &gt;xcomp _</code></p>
+<p>Search expression: <code class="language-plaintext highlighter-rouge">_ &gt;xcomp _</code></p>
 
 <p><a href="http://universaldependencies.org/u/dep/xcomp.html">Link to documentation</a></p>
 

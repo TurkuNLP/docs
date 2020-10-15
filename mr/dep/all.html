@@ -247,10 +247,34 @@ in two places.</p>
 
 <hr />
 
+<p><a id="al-mr-dep/compound:svc" class="al-dest"></a></p>
+<h2><code>compound:svc</code>: serial compound verb</h2>
+
+<p><code class="language-plaintext highlighter-rouge">compound:svc</code> marks compound verb constructs, in non-nominal complex predicates. 
+These typically consist of a non-finite verb and a semantically bleached finite verb, although both verbs being finite is not impossible.
+The relation is governed by the finite verb that controls the argument structure of the construct, and the same finite verb also governs all relevant arguments.
+If both verbs are finite, the finite verb that controls the argument structure is the head. These verbs are also often the semantic heads of the clause.</p>
+
+<pre><code class="language-sdparse">तो पुस्तक वाचत राहिला . \n He book.NSG read-PPRS stayed-NSG .
+compound:svc(राहिला, वाचत)
+compound:svc(stayed-NSG, read-PPRS)
+nsubj(राहिला, तो)
+nsubj(stayed-NSG, He)
+</code></pre>
+
+<pre><code class="language-sdparse">त्याला खुर्ची विकावी लागली . \n He chair.FSG sell-SUBJ-FSG attached-FSG .
+compound:svc(लागली, विकावी)
+compound:svc(attached-FSG, sell-SUBJ-FSG)
+obj(विकावी, खुर्ची)
+obj(sell-SUBJ-FSG, chair.FSG)
+</code></pre>
+
+<p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_mr-dep/compound-svc" target="#">edit compound:svc</a></p>
+
 <p><a id="al-mr-dep/nsubj" class="al-dest"></a></p>
 <h2><code>nsubj</code>: nominal subject</h2>
 
-<p><code>nsubj</code> marks noun phrases that are the subject of a finite clause. In non-copular constructions, the head of an <code>nsubj</code> relation is typically a verb. Subjects need not necessarily be in the nominative case: other cases are often used to mark subjects, such as the ergative with the perfective aspect, or the dative for certain constructions.</p>
+<p><code class="language-plaintext highlighter-rouge">nsubj</code> marks noun phrases that are the subject of a finite clause. In non-copular constructions, the head of an <code class="language-plaintext highlighter-rouge">nsubj</code> relation is typically a verb. Subjects need not necessarily be in the nominative case: other cases are often used to mark subjects, such as the ergative with the perfective aspect, or the dative for certain constructions.</p>
 
 <pre><code class="language-sdparse">मुलगा झोपतो . \n The boy sleeps .
 nsubj(झोपतो, मुलगा)
@@ -272,7 +296,7 @@ nsubj(came, boy-to)
 <p><a id="al-mr-dep/obj" class="al-dest"></a></p>
 <h2><code>obj</code>: object</h2>
 
-<p><code>obj</code> marks the second core argument of a verb. These are typically in the accusative case, which is unmarked for inanimate objects or non-specific objects, for instance: मी पक्षी बघतो / <em>mī pakṣī baghato</em> “I watch birds (as a hobby)”. The accusative case is marked similar to the dative for animate, specific objects or for objects of verbs that imply animacy, such as: मी पक्ष्यांना बघतो / <em>mī pakṣyāṃnā baghato</em> “I watch birds (specific birds)”.</p>
+<p><code class="language-plaintext highlighter-rouge">obj</code> marks the second core argument of a verb. These are typically in the accusative case, which is unmarked for inanimate objects or non-specific objects, for instance: मी पक्षी बघतो / <em>mī pakṣī baghato</em> “I watch birds (as a hobby)”. The accusative case is marked similar to the dative for animate, specific objects or for objects of verbs that imply animacy, such as: मी पक्ष्यांना बघतो / <em>mī pakṣyāṃnā baghato</em> “I watch birds (specific birds)”.</p>
 
 <pre><code class="language-sdparse">मी पुस्तक वाचतो . \n I read the book .
 obj(वाचतो, पुस्तक)

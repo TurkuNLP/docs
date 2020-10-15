@@ -62,12 +62,12 @@
 
           <h2><code>det</code>: determiner</h2>
 
-<p>The relation determiner (<code>det</code>) holds between a nominal head and its
+<p>The relation determiner (<code class="language-plaintext highlighter-rouge">det</code>) holds between a nominal head and its
 <a href="cs-pos/DET">determiner</a>.
-This relation is used for pronominal adjectival modifiers of noun phrases; the <code>det</code> modifier has the POS tag <a href="">cs-pos/DET</a> and vice versa.
+This relation is used for pronominal adjectival modifiers of noun phrases; the <code class="language-plaintext highlighter-rouge">det</code> modifier has the POS tag <a href="">cs-pos/DET</a> and vice versa.
 Non-pronominal adjectives are tagged <a href="">cs-pos/ADJ</a> and the relation is labeled <a href="">amod</a>.</p>
 
-<p>Pronominal quantifiers are tagged <code>DET</code> but their relation to their head is a subtype of the <code>det</code> relation:
+<p>Pronominal quantifiers are tagged <code class="language-plaintext highlighter-rouge">DET</code> but their relation to their head is a subtype of the <code class="language-plaintext highlighter-rouge">det</code> relation:
 either <a href="">cs-dep/det:numgov</a> or <a href="">cs-dep/det:nummod</a>.</p>
 
 <pre><code class="language-sdparse">Ten člověk už je tady . \n The man already is here .
@@ -91,17 +91,17 @@ det(book, Which)
 
 <hr />
 
-<h2 id="treebank-statistics-udczech">Treebank Statistics (UD_Czech)</h2>
+<h2 id="treebank-statistics-ud_czech">Treebank Statistics (UD_Czech)</h2>
 
 <p>This relation is universal.
-There are 2 language-specific subtypes of <code>det</code>: <a href="">det:numgov</a>, <a href="">det:nummod</a>.</p>
+There are 2 language-specific subtypes of <code class="language-plaintext highlighter-rouge">det</code>: <a href="">det:numgov</a>, <a href="">det:nummod</a>.</p>
 
-<p>24921 nodes (2%) are attached to their parents as <code>det</code>.</p>
+<p>24921 nodes (2%) are attached to their parents as <code class="language-plaintext highlighter-rouge">det</code>.</p>
 
-<p>24330 instances of <code>det</code> (98%) are right-to-left (child precedes parent).
+<p>24330 instances of <code class="language-plaintext highlighter-rouge">det</code> (98%) are right-to-left (child precedes parent).
 Average distance between parent and child is 1.3620641226275.</p>
 
-<p>The following 14 pairs of parts of speech are connected with <code>det</code>: <a href="">cs-pos/NOUN</a>-<a href="">cs-pos/DET</a> (24423; 98% instances), <a href="">cs-pos/DET</a>-<a href="">cs-pos/DET</a> (112; 0% instances), <a href="">cs-pos/ADJ</a>-<a href="">cs-pos/DET</a> (108; 0% instances), <a href="">cs-pos/PROPN</a>-<a href="">cs-pos/DET</a> (97; 0% instances), <a href="">cs-pos/NUM</a>-<a href="">cs-pos/DET</a> (64; 0% instances), <a href="">cs-pos/PRON</a>-<a href="">cs-pos/DET</a> (55; 0% instances), <a href="">cs-pos/ADV</a>-<a href="">cs-pos/DET</a> (37; 0% instances), <a href="">cs-pos/PART</a>-<a href="">cs-pos/DET</a> (9; 0% instances), <a href="">cs-pos/VERB</a>-<a href="">cs-pos/DET</a> (9; 0% instances), <a href="">cs-pos/SYM</a>-<a href="">cs-pos/DET</a> (3; 0% instances), <a href="">cs-pos/ADP</a>-<a href="">cs-pos/DET</a> (1; 0% instances), <a href="">cs-pos/INTJ</a>-<a href="">cs-pos/DET</a> (1; 0% instances), <a href="">cs-pos/SCONJ</a>-<a href="">cs-pos/DET</a> (1; 0% instances), <a href="">cs-pos/VERB</a>-<a href="">cs-pos/PRON</a> (1; 0% instances).</p>
+<p>The following 14 pairs of parts of speech are connected with <code class="language-plaintext highlighter-rouge">det</code>: <a href="">cs-pos/NOUN</a>-<a href="">cs-pos/DET</a> (24423; 98% instances), <a href="">cs-pos/DET</a>-<a href="">cs-pos/DET</a> (112; 0% instances), <a href="">cs-pos/ADJ</a>-<a href="">cs-pos/DET</a> (108; 0% instances), <a href="">cs-pos/PROPN</a>-<a href="">cs-pos/DET</a> (97; 0% instances), <a href="">cs-pos/NUM</a>-<a href="">cs-pos/DET</a> (64; 0% instances), <a href="">cs-pos/PRON</a>-<a href="">cs-pos/DET</a> (55; 0% instances), <a href="">cs-pos/ADV</a>-<a href="">cs-pos/DET</a> (37; 0% instances), <a href="">cs-pos/PART</a>-<a href="">cs-pos/DET</a> (9; 0% instances), <a href="">cs-pos/VERB</a>-<a href="">cs-pos/DET</a> (9; 0% instances), <a href="">cs-pos/SYM</a>-<a href="">cs-pos/DET</a> (3; 0% instances), <a href="">cs-pos/ADP</a>-<a href="">cs-pos/DET</a> (1; 0% instances), <a href="">cs-pos/INTJ</a>-<a href="">cs-pos/DET</a> (1; 0% instances), <a href="">cs-pos/SCONJ</a>-<a href="">cs-pos/DET</a> (1; 0% instances), <a href="">cs-pos/VERB</a>-<a href="">cs-pos/PRON</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 4	bgColor:blue
 # visual-style 4	fgColor:white
@@ -151,17 +151,17 @@ Average distance between parent and child is 1.3620641226275.</p>
 
 <hr />
 
-<h2 id="treebank-statistics-udczech-cac">Treebank Statistics (UD_Czech-CAC)</h2>
+<h2 id="treebank-statistics-ud_czech-cac">Treebank Statistics (UD_Czech-CAC)</h2>
 
 <p>This relation is universal.
-There are 2 language-specific subtypes of <code>det</code>: <a href="">det:numgov</a>, <a href="">det:nummod</a>.</p>
+There are 2 language-specific subtypes of <code class="language-plaintext highlighter-rouge">det</code>: <a href="">det:numgov</a>, <a href="">det:nummod</a>.</p>
 
-<p>10528 nodes (2%) are attached to their parents as <code>det</code>.</p>
+<p>10528 nodes (2%) are attached to their parents as <code class="language-plaintext highlighter-rouge">det</code>.</p>
 
-<p>10398 instances of <code>det</code> (99%) are right-to-left (child precedes parent).
+<p>10398 instances of <code class="language-plaintext highlighter-rouge">det</code> (99%) are right-to-left (child precedes parent).
 Average distance between parent and child is 1.35324848024316.</p>
 
-<p>The following 10 pairs of parts of speech are connected with <code>det</code>: <a href="">cs-pos/NOUN</a>-<a href="">cs-pos/DET</a> (10362; 98% instances), <a href="">cs-pos/ADJ</a>-<a href="">cs-pos/DET</a> (50; 0% instances), <a href="">cs-pos/PROPN</a>-<a href="">cs-pos/DET</a> (32; 0% instances), <a href="">cs-pos/SYM</a>-<a href="">cs-pos/DET</a> (29; 0% instances), <a href="">cs-pos/PRON</a>-<a href="">cs-pos/DET</a> (18; 0% instances), <a href="">cs-pos/NUM</a>-<a href="">cs-pos/DET</a> (14; 0% instances), <a href="">cs-pos/ADV</a>-<a href="">cs-pos/DET</a> (12; 0% instances), <a href="">cs-pos/DET</a>-<a href="">cs-pos/DET</a> (6; 0% instances), <a href="">cs-pos/VERB</a>-<a href="">cs-pos/DET</a> (4; 0% instances), <a href="">cs-pos/ADP</a>-<a href="">cs-pos/DET</a> (1; 0% instances).</p>
+<p>The following 10 pairs of parts of speech are connected with <code class="language-plaintext highlighter-rouge">det</code>: <a href="">cs-pos/NOUN</a>-<a href="">cs-pos/DET</a> (10362; 98% instances), <a href="">cs-pos/ADJ</a>-<a href="">cs-pos/DET</a> (50; 0% instances), <a href="">cs-pos/PROPN</a>-<a href="">cs-pos/DET</a> (32; 0% instances), <a href="">cs-pos/SYM</a>-<a href="">cs-pos/DET</a> (29; 0% instances), <a href="">cs-pos/PRON</a>-<a href="">cs-pos/DET</a> (18; 0% instances), <a href="">cs-pos/NUM</a>-<a href="">cs-pos/DET</a> (14; 0% instances), <a href="">cs-pos/ADV</a>-<a href="">cs-pos/DET</a> (12; 0% instances), <a href="">cs-pos/DET</a>-<a href="">cs-pos/DET</a> (6; 0% instances), <a href="">cs-pos/VERB</a>-<a href="">cs-pos/DET</a> (4; 0% instances), <a href="">cs-pos/ADP</a>-<a href="">cs-pos/DET</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 2	bgColor:blue
 # visual-style 2	fgColor:white
@@ -221,16 +221,16 @@ Average distance between parent and child is 1.35324848024316.</p>
 
 <hr />
 
-<h2 id="treebank-statistics-udczech-cltt">Treebank Statistics (UD_Czech-CLTT)</h2>
+<h2 id="treebank-statistics-ud_czech-cltt">Treebank Statistics (UD_Czech-CLTT)</h2>
 
 <p>This relation is universal.</p>
 
-<p>404 nodes (2%) are attached to their parents as <code>det</code>.</p>
+<p>404 nodes (2%) are attached to their parents as <code class="language-plaintext highlighter-rouge">det</code>.</p>
 
-<p>404 instances of <code>det</code> (100%) are right-to-left (child precedes parent).
+<p>404 instances of <code class="language-plaintext highlighter-rouge">det</code> (100%) are right-to-left (child precedes parent).
 Average distance between parent and child is 1.21039603960396.</p>
 
-<p>The following 2 pairs of parts of speech are connected with <code>det</code>: <a href="">cs-pos/NOUN</a>-<a href="">cs-pos/DET</a> (403; 100% instances), <a href="">cs-pos/ADJ</a>-<a href="">cs-pos/DET</a> (1; 0% instances).</p>
+<p>The following 2 pairs of parts of speech are connected with <code class="language-plaintext highlighter-rouge">det</code>: <a href="">cs-pos/NOUN</a>-<a href="">cs-pos/DET</a> (403; 100% instances), <a href="">cs-pos/ADJ</a>-<a href="">cs-pos/DET</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 3	bgColor:blue
 # visual-style 3	fgColor:white

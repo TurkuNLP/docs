@@ -127,10 +127,10 @@ properties or attributes. They may also function as predicates, as in</p>
 <p>Example: [bg]
 <i><span style="color: red">Колата е зелена</span></i> / <i>Kolata e zelena</i> (The car is green.)</p>
 
-<p>The <code>ADJ</code> tag is intended for ordinary adjectives only. See <a href="">DET</a>
+<p>The <code class="language-plaintext highlighter-rouge">ADJ</code> tag is intended for ordinary adjectives only. See <a href="">DET</a>
 for determiners and <a href="">NUM</a> for numerals.</p>
 
-<p>In Bulgarian the words that map to the <code>ADJ</code> tag from the BulTreeBank tagset are:</p>
+<p>In Bulgarian the words that map to the <code class="language-plaintext highlighter-rouge">ADJ</code> tag from the BulTreeBank tagset are:</p>
 
 <ul>
   <li>A# (adjective)</li>
@@ -185,7 +185,7 @@ for determiners and <a href="">NUM</a> for numerals.</p>
 <h3 id="definition">Definition</h3>
 
 <p>Adposition in Bulgarian is a preposition.
-In the BulTreeBank tagset it is encoded as <code>R</code>.
+In the BulTreeBank tagset it is encoded as <code class="language-plaintext highlighter-rouge">R</code>.
 Thus, the preposition comes before a complement composed of a noun
 phrase, noun, pronoun, or clause that functions as a noun phrase, and
 forms a single structure with the complement to express its
@@ -229,12 +229,12 @@ categories as time, place, direction or manner. They may also modify
 <a href="ADJ">adjectives</a> and other adverbs, as in <em><b>very briefly</b></em> or
 <em><b>arguably</b> wrong</em>. Some adverbs can modify even [nouns] (Noun).</p>
 
-<p>In BulTreeBank tagset the corresponding POS tag is <code>D</code>.</p>
+<p>In BulTreeBank tagset the corresponding POS tag is <code class="language-plaintext highlighter-rouge">D</code>.</p>
 
 <p>There is a closed subclass of <em>pronominal adverbs</em> that refer to
 circumstances in context, rather than naming them directly; similarly
 to pronouns, these can be categorized as interrogative, relative,
-demonstrative etc. Pronominal adverbs also get the <code>ADV</code>
+demonstrative etc. Pronominal adverbs also get the <code class="language-plaintext highlighter-rouge">ADV</code>
 part-of-speech tag but they are differentiated by additional features.</p>
 
 <p>In the BulTreeBank tagset the corresponding tags are as follows:</p>
@@ -262,11 +262,11 @@ part-of-speech tag but they are differentiated by additional features.</p>
 <p>Note that there are words that may be traditionally called numerals in
 some languages (e.g. Bulgarian) but they are treated as adverbs in the
 universal tagging scheme. In particular, <em>adverbial ordinal numerals</em>
-([bg] <em>първо</em> / <em>parvo</em> “for the first time”) are tagged <code>ADV</code>. 
-The mapped tags present the neuter singular indefinite forms of the ordinal numerals: <code>Monsi</code>.
+([bg] <em>първо</em> / <em>parvo</em> “for the first time”) are tagged <code class="language-plaintext highlighter-rouge">ADV</code>. 
+The mapped tags present the neuter singular indefinite forms of the ordinal numerals: <code class="language-plaintext highlighter-rouge">Monsi</code>.
 In this way there will be ambiguity with the class of [adjectives] (ADJ).</p>
 
-<p>Another adverbial numeral that goes under <code>ADV</code> is Md#:</p>
+<p>Another adverbial numeral that goes under <code class="language-plaintext highlighter-rouge">ADV</code> is Md#:</p>
 
 <h3 id="examples-1">Examples</h3>
 
@@ -288,17 +288,17 @@ In this way there will be ambiguity with the class of [adjectives] (ADJ).</p>
 verb phrase and expresses grammatical distinctions not carried by the
 lexical verb, such as person, number, tense, mood, aspect, voice or evidentiality.
 It is often a verb (which may have non-auxiliary uses as well) but many languages 
-have nonverbal TAME markers and these should also be tagged <code>AUX</code>. The class <code>AUX</code>
+have nonverbal TAME markers and these should also be tagged <code class="language-plaintext highlighter-rouge">AUX</code>. The class <code class="language-plaintext highlighter-rouge">AUX</code>
 also include copulas (in the narrow sense of pure linking words for nonverbal predication).</p>
 
 <p><em>Modal verbs</em> may count as auxiliaries in some languages (English). In
 other languages their behavior is not too different from the <a href="VERB">main
-verbs</a> and they are thus tagged <code>VERB</code>.</p>
+verbs</a> and they are thus tagged <code class="language-plaintext highlighter-rouge">VERB</code>.</p>
 
 <p>Note that not all languages have grammaticalized auxiliaries, and
 even where they exist the dividing line between full verbs and
 auxiliaries can be expected to vary between languages. Exactly
-which words are counted as <code>AUX</code> should be part of the
+which words are counted as <code class="language-plaintext highlighter-rouge">AUX</code> should be part of the
 language-specific documentation.</p>
 
 <p>In Bulgarian the auxiliary verbs are varieties of the verb ‘to be’:</p>
@@ -309,7 +309,7 @@ language-specific documentation.</p>
   <li>Vi# / <em>бивам</em> / <em>bivam</em> “to be”</li>
 </ul>
 
-<p><em>Modal verbs</em> count as <a href="VERB">main verbs</a> in BulTreeBank tagset and they are thus tagged <code>VERB</code>.</p>
+<p><em>Modal verbs</em> count as <a href="VERB">main verbs</a> in BulTreeBank tagset and they are thus tagged <code class="language-plaintext highlighter-rouge">VERB</code>.</p>
 
 <p>Also, the following verbal particles (Tx) are viewed as auxiliaries:</p>
 
@@ -430,10 +430,10 @@ language.</p>
 their original category when used in exclamations. For example, <em>God</em>
 is a <a href="">NOUN</a> even in exclamatory uses.</p>
 
-<p>In BulTreeBank annotation scheme the interjections are tagged as <code>I</code>.
+<p>In BulTreeBank annotation scheme the interjections are tagged as <code class="language-plaintext highlighter-rouge">I</code>.
 These include the following groups: exclamations and onomatopoeic words.</p>
 
-<p>In cases like <em>God</em>, the lemmas are tagged as both: <code>Noun</code> and <code>Interjection</code>.
+<p>In cases like <em>God</em>, the lemmas are tagged as both: <code class="language-plaintext highlighter-rouge">Noun</code> and <code class="language-plaintext highlighter-rouge">Interjection</code>.
 Thus, only the Noun usage will be kept in the universal setting.</p>
 
 <p>The feedback particles, such as: <em>yes</em> and <em>no</em> are mapped to INTJ with the labels:</p>
@@ -453,9 +453,9 @@ Thus, only the Noun usage will be kept in the universal setting.</p>
 <p>Nouns are a part of speech typically denoting a person, place, thing,
 animal or idea.</p>
 
-<p>The <code>NOUN</code> tag is intended for common nouns only.</p>
+<p>The <code class="language-plaintext highlighter-rouge">NOUN</code> tag is intended for common nouns only.</p>
 
-<p>In Bultreebank the common nouns are annotated with the tag <code>Nc#</code>.</p>
+<p>In Bultreebank the common nouns are annotated with the tag <code class="language-plaintext highlighter-rouge">Nc#</code>.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -480,13 +480,13 @@ animal or idea.</p>
 adjective or pronoun, that expresses a number and a relation to the
 number, such as quantity, sequence, frequency or fraction.</p>
 
-<p>Note that cardinal numerals are covered by <code>NUM</code> whether they are used
+<p>Note that cardinal numerals are covered by <code class="language-plaintext highlighter-rouge">NUM</code> whether they are used
 as determiners or not (as in <em>Windows <b>Seven</b></em>) and whether they
 are expressed as words <em>(four)</em>, digits <em>(4)</em> or Roman numerals
 <em>(IV)</em>. Other words functioning as determiners (including quantifiers
 such as <em>many</em> and <em>few</em>) are tagged <a href="">DET</a>.</p>
 
-<p>In Bultreebank tagset the tag which maps to <code>NUM</code>, is <code>Mc#</code>.</p>
+<p>In Bultreebank tagset the tag which maps to <code class="language-plaintext highlighter-rouge">NUM</code>, is <code class="language-plaintext highlighter-rouge">Mc#</code>.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -513,8 +513,8 @@ or <a href="AUX">auxiliary verbs</a>).  Particles may encode grammatical
 categories such as negation, mood, tense etc.  Particles are normally
 not inflected, although exceptions may occur.</p>
 
-<p>In the Bultreebank tagset the following tags map to <code>PART</code>: Tn, Ti, Tx, Tm, Tv, Te and Tg.
-(Note that <code>Ta</code> is considered <code>INTJ</code> in the universal tagset. The <code>Tn</code> particle <em>не</em> / <em>ne</em> “no” is also considered <code>INTJ</code>).</p>
+<p>In the Bultreebank tagset the following tags map to <code class="language-plaintext highlighter-rouge">PART</code>: Tn, Ti, Tx, Tm, Tv, Te and Tg.
+(Note that <code class="language-plaintext highlighter-rouge">Ta</code> is considered <code class="language-plaintext highlighter-rouge">INTJ</code> in the universal tagset. The <code class="language-plaintext highlighter-rouge">Tn</code> particle <em>не</em> / <em>ne</em> “no” is also considered <code class="language-plaintext highlighter-rouge">INTJ</code>).</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -546,7 +546,7 @@ pro-adjectives and pro-adverbs are labeled as Pronouns.
 However, for the mapping to the universal tagset, this group was split into
 several parts-of-speech: <a href="DET">determiners</a>, <a href="ADV">adverbs</a>, <a href="PRON">pronouns</a>.</p>
 
-<p>The tags that correspond to <code>Pron</code> are: Pp#, Pde#, Pre#, Pce#, Pie#, Pfe#, Pfy#, Pne#, Piy#.</p>
+<p>The tags that correspond to <code class="language-plaintext highlighter-rouge">Pron</code> are: Pp#, Pde#, Pre#, Pce#, Pie#, Pfe#, Pfy#, Pne#, Piy#.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -573,8 +573,8 @@ several parts-of-speech: <a href="DET">determiners</a>, <a href="ADV">adverbs</a
 <p>A proper noun is a noun (or nominal content word) that is the name (or
 part of the name) of a specific individual, place, or object.</p>
 
-<p>The tag<code>PROPN</code> maps to the following tags in the BulTreeBank scheme: <code>Np#</code>, <code>H#</code>
-The tag <code>Np#</code> refers to proper nouns, while the tag <code>H#</code> handles two cases: 1. family names, which are
+<p>The tag<code class="language-plaintext highlighter-rouge">PROPN</code> maps to the following tags in the BulTreeBank scheme: <code class="language-plaintext highlighter-rouge">Np#</code>, <code class="language-plaintext highlighter-rouge">H#</code>
+The tag <code class="language-plaintext highlighter-rouge">Np#</code> refers to proper nouns, while the tag <code class="language-plaintext highlighter-rouge">H#</code> handles two cases: 1. family names, which are
 mapped here as <a href="PROPN">proper nouns</a>, and 2. name adjectives, which are mapped to <a href="ADJ">adjectives</a>.</p>
 
 <h3 id="examples">Examples</h3>
@@ -626,8 +626,8 @@ status of a (subordinate) clause.</p>
 
 <p>For <em>coordinating conjunctions,</em> see <a href="">CCONJ</a>.</p>
 
-<p>In the BulTreeBank annotation scheme, our tag <code>Cs</code> is mapped to the universal one <a href="">SCONJ</a>.
-According to our scheme the multiword subordinate conjunctions are also labeled as <code>Cs</code>.
+<p>In the BulTreeBank annotation scheme, our tag <code class="language-plaintext highlighter-rouge">Cs</code> is mapped to the universal one <a href="">SCONJ</a>.
+According to our scheme the multiword subordinate conjunctions are also labeled as <code class="language-plaintext highlighter-rouge">Cs</code>.
 So, such cases are excluded here and analysed compositionally, as recommended in the universal tagset.</p>
 
 <h3 id="examples">Examples</h3>
@@ -654,7 +654,7 @@ expressed inflectionally or using auxilliary verbs or particles.</p>
 
 <p>The BulTreeBank annotation scheme provides the following mappings here: <em>main verbs</em>, <em>copulas</em> and <em>modal verbs</em>.
 Note that modal verbs do not have special labels in our annotation scheme.
-Participles and gerund are considered also <code>VERB</code>. Below the specific labels that map to <code>VERB</code> are given.</p>
+Participles and gerund are considered also <code class="language-plaintext highlighter-rouge">VERB</code>. Below the specific labels that map to <code class="language-plaintext highlighter-rouge">VERB</code> are given.</p>
 
 <h3 id="examples">Examples</h3>
 

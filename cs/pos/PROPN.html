@@ -74,7 +74,7 @@ and names of months
 are not written capitalized (unlike in English)
 and are not considered proper nouns.</p>
 
-<p>Single-word named entities should be tagged <code>PROPN</code> even if they originate
+<p>Single-word named entities should be tagged <code class="language-plaintext highlighter-rouge">PROPN</code> even if they originate
 from a common noun <em>(Zajíc, Huť) </em> or an adjective <em>(Veselý, Teplá). </em>
 Even if they were originally adjectives and inflect according to adjectival
 paradigms, they behave syntactically as nouns. For instance, <em>Teplá </em>
@@ -86,21 +86,21 @@ genders).</p>
 
 <p>Note that names of languages <em>(čeština, angličtina)</em>
 and adjectives derived from geographical names <em>(český, anglický </em> “Czech, English”)
-are written in lowercase and are not tagged <code>PROPN</code>.</p>
+are written in lowercase and are not tagged <code class="language-plaintext highlighter-rouge">PROPN</code>.</p>
 
 <p>Personal names are typically treated as a sequence of proper nouns
 (one or more given names and one or more surnames).
 If the name contains prepositions, conjunctions or articles (foreign names
-and old Czech names), these are tagged as <code>ADP</code>, <code>CCONJ</code> and <code>DET</code>,
+and old Czech names), these are tagged as <code class="language-plaintext highlighter-rouge">ADP</code>, <code class="language-plaintext highlighter-rouge">CCONJ</code> and <code class="language-plaintext highlighter-rouge">DET</code>,
 respectively.</p>
 
 <p>Czech (and other Slavic) multi-word named entities have internal syntactic
 structure, which is preserved in the annotation. The headword is always noun
-and there may be other nouns involved. They will be tagged either <code>PROPN</code> or
-<code>NOUN</code> and possible ambiguities must be resolved individually.
-Modifying adjectives are never tagged <code>PROPN</code>. Even if an adjective is the
+and there may be other nouns involved. They will be tagged either <code class="language-plaintext highlighter-rouge">PROPN</code> or
+<code class="language-plaintext highlighter-rouge">NOUN</code> and possible ambiguities must be resolved individually.
+Modifying adjectives are never tagged <code class="language-plaintext highlighter-rouge">PROPN</code>. Even if an adjective is the
 first word of a multi-word name, and thus it starts with an uppercase letter,
-it is still tagged <code>ADJ</code>.
+it is still tagged <code class="language-plaintext highlighter-rouge">ADJ</code>.
 Similarly, function words in named entities retain their normal tags.
 These rules are less strict for foreign named entities where the original
 part of speech is hidden for a Czech speaker.</p>
@@ -108,20 +108,20 @@ part of speech is hidden for a Czech speaker.</p>
 <h3 id="examples">Examples</h3>
 
 <ul>
-  <li><em><b>Bečov</b></em>.<code>PROPN</code> <em>nad</em>.<code>ADP</code> <em><b>Teplou</b></em>.<code>PROPN</code> is a city. <em>Bečov </em> is the head
+  <li><em><b>Bečov</b></em>.<code class="language-plaintext highlighter-rouge">PROPN</code> <em>nad</em>.<code class="language-plaintext highlighter-rouge">ADP</code> <em><b>Teplou</b></em>.<code class="language-plaintext highlighter-rouge">PROPN</code> is a city. <em>Bečov </em> is the head
 and the <em>nad Teplou </em> part refers to the river flowing through the city,
 to distinguish it from other Bečovs.</li>
-  <li><em>Červený</em>.<code>ADJ</code> <em><b>Újezd</b></em>.<code>PROPN</code> is a village. <em>Újezd </em> is the head and it is
-tagged <code>PROPN</code> although it originates in the common noun <em>újezd </em> “district, riding”.
+  <li><em>Červený</em>.<code class="language-plaintext highlighter-rouge">ADJ</code> <em><b>Újezd</b></em>.<code class="language-plaintext highlighter-rouge">PROPN</code> is a village. <em>Újezd </em> is the head and it is
+tagged <code class="language-plaintext highlighter-rouge">PROPN</code> although it originates in the common noun <em>újezd </em> “district, riding”.
 There are many locations named <em>Újezd </em> and the noun is perceived as a proper
 noun in current Czech. <em>Červený </em> is an adjective meaning “red” and it is
-tagged <code>ADJ</code>.</li>
-  <li><em>Červená</em>.<code>ADJ</code> <em>řeka</em>.<code>NOUN</code> “Red River”. Even though the two words
+tagged <code class="language-plaintext highlighter-rouge">ADJ</code>.</li>
+  <li><em>Červená</em>.<code class="language-plaintext highlighter-rouge">ADJ</code> <em>řeka</em>.<code class="language-plaintext highlighter-rouge">NOUN</code> “Red River”. Even though the two words
 together are a name of a particular river, <em>řeka</em> is a common noun and is
 tagged as such.</li>
-  <li><em>Organizace</em>.<code>NOUN</code> <em>spojených</em>.<code>ADJ</code> <em>národů</em>.<code>NOUN</code> “United Nations Organization”
+  <li><em>Organizace</em>.<code class="language-plaintext highlighter-rouge">NOUN</code> <em>spojených</em>.<code class="language-plaintext highlighter-rouge">ADJ</code> <em>národů</em>.<code class="language-plaintext highlighter-rouge">NOUN</code> “United Nations Organization”
 consists of three words, none of which is proper noun. However, the acronym
-<em><b>OSN</b> </em> “UNO” is a single-token name and is tagged <code>PROPN</code>.</li>
+<em><b>OSN</b> </em> “UNO” is a single-token name and is tagged <code class="language-plaintext highlighter-rouge">PROPN</code>.</li>
 </ul>
 
 <h3 id="conversion-from-the-prague-dependency-treebank">Conversion from the Prague Dependency Treebank</h3>
@@ -129,10 +129,10 @@ consists of three words, none of which is proper noun. However, the acronym
 <p>The PDT set of morphological (part-of-speech) tags does not distinguish
 common and proper nouns. However, lemmas in PDT contain additional features
 that also encode types of named entities. When converting the PDT annotation
-to UD, these lemma features are removed, the <code>PROPN</code> tag is used and the feature
+to UD, these lemma features are removed, the <code class="language-plaintext highlighter-rouge">PROPN</code> tag is used and the feature
 <a href="">cs-feat/NameType</a> is added to the universal features to preserve the type.
 Only nouns are treated this way.
-Foreign adjectives are not converted to <code>PROPN</code> despite the fact
+Foreign adjectives are not converted to <code class="language-plaintext highlighter-rouge">PROPN</code> despite the fact
 that they entered Czech as parts of foreign names and their lemmas contain
 the name type feature.</p>
 
@@ -175,14 +175,14 @@ Otherwise, the morphological analysis usually includes the original part of spee
 
 <hr />
 
-<h2 id="treebank-statistics-udczech">Treebank Statistics (UD_Czech)</h2>
+<h2 id="treebank-statistics-ud_czech">Treebank Statistics (UD_Czech)</h2>
 
-<p>There are 14162 <code>PROPN</code> lemmas (25%), 20294 <code>PROPN</code> types (17%) and 74824 <code>PROPN</code> tokens (6%).
-Out of 17 observed tags, the rank of <code>PROPN</code> is: 2 in number of lemmas, 3 in number of types and 6 in number of tokens.</p>
+<p>There are 14162 <code class="language-plaintext highlighter-rouge">PROPN</code> lemmas (25%), 20294 <code class="language-plaintext highlighter-rouge">PROPN</code> types (17%) and 74824 <code class="language-plaintext highlighter-rouge">PROPN</code> tokens (6%).
+Out of 17 observed tags, the rank of <code class="language-plaintext highlighter-rouge">PROPN</code> is: 2 in number of lemmas, 3 in number of types and 6 in number of tokens.</p>
 
-<p>The 10 most frequent <code>PROPN</code> lemmas: <em>Praha, ČR, Evropa, LN, Jan, Jiří, Německo, Brno, USA, ODS</em></p>
+<p>The 10 most frequent <code class="language-plaintext highlighter-rouge">PROPN</code> lemmas: <em>Praha, ČR, Evropa, LN, Jan, Jiří, Německo, Brno, USA, ODS</em></p>
 
-<p>The 10 most frequent <code>PROPN</code> types:  <em>Praha, ČR, Praze, LN, USA, ODS, J, Jiří, Jan, OSN</em></p>
+<p>The 10 most frequent <code class="language-plaintext highlighter-rouge">PROPN</code> types:  <em>Praha, ČR, Praze, LN, USA, ODS, J, Jiří, Jan, OSN</em></p>
 
 <p>The 10 most frequent ambiguous lemmas: <em>J</em> (<a href="">PROPN</a> 381, <a href="">ADJ</a> 24), <em>M</em> (<a href="">PROPN</a> 219, <a href="">NOUN</a> 8), <em>V</em> (<a href="">PROPN</a> 183, <a href="">NUM</a> 21, <a href="">NOUN</a> 7, <a href="">ADJ</a> 5), <em>A</em> (<a href="">PROPN</a> 158, <a href="">NOUN</a> 8, <a href="">ADJ</a> 8), <em>York</em> (<a href="">PROPN</a> 145, <a href="">ADJ</a> 4), <em>P</em> (<a href="">PROPN</a> 127, <a href="">ADJ</a> 4, <a href="">NOUN</a> 2), <em>čt</em> (<a href="">NOUN</a> 4, <a href="">PROPN</a> 2), <em>S</em> (<a href="">PROPN</a> 108, <a href="">ADJ</a> 11, <a href="">NOUN</a> 2), <em>r</em> (<a href="">NOUN</a> 5, <a href="">PROPN</a> 1, <a href="">ADV</a> 1), <em>F</em> (<a href="">PROPN</a> 85, <a href="">ADJ</a> 10, <a href="">NOUN</a> 9)</p>
 
@@ -265,7 +265,7 @@ Out of 17 observed tags, the rank of <code>PROPN</code> is: 2 in number of lemma
 
 <h2 id="morphology">Morphology</h2>
 
-<p>The form / lemma ratio of <code>PROPN</code> is 1.432990 (the average of all parts of speech is 2.162583).</p>
+<p>The form / lemma ratio of <code class="language-plaintext highlighter-rouge">PROPN</code> is 1.432990 (the average of all parts of speech is 2.162583).</p>
 
 <p>The 1st highest number of forms (11) was observed with the lemma “Čech”: <em>ČECH, ČEŠI, Čech, Čecha, Čechem, Čechovi, Čechy, Čechů, Čechům, Češi, Češích</em>.</p>
 
@@ -273,44 +273,44 @@ Out of 17 observed tags, the rank of <code>PROPN</code> is: 2 in number of lemma
 
 <p>The 3rd highest number of forms (10) was observed with the lemma “Němec”: <em>NĚMCI, NĚMCŮ, NĚMEC, Němce, Němcem, Němci, Němcích, Němců, Němcům, Němec</em>.</p>
 
-<p><code>PROPN</code> occurs with 9 features: <a href="">cs-feat/NameType</a> (74824; 100% instances), <a href="">cs-feat/Polarity</a> (74824; 100% instances), <a href="">cs-feat/Gender</a> (73077; 98% instances), <a href="">cs-feat/Number</a> (61287; 82% instances), <a href="">cs-feat/Case</a> (59253; 79% instances), <a href="">cs-feat/Animacy</a> (43715; 58% instances), <a href="">cs-feat/Abbr</a> (11545; 15% instances), <a href="">cs-feat/Foreign</a> (3218; 4% instances), <a href="">cs-feat/Style</a> (136; 0% instances)</p>
+<p><code class="language-plaintext highlighter-rouge">PROPN</code> occurs with 9 features: <a href="">cs-feat/NameType</a> (74824; 100% instances), <a href="">cs-feat/Polarity</a> (74824; 100% instances), <a href="">cs-feat/Gender</a> (73077; 98% instances), <a href="">cs-feat/Number</a> (61287; 82% instances), <a href="">cs-feat/Case</a> (59253; 79% instances), <a href="">cs-feat/Animacy</a> (43715; 58% instances), <a href="">cs-feat/Abbr</a> (11545; 15% instances), <a href="">cs-feat/Foreign</a> (3218; 4% instances), <a href="">cs-feat/Style</a> (136; 0% instances)</p>
 
-<p><code>PROPN</code> occurs with 46 feature-value pairs: <code>Abbr=Yes</code>, <code>Animacy=Anim</code>, <code>Animacy=Inan</code>, <code>Case=Acc</code>, <code>Case=Dat</code>, <code>Case=Gen</code>, <code>Case=Ins</code>, <code>Case=Loc</code>, <code>Case=Nom</code>, <code>Case=Voc</code>, <code>Foreign=Yes</code>, <code>Gender=Fem</code>, <code>Gender=Masc</code>, <code>Gender=Neut</code>, <code>NameType=Com</code>, <code>NameType=Com,Geo</code>, <code>NameType=Com,Giv</code>, <code>NameType=Com,Giv,Sur</code>, <code>NameType=Com,Nat</code>, <code>NameType=Com,Pro</code>, <code>NameType=Com,Sur</code>, <code>NameType=Geo</code>, <code>NameType=Geo,Giv</code>, <code>NameType=Geo,Giv,Sur</code>, <code>NameType=Geo,Oth</code>, <code>NameType=Geo,Pro</code>, <code>NameType=Geo,Sur</code>, <code>NameType=Giv</code>, <code>NameType=Giv,Nat</code>, <code>NameType=Giv,Oth</code>, <code>NameType=Giv,Pro</code>, <code>NameType=Giv,Pro,Sur</code>, <code>NameType=Giv,Sur</code>, <code>NameType=Nat</code>, <code>NameType=Nat,Sur</code>, <code>NameType=Oth</code>, <code>NameType=Pro</code>, <code>NameType=Pro,Sur</code>, <code>NameType=Sur</code>, <code>Number=Plur</code>, <code>Number=Sing</code>, <code>Polarity=Pos</code>, <code>Style=Arch</code>, <code>Style=Coll</code>, <code>Style=Expr</code>, <code>Style=Rare</code></p>
+<p><code class="language-plaintext highlighter-rouge">PROPN</code> occurs with 46 feature-value pairs: <code class="language-plaintext highlighter-rouge">Abbr=Yes</code>, <code class="language-plaintext highlighter-rouge">Animacy=Anim</code>, <code class="language-plaintext highlighter-rouge">Animacy=Inan</code>, <code class="language-plaintext highlighter-rouge">Case=Acc</code>, <code class="language-plaintext highlighter-rouge">Case=Dat</code>, <code class="language-plaintext highlighter-rouge">Case=Gen</code>, <code class="language-plaintext highlighter-rouge">Case=Ins</code>, <code class="language-plaintext highlighter-rouge">Case=Loc</code>, <code class="language-plaintext highlighter-rouge">Case=Nom</code>, <code class="language-plaintext highlighter-rouge">Case=Voc</code>, <code class="language-plaintext highlighter-rouge">Foreign=Yes</code>, <code class="language-plaintext highlighter-rouge">Gender=Fem</code>, <code class="language-plaintext highlighter-rouge">Gender=Masc</code>, <code class="language-plaintext highlighter-rouge">Gender=Neut</code>, <code class="language-plaintext highlighter-rouge">NameType=Com</code>, <code class="language-plaintext highlighter-rouge">NameType=Com,Geo</code>, <code class="language-plaintext highlighter-rouge">NameType=Com,Giv</code>, <code class="language-plaintext highlighter-rouge">NameType=Com,Giv,Sur</code>, <code class="language-plaintext highlighter-rouge">NameType=Com,Nat</code>, <code class="language-plaintext highlighter-rouge">NameType=Com,Pro</code>, <code class="language-plaintext highlighter-rouge">NameType=Com,Sur</code>, <code class="language-plaintext highlighter-rouge">NameType=Geo</code>, <code class="language-plaintext highlighter-rouge">NameType=Geo,Giv</code>, <code class="language-plaintext highlighter-rouge">NameType=Geo,Giv,Sur</code>, <code class="language-plaintext highlighter-rouge">NameType=Geo,Oth</code>, <code class="language-plaintext highlighter-rouge">NameType=Geo,Pro</code>, <code class="language-plaintext highlighter-rouge">NameType=Geo,Sur</code>, <code class="language-plaintext highlighter-rouge">NameType=Giv</code>, <code class="language-plaintext highlighter-rouge">NameType=Giv,Nat</code>, <code class="language-plaintext highlighter-rouge">NameType=Giv,Oth</code>, <code class="language-plaintext highlighter-rouge">NameType=Giv,Pro</code>, <code class="language-plaintext highlighter-rouge">NameType=Giv,Pro,Sur</code>, <code class="language-plaintext highlighter-rouge">NameType=Giv,Sur</code>, <code class="language-plaintext highlighter-rouge">NameType=Nat</code>, <code class="language-plaintext highlighter-rouge">NameType=Nat,Sur</code>, <code class="language-plaintext highlighter-rouge">NameType=Oth</code>, <code class="language-plaintext highlighter-rouge">NameType=Pro</code>, <code class="language-plaintext highlighter-rouge">NameType=Pro,Sur</code>, <code class="language-plaintext highlighter-rouge">NameType=Sur</code>, <code class="language-plaintext highlighter-rouge">Number=Plur</code>, <code class="language-plaintext highlighter-rouge">Number=Sing</code>, <code class="language-plaintext highlighter-rouge">Polarity=Pos</code>, <code class="language-plaintext highlighter-rouge">Style=Arch</code>, <code class="language-plaintext highlighter-rouge">Style=Coll</code>, <code class="language-plaintext highlighter-rouge">Style=Expr</code>, <code class="language-plaintext highlighter-rouge">Style=Rare</code></p>
 
-<p><code>PROPN</code> occurs with 590 feature combinations.
-The most frequent feature combination is <code>Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing|Polarity=Pos</code> (12654 tokens).
+<p><code class="language-plaintext highlighter-rouge">PROPN</code> occurs with 590 feature combinations.
+The most frequent feature combination is <code class="language-plaintext highlighter-rouge">Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing|Polarity=Pos</code> (12654 tokens).
 Examples: <em>Klaus, Havel, Svoboda, Jelcin, Zeman, Mečiar, Němec, Jelínek, Novák, John</em></p>
 
 <h2 id="relations">Relations</h2>
 
-<p><code>PROPN</code> nodes are attached to their parents using 25 different relations: <a href="">cs-dep/nmod</a> (23813; 32% instances), <a href="">cs-dep/nsubj</a> (13133; 18% instances), <a href="">cs-dep/flat</a> (12090; 16% instances), <a href="">cs-dep/conj</a> (6872; 9% instances), <a href="">cs-dep/obl</a> (5992; 8% instances), <a href="">cs-dep/root</a> (4816; 6% instances), <a href="">cs-dep/dep</a> (2495; 3% instances), <a href="">cs-dep/obj</a> (2396; 3% instances), <a href="">cs-dep/appos</a> (1202; 2% instances), <a href="">cs-dep/iobj</a> (635; 1% instances), <a href="">cs-dep/orphan</a> (450; 1% instances), <a href="">cs-dep/flat:foreign</a> (373; 0% instances), <a href="">cs-dep/nsubj:pass</a> (322; 0% instances), <a href="">cs-dep/advcl</a> (145; 0% instances), <a href="">cs-dep/xcomp</a> (29; 0% instances), <a href="">cs-dep/cc</a> (17; 0% instances), <a href="">cs-dep/vocative</a> (15; 0% instances), <a href="">cs-dep/ccomp</a> (7; 0% instances), <a href="">cs-dep/case</a> (6; 0% instances), <a href="">cs-dep/amod</a> (5; 0% instances), <a href="">cs-dep/acl</a> (4; 0% instances), <a href="">cs-dep/parataxis</a> (3; 0% instances), <a href="">cs-dep/csubj</a> (2; 0% instances), <a href="">cs-dep/csubj:pass</a> (1; 0% instances), <a href="">cs-dep/punct</a> (1; 0% instances)</p>
+<p><code class="language-plaintext highlighter-rouge">PROPN</code> nodes are attached to their parents using 25 different relations: <a href="">cs-dep/nmod</a> (23813; 32% instances), <a href="">cs-dep/nsubj</a> (13133; 18% instances), <a href="">cs-dep/flat</a> (12090; 16% instances), <a href="">cs-dep/conj</a> (6872; 9% instances), <a href="">cs-dep/obl</a> (5992; 8% instances), <a href="">cs-dep/root</a> (4816; 6% instances), <a href="">cs-dep/dep</a> (2495; 3% instances), <a href="">cs-dep/obj</a> (2396; 3% instances), <a href="">cs-dep/appos</a> (1202; 2% instances), <a href="">cs-dep/iobj</a> (635; 1% instances), <a href="">cs-dep/orphan</a> (450; 1% instances), <a href="">cs-dep/flat:foreign</a> (373; 0% instances), <a href="">cs-dep/nsubj:pass</a> (322; 0% instances), <a href="">cs-dep/advcl</a> (145; 0% instances), <a href="">cs-dep/xcomp</a> (29; 0% instances), <a href="">cs-dep/cc</a> (17; 0% instances), <a href="">cs-dep/vocative</a> (15; 0% instances), <a href="">cs-dep/ccomp</a> (7; 0% instances), <a href="">cs-dep/case</a> (6; 0% instances), <a href="">cs-dep/amod</a> (5; 0% instances), <a href="">cs-dep/acl</a> (4; 0% instances), <a href="">cs-dep/parataxis</a> (3; 0% instances), <a href="">cs-dep/csubj</a> (2; 0% instances), <a href="">cs-dep/csubj:pass</a> (1; 0% instances), <a href="">cs-dep/punct</a> (1; 0% instances)</p>
 
-<p>Parents of <code>PROPN</code> nodes belong to 15 different parts of speech: <a href="">NOUN</a> (23369; 31% instances), <a href="">PROPN</a> (23293; 31% instances), <a href="">VERB</a> (19956; 27% instances), <a href="">ROOT</a> (4816; 6% instances), <a href="">ADJ</a> (2496; 3% instances), <a href="">NUM</a> (342; 0% instances), <a href="">ADV</a> (328; 0% instances), <a href="">DET</a> (94; 0% instances), <a href="">PRON</a> (87; 0% instances), <a href="">PART</a> (17; 0% instances), <a href="">ADP</a> (11; 0% instances), <a href="">SYM</a> (7; 0% instances), <a href="">CCONJ</a> (4; 0% instances), <a href="">INTJ</a> (2; 0% instances), <a href="">PUNCT</a> (2; 0% instances)</p>
+<p>Parents of <code class="language-plaintext highlighter-rouge">PROPN</code> nodes belong to 15 different parts of speech: <a href="">NOUN</a> (23369; 31% instances), <a href="">PROPN</a> (23293; 31% instances), <a href="">VERB</a> (19956; 27% instances), <a href="">ROOT</a> (4816; 6% instances), <a href="">ADJ</a> (2496; 3% instances), <a href="">NUM</a> (342; 0% instances), <a href="">ADV</a> (328; 0% instances), <a href="">DET</a> (94; 0% instances), <a href="">PRON</a> (87; 0% instances), <a href="">PART</a> (17; 0% instances), <a href="">ADP</a> (11; 0% instances), <a href="">SYM</a> (7; 0% instances), <a href="">CCONJ</a> (4; 0% instances), <a href="">INTJ</a> (2; 0% instances), <a href="">PUNCT</a> (2; 0% instances)</p>
 
-<p>30012 (40%) <code>PROPN</code> nodes are leaves.</p>
+<p>30012 (40%) <code class="language-plaintext highlighter-rouge">PROPN</code> nodes are leaves.</p>
 
-<p>24315 (32%) <code>PROPN</code> nodes have one child.</p>
+<p>24315 (32%) <code class="language-plaintext highlighter-rouge">PROPN</code> nodes have one child.</p>
 
-<p>11487 (15%) <code>PROPN</code> nodes have two children.</p>
+<p>11487 (15%) <code class="language-plaintext highlighter-rouge">PROPN</code> nodes have two children.</p>
 
-<p>9010 (12%) <code>PROPN</code> nodes have three or more children.</p>
+<p>9010 (12%) <code class="language-plaintext highlighter-rouge">PROPN</code> nodes have three or more children.</p>
 
-<p>The highest child degree of a <code>PROPN</code> node is 29.</p>
+<p>The highest child degree of a <code class="language-plaintext highlighter-rouge">PROPN</code> node is 29.</p>
 
-<p>Children of <code>PROPN</code> nodes are attached using 29 different relations: <a href="">cs-dep/punct</a> (17318; 21% instances), <a href="">cs-dep/case</a> (14526; 18% instances), <a href="">cs-dep/flat</a> (12112; 15% instances), <a href="">cs-dep/nmod</a> (11822; 14% instances), <a href="">cs-dep/conj</a> (7337; 9% instances), <a href="">cs-dep/amod</a> (4696; 6% instances), <a href="">cs-dep/cc</a> (3211; 4% instances), <a href="">cs-dep/dep</a> (2970; 4% instances), <a href="">cs-dep/nummod</a> (1492; 2% instances), <a href="">cs-dep/flat:foreign</a> (1401; 2% instances), <a href="">cs-dep/acl</a> (1387; 2% instances), <a href="">cs-dep/appos</a> (1200; 1% instances), <a href="">cs-dep/advmod:emph</a> (1084; 1% instances), <a href="">cs-dep/orphan</a> (455; 1% instances), <a href="">cs-dep/xcomp</a> (343; 0% instances), <a href="">cs-dep/mark</a> (298; 0% instances), <a href="">cs-dep/det</a> (97; 0% instances), <a href="">cs-dep/advmod</a> (74; 0% instances), <a href="">cs-dep/parataxis</a> (69; 0% instances), <a href="">cs-dep/cop</a> (61; 0% instances), <a href="">cs-dep/obl</a> (57; 0% instances), <a href="">cs-dep/nsubj</a> (56; 0% instances), <a href="">cs-dep/nummod:gov</a> (37; 0% instances), <a href="">cs-dep/advcl</a> (9; 0% instances), <a href="">cs-dep/obj</a> (9; 0% instances), <a href="">cs-dep/aux</a> (3; 0% instances), <a href="">cs-dep/det:numgov</a> (3; 0% instances), <a href="">cs-dep/det:nummod</a> (3; 0% instances), <a href="">cs-dep/ccomp</a> (1; 0% instances)</p>
+<p>Children of <code class="language-plaintext highlighter-rouge">PROPN</code> nodes are attached using 29 different relations: <a href="">cs-dep/punct</a> (17318; 21% instances), <a href="">cs-dep/case</a> (14526; 18% instances), <a href="">cs-dep/flat</a> (12112; 15% instances), <a href="">cs-dep/nmod</a> (11822; 14% instances), <a href="">cs-dep/conj</a> (7337; 9% instances), <a href="">cs-dep/amod</a> (4696; 6% instances), <a href="">cs-dep/cc</a> (3211; 4% instances), <a href="">cs-dep/dep</a> (2970; 4% instances), <a href="">cs-dep/nummod</a> (1492; 2% instances), <a href="">cs-dep/flat:foreign</a> (1401; 2% instances), <a href="">cs-dep/acl</a> (1387; 2% instances), <a href="">cs-dep/appos</a> (1200; 1% instances), <a href="">cs-dep/advmod:emph</a> (1084; 1% instances), <a href="">cs-dep/orphan</a> (455; 1% instances), <a href="">cs-dep/xcomp</a> (343; 0% instances), <a href="">cs-dep/mark</a> (298; 0% instances), <a href="">cs-dep/det</a> (97; 0% instances), <a href="">cs-dep/advmod</a> (74; 0% instances), <a href="">cs-dep/parataxis</a> (69; 0% instances), <a href="">cs-dep/cop</a> (61; 0% instances), <a href="">cs-dep/obl</a> (57; 0% instances), <a href="">cs-dep/nsubj</a> (56; 0% instances), <a href="">cs-dep/nummod:gov</a> (37; 0% instances), <a href="">cs-dep/advcl</a> (9; 0% instances), <a href="">cs-dep/obj</a> (9; 0% instances), <a href="">cs-dep/aux</a> (3; 0% instances), <a href="">cs-dep/det:numgov</a> (3; 0% instances), <a href="">cs-dep/det:nummod</a> (3; 0% instances), <a href="">cs-dep/ccomp</a> (1; 0% instances)</p>
 
-<p>Children of <code>PROPN</code> nodes belong to 16 different parts of speech: <a href="">PROPN</a> (23293; 28% instances), <a href="">PUNCT</a> (17320; 21% instances), <a href="">ADP</a> (14628; 18% instances), <a href="">NOUN</a> (11603; 14% instances), <a href="">ADJ</a> (5983; 7% instances), <a href="">CCONJ</a> (3525; 4% instances), <a href="">NUM</a> (2347; 3% instances), <a href="">VERB</a> (1646; 2% instances), <a href="">ADV</a> (962; 1% instances), <a href="">SCONJ</a> (308; 0% instances), <a href="">DET</a> (219; 0% instances), <a href="">PART</a> (160; 0% instances), <a href="">AUX</a> (64; 0% instances), <a href="">PRON</a> (43; 0% instances), <a href="">SYM</a> (22; 0% instances), <a href="">INTJ</a> (8; 0% instances)</p>
+<p>Children of <code class="language-plaintext highlighter-rouge">PROPN</code> nodes belong to 16 different parts of speech: <a href="">PROPN</a> (23293; 28% instances), <a href="">PUNCT</a> (17320; 21% instances), <a href="">ADP</a> (14628; 18% instances), <a href="">NOUN</a> (11603; 14% instances), <a href="">ADJ</a> (5983; 7% instances), <a href="">CCONJ</a> (3525; 4% instances), <a href="">NUM</a> (2347; 3% instances), <a href="">VERB</a> (1646; 2% instances), <a href="">ADV</a> (962; 1% instances), <a href="">SCONJ</a> (308; 0% instances), <a href="">DET</a> (219; 0% instances), <a href="">PART</a> (160; 0% instances), <a href="">AUX</a> (64; 0% instances), <a href="">PRON</a> (43; 0% instances), <a href="">SYM</a> (22; 0% instances), <a href="">INTJ</a> (8; 0% instances)</p>
 
 <hr />
 
-<h2 id="treebank-statistics-udczech-cac">Treebank Statistics (UD_Czech-CAC)</h2>
+<h2 id="treebank-statistics-ud_czech-cac">Treebank Statistics (UD_Czech-CAC)</h2>
 
-<p>There are 3405 <code>PROPN</code> lemmas (12%), 4315 <code>PROPN</code> types (7%) and 9676 <code>PROPN</code> tokens (2%).
-Out of 16 observed tags, the rank of <code>PROPN</code> is: 4 in number of lemmas, 4 in number of types and 11 in number of tokens.</p>
+<p>There are 3405 <code class="language-plaintext highlighter-rouge">PROPN</code> lemmas (12%), 4315 <code class="language-plaintext highlighter-rouge">PROPN</code> types (7%) and 9676 <code class="language-plaintext highlighter-rouge">PROPN</code> tokens (2%).
+Out of 16 observed tags, the rank of <code class="language-plaintext highlighter-rouge">PROPN</code> is: 4 in number of lemmas, 4 in number of types and 11 in number of tokens.</p>
 
-<p>The 10 most frequent <code>PROPN</code> lemmas: <em>Praha, KSČ, ROH, SSSR, ÚJČ, SSM, ČSAV, ČSSR, Československo, Škoda</em></p>
+<p>The 10 most frequent <code class="language-plaintext highlighter-rouge">PROPN</code> lemmas: <em>Praha, KSČ, ROH, SSSR, ÚJČ, SSM, ČSAV, ČSSR, Československo, Škoda</em></p>
 
-<p>The 10 most frequent <code>PROPN</code> types:  <em>KSČ, Praze, ROH, SSSR, ÚJČ, SSM, ČSAV, ČSSR, Praha, Škoda</em></p>
+<p>The 10 most frequent <code class="language-plaintext highlighter-rouge">PROPN</code> types:  <em>KSČ, Praze, ROH, SSSR, ÚJČ, SSM, ČSAV, ČSSR, Praha, Škoda</em></p>
 
 <p>The 10 most frequent ambiguous lemmas: <em>hora</em> (<a href="">NOUN</a> 24, <a href="">PROPN</a> 19), <em>VB</em> (<a href="">PROPN</a> 22, <a href="">NOUN</a> 4), <em>Vyšehrad</em> (<a href="">PROPN</a> 8, <a href="">NOUN</a> 1), <em>KRB</em> (<a href="">PROPN</a> 6, <a href="">NOUN</a> 1), <em>Janský</em> (<a href="">PROPN</a> 5, <a href="">ADJ</a> 3), <em>most</em> (<a href="">NOUN</a> 42, <a href="">PROPN</a> 1), <em>KS</em> (<a href="">PROPN</a> 3, <a href="">NOUN</a> 3), <em>MP</em> (<a href="">PROPN</a> 3, <a href="">NOUN</a> 1), <em>SRPŠ</em> (<a href="">PROPN</a> 3, <a href="">NOUN</a> 1), <em>NVP</em> (<a href="">PROPN</a> 2, <a href="">NOUN</a> 2)</p>
 
@@ -381,7 +381,7 @@ Out of 16 observed tags, the rank of <code>PROPN</code> is: 4 in number of lemma
 
 <h2 id="morphology-1">Morphology</h2>
 
-<p>The form / lemma ratio of <code>PROPN</code> is 1.267254 (the average of all parts of speech is 2.180683).</p>
+<p>The form / lemma ratio of <code class="language-plaintext highlighter-rouge">PROPN</code> is 1.267254 (the average of all parts of speech is 2.180683).</p>
 
 <p>The 1st highest number of forms (6) was observed with the lemma “hora”: <em>Hora, hor, horami, hory, horách, horám</em>.</p>
 
@@ -389,33 +389,33 @@ Out of 16 observed tags, the rank of <code>PROPN</code> is: 4 in number of lemma
 
 <p>The 3rd highest number of forms (5) was observed with the lemma “Jan”: <em>Jan, Jana, Janem, Janovi, Janu</em>.</p>
 
-<p><code>PROPN</code> occurs with 9 features: <a href="">cs-feat/NameType</a> (9676; 100% instances), <a href="">cs-feat/Polarity</a> (9676; 100% instances), <a href="">cs-feat/Gender</a> (9665; 100% instances), <a href="">cs-feat/Number</a> (7746; 80% instances), <a href="">cs-feat/Case</a> (7693; 80% instances), <a href="">cs-feat/Animacy</a> (5351; 55% instances), <a href="">cs-feat/Abbr</a> (1858; 19% instances), <a href="">cs-feat/Foreign</a> (37; 0% instances), <a href="">cs-feat/Style</a> (7; 0% instances)</p>
+<p><code class="language-plaintext highlighter-rouge">PROPN</code> occurs with 9 features: <a href="">cs-feat/NameType</a> (9676; 100% instances), <a href="">cs-feat/Polarity</a> (9676; 100% instances), <a href="">cs-feat/Gender</a> (9665; 100% instances), <a href="">cs-feat/Number</a> (7746; 80% instances), <a href="">cs-feat/Case</a> (7693; 80% instances), <a href="">cs-feat/Animacy</a> (5351; 55% instances), <a href="">cs-feat/Abbr</a> (1858; 19% instances), <a href="">cs-feat/Foreign</a> (37; 0% instances), <a href="">cs-feat/Style</a> (7; 0% instances)</p>
 
-<p><code>PROPN</code> occurs with 39 feature-value pairs: <code>Abbr=Yes</code>, <code>Animacy=Anim</code>, <code>Animacy=Inan</code>, <code>Case=Acc</code>, <code>Case=Dat</code>, <code>Case=Gen</code>, <code>Case=Ins</code>, <code>Case=Loc</code>, <code>Case=Nom</code>, <code>Case=Voc</code>, <code>Foreign=Yes</code>, <code>Gender=Fem</code>, <code>Gender=Masc</code>, <code>Gender=Neut</code>, <code>NameType=Com</code>, <code>NameType=Com,Geo</code>, <code>NameType=Com,Giv</code>, <code>NameType=Com,Pro</code>, <code>NameType=Com,Sur</code>, <code>NameType=Geo</code>, <code>NameType=Geo,Giv</code>, <code>NameType=Geo,Oth</code>, <code>NameType=Geo,Sur</code>, <code>NameType=Giv</code>, <code>NameType=Giv,Oth</code>, <code>NameType=Giv,Pro</code>, <code>NameType=Giv,Sur</code>, <code>NameType=Nat</code>, <code>NameType=Nat,Sur</code>, <code>NameType=Oth</code>, <code>NameType=Pro</code>, <code>NameType=Pro,Sur</code>, <code>NameType=Sur</code>, <code>Number=Plur</code>, <code>Number=Sing</code>, <code>Polarity=Pos</code>, <code>Style=Arch</code>, <code>Style=Coll</code>, <code>Style=Expr</code></p>
+<p><code class="language-plaintext highlighter-rouge">PROPN</code> occurs with 39 feature-value pairs: <code class="language-plaintext highlighter-rouge">Abbr=Yes</code>, <code class="language-plaintext highlighter-rouge">Animacy=Anim</code>, <code class="language-plaintext highlighter-rouge">Animacy=Inan</code>, <code class="language-plaintext highlighter-rouge">Case=Acc</code>, <code class="language-plaintext highlighter-rouge">Case=Dat</code>, <code class="language-plaintext highlighter-rouge">Case=Gen</code>, <code class="language-plaintext highlighter-rouge">Case=Ins</code>, <code class="language-plaintext highlighter-rouge">Case=Loc</code>, <code class="language-plaintext highlighter-rouge">Case=Nom</code>, <code class="language-plaintext highlighter-rouge">Case=Voc</code>, <code class="language-plaintext highlighter-rouge">Foreign=Yes</code>, <code class="language-plaintext highlighter-rouge">Gender=Fem</code>, <code class="language-plaintext highlighter-rouge">Gender=Masc</code>, <code class="language-plaintext highlighter-rouge">Gender=Neut</code>, <code class="language-plaintext highlighter-rouge">NameType=Com</code>, <code class="language-plaintext highlighter-rouge">NameType=Com,Geo</code>, <code class="language-plaintext highlighter-rouge">NameType=Com,Giv</code>, <code class="language-plaintext highlighter-rouge">NameType=Com,Pro</code>, <code class="language-plaintext highlighter-rouge">NameType=Com,Sur</code>, <code class="language-plaintext highlighter-rouge">NameType=Geo</code>, <code class="language-plaintext highlighter-rouge">NameType=Geo,Giv</code>, <code class="language-plaintext highlighter-rouge">NameType=Geo,Oth</code>, <code class="language-plaintext highlighter-rouge">NameType=Geo,Sur</code>, <code class="language-plaintext highlighter-rouge">NameType=Giv</code>, <code class="language-plaintext highlighter-rouge">NameType=Giv,Oth</code>, <code class="language-plaintext highlighter-rouge">NameType=Giv,Pro</code>, <code class="language-plaintext highlighter-rouge">NameType=Giv,Sur</code>, <code class="language-plaintext highlighter-rouge">NameType=Nat</code>, <code class="language-plaintext highlighter-rouge">NameType=Nat,Sur</code>, <code class="language-plaintext highlighter-rouge">NameType=Oth</code>, <code class="language-plaintext highlighter-rouge">NameType=Pro</code>, <code class="language-plaintext highlighter-rouge">NameType=Pro,Sur</code>, <code class="language-plaintext highlighter-rouge">NameType=Sur</code>, <code class="language-plaintext highlighter-rouge">Number=Plur</code>, <code class="language-plaintext highlighter-rouge">Number=Sing</code>, <code class="language-plaintext highlighter-rouge">Polarity=Pos</code>, <code class="language-plaintext highlighter-rouge">Style=Arch</code>, <code class="language-plaintext highlighter-rouge">Style=Coll</code>, <code class="language-plaintext highlighter-rouge">Style=Expr</code></p>
 
-<p><code>PROPN</code> occurs with 239 feature combinations.
-The most frequent feature combination is <code>Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing|Polarity=Pos</code> (1574 tokens).
+<p><code class="language-plaintext highlighter-rouge">PROPN</code> occurs with 239 feature combinations.
+The most frequent feature combination is <code class="language-plaintext highlighter-rouge">Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing|Polarity=Pos</code> (1574 tokens).
 Examples: <em>Fučík, Erben, Horálek, Němec, Lenin, Záveský, Kraus, Huxley, Gottwald, Vávra</em></p>
 
 <h2 id="relations-1">Relations</h2>
 
-<p><code>PROPN</code> nodes are attached to their parents using 19 different relations: <a href="">cs-dep/nmod</a> (4198; 43% instances), <a href="">cs-dep/nsubj</a> (1503; 16% instances), <a href="">cs-dep/conj</a> (1329; 14% instances), <a href="">cs-dep/flat</a> (840; 9% instances), <a href="">cs-dep/obl</a> (757; 8% instances), <a href="">cs-dep/obj</a> (274; 3% instances), <a href="">cs-dep/orphan</a> (195; 2% instances), <a href="">cs-dep/root</a> (185; 2% instances), <a href="">cs-dep/dep</a> (162; 2% instances), <a href="">cs-dep/appos</a> (113; 1% instances), <a href="">cs-dep/iobj</a> (48; 0% instances), <a href="">cs-dep/nsubj:pass</a> (25; 0% instances), <a href="">cs-dep/advcl</a> (15; 0% instances), <a href="">cs-dep/xcomp</a> (12; 0% instances), <a href="">cs-dep/flat:foreign</a> (9; 0% instances), <a href="">cs-dep/vocative</a> (8; 0% instances), <a href="">cs-dep/amod</a> (1; 0% instances), <a href="">cs-dep/cc</a> (1; 0% instances), <a href="">cs-dep/csubj</a> (1; 0% instances)</p>
+<p><code class="language-plaintext highlighter-rouge">PROPN</code> nodes are attached to their parents using 19 different relations: <a href="">cs-dep/nmod</a> (4198; 43% instances), <a href="">cs-dep/nsubj</a> (1503; 16% instances), <a href="">cs-dep/conj</a> (1329; 14% instances), <a href="">cs-dep/flat</a> (840; 9% instances), <a href="">cs-dep/obl</a> (757; 8% instances), <a href="">cs-dep/obj</a> (274; 3% instances), <a href="">cs-dep/orphan</a> (195; 2% instances), <a href="">cs-dep/root</a> (185; 2% instances), <a href="">cs-dep/dep</a> (162; 2% instances), <a href="">cs-dep/appos</a> (113; 1% instances), <a href="">cs-dep/iobj</a> (48; 0% instances), <a href="">cs-dep/nsubj:pass</a> (25; 0% instances), <a href="">cs-dep/advcl</a> (15; 0% instances), <a href="">cs-dep/xcomp</a> (12; 0% instances), <a href="">cs-dep/flat:foreign</a> (9; 0% instances), <a href="">cs-dep/vocative</a> (8; 0% instances), <a href="">cs-dep/amod</a> (1; 0% instances), <a href="">cs-dep/cc</a> (1; 0% instances), <a href="">cs-dep/csubj</a> (1; 0% instances)</p>
 
-<p>Parents of <code>PROPN</code> nodes belong to 12 different parts of speech: <a href="">NOUN</a> (4160; 43% instances), <a href="">PROPN</a> (2604; 27% instances), <a href="">VERB</a> (2184; 23% instances), <a href="">ADJ</a> (395; 4% instances), <a href="">ROOT</a> (185; 2% instances), <a href="">ADV</a> (51; 1% instances), <a href="">SYM</a> (38; 0% instances), <a href="">DET</a> (19; 0% instances), <a href="">PRON</a> (19; 0% instances), <a href="">NUM</a> (17; 0% instances), <a href="">ADP</a> (2; 0% instances), <a href="">CCONJ</a> (2; 0% instances)</p>
+<p>Parents of <code class="language-plaintext highlighter-rouge">PROPN</code> nodes belong to 12 different parts of speech: <a href="">NOUN</a> (4160; 43% instances), <a href="">PROPN</a> (2604; 27% instances), <a href="">VERB</a> (2184; 23% instances), <a href="">ADJ</a> (395; 4% instances), <a href="">ROOT</a> (185; 2% instances), <a href="">ADV</a> (51; 1% instances), <a href="">SYM</a> (38; 0% instances), <a href="">DET</a> (19; 0% instances), <a href="">PRON</a> (19; 0% instances), <a href="">NUM</a> (17; 0% instances), <a href="">ADP</a> (2; 0% instances), <a href="">CCONJ</a> (2; 0% instances)</p>
 
-<p>3713 (38%) <code>PROPN</code> nodes are leaves.</p>
+<p>3713 (38%) <code class="language-plaintext highlighter-rouge">PROPN</code> nodes are leaves.</p>
 
-<p>3645 (38%) <code>PROPN</code> nodes have one child.</p>
+<p>3645 (38%) <code class="language-plaintext highlighter-rouge">PROPN</code> nodes have one child.</p>
 
-<p>1477 (15%) <code>PROPN</code> nodes have two children.</p>
+<p>1477 (15%) <code class="language-plaintext highlighter-rouge">PROPN</code> nodes have two children.</p>
 
-<p>841 (9%) <code>PROPN</code> nodes have three or more children.</p>
+<p>841 (9%) <code class="language-plaintext highlighter-rouge">PROPN</code> nodes have three or more children.</p>
 
-<p>The highest child degree of a <code>PROPN</code> node is 95.</p>
+<p>The highest child degree of a <code class="language-plaintext highlighter-rouge">PROPN</code> node is 95.</p>
 
-<p>Children of <code>PROPN</code> nodes are attached using 24 different relations: <a href="">cs-dep/case</a> (2257; 23% instances), <a href="">cs-dep/nmod</a> (1915; 19% instances), <a href="">cs-dep/punct</a> (1407; 14% instances), <a href="">cs-dep/conj</a> (1391; 14% instances), <a href="">cs-dep/flat</a> (841; 8% instances), <a href="">cs-dep/amod</a> (638; 6% instances), <a href="">cs-dep/cc</a> (577; 6% instances), <a href="">cs-dep/advmod:emph</a> (184; 2% instances), <a href="">cs-dep/appos</a> (179; 2% instances), <a href="">cs-dep/acl</a> (149; 1% instances), <a href="">cs-dep/orphan</a> (149; 1% instances), <a href="">cs-dep/xcomp</a> (63; 1% instances), <a href="">cs-dep/dep</a> (59; 1% instances), <a href="">cs-dep/mark</a> (46; 0% instances), <a href="">cs-dep/nummod</a> (34; 0% instances), <a href="">cs-dep/det</a> (32; 0% instances), <a href="">cs-dep/flat:foreign</a> (29; 0% instances), <a href="">cs-dep/advmod</a> (8; 0% instances), <a href="">cs-dep/cop</a> (8; 0% instances), <a href="">cs-dep/nsubj</a> (7; 0% instances), <a href="">cs-dep/obl</a> (7; 0% instances), <a href="">cs-dep/obj</a> (6; 0% instances), <a href="">cs-dep/parataxis</a> (5; 0% instances), <a href="">cs-dep/nummod:gov</a> (1; 0% instances)</p>
+<p>Children of <code class="language-plaintext highlighter-rouge">PROPN</code> nodes are attached using 24 different relations: <a href="">cs-dep/case</a> (2257; 23% instances), <a href="">cs-dep/nmod</a> (1915; 19% instances), <a href="">cs-dep/punct</a> (1407; 14% instances), <a href="">cs-dep/conj</a> (1391; 14% instances), <a href="">cs-dep/flat</a> (841; 8% instances), <a href="">cs-dep/amod</a> (638; 6% instances), <a href="">cs-dep/cc</a> (577; 6% instances), <a href="">cs-dep/advmod:emph</a> (184; 2% instances), <a href="">cs-dep/appos</a> (179; 2% instances), <a href="">cs-dep/acl</a> (149; 1% instances), <a href="">cs-dep/orphan</a> (149; 1% instances), <a href="">cs-dep/xcomp</a> (63; 1% instances), <a href="">cs-dep/dep</a> (59; 1% instances), <a href="">cs-dep/mark</a> (46; 0% instances), <a href="">cs-dep/nummod</a> (34; 0% instances), <a href="">cs-dep/det</a> (32; 0% instances), <a href="">cs-dep/flat:foreign</a> (29; 0% instances), <a href="">cs-dep/advmod</a> (8; 0% instances), <a href="">cs-dep/cop</a> (8; 0% instances), <a href="">cs-dep/nsubj</a> (7; 0% instances), <a href="">cs-dep/obl</a> (7; 0% instances), <a href="">cs-dep/obj</a> (6; 0% instances), <a href="">cs-dep/parataxis</a> (5; 0% instances), <a href="">cs-dep/nummod:gov</a> (1; 0% instances)</p>
 
-<p>Children of <code>PROPN</code> nodes belong to 15 different parts of speech: <a href="">PROPN</a> (2604; 26% instances), <a href="">ADP</a> (2242; 22% instances), <a href="">PUNCT</a> (1408; 14% instances), <a href="">NOUN</a> (1348; 13% instances), <a href="">ADJ</a> (695; 7% instances), <a href="">CCONJ</a> (596; 6% instances), <a href="">SYM</a> (575; 6% instances), <a href="">ADV</a> (162; 2% instances), <a href="">VERB</a> (158; 2% instances), <a href="">NUM</a> (55; 1% instances), <a href="">DET</a> (50; 1% instances), <a href="">SCONJ</a> (46; 0% instances), <a href="">PART</a> (40; 0% instances), <a href="">AUX</a> (8; 0% instances), <a href="">PRON</a> (5; 0% instances)</p>
+<p>Children of <code class="language-plaintext highlighter-rouge">PROPN</code> nodes belong to 15 different parts of speech: <a href="">PROPN</a> (2604; 26% instances), <a href="">ADP</a> (2242; 22% instances), <a href="">PUNCT</a> (1408; 14% instances), <a href="">NOUN</a> (1348; 13% instances), <a href="">ADJ</a> (695; 7% instances), <a href="">CCONJ</a> (596; 6% instances), <a href="">SYM</a> (575; 6% instances), <a href="">ADV</a> (162; 2% instances), <a href="">VERB</a> (158; 2% instances), <a href="">NUM</a> (55; 1% instances), <a href="">DET</a> (50; 1% instances), <a href="">SCONJ</a> (46; 0% instances), <a href="">PART</a> (40; 0% instances), <a href="">AUX</a> (8; 0% instances), <a href="">PRON</a> (5; 0% instances)</p>
 
 
 

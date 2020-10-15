@@ -86,7 +86,7 @@ value of <a href="">PronType</a>.</p>
 
 <p>From the syntactic point of view, some numtypes behave like adjectives
 and some behave like adverbs. We tag them <a href="">cs-pos/ADJ</a> and
-<a href="">cs-pos/ADV</a> respectively. Thus the <code>NumType</code> feature applies to
+<a href="">cs-pos/ADV</a> respectively. Thus the <code class="language-plaintext highlighter-rouge">NumType</code> feature applies to
 several different parts of speech:</p>
 
 <ul>
@@ -96,7 +96,7 @@ several different parts of speech:</p>
   <li><a href="">cs-pos/ADV</a>: adverbial (e.g. ordinal and multiplicative) numerals</li>
 </ul>
 
-<h3 id="a-namecardcarda-cardinal-number-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><a name="Card"><code>Card</code></a>: cardinal number or corresponding interrogative / relative / indefinite / demonstrative word</h3>
+<h3 id="card-cardinal-number-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><a name="Card"><code class="language-plaintext highlighter-rouge">Card</code></a>: cardinal number or corresponding interrogative / relative / indefinite / demonstrative word</h3>
 
 <h4 id="examples">Examples</h4>
 
@@ -110,7 +110,7 @@ five, ten; they are morphologically, syntactically and stylistically
 distinct from the default forms <em>čtyři, pět, deset</em>)</li>
 </ul>
 
-<h3 id="a-nameordorda-ordinal-number-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><a name="Ord"><code>Ord</code></a>: ordinal number or corresponding interrogative / relative / indefinite / demonstrative word</h3>
+<h3 id="ord-ordinal-number-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><a name="Ord"><code class="language-plaintext highlighter-rouge">Ord</code></a>: ordinal number or corresponding interrogative / relative / indefinite / demonstrative word</h3>
 
 <p>This is a subtype of adjective or adverb.</p>
 
@@ -132,7 +132,7 @@ distinct from the default forms <em>čtyři, pět, deset</em>)</li>
   <li><em>potolikáté </em> “it has been so many times”</li>
 </ul>
 
-<h3 id="a-namemultmulta-multiplicative-numeral-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><a name="Mult"><code>Mult</code></a>: multiplicative numeral or corresponding interrogative / relative / indefinite / demonstrative word</h3>
+<h3 id="mult-multiplicative-numeral-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><a name="Mult"><code class="language-plaintext highlighter-rouge">Mult</code></a>: multiplicative numeral or corresponding interrogative / relative / indefinite / demonstrative word</h3>
 
 <p>This is subtype of adjective or adverb.</p>
 
@@ -147,7 +147,7 @@ morphologically and syntactically adjectives)</li>
   <li><em>tolikrát </em> “so many times”</li>
 </ul>
 
-<h3 id="a-namefracfraca-fraction"><a name="Frac"><code>Frac</code></a>: fraction</h3>
+<h3 id="frac-fraction"><a name="Frac"><code class="language-plaintext highlighter-rouge">Frac</code></a>: fraction</h3>
 
 <p>This is a subtype of cardinal numbers.
 It may denote a fraction or just the denominator of the
@@ -159,7 +159,7 @@ fraction.</p>
   <li><em>půl / polovina </em> “half”; <em>třetina </em> “one third”; <em>čtvrt / čtvrtina </em> “quarter”</li>
 </ul>
 
-<h3 id="a-namesetssetsa-number-of-sets-of-things-collective-numeral"><a name="Sets"><code>Sets</code></a>: number of sets of things; collective numeral</h3>
+<h3 id="sets-number-of-sets-of-things-collective-numeral"><a name="Sets"><code class="language-plaintext highlighter-rouge">Sets</code></a>: number of sets of things; collective numeral</h3>
 
 <p>Morphologically distinct class of numerals used to count sets of
 things, or nouns that are pluralia tantum.</p>
@@ -181,84 +181,84 @@ as opposed to normal cardinal numbers: <em>dvě / tři boty </em> “two / thre
 
 <hr />
 
-<h2 id="treebank-statistics-udczech">Treebank Statistics (UD_Czech)</h2>
+<h2 id="treebank-statistics-ud_czech">Treebank Statistics (UD_Czech)</h2>
 
 <p>This feature is universal.
-It occurs with 5 different values: <code>Card</code>, <code>Frac</code>, <code>Mult</code>, <code>Ord</code>, <code>Sets</code>.
-Some words have combined values of the feature; 1 combinations have been observed: <code>Mult|Sets</code>.</p>
+It occurs with 5 different values: <code class="language-plaintext highlighter-rouge">Card</code>, <code class="language-plaintext highlighter-rouge">Frac</code>, <code class="language-plaintext highlighter-rouge">Mult</code>, <code class="language-plaintext highlighter-rouge">Ord</code>, <code class="language-plaintext highlighter-rouge">Sets</code>.
+Some words have combined values of the feature; 1 combinations have been observed: <code class="language-plaintext highlighter-rouge">Mult|Sets</code>.</p>
 
-<p>43673 tokens (3%) have a non-empty value of <code>NumType</code>.
-3812 types (3%) occur at least once with a non-empty value of <code>NumType</code>.
-3381 lemmas (6%) occur at least once with a non-empty value of <code>NumType</code>.
+<p>43673 tokens (3%) have a non-empty value of <code class="language-plaintext highlighter-rouge">NumType</code>.
+3812 types (3%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">NumType</code>.
+3381 lemmas (6%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">NumType</code>.
 The feature is used with 4 part-of-speech tags: <a href="">cs-pos/NUM</a> (36842; 3% instances), <a href="">cs-pos/ADJ</a> (4420; 0% instances), <a href="">cs-pos/DET</a> (1626; 0% instances), <a href="">cs-pos/ADV</a> (785; 0% instances).</p>
 
-<h3 id="num"><code>NUM</code></h3>
+<h3 id="num"><code class="language-plaintext highlighter-rouge">NUM</code></h3>
 
-<p>36842 <a href="">cs-pos/NUM</a> tokens (100% of all <code>NUM</code> tokens) have a non-empty value of <code>NumType</code>.</p>
+<p>36842 <a href="">cs-pos/NUM</a> tokens (100% of all <code class="language-plaintext highlighter-rouge">NUM</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">NumType</code>.</p>
 
-<p>The most frequent other feature values with which <code>NUM</code> and <code>NumType</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (32665; 89%), <tt><a href="NumValue.html">NumValue</a>=EMPTY</tt> (29763; 81%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (26598; 72%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (26574; 72%), <tt><a href="NumForm.html">NumForm</a>=Digit</tt> (26226; 71%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">NUM</code> and <code class="language-plaintext highlighter-rouge">NumType</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (32665; 89%), <tt><a href="NumValue.html">NumValue</a>=EMPTY</tt> (29763; 81%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (26598; 72%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (26574; 72%), <tt><a href="NumForm.html">NumForm</a>=Digit</tt> (26226; 71%).</p>
 
-<p><code>NUM</code> tokens may have the following values of <code>NumType</code>:</p>
-
-<ul>
-  <li><code>Card</code> (36547; 99% of non-empty <code>NumType</code>): <em>1, 2, 3, dva, tři, 4, jeden, 6, dvě, 5</em></li>
-  <li><code>Frac</code> (295; 1% of non-empty <code>NumType</code>): <em>třetiny, třetinu, třetina, čtvrtinu, třetině, čtvrtina, desetinu, čtvrtiny, pětinu, pětina</em></li>
-</ul>
-
-<p><code>NumType</code> seems to be <strong>lexical feature</strong> of <code>NUM</code>. 100% lemmas (3253) occur only with one value of <code>NumType</code>.</p>
-
-<h3 id="adj"><code>ADJ</code></h3>
-
-<p>4420 <a href="">cs-pos/ADJ</a> tokens (3% of all <code>ADJ</code> tokens) have a non-empty value of <code>NumType</code>.</p>
-
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>NumType</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (4420; 100%), <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (4420; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (3733; 84%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (2856; 65%).</p>
-
-<p><code>ADJ</code> tokens may have the following values of <code>NumType</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">NUM</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">NumType</code>:</p>
 
 <ul>
-  <li><code>Mult,Sets</code> (63; 1% of non-empty <code>NumType</code>): <em>dvojí, obojí, dvojím, dvojího, dvoje, obojím, trojí, oboje, dvojími, obé</em></li>
-  <li><code>Ord</code> (4330; 98% of non-empty <code>NumType</code>): <em>první, druhé, prvním, třetí, druhý, prvních, druhou, prvního, druhá, druhém</em></li>
-  <li><code>Sets</code> (27; 1% of non-empty <code>NumType</code>): <em>jedny, jedni, jedněch, jedněm, jedněmi</em></li>
-  <li><code>EMPTY</code> (164378): <em>další, české, nové, státní, poslední, dalších, vlastní, možné, jiné, každý</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Card</code> (36547; 99% of non-empty <code class="language-plaintext highlighter-rouge">NumType</code>): <em>1, 2, 3, dva, tři, 4, jeden, 6, dvě, 5</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Frac</code> (295; 1% of non-empty <code class="language-plaintext highlighter-rouge">NumType</code>): <em>třetiny, třetinu, třetina, čtvrtinu, třetině, čtvrtina, desetinu, čtvrtiny, pětinu, pětina</em></li>
 </ul>
 
-<p><code>NumType</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (62) occur only with one value of <code>NumType</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">NumType</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">NUM</code>. 100% lemmas (3253) occur only with one value of <code class="language-plaintext highlighter-rouge">NumType</code>.</p>
 
-<h3 id="det"><code>DET</code></h3>
+<h3 id="adj"><code class="language-plaintext highlighter-rouge">ADJ</code></h3>
 
-<p>1626 <a href="">cs-pos/DET</a> tokens (3% of all <code>DET</code> tokens) have a non-empty value of <code>NumType</code>.</p>
+<p>4420 <a href="">cs-pos/ADJ</a> tokens (3% of all <code class="language-plaintext highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">NumType</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>NumType</code> co-occurred: <tt><a href="Person.html">Person</a>=EMPTY</tt> (1626; 100%), <tt><a href="Number[psor].html">Number[psor]</a>=EMPTY</tt> (1626; 100%), <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (1626; 100%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (1622; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (1610; 99%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (1610; 99%), <tt><a href="PronType.html">PronType</a>=Ind</tt> (1365; 84%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">ADJ</code> and <code class="language-plaintext highlighter-rouge">NumType</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (4420; 100%), <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (4420; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (3733; 84%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (2856; 65%).</p>
 
-<p><code>DET</code> tokens may have the following values of <code>NumType</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">ADJ</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">NumType</code>:</p>
 
 <ul>
-  <li><code>Card</code> (1624; 100% of non-empty <code>NumType</code>): <em>několik, několika, mnoho, mnoha, kolik, tolik, málo, moc, mála, tolika</em></li>
-  <li><code>Ord</code> (2; 0% of non-empty <code>NumType</code>): <em>několikáté, několikátý</em></li>
-  <li><code>EMPTY</code> (47144): <em>to, které, který, jeho, která, jejich, své, tím, kteří, tom</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Mult,Sets</code> (63; 1% of non-empty <code class="language-plaintext highlighter-rouge">NumType</code>): <em>dvojí, obojí, dvojím, dvojího, dvoje, obojím, trojí, oboje, dvojími, obé</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Ord</code> (4330; 98% of non-empty <code class="language-plaintext highlighter-rouge">NumType</code>): <em>první, druhé, prvním, třetí, druhý, prvních, druhou, prvního, druhá, druhém</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Sets</code> (27; 1% of non-empty <code class="language-plaintext highlighter-rouge">NumType</code>): <em>jedny, jedni, jedněch, jedněm, jedněmi</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (164378): <em>další, české, nové, státní, poslední, dalších, vlastní, možné, jiné, každý</em></li>
 </ul>
 
-<p><code>NumType</code> seems to be <strong>lexical feature</strong> of <code>DET</code>. 100% lemmas (16) occur only with one value of <code>NumType</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">NumType</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">ADJ</code>. 100% lemmas (62) occur only with one value of <code class="language-plaintext highlighter-rouge">NumType</code>.</p>
 
-<h3 id="adv"><code>ADV</code></h3>
+<h3 id="det"><code class="language-plaintext highlighter-rouge">DET</code></h3>
 
-<p>785 <a href="">cs-pos/ADV</a> tokens (1% of all <code>ADV</code> tokens) have a non-empty value of <code>NumType</code>.</p>
+<p>1626 <a href="">cs-pos/DET</a> tokens (3% of all <code class="language-plaintext highlighter-rouge">DET</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">NumType</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADV</code> and <code>NumType</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (785; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (785; 100%), <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (673; 86%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">DET</code> and <code class="language-plaintext highlighter-rouge">NumType</code> co-occurred: <tt><a href="Person.html">Person</a>=EMPTY</tt> (1626; 100%), <tt><a href="Number[psor].html">Number[psor]</a>=EMPTY</tt> (1626; 100%), <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (1626; 100%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (1622; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (1610; 99%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (1610; 99%), <tt><a href="PronType.html">PronType</a>=Ind</tt> (1365; 84%).</p>
 
-<p><code>ADV</code> tokens may have the following values of <code>NumType</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">DET</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">NumType</code>:</p>
 
 <ul>
-  <li><code>Mult</code> (496; 63% of non-empty <code>NumType</code>): <em>dvakrát, jednou, třikrát, několikrát, desetkrát, pětkrát, čtyřikrát, nejednou, šestkrát, mnohokrát</em></li>
-  <li><code>Ord</code> (289; 37% of non-empty <code>NumType</code>): <em>poprvé, podruhé, potřetí, počtvrté, podvanácté, pošesté, POPÁTÉ, Popáté, Pošestnácté, podesáté</em></li>
-  <li><code>EMPTY</code> (69717): <em>tak, už, také, jak, včera, ještě, již, dnes, více, tedy</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Card</code> (1624; 100% of non-empty <code class="language-plaintext highlighter-rouge">NumType</code>): <em>několik, několika, mnoho, mnoha, kolik, tolik, málo, moc, mála, tolika</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Ord</code> (2; 0% of non-empty <code class="language-plaintext highlighter-rouge">NumType</code>): <em>několikáté, několikátý</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (47144): <em>to, které, který, jeho, která, jejich, své, tím, kteří, tom</em></li>
 </ul>
 
-<p><code>NumType</code> seems to be <strong>lexical feature</strong> of <code>ADV</code>. 100% lemmas (52) occur only with one value of <code>NumType</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">NumType</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">DET</code>. 100% lemmas (16) occur only with one value of <code class="language-plaintext highlighter-rouge">NumType</code>.</p>
 
-<h2 id="relations-with-agreement-in-numtype">Relations with Agreement in <code>NumType</code></h2>
+<h3 id="adv"><code class="language-plaintext highlighter-rouge">ADV</code></h3>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>NumType</code>:
+<p>785 <a href="">cs-pos/ADV</a> tokens (1% of all <code class="language-plaintext highlighter-rouge">ADV</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">NumType</code>.</p>
+
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">ADV</code> and <code class="language-plaintext highlighter-rouge">NumType</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (785; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (785; 100%), <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (673; 86%).</p>
+
+<p><code class="language-plaintext highlighter-rouge">ADV</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">NumType</code>:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Mult</code> (496; 63% of non-empty <code class="language-plaintext highlighter-rouge">NumType</code>): <em>dvakrát, jednou, třikrát, několikrát, desetkrát, pětkrát, čtyřikrát, nejednou, šestkrát, mnohokrát</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Ord</code> (289; 37% of non-empty <code class="language-plaintext highlighter-rouge">NumType</code>): <em>poprvé, podruhé, potřetí, počtvrté, podvanácté, pošesté, POPÁTÉ, Popáté, Pošestnácté, podesáté</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (69717): <em>tak, už, také, jak, včera, ještě, již, dnes, více, tedy</em></li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">NumType</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">ADV</code>. 100% lemmas (52) occur only with one value of <code class="language-plaintext highlighter-rouge">NumType</code>.</p>
+
+<h2 id="relations-with-agreement-in-numtype">Relations with Agreement in <code class="language-plaintext highlighter-rouge">NumType</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">NumType</code>:
 <tt>NUM –[<a href="../dep/conj.html">conj</a>]–&gt; NUM</tt> (2906; 100%),
 <tt>NUM –[<a href="../dep/compound.html">compound</a>]–&gt; NUM</tt> (2589; 100%),
 <tt>NUM –[<a href="../dep/orphan.html">orphan</a>]–&gt; NUM</tt> (75; 100%),
@@ -272,82 +272,82 @@ The feature is used with 4 part-of-speech tags: <a href="">cs-pos/NUM</a> (36842
 
 <hr />
 
-<h2 id="treebank-statistics-udczech-cac">Treebank Statistics (UD_Czech-CAC)</h2>
+<h2 id="treebank-statistics-ud_czech-cac">Treebank Statistics (UD_Czech-CAC)</h2>
 
 <p>This feature is universal.
-It occurs with 5 different values: <code>Card</code>, <code>Frac</code>, <code>Mult</code>, <code>Ord</code>, <code>Sets</code>.
-Some words have combined values of the feature; 1 combinations have been observed: <code>Mult|Sets</code>.</p>
+It occurs with 5 different values: <code class="language-plaintext highlighter-rouge">Card</code>, <code class="language-plaintext highlighter-rouge">Frac</code>, <code class="language-plaintext highlighter-rouge">Mult</code>, <code class="language-plaintext highlighter-rouge">Ord</code>, <code class="language-plaintext highlighter-rouge">Sets</code>.
+Some words have combined values of the feature; 1 combinations have been observed: <code class="language-plaintext highlighter-rouge">Mult|Sets</code>.</p>
 
-<p>8863 tokens (2%) have a non-empty value of <code>NumType</code>.
-342 types (1%) occur at least once with a non-empty value of <code>NumType</code>.
-138 lemmas (0%) occur at least once with a non-empty value of <code>NumType</code>.
+<p>8863 tokens (2%) have a non-empty value of <code class="language-plaintext highlighter-rouge">NumType</code>.
+342 types (1%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">NumType</code>.
+138 lemmas (0%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">NumType</code>.
 The feature is used with 4 part-of-speech tags: <a href="">cs-pos/NUM</a> (7204; 1% instances), <a href="">cs-pos/ADJ</a> (852; 0% instances), <a href="">cs-pos/DET</a> (642; 0% instances), <a href="">cs-pos/ADV</a> (165; 0% instances).</p>
 
-<h3 id="num-1"><code>NUM</code></h3>
+<h3 id="num-1"><code class="language-plaintext highlighter-rouge">NUM</code></h3>
 
-<p>7204 <a href="">cs-pos/NUM</a> tokens (100% of all <code>NUM</code> tokens) have a non-empty value of <code>NumType</code>.</p>
+<p>7204 <a href="">cs-pos/NUM</a> tokens (100% of all <code class="language-plaintext highlighter-rouge">NUM</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">NumType</code>.</p>
 
-<p>The most frequent other feature values with which <code>NUM</code> and <code>NumType</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (6031; 84%), <tt><a href="NumValue.html">NumValue</a>=EMPTY</tt> (5274; 73%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (4784; 66%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (4784; 66%), <tt><a href="NumForm.html">NumForm</a>=Digit</tt> (4784; 66%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">NUM</code> and <code class="language-plaintext highlighter-rouge">NumType</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (6031; 84%), <tt><a href="NumValue.html">NumValue</a>=EMPTY</tt> (5274; 73%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (4784; 66%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (4784; 66%), <tt><a href="NumForm.html">NumForm</a>=Digit</tt> (4784; 66%).</p>
 
-<p><code>NUM</code> tokens may have the following values of <code>NumType</code>:</p>
-
-<ul>
-  <li><code>Card</code> (7149; 99% of non-empty <code>NumType</code>): <em>#, dvou, jeden, dvě, tři, dva, obou, jednoho, jedné, jedním</em></li>
-  <li><code>Frac</code> (55; 1% of non-empty <code>NumType</code>): <em>třetina, třetinu, třetiny, čtvrtiny, dvanáctinu, třetinou, třetině, desetin, desetinu, dvanáctina</em></li>
-</ul>
-
-<p><code>NumType</code> seems to be <strong>lexical feature</strong> of <code>NUM</code>. 100% lemmas (59) occur only with one value of <code>NumType</code>.</p>
-
-<h3 id="adj-1"><code>ADJ</code></h3>
-
-<p>852 <a href="">cs-pos/ADJ</a> tokens (1% of all <code>ADJ</code> tokens) have a non-empty value of <code>NumType</code>.</p>
-
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>NumType</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (852; 100%), <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (852; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (600; 70%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (558; 65%).</p>
-
-<p><code>ADJ</code> tokens may have the following values of <code>NumType</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">NUM</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">NumType</code>:</p>
 
 <ul>
-  <li><code>Mult,Sets</code> (33; 4% of non-empty <code>NumType</code>): <em>dvojí, dvojím, obojí, trojí, dvojího, trojím, dvojímu, oboje, obojího, obojím</em></li>
-  <li><code>Ord</code> (809; 95% of non-empty <code>NumType</code>): <em>první, prvním, třetí, prvních, prvního, šedesátých, třetího, třicátých, dvacátých, páté</em></li>
-  <li><code>Sets</code> (10; 1% of non-empty <code>NumType</code>): <em>jedněch, jedni, jedny</em></li>
-  <li><code>EMPTY</code> (72326): <em>další, pracovní, jednotlivých, základní, nové, možno, socialistické, různých, dalších, každý</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Card</code> (7149; 99% of non-empty <code class="language-plaintext highlighter-rouge">NumType</code>): <em>#, dvou, jeden, dvě, tři, dva, obou, jednoho, jedné, jedním</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Frac</code> (55; 1% of non-empty <code class="language-plaintext highlighter-rouge">NumType</code>): <em>třetina, třetinu, třetiny, čtvrtiny, dvanáctinu, třetinou, třetině, desetin, desetinu, dvanáctina</em></li>
 </ul>
 
-<p><code>NumType</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (39) occur only with one value of <code>NumType</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">NumType</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">NUM</code>. 100% lemmas (59) occur only with one value of <code class="language-plaintext highlighter-rouge">NumType</code>.</p>
 
-<h3 id="det-1"><code>DET</code></h3>
+<h3 id="adj-1"><code class="language-plaintext highlighter-rouge">ADJ</code></h3>
 
-<p>642 <a href="">cs-pos/DET</a> tokens (3% of all <code>DET</code> tokens) have a non-empty value of <code>NumType</code>.</p>
+<p>852 <a href="">cs-pos/ADJ</a> tokens (1% of all <code class="language-plaintext highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">NumType</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>NumType</code> co-occurred: <tt><a href="Person.html">Person</a>=EMPTY</tt> (642; 100%), <tt><a href="Number[psor].html">Number[psor]</a>=EMPTY</tt> (642; 100%), <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (642; 100%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (640; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (628; 98%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (628; 98%), <tt><a href="PronType.html">PronType</a>=Ind</tt> (552; 86%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">ADJ</code> and <code class="language-plaintext highlighter-rouge">NumType</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (852; 100%), <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (852; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (600; 70%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (558; 65%).</p>
 
-<p><code>DET</code> tokens may have the following values of <code>NumType</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">ADJ</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">NumType</code>:</p>
 
 <ul>
-  <li><code>Card</code> (639; 100% of non-empty <code>NumType</code>): <em>několik, mnoho, několika, mnoha, kolik, tolik, málo, mála, nejeden, nejednom</em></li>
-  <li><code>Ord</code> (3; 0% of non-empty <code>NumType</code>): <em>Kolikátý, kolikátá, kolikátém</em></li>
-  <li><code>EMPTY</code> (18399): <em>to, které, jejich, jeho, který, která, tím, této, své, těchto</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Mult,Sets</code> (33; 4% of non-empty <code class="language-plaintext highlighter-rouge">NumType</code>): <em>dvojí, dvojím, obojí, trojí, dvojího, trojím, dvojímu, oboje, obojího, obojím</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Ord</code> (809; 95% of non-empty <code class="language-plaintext highlighter-rouge">NumType</code>): <em>první, prvním, třetí, prvních, prvního, šedesátých, třetího, třicátých, dvacátých, páté</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Sets</code> (10; 1% of non-empty <code class="language-plaintext highlighter-rouge">NumType</code>): <em>jedněch, jedni, jedny</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (72326): <em>další, pracovní, jednotlivých, základní, nové, možno, socialistické, různých, dalších, každý</em></li>
 </ul>
 
-<h3 id="adv-1"><code>ADV</code></h3>
+<p><code class="language-plaintext highlighter-rouge">NumType</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">ADJ</code>. 100% lemmas (39) occur only with one value of <code class="language-plaintext highlighter-rouge">NumType</code>.</p>
 
-<p>165 <a href="">cs-pos/ADV</a> tokens (1% of all <code>ADV</code> tokens) have a non-empty value of <code>NumType</code>.</p>
+<h3 id="det-1"><code class="language-plaintext highlighter-rouge">DET</code></h3>
 
-<p>The most frequent other feature values with which <code>ADV</code> and <code>NumType</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (165; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (165; 100%), <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (122; 74%).</p>
+<p>642 <a href="">cs-pos/DET</a> tokens (3% of all <code class="language-plaintext highlighter-rouge">DET</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">NumType</code>.</p>
 
-<p><code>ADV</code> tokens may have the following values of <code>NumType</code>:</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">DET</code> and <code class="language-plaintext highlighter-rouge">NumType</code> co-occurred: <tt><a href="Person.html">Person</a>=EMPTY</tt> (642; 100%), <tt><a href="Number[psor].html">Number[psor]</a>=EMPTY</tt> (642; 100%), <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (642; 100%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (640; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (628; 98%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (628; 98%), <tt><a href="PronType.html">PronType</a>=Ind</tt> (552; 86%).</p>
+
+<p><code class="language-plaintext highlighter-rouge">DET</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">NumType</code>:</p>
 
 <ul>
-  <li><code>Mult</code> (116; 70% of non-empty <code>NumType</code>): <em>dvakrát, nejednou, několikrát, třikrát, mnohokrát, kolikrát, desetkrát, stokrát, čtyřikrát, dvanáctkrát</em></li>
-  <li><code>Ord</code> (49; 30% of non-empty <code>NumType</code>): <em>poprvé, podruhé, potřetí, potřinácté</em></li>
-  <li><code>EMPTY</code> (26788): <em>tak, také, jak, již, už, ještě, kde, tedy, pak, velmi</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Card</code> (639; 100% of non-empty <code class="language-plaintext highlighter-rouge">NumType</code>): <em>několik, mnoho, několika, mnoha, kolik, tolik, málo, mála, nejeden, nejednom</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Ord</code> (3; 0% of non-empty <code class="language-plaintext highlighter-rouge">NumType</code>): <em>Kolikátý, kolikátá, kolikátém</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (18399): <em>to, které, jejich, jeho, který, která, tím, této, své, těchto</em></li>
 </ul>
 
-<p><code>NumType</code> seems to be <strong>lexical feature</strong> of <code>ADV</code>. 100% lemmas (33) occur only with one value of <code>NumType</code>.</p>
+<h3 id="adv-1"><code class="language-plaintext highlighter-rouge">ADV</code></h3>
 
-<h2 id="relations-with-agreement-in-numtype-1">Relations with Agreement in <code>NumType</code></h2>
+<p>165 <a href="">cs-pos/ADV</a> tokens (1% of all <code class="language-plaintext highlighter-rouge">ADV</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">NumType</code>.</p>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>NumType</code>:
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">ADV</code> and <code class="language-plaintext highlighter-rouge">NumType</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (165; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (165; 100%), <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (122; 74%).</p>
+
+<p><code class="language-plaintext highlighter-rouge">ADV</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">NumType</code>:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Mult</code> (116; 70% of non-empty <code class="language-plaintext highlighter-rouge">NumType</code>): <em>dvakrát, nejednou, několikrát, třikrát, mnohokrát, kolikrát, desetkrát, stokrát, čtyřikrát, dvanáctkrát</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Ord</code> (49; 30% of non-empty <code class="language-plaintext highlighter-rouge">NumType</code>): <em>poprvé, podruhé, potřetí, potřinácté</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (26788): <em>tak, také, jak, již, už, ještě, kde, tedy, pak, velmi</em></li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">NumType</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">ADV</code>. 100% lemmas (33) occur only with one value of <code class="language-plaintext highlighter-rouge">NumType</code>.</p>
+
+<h2 id="relations-with-agreement-in-numtype-1">Relations with Agreement in <code class="language-plaintext highlighter-rouge">NumType</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">NumType</code>:
 <tt>NUM –[<a href="../dep/conj.html">conj</a>]–&gt; NUM</tt> (310; 100%),
 <tt>NUM –[<a href="../dep/compound.html">compound</a>]–&gt; NUM</tt> (42; 100%),
 <tt>NUM –[<a href="../dep/orphan.html">orphan</a>]–&gt; NUM</tt> (16; 100%),
@@ -357,73 +357,73 @@ The feature is used with 4 part-of-speech tags: <a href="">cs-pos/NUM</a> (7204;
 
 <hr />
 
-<h2 id="treebank-statistics-udczech-cltt">Treebank Statistics (UD_Czech-CLTT)</h2>
+<h2 id="treebank-statistics-ud_czech-cltt">Treebank Statistics (UD_Czech-CLTT)</h2>
 
 <p>This feature is universal.
-It occurs with 3 different values: <code>Card</code>, <code>Mult</code>, <code>Ord</code>.</p>
+It occurs with 3 different values: <code class="language-plaintext highlighter-rouge">Card</code>, <code class="language-plaintext highlighter-rouge">Mult</code>, <code class="language-plaintext highlighter-rouge">Ord</code>.</p>
 
-<p>355 tokens (1%) have a non-empty value of <code>NumType</code>.
-99 types (3%) occur at least once with a non-empty value of <code>NumType</code>.
-85 lemmas (4%) occur at least once with a non-empty value of <code>NumType</code>.
+<p>355 tokens (1%) have a non-empty value of <code class="language-plaintext highlighter-rouge">NumType</code>.
+99 types (3%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">NumType</code>.
+85 lemmas (4%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">NumType</code>.
 The feature is used with 4 part-of-speech tags: <a href="">cs-pos/NUM</a> (310; 1% instances), <a href="">cs-pos/ADJ</a> (31; 0% instances), <a href="">cs-pos/ADV</a> (13; 0% instances), <a href="">cs-pos/PRON</a> (1; 0% instances).</p>
 
-<h3 id="num-2"><code>NUM</code></h3>
+<h3 id="num-2"><code class="language-plaintext highlighter-rouge">NUM</code></h3>
 
-<p>310 <a href="">cs-pos/NUM</a> tokens (100% of all <code>NUM</code> tokens) have a non-empty value of <code>NumType</code>.</p>
+<p>310 <a href="">cs-pos/NUM</a> tokens (100% of all <code class="language-plaintext highlighter-rouge">NUM</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">NumType</code>.</p>
 
-<p>The most frequent other feature values with which <code>NUM</code> and <code>NumType</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (278; 90%), <tt><a href="NumValue.html">NumValue</a>=EMPTY</tt> (272; 88%), <tt><a href="NumForm.html">NumForm</a>=Roman</tt> (264; 85%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (264; 85%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (264; 85%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">NUM</code> and <code class="language-plaintext highlighter-rouge">NumType</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (278; 90%), <tt><a href="NumValue.html">NumValue</a>=EMPTY</tt> (272; 88%), <tt><a href="NumForm.html">NumForm</a>=Roman</tt> (264; 85%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (264; 85%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (264; 85%).</p>
 
-<p><code>NUM</code> tokens may have the following values of <code>NumType</code>:</p>
-
-<ul>
-  <li><code>Card</code> (310; 100% of non-empty <code>NumType</code>): <em>1, 3, 2, jeden, 4, 5, 41, 2004, 2008, 31</em></li>
-</ul>
-
-<p><code>NumType</code> seems to be <strong>lexical feature</strong> of <code>NUM</code>. 100% lemmas (76) occur only with one value of <code>NumType</code>.</p>
-
-<h3 id="adj-2"><code>ADJ</code></h3>
-
-<p>31 <a href="">cs-pos/ADJ</a> tokens (1% of all <code>ADJ</code> tokens) have a non-empty value of <code>NumType</code>.</p>
-
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>NumType</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (31; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (31; 100%), <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (31; 100%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (16; 52%).</p>
-
-<p><code>ADJ</code> tokens may have the following values of <code>NumType</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">NUM</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">NumType</code>:</p>
 
 <ul>
-  <li><code>Ord</code> (31; 100% of non-empty <code>NumType</code>): <em>prvním, prvnímu, prvního, první, TŘETÍ, PÁTÁ, druhé, páté, ČTVRTÁ, ŠESTÁ</em></li>
-  <li><code>EMPTY</code> (4624): <em>účetní, účetních, účetního, konsolidované, finanční, účetním, konsolidující, povinny, obchodního, ostatní</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Card</code> (310; 100% of non-empty <code class="language-plaintext highlighter-rouge">NumType</code>): <em>1, 3, 2, jeden, 4, 5, 41, 2004, 2008, 31</em></li>
 </ul>
 
-<h3 id="adv-2"><code>ADV</code></h3>
+<p><code class="language-plaintext highlighter-rouge">NumType</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">NUM</code>. 100% lemmas (76) occur only with one value of <code class="language-plaintext highlighter-rouge">NumType</code>.</p>
 
-<p>13 <a href="">cs-pos/ADV</a> tokens (2% of all <code>ADV</code> tokens) have a non-empty value of <code>NumType</code>.</p>
+<h3 id="adj-2"><code class="language-plaintext highlighter-rouge">ADJ</code></h3>
 
-<p>The most frequent other feature values with which <code>ADV</code> and <code>NumType</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (13; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (13; 100%).</p>
+<p>31 <a href="">cs-pos/ADJ</a> tokens (1% of all <code class="language-plaintext highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">NumType</code>.</p>
 
-<p><code>ADV</code> tokens may have the following values of <code>NumType</code>:</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">ADJ</code> and <code class="language-plaintext highlighter-rouge">NumType</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (31; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (31; 100%), <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (31; 100%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (16; 52%).</p>
+
+<p><code class="language-plaintext highlighter-rouge">ADJ</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">NumType</code>:</p>
 
 <ul>
-  <li><code>Mult</code> (2; 15% of non-empty <code>NumType</code>): <em>jednou</em></li>
-  <li><code>Ord</code> (11; 85% of non-empty <code>NumType</code>): <em>poprvé</em></li>
-  <li><code>EMPTY</code> (554): <em>zejména, dále, popřípadě, například, pouze, jinak, též, kdy, tak, později</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Ord</code> (31; 100% of non-empty <code class="language-plaintext highlighter-rouge">NumType</code>): <em>prvním, prvnímu, prvního, první, TŘETÍ, PÁTÁ, druhé, páté, ČTVRTÁ, ŠESTÁ</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (4624): <em>účetní, účetních, účetního, konsolidované, finanční, účetním, konsolidující, povinny, obchodního, ostatní</em></li>
 </ul>
 
-<h3 id="pron"><code>PRON</code></h3>
+<h3 id="adv-2"><code class="language-plaintext highlighter-rouge">ADV</code></h3>
 
-<p>1 <a href="">cs-pos/PRON</a> tokens (0% of all <code>PRON</code> tokens) have a non-empty value of <code>NumType</code>.</p>
+<p>13 <a href="">cs-pos/ADV</a> tokens (2% of all <code class="language-plaintext highlighter-rouge">ADV</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">NumType</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>NumType</code> co-occurred: <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (1; 100%), <tt><a href="Variant.html">Variant</a>=EMPTY</tt> (1; 100%), <tt><a href="Case.html">Case</a>=Ins</tt> (1; 100%), <tt><a href="PronType.html">PronType</a>=Dem,Ind</tt> (1; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (1; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (1; 100%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">ADV</code> and <code class="language-plaintext highlighter-rouge">NumType</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (13; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (13; 100%).</p>
 
-<p><code>PRON</code> tokens may have the following values of <code>NumType</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">ADV</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">NumType</code>:</p>
 
 <ul>
-  <li><code>Card</code> (1; 100% of non-empty <code>NumType</code>): <em>několika</em></li>
-  <li><code>EMPTY</code> (811): <em>se, které, která, který, to, kterých, kterým, kterém, nichž, všech</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Mult</code> (2; 15% of non-empty <code class="language-plaintext highlighter-rouge">NumType</code>): <em>jednou</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Ord</code> (11; 85% of non-empty <code class="language-plaintext highlighter-rouge">NumType</code>): <em>poprvé</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (554): <em>zejména, dále, popřípadě, například, pouze, jinak, též, kdy, tak, později</em></li>
 </ul>
 
-<h2 id="relations-with-agreement-in-numtype-2">Relations with Agreement in <code>NumType</code></h2>
+<h3 id="pron"><code class="language-plaintext highlighter-rouge">PRON</code></h3>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>NumType</code>:
+<p>1 <a href="">cs-pos/PRON</a> tokens (0% of all <code class="language-plaintext highlighter-rouge">PRON</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">NumType</code>.</p>
+
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">PRON</code> and <code class="language-plaintext highlighter-rouge">NumType</code> co-occurred: <tt><a href="Reflex.html">Reflex</a>=EMPTY</tt> (1; 100%), <tt><a href="Variant.html">Variant</a>=EMPTY</tt> (1; 100%), <tt><a href="Case.html">Case</a>=Ins</tt> (1; 100%), <tt><a href="PronType.html">PronType</a>=Dem,Ind</tt> (1; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (1; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (1; 100%).</p>
+
+<p><code class="language-plaintext highlighter-rouge">PRON</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">NumType</code>:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Card</code> (1; 100% of non-empty <code class="language-plaintext highlighter-rouge">NumType</code>): <em>několika</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (811): <em>se, které, která, který, to, kterých, kterým, kterém, nichž, všech</em></li>
+</ul>
+
+<h2 id="relations-with-agreement-in-numtype-2">Relations with Agreement in <code class="language-plaintext highlighter-rouge">NumType</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">NumType</code>:
 <tt>NUM –[<a href="../dep/conj.html">conj</a>]–&gt; NUM</tt> (29; 100%),
 <tt>NUM –[<a href="../dep/conj.html">conj</a>]–&gt; PRON</tt> (1; 100%).</p>
 

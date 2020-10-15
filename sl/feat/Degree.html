@@ -66,7 +66,7 @@
 
 <p>Degree of comparison is an inflectional feature of some <a href="ADJ">adjectives</a> and <a href="ADV">adverbs</a>.</p>
 
-<h3 id="pos-positive-first-degree"><code>Pos</code>: positive, first degree</h3>
+<h3 id="pos-positive-first-degree"><code class="language-plaintext highlighter-rouge">Pos</code>: positive, first degree</h3>
 
 <p>This is the base form that merely states a quality of something, without comparing it to qualities of others.</p>
 
@@ -77,7 +77,7 @@
   <li><em><b>hitro</b></em> narejeno “quickly done”</li>
 </ul>
 
-<h3 id="cmp-comparative-second-degree"><code>Cmp</code>: comparative, second degree</h3>
+<h3 id="cmp-comparative-second-degree"><code class="language-plaintext highlighter-rouge">Cmp</code>: comparative, second degree</h3>
 
 <p>The quality of one object is compared to the same quality of another object. For most adverbs, two different word forms can be used interchangeably.</p>
 
@@ -88,7 +88,7 @@
   <li><em><b>hitreje / hitrejše </b></em> narejeno “done more quickly”</li>
 </ul>
 
-<h3 id="sup-superlative-third-degree"><code>Sup</code>: superlative, third degree</h3>
+<h3 id="sup-superlative-third-degree"><code class="language-plaintext highlighter-rouge">Sup</code>: superlative, third degree</h3>
 
 <p>The quality of one object is compared to the same quality of all other objects within a set. For most adverbs, two different word forms can be used interchangeably.</p>
 
@@ -101,7 +101,7 @@
 
 <h3 id="conversion-from-jos">Conversion from JOS</h3>
 
-<p>All adjectives and adverbs with feature Degree=positive are converted to <code>Degree=Pos</code>, all adjectives and adverbs with feature Degree=comparative are converted to <code>Degree=Cmp</code>, all adjectives and adverbs with Degree=superlative are converted to <code>Degree=Sup</code>.</p>
+<p>All adjectives and adverbs with feature Degree=positive are converted to <code class="language-plaintext highlighter-rouge">Degree=Pos</code>, all adjectives and adverbs with feature Degree=comparative are converted to <code class="language-plaintext highlighter-rouge">Degree=Cmp</code>, all adjectives and adverbs with Degree=superlative are converted to <code class="language-plaintext highlighter-rouge">Degree=Sup</code>.</p>
 
 
 <!-- "automatic stats" -->
@@ -113,29 +113,29 @@
 
 <hr />
 
-<h2 id="treebank-statistics-udslovenian">Treebank Statistics (UD_Slovenian)</h2>
+<h2 id="treebank-statistics-ud_slovenian">Treebank Statistics (UD_Slovenian)</h2>
 
 <p>This feature is universal.
-It occurs with 3 different values: <code>Cmp</code>, <code>Pos</code>, <code>Sup</code>.</p>
+It occurs with 3 different values: <code class="language-plaintext highlighter-rouge">Cmp</code>, <code class="language-plaintext highlighter-rouge">Pos</code>, <code class="language-plaintext highlighter-rouge">Sup</code>.</p>
 
-<p>18850 tokens (15%) have a non-empty value of <code>Degree</code>.
-8805 types (30%) occur at least once with a non-empty value of <code>Degree</code>.
-4383 lemmas (28%) occur at least once with a non-empty value of <code>Degree</code>.
+<p>18850 tokens (15%) have a non-empty value of <code class="language-plaintext highlighter-rouge">Degree</code>.
+8805 types (30%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Degree</code>.
+4383 lemmas (28%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Degree</code>.
 The feature is used with 2 part-of-speech tags: <a href="">sl-pos/ADJ</a> (12905; 10% instances), <a href="">sl-pos/ADV</a> (5945; 5% instances).</p>
 
-<h3 id="adj"><code>ADJ</code></h3>
+<h3 id="adj"><code class="language-plaintext highlighter-rouge">ADJ</code></h3>
 
-<p>12905 <a href="">sl-pos/ADJ</a> tokens (95% of all <code>ADJ</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>12905 <a href="">sl-pos/ADJ</a> tokens (95% of all <code class="language-plaintext highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Degree</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Degree</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (11177; 87%), <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (11064; 86%), <tt><a href="Number.html">Number</a>=Sing</tt> (8695; 67%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">ADJ</code> and <code class="language-plaintext highlighter-rouge">Degree</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (11177; 87%), <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (11064; 86%), <tt><a href="Number.html">Number</a>=Sing</tt> (8695; 67%).</p>
 
-<p><code>ADJ</code> tokens may have the following values of <code>Degree</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">ADJ</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (313; 2% of non-empty <code>Degree</code>): <em>večji, boljše, večja, večje, boljši, močnejši, boljša, večjih, večjo, širši</em></li>
-  <li><code>Pos</code> (12388; 96% of non-empty <code>Degree</code>): <em>mogoče, sam, nove, novo, različnih, slovenski, veliko, velika, pomembno, zadnjih</em></li>
-  <li><code>Sup</code> (204; 2% of non-empty <code>Degree</code>): <em>največji, najboljši, največja, največjih, najboljša, najpomembnejši, največje, najboljših, največjo, najvišja</em></li>
-  <li><code>EMPTY</code> (624): <em>drugi, prvi, druge, drugih, drugo, drugim, drugega, druga, prvo, prva</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Cmp</code> (313; 2% of non-empty <code class="language-plaintext highlighter-rouge">Degree</code>): <em>večji, boljše, večja, večje, boljši, močnejši, boljša, večjih, večjo, širši</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pos</code> (12388; 96% of non-empty <code class="language-plaintext highlighter-rouge">Degree</code>): <em>mogoče, sam, nove, novo, različnih, slovenski, veliko, velika, pomembno, zadnjih</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Sup</code> (204; 2% of non-empty <code class="language-plaintext highlighter-rouge">Degree</code>): <em>največji, najboljši, največja, največjih, najboljša, najpomembnejši, največje, najboljših, največjo, najvišja</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (624): <em>drugi, prvi, druge, drugih, drugo, drugim, drugega, druga, prvo, prva</em></li>
 </ul>
 
 <table>
@@ -177,19 +177,19 @@ The feature is used with 2 part-of-speech tags: <a href="">sl-pos/ADJ</a> (12905
   <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Plur</tt></td><td><em>velika</em></td><td><em>večja</em></td><td><em>največja</em></td></tr>
 </table>
 
-<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 98% lemmas (3498) occur only with one value of <code>Degree</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">Degree</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">ADJ</code>. 98% lemmas (3498) occur only with one value of <code class="language-plaintext highlighter-rouge">Degree</code>.</p>
 
-<h3 id="adv"><code>ADV</code></h3>
+<h3 id="adv"><code class="language-plaintext highlighter-rouge">ADV</code></h3>
 
-<p>5945 <a href="">sl-pos/ADV</a> tokens (100% of all <code>ADV</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>5945 <a href="">sl-pos/ADV</a> tokens (100% of all <code class="language-plaintext highlighter-rouge">ADV</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Degree</code>.</p>
 
-<p><code>ADV</code> tokens may have the following values of <code>Degree</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">ADV</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (307; 5% of non-empty <code>Degree</code>): <em>bolj, prej, večkrat, bolje, pozneje, raje, kasneje, dlje, laže, lažje</em></li>
-  <li><code>Pos</code> (5476; 92% of non-empty <code>Degree</code>): <em>lahko, tako, zelo, kako, potem, vedno, zdaj, kar, treba, ali</em></li>
-  <li><code>Sup</code> (162; 3% of non-empty <code>Degree</code>): <em>najbolj, najprej, najmanj, najbolje, najpogosteje, največkrat, najverjetneje, najdlje, najkasneje, najpozneje</em></li>
-  <li><code>EMPTY</code> (17): <em>rekoč, sodeč, Molče, hote, nehote, neupoštevaje, nevede, sklicujoč, upoštevaje, ustvarjajoč</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Cmp</code> (307; 5% of non-empty <code class="language-plaintext highlighter-rouge">Degree</code>): <em>bolj, prej, večkrat, bolje, pozneje, raje, kasneje, dlje, laže, lažje</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pos</code> (5476; 92% of non-empty <code class="language-plaintext highlighter-rouge">Degree</code>): <em>lahko, tako, zelo, kako, potem, vedno, zdaj, kar, treba, ali</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Sup</code> (162; 3% of non-empty <code class="language-plaintext highlighter-rouge">Degree</code>): <em>najbolj, najprej, najmanj, najbolje, najpogosteje, največkrat, najverjetneje, najdlje, najkasneje, najpozneje</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (17): <em>rekoč, sodeč, Molče, hote, nehote, neupoštevaje, nevede, sklicujoč, upoštevaje, ustvarjajoč</em></li>
 </ul>
 
 <table>
@@ -197,11 +197,11 @@ The feature is used with 2 part-of-speech tags: <a href="">sl-pos/ADJ</a> (12905
   <tr><td><tt></tt></td><td><em>dobro, dobr</em></td><td><em>bolje</em></td><td><em>najbolje</em></td></tr>
 </table>
 
-<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>ADV</code>. 96% lemmas (770) occur only with one value of <code>Degree</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">Degree</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">ADV</code>. 96% lemmas (770) occur only with one value of <code class="language-plaintext highlighter-rouge">Degree</code>.</p>
 
-<h2 id="relations-with-agreement-in-degree">Relations with Agreement in <code>Degree</code></h2>
+<h2 id="relations-with-agreement-in-degree">Relations with Agreement in <code class="language-plaintext highlighter-rouge">Degree</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Degree</code>:
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">Degree</code>:
 <tt>ADJ –[<a href="../dep/advmod.html">advmod</a>]–&gt; ADV</tt> (847; 79%),
 <tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (558; 94%),
 <tt>ADV –[<a href="../dep/advmod.html">advmod</a>]–&gt; ADV</tt> (195; 72%),
@@ -215,27 +215,27 @@ The feature is used with 2 part-of-speech tags: <a href="">sl-pos/ADJ</a> (12905
 
 <hr />
 
-<h2 id="treebank-statistics-udslovenian-sst">Treebank Statistics (UD_Slovenian-SST)</h2>
+<h2 id="treebank-statistics-ud_slovenian-sst">Treebank Statistics (UD_Slovenian-SST)</h2>
 
 <p>This feature is universal.
-It occurs with 3 different values: <code>Cmp</code>, <code>Pos</code>, <code>Sup</code>.</p>
+It occurs with 3 different values: <code class="language-plaintext highlighter-rouge">Cmp</code>, <code class="language-plaintext highlighter-rouge">Pos</code>, <code class="language-plaintext highlighter-rouge">Sup</code>.</p>
 
-<p>2876 tokens (15%) have a non-empty value of <code>Degree</code>.
-1014 types (22%) occur at least once with a non-empty value of <code>Degree</code>.
-791 lemmas (26%) occur at least once with a non-empty value of <code>Degree</code>.
+<p>2876 tokens (15%) have a non-empty value of <code class="language-plaintext highlighter-rouge">Degree</code>.
+1014 types (22%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Degree</code>.
+791 lemmas (26%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Degree</code>.
 The feature is used with 2 part-of-speech tags: <a href="">sl-pos/ADV</a> (1895; 10% instances), <a href="">sl-pos/ADJ</a> (981; 5% instances).</p>
 
-<h3 id="adv-1"><code>ADV</code></h3>
+<h3 id="adv-1"><code class="language-plaintext highlighter-rouge">ADV</code></h3>
 
-<p>1895 <a href="">sl-pos/ADV</a> tokens (100% of all <code>ADV</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>1895 <a href="">sl-pos/ADV</a> tokens (100% of all <code class="language-plaintext highlighter-rouge">ADV</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Degree</code>.</p>
 
-<p><code>ADV</code> tokens may have the following values of <code>Degree</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">ADV</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (74; 4% of non-empty <code>Degree</code>): <em>bolj, prej, rajši, večkrat, bolje, kasneje, boljše, ceneje, dlje, konkretneje</em></li>
-  <li><code>Pos</code> (1799; 95% of non-empty <code>Degree</code>): <em>tako, zdaj, a, pol, lahko, kako, kar, tam, potem, res</em></li>
-  <li><code>Sup</code> (22; 1% of non-empty <code>Degree</code>): <em>najprej, najbolj, najrajši, najboljše, najmanj</em></li>
-  <li><code>EMPTY</code> (1): <em>rekoč</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Cmp</code> (74; 4% of non-empty <code class="language-plaintext highlighter-rouge">Degree</code>): <em>bolj, prej, rajši, večkrat, bolje, kasneje, boljše, ceneje, dlje, konkretneje</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pos</code> (1799; 95% of non-empty <code class="language-plaintext highlighter-rouge">Degree</code>): <em>tako, zdaj, a, pol, lahko, kako, kar, tam, potem, res</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Sup</code> (22; 1% of non-empty <code class="language-plaintext highlighter-rouge">Degree</code>): <em>najprej, najbolj, najrajši, najboljše, najmanj</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (1): <em>rekoč</em></li>
 </ul>
 
 <table>
@@ -243,21 +243,21 @@ The feature is used with 2 part-of-speech tags: <a href="">sl-pos/ADV</a> (1895;
   <tr><td><tt></tt></td><td><em>dobro</em></td><td><em>bolje, boljše</em></td><td><em>najboljše</em></td></tr>
 </table>
 
-<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>ADV</code>. 98% lemmas (278) occur only with one value of <code>Degree</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">Degree</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">ADV</code>. 98% lemmas (278) occur only with one value of <code class="language-plaintext highlighter-rouge">Degree</code>.</p>
 
-<h3 id="adj-1"><code>ADJ</code></h3>
+<h3 id="adj-1"><code class="language-plaintext highlighter-rouge">ADJ</code></h3>
 
-<p>981 <a href="">sl-pos/ADJ</a> tokens (90% of all <code>ADJ</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>981 <a href="">sl-pos/ADJ</a> tokens (90% of all <code class="language-plaintext highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Degree</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Degree</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (853; 87%), <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (789; 80%), <tt><a href="Number.html">Number</a>=Sing</tt> (720; 73%), <tt><a href="Case.html">Case</a>=Nom</tt> (529; 54%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">ADJ</code> and <code class="language-plaintext highlighter-rouge">Degree</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (853; 87%), <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (789; 80%), <tt><a href="Number.html">Number</a>=Sing</tt> (720; 73%), <tt><a href="Case.html">Case</a>=Nom</tt> (529; 54%).</p>
 
-<p><code>ADJ</code> tokens may have the following values of <code>Degree</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">ADJ</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (27; 3% of non-empty <code>Degree</code>): <em>bogatejši, boljši, mlajši, manjši, večji, boljše, boljšem, dražji, hujše, lepšega</em></li>
-  <li><code>Pos</code> (944; 96% of non-empty <code>Degree</code>): <em>dobro, dober, glavnem, rdeča, lep, sami, stari, zadnjih, lepa, mali</em></li>
-  <li><code>Sup</code> (10; 1% of non-empty <code>Degree</code>): <em>največja, največji, najboljša, najdebelejši, najljubše, največje, najvišje, najvišjem</em></li>
-  <li><code>EMPTY</code> (112): <em>drugi, prvi, drugo, drugega, druga, drugih, prva, devetindvajseti, drug, druge</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Cmp</code> (27; 3% of non-empty <code class="language-plaintext highlighter-rouge">Degree</code>): <em>bogatejši, boljši, mlajši, manjši, večji, boljše, boljšem, dražji, hujše, lepšega</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pos</code> (944; 96% of non-empty <code class="language-plaintext highlighter-rouge">Degree</code>): <em>dobro, dober, glavnem, rdeča, lep, sami, stari, zadnjih, lepa, mali</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Sup</code> (10; 1% of non-empty <code class="language-plaintext highlighter-rouge">Degree</code>): <em>največja, največji, najboljša, najdebelejši, najljubše, največje, najvišje, najvišjem</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (112): <em>drugi, prvi, drugo, drugega, druga, drugih, prva, devetindvajseti, drug, druge</em></li>
 </ul>
 
 <table>
@@ -276,11 +276,11 @@ The feature is used with 2 part-of-speech tags: <a href="">sl-pos/ADV</a> (1895;
   <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing</tt></td><td><em>dobro</em></td><td><em>boljše</em></td><td></td></tr>
 </table>
 
-<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 98% lemmas (500) occur only with one value of <code>Degree</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">Degree</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">ADJ</code>. 98% lemmas (500) occur only with one value of <code class="language-plaintext highlighter-rouge">Degree</code>.</p>
 
-<h2 id="relations-with-agreement-in-degree-1">Relations with Agreement in <code>Degree</code></h2>
+<h2 id="relations-with-agreement-in-degree-1">Relations with Agreement in <code class="language-plaintext highlighter-rouge">Degree</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Degree</code>:
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">Degree</code>:
 <tt>ADJ –[<a href="../dep/advmod.html">advmod</a>]–&gt; ADV</tt> (127; 80%),
 <tt>ADV –[<a href="../dep/advmod.html">advmod</a>]–&gt; ADV</tt> (78; 87%),
 <tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (33; 97%),

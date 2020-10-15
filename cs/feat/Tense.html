@@ -77,7 +77,7 @@
 takes / will take place, in relation to the current moment or to
 another action in the utterance.</p>
 
-<h3 id="a-namepastpasta-past-tense"><a name="Past"><code>Past</code></a>: past tense</h3>
+<h3 id="past-past-tense"><a name="Past"><code class="language-plaintext highlighter-rouge">Past</code></a>: past tense</h3>
 
 <p>The past tense denotes actions that happened before the current
 moment. Past tense in Czech consists of the past participle
@@ -85,8 +85,8 @@ moment. Past tense in Czech consists of the past participle
 which is accompanied by a present auxiliary verb in the first and second persons,
 and stands alone in the third person.</p>
 
-<p>The auxiliary (if any) is in its present form, so it will have <code>Tense=Pres</code>.
-The participle has <code>Tense=Past</code>, even though it can also be used to form present conditional.</p>
+<p>The auxiliary (if any) is in its present form, so it will have <code class="language-plaintext highlighter-rouge">Tense=Pres</code>.
+The participle has <code class="language-plaintext highlighter-rouge">Tense=Past</code>, even though it can also be used to form present conditional.</p>
 
 <h4 id="examples">Examples</h4>
 
@@ -96,13 +96,13 @@ The participle has <code>Tense=Past</code>, even though it can also be used to f
   <li><em><b>Šel</b> domů. </em> “He has <b>gone</b> home.”</li>
 </ul>
 
-<h3 id="a-nameprespresa-present-tense"><a name="Pres"><code>Pres</code></a>: present tense</h3>
+<h3 id="pres-present-tense"><a name="Pres"><code class="language-plaintext highlighter-rouge">Pres</code></a>: present tense</h3>
 
 <p>The present tense denotes actions that are happening right now or that
 usually happen.</p>
 
 <p>Note that morphologically present forms of perfective verbs have actually a future meaning
-but they will still be marked <code>Tense=Pres</code>.</p>
+but they will still be marked <code class="language-plaintext highlighter-rouge">Tense=Pres</code>.</p>
 
 <h4 id="examples-1">Examples</h4>
 
@@ -112,20 +112,20 @@ but they will still be marked <code>Tense=Pres</code>.</p>
   <li><em><b>Jdu</b> domů. </em> “I <b>go / am going</b> home.” (<em>Jít </em> is an imperfective verb.)</li>
 </ul>
 
-<h3 id="a-namefutfuta-future-tense"><a name="Fut"><code>Fut</code></a>: future tense</h3>
+<h3 id="fut-future-tense"><a name="Fut"><code class="language-plaintext highlighter-rouge">Fut</code></a>: future tense</h3>
 
 <p>The future tense denotes actions that will happen after the current
 moment. Future tense in Czech is formed in one of three ways, depending of the verb:</p>
 
 <ul>
-  <li>Present forms of perfective verbs have future meaning. These forms are tagged <code>Tense=Pres</code>, not <code>Tense=Fut</code> (see above).</li>
+  <li>Present forms of perfective verbs have future meaning. These forms are tagged <code class="language-plaintext highlighter-rouge">Tense=Pres</code>, not <code class="language-plaintext highlighter-rouge">Tense=Fut</code> (see above).</li>
   <li>The verb <em>být </em> “to be” has a set of distinct future forms. They combine a future stem <em>bud </em> with present suffixes.
 A small set of verbs (mostly motion verbs) have also future forms. These are formed as the present form (present stem and suffix)
 with the prefix <em>po-</em>.
-Although these forms are morphologically very close to the present forms, they are tagged <code>Tense=Fut</code>
+Although these forms are morphologically very close to the present forms, they are tagged <code class="language-plaintext highlighter-rouge">Tense=Fut</code>
 because the same lemma has also present forms and the feature must distinguish the two.</li>
   <li>The remaining imperfective verbs have periphrastic future forms, consiting of the future form of the auxiliary <em>být, </em>
-and the infinitive of the content verb. Only the auxiliary will have <code>Tense=Fut</code>, while there will be no tense information
+and the infinitive of the content verb. Only the auxiliary will have <code class="language-plaintext highlighter-rouge">Tense=Fut</code>, while there will be no tense information
 at the infinitive.</li>
 </ul>
 
@@ -147,29 +147,29 @@ at the infinitive.</li>
 
 <hr />
 
-<h2 id="treebank-statistics-udczech">Treebank Statistics (UD_Czech)</h2>
+<h2 id="treebank-statistics-ud_czech">Treebank Statistics (UD_Czech)</h2>
 
 <p>This feature is universal.
-It occurs with 3 different values: <code>Fut</code>, <code>Past</code>, <code>Pres</code>.</p>
+It occurs with 3 different values: <code class="language-plaintext highlighter-rouge">Fut</code>, <code class="language-plaintext highlighter-rouge">Past</code>, <code class="language-plaintext highlighter-rouge">Pres</code>.</p>
 
-<p>128083 tokens (10%) have a non-empty value of <code>Tense</code>.
-19980 types (17%) occur at least once with a non-empty value of <code>Tense</code>.
-5738 lemmas (10%) occur at least once with a non-empty value of <code>Tense</code>.
+<p>128083 tokens (10%) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.
+19980 types (17%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.
+5738 lemmas (10%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.
 The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (97291; 7% instances), <a href="">cs-pos/AUX</a> (26833; 2% instances), <a href="">cs-pos/ADJ</a> (3959; 0% instances).</p>
 
-<h3 id="verb"><code>VERB</code></h3>
+<h3 id="verb"><code class="language-plaintext highlighter-rouge">VERB</code></h3>
 
-<p>97291 <a href="">cs-pos/VERB</a> tokens (81% of all <code>VERB</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>97291 <a href="">cs-pos/VERB</a> tokens (81% of all <code class="language-plaintext highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Tense</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (97291; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (86911; 89%), <tt><a href="Number.html">Number</a>=Sing</tt> (61718; 63%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (52717; 54%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (52699; 54%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (52699; 54%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">VERB</code> and <code class="language-plaintext highlighter-rouge">Tense</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (97291; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (86911; 89%), <tt><a href="Number.html">Number</a>=Sing</tt> (61718; 63%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (52717; 54%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (52699; 54%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (52699; 54%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>Tense</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Tense</code>:</p>
 
 <ul>
-  <li><code>Fut</code> (538; 1% of non-empty <code>Tense</code>): <em>bude, půjde, budou, nebude, nepůjde, pojede, nebudou, půjdou, ponese, pojedou</em></li>
-  <li><code>Past</code> (44456; 46% of non-empty <code>Tense</code>): <em>řekl, měl, měla, uvedl, měli, mělo, mohl, měly, bylo, prohlásil</em></li>
-  <li><code>Pres</code> (52297; 54% of non-empty <code>Tense</code>): <em>má, je, může, mají, musí, jde, lze, jsou, mohou, říká</em></li>
-  <li><code>EMPTY</code> (22381): <em>mít, získat, stát, být, hrát, říci, muset, platit, dělat, dostat</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Fut</code> (538; 1% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>bude, půjde, budou, nebude, nepůjde, pojede, nebudou, půjdou, ponese, pojedou</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Past</code> (44456; 46% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>řekl, měl, měla, uvedl, měli, mělo, mohl, měly, bylo, prohlásil</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pres</code> (52297; 54% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>má, je, může, mají, musí, jde, lze, jsou, mohou, říká</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (22381): <em>mít, získat, stát, být, hrát, říci, muset, platit, dělat, dostat</em></li>
 </ul>
 
 <table>
@@ -202,19 +202,19 @@ The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (9729
   <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Polarity.html">Polarity</a>=Pos|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td><em>jsou</em></td><td><em>budou</em></td><td></td></tr>
 </table>
 
-<h3 id="aux"><code>AUX</code></h3>
+<h3 id="aux"><code class="language-plaintext highlighter-rouge">AUX</code></h3>
 
-<p>26833 <a href="">cs-pos/AUX</a> tokens (74% of all <code>AUX</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>26833 <a href="">cs-pos/AUX</a> tokens (74% of all <code class="language-plaintext highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Tense</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (26833; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (24159; 90%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (20821; 78%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (20817; 78%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (20817; 78%), <tt><a href="Number.html">Number</a>=Sing</tt> (18653; 70%), <tt><a href="Person.html">Person</a>=3</tt> (17402; 65%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">AUX</code> and <code class="language-plaintext highlighter-rouge">Tense</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (26833; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (24159; 90%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (20821; 78%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (20817; 78%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (20817; 78%), <tt><a href="Number.html">Number</a>=Sing</tt> (18653; 70%), <tt><a href="Person.html">Person</a>=3</tt> (17402; 65%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>Tense</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">AUX</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Tense</code>:</p>
 
 <ul>
-  <li><code>Fut</code> (3971; 15% of non-empty <code>Tense</code>): <em>bude, budou, nebude, budeme, nebudou, budu, budete, nebudeme, nebudu, nebudete</em></li>
-  <li><code>Past</code> (6008; 22% of non-empty <code>Tense</code>): <em>byl, bylo, byla, byly, byli, nebyl, nebylo, nebyla, nebyly, nebyli</em></li>
-  <li><code>Pres</code> (16854; 63% of non-empty <code>Tense</code>): <em>je, jsou, jsem, jsme, není, nejsou, jste, bývá, nejsem, bývají</em></li>
-  <li><code>EMPTY</code> (9505): <em>by, být, bychom, bych, byste, budiž, buďte, bys, býti, buď</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Fut</code> (3971; 15% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>bude, budou, nebude, budeme, nebudou, budu, budete, nebudeme, nebudu, nebudete</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Past</code> (6008; 22% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>byl, bylo, byla, byly, byli, nebyl, nebylo, nebyla, nebyly, nebyli</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pres</code> (16854; 63% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>je, jsou, jsem, jsme, není, nejsou, jste, bývá, nejsem, bývají</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (9505): <em>by, být, bychom, bych, byste, budiž, buďte, bys, býti, buď</em></li>
 </ul>
 
 <table>
@@ -248,25 +248,25 @@ The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (9729
   <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Polarity.html">Polarity</a>=Pos|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td><em>jsou</em></td><td><em>budou</em></td><td></td></tr>
 </table>
 
-<h3 id="adj"><code>ADJ</code></h3>
+<h3 id="adj"><code class="language-plaintext highlighter-rouge">ADJ</code></h3>
 
-<p>3959 <a href="">cs-pos/ADJ</a> tokens (2% of all <code>ADJ</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>3959 <a href="">cs-pos/ADJ</a> tokens (2% of all <code class="language-plaintext highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Tense</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (3959; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (3859; 97%), <tt><a href="Number.html">Number</a>=Sing</tt> (2321; 59%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (2061; 52%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">ADJ</code> and <code class="language-plaintext highlighter-rouge">Tense</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (3959; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (3859; 97%), <tt><a href="Number.html">Number</a>=Sing</tt> (2321; 59%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (2061; 52%).</p>
 
-<p><code>ADJ</code> tokens may have the following values of <code>Tense</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">ADJ</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Tense</code>:</p>
 
 <ul>
-  <li><code>Past</code> (15; 0% of non-empty <code>Tense</code>): <em>odstoupivšího, byvší, doloživší, nastavší, ocitnuvšího, odstoupivších, provinivšího, předčivší, přeživšího, zahynuvšího</em></li>
-  <li><code>Pres</code> (3944; 100% of non-empty <code>Tense</code>): <em>rozhodující, vedoucí, následující, týkající, vynikající, odpovídající, rostoucí, žijící, kupující, vládnoucí</em></li>
-  <li><code>EMPTY</code> (164839): <em>první, další, české, druhé, nové, státní, poslední, dalších, vlastní, možné</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Past</code> (15; 0% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>odstoupivšího, byvší, doloživší, nastavší, ocitnuvšího, odstoupivších, provinivšího, předčivší, přeživšího, zahynuvšího</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pres</code> (3944; 100% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>rozhodující, vedoucí, následující, týkající, vynikající, odpovídající, rostoucí, žijící, kupující, vládnoucí</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (164839): <em>první, další, české, druhé, nové, státní, poslední, dalších, vlastní, možné</em></li>
 </ul>
 
-<p><code>Tense</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (894) occur only with one value of <code>Tense</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">Tense</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">ADJ</code>. 100% lemmas (894) occur only with one value of <code class="language-plaintext highlighter-rouge">Tense</code>.</p>
 
-<h2 id="relations-with-agreement-in-tense">Relations with Agreement in <code>Tense</code></h2>
+<h2 id="relations-with-agreement-in-tense">Relations with Agreement in <code class="language-plaintext highlighter-rouge">Tense</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Tense</code>:
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">Tense</code>:
 <tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (9437; 81%),
 <tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (3308; 64%),
 <tt>VERB –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; VERB</tt> (442; 53%),
@@ -278,29 +278,29 @@ The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (9729
 
 <hr />
 
-<h2 id="treebank-statistics-udczech-cac">Treebank Statistics (UD_Czech-CAC)</h2>
+<h2 id="treebank-statistics-ud_czech-cac">Treebank Statistics (UD_Czech-CAC)</h2>
 
 <p>This feature is universal.
-It occurs with 3 different values: <code>Fut</code>, <code>Past</code>, <code>Pres</code>.</p>
+It occurs with 3 different values: <code class="language-plaintext highlighter-rouge">Fut</code>, <code class="language-plaintext highlighter-rouge">Past</code>, <code class="language-plaintext highlighter-rouge">Pres</code>.</p>
 
-<p>45194 tokens (9%) have a non-empty value of <code>Tense</code>.
-10415 types (17%) occur at least once with a non-empty value of <code>Tense</code>.
-3761 lemmas (13%) occur at least once with a non-empty value of <code>Tense</code>.
+<p>45194 tokens (9%) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.
+10415 types (17%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.
+3761 lemmas (13%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.
 The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (31799; 7% instances), <a href="">cs-pos/AUX</a> (11302; 2% instances), <a href="">cs-pos/ADJ</a> (2093; 0% instances).</p>
 
-<h3 id="verb-1"><code>VERB</code></h3>
+<h3 id="verb-1"><code class="language-plaintext highlighter-rouge">VERB</code></h3>
 
-<p>31799 <a href="">cs-pos/VERB</a> tokens (80% of all <code>VERB</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>31799 <a href="">cs-pos/VERB</a> tokens (80% of all <code class="language-plaintext highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Tense</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (31799; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (29023; 91%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (21430; 67%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (21424; 67%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (21424; 67%), <tt><a href="Number.html">Number</a>=Sing</tt> (18350; 58%), <tt><a href="Person.html">Person</a>=3</tt> (18045; 57%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">VERB</code> and <code class="language-plaintext highlighter-rouge">Tense</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (31799; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (29023; 91%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (21430; 67%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (21424; 67%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (21424; 67%), <tt><a href="Number.html">Number</a>=Sing</tt> (18350; 58%), <tt><a href="Person.html">Person</a>=3</tt> (18045; 57%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>Tense</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Tense</code>:</p>
 
 <ul>
-  <li><code>Fut</code> (117; 0% of non-empty <code>Tense</code>): <em>bude, půjde, budou, nebude, budu, pojedu, půjdou, Nepůjde, Pojede, nebudu</em></li>
-  <li><code>Past</code> (10339; 33% of non-empty <code>Tense</code>): <em>měl, měla, bylo, mohl, mohli, došlo, měli, byl, měly, mělo</em></li>
-  <li><code>Pres</code> (21343; 67% of non-empty <code>Tense</code>): <em>je, má, mají, musí, může, jde, lze, jsou, mohou, můžeme</em></li>
-  <li><code>EMPTY</code> (7751): <em>mít, zajistit, říci, být, vidět, řešit, dělat, věnovat, provádět, dosáhnout</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Fut</code> (117; 0% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>bude, půjde, budou, nebude, budu, pojedu, půjdou, Nepůjde, Pojede, nebudu</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Past</code> (10339; 33% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>měl, měla, bylo, mohl, mohli, došlo, měli, byl, měly, mělo</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pres</code> (21343; 67% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>je, má, mají, musí, může, jde, lze, jsou, mohou, můžeme</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (7751): <em>mít, zajistit, říci, být, vidět, řešit, dělat, věnovat, provádět, dosáhnout</em></li>
 </ul>
 
 <table>
@@ -328,19 +328,19 @@ The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (3179
   <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Polarity.html">Polarity</a>=Pos|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td><em>jsou</em></td><td><em>budou</em></td><td></td></tr>
 </table>
 
-<h3 id="aux-1"><code>AUX</code></h3>
+<h3 id="aux-1"><code class="language-plaintext highlighter-rouge">AUX</code></h3>
 
-<p>11302 <a href="">cs-pos/AUX</a> tokens (81% of all <code>AUX</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>11302 <a href="">cs-pos/AUX</a> tokens (81% of all <code class="language-plaintext highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Tense</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (11302; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (10431; 92%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (8887; 79%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (8886; 79%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (8886; 79%), <tt><a href="Person.html">Person</a>=3</tt> (7818; 69%), <tt><a href="Number.html">Number</a>=Sing</tt> (7628; 67%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">AUX</code> and <code class="language-plaintext highlighter-rouge">Tense</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (11302; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (10431; 92%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (8887; 79%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (8886; 79%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (8886; 79%), <tt><a href="Person.html">Person</a>=3</tt> (7818; 69%), <tt><a href="Number.html">Number</a>=Sing</tt> (7628; 67%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>Tense</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">AUX</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Tense</code>:</p>
 
 <ul>
-  <li><code>Fut</code> (1078; 10% of non-empty <code>Tense</code>): <em>bude, budou, budeme, nebude, nebudou, budu, nebudeme, budete, nebudu, nebudete</em></li>
-  <li><code>Past</code> (2415; 21% of non-empty <code>Tense</code>): <em>byl, bylo, byla, byly, byli, nebylo, nebyl, nebyla, nebyly, býval</em></li>
-  <li><code>Pres</code> (7809; 69% of non-empty <code>Tense</code>): <em>je, jsou, jsme, není, jsem, nejsou, jste, bývá, bývají, jsi</em></li>
-  <li><code>EMPTY</code> (2640): <em>by, být, bychom, bych, byste, býti, buď, budiž, buďme, buďte</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Fut</code> (1078; 10% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>bude, budou, budeme, nebude, nebudou, budu, nebudeme, budete, nebudu, nebudete</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Past</code> (2415; 21% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>byl, bylo, byla, byly, byli, nebylo, nebyl, nebyla, nebyly, býval</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pres</code> (7809; 69% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>je, jsou, jsme, není, jsem, nejsou, jste, bývá, bývají, jsi</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (2640): <em>by, být, bychom, bych, byste, býti, buď, budiž, buďme, buďte</em></li>
 </ul>
 
 <table>
@@ -373,25 +373,25 @@ The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (3179
   <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Polarity.html">Polarity</a>=Pos|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td><em>jsou</em></td><td><em>budou</em></td><td></td></tr>
 </table>
 
-<h3 id="adj-1"><code>ADJ</code></h3>
+<h3 id="adj-1"><code class="language-plaintext highlighter-rouge">ADJ</code></h3>
 
-<p>2093 <a href="">cs-pos/ADJ</a> tokens (3% of all <code>ADJ</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>2093 <a href="">cs-pos/ADJ</a> tokens (3% of all <code class="language-plaintext highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Tense</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (2093; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (2064; 99%), <tt><a href="Number.html">Number</a>=Sing</tt> (1097; 52%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (1062; 51%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">ADJ</code> and <code class="language-plaintext highlighter-rouge">Tense</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (2093; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (2064; 99%), <tt><a href="Number.html">Number</a>=Sing</tt> (1097; 52%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (1062; 51%).</p>
 
-<p><code>ADJ</code> tokens may have the following values of <code>Tense</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">ADJ</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Tense</code>:</p>
 
 <ul>
-  <li><code>Past</code> (2; 0% of non-empty <code>Tense</code>): <em>nastoupivšími, rozpadnuvší</em></li>
-  <li><code>Pres</code> (2091; 100% of non-empty <code>Tense</code>): <em>pracujících, rozhodující, pracující, vedoucí, odpovídající, následující, týkající, řídící, vyplývající, rostoucí</em></li>
-  <li><code>EMPTY</code> (71085): <em>další, pracovní, první, jednotlivých, základní, nové, možno, socialistické, různých, dalších</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Past</code> (2; 0% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>nastoupivšími, rozpadnuvší</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pres</code> (2091; 100% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>pracujících, rozhodující, pracující, vedoucí, odpovídající, následující, týkající, řídící, vyplývající, rostoucí</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (71085): <em>další, pracovní, první, jednotlivých, základní, nové, možno, socialistické, různých, dalších</em></li>
 </ul>
 
-<p><code>Tense</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (537) occur only with one value of <code>Tense</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">Tense</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">ADJ</code>. 100% lemmas (537) occur only with one value of <code class="language-plaintext highlighter-rouge">Tense</code>.</p>
 
-<h2 id="relations-with-agreement-in-tense-1">Relations with Agreement in <code>Tense</code></h2>
+<h2 id="relations-with-agreement-in-tense-1">Relations with Agreement in <code class="language-plaintext highlighter-rouge">Tense</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Tense</code>:
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">Tense</code>:
 <tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (4194; 88%),
 <tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (1149; 64%),
 <tt>VERB –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; VERB</tt> (145; 56%),
@@ -401,29 +401,29 @@ The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (3179
 
 <hr />
 
-<h2 id="treebank-statistics-udczech-cltt">Treebank Statistics (UD_Czech-CLTT)</h2>
+<h2 id="treebank-statistics-ud_czech-cltt">Treebank Statistics (UD_Czech-CLTT)</h2>
 
 <p>This feature is universal.
-It occurs with 3 different values: <code>Fut</code>, <code>Past</code>, <code>Pres</code>.</p>
+It occurs with 3 different values: <code class="language-plaintext highlighter-rouge">Fut</code>, <code class="language-plaintext highlighter-rouge">Past</code>, <code class="language-plaintext highlighter-rouge">Pres</code>.</p>
 
-<p>1628 tokens (6%) have a non-empty value of <code>Tense</code>.
-390 types (10%) occur at least once with a non-empty value of <code>Tense</code>.
-237 lemmas (11%) occur at least once with a non-empty value of <code>Tense</code>.
+<p>1628 tokens (6%) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.
+390 types (10%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.
+237 lemmas (11%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.
 The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (1046; 4% instances), <a href="">cs-pos/AUX</a> (367; 1% instances), <a href="">cs-pos/ADJ</a> (215; 1% instances).</p>
 
-<h3 id="verb-2"><code>VERB</code></h3>
+<h3 id="verb-2"><code class="language-plaintext highlighter-rouge">VERB</code></h3>
 
-<p>1046 <a href="">cs-pos/VERB</a> tokens (73% of all <code>VERB</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>1046 <a href="">cs-pos/VERB</a> tokens (73% of all <code class="language-plaintext highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Tense</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (1046; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (966; 92%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (966; 92%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (966; 92%), <tt><a href="Person.html">Person</a>=3</tt> (966; 92%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (918; 88%), <tt><a href="Number.html">Number</a>=Sing</tt> (689; 66%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">VERB</code> and <code class="language-plaintext highlighter-rouge">Tense</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (1046; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (966; 92%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (966; 92%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (966; 92%), <tt><a href="Person.html">Person</a>=3</tt> (966; 92%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (918; 88%), <tt><a href="Number.html">Number</a>=Sing</tt> (689; 66%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>Tense</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Tense</code>:</p>
 
 <ul>
-  <li><code>Fut</code> (1; 0% of non-empty <code>Tense</code>): <em>bude</em></li>
-  <li><code>Past</code> (80; 8% of non-empty <code>Tense</code>): <em>přestaly, došlo, nabyla, staly, určila, překročila, započalo, existovaly, provedla, rozhodly</em></li>
-  <li><code>Pres</code> (965; 92% of non-empty <code>Tense</code>): <em>obsahuje, uvede, rozumí, může, účtuje, použijí, mohou, má, sestavují, mají</em></li>
-  <li><code>EMPTY</code> (382): <em>vést, použít, stanoveno, mít, účtovat, odpisovat, zahrnuty, obchodovány, uvést, rozhodnout</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Fut</code> (1; 0% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>bude</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Past</code> (80; 8% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>přestaly, došlo, nabyla, staly, určila, překročila, započalo, existovaly, provedla, rozhodly</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pres</code> (965; 92% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>obsahuje, uvede, rozumí, může, účtuje, použijí, mohou, má, sestavují, mají</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (382): <em>vést, použít, stanoveno, mít, účtovat, odpisovat, zahrnuty, obchodovány, uvést, rozhodnout</em></li>
 </ul>
 
 <table>
@@ -434,19 +434,19 @@ The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (1046
   <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Polarity.html">Polarity</a>=Pos|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td><em>obsahují</em></td><td></td></tr>
 </table>
 
-<h3 id="aux-2"><code>AUX</code></h3>
+<h3 id="aux-2"><code class="language-plaintext highlighter-rouge">AUX</code></h3>
 
-<p>367 <a href="">cs-pos/AUX</a> tokens (84% of all <code>AUX</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>367 <a href="">cs-pos/AUX</a> tokens (84% of all <code class="language-plaintext highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Tense</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (367; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (329; 90%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (329; 90%), <tt><a href="Person.html">Person</a>=3</tt> (329; 90%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (320; 87%), <tt><a href="Number.html">Number</a>=Sing</tt> (187; 51%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">AUX</code> and <code class="language-plaintext highlighter-rouge">Tense</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (367; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (329; 90%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (329; 90%), <tt><a href="Person.html">Person</a>=3</tt> (329; 90%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (320; 87%), <tt><a href="Number.html">Number</a>=Sing</tt> (187; 51%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>Tense</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">AUX</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Tense</code>:</p>
 
 <ul>
-  <li><code>Fut</code> (19; 5% of non-empty <code>Tense</code>): <em>bude, budou</em></li>
-  <li><code>Past</code> (38; 10% of non-empty <code>Tense</code>): <em>byly, byl, byla, nebyly, bylo, nebyl, nebyla</em></li>
-  <li><code>Pres</code> (310; 84% of non-empty <code>Tense</code>): <em>je, jsou, nejsou, není</em></li>
-  <li><code>EMPTY</code> (71): <em>být, by, je-li, není-li, jsou-li, nejsou-li, byty</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Fut</code> (19; 5% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>bude, budou</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Past</code> (38; 10% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>byly, byl, byla, nebyly, bylo, nebyl, nebyla</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pres</code> (310; 84% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>je, jsou, nejsou, není</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (71): <em>být, by, je-li, není-li, jsou-li, nejsou-li, byty</em></li>
 </ul>
 
 <table>
@@ -463,24 +463,24 @@ The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (1046
   <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Polarity.html">Polarity</a>=Pos|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td><em>jsou</em></td><td><em>budou</em></td><td></td></tr>
 </table>
 
-<h3 id="adj-2"><code>ADJ</code></h3>
+<h3 id="adj-2"><code class="language-plaintext highlighter-rouge">ADJ</code></h3>
 
-<p>215 <a href="">cs-pos/ADJ</a> tokens (5% of all <code>ADJ</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>215 <a href="">cs-pos/ADJ</a> tokens (5% of all <code class="language-plaintext highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Tense</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (215; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (215; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (132; 61%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (122; 57%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">ADJ</code> and <code class="language-plaintext highlighter-rouge">Tense</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (215; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (215; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (132; 61%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (122; 57%).</p>
 
-<p><code>ADJ</code> tokens may have the following values of <code>Tense</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">ADJ</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Tense</code>:</p>
 
 <ul>
-  <li><code>Pres</code> (215; 100% of non-empty <code>Tense</code>): <em>konsolidující, zanikající, související, následujícího, předcházejícímu, přejímající, řídících, následujícímu, souvisejících, předcházející</em></li>
-  <li><code>EMPTY</code> (4440): <em>účetní, účetních, účetního, konsolidované, finanční, účetním, povinny, obchodního, ostatní, peněžních</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pres</code> (215; 100% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>konsolidující, zanikající, související, následujícího, předcházejícímu, přejímající, řídících, následujícímu, souvisejících, předcházející</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (4440): <em>účetní, účetních, účetního, konsolidované, finanční, účetním, povinny, obchodního, ostatní, peněžních</em></li>
 </ul>
 
-<p><code>Tense</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (40) occur only with one value of <code>Tense</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">Tense</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">ADJ</code>. 100% lemmas (40) occur only with one value of <code class="language-plaintext highlighter-rouge">Tense</code>.</p>
 
-<h2 id="relations-with-agreement-in-tense-2">Relations with Agreement in <code>Tense</code></h2>
+<h2 id="relations-with-agreement-in-tense-2">Relations with Agreement in <code class="language-plaintext highlighter-rouge">Tense</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Tense</code>:
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">Tense</code>:
 <tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (102; 75%),
 <tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (39; 59%),
 <tt>VERB –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; VERB</tt> (16; 94%),

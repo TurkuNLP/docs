@@ -75,12 +75,12 @@
 <p>Voice is a feature of verbs that helps map the traditional syntactic functions,
 such as subject and object, to semantic roles, such as agent and patient.</p>
 
-<h3 id="a-nameactacta-active-voice"><a name="Act"><code>Act</code></a>: active voice</h3>
+<h3 id="act-active-voice"><a name="Act"><code class="language-plaintext highlighter-rouge">Act</code></a>: active voice</h3>
 
 <p>The subject of the verb is the doer of the action (agent), the object
 is affected by the action (patient).</p>
 
-<p>All finite verb forms and the active/past participles are tagged <code>Voice=Act</code>.</p>
+<p>All finite verb forms and the active/past participles are tagged <code class="language-plaintext highlighter-rouge">Voice=Act</code>.</p>
 
 <h4 id="examples">Examples</h4>
 
@@ -90,12 +90,12 @@ is affected by the action (patient).</p>
 tense or conditional mood; here it forms the past tense.)</li>
 </ul>
 
-<h3 id="a-namepasspassa-passive-voice"><a name="Pass"><code>Pass</code></a>: passive voice</h3>
+<h3 id="pass-passive-voice"><a name="Pass"><code class="language-plaintext highlighter-rouge">Pass</code></a>: passive voice</h3>
 
 <p>The subject of the verb is affected by the action (patient). The doer
 (agent) is either unexpressed or it appears as an object of the verb.</p>
 
-<p>Only the passive participle is tagged <code>Voice=Pass</code>.</p>
+<p>Only the passive participle is tagged <code class="language-plaintext highlighter-rouge">Voice=Pass</code>.</p>
 
 <h4 id="examples-1">Examples</h4>
 
@@ -115,63 +115,63 @@ passive in all tenses; here it forms the present passive.)</li>
 
 <hr />
 
-<h2 id="treebank-statistics-udczech">Treebank Statistics (UD_Czech)</h2>
+<h2 id="treebank-statistics-ud_czech">Treebank Statistics (UD_Czech)</h2>
 
 <p>This feature is universal.
-It occurs with 2 different values: <code>Act</code>, <code>Pass</code>.</p>
+It occurs with 2 different values: <code class="language-plaintext highlighter-rouge">Act</code>, <code class="language-plaintext highlighter-rouge">Pass</code>.</p>
 
-<p>136553 tokens (10%) have a non-empty value of <code>Voice</code>.
-23230 types (19%) occur at least once with a non-empty value of <code>Voice</code>.
-7375 lemmas (13%) occur at least once with a non-empty value of <code>Voice</code>.
+<p>136553 tokens (10%) have a non-empty value of <code class="language-plaintext highlighter-rouge">Voice</code>.
+23230 types (19%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Voice</code>.
+7375 lemmas (13%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Voice</code>.
 The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (97291; 7% instances), <a href="">cs-pos/AUX</a> (26833; 2% instances), <a href="">cs-pos/ADJ</a> (12429; 1% instances).</p>
 
-<h3 id="verb"><code>VERB</code></h3>
+<h3 id="verb"><code class="language-plaintext highlighter-rouge">VERB</code></h3>
 
-<p>97291 <a href="">cs-pos/VERB</a> tokens (81% of all <code>VERB</code> tokens) have a non-empty value of <code>Voice</code>.</p>
+<p>97291 <a href="">cs-pos/VERB</a> tokens (81% of all <code class="language-plaintext highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Voice</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Voice</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (86911; 89%), <tt><a href="Number.html">Number</a>=Sing</tt> (61718; 63%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (52717; 54%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (52699; 54%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (52699; 54%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (52297; 54%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">VERB</code> and <code class="language-plaintext highlighter-rouge">Voice</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (86911; 89%), <tt><a href="Number.html">Number</a>=Sing</tt> (61718; 63%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (52717; 54%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (52699; 54%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (52699; 54%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (52297; 54%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>Voice</code>:</p>
-
-<ul>
-  <li><code>Act</code> (97291; 100% of non-empty <code>Voice</code>): <em>má, je, může, řekl, měl, mají, musí, jde, měla, lze</em></li>
-  <li><code>EMPTY</code> (22381): <em>mít, získat, stát, být, hrát, říci, muset, platit, dělat, dostat</em></li>
-</ul>
-
-<p><code>Voice</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 100% lemmas (4844) occur only with one value of <code>Voice</code>.</p>
-
-<h3 id="aux"><code>AUX</code></h3>
-
-<p>26833 <a href="">cs-pos/AUX</a> tokens (74% of all <code>AUX</code> tokens) have a non-empty value of <code>Voice</code>.</p>
-
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Voice</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (24159; 90%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (20821; 78%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (20817; 78%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (20817; 78%), <tt><a href="Number.html">Number</a>=Sing</tt> (18653; 70%), <tt><a href="Person.html">Person</a>=3</tt> (17402; 65%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (16854; 63%).</p>
-
-<p><code>AUX</code> tokens may have the following values of <code>Voice</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Voice</code>:</p>
 
 <ul>
-  <li><code>Act</code> (26833; 100% of non-empty <code>Voice</code>): <em>je, jsou, bude, byl, jsem, jsme, bylo, byla, není, budou</em></li>
-  <li><code>EMPTY</code> (9505): <em>by, být, bychom, bych, byste, budiž, buďte, bys, býti, buď</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Act</code> (97291; 100% of non-empty <code class="language-plaintext highlighter-rouge">Voice</code>): <em>má, je, může, řekl, měl, mají, musí, jde, měla, lze</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (22381): <em>mít, získat, stát, být, hrát, říci, muset, platit, dělat, dostat</em></li>
 </ul>
 
-<h3 id="adj"><code>ADJ</code></h3>
+<p><code class="language-plaintext highlighter-rouge">Voice</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">VERB</code>. 100% lemmas (4844) occur only with one value of <code class="language-plaintext highlighter-rouge">Voice</code>.</p>
 
-<p>12429 <a href="">cs-pos/ADJ</a> tokens (7% of all <code>ADJ</code> tokens) have a non-empty value of <code>Voice</code>.</p>
+<h3 id="aux"><code class="language-plaintext highlighter-rouge">AUX</code></h3>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Voice</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (12429; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (12249; 99%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (8452; 68%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (8287; 67%), <tt><a href="Number.html">Number</a>=Sing</tt> (6643; 53%).</p>
+<p>26833 <a href="">cs-pos/AUX</a> tokens (74% of all <code class="language-plaintext highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Voice</code>.</p>
 
-<p><code>ADJ</code> tokens may have the following values of <code>Voice</code>:</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">AUX</code> and <code class="language-plaintext highlighter-rouge">Voice</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (24159; 90%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (20821; 78%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (20817; 78%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (20817; 78%), <tt><a href="Number.html">Number</a>=Sing</tt> (18653; 70%), <tt><a href="Person.html">Person</a>=3</tt> (17402; 65%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (16854; 63%).</p>
+
+<p><code class="language-plaintext highlighter-rouge">AUX</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Voice</code>:</p>
 
 <ul>
-  <li><code>Act</code> (3959; 32% of non-empty <code>Voice</code>): <em>rozhodující, vedoucí, následující, týkající, vynikající, odpovídající, rostoucí, žijící, kupující, vládnoucí</em></li>
-  <li><code>Pass</code> (8470; 68% of non-empty <code>Voice</code>): <em>řečeno, připraven, přesvědčen, připravena, otevřena, rozhodnuto, uvedeno, odsouzen, založena, zvolen</em></li>
-  <li><code>EMPTY</code> (156369): <em>první, další, české, druhé, nové, státní, poslední, dalších, vlastní, možné</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Act</code> (26833; 100% of non-empty <code class="language-plaintext highlighter-rouge">Voice</code>): <em>je, jsou, bude, byl, jsem, jsme, bylo, byla, není, budou</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (9505): <em>by, být, bychom, bych, byste, budiž, buďte, bys, býti, buď</em></li>
 </ul>
 
-<p><code>Voice</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (2531) occur only with one value of <code>Voice</code>.</p>
+<h3 id="adj"><code class="language-plaintext highlighter-rouge">ADJ</code></h3>
 
-<h2 id="relations-with-agreement-in-voice">Relations with Agreement in <code>Voice</code></h2>
+<p>12429 <a href="">cs-pos/ADJ</a> tokens (7% of all <code class="language-plaintext highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Voice</code>.</p>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Voice</code>:
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">ADJ</code> and <code class="language-plaintext highlighter-rouge">Voice</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (12429; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (12249; 99%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (8452; 68%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (8287; 67%), <tt><a href="Number.html">Number</a>=Sing</tt> (6643; 53%).</p>
+
+<p><code class="language-plaintext highlighter-rouge">ADJ</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Voice</code>:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Act</code> (3959; 32% of non-empty <code class="language-plaintext highlighter-rouge">Voice</code>): <em>rozhodující, vedoucí, následující, týkající, vynikající, odpovídající, rostoucí, žijící, kupující, vládnoucí</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pass</code> (8470; 68% of non-empty <code class="language-plaintext highlighter-rouge">Voice</code>): <em>řečeno, připraven, přesvědčen, připravena, otevřena, rozhodnuto, uvedeno, odsouzen, založena, zvolen</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (156369): <em>první, další, české, druhé, nové, státní, poslední, dalších, vlastní, možné</em></li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">Voice</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">ADJ</code>. 100% lemmas (2531) occur only with one value of <code class="language-plaintext highlighter-rouge">Voice</code>.</p>
+
+<h2 id="relations-with-agreement-in-voice">Relations with Agreement in <code class="language-plaintext highlighter-rouge">Voice</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">Voice</code>:
 <tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (11176; 95%),
 <tt>VERB –[<a href="../dep/ccomp.html">ccomp</a>]–&gt; VERB</tt> (5568; 82%),
 <tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (4381; 84%),
@@ -185,63 +185,63 @@ The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (9729
 
 <hr />
 
-<h2 id="treebank-statistics-udczech-cac">Treebank Statistics (UD_Czech-CAC)</h2>
+<h2 id="treebank-statistics-ud_czech-cac">Treebank Statistics (UD_Czech-CAC)</h2>
 
 <p>This feature is universal.
-It occurs with 2 different values: <code>Act</code>, <code>Pass</code>.</p>
+It occurs with 2 different values: <code class="language-plaintext highlighter-rouge">Act</code>, <code class="language-plaintext highlighter-rouge">Pass</code>.</p>
 
-<p>49378 tokens (10%) have a non-empty value of <code>Voice</code>.
-12302 types (20%) occur at least once with a non-empty value of <code>Voice</code>.
-4805 lemmas (17%) occur at least once with a non-empty value of <code>Voice</code>.
+<p>49378 tokens (10%) have a non-empty value of <code class="language-plaintext highlighter-rouge">Voice</code>.
+12302 types (20%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Voice</code>.
+4805 lemmas (17%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Voice</code>.
 The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (31799; 7% instances), <a href="">cs-pos/AUX</a> (11302; 2% instances), <a href="">cs-pos/ADJ</a> (6277; 1% instances).</p>
 
-<h3 id="verb-1"><code>VERB</code></h3>
+<h3 id="verb-1"><code class="language-plaintext highlighter-rouge">VERB</code></h3>
 
-<p>31799 <a href="">cs-pos/VERB</a> tokens (80% of all <code>VERB</code> tokens) have a non-empty value of <code>Voice</code>.</p>
+<p>31799 <a href="">cs-pos/VERB</a> tokens (80% of all <code class="language-plaintext highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Voice</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Voice</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (29023; 91%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (21430; 67%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (21424; 67%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (21424; 67%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (21343; 67%), <tt><a href="Number.html">Number</a>=Sing</tt> (18350; 58%), <tt><a href="Person.html">Person</a>=3</tt> (18045; 57%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">VERB</code> and <code class="language-plaintext highlighter-rouge">Voice</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (29023; 91%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (21430; 67%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (21424; 67%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (21424; 67%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (21343; 67%), <tt><a href="Number.html">Number</a>=Sing</tt> (18350; 58%), <tt><a href="Person.html">Person</a>=3</tt> (18045; 57%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>Voice</code>:</p>
-
-<ul>
-  <li><code>Act</code> (31799; 100% of non-empty <code>Voice</code>): <em>je, má, mají, musí, může, jde, lze, jsou, mohou, můžeme</em></li>
-  <li><code>EMPTY</code> (7751): <em>mít, zajistit, říci, být, vidět, řešit, dělat, věnovat, provádět, dosáhnout</em></li>
-</ul>
-
-<p><code>Voice</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 100% lemmas (3224) occur only with one value of <code>Voice</code>.</p>
-
-<h3 id="aux-1"><code>AUX</code></h3>
-
-<p>11302 <a href="">cs-pos/AUX</a> tokens (81% of all <code>AUX</code> tokens) have a non-empty value of <code>Voice</code>.</p>
-
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Voice</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (10431; 92%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (8887; 79%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (8886; 79%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (8886; 79%), <tt><a href="Person.html">Person</a>=3</tt> (7818; 69%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (7809; 69%), <tt><a href="Number.html">Number</a>=Sing</tt> (7628; 67%).</p>
-
-<p><code>AUX</code> tokens may have the following values of <code>Voice</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Voice</code>:</p>
 
 <ul>
-  <li><code>Act</code> (11302; 100% of non-empty <code>Voice</code>): <em>je, jsou, bude, byl, bylo, byla, jsme, není, byly, jsem</em></li>
-  <li><code>EMPTY</code> (2640): <em>by, být, bychom, bych, byste, býti, buď, budiž, buďme, buďte</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Act</code> (31799; 100% of non-empty <code class="language-plaintext highlighter-rouge">Voice</code>): <em>je, má, mají, musí, může, jde, lze, jsou, mohou, můžeme</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (7751): <em>mít, zajistit, říci, být, vidět, řešit, dělat, věnovat, provádět, dosáhnout</em></li>
 </ul>
 
-<h3 id="adj-1"><code>ADJ</code></h3>
+<p><code class="language-plaintext highlighter-rouge">Voice</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">VERB</code>. 100% lemmas (3224) occur only with one value of <code class="language-plaintext highlighter-rouge">Voice</code>.</p>
 
-<p>6277 <a href="">cs-pos/ADJ</a> tokens (9% of all <code>ADJ</code> tokens) have a non-empty value of <code>Voice</code>.</p>
+<h3 id="aux-1"><code class="language-plaintext highlighter-rouge">AUX</code></h3>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Voice</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (6277; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (6226; 99%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (4179; 67%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (3983; 63%).</p>
+<p>11302 <a href="">cs-pos/AUX</a> tokens (81% of all <code class="language-plaintext highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Voice</code>.</p>
 
-<p><code>ADJ</code> tokens may have the following values of <code>Voice</code>:</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">AUX</code> and <code class="language-plaintext highlighter-rouge">Voice</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (10431; 92%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (8887; 79%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (8886; 79%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (8886; 79%), <tt><a href="Person.html">Person</a>=3</tt> (7818; 69%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (7809; 69%), <tt><a href="Number.html">Number</a>=Sing</tt> (7628; 67%).</p>
+
+<p><code class="language-plaintext highlighter-rouge">AUX</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Voice</code>:</p>
 
 <ul>
-  <li><code>Act</code> (2093; 33% of non-empty <code>Voice</code>): <em>pracujících, rozhodující, pracující, vedoucí, odpovídající, následující, týkající, řídící, vyplývající, rostoucí</em></li>
-  <li><code>Pass</code> (4184; 67% of non-empty <code>Voice</code>): <em>řečeno, dosaženo, věnována, dána, provedena, uvedeny, určena, určeny, splněny, zahájena</em></li>
-  <li><code>EMPTY</code> (66901): <em>další, pracovní, první, jednotlivých, základní, nové, možno, socialistické, různých, dalších</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Act</code> (11302; 100% of non-empty <code class="language-plaintext highlighter-rouge">Voice</code>): <em>je, jsou, bude, byl, bylo, byla, jsme, není, byly, jsem</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (2640): <em>by, být, bychom, bych, byste, býti, buď, budiž, buďme, buďte</em></li>
 </ul>
 
-<p><code>Voice</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (1581) occur only with one value of <code>Voice</code>.</p>
+<h3 id="adj-1"><code class="language-plaintext highlighter-rouge">ADJ</code></h3>
 
-<h2 id="relations-with-agreement-in-voice-1">Relations with Agreement in <code>Voice</code></h2>
+<p>6277 <a href="">cs-pos/ADJ</a> tokens (9% of all <code class="language-plaintext highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Voice</code>.</p>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Voice</code>:
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">ADJ</code> and <code class="language-plaintext highlighter-rouge">Voice</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (6277; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (6226; 99%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (4179; 67%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (3983; 63%).</p>
+
+<p><code class="language-plaintext highlighter-rouge">ADJ</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Voice</code>:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Act</code> (2093; 33% of non-empty <code class="language-plaintext highlighter-rouge">Voice</code>): <em>pracujících, rozhodující, pracující, vedoucí, odpovídající, následující, týkající, řídící, vyplývající, rostoucí</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pass</code> (4184; 67% of non-empty <code class="language-plaintext highlighter-rouge">Voice</code>): <em>řečeno, dosaženo, věnována, dána, provedena, uvedeny, určena, určeny, splněny, zahájena</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (66901): <em>další, pracovní, první, jednotlivých, základní, nové, možno, socialistické, různých, dalších</em></li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">Voice</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">ADJ</code>. 100% lemmas (1581) occur only with one value of <code class="language-plaintext highlighter-rouge">Voice</code>.</p>
+
+<h2 id="relations-with-agreement-in-voice-1">Relations with Agreement in <code class="language-plaintext highlighter-rouge">Voice</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">Voice</code>:
 <tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (4624; 97%),
 <tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (1499; 83%),
 <tt>VERB –[<a href="../dep/ccomp.html">ccomp</a>]–&gt; VERB</tt> (840; 70%),
@@ -255,28 +255,28 @@ The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (3179
 
 <hr />
 
-<h2 id="treebank-statistics-udczech-cltt">Treebank Statistics (UD_Czech-CLTT)</h2>
+<h2 id="treebank-statistics-ud_czech-cltt">Treebank Statistics (UD_Czech-CLTT)</h2>
 
 <p>This feature is universal.
-It occurs with 2 different values: <code>Act</code>, <code>Pass</code>.</p>
+It occurs with 2 different values: <code class="language-plaintext highlighter-rouge">Act</code>, <code class="language-plaintext highlighter-rouge">Pass</code>.</p>
 
-<p>1806 tokens (7%) have a non-empty value of <code>Voice</code>.
-491 types (13%) occur at least once with a non-empty value of <code>Voice</code>.
-272 lemmas (12%) occur at least once with a non-empty value of <code>Voice</code>.
+<p>1806 tokens (7%) have a non-empty value of <code class="language-plaintext highlighter-rouge">Voice</code>.
+491 types (13%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Voice</code>.
+272 lemmas (12%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Voice</code>.
 The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (1224; 5% instances), <a href="">cs-pos/AUX</a> (367; 1% instances), <a href="">cs-pos/ADJ</a> (215; 1% instances).</p>
 
-<h3 id="verb-2"><code>VERB</code></h3>
+<h3 id="verb-2"><code class="language-plaintext highlighter-rouge">VERB</code></h3>
 
-<p>1224 <a href="">cs-pos/VERB</a> tokens (86% of all <code>VERB</code> tokens) have a non-empty value of <code>Voice</code>.</p>
+<p>1224 <a href="">cs-pos/VERB</a> tokens (86% of all <code class="language-plaintext highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Voice</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Voice</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (1095; 89%), <tt><a href="Person.html">Person</a>=3</tt> (966; 79%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (966; 79%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (966; 79%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (966; 79%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (965; 79%), <tt><a href="Number.html">Number</a>=Sing</tt> (752; 61%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">VERB</code> and <code class="language-plaintext highlighter-rouge">Voice</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (1095; 89%), <tt><a href="Person.html">Person</a>=3</tt> (966; 79%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (966; 79%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (966; 79%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (966; 79%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (965; 79%), <tt><a href="Number.html">Number</a>=Sing</tt> (752; 61%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>Voice</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Voice</code>:</p>
 
 <ul>
-  <li><code>Act</code> (1046; 85% of non-empty <code>Voice</code>): <em>obsahuje, uvede, rozumí, může, účtuje, použijí, mohou, má, sestavují, mají</em></li>
-  <li><code>Pass</code> (178; 15% of non-empty <code>Voice</code>): <em>stanoveno, zahrnuty, obchodovány, sestavena, zavedena, uvedeny, vykázány, účtovány, uzavřeny, vyjádřeny</em></li>
-  <li><code>EMPTY</code> (204): <em>vést, použít, mít, účtovat, odpisovat, uvést, rozhodnout, sestavit, pokračovat, splňovat</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Act</code> (1046; 85% of non-empty <code class="language-plaintext highlighter-rouge">Voice</code>): <em>obsahuje, uvede, rozumí, může, účtuje, použijí, mohou, má, sestavují, mají</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pass</code> (178; 15% of non-empty <code class="language-plaintext highlighter-rouge">Voice</code>): <em>stanoveno, zahrnuty, obchodovány, sestavena, zavedena, uvedeny, vykázány, účtovány, uzavřeny, vyjádřeny</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (204): <em>vést, použít, mít, účtovat, odpisovat, uvést, rozhodnout, sestavit, pokračovat, splňovat</em></li>
 </ul>
 
 <table>
@@ -290,37 +290,37 @@ The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (1224
   <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Polarity.html">Polarity</a>=Pos|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td><em>uvedou</em></td><td></td></tr>
 </table>
 
-<h3 id="aux-2"><code>AUX</code></h3>
+<h3 id="aux-2"><code class="language-plaintext highlighter-rouge">AUX</code></h3>
 
-<p>367 <a href="">cs-pos/AUX</a> tokens (84% of all <code>AUX</code> tokens) have a non-empty value of <code>Voice</code>.</p>
+<p>367 <a href="">cs-pos/AUX</a> tokens (84% of all <code class="language-plaintext highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Voice</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Voice</code> co-occurred: <tt><a href="Mood.html">Mood</a>=Ind</tt> (329; 90%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (329; 90%), <tt><a href="Person.html">Person</a>=3</tt> (329; 90%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (320; 87%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (310; 84%), <tt><a href="Number.html">Number</a>=Sing</tt> (187; 51%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">AUX</code> and <code class="language-plaintext highlighter-rouge">Voice</code> co-occurred: <tt><a href="Mood.html">Mood</a>=Ind</tt> (329; 90%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (329; 90%), <tt><a href="Person.html">Person</a>=3</tt> (329; 90%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (320; 87%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (310; 84%), <tt><a href="Number.html">Number</a>=Sing</tt> (187; 51%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>Voice</code>:</p>
-
-<ul>
-  <li><code>Act</code> (367; 100% of non-empty <code>Voice</code>): <em>je, jsou, nejsou, není, byly, bude, byl, budou, byla, nebyly</em></li>
-  <li><code>EMPTY</code> (71): <em>být, by, je-li, není-li, jsou-li, nejsou-li, byty</em></li>
-</ul>
-
-<h3 id="adj-2"><code>ADJ</code></h3>
-
-<p>215 <a href="">cs-pos/ADJ</a> tokens (5% of all <code>ADJ</code> tokens) have a non-empty value of <code>Voice</code>.</p>
-
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Voice</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (215; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (215; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (132; 61%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (122; 57%).</p>
-
-<p><code>ADJ</code> tokens may have the following values of <code>Voice</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">AUX</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Voice</code>:</p>
 
 <ul>
-  <li><code>Act</code> (215; 100% of non-empty <code>Voice</code>): <em>konsolidující, zanikající, související, následujícího, předcházejícímu, přejímající, řídících, následujícímu, souvisejících, předcházející</em></li>
-  <li><code>EMPTY</code> (4440): <em>účetní, účetních, účetního, konsolidované, finanční, účetním, povinny, obchodního, ostatní, peněžních</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Act</code> (367; 100% of non-empty <code class="language-plaintext highlighter-rouge">Voice</code>): <em>je, jsou, nejsou, není, byly, bude, byl, budou, byla, nebyly</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (71): <em>být, by, je-li, není-li, jsou-li, nejsou-li, byty</em></li>
 </ul>
 
-<p><code>Voice</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (40) occur only with one value of <code>Voice</code>.</p>
+<h3 id="adj-2"><code class="language-plaintext highlighter-rouge">ADJ</code></h3>
 
-<h2 id="relations-with-agreement-in-voice-2">Relations with Agreement in <code>Voice</code></h2>
+<p>215 <a href="">cs-pos/ADJ</a> tokens (5% of all <code class="language-plaintext highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Voice</code>.</p>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Voice</code>:
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">ADJ</code> and <code class="language-plaintext highlighter-rouge">Voice</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (215; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (215; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (132; 61%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (122; 57%).</p>
+
+<p><code class="language-plaintext highlighter-rouge">ADJ</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Voice</code>:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Act</code> (215; 100% of non-empty <code class="language-plaintext highlighter-rouge">Voice</code>): <em>konsolidující, zanikající, související, následujícího, předcházejícímu, přejímající, řídících, následujícímu, souvisejících, předcházející</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (4440): <em>účetní, účetních, účetního, konsolidované, finanční, účetním, povinny, obchodního, ostatní, peněžních</em></li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">Voice</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">ADJ</code>. 100% lemmas (40) occur only with one value of <code class="language-plaintext highlighter-rouge">Voice</code>.</p>
+
+<h2 id="relations-with-agreement-in-voice-2">Relations with Agreement in <code class="language-plaintext highlighter-rouge">Voice</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">Voice</code>:
 <tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (118; 83%),
 <tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (44; 65%),
 <tt>VERB –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; VERB</tt> (17; 100%),

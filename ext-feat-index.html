@@ -69,27 +69,27 @@ It is likely that these values will be included in future versions of the univer
 
 <h2 id="aspect">Aspect</h2>
 <ul>
-  <li><a href="">u-feat/Aspect</a><code> = Freq</code>: in UD v2 this should be changed to <code>Aspect=Iter</code>, (iterative), which is now a universal feature. <a href="hu-feat/Aspect">Hungarian</a>: <em>üt</em> “hit” – <em>ütöget</em> “hit several times”</li>
+  <li><a href="">u-feat/Aspect</a><code class="language-plaintext highlighter-rouge"> = Freq</code>: in UD v2 this should be changed to <code class="language-plaintext highlighter-rouge">Aspect=Iter</code>, (iterative), which is now a universal feature. <a href="hu-feat/Aspect">Hungarian</a>: <em>üt</em> “hit” – <em>ütöget</em> “hit several times”</li>
 </ul>
 
 <h2 id="definite">Definite</h2>
 <ul>
-  <li><a href="">u-feat/Definite</a><code> = 2</code>: definiteness-like agreement of verbs with a second person object in <a href="hu-feat/Definite">Hungarian</a>. Hungarian verbs have to be conjugated in harmony with the definiteness of the object, making a difference between a definite object (<em>nézem a filmet</em> “I am watching the film”), an indefinite object (<em>nézek egy filmet</em> “I am watching a film”) and a second person object (<em>nézlek téged</em> “I am watching you”).</li>
+  <li><a href="">u-feat/Definite</a><code class="language-plaintext highlighter-rouge"> = 2</code>: definiteness-like agreement of verbs with a second person object in <a href="hu-feat/Definite">Hungarian</a>. Hungarian verbs have to be conjugated in harmony with the definiteness of the object, making a difference between a definite object (<em>nézem a filmet</em> “I am watching the film”), an indefinite object (<em>nézek egy filmet</em> “I am watching a film”) and a second person object (<em>nézlek téged</em> “I am watching you”).</li>
 </ul>
 
 <h2 id="degree">Degree</h2>
 <ul>
-  <li><a href="">u-feat/Degree</a><code> = Dim</code>: diminutive (used for nouns e.g. in <a href="nl-feat/Degree">Dutch</a>: <em>stoeltje, huisje, nippertje</em>)</li>
+  <li><a href="">u-feat/Degree</a><code class="language-plaintext highlighter-rouge"> = Dim</code>: diminutive (used for nouns e.g. in <a href="nl-feat/Degree">Dutch</a>: <em>stoeltje, huisje, nippertje</em>)</li>
 </ul>
 
 <h2 id="tense">Tense</h2>
 <ul>
-  <li><a href="">u-feat/Tense</a><code> = Aor</code>: aorist (as opposed to <code>Past</code>) in <a href="grc-feat/Tense">Ancient Greek</a>. Note that other languages may have a past tense that they traditionally call aorist but they mark it using the normal <code>Past</code> value because the other past tenses have their own special values. <a href="bg-feat/Tense">Bulgarian</a> is an example: Bulgarian aorist is labeled <code>Past</code> and imperfect past is labeled <code>Imp</code>.</li>
+  <li><a href="">u-feat/Tense</a><code class="language-plaintext highlighter-rouge"> = Aor</code>: aorist (as opposed to <code class="language-plaintext highlighter-rouge">Past</code>) in <a href="grc-feat/Tense">Ancient Greek</a>. Note that other languages may have a past tense that they traditionally call aorist but they mark it using the normal <code class="language-plaintext highlighter-rouge">Past</code> value because the other past tenses have their own special values. <a href="bg-feat/Tense">Bulgarian</a> is an example: Bulgarian aorist is labeled <code class="language-plaintext highlighter-rouge">Past</code> and imperfect past is labeled <code class="language-plaintext highlighter-rouge">Imp</code>.</li>
 </ul>
 
 <h2 id="voice">Voice</h2>
 <ul>
-  <li><code>Voice = Int</code>: intensive voice/aspect (the PIEL binyan) in Hebrew.</li>
+  <li><code class="language-plaintext highlighter-rouge">Voice = Int</code>: intensive voice/aspect (the PIEL binyan) in Hebrew.</li>
 </ul>
 
 <h1 id="language-specific-features">Language-specific features</h1>
@@ -107,7 +107,7 @@ they should be encoded in all the languages identically.</p>
 
 <p>For the universal features, there may be additional language-specific values that are not (yet) defined at the universal level.</p>
 
-<p>Features that have brackets in their name (such as <code>Gender[psor]</code>) are <a href="u/overview/feat-layers.html">layered features</a>.
+<p>Features that have brackets in their name (such as <code class="language-plaintext highlighter-rouge">Gender[psor]</code>) are <a href="u/overview/feat-layers.html">layered features</a>.
 It means that a feature applies more than once to a word, in layers. The layer is indicated in the brackets.
 Layered features are clones of existing non-layered universal or language-specific features.
 They have their own language-specific documentation that describes what is the meaning of the layer,
@@ -294,21 +294,21 @@ from existing tagsets of various languages to the universal part-of-speech tags 
 
 <h2 id="politeabs">Polite[abs]</h2>
 <ul>
-  <li>Note that unlayered <a href="">Polite</a> is now a universal feature and the values of the layered counterparts should be changed to <code>Infm</code> and <code>Form</code>.</li>
+  <li>Note that unlayered <a href="">Polite</a> is now a universal feature and the values of the layered counterparts should be changed to <code class="language-plaintext highlighter-rouge">Infm</code> and <code class="language-plaintext highlighter-rouge">Form</code>.</li>
   <li><a href="ext-feat/AbsErgDatPolite">Basque values</a>: Inf, Pol</li>
   <li><a href="ext-feat/AbsErgDatPolite">Interset</a>: Inf, Pol</li>
 </ul>
 
 <h2 id="politeerg">Polite[erg]</h2>
 <ul>
-  <li>Note that unlayered <a href="">Polite</a> is now a universal feature and the values of the layered counterparts should be changed to <code>Infm</code> and <code>Form</code>.</li>
+  <li>Note that unlayered <a href="">Polite</a> is now a universal feature and the values of the layered counterparts should be changed to <code class="language-plaintext highlighter-rouge">Infm</code> and <code class="language-plaintext highlighter-rouge">Form</code>.</li>
   <li><a href="ext-feat/AbsErgDatPolite">Basque values</a>: Inf, Pol</li>
   <li><a href="ext-feat/AbsErgDatPolite">Interset</a>: Inf, Pol</li>
 </ul>
 
 <h2 id="politedat">Polite[dat]</h2>
 <ul>
-  <li>Note that unlayered <a href="">Polite</a> is now a universal feature and the values of the layered counterparts should be changed to <code>Infm</code> and <code>Form</code>.</li>
+  <li>Note that unlayered <a href="">Polite</a> is now a universal feature and the values of the layered counterparts should be changed to <code class="language-plaintext highlighter-rouge">Infm</code> and <code class="language-plaintext highlighter-rouge">Form</code>.</li>
   <li><a href="ext-feat/AbsErgDatPolite">Basque values</a>: Inf, Pol</li>
   <li><a href="ext-feat/AbsErgDatPolite">Interset</a>: Inf, Pol</li>
 </ul>

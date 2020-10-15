@@ -85,8 +85,8 @@ Examples:</p>
   <li><em><b>Jedno</b> kotě spalo, <b>dvě</b> koťata si hrála.</em> “One kitten slept, two kittens played.”</li>
 </ul>
 
-<p>In PDT, these numerals are attached to their counted nouns as <code>Atr</code> (attribute).
-It is straightforward to convert such dependencies to <code>nummod</code>:</p>
+<p>In PDT, these numerals are attached to their counted nouns as <code class="language-plaintext highlighter-rouge">Atr</code> (attribute).
+It is straightforward to convert such dependencies to <code class="language-plaintext highlighter-rouge">nummod</code>:</p>
 
 <pre><code class="language-sdparse">Jedno kotě spalo . \n One kitten slept .
 nummod(kotě, Jedno)
@@ -108,7 +108,7 @@ The whole phrase (numeral + counted noun) behaves as a noun phrase in neuter gen
   <li><em>Skupina mužů hrála karty.</em> “A group of men played cards.”</li>
 </ul>
 
-<p>In PDT, these numerals are analyzed as heads of the counted nouns, which are attached to the numeral as <code>Atr</code>:</p>
+<p>In PDT, these numerals are analyzed as heads of the counted nouns, which are attached to the numeral as <code class="language-plaintext highlighter-rouge">Atr</code>:</p>
 
 <pre><code class="language-conllu"># This is not UD, it is Prague Dependency Treebank, and we want to clearly distinguish it from the UD examples.
 # visual-style nodes yellow
@@ -367,8 +367,8 @@ nummod(December, 31-18)
 punct(31-18, st)
 </code></pre>
 
-<p>Numerals expressed using digits are labeled <code>nummod</code> even if they represent ordinal numerals,
-which would be labeled <code>amod</code>:</p>
+<p>Numerals expressed using digits are labeled <code class="language-plaintext highlighter-rouge">nummod</code> even if they represent ordinal numerals,
+which would be labeled <code class="language-plaintext highlighter-rouge">amod</code>:</p>
 
 <!-- ln95045_123.a.gz (8/8) -->
 <pre><code class="language-conllu"># This is not UD, it is Prague Dependency Treebank, and we want to clearly distinguish it from the UD examples.
@@ -402,7 +402,7 @@ remnant(to, from)
 
 <h2 id="numbered-objects">Numbered objects</h2>
 
-<p>House number in address is attached as <code>nummod</code> to the name of the street:</p>
+<p>House number in address is attached as <code class="language-plaintext highlighter-rouge">nummod</code> to the name of the street:</p>
 
 <pre><code class="language-sdparse">v budově Na poříčí 12 \n in the-building Na poříčí 12
 nmod(budově, poříčí-4)
@@ -424,17 +424,17 @@ nummod(poříčí-10, 12-11)
 
 <hr />
 
-<h2 id="treebank-statistics-udczech">Treebank Statistics (UD_Czech)</h2>
+<h2 id="treebank-statistics-ud_czech">Treebank Statistics (UD_Czech)</h2>
 
 <p>This relation is universal.
-There are 1 language-specific subtypes of <code>nummod</code>: <a href="">nummod:gov</a>.</p>
+There are 1 language-specific subtypes of <code class="language-plaintext highlighter-rouge">nummod</code>: <a href="">nummod:gov</a>.</p>
 
-<p>17496 nodes (1%) are attached to their parents as <code>nummod</code>.</p>
+<p>17496 nodes (1%) are attached to their parents as <code class="language-plaintext highlighter-rouge">nummod</code>.</p>
 
-<p>10168 instances of <code>nummod</code> (58%) are right-to-left (child precedes parent).
+<p>10168 instances of <code class="language-plaintext highlighter-rouge">nummod</code> (58%) are right-to-left (child precedes parent).
 Average distance between parent and child is 1.59104938271605.</p>
 
-<p>The following 12 pairs of parts of speech are connected with <code>nummod</code>: <a href="">cs-pos/NOUN</a>-<a href="">cs-pos/NUM</a> (15461; 88% instances), <a href="">cs-pos/PROPN</a>-<a href="">cs-pos/NUM</a> (1492; 9% instances), <a href="">cs-pos/ADJ</a>-<a href="">cs-pos/NUM</a> (245; 1% instances), <a href="">cs-pos/SYM</a>-<a href="">cs-pos/NUM</a> (138; 1% instances), <a href="">cs-pos/NUM</a>-<a href="">cs-pos/NUM</a> (88; 1% instances), <a href="">cs-pos/CCONJ</a>-<a href="">cs-pos/NUM</a> (26; 0% instances), <a href="">cs-pos/DET</a>-<a href="">cs-pos/NUM</a> (15; 0% instances), <a href="">cs-pos/PRON</a>-<a href="">cs-pos/NUM</a> (11; 0% instances), <a href="">cs-pos/VERB</a>-<a href="">cs-pos/NUM</a> (8; 0% instances), <a href="">cs-pos/PUNCT</a>-<a href="">cs-pos/NUM</a> (6; 0% instances), <a href="">cs-pos/ADV</a>-<a href="">cs-pos/NUM</a> (5; 0% instances), <a href="">cs-pos/INTJ</a>-<a href="">cs-pos/NUM</a> (1; 0% instances).</p>
+<p>The following 12 pairs of parts of speech are connected with <code class="language-plaintext highlighter-rouge">nummod</code>: <a href="">cs-pos/NOUN</a>-<a href="">cs-pos/NUM</a> (15461; 88% instances), <a href="">cs-pos/PROPN</a>-<a href="">cs-pos/NUM</a> (1492; 9% instances), <a href="">cs-pos/ADJ</a>-<a href="">cs-pos/NUM</a> (245; 1% instances), <a href="">cs-pos/SYM</a>-<a href="">cs-pos/NUM</a> (138; 1% instances), <a href="">cs-pos/NUM</a>-<a href="">cs-pos/NUM</a> (88; 1% instances), <a href="">cs-pos/CCONJ</a>-<a href="">cs-pos/NUM</a> (26; 0% instances), <a href="">cs-pos/DET</a>-<a href="">cs-pos/NUM</a> (15; 0% instances), <a href="">cs-pos/PRON</a>-<a href="">cs-pos/NUM</a> (11; 0% instances), <a href="">cs-pos/VERB</a>-<a href="">cs-pos/NUM</a> (8; 0% instances), <a href="">cs-pos/PUNCT</a>-<a href="">cs-pos/NUM</a> (6; 0% instances), <a href="">cs-pos/ADV</a>-<a href="">cs-pos/NUM</a> (5; 0% instances), <a href="">cs-pos/INTJ</a>-<a href="">cs-pos/NUM</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 3	bgColor:blue
 # visual-style 3	fgColor:white
@@ -486,17 +486,17 @@ Average distance between parent and child is 1.59104938271605.</p>
 
 <hr />
 
-<h2 id="treebank-statistics-udczech-cac">Treebank Statistics (UD_Czech-CAC)</h2>
+<h2 id="treebank-statistics-ud_czech-cac">Treebank Statistics (UD_Czech-CAC)</h2>
 
 <p>This relation is universal.
-There are 1 language-specific subtypes of <code>nummod</code>: <a href="">nummod:gov</a>.</p>
+There are 1 language-specific subtypes of <code class="language-plaintext highlighter-rouge">nummod</code>: <a href="">nummod:gov</a>.</p>
 
-<p>4388 nodes (1%) are attached to their parents as <code>nummod</code>.</p>
+<p>4388 nodes (1%) are attached to their parents as <code class="language-plaintext highlighter-rouge">nummod</code>.</p>
 
-<p>2766 instances of <code>nummod</code> (63%) are right-to-left (child precedes parent).
+<p>2766 instances of <code class="language-plaintext highlighter-rouge">nummod</code> (63%) are right-to-left (child precedes parent).
 Average distance between parent and child is 1.32133090246126.</p>
 
-<p>The following 10 pairs of parts of speech are connected with <code>nummod</code>: <a href="">cs-pos/NOUN</a>-<a href="">cs-pos/NUM</a> (4080; 93% instances), <a href="">cs-pos/SYM</a>-<a href="">cs-pos/NUM</a> (211; 5% instances), <a href="">cs-pos/PROPN</a>-<a href="">cs-pos/NUM</a> (34; 1% instances), <a href="">cs-pos/NUM</a>-<a href="">cs-pos/NUM</a> (23; 1% instances), <a href="">cs-pos/ADJ</a>-<a href="">cs-pos/NUM</a> (22; 1% instances), <a href="">cs-pos/DET</a>-<a href="">cs-pos/NUM</a> (6; 0% instances), <a href="">cs-pos/VERB</a>-<a href="">cs-pos/NUM</a> (6; 0% instances), <a href="">cs-pos/ADV</a>-<a href="">cs-pos/NUM</a> (2; 0% instances), <a href="">cs-pos/PART</a>-<a href="">cs-pos/NUM</a> (2; 0% instances), <a href="">cs-pos/PRON</a>-<a href="">cs-pos/NUM</a> (2; 0% instances).</p>
+<p>The following 10 pairs of parts of speech are connected with <code class="language-plaintext highlighter-rouge">nummod</code>: <a href="">cs-pos/NOUN</a>-<a href="">cs-pos/NUM</a> (4080; 93% instances), <a href="">cs-pos/SYM</a>-<a href="">cs-pos/NUM</a> (211; 5% instances), <a href="">cs-pos/PROPN</a>-<a href="">cs-pos/NUM</a> (34; 1% instances), <a href="">cs-pos/NUM</a>-<a href="">cs-pos/NUM</a> (23; 1% instances), <a href="">cs-pos/ADJ</a>-<a href="">cs-pos/NUM</a> (22; 1% instances), <a href="">cs-pos/DET</a>-<a href="">cs-pos/NUM</a> (6; 0% instances), <a href="">cs-pos/VERB</a>-<a href="">cs-pos/NUM</a> (6; 0% instances), <a href="">cs-pos/ADV</a>-<a href="">cs-pos/NUM</a> (2; 0% instances), <a href="">cs-pos/PART</a>-<a href="">cs-pos/NUM</a> (2; 0% instances), <a href="">cs-pos/PRON</a>-<a href="">cs-pos/NUM</a> (2; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 7	bgColor:blue
 # visual-style 7	fgColor:white
@@ -548,17 +548,17 @@ Average distance between parent and child is 1.32133090246126.</p>
 
 <hr />
 
-<h2 id="treebank-statistics-udczech-cltt">Treebank Statistics (UD_Czech-CLTT)</h2>
+<h2 id="treebank-statistics-ud_czech-cltt">Treebank Statistics (UD_Czech-CLTT)</h2>
 
 <p>This relation is universal.
-There are 1 language-specific subtypes of <code>nummod</code>: <a href="">nummod:gov</a>.</p>
+There are 1 language-specific subtypes of <code class="language-plaintext highlighter-rouge">nummod</code>: <a href="">nummod:gov</a>.</p>
 
-<p>195 nodes (1%) are attached to their parents as <code>nummod</code>.</p>
+<p>195 nodes (1%) are attached to their parents as <code class="language-plaintext highlighter-rouge">nummod</code>.</p>
 
-<p>127 instances of <code>nummod</code> (65%) are left-to-right (parent precedes child).
+<p>127 instances of <code class="language-plaintext highlighter-rouge">nummod</code> (65%) are left-to-right (parent precedes child).
 Average distance between parent and child is 1.22051282051282.</p>
 
-<p>The following 2 pairs of parts of speech are connected with <code>nummod</code>: <a href="">cs-pos/NOUN</a>-<a href="">cs-pos/NUM</a> (194; 99% instances), <a href="">cs-pos/X</a>-<a href="">cs-pos/NUM</a> (1; 1% instances).</p>
+<p>The following 2 pairs of parts of speech are connected with <code class="language-plaintext highlighter-rouge">nummod</code>: <a href="">cs-pos/NOUN</a>-<a href="">cs-pos/NUM</a> (194; 99% instances), <a href="">cs-pos/X</a>-<a href="">cs-pos/NUM</a> (1; 1% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 2	bgColor:blue
 # visual-style 2	fgColor:white

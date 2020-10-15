@@ -68,7 +68,7 @@
 We also mark the interrogative <em>kaç</em> “how many” as a number,
 which inflects the same way the numbers are inflected and can become ordinal or distributive.</p>
 
-<h3 id="card-cardinal-number-or-corresponding-interrogative"><code>Card</code>: cardinal number or corresponding interrogative</h3>
+<h3 id="card-cardinal-number-or-corresponding-interrogative"><code class="language-plaintext highlighter-rouge">Card</code>: cardinal number or corresponding interrogative</h3>
 
 <h4 id="examples">Examples</h4>
 
@@ -78,10 +78,10 @@ which inflects the same way the numbers are inflected and can become ordinal or 
   <li><em>kaç kitap okudun</em> “how many books did your read”</li>
 </ul>
 
-<h3 id="ord-ordinal-number-or-corresponding-interrogative"><code>Ord</code>: ordinal number or corresponding interrogative</h3>
+<h3 id="ord-ordinal-number-or-corresponding-interrogative"><code class="language-plaintext highlighter-rouge">Ord</code>: ordinal number or corresponding interrogative</h3>
 
 <p>In some languages, this is a subtype of adjective or adverb.
-In Turkish, we mark the ordinal numerals as <code>NUM</code>.</p>
+In Turkish, we mark the ordinal numerals as <code class="language-plaintext highlighter-rouge">NUM</code>.</p>
 
 <p>Ordinal numerals are formed by the suffix <em>-IncI</em>.
 A period following a numeral may also indicate ordinal use of the number.</p>
@@ -94,7 +94,7 @@ A period following a numeral may also indicate ordinal use of the number.</p>
   <li><em>kaç<b>ıncı</b> kitabı okudun</em> “which (of a series) book did your read” (answer should be something like <em>ikinci</em> “(the) second”)</li>
 </ul>
 
-<h3 id="dist-distributive-numeral"><code>Dist</code>: distributive numeral</h3>
+<h3 id="dist-distributive-numeral"><code class="language-plaintext highlighter-rouge">Dist</code>: distributive numeral</h3>
 
 <p>Used to express that the same quantity is distributed to each member in a set of targets.</p>
 
@@ -118,28 +118,28 @@ A period following a numeral may also indicate ordinal use of the number.</p>
 
 <hr />
 
-<h2 id="treebank-statistics-udturkish">Treebank Statistics (UD_Turkish)</h2>
+<h2 id="treebank-statistics-ud_turkish">Treebank Statistics (UD_Turkish)</h2>
 
 <p>This feature is universal.
-It occurs with 3 different values: <code>Card</code>, <code>Dist</code>, <code>Ord</code>.</p>
+It occurs with 3 different values: <code class="language-plaintext highlighter-rouge">Card</code>, <code class="language-plaintext highlighter-rouge">Dist</code>, <code class="language-plaintext highlighter-rouge">Ord</code>.</p>
 
-<p>1707 tokens (4%) have a non-empty value of <code>NumType</code>.
-235 types (2%) occur at least once with a non-empty value of <code>NumType</code>.
-163 lemmas (3%) occur at least once with a non-empty value of <code>NumType</code>.
+<p>1707 tokens (4%) have a non-empty value of <code class="language-plaintext highlighter-rouge">NumType</code>.
+235 types (2%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">NumType</code>.
+163 lemmas (3%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">NumType</code>.
 The feature is used with 1 part-of-speech tags: <a href="">tr-pos/NUM</a> (1707; 4% instances).</p>
 
-<h3 id="num"><code>NUM</code></h3>
+<h3 id="num"><code class="language-plaintext highlighter-rouge">NUM</code></h3>
 
-<p>1707 <a href="">tr-pos/NUM</a> tokens (100% of all <code>NUM</code> tokens) have a non-empty value of <code>NumType</code>.</p>
+<p>1707 <a href="">tr-pos/NUM</a> tokens (100% of all <code class="language-plaintext highlighter-rouge">NUM</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">NumType</code>.</p>
 
-<p>The most frequent other feature values with which <code>NUM</code> and <code>NumType</code> co-occurred: <tt><a href="Number.html">Number</a>=EMPTY</tt> (1439; 84%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (1439; 84%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (1439; 84%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">NUM</code> and <code class="language-plaintext highlighter-rouge">NumType</code> co-occurred: <tt><a href="Number.html">Number</a>=EMPTY</tt> (1439; 84%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (1439; 84%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (1439; 84%).</p>
 
-<p><code>NUM</code> tokens may have the following values of <code>NumType</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">NUM</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">NumType</code>:</p>
 
 <ul>
-  <li><code>Card</code> (1674; 98% of non-empty <code>NumType</code>): <em>bir, iki, bin, üç, on, beş, dört, yüzde, milyon, altı</em></li>
-  <li><code>Dist</code> (9; 1% of non-empty <code>NumType</code>): <em>birer, ikişer, otuzbeşer, yirmisekizer</em></li>
-  <li><code>Ord</code> (24; 1% of non-empty <code>NumType</code>): <em>birincisi, ikincisi, birinci, dokuz., oniki., onikinci., onsekiz., onyedi., yetmişaltı., yirmiüç’üncü</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Card</code> (1674; 98% of non-empty <code class="language-plaintext highlighter-rouge">NumType</code>): <em>bir, iki, bin, üç, on, beş, dört, yüzde, milyon, altı</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Dist</code> (9; 1% of non-empty <code class="language-plaintext highlighter-rouge">NumType</code>): <em>birer, ikişer, otuzbeşer, yirmisekizer</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Ord</code> (24; 1% of non-empty <code class="language-plaintext highlighter-rouge">NumType</code>): <em>birincisi, ikincisi, birinci, dokuz., oniki., onikinci., onsekiz., onyedi., yetmişaltı., yirmiüç’üncü</em></li>
 </ul>
 
 <table>
@@ -153,11 +153,11 @@ The feature is used with 1 part-of-speech tags: <a href="">tr-pos/NUM</a> (1707;
   <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3</tt></td><td><em>bir</em></td><td></td></tr>
 </table>
 
-<p><code>NumType</code> seems to be <strong>lexical feature</strong> of <code>NUM</code>. 96% lemmas (156) occur only with one value of <code>NumType</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">NumType</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">NUM</code>. 96% lemmas (156) occur only with one value of <code class="language-plaintext highlighter-rouge">NumType</code>.</p>
 
-<h2 id="relations-with-agreement-in-numtype">Relations with Agreement in <code>NumType</code></h2>
+<h2 id="relations-with-agreement-in-numtype">Relations with Agreement in <code class="language-plaintext highlighter-rouge">NumType</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>NumType</code>:
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">NumType</code>:
 <tt>NUM –[<a href="../dep/flat.html">flat</a>]–&gt; NUM</tt> (136; 99%),
 <tt>NUM –[<a href="../dep/conj.html">conj</a>]–&gt; NUM</tt> (11; 100%),
 <tt>NUM –[<a href="../dep/compound.html">compound</a>]–&gt; NUM</tt> (8; 100%),

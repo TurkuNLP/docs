@@ -254,7 +254,7 @@ in two places.</p>
 <p><a id="al-el-dep/acl" class="al-dest"></a></p>
 <h2><code>acl</code>: clausal modifier of noun</h2>
 
-<p><code>acl</code> stands for finite clauses that modify a nominal. The head of the <code>acl</code> relation is the noun
+<p><code class="language-plaintext highlighter-rouge">acl</code> stands for finite clauses that modify a nominal. The head of the <code class="language-plaintext highlighter-rouge">acl</code> relation is the noun
 that is modified, and the dependent is the head of the clause that modifies the noun. Greek relative 
 are assigned a specific subtype label <a href="">acl:relcl</a>.</p>
 
@@ -544,7 +544,7 @@ appos(Email:-5, jones@abc.edf-6)
 <p><a id="al-el-dep/aux" class="al-dest"></a></p>
 <h2><code>aux</code>: auxiliary</h2>
 
-<p>We use the <code>aux</code> relation for:</p>
+<p>We use the <code class="language-plaintext highlighter-rouge">aux</code> relation for:</p>
 
 <ul>
   <li>forms of the auxiliary verb <em>έχω</em> in periphrastic tenses.</li>
@@ -627,14 +627,14 @@ Include φαίνεται πρόκειται?
 
 <h2 id="diffs">Diffs</h2>
 
-<p>The <code>auxpass</code> is not used for UD Greek.</p>
+<p>The <code class="language-plaintext highlighter-rouge">auxpass</code> is not used for UD Greek.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/auxpass.md" target="#">edit auxpass</a></p>
 
 <p><a id="al-el-dep/case" class="al-dest"></a></p>
 <h2><code>case</code>: case marking</h2>
 
-<p>The <code>case</code> relation for Greek is used for prepositions.</p>
+<p>The <code class="language-plaintext highlighter-rouge">case</code> relation for Greek is used for prepositions.</p>
 
 <pre><code class="language-sdparse">« Κυριαρχήσαμε σε όλο το παιχνίδι » .
 case(παιχνίδι, σε)
@@ -648,7 +648,7 @@ nmod(σταμάτησαν, αρχή)
 nmod(σταμάτησαν, τέλος)
 </code></pre>
 
-<p>A small list of postpositions in fixed expressions are labeled with <code>case</code>. <strong>TODO:</strong> An alternative analysis would be to label them using the <a href="fixed">mwe</a> relation.</p>
+<p>A small list of postpositions in fixed expressions are labeled with <code class="language-plaintext highlighter-rouge">case</code>. <strong>TODO:</strong> An alternative analysis would be to label them using the <a href="fixed">mwe</a> relation.</p>
 
 <pre><code class="language-sdparse">λόγου χάριν 
 case(λόγου,  χάριν)
@@ -662,7 +662,7 @@ case(παραδείγματος,  χάριν)
 case(τιμής,  ένεκεν)
 </code></pre>
 
-<p>Certain adverbs may be followed by prepositions. We label these adverbs with the <code>case</code> relation and attach to them the prepositions with a [mwe] relation.</p>
+<p>Certain adverbs may be followed by prepositions. We label these adverbs with the <code class="language-plaintext highlighter-rouge">case</code> relation and attach to them the prepositions with a [mwe] relation.</p>
 
 <pre><code class="language-sdparse">ενάντια σε όλα τα εμπόδια 
 case(εμπόδια, ενάντια)
@@ -684,7 +684,7 @@ case(Γιάννη, πίσω)
 mwe(πίσω, από)
 </code></pre>
 
-<p>We use the <code>case</code> relation when these adverbs take a clitic in genitive as a complement.</p>
+<p>We use the <code class="language-plaintext highlighter-rouge">case</code> relation when these adverbs take a clitic in genitive as a complement.</p>
 
 <pre><code class="language-sdparse">ανάμεσά τους
 case(τους, ανάμεσά)
@@ -711,7 +711,7 @@ mark(συναντήσω, πριν)
 <h2><code>cc</code>: coordinating conjunction</h2>
 
 <p>For more on coordination, see the <a href="">conj</a> relation.
-A <code>cc</code> is the relation between the first conjunct and
+A <code class="language-plaintext highlighter-rouge">cc</code> is the relation between the first conjunct and
 <!--
 TODO 
 a [coordinating conjunction](../pos/CCONJ) 
@@ -724,7 +724,7 @@ cc(ενοχλήθηκε, και)
 
 <p>A coordinating conjunction may also appear at the beginning 
 or close to the beginning of a sentence. This is also called 
-a <code>cc</code>, and it depends on the root predicate of the sentence.
+a <code class="language-plaintext highlighter-rouge">cc</code>, and it depends on the root predicate of the sentence.
 (In fact there is a coordination that spans multiple sentences.
 We cannot attach a word to the first conjunct because it is in another sentence.
 Thus we attach it to the first conjunct available in the current sentence: its main predicate.)</p>
@@ -748,10 +748,10 @@ TODO
 ccomp(Διαβεβαίωσε, συνεχίσουν)
 </code></pre>
 
-<p>For clausal complements for nouns, see <code>acl</code> .</p>
+<p>For clausal complements for nouns, see <code class="language-plaintext highlighter-rouge">acl</code> .</p>
 
 <p>For clausal complements where the subject of the complement clause obligatorily 
-corefers with an argument (subject or object) of the higher clause, see <code>xcomp</code>.</p>
+corefers with an argument (subject or object) of the higher clause, see <code class="language-plaintext highlighter-rouge">xcomp</code>.</p>
 
 <pre><code class="language-sdparse">θέλει να αρχίσουν να γράφουν
 ccomp(θέλει, αρχίσουν)
@@ -763,7 +763,7 @@ xcomp(αρχίσουν, γράφουν)
 <p><a id="al-el-dep/compound" class="al-dest"></a></p>
 <h2><code>compound</code>: compound</h2>
 
-<p>We use the <code>compound</code> relation for</p>
+<p>We use the <code class="language-plaintext highlighter-rouge">compound</code> relation for</p>
 
 <ul>
   <li>the few noun noun compounds of Modern Greek:</li>
@@ -811,7 +811,7 @@ nummod(ευρώ, εκατομμύρια)
 <p>A conjunct is the relation between two elements connected by a
 coordinating conjunction, such as <em>και</em>, <em>αλλά</em>, etc.  We treat
 conjunctions asymmetrically: The head of the relation is the first
-conjunct and all the other conjuncts depend on it via the <code>conj</code> relation.</p>
+conjunct and all the other conjuncts depend on it via the <code class="language-plaintext highlighter-rouge">conj</code> relation.</p>
 
 <pre><code class="language-sdparse">Ακούστηκαν προτάσεις για παραγωγική ανασυγκρότηση και βιώσιμη ανάπτυξη 
 conj(ανασυγκρότηση, ανάπτυξη)
@@ -1019,7 +1019,7 @@ discourse(έχασα, Ουφ)
 <p><a id="al-el-dep/dislocated" class="al-dest"></a></p>
 <h2><code>dislocated</code>: dislocated elements</h2>
 
-<p>The <code>dislocated</code> relation is used for fronted or postposed elements
+<p>The <code class="language-plaintext highlighter-rouge">dislocated</code> relation is used for fronted or postposed elements
 that do not fulfill the usual core grammatical relations of a
 sentence, especially in sentences from transcribed speech. 
 The dislocated elements attach to the head of the clause to which they belong:</p>
@@ -1051,10 +1051,10 @@ dobj(μοιάζει, Αρετής.Gen)
 dobj(προηγούνται, αποφάσεων.Gen)
 </code></pre>
 
-<p>In general, if there is just one object, it should be labeled <code>obj</code>,
+<p>In general, if there is just one object, it should be labeled <code class="language-plaintext highlighter-rouge">obj</code>,
 regardless of the morphological case or semantic role that it bears.</p>
 
-<p>When two objects are present, one of them is labeled as <code>obj</code> and the other as <a href="">iobj</a>. Generally, the most directly affected object <em>(patient)</em> is marked as <code>obj</code>. The one exception is when there is a clausal complement. Then the clausal complement is regarded as <a href="">iobj</a> “clausal direct object” and an object nominal will be an iobj. See <a href="">iobj</a> for more details.</p>
+<p>When two objects are present, one of them is labeled as <code class="language-plaintext highlighter-rouge">obj</code> and the other as <a href="">iobj</a>. Generally, the most directly affected object <em>(patient)</em> is marked as <code class="language-plaintext highlighter-rouge">obj</code>. The one exception is when there is a clausal complement. Then the clausal complement is regarded as <a href="">iobj</a> “clausal direct object” and an object nominal will be an iobj. See <a href="">iobj</a> for more details.</p>
 
 <p>See the <a href="">expl</a>  relation for cases of clitic doubling.</p>
 
@@ -1063,7 +1063,7 @@ regardless of the morphological case or semantic role that it bears.</p>
 <p><a id="al-el-dep/expl" class="al-dest"></a></p>
 <h2><code>expl</code>: expletive</h2>
 
-<p>The <code>expl</code> relation is used in UD Greek for cases of clitic doubling.</p>
+<p>The <code class="language-plaintext highlighter-rouge">expl</code> relation is used in UD Greek for cases of clitic doubling.</p>
 
 <pre><code class="language-sdparse">Της τον έδωσε της Καίτης τον αναπτήρα
 expl(έδωσε, Της-1)
@@ -1087,7 +1087,7 @@ dobj(έδωσε, τον)
 <p>For examples of multiword expressions, see and <a href="">case</a> and <a href="">mark</a>. 
 Multiword expressions are annotated in a flat, head-initial structure,
 in which all words in the expression modify the first one using the
-<code>fixed</code> label.</p>
+<code class="language-plaintext highlighter-rouge">fixed</code> label.</p>
 
 <p><strong>TODO</strong></p>
 
@@ -1098,7 +1098,7 @@ in which all words in the expression modify the first one using the
 <p><a id="al-el-dep/flat" class="al-dest"></a></p>
 <h2><code>flat</code>: name</h2>
 
-<p>We use the <code>flat</code> relation for proper nouns constituted of more than one words. 
+<p>We use the <code class="language-plaintext highlighter-rouge">flat</code> relation for proper nouns constituted of more than one words. 
 The first (leftmost) word is the head, and the other words are direct dependents of the head.</p>
 
 <pre><code class="language-sdparse">Τάκης Παπαδόπουλος
@@ -1149,7 +1149,7 @@ nmod(Εκπαίδευσης, Ενηλίκων)
 </code></pre>
 
 <p>This convention is not used for foreign names (transliterated or not), which are annotated in a flat, head-initial structure, in 
-which all words in the name modify the first one using the <code>flat</code> label.</p>
+which all words in the name modify the first one using the <code class="language-plaintext highlighter-rouge">flat</code> label.</p>
 
 <pre><code class="language-sdparse">Σαν Σεμπαστιάν
 name(Σαν, Σεμπαστιάν)
@@ -1188,10 +1188,10 @@ name(Miguel, Saavedra)
 <p><a id="al-el-dep/foreign" class="al-dest"></a></p>
 <h2><code>foreign</code>: foreign words</h2>
 
-<p>We use <code>foreign</code> to label sequences of foreign words. These are given
+<p>We use <code class="language-plaintext highlighter-rouge">foreign</code> to label sequences of foreign words. These are given
 a linear analysis: the head is the first token in the foreign phrase.</p>
 
-<p><code>foreign</code> does not apply to words transliterated to the Greek script, 
+<p><code class="language-plaintext highlighter-rouge">foreign</code> does not apply to words transliterated to the Greek script, 
 loanwords or to foreign <a href="flat">names</a>. It applies to quoted foreign text 
 incorporated in a sentence/discourse of the host language (unless we want 
 to and know how to annotate the internal structure according 
@@ -1276,7 +1276,7 @@ iobj(πήραν, Του)
 obj(πήραν, χιλιάρικα)
 </code></pre>
 
-<p>When two objects in accusative are present, one of them is annotated as <code>obj</code> and the other as <a href="">iobj</a>.  Generally, the most directly affected object <em>(patient)</em> is marked as <code>obj</code>.</p>
+<p>When two objects in accusative are present, one of them is annotated as <code class="language-plaintext highlighter-rouge">obj</code> and the other as <a href="">iobj</a>.  Generally, the most directly affected object <em>(patient)</em> is marked as <code class="language-plaintext highlighter-rouge">obj</code>.</p>
 
 <pre><code class="language-sdparse">Διδάσκει τα παιδιά.Acc ιστορία.Acc
 obj(Διδάσκει, ιστορία.Acc)
@@ -1318,7 +1318,7 @@ UD Greek we allow prepositional indirect objects.</p>
 <p><a id="al-el-dep/list" class="al-dest"></a></p>
 <h2><code>list</code>: list</h2>
 
-<p>The <code>list</code> relation is used for chains of comparable items. In lists with more than two items, all items of the list should modify the first one. Informal and web text often contains passages which are meant to be interpreted as lists but are parsed as single sentences. Email signatures often contain these structures, in the form of contact information: the different contact information items are labeled as <code>list</code>; the key-value pair relations are labeled as <a href="">appos</a>.</p>
+<p>The <code class="language-plaintext highlighter-rouge">list</code> relation is used for chains of comparable items. In lists with more than two items, all items of the list should modify the first one. Informal and web text often contains passages which are meant to be interpreted as lists but are parsed as single sentences. Email signatures often contain these structures, in the form of contact information: the different contact information items are labeled as <code class="language-plaintext highlighter-rouge">list</code>; the key-value pair relations are labeled as <a href="">appos</a>.</p>
 
 <pre><code class="language-sdparse">Γιώργος Παπαδόπουλος Τηλέφωνο 2100447000 E-mail gpapadopoulos@paradeigma.com
 name(Γιώργος, Παπαδόπουλος)
@@ -1361,7 +1361,7 @@ advcl(συνέλαβαν, βιντεοσκοπούσε)
 mark(βιντεοσκοπούσε, επειδή)
 </code></pre>
 
-<p>When prepositions are used as subordinate conjunctions to introduce clauses, they are also labelled with the <code>mark</code> relation.</p>
+<p>When prepositions are used as subordinate conjunctions to introduce clauses, they are also labelled with the <code class="language-plaintext highlighter-rouge">mark</code> relation.</p>
 
 <pre><code class="language-sdparse">Δεν συμμετείχα πριν τη συναντήσω .
 advcl(συμμετείχα, συναντήσω)
@@ -1395,7 +1395,7 @@ conj(μάθει, δουλέψει)
 aux(δουλέψει, να)
 </code></pre>
 
-<p>For certain multiword subordinate conjunctions, we use combinations of the <code>mark</code> and the <a href="fixed">mwe</a> relations.</p>
+<p>For certain multiword subordinate conjunctions, we use combinations of the <code class="language-plaintext highlighter-rouge">mark</code> and the <a href="fixed">mwe</a> relations.</p>
 
 <pre><code class="language-sdparse">Αν και βρίσκεται στο σωστό δρόμο χρειάζεται περισσότερο χρόνο
 advcl(χρειάζεται, βρίσκεται)
@@ -1411,7 +1411,7 @@ mwe(Αν, και)
 <p>The negation modifier is the relation between a negation word and the
 word it modifies.</p>
 
-<p>Modifiers labeled <code>neg</code> depend either on a noun (group “noun
+<p>Modifiers labeled <code class="language-plaintext highlighter-rouge">neg</code> depend either on a noun (group “noun
 dependents”) an adjective or on a predicate (group “non-core dependents of clausal
 predicates”).</p>
 
@@ -1436,11 +1436,11 @@ neg(αντικατάστασης, μη)
 <p><a id="al-el-dep/nmod" class="al-dest"></a></p>
 <h2><code>nmod</code>: nominal modifier</h2>
 
-<p>The <code>nmod</code> relation is used for nominal modifiers. They depend either
+<p>The <code class="language-plaintext highlighter-rouge">nmod</code> relation is used for nominal modifiers. They depend either
 on another noun (group “noun dependents”) or on a predicate (group
 “non-core dependents of clausal predicates”).</p>
 
-<p><code>nmod</code> is a <a href="u-pos/NOUN">noun</a> (or noun phrase) functioning as a
+<p><code class="language-plaintext highlighter-rouge">nmod</code> is a <a href="u-pos/NOUN">noun</a> (or noun phrase) functioning as a
 non-core (oblique) argument or adjunct.
 This means that it functionally corresponds to an adverbial when it attaches to a verb, adjective or other adverb.
 But when attaching to a noun, it corresponds to an attribute, or genitive complement.</p>
@@ -1449,7 +1449,7 @@ But when attaching to a noun, it corresponds to an attribute, or genitive comple
 nmod(άθλοι, Ηρακλή.Gen)
 </code></pre>
 
-<p>The <code>nmod</code> relation can be further specified by the <a href="">case</a> label assigned to prepositions.</p>
+<p>The <code class="language-plaintext highlighter-rouge">nmod</code> relation can be further specified by the <a href="">case</a> label assigned to prepositions.</p>
 
 <pre><code class="language-sdparse">γράψαμε το άρθρο σε έξι ώρες
 nmod(γράψαμε, ώρες)
@@ -1487,7 +1487,7 @@ iobj(Ζήτησε, Ελένη)
 obj(Ζήτησε, κούκλα)
 </code></pre>
 
-<p><code>nmod</code> is also used for nominal modifiers indicating time, cause, amount etc.:</p>
+<p><code class="language-plaintext highlighter-rouge">nmod</code> is also used for nominal modifiers indicating time, cause, amount etc.:</p>
 
 <pre><code class="language-sdparse">Θα σε δω την Κυριακή
 nmod(δω, Κυριακή)
@@ -1531,7 +1531,7 @@ subject of a passive clause (or more generally, any voice where the proto-agent 
 nsubjpass(Περιορίστηκε, μετάδοση)
 </code></pre>
 
-<p>Notice that the <code>nsubj</code> relation is used for the subjects of</p>
+<p>Notice that the <code class="language-plaintext highlighter-rouge">nsubj</code> relation is used for the subjects of</p>
 
 <ul>
   <li>reflexive and reciprocal passive constructions</li>
@@ -1580,10 +1580,10 @@ nummod(ευρώ, 10)
 <p><a id="al-el-dep/orphan" class="al-dest"></a></p>
 <h2><code>orphan</code>: remnant in ellipsis</h2>
 
-<p>The <code>orphan</code> relation is used to provide a treatment of ellipsis (in
+<p>The <code class="language-plaintext highlighter-rouge">orphan</code> relation is used to provide a treatment of ellipsis (in
 the case of gapping and stripping, where a predicational or verbal
-head gets elided). A <code>orphan</code> corresponds to a <em>correlate</em> in a preceding clause. 
-The <code>orphan</code> relation connects each remnant to its correlate in the basic dependency representation.</p>
+head gets elided). A <code class="language-plaintext highlighter-rouge">orphan</code> corresponds to a <em>correlate</em> in a preceding clause. 
+The <code class="language-plaintext highlighter-rouge">orphan</code> relation connects each remnant to its correlate in the basic dependency representation.</p>
 
 <pre><code class="language-sdparse">Η Προοδευτική κέρδισε το Αιγάλεω , και ο Ιωνικός τη Δόξα . 
 nsubj(κέρδισε, Προοδευτική)
@@ -1621,7 +1621,7 @@ parataxis(Ρίξε, κάνει)
 <p><a id="al-el-dep/punct" class="al-dest"></a></p>
 <h2><code>punct</code>: punctuation</h2>
 
-<p>A punctuation token is labeled <code>punct</code> and it is attached to the element it delimits. Thus, sentence-delimiting punctuation, such as “.”, “!” or “?” should be attached to the main verb (or predicative) of the sentence. Punctuation tokens always attach to content words and can never have dependents.</p>
+<p>A punctuation token is labeled <code class="language-plaintext highlighter-rouge">punct</code> and it is attached to the element it delimits. Thus, sentence-delimiting punctuation, such as “.”, “!” or “?” should be attached to the main verb (or predicative) of the sentence. Punctuation tokens always attach to content words and can never have dependents.</p>
 
 <pre><code class="language-sdparse">Πήγε σπίτι .
 punct(Πήγε, .)
@@ -1717,7 +1717,7 @@ Tokens with the relation [u-dep/punct]() always attach to content words (except 
 <p><a id="al-el-dep/reparandum" class="al-dest"></a></p>
 <h2><code>reparandum</code>: overridden disfluency</h2>
 
-<p>We use <code>reparandum</code> to indicate disfluencies overridden in a speech
+<p>We use <code class="language-plaintext highlighter-rouge">reparandum</code> to indicate disfluencies overridden in a speech
 repair. The disfluency is the dependent of the repair.</p>
 
 <pre><code class="language-sdparse">Έφυγε η καρδερ- η Κατερίνα  .
@@ -1732,8 +1732,8 @@ det(καρδερ-, η-2)
 <p><a id="al-el-dep/root" class="al-dest"></a></p>
 <h2><code>root</code>: root</h2>
 
-<p>The <code>root</code> grammatical relation points to the root of the sentence. A
-fake node <code>ROOT</code> is used as the governor. The <code>ROOT</code> node is indexed
+<p>The <code class="language-plaintext highlighter-rouge">root</code> grammatical relation points to the root of the sentence. A
+fake node <code class="language-plaintext highlighter-rouge">ROOT</code> is used as the governor. The <code class="language-plaintext highlighter-rouge">ROOT</code> node is indexed
 with 0, since the indexing of real words in the sentence starts at 1.</p>
 
 <pre><code class="language-sdparse">ROOT Θα αποσυρθούν τρεις υπογραφές .
@@ -1773,7 +1773,7 @@ vocative(έχετε, Πρόεδρε)
 <p><a id="al-el-dep/xcomp" class="al-dest"></a></p>
 <h2><code>xcomp</code>: open clausal complement</h2>
 
-<p>An (<code>xcomp</code>) label is used in cases of <em>obligatory coreference</em> between 
+<p>An (<code class="language-plaintext highlighter-rouge">xcomp</code>) label is used in cases of <em>obligatory coreference</em> between 
 the subject of a <em>finite</em> να-clause, which is not present as a separate 
 word, and an argument (subject or object) of the higher clause.</p>
 
@@ -1793,7 +1793,7 @@ xcomp(Άρχισαν, λένε)
 nsubj(λένε, πολιτικοί)
 </code></pre>
 
-<p>The <code>xcomp</code> relation is also used for labelling <em>obligatory</em> predicatives in clauses where the verb heading the construction is not the copula <em>είμαι</em></p>
+<p>The <code class="language-plaintext highlighter-rouge">xcomp</code> relation is also used for labelling <em>obligatory</em> predicatives in clauses where the verb heading the construction is not the copula <em>είμαι</em></p>
 
 <pre><code class="language-sdparse">Ο Γιάννης υπήρξε πρότυπο ανθρώπου 
 xcomp(υπήρξε, πρότυπο)

@@ -130,7 +130,7 @@ They may also function as predicates, as in</p>
 </ul>
 
 <p>In Turkish the Adjective do not inflect.
-<code>Degree</code> is specified using <a href="ADV">adverbs</a> <em>daha</em> and <em>en</em>.</p>
+<code class="language-plaintext highlighter-rouge">Degree</code> is specified using <a href="ADV">adverbs</a> <em>daha</em> and <em>en</em>.</p>
 
 <p>We distinguish between adjectives, <a href="DET">determiners</a> and <a href="NUM">numerals</a>.
 We do <em>not</em> mark determiners as adjectives as is the case in most (traditional)
@@ -157,7 +157,7 @@ They occur after a complement noun phrase (or a nominal subordinate clause) and 
 <p>A number of postpositions in Turkish are complex,
 derived from a closed set of nouns (see Göksel &amp; Kerslake 2005, ch.17).
 Examples include, <em>alt-ın-da</em> “below”, <em>arka-sı-nda</em> “behind”, <em>konu-su-nda</em> “about”.
-We also mark these expressions as <code>ADP</code> when they are used as postpositions
+We also mark these expressions as <code class="language-plaintext highlighter-rouge">ADP</code> when they are used as postpositions
 (<strong>TODO</strong>: this requires discussion).</p>
 
 <h3 id="examples">Examples</h3>
@@ -201,8 +201,8 @@ They may also modify other adverbs and nouns (see examples below).</p>
 <h3 id="definition">Definition</h3>
 
 <p>In Turkish the verbs <em>ol-</em> and <em>bulun-</em> and the question particle <em>mI</em> (<em>mı/mi/mu/mü</em>) may function as auxiliary verbs.
-We (currently) use the <code>AUX</code> for the question particle.
-The verbs are marked as <em>ol-</em> and <em>bulun-</em> are always marked as <code>VERB</code>. 
+We (currently) use the <code class="language-plaintext highlighter-rouge">AUX</code> for the question particle.
+The verbs are marked as <em>ol-</em> and <em>bulun-</em> are always marked as <code class="language-plaintext highlighter-rouge">VERB</code>. 
 The dependency label indicates their use (auxiliary, copula or content verb).</p>
 
 <h3 id="examples">Examples</h3>
@@ -251,7 +251,7 @@ quantity, etc.</p>
 
 <p>Turkish does not have a definite article,
 but the numeral <em>bir</em> “one” also acts as an indefinite article.
-We mark it as <code>DET</code> in this usage.</p>
+We mark it as <code class="language-plaintext highlighter-rouge">DET</code> in this usage.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -296,12 +296,12 @@ We mark it as <code>DET</code> in this usage.</p>
 <p>Nouns are a part of speech typically denoting a person, place, thing,
 animal or idea.</p>
 
-<p>The <code>NOUN</code> tag is intended for common nouns only. See <a href="">PROPN</a> for
+<p>The <code class="language-plaintext highlighter-rouge">NOUN</code> tag is intended for common nouns only. See <a href="">PROPN</a> for
 proper nouns and <a href="">PRON</a> for pronouns.</p>
 
 <p>Turkish nouns inflect for <a href="">tr-feat/Number</a>, <a href="tr-feat/Person-psor">possessor</a> and <a href="">tr-feat/Case</a>.</p>
 
-<p>We also mark the non-root <a href="../overview/tokenization.html">inflectional groups</a> as <code>NOUN</code> in complex derivation involving some suffixes, and subordinate clauses that function as a noun phrase.
+<p>We also mark the non-root <a href="../overview/tokenization.html">inflectional groups</a> as <code class="language-plaintext highlighter-rouge">NOUN</code> in complex derivation involving some suffixes, and subordinate clauses that function as a noun phrase.
 For details, see the section on subordination in <a href="tr-overview/specific-syntax">specific constructions</a>.</p>
 
 <p>All adjectives and some of the adverbs may function as a noun without additional derivation, in this cases, we keep the POS tag of the original word, but assign nominal features to the word.
@@ -328,9 +328,9 @@ number, such as quantity, sequence, frequency or fraction.</p>
 
 <p>Note that cardinal numerals are covered by NUM whether they are expressed as words (four), digits (4) or Roman numerals (IV).</p>
 
-<p>In Turkish numbers may get features <a href="tr-feat/NumType">NumType</a><code>=Ord</code> (ordinal) or <code>NumType=Dist</code> (distributive) through suffixation.</p>
+<p>In Turkish numbers may get features <a href="tr-feat/NumType">NumType</a><code class="language-plaintext highlighter-rouge">=Ord</code> (ordinal) or <code class="language-plaintext highlighter-rouge">NumType=Dist</code> (distributive) through suffixation.</p>
 
-<p>We also mark interrogative <em>kaç</em> “how many” as <code>NUM</code>.</p>
+<p>We also mark interrogative <em>kaç</em> “how many” as <code class="language-plaintext highlighter-rouge">NUM</code>.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -352,8 +352,8 @@ number, such as quantity, sequence, frequency or fraction.</p>
 or phrase to impart meaning and that do not satisfy definitions of
 other universal parts of speech.</p>
 
-<p>We current use the POS tag <code>PART</code> for the word <em>değil</em> “not” when used to negate a non-predicate word
-If <em>değil</em> modifies a predicate, it is marked as <code>VERB</code> since it functions as a copula and carries other verbal inflections as well.</p>
+<p>We current use the POS tag <code class="language-plaintext highlighter-rouge">PART</code> for the word <em>değil</em> “not” when used to negate a non-predicate word
+If <em>değil</em> modifies a predicate, it is marked as <code class="language-plaintext highlighter-rouge">VERB</code> since it functions as a copula and carries other verbal inflections as well.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-pos/PART.md" target="#">edit PART</a></p>
 
@@ -367,8 +367,8 @@ meaning is recoverable from the linguistic or extralinguistic context.</p>
 
 <p>In Turkish, some pronouns also function as determiners (e.g., <em>bu</em>
 “this”, <em>o</em> “that”),
-these words are always marked according to their usage (<code>PRON</code> or
-<code>DET</code>).</p>
+these words are always marked according to their usage (<code class="language-plaintext highlighter-rouge">PRON</code> or
+<code class="language-plaintext highlighter-rouge">DET</code>).</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -393,14 +393,14 @@ these words are always marked according to their usage (<code>PRON</code> or
 <p>A proper noun is a noun (or nominal content word) that is the name (or
 part of the name) of a specific individual, place, or object.</p>
 
-<p>Note that <code>PROPN</code> is only used for the subclass of nouns that are used
+<p>Note that <code class="language-plaintext highlighter-rouge">PROPN</code> is only used for the subclass of nouns that are used
 as names and that often exhibit special syntactic properties.
 When other phrases or sentences are used as names, 
 the component words retain their original tags.
 For example, in <em>İstanbul Büyük Şehir Belediyesi</em>, 
 <em>Büyük</em> is <a href="">ADJ</a>, <em>Şehir</em> and <em>Belediyesi</em> are <a href="">NOUN</a>.</p>
 
-<p>Acronyms of proper nouns, such as <em>TBMM</em> and <em>NATO</em>, should be tagged <code>PROPN</code>.</p>
+<p>Acronyms of proper nouns, such as <em>TBMM</em> and <em>NATO</em>, should be tagged <code class="language-plaintext highlighter-rouge">PROPN</code>.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -472,7 +472,7 @@ We also mark the words, such as <em>madem</em> and <em>eğer</em>, that are synt
 
 <p>A symbol is a word-like entity that differs from ordinary words by form, function, or both.</p>
 
-<p>We follow the general/universal definition of <code>SYM</code>.
+<p>We follow the general/universal definition of <code class="language-plaintext highlighter-rouge">SYM</code>.
 See <a href="">u-pos/SYM</a> for details.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-pos/SYM.md" target="#">edit SYM</a></p>
@@ -489,7 +489,7 @@ Verbs are often associated with grammatical categories like
 tense, mood, aspect and voice,
 which can either be expressed inflectionally or using auxiliary verbs or particles.</p>
 
-<p>We tag all verbs, including auxiliary and copula use of verbs “ol-“ and “bulun-“ as <code>VERB</code>.</p>
+<p>We tag all verbs, including auxiliary and copula use of verbs “ol-“ and “bulun-“ as <code class="language-plaintext highlighter-rouge">VERB</code>.</p>
 
 <p>Besides ordinary verb stems, we also mark the non-root <a href="../overview/tokenization.html">inflectional groups</a> that introduce a copular construction, as in <em>Ali evde<b>ydi</b></em> “Ali <b>was</b> at home”.</p>
 
@@ -512,9 +512,9 @@ See the section on verbal features in <a href="">tr-overview/specific-syntax</a>
 
 <h3 id="definition">Definition</h3>
 
-<p>The tag <code>X</code> is used for words that for some reason cannot be assigned a real part-of-speech category.</p>
+<p>The tag <code class="language-plaintext highlighter-rouge">X</code> is used for words that for some reason cannot be assigned a real part-of-speech category.</p>
 
-<p>We follow the general/universal definition of <code>SYM</code>.
+<p>We follow the general/universal definition of <code class="language-plaintext highlighter-rouge">SYM</code>.
 See <a href="">u-pos/X</a> for details.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-pos/X.md" target="#">edit X</a></p>

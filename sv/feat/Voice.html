@@ -64,9 +64,9 @@
 
 <h2><code>Voice</code>: voice</h2>
 
-<p>The <code>Voice</code> feature captures the distinction between active and passive for verbs (<a href="">sv-pos/VERB</a> and <a href="">sv-pos/AUX</a>). The value <code>Pass</code> is only used when the passive voice is realized morphologically. (Swedish in addition has a periphrastic passive similar to English: <em>han blev jagad</em> “he was chased”.)</p>
+<p>The <code class="language-plaintext highlighter-rouge">Voice</code> feature captures the distinction between active and passive for verbs (<a href="">sv-pos/VERB</a> and <a href="">sv-pos/AUX</a>). The value <code class="language-plaintext highlighter-rouge">Pass</code> is only used when the passive voice is realized morphologically. (Swedish in addition has a periphrastic passive similar to English: <em>han blev jagad</em> “he was chased”.)</p>
 
-<h3 id="act-active-voice"><code>Act</code>: active voice</h3>
+<h3 id="act-active-voice"><code class="language-plaintext highlighter-rouge">Act</code>: active voice</h3>
 
 <h4 id="examples">Examples</h4>
 
@@ -75,7 +75,7 @@
   <li>[sv] <em>avdraget <b>sjunker</b></em> “the deduction drops”</li>
 </ul>
 
-<h3 id="pass-passive-voice"><code>Pass</code>: passive voice</h3>
+<h3 id="pass-passive-voice"><code class="language-plaintext highlighter-rouge">Pass</code>: passive voice</h3>
 
 <h4 id="examples-1">Examples</h4>
 
@@ -94,28 +94,28 @@
 
 <hr />
 
-<h2 id="treebank-statistics-udswedish">Treebank Statistics (UD_Swedish)</h2>
+<h2 id="treebank-statistics-ud_swedish">Treebank Statistics (UD_Swedish)</h2>
 
 <p>This feature is universal.
-It occurs with 2 different values: <code>Act</code>, <code>Pass</code>.</p>
+It occurs with 2 different values: <code class="language-plaintext highlighter-rouge">Act</code>, <code class="language-plaintext highlighter-rouge">Pass</code>.</p>
 
-<p>10716 tokens (14%) have a non-empty value of <code>Voice</code>.
-2260 types (17%) occur at least once with a non-empty value of <code>Voice</code>.
-1055 lemmas (12%) occur at least once with a non-empty value of <code>Voice</code>.
+<p>10716 tokens (14%) have a non-empty value of <code class="language-plaintext highlighter-rouge">Voice</code>.
+2260 types (17%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Voice</code>.
+1055 lemmas (12%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Voice</code>.
 The feature is used with 2 part-of-speech tags: <a href="">sv-pos/VERB</a> (7537; 10% instances), <a href="">sv-pos/AUX</a> (3179; 4% instances).</p>
 
-<h3 id="verb"><code>VERB</code></h3>
+<h3 id="verb"><code class="language-plaintext highlighter-rouge">VERB</code></h3>
 
-<p>7537 <a href="">sv-pos/VERB</a> tokens (96% of all <code>VERB</code> tokens) have a non-empty value of <code>Voice</code>.</p>
+<p>7537 <a href="">sv-pos/VERB</a> tokens (96% of all <code class="language-plaintext highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Voice</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Voice</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (4500; 60%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (4316; 57%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (3786; 50%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">VERB</code> and <code class="language-plaintext highlighter-rouge">Voice</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (4500; 60%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (4316; 57%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (3786; 50%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>Voice</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Voice</code>:</p>
 
 <ul>
-  <li><code>Act</code> (6369; 85% of non-empty <code>Voice</code>): <em>har, blir, är, få, får, ha, gäller, ger, kommer, se</em></li>
-  <li><code>Pass</code> (1168; 15% of non-empty <code>Voice</code>): <em>användas, tas, används, ges, kallas, anses, behövs, lämnas, beräknas, delas</em></li>
-  <li><code>EMPTY</code> (281): <em>finns, tycks, finnas, fanns, fordras, känns, syns, funnits, hoppas, vald</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Act</code> (6369; 85% of non-empty <code class="language-plaintext highlighter-rouge">Voice</code>): <em>har, blir, är, få, får, ha, gäller, ger, kommer, se</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pass</code> (1168; 15% of non-empty <code class="language-plaintext highlighter-rouge">Voice</code>): <em>användas, tas, används, ges, kallas, anses, behövs, lämnas, beräknas, delas</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (281): <em>finns, tycks, finnas, fanns, fordras, känns, syns, funnits, hoppas, vald</em></li>
 </ul>
 
 <table>
@@ -127,23 +127,23 @@ The feature is used with 2 part-of-speech tags: <a href="">sv-pos/VERB</a> (7537
   <tr><td><tt><a href="VerbForm.html">VerbForm</a>=Sup</tt></td><td><em>gjort</em></td><td><em>gjorts</em></td></tr>
 </table>
 
-<h3 id="aux"><code>AUX</code></h3>
+<h3 id="aux"><code class="language-plaintext highlighter-rouge">AUX</code></h3>
 
-<p>3179 <a href="">sv-pos/AUX</a> tokens (100% of all <code>AUX</code> tokens) have a non-empty value of <code>Voice</code>.</p>
+<p>3179 <a href="">sv-pos/AUX</a> tokens (100% of all <code class="language-plaintext highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Voice</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Voice</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (2874; 90%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (2866; 90%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (2597; 82%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">AUX</code> and <code class="language-plaintext highlighter-rouge">Voice</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (2874; 90%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (2866; 90%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (2597; 82%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>Voice</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">AUX</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Voice</code>:</p>
 
 <ul>
-  <li><code>Act</code> (3179; 100% of non-empty <code>Voice</code>): <em>är, kan, har, skall, måste, vara, kommer, skulle, ska, var</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Act</code> (3179; 100% of non-empty <code class="language-plaintext highlighter-rouge">Voice</code>): <em>är, kan, har, skall, måste, vara, kommer, skulle, ska, var</em></li>
 </ul>
 
-<p><code>Voice</code> seems to be <strong>lexical feature</strong> of <code>AUX</code>. 100% lemmas (16) occur only with one value of <code>Voice</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">Voice</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">AUX</code>. 100% lemmas (16) occur only with one value of <code class="language-plaintext highlighter-rouge">Voice</code>.</p>
 
-<h2 id="relations-with-agreement-in-voice">Relations with Agreement in <code>Voice</code></h2>
+<h2 id="relations-with-agreement-in-voice">Relations with Agreement in <code class="language-plaintext highlighter-rouge">Voice</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Voice</code>:
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">Voice</code>:
 <tt>VERB –[<a href="../dep/aux.html">aux</a>]–&gt; AUX</tt> (1374; 76%),
 <tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (638; 74%),
 <tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (528; 82%),

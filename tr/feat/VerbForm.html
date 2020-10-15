@@ -64,13 +64,13 @@
 
 <h2><code>VerbForm</code>: form of verb or deverbative</h2>
 
-<p>We use <code>VerbForm</code> with non-finite verbs that function as heads of adjectival and adverbial clauses.</p>
+<p>We use <code class="language-plaintext highlighter-rouge">VerbForm</code> with non-finite verbs that function as heads of adjectival and adverbial clauses.</p>
 
-<p>The verb forms that function as noun phrases (verbal nouns) are not marked with the <code>VerbForm</code> feature.
+<p>The verb forms that function as noun phrases (verbal nouns) are not marked with the <code class="language-plaintext highlighter-rouge">VerbForm</code> feature.
 These verb forms are considered two separate syntactic tokens.
 See <a href="">overview/tokenization</a></p>
 
-<h3 id="part-participle"><code>Part</code>: participle</h3>
+<h3 id="part-participle"><code class="language-plaintext highlighter-rouge">Part</code>: participle</h3>
 
 <p>Participle is a non-finite verb form which functions as adjectivals.
 The participles are introduced using a number of subordinating suffixes.</p>
@@ -86,12 +86,12 @@ we treat the word like a verbal noun.</p>
   <li><em>okuyour olduğun kitap</em> “the book that you are reading”</li>
 </ul>
 
-<h3 id="trans-transgressive"><code>Trans</code>: transgressive</h3>
+<h3 id="trans-transgressive"><code class="language-plaintext highlighter-rouge">Trans</code>: transgressive</h3>
 
 <p>The transgressive, also called adverbial participle,
 is a non-finite verb form that shares properties of verbs and adverbs.
 In Turkish linguistics, these words are normally called <em>converbs</em>.
-However, since the UD definition <code>Trans</code> covers the use of converbs,
+However, since the UD definition <code class="language-plaintext highlighter-rouge">Trans</code> covers the use of converbs,
 we use the same label.</p>
 
 <ul>
@@ -111,29 +111,29 @@ we use the same label.</p>
 
 <hr />
 
-<h2 id="treebank-statistics-udturkish">Treebank Statistics (UD_Turkish)</h2>
+<h2 id="treebank-statistics-ud_turkish">Treebank Statistics (UD_Turkish)</h2>
 
-<p>This feature is universal but the values <code>Conv</code>, <code>Vnoun</code> are language-specific.
-It occurs with 3 different values: <code>Conv</code>, <code>Part</code>, <code>Vnoun</code>.</p>
+<p>This feature is universal but the values <code class="language-plaintext highlighter-rouge">Conv</code>, <code class="language-plaintext highlighter-rouge">Vnoun</code> are language-specific.
+It occurs with 3 different values: <code class="language-plaintext highlighter-rouge">Conv</code>, <code class="language-plaintext highlighter-rouge">Part</code>, <code class="language-plaintext highlighter-rouge">Vnoun</code>.</p>
 
-<p>3907 tokens (8%) have a non-empty value of <code>VerbForm</code>.
-2454 types (16%) occur at least once with a non-empty value of <code>VerbForm</code>.
-572 lemmas (11%) occur at least once with a non-empty value of <code>VerbForm</code>.
+<p>3907 tokens (8%) have a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.
+2454 types (16%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.
+572 lemmas (11%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.
 The feature is used with 2 part-of-speech tags: <a href="">tr-pos/VERB</a> (3889; 8% instances), <a href="">tr-pos/AUX</a> (18; 0% instances).</p>
 
-<h3 id="verb"><code>VERB</code></h3>
+<h3 id="verb"><code class="language-plaintext highlighter-rouge">VERB</code></h3>
 
-<p>3889 <a href="">tr-pos/VERB</a> tokens (43% of all <code>VERB</code> tokens) have a non-empty value of <code>VerbForm</code>.</p>
+<p>3889 <a href="">tr-pos/VERB</a> tokens (43% of all <code class="language-plaintext highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>VerbForm</code> co-occurred: <tt><a href="Polite.html">Polite</a>=EMPTY</tt> (3889; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (3816; 98%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (3816; 98%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (3762; 97%), <tt><a href="Aspect.html">Aspect</a>=Perf</tt> (3758; 97%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (3599; 93%), <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (3101; 80%), <tt><a href="Number[psor].html">Number[psor]</a>=EMPTY</tt> (2512; 65%), <tt><a href="Person[psor].html">Person[psor]</a>=EMPTY</tt> (2512; 65%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (2495; 64%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">VERB</code> and <code class="language-plaintext highlighter-rouge">VerbForm</code> co-occurred: <tt><a href="Polite.html">Polite</a>=EMPTY</tt> (3889; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (3816; 98%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (3816; 98%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (3762; 97%), <tt><a href="Aspect.html">Aspect</a>=Perf</tt> (3758; 97%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (3599; 93%), <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (3101; 80%), <tt><a href="Number[psor].html">Number[psor]</a>=EMPTY</tt> (2512; 65%), <tt><a href="Person[psor].html">Person[psor]</a>=EMPTY</tt> (2512; 65%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (2495; 64%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>VerbForm</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">VerbForm</code>:</p>
 
 <ul>
-  <li><code>Conv</code> (622; 16% of non-empty <code>VerbForm</code>): <em>gidip, olup, dönüp, diyerek, edip, kalkıp, koşarak, gelip, kesip, deyip</em></li>
-  <li><code>Part</code> (2118; 54% of non-empty <code>VerbForm</code>): <em>olan, olduğunu, olduğu, gelen, eden, yapan, yapılan, olmadığını, alan, ettiği</em></li>
-  <li><code>Vnoun</code> (1149; 30% of non-empty <code>VerbForm</code>): <em>demek, olması, olmak, savunma, yapmak, görmek, kurtulmak, almak, anlatmaya, düzenleme</em></li>
-  <li><code>EMPTY</code> (5224): <em>dedi, dedim, değil, oldu, söyledi, olur, var, etti, geldi, baktı</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Conv</code> (622; 16% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>gidip, olup, dönüp, diyerek, edip, kalkıp, koşarak, gelip, kesip, deyip</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Part</code> (2118; 54% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>olan, olduğunu, olduğu, gelen, eden, yapan, yapılan, olmadığını, alan, ettiği</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Vnoun</code> (1149; 30% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>demek, olması, olmak, savunma, yapmak, görmek, kurtulmak, almak, anlatmaya, düzenleme</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (5224): <em>dedi, dedim, değil, oldu, söyledi, olur, var, etti, geldi, baktı</em></li>
 </ul>
 
 <table>
@@ -195,22 +195,22 @@ The feature is used with 2 part-of-speech tags: <a href="">tr-pos/VERB</a> (3889
   <tr><td><tt><a href="Aspect.html">Aspect</a>=Rapid|<a href="Mood.html">Mood</a>=Ind|<a href="Polarity.html">Polarity</a>=Pos|<a href="Tense.html">Tense</a>=Pres</tt></td><td></td><td><em>oluverip</em></td><td></td></tr>
 </table>
 
-<h3 id="aux"><code>AUX</code></h3>
+<h3 id="aux"><code class="language-plaintext highlighter-rouge">AUX</code></h3>
 
-<p>18 <a href="">tr-pos/AUX</a> tokens (2% of all <code>AUX</code> tokens) have a non-empty value of <code>VerbForm</code>.</p>
+<p>18 <a href="">tr-pos/AUX</a> tokens (2% of all <code class="language-plaintext highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>VerbForm</code> co-occurred: <tt><a href="Aspect.html">Aspect</a>=Perf</tt> (18; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (18; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (17; 94%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (17; 94%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (17; 94%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">AUX</code> and <code class="language-plaintext highlighter-rouge">VerbForm</code> co-occurred: <tt><a href="Aspect.html">Aspect</a>=Perf</tt> (18; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (18; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (17; 94%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (17; 94%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (17; 94%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>VerbForm</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">AUX</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">VerbForm</code>:</p>
 
 <ul>
-  <li><code>Conv</code> (18; 100% of non-empty <code>VerbForm</code>): <em>ken, yken, irerken, ymişçesine</em></li>
-  <li><code>EMPTY</code> (791): <em>dır, mı, dir, mi, ydi, dı, ydı, tu, mu, dur</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Conv</code> (18; 100% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>ken, yken, irerken, ymişçesine</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (791): <em>dır, mı, dir, mi, ydi, dı, ydı, tu, mu, dur</em></li>
 </ul>
 
-<h2 id="relations-with-agreement-in-verbform">Relations with Agreement in <code>VerbForm</code></h2>
+<h2 id="relations-with-agreement-in-verbform">Relations with Agreement in <code class="language-plaintext highlighter-rouge">VerbForm</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>VerbForm</code>:
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">VerbForm</code>:
 <tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (135; 68%),
 <tt>VERB –[<a href="../dep/case.html">case</a>]–&gt; VERB</tt> (1; 100%).</p>
 

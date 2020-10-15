@@ -402,11 +402,11 @@ iobj(ask-I, something)
 <p><a id="al-bg-dep/nmod" class="al-dest"></a></p>
 <h2><code>nmod</code>: nominal modifier</h2>
 
-<p>The <code>nmod</code> relation is used for nominal modifiers. They depend either
+<p>The <code class="language-plaintext highlighter-rouge">nmod</code> relation is used for nominal modifiers. They depend either
 on another noun (group “noun dependents”) or on a predicate (group
 “non-core dependents of clausal predicates”).</p>
 
-<p><code>nmod</code> is a <a href="u-pos/NOUN">noun</a> (or noun phrase) functioning as a
+<p><code class="language-plaintext highlighter-rouge">nmod</code> is a <a href="u-pos/NOUN">noun</a> (or noun phrase) functioning as a
 non-core (oblique) argument or adjunct.
 This means that it functionally corresponds to an adverbial when it attaches to a verb, adjective or other adverb.
 But when attaching to a noun, it corresponds to an attribute, or genitive complement (the terms are less standardized here).</p>
@@ -421,7 +421,7 @@ nmod(cloth, dress)
 </code></pre>
 
 <ul>
-  <li><code>nmod</code> is also used for temporal nominal modifiers:</li>
+  <li><code class="language-plaintext highlighter-rouge">nmod</code> is also used for temporal nominal modifiers:</li>
 </ul>
 
 <pre><code class="language-sdparse">Валя цяла нощ . \n Rained-it all night .
@@ -456,7 +456,7 @@ nmod(aunt, Elka)
 in Bulgarian, the phrase is condsidered to be in nominative (in spite of the fact that nouns in Bulgarian do not have declension) .
 (See <a href="">csubj</a> for when the subject is clausal.
 See <a href="">nsubjpass</a> and <a href="">csubjpass</a> for when the subject is not the proto-agent argument due to valence changing operations.)
-The governor of the <code>nsubj</code> relation might not always be a verb: when
+The governor of the <code class="language-plaintext highlighter-rouge">nsubj</code> relation might not always be a verb: when
 the verb is a copular verb, the root of the clause is the complement
 of the copular verb, which can be an adjective or noun.</p>
 
@@ -510,7 +510,7 @@ nummod(stotinki, deset)
 
 <p>Note that indefinite quantifiers such as <em>few, many</em> are tagged
 <a href="">u-pos/DET</a> rather than <a href="">u-pos/NUM</a>. 
-Therefore their relation to the quantified noun is not <code>nummod</code> but
+Therefore their relation to the quantified noun is not <code class="language-plaintext highlighter-rouge">nummod</code> but
 <a href="">det</a>:</p>
 
 <pre><code class="language-sdparse">Ако бях поет , аз бих написал много стихове . \n If was-I poet , I would written many poems  .
@@ -523,14 +523,14 @@ det(poems, many)
 <p><a id="al-bg-dep/xcomp" class="al-dest"></a></p>
 <h2><code>xcomp</code>: open clausal complement</h2>
 
-<p>An open clausal complement (<code>xcomp</code>) of a verb or an adjective is a
+<p>An open clausal complement (<code class="language-plaintext highlighter-rouge">xcomp</code>) of a verb or an adjective is a
 predicative or clausal complement without its own subject. The
 reference of the subject is necessarily determined by an argument
 external to the xcomp (normally by the subject of the next higher
 clause). This is often referred to as <em>obligatory control</em>. 
 These complements are always non-finite, and they are
 complements (arguments of the higher verb or adjective) rather than
-adjuncts/modifiers, such as a purpose clause. The name <code>xcomp</code> is
+adjuncts/modifiers, such as a purpose clause. The name <code class="language-plaintext highlighter-rouge">xcomp</code> is
 borrowed from Lexical-Functional Grammar.</p>
 
 <pre><code class="language-sdparse">Можеш ли да плуваш ? \n Can PART to swim ?
@@ -544,7 +544,7 @@ xcomp(started, whisper)
 </code></pre>
 
 <p>Note that the above condition “without its own subject” does not mean that a 
-clause is an <code>xcomp</code> just because its subject is not <em>overt.</em>
+clause is an <code class="language-plaintext highlighter-rouge">xcomp</code> just because its subject is not <em>overt.</em>
 The subject must be necessarily inherited from a fixed position in the higher clause.
 That is, there should be no available interpretation where the subject of the lower clause may be distinct from the specified role of the upper clause.
 In cases where the missing subject may or must be distinct from a fixed role in the higher clause,

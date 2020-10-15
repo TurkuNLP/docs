@@ -65,13 +65,13 @@
 <h3 id="definition">Definition</h3>
 
 <p><a href="">VERB</a> tag is used for words with one of Japanese verb inflection types.<br />
-Basically it corresponds to PoS tag <code>verb</code> / 動詞 in UniDic.
+Basically it corresponds to PoS tag <code class="language-plaintext highlighter-rouge">verb</code> / 動詞 in UniDic.
 A <a href="">VERB</a> consists of the stem and inflection parts as below:</p>
 
 <h3 id="examples">Examples</h3>
 
 <ul>
-  <li><em><b>遊ぶ</b> </em> “play” (<code>verb (general)</code> / 動詞-一般)</li>
+  <li><em><b>遊ぶ</b> </em> “play” (<code class="language-plaintext highlighter-rouge">verb (general)</code> / 動詞-一般)</li>
   <li><em><b>遊ん</b> だ </em> “play”+PAST : <em>だ</em> is an auxiliary verb <a href="">AUX</a>, representing past tense.</li>
   <li><em><b>遊ば</b> ない </em> “play”+NEG : <em>ない</em> is an auxiliary verb <a href="">AUX</a>, representing negation.</li>
   <li><em><b>見</b> て いる </em> “see”+PROGRESSIVE : a combination of <em>て</em>  <a href="">CCONJ</a> and <em>いる</em> <a href="">AUX</a> functions 
@@ -80,13 +80,13 @@ as adding progrsssive aspect.</li>
   <li><em><b>勉強</b>する </em> “study”: <em>する</em> is an auxiliary verb <a href="">AUX</a>, forming a verb noun into a verb.</li>
 </ul>
 
-<p>The differences between <a href="">VERB</a> tag and UniDic’s <code>verb</code> / 動詞 tag are as follows:</p>
+<p>The differences between <a href="">VERB</a> tag and UniDic’s <code class="language-plaintext highlighter-rouge">verb</code> / 動詞 tag are as follows:</p>
 
 <ul>
-  <li>The stem of nominal verbs (so-called <em>suru</em>-verbs or サ変動詞) is also tagged as <a href="">VERB</a>, while in UniDic it is tagged as <code>noun (common.verbal_suru)</code> / 名詞-普通名詞-サ変動詞可能.
+  <li>The stem of nominal verbs (so-called <em>suru</em>-verbs or サ変動詞) is also tagged as <a href="">VERB</a>, while in UniDic it is tagged as <code class="language-plaintext highlighter-rouge">noun (common.verbal_suru)</code> / 名詞-普通名詞-サ変動詞可能.
 Note that such a nominal verb is tagged as <a href="">VERB</a> when it behaves as a verb (typically followed by “する” or “できる”),
 otherwise is tagged as <a href="">NOUN</a> (e.g. <em><b>勉強</b> が好きだ</em> “(I) like studying”).</li>
-  <li><a href="">VERB</a> is NOT used for non-content (functional) verbs, while they are taged as <code>verb (bound)</code> / 動詞- 非自立可能,
+  <li><a href="">VERB</a> is NOT used for non-content (functional) verbs, while they are taged as <code class="language-plaintext highlighter-rouge">verb (bound)</code> / 動詞- 非自立可能,
 e.g. <em>食べて<b>いる</b> </em> “eat”+PROGRESSIVE : such a functional verb (<em>いる</em>) is tagged with <a href="">AUX</a>.</li>
 </ul>
 
@@ -102,14 +102,14 @@ e.g. <em>食べて<b>いる</b> </em> “eat”+PROGRESSIVE : such a functional
 
 <hr />
 
-<h2 id="treebank-statistics-udjapanese">Treebank Statistics (UD_Japanese)</h2>
+<h2 id="treebank-statistics-ud_japanese">Treebank Statistics (UD_Japanese)</h2>
 
-<p>There are 3209 <code>VERB</code> lemmas (14%), 4241 <code>VERB</code> types (17%) and 16236 <code>VERB</code> tokens (9%).
-Out of 14 observed tags, the rank of <code>VERB</code> is: 3 in number of lemmas, 3 in number of types and 5 in number of tokens.</p>
+<p>There are 3209 <code class="language-plaintext highlighter-rouge">VERB</code> lemmas (14%), 4241 <code class="language-plaintext highlighter-rouge">VERB</code> types (17%) and 16236 <code class="language-plaintext highlighter-rouge">VERB</code> tokens (9%).
+Out of 14 observed tags, the rank of <code class="language-plaintext highlighter-rouge">VERB</code> is: 3 in number of lemmas, 3 in number of types and 5 in number of tokens.</p>
 
-<p>The 10 most frequent <code>VERB</code> lemmas: する, ある, なる, 行う, 思う, いう, 受ける, できる, 持つ, いる</p>
+<p>The 10 most frequent <code class="language-plaintext highlighter-rouge">VERB</code> lemmas: する, ある, なる, 行う, 思う, いう, 受ける, できる, 持つ, いる</p>
 
-<p>The 10 most frequent <code>VERB</code> types:  し, ある, なっ, なる, あり, する, いう, あっ, なり, 行っ</p>
+<p>The 10 most frequent <code class="language-plaintext highlighter-rouge">VERB</code> types:  し, ある, なっ, なる, あり, する, いう, あっ, なり, 行っ</p>
 
 <p>The 10 most frequent ambiguous lemmas: する (<a href="">AUX</a> 4430, <a href="">VERB</a> 1045), ある (<a href="">VERB</a> 779, <a href="">AUX</a> 157), なる (<a href="">VERB</a> 681, <a href="">AUX</a> 218), できる (<a href="">AUX</a> 136, <a href="">VERB</a> 120), いる (<a href="">AUX</a> 1989, <a href="">VERB</a> 114), 使用 (<a href="">VERB</a> 78, <a href="">NOUN</a> 23), 行く (<a href="">VERB</a> 75, <a href="">AUX</a> 22), 利用 (<a href="">VERB</a> 73, <a href="">NOUN</a> 13), 来る (<a href="">AUX</a> 150, <a href="">VERB</a> 57), 登場 (<a href="">VERB</a> 52, <a href="">NOUN</a> 13)</p>
 
@@ -182,7 +182,7 @@ Out of 14 observed tags, the rank of <code>VERB</code> is: 3 in number of lemmas
 
 <h2 id="morphology">Morphology</h2>
 
-<p>The form / lemma ratio of <code>VERB</code> is 1.321596 (the average of all parts of speech is 1.059217).</p>
+<p>The form / lemma ratio of <code class="language-plaintext highlighter-rouge">VERB</code> is 1.321596 (the average of all parts of speech is 1.059217).</p>
 
 <p>The 1st highest number of forms (7) was observed with the lemma “ある”: あ, あっ, あら, あり, ある, あれ, あろ.</p>
 
@@ -190,38 +190,38 @@ Out of 14 observed tags, the rank of <code>VERB</code> is: 3 in number of lemmas
 
 <p>The 3rd highest number of forms (7) was observed with the lemma “なる”: な, なっ, なら, なり, なる, なれ, なろ.</p>
 
-<p><code>VERB</code> does not occur with any features.</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> does not occur with any features.</p>
 
 <h2 id="relations">Relations</h2>
 
-<p><code>VERB</code> nodes are attached to their parents using 5 different relations: <a href="">ja-dep/acl</a> (10655; 66% instances), <a href="">ja-dep/root</a> (5202; 32% instances), <a href="">ja-dep/csubj</a> (180; 1% instances), <a href="">ja-dep/amod</a> (143; 1% instances), <a href="">ja-dep/fixed</a> (56; 0% instances)</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> nodes are attached to their parents using 5 different relations: <a href="">ja-dep/acl</a> (10655; 66% instances), <a href="">ja-dep/root</a> (5202; 32% instances), <a href="">ja-dep/csubj</a> (180; 1% instances), <a href="">ja-dep/amod</a> (143; 1% instances), <a href="">ja-dep/fixed</a> (56; 0% instances)</p>
 
-<p>Parents of <code>VERB</code> nodes belong to 12 different parts of speech: <a href="">VERB</a> (5594; 34% instances), <a href="">ROOT</a> (5202; 32% instances), <a href="">NOUN</a> (4389; 27% instances), <a href="">ADJ</a> (580; 4% instances), <a href="">PROPN</a> (332; 2% instances), <a href="">NUM</a> (94; 1% instances), <a href="">ADV</a> (19; 0% instances), <a href="">PRON</a> (19; 0% instances), <a href="">PUNCT</a> (3; 0% instances), <a href="">CCONJ</a> (2; 0% instances), <a href="">ADP</a> (1; 0% instances), <a href="">SYM</a> (1; 0% instances)</p>
+<p>Parents of <code class="language-plaintext highlighter-rouge">VERB</code> nodes belong to 12 different parts of speech: <a href="">VERB</a> (5594; 34% instances), <a href="">ROOT</a> (5202; 32% instances), <a href="">NOUN</a> (4389; 27% instances), <a href="">ADJ</a> (580; 4% instances), <a href="">PROPN</a> (332; 2% instances), <a href="">NUM</a> (94; 1% instances), <a href="">ADV</a> (19; 0% instances), <a href="">PRON</a> (19; 0% instances), <a href="">PUNCT</a> (3; 0% instances), <a href="">CCONJ</a> (2; 0% instances), <a href="">ADP</a> (1; 0% instances), <a href="">SYM</a> (1; 0% instances)</p>
 
-<p>371 (2%) <code>VERB</code> nodes are leaves.</p>
+<p>371 (2%) <code class="language-plaintext highlighter-rouge">VERB</code> nodes are leaves.</p>
 
-<p>989 (6%) <code>VERB</code> nodes have one child.</p>
+<p>989 (6%) <code class="language-plaintext highlighter-rouge">VERB</code> nodes have one child.</p>
 
-<p>2719 (17%) <code>VERB</code> nodes have two children.</p>
+<p>2719 (17%) <code class="language-plaintext highlighter-rouge">VERB</code> nodes have two children.</p>
 
-<p>12157 (75%) <code>VERB</code> nodes have three or more children.</p>
+<p>12157 (75%) <code class="language-plaintext highlighter-rouge">VERB</code> nodes have three or more children.</p>
 
-<p>The highest child degree of a <code>VERB</code> node is 14.</p>
+<p>The highest child degree of a <code class="language-plaintext highlighter-rouge">VERB</code> node is 14.</p>
 
-<p>Children of <code>VERB</code> nodes are attached using 19 different relations: <a href="">ja-dep/aux</a> (17628; 27% instances), <a href="">ja-dep/punct</a> (8287; 13% instances), <a href="">ja-dep/obl</a> (6836; 10% instances), <a href="">ja-dep/acl</a> (6810; 10% instances), <a href="">ja-dep/mark</a> (6509; 10% instances), <a href="">ja-dep/nsubj</a> (5559; 8% instances), <a href="">ja-dep/obj</a> (4645; 7% instances), <a href="">ja-dep/iobj</a> (3968; 6% instances), <a href="">ja-dep/case</a> (2230; 3% instances), <a href="">ja-dep/advmod</a> (1694; 3% instances), <a href="">ja-dep/nummod</a> (1395; 2% instances), <a href="">ja-dep/cop</a> (248; 0% instances), <a href="">ja-dep/compound</a> (230; 0% instances), <a href="">ja-dep/amod</a> (112; 0% instances), <a href="">ja-dep/csubj</a> (44; 0% instances), <a href="">ja-dep/fixed</a> (36; 0% instances), <a href="">ja-dep/dep</a> (12; 0% instances), <a href="">ja-dep/cc</a> (4; 0% instances), <a href="">ja-dep/det</a> (1; 0% instances)</p>
+<p>Children of <code class="language-plaintext highlighter-rouge">VERB</code> nodes are attached using 19 different relations: <a href="">ja-dep/aux</a> (17628; 27% instances), <a href="">ja-dep/punct</a> (8287; 13% instances), <a href="">ja-dep/obl</a> (6836; 10% instances), <a href="">ja-dep/acl</a> (6810; 10% instances), <a href="">ja-dep/mark</a> (6509; 10% instances), <a href="">ja-dep/nsubj</a> (5559; 8% instances), <a href="">ja-dep/obj</a> (4645; 7% instances), <a href="">ja-dep/iobj</a> (3968; 6% instances), <a href="">ja-dep/case</a> (2230; 3% instances), <a href="">ja-dep/advmod</a> (1694; 3% instances), <a href="">ja-dep/nummod</a> (1395; 2% instances), <a href="">ja-dep/cop</a> (248; 0% instances), <a href="">ja-dep/compound</a> (230; 0% instances), <a href="">ja-dep/amod</a> (112; 0% instances), <a href="">ja-dep/csubj</a> (44; 0% instances), <a href="">ja-dep/fixed</a> (36; 0% instances), <a href="">ja-dep/dep</a> (12; 0% instances), <a href="">ja-dep/cc</a> (4; 0% instances), <a href="">ja-dep/det</a> (1; 0% instances)</p>
 
-<p>Children of <code>VERB</code> nodes belong to 14 different parts of speech: <a href="">NOUN</a> (18928; 29% instances), <a href="">AUX</a> (17279; 26% instances), <a href="">PUNCT</a> (8482; 13% instances), <a href="">SCONJ</a> (5938; 9% instances), <a href="">VERB</a> (5594; 8% instances), <a href="">PROPN</a> (2259; 3% instances), <a href="">ADP</a> (2170; 3% instances), <a href="">NUM</a> (1422; 2% instances), <a href="">ADJ</a> (1249; 2% instances), <a href="">ADV</a> (1168; 2% instances), <a href="">PART</a> (647; 1% instances), <a href="">PRON</a> (557; 1% instances), <a href="">CCONJ</a> (540; 1% instances), <a href="">SYM</a> (15; 0% instances)</p>
+<p>Children of <code class="language-plaintext highlighter-rouge">VERB</code> nodes belong to 14 different parts of speech: <a href="">NOUN</a> (18928; 29% instances), <a href="">AUX</a> (17279; 26% instances), <a href="">PUNCT</a> (8482; 13% instances), <a href="">SCONJ</a> (5938; 9% instances), <a href="">VERB</a> (5594; 8% instances), <a href="">PROPN</a> (2259; 3% instances), <a href="">ADP</a> (2170; 3% instances), <a href="">NUM</a> (1422; 2% instances), <a href="">ADJ</a> (1249; 2% instances), <a href="">ADV</a> (1168; 2% instances), <a href="">PART</a> (647; 1% instances), <a href="">PRON</a> (557; 1% instances), <a href="">CCONJ</a> (540; 1% instances), <a href="">SYM</a> (15; 0% instances)</p>
 
 <hr />
 
-<h2 id="treebank-statistics-udjapanese-ktc">Treebank Statistics (UD_Japanese-KTC)</h2>
+<h2 id="treebank-statistics-ud_japanese-ktc">Treebank Statistics (UD_Japanese-KTC)</h2>
 
-<p>There are 1297 <code>VERB</code> lemmas (29%), 1 <code>VERB</code> types (6%) and 17383 <code>VERB</code> tokens (9%).
-Out of 16 observed tags, the rank of <code>VERB</code> is: 3 in number of lemmas, 16 in number of types and 5 in number of tokens.</p>
+<p>There are 1297 <code class="language-plaintext highlighter-rouge">VERB</code> lemmas (29%), 1 <code class="language-plaintext highlighter-rouge">VERB</code> types (6%) and 17383 <code class="language-plaintext highlighter-rouge">VERB</code> tokens (9%).
+Out of 16 observed tags, the rank of <code class="language-plaintext highlighter-rouge">VERB</code> is: 3 in number of lemmas, 16 in number of types and 5 in number of tokens.</p>
 
-<p>The 10 most frequent <code>VERB</code> lemmas: _, 為る, 成る, 言う, 有る, 因る, つく, 見る, 取る, 行う</p>
+<p>The 10 most frequent <code class="language-plaintext highlighter-rouge">VERB</code> lemmas: _, 為る, 成る, 言う, 有る, 因る, つく, 見る, 取る, 行う</p>
 
-<p>The 10 most frequent <code>VERB</code> types:  _</p>
+<p>The 10 most frequent <code class="language-plaintext highlighter-rouge">VERB</code> types:  _</p>
 
 <p>The 10 most frequent ambiguous lemmas: _ (<a href="">NOUN</a> 52356, <a href="">ADP</a> 40131, <a href="">PUNCT</a> 20670, <a href="">AUX</a> 7362, <a href="">SCONJ</a> 6334, <a href="">NUM</a> 6286, <a href="">VERB</a> 6156, <a href="">ADJ</a> 2302, <a href="">PART</a> 1887, <a href="">CONJ</a> 1517, <a href="">PROPN</a> 1293, <a href="">ADV</a> 1200, <a href="">SYM</a> 865, <a href="">PRON</a> 102, <a href="">DET</a> 68, <a href="">INTJ</a> 8), 為る (<a href="">AUX</a> 3506, <a href="">VERB</a> 1174, <a href="">SCONJ</a> 4), 成る (<a href="">VERB</a> 757, <a href="">AUX</a> 145), 有る (<a href="">VERB</a> 620, <a href="">AUX</a> 570, <a href="">ADJ</a> 2), 因る (<a href="">VERB</a> 286, <a href="">ADV</a> 1), 見る (<a href="">VERB</a> 120, <a href="">AUX</a> 28, <a href="">NOUN</a> 1), 取る (<a href="">VERB</a> 106, <a href="">AUX</a> 1, <a href="">NOUN</a> 1), 出来る (<a href="">AUX</a> 163, <a href="">VERB</a> 101), 居る (<a href="">AUX</a> 1751, <a href="">VERB</a> 74), 受ける (<a href="">VERB</a> 66, <a href="">NOUN</a> 1)</p>
 
@@ -252,7 +252,7 @@ Out of 16 observed tags, the rank of <code>VERB</code> is: 3 in number of lemmas
 
 <h2 id="morphology-1">Morphology</h2>
 
-<p>The form / lemma ratio of <code>VERB</code> is 0.000771 (the average of all parts of speech is 0.003541).</p>
+<p>The form / lemma ratio of <code class="language-plaintext highlighter-rouge">VERB</code> is 0.000771 (the average of all parts of speech is 0.003541).</p>
 
 <p>The 1st highest number of forms (1) was observed with the lemma “_”: _.</p>
 
@@ -260,27 +260,27 @@ Out of 16 observed tags, the rank of <code>VERB</code> is: 3 in number of lemmas
 
 <p>The 3rd highest number of forms (1) was observed with the lemma “うつ伏せ”: _.</p>
 
-<p><code>VERB</code> does not occur with any features.</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> does not occur with any features.</p>
 
 <h2 id="relations-1">Relations</h2>
 
-<p><code>VERB</code> nodes are attached to their parents using 17 different relations: <a href="">ja-dep/acl</a> (4989; 29% instances), <a href="">ja-dep/root</a> (4964; 29% instances), <a href="">ja-dep/advcl</a> (3565; 21% instances), <a href="">ja-dep/mwe</a> (1183; 7% instances), <a href="">ja-dep/dep</a> (751; 4% instances), <a href="">ja-dep/ccomp</a> (648; 4% instances), <a href="">ja-dep/nmod</a> (516; 3% instances), <a href="">ja-dep/csubj</a> (309; 2% instances), <a href="">ja-dep/iobj</a> (166; 1% instances), <a href="">ja-dep/conj</a> (160; 1% instances), <a href="">ja-dep/dobj</a> (63; 0% instances), <a href="">ja-dep/nsubj</a> (53; 0% instances), <a href="">ja-dep/case</a> (5; 0% instances), <a href="">ja-dep/nsubjpass</a> (4; 0% instances), <a href="">ja-dep/compound</a> (3; 0% instances), <a href="">ja-dep/csubjpass</a> (3; 0% instances), <a href="">ja-dep/advmod</a> (1; 0% instances)</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> nodes are attached to their parents using 17 different relations: <a href="">ja-dep/acl</a> (4989; 29% instances), <a href="">ja-dep/root</a> (4964; 29% instances), <a href="">ja-dep/advcl</a> (3565; 21% instances), <a href="">ja-dep/mwe</a> (1183; 7% instances), <a href="">ja-dep/dep</a> (751; 4% instances), <a href="">ja-dep/ccomp</a> (648; 4% instances), <a href="">ja-dep/nmod</a> (516; 3% instances), <a href="">ja-dep/csubj</a> (309; 2% instances), <a href="">ja-dep/iobj</a> (166; 1% instances), <a href="">ja-dep/conj</a> (160; 1% instances), <a href="">ja-dep/dobj</a> (63; 0% instances), <a href="">ja-dep/nsubj</a> (53; 0% instances), <a href="">ja-dep/case</a> (5; 0% instances), <a href="">ja-dep/nsubjpass</a> (4; 0% instances), <a href="">ja-dep/compound</a> (3; 0% instances), <a href="">ja-dep/csubjpass</a> (3; 0% instances), <a href="">ja-dep/advmod</a> (1; 0% instances)</p>
 
-<p>Parents of <code>VERB</code> nodes belong to 11 different parts of speech: <a href="">NOUN</a> (5810; 33% instances), <a href="">ROOT</a> (4964; 29% instances), <a href="">VERB</a> (4777; 27% instances), <a href="">ADP</a> (1183; 7% instances), <a href="">ADJ</a> (380; 2% instances), <a href="">PROPN</a> (154; 1% instances), <a href="">ADV</a> (89; 1% instances), <a href="">NUM</a> (10; 0% instances), <a href="">PRON</a> (9; 0% instances), <a href="">CONJ</a> (5; 0% instances), <a href="">INTJ</a> (2; 0% instances)</p>
+<p>Parents of <code class="language-plaintext highlighter-rouge">VERB</code> nodes belong to 11 different parts of speech: <a href="">NOUN</a> (5810; 33% instances), <a href="">ROOT</a> (4964; 29% instances), <a href="">VERB</a> (4777; 27% instances), <a href="">ADP</a> (1183; 7% instances), <a href="">ADJ</a> (380; 2% instances), <a href="">PROPN</a> (154; 1% instances), <a href="">ADV</a> (89; 1% instances), <a href="">NUM</a> (10; 0% instances), <a href="">PRON</a> (9; 0% instances), <a href="">CONJ</a> (5; 0% instances), <a href="">INTJ</a> (2; 0% instances)</p>
 
-<p>1401 (8%) <code>VERB</code> nodes are leaves.</p>
+<p>1401 (8%) <code class="language-plaintext highlighter-rouge">VERB</code> nodes are leaves.</p>
 
-<p>1370 (8%) <code>VERB</code> nodes have one child.</p>
+<p>1370 (8%) <code class="language-plaintext highlighter-rouge">VERB</code> nodes have one child.</p>
 
-<p>2685 (15%) <code>VERB</code> nodes have two children.</p>
+<p>2685 (15%) <code class="language-plaintext highlighter-rouge">VERB</code> nodes have two children.</p>
 
-<p>11927 (69%) <code>VERB</code> nodes have three or more children.</p>
+<p>11927 (69%) <code class="language-plaintext highlighter-rouge">VERB</code> nodes have three or more children.</p>
 
-<p>The highest child degree of a <code>VERB</code> node is 15.</p>
+<p>The highest child degree of a <code class="language-plaintext highlighter-rouge">VERB</code> node is 15.</p>
 
-<p>Children of <code>VERB</code> nodes are attached using 27 different relations: <a href="">ja-dep/aux</a> (13049; 20% instances), <a href="">ja-dep/punct</a> (9439; 14% instances), <a href="">ja-dep/nmod</a> (7171; 11% instances), <a href="">ja-dep/dobj</a> (6161; 9% instances), <a href="">ja-dep/mark</a> (5908; 9% instances), <a href="">ja-dep/nsubj</a> (5629; 9% instances), <a href="">ja-dep/iobj</a> (4375; 7% instances), <a href="">ja-dep/advcl</a> (4128; 6% instances), <a href="">ja-dep/dep</a> (1795; 3% instances), <a href="">ja-dep/case</a> (1602; 2% instances), <a href="">ja-dep/advmod</a> (1385; 2% instances), <a href="">ja-dep/auxpass</a> (1360; 2% instances), <a href="">ja-dep/neg</a> (1094; 2% instances), <a href="">ja-dep/ccomp</a> (865; 1% instances), <a href="">ja-dep/nsubjpass</a> (598; 1% instances), <a href="">ja-dep/cc</a> (568; 1% instances), <a href="">ja-dep/cop</a> (216; 0% instances), <a href="">ja-dep/conj</a> (198; 0% instances), <a href="">ja-dep/csubj</a> (34; 0% instances), <a href="">ja-dep/acl</a> (11; 0% instances), <a href="">ja-dep/compound</a> (6; 0% instances), <a href="">ja-dep/discourse</a> (4; 0% instances), <a href="">ja-dep/csubjpass</a> (3; 0% instances), <a href="">ja-dep/appos</a> (2; 0% instances), <a href="">ja-dep/amod</a> (1; 0% instances), <a href="">ja-dep/det</a> (1; 0% instances), <a href="">ja-dep/nummod</a> (1; 0% instances)</p>
+<p>Children of <code class="language-plaintext highlighter-rouge">VERB</code> nodes are attached using 27 different relations: <a href="">ja-dep/aux</a> (13049; 20% instances), <a href="">ja-dep/punct</a> (9439; 14% instances), <a href="">ja-dep/nmod</a> (7171; 11% instances), <a href="">ja-dep/dobj</a> (6161; 9% instances), <a href="">ja-dep/mark</a> (5908; 9% instances), <a href="">ja-dep/nsubj</a> (5629; 9% instances), <a href="">ja-dep/iobj</a> (4375; 7% instances), <a href="">ja-dep/advcl</a> (4128; 6% instances), <a href="">ja-dep/dep</a> (1795; 3% instances), <a href="">ja-dep/case</a> (1602; 2% instances), <a href="">ja-dep/advmod</a> (1385; 2% instances), <a href="">ja-dep/auxpass</a> (1360; 2% instances), <a href="">ja-dep/neg</a> (1094; 2% instances), <a href="">ja-dep/ccomp</a> (865; 1% instances), <a href="">ja-dep/nsubjpass</a> (598; 1% instances), <a href="">ja-dep/cc</a> (568; 1% instances), <a href="">ja-dep/cop</a> (216; 0% instances), <a href="">ja-dep/conj</a> (198; 0% instances), <a href="">ja-dep/csubj</a> (34; 0% instances), <a href="">ja-dep/acl</a> (11; 0% instances), <a href="">ja-dep/compound</a> (6; 0% instances), <a href="">ja-dep/discourse</a> (4; 0% instances), <a href="">ja-dep/csubjpass</a> (3; 0% instances), <a href="">ja-dep/appos</a> (2; 0% instances), <a href="">ja-dep/amod</a> (1; 0% instances), <a href="">ja-dep/det</a> (1; 0% instances), <a href="">ja-dep/nummod</a> (1; 0% instances)</p>
 
-<p>Children of <code>VERB</code> nodes belong to 16 different parts of speech: <a href="">NOUN</a> (23076; 35% instances), <a href="">AUX</a> (15755; 24% instances), <a href="">PUNCT</a> (9413; 14% instances), <a href="">SCONJ</a> (5422; 8% instances), <a href="">VERB</a> (4777; 7% instances), <a href="">ADP</a> (2357; 4% instances), <a href="">ADV</a> (1300; 2% instances), <a href="">ADJ</a> (952; 1% instances), <a href="">PROPN</a> (765; 1% instances), <a href="">CONJ</a> (636; 1% instances), <a href="">PART</a> (593; 1% instances), <a href="">PRON</a> (448; 1% instances), <a href="">NUM</a> (71; 0% instances), <a href="">SYM</a> (26; 0% instances), <a href="">INTJ</a> (8; 0% instances), <a href="">DET</a> (5; 0% instances)</p>
+<p>Children of <code class="language-plaintext highlighter-rouge">VERB</code> nodes belong to 16 different parts of speech: <a href="">NOUN</a> (23076; 35% instances), <a href="">AUX</a> (15755; 24% instances), <a href="">PUNCT</a> (9413; 14% instances), <a href="">SCONJ</a> (5422; 8% instances), <a href="">VERB</a> (4777; 7% instances), <a href="">ADP</a> (2357; 4% instances), <a href="">ADV</a> (1300; 2% instances), <a href="">ADJ</a> (952; 1% instances), <a href="">PROPN</a> (765; 1% instances), <a href="">CONJ</a> (636; 1% instances), <a href="">PART</a> (593; 1% instances), <a href="">PRON</a> (448; 1% instances), <a href="">NUM</a> (71; 0% instances), <a href="">SYM</a> (26; 0% instances), <a href="">INTJ</a> (8; 0% instances), <a href="">DET</a> (5; 0% instances)</p>
 
 
 

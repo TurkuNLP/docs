@@ -64,11 +64,11 @@
 
 <h2><code>Number</code>: number</h2>
 
-<p>In English, <code>Number</code> is a feature of <a href="en-pos/NOUN">nouns</a> and other parts of speech that mark agreement with nouns, i.e. personal <a href="en-pos/PRON">pronouns</a>, <a href="en-pos/VERB">verbs</a>, and some <a href="en-pos/DET">determiners</a>.</p>
+<p>In English, <code class="language-plaintext highlighter-rouge">Number</code> is a feature of <a href="en-pos/NOUN">nouns</a> and other parts of speech that mark agreement with nouns, i.e. personal <a href="en-pos/PRON">pronouns</a>, <a href="en-pos/VERB">verbs</a>, and some <a href="en-pos/DET">determiners</a>.</p>
 
-<h3 id="sing-singular"><code>Sing</code>: singular</h3>
+<h3 id="sing-singular"><code class="language-plaintext highlighter-rouge">Sing</code>: singular</h3>
 
-<p>A singular noun denotes one person, animal or thing. Every noun with the PTB tag <code>NN</code> or <code>NNP</code> is marked with this feature.</p>
+<p>A singular noun denotes one person, animal or thing. Every noun with the PTB tag <code class="language-plaintext highlighter-rouge">NN</code> or <code class="language-plaintext highlighter-rouge">NNP</code> is marked with this feature.</p>
 
 <h4 id="examples">Examples:</h4>
 
@@ -82,7 +82,7 @@
   <li><em>I, me, my, myself, he, his, him, himself, she, her, hers, herself, it, its, itself</em></li>
 </ul>
 
-<p>We also mark all verbs with the PTB tag <code>VBZ</code> with this feature.</p>
+<p>We also mark all verbs with the PTB tag <code class="language-plaintext highlighter-rouge">VBZ</code> with this feature.</p>
 
 <h4 id="examples-1">Examples:</h4>
 
@@ -91,7 +91,7 @@
   <li><em>he <b>walks</b></em></li>
 </ul>
 
-<p>Further, we mark inflections of <code>be</code> that can only have a singular noun or pronoun in subject position with this feature.</p>
+<p>Further, we mark inflections of <code class="language-plaintext highlighter-rouge">be</code> that can only have a singular noun or pronoun in subject position with this feature.</p>
 
 <ul>
   <li><em>am, is, was</em></li>
@@ -103,9 +103,9 @@
   <li><em>this, that</em></li>
 </ul>
 
-<h3 id="plur-plural"><code>Plur</code>: plural</h3>
+<h3 id="plur-plural"><code class="language-plaintext highlighter-rouge">Plur</code>: plural</h3>
 
-<p>A plural noun denotes several persons, animals or things. Every noun with the PTB tag <code>NNS</code> or <code>NNPS</code> is marked with this feature.</p>
+<p>A plural noun denotes several persons, animals or things. Every noun with the PTB tag <code class="language-plaintext highlighter-rouge">NNS</code> or <code class="language-plaintext highlighter-rouge">NNPS</code> is marked with this feature.</p>
 
 <h4 id="examples-2">Examples:</h4>
 
@@ -137,26 +137,26 @@
 
 <hr />
 
-<h2 id="treebank-statistics-udenglish">Treebank Statistics (UD_English)</h2>
+<h2 id="treebank-statistics-ud_english">Treebank Statistics (UD_English)</h2>
 
 <p>This feature is universal.
-It occurs with 2 different values: <code>Plur</code>, <code>Sing</code>.</p>
+It occurs with 2 different values: <code class="language-plaintext highlighter-rouge">Plur</code>, <code class="language-plaintext highlighter-rouge">Sing</code>.</p>
 
-<p>77145 tokens (34%) have a non-empty value of <code>Number</code>.
-13413 types (74%) occur at least once with a non-empty value of <code>Number</code>.
-10992 lemmas (73%) occur at least once with a non-empty value of <code>Number</code>.
+<p>77145 tokens (34%) have a non-empty value of <code class="language-plaintext highlighter-rouge">Number</code>.
+13413 types (74%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Number</code>.
+10992 lemmas (73%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Number</code>.
 The feature is used with 11 part-of-speech tags: <a href="">en-pos/NOUN</a> (38975; 17% instances), <a href="">en-pos/PRON</a> (15176; 7% instances), <a href="">en-pos/PROPN</a> (14821; 6% instances), <a href="">en-pos/AUX</a> (4707; 2% instances), <a href="">en-pos/VERB</a> (2141; 1% instances), <a href="">en-pos/DET</a> (1278; 1% instances), <a href="">en-pos/SYM</a> (38; 0% instances), <a href="">en-pos/ADJ</a> (5; 0% instances), <a href="">en-pos/X</a> (2; 0% instances), <a href="">en-pos/ADP</a> (1; 0% instances), <a href="">en-pos/NUM</a> (1; 0% instances).</p>
 
-<h3 id="noun"><code>NOUN</code></h3>
+<h3 id="noun"><code class="language-plaintext highlighter-rouge">NOUN</code></h3>
 
-<p>38975 <a href="">en-pos/NOUN</a> tokens (100% of all <code>NOUN</code> tokens) have a non-empty value of <code>Number</code>.</p>
+<p>38975 <a href="">en-pos/NOUN</a> tokens (100% of all <code class="language-plaintext highlighter-rouge">NOUN</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Number</code>.</p>
 
-<p><code>NOUN</code> tokens may have the following values of <code>Number</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">NOUN</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Number</code>:</p>
 
 <ul>
-  <li><code>Plur</code> (9366; 24% of non-empty <code>Number</code>): <em>people, years, days, things, questions, times, months, friends, guys, hours</em></li>
-  <li><code>Sing</code> (29609; 76% of non-empty <code>Number</code>): <em>time, service, place, thanks, food, way, year, day, number, pm</em></li>
-  <li><code>EMPTY</code> (3): <em>equivalant, folks, staff</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Plur</code> (9366; 24% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>people, years, days, things, questions, times, months, friends, guys, hours</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Sing</code> (29609; 76% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>time, service, place, thanks, food, way, year, day, number, pm</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (3): <em>equivalant, folks, staff</em></li>
 </ul>
 
 <table>
@@ -164,32 +164,32 @@ The feature is used with 11 part-of-speech tags: <a href="">en-pos/NOUN</a> (389
   <tr><td><tt></tt></td><td><em>time</em></td><td><em>times</em></td></tr>
 </table>
 
-<h3 id="pron"><code>PRON</code></h3>
+<h3 id="pron"><code class="language-plaintext highlighter-rouge">PRON</code></h3>
 
-<p>15176 <a href="">en-pos/PRON</a> tokens (73% of all <code>PRON</code> tokens) have a non-empty value of <code>Number</code>.</p>
+<p>15176 <a href="">en-pos/PRON</a> tokens (73% of all <code class="language-plaintext highlighter-rouge">PRON</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Number</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>Number</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (13693; 90%), <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (12603; 83%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (10746; 71%), <tt><a href="Case.html">Case</a>=Nom</tt> (8668; 57%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">PRON</code> and <code class="language-plaintext highlighter-rouge">Number</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (13693; 90%), <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (12603; 83%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (10746; 71%), <tt><a href="Case.html">Case</a>=Nom</tt> (8668; 57%).</p>
 
-<p><code>PRON</code> tokens may have the following values of <code>Number</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">PRON</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Number</code>:</p>
 
 <ul>
-  <li><code>Plur</code> (3783; 25% of non-empty <code>Number</code>): <em>they, we, their, them, our, us, those, these, themselves, ‘s</em></li>
-  <li><code>Sing</code> (11393; 75% of non-empty <code>Number</code>): <em>i, it, my, he, me, this, his, that, him, she</em></li>
-  <li><code>EMPTY</code> (5619): <em>you, your, that, what, there, who, which, one, mine, whom</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Plur</code> (3783; 25% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>they, we, their, them, our, us, those, these, themselves, ‘s</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Sing</code> (11393; 75% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>i, it, my, he, me, this, his, that, him, she</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (5619): <em>you, your, that, what, there, who, which, one, mine, whom</em></li>
 </ul>
 
-<p><code>Number</code> seems to be <strong>lexical feature</strong> of <code>PRON</code>. 100% lemmas (36) occur only with one value of <code>Number</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">Number</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">PRON</code>. 100% lemmas (36) occur only with one value of <code class="language-plaintext highlighter-rouge">Number</code>.</p>
 
-<h3 id="propn"><code>PROPN</code></h3>
+<h3 id="propn"><code class="language-plaintext highlighter-rouge">PROPN</code></h3>
 
-<p>14821 <a href="">en-pos/PROPN</a> tokens (100% of all <code>PROPN</code> tokens) have a non-empty value of <code>Number</code>.</p>
+<p>14821 <a href="">en-pos/PROPN</a> tokens (100% of all <code class="language-plaintext highlighter-rouge">PROPN</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Number</code>.</p>
 
-<p><code>PROPN</code> tokens may have the following values of <code>Number</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">PROPN</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Number</code>:</p>
 
 <ul>
-  <li><code>Plur</code> (560; 4% of non-empty <code>Number</code>): <em>americans, Beatles, Palestinians, Iraqis, Islands, Tigers, Seas, Shiites, Christians, Wars</em></li>
-  <li><code>Sing</code> (14261; 96% of non-empty <code>Number</code>): <em>Bush, US, Iraq, al, enron, united, Iran, New, China, states</em></li>
-  <li><code>EMPTY</code> (3): <em>Central, Modern, english</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Plur</code> (560; 4% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>americans, Beatles, Palestinians, Iraqis, Islands, Tigers, Seas, Shiites, Christians, Wars</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Sing</code> (14261; 96% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>Bush, US, Iraq, al, enron, united, Iran, New, China, states</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (3): <em>Central, Modern, english</em></li>
 </ul>
 
 <table>
@@ -197,113 +197,113 @@ The feature is used with 11 part-of-speech tags: <a href="">en-pos/NOUN</a> (389
   <tr><td><tt></tt></td><td><em>States</em></td><td><em>States</em></td></tr>
 </table>
 
-<p><code>Number</code> seems to be <strong>lexical feature</strong> of <code>PROPN</code>. 100% lemmas (4854) occur only with one value of <code>Number</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">Number</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">PROPN</code>. 100% lemmas (4854) occur only with one value of <code class="language-plaintext highlighter-rouge">Number</code>.</p>
 
-<h3 id="aux"><code>AUX</code></h3>
+<h3 id="aux"><code class="language-plaintext highlighter-rouge">AUX</code></h3>
 
-<p>4707 <a href="">en-pos/AUX</a> tokens (34% of all <code>AUX</code> tokens) have a non-empty value of <code>Number</code>.</p>
+<p>4707 <a href="">en-pos/AUX</a> tokens (34% of all <code class="language-plaintext highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Number</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Number</code> co-occurred: <tt><a href="Mood.html">Mood</a>=Ind</tt> (4707; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (4707; 100%), <tt><a href="Person.html">Person</a>=3</tt> (4371; 93%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (3463; 74%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">AUX</code> and <code class="language-plaintext highlighter-rouge">Number</code> co-occurred: <tt><a href="Mood.html">Mood</a>=Ind</tt> (4707; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (4707; 100%), <tt><a href="Person.html">Person</a>=3</tt> (4371; 93%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (3463; 74%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>Number</code>:</p>
-
-<ul>
-  <li><code>Sing</code> (4707; 100% of non-empty <code>Number</code>): <em>is, was, has, ‘s, am, does, s, ’s, `s, ai</em></li>
-  <li><code>EMPTY</code> (9145): <em>be, are, will, can, have, would, do, were, been, could</em></li>
-</ul>
-
-<h3 id="verb"><code>VERB</code></h3>
-
-<p>2141 <a href="">en-pos/VERB</a> tokens (8% of all <code>VERB</code> tokens) have a non-empty value of <code>Number</code>.</p>
-
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Number</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (2136; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (2136; 100%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (2016; 94%).</p>
-
-<p><code>VERB</code> tokens may have the following values of <code>Number</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">AUX</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Number</code>:</p>
 
 <ul>
-  <li><code>Plur</code> (2; 0% of non-empty <code>Number</code>): <em>associates, rays</em></li>
-  <li><code>Sing</code> (2139; 100% of non-empty <code>Number</code>): <em>is, has, was, says, ‘s, seems, makes, means, needs, comes</em></li>
-  <li><code>EMPTY</code> (23704): <em>have, get, know, had, do, go, said, want, see, going</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Sing</code> (4707; 100% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>is, was, has, ‘s, am, does, s, ’s, `s, ai</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (9145): <em>be, are, will, can, have, would, do, were, been, could</em></li>
 </ul>
 
-<p><code>Number</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 100% lemmas (419) occur only with one value of <code>Number</code>.</p>
+<h3 id="verb"><code class="language-plaintext highlighter-rouge">VERB</code></h3>
 
-<h3 id="det"><code>DET</code></h3>
+<p>2141 <a href="">en-pos/VERB</a> tokens (8% of all <code class="language-plaintext highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Number</code>.</p>
 
-<p>1278 <a href="">en-pos/DET</a> tokens (7% of all <code>DET</code> tokens) have a non-empty value of <code>Number</code>.</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">VERB</code> and <code class="language-plaintext highlighter-rouge">Number</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (2136; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (2136; 100%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (2016; 94%).</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>Number</code> co-occurred: <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (1278; 100%), <tt><a href="PronType.html">PronType</a>=Dem</tt> (1277; 100%).</p>
-
-<p><code>DET</code> tokens may have the following values of <code>Number</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Number</code>:</p>
 
 <ul>
-  <li><code>Plur</code> (264; 21% of non-empty <code>Number</code>): <em>these, those</em></li>
-  <li><code>Sing</code> (1014; 79% of non-empty <code>Number</code>): <em>this, that, A</em></li>
-  <li><code>EMPTY</code> (16902): <em>the, a, an, all, some, any, no, another, every, each</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Plur</code> (2; 0% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>associates, rays</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Sing</code> (2139; 100% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>is, has, was, says, ‘s, seems, makes, means, needs, comes</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (23704): <em>have, get, know, had, do, go, said, want, see, going</em></li>
 </ul>
 
-<h3 id="sym"><code>SYM</code></h3>
+<p><code class="language-plaintext highlighter-rouge">Number</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">VERB</code>. 100% lemmas (419) occur only with one value of <code class="language-plaintext highlighter-rouge">Number</code>.</p>
 
-<p>38 <a href="">en-pos/SYM</a> tokens (6% of all <code>SYM</code> tokens) have a non-empty value of <code>Number</code>.</p>
+<h3 id="det"><code class="language-plaintext highlighter-rouge">DET</code></h3>
 
-<p><code>SYM</code> tokens may have the following values of <code>Number</code>:</p>
+<p>1278 <a href="">en-pos/DET</a> tokens (7% of all <code class="language-plaintext highlighter-rouge">DET</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Number</code>.</p>
+
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">DET</code> and <code class="language-plaintext highlighter-rouge">Number</code> co-occurred: <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (1278; 100%), <tt><a href="PronType.html">PronType</a>=Dem</tt> (1277; 100%).</p>
+
+<p><code class="language-plaintext highlighter-rouge">DET</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Number</code>:</p>
 
 <ul>
-  <li><code>Sing</code> (38; 100% of non-empty <code>Number</code>): <em>%, 1%P701!.doc, Assh@%$e</em></li>
-  <li><code>EMPTY</code> (628): <em>$, -, :), /, +, |, :(, :-), x, ====================================================</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Plur</code> (264; 21% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>these, those</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Sing</code> (1014; 79% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>this, that, A</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (16902): <em>the, a, an, all, some, any, no, another, every, each</em></li>
 </ul>
 
-<h3 id="adj"><code>ADJ</code></h3>
+<h3 id="sym"><code class="language-plaintext highlighter-rouge">SYM</code></h3>
 
-<p>5 <a href="">en-pos/ADJ</a> tokens (0% of all <code>ADJ</code> tokens) have a non-empty value of <code>Number</code>.</p>
+<p>38 <a href="">en-pos/SYM</a> tokens (6% of all <code class="language-plaintext highlighter-rouge">SYM</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Number</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Number</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (5; 100%).</p>
-
-<p><code>ADJ</code> tokens may have the following values of <code>Number</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">SYM</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Number</code>:</p>
 
 <ul>
-  <li><code>Sing</code> (5; 100% of non-empty <code>Number</code>): <em>Global, Pakistani, criminal, female, middle</em></li>
-  <li><code>EMPTY</code> (14261): <em>good, other, great, best, new, many, more, same, last, first</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Sing</code> (38; 100% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>%, 1%P701!.doc, Assh@%$e</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (628): <em>$, -, :), /, +, |, :(, :-), x, ====================================================</em></li>
 </ul>
 
-<h3 id="x"><code>X</code></h3>
+<h3 id="adj"><code class="language-plaintext highlighter-rouge">ADJ</code></h3>
 
-<p>2 <a href="">en-pos/X</a> tokens (0% of all <code>X</code> tokens) have a non-empty value of <code>Number</code>.</p>
+<p>5 <a href="">en-pos/ADJ</a> tokens (0% of all <code class="language-plaintext highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Number</code>.</p>
 
-<p><code>X</code> tokens may have the following values of <code>Number</code>:</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">ADJ</code> and <code class="language-plaintext highlighter-rouge">Number</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (5; 100%).</p>
+
+<p><code class="language-plaintext highlighter-rouge">ADJ</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Number</code>:</p>
 
 <ul>
-  <li><code>Sing</code> (2; 100% of non-empty <code>Number</code>): <em>URSULA</em></li>
-  <li><code>EMPTY</code> (999): <em>etc, 1, 2, etc., 3, carol.st.clair@enron.com, 4, a, -, mid</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Sing</code> (5; 100% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>Global, Pakistani, criminal, female, middle</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (14261): <em>good, other, great, best, new, many, more, same, last, first</em></li>
 </ul>
 
-<h3 id="num"><code>NUM</code></h3>
+<h3 id="x"><code class="language-plaintext highlighter-rouge">X</code></h3>
 
-<p>1 <a href="">en-pos/NUM</a> tokens (0% of all <code>NUM</code> tokens) have a non-empty value of <code>Number</code>.</p>
+<p>2 <a href="">en-pos/X</a> tokens (0% of all <code class="language-plaintext highlighter-rouge">X</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Number</code>.</p>
 
-<p>The most frequent other feature values with which <code>NUM</code> and <code>Number</code> co-occurred: <tt><a href="NumType.html">NumType</a>=EMPTY</tt> (1; 100%).</p>
-
-<p><code>NUM</code> tokens may have the following values of <code>Number</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">X</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Number</code>:</p>
 
 <ul>
-  <li><code>Sing</code> (1; 100% of non-empty <code>Number</code>): <em>9/11</em></li>
-  <li><code>EMPTY</code> (4376): <em>one, two, 2, 3, 5, 1, 4, 10, three, 6</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Sing</code> (2; 100% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>URSULA</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (999): <em>etc, 1, 2, etc., 3, carol.st.clair@enron.com, 4, a, -, mid</em></li>
 </ul>
 
-<h3 id="adp"><code>ADP</code></h3>
+<h3 id="num"><code class="language-plaintext highlighter-rouge">NUM</code></h3>
 
-<p>1 <a href="">en-pos/ADP</a> tokens (0% of all <code>ADP</code> tokens) have a non-empty value of <code>Number</code>.</p>
+<p>1 <a href="">en-pos/NUM</a> tokens (0% of all <code class="language-plaintext highlighter-rouge">NUM</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Number</code>.</p>
 
-<p><code>ADP</code> tokens may have the following values of <code>Number</code>:</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">NUM</code> and <code class="language-plaintext highlighter-rouge">Number</code> co-occurred: <tt><a href="NumType.html">NumType</a>=EMPTY</tt> (1; 100%).</p>
+
+<p><code class="language-plaintext highlighter-rouge">NUM</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Number</code>:</p>
 
 <ul>
-  <li><code>Sing</code> (1; 100% of non-empty <code>Number</code>): <em>auto</em></li>
-  <li><code>EMPTY</code> (19660): <em>of, in, to, for, on, with, at, from, by, as</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Sing</code> (1; 100% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>9/11</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (4376): <em>one, two, 2, 3, 5, 1, 4, 10, three, 6</em></li>
 </ul>
 
-<h2 id="relations-with-agreement-in-number">Relations with Agreement in <code>Number</code></h2>
+<h3 id="adp"><code class="language-plaintext highlighter-rouge">ADP</code></h3>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Number</code>:
+<p>1 <a href="">en-pos/ADP</a> tokens (0% of all <code class="language-plaintext highlighter-rouge">ADP</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Number</code>.</p>
+
+<p><code class="language-plaintext highlighter-rouge">ADP</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Number</code>:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Sing</code> (1; 100% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>auto</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (19660): <em>of, in, to, for, on, with, at, from, by, as</em></li>
+</ul>
+
+<h2 id="relations-with-agreement-in-number">Relations with Agreement in <code class="language-plaintext highlighter-rouge">Number</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">Number</code>:
 <tt>NOUN –[<a href="../dep/compound.html">compound</a>]–&gt; NOUN</tt> (3513; 71%),
 <tt>NOUN –[<a href="../dep/nmod.html">nmod</a>]–&gt; NOUN</tt> (2801; 61%),
 <tt>PROPN –[<a href="../dep/compound.html">compound</a>]–&gt; PROPN</tt> (2273; 91%),
@@ -317,26 +317,26 @@ The feature is used with 11 part-of-speech tags: <a href="">en-pos/NOUN</a> (389
 
 <hr />
 
-<h2 id="treebank-statistics-udenglish-partut">Treebank Statistics (UD_English-ParTUT)</h2>
+<h2 id="treebank-statistics-ud_english-partut">Treebank Statistics (UD_English-ParTUT)</h2>
 
 <p>This feature is universal.
-It occurs with 2 different values: <code>Plur</code>, <code>Sing</code>.</p>
+It occurs with 2 different values: <code class="language-plaintext highlighter-rouge">Plur</code>, <code class="language-plaintext highlighter-rouge">Sing</code>.</p>
 
-<p>12037 tokens (32%) have a non-empty value of <code>Number</code>.
-3313 types (54%) occur at least once with a non-empty value of <code>Number</code>.
-2501 lemmas (49%) occur at least once with a non-empty value of <code>Number</code>.
+<p>12037 tokens (32%) have a non-empty value of <code class="language-plaintext highlighter-rouge">Number</code>.
+3313 types (54%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Number</code>.
+2501 lemmas (49%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Number</code>.
 The feature is used with 6 part-of-speech tags: <a href="">en-pos/NOUN</a> (7961; 21% instances), <a href="">en-pos/DET</a> (1178; 3% instances), <a href="">en-pos/PRON</a> (989; 3% instances), <a href="">en-pos/AUX</a> (958; 3% instances), <a href="">en-pos/VERB</a> (936; 2% instances), <a href="">en-pos/ADJ</a> (15; 0% instances).</p>
 
-<h3 id="noun-1"><code>NOUN</code></h3>
+<h3 id="noun-1"><code class="language-plaintext highlighter-rouge">NOUN</code></h3>
 
-<p>7961 <a href="">en-pos/NOUN</a> tokens (99% of all <code>NOUN</code> tokens) have a non-empty value of <code>Number</code>.</p>
+<p>7961 <a href="">en-pos/NOUN</a> tokens (99% of all <code class="language-plaintext highlighter-rouge">NOUN</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Number</code>.</p>
 
-<p><code>NOUN</code> tokens may have the following values of <code>Number</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">NOUN</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Number</code>:</p>
 
 <ul>
-  <li><code>Plur</code> (2204; 28% of non-empty <code>Number</code>): <em>plays, countries, years, people, states, measures, rights, terms, works, funds</em></li>
-  <li><code>Sing</code> (5757; 72% of non-empty <code>Number</code>): <em>work, time, Commission, Parliament, President, growth, member, world, Directive, license</em></li>
-  <li><code>EMPTY</code> (53): <em>No, South, design, manufacturing, European, gas, greenhouse, information, living, Collective</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Plur</code> (2204; 28% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>plays, countries, years, people, states, measures, rights, terms, works, funds</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Sing</code> (5757; 72% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>work, time, Commission, Parliament, President, growth, member, world, Directive, license</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (53): <em>No, South, design, manufacturing, European, gas, greenhouse, information, living, Collective</em></li>
 </ul>
 
 <table>
@@ -344,18 +344,18 @@ The feature is used with 6 part-of-speech tags: <a href="">en-pos/NOUN</a> (7961
   <tr><td><tt></tt></td><td><em>work</em></td><td><em>works</em></td></tr>
 </table>
 
-<h3 id="det-1"><code>DET</code></h3>
+<h3 id="det-1"><code class="language-plaintext highlighter-rouge">DET</code></h3>
 
-<p>1178 <a href="">en-pos/DET</a> tokens (29% of all <code>DET</code> tokens) have a non-empty value of <code>Number</code>.</p>
+<p>1178 <a href="">en-pos/DET</a> tokens (29% of all <code class="language-plaintext highlighter-rouge">DET</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Number</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>Number</code> co-occurred: <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (1067; 91%), <tt><a href="PronType.html">PronType</a>=Art</tt> (773; 66%), <tt><a href="Definite.html">Definite</a>=Ind</tt> (766; 65%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">DET</code> and <code class="language-plaintext highlighter-rouge">Number</code> co-occurred: <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (1067; 91%), <tt><a href="PronType.html">PronType</a>=Art</tt> (773; 66%), <tt><a href="Definite.html">Definite</a>=Ind</tt> (766; 65%).</p>
 
-<p><code>DET</code> tokens may have the following values of <code>Number</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">DET</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Number</code>:</p>
 
 <ul>
-  <li><code>Plur</code> (78; 7% of non-empty <code>Number</code>): <em>these, those, Many, les</em></li>
-  <li><code>Sing</code> (1100; 93% of non-empty <code>Number</code>): <em>a, this, an, its, my, that, another, every, each, la</em></li>
-  <li><code>EMPTY</code> (2837): <em>the, his, their, any, our, all, no, your, some, such</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Plur</code> (78; 7% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>these, those, Many, les</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Sing</code> (1100; 93% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>a, this, an, its, my, that, another, every, each, la</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (2837): <em>the, his, their, any, our, all, no, your, some, such</em></li>
 </ul>
 
 <table>
@@ -363,18 +363,18 @@ The feature is used with 6 part-of-speech tags: <a href="">en-pos/NOUN</a> (7961
   <tr><td><tt></tt></td><td><em>this</em></td><td><em>these</em></td></tr>
 </table>
 
-<h3 id="pron-1"><code>PRON</code></h3>
+<h3 id="pron-1"><code class="language-plaintext highlighter-rouge">PRON</code></h3>
 
-<p>989 <a href="">en-pos/PRON</a> tokens (66% of all <code>PRON</code> tokens) have a non-empty value of <code>Number</code>.</p>
+<p>989 <a href="">en-pos/PRON</a> tokens (66% of all <code class="language-plaintext highlighter-rouge">PRON</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Number</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>Number</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (841; 85%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (794; 80%), <tt><a href="Person.html">Person</a>=3</tt> (555; 56%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">PRON</code> and <code class="language-plaintext highlighter-rouge">Number</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (841; 85%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (794; 80%), <tt><a href="Person.html">Person</a>=3</tt> (555; 56%).</p>
 
-<p><code>PRON</code> tokens may have the following values of <code>Number</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">PRON</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Number</code>:</p>
 
 <ul>
-  <li><code>Plur</code> (336; 34% of non-empty <code>Number</code>): <em>we, they, them, those, us, others, these, Many, ourselves, themselves</em></li>
-  <li><code>Sing</code> (653; 66% of non-empty <code>Number</code>): <em>it, he, I, this, him, everyone, one, she, what, that</em></li>
-  <li><code>EMPTY</code> (509): <em>which, that, you, who, all, some, what, each, his, where</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Plur</code> (336; 34% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>we, they, them, those, us, others, these, Many, ourselves, themselves</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Sing</code> (653; 66% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>it, he, I, this, him, everyone, one, she, what, that</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (509): <em>which, that, you, who, all, some, what, each, his, where</em></li>
 </ul>
 
 <table>
@@ -383,18 +383,18 @@ The feature is used with 6 part-of-speech tags: <a href="">en-pos/NOUN</a> (7961
   <tr><td><tt></tt></td><td><em>that</em></td><td><em>those</em></td></tr>
 </table>
 
-<h3 id="aux-1"><code>AUX</code></h3>
+<h3 id="aux-1"><code class="language-plaintext highlighter-rouge">AUX</code></h3>
 
-<p>958 <a href="">en-pos/AUX</a> tokens (53% of all <code>AUX</code> tokens) have a non-empty value of <code>Number</code>.</p>
+<p>958 <a href="">en-pos/AUX</a> tokens (53% of all <code class="language-plaintext highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Number</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Number</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (951; 99%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (948; 99%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (737; 77%), <tt><a href="Person.html">Person</a>=3</tt> (589; 61%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">AUX</code> and <code class="language-plaintext highlighter-rouge">Number</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (951; 99%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (948; 99%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (737; 77%), <tt><a href="Person.html">Person</a>=3</tt> (589; 61%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>Number</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">AUX</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Number</code>:</p>
 
 <ul>
-  <li><code>Plur</code> (317; 33% of non-empty <code>Number</code>): <em>are, have, were, do, ‘re, ‘ve, be</em></li>
-  <li><code>Sing</code> (641; 67% of non-empty <code>Number</code>): <em>is, was, has, were, does, ‘s, am, do, being, have</em></li>
-  <li><code>EMPTY</code> (848): <em>be, would, been, should, can, will, shall, may, had, could</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Plur</code> (317; 33% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>are, have, were, do, ‘re, ‘ve, be</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Sing</code> (641; 67% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>is, was, has, were, does, ‘s, am, do, being, have</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (848): <em>be, would, been, should, can, will, shall, may, had, could</em></li>
 </ul>
 
 <table>
@@ -410,18 +410,18 @@ The feature is used with 6 part-of-speech tags: <a href="">en-pos/NOUN</a> (7961
   <tr><td><tt><a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Part</tt></td><td><em>being</em></td><td></td></tr>
 </table>
 
-<h3 id="verb-1"><code>VERB</code></h3>
+<h3 id="verb-1"><code class="language-plaintext highlighter-rouge">VERB</code></h3>
 
-<p>936 <a href="">en-pos/VERB</a> tokens (26% of all <code>VERB</code> tokens) have a non-empty value of <code>Number</code>.</p>
+<p>936 <a href="">en-pos/VERB</a> tokens (26% of all <code class="language-plaintext highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Number</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Number</code> co-occurred: <tt><a href="Tense.html">Tense</a>=Pres</tt> (929; 99%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (768; 82%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (763; 82%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (521; 56%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">VERB</code> and <code class="language-plaintext highlighter-rouge">Number</code> co-occurred: <tt><a href="Tense.html">Tense</a>=Pres</tt> (929; 99%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (768; 82%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (763; 82%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (521; 56%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>Number</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Number</code>:</p>
 
 <ul>
-  <li><code>Plur</code> (358; 38% of non-empty <code>Number</code>): <em>have, are, need, know, include, remain, see, believe, like, get</em></li>
-  <li><code>Sing</code> (578; 62% of non-empty <code>Number</code>): <em>is, has, including, emerging, regarding, think, developing, makes, provides, needs</em></li>
-  <li><code>EMPTY</code> (2664): <em>like, made, make, wrote, based, given, used, take, ensure, had</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Plur</code> (358; 38% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>have, are, need, know, include, remain, see, believe, like, get</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Sing</code> (578; 62% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>is, has, including, emerging, regarding, think, developing, makes, provides, needs</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (2664): <em>like, made, make, wrote, based, given, used, take, ensure, had</em></li>
 </ul>
 
 <table>
@@ -432,23 +432,23 @@ The feature is used with 6 part-of-speech tags: <a href="">en-pos/NOUN</a> (7961
   <tr><td><tt><a href="VerbForm.html">VerbForm</a>=Part</tt></td><td><em>having</em></td><td></td></tr>
 </table>
 
-<h3 id="adj-1"><code>ADJ</code></h3>
+<h3 id="adj-1"><code class="language-plaintext highlighter-rouge">ADJ</code></h3>
 
-<p>15 <a href="">en-pos/ADJ</a> tokens (0% of all <code>ADJ</code> tokens) have a non-empty value of <code>Number</code>.</p>
+<p>15 <a href="">en-pos/ADJ</a> tokens (0% of all <code class="language-plaintext highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Number</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Number</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (15; 100%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">ADJ</code> and <code class="language-plaintext highlighter-rouge">Number</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (15; 100%).</p>
 
-<p><code>ADJ</code> tokens may have the following values of <code>Number</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">ADJ</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Number</code>:</p>
 
 <ul>
-  <li><code>Plur</code> (1; 7% of non-empty <code>Number</code>): <em>themselves</em></li>
-  <li><code>Sing</code> (14; 93% of non-empty <code>Number</code>): <em>particular, Lankan, clear, following, free, possible, Perdu, sentimentale</em></li>
-  <li><code>EMPTY</code> (3024): <em>other, first, new, European, economic, social, financial, many, own, same</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Plur</code> (1; 7% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>themselves</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Sing</code> (14; 93% of non-empty <code class="language-plaintext highlighter-rouge">Number</code>): <em>particular, Lankan, clear, following, free, possible, Perdu, sentimentale</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (3024): <em>other, first, new, European, economic, social, financial, many, own, same</em></li>
 </ul>
 
-<h2 id="relations-with-agreement-in-number-1">Relations with Agreement in <code>Number</code></h2>
+<h2 id="relations-with-agreement-in-number-1">Relations with Agreement in <code class="language-plaintext highlighter-rouge">Number</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Number</code>:
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">Number</code>:
 <tt>NOUN –[<a href="../dep/nmod.html">nmod</a>]–&gt; NOUN</tt> (1455; 60%),
 <tt>NOUN –[<a href="../dep/conj.html">conj</a>]–&gt; NOUN</tt> (522; 80%),
 <tt>NOUN –[<a href="../dep/cop.html">cop</a>]–&gt; AUX</tt> (180; 76%),

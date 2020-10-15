@@ -66,7 +66,7 @@
 
 <p>Mood is a feature that expresses modality and subclassifies finite verb forms. It is an inflectional feature of <a href="AUX">auxiliaries</a> and <a href="VERB">verbs</a>.</p>
 
-<h3 id="ind-indicative"><code>Ind</code>: indicative</h3>
+<h3 id="ind-indicative"><code class="language-plaintext highlighter-rouge">Ind</code>: indicative</h3>
 
 <p>The indicative can be considered the default mood. A verb in indicative merely states that something happens, has happened or will happen, without adding any attitude of the speaker.</p>
 
@@ -77,7 +77,7 @@
   <li><em>Proslava <b>bo</b> naslednji petek.</em> “The celebration will take place next Friday.”</li>
 </ul>
 
-<h3 id="imp-imperative"><code>Imp</code>: imperative</h3>
+<h3 id="imp-imperative"><code class="language-plaintext highlighter-rouge">Imp</code>: imperative</h3>
 
 <p>The speaker uses imperative to order or ask the addressee to do the action of the verb.</p>
 
@@ -89,9 +89,9 @@
   <li><em><b>Pospravite</b> ta nered.</em> “Clean up this mess!”</li>
 </ul>
 
-<h3 id="cnd-conditional"><code>Cnd</code>: conditional</h3>
+<h3 id="cnd-conditional"><code class="language-plaintext highlighter-rouge">Cnd</code>: conditional</h3>
 
-<p>Generally, the conditional mood is used to express actions that would have taken place under some circumstances but they actually did not / do not happen. In Slovenian, present and past conditional are formed using the participle of the content verb and a special conditional form of the <a href="AUX">auxiliary verb</a> <em>biti</em>  “to be”. Thus, only this form is marked as <code>Cnd</code>, regardless of whether it is used to form a conditional or any other type of modality.</p>
+<p>Generally, the conditional mood is used to express actions that would have taken place under some circumstances but they actually did not / do not happen. In Slovenian, present and past conditional are formed using the participle of the content verb and a special conditional form of the <a href="AUX">auxiliary verb</a> <em>biti</em>  “to be”. Thus, only this form is marked as <code class="language-plaintext highlighter-rouge">Cnd</code>, regardless of whether it is used to form a conditional or any other type of modality.</p>
 
 <h4 id="examples-2">Examples</h4>
 
@@ -104,7 +104,7 @@
 
 <h3 id="conversion-from-jos">Conversion from JOS</h3>
 
-<p>All verbs with VForm=present and VForm=future are converted to <code>Mood=Ind</code>, all verbs with VForm=imperative are converted to <code>Mood=Imp</code> and all verbs with VForm=conditional are converted to <code>Mood=Cnd</code>. The non-finite verb forms (participle, infinitive, supine) do not have any <code>Mood</code>.</p>
+<p>All verbs with VForm=present and VForm=future are converted to <code class="language-plaintext highlighter-rouge">Mood=Ind</code>, all verbs with VForm=imperative are converted to <code class="language-plaintext highlighter-rouge">Mood=Imp</code> and all verbs with VForm=conditional are converted to <code class="language-plaintext highlighter-rouge">Mood=Cnd</code>. The non-finite verb forms (participle, infinitive, supine) do not have any <code class="language-plaintext highlighter-rouge">Mood</code>.</p>
 
 
 <!-- "automatic stats" -->
@@ -116,29 +116,29 @@
 
 <hr />
 
-<h2 id="treebank-statistics-udslovenian">Treebank Statistics (UD_Slovenian)</h2>
+<h2 id="treebank-statistics-ud_slovenian">Treebank Statistics (UD_Slovenian)</h2>
 
 <p>This feature is universal.
-It occurs with 3 different values: <code>Cnd</code>, <code>Imp</code>, <code>Ind</code>.</p>
+It occurs with 3 different values: <code class="language-plaintext highlighter-rouge">Cnd</code>, <code class="language-plaintext highlighter-rouge">Imp</code>, <code class="language-plaintext highlighter-rouge">Ind</code>.</p>
 
-<p>13835 tokens (11%) have a non-empty value of <code>Mood</code>.
-2535 types (9%) occur at least once with a non-empty value of <code>Mood</code>.
-1311 lemmas (8%) occur at least once with a non-empty value of <code>Mood</code>.
+<p>13835 tokens (11%) have a non-empty value of <code class="language-plaintext highlighter-rouge">Mood</code>.
+2535 types (9%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Mood</code>.
+1311 lemmas (8%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Mood</code>.
 The feature is used with 2 part-of-speech tags: <a href="">sl-pos/AUX</a> (8251; 7% instances), <a href="">sl-pos/VERB</a> (5584; 4% instances).</p>
 
-<h3 id="aux"><code>AUX</code></h3>
+<h3 id="aux"><code class="language-plaintext highlighter-rouge">AUX</code></h3>
 
-<p>8251 <a href="">sl-pos/AUX</a> tokens (92% of all <code>AUX</code> tokens) have a non-empty value of <code>Mood</code>.</p>
+<p>8251 <a href="">sl-pos/AUX</a> tokens (92% of all <code class="language-plaintext highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Mood</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Mood</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (8251; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (6890; 84%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (6559; 79%), <tt><a href="Person.html">Person</a>=3</tt> (6511; 79%), <tt><a href="Number.html">Number</a>=Sing</tt> (5063; 61%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">AUX</code> and <code class="language-plaintext highlighter-rouge">Mood</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (8251; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (6890; 84%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (6559; 79%), <tt><a href="Person.html">Person</a>=3</tt> (6511; 79%), <tt><a href="Number.html">Number</a>=Sing</tt> (5063; 61%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>Mood</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">AUX</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Mood</code>:</p>
 
 <ul>
-  <li><code>Cnd</code> (796; 10% of non-empty <code>Mood</code>): <em>bi, b</em></li>
-  <li><code>Imp</code> (8; 0% of non-empty <code>Mood</code>): <em>bodite, Bodi</em></li>
-  <li><code>Ind</code> (7447; 90% of non-empty <code>Mood</code>): <em>je, so, bo, ni, sem, bodo, sta, smo, niso, bomo</em></li>
-  <li><code>EMPTY</code> (698): <em>bil, bila, bilo, bili, biti, bile</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Cnd</code> (796; 10% of non-empty <code class="language-plaintext highlighter-rouge">Mood</code>): <em>bi, b</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Imp</code> (8; 0% of non-empty <code class="language-plaintext highlighter-rouge">Mood</code>): <em>bodite, Bodi</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Ind</code> (7447; 90% of non-empty <code class="language-plaintext highlighter-rouge">Mood</code>): <em>je, so, bo, ni, sem, bodo, sta, smo, niso, bomo</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (698): <em>bil, bila, bilo, bili, biti, bile</em></li>
 </ul>
 
 <table>
@@ -174,19 +174,19 @@ The feature is used with 2 part-of-speech tags: <a href="">sl-pos/AUX</a> (8251;
   <tr><td><tt></tt></td><td></td><td></td><td><em>bi, b</em></td></tr>
 </table>
 
-<h3 id="verb"><code>VERB</code></h3>
+<h3 id="verb"><code class="language-plaintext highlighter-rouge">VERB</code></h3>
 
-<p>5584 <a href="">sl-pos/VERB</a> tokens (43% of all <code>VERB</code> tokens) have a non-empty value of <code>Mood</code>.</p>
+<p>5584 <a href="">sl-pos/VERB</a> tokens (43% of all <code class="language-plaintext highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Mood</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Mood</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (5584; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (5584; 100%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (5245; 94%), <tt><a href="Person.html">Person</a>=3</tt> (4123; 74%), <tt><a href="Number.html">Number</a>=Sing</tt> (3291; 59%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (3096; 55%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">VERB</code> and <code class="language-plaintext highlighter-rouge">Mood</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (5584; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (5584; 100%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (5245; 94%), <tt><a href="Person.html">Person</a>=3</tt> (4123; 74%), <tt><a href="Number.html">Number</a>=Sing</tt> (3291; 59%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (3096; 55%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>Mood</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Mood</code>:</p>
 
 <ul>
-  <li><code>Cnd</code> (1; 0% of non-empty <code>Mood</code>): <em>bi</em></li>
-  <li><code>Imp</code> (255; 5% of non-empty <code>Mood</code>): <em>dodajte, Ugotovimo, dajte, pazite, denimo, poglejmo, poskusite, povej, pozabite, recimo</em></li>
-  <li><code>Ind</code> (5328; 95% of non-empty <code>Mood</code>): <em>je, ima, ni, gre, imajo, bo, so, mora, pomeni, zdi</em></li>
-  <li><code>EMPTY</code> (7447): <em>bilo, bila, imel, moral, morali, povedal, imeli, bil, imela, morala</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Cnd</code> (1; 0% of non-empty <code class="language-plaintext highlighter-rouge">Mood</code>): <em>bi</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Imp</code> (255; 5% of non-empty <code class="language-plaintext highlighter-rouge">Mood</code>): <em>dodajte, Ugotovimo, dajte, pazite, denimo, poglejmo, poskusite, povej, pozabite, recimo</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Ind</code> (5328; 95% of non-empty <code class="language-plaintext highlighter-rouge">Mood</code>): <em>je, ima, ni, gre, imajo, bo, so, mora, pomeni, zdi</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (7447): <em>bilo, bila, imel, moral, morali, povedal, imeli, bil, imela, morala</em></li>
 </ul>
 
 <table>
@@ -213,40 +213,40 @@ The feature is used with 2 part-of-speech tags: <a href="">sl-pos/AUX</a> (8251;
   <tr><td><tt></tt></td><td></td><td><em>bi</em></td></tr>
 </table>
 
-<p><code>Mood</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 91% lemmas (1190) occur only with one value of <code>Mood</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">Mood</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">VERB</code>. 91% lemmas (1190) occur only with one value of <code class="language-plaintext highlighter-rouge">Mood</code>.</p>
 
-<h2 id="relations-with-agreement-in-mood">Relations with Agreement in <code>Mood</code></h2>
+<h2 id="relations-with-agreement-in-mood">Relations with Agreement in <code class="language-plaintext highlighter-rouge">Mood</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Mood</code>:
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">Mood</code>:
 <tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (405; 74%),
 <tt>VERB –[<a href="../dep/fixed.html">fixed</a>]–&gt; VERB</tt> (1; 100%),
 <tt>AUX –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (1; 100%).</p>
 
 <hr />
 
-<h2 id="treebank-statistics-udslovenian-sst">Treebank Statistics (UD_Slovenian-SST)</h2>
+<h2 id="treebank-statistics-ud_slovenian-sst">Treebank Statistics (UD_Slovenian-SST)</h2>
 
 <p>This feature is universal.
-It occurs with 3 different values: <code>Cnd</code>, <code>Imp</code>, <code>Ind</code>.</p>
+It occurs with 3 different values: <code class="language-plaintext highlighter-rouge">Cnd</code>, <code class="language-plaintext highlighter-rouge">Imp</code>, <code class="language-plaintext highlighter-rouge">Ind</code>.</p>
 
-<p>2839 tokens (15%) have a non-empty value of <code>Mood</code>.
-575 types (13%) occur at least once with a non-empty value of <code>Mood</code>.
-344 lemmas (11%) occur at least once with a non-empty value of <code>Mood</code>.
+<p>2839 tokens (15%) have a non-empty value of <code class="language-plaintext highlighter-rouge">Mood</code>.
+575 types (13%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Mood</code>.
+344 lemmas (11%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Mood</code>.
 The feature is used with 2 part-of-speech tags: <a href="">sl-pos/VERB</a> (1652; 8% instances), <a href="">sl-pos/AUX</a> (1187; 6% instances).</p>
 
-<h3 id="verb-1"><code>VERB</code></h3>
+<h3 id="verb-1"><code class="language-plaintext highlighter-rouge">VERB</code></h3>
 
-<p>1652 <a href="">sl-pos/VERB</a> tokens (64% of all <code>VERB</code> tokens) have a non-empty value of <code>Mood</code>.</p>
+<p>1652 <a href="">sl-pos/VERB</a> tokens (64% of all <code class="language-plaintext highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Mood</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Mood</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (1652; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (1652; 100%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (1459; 88%), <tt><a href="Number.html">Number</a>=Sing</tt> (1171; 71%), <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (1153; 70%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">VERB</code> and <code class="language-plaintext highlighter-rouge">Mood</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (1652; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (1652; 100%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (1459; 88%), <tt><a href="Number.html">Number</a>=Sing</tt> (1171; 71%), <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (1153; 70%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>Mood</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Mood</code>:</p>
 
 <ul>
-  <li><code>Cnd</code> (7; 0% of non-empty <code>Mood</code>): <em>bi</em></li>
-  <li><code>Imp</code> (138; 8% of non-empty <code>Mood</code>): <em>recimo, daj, glej, čakaj, gremo, poglejte, povej, požri, čakajte, povejte</em></li>
-  <li><code>Ind</code> (1507; 91% of non-empty <code>Mood</code>): <em>je, veš, vem, mislim, ni, so, ima, bo, gre, imamo</em></li>
-  <li><code>EMPTY</code> (929): <em>bilo, bil, imela, imel, imeli, rekel, bila, rekli, rekla, šla</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Cnd</code> (7; 0% of non-empty <code class="language-plaintext highlighter-rouge">Mood</code>): <em>bi</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Imp</code> (138; 8% of non-empty <code class="language-plaintext highlighter-rouge">Mood</code>): <em>recimo, daj, glej, čakaj, gremo, poglejte, povej, požri, čakajte, povejte</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Ind</code> (1507; 91% of non-empty <code class="language-plaintext highlighter-rouge">Mood</code>): <em>je, veš, vem, mislim, ni, so, ima, bo, gre, imamo</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (929): <em>bilo, bil, imela, imel, imeli, rekel, bila, rekli, rekla, šla</em></li>
 </ul>
 
 <table>
@@ -274,21 +274,21 @@ The feature is used with 2 part-of-speech tags: <a href="">sl-pos/VERB</a> (1652
   <tr><td><tt></tt></td><td></td><td><em>bi</em></td></tr>
 </table>
 
-<p><code>Mood</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 93% lemmas (321) occur only with one value of <code>Mood</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">Mood</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">VERB</code>. 93% lemmas (321) occur only with one value of <code class="language-plaintext highlighter-rouge">Mood</code>.</p>
 
-<h3 id="aux-1"><code>AUX</code></h3>
+<h3 id="aux-1"><code class="language-plaintext highlighter-rouge">AUX</code></h3>
 
-<p>1187 <a href="">sl-pos/AUX</a> tokens (94% of all <code>AUX</code> tokens) have a non-empty value of <code>Mood</code>.</p>
+<p>1187 <a href="">sl-pos/AUX</a> tokens (94% of all <code class="language-plaintext highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Mood</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Mood</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (1187; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (1017; 86%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (939; 79%), <tt><a href="Number.html">Number</a>=Sing</tt> (765; 64%), <tt><a href="Person.html">Person</a>=3</tt> (730; 61%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">AUX</code> and <code class="language-plaintext highlighter-rouge">Mood</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (1187; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (1017; 86%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (939; 79%), <tt><a href="Number.html">Number</a>=Sing</tt> (765; 64%), <tt><a href="Person.html">Person</a>=3</tt> (730; 61%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>Mood</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">AUX</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Mood</code>:</p>
 
 <ul>
-  <li><code>Cnd</code> (95; 8% of non-empty <code>Mood</code>): <em>bi</em></li>
-  <li><code>Imp</code> (2; 0% of non-empty <code>Mood</code>): <em>bodite</em></li>
-  <li><code>Ind</code> (1090; 92% of non-empty <code>Mood</code>): <em>je, so, sem, smo, bo, ni, si, bomo, ste, bom</em></li>
-  <li><code>EMPTY</code> (80): <em>bil, bila, bilo, bili, biti</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Cnd</code> (95; 8% of non-empty <code class="language-plaintext highlighter-rouge">Mood</code>): <em>bi</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Imp</code> (2; 0% of non-empty <code class="language-plaintext highlighter-rouge">Mood</code>): <em>bodite</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Ind</code> (1090; 92% of non-empty <code class="language-plaintext highlighter-rouge">Mood</code>): <em>je, so, sem, smo, bo, ni, si, bomo, ste, bom</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (80): <em>bil, bila, bilo, bili, biti</em></li>
 </ul>
 
 <table>
@@ -320,9 +320,9 @@ The feature is used with 2 part-of-speech tags: <a href="">sl-pos/VERB</a> (1652
   <tr><td><tt></tt></td><td></td><td></td><td><em>bi</em></td></tr>
 </table>
 
-<h2 id="relations-with-agreement-in-mood-1">Relations with Agreement in <code>Mood</code></h2>
+<h2 id="relations-with-agreement-in-mood-1">Relations with Agreement in <code class="language-plaintext highlighter-rouge">Mood</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Mood</code>:
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">Mood</code>:
 <tt>VERB –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; VERB</tt> (135; 54%),
 <tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (88; 72%),
 <tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (62; 64%),

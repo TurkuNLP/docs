@@ -62,7 +62,7 @@
 
           <h2><code>parataxis</code>: parataxis</h2>
 
-<p><code>parataxis</code> dependencies mark two different phenomena. Firstly, they are used with certain implicit coordinations. These coordinations are recognized by two factors: there is no coordinating conjunction, and the independent clauses are separated by a colon, semicolon or a dash. As with explicit coordinations, the first element is the governor. Also parenthetical and interjected clauses can receive the <code>parataxis</code> dependency. If there is a coordinating conjunction present (regardless of punctuation) or if the clauses are separated by merely a comma, the coordination type <code>conj</code> is used (differs from the UD).</p>
+<p><code class="language-plaintext highlighter-rouge">parataxis</code> dependencies mark two different phenomena. Firstly, they are used with certain implicit coordinations. These coordinations are recognized by two factors: there is no coordinating conjunction, and the independent clauses are separated by a colon, semicolon or a dash. As with explicit coordinations, the first element is the governor. Also parenthetical and interjected clauses can receive the <code class="language-plaintext highlighter-rouge">parataxis</code> dependency. If there is a coordinating conjunction present (regardless of punctuation) or if the clauses are separated by merely a comma, the coordination type <code class="language-plaintext highlighter-rouge">conj</code> is used (differs from the UD).</p>
 
 <!-- fname:parataxis_coord.pdf -->
 <pre><code class="language-sdparse">Lapset leipoivat piparit ; äiti paistoi ne . \n The_children made the_cookies ; the_mother baked them .
@@ -85,7 +85,7 @@ punct(käy-6, (-4)
 punct(käy-6, )-7)
 </code></pre>
 
-<p><code>parataxis</code> is also used for direct speech. If the verb of saying (or thinking, etc.) precedes the utterance, it acts as the governor, and the main verb or predicative of the utterance is the dependent. However, if the utterance precedes the speech verb, the relation is reversed.</p>
+<p><code class="language-plaintext highlighter-rouge">parataxis</code> is also used for direct speech. If the verb of saying (or thinking, etc.) precedes the utterance, it acts as the governor, and the main verb or predicative of the utterance is the dependent. However, if the utterance precedes the speech verb, the relation is reversed.</p>
 
 <pre><code class="language-sdparse">Mies sanoi : Tulen kotiin vasta myöhään . \n The_man said : I_will_come home only late .
 nsubj(Mies-1, sanoi-2)
@@ -112,15 +112,15 @@ punct(Tulen-1, .-8)
 
 <h3 id="turku-dependency-treebank">Turku Dependency Treebank</h3>
 
-<p>If the clauses are separated by a comma and there is no coordinating conjunction, TDT does not use <code>parataxis</code> but <code>conj</code>.</p>
+<p>If the clauses are separated by a comma and there is no coordinating conjunction, TDT does not use <code class="language-plaintext highlighter-rouge">parataxis</code> but <code class="language-plaintext highlighter-rouge">conj</code>.</p>
 
 <h3 id="finntreebank">FinnTreeBank</h3>
 
-<p>FI_FTB does not apply the <code>parataxis</code> relation.
+<p>FI_FTB does not apply the <code class="language-plaintext highlighter-rouge">parataxis</code> relation.
 Instead, the phenomena of implicit coordination,
 parenthetical clauses, interjected clauses and direct speech
 have been described using some other, most applicable
-relation available (usually <a href=""><code>conj</code></a> or <a href=""><code>obj</code></a>).</p>
+relation available (usually <a href=""><code class="language-plaintext highlighter-rouge">conj</code></a> or <a href=""><code class="language-plaintext highlighter-rouge">obj</code></a>).</p>
 
 
 <!-- "automatic stats" -->
@@ -133,16 +133,16 @@ relation available (usually <a href=""><code>conj</code></a> or <a href=""><code
 
 <hr />
 
-<h2 id="treebank-statistics-udfinnish">Treebank Statistics (UD_Finnish)</h2>
+<h2 id="treebank-statistics-ud_finnish">Treebank Statistics (UD_Finnish)</h2>
 
 <p>This relation is universal.</p>
 
-<p>735 nodes (0%) are attached to their parents as <code>parataxis</code>.</p>
+<p>735 nodes (0%) are attached to their parents as <code class="language-plaintext highlighter-rouge">parataxis</code>.</p>
 
-<p>731 instances of <code>parataxis</code> (99%) are left-to-right (parent precedes child).
+<p>731 instances of <code class="language-plaintext highlighter-rouge">parataxis</code> (99%) are left-to-right (parent precedes child).
 Average distance between parent and child is 10.2625850340136.</p>
 
-<p>The following 34 pairs of parts of speech are connected with <code>parataxis</code>: <a href="">fi-pos/VERB</a>-<a href="">fi-pos/VERB</a> (333; 45% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/VERB</a> (147; 20% instances), <a href="">fi-pos/ADJ</a>-<a href="">fi-pos/VERB</a> (49; 7% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/VERB</a> (38; 5% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/NOUN</a> (38; 5% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/NOUN</a> (27; 4% instances), <a href="">fi-pos/ADV</a>-<a href="">fi-pos/VERB</a> (16; 2% instances), <a href="">fi-pos/PRON</a>-<a href="">fi-pos/VERB</a> (11; 1% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/ADJ</a> (8; 1% instances), <a href="">fi-pos/ADJ</a>-<a href="">fi-pos/NOUN</a> (7; 1% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/PRON</a> (7; 1% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/ADJ</a> (6; 1% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/PROPN</a> (6; 1% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/ADV</a> (5; 1% instances), <a href="">fi-pos/ADJ</a>-<a href="">fi-pos/ADJ</a> (4; 1% instances), <a href="">fi-pos/INTJ</a>-<a href="">fi-pos/VERB</a> (4; 1% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/NOUN</a> (4; 1% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/PRON</a> (3; 0% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/ADV</a> (3; 0% instances), <a href="">fi-pos/ADV</a>-<a href="">fi-pos/NOUN</a> (2; 0% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/PROPN</a> (2; 0% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/SYM</a> (2; 0% instances), <a href="">fi-pos/X</a>-<a href="">fi-pos/VERB</a> (2; 0% instances), <a href="">fi-pos/ADJ</a>-<a href="">fi-pos/PRON</a> (1; 0% instances), <a href="">fi-pos/AUX</a>-<a href="">fi-pos/VERB</a> (1; 0% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/INTJ</a> (1; 0% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/X</a> (1; 0% instances), <a href="">fi-pos/NUM</a>-<a href="">fi-pos/VERB</a> (1; 0% instances), <a href="">fi-pos/PRON</a>-<a href="">fi-pos/ADJ</a> (1; 0% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/ADJ</a> (1; 0% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/INTJ</a> (1; 0% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/NUM</a> (1; 0% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/SYM</a> (1; 0% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/X</a> (1; 0% instances).</p>
+<p>The following 34 pairs of parts of speech are connected with <code class="language-plaintext highlighter-rouge">parataxis</code>: <a href="">fi-pos/VERB</a>-<a href="">fi-pos/VERB</a> (333; 45% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/VERB</a> (147; 20% instances), <a href="">fi-pos/ADJ</a>-<a href="">fi-pos/VERB</a> (49; 7% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/VERB</a> (38; 5% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/NOUN</a> (38; 5% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/NOUN</a> (27; 4% instances), <a href="">fi-pos/ADV</a>-<a href="">fi-pos/VERB</a> (16; 2% instances), <a href="">fi-pos/PRON</a>-<a href="">fi-pos/VERB</a> (11; 1% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/ADJ</a> (8; 1% instances), <a href="">fi-pos/ADJ</a>-<a href="">fi-pos/NOUN</a> (7; 1% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/PRON</a> (7; 1% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/ADJ</a> (6; 1% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/PROPN</a> (6; 1% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/ADV</a> (5; 1% instances), <a href="">fi-pos/ADJ</a>-<a href="">fi-pos/ADJ</a> (4; 1% instances), <a href="">fi-pos/INTJ</a>-<a href="">fi-pos/VERB</a> (4; 1% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/NOUN</a> (4; 1% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/PRON</a> (3; 0% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/ADV</a> (3; 0% instances), <a href="">fi-pos/ADV</a>-<a href="">fi-pos/NOUN</a> (2; 0% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/PROPN</a> (2; 0% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/SYM</a> (2; 0% instances), <a href="">fi-pos/X</a>-<a href="">fi-pos/VERB</a> (2; 0% instances), <a href="">fi-pos/ADJ</a>-<a href="">fi-pos/PRON</a> (1; 0% instances), <a href="">fi-pos/AUX</a>-<a href="">fi-pos/VERB</a> (1; 0% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/INTJ</a> (1; 0% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/X</a> (1; 0% instances), <a href="">fi-pos/NUM</a>-<a href="">fi-pos/VERB</a> (1; 0% instances), <a href="">fi-pos/PRON</a>-<a href="">fi-pos/ADJ</a> (1; 0% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/ADJ</a> (1; 0% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/INTJ</a> (1; 0% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/NUM</a> (1; 0% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/SYM</a> (1; 0% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/X</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 5	bgColor:blue
 # visual-style 5	fgColor:white

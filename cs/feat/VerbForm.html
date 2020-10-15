@@ -76,11 +76,11 @@
 
 <p>Even though the name of the feature seems to suggest that it is used
 exclusively with <a href="cs-pos/VERB">verbs</a>, it is not the case.
-The <code>Part</code> value can be used also with <a href="cs-pos/ADJ">adjectives</a>.
+The <code class="language-plaintext highlighter-rouge">Part</code> value can be used also with <a href="cs-pos/ADJ">adjectives</a>.
 It distinguishes participles from other verb forms,
 and participial adjectives from other adjectives.</p>
 
-<h3 id="a-namefinfina-finite-verb"><a name="Fin"><code>Fin</code></a>: finite verb</h3>
+<h3 id="fin-finite-verb"><a name="Fin"><code class="language-plaintext highlighter-rouge">Fin</code></a>: finite verb</h3>
 
 <p>Rule of thumb: if it has non-empty <a href="">Mood</a>, it is finite.
 In Czech this applies to indicative and imperative forms,
@@ -97,7 +97,7 @@ and to the special conditional forms of the <a href="cs-pos/AUX">auxiliary verb<
   <li><em>buď, buďme, buďte</em>  “be” (imperative in different persons and numbers)</li>
 </ul>
 
-<h3 id="a-nameinfinfa-infinitive"><a name="Inf"><code>Inf</code></a>: infinitive</h3>
+<h3 id="inf-infinitive"><a name="Inf"><code class="language-plaintext highlighter-rouge">Inf</code></a>: infinitive</h3>
 
 <p>Infinitive is the citation form of verbs.
 It is also used with the auxiliary <em>být </em> to form periphrastic future tense,
@@ -110,7 +110,7 @@ and it appears as the argument of modal and other verbs.</p>
   <li><em>být</em>  “to be”</li>
 </ul>
 
-<h3 id="a-namepartparta-participle"><a name="Part"><code>Part</code></a>: participle</h3>
+<h3 id="part-participle"><a name="Part"><code class="language-plaintext highlighter-rouge">Part</code></a>: participle</h3>
 
 <p>Participle is a non-finite verb form that shares properties of verbs
 and adjectives. Czech has two types of participles:</p>
@@ -132,7 +132,7 @@ is used to form the passive voice (in any tense or mood).</li>
   <li><em>byl, byla, bylo, byli, byly</em>  “was/been” (past participle in different genders and numbers)</li>
 </ul>
 
-<h3 id="a-nameconvconva-converb-transgressive"><a name="Conv"><code>Conv</code></a>: converb, transgressive</h3>
+<h3 id="conv-converb-transgressive"><a name="Conv"><code class="language-plaintext highlighter-rouge">Conv</code></a>: converb, transgressive</h3>
 
 <p>The converb, also called transgressive, adverbial participle or gerund, is a non-finite
 verb form that shares properties of verbs and adverbs.</p>
@@ -164,29 +164,29 @@ prepared</b> the dinner, she called her family to the table”</li>
 
 <hr />
 
-<h2 id="treebank-statistics-udczech">Treebank Statistics (UD_Czech)</h2>
+<h2 id="treebank-statistics-ud_czech">Treebank Statistics (UD_Czech)</h2>
 
-<p>This feature is universal but the values <code>Conv</code> are language-specific.
-It occurs with 4 different values: <code>Conv</code>, <code>Fin</code>, <code>Inf</code>, <code>Part</code>.</p>
+<p>This feature is universal but the values <code class="language-plaintext highlighter-rouge">Conv</code> are language-specific.
+It occurs with 4 different values: <code class="language-plaintext highlighter-rouge">Conv</code>, <code class="language-plaintext highlighter-rouge">Fin</code>, <code class="language-plaintext highlighter-rouge">Inf</code>, <code class="language-plaintext highlighter-rouge">Part</code>.</p>
 
-<p>168439 tokens (13%) have a non-empty value of <code>VerbForm</code>.
-27095 types (23%) occur at least once with a non-empty value of <code>VerbForm</code>.
-7980 lemmas (15%) occur at least once with a non-empty value of <code>VerbForm</code>.
+<p>168439 tokens (13%) have a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.
+27095 types (23%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.
+7980 lemmas (15%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.
 The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (119672; 9% instances), <a href="">cs-pos/AUX</a> (36338; 3% instances), <a href="">cs-pos/ADJ</a> (12429; 1% instances).</p>
 
-<h3 id="verb"><code>VERB</code></h3>
+<h3 id="verb"><code class="language-plaintext highlighter-rouge">VERB</code></h3>
 
-<p>119672 <a href="">cs-pos/VERB</a> tokens (100% of all <code>VERB</code> tokens) have a non-empty value of <code>VerbForm</code>.</p>
+<p>119672 <a href="">cs-pos/VERB</a> tokens (100% of all <code class="language-plaintext highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>VerbForm</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (109004; 91%), <tt><a href="Voice.html">Voice</a>=Act</tt> (97291; 81%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (75098; 63%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (66222; 55%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (66213; 55%), <tt><a href="Number.html">Number</a>=Sing</tt> (61888; 52%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">VERB</code> and <code class="language-plaintext highlighter-rouge">VerbForm</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (109004; 91%), <tt><a href="Voice.html">Voice</a>=Act</tt> (97291; 81%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (75098; 63%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (66222; 55%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (66213; 55%), <tt><a href="Number.html">Number</a>=Sing</tt> (61888; 52%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>VerbForm</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">VerbForm</code>:</p>
 
 <ul>
-  <li><code>Conv</code> (140; 0% of non-empty <code>VerbForm</code>): <em>počínaje, nemluvě, vlastně, konče, Mluvě, soudě, maje, nehledě, nepočítaje, nevyjímaje</em></li>
-  <li><code>Fin</code> (53459; 45% of non-empty <code>VerbForm</code>): <em>má, je, může, mají, musí, jde, lze, jsou, mohou, říká</em></li>
-  <li><code>Inf</code> (21621; 18% of non-empty <code>VerbForm</code>): <em>mít, získat, stát, být, hrát, říci, muset, platit, dělat, dostat</em></li>
-  <li><code>Part</code> (44452; 37% of non-empty <code>VerbForm</code>): <em>řekl, měl, měla, uvedl, měli, mělo, mohl, měly, bylo, prohlásil</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Conv</code> (140; 0% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>počínaje, nemluvě, vlastně, konče, Mluvě, soudě, maje, nehledě, nepočítaje, nevyjímaje</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Fin</code> (53459; 45% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>má, je, může, mají, musí, jde, lze, jsou, mohou, říká</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Inf</code> (21621; 18% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>mít, získat, stát, být, hrát, říci, muset, platit, dělat, dostat</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Part</code> (44452; 37% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>řekl, měl, měla, uvedl, měli, mělo, mohl, měly, bylo, prohlásil</em></li>
 </ul>
 
 <table>
@@ -222,19 +222,19 @@ The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (1196
   <tr><td><tt><a href="Polarity.html">Polarity</a>=Pos|<a href="Style.html">Style</a>=Arch</tt></td><td></td><td><em>míti</em></td><td></td><td></td></tr>
 </table>
 
-<h3 id="aux"><code>AUX</code></h3>
+<h3 id="aux"><code class="language-plaintext highlighter-rouge">AUX</code></h3>
 
-<p>36338 <a href="">cs-pos/AUX</a> tokens (100% of all <code>AUX</code> tokens) have a non-empty value of <code>VerbForm</code>.</p>
+<p>36338 <a href="">cs-pos/AUX</a> tokens (100% of all <code class="language-plaintext highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>VerbForm</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (30326; 83%), <tt><a href="Voice.html">Voice</a>=Act</tt> (26833; 74%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (25830; 71%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (20817; 57%), <tt><a href="Person.html">Person</a>=3</tt> (19536; 54%), <tt><a href="Number.html">Number</a>=Sing</tt> (19070; 52%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">AUX</code> and <code class="language-plaintext highlighter-rouge">VerbForm</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (30326; 83%), <tt><a href="Voice.html">Voice</a>=Act</tt> (26833; 74%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (25830; 71%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (20817; 57%), <tt><a href="Person.html">Person</a>=3</tt> (19536; 54%), <tt><a href="Number.html">Number</a>=Sing</tt> (19070; 52%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>VerbForm</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">AUX</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">VerbForm</code>:</p>
 
 <ul>
-  <li><code>Conv</code> (8; 0% of non-empty <code>VerbForm</code>): <em>jsouce, jsa, jsouc</em></li>
-  <li><code>Fin</code> (28666; 79% of non-empty <code>VerbForm</code>): <em>je, by, jsou, bude, jsem, jsme, není, budou, bychom, bych</em></li>
-  <li><code>Inf</code> (1656; 5% of non-empty <code>VerbForm</code>): <em>být, býti, nebýt</em></li>
-  <li><code>Part</code> (6008; 17% of non-empty <code>VerbForm</code>): <em>byl, bylo, byla, byly, byli, nebyl, nebylo, nebyla, nebyly, nebyli</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Conv</code> (8; 0% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>jsouce, jsa, jsouc</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Fin</code> (28666; 79% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>je, by, jsou, bude, jsem, jsme, není, budou, bychom, bych</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Inf</code> (1656; 5% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>být, býti, nebýt</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Part</code> (6008; 17% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>byl, bylo, byla, byly, byli, nebyl, nebylo, nebyla, nebyly, nebyli</em></li>
 </ul>
 
 <table>
@@ -295,24 +295,24 @@ The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (1196
   <tr><td><tt><a href="Polarity.html">Polarity</a>=Pos|<a href="Style.html">Style</a>=Arch</tt></td><td></td><td><em>býti</em></td><td></td><td></td></tr>
 </table>
 
-<h3 id="adj"><code>ADJ</code></h3>
+<h3 id="adj"><code class="language-plaintext highlighter-rouge">ADJ</code></h3>
 
-<p>12429 <a href="">cs-pos/ADJ</a> tokens (7% of all <code>ADJ</code> tokens) have a non-empty value of <code>VerbForm</code>.</p>
+<p>12429 <a href="">cs-pos/ADJ</a> tokens (7% of all <code class="language-plaintext highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>VerbForm</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (12429; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (12249; 99%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (8452; 68%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (8287; 67%), <tt><a href="Number.html">Number</a>=Sing</tt> (6643; 53%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">ADJ</code> and <code class="language-plaintext highlighter-rouge">VerbForm</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (12429; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (12249; 99%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (8452; 68%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (8287; 67%), <tt><a href="Number.html">Number</a>=Sing</tt> (6643; 53%).</p>
 
-<p><code>ADJ</code> tokens may have the following values of <code>VerbForm</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">ADJ</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">VerbForm</code>:</p>
 
 <ul>
-  <li><code>Part</code> (12429; 100% of non-empty <code>VerbForm</code>): <em>rozhodující, řečeno, vedoucí, následující, připraven, přesvědčen, připravena, týkající, otevřena, vynikající</em></li>
-  <li><code>EMPTY</code> (156369): <em>první, další, české, druhé, nové, státní, poslední, dalších, vlastní, možné</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Part</code> (12429; 100% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>rozhodující, řečeno, vedoucí, následující, připraven, přesvědčen, připravena, týkající, otevřena, vynikající</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (156369): <em>první, další, české, druhé, nové, státní, poslední, dalších, vlastní, možné</em></li>
 </ul>
 
-<p><code>VerbForm</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (2531) occur only with one value of <code>VerbForm</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">VerbForm</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">ADJ</code>. 100% lemmas (2531) occur only with one value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.</p>
 
-<h2 id="relations-with-agreement-in-verbform">Relations with Agreement in <code>VerbForm</code></h2>
+<h2 id="relations-with-agreement-in-verbform">Relations with Agreement in <code class="language-plaintext highlighter-rouge">VerbForm</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>VerbForm</code>:
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">VerbForm</code>:
 <tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (10925; 84%),
 <tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (3436; 65%),
 <tt>ADJ –[<a href="../dep/aux:pass.html">aux:pass</a>]–&gt; AUX</tt> (2770; 51%),
@@ -326,29 +326,29 @@ The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (1196
 
 <hr />
 
-<h2 id="treebank-statistics-udczech-cac">Treebank Statistics (UD_Czech-CAC)</h2>
+<h2 id="treebank-statistics-ud_czech-cac">Treebank Statistics (UD_Czech-CAC)</h2>
 
-<p>This feature is universal but the values <code>Conv</code> are language-specific.
-It occurs with 4 different values: <code>Conv</code>, <code>Fin</code>, <code>Inf</code>, <code>Part</code>.</p>
+<p>This feature is universal but the values <code class="language-plaintext highlighter-rouge">Conv</code> are language-specific.
+It occurs with 4 different values: <code class="language-plaintext highlighter-rouge">Conv</code>, <code class="language-plaintext highlighter-rouge">Fin</code>, <code class="language-plaintext highlighter-rouge">Inf</code>, <code class="language-plaintext highlighter-rouge">Part</code>.</p>
 
-<p>59769 tokens (12%) have a non-empty value of <code>VerbForm</code>.
-14466 types (24%) occur at least once with a non-empty value of <code>VerbForm</code>.
-5226 lemmas (19%) occur at least once with a non-empty value of <code>VerbForm</code>.
+<p>59769 tokens (12%) have a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.
+14466 types (24%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.
+5226 lemmas (19%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.
 The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (39550; 8% instances), <a href="">cs-pos/AUX</a> (13942; 3% instances), <a href="">cs-pos/ADJ</a> (6277; 1% instances).</p>
 
-<h3 id="verb-1"><code>VERB</code></h3>
+<h3 id="verb-1"><code class="language-plaintext highlighter-rouge">VERB</code></h3>
 
-<p>39550 <a href="">cs-pos/VERB</a> tokens (100% of all <code>VERB</code> tokens) have a non-empty value of <code>VerbForm</code>.</p>
+<p>39550 <a href="">cs-pos/VERB</a> tokens (100% of all <code class="language-plaintext highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>VerbForm</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (36688; 93%), <tt><a href="Voice.html">Voice</a>=Act</tt> (31799; 80%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (29181; 74%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (21424; 54%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (21343; 54%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">VERB</code> and <code class="language-plaintext highlighter-rouge">VerbForm</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (36688; 93%), <tt><a href="Voice.html">Voice</a>=Act</tt> (31799; 80%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (29181; 74%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (21424; 54%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (21343; 54%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>VerbForm</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">VerbForm</code>:</p>
 
 <ul>
-  <li><code>Conv</code> (37; 0% of non-empty <code>VerbForm</code>): <em>počínaje, nemluvě, nevyjímaje, říkajíc, Počínajíc, dožívaje, klusaje, konče, nehodíce, nepočítaje</em></li>
-  <li><code>Fin</code> (21771; 55% of non-empty <code>VerbForm</code>): <em>je, má, mají, musí, může, jde, lze, jsou, mohou, můžeme</em></li>
-  <li><code>Inf</code> (7404; 19% of non-empty <code>VerbForm</code>): <em>mít, zajistit, říci, být, vidět, řešit, dělat, věnovat, provádět, dosáhnout</em></li>
-  <li><code>Part</code> (10338; 26% of non-empty <code>VerbForm</code>): <em>měl, měla, bylo, mohl, mohli, došlo, měli, byl, měly, mělo</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Conv</code> (37; 0% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>počínaje, nemluvě, nevyjímaje, říkajíc, Počínajíc, dožívaje, klusaje, konče, nehodíce, nepočítaje</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Fin</code> (21771; 55% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>je, má, mají, musí, může, jde, lze, jsou, mohou, můžeme</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Inf</code> (7404; 19% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>mít, zajistit, říci, být, vidět, řešit, dělat, věnovat, provádět, dosáhnout</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Part</code> (10338; 26% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>měl, měla, bylo, mohl, mohli, došlo, měli, byl, měly, mělo</em></li>
 </ul>
 
 <table>
@@ -373,19 +373,19 @@ The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (3955
   <tr><td><tt><a href="Polarity.html">Polarity</a>=Pos</tt></td><td></td><td><em>používat</em></td><td></td><td></td></tr>
 </table>
 
-<h3 id="aux-1"><code>AUX</code></h3>
+<h3 id="aux-1"><code class="language-plaintext highlighter-rouge">AUX</code></h3>
 
-<p>13942 <a href="">cs-pos/AUX</a> tokens (100% of all <code>AUX</code> tokens) have a non-empty value of <code>VerbForm</code>.</p>
+<p>13942 <a href="">cs-pos/AUX</a> tokens (100% of all <code class="language-plaintext highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>VerbForm</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (11527; 83%), <tt><a href="Voice.html">Voice</a>=Act</tt> (11302; 81%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (11062; 79%), <tt><a href="Person.html">Person</a>=3</tt> (9491; 68%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (8886; 64%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (7809; 56%), <tt><a href="Number.html">Number</a>=Sing</tt> (7750; 56%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">AUX</code> and <code class="language-plaintext highlighter-rouge">VerbForm</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (11527; 83%), <tt><a href="Voice.html">Voice</a>=Act</tt> (11302; 81%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (11062; 79%), <tt><a href="Person.html">Person</a>=3</tt> (9491; 68%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (8886; 64%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (7809; 56%), <tt><a href="Number.html">Number</a>=Sing</tt> (7750; 56%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>VerbForm</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">AUX</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">VerbForm</code>:</p>
 
 <ul>
-  <li><code>Conv</code> (2; 0% of non-empty <code>VerbForm</code>): <em>byvše, jsouc</em></li>
-  <li><code>Fin</code> (10912; 78% of non-empty <code>VerbForm</code>): <em>je, by, jsou, bude, jsme, není, jsem, budou, bychom, nejsou</em></li>
-  <li><code>Inf</code> (614; 4% of non-empty <code>VerbForm</code>): <em>být, býti, pěstovat, vyžadovat</em></li>
-  <li><code>Part</code> (2414; 17% of non-empty <code>VerbForm</code>): <em>byl, bylo, byla, byly, byli, nebylo, nebyl, nebyla, nebyly, býval</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Conv</code> (2; 0% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>byvše, jsouc</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Fin</code> (10912; 78% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>je, by, jsou, bude, jsme, není, jsem, budou, bychom, nejsou</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Inf</code> (614; 4% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>být, býti, pěstovat, vyžadovat</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Part</code> (2414; 17% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>byl, bylo, byla, byly, byli, nebylo, nebyl, nebyla, nebyly, býval</em></li>
 </ul>
 
 <table>
@@ -440,24 +440,24 @@ The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (3955
   <tr><td><tt><a href="Polarity.html">Polarity</a>=Pos|<a href="Style.html">Style</a>=Arch</tt></td><td></td><td><em>býti</em></td><td></td><td></td></tr>
 </table>
 
-<h3 id="adj-1"><code>ADJ</code></h3>
+<h3 id="adj-1"><code class="language-plaintext highlighter-rouge">ADJ</code></h3>
 
-<p>6277 <a href="">cs-pos/ADJ</a> tokens (9% of all <code>ADJ</code> tokens) have a non-empty value of <code>VerbForm</code>.</p>
+<p>6277 <a href="">cs-pos/ADJ</a> tokens (9% of all <code class="language-plaintext highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>VerbForm</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (6277; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (6226; 99%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (4179; 67%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (3983; 63%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">ADJ</code> and <code class="language-plaintext highlighter-rouge">VerbForm</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (6277; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (6226; 99%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (4179; 67%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (3983; 63%).</p>
 
-<p><code>ADJ</code> tokens may have the following values of <code>VerbForm</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">ADJ</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">VerbForm</code>:</p>
 
 <ul>
-  <li><code>Part</code> (6277; 100% of non-empty <code>VerbForm</code>): <em>pracujících, rozhodující, pracující, vedoucí, řečeno, dosaženo, odpovídající, následující, věnována, týkající</em></li>
-  <li><code>EMPTY</code> (66901): <em>další, pracovní, první, jednotlivých, základní, nové, možno, socialistické, různých, dalších</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Part</code> (6277; 100% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>pracujících, rozhodující, pracující, vedoucí, řečeno, dosaženo, odpovídající, následující, věnována, týkající</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (66901): <em>další, pracovní, první, jednotlivých, základní, nové, možno, socialistické, různých, dalších</em></li>
 </ul>
 
-<p><code>VerbForm</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (1581) occur only with one value of <code>VerbForm</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">VerbForm</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">ADJ</code>. 100% lemmas (1581) occur only with one value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.</p>
 
-<h2 id="relations-with-agreement-in-verbform-1">Relations with Agreement in <code>VerbForm</code></h2>
+<h2 id="relations-with-agreement-in-verbform-1">Relations with Agreement in <code class="language-plaintext highlighter-rouge">VerbForm</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>VerbForm</code>:
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">VerbForm</code>:
 <tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (5036; 90%),
 <tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (1180; 65%),
 <tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (355; 67%),
@@ -471,28 +471,28 @@ The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (3955
 
 <hr />
 
-<h2 id="treebank-statistics-udczech-cltt">Treebank Statistics (UD_Czech-CLTT)</h2>
+<h2 id="treebank-statistics-ud_czech-cltt">Treebank Statistics (UD_Czech-CLTT)</h2>
 
 <p>This feature is universal.
-It occurs with 3 different values: <code>Fin</code>, <code>Inf</code>, <code>Part</code>.</p>
+It occurs with 3 different values: <code class="language-plaintext highlighter-rouge">Fin</code>, <code class="language-plaintext highlighter-rouge">Inf</code>, <code class="language-plaintext highlighter-rouge">Part</code>.</p>
 
-<p>2055 tokens (8%) have a non-empty value of <code>VerbForm</code>.
-575 types (15%) occur at least once with a non-empty value of <code>VerbForm</code>.
-297 lemmas (13%) occur at least once with a non-empty value of <code>VerbForm</code>.
+<p>2055 tokens (8%) have a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.
+575 types (15%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.
+297 lemmas (13%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.
 The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (1428; 5% instances), <a href="">cs-pos/AUX</a> (412; 2% instances), <a href="">cs-pos/ADJ</a> (215; 1% instances).</p>
 
-<h3 id="verb-2"><code>VERB</code></h3>
+<h3 id="verb-2"><code class="language-plaintext highlighter-rouge">VERB</code></h3>
 
-<p>1428 <a href="">cs-pos/VERB</a> tokens (100% of all <code>VERB</code> tokens) have a non-empty value of <code>VerbForm</code>.</p>
+<p>1428 <a href="">cs-pos/VERB</a> tokens (100% of all <code class="language-plaintext highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>VerbForm</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (1297; 91%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (1170; 82%), <tt><a href="Voice.html">Voice</a>=Act</tt> (1046; 73%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (966; 68%), <tt><a href="Person.html">Person</a>=3</tt> (966; 68%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (965; 68%), <tt><a href="Number.html">Number</a>=Sing</tt> (752; 53%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">VERB</code> and <code class="language-plaintext highlighter-rouge">VerbForm</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (1297; 91%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (1170; 82%), <tt><a href="Voice.html">Voice</a>=Act</tt> (1046; 73%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (966; 68%), <tt><a href="Person.html">Person</a>=3</tt> (966; 68%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (965; 68%), <tt><a href="Number.html">Number</a>=Sing</tt> (752; 53%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>VerbForm</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">VerbForm</code>:</p>
 
 <ul>
-  <li><code>Fin</code> (966; 68% of non-empty <code>VerbForm</code>): <em>obsahuje, uvede, rozumí, může, účtuje, použijí, mohou, má, sestavují, mají</em></li>
-  <li><code>Inf</code> (204; 14% of non-empty <code>VerbForm</code>): <em>vést, použít, mít, účtovat, odpisovat, uvést, rozhodnout, sestavit, pokračovat, splňovat</em></li>
-  <li><code>Part</code> (258; 18% of non-empty <code>VerbForm</code>): <em>stanoveno, zahrnuty, obchodovány, přestaly, sestavena, zavedena, uvedeny, vykázány, účtovány, došlo</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Fin</code> (966; 68% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>obsahuje, uvede, rozumí, může, účtuje, použijí, mohou, má, sestavují, mají</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Inf</code> (204; 14% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>vést, použít, mít, účtovat, odpisovat, uvést, rozhodnout, sestavit, pokračovat, splňovat</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Part</code> (258; 18% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>stanoveno, zahrnuty, obchodovány, přestaly, sestavena, zavedena, uvedeny, vykázány, účtovány, došlo</em></li>
 </ul>
 
 <table>
@@ -504,19 +504,19 @@ The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (1428
   <tr><td><tt><a href="Polarity.html">Polarity</a>=Pos</tt></td><td></td><td><em>obsahovat</em></td><td></td></tr>
 </table>
 
-<h3 id="aux-2"><code>AUX</code></h3>
+<h3 id="aux-2"><code class="language-plaintext highlighter-rouge">AUX</code></h3>
 
-<p>412 <a href="">cs-pos/AUX</a> tokens (94% of all <code>AUX</code> tokens) have a non-empty value of <code>VerbForm</code>.</p>
+<p>412 <a href="">cs-pos/AUX</a> tokens (94% of all <code class="language-plaintext highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>VerbForm</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (367; 89%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (348; 84%), <tt><a href="Person.html">Person</a>=3</tt> (338; 82%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (329; 80%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (310; 75%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">AUX</code> and <code class="language-plaintext highlighter-rouge">VerbForm</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (367; 89%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (348; 84%), <tt><a href="Person.html">Person</a>=3</tt> (338; 82%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (329; 80%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (310; 75%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>VerbForm</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">AUX</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">VerbForm</code>:</p>
 
 <ul>
-  <li><code>Fin</code> (346; 84% of non-empty <code>VerbForm</code>): <em>je, jsou, nejsou, není, by, bude, budou</em></li>
-  <li><code>Inf</code> (28; 7% of non-empty <code>VerbForm</code>): <em>být</em></li>
-  <li><code>Part</code> (38; 9% of non-empty <code>VerbForm</code>): <em>byly, byl, byla, nebyly, bylo, nebyl, nebyla</em></li>
-  <li><code>EMPTY</code> (26): <em>je-li, není-li, jsou-li, nejsou-li, byty</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Fin</code> (346; 84% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>je, jsou, nejsou, není, by, bude, budou</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Inf</code> (28; 7% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>být</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Part</code> (38; 9% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>byly, byl, byla, nebyly, bylo, nebyl, nebyla</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (26): <em>je-li, není-li, jsou-li, nejsou-li, byty</em></li>
 </ul>
 
 <table>
@@ -538,24 +538,24 @@ The feature is used with 3 part-of-speech tags: <a href="">cs-pos/VERB</a> (1428
   <tr><td><tt><a href="Polarity.html">Polarity</a>=Pos</tt></td><td></td><td><em>být</em></td><td></td></tr>
 </table>
 
-<h3 id="adj-2"><code>ADJ</code></h3>
+<h3 id="adj-2"><code class="language-plaintext highlighter-rouge">ADJ</code></h3>
 
-<p>215 <a href="">cs-pos/ADJ</a> tokens (5% of all <code>ADJ</code> tokens) have a non-empty value of <code>VerbForm</code>.</p>
+<p>215 <a href="">cs-pos/ADJ</a> tokens (5% of all <code class="language-plaintext highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>VerbForm</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (215; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (215; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (132; 61%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (122; 57%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">ADJ</code> and <code class="language-plaintext highlighter-rouge">VerbForm</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (215; 100%), <tt><a href="Polarity.html">Polarity</a>=Pos</tt> (215; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (132; 61%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (122; 57%).</p>
 
-<p><code>ADJ</code> tokens may have the following values of <code>VerbForm</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">ADJ</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">VerbForm</code>:</p>
 
 <ul>
-  <li><code>Part</code> (215; 100% of non-empty <code>VerbForm</code>): <em>konsolidující, zanikající, související, následujícího, předcházejícímu, přejímající, řídících, následujícímu, souvisejících, předcházející</em></li>
-  <li><code>EMPTY</code> (4440): <em>účetní, účetních, účetního, konsolidované, finanční, účetním, povinny, obchodního, ostatní, peněžních</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Part</code> (215; 100% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>konsolidující, zanikající, související, následujícího, předcházejícímu, přejímající, řídících, následujícímu, souvisejících, předcházející</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (4440): <em>účetní, účetních, účetního, konsolidované, finanční, účetním, povinny, obchodního, ostatní, peněžních</em></li>
 </ul>
 
-<p><code>VerbForm</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (40) occur only with one value of <code>VerbForm</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">VerbForm</code> seems to be <strong>lexical feature</strong> of <code class="language-plaintext highlighter-rouge">ADJ</code>. 100% lemmas (40) occur only with one value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.</p>
 
-<h2 id="relations-with-agreement-in-verbform-2">Relations with Agreement in <code>VerbForm</code></h2>
+<h2 id="relations-with-agreement-in-verbform-2">Relations with Agreement in <code class="language-plaintext highlighter-rouge">VerbForm</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>VerbForm</code>:
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">VerbForm</code>:
 <tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (125; 81%),
 <tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (40; 59%),
 <tt>VERB –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; VERB</tt> (16; 94%),

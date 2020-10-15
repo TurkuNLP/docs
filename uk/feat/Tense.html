@@ -66,27 +66,27 @@
 
 <p>Tense is a feature that specifies the time when the action took / takes / will take place, in relation to the current moment or to another action in the utterance.</p>
 
-<h3 id="past-past-tense"><code>Past</code>: past tense</h3>
+<h3 id="past-past-tense"><code class="language-plaintext highlighter-rouge">Past</code>: past tense</h3>
 
 <p>The past tense denotes actions that happened before the current moment. Past tense in Ukrainian is expressed by a special past form, historically derived from the past participle (also called active participle or l-participle – which is why past is the only tense that also varies in gender). In the pre-past version of the past tense the same form is accompanied by a past auxiliary verb. The past tense form can also be used to form present (or past, depending on the tense of the auxiliary verb) conditional. Since both pre-past and conditionals are formed analytically, they do not receive any morphological tags.</p>
 
 <h4 id="examples">Examples</h4>
 
 <ul>
-  <li><em>Я <b>пішов</b> додому. </em> “I<code>Masc</code> have <b>gone</b> home.”</li>
-  <li><em>Я <b>пішла</b> додому. </em> “I<code>Fem</code> have <b>gone</b> home.”</li>
-  <li><em>Я <b>пішло</b> додому. </em> “I<code>Neut</code> have <b>gone</b> home.”</li>
-  <li><em>Ти <b>пішов</b> додому. </em> “You<code>Masc</code> have <b>gone</b> home.”</li>
-  <li><em>Ти <b>пішла</b> додому. </em> “You<code>Fem</code> have <b>gone</b> home.”</li>
-  <li><em>Ти <b>пішло</b> додому. </em> “You<code>Neut</code> have <b>gone</b> home.”</li>
+  <li><em>Я <b>пішов</b> додому. </em> “I<code class="language-plaintext highlighter-rouge">Masc</code> have <b>gone</b> home.”</li>
+  <li><em>Я <b>пішла</b> додому. </em> “I<code class="language-plaintext highlighter-rouge">Fem</code> have <b>gone</b> home.”</li>
+  <li><em>Я <b>пішло</b> додому. </em> “I<code class="language-plaintext highlighter-rouge">Neut</code> have <b>gone</b> home.”</li>
+  <li><em>Ти <b>пішов</b> додому. </em> “You<code class="language-plaintext highlighter-rouge">Masc</code> have <b>gone</b> home.”</li>
+  <li><em>Ти <b>пішла</b> додому. </em> “You<code class="language-plaintext highlighter-rouge">Fem</code> have <b>gone</b> home.”</li>
+  <li><em>Ти <b>пішло</b> додому. </em> “You<code class="language-plaintext highlighter-rouge">Neut</code> have <b>gone</b> home.”</li>
   <li><em>Він <b>пішов</b> додому. </em> “He has <b>gone</b> home.”</li>
   <li><em>Вона <b>пішла</b> додому. </em> “She has <b>gone</b> home.”</li>
   <li><em>Воно <b>пішло</b> додому. </em> “It has <b>gone</b> home.”</li>
 </ul>
 
-<h3 id="pres-present-tense"><code>Pres</code>: present tense</h3>
+<h3 id="pres-present-tense"><code class="language-plaintext highlighter-rouge">Pres</code>: present tense</h3>
 
-<p>The present tense denotes actions that are happening right now or that usually happen. Only imperfective verbs can have present forms in Ukrainian. Morphologically present forms of perfective verbs have actually a future meaning and are marked <code>Tense=Fut</code>, see the last example below.</p>
+<p>The present tense denotes actions that are happening right now or that usually happen. Only imperfective verbs can have present forms in Ukrainian. Morphologically present forms of perfective verbs have actually a future meaning and are marked <code class="language-plaintext highlighter-rouge">Tense=Fut</code>, see the last example below.</p>
 
 <h4 id="examples-1">Examples</h4>
 
@@ -97,16 +97,16 @@
   <li><em><b>Прийду</b> додому. </em> “I <b>will come</b> home.” (<em>Прийти </em> is a perfective verb and it has a future meaning on the contrary to the imperfective forms above.)</li>
 </ul>
 
-<h3 id="fut-future-tense"><code>Fut</code>: future tense</h3>
+<h3 id="fut-future-tense"><code class="language-plaintext highlighter-rouge">Fut</code>: future tense</h3>
 
 <p>The future tense denotes actions that will happen after the current moment. It is formed in Ukrainian in one of three ways, partly depending on the aspect of the verb:</p>
 
 <ul>
   <li>Perfective verbs use present declension patterns to form future tense.</li>
   <li>The verb <em>бути </em> “to be” has a set of distinct future forms. They combine a future stem <em>буд- </em> with present endings.
-Although these forms are morphologically very close to the present forms, they are tagged <code>Tense=Fut</code> because the same lemma has also present forms and the feature must distinguish the two.</li>
+Although these forms are morphologically very close to the present forms, they are tagged <code class="language-plaintext highlighter-rouge">Tense=Fut</code> because the same lemma has also present forms and the feature must distinguish the two.</li>
   <li>Synthetic future forms are one of distinctive features of Ukrainian among other Slavic languages. They use the infinitive stem and endings being historically shortened future forms of the auxiliary verb <em>мати </em>“to have”. The future synthetic forms of <em>мати </em>“to have”: <em>матиму,  матимеш,  матиме, </em> <em>матимемо, </em> <em>матимете, </em> <em>матимуть. </em> The future synthetic forms of <em>робити </em> “to do”: <em>робитиму, </em> <em>робитимеш, </em> <em>робитиме, </em> <em>робитимемо, </em> <em>робитимете, </em> <em>робитимуть.</em></li>
-  <li>Note that all the imperfective Ukrainian verbs, with the exception of <em>бути</em>  “to be” itself, can also form a periphrastic future, consisting of the future form of the auxiliary бути, _ and the infinitive of the content verb. Only the auxiliary will have <code>Tense=Fut</code>, while there will be no tense information at the infinitive.</li>
+  <li>Note that all the imperfective Ukrainian verbs, with the exception of <em>бути</em>  “to be” itself, can also form a periphrastic future, consisting of the future form of the auxiliary бути, _ and the infinitive of the content verb. Only the auxiliary will have <code class="language-plaintext highlighter-rouge">Tense=Fut</code>, while there will be no tense information at the infinitive.</li>
 </ul>
 
 <h4 id="examples-2">Examples</h4>
@@ -128,29 +128,29 @@ Although these forms are morphologically very close to the present forms, they a
 
 <hr />
 
-<h2 id="treebank-statistics-udukrainian">Treebank Statistics (UD_Ukrainian)</h2>
+<h2 id="treebank-statistics-ud_ukrainian">Treebank Statistics (UD_Ukrainian)</h2>
 
 <p>This feature is universal.
-It occurs with 3 different values: <code>Fut</code>, <code>Past</code>, <code>Pres</code>.</p>
+It occurs with 3 different values: <code class="language-plaintext highlighter-rouge">Fut</code>, <code class="language-plaintext highlighter-rouge">Past</code>, <code class="language-plaintext highlighter-rouge">Pres</code>.</p>
 
-<p>1432 tokens (11%) have a non-empty value of <code>Tense</code>.
-1017 types (19%) occur at least once with a non-empty value of <code>Tense</code>.
-761 lemmas (20%) occur at least once with a non-empty value of <code>Tense</code>.
+<p>1432 tokens (11%) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.
+1017 types (19%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.
+761 lemmas (20%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.
 The feature is used with 4 part-of-speech tags: <a href="">uk-pos/VERB</a> (1277; 10% instances), <a href="">uk-pos/AUX</a> (150; 1% instances), <a href="">uk-pos/NOUN</a> (4; 0% instances), <a href="">uk-pos/ADJ</a> (1; 0% instances).</p>
 
-<h3 id="verb"><code>VERB</code></h3>
+<h3 id="verb"><code class="language-plaintext highlighter-rouge">VERB</code></h3>
 
-<p>1277 <a href="">uk-pos/VERB</a> tokens (82% of all <code>VERB</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>1277 <a href="">uk-pos/VERB</a> tokens (82% of all <code class="language-plaintext highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Tense</code> co-occurred: <tt><a href="Mood.html">Mood</a>=Ind</tt> (1192; 93%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (1192; 93%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (1011; 79%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (856; 67%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (696; 55%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (666; 52%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">VERB</code> and <code class="language-plaintext highlighter-rouge">Tense</code> co-occurred: <tt><a href="Mood.html">Mood</a>=Ind</tt> (1192; 93%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (1192; 93%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (1011; 79%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (856; 67%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (696; 55%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (666; 52%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>Tense</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Tense</code>:</p>
 
 <ul>
-  <li><code>Fut</code> (47; 4% of non-empty <code>Tense</code>): <em>вийде, матиме, Побачимося, анулюють, буде, вберете, вб’єте, вживу, виб’єш, видержите</em></li>
-  <li><code>Past</code> (956; 75% of non-empty <code>Tense</code>): <em>було, мав, мали, ходили, виявилося, сказав, жив, міг, почали, зробив</em></li>
-  <li><code>Pres</code> (274; 21% of non-empty <code>Tense</code>): <em>тримаючи, маю, має, може, можуть, мусить, є, здається, сидить, бачу</em></li>
-  <li><code>EMPTY</code> (275): <em>зробити, будь, взяти, робити, сказати, брати, випити, знайти, подивитися, працювати</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Fut</code> (47; 4% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>вийде, матиме, Побачимося, анулюють, буде, вберете, вб’єте, вживу, виб’єш, видержите</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Past</code> (956; 75% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>було, мав, мали, ходили, виявилося, сказав, жив, міг, почали, зробив</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pres</code> (274; 21% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>тримаючи, маю, має, може, можуть, мусить, є, здається, сидить, бачу</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (275): <em>зробити, будь, взяти, робити, сказати, брати, випити, знайти, подивитися, працювати</em></li>
 </ul>
 
 <table>
@@ -165,19 +165,19 @@ The feature is used with 4 part-of-speech tags: <a href="">uk-pos/VERB</a> (1277
   <tr><td><tt><a href="Number.html">Number</a>=Plur</tt></td><td></td><td></td><td><em>мали</em></td></tr>
 </table>
 
-<h3 id="aux"><code>AUX</code></h3>
+<h3 id="aux"><code class="language-plaintext highlighter-rouge">AUX</code></h3>
 
-<p>150 <a href="">uk-pos/AUX</a> tokens (87% of all <code>AUX</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>150 <a href="">uk-pos/AUX</a> tokens (87% of all <code class="language-plaintext highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Tense</code> co-occurred: <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (150; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (149; 99%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (149; 99%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (129; 86%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (104; 69%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">AUX</code> and <code class="language-plaintext highlighter-rouge">Tense</code> co-occurred: <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (150; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (149; 99%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (149; 99%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (129; 86%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (104; 69%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>Tense</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">AUX</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Tense</code>:</p>
 
 <ul>
-  <li><code>Fut</code> (11; 7% of non-empty <code>Tense</code>): <em>буде, будемо, Буду</em></li>
-  <li><code>Past</code> (129; 86% of non-empty <code>Tense</code>): <em>було, був, була, були, бувши</em></li>
-  <li><code>Pres</code> (10; 7% of non-empty <code>Tense</code>): <em>є</em></li>
-  <li><code>EMPTY</code> (23): <em>б, бути, би, Будьте, ці</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Fut</code> (11; 7% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>буде, будемо, Буду</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Past</code> (129; 86% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>було, був, була, були, бувши</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pres</code> (10; 7% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>є</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (23): <em>б, бути, би, Будьте, ці</em></li>
 </ul>
 
 <table>
@@ -192,35 +192,35 @@ The feature is used with 4 part-of-speech tags: <a href="">uk-pos/VERB</a> (1277
   <tr><td><tt><a href="Number.html">Number</a>=Plur</tt></td><td></td><td></td><td><em>були</em></td></tr>
 </table>
 
-<h3 id="noun"><code>NOUN</code></h3>
+<h3 id="noun"><code class="language-plaintext highlighter-rouge">NOUN</code></h3>
 
-<p>4 <a href="">uk-pos/NOUN</a> tokens (0% of all <code>NOUN</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>4 <a href="">uk-pos/NOUN</a> tokens (0% of all <code class="language-plaintext highlighter-rouge">NOUN</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>NOUN</code> and <code>Tense</code> co-occurred: <tt><a href="Animacy.html">Animacy</a>=Anim</tt> (3; 75%), <tt><a href="Case.html">Case</a>=Gen</tt> (3; 75%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (3; 75%), <tt><a href="Number.html">Number</a>=Ptan</tt> (3; 75%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">NOUN</code> and <code class="language-plaintext highlighter-rouge">Tense</code> co-occurred: <tt><a href="Animacy.html">Animacy</a>=Anim</tt> (3; 75%), <tt><a href="Case.html">Case</a>=Gen</tt> (3; 75%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (3; 75%), <tt><a href="Number.html">Number</a>=Ptan</tt> (3; 75%).</p>
 
-<p><code>NOUN</code> tokens may have the following values of <code>Tense</code>:</p>
-
-<ul>
-  <li><code>Pres</code> (4; 100% of non-empty <code>Tense</code>): <em>оточуючих, завідуючий</em></li>
-  <li><code>EMPTY</code> (2963): <em>час, тварин, тато, життя, дзядзьо, рік, років, школи, вулиці, діти</em></li>
-</ul>
-
-<h3 id="adj"><code>ADJ</code></h3>
-
-<p>1 <a href="">uk-pos/ADJ</a> tokens (0% of all <code>ADJ</code> tokens) have a non-empty value of <code>Tense</code>.</p>
-
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Tense</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (1; 100%), <tt><a href="Case.html">Case</a>=Acc</tt> (1; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (1; 100%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (1; 100%), <tt><a href="Gender.html">Gender</a>=Fem</tt> (1; 100%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (1; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (1; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (1; 100%).</p>
-
-<p><code>ADJ</code> tokens may have the following values of <code>Tense</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">NOUN</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Tense</code>:</p>
 
 <ul>
-  <li><code>Pres</code> (1; 100% of non-empty <code>Tense</code>): <em>западаючу</em></li>
-  <li><code>EMPTY</code> (1114): <em>різних, цілу, домашніх, різні, ціле, цілий, великих, великої, дитячої, експериментальних</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pres</code> (4; 100% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>оточуючих, завідуючий</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (2963): <em>час, тварин, тато, життя, дзядзьо, рік, років, школи, вулиці, діти</em></li>
 </ul>
 
-<h2 id="relations-with-agreement-in-tense">Relations with Agreement in <code>Tense</code></h2>
+<h3 id="adj"><code class="language-plaintext highlighter-rouge">ADJ</code></h3>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Tense</code>:
+<p>1 <a href="">uk-pos/ADJ</a> tokens (0% of all <code class="language-plaintext highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.</p>
+
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">ADJ</code> and <code class="language-plaintext highlighter-rouge">Tense</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (1; 100%), <tt><a href="Case.html">Case</a>=Acc</tt> (1; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (1; 100%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (1; 100%), <tt><a href="Gender.html">Gender</a>=Fem</tt> (1; 100%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (1; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (1; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (1; 100%).</p>
+
+<p><code class="language-plaintext highlighter-rouge">ADJ</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Tense</code>:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Pres</code> (1; 100% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>западаючу</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (1114): <em>різних, цілу, домашніх, різні, ціле, цілий, великих, великої, дитячої, експериментальних</em></li>
+</ul>
+
+<h2 id="relations-with-agreement-in-tense">Relations with Agreement in <code class="language-plaintext highlighter-rouge">Tense</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">Tense</code>:
 <tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (208; 93%),
 <tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (65; 50%),
 <tt>VERB –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; VERB</tt> (48; 72%).</p>

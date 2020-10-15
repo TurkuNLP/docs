@@ -126,7 +126,7 @@ properties or attributes. They may also function as predicates, as in</p>
 
 <p><em>Машина зеленая</em> “The car is green.”</p>
 
-<p>The <code>ADJ</code> tag is intended for ordinary adjectives only. See <a href="">DET</a>
+<p>The <code class="language-plaintext highlighter-rouge">ADJ</code> tag is intended for ordinary adjectives only. See <a href="">DET</a>
 for determiners and <a href="">NUM</a> for cardinal numerals.</p>
 
 <p>In accord with the UD approach,
@@ -159,8 +159,8 @@ negated.</p>
 <h3 id="border-cases">Border cases</h3>
 
 <p>Passive participles lie on the border between verbs and adjectives.
-Core participial forms (ending in consonant or short vowel) are tagged <code>VERB</code>.
-Long forms are participial adjectives and they are tagged <code>ADJ</code>.
+Core participial forms (ending in consonant or short vowel) are tagged <code class="language-plaintext highlighter-rouge">VERB</code>.
+Long forms are participial adjectives and they are tagged <code class="language-plaintext highlighter-rouge">ADJ</code>.
 For example:</p>
 
 <ul>
@@ -181,7 +181,7 @@ And these adjectives are not derived from verbs. Example:</p>
   <li>Normal (pronominal) forms: <em>старый, старое, старая</em>  “old”</li>
 </ul>
 
-<p>Here both groups are <code>ADJ</code>. The nominal forms are used in predication,
+<p>Here both groups are <code class="language-plaintext highlighter-rouge">ADJ</code>. The nominal forms are used in predication,
 the standard forms both in predication and to modify nouns.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-pos/ADJ.md" target="#">edit ADJ</a></p>
@@ -201,7 +201,7 @@ grammatical and semantic relation to another unit within a clause.</p>
 <em>по сравнению с</em> “in comparison with”, <em>в связи с</em>
 “in connection with”. The
 component words are then still tagged according to their basic use
-(<em>по</em> is <code>ADP</code>, <em>сравнению</em> is <a href="">NOUN</a>, etc.) and their status as
+(<em>по</em> is <code class="language-plaintext highlighter-rouge">ADP</code>, <em>сравнению</em> is <a href="">NOUN</a>, etc.) and their status as
 multiword expressions are accounted for in the syntactic annotation</p>
 
 <h3 id="examples">Examples</h3>
@@ -227,11 +227,11 @@ categories as time, place, direction or manner. They may also modify
 <p>There is a closed subclass of <em>pronominal adverbs</em> that refer to
 circumstances in context, rather than naming them directly; similarly
 to pronouns, these can be categorized as interrogative, relative,
-demonstrative etc. Pronominal adverbs also get the <code>ADV</code>
+demonstrative etc. Pronominal adverbs also get the <code class="language-plaintext highlighter-rouge">ADV</code>
 part-of-speech tag but they are differentiated by additional features.</p>
 
 <p>Note that Russian transgressives (also called adverbial participles)
-are tagged <a href="">VERB</a>, not <code>ADV</code>.</p>
+are tagged <a href="">VERB</a>, not <code class="language-plaintext highlighter-rouge">ADV</code>.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -278,9 +278,9 @@ the auxiliary.</p>
 Conditional form (historically aorist) of <em>být</em> is combined with past participle
 of the lexical verb. The auxiliary expresses person and number,
 the participle expresses gender and number:
-<em>сделал <b>бы</b></em> “I would do.<code>Masc</code>”,
-<em>сделала <b>бы</b></em> “I would do.<code>Fem</code>”,
-<em>сделали <b>бы</b></em> “we would do.<code>Masc</code>”.</p>
+<em>сделал <b>бы</b></em> “I would do.<code class="language-plaintext highlighter-rouge">Masc</code>”,
+<em>сделала <b>бы</b></em> “I would do.<code class="language-plaintext highlighter-rouge">Fem</code>”,
+<em>сделали <b>бы</b></em> “we would do.<code class="language-plaintext highlighter-rouge">Masc</code>”.</p>
   </li>
   <li>
     <p>Passive voice.
@@ -296,7 +296,7 @@ the participle expresses gender, number and voice:
 
 <h3 id="modal-verbs-are-not-auxiliaries">Modal verbs are not auxiliaries</h3>
 
-<p>Russian modal verbs are not considered auxiliary and they are tagged <code>VERB</code>.
+<p>Russian modal verbs are not considered auxiliary and they are tagged <code class="language-plaintext highlighter-rouge">VERB</code>.
 Their behavior is only slightly different from other content verbs.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-pos/AUX_.md" target="#">edit AUX</a></p>
@@ -338,7 +338,7 @@ number or quantity, etc.</p>
 define determiners as a separate word class. Russian does not have articles.
 Most determiners are traditionally called pronouns; that is, an UD-conformant
 annotation of Russian must distinguish between substantive pronouns (UD tag <a href="">PRON</a>)
-and attributive pronouns (UD tag <code>DET</code>).</p>
+and attributive pronouns (UD tag <code class="language-plaintext highlighter-rouge">DET</code>).</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -390,7 +390,7 @@ cannot serve to judge the part of speech from the English perspective.)</p>
 <p>Nouns are a part of speech typically denoting a person, place, thing,
 animal or idea.</p>
 
-<p>The <code>NOUN</code> tag is intended for common nouns only. See <a href="">PROPN</a> for
+<p>The <code class="language-plaintext highlighter-rouge">NOUN</code> tag is intended for common nouns only. See <a href="">PROPN</a> for
 proper nouns and <a href="">PRON</a> for pronouns.</p>
 
 <p>Russian nouns have the lexical feature <a href="">ru-feat/Gender</a>.
@@ -399,7 +399,7 @@ Furthermore, the nouns inflect for <a href="">ru-feat/Number</a> and <a href="">
 <p>A verbal noun can be derived productively from almost every verb
 (e.g. <em>есть</em>  “to eat” → <em>поедание</em>  “eating”).
 While in other languages a corresponding form may be called gerund and tagged <a href="">VERB</a>,
-in Russian it is tagged <code>NOUN</code>. It has always the neuter gender and the full
+in Russian it is tagged <code class="language-plaintext highlighter-rouge">NOUN</code>. It has always the neuter gender and the full
 number-case inflectional paradigm.</p>
 
 <h3 id="examples">Examples</h3>
@@ -424,7 +424,7 @@ number-case inflectional paradigm.</p>
 adjective or pronoun, that expresses a number and a relation to the
 number, such as quantity, sequence, frequency or fraction.</p>
 
-<p>Note that cardinal numerals are covered by <code>NUM</code> whether they are used
+<p>Note that cardinal numerals are covered by <code class="language-plaintext highlighter-rouge">NUM</code> whether they are used
 as determiners or not (as in <em>Windows <b>7</b></em>) and whether they
 are expressed as words <em>(четыре)</em>, digits <em>(4)</em> or Roman numerals
 <em>(IV)</em>.</p>
@@ -464,12 +464,12 @@ their syntactic and morphological behavior.</p>
 
 <h3 id="border-cases">Border cases</h3>
 <ul>
-  <li><em>тысяча, миллион, миллиард, триллион </em> “thousand, million, billion, trillion”: words for large quantities are ambiguous between cardinal numerals (tagged <code>NUM</code>) and nouns.
+  <li><em>тысяча, миллион, миллиард, триллион </em> “thousand, million, billion, trillion”: words for large quantities are ambiguous between cardinal numerals (tagged <code class="language-plaintext highlighter-rouge">NUM</code>) and nouns.
 If they inflect as nouns, they are tagged <a href="">NOUN</a>; but the borderline is fuzzy.
 For instance, in phrases like <em><b>тысячи</b> людей вышли на улицы</em> (“<b>thousands</b> of people went on the streets”),
 <em>тысячи </em> is a noun.
 In numeric expressions, e.g. <em>110 <b>тысяч</b> долларов </em> (“110 <b>thousand</b> dollars”), it is a cardinal numeral.</li>
-  <li><em>много, мало, немного, немало, несколько, достаточно </em> “many, few, not many, a lot, several, enough”: pronominal quantifiers are ambiguous between cardinal numerals (tagged <code>NUM</code> when they refer to imprecise quantities) and adverbs (tagged <a href="">ADV</a> when they refer to degree/intensity). As a rule, the latter have verbs, adjectives, and adverbs as their head (e.g. <em>я был несколько груб</em> “I was a bit rude”). Note that the words <em>более, больше, менее, меньше</em> “more than, less than” are considered comparative forms of the numerals <em>много</em> and <em>мало</em> when they are used in constructions with cardinal numerals, e.g. <em>более пяти студентов</em> “more than five students” (see <a href="http://universaldependencies.org/ru/overview/specific-syntax.html#more-than">specific-syntax</a>).</li>
+  <li><em>много, мало, немного, немало, несколько, достаточно </em> “many, few, not many, a lot, several, enough”: pronominal quantifiers are ambiguous between cardinal numerals (tagged <code class="language-plaintext highlighter-rouge">NUM</code> when they refer to imprecise quantities) and adverbs (tagged <a href="">ADV</a> when they refer to degree/intensity). As a rule, the latter have verbs, adjectives, and adverbs as their head (e.g. <em>я был несколько груб</em> “I was a bit rude”). Note that the words <em>более, больше, менее, меньше</em> “more than, less than” are considered comparative forms of the numerals <em>много</em> and <em>мало</em> when they are used in constructions with cardinal numerals, e.g. <em>более пяти студентов</em> “more than five students” (see <a href="http://universaldependencies.org/ru/overview/specific-syntax.html#more-than">specific-syntax</a>).</li>
 </ul>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-pos/NUM.md" target="#">edit NUM</a></p>
@@ -513,14 +513,14 @@ context.</p>
 
 <p>Pronouns under this definition function like nouns. Note that
 Russian grammar traditionally extends the term <em>pronoun</em> to words that
-substitute for <a href="ADJ">adjectives</a>. Such words are not tagged <code>PRON</code>
+substitute for <a href="ADJ">adjectives</a>. Such words are not tagged <code class="language-plaintext highlighter-rouge">PRON</code>
 under our universal scheme. They are tagged as <a href="DET">determiners</a> in
 order to annotate the same thing same way across languages.</p>
 
 <p>For instance, <em>‘это </em> “this” is traditionally called pronoun in
 Russian grammar, regardless of context (the notion of determiners does
 not exist in Russian grammar). To make the annotation parallel across
-languages, it should be now tagged <code>PRON</code> in <em>Я видел <b>это</b> вчера. </em> “I saw <b>this</b> yesterday.” and <code>DET</code> in
+languages, it should be now tagged <code class="language-plaintext highlighter-rouge">PRON</code> in <em>Я видел <b>это</b> вчера. </em> “I saw <b>this</b> yesterday.” and <code class="language-plaintext highlighter-rouge">DET</code> in
 <em>Я видел <b>эту</b> машину вчера. </em> “I saw <b>this</b> car yesterday.”</p>
 
 <h3 id="examples">Examples</h3>
@@ -547,7 +547,7 @@ languages, it should be now tagged <code>PRON</code> in <em>Я видел <b>э�
 of a specific individual, place, or object.
 Russian proper nouns are always written starting with an uppercase letter.</p>
 
-<p>Single-word named entities should be tagged <code>PROPN</code> though they originate
+<p>Single-word named entities should be tagged <code class="language-plaintext highlighter-rouge">PROPN</code> though they originate
 from a common noun <em>(Грязь) </em>(village) or an adjective <em>(Белая) </em>(river).
 Even if they were originally adjectives and inflect according to adjectival
 paradigms, they behave syntactically as nouns. For instance, <em>Белая </em>
@@ -558,20 +558,20 @@ and its feminine gender is fixed (while adjectives have forms in all three
 genders).</p>
 
 <p>Note that adjectives derived from geographical names <em>(русский, английский </em> “Russian, English”)
-are written in lowercase and are not tagged <code>PROPN</code>.</p>
+are written in lowercase and are not tagged <code class="language-plaintext highlighter-rouge">PROPN</code>.</p>
 
 <p>Personal names are typically treated as a sequence of proper nouns
 (one or more given names and one or more surnames).
-If the name contains prepositions, conjunctions or articles (foreign names), these are tagged as <code>ADP</code>, <code>CCONJ</code> and <code>DET</code>,
+If the name contains prepositions, conjunctions or articles (foreign names), these are tagged as <code class="language-plaintext highlighter-rouge">ADP</code>, <code class="language-plaintext highlighter-rouge">CCONJ</code> and <code class="language-plaintext highlighter-rouge">DET</code>,
 respectively.</p>
 
 <p>Russian (and other Slavic) multi-word named entities have internal syntactic
 structure, which is preserved in the annotation. The headword is always noun
-and there may be other nouns involved. They will be tagged either <code>PROPN</code> or
-<code>NOUN</code> and possible ambiguities must be resolved individually.
-Modifying adjectives are never tagged <code>PROPN</code>. Even if an adjective is the
+and there may be other nouns involved. They will be tagged either <code class="language-plaintext highlighter-rouge">PROPN</code> or
+<code class="language-plaintext highlighter-rouge">NOUN</code> and possible ambiguities must be resolved individually.
+Modifying adjectives are never tagged <code class="language-plaintext highlighter-rouge">PROPN</code>. Even if an adjective is the
 first word of a multi-word name, and thus it starts with an uppercase letter,
-it is still tagged <code>ADJ</code>.
+it is still tagged <code class="language-plaintext highlighter-rouge">ADJ</code>.
 Similarly, function words in named entities retain their normal tags.
 These rules are less strict for foreign named entities where the original
 part of speech is hidden for a Russian speaker.</p>
@@ -579,12 +579,12 @@ part of speech is hidden for a Russian speaker.</p>
 <h3 id="examples">Examples</h3>
 
 <ul>
-  <li><em>Белая</em>.<code>ADJ</code> <em>река</em>.<code>NOUN</code> “White River”. Even though the two words
+  <li><em>Белая</em>.<code class="language-plaintext highlighter-rouge">ADJ</code> <em>река</em>.<code class="language-plaintext highlighter-rouge">NOUN</code> “White River”. Even though the two words
 together are a name of a particular river, <em>река</em> is a common noun and is
 tagged as such.</li>
-  <li><em>Организация</em>.<code>NOUN</code> <em>Объединенных</em>.<code>ADJ</code> <em>Наций</em>.<code>NOUN</code> “United Nations Organization”
+  <li><em>Организация</em>.<code class="language-plaintext highlighter-rouge">NOUN</code> <em>Объединенных</em>.<code class="language-plaintext highlighter-rouge">ADJ</code> <em>Наций</em>.<code class="language-plaintext highlighter-rouge">NOUN</code> “United Nations Organization”
 consists of three words, none of which is proper noun. However, the acronym
-<em><b>ООН</b> </em> “UNO” is a single-token name and is tagged <code>PROPN</code>.</li>
+<em><b>ООН</b> </em> “UNO” is a single-token name and is tagged <code class="language-plaintext highlighter-rouge">PROPN</code>.</li>
 </ul>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-pos/PROPN.md" target="#">edit PROPN</a></p>
@@ -653,7 +653,7 @@ involves all currency symbols, e.g. <em>$ 75</em> is identical to
 
 <p>Strings that consists entirely of alphanumeric characters are not
 symbols but they may be <a href="PROPN">proper nouns</a>: <em>130XE</em>, <em>DC10</em>; others
-may be tagged <code>PROPN</code> (rather than <code>SYM</code>) even if they contain special
+may be tagged <code class="language-plaintext highlighter-rouge">PROPN</code> (rather than <code class="language-plaintext highlighter-rouge">SYM</code>) even if they contain special
 characters: <em>DC-10</em>.
 Similarly, abbreviations for single words are not symbols but are assigned the part of speech
 of the full form. For example, <em>Mr.</em> (mister), <em>kg</em> (kilogram), <em>km</em> (kilometr), <em>dr</em> (doktor)
@@ -684,12 +684,12 @@ signal events and actions, can constitute a minimal predicate in a
 clause, and govern the number and types of other constituents which
 may occur in the clause.</p>
 
-<p>Note that the <code>VERB</code> tag covers main verbs <em>(content verbs),</em>
+<p>Note that the <code class="language-plaintext highlighter-rouge">VERB</code> tag covers main verbs <em>(content verbs),</em>
 <em>modal verbs</em> and
 <em>copulas</em> but it does not cover <em>auxiliary verbs,</em> for which there is
 the <a href="">AUX</a> tag. (Russian modal verbs are not considered auxiliary.)
-See the description of <code>AUX</code> for more information on the borderline
-between <code>VERB</code> and <code>AUX</code>.</p>
+See the description of <code class="language-plaintext highlighter-rouge">AUX</code> for more information on the borderline
+between <code class="language-plaintext highlighter-rouge">VERB</code> and <code class="language-plaintext highlighter-rouge">AUX</code>.</p>
 
 <p>Czech verbs can take the following morphological forms:</p>
 
@@ -706,7 +706,7 @@ See below for examples.</p>
 
 <p>A verbal noun can be derived productively from almost every verb
 (e.g. <em>есть</em>  “to eat” → <em>поедание</em>  “eating”).
-While in other languages a corresponding form may be called gerund and tagged <code>VERB</code>,
+While in other languages a corresponding form may be called gerund and tagged <code class="language-plaintext highlighter-rouge">VERB</code>,
 in Russian it is tagged <a href="">NOUN</a>. It has always the neuter <a href="">ru-feat/Gender</a>
 and it inflects for <a href="">ru-feat/Number</a> and <a href="">ru-feat/Case</a>.</p>
 
@@ -723,8 +723,8 @@ and it inflects for <a href="">ru-feat/Number</a> and <a href="">ru-feat/Case</a
 
 <h3 id="border-cases">Border cases</h3>
 
-<p>There are passive participles as verb forms (<code>VERB</code>)
-and participial adjectives (<code>ADJ</code>). For example:</p>
+<p>There are passive participles as verb forms (<code class="language-plaintext highlighter-rouge">VERB</code>)
+and participial adjectives (<code class="language-plaintext highlighter-rouge">ADJ</code>). For example:</p>
 
 <ul>
   <li>Verb: <em>рисован, рисована, рисовано, рисованы</em>  “drawn”</li>
@@ -746,7 +746,7 @@ And these adjectives are not derived from verbs. Example:</p>
   <li>Normal (pronominal) forms: <em>старый, старая, старое</em>  “old”</li>
 </ul>
 
-<p>Here both groups are <code>ADJ</code>. The nominal forms are used in predication,
+<p>Here both groups are <code class="language-plaintext highlighter-rouge">ADJ</code>. The nominal forms are used in predication,
 the standard forms both in predication and to modify nouns.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-pos/VERB.md" target="#">edit VERB</a></p>
@@ -756,17 +756,17 @@ the standard forms both in predication and to modify nouns.</p>
 
 <h3 id="definition">Definition</h3>
 
-<p>The tag <code>X</code> is used for words that for some reason cannot be assigned
+<p>The tag <code class="language-plaintext highlighter-rouge">X</code> is used for words that for some reason cannot be assigned
 a real part-of-speech category.</p>
 
-<p>A special usage of <code>X</code> is for cases of code-switching where it is not
+<p>A special usage of <code class="language-plaintext highlighter-rouge">X</code> is for cases of code-switching where it is not
 possible (or meaningful) to analyze the intervening language
 grammatically (and where the dependency relation <em>foreign</em> is
 typically used in the syntactic analysis).
 This rarely applies to the PDT data where many foreign words are tagged with their original
 part of speech.</p>
 
-<p>Even if foreign words are tagged <code>X</code>, this usage does not extend
+<p>Even if foreign words are tagged <code class="language-plaintext highlighter-rouge">X</code>, this usage does not extend
 to ordinary loan words which should be assigned a normal
 part-of-speech. For example, in <em>Он надел килт </em> “He put on kilt”,
 <em>килт</em> is an ordinary <a href="">NOUN</a>.</p>

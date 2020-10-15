@@ -66,11 +66,11 @@
 
 <p>Even though the name of the feature seems to suggest that it is used
 exclusively with <a href="ru-pos/VERB">verbs</a>, it is not the case.
-The <code>Part</code> value can be used also with <a href="ru-pos/ADJ">adjectives</a>.
+The <code class="language-plaintext highlighter-rouge">Part</code> value can be used also with <a href="ru-pos/ADJ">adjectives</a>.
 It distinguishes participles from other verb forms,
 and participial adjectives from other adjectives.</p>
 
-<h3 id="fin-finite-verb"><code>Fin</code>: finite verb</h3>
+<h3 id="fin-finite-verb"><code class="language-plaintext highlighter-rouge">Fin</code>: finite verb</h3>
 
 <p>Rule of thumb: if it has non-empty <a href="">Mood</a>, it is finite.
 In Russian this applies to indicative and imperative forms,
@@ -85,7 +85,7 @@ and to the special conditional forms of the <a href="ru-pos/AUX">auxiliary verb<
   <li><em>будь, будьте</em>  “be” (imperative in different persons and numbers)</li>
 </ul>
 
-<h3 id="inf-infinitive"><code>Inf</code>: infinitive</h3>
+<h3 id="inf-infinitive"><code class="language-plaintext highlighter-rouge">Inf</code>: infinitive</h3>
 
 <p>Infinitive is the citation form of verbs.
 It is also used with the auxiliary <em>быть </em> to form periphrastic future tense,
@@ -98,7 +98,7 @@ and it appears as the argument of modal and other verbs.</p>
   <li><em>быть</em>  “to be”</li>
 </ul>
 
-<h3 id="part-participle"><code>Part</code>: participle</h3>
+<h3 id="part-participle"><code class="language-plaintext highlighter-rouge">Part</code>: participle</h3>
 
 <p>Participle is a non-finite verb form that shares properties of verbs
 and adjectives. Russian has two types of participles:</p>
@@ -119,7 +119,7 @@ is used to form the passive voice.</li>
   <li><em>писаный, писаная, писаное, писаные</em>  “carried”</li>
 </ul>
 
-<h3 id="trans-transgressive"><code>Trans</code>: transgressive</h3>
+<h3 id="trans-transgressive"><code class="language-plaintext highlighter-rouge">Trans</code>: transgressive</h3>
 
 <p>The transgressive, also called adverbial participle, is a non-finite
 verb form that shares properties of verbs and adverbs.</p>
@@ -151,30 +151,30 @@ prepared</b> the dinner, she called her family to the table”</li>
 
 <hr />
 
-<h2 id="treebank-statistics-udrussian">Treebank Statistics (UD_Russian)</h2>
+<h2 id="treebank-statistics-ud_russian">Treebank Statistics (UD_Russian)</h2>
 
-<p>This feature is universal but the values <code>Conv</code> are language-specific.
-It occurs with 4 different values: <code>Conv</code>, <code>Fin</code>, <code>Inf</code>, <code>Part</code>.</p>
+<p>This feature is universal but the values <code class="language-plaintext highlighter-rouge">Conv</code> are language-specific.
+It occurs with 4 different values: <code class="language-plaintext highlighter-rouge">Conv</code>, <code class="language-plaintext highlighter-rouge">Fin</code>, <code class="language-plaintext highlighter-rouge">Inf</code>, <code class="language-plaintext highlighter-rouge">Part</code>.</p>
 
-<p>8178 tokens (9%) have a non-empty value of <code>VerbForm</code>.
-4391 types (16%) occur at least once with a non-empty value of <code>VerbForm</code>.
-1955 lemmas (11%) occur at least once with a non-empty value of <code>VerbForm</code>.
+<p>8178 tokens (9%) have a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.
+4391 types (16%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.
+1955 lemmas (11%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.
 The feature is used with 2 part-of-speech tags: <a href="">ru-pos/VERB</a> (7208; 8% instances), <a href="">ru-pos/AUX</a> (970; 1% instances).</p>
 
-<h3 id="verb"><code>VERB</code></h3>
+<h3 id="verb"><code class="language-plaintext highlighter-rouge">VERB</code></h3>
 
-<p>7208 <a href="">ru-pos/VERB</a> tokens (99% of all <code>VERB</code> tokens) have a non-empty value of <code>VerbForm</code>.</p>
+<p>7208 <a href="">ru-pos/VERB</a> tokens (99% of all <code class="language-plaintext highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>VerbForm</code> co-occurred: <tt><a href="Variant.html">Variant</a>=EMPTY</tt> (6388; 89%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (5447; 76%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (5395; 75%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (5395; 75%), <tt><a href="Number.html">Number</a>=Sing</tt> (4552; 63%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (4389; 61%), <tt><a href="Tense.html">Tense</a>=Past</tt> (4104; 57%), <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (4020; 56%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (3925; 54%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (3727; 52%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">VERB</code> and <code class="language-plaintext highlighter-rouge">VerbForm</code> co-occurred: <tt><a href="Variant.html">Variant</a>=EMPTY</tt> (6388; 89%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (5447; 76%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (5395; 75%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (5395; 75%), <tt><a href="Number.html">Number</a>=Sing</tt> (4552; 63%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (4389; 61%), <tt><a href="Tense.html">Tense</a>=Past</tt> (4104; 57%), <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (4020; 56%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (3925; 54%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (3727; 52%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>VerbForm</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">VerbForm</code>:</p>
 
 <ul>
-  <li><code>Conv</code> (261; 4% of non-empty <code>VerbForm</code>): <em>включая, начиная, используя, говоря, выйдя, имея, выиграв, считая, чувствуя, Проходя</em></li>
-  <li><code>Fin</code> (4416; 61% of non-empty <code>VerbForm</code>): <em>составляет, может, получил, находится, входит, родился, имеет, есть, было, начал</em></li>
-  <li><code>Inf</code> (718; 10% of non-empty <code>VerbForm</code>): <em>быть, заниматься, использовать, сделать, найти, работать, играть, принимать, принять, создать</em></li>
-  <li><code>Part</code> (1813; 25% of non-empty <code>VerbForm</code>): <em>расположен, назначен, основана, награждён, основан, расположена, расположено, принято, расположены, создана</em></li>
-  <li><code>EMPTY</code> (95): <em>можно, нет, надо, нужно, известно, необходимо, трудно, возможно, достаточно, интересно</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Conv</code> (261; 4% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>включая, начиная, используя, говоря, выйдя, имея, выиграв, считая, чувствуя, Проходя</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Fin</code> (4416; 61% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>составляет, может, получил, находится, входит, родился, имеет, есть, было, начал</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Inf</code> (718; 10% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>быть, заниматься, использовать, сделать, найти, работать, играть, принимать, принять, создать</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Part</code> (1813; 25% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>расположен, назначен, основана, награждён, основан, расположена, расположено, принято, расположены, создана</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (95): <em>можно, нет, надо, нужно, известно, необходимо, трудно, возможно, достаточно, интересно</em></li>
 </ul>
 
 <table>
@@ -199,20 +199,20 @@ The feature is used with 2 part-of-speech tags: <a href="">ru-pos/VERB</a> (7208
   <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Tense.html">Tense</a>=Past</tt></td><td><em>имели</em></td><td></td><td></td><td></td></tr>
 </table>
 
-<h3 id="aux"><code>AUX</code></h3>
+<h3 id="aux"><code class="language-plaintext highlighter-rouge">AUX</code></h3>
 
-<p>970 <a href="">ru-pos/AUX</a> tokens (97% of all <code>AUX</code> tokens) have a non-empty value of <code>VerbForm</code>.</p>
+<p>970 <a href="">ru-pos/AUX</a> tokens (97% of all <code class="language-plaintext highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>VerbForm</code> co-occurred: <tt><a href="Mood.html">Mood</a>=Ind</tt> (890; 92%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (836; 86%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (814; 84%), <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (807; 83%), <tt><a href="Tense.html">Tense</a>=Past</tt> (754; 78%), <tt><a href="Number.html">Number</a>=Sing</tt> (740; 76%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">AUX</code> and <code class="language-plaintext highlighter-rouge">VerbForm</code> co-occurred: <tt><a href="Mood.html">Mood</a>=Ind</tt> (890; 92%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (836; 86%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (814; 84%), <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (807; 83%), <tt><a href="Tense.html">Tense</a>=Past</tt> (754; 78%), <tt><a href="Number.html">Number</a>=Sing</tt> (740; 76%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>VerbForm</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">AUX</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">VerbForm</code>:</p>
 
 <ul>
-  <li><code>Conv</code> (20; 2% of non-empty <code>VerbForm</code>): <em>будучи, став, оставаясь, Чувствуя, Являясь, делая, считая, являвшись</em></li>
-  <li><code>Fin</code> (891; 92% of non-empty <code>VerbForm</code>): <em>был, было, были, была, является, стал, будет, являются, стала, стало</em></li>
-  <li><code>Inf</code> (39; 4% of non-empty <code>VerbForm</code>): <em>быть, стать, считать, Be, Признать, взобраться, оставаться, являться</em></li>
-  <li><code>Part</code> (20; 2% of non-empty <code>VerbForm</code>): <em>назначен, ставшие, Ставшая, бывшего, бывшие, бывшим, исполнено, найден, остававшееся, предусмотрена</em></li>
-  <li><code>EMPTY</code> (33): <em>это, –, движение, залы, мир, переключатель, песни, словно</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Conv</code> (20; 2% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>будучи, став, оставаясь, Чувствуя, Являясь, делая, считая, являвшись</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Fin</code> (891; 92% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>был, было, были, была, является, стал, будет, являются, стала, стало</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Inf</code> (39; 4% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>быть, стать, считать, Be, Признать, взобраться, оставаться, являться</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Part</code> (20; 2% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>назначен, ставшие, Ставшая, бывшего, бывшие, бывшим, исполнено, найден, остававшееся, предусмотрена</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (33): <em>это, –, движение, залы, мир, переключатель, песни, словно</em></li>
 </ul>
 
 <table>
@@ -230,9 +230,9 @@ The feature is used with 2 part-of-speech tags: <a href="">ru-pos/VERB</a> (7208
   <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Tense.html">Tense</a>=Past</tt></td><td><em>были</em></td><td></td><td></td><td></td></tr>
 </table>
 
-<h2 id="relations-with-agreement-in-verbform">Relations with Agreement in <code>VerbForm</code></h2>
+<h2 id="relations-with-agreement-in-verbform">Relations with Agreement in <code class="language-plaintext highlighter-rouge">VerbForm</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>VerbForm</code>:
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">VerbForm</code>:
 <tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (649; 86%),
 <tt>VERB –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; VERB</tt> (195; 76%),
 <tt>VERB –[<a href="../dep/ccomp.html">ccomp</a>]–&gt; VERB</tt> (111; 63%),
@@ -244,30 +244,30 @@ The feature is used with 2 part-of-speech tags: <a href="">ru-pos/VERB</a> (7208
 
 <hr />
 
-<h2 id="treebank-statistics-udrussian-syntagrus">Treebank Statistics (UD_Russian-SynTagRus)</h2>
+<h2 id="treebank-statistics-ud_russian-syntagrus">Treebank Statistics (UD_Russian-SynTagRus)</h2>
 
-<p>This feature is universal but the values <code>Conv</code> are language-specific.
-It occurs with 4 different values: <code>Conv</code>, <code>Fin</code>, <code>Inf</code>, <code>Part</code>.</p>
+<p>This feature is universal but the values <code class="language-plaintext highlighter-rouge">Conv</code> are language-specific.
+It occurs with 4 different values: <code class="language-plaintext highlighter-rouge">Conv</code>, <code class="language-plaintext highlighter-rouge">Fin</code>, <code class="language-plaintext highlighter-rouge">Inf</code>, <code class="language-plaintext highlighter-rouge">Part</code>.</p>
 
-<p>117995 tokens (12%) have a non-empty value of <code>VerbForm</code>.
-31597 types (29%) occur at least once with a non-empty value of <code>VerbForm</code>.
-5883 lemmas (15%) occur at least once with a non-empty value of <code>VerbForm</code>.
+<p>117995 tokens (12%) have a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.
+31597 types (29%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.
+5883 lemmas (15%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.
 The feature is used with 2 part-of-speech tags: <a href="">ru-pos/VERB</a> (110729; 11% instances), <a href="">ru-pos/AUX</a> (7266; 1% instances).</p>
 
-<h3 id="verb-1"><code>VERB</code></h3>
+<h3 id="verb-1"><code class="language-plaintext highlighter-rouge">VERB</code></h3>
 
-<p>110729 <a href="">ru-pos/VERB</a> tokens (100% of all <code>VERB</code> tokens) have a non-empty value of <code>VerbForm</code>.</p>
+<p>110729 <a href="">ru-pos/VERB</a> tokens (100% of all <code class="language-plaintext highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>VerbForm</code> co-occurred: <tt><a href="Case.html">Case</a>=EMPTY</tt> (99160; 90%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (77169; 70%), <tt><a href="Voice.html">Voice</a>=Act</tt> (76148; 69%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (74700; 67%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (69379; 63%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (62831; 57%), <tt><a href="Number.html">Number</a>=Sing</tt> (56828; 51%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">VERB</code> and <code class="language-plaintext highlighter-rouge">VerbForm</code> co-occurred: <tt><a href="Case.html">Case</a>=EMPTY</tt> (99160; 90%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (77169; 70%), <tt><a href="Voice.html">Voice</a>=Act</tt> (76148; 69%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (74700; 67%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (69379; 63%), <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (62831; 57%), <tt><a href="Number.html">Number</a>=Sing</tt> (56828; 51%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>VerbForm</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">VerbForm</code>:</p>
 
 <ul>
-  <li><code>Conv</code> (3510; 3% of non-empty <code>VerbForm</code>): <em>говоря, начиная, учитывая, судя, исходя, используя, глядя, имея, выступая, зная</em></li>
-  <li><code>Fin</code> (70244; 63% of non-empty <code>VerbForm</code>): <em>может, есть, нет, могут, было, является, стал, говорит, сказал, стало</em></li>
-  <li><code>Inf</code> (20637; 19% of non-empty <code>VerbForm</code>): <em>быть, сделать, сказать, делать, говорить, работать, получить, стать, иметь, понять</em></li>
-  <li><code>Part</code> (16338; 15% of non-empty <code>VerbForm</code>): <em>связано, связаны, окружающей, сделано, связана, связанных, связан, сказано, полученные, принято</em></li>
-  <li><code>EMPTY</code> (12): <em>не, и.о.</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Conv</code> (3510; 3% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>говоря, начиная, учитывая, судя, исходя, используя, глядя, имея, выступая, зная</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Fin</code> (70244; 63% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>может, есть, нет, могут, было, является, стал, говорит, сказал, стало</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Inf</code> (20637; 19% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>быть, сделать, сказать, делать, говорить, работать, получить, стать, иметь, понять</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Part</code> (16338; 15% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>связано, связаны, окружающей, сделано, связана, связанных, связан, сказано, полученные, принято</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (12): <em>не, и.о.</em></li>
 </ul>
 
 <table>
@@ -285,19 +285,19 @@ The feature is used with 2 part-of-speech tags: <a href="">ru-pos/VERB</a> (1107
   <tr><td><tt></tt></td><td></td><td><em>быть</em></td><td></td><td></td></tr>
 </table>
 
-<h3 id="aux-1"><code>AUX</code></h3>
+<h3 id="aux-1"><code class="language-plaintext highlighter-rouge">AUX</code></h3>
 
-<p>7266 <a href="">ru-pos/AUX</a> tokens (100% of all <code>AUX</code> tokens) have a non-empty value of <code>VerbForm</code>.</p>
+<p>7266 <a href="">ru-pos/AUX</a> tokens (100% of all <code class="language-plaintext highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">VerbForm</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>VerbForm</code> co-occurred: <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (7266; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (7266; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (6547; 90%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (5382; 74%), <tt><a href="Number.html">Number</a>=Sing</tt> (4885; 67%), <tt><a href="Tense.html">Tense</a>=Past</tt> (4691; 65%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">AUX</code> and <code class="language-plaintext highlighter-rouge">VerbForm</code> co-occurred: <tt><a href="Aspect.html">Aspect</a>=Imp</tt> (7266; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (7266; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (6547; 90%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (5382; 74%), <tt><a href="Number.html">Number</a>=Sing</tt> (4885; 67%), <tt><a href="Tense.html">Tense</a>=Past</tt> (4691; 65%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>VerbForm</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">AUX</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">VerbForm</code>:</p>
 
 <ul>
-  <li><code>Conv</code> (41; 1% of non-empty <code>VerbForm</code>): <em>будучи</em></li>
-  <li><code>Fin</code> (6570; 90% of non-empty <code>VerbForm</code>): <em>было, был, были, будет, была, будут, есть, будем, буду, будете</em></li>
-  <li><code>Inf</code> (650; 9% of non-empty <code>VerbForm</code>): <em>быть</em></li>
-  <li><code>Part</code> (5; 0% of non-empty <code>VerbForm</code>): <em>бывшие, бывший, бывшем</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Conv</code> (41; 1% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>будучи</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Fin</code> (6570; 90% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>было, был, были, будет, была, будут, есть, будем, буду, будете</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Inf</code> (650; 9% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>быть</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Part</code> (5; 0% of non-empty <code class="language-plaintext highlighter-rouge">VerbForm</code>): <em>бывшие, бывший, бывшем</em></li>
 </ul>
 
 <table>
@@ -321,9 +321,9 @@ The feature is used with 2 part-of-speech tags: <a href="">ru-pos/VERB</a> (1107
   <tr><td><tt></tt></td><td></td><td><em>быть</em></td><td></td><td></td></tr>
 </table>
 
-<h2 id="relations-with-agreement-in-verbform-1">Relations with Agreement in <code>VerbForm</code></h2>
+<h2 id="relations-with-agreement-in-verbform-1">Relations with Agreement in <code class="language-plaintext highlighter-rouge">VerbForm</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>VerbForm</code>:
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">VerbForm</code>:
 <tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (12233; 93%),
 <tt>VERB –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; VERB</tt> (2926; 81%),
 <tt>VERB –[<a href="../dep/ccomp.html">ccomp</a>]–&gt; VERB</tt> (489; 63%),

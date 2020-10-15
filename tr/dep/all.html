@@ -250,8 +250,8 @@ in two places.</p>
 <p><a id="al-tr-dep/acl" class="al-dest"></a></p>
 <h2><code>acl</code>: clausal modifier of noun</h2>
 
-<p><code>acl</code> stands for finite and non-finite clauses that modify a nominal. 
-The head of the <code>acl</code> relation is the noun that is modified, 
+<p><code class="language-plaintext highlighter-rouge">acl</code> stands for finite and non-finite clauses that modify a nominal. 
+The head of the <code class="language-plaintext highlighter-rouge">acl</code> relation is the noun that is modified, 
 and the dependent is the head of the clause that modifies the noun.</p>
 
 <p>Like non-clausal adjectives, most adjectival clauses in Turkish precede the noun they modify.
@@ -320,7 +320,7 @@ mark(okudun, mu)
 </code></pre>
 
 <p>A large number of adverbials and adverbial clauses are formed by postpositions attached to nouns or noun clauses.
-We do not mark these as adverbial (<code>advmod</code> or <code>advcl</code>).
+We do not mark these as adverbial (<code class="language-plaintext highlighter-rouge">advmod</code> or <code class="language-plaintext highlighter-rouge">advcl</code>).
 For both cases we use <a href="nmod">nmod</a> (see discussion of subordination
 in <a href="">tr-overview/specific-syntax</a>).</p>
 
@@ -393,7 +393,7 @@ admod:emph(kitabı, bile)
 
 <p>An adjectival modifier of a noun is any adjectival phrase that serves to modify the meaning of the noun.</p>
 
-<p><code>amod</code> is not used for all modifiers of nouns.
+<p><code class="language-plaintext highlighter-rouge">amod</code> is not used for all modifiers of nouns.
 We use <a href="">det</a> for determiners (tagged tr<a href="">-pos/DET</a>),
 and for so-called “bare noun compounds” we use <a href="">compound</a>.</p>
 
@@ -455,7 +455,7 @@ that cannot be attached to the main verb due to morphological restrictions
 <p>The auxiliary use of <em>ol-</em> is different than its use as a copula,
 where the <a href="">cop</a> relation is used.</p>
 
-<p>We use a subtype of <code>aux</code>, <a href="aux-q">aux:q</a>, question particle <em>mi</em>.</p>
+<p>We use a subtype of <code class="language-plaintext highlighter-rouge">aux</code>, <a href="aux-q">aux:q</a>, question particle <em>mi</em>.</p>
 
 <pre><code class="language-sdparse">Yarın çalışıyor olacak . \n He\/she will be working tomorrow
 aux(çalışıyor, olacak)
@@ -469,7 +469,7 @@ aux(Okumuş, olsa)
 aux(almış, bulunduk)
 </code></pre>
 
-<p>We also use <code>aux</code> in case bound auxiliary <code>-abil</code> is separated from the main verb.</p>
+<p>We also use <code class="language-plaintext highlighter-rouge">aux</code> in case bound auxiliary <code class="language-plaintext highlighter-rouge">-abil</code> is separated from the main verb.</p>
 
 <pre><code class="language-sdparse">Göremeye de bilirdin . \n You might have also not seen it 
 aux(Göremeye, bilirdin)
@@ -486,7 +486,7 @@ aux(Göremeye, bilirdin)
 typically carries some of the tense/aspect/modality suffixes as well as person/number agreement suffixes.</p>
 
 <p>Although it does not function as an auxiliary when attached to non-predicate words or phrases,
-we use <code>aux:q</code> for all uses of the question particle.</p>
+we use <code class="language-plaintext highlighter-rouge">aux:q</code> for all uses of the question particle.</p>
 
 <p><strong>Annotation of question particles are not well-specified in UD, and currently under discussion.</strong></p>
 
@@ -511,7 +511,7 @@ aux:q(Kitabı, mı)
 <p><a id="al-tr-dep/auxpass" class="al-dest"></a></p>
 <h2><code>auxpass</code>: passive auxiliary</h2>
 
-<p>We do not use <code>auxpass</code></p>
+<p>We do not use <code class="language-plaintext highlighter-rouge">auxpass</code></p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-dep/auxpass.md" target="#">edit auxpass</a></p>
 
@@ -525,7 +525,7 @@ treated as dependents of the noun or clause they attach to.</p>
 
 <p>In Turkish, case marking is typically done through suffixation,
 in which case the case-marked word will carry the appropriate <a href="tr-feat/Case">Case</a> feature.
-The <code>case</code> relation marks postpositions,
+The <code class="language-plaintext highlighter-rouge">case</code> relation marks postpositions,
 and some of the case-like suffixes that are tokenized as separate syntactic tokens (inflectional groups).</p>
 
 <pre><code class="language-sdparse">Ağaçların arasında kayboldular . \n They disappeared _between_ the trees
@@ -548,7 +548,7 @@ case(İkiye, kadar)
 case(saç, –lı)
 </code></pre>
 
-<p>Currently, we also use <code>case</code> for some not-so-case-like modifiers.</p>
+<p>Currently, we also use <code class="language-plaintext highlighter-rouge">case</code> for some not-so-case-like modifiers.</p>
 
 <pre><code class="language-sdparse">Arabada –ki kız \n The girl in the car
 case(Arabada, –ki)
@@ -559,7 +559,7 @@ case(Arabada, –ki)
 <p><a id="al-tr-dep/cc" class="al-dest"></a></p>
 <h2><code>cc</code>: coordinating conjunction</h2>
 
-<p>A <code>cc</code> is the relation between the first conjunct and the <a href="../pos/CCONJ">coordinating conjunction</a> delimiting another conjunct.</p>
+<p>A <code class="language-plaintext highlighter-rouge">cc</code> is the relation between the first conjunct and the <a href="../pos/CCONJ">coordinating conjunction</a> delimiting another conjunct.</p>
 
 <p>Note that we currently diverge from UD specification by marking the last conjunct as the head.
 See the <a href="">conj</a> relation, for more information.</p>
@@ -613,9 +613,9 @@ That is, it functions like an object of the predicate.</p>
 <p>We split the verbal noun suffixes,
 and mark them as the head of the subordinate clause.
 The unit with the subordinating suffix is tagged as <a href="tr-pos/NOUN">noun</a>.
-However, we still use <code>ccomp</code> for the relation between the higher level clause and the clausal object.</p>
+However, we still use <code class="language-plaintext highlighter-rouge">ccomp</code> for the relation between the higher level clause and the clausal object.</p>
 
-<p>At present, we use <code>ccomp</code> only for direct objects, i.e., non-finite noun phrases in accusative or nominative <a href="tr-feat/Case">Case</a>.
+<p>At present, we use <code class="language-plaintext highlighter-rouge">ccomp</code> only for direct objects, i.e., non-finite noun phrases in accusative or nominative <a href="tr-feat/Case">Case</a>.
 The arguments in other cases are marked using <a href="">nmod</a> relation or appropriate subtype of it.</p>
 
 <pre><code class="language-sdparse">Sonunda " artık yeter " dedi . \n Finally, he said " that's enough " .
@@ -659,7 +659,7 @@ makr(gelecek, diye)
 <p><a id="al-tr-dep/compound" class="al-dest"></a></p>
 <h2><code>compound</code>: compound</h2>
 
-<p><code>compound</code> is one of the relations in UD for compounding.
+<p><code class="language-plaintext highlighter-rouge">compound</code> is one of the relations in UD for compounding.
 In Turkish it is used for bare noun compounds, compound verbal forms and numbers.</p>
 
 <pre><code class="language-sdparse">Anneannem bana bir çift yün çorap örmüş . \n My grandmother knitted pair of woolen socks for me .
@@ -736,7 +736,7 @@ compound:redup(almaz, alır)
 coordinating conjunction, such as and, or, etc.</p>
 
 <p>We diverge from UD specification by marking the last (instead of the first) conjunct as the head of the relation.
-All the other conjuncts depend on the last via the <code>conj</code> relation.</p>
+All the other conjuncts depend on the last via the <code class="language-plaintext highlighter-rouge">conj</code> relation.</p>
 
 <pre><code class="language-sdparse">Bir kız , iki erkek çocukları var . \n They have one girl and two boys.
 conj(erkek, kız)
@@ -877,9 +877,9 @@ csubjpass(Biliniyor, dönüyor)
 <p><a id="al-tr-dep/dep" class="al-dest"></a></p>
 <h2><code>dep</code>: unspecified dependency</h2>
 
-<p>A dependency is labeled as <code>dep</code> when a system is unable to determine a more precise dependency relation between two words.</p>
+<p>A dependency is labeled as <code class="language-plaintext highlighter-rouge">dep</code> when a system is unable to determine a more precise dependency relation between two words.</p>
 
-<p>We currently do not use the <code>dep</code> label.</p>
+<p>We currently do not use the <code class="language-plaintext highlighter-rouge">dep</code> label.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_tr-dep/dep.md" target="#">edit dep</a></p>
 
@@ -938,7 +938,7 @@ discourse(okudun, Peki)
 <p><a id="al-tr-dep/dislocated" class="al-dest"></a></p>
 <h2><code>dislocated</code>: dislocated elements</h2>
 
-<p>The <code>dislocated</code> relation is used for fronted or postposed elements that do not fulfill the usual core grammatical relations of a sentence.
+<p>The <code class="language-plaintext highlighter-rouge">dislocated</code> relation is used for fronted or postposed elements that do not fulfill the usual core grammatical relations of a sentence.
 These elements often appear to be in the periphery of the sentence,
 and may be separated off with a comma intonation.</p>
 
@@ -958,7 +958,7 @@ dislocated(onu, öğrenci)
 <p>The direct object of a verb is the noun phrase that denotes the entity acted upon.</p>
 
 <p>In Turkish, direct objects take either nominative (unmarked), or accusative <a href="tr-feat/Case">cases</a>.
-We do not mark arguments of verbs in other cases with <code>obj</code>.
+We do not mark arguments of verbs in other cases with <code class="language-plaintext highlighter-rouge">obj</code>.
 (<strong>NOTE:</strong> Kyrgiz treebank marks ablatives as in <em>pastadan aldı</em> ‘he took from the cake’. We may consider doing the same. At least we should try to unify the analyses.)
 Note also that we mark objects of intransitive causative verbs using <a href="dobj-cau">dobj:cau</a>.</p>
 
@@ -970,7 +970,7 @@ dobj(okurum, kitap)
 dobj(okudum, Kitabı)
 </code></pre>
 
-<p>We also mark the non-case marked or accusative noun phrases as <code>obj</code> even if they are not the entities that are acted upon.</p>
+<p>We also mark the non-case marked or accusative noun phrases as <code class="language-plaintext highlighter-rouge">obj</code> even if they are not the entities that are acted upon.</p>
 
 <pre><code class="language-sdparse">Dün 10 kilometre koştum . \n I ran 10 kilometers yesterday
 dobj(koştum, kilometre)
@@ -1016,11 +1016,11 @@ dobj:cau(kolaylaştırdı, dersi)
 <p><a id="al-tr-dep/fixed" class="al-dest"></a></p>
 <h2><code>fixed</code>: multi-word expression</h2>
 
-<p>The multi-word expression (modifier) relation is one of the three relations (<a href="">compound</a>, <code>fixed</code>, <a href="">flat</a>) for compounding.
+<p>The multi-word expression (modifier) relation is one of the three relations (<a href="">compound</a>, <code class="language-plaintext highlighter-rouge">fixed</code>, <a href="">flat</a>) for compounding.
 It is used for certain fixed grammaticized expressions that behave like function words or short adverbials.</p>
 
-<p>Note that, we mark most of the expressions that are marked <code>MWE</code> in METU-Sabancı treebank as <code>compound</code>. 
-<code>fixed</code> is only used for fixed expressions that do not show any morphological variation.</p>
+<p>Note that, we mark most of the expressions that are marked <code class="language-plaintext highlighter-rouge">MWE</code> in METU-Sabancı treebank as <code class="language-plaintext highlighter-rouge">compound</code>. 
+<code class="language-plaintext highlighter-rouge">fixed</code> is only used for fixed expressions that do not show any morphological variation.</p>
 
 <pre><code class="language-sdparse">Ali ya da Ahmet  \n Ali or Ahmet
 mwe(ya, da)
@@ -1040,7 +1040,7 @@ mwe(Her, kadar)
 <p><a id="al-tr-dep/flat" class="al-dest"></a></p>
 <h2><code>flat</code>: name</h2>
 
-<p><code>flat</code> is one of the three relations for compounding in UD (together with <a href="">compound</a> and <a href="">fixed</a>).
+<p><code class="language-plaintext highlighter-rouge">flat</code> is one of the three relations for compounding in UD (together with <a href="">compound</a> and <a href="">fixed</a>).
 It is used for proper nouns constituted of multiple nominal elements.
 For phrasal or clausal names the usual relations are used.</p>
 
@@ -1103,7 +1103,7 @@ det(bir)
 <p><a id="al-tr-dep/iobj" class="al-dest"></a></p>
 <h2><code>iobj</code>: indirect object</h2>
 
-<p>We do not use the dependency label <code>iobj</code>.</p>
+<p>We do not use the dependency label <code class="language-plaintext highlighter-rouge">iobj</code>.</p>
 
 <p>TODO: link to argument/adjunct discussion.</p>
 
@@ -1112,7 +1112,7 @@ det(bir)
 <p><a id="al-tr-dep/list" class="al-dest"></a></p>
 <h2><code>list</code>: list</h2>
 
-<p>The <code>list</code> relation is used for chains of comparable items. In lists with more than two items, all items of the list should modify the first one. Informal and web text often contains passages which are meant to be interpreted as lists but are parsed as single sentences. Email signatures often contain these structures, in the form of contact information: the different contact information items are labeled as <code>list</code>; the key-value pair relations are labeled as <a href="">appos</a>.</p>
+<p>The <code class="language-plaintext highlighter-rouge">list</code> relation is used for chains of comparable items. In lists with more than two items, all items of the list should modify the first one. Informal and web text often contains passages which are meant to be interpreted as lists but are parsed as single sentences. Email signatures often contain these structures, in the form of contact information: the different contact information items are labeled as <code class="language-plaintext highlighter-rouge">list</code>; the key-value pair relations are labeled as <a href="">appos</a>.</p>
 
 <pre><code class="language-sdparse">Ali Yılmaz ,  tel : 555-55-55 , email : ali@example.com
 name(Ali, Yılmaz)
@@ -1158,7 +1158,7 @@ mark(Okudum, da)
 <p>The negation modifier is the relation between a negation word and the word it modifies.</p>
 
 <p>In Turkish, negation is typically done through suffixation.
-We use <code>neg</code> only if the non-predicative use of  the word <em>değil</em>.</p>
+We use <code class="language-plaintext highlighter-rouge">neg</code> only if the non-predicative use of  the word <em>değil</em>.</p>
 
 <pre><code class="language-sdparse">Elma değil , armut al demiştim . \n I asked for pears, not for apples.
 neg(Elma, değil)
@@ -1178,14 +1178,14 @@ neg(üniversite, Değil)
 <p><a id="al-tr-dep/nmod" class="al-dest"></a></p>
 <h2><code>nmod</code>: nominal modifier</h2>
 
-<p>The <code>nmod</code> relation is used for nominal modifiers.
+<p>The <code class="language-plaintext highlighter-rouge">nmod</code> relation is used for nominal modifiers.
 They depend either on another noun (group “noun dependents”) or on a predicate (group “non-core dependents of clausal predicates”).</p>
 
-<p><code>nmod</code> is a <a href="tr-pos/NOUN">noun</a> (or noun phrase) functioning as a non-core (oblique) argument or adjunct.
+<p><code class="language-plaintext highlighter-rouge">nmod</code> is a <a href="tr-pos/NOUN">noun</a> (or noun phrase) functioning as a non-core (oblique) argument or adjunct.
 This means that it functionally corresponds to an adverbial when it attaches to a verb, adjective or other adverb.
 But when attaching to a noun, it corresponds to an attribute, or genitive complement (the terms are less standardized here).</p>
 
-<p>The <code>nmod</code> relation is further specified by the <a href="tr-feat/Case">Case</a> feature or <a href="">case</a> relation.</p>
+<p>The <code class="language-plaintext highlighter-rouge">nmod</code> relation is further specified by the <a href="tr-feat/Case">Case</a> feature or <a href="">case</a> relation.</p>
 
 <p>We also use the following language-specific subtypes for nmod:</p>
 
@@ -1285,7 +1285,7 @@ nmod:comp(çok, Benden)
 
 <p>In Turkish possessive sentences (e.g., “I have a book”) resemble existential sentences
 where the subject is the entity that “exists”, or “owned”.
-<code>nmod:own</code> relation marks the entity that “owns” the subject.
+<code class="language-plaintext highlighter-rouge">nmod:own</code> relation marks the entity that “owns” the subject.
 The head of the relation is the predicate,
 as opposed to the subject noun phrase
 (this allows a uniform analysis in case the subject is dropped).
@@ -1368,7 +1368,7 @@ nmod:pass(bozulmuş, sıcaktan)
 <p>This subtype of <a href="">nmod</a> is used in (genitive-)possessive constructions.
 Typically, the head of the construction is a possessive noun phrase,
 and the dependent is in genitive <a href="tr-feat/Case">case</a>.
-We also use <code>nmod:poss</code> in the alternative construction where the modifier is not in genitive case.
+We also use <code class="language-plaintext highlighter-rouge">nmod:poss</code> in the alternative construction where the modifier is not in genitive case.
 So-called “bare noun compounds” are marked using the <a href="">compound</a> relation.</p>
 
 <pre><code class="language-sdparse">Ali'nin kitabı   \n Ali's book
@@ -1384,7 +1384,7 @@ nmod:pos(kahvesi, Sabah)
 <p><a id="al-tr-dep/nmod:tmod" class="al-dest"></a></p>
 <h2><code>nmod:tmod</code>: temporal modifier</h2>
 
-<p>A temporal modifier is a subtype of the <a href="">nmod</a> relation: if the modifier is specifying time, it is labeled as <code>nmod:tmod</code>.</p>
+<p>A temporal modifier is a subtype of the <a href="">nmod</a> relation: if the modifier is specifying time, it is labeled as <code class="language-plaintext highlighter-rouge">nmod:tmod</code>.</p>
 
 <pre><code class="language-sdparse">Geçen hafta bir kitap okudum . \n Las week I read a book
 nmod:tmod(okudum, hafta)
@@ -1436,7 +1436,7 @@ we use <a href="">csubj</a> when they are in the subject position.</p>
 
 <p>A passive nominal subject is a noun phrase which is the syntactic subject of a passive clause.</p>
 
-<p>The distinction between <a href="">nsubj</a> and <code>nsubjpass</code> is not strictly necessary in Turkish,
+<p>The distinction between <a href="">nsubj</a> and <code class="language-plaintext highlighter-rouge">nsubjpass</code> is not strictly necessary in Turkish,
 since the predicate will always be morphologically marked as passive.</p>
 
 <pre><code class="language-sdparse">Kitap okundu . \n The book was read
@@ -1528,7 +1528,7 @@ punct(okudum, .)
 <p><a id="al-tr-dep/reparandum" class="al-dest"></a></p>
 <h2><code>reparandum</code>: overridden disfluency</h2>
 
-<p>We use <code>reparandum</code> to indicate disfluencies overridden in a speech repair.
+<p>We use <code class="language-plaintext highlighter-rouge">reparandum</code> to indicate disfluencies overridden in a speech repair.
 The disfluency is the dependent of the repair.</p>
 
 <pre><code class="language-sdparse">Sağa– sola dön . \n Turn right- left .
@@ -1541,7 +1541,7 @@ reparandum(sola, Sağa–)
 <p><a id="al-tr-dep/root" class="al-dest"></a></p>
 <h2><code>root</code>: root</h2>
 
-<p>The <code>root</code> grammatical relation points to the root of the sentence.
+<p>The <code class="language-plaintext highlighter-rouge">root</code> grammatical relation points to the root of the sentence.
 A fake node “ROOT” is used as the governor.
 The ROOT node is indexed with “0”, since the indexation of real words in the sentence starts at 1.</p>
 
@@ -1566,7 +1566,7 @@ vocative(gel, Ali)
 The reference of the subject is necessarily determined by an argument external to the xcomp (normally by the object of the next higher clause, if there is one, or else by the subject of the next higher clause.
 These complements are always non-finite, and they are complements (arguments of the higher predicate) rather than adjuncts/modifiers, such as a purpose clause.</p>
 
-<p>In majority of the cases, we use <code>xcomp</code> for the verbal nouns formed by the suffix <em>-mAk</em>.
+<p>In majority of the cases, we use <code class="language-plaintext highlighter-rouge">xcomp</code> for the verbal nouns formed by the suffix <em>-mAk</em>.
 Note that we split the nominal part, and mark the noun as the head of the predicate.
 (TODO: link to the subordination discussion)</p>
 
@@ -1575,7 +1575,7 @@ xcomp(istiyor, –mak)
 acl(–mak, Oku)
 </code></pre>
 
-<p>In addition, we also use <code>xcomp</code> for secondary predicates, 
+<p>In addition, we also use <code class="language-plaintext highlighter-rouge">xcomp</code> for secondary predicates, 
 or in general, what Göksel &amp; Kerslake (2005) calls “small clauses”.
 The decision between a secondary predicate or adverb analysis is often diffcult,
 since most adjectives also function as adverbs.</p>

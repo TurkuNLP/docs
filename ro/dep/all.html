@@ -250,7 +250,7 @@ in two places.</p>
 <p><a id="al-ro-dep/acl" class="al-dest"></a></p>
 <h2><code>acl</code>: clausal modifier of noun</h2>
 
-<p><code>acl</code> stands for finite and non-finite clauses that modify a nominal.</p>
+<p><code class="language-plaintext highlighter-rouge">acl</code> stands for finite and non-finite clauses that modify a nominal.</p>
 
 <pre><code class="language-sdparse">Mă impresionează un copil plângând . \n Me impresses a child crying. (A crying child impresses me.)
 acl(copil, plângând)
@@ -388,7 +388,7 @@ auxpass(spânzurat, fost)
 <p><a id="al-ro-dep/case" class="al-dest"></a></p>
 <h2><code>case</code>: case marking</h2>
 
-<p>The <code>case</code> relation is used for linking prepositions to their heads:</p>
+<p>The <code class="language-plaintext highlighter-rouge">case</code> relation is used for linking prepositions to their heads:</p>
 
 <pre><code class="language-sdparse">O văd pe Maria . \n Her see-I PE Mary . (I can see Mary.)
 case(Maria, pe)
@@ -398,7 +398,7 @@ case(Maria, pe)
 case(masă, pe)
 </code></pre>
 
-<p>When a preposition is used with non-finite verbs, it is analysed as <code>mark</code>:</p>
+<p>When a preposition is used with non-finite verbs, it is analysed as <code class="language-plaintext highlighter-rouge">mark</code>:</p>
 
 <pre><code class="language-sdparse">Plecăm devreme pentru a nu întârzia . \n Leave-we early for to not be_late .
 mark(întârzia, pentru)
@@ -416,7 +416,7 @@ case(30, de)
 nummod(copii, 3)
 </code></pre>
 
-<p>Prepositions linking adverbs to their post-poned adjective or adverb heads are also <code>mark</code> on the modifying adverb:</p>
+<p>Prepositions linking adverbs to their post-poned adjective or adverb heads are also <code class="language-plaintext highlighter-rouge">mark</code> on the modifying adverb:</p>
 
 <pre><code class="language-sdparse">incredibil de bun \n incredibly of good
 advmod(bun, incredibil)
@@ -433,14 +433,14 @@ case(incredibil, de)
 <p><a id="al-ro-dep/cc" class="al-dest"></a></p>
 <h2><code>cc</code>: coordinating conjunction</h2>
 
-<p>A <code>cc</code> is the relation between the first conjunct and the coordinating conjunction delimiting another conjunct:</p>
+<p>A <code class="language-plaintext highlighter-rouge">cc</code> is the relation between the first conjunct and the coordinating conjunction delimiting another conjunct:</p>
 
 <pre><code class="language-sdparse">Maria și Ion tocmai au sosit . \n Mary and John just have arrived .
 cc(Maria, și)
 conj(Maria, Ion)
 </code></pre>
 
-<p>A coordinating conjunction may also appear at the beginning of a sentence. This is also called a <code>cc</code>, and it depends on the root predicate of the sentence. (In fact there is a coordination that spans multiple sentences. We cannot attach a word to the first conjunct because it is in another sentence. Thus we attach it to the first conjunct available in the current sentence: its main predicate.)</p>
+<p>A coordinating conjunction may also appear at the beginning of a sentence. This is also called a <code class="language-plaintext highlighter-rouge">cc</code>, and it depends on the root predicate of the sentence. (In fact there is a coordination that spans multiple sentences. We cannot attach a word to the first conjunct because it is in another sentence. Thus we attach it to the first conjunct available in the current sentence: its main predicate.)</p>
 
 <pre><code class="language-sdparse">Și au salutat gazda . \n And have greeted host-the
 cc(salutat, Și)
@@ -462,7 +462,7 @@ ccomp(Înțeleg, obosit)
 ccomp(putem, schia)
 </code></pre>
 
-<p>The clausal predicative of the copula verb <code>a fi</code> is also analysed as ccomp. NB: This is the only case when the copula verb <code>a fi</code> is treated as a head.</p>
+<p>The clausal predicative of the copula verb <code class="language-plaintext highlighter-rouge">a fi</code> is also analysed as ccomp. NB: This is the only case when the copula verb <code class="language-plaintext highlighter-rouge">a fi</code> is treated as a head.</p>
 
 <pre><code class="language-sdparse">ROOT Noi suntem cum ne știi . \n We are how us know-you .
 root(ROOT, suntem)
@@ -474,7 +474,7 @@ ccomp(suntem, știi)
 <p><a id="al-ro-dep/compound" class="al-dest"></a></p>
 <h2><code>compound</code>: compound</h2>
 
-<p><code>compound</code> is used for linking compound words of any part of speech:</p>
+<p><code class="language-plaintext highlighter-rouge">compound</code> is used for linking compound words of any part of speech:</p>
 
 <pre><code class="language-sdparse">Am patru mii de lei . \n Have-I four thousand of lei .
 compound(mii, patru)
@@ -502,13 +502,13 @@ conj(sosit, întârzie)
 <p><a id="al-ro-dep/cop" class="al-dest"></a></p>
 <h2><code>cop</code>: copula</h2>
 
-<p>A copula is the relation between the complement of a copular verb and the copular verb <code>a fi</code> (only). (We normally take a copula as a dependent of its complement.)</p>
+<p>A copula is the relation between the complement of a copular verb and the copular verb <code class="language-plaintext highlighter-rouge">a fi</code> (only). (We normally take a copula as a dependent of its complement.)</p>
 
 <pre><code class="language-sdparse">Maria este fericită . \n Maria is happy .
 cop(fericită, este)
 </code></pre>
 
-<p>All other copula verbs are heads of clauses and their complements are in <code>xcomp</code> relation to them:</p>
+<p>All other copula verbs are heads of clauses and their complements are in <code class="language-plaintext highlighter-rouge">xcomp</code> relation to them:</p>
 
 <pre><code class="language-sdparse">Maria a devenit designer . \n Mary has become designer .
 xcomp(devenit, designer)
@@ -521,7 +521,7 @@ cop(campioană, fi)
 aux(campioană, va)
 </code></pre>
 
-<p>When the complement of the copula verb <code>a fi</code> is a clause, the copula is the head, and the subordinate clause is in <code>ccomp</code> relation with it:</p>
+<p>When the complement of the copula verb <code class="language-plaintext highlighter-rouge">a fi</code> is a clause, the copula is the head, and the subordinate clause is in <code class="language-plaintext highlighter-rouge">ccomp</code> relation with it:</p>
 
 <pre><code class="language-sdparse">ROOT Noi suntem cum ne știi . \n We are how us know-you .
 root(ROOT, suntem)
@@ -559,7 +559,7 @@ csubjpass(pedepsit, încălcat)
 <p><a id="al-ro-dep/det" class="al-dest"></a></p>
 <h2><code>det</code>: determiner</h2>
 
-<p>The relation determiner (<code>det</code>) holds between a nominal head and its determiner:</p>
+<p>The relation determiner (<code class="language-plaintext highlighter-rouge">det</code>) holds between a nominal head and its determiner:</p>
 
 <pre><code class="language-sdparse">Am văzut un okapi . \n Have-I seen an okapi .
 det(okapi, un)
@@ -584,14 +584,14 @@ dobj(Citesc, carte)
 dobj(văd, O)
 </code></pre>
 
-<p>When the direct object is doubled by a pronoun, this is marked as <code>expl</code>.</p>
+<p>When the direct object is doubled by a pronoun, this is marked as <code class="language-plaintext highlighter-rouge">expl</code>.</p>
 
 <pre><code class="language-sdparse">O văd pe Mara . \n Her see-I PE Mara .
 dobj(văd, Mara)
 expl(văd, O)
 </code></pre>
 
-<p>Romanian allows for the occurrence of two Accusative objects with some (uses of certain) verbs: the [+Animate] object (the direct object in traditional grammar terms) is anlysed here as <code>iobj</code>, while the other Accusative object (the secondary object in traditional grammar terms) is <code>obj</code>:</p>
+<p>Romanian allows for the occurrence of two Accusative objects with some (uses of certain) verbs: the [+Animate] object (the direct object in traditional grammar terms) is anlysed here as <code class="language-plaintext highlighter-rouge">iobj</code>, while the other Accusative object (the secondary object in traditional grammar terms) is <code class="language-plaintext highlighter-rouge">obj</code>:</p>
 
 <pre><code class="language-sdparse">Bunica i-a învățat pe copii o poezie . \n Grandmother-the them-has taught PE children a poem .
 dobj(învățat, poezie)
@@ -604,7 +604,7 @@ iobj(învățat, copii)
 <h2><code>expl</code>: expletive</h2>
 
 <p>Romanian does not have expletives of the English sort.
-However, we use the <code>expl</code> label for the following situations:</p>
+However, we use the <code class="language-plaintext highlighter-rouge">expl</code> label for the following situations:</p>
 
 <ul>
   <li>clitic doubling:</li>
@@ -658,7 +658,7 @@ iobj(deschis, elevilor)
 iobj(favorabilă, -mi)
 </code></pre>
 
-<p>We also analyse as <code>iobj</code> the [+Animate] object (the direct object in traditional grammar terms) of verbs with two Accusative objects, whereas the other object (the secondary object in traditional grammar terms) is <code>obj</code>:</p>
+<p>We also analyse as <code class="language-plaintext highlighter-rouge">iobj</code> the [+Animate] object (the direct object in traditional grammar terms) of verbs with two Accusative objects, whereas the other object (the secondary object in traditional grammar terms) is <code class="language-plaintext highlighter-rouge">obj</code>:</p>
 
 <pre><code class="language-sdparse">Bunica i-a învățat pe copii o poezie . \n Grandmother-the them-has taught PE children a poem .
 dobj(învățat, poezie)
@@ -702,9 +702,9 @@ neg(trandafiri, nu)
 <p><a id="al-ro-dep/nmod" class="al-dest"></a></p>
 <h2><code>nmod</code>: nominal modifier</h2>
 
-<p>The <code>nmod</code> relation is used for nominal modifiers. They depend either on another noun (group “noun dependents”) or on a predicate (group “non-core dependents of clausal predicates”).</p>
+<p>The <code class="language-plaintext highlighter-rouge">nmod</code> relation is used for nominal modifiers. They depend either on another noun (group “noun dependents”) or on a predicate (group “non-core dependents of clausal predicates”).</p>
 
-<p><code>nmod</code> is a noun (or noun phrase) functioning as a non-core (oblique) argument or adjunct. This means that it functionally corresponds to an adverbial when it attaches to a verb, adjective or other adverb. But when attaching to a noun, it corresponds to an attribute.</p>
+<p><code class="language-plaintext highlighter-rouge">nmod</code> is a noun (or noun phrase) functioning as a non-core (oblique) argument or adjunct. This means that it functionally corresponds to an adverbial when it attaches to a verb, adjective or other adverb. But when attaching to a noun, it corresponds to an attribute.</p>
 
 <pre><code class="language-sdparse">Prietena fetei o așteaptă la masă . \n Friend-the girl-the-genitive her waits at table .
 nmod(Prietena, fetei)
@@ -778,7 +778,7 @@ nsubj(genunchi, toți)
 <p><a id="al-ro-dep/root" class="al-dest"></a></p>
 <h2><code>root</code>: root</h2>
 
-<p>The <code>root</code> grammatical relation points to the root of the sentence. A fake node “ROOT” is used as the governor. The ROOT node is indexed with “0”, since the indexation of real words in the sentence starts at 1.</p>
+<p>The <code class="language-plaintext highlighter-rouge">root</code> grammatical relation points to the root of the sentence. A fake node “ROOT” is used as the governor. The ROOT node is indexed with “0”, since the indexation of real words in the sentence starts at 1.</p>
 
 <pre><code class="language-sdparse">ROOT Copilul aleargă . \n ROOT Child-the runs .
 root(ROOT, aleargă)

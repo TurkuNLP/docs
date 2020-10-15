@@ -369,14 +369,14 @@
   </tr>
 </table>
 
-<p>* The <code>advmod</code> relation is used for modifiers not only of predicates but also of other modifier words.</p>
+<p>* The <code class="language-plaintext highlighter-rouge">advmod</code> relation is used for modifiers not only of predicates but also of other modifier words.</p>
 
 <hr />
 
 <p><a id="al-yue-dep/acl" class="al-dest"></a></p>
 <h2><code>acl</code>: clausal modifier of noun</h2>
 
-<p><code>acl</code> is used for clauses that modify a noun (in contrast to <a href="">advcl</a> which is used for clauses that modify a predicate). Clausal modifiers may precede the noun, and may be formed with (1) or without (2) the relativizer 嘅 <em>ge3</em>. They may also be postnominal, in which case they are simply juxtaposed after the noun without any linking function words (3-5).</p>
+<p><code class="language-plaintext highlighter-rouge">acl</code> is used for clauses that modify a noun (in contrast to <a href="">advcl</a> which is used for clauses that modify a predicate). Clausal modifiers may precede the noun, and may be formed with (1) or without (2) the relativizer 嘅 <em>ge3</em>. They may also be postnominal, in which case they are simply juxtaposed after the noun without any linking function words (3-5).</p>
 
 <pre><code class="language-conllu"># visual-style 4 2 acl	color:blue
 # visual-style 2	bgColor:blue
@@ -883,7 +883,7 @@
 <p><a id="al-yue-dep/advmod:df" class="al-dest"></a></p>
 <h2><code>advmod:df</code>: duration or frequency adverbial modifier</h2>
 
-<p>The relation <code>advmod:df</code> is used for a noun phrase usually headed by a classifier expressing the duration or the frequency of the event expressed by the main predicate. The duration (1) and frequency (2) phrases can be post-verbal as well as pre-verbal (3-4).</p>
+<p>The relation <code class="language-plaintext highlighter-rouge">advmod:df</code> is used for a noun phrase usually headed by a classifier expressing the duration or the frequency of the event expressed by the main predicate. The duration (1) and frequency (2) phrases can be post-verbal as well as pre-verbal (3-4).</p>
 
 <p>For nominal time expressions and adverbial time expressions that provide a time frame rather than a duration, use <a href="">obl:tmod</a> and <a href="">advmod</a>, respectively.</p>
 
@@ -1025,7 +1025,7 @@
 
 <p>An appositional modifier is a pronoun or noun (phrase) that follows and defines or modifies another noun (phrase). The dependent comes immediately after the head.</p>
 
-<p>There are three situations in Cantonese for which we apply the <code>appos</code> relation. The classical example involves the appositional modifier defining the specific individual(s) which the first noun (phrase) refers to.</p>
+<p>There are three situations in Cantonese for which we apply the <code class="language-plaintext highlighter-rouge">appos</code> relation. The classical example involves the appositional modifier defining the specific individual(s) which the first noun (phrase) refers to.</p>
 
 <pre><code class="language-conllu"># visual-style 3 5 appos	color:blue
 # visual-style 3	bgColor:blue
@@ -1070,7 +1070,7 @@
 
 </code></pre>
 
-<p>In another situation, a noun indicating a reference location may be followed by a pronoun, such as 嗰邊 / <em>go2bin1</em> ‘there’ and 呢度 / <em>ni1dou6</em> ‘here’, indicating proximity to the speaker. These pronouns are treated as <code>appos</code> dependents of the noun preceding them.</p>
+<p>In another situation, a noun indicating a reference location may be followed by a pronoun, such as 嗰邊 / <em>go2bin1</em> ‘there’ and 呢度 / <em>ni1dou6</em> ‘here’, indicating proximity to the speaker. These pronouns are treated as <code class="language-plaintext highlighter-rouge">appos</code> dependents of the noun preceding them.</p>
 
 <pre><code class="language-conllu"># visual-style 3 4 appos	color:blue
 # visual-style 3	bgColor:blue
@@ -1396,7 +1396,7 @@
 
 <p>We treat localizers as postpositions which typically denote spatial locations analogous to adpositions or case markers in some languages, although a few localizers have further grammaticalized functions denoting temporal and other non-spatial concepts. (See <a href="">ADP</a> for a list of localizers.)</p>
 
-<p>The head of the localizer is the noun or the main verb of the clause preceding it. Localizers are always tagged ADP (adposition). When it follows a noun, it receives the <code>case:loc</code> relation label. But if it follows a clause and acts as a subordinator, it receives the <a href="">mark</a> relation (but retains the tag <code>ADP</code>).</p>
+<p>The head of the localizer is the noun or the main verb of the clause preceding it. Localizers are always tagged ADP (adposition). When it follows a noun, it receives the <code class="language-plaintext highlighter-rouge">case:loc</code> relation label. But if it follows a clause and acts as a subordinator, it receives the <a href="">mark</a> relation (but retains the tag <code class="language-plaintext highlighter-rouge">ADP</code>).</p>
 
 <pre><code class="language-conllu"># visual-style 4 5 case:loc	color:blue
 # visual-style 4	bgColor:blue
@@ -1524,7 +1524,7 @@
 
 </code></pre>
 
-<p>In some rare cases, a verb may have different meanings, one taking a <code>ccomp</code> dependent, and another an <code>xcomp</code> dependent. For example, the verb 覺得 <em>gok3dak1</em> may mean “feel, think, consider” or “feel a sensation”. The first meaning takes a clausal complement, as in example (2) above; the second meaning requires <code>xcomp</code>, as in (3) below, which exhibits a case of “subject control”, where the subject of the second predicate 好 開心 / <em>hou2 hoi1sam1</em> “very happy” is necessarily understood as the subject of the matrix verb 覺得 / <em>gok3dak1</em> “feel (a sensation)”.</p>
+<p>In some rare cases, a verb may have different meanings, one taking a <code class="language-plaintext highlighter-rouge">ccomp</code> dependent, and another an <code class="language-plaintext highlighter-rouge">xcomp</code> dependent. For example, the verb 覺得 <em>gok3dak1</em> may mean “feel, think, consider” or “feel a sensation”. The first meaning takes a clausal complement, as in example (2) above; the second meaning requires <code class="language-plaintext highlighter-rouge">xcomp</code>, as in (3) below, which exhibits a case of “subject control”, where the subject of the second predicate 好 開心 / <em>hou2 hoi1sam1</em> “very happy” is necessarily understood as the subject of the matrix verb 覺得 / <em>gok3dak1</em> “feel (a sensation)”.</p>
 
 <pre><code class="language-conllu">1	我	_	PRON	_	_	2	nsubj	_	1SG
 2	覺得	_	VERB	_	_	0	root	_	feel
@@ -1538,7 +1538,7 @@
 
 </code></pre>
 
-<p>Additionally, <code>ccomp</code> is used for “extent compounds” (see <a href="">compound:ext</a>) where a clause with its own subject follows V + 得/到 (for a subjectless predicate following V + 得/到, <a href="">xcomp</a> is used).</p>
+<p>Additionally, <code class="language-plaintext highlighter-rouge">ccomp</code> is used for “extent compounds” (see <a href="">compound:ext</a>) where a clause with its own subject follows V + 得/到 (for a subjectless predicate following V + 得/到, <a href="">xcomp</a> is used).</p>
 
 <pre><code class="language-conllu"># visual-style 1 6 ccomp	color:blue
 # visual-style 1	bgColor:blue
@@ -1564,7 +1564,7 @@
 
 </code></pre>
 
-<p>The <code>ccomp</code> relation is also used for the copula 係 <em>hai6</em> when its argument is a clause (although in copular constructions, 係 <em>hai6</em> is a <a href="">cop</a> dependent of the predicate when the predicate is non-clausal).</p>
+<p>The <code class="language-plaintext highlighter-rouge">ccomp</code> relation is also used for the copula 係 <em>hai6</em> when its argument is a clause (although in copular constructions, 係 <em>hai6</em> is a <a href="">cop</a> dependent of the predicate when the predicate is non-clausal).</p>
 
 <pre><code class="language-conllu"># visual-style 2 5 ccomp	color:blue
 # visual-style 2	bgColor:blue
@@ -1586,7 +1586,7 @@
 
 </code></pre>
 
-<h3 id="constructions">係…((嚟)嘅) constructions</h3>
+<h3 id="係嚟嘅-constructions">係…((嚟)嘅) constructions</h3>
 
 <p>The cleft-like focus constructions involving 係 <em>hai6</em> and 係…(嚟)嘅 <em>hai6…(lei4) ge3</em> are treated similarly to copular constructions with a clausal complement illustrated in (5).  In these constructions 係 <em>hai6</em> is considered the head, and the verb phrase or clause following it its clausal complement. Any noun phrase or adverbial to the left of 係 <em>hai6</em> is treated as a <a href="">dislocated</a> dependent of 係 <em>hai6</em> (rather than subject, adjunct, or oblique nominal of the complement clause), unless the adverbial is meant to modify 係 <em>hai6</em> itself. Note that clausal subjects to the left of 係 <em>hai6</em> are also treated as <a href="">dislocated</a>. The sentence-final particle 嘅 <em>ge3</em> is attached to the complement clause (although note that (i) 嘅 <em>ge3</em> may also be a nominalizer or a genitive marker on a nominal predicate depending on the context (unless preceded by the final particle 嚟 <em>lei4</em>), (ii) other final particles with an initial <em>g-</em> sound may occur in place of 嘅 <em>ge3</em>, such as 㗎 <em>gaa3</em> and 咖嘛 <em>ga1maa3</em>).</p>
 
@@ -1612,11 +1612,11 @@
 
 </code></pre>
 
-<h3 id="subject-less-ccomp-vs-subject-control-xcomp">Subject-less <code>ccomp</code> vs. subject-control <code>xcomp</code></h3>
+<h3 id="subject-less-ccomp-vs-subject-control-xcomp">Subject-less <code class="language-plaintext highlighter-rouge">ccomp</code> vs. subject-control <code class="language-plaintext highlighter-rouge">xcomp</code></h3>
 
-<p>It may be difficult sometimes to differentiate between (i) <code>ccomp</code> with the subject of the complement clause (non-obligatorily) dropped and (ii) a case of subject-control <code>xcomp</code> where the subject is obligatorily absent.</p>
+<p>It may be difficult sometimes to differentiate between (i) <code class="language-plaintext highlighter-rouge">ccomp</code> with the subject of the complement clause (non-obligatorily) dropped and (ii) a case of subject-control <code class="language-plaintext highlighter-rouge">xcomp</code> where the subject is obligatorily absent.</p>
 
-<p>One can reinsert a subject into the complement clause as a test to separate the above two situations. If the result is perfectly grammatical AND the meaning of the matrix verb does not change, it is likely situation (i) where the clausal complement should be linked to the matrix verb with <code>ccomp</code> (as shown in 2’ below). Otherwise, if the sentence becomes ungrammatical OR the meaning of the matrix verb changes, then it would likely be situation (ii) with <code>xcomp</code> (as shown in 3’ below). In the following sentences, the reinserted subjects are emphasized, the matrix verbs italicized, and the complement clauses in brackets:</p>
+<p>One can reinsert a subject into the complement clause as a test to separate the above two situations. If the result is perfectly grammatical AND the meaning of the matrix verb does not change, it is likely situation (i) where the clausal complement should be linked to the matrix verb with <code class="language-plaintext highlighter-rouge">ccomp</code> (as shown in 2’ below). Otherwise, if the sentence becomes ungrammatical OR the meaning of the matrix verb changes, then it would likely be situation (ii) with <code class="language-plaintext highlighter-rouge">xcomp</code> (as shown in 3’ below). In the following sentences, the reinserted subjects are emphasized, the matrix verbs italicized, and the complement clauses in brackets:</p>
 
 <ul>
   <li>(2’)</li>
@@ -1626,7 +1626,7 @@
     <ul>
       <li>grammatical</li>
       <li>AND matrix verbs in (2) and (2’) have the same meaning</li>
-      <li>CONCLUSION: matrix verb 覺得 ‘think’ in (2) → <code>ccomp</code></li>
+      <li>CONCLUSION: matrix verb 覺得 ‘think’ in (2) → <code class="language-plaintext highlighter-rouge">ccomp</code></li>
     </ul>
   </li>
   <li></li>
@@ -1637,19 +1637,19 @@
     <ul>
       <li>grammatical</li>
       <li>BUT matrix verbs in (3) and (3’) have different meanings (“feel” vs. “think”, respectively)</li>
-      <li>CONCLUSION: matrix verb 覺得 ‘feel’ in (3) → <code>xcomp</code></li>
+      <li>CONCLUSION: matrix verb 覺得 ‘feel’ in (3) → <code class="language-plaintext highlighter-rouge">xcomp</code></li>
     </ul>
   </li>
 </ul>
 
-<p>See <a href="">xcomp</a> for another test for differentiating between <code>ccomp</code> and object-control <code>xcomp</code>.</p>
+<p>See <a href="">xcomp</a> for another test for differentiating between <code class="language-plaintext highlighter-rouge">ccomp</code> and object-control <code class="language-plaintext highlighter-rouge">xcomp</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_yue-dep/ccomp.md" target="#">edit ccomp</a></p>
 
 <p><a id="al-yue-dep/clf" class="al-dest"></a></p>
 <h2><code>clf</code>: classifier</h2>
 
-<p>The <code>clf</code> relation is used in noun phrases where a cardinal numeral (1,4), an ordinal numeral (2), or a determiner (3) modifying the head noun is accompanied by a classifier. The classifier is attached to the numeral if a numeral is present, or else to the determiner. Note that ordinal numerals are tagged <a><code>ADJ</code></a> and labeled <a><code>amod</code></a> in relation to the noun; they are the only words tagged <code>ADJ</code> that can be accompanied by a classifier.</p>
+<p>The <code class="language-plaintext highlighter-rouge">clf</code> relation is used in noun phrases where a cardinal numeral (1,4), an ordinal numeral (2), or a determiner (3) modifying the head noun is accompanied by a classifier. The classifier is attached to the numeral if a numeral is present, or else to the determiner. Note that ordinal numerals are tagged <a><code class="language-plaintext highlighter-rouge">ADJ</code></a> and labeled <a><code class="language-plaintext highlighter-rouge">amod</code></a> in relation to the noun; they are the only words tagged <code class="language-plaintext highlighter-rouge">ADJ</code> that can be accompanied by a classifier.</p>
 
 <pre><code class="language-conllu"># visual-style 1 2 clf	color:blue
 # visual-style 1	bgColor:blue
@@ -1712,7 +1712,7 @@
 
 </code></pre>
 
-<h3 id="non-clf-functions-of-mandarin-classifiers">Non-<code>clf</code> functions of Mandarin classifiers</h3>
+<h3 id="non-clf-functions-of-mandarin-classifiers">Non-<code class="language-plaintext highlighter-rouge">clf</code> functions of Mandarin classifiers</h3>
 
 <p>In other constructions involving classifiers, they are annotated with other syntax relations. First, in Cantonese a classifier may also be considered to function as a determiner when a noun phrase starts with a bare classifier, as in (5, 6).</p>
 
@@ -1786,14 +1786,14 @@
 
 </code></pre>
 
-<p>Note that classifiers are tagged as NOUN. The feature <code>NounType=Clf</code> is recommended for distinguishing classifiers from regular nouns.</p>
+<p>Note that classifiers are tagged as NOUN. The feature <code class="language-plaintext highlighter-rouge">NounType=Clf</code> is recommended for distinguishing classifiers from regular nouns.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_yue-dep/clf.md" target="#">edit clf</a></p>
 
 <p><a id="al-yue-dep/compound" class="al-dest"></a></p>
 <h2><code>compound</code>: compound</h2>
 
-<p>The <code>compound</code> relation is used primarily for noun-noun compounds (for various verb and verb-object compounds, see <a href="">compound:dir</a>, <a href="">compound:ext</a>, <a href="">compound:quant</a>, <a href="">compound:vo</a>, and <a href="">compound:vv</a>). This applies to any nominal preceding and modifying another nominal unless the relationship between the two is a possessive one (see <a href="">nmod</a>). The latter nominal is typically the head of the compound.</p>
+<p>The <code class="language-plaintext highlighter-rouge">compound</code> relation is used primarily for noun-noun compounds (for various verb and verb-object compounds, see <a href="">compound:dir</a>, <a href="">compound:ext</a>, <a href="">compound:quant</a>, <a href="">compound:vo</a>, and <a href="">compound:vv</a>). This applies to any nominal preceding and modifying another nominal unless the relationship between the two is a possessive one (see <a href="">nmod</a>). The latter nominal is typically the head of the compound.</p>
 
 <pre><code class="language-conllu"># visual-style 2 1 compound	color:blue
 # visual-style 1	bgColor:blue
@@ -2000,7 +2000,7 @@
 <p><a id="al-yue-dep/compound:ext" class="al-dest"></a></p>
 <h2><code>compound:ext</code>: extent and descriptive verb compound</h2>
 
-<p>This relation is used for two closely related constructions known in Chinese linguistics as “descriptive complements” and “complements of extent”. We treat them both in the same way with regards to the particles 得 <em>dak1</em> (for descriptive complements) and 到 <em>dou3</em> (for extent complements), where the particle is a <code>compound:ext</code> dependent of the verb it follows (with the idea that the addition of 得 or 到 changes the valence structure of the verb such that it takes a(n additional) clause or secondary predicate as its complement.</p>
+<p>This relation is used for two closely related constructions known in Chinese linguistics as “descriptive complements” and “complements of extent”. We treat them both in the same way with regards to the particles 得 <em>dak1</em> (for descriptive complements) and 到 <em>dou3</em> (for extent complements), where the particle is a <code class="language-plaintext highlighter-rouge">compound:ext</code> dependent of the verb it follows (with the idea that the addition of 得 or 到 changes the valence structure of the verb such that it takes a(n additional) clause or secondary predicate as its complement.</p>
 
 <p>Descriptive complements (1) are treated as <a href="">xcomp</a> dependents of the compounded verb (since they include a predicative adjective without a subject).</p>
 
@@ -2124,7 +2124,7 @@
 <p><a id="al-yue-dep/compound:quant" class="al-dest"></a></p>
 <h2><code>compound:quant</code>: verb-quantifier compound</h2>
 
-<p>Among the many verbal particles in Cantonese are affixal quantifiers 埋 / <em>maai4</em> (\~”also”) and 晒 / <em>saai3</em> (\~”all”) (Lee, 2012; we exclude 開 / <em>hoi1</em> for syntactic distributional reasons); they may scope over any argument in the clause or even the predicate. They attach after verbs (1) and can be intervened by the potential 得 / <em>dak1</em> or the negative potential 唔 / <em>m4</em> (2), but differ from verb-verb compounds (<a href="">compound:vv</a>) in that they can co-occur with them, in which case they are attached after the verb-verb compounds (3).</p>
+<p>Among the many verbal particles in Cantonese are affixal quantifiers 埋 / <em>maai4</em> (~“also”) and 晒 / <em>saai3</em> (~“all”) (Lee, 2012; we exclude 開 / <em>hoi1</em> for syntactic distributional reasons); they may scope over any argument in the clause or even the predicate. They attach after verbs (1) and can be intervened by the potential 得 / <em>dak1</em> or the negative potential 唔 / <em>m4</em> (2), but differ from verb-verb compounds (<a href="">compound:vv</a>) in that they can co-occur with them, in which case they are attached after the verb-verb compounds (3).</p>
 
 <pre><code class="language-conllu"># visual-style 2 3 compound:quant	color:blue
 # visual-style 2	bgColor:blue
@@ -2258,7 +2258,7 @@
 <p><a id="al-yue-dep/compound:vo" class="al-dest"></a></p>
 <h2><code>compound:vo</code>: verb-object compound</h2>
 
-<p>The <code>compound:vo</code> relation is used for verb-object compounds where the combination is semantically one unit but syntactically separate. These are known as 離合詞 <em>lei4hap6ci4</em> “separable words” in Chinese linguistics.</p>
+<p>The <code class="language-plaintext highlighter-rouge">compound:vo</code> relation is used for verb-object compounds where the combination is semantically one unit but syntactically separate. These are known as 離合詞 <em>lei4hap6ci4</em> “separable words” in Chinese linguistics.</p>
 
 <p>These compounds run the range of:</p>
 
@@ -2266,7 +2266,7 @@
   <li>(i) light verb constructions where the noun carries more semantic weight than the verb
     <ul>
       <li>e.g., 打␣電話 / <em>daa2-din6waa2</em> hit-telephone “make a phone call”</li>
-      <li>(equivalents of these in other languages may be labeled with <code>compound:lvc</code>)</li>
+      <li>(equivalents of these in other languages may be labeled with <code class="language-plaintext highlighter-rouge">compound:lvc</code>)</li>
     </ul>
   </li>
   <li>(ii) neither the verb or noun can be considered the semantic head (i.e., an exocentric compound)
@@ -2419,7 +2419,7 @@
 
 </code></pre>
 
-<p>Note that in resultative compounds the second verb can be an adjective, in which case <code>compound:vv</code> is still the appropriate relation to link the two:</p>
+<p>Note that in resultative compounds the second verb can be an adjective, in which case <code class="language-plaintext highlighter-rouge">compound:vv</code> is still the appropriate relation to link the two:</p>
 
 <pre><code class="language-conllu"># visual-style 2 3 compound:vv	color:blue
 # visual-style 2	bgColor:blue
@@ -2653,7 +2653,7 @@
 
 </code></pre>
 
-<p>Another special case where <code>conj</code> is used is in the paired adjacent prepositional phrases indicating a span of distance, time, etc., introduced by prepositions such as 由… 到… / <em>jau4 dou3</em> “from… to…”, 由… 至… / <em>jau4 zi3</em> “from… to…” – the second prepositional phrase is treated as a conjunct of the first:</p>
+<p>Another special case where <code class="language-plaintext highlighter-rouge">conj</code> is used is in the paired adjacent prepositional phrases indicating a span of distance, time, etc., introduced by prepositions such as 由… 到… / <em>jau4 dou3</em> “from… to…”, 由… 至… / <em>jau4 zi3</em> “from… to…” – the second prepositional phrase is treated as a conjunct of the first:</p>
 
 <pre><code class="language-conllu"># visual-style 2 4 conj	color:blue
 # visual-style 2	bgColor:blue
@@ -2679,7 +2679,7 @@
 <p><a id="al-yue-dep/cop" class="al-dest"></a></p>
 <h2><code>cop</code>: copula</h2>
 
-<p>The <code>cop</code> relation is used exclusively for the word 係 / <em>hai6</em> “be” primarily as a copula linked to the main predicate, which may often be a noun or adjective.</p>
+<p>The <code class="language-plaintext highlighter-rouge">cop</code> relation is used exclusively for the word 係 / <em>hai6</em> “be” primarily as a copula linked to the main predicate, which may often be a noun or adjective.</p>
 
 <pre><code class="language-conllu"># visual-style 4 2 cop	color:blue
 # visual-style 2	bgColor:blue
@@ -2698,7 +2698,7 @@
 
 </code></pre>
 
-<p>If the complement of the copular verb is a clause, however, then the copular verb should be the head of the sentence with the clausal complement as a <code>ccomp</code> dependent.</p>
+<p>If the complement of the copular verb is a clause, however, then the copular verb should be the head of the sentence with the clausal complement as a <code class="language-plaintext highlighter-rouge">ccomp</code> dependent.</p>
 
 <pre><code class="language-conllu">1	原因	_	NOUN	_	_	2	nsubj	_	reason
 2	係	_	VERB	_	_	0	root	_	be
@@ -2722,7 +2722,7 @@
 <p><a id="al-yue-dep/csubj" class="al-dest"></a></p>
 <h2><code>csubj</code>: clausal subject</h2>
 
-<p>The <code>csubj</code> relation is the clausal counterpart to <a href="">nsubj</a>; when the subject of the sentence is a clause itself, this relation is used. The governor of the subject clause is its main verb.</p>
+<p>The <code class="language-plaintext highlighter-rouge">csubj</code> relation is the clausal counterpart to <a href="">nsubj</a>; when the subject of the sentence is a clause itself, this relation is used. The governor of the subject clause is its main verb.</p>
 
 <pre><code class="language-conllu"># visual-style 6 2 csubj	color:blue
 # visual-style 2	bgColor:blue
@@ -2753,7 +2753,7 @@
 <p><a id="al-yue-dep/csubj:pass" class="al-dest"></a></p>
 <h2><code>csubj:pass</code>: clausal passive subject</h2>
 
-<p>When a clause is the passive subject of a verb, the <code>csubj:pass</code> relation is used.</p>
+<p>When a clause is the passive subject of a verb, the <code class="language-plaintext highlighter-rouge">csubj:pass</code> relation is used.</p>
 
 <pre><code class="language-conllu"># visual-style 6 2 csubj:pass	color:blue
 # visual-style 6	bgColor:blue
@@ -2783,14 +2783,14 @@
 <p><a id="al-yue-dep/dep" class="al-dest"></a></p>
 <h2><code>dep</code>: unspecified dependency</h2>
 
-<p>A dependency can be labeled as <code>dep</code> when it is impossible to determine a more precise relation. This may be because of a weird grammatical construction, or a limitation in conversion or parsing software. The use of <code>dep</code> should be avoided as much as possible.</p>
+<p>A dependency can be labeled as <code class="language-plaintext highlighter-rouge">dep</code> when it is impossible to determine a more precise relation. This may be because of a weird grammatical construction, or a limitation in conversion or parsing software. The use of <code class="language-plaintext highlighter-rouge">dep</code> should be avoided as much as possible.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_yue-dep/dep.md" target="#">edit dep</a></p>
 
 <p><a id="al-yue-dep/det" class="al-dest"></a></p>
 <h2><code>det</code>: determiner</h2>
 
-<p>The <code>det</code> relation applies to the head of a nominal and its determiner. All determiners are tagged <a href="">DET</a>, and thus all words with the tag will be a <code>det</code> dependent. Classifiers may also function as determiners (see further below).</p>
+<p>The <code class="language-plaintext highlighter-rouge">det</code> relation applies to the head of a nominal and its determiner. All determiners are tagged <a href="">DET</a>, and thus all words with the tag will be a <code class="language-plaintext highlighter-rouge">det</code> dependent. Classifiers may also function as determiners (see further below).</p>
 
 <pre><code class="language-conllu"># visual-style 3 1 det	color:blue
 # visual-style 1	bgColor:blue
@@ -2903,7 +2903,7 @@
 
 </code></pre>
 
-<p>Particles 呀 <em>aa3</em>, 呀 <em>aa4</em>, 呢 <em>ne1/le1</em>, 喎 <em>wo3</em> may occur after a topic in sentence-initial position; these have homophonous counterparts in sentence-final particles but should not be confused with them, and should be labelled <code>discourse</code> rather than <a href="">discourse:sp</a>.</p>
+<p>Particles 呀 <em>aa3</em>, 呀 <em>aa4</em>, 呢 <em>ne1/le1</em>, 喎 <em>wo3</em> may occur after a topic in sentence-initial position; these have homophonous counterparts in sentence-final particles but should not be confused with them, and should be labelled <code class="language-plaintext highlighter-rouge">discourse</code> rather than <a href="">discourse:sp</a>.</p>
 
 <pre><code class="language-conllu"># visual-style 1 2 discourse	color:blue
 # visual-style 1	bgColor:blue
@@ -3005,7 +3005,7 @@
 <p><a id="al-yue-dep/discourse:sp" class="al-dest"></a></p>
 <h2><code>discourse:sp</code>: sentence particle</h2>
 
-<p>Sentence particles, also commonly known as “sentence-final particles” in Chinese linguistics, occur at the end of clauses and sentences and have a wide range of functions including modifying the modality of a sentence or its proposition, and expressing discourse and pragmatic information. They are linked to the head of a sentence/utterance as <code>discourse:sp</code> dependents (we place them under an extension of <code>discourse</code> under a broad interpretation of the word “discourse”).</p>
+<p>Sentence particles, also commonly known as “sentence-final particles” in Chinese linguistics, occur at the end of clauses and sentences and have a wide range of functions including modifying the modality of a sentence or its proposition, and expressing discourse and pragmatic information. They are linked to the head of a sentence/utterance as <code class="language-plaintext highlighter-rouge">discourse:sp</code> dependents (we place them under an extension of <code class="language-plaintext highlighter-rouge">discourse</code> under a broad interpretation of the word “discourse”).</p>
 
 <p>Common sentence-final particles in Cantonese include: 嘅 <em>ge3</em>, 嘑 <em>laa3</em>, 喇 <em>laa1</em>, 囉 <em>lo4</em>, 唧 <em>zek1</em>, 吖 <em>aa1</em>, 喎 <em>wo3</em>, 呀嘛 <em>a1maa3</em>, 先 <em>sin1</em>, 添 <em>tim1</em>, among many others. Note that many sentence-final particles can be written in multiple ways and some characters can also represent different particles that differ only in tone; there is no official standard so the characters used here are not meant to be a definitive guide.</p>
 
@@ -3071,7 +3071,7 @@
 <p><a id="al-yue-dep/dislocated" class="al-dest"></a></p>
 <h2><code>dislocated</code>: dislocated elements</h2>
 
-<p>The <code>dislocated</code> relation is used for elements that have been displaced from its regular syntactic position, often to the very front or back of the clause it resides within or of the whole sentence. This applies often to an argument of a clause that has been moved to the periphery for topic, focus, or similar types of effects. However, this relation is also used generally for topic elements that otherwise do not fulfill any core grammatical relation of a sentence, except for temporal nouns (see <a href="">obl:tmod</a>) or locational nouns (see <a href="">obl</a>) functioning as adjuncts.</p>
+<p>The <code class="language-plaintext highlighter-rouge">dislocated</code> relation is used for elements that have been displaced from its regular syntactic position, often to the very front or back of the clause it resides within or of the whole sentence. This applies often to an argument of a clause that has been moved to the periphery for topic, focus, or similar types of effects. However, this relation is also used generally for topic elements that otherwise do not fulfill any core grammatical relation of a sentence, except for temporal nouns (see <a href="">obl:tmod</a>) or locational nouns (see <a href="">obl</a>) functioning as adjuncts.</p>
 
 <pre><code class="language-conllu"># visual-style 6 4 dislocated	color:blue
 # visual-style 6	bgColor:blue
@@ -3124,7 +3124,7 @@
 
 </code></pre>
 
-<p>Below is an example of a topic phrase that is not an argument of the main verb, but still labeled <code>dislocated</code>.</p>
+<p>Below is an example of a topic phrase that is not an argument of the main verb, but still labeled <code class="language-plaintext highlighter-rouge">dislocated</code>.</p>
 
 <pre><code class="language-conllu"># visual-style 5 3 dislocated	color:blue
 # visual-style 5	bgColor:blue
@@ -3200,7 +3200,7 @@
 <p><a id="al-yue-dep/dislocated:vo" class="al-dest"></a></p>
 <h2><code>dislocated:vo</code>: dislocated object of verb-object compound</h2>
 
-<p>The <code>dislocated:vo</code> relation is used when the object of a verb-object compound (see <a href="">compound:vo</a>) is fronted to topic position.</p>
+<p>The <code class="language-plaintext highlighter-rouge">dislocated:vo</code> relation is used when the object of a verb-object compound (see <a href="">compound:vo</a>) is fronted to topic position.</p>
 
 <pre><code class="language-conllu"># visual-style 5 3 dislocated:vo	color:blue
 # visual-style 5	bgColor:blue
@@ -3237,7 +3237,7 @@
 <p><a id="al-yue-dep/expl" class="al-dest"></a></p>
 <h2><code>expl</code>: expletive</h2>
 
-<p>In Cantonese, expletive (1) and pleonastic (2) uses of the pronoun 佢 / <em>keoi5</em> (3SG) are labelled as <code>expl</code> dependents of the head of a clause. In expletive uses, the pronoun does not refer to an actual person or object but it is required in the sentence otherwise it would become ungrammatical. In the pleonastic case, the pronoun is used immediately after a noun and refers back to it in a redundant way.</p>
+<p>In Cantonese, expletive (1) and pleonastic (2) uses of the pronoun 佢 / <em>keoi5</em> (3SG) are labelled as <code class="language-plaintext highlighter-rouge">expl</code> dependents of the head of a clause. In expletive uses, the pronoun does not refer to an actual person or object but it is required in the sentence otherwise it would become ungrammatical. In the pleonastic case, the pronoun is used immediately after a noun and refers back to it in a redundant way.</p>
 
 <pre><code class="language-conllu"># visual-style 1 3 expl	color:blue
 # visual-style 1	bgColor:blue
@@ -3291,7 +3291,7 @@
 <p><a id="al-yue-dep/fixed" class="al-dest"></a></p>
 <h2><code>fixed</code>: fixed multiword expression</h2>
 
-<p>The relation <code>fixed</code> is used for function words and short adverbials that are composed of separate parts for which internal structure is either difficult to determine or does not make sense to annotate. The first element of the expression is the head which governs all the following elements.</p>
+<p>The relation <code class="language-plaintext highlighter-rouge">fixed</code> is used for function words and short adverbials that are composed of separate parts for which internal structure is either difficult to determine or does not make sense to annotate. The first element of the expression is the head which governs all the following elements.</p>
 
 <p>Because written Chinese does not indicate word boundaries, function words and short adverbials that may have historically consisted of separate words are likely to be treated as a single token at the word segmentation stage. For this reason, this relation is unlikely to be used in Chinese text. However, we leave it as an optional label that may be used in exceptional cases where <a href="">goeswith</a> may be an unsatisfactory treatment.</p>
 
@@ -3300,7 +3300,7 @@
 <p><a id="al-yue-dep/flat" class="al-dest"></a></p>
 <h2><code>flat</code>: flat multiword expression</h2>
 
-<p>The <code>flat</code> relation is used to link names without internal structure (unlikely in Chinese names but may be found in fully transliterated foreign names; see 1), foreign phrases whose syntactic structure is not known or not meant to be analyzed (2), and dates (3). The first word is the head of all other words.</p>
+<p>The <code class="language-plaintext highlighter-rouge">flat</code> relation is used to link names without internal structure (unlikely in Chinese names but may be found in fully transliterated foreign names; see 1), foreign phrases whose syntactic structure is not known or not meant to be analyzed (2), and dates (3). The first word is the head of all other words.</p>
 
 <pre><code class="language-conllu"># visual-style 1 3 flat	color:blue
 # visual-style 1	bgColor:blue
@@ -3372,7 +3372,7 @@
 
 <p>This relation is used to link characters that have been mistakenly split during tokenization.</p>
 
-<p>This relation will be removed in the final delivery of the language data. The words connected by <code>goeswith</code> will simply be fused together. For parser training purposes, however, we keep the relation so that the parser can learn to correct mistakenly separated tokens. All separated units should be given the same POS tag as one would give the combined unit, despite what the individual units may be tagged as had they been treated as individual words.</p>
+<p>This relation will be removed in the final delivery of the language data. The words connected by <code class="language-plaintext highlighter-rouge">goeswith</code> will simply be fused together. For parser training purposes, however, we keep the relation so that the parser can learn to correct mistakenly separated tokens. All separated units should be given the same POS tag as one would give the combined unit, despite what the individual units may be tagged as had they been treated as individual words.</p>
 
 <pre><code class="language-conllu"># visual-style 1 2 goeswith	color:blue
 # visual-style 1 3 goeswith	color:blue
@@ -3390,7 +3390,7 @@
 
 </code></pre>
 
-<p>Note that the particular class of idiomatic expressions called 成語 <em>sing4jyu2</em> as well as quotations from Classical Chinese texts, may not always be recognized by automatic segmentation. We use the <code>goeswith</code> relation for such cases as well. Because these expressions are fossilized from early stages of the Chinese language, their syntax and composition often do not have a modern analysis, and therefore should not be tokenized apart.</p>
+<p>Note that the particular class of idiomatic expressions called 成語 <em>sing4jyu2</em> as well as quotations from Classical Chinese texts, may not always be recognized by automatic segmentation. We use the <code class="language-plaintext highlighter-rouge">goeswith</code> relation for such cases as well. Because these expressions are fossilized from early stages of the Chinese language, their syntax and composition often do not have a modern analysis, and therefore should not be tokenized apart.</p>
 
 <pre><code class="language-conllu"># visual-style 1 2 goeswith	color:blue
 # visual-style 1 3 goeswith	color:blue
@@ -3455,7 +3455,7 @@
 <p><a id="al-yue-dep/list" class="al-dest"></a></p>
 <h2><code>list</code>: list</h2>
 
-<p>The list relation is used for chains of comparable items. In lists with more than two items, all items of the list should modify the first one. Informal and web texts often contain passages which are meant to be interpreted as lists but are parsed as single sentences. Email signatures often contain these structures, in the form of contact information: the different contact information items are labeled as <code>list</code>; the key-value pair relations are labeled as <code>appos</code>.</p>
+<p>The list relation is used for chains of comparable items. In lists with more than two items, all items of the list should modify the first one. Informal and web texts often contain passages which are meant to be interpreted as lists but are parsed as single sentences. Email signatures often contain these structures, in the form of contact information: the different contact information items are labeled as <code class="language-plaintext highlighter-rouge">list</code>; the key-value pair relations are labeled as <code class="language-plaintext highlighter-rouge">appos</code>.</p>
 
 <pre><code class="language-conllu"># visual-style 1 2 list	color:blue
 # visual-style 1 5 list	color:blue
@@ -3483,7 +3483,7 @@
 
 </code></pre>
 
-<p>Another place where <code>list</code> has been used is for a sequence of attributes or descriptive terms used as the title line of a review (such as product or restaurant reviews, etc.:</p>
+<p>Another place where <code class="language-plaintext highlighter-rouge">list</code> has been used is for a sequence of attributes or descriptive terms used as the title line of a review (such as product or restaurant reviews, etc.:</p>
 
 <pre><code class="language-conllu"># visual-style 1 5 list	color:blue
 # visual-style 1 8 list	color:blue
@@ -3517,14 +3517,14 @@
 
 </code></pre>
 
-<p>However, <code>list</code> should not be over-used. If a construction can be easily analyzed using the grammatical relations of standard sentences, such as when there is overt coordination, then it should be analyzed with these more standard relations, even if it is laid out as a list typographically.</p>
+<p>However, <code class="language-plaintext highlighter-rouge">list</code> should not be over-used. If a construction can be easily analyzed using the grammatical relations of standard sentences, such as when there is overt coordination, then it should be analyzed with these more standard relations, even if it is laid out as a list typographically.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_yue-dep/list.md" target="#">edit list</a></p>
 
 <p><a id="al-yue-dep/mark" class="al-dest"></a></p>
 <h2><code>mark</code>: marker</h2>
 
-<p>The <code>mark</code> relation applies to a function word that marks a subordinate clause. It can be distributed at its beginning (1,3) or at its end (2,4). We take a broad definition of “subordinate” to include adverbial clauses of any kind (see <a href="">advcl</a>).</p>
+<p>The <code class="language-plaintext highlighter-rouge">mark</code> relation applies to a function word that marks a subordinate clause. It can be distributed at its beginning (1,3) or at its end (2,4). We take a broad definition of “subordinate” to include adverbial clauses of any kind (see <a href="">advcl</a>).</p>
 
 <p>For relative clauses, nominalized clauses, and adjectives formed with 嘅 <em>ge3</em>, see <a href="">mark:rel</a>. For the manner adverbializer 噉 <em>gam2</em>, see <a href="">mark:adv</a>.</p>
 
@@ -3633,7 +3633,7 @@
 
 </code></pre>
 
-<p>Note that in the last example the localizer 之後 is still tagged as <code>ADP</code> despite its grammatilized function here as a temporal subordinator.</p>
+<p>Note that in the last example the localizer 之後 is still tagged as <code class="language-plaintext highlighter-rouge">ADP</code> despite its grammatilized function here as a temporal subordinator.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_yue-dep/mark.md" target="#">edit mark</a></p>
 
@@ -3662,9 +3662,9 @@
 <p><a id="al-yue-dep/mark:rel" class="al-dest"></a></p>
 <h2><code>mark:rel</code>: adjectival, relativizer, and nominalizer GE</h2>
 
-<p>The <code>mark:rel</code> relation is reserved for three related uses of 嘅 <em>ge3</em>: adjectives, relative clauses, and nominalized clauses.</p>
+<p>The <code class="language-plaintext highlighter-rouge">mark:rel</code> relation is reserved for three related uses of 嘅 <em>ge3</em>: adjectives, relative clauses, and nominalized clauses.</p>
 
-<h3 id="adjectives-adj----noun">Adjectives [ADJ + 嘅 + NOUN]</h3>
+<h3 id="adjectives-adj--嘅--noun">Adjectives [ADJ + 嘅 + NOUN]</h3>
 
 <p>When an adjective modifying a noun is followed by the particle 嘅 before the noun, the adjective is the head of the particle 嘅.</p>
 
@@ -3682,9 +3682,9 @@
 
 </code></pre>
 
-<h3 id="relative-clauses-clause----noun">Relative clauses [clause + 嘅 + NOUN]</h3>
+<h3 id="relative-clauses-clause--嘅--noun">Relative clauses [clause + 嘅 + NOUN]</h3>
 
-<p>When the particle 嘅 is used after a clause turning it into a relative clause that modifies the following noun, the particle is a <code>mark:rel</code> dependent of the main verb of the relative clause.</p>
+<p>When the particle 嘅 is used after a clause turning it into a relative clause that modifies the following noun, the particle is a <code class="language-plaintext highlighter-rouge">mark:rel</code> dependent of the main verb of the relative clause.</p>
 
 <pre><code class="language-conllu"># visual-style 5 6 mark:rel	color:blue
 # visual-style 5	bgColor:blue
@@ -3711,9 +3711,9 @@
 
 </code></pre>
 
-<h3 id="nominalized-clauses-clause--">Nominalized clauses [clause + 嘅]</h3>
+<h3 id="nominalized-clauses-clause--嘅">Nominalized clauses [clause + 嘅]</h3>
 
-<p>When the particle 的 is used after a verb, predicate adjective, or object-less clause turning it into a nominal, the particle is annotated as a <code>mark:rel</code> dependent of the head of the nominalized clause.</p>
+<p>When the particle 的 is used after a verb, predicate adjective, or object-less clause turning it into a nominal, the particle is annotated as a <code class="language-plaintext highlighter-rouge">mark:rel</code> dependent of the head of the nominalized clause.</p>
 
 <pre><code class="language-conllu"># visual-style 2 3 mark:rel	color:blue
 # visual-style 2	bgColor:blue
@@ -3741,7 +3741,7 @@
 <p><a id="al-yue-dep/nmod" class="al-dest"></a></p>
 <h2><code>nmod</code>: nominal modifier</h2>
 
-<p>The <code>nmod</code> relation is used for nominal dependents of another noun or noun phrase and functionally corresponds to an attribute, or genitive (possessive) complement. In Cantonese, it is expressed with the 嘅 <em>ge3</em> particle, as in (1), between the preceding complement and the following head noun. The particle depends on the complement as a <a href="">case</a> dependent.</p>
+<p>The <code class="language-plaintext highlighter-rouge">nmod</code> relation is used for nominal dependents of another noun or noun phrase and functionally corresponds to an attribute, or genitive (possessive) complement. In Cantonese, it is expressed with the 嘅 <em>ge3</em> particle, as in (1), between the preceding complement and the following head noun. The particle depends on the complement as a <a href="">case</a> dependent.</p>
 
 <pre><code class="language-conllu"># visual-style 3 1 nmod	color:blue
 # visual-style 1	bgColor:blue
@@ -3812,7 +3812,7 @@
 <p><a id="al-yue-dep/nsubj" class="al-dest"></a></p>
 <h2><code>nsubj</code>: nominal subject</h2>
 
-<p>The <code>nsubj</code> relation links a subject to its predicate, and this subject must be nominal. (If the syntactic subject is a clause, the relation <a href="">csubj</a> is used.)</p>
+<p>The <code class="language-plaintext highlighter-rouge">nsubj</code> relation links a subject to its predicate, and this subject must be nominal. (If the syntactic subject is a clause, the relation <a href="">csubj</a> is used.)</p>
 
 <pre><code class="language-conllu"># visual-style 3 1 nsubj	color:blue
 # visual-style 1	bgColor:blue
@@ -3835,7 +3835,7 @@
 <p><a id="al-yue-dep/nsubj:pass" class="al-dest"></a></p>
 <h2><code>nsubj:pass</code>: passive nominal subject</h2>
 
-<p>The <code>nsubj:pass</code> relation is used for the subject of a passive sentence. In Cantonese, the passive subject may be directly (1) or indirectly (2) affected by the action expressed by the verb; the latter case is known as an “indirect passive” (Matthews and Yip, 2011), where the verb can still have a direct object, as seen in (2).</p>
+<p>The <code class="language-plaintext highlighter-rouge">nsubj:pass</code> relation is used for the subject of a passive sentence. In Cantonese, the passive subject may be directly (1) or indirectly (2) affected by the action expressed by the verb; the latter case is known as an “indirect passive” (Matthews and Yip, 2011), where the verb can still have a direct object, as seen in (2).</p>
 
 <pre><code class="language-conllu"># visual-style 4 1 nsubj:pass	color:blue
 # visual-style 1	bgColor:blue
@@ -3894,7 +3894,7 @@
 <p><a id="al-yue-dep/nummod" class="al-dest"></a></p>
 <h2><code>nummod</code>: numeric modifier</h2>
 
-<p>A numeric modifier is a modifier that is a numeral word or phrase preceding the noun or noun phrase it modifies. Ordinal numbers such as 第一 / <em>dai6jat1</em> “first” and 第二 / <em>dai6ji6</em> “second”, however, should be treated with <code>amod</code> (and tagged <code>ADJ</code>) to conform to UD guidelines.</p>
+<p>A numeric modifier is a modifier that is a numeral word or phrase preceding the noun or noun phrase it modifies. Ordinal numbers such as 第一 / <em>dai6jat1</em> “first” and 第二 / <em>dai6ji6</em> “second”, however, should be treated with <code class="language-plaintext highlighter-rouge">amod</code> (and tagged <code class="language-plaintext highlighter-rouge">ADJ</code>) to conform to UD guidelines.</p>
 
 <p>Numeric modifiers are always attached to the head of the noun phrase.</p>
 
@@ -3932,7 +3932,7 @@
 <p><a id="al-yue-dep/obj" class="al-dest"></a></p>
 <h2><code>obj</code>: object</h2>
 
-<p>The object of a transitive verb is its second core argument after its subject. If a third argument, an indirect object without a preposition*, is present, that object is marked as <a href="">iobj</a> (2), but if the only object present is an indirect object, it is still marked as <code>obj</code> (3).</p>
+<p>The object of a transitive verb is its second core argument after its subject. If a third argument, an indirect object without a preposition*, is present, that object is marked as <a href="">iobj</a> (2), but if the only object present is an indirect object, it is still marked as <code class="language-plaintext highlighter-rouge">obj</code> (3).</p>
 
 <p>* Note that indirect objects preceded by a preposition are treated as <a href="">obl</a> (oblique).</p>
 
@@ -3991,7 +3991,7 @@
 
 </code></pre>
 
-<p><code>obj</code> is also used to link the direct object of a movement verb. This verb can be single (4) or compounded (5).</p>
+<p><code class="language-plaintext highlighter-rouge">obj</code> is also used to link the direct object of a movement verb. This verb can be single (4) or compounded (5).</p>
 
 <pre><code class="language-conllu"># visual-style 5 6 obj	color:blue
 # visual-style 7 8 obj	color:blue
@@ -4044,7 +4044,7 @@
 <p><a id="al-yue-dep/obl" class="al-dest"></a></p>
 <h2><code>obl</code>: oblique nominal</h2>
 
-<p>The <code>obl</code> relation is used for nominals functioning as a non-core argument or adjunct of a predicate, where the nominal may include some nominal marker. In Mandarin Chinese this may include prepositional phrases (1), and a few preverbal coverb phrases where we treat the coverbs as prepositions instead of verbs (these are coverbs where verbal marking is not allowed, such as 為咗 / <em>wai4zo5</em> ‘for, for the sake of’, 由 / <em>jau4</em> ‘from’; see 2 and 3). In each of these situations, the nominal is an <code>obl</code> dependent of the predicate, and governs its marker (tagged as ADP in all cases) in a <code>case</code> relation.</p>
+<p>The <code class="language-plaintext highlighter-rouge">obl</code> relation is used for nominals functioning as a non-core argument or adjunct of a predicate, where the nominal may include some nominal marker. In Mandarin Chinese this may include prepositional phrases (1), and a few preverbal coverb phrases where we treat the coverbs as prepositions instead of verbs (these are coverbs where verbal marking is not allowed, such as 為咗 / <em>wai4zo5</em> ‘for, for the sake of’, 由 / <em>jau4</em> ‘from’; see 2 and 3). In each of these situations, the nominal is an <code class="language-plaintext highlighter-rouge">obl</code> dependent of the predicate, and governs its marker (tagged as ADP in all cases) in a <code class="language-plaintext highlighter-rouge">case</code> relation.</p>
 
 <p>For nominals introduced by 畀 <em>bei2</em> and 將 <em>zoeng1</em> in preverbal position, see <a href="">obl:agent</a> and <a href="">obl:patient</a>, respectively.</p>
 
@@ -4150,7 +4150,7 @@
 <p><a id="al-yue-dep/obl:agent" class="al-dest"></a></p>
 <h2><code>obl:agent</code>: agent in passive construction</h2>
 
-<p>The <code>obl:agent</code> relation is used to link an agent noun phrase to the main verb, where the agent noun appears preverbally and is preceded by the function word 畀 <em>bei2</em> (tagged ADP and treated as a <a href="">case</a> dependent of the agent; the variant character 俾 is also common).</p>
+<p>The <code class="language-plaintext highlighter-rouge">obl:agent</code> relation is used to link an agent noun phrase to the main verb, where the agent noun appears preverbally and is preceded by the function word 畀 <em>bei2</em> (tagged ADP and treated as a <a href="">case</a> dependent of the agent; the variant character 俾 is also common).</p>
 
 <pre><code class="language-conllu"># visual-style 3 2 obl:agent	color:blue
 # visual-style 2	bgColor:blue
@@ -4202,7 +4202,7 @@
 <p><a id="al-yue-dep/obl:patient" class="al-dest"></a></p>
 <h2><code>obl:patient</code>: object in ZOENG construction</h2>
 
-<p>The relation <code>obl:patient</code> is used for the ZOENG construction (similar to the Mandarin BA construction), where objects marked (and raised to preverbal-position) by 將 <em>zoeng1</em> take the main verb as their head, while the objects themselves serve as the head of 將 <em>zoeng1</em> (tagged as ADP).</p>
+<p>The relation <code class="language-plaintext highlighter-rouge">obl:patient</code> is used for the ZOENG construction (similar to the Mandarin BA construction), where objects marked (and raised to preverbal-position) by 將 <em>zoeng1</em> take the main verb as their head, while the objects themselves serve as the head of 將 <em>zoeng1</em> (tagged as ADP).</p>
 
 <pre><code class="language-conllu"># visual-style 4 3 obl:patient	color:blue
 # visual-style 3	bgColor:blue
@@ -4227,7 +4227,7 @@
 <p><a id="al-yue-dep/obl:tmod" class="al-dest"></a></p>
 <h2><code>obl:tmod</code>: temporal modifier</h2>
 
-<p>The relation <code>obl:tmod</code> is used for temporal nouns acting as temporal modifiers of clauses.</p>
+<p>The relation <code class="language-plaintext highlighter-rouge">obl:tmod</code> is used for temporal nouns acting as temporal modifiers of clauses.</p>
 
 <pre><code class="language-conllu"># visual-style 5 3 obl:tmod	color:blue
 # visual-style 3	bgColor:blue
@@ -4330,7 +4330,7 @@
 <p><a id="al-yue-dep/orphan" class="al-dest"></a></p>
 <h2><code>orphan</code>: orphan</h2>
 
-<p>The <code>orphan</code> relation is used for verb ellipsis (specifically, gapping or gapping-like phenomena; see Tang, 2001). One of elements in the clause with the elided verb is promoted, and all other elements that would have been connected to the verb would now be connected to the promoted head as <code>orphan</code> dependents if their original relationship to the elided verb no longer applies in their current link to the promoted head.</p>
+<p>The <code class="language-plaintext highlighter-rouge">orphan</code> relation is used for verb ellipsis (specifically, gapping or gapping-like phenomena; see Tang, 2001). One of elements in the clause with the elided verb is promoted, and all other elements that would have been connected to the verb would now be connected to the promoted head as <code class="language-plaintext highlighter-rouge">orphan</code> dependents if their original relationship to the elided verb no longer applies in their current link to the promoted head.</p>
 
 <pre><code class="language-conllu"># visual-style 8 11 orphan	color:blue
 # visual-style 8	bgColor:blue
@@ -4365,12 +4365,12 @@
 
 </code></pre>
 
-<p>In the above example, the verb in the second clause is elided, and the subject 佢 / <em>keoi5</em> “he” is promoted to head position of the second clause, whereas the head of the object, 咖啡 / <em>gaa3fe1</em> “coffee” in the noun phrase 三 杯 咖啡 / <em>saam1 bui1 gaa3fe1</em> “three cups of coffee”, is connected to the promoted head as an <code>orphan</code> dependent, rather than <code>obj</code> (since 咖啡 / <em>gaa3fe1</em> “coffee” is not the object of 佢 / <em>keoi5</em> “he” but of the elided verb).</p>
+<p>In the above example, the verb in the second clause is elided, and the subject 佢 / <em>keoi5</em> “he” is promoted to head position of the second clause, whereas the head of the object, 咖啡 / <em>gaa3fe1</em> “coffee” in the noun phrase 三 杯 咖啡 / <em>saam1 bui1 gaa3fe1</em> “three cups of coffee”, is connected to the promoted head as an <code class="language-plaintext highlighter-rouge">orphan</code> dependent, rather than <code class="language-plaintext highlighter-rouge">obj</code> (since 咖啡 / <em>gaa3fe1</em> “coffee” is not the object of 佢 / <em>keoi5</em> “he” but of the elided verb).</p>
 
 <p>The prefered order of promotion is as follows, depending on the relation of a word to its elided verb:</p>
 
 <ul>
-  <li><code>nsubj</code> &gt; <code>obj</code> &gt; <code>iobj</code> &gt; <code>obl</code> &gt; <code>advmod</code> &gt; <code>csubj</code> &gt; <code>xcomp</code> &gt; <code>ccomp</code> &gt; <code>advcl</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">nsubj</code> &gt; <code class="language-plaintext highlighter-rouge">obj</code> &gt; <code class="language-plaintext highlighter-rouge">iobj</code> &gt; <code class="language-plaintext highlighter-rouge">obl</code> &gt; <code class="language-plaintext highlighter-rouge">advmod</code> &gt; <code class="language-plaintext highlighter-rouge">csubj</code> &gt; <code class="language-plaintext highlighter-rouge">xcomp</code> &gt; <code class="language-plaintext highlighter-rouge">ccomp</code> &gt; <code class="language-plaintext highlighter-rouge">advcl</code>.</li>
 </ul>
 
 <p>Some other arguments, such as the subject in (2), may also be elided along with the verb in a subsequent clause. In the following example, the second clause only has the direct and indirect objects left. According to the promotion hierarchy above, the direct object 手機 / <em>sau5gei1</em> “mobile phone” is promoted to head and not the indirect object 嫲嫲 / <em>maa4maa4</em> “grandmother”.</p>
@@ -4736,7 +4736,7 @@
 <p><a id="al-yue-dep/reparandum" class="al-dest"></a></p>
 <h2><code>reparandum</code>: overridden disfluency</h2>
 
-<p>The <code>reparandum</code> relation is used for disfluencies that are subsequently repaired. The disfluency is a dependent of the repair. Examples include false starts due to stuttering or a change in lexical choice. Hesitation sounds (“fillers”), however, are generally considered interjections and therefore should be given the relation <a href="">discourse</a> instead.</p>
+<p>The <code class="language-plaintext highlighter-rouge">reparandum</code> relation is used for disfluencies that are subsequently repaired. The disfluency is a dependent of the repair. Examples include false starts due to stuttering or a change in lexical choice. Hesitation sounds (“fillers”), however, are generally considered interjections and therefore should be given the relation <a href="">discourse</a> instead.</p>
 
 <pre><code class="language-conllu"># visual-style 3 1 reparandum	color:blue
 # visual-style 1	bgColor:blue
@@ -4789,7 +4789,7 @@
 <p><a id="al-yue-dep/root" class="al-dest"></a></p>
 <h2><code>root</code>: root</h2>
 
-<p>The root of a sentence is the predicate of the main clause. This may be a verb (1), a predicate adjective (2), or a nominal in a copular construction (3).  Sometimes only an auxiliary (see AUX) is present, in which case that will be promoted to <code>root</code> (4). If there is only a phrase, whatever is the governor of that phrase will be the root (5).</p>
+<p>The root of a sentence is the predicate of the main clause. This may be a verb (1), a predicate adjective (2), or a nominal in a copular construction (3).  Sometimes only an auxiliary (see AUX) is present, in which case that will be promoted to <code class="language-plaintext highlighter-rouge">root</code> (4). If there is only a phrase, whatever is the governor of that phrase will be the root (5).</p>
 
 <pre><code class="language-conllu"># visual-style 1 5 root	color:blue
 # visual-style 1	bgColor:blue
@@ -4885,7 +4885,7 @@
 <p><a id="al-yue-dep/vocative" class="al-dest"></a></p>
 <h2><code>vocative</code>: vocative</h2>
 
-<p>We use the <code>vocative</code> relation when the speaker of the sentence calls the addressee by their name or appellation, which depends on the head of the main clause.</p>
+<p>We use the <code class="language-plaintext highlighter-rouge">vocative</code> relation when the speaker of the sentence calls the addressee by their name or appellation, which depends on the head of the main clause.</p>
 
 <pre><code class="language-conllu"># visual-style 3 1 vocative	color:blue
 # visual-style 1	bgColor:blue
@@ -4928,7 +4928,7 @@
 
 <p>The open clausal complement functions like an object of another verb, but unlike the <a href="">ccomp</a> dependent, it obligatorily lacks an overt subject. More crucially, the absent or “silent” subject is coreferent with an argument outside of the clausal complement in a higher clause (this is also known as “obligatory control” in some linguistic literature).</p>
 
-<p>When the silent subject of <code>xcomp</code> is obligatorily coreferent with the subject of the higher clause, it is known as “subject control”. Some matrix verbs that take a clausal complement with subject control include 準備 / <em>zeon2bei6</em> “prepare”, 打算 / <em>daa2syun3</em> “plan”, 決定 / <em>kyut3ding6</em> “decide”, 開始 / <em>hoi1ci2</em> “start”, 應承 / <em>jing1sing4</em> “promise”.</p>
+<p>When the silent subject of <code class="language-plaintext highlighter-rouge">xcomp</code> is obligatorily coreferent with the subject of the higher clause, it is known as “subject control”. Some matrix verbs that take a clausal complement with subject control include 準備 / <em>zeon2bei6</em> “prepare”, 打算 / <em>daa2syun3</em> “plan”, 決定 / <em>kyut3ding6</em> “decide”, 開始 / <em>hoi1ci2</em> “start”, 應承 / <em>jing1sing4</em> “promise”.</p>
 
 <pre><code class="language-conllu"># visual-style 4 6 xcomp	color:blue
 # visual-style 4	bgColor:blue
@@ -5054,7 +5054,7 @@
 
 <h3 id="in-extent-compound-constructions">In “extent compound” constructions</h3>
 
-<p>Additionally, <code>xcomp</code> is used when the predicate or clause following a V-得/到 extent compound (see <a href="">compound:ext</a>) is lacking its local subject.</p>
+<p>Additionally, <code class="language-plaintext highlighter-rouge">xcomp</code> is used when the predicate or clause following a V-得/到 extent compound (see <a href="">compound:ext</a>) is lacking its local subject.</p>
 
 <pre><code class="language-conllu"># visual-style 2 4 xcomp	color:blue
 # visual-style 2	bgColor:blue
@@ -5126,20 +5126,20 @@
 
 </code></pre>
 
-<p>The predicate of the clausal complement is linked to the predicate adjective as an <code>xcomp</code> dependent, whereas the noun phrase preceding the predicate adjective is treated as its syntactic subject (<code>nsubj</code>) regardless of whether it can be semantically understood to be the subject or object of the clausal complement.</p>
+<p>The predicate of the clausal complement is linked to the predicate adjective as an <code class="language-plaintext highlighter-rouge">xcomp</code> dependent, whereas the noun phrase preceding the predicate adjective is treated as its syntactic subject (<code class="language-plaintext highlighter-rouge">nsubj</code>) regardless of whether it can be semantically understood to be the subject or object of the clausal complement.</p>
 
-<h3 id="ccomp-vs-object-control-xcomp"><code>ccomp</code> vs. object-control <code>xcomp</code></h3>
+<h3 id="ccomp-vs-object-control-xcomp"><code class="language-plaintext highlighter-rouge">ccomp</code> vs. object-control <code class="language-plaintext highlighter-rouge">xcomp</code></h3>
 
-<p>Since both <code>ccomp</code> and object-control <code>xcomp</code> may both contain an argument between the matrix verb and the embedded verb, confusion may arise as to which relation is appropriate.</p>
+<p>Since both <code class="language-plaintext highlighter-rouge">ccomp</code> and object-control <code class="language-plaintext highlighter-rouge">xcomp</code> may both contain an argument between the matrix verb and the embedded verb, confusion may arise as to which relation is appropriate.</p>
 
-<p>We adopt a test from Chao (1968) – originally for Mandarin but apparently applicable to Cantonese as well – which allows one to separate “clausal objects” (<code>ccomp</code>) from “pivotal constructions” (object-control <code>xcomp</code>). In the case of <code>ccomp</code>, it is grammatical to dislocate the matrix verb with its subject to the end, while the same operation on an <code>xcomp</code> sentence would likely result in ungrammaticality:</p>
+<p>We adopt a test from Chao (1968) – originally for Mandarin but apparently applicable to Cantonese as well – which allows one to separate “clausal objects” (<code class="language-plaintext highlighter-rouge">ccomp</code>) from “pivotal constructions” (object-control <code class="language-plaintext highlighter-rouge">xcomp</code>). In the case of <code class="language-plaintext highlighter-rouge">ccomp</code>, it is grammatical to dislocate the matrix verb with its subject to the end, while the same operation on an <code class="language-plaintext highlighter-rouge">xcomp</code> sentence would likely result in ungrammaticality:</p>
 
 <table>
   <thead>
     <tr>
-      <th><strong><code>ccomp</code></strong></th>
+      <th><strong><code class="language-plaintext highlighter-rouge">ccomp</code></strong></th>
       <th> </th>
-      <th><strong><code>xcomp</code></strong></th>
+      <th><strong><code class="language-plaintext highlighter-rouge">xcomp</code></strong></th>
     </tr>
   </thead>
   <tbody>

@@ -66,7 +66,7 @@
 
 <p>Mood is a feature that expresses modality and subclassifies finite verb forms. It allows for a speaker to express their attitude towards what they are saying.</p>
 
-<h3 id="ind--indicative-mood"><code>Ind</code> : indicative mood</h3>
+<h3 id="ind--indicative-mood"><code class="language-plaintext highlighter-rouge">Ind</code> : indicative mood</h3>
 
 <p>The indicative mood can be considered the default form of a verb. A verb in the indicative indicates something that has happened, is happening or will happen.</p>
 
@@ -78,7 +78,7 @@
   <li><em>Caithfidh mé</em> “I will have to”</li>
 </ul>
 
-<h3 id="cnd--conditional-mood"><code>Cnd</code> : conditional mood</h3>
+<h3 id="cnd--conditional-mood"><code class="language-plaintext highlighter-rouge">Cnd</code> : conditional mood</h3>
 
 <p>The conditional mood is used to express actions that are hypothetical. In Irish, the conditional is expressed in two different verb endings; these endings begin with the suffix <em><b>-f-</b></em> or <em><b>-ó-</b></em>. In all but the 3rd person singular and the 2nd person plural, the verb endings are synthetic and do not require a subject pronoun. Conditional clauses are often introduced using <b>go</b> or <b>dá</b>.</p>
 
@@ -90,7 +90,7 @@
   <li><em>…go bhfeic<b>feadh</b> sé</em> “…that he would see”</li>
 </ul>
 
-<h3 id="imp--imperative-mood"><code>Imp</code> : imperative mood</h3>
+<h3 id="imp--imperative-mood"><code class="language-plaintext highlighter-rouge">Imp</code> : imperative mood</h3>
 
 <p>The imperative mood is used to give a command, express advice, or make a request.</p>
 
@@ -102,7 +102,7 @@
   <li><em><b>Chuiridís</b> oilithrigh amach</em> “Let them send the pilgrims out”</li>
 </ul>
 
-<h3 id="sub--subjunctive-mood"><code>Sub</code> : subjunctive mood</h3>
+<h3 id="sub--subjunctive-mood"><code class="language-plaintext highlighter-rouge">Sub</code> : subjunctive mood</h3>
 
 <p>In Irish, the subjunctive mood is used to express a wish or an uncertainty. It is normally formed with the particle <b>go</b> (positive) or <b>nár</b> (negative) followed by the verb in the subjunctive form. <b>Sula</b> ‘before’ is sometimes also used. The subjunctive is not widely used in Irish.</p>
 
@@ -123,30 +123,30 @@
 
 <hr />
 
-<h2 id="treebank-statistics-udirish">Treebank Statistics (UD_Irish)</h2>
+<h2 id="treebank-statistics-ud_irish">Treebank Statistics (UD_Irish)</h2>
 
-<p>This feature is universal but the values <code>Int</code> are language-specific.
-It occurs with 5 different values: <code>Cnd</code>, <code>Imp</code>, <code>Ind</code>, <code>Int</code>, <code>Sub</code>.</p>
+<p>This feature is universal but the values <code class="language-plaintext highlighter-rouge">Int</code> are language-specific.
+It occurs with 5 different values: <code class="language-plaintext highlighter-rouge">Cnd</code>, <code class="language-plaintext highlighter-rouge">Imp</code>, <code class="language-plaintext highlighter-rouge">Ind</code>, <code class="language-plaintext highlighter-rouge">Int</code>, <code class="language-plaintext highlighter-rouge">Sub</code>.</p>
 
-<p>1094 tokens (8%) have a non-empty value of <code>Mood</code>.
-487 types (13%) occur at least once with a non-empty value of <code>Mood</code>.
-201 lemmas (7%) occur at least once with a non-empty value of <code>Mood</code>.
+<p>1094 tokens (8%) have a non-empty value of <code class="language-plaintext highlighter-rouge">Mood</code>.
+487 types (13%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Mood</code>.
+201 lemmas (7%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Mood</code>.
 The feature is used with 4 part-of-speech tags: <a href="">ga-pos/VERB</a> (1070; 8% instances), <a href="">ga-pos/AUX</a> (10; 0% instances), <a href="">ga-pos/PART</a> (10; 0% instances), <a href="">ga-pos/X</a> (4; 0% instances).</p>
 
-<h3 id="verb"><code>VERB</code></h3>
+<h3 id="verb"><code class="language-plaintext highlighter-rouge">VERB</code></h3>
 
-<p>1070 <a href="">ga-pos/VERB</a> tokens (97% of all <code>VERB</code> tokens) have a non-empty value of <code>Mood</code>.</p>
+<p>1070 <a href="">ga-pos/VERB</a> tokens (97% of all <code class="language-plaintext highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Mood</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Mood</code> co-occurred: <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (927; 87%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">VERB</code> and <code class="language-plaintext highlighter-rouge">Mood</code> co-occurred: <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (927; 87%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>Mood</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Mood</code>:</p>
 
 <ul>
-  <li><code>Cnd</code> (76; 7% of non-empty <code>Mood</code>): <em>mbeadh, bheadh, dtiocfadh, fhéadfadh, thiocfadh, Ligfeadh, beadh, bhféadfadh, dhéanfadh, déarfadh</em></li>
-  <li><code>Imp</code> (42; 4% of non-empty <code>Mood</code>): <em>bhíodh, déan, faigh, féach, mbínn, mbíodh, Amharcaigí, Chuiridís, Féachaimis, Tabhair</em></li>
-  <li><code>Ind</code> (950; 89% of non-empty <code>Mood</code>): <em>bhí, tá, raibh, bhfuil, atá, beidh, bheidh, thug, mbeidh, tháinig</em></li>
-  <li><code>Sub</code> (2; 0% of non-empty <code>Mood</code>): <em>Roinne, chroma</em></li>
-  <li><code>EMPTY</code> (29): <em>bíonn, bhíonn, mbíonn, deemed, labhair</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Cnd</code> (76; 7% of non-empty <code class="language-plaintext highlighter-rouge">Mood</code>): <em>mbeadh, bheadh, dtiocfadh, fhéadfadh, thiocfadh, Ligfeadh, beadh, bhféadfadh, dhéanfadh, déarfadh</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Imp</code> (42; 4% of non-empty <code class="language-plaintext highlighter-rouge">Mood</code>): <em>bhíodh, déan, faigh, féach, mbínn, mbíodh, Amharcaigí, Chuiridís, Féachaimis, Tabhair</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Ind</code> (950; 89% of non-empty <code class="language-plaintext highlighter-rouge">Mood</code>): <em>bhí, tá, raibh, bhfuil, atá, beidh, bheidh, thug, mbeidh, tháinig</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Sub</code> (2; 0% of non-empty <code class="language-plaintext highlighter-rouge">Mood</code>): <em>Roinne, chroma</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (29): <em>bíonn, bhíonn, mbíonn, deemed, labhair</em></li>
 </ul>
 
 <table>
@@ -184,45 +184,45 @@ The feature is used with 4 part-of-speech tags: <a href="">ga-pos/VERB</a> (1070
   <tr><td><tt><a href="Tense.html">Tense</a>=Pres</tt></td><td><em>tá</em></td><td></td><td></td></tr>
 </table>
 
-<h3 id="part"><code>PART</code></h3>
+<h3 id="part"><code class="language-plaintext highlighter-rouge">PART</code></h3>
 
-<p>10 <a href="">ga-pos/PART</a> tokens (1% of all <code>PART</code> tokens) have a non-empty value of <code>Mood</code>.</p>
+<p>10 <a href="">ga-pos/PART</a> tokens (1% of all <code class="language-plaintext highlighter-rouge">PART</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Mood</code>.</p>
 
-<p>The most frequent other feature values with which <code>PART</code> and <code>Mood</code> co-occurred: <tt><a href="PartType.html">PartType</a>=Vb</tt> (10; 100%), <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (10; 100%), <tt><a href="Polarity.html">Polarity</a>=Neg</tt> (8; 80%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">PART</code> and <code class="language-plaintext highlighter-rouge">Mood</code> co-occurred: <tt><a href="PartType.html">PartType</a>=Vb</tt> (10; 100%), <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (10; 100%), <tt><a href="Polarity.html">Polarity</a>=Neg</tt> (8; 80%).</p>
 
-<p><code>PART</code> tokens may have the following values of <code>Mood</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">PART</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Mood</code>:</p>
 
 <ul>
-  <li><code>Imp</code> (6; 60% of non-empty <code>Mood</code>): <em>ná</em></li>
-  <li><code>Int</code> (4; 40% of non-empty <code>Mood</code>): <em>nach</em></li>
-  <li><code>EMPTY</code> (856): <em>a, go, ní, nach, d’, gur, Ó, ar, is, do</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Imp</code> (6; 60% of non-empty <code class="language-plaintext highlighter-rouge">Mood</code>): <em>ná</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Int</code> (4; 40% of non-empty <code class="language-plaintext highlighter-rouge">Mood</code>): <em>nach</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (856): <em>a, go, ní, nach, d’, gur, Ó, ar, is, do</em></li>
 </ul>
 
-<h3 id="aux"><code>AUX</code></h3>
+<h3 id="aux"><code class="language-plaintext highlighter-rouge">AUX</code></h3>
 
-<p>10 <a href="">ga-pos/AUX</a> tokens (4% of all <code>AUX</code> tokens) have a non-empty value of <code>Mood</code>.</p>
+<p>10 <a href="">ga-pos/AUX</a> tokens (4% of all <code class="language-plaintext highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Mood</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Mood</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Cop</tt> (10; 100%), <tt><a href="Form.html">Form</a>=EMPTY</tt> (10; 100%), <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (9; 90%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (8; 80%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">AUX</code> and <code class="language-plaintext highlighter-rouge">Mood</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Cop</tt> (10; 100%), <tt><a href="Form.html">Form</a>=EMPTY</tt> (10; 100%), <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (9; 90%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (8; 80%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>Mood</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">AUX</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Mood</code>:</p>
 
 <ul>
-  <li><code>Int</code> (10; 100% of non-empty <code>Mood</code>): <em>an, nach, Cén, nár</em></li>
-  <li><code>EMPTY</code> (214): <em>is, ba, ní, gur, b’, ar, nach, níor, gurb, nár</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Int</code> (10; 100% of non-empty <code class="language-plaintext highlighter-rouge">Mood</code>): <em>an, nach, Cén, nár</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (214): <em>is, ba, ní, gur, b’, ar, nach, níor, gurb, nár</em></li>
 </ul>
 
-<h3 id="x"><code>X</code></h3>
+<h3 id="x"><code class="language-plaintext highlighter-rouge">X</code></h3>
 
-<p>4 <a href="">ga-pos/X</a> tokens (3% of all <code>X</code> tokens) have a non-empty value of <code>Mood</code>.</p>
+<p>4 <a href="">ga-pos/X</a> tokens (3% of all <code class="language-plaintext highlighter-rouge">X</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Mood</code>.</p>
 
-<p>The most frequent other feature values with which <code>X</code> and <code>Mood</code> co-occurred: <tt><a href="Dialect.html">Dialect</a>=Munster</tt> (4; 100%), <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (4; 100%), <tt><a href="Abbr.html">Abbr</a>=EMPTY</tt> (4; 100%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">X</code> and <code class="language-plaintext highlighter-rouge">Mood</code> co-occurred: <tt><a href="Dialect.html">Dialect</a>=Munster</tt> (4; 100%), <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (4; 100%), <tt><a href="Abbr.html">Abbr</a>=EMPTY</tt> (4; 100%).</p>
 
-<p><code>X</code> tokens may have the following values of <code>Mood</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">X</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Mood</code>:</p>
 
 <ul>
-  <li><code>Imp</code> (2; 50% of non-empty <code>Mood</code>): <em>dein</em></li>
-  <li><code>Ind</code> (2; 50% of non-empty <code>Mood</code>): <em>chuireas, deineadh</em></li>
-  <li><code>EMPTY</code> (147): <em>san, (1), (2), so, (c), (4), (a), (b), Uimh., FÁS</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Imp</code> (2; 50% of non-empty <code class="language-plaintext highlighter-rouge">Mood</code>): <em>dein</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Ind</code> (2; 50% of non-empty <code class="language-plaintext highlighter-rouge">Mood</code>): <em>chuireas, deineadh</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (147): <em>san, (1), (2), so, (c), (4), (a), (b), Uimh., FÁS</em></li>
 </ul>
 
 <table>
@@ -231,9 +231,9 @@ The feature is used with 4 part-of-speech tags: <a href="">ga-pos/VERB</a> (1070
   <tr><td><tt><a href="Tense.html">Tense</a>=Past|<a href="Voice.html">Voice</a>=Auto</tt></td><td><em>deineadh</em></td><td></td></tr>
 </table>
 
-<h2 id="relations-with-agreement-in-mood">Relations with Agreement in <code>Mood</code></h2>
+<h2 id="relations-with-agreement-in-mood">Relations with Agreement in <code class="language-plaintext highlighter-rouge">Mood</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Mood</code>:
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">Mood</code>:
 <tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (88; 98%),
 <tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (78; 88%),
 <tt>VERB –[<a href="../dep/ccomp.html">ccomp</a>]–&gt; VERB</tt> (67; 86%),

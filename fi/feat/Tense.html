@@ -64,17 +64,17 @@
 
 <h2><code>Tense</code>: tense</h2>
 
-<p>The <code>Tense</code> feature applies to verbs (<a href="">VERB</a> and <a href="">AUX</a>),
+<p>The <code class="language-plaintext highlighter-rouge">Tense</code> feature applies to verbs (<a href="">VERB</a> and <a href="">AUX</a>),
 specifying the time when the action took or takes place, in
 relation to the current moment or to another action in the
 utterance.</p>
 
-<p><code>Tense</code> does not apply to non-finite verbs (infinitives and
+<p><code class="language-plaintext highlighter-rouge">Tense</code> does not apply to non-finite verbs (infinitives and
 participles), the negation verb <em>ei</em>, or verbs not in the
 indicative mood (see
 <a href="http://scripta.kotus.fi/visk/sisallys.php?p=111">http://scripta.kotus.fi/visk/sisallys.php?p=111</a>; in Finnish).</p>
 
-<h3 id="pres-present-tense"><code>Pres</code>: present tense</h3>
+<h3 id="pres-present-tense"><code class="language-plaintext highlighter-rouge">Pres</code>: present tense</h3>
 
 <p>The present tense denotes actions that are happening right now or that
 usually happen.</p>
@@ -85,7 +85,7 @@ usually happen.</p>
   <li>[fi] <em>järjestelmä <b>toimii</b></em> “the system <b>works</b>”</li>
 </ul>
 
-<h3 id="past-past-tense--preterite"><code>Past</code>: past tense / preterite</h3>
+<h3 id="past-past-tense--preterite"><code class="language-plaintext highlighter-rouge">Past</code>: past tense / preterite</h3>
 
 <p>The past tense denotes actions that happened before the current
 moment.</p>
@@ -113,28 +113,28 @@ moment.</p>
 
 <hr />
 
-<h2 id="treebank-statistics-udfinnish">Treebank Statistics (UD_Finnish)</h2>
+<h2 id="treebank-statistics-ud_finnish">Treebank Statistics (UD_Finnish)</h2>
 
 <p>This feature is universal.
-It occurs with 2 different values: <code>Past</code>, <code>Pres</code>.</p>
+It occurs with 2 different values: <code class="language-plaintext highlighter-rouge">Past</code>, <code class="language-plaintext highlighter-rouge">Pres</code>.</p>
 
-<p>19480 tokens (11%) have a non-empty value of <code>Tense</code>.
-4577 types (9%) occur at least once with a non-empty value of <code>Tense</code>.
-1642 lemmas (7%) occur at least once with a non-empty value of <code>Tense</code>.
+<p>19480 tokens (11%) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.
+4577 types (9%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.
+1642 lemmas (7%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.
 The feature is used with 2 part-of-speech tags: <a href="">fi-pos/VERB</a> (12364; 7% instances), <a href="">fi-pos/AUX</a> (7116; 4% instances).</p>
 
-<h3 id="verb"><code>VERB</code></h3>
+<h3 id="verb"><code class="language-plaintext highlighter-rouge">VERB</code></h3>
 
-<p>12364 <a href="">fi-pos/VERB</a> tokens (49% of all <code>VERB</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>12364 <a href="">fi-pos/VERB</a> tokens (49% of all <code class="language-plaintext highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Tense</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (12364; 100%), <tt><a href="PartForm.html">PartForm</a>=EMPTY</tt> (12364; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (12364; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (12364; 100%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (12364; 100%), <tt><a href="InfForm.html">InfForm</a>=EMPTY</tt> (12364; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (9775; 79%), <tt><a href="Number.html">Number</a>=Sing</tt> (7844; 63%), <tt><a href="Person.html">Person</a>=3</tt> (7623; 62%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">VERB</code> and <code class="language-plaintext highlighter-rouge">Tense</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (12364; 100%), <tt><a href="PartForm.html">PartForm</a>=EMPTY</tt> (12364; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (12364; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (12364; 100%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (12364; 100%), <tt><a href="InfForm.html">InfForm</a>=EMPTY</tt> (12364; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (9775; 79%), <tt><a href="Number.html">Number</a>=Sing</tt> (7844; 63%), <tt><a href="Person.html">Person</a>=3</tt> (7623; 62%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>Tense</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Tense</code>:</p>
 
 <ul>
-  <li><code>Past</code> (5416; 44% of non-empty <code>Tense</code>): <em>tuli, sai, sanoi, alkoi, kertoi, teki, voitti, oli, toimi, nousi</em></li>
-  <li><code>Pres</code> (6948; 56% of non-empty <code>Tense</code>): <em>tulee, saa, on, ottaa, kertoo, sanoo, kuuluu, tekee, pitää, haluaa</em></li>
-  <li><code>EMPTY</code> (12734): <em>eikä, ettei, tehdä, tehty, ottaa, tullut, käyttää, saada, saanut, ei</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Past</code> (5416; 44% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>tuli, sai, sanoi, alkoi, kertoi, teki, voitti, oli, toimi, nousi</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pres</code> (6948; 56% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>tulee, saa, on, ottaa, kertoo, sanoo, kuuluu, tekee, pitää, haluaa</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (12734): <em>eikä, ettei, tehdä, tehty, ottaa, tullut, käyttää, saada, saanut, ei</em></li>
 </ul>
 
 <table>
@@ -159,18 +159,18 @@ The feature is used with 2 part-of-speech tags: <a href="">fi-pos/VERB</a> (1236
   <tr><td><tt><a href="Voice.html">Voice</a>=Pass</tt></td><td><em>saadaan</em></td><td><em>saatiin</em></td></tr>
 </table>
 
-<h3 id="aux"><code>AUX</code></h3>
+<h3 id="aux"><code class="language-plaintext highlighter-rouge">AUX</code></h3>
 
-<p>7116 <a href="">fi-pos/AUX</a> tokens (69% of all <code>AUX</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>7116 <a href="">fi-pos/AUX</a> tokens (69% of all <code class="language-plaintext highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Tense</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (7116; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (7116; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (7116; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (6372; 90%), <tt><a href="Person.html">Person</a>=3</tt> (5634; 79%), <tt><a href="Number.html">Number</a>=Sing</tt> (5513; 77%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">AUX</code> and <code class="language-plaintext highlighter-rouge">Tense</code> co-occurred: <tt><a href="Polarity.html">Polarity</a>=EMPTY</tt> (7116; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (7116; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (7116; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (6372; 90%), <tt><a href="Person.html">Person</a>=3</tt> (5634; 79%), <tt><a href="Number.html">Number</a>=Sing</tt> (5513; 77%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>Tense</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">AUX</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Tense</code>:</p>
 
 <ul>
-  <li><code>Past</code> (1495; 21% of non-empty <code>Tense</code>): <em>oli, olivat, olin, piti, olikin, saattoi, oliko, joutui, oltiin, taisi</em></li>
-  <li><code>Pres</code> (5621; 79% of non-empty <code>Tense</code>): <em>on, ovat, ole, voi, voidaan, olen, olemme, onko, voivat, pitää</em></li>
-  <li><code>EMPTY</code> (3249): <em>ei, olisi, olla, ollut, en, eivät, voisi, pitäisi, olevan, emme</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Past</code> (1495; 21% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>oli, olivat, olin, piti, olikin, saattoi, oliko, joutui, oltiin, taisi</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pres</code> (5621; 79% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>on, ovat, ole, voi, voidaan, olen, olemme, onko, voivat, pitää</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (3249): <em>ei, olisi, olla, ollut, en, eivät, voisi, pitäisi, olevan, emme</em></li>
 </ul>
 
 <table>
@@ -224,9 +224,9 @@ The feature is used with 2 part-of-speech tags: <a href="">fi-pos/VERB</a> (1236
   <tr><td><tt><a href="Voice.html">Voice</a>=Pass</tt></td><td><em>ollaan</em></td><td><em>oltiin</em></td></tr>
 </table>
 
-<h2 id="relations-with-agreement-in-tense">Relations with Agreement in <code>Tense</code></h2>
+<h2 id="relations-with-agreement-in-tense">Relations with Agreement in <code class="language-plaintext highlighter-rouge">Tense</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Tense</code>:
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">Tense</code>:
 <tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (1480; 74%),
 <tt>VERB –[<a href="../dep/acl:relcl.html">acl:relcl</a>]–&gt; VERB</tt> (56; 58%),
 <tt>VERB –[<a href="../dep/appos.html">appos</a>]–&gt; VERB</tt> (6; 100%),
@@ -239,28 +239,28 @@ The feature is used with 2 part-of-speech tags: <a href="">fi-pos/VERB</a> (1236
 
 <hr />
 
-<h2 id="treebank-statistics-udfinnish-ftb">Treebank Statistics (UD_Finnish-FTB)</h2>
+<h2 id="treebank-statistics-ud_finnish-ftb">Treebank Statistics (UD_Finnish-FTB)</h2>
 
 <p>This feature is universal.
-It occurs with 2 different values: <code>Past</code>, <code>Pres</code>.</p>
+It occurs with 2 different values: <code class="language-plaintext highlighter-rouge">Past</code>, <code class="language-plaintext highlighter-rouge">Pres</code>.</p>
 
-<p>19375 tokens (14%) have a non-empty value of <code>Tense</code>.
-4912 types (12%) occur at least once with a non-empty value of <code>Tense</code>.
-1694 lemmas (8%) occur at least once with a non-empty value of <code>Tense</code>.
+<p>19375 tokens (14%) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.
+4912 types (12%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.
+1694 lemmas (8%) occur at least once with a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.
 The feature is used with 2 part-of-speech tags: <a href="">fi-pos/VERB</a> (16457; 11% instances), <a href="">fi-pos/AUX</a> (2918; 2% instances).</p>
 
-<h3 id="verb-1"><code>VERB</code></h3>
+<h3 id="verb-1"><code class="language-plaintext highlighter-rouge">VERB</code></h3>
 
-<p>16457 <a href="">fi-pos/VERB</a> tokens (54% of all <code>VERB</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>16457 <a href="">fi-pos/VERB</a> tokens (54% of all <code class="language-plaintext highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Tense</code> co-occurred: <tt><a href="InfForm.html">InfForm</a>=EMPTY</tt> (16457; 100%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (16457; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (16457; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (16457; 100%), <tt><a href="PartForm.html">PartForm</a>=EMPTY</tt> (16457; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (14982; 91%), <tt><a href="Number.html">Number</a>=Sing</tt> (11710; 71%), <tt><a href="Person.html">Person</a>=3</tt> (10683; 65%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">VERB</code> and <code class="language-plaintext highlighter-rouge">Tense</code> co-occurred: <tt><a href="InfForm.html">InfForm</a>=EMPTY</tt> (16457; 100%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (16457; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (16457; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (16457; 100%), <tt><a href="PartForm.html">PartForm</a>=EMPTY</tt> (16457; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (14982; 91%), <tt><a href="Number.html">Number</a>=Sing</tt> (11710; 71%), <tt><a href="Person.html">Person</a>=3</tt> (10683; 65%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>Tense</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">VERB</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Tense</code>:</p>
 
 <ul>
-  <li><code>Past</code> (6073; 37% of non-empty <code>Tense</code>): <em>oli, tuli, sanoi, olin, ollut, sai, olivat, piti, meni, jäi</em></li>
-  <li><code>Pres</code> (10384; 63% of non-empty <code>Tense</code>): <em>on, ole, voi, ovat, tulee, olen, saa, pitää, täytyy, onko</em></li>
-  <li><code>EMPTY</code> (13874): <em>ei, en, olla, olisi, eivät, ollut, eikä, pitäisi, tehdä, et</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Past</code> (6073; 37% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>oli, tuli, sanoi, olin, ollut, sai, olivat, piti, meni, jäi</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pres</code> (10384; 63% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>on, ole, voi, ovat, tulee, olen, saa, pitää, täytyy, onko</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (13874): <em>ei, en, olla, olisi, eivät, ollut, eikä, pitäisi, tehdä, et</em></li>
 </ul>
 
 <table>
@@ -321,18 +321,18 @@ The feature is used with 2 part-of-speech tags: <a href="">fi-pos/VERB</a> (1645
   <tr><td><tt><a href="Voice.html">Voice</a>=Pass</tt></td><td><em>ollaan</em></td><td><em>oltiin</em></td></tr>
 </table>
 
-<h3 id="aux-1"><code>AUX</code></h3>
+<h3 id="aux-1"><code class="language-plaintext highlighter-rouge">AUX</code></h3>
 
-<p>2918 <a href="">fi-pos/AUX</a> tokens (85% of all <code>AUX</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>2918 <a href="">fi-pos/AUX</a> tokens (85% of all <code class="language-plaintext highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="language-plaintext highlighter-rouge">Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Tense</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (2918; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (2918; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (2877; 99%), <tt><a href="Person.html">Person</a>=3</tt> (2437; 84%), <tt><a href="Number.html">Number</a>=Sing</tt> (2293; 79%).</p>
+<p>The most frequent other feature values with which <code class="language-plaintext highlighter-rouge">AUX</code> and <code class="language-plaintext highlighter-rouge">Tense</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (2918; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (2918; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (2877; 99%), <tt><a href="Person.html">Person</a>=3</tt> (2437; 84%), <tt><a href="Number.html">Number</a>=Sing</tt> (2293; 79%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>Tense</code>:</p>
+<p><code class="language-plaintext highlighter-rouge">AUX</code> tokens may have the following values of <code class="language-plaintext highlighter-rouge">Tense</code>:</p>
 
 <ul>
-  <li><code>Past</code> (687; 24% of non-empty <code>Tense</code>): <em>oli, olivat, tuli, olin, ollut, olikin, oliko, tullut, olit, ollutkaan</em></li>
-  <li><code>Pres</code> (2231; 76% of non-empty <code>Tense</code>): <em>on, ovat, ole, olen, olet, tulee, onko, olemme, ollaan, olette</em></li>
-  <li><code>EMPTY</code> (507): <em>olla, olisi, ollut, olevan, olleet, ei, olemaan, tulisi, tullut, Ole</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Past</code> (687; 24% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>oli, olivat, tuli, olin, ollut, olikin, oliko, tullut, olit, ollutkaan</em></li>
+  <li><code class="language-plaintext highlighter-rouge">Pres</code> (2231; 76% of non-empty <code class="language-plaintext highlighter-rouge">Tense</code>): <em>on, ovat, ole, olen, olet, tulee, onko, olemme, ollaan, olette</em></li>
+  <li><code class="language-plaintext highlighter-rouge">EMPTY</code> (507): <em>olla, olisi, ollut, olevan, olleet, ei, olemaan, tulisi, tullut, Ole</em></li>
 </ul>
 
 <table>
@@ -384,9 +384,9 @@ The feature is used with 2 part-of-speech tags: <a href="">fi-pos/VERB</a> (1645
   <tr><td><tt><a href="Voice.html">Voice</a>=Pass</tt></td><td><em>ollaan</em></td><td><em>oltiin</em></td></tr>
 </table>
 
-<h2 id="relations-with-agreement-in-tense-1">Relations with Agreement in <code>Tense</code></h2>
+<h2 id="relations-with-agreement-in-tense-1">Relations with Agreement in <code class="language-plaintext highlighter-rouge">Tense</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Tense</code>:
+<p>The 10 most frequent relations where parent and child node agree in <code class="language-plaintext highlighter-rouge">Tense</code>:
 <tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (1056; 66%).</p>
 
 

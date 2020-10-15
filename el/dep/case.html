@@ -62,7 +62,7 @@
 
           <h2><code>case</code>: case marking</h2>
 
-<p>The <code>case</code> relation for Greek is used for prepositions.</p>
+<p>The <code class="language-plaintext highlighter-rouge">case</code> relation for Greek is used for prepositions.</p>
 
 <pre><code class="language-sdparse">« Κυριαρχήσαμε σε όλο το παιχνίδι » .
 case(παιχνίδι, σε)
@@ -76,7 +76,7 @@ nmod(σταμάτησαν, αρχή)
 nmod(σταμάτησαν, τέλος)
 </code></pre>
 
-<p>A small list of postpositions in fixed expressions are labeled with <code>case</code>. <strong>TODO:</strong> An alternative analysis would be to label them using the <a href="fixed">mwe</a> relation.</p>
+<p>A small list of postpositions in fixed expressions are labeled with <code class="language-plaintext highlighter-rouge">case</code>. <strong>TODO:</strong> An alternative analysis would be to label them using the <a href="fixed">mwe</a> relation.</p>
 
 <pre><code class="language-sdparse">λόγου χάριν 
 case(λόγου,  χάριν)
@@ -90,7 +90,7 @@ case(παραδείγματος,  χάριν)
 case(τιμής,  ένεκεν)
 </code></pre>
 
-<p>Certain adverbs may be followed by prepositions. We label these adverbs with the <code>case</code> relation and attach to them the prepositions with a [mwe] relation.</p>
+<p>Certain adverbs may be followed by prepositions. We label these adverbs with the <code class="language-plaintext highlighter-rouge">case</code> relation and attach to them the prepositions with a [mwe] relation.</p>
 
 <pre><code class="language-sdparse">ενάντια σε όλα τα εμπόδια 
 case(εμπόδια, ενάντια)
@@ -112,7 +112,7 @@ case(Γιάννη, πίσω)
 mwe(πίσω, από)
 </code></pre>
 
-<p>We use the <code>case</code> relation when these adverbs take a clitic in genitive as a complement.</p>
+<p>We use the <code class="language-plaintext highlighter-rouge">case</code> relation when these adverbs take a clitic in genitive as a complement.</p>
 
 <pre><code class="language-sdparse">ανάμεσά τους
 case(τους, ανάμεσά)
@@ -144,16 +144,16 @@ mark(συναντήσω, πριν)
 
 <hr />
 
-<h2 id="treebank-statistics-udgreek">Treebank Statistics (UD_Greek)</h2>
+<h2 id="treebank-statistics-ud_greek">Treebank Statistics (UD_Greek)</h2>
 
 <p>This relation is universal.</p>
 
-<p>4466 nodes (9%) are attached to their parents as <code>case</code>.</p>
+<p>4466 nodes (9%) are attached to their parents as <code class="language-plaintext highlighter-rouge">case</code>.</p>
 
-<p>4425 instances of <code>case</code> (99%) are right-to-left (child precedes parent).
+<p>4425 instances of <code class="language-plaintext highlighter-rouge">case</code> (99%) are right-to-left (child precedes parent).
 Average distance between parent and child is 1.78056426332288.</p>
 
-<p>The following 19 pairs of parts of speech are connected with <code>case</code>: <a href="">el-pos/NOUN</a>-<a href="">el-pos/ADP</a> (3386; 76% instances), <a href="">el-pos/PROPN</a>-<a href="">el-pos/ADP</a> (354; 8% instances), <a href="">el-pos/PRON</a>-<a href="">el-pos/ADP</a> (227; 5% instances), <a href="">el-pos/X</a>-<a href="">el-pos/ADP</a> (124; 3% instances), <a href="">el-pos/NOUN</a>-<a href="">el-pos/ADV</a> (97; 2% instances), <a href="">el-pos/ADV</a>-<a href="">el-pos/ADP</a> (83; 2% instances), <a href="">el-pos/NUM</a>-<a href="">el-pos/ADP</a> (76; 2% instances), <a href="">el-pos/ADJ</a>-<a href="">el-pos/ADP</a> (58; 1% instances), <a href="">el-pos/VERB</a>-<a href="">el-pos/ADP</a> (40; 1% instances), <a href="">el-pos/PRON</a>-<a href="">el-pos/ADV</a> (10; 0% instances), <a href="">el-pos/ADJ</a>-<a href="">el-pos/ADV</a> (2; 0% instances), <a href="">el-pos/PROPN</a>-<a href="">el-pos/ADV</a> (2; 0% instances), <a href="">el-pos/ADV</a>-<a href="">el-pos/ADV</a> (1; 0% instances), <a href="">el-pos/CCONJ</a>-<a href="">el-pos/ADP</a> (1; 0% instances), <a href="">el-pos/NUM</a>-<a href="">el-pos/ADV</a> (1; 0% instances), <a href="">el-pos/PART</a>-<a href="">el-pos/ADP</a> (1; 0% instances), <a href="">el-pos/SCONJ</a>-<a href="">el-pos/ADP</a> (1; 0% instances), <a href="">el-pos/X</a>-<a href="">el-pos/ADV</a> (1; 0% instances), <a href="">el-pos/X</a>-<a href="">el-pos/X</a> (1; 0% instances).</p>
+<p>The following 19 pairs of parts of speech are connected with <code class="language-plaintext highlighter-rouge">case</code>: <a href="">el-pos/NOUN</a>-<a href="">el-pos/ADP</a> (3386; 76% instances), <a href="">el-pos/PROPN</a>-<a href="">el-pos/ADP</a> (354; 8% instances), <a href="">el-pos/PRON</a>-<a href="">el-pos/ADP</a> (227; 5% instances), <a href="">el-pos/X</a>-<a href="">el-pos/ADP</a> (124; 3% instances), <a href="">el-pos/NOUN</a>-<a href="">el-pos/ADV</a> (97; 2% instances), <a href="">el-pos/ADV</a>-<a href="">el-pos/ADP</a> (83; 2% instances), <a href="">el-pos/NUM</a>-<a href="">el-pos/ADP</a> (76; 2% instances), <a href="">el-pos/ADJ</a>-<a href="">el-pos/ADP</a> (58; 1% instances), <a href="">el-pos/VERB</a>-<a href="">el-pos/ADP</a> (40; 1% instances), <a href="">el-pos/PRON</a>-<a href="">el-pos/ADV</a> (10; 0% instances), <a href="">el-pos/ADJ</a>-<a href="">el-pos/ADV</a> (2; 0% instances), <a href="">el-pos/PROPN</a>-<a href="">el-pos/ADV</a> (2; 0% instances), <a href="">el-pos/ADV</a>-<a href="">el-pos/ADV</a> (1; 0% instances), <a href="">el-pos/CCONJ</a>-<a href="">el-pos/ADP</a> (1; 0% instances), <a href="">el-pos/NUM</a>-<a href="">el-pos/ADV</a> (1; 0% instances), <a href="">el-pos/PART</a>-<a href="">el-pos/ADP</a> (1; 0% instances), <a href="">el-pos/SCONJ</a>-<a href="">el-pos/ADP</a> (1; 0% instances), <a href="">el-pos/X</a>-<a href="">el-pos/ADV</a> (1; 0% instances), <a href="">el-pos/X</a>-<a href="">el-pos/X</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 1	bgColor:blue
 # visual-style 1	fgColor:white
